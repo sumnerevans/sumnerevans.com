@@ -5,12 +5,32 @@ from __future__ import unicode_literals
 AUTHOR = 'Sumner Evans'
 SITENAME = 'Jonathan Sumner Evans'
 SITEURL = ''
+SITETITLE = 'Jonathan Sumner Evans'
+SITESUBTITLE = 'Senior in Computer Science at Colorado School of Mines'
+SITEDESCRIPTION = 'Sumner\'s portfolio, thoughts, and writings'
+SITELOGO = SITEURL + '/images/profile.jpg'
+FAVICON = SITEURL + '/images/favicon.ico'
+
+CC_LICENSE = {
+    'name': 'Creative Commons Attribution-ShareAlike',
+    'version': '4.0',
+    'slug': 'by-sa'
+}
+
+COPYRIGHT_YEAR = 2017
+
+MAIN_MENU = True
 
 PATH = 'content'
 
 TIMEZONE = 'America/Denver'
 
+THEME = 'Flex'
+CUSTOM_CSS = 'static/custom.css'
+
 DEFAULT_LANG = 'en'
+
+STATIC_PATHS = ['images', 'static']
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -19,19 +39,14 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),)
-
 # Social widget
-SOCIAL = (('LinkedIn', 'https://www.linkedin.com/in/sumnerevans'),
-          ('StackOverflow', 'http://stackoverflow.com/users/2319844/'),
-          ('GitHub', 'https://github.com/sumnerevans'),
-          ('Medium', 'https://medium.com/@sumner.evans'),
-          ('Instagram', 'https://www.instagram.com/sumner.evans/'),
-          ('Facebook', 'https://www.facebook.com/sumner.evans98'),
-          ('Twitter', 'https://twitter.com/sumner_evans'),)
+SOCIAL = (('linkedin', 'https://www.linkedin.com/in/sumnerevans'),
+          ('stack-overflow', 'http://stackoverflow.com/users/2319844/'),
+          ('github', 'https://github.com/sumnerevans'),
+          ('medium', 'https://medium.com/@sumner.evans'),
+          ('instagram', 'https://www.instagram.com/sumner.evans/'),
+          ('facebook', 'https://www.facebook.com/sumner.evans98'),
+          ('twitter', 'https://twitter.com/sumner_evans'),)
 
 DEFAULT_PAGINATION = 10
 
