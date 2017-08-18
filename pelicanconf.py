@@ -48,6 +48,10 @@ SOCIAL = (('linkedin', 'https://www.linkedin.com/in/sumnerevans'),
           ('facebook', 'https://www.facebook.com/sumner.evans98'),
           ('twitter', 'https://twitter.com/sumner_evans'),)
 
+MENUITEMS = (('Archives', '/archives.html'),
+             ('Categories', '/categories.html'),
+             ('Tags', '/tags.html'),)
+
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
