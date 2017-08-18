@@ -3,7 +3,7 @@ Date: 2015-07-23 12:26
 Author: sumner
 Category: Baltic Cruise and Northern Europe
 Tags: Stockholm, Sweden
-Slug: 7-23-2015-stockholm
+Slug: 2015-07-23-stockholm
 Status: published
 
 We arrived in Stockholm at around 12:30 local time. Unfortunately I did

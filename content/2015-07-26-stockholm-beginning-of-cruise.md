@@ -1,9 +1,9 @@
-Title: 7-26-2015 - Stockholm - Beginning of Cruise
-Date: 2015-07-28 14:29
+Title: 7-26-2015 - Stockholm, Sweden - Beginning of Cruise
+Date: 2015-07-26 08:28
 Author: sumner
-Category: Uncategorized
-Tags: Baltic Cruise and Northern Europe, Stockholm, Sumner
-Slug: 7-26-2015-stockholm-beginning-of-cruise-2
+Category: Baltic Cruise and Northern Europe
+Tags: Stockholm, Sweden
+Slug: 2015-07-26-stockholm-beginning-of-cruise
 Status: published
 
 Today we embarked on our cruise. We woke up and had breakfast at the
@@ -22,6 +22,8 @@ the lunch buffet.) By the time we were done with lunch our stateroom was
 ready to be occupied so we went to check it out and drop off our “cary
 ons”. We then went back into Stockholm for the afternoon.
 
+------------------------------------------------------------------------
+
 We rode bus \#1 into town and got off at the central station (I think we
 went further than we wanted to, but whatever, we did pretty well
 considering everything was in Swedish). Then we walked to the subway
@@ -35,9 +37,46 @@ platform, but we got on the subway without any issue and made our way to
 Gamla Stan, the old town. It was a very short metro ride (only one
 stop), but it was an interesting experience nonetheless.
 
+------------------------------------------------------------------------
+
 Gamla Stan is very pretty, almost Germanic-looking in places. I think
-pictures speak louder than words on this, so I’ll try and post some when
-I get the chance.
+pictures speak louder than words on this, so here they are.
+
+<table class="gallery">
+  <tr>
+    <td colspan="2">
+      <a href="images/baltic-cruise/gamla-stan1.jpg" target="_blank">
+        <img src="images/baltic-cruise/gamla-stan1.jpg" />
+      </a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <a href="images/baltic-cruise/gamla-stan2.jpg" target="_blank">
+        <img src="images/baltic-cruise/gamla-stan2.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="images/baltic-cruise/gamla-stan3.jpg" target="_blank">
+        <img src="images/baltic-cruise/gamla-stan3.jpg" />
+      </a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <a href="images/baltic-cruise/gamla-stan4.jpg" target="_blank">
+        <img src="images/baltic-cruise/gamla-stan4.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="images/baltic-cruise/gamla-stan5.jpg" target="_blank">
+        <img src="images/baltic-cruise/gamla-stan5.jpg" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 We eventually made it to the Nobel museum, a museum about the Nobel
 prize and some about Alfred Nobel himself. Although interesting, it was
@@ -45,6 +84,8 @@ nothing to write home about. I think that it would be a good museum to
 go to regularly as a resident of Stockholm to learn about a few people
 each time. (The homeschooler in me saw a “History of the Nobel Price”
 class.)
+
+------------------------------------------------------------------------
 
 We then headed to the Royal Palace, the residence of His Majesty the
 King. Sweden is a monarchy, but the monarch has no political power. The
@@ -66,6 +107,8 @@ stop that we had walked to as well. We rode that bus for a while but
 then the driver told us all to get off and go to a different bus because
 the one we were on wasn’t working properly. After boarding the other
 bus, things went smoothly.
+
+------------------------------------------------------------------------
 
 At this point it was like 17:50 and our dinner reservation for each
 night is at 18:00. After franticly getting ready for dinner, we walked

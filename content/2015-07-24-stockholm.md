@@ -3,7 +3,7 @@ Date: 2015-07-24 11:19
 Author: sumner
 Category: Baltic Cruise and Northern Europe
 Tags: Stockholm, Sweden
-Slug: 7-24-2015-stockholm
+Slug: 2015-07-24-stockholm
 Status: published
 
 We started this day very late. (I’m sure it had nothing to do with some

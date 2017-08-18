@@ -67,6 +67,7 @@ I’ll tell you some of the highlights here.
     Lutheran) king at the time. Out guide pointed this out as a very
     progressive, tolerant gesture in an age where nations were going to
     war over religion.
+
 2.  In another square there was a Lutheran cathedral that looks very
     similar to the Catholic cathedral. The story was that the French
     Catholics came to the king and asked to build a church in the
@@ -76,6 +77,7 @@ I’ll tell you some of the highlights here.
     as they would pay to build it and construct it like the other
     cathedral. The Lutherans build their cathedral a few centimetres
     higher.
+
 3.  German Chancellor Angela Merkel’s apartment is just across the
     street from one of the biggest museums in Berlin, the one that holds
     parts of the Ishtar Gates. Our guide said that when the lines are
@@ -83,6 +85,7 @@ I’ll tell you some of the highlights here.
     casually drive up to the apartment, get out of her car and walk in.
     She does not have any security around the building because she does
     not fear any attacks.
+
 4.  Any building in Berlin that does not have bullet hole damage was
     either not built before WWII or restored after WWII. When the Soviet
     military came to Berlin, the Nazis fortified every part of the city.
@@ -94,25 +97,29 @@ I’ll tell you some of the highlights here.
     to be taken individually. Stalin, the Soviet dictator at the time,
     bragged that he had used more artillery in the attack on Berlin than
     all the other allies combined during the entire rest of the war.
+
 5.  When the Nazis took over Germany in 1933, a demonstration was held
     and thousands of books were burned. Today, in the square where those
     books were burned is a memorial under the ground with empty shelves
     big enough to hold the books that were burned.
+
 6.  We were able to go see the Brandenburg Gate where Regan made his
     famous “tear down this wall” speech. Like many sites, it wasn’t
     particularly spectacular in and of itself. However, because of its
     historical significance as a symbol of the
     East-West/Communist-Capitalist divide during the Cold War, it was
     really cool to see.
+
 7.  Towards the end of our tour we went to the Memorial to the Murdered
     Jews of Europe. When I was inside the memorial, the scale of the
     monument made the extent of the horror that was the
-    Holocaust. \[caption width="3000" align="aligncenter"\][![Memorial
-    to the Murdered Jews of
-    Europe](http://www.the-evans.family/sumner/blog/wp-content/uploads/2015/08/img_1398-1.jpg){.size-custom
-    width="3000"
-    height="2250"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2015/08/img_1398-1.jpg)
-    Memorial to the Murdered Jews of Europe\[/caption\] 
+    Holocaust.
+
+    [![Memorial to the Murdered Jews of
+    Europe](images/baltic-cruise/berlin1.jpg)](images/baltic-cruise/berlin1.jpg)
+
+    *Memorial to the Murdered Jews of Europe*
+
 8.  We rode past the various embassies, the German Parliament, and the
     German President’s house (the German President doesn’t have any
     political power, but, like the Queen of England, is the
