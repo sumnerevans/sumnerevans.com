@@ -112,3 +112,20 @@ aside div img {
 ul.social a.sc-medium {
   background-color: #00ab6b;
 }
+
+/* Image Galleries */
+.gallery {
+  text-align: center;
+}
+
+.gallery tr {
+  max-width: 60%;
+}
+
+.gallery tr td {
+  vertical-align: bottom;
+}
+
+.gallery img {
+  padding: 5px;
+}

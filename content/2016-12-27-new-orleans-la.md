@@ -9,11 +9,31 @@ Status: published
 This morning we woke up to very dense fog. (See below.) I don't think
 I've ever been in such dense fog for such a long time.
 
-[![Fog at the Dock](images/carribean-cruise/fog-dock.jpg "Fog at the dock")](images/carribean-cruise/fog-dock.jpg)
+<table class="gallery">
+  <tr>
+    <td colspan="2">
+      <a href="images/carribean-cruise/fog-street.jpg" target="_blank">
+        <img src="images/carribean-cruise/fog-street.jpg" alt="Fog on the street" />
+      </a>
+      Fog on the street
+    </td>
+  </tr>
 
-[![Fog on the street](images/carribean-cruise/fog-street.jpg "Fog on the street")](images/carribean-cruise/fog-street.jpg)
-
-[![Fog obscuring the top of a building](images/carribean-cruise/fog-building.jpg)](images/carribean-cruise/fog-building.jpg)
+  <tr>
+    <td>
+      <a href="images/carribean-cruise/fog-dock.jpg" target="_blank">
+        <img src="images/carribean-cruise/fog-dock.jpg" alt="Fog at the dock" />
+      </a>
+      Fog at the dock
+    </td>
+    <td>
+      <a href="images/carribean-cruise/fog-building.jpg" target="_blank">
+        <img src="images/carribean-cruise/fog-building.jpg" alt="Fog obscuring the top of a building" />
+      </a>
+      Fog obscuring the top of a building
+    </td>
+  </tr>
+</table>
 
 We ate breakfast downstairs and then headed out down Decatur St.
 (duh-kay-ter) to Toulouse St. (toe-loose) where we met a guide (BilliJo)
@@ -57,17 +77,55 @@ quite a bit.
 
 Below are some pictures from the Laura Plantation.
 
-[![Room of the Laura Plantation](images/carribean-cruise/laura-crib.jpg "Room of the Laura Plantation")](images/carribean-cruise/laura-crib.jpg)
-
-[![Portraits](images/carribean-cruise/laura-portraits.jpg "Portraits")](images/carribean-cruise/laura-portraits.jpg)
-
-[![Room at Laura Plantation](images/carribean-cruise/laura-room.jpg "Room at Laura Plantation")](images/carribean-cruise/laura-room.jpg)
-
-[![The front yard of Laura Plantation](images/carribean-cruise/laura-yard.jpg "The front yard of Laura Plantation")](images/carribean-cruise/laura-yard.jpg)
-
-[![The Laura Plantation house](images/carribean-cruise/laura-house.jpg "The Laura Plantation house")](images/carribean-cruise/laura-house.jpg)
-
-[![Large tree at the Laura Plantation](images/carribean-cruise/laura-tree.jpg "Large tree at the Laura Plantation")](images/carribean-cruise/laura-tree.jpg)
+<table class="gallery">
+  <tr class="picture-row">
+    <td colspan="4">
+      <a href="images/carribean-cruise/laura-house.jpg" target="_blank">
+        <img src="images/carribean-cruise/laura-house.jpg" alt="The Laura
+          Plantation House" />
+      </a>
+      The Laura Plantation House
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="images/carribean-cruise/laura-room.jpg" target="_blank">
+        <img src="images/carribean-cruise/laura-room.jpg" alt="Room at Laura
+          Plantation" />
+      </a>
+      Room at Laura Plantation
+    </td>
+    <td>
+      <a href="images/carribean-cruise/laura-crib.jpg" target="_blank">
+        <img src="images/carribean-cruise/laura-crib.jpg" alt="Room at Laura
+          Plantation" />
+      </a>
+      Room at Laura Plantation
+    </td>
+    <td width="50%" colspan="2" rowspan="2">
+      <a href="images/carribean-cruise/laura-tree.jpg" target="_blank">
+        <img src="images/carribean-cruise/laura-tree.jpg" alt="Large tree at the
+          Laura Plantation" />
+      </a>
+      Large tree at the Laura Plantation
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="images/carribean-cruise/laura-portraits.jpg" target="_blank">
+        <img src="images/carribean-cruise/laura-portraits.jpg" alt="Portraits" />
+      </a>
+      Portraits
+    </td>
+    <td>
+      <a href="images/carribean-cruise/laura-yard.jpg" target="_blank">
+        <img src="images/carribean-cruise/laura-yard.jpg" alt="The front yard of
+          Laura Plantation" />
+      </a>
+      The front yard of Laura Plantation
+    </td>
+  </tr>
+</table>
 
 # Oak Alley Plantation
 
@@ -75,7 +133,17 @@ After touring Laura Plantation, we went on to Oak Alley Plantation.
 Named after the avenue of Oak trees which create a beautiful canopy from
 the road to the plantation home.
 
-[![View of Oak Alley from the plantation house](images/carribean-cruise/oak-alley-from-house.jpg "View of Oak Alley from the plantation house")](images/carribean-cruise/oak-alley-from-house.jpg)
+<table class="gallery">
+  <tr>
+    <td>
+      <a href="images/carribean-cruise/oak-alley-from-house.jpg" target="_blank">
+        <img src="images/carribean-cruise/oak-alley-from-house.jpg" alt="View of
+          Oak Alley from the plantation house" />
+      </a>
+      View of Oak Alley from the plantation house
+    </td>
+  <tr>
+</table>
 
 We ate the lunch that we had gotten last night at Jimmy Johns and then walked
 around the reconstructed slave buildings. Then it was time for us to go on a
