@@ -22,12 +22,16 @@ AUTHOR_FEED_RSS = None
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+         ('Jinja2', 'http://jinja.pocoo.org/'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('LinkedIn', 'https://www.linkedin.com/in/sumnerevans'),
+          ('StackOverflow', 'http://stackoverflow.com/users/2319844/'),
+          ('GitHub', 'https://github.com/sumnerevans'),
+          ('Medium', 'https://medium.com/@sumner.evans'),
+          ('Instagram', 'https://www.instagram.com/sumner.evans/'),
+          ('Facebook', 'https://www.facebook.com/sumner.evans98'),
+          ('Twitter', 'https://twitter.com/sumner_evans'),)
 
 DEFAULT_PAGINATION = 10
 
