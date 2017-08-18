@@ -9,13 +9,12 @@ Status: published
 This morning we woke up to very dense fog. (See below.) I don't think
 I've ever been in such dense fog for such a long time.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4154-1.jpg){.alignnone
-.size-full .wp-image-991 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4154-1.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4152-1.jpg){.alignnone
-.size-full .wp-image-992 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4152-1.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4147-1.jpg){.alignnone
-.size-full .wp-image-990 width="2448"
-height="3264"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4147-1.jpg)  
+[![Fog at the Dock](images/carribean-cruise/fog-dock.jpg "Fog at the dock")](images/carribean-cruise/fog-dock.jpg)
+
+[![Fog on the street](images/carribean-cruise/fog-street.jpg "Fog on the street")](images/carribean-cruise/fog-street.jpg)
+
+[![Fog obscuring the top of a building](images/carribean-cruise/fog-building.jpg)](images/carribean-cruise/fog-building.jpg)
+
 We ate breakfast downstairs and then headed out down Decatur St.
 (duh-kay-ter) to Toulouse St. (toe-loose) where we met a guide (BilliJo)
 for a plantation tour. We boarded one bus, but then we had to move to
@@ -32,8 +31,7 @@ The tour dropped people off at three plantations (you could choose two
 out of three to tour). We chose the Laura plantation and the Oak Alley
 Plantation.
 
-Laura Plantation
-================
+# Laura Plantation
 
 The Laura Plantation was first owned by the DuPark family and was named
 the DuPark plantation at the time. Eventually, after four generations of
@@ -61,7 +59,8 @@ Below are some pictures from the Laura Plantation.
 
 [![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4173-1.jpg){.alignnone
 .size-full .wp-image-994 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4173-1.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4170-2.jpg){.alignnone
+height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4173-1.jpg)
+[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4170-2.jpg){.alignnone
 .size-full .wp-image-995 width="2448"
 height="3264"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4170-2.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4166-1.jpg){.alignnone
 .size-full .wp-image-993 width="3264"
@@ -73,8 +72,7 @@ height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/
 .size-full .wp-image-996 width="2448"
 height="3264"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4157-2.jpg)
 
-Oak Alley Plantation
-====================
+# Oak Alley Plantation
 
 After touring Laura Plantation, we went on to Oak Alley Plantation.
 Named after the avenue of Oak trees which create a beautiful canopy from
@@ -108,8 +106,7 @@ height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/
 .wp-image-1006 .size-large width="629"
 height="472"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4258-2.jpg)
 
-Back in New Orleans
-===================
+# Back in New Orleans
 
 Our tour bus picked us back up from Oak Alley and we headed back to New
 Orleans. (The plantations we visited were about half way between New
