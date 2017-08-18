@@ -156,17 +156,50 @@ cane.
 
 Here are some pictures of the Oak Alley Plantation.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4222-1.jpg)](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4222-1.jpg)
-
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4235-1.jpg)](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4235-1.jpg)
-
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4237-1.jpg)](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4237-1.jpg)
-
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4243-2.jpg)](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4243-2.jpg)
-
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4246-3.jpg)](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4246-3.jpg)
-
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4258-1024x768.jpg)](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4258-2.jpg)
+<table class="gallery">
+  <tr class="picture-row">
+    <td colspan="3">
+      <a href="images/carribean-cruise/oak-alley.jpg" target="_blank">
+        <img src="images/carribean-cruise/oak-alley.jpg" alt="Oak Alley" />
+      </a>
+      Oak Alley
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="images/carribean-cruise/oak-alley-mantle.jpg" target="_blank">
+        <img src="images/carribean-cruise/oak-alley-mantle.jpg" alt="Mantle at
+          Oak Alley" />
+      </a>
+    </td>
+    <td>
+      <a href="images/carribean-cruise/oak-alley-table.jpg" target="_blank">
+        <img src="images/carribean-cruise/oak-alley-table.jpg" alt="Dining table
+          at Oak Alley" />
+      </a>
+    </td>
+    <td>
+      <a href="images/carribean-cruise/oak-alley-bedroom.jpg" target="_blank">
+        <img src="images/carribean-cruise/oak-alley-bedroom.jpg" alt="Bedroom at
+          Oak Alley" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="images/carribean-cruise/oak-alley-bedroom2.jpg" target="_blank">
+        <img src="images/carribean-cruise/oak-alley-bedroom2.jpg" alt="Bedroom at
+          Oak Alley" />
+      </a>
+    </td>
+    <td colspan="2">
+      <a href="images/carribean-cruise/oak-alley-garden.jpg" target="_blank">
+        <img src="images/carribean-cruise/oak-alley-garden.jpg" alt="Garden at
+          Oak Alley" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 # Back in New Orleans
 
