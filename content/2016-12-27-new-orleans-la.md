@@ -57,20 +57,17 @@ quite a bit.
 
 Below are some pictures from the Laura Plantation.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4173-1.jpg){.alignnone
-.size-full .wp-image-994 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4173-1.jpg)
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4170-2.jpg){.alignnone
-.size-full .wp-image-995 width="2448"
-height="3264"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4170-2.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4166-1.jpg){.alignnone
-.size-full .wp-image-993 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4166-1.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4161-1.jpg){.alignnone
-.size-full .wp-image-997 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4161-1.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4158-1.jpg){.alignnone
-.size-full .wp-image-998 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4158-1.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4157-2.jpg){.alignnone
-.size-full .wp-image-996 width="2448"
-height="3264"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4157-2.jpg)
+[![Room of the Laura Plantation](images/carribean-cruise/laura-crib.jpg "Room of the Laura Plantation")](images/carribean-cruise/laura-crib.jpg)
+
+[![Portraits](images/carribean-cruise/laura-portraits.jpg "Portraits")](images/carribean-cruise/laura-portraits.jpg)
+
+[![Room at Laura Plantation](images/carribean-cruise/laura-room.jpg "Room at Laura Plantation")](images/carribean-cruise/laura-room.jpg)
+
+[![The front yard of Laura Plantation](images/carribean-cruise/laura-yard.jpg "The front yard of Laura Plantation")](images/carribean-cruise/laura-yard.jpg)
+
+[![The Laura Plantation house](images/carribean-cruise/laura-house.jpg "The Laura Plantation house")](images/carribean-cruise/laura-house.jpg)
+
+[![Large tree at the Laura Plantation](images/carribean-cruise/laura-tree.jpg "Large tree at the Laura Plantation")](images/carribean-cruise/laura-tree.jpg)
 
 # Oak Alley Plantation
 
@@ -78,33 +75,30 @@ After touring Laura Plantation, we went on to Oak Alley Plantation.
 Named after the avenue of Oak trees which create a beautiful canopy from
 the road to the plantation home.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4255-2.jpg){.alignnone
-.size-full .wp-image-1000 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4255-2.jpg)We
-ate the lunch that we had gotten last night at Jimmy Johns and then
-walked around the the reconstructed slave buildings. Then it was time
-for us to go on a tour of the house. We went through about 10 rooms of
-the house which had been restored back to the state it was in during the
-residency of the Roman family in the 1800s. The Roman family did not
-have the same amount of drama as the DuParks (or at least it wasn’t
-emphasised), but they, too owned many slaves who worked the plantation.
-I’ll take this moment to say that the primary crop was sugar cane.
+[![View of Oak Alley from the plantation house](images/carribean-cruise/oak-alley-from-house.jpg "View of Oak Alley from the plantation house")](images/carribean-cruise/oak-alley-from-house.jpg)
+
+We ate the lunch that we had gotten last night at Jimmy Johns and then walked
+around the reconstructed slave buildings. Then it was time for us to go on a
+tour of the house. We went through about 10 rooms of the house which had been
+restored back to the state it was in during the residency of the Roman family in
+the 1800s. The Roman family did not have the same amount of drama as the DuParks
+(or at least it wasn’t emphasised), but they, too owned many slaves who worked
+the plantation.  I’ll take this moment to say that the primary crop was sugar
+cane.
 
 Here are some pictures of the Oak Alley Plantation.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4222-1.jpg){.alignnone
-.size-full .wp-image-1005 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4222-1.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4235-1.jpg){.alignnone
-.size-full .wp-image-1004 width="2450"
-height="4516"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4235-1.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4237-1.jpg){.alignnone
-.size-full .wp-image-1001 width="2448"
-height="3264"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4237-1.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4243-2.jpg){.alignnone
-.size-full .wp-image-1003 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4243-2.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4246-3.jpg){.alignnone
-.size-full .wp-image-1002 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4246-3.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4258-1024x768.jpg){.alignnone
-.wp-image-1006 .size-large width="629"
-height="472"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4258-2.jpg)
+[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4222-1.jpg)](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4222-1.jpg)
+
+[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4235-1.jpg)](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4235-1.jpg)
+
+[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4237-1.jpg)](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4237-1.jpg)
+
+[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4243-2.jpg)](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4243-2.jpg)
+
+[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4246-3.jpg)](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4246-3.jpg)
+
+[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4258-1024x768.jpg)](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4258-2.jpg)
 
 # Back in New Orleans
 
