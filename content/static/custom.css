@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Iosevka Term';
+  src: url('fonts/Iosevka-Term.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Iosevka-Term.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Iosevka-Term.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Iosevka-Term.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
 aside div img {
   max-width: 200px;
 }
@@ -6,9 +14,96 @@ aside div img {
   aside {
     width: 30%;
   }
-
   main {
     width: 70%;
     left: 30%;
   }
+}
+
+@media screen and (min-width: 830px) {
+  .portfolio-item img {
+    float: left;
+    width: 25%;
+  }
+
+  .portfolio-item .content {
+    width: 70%;
+    float: right;
+  }
+}
+
+.clear-wrapper:after {
+    content: ' ';
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.portfolio-item {
+  border: 1px solid lighten(black, 80%);
+  box-shadow: 0 0 4px rgba(0, 0, 0, .3);
+  margin: 30px 0;
+  padding: 10px;
+  max-width: 900px;
+}
+
+.portfolio-item img {
+  box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.portfolio-item .content {
+  text-align: left;
+}
+
+.portfolio-item .content h2 {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.portfolio-item .content h2 .gh-logo {
+  text-decoration: none;
+  color: #595959;
+  margin: 0 10px;
+  transition: color 0.5s;
+}
+
+.portfolio-item .content h2 .gh-logo:hover {
+  color: #000;
+}
+
+.portfolio-item .content h2 .dates {
+  float: right;
+  font-size: 0.6em;
+  line-height: 1.6em;
+}
+
+.portfolio-item .content h3 {
+  text-align: left;
+  margin-top: -10px;
+  font-size: 1.2em;
+}
+
+.portfolio-item .content .tags {
+  margin-bottom: 10px;
+  line-height: 2em;
+}
+
+.portfolio-item .content .tags .tag-label {
+  font-weight: bold;
+}
+
+.portfolio-item .content .tags span:not(.tag-label) {
+  color: black;
+  font-family: 'Iosevka Term', monospace;
+  background-color: #adcfff;
+  padding: 3px 5px;
+}
+
+.portfolio-item .content .live-demo {
+  font-weight: bold;
 }

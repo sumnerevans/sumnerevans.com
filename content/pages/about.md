@@ -1,6 +1,6 @@
 title: About
 
-Hello, welcome to my blog! I am so glad you stopped by to check it out!
+Hello, welcome to my website! I am so glad you stopped by to check it out!
 
 Let me introduce myself. My name is Sumner, I am 19 years old and live in
 Denver, Colorado. I am a Senior in Computer Science at Colorado School of Mines.
