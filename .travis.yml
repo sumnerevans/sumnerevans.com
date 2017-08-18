@@ -1,0 +1,22 @@
+language: python
+python:
+- 3.6
+cache: pip
+addons:
+  apt:
+    packages:
+    - optipng
+    - libjpeg-progs
+install:
+- pip install --upgrade pip
+- pip install -r requirements.txt
+script:
+- make publish
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: output
+  target_branch: master
+  on:
+    branch: source
