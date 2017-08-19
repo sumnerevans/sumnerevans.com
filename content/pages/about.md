@@ -4,7 +4,9 @@ Hello, welcome to my website! I am so glad you stopped by to check it out!
 
 Let me introduce myself. My name is Sumner, I am 19 years old and live in
 Denver, Colorado. I am a Senior in Computer Science at Colorado School of Mines.
-I am currently planning on minoring in Math.
+I am currently planning on minoring in Math. After I graduate, I am going to
+stay at Mines to complete a Masters Degree in Computer Science through the
+five-year masters degree program.
 
 Computers are my passion. I really enjoy programming and the computer science
 courses I’ve taken so far at Mines have been very interesting. I run Arch Linux
