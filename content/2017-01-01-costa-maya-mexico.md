@@ -49,7 +49,7 @@ The Maya were organized in city-states, much like the Ancient Greeks and
 Europe during the Medieval. Wars were primarily fought over resources
 and trading routes and marriage to form political alliances was common.
 Our guide quipped "they had the same solutions to the same problems as
-\[Europeans of the same period\] did".
+*Europeans of the same period* did".
 
 Mayan Religion
 ==============

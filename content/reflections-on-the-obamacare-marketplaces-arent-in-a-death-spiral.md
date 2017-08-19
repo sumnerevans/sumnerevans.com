@@ -21,7 +21,7 @@ Article Analysis
 > to help pay for their plans
 
 -   To say that ObamaCare does not create entitlements is denying the
-    facts. Obamacare creates a new entitlement: healthcare and
+    facts. Obamacare creates a new entitlement: healthcare; and
     subsidises the market to ensure that everyone receives it.
 -   I note people on the Left calling healthcare a right. I think this
     comes from a fundamental disagreement on the definition of *right*.
@@ -105,7 +105,7 @@ problem is that because the family and the church have neglected their
 responsibilities, the government has had to intervene. In effect,
 healthcare has gone from being a family and church responsibility to
 being a government responsibility. Human nature is to outsource as much
-personal responsibility as possible, and once outsources, is is painful
+personal responsibility as possible, and once outsourced, is is painful
 to take back that personal responsibility. Thus it is not at all
 politically expedient to propose more personal responsibility in this
 matter.
