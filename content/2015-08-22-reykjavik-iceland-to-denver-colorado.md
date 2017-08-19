@@ -36,20 +36,19 @@ clouds, but not much of it). I'll post some pictures of the terrain here.
 
 ------------------------------------------------------------------------
 
-We just passed over Bismarck, North Dakota, USA. It’s been really
-turbulent all the way across the Canadian plains. The seatbelt sign has
-been on basically since we reached mainland Canada. Thanks a lot
-Canadians. They are coming through with drinks now that the turbulence
-has stopped. I’m pretty sure that’s the most turbulence I’ve ever been
-in (or at least that I can remember).
+We just passed over Bismarck, North Dakota, USA. It's been really turbulent all
+the way across the Canadian plains. The seatbelt sign has been on basically
+since we reached mainland Canada. Thanks a lot Canadians. They are coming
+through with drinks now that the turbulence has stopped. I'm pretty sure that's
+the most turbulence I've ever been in (or at least that I can remember).
 
 ------------------------------------------------------------------------
 
-It’s been a hectic trip, but it was totally worth it. I’ll be posting
-some reflections on the trip on my personal blog:
-[sumnerevans.wordpress.com](https://sumnerevans.wordpress.com) so be
-sure to check that out.
+It's been a hectic trip, but it was totally worth it. I'll be posting some
+reflections on the trip on my personal blog:
+[sumnerevans.wordpress.com](https://sumnerevans.wordpress.com) so be sure to
+check that out.
 
-So with that I will conclude my discourse on the events of this trip. I
-hope that you’ve all enjoyed reading and please do check out my
-reflections on the trip. They’ll probably be profound.
+So with that I will conclude my discourse on the events of this trip. I hope
+that you’ve all enjoyed reading and please do check out my reflections on the
+trip. They'll probably be profound.

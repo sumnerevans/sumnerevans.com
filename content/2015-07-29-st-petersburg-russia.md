@@ -35,7 +35,7 @@ other posts.*
 *These facts may not be entirely accurate. They have come through a guide and
 then through my brain so that is two points of failure.*
 
-St. Petersburg is built on \~40 islands and was founded by Peter the Great, Czar
+St. Petersburg is built on ~40 islands and was founded by Peter the Great, Czar
 of Russia in the 1700s. It is the second largest city in Russia next to Moscow
 and has a population of about 5 million.
 

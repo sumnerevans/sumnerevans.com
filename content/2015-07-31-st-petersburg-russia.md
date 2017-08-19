@@ -71,7 +71,7 @@ our guide had to translate what he was saying. The submarine that we went in
 could only stay underwater for 72 hours because it didn’t have enough battery
 capacity. I think that air was also an issue, but it was rather unclear coming
 through translation. The modern Russian nuclear subs can stay under for 40+
-days. The US subs can stay underwater for \~30 days.
+days. The US subs can stay underwater for ~30 days.
 
 ------------------------------------------------------------------------
 
