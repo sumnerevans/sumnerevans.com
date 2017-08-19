@@ -5,6 +5,7 @@ Category: Caribbean Cruise
 Tags: Belize, Cruise, Harvest Caye, Paddle Board, Parasailing
 Slug: 2017-01-02-harvest-caye-belize
 Status: published
+Image: images/carribean-cruise/harvest-caye3.jpg
 
 Today we were in Harvest Caye, Belize - a private island owned by
 Norwegian Cruise Line. The island has been opened to cruise ships for
