@@ -26,8 +26,40 @@ didn't have a camera so I don't have any pictures from up high, but some
 people that were also on the same tour as us took pictures of us as we
 took off and sent them to us. (We returned the favor of course.)
 
-\[gallery type="rectangular" link="file" ids="1047,1049,1288,1289,1290"
-orderby="rand"\]
+<table class="gallery">
+  <tr>
+    <td colspan="2">
+      <a href="images/carribean-cruise/harvest-caye1.jpg" target="_blank">
+        <img src="images/carribean-cruise/harvest-caye1.jpg" />
+      </a>
+    </td>
+    <td colspan="2">
+      <a href="images/carribean-cruise/harvest-caye2.jpg" target="_blank">
+        <img src="images/carribean-cruise/harvest-caye2.jpg" />
+      </a>
+    </td>
+    <td colspan="2">
+      <a href="images/carribean-cruise/harvest-caye3.jpg" target="_blank">
+        <img src="images/carribean-cruise/harvest-caye3.jpg" />
+      </a>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="3">
+      <a href="images/carribean-cruise/harvest-caye4.jpg" target="_blank">
+        <img src="images/carribean-cruise/harvest-caye4.jpg" />
+      </a>
+    </td>
+    <td colspan="3">
+      <a href="images/carribean-cruise/harvest-caye5.jpg" target="_blank">
+        <img src="images/carribean-cruise/harvest-caye5.jpg" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+
 
 After parasailing, I swam in the pool for a few minutes and then headed
 back to the ship. I won't bore you with the details on the rest of the

@@ -5,6 +5,7 @@ Category: Caribbean Cruise
 Tags: Cruise, Mayan Ruins, Travel
 Slug: 2017-01-01-costa-maya-mexico
 Status: published
+Image: images/carribean-cruise/costa-maya1.jpg
 
 Today we were in Costa Maya, Mexico. (Yay! Another country on my list of "been
 there's".) Costa Maya itself is not a very big town and the only industry is
