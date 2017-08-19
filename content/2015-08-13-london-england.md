@@ -64,24 +64,32 @@ order.
 -   The war rooms were merely a converted basement, reinforced as the
     war went on. If there had been a direct hit from a 500 lb bomb, the
     bunker would probably have collapsed.
+
 -   We saw the room where Churchill conducted most of the business of
     the war. When Churchill came to inspect the basement, he declared
     “this is room from which I will direct the war” and it was so.
+
 -   Churchill only slept in the underground bunker overnight three
     times, though he often had his afternoon nap in there.
+
 -   Churchill’s working hours were often from 08:00 until 03:00 the next
     morning.
+
 -   Churchill made a few BBC broadcasts from the bunker and we saw the
     BBC broadcast room and the equipment (or at least a replica thereof)
     for transmitting the broadcast all over the world.
+
 -   We saw the map room where the progress of the conflict was tracked
     and many crucial decisions were made.
+
 -   We saw the conference room where Churchill met with his Chief of
     Staff.
+
 -   Some of the displays told stories of the various people who worked
     in the war rooms during the conflict. They could not tell anyone
     where they were working or what they were doing because if a Nazi
     spy had gotten that information, bye bye war rooms.
+
 -   The war rooms are in very close proximity to 10 Downing St., the
     residence of the Prime Minister, and to the Houses of Parliament.
 

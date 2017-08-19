@@ -18,7 +18,7 @@ contribution to the advancement of aviation. They had everything from
 Spitfires to Lockheed Martin multi-purpose, supersonic war planes,
 dirigible cockpits to vertical and horizontal takeoff airplanes.
 
- [![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2015/08/img_1857-1.jpg)](http://www.the-evans.family/sumner/blog/wp-content/uploads/2015/08/img_1857-1.jpg)   
+[![](images/baltic-cruise/london-planes1.jpg)](images/baltic-cruise/london-planes1.jpg)
 On one of the walls, there was a large display outlining aeronautical
 advancements each year from the start of the 1900s to 2001. It was very
 interesting to see how fast the aeronautics industry advanced. The moon

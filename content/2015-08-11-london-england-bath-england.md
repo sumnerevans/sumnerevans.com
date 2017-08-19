@@ -35,14 +35,17 @@ facts:
     divine. They worshiped their god Sulis at the site. When the Romans
     came, they had their own god, Manerva, who they worshiped so they
     combined the two gods into Sulis-Manerva.
+
 -   Most Roman baths did not have large quantities of hot water. The
     main method of bathing was a sauna like experience followed by a
     scraping to remove any grime. The hot springs, however, made it
     possible to have large quantities of hot water (45 ºC / 113 ºF),
     second only to the enormous baths in Rome.
+
 -   The main bath is still watertight after nearly two millennia. People
     no longer swim in it, however, because (I think, don’t quote me on
     this) someone got some sickness from the water.
+
 -   The Romans didn’t just bathe at the bath complex, they also
     worshiped there. We were able to walk through temple to the god
     Sulis-Manerva. It seems very out of place in our Christian, Western

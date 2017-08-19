@@ -21,16 +21,17 @@ been to, but the rooms are still very nice. It was a very Victorian
 style of decoration.
 
 After walking around the inside of the castle, dad and I went to go walk
-on the top of the castle wall. Hannah’s hip was bothering her and mom’s
-knee wasn’t doing well so they stayed in the grass in the courtyard.
+on the top of the castle wall. Hannah’s hip was bothering her and mom's
+knee wasn't doing well so they stayed in the grass in the courtyard.
 From the wall we got some great views of the town and surrounding areas.
 
- [![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2015/08/img_1830-1.jpg)](http://www.the-evans.family/sumner/blog/wp-content/uploads/2015/08/img_1830-1.jpg)    
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2015/08/img_1828-1.jpg)](http://www.the-evans.family/sumner/blog/wp-content/uploads/2015/08/img_1828-1.jpg) 
+[![](images/baltic-cruise/warwick1.jpg)](images/baltic-cruise/warwick1.jpg)
+
+[![](images/baltic-cruise/warwick2.jpg)](images/baltic-cruise/warwick2.jpg)
 
 ------------------------------------------------------------------------
 
-After that we walked back into town for lunch at a tea parlor. I had a
+After that we walked back into town for lunch at a tea parlour. I had a
 steak pie with some salad.
 
 ------------------------------------------------------------------------
@@ -47,7 +48,7 @@ bridge while the rest of my family went to see some horses.
 ------------------------------------------------------------------------
 
 After the castle, we went back into town to see the cathedral. It was
-nice to see a cathedral that wasn’t full of tourists and which
+nice to see a cathedral that wasn't full of tourists and which
 represented a more traditional worship environment for the laymen.
 
 At this point, we decided to head back to London. The train ride took
@@ -61,7 +62,7 @@ station, the underground station that we normally go to in the morning.
 We felt kinda silly that we hadn’t gone further around the corner into
 the mall area as there were an abundance of restaurants in the mall.
 Overall, though, we’ve enjoyed our dining experiences this trip, so it
-wasn’t a real tragedy that we hadn’t discovered how close the mall was.
+wasn't a real tragedy that we hadn't discovered how close the mall was.
 
 After dinner, we went back to the apartment and I tried to catch up on
 my blog.

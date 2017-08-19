@@ -31,7 +31,7 @@ We started by going to the museum where there were displays about the
 history of the theatre. Then we went to do the guided tour. The lady
 doing the tour explained some of the history of the Globe as well (some
 of which I described above). Then she took us into the theatre itself.
-An actress was practicing her lines with what appeared to be her voice
+An actress was practising her lines with what appeared to be her voice
 coach. Even today the actors don’t use any microphones, and during the
 daytime performances, no artificial lights are used (the nighttime
 performances are lit up with artificial lights though, however they
@@ -71,7 +71,7 @@ even begin to describe the extent of this room, there were so many
 items.
 
 The next room we went to was about flight. There were a bunch of
-airplanes from a full scale model of the Wright Brother’s Flyer to a
+aeroplanes from a full scale model of the Wright Brother’s Flyer to a
 cross section of a Boeing 747.
 
 We then went to an exhibit on various clocks. I was so tired at this

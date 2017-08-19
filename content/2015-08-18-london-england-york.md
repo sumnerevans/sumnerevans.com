@@ -50,7 +50,7 @@ We then walked into the centre of town and had lunch at an English pub.
 I had a chicken and mushroom pie. It was served in a bowl and there was
 a huge puffy top. I actually took a picture of it, so here it is.
 
- [![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2015/08/img_1902-1.jpg)](http://www.the-evans.family/sumner/blog/wp-content/uploads/2015/08/img_1902-1.jpg) 
+[![](images/baltic-cruise/york1.jpg)](images/baltic-cruise/york2.jpg)
 
 ------------------------------------------------------------------------
 
@@ -65,7 +65,7 @@ reconstruction of the town during the 1800s with displays of various
 goods of the time. It was very similar to what York is like today
 (except there aren’t any horse-drawn carriages anymore).
 
- [![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2015/08/img_1913-1.jpg)](http://www.the-evans.family/sumner/blog/wp-content/uploads/2015/08/img_1913-1.jpg) 
+[![](images/baltic-cruise/york2.jpg)](images/baltic-cruise/york2.jpg)
 
 ------------------------------------------------------------------------
 

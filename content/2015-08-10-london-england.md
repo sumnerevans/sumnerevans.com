@@ -35,11 +35,13 @@ of the cool facts about St. Paul’s.
 1.  The dome is 365ft (111.25 metres) high. This is no coincidence. Sir
     Christopher Wren intentionally created the dome with 1ft per day of
     the year.
+
 2.  There are two domes that make up the impressive interior of the
     dome. From the outside, however, it appears to only contain on dome.
     That is because the second interior dome is really more of a cone
     shape with a faux-dome on the outside of the same diameter as the
-    lower dome. It’s complicated. Here’s a picture: **TODO: PIC**
+    lower dome. It’s complicated.
+
 3.  The architect of St. Paul’s, Sir Christopher Wren, did not take the
     traditional path to becoming an architect. In that time, master
     craftsmen worked up until they had enough knowledge to design a
@@ -47,18 +49,22 @@ of the cool facts about St. Paul’s.
     and studied the works of other master architects learning from their
     designs. He then designed the building and consulted other masters
     to help him implement the plan.
+
 4.  St. Paul’s was the only cathedral of the period to be completed in
     the architect’s lifetime. It took only 32 years to construct the
     building, a very short period for the time.
-5.  St. Pauls became a symbol of the resilience of London during WWII.
+
+5.  St. Paul's became a symbol of the resilience of London during WWII.
     Winston Churchill knew this full well and ordered that St. Paul’s
     Cathedral be protected at all costs. Every night of the Blitz, a
     team of volunteers guarded the building saving it from the
     incendiary bombs dropped to burn whatever they hit.
+
 6.  General Cornwallis, the one who surrendered in Yorktown, has a
     monument in St. Paul’s Cathedral. In Britain, Cornwallis isn’t
     remembered as loosing the American War for Independence, rather he
     is know for his conquests in India.
+
 7.  At the entrance to the church, there is a baptism pool/fountain
     thing. (I’m not an Anglican so I don’t know what they call it.) The
     audio guide provided by the church explained that it was placed
@@ -67,31 +73,31 @@ of the cool facts about St. Paul’s.
     she accepts the free gift of Salvation through Jesus Christ.) The
     journey up the knave to the altar where the Anglican’s worship God
     is symbolic of a Christian’s journey through life.
+
 8.  The church was originally constructed with a relatively simple
     interior. Queen Victoria did not approve and found it to be very
     bland. During her reign, she added mosaics to the celling around the
     altar and quire and rebuilt the quire.
+
 9.  The Anglican Church is neither Catholic or protestant. There are no
     ties to the Vatican and there is not quite the same hierarchy as in
     the Catholic Church. The Anglican Church is linked to the Episcopal
     Church in the United States. The Anglicans continue the Catholic
     traditions but are separate from the Catholic’s.
 
-After the cathedral, we went to lunch at this place called POD. I got a
-sandwich which was ok. After lunch we went to the British Museum. It is
-a very overwhelming museum; there is *so* much to see. We used Rick
-Steve’s audio tour to take us through the main artifacts in the Egypt,
-Assyria, and Greece. Probably the most famous artifact on display is the
-Rosetta Stone. The British Museum has one of the largest collections of
-Egyptian and Greek artifacts because the British were good at
-“borrowing” from the countries that they occupied. They were so good
-that they even borrowed all of the statues from the Parthenon in Athens.
-When we were in Athens (you can read about that in [my post from last
-trip](http://basheracademy.blogspot.co.uk/2012/05/day-24-athensgreece.html?m=0)),
-we saw the Parthenon museum where they have casts of the stones that are
-displayed in the British Museum. There were so many artifacts that I
-can’t describe them all. You will just have to go to the museum yourself
-to see them.
+After the cathedral, we went to lunch at this place called POD. I got a sandwich
+which was ok. After lunch we went to the British Museum. It is a very
+overwhelming museum; there is *so* much to see. We used Rick Steve’s audio tour
+to take us through the main artifacts in the Egypt, Assyria, and Greece.
+Probably the most famous artifact on display is the Rosetta Stone. The British
+Museum has one of the largest collections of Egyptian and Greek artifacts
+because the British were good at “borrowing” from the countries that they
+occupied. They were so good that they even borrowed all of the statues from the
+Parthenon in Athens.  When we were in Athens (you can read about that in [my
+post from last trip]({filename}day-24-athens-greece.md)), we saw the Parthenon
+museum where they have casts of the stones that are displayed in the British
+Museum. There were so many artifacts that I can’t describe them all. You will
+just have to go to the museum yourself to see them.
 
 In between seeing the Egyptian and Assyrian artifacts and seeing the
 Greek artifacts, we stopped by the cafe, had a snack, and rested our

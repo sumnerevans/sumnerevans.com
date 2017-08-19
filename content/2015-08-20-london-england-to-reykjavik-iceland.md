@@ -44,17 +44,11 @@ are two rooms, a family room and then a bedroom with panoramic views of
 the lake. I think that our suite is the best in the hotel. I'll post
 some pictures of the room here.
 
-[![IMG\_2038](http://www.the-evans.family/sumner/blog/wp-content/uploads/2015/08/img_2038-1.jpg){.size-full
-.wp-image-705 .aligncenter width="594"
-height="446"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2015/08/img_2038-1.jpg)
+[![](images/baltic-cruise/iceland1.jpg)](images/baltic-cruise/iceland1.jpg)
 
-[![IMG\_2039](http://www.the-evans.family/sumner/blog/wp-content/uploads/2015/08/img_2039-1.jpg){.size-full
-.wp-image-706 .aligncenter width="594"
-height="446"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2015/08/img_2039-1.jpg)
+[![](images/baltic-cruise/iceland2.jpg)](images/baltic-cruise/iceland2.jpg)
 
-[![IMG\_2052](http://www.the-evans.family/sumner/blog/wp-content/uploads/2015/08/img_2052-2.jpg){.size-full
-.wp-image-707 .aligncenter width="594"
-height="446"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2015/08/img_2052-2.jpg)
+[![](images/baltic-cruise/iceland3.jpg)](images/baltic-cruise/iceland3.jpg)
 
 ------------------------------------------------------------------------
 

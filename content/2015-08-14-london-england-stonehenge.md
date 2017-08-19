@@ -18,7 +18,7 @@ who built Stonehenge didn’t have a written language, it is unknown
 exactly what the structure was used for. There are some clues however,
 for example, the sun is aligned through the stones on the Spring
 Equinox. It is likely that Stonehenge was a religious-scientific centre
-where the ancient people of the area worshiped, gave sacrifices to their
+where the ancient people of the area worshipped, gave sacrifices to their
 gods, and observed the heavens.
 
 After spending some time in the visitors centre, we got on another bus

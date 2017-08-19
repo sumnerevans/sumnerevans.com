@@ -53,6 +53,7 @@ guide pointed out:
     original Globe Theatre. You can still go see plays acted out without
     stage lighting or microphones (just like they were in Shakespeare’s
     day).
+
 -   We passed under Waterloo Bridge which was built during WWII. It is
     nicknamed the Women’s Bridge since it was mainly women that
     constructed it because all the men were off fighting a war. It was
