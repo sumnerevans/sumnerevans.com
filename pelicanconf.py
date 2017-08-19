@@ -31,8 +31,13 @@ CUSTOM_CSS = 'static/custom.css'
 DEFAULT_LANG = 'en'
 
 STATIC_PATHS = ['images', 'static', 'extra/CNAME']
-
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+
+GOOGLE_ANALYTICS = 'UA-104941015-1'
+DISQUS_SITENAME = 'sumnerevans'
+
+PLUGIN_PATHS = 'plugins'
+PLUGINS = ['post_stats', 'representative_image', 'neighbors', 'related_posts']
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -53,6 +58,8 @@ SOCIAL = (('linkedin', 'https://www.linkedin.com/in/sumnerevans'),
 MENUITEMS = (('Archives', '/archives.html'),
              ('Categories', '/categories.html'),
              ('Tags', '/tags.html'),)
+
+LINKS = (('resume', '/static/resume.pdf'),)
 
 DEFAULT_PAGINATION = 10
 
