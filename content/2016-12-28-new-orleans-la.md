@@ -14,22 +14,21 @@ Segway Tour
 ===========
 
 After breakfast, we walked to Decatur street where the Segway tour
-company is located. We practiced riding the Segways in the company’s
+company is located. We practised riding the Segways in the company’s
 “office” and then headed out onto the streets.
 
 We toured all around the French Quarter and into two of the surrounding
-neighborhoods. The guide explained some of New Orleans’ history and
+neighbourhoods. The guide explained some of New Orleans’ history and
 pointed out some of the interesting sights along the way. One of the
 most interesting thing was that New Orleanians don’t call medians
 “medians”, they call them “neutral grounds”. This is because each of the
-neighborhoods used to be separately governed. The streets, however, were
+neighbourhoods used to be separately governed. The streets, however, were
 neutral and thus all commerce was done in the middle of the street out
 of reach of either jurisdiction. So to this day, medians in New Orleans
 are called “neutral grounds”.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4324-1.jpg){.alignnone
-.size-full .wp-image-1015 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4324-1.jpg)  
+[![](images/carribean-cruise/segway.jpg)](images/carribean-cruise/segway.jpg)
+
 Our guide also explained some of the History of New Orleans. I’ve
 compiled what I’ve learned from our various guides below. (If there are
 any inaccuracies, please let me know.)
@@ -41,7 +40,7 @@ The Mississippi River and all of its watershed were claimed for France
 by in 1699. New Orleans was founded by the French in 1718. The French
 controlled New Orleans for about 50 years. The French built New Orleans
 in the area that is now known as the French Quarter, but only three
-buildings in that neighborhood are actually French. The others were
+buildings in that neighbourhood are actually French. The others were
 burned in the fires during the Spanish rule.
 
 New Orleans came under Spanish rule after the *Seven Years War*. Known
@@ -103,7 +102,7 @@ the British lines. Few British made it to the breastwork and those that
 scaled it were immediately killed or captured. After suffering huge
 losses, the British commander in reserve brought his troops to cover the
 retreat of what remained of the British army on the field. Casualties
-for the British totaled over 2000 (285 of which were killed). There were
+for the British totalled over 2000 (285 of which were killed). There were
 62 casualties (13 killed) for the Americans. Jackson did all of this
 with only 4500 men while the British had nearly 14,000.
 

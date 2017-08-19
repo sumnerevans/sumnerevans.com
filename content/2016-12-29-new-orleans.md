@@ -8,9 +8,8 @@ Status: published
 
 Today we spent the entire day at the National World War II Museum.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4344-1.jpg){.alignnone
-.size-full .wp-image-1013 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/12/img_4344-1.jpg)  
+[![](images/carribean-cruise/wwii-museum.jpg)](images/carribean-cruise/wwii-museum.jpg)
+
 There were three main exhibits: an exhibit about the European Theatre of
 the war and an exhibition about the Pacific Theatre of the war and an
 exhibit with some WWII planes. Overall, it was a good comprehensive

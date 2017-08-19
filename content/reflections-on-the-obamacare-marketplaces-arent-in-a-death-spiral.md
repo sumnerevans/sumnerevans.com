@@ -1,4 +1,4 @@
-Title: Analysys and reflections on The Obamacare marketplaces aren't in a death spiral
+Title: Analysys and reflections on "The Obamacare marketplaces aren't in a death spiral"
 Date: 2017-05-21 21:51
 Author: Sumner Evans
 Category: Politics
