@@ -5,6 +5,7 @@ Category: Caribbean Cruise
 Tags: Laura Plantation, Louisiana, New Orleans, Oak Alley Plantation, Plantation, Red Fish Grill
 Slug: 2016-12-27-new-orleans-la
 Status: published
+Image: images/carribean-cruise/oak-alley.jpg
 
 This morning we woke up to very dense fog. (See below.) I don't think
 I've ever been in such dense fog for such a long time.
