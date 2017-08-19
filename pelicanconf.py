@@ -50,10 +50,11 @@ AUTHOR_FEED_RSS = None
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/sumnerevans'),
           ('stack-overflow', 'http://stackoverflow.com/users/2319844/'),
           ('github', 'https://github.com/sumnerevans'),
-          ('medium', 'https://medium.com/@sumner.evans'),
           ('instagram', 'https://www.instagram.com/sumner.evans/'),
           ('facebook', 'https://www.facebook.com/sumner.evans98'),
-          ('twitter', 'https://twitter.com/sumner_evans'),)
+          ('twitter', 'https://twitter.com/sumner_evans'),
+          ('medium', 'https://medium.com/@sumner.evans'),
+          ('youtube', 'https://www.youtube.com/channel/UCyrdRO4oJRpszr0ovN1FwBA/'),)
 
 MENUITEMS = (('Archives', '/archives.html'),
              ('Categories', '/categories.html'),

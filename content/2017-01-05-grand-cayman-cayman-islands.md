@@ -22,34 +22,128 @@ like common sense.). Our driver made it *very* clear that the Cayman Islands are
 
 We got to the boat and boarded and then then rode out to Stingray Sandbar.
 
-Stingray Sandbar
-================
+# Stingray Sandbar
 
 Out at the sandbar, we were able to hold and "kiss" the stingrays.
 
-\[gallery type="rectangular" link="file" columns="2" size="medium"
-ids="1100,1102,1328,1331" orderby="rand"\]
+<table class="gallery">
+  <tr>
+    <td>
+      <a href="images/carribean-cruise/cayman1.jpg" target="_blank">
+        <img src="images/carribean-cruise/cayman1.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="images/carribean-cruise/cayman2.jpg" target="_blank">
+        <img src="images/carribean-cruise/cayman2.jpg" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="images/carribean-cruise/cayman3.jpg" target="_blank">
+        <img src="images/carribean-cruise/cayman3.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="images/carribean-cruise/cayman4.jpg" target="_blank">
+        <img src="images/carribean-cruise/cayman4.jpg" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 It took a while for all of the people to have an opportunity to be able to hold
 the stingrays, but it was kinda cool.
 
-Snorkeling
-==========
+# Snorkeling
 
 After seeing the stingrays, we rode over to another spot where we got out to
 snorkel. I decided to wear my contacts today since the masks keep the water out
 of my eyes pretty well when I snorkeled last time. I was extremely happy about
 that decision. The coral was amazing and there was a great variety of fish.
 
-\[gallery type="rectangular" link="file" columns="2" size="medium"
-ids="1105,1106,1333,1334" orderby="rand"\]
+<table class="gallery">
+  <tr>
+    <td>
+      <a href="images/carribean-cruise/cayman5.jpg" target="_blank">
+        <img src="images/carribean-cruise/cayman5.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="images/carribean-cruise/cayman6.jpg" target="_blank">
+        <img src="images/carribean-cruise/cayman6.jpg" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="images/carribean-cruise/cayman7.jpg" target="_blank">
+        <img src="images/carribean-cruise/cayman7.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="images/carribean-cruise/cayman8.jpg" target="_blank">
+        <img src="images/carribean-cruise/cayman8.jpg" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 We went to one other site where there was a huge variety of fish, but not as
 much coral. The guides had fish-food, which they threw out, which attracted a
 ton of fish.
 
-\[gallery type="rectangular" link="file"
-ids="1112,1114,1116,1117,1335,1337,1338,1341" orderby="rand"\]
+<table class="gallery">
+  <tr>
+    <td rowspan="2" colspan="2">
+      <a href="images/carribean-cruise/cayman9.jpg" target="_blank">
+        <img src="images/carribean-cruise/cayman9.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="images/carribean-cruise/cayman10.jpg" target="_blank">
+        <img src="images/carribean-cruise/cayman10.jpg" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="images/carribean-cruise/cayman11.jpg" target="_blank">
+        <img src="images/carribean-cruise/cayman11.jpg" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="images/carribean-cruise/cayman12.jpg" target="_blank">
+        <img src="images/carribean-cruise/cayman12.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="images/carribean-cruise/cayman13.jpg" target="_blank">
+        <img src="images/carribean-cruise/cayman13.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="images/carribean-cruise/cayman14.jpg" target="_blank">
+        <img src="images/carribean-cruise/cayman14.jpg" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="images/carribean-cruise/cayman15.jpg" target="_blank">
+        <img src="images/carribean-cruise/cayman15.jpg" />
+      </a>
+    </td>
+    <td colspan="2">
+      <a href="images/carribean-cruise/cayman16.jpg" target="_blank">
+        <img src="images/carribean-cruise/cayman16.jpg" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 That was about it, we rode back to the shore and then drove back to town and
 walked to the boat. I really enjoyed the snorkeling trip, I love being in the
