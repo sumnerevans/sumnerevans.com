@@ -6,32 +6,30 @@ Tags: Battle of New Orleans, Louisiana, New Orleans
 Slug: 2016-12-28-new-orleans-la
 Status: published
 
-Today we went on a Segway tour of the city and then went straight to a
-river boat tour which went down the Mississippi River to the site of
-Andrew Jacksons stand in the Battle of New Orleans.
+Today we went on a Segway tour of the city and then went straight to a river
+boat tour which went down the Mississippi River to the site of Andrew Jacksons
+stand in the Battle of New Orleans.
 
-Segway Tour
-===========
+# Segway Tour
 
-After breakfast, we walked to Decatur street where the Segway tour
-company is located. We practised riding the Segways in the company’s
-“office” and then headed out onto the streets.
+After breakfast, we walked to Decatur street where the Segway tour company is
+located. We practised riding the Segways in the company’s “office” and then
+headed out onto the streets.
 
 We toured all around the French Quarter and into two of the surrounding
-neighbourhoods. The guide explained some of New Orleans’ history and
-pointed out some of the interesting sights along the way. One of the
-most interesting thing was that New Orleanians don’t call medians
-“medians”, they call them “neutral grounds”. This is because each of the
-neighbourhoods used to be separately governed. The streets, however, were
-neutral and thus all commerce was done in the middle of the street out
-of reach of either jurisdiction. So to this day, medians in New Orleans
-are called “neutral grounds”.
+neighbourhoods. The guide explained some of New Orleans’ history and pointed out
+some of the interesting sights along the way. One of the most interesting thing
+was that New Orleanians don’t call medians “medians”, they call them “neutral
+grounds”. This is because each of the neighbourhoods used to be separately
+governed. The streets, however, were neutral and thus all commerce was done in
+the middle of the street out of reach of either jurisdiction. So to this day,
+medians in New Orleans are called “neutral grounds”.
 
 [![](images/carribean-cruise/segway.jpg)](images/carribean-cruise/segway.jpg)
 
-Our guide also explained some of the History of New Orleans. I’ve
-compiled what I’ve learned from our various guides below. (If there are
-any inaccuracies, please let me know.)
+Our guide also explained some of the History of New Orleans. I’ve compiled what
+I’ve learned from our various guides below. (If there are any inaccuracies,
+please let me know.)
 
 History of New Orleans
 ======================
