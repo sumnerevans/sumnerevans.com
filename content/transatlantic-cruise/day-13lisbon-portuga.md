@@ -1,8 +1,7 @@
 Title: Day 13:Lisbon, Portugal
 Date: 2012-05-26 19:14
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-13lisbon-portuga
 Status: draft
 

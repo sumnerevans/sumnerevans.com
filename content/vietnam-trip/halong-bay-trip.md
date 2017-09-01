@@ -1,8 +1,7 @@
 Title: Halong Bay Trip
 Date: 2010-11-26 03:38
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: halong-bay-trip
 Status: published
 

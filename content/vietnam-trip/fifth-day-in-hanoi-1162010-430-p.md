@@ -1,8 +1,7 @@
 Title: Fifth Day - Hanoi 11/6/2010 6:00 PM
 Date: 2010-11-06 10:57
 Author: sumner
-Category: Trip to Vietnam, Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: fifth-day-in-hanoi-1162010-430-p
 Status: published
 

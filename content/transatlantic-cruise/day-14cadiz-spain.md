@@ -1,8 +1,7 @@
 Title: Day 14:Cadiz, Spain
 Date: 2012-05-26 19:15
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-14cadiz-spain
 Status: draft
 

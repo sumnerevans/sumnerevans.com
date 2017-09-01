@@ -1,8 +1,7 @@
 Title: Twenty Fith Day - Flight to Hue 11/26/10
 Date: 2010-11-27 02:40
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: twenty-fith-day-flight-to-hue-112610
 Status: published
 

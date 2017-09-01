@@ -1,8 +1,7 @@
 Title: Twenty-eight Day - Hoi An 11/29/10
 Date: 2010-11-29 13:14
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: twenty-eight-day-hoi-112910
 Status: published
 

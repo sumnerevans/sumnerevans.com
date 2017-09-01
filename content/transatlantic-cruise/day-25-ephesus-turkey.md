@@ -1,8 +1,7 @@
 Title: Day 25: Ephesus, Turkey
 Date: 2012-06-02 20:32
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-25-ephesus-turkey
 Status: draft
 

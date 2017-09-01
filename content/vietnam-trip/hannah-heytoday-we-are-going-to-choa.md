@@ -1,8 +1,7 @@
 Title: Choa Doc Ride
 Date: 2010-12-05 01:53
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: hannah-heytoday-we-are-going-to-choa
 Status: published
 

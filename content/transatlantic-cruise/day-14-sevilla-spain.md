@@ -1,8 +1,7 @@
 Title: Day 14: Sevilla, Spain
 Date: 2012-05-15 12:03
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-14-sevilla-spain
 Status: published
 

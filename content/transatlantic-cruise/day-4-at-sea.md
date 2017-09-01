@@ -1,8 +1,7 @@
 Title: Day 4: At Sea
 Date: 2012-05-04 01:00
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-4-at-sea
 Status: published
 

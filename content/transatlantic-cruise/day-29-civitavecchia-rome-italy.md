@@ -1,8 +1,7 @@
 Title: Day 29: Civitavecchia (Rome), Italy - End of Cruise
 Date: 2012-06-18 12:39
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-29-civitavecchia-rome-italy
 Status: published
 

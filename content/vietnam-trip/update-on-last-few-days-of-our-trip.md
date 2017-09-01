@@ -1,8 +1,7 @@
 Title: Ninth Day - Trek and Homestay 11/10/10
 Date: 2010-11-11 02:04
 Author: sumner
-Category: Trip to Vietnam, Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: update-on-last-few-days-of-our-trip
 Status: published
 

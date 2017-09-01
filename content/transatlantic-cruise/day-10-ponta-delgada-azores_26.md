@@ -1,8 +1,7 @@
 Title: Day 10: Ponta Delgada, Azores
 Date: 2012-05-26 19:12
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-10-ponta-delgada-azores_26
 Status: draft
 

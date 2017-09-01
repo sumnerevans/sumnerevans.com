@@ -1,8 +1,7 @@
 Title: Fourteenth Day - Hang out in Hanoi 11/15/2010 6:30 PM
 Date: 2010-11-15 12:58
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: fourteenth-day-hang-out-in-hanoi
 Status: published
 

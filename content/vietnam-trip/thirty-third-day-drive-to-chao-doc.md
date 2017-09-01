@@ -1,8 +1,7 @@
 Title: Thirty-third Day - Drive to Chao Doc 12/4/10
 Date: 2010-12-04 21:45
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: thirty-third-day-drive-to-chao-doc
 Status: published
 

@@ -1,8 +1,7 @@
 Title: Twenty-third Day - Hallong Bay 11/24/10
 Date: 2010-11-24 14:03
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: twenty-third-day-hallong-bay-112410
 Status: published
 

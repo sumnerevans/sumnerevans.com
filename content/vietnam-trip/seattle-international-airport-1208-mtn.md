@@ -1,8 +1,7 @@
 Title: Seattle International Airport 12:08 MTN Time
 Date: 2010-10-31 19:08
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: seattle-international-airport-1208-mtn
 Status: published
 

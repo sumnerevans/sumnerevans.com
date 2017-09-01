@@ -1,8 +1,7 @@
 Title: Day 19: City that Starts with a "C" (Civiteveccia); Start of Second Part of Cruise
 Date: 2012-05-21 18:13
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-19-city-that-starts-with-c-start-of
 Status: published
 

@@ -1,8 +1,7 @@
 Title: Twenty-fourth Day - Hallong Bay and Trip Back to Hanoi
 Date: 2010-11-25 14:39
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: twenty-fourth-day-hallong-bay-and-trip
 Status: published
 

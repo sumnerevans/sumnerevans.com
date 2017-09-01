@@ -1,12 +1,11 @@
 Title: Day 10: Ponta Delgada, Azores
 Date: 2012-05-14 15:02
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-10-ponta-delgada-azores
 Status: published
 
-**Sumner:**  
+**Sumner:**
 Today was our first port day. We stopped at the island of São Miguel in
 a port town named Ponta Delgada. Before commencing our journey inland we
 went up to have some breakfast. While there we saw some of the city from

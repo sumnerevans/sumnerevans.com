@@ -1,8 +1,7 @@
 Title: Saigon,(or Ho Chi Minh City)
 Date: 2010-12-12 02:18
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: saigonor-ho-chi-minh-city
 Status: published
 

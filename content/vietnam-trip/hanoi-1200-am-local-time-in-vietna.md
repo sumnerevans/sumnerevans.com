@@ -1,8 +1,7 @@
 Title: Hotel In Hanoi 11/1/2010
 Date: 2010-11-02 08:09
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: hanoi-1200-am-local-time-in-vietna
 Status: published
 

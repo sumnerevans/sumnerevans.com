@@ -1,8 +1,7 @@
 Title: Sixth Day - Hanoi 11/7/10 8:09 PM
 Date: 2010-11-07 14:31
 Author: sumner
-Category: Trip to Vietnam, Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: sixth-day-in-hanoi-12710-809-p
 Status: published
 

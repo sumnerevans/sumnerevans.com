@@ -1,8 +1,7 @@
 Title: Day 30: Rome, Italy
 Date: 2012-12-20 20:20
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-30-rome-italy
 Status: draft
 

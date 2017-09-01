@@ -1,8 +1,7 @@
 Title: Nineteenth Day - Hanging out in Hanoi 11/20/10
 Date: 2010-11-20 08:22
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: hanging-out-in-hanoi
 Status: published
 

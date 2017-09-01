@@ -1,8 +1,7 @@
 Title: Day 11:At sea
 Date: 2012-05-26 19:12
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-11at-sea
 Status: draft
 

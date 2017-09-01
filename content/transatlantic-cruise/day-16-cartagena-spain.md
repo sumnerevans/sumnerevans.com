@@ -1,8 +1,7 @@
 Title: Day 16: Cartagena, Spain
 Date: 2012-05-21 18:10
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-16-cartagena-spain
 Status: published
 

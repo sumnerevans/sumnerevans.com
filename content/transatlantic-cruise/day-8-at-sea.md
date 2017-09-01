@@ -1,8 +1,7 @@
 Title: Day 8: At Sea
 Date: 2012-05-09 15:43
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-8-at-sea
 Status: published
 

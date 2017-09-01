@@ -1,7 +1,7 @@
 Title: My About-Face on Modern UI/Metro
 Date: 2014-03-28 05:56
 Author: sumner
-Category: Uncategorized
+Category: Technology
 Slug: my-about-face-on-modern-ui-metro
 Status: draft
 
@@ -12,7 +12,6 @@ I have changed my mind. Here are my complaints about Windows 8:
 1.  Apps
     ====
 
-    <p>
     It is a little sad, but it is very true: The Windows App Store just
     doesn't have nearly enough useful apps on it. It's gotten much
     better but not enough to stop my rejection of Modern UI. In a little

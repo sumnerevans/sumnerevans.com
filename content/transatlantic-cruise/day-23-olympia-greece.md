@@ -1,8 +1,7 @@
 Title: Day 23: Olympia, Greece
 Date: 2012-06-02 20:30
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-23-olympia-greece
 Status: draft
 

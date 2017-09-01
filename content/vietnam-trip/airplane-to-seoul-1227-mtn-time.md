@@ -1,8 +1,7 @@
 Title: Airplane to Seoul 12:27 MTN Time
 Date: 2010-11-01 10:58
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: airplane-to-seoul-1227-mtn-time
 Status: published
 

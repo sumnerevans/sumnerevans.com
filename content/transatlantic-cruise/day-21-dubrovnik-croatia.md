@@ -1,8 +1,7 @@
 Title: Day 21: Dubrovnik, Croatia
 Date: 2012-05-21 18:16
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-21-dubrovnik-croatia
 Status: published
 

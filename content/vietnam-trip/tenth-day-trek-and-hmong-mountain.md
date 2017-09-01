@@ -1,8 +1,7 @@
 Title: Tenth Day - Trek and H'mong Mountain Retreat 11/10/10
 Date: 2010-11-12 06:24
 Author: sumner
-Category: Trip to Vietnam, Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: tenth-day-trek-and-hmong-mountain
 Status: published
 

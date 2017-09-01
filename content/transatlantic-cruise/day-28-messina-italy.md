@@ -1,8 +1,7 @@
 Title: Day 28: Messina, Italy
 Date: 2012-06-07 06:55
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-28-messina-italy
 Status: published
 

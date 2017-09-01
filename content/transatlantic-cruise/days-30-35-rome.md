@@ -1,8 +1,7 @@
 Title: Days 30-35: Rome
 Date: 2012-08-11 23:25
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: days-30-35-rome
 Status: draft
 

@@ -1,8 +1,7 @@
 Title: Twelfth Day - Sapa 11/13/10 8:03
 Date: 2010-11-14 07:39
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: twelfth-day-sapa
 Status: published
 

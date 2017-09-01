@@ -1,8 +1,7 @@
 Title: Another Trip!
 Date: 2012-04-22 21:44
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: another-trip
 Status: published
 

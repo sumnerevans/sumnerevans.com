@@ -1,8 +1,7 @@
 Title: Eighteenth Day - Back to Hanoi 11/19/10
 Date: 2010-11-19 10:34
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: eighteenth-day-back-to-hanoi-111910
 Status: published
 

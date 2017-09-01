@@ -1,8 +1,7 @@
 Title: Thirty-seventh Day - Phu Quoc 12/8/10
 Date: 2010-12-08 23:25
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: twenty-seventh-day-hu-quoc
 Status: published
 

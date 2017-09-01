@@ -1,8 +1,7 @@
 Title: Seventeenth Day - Trip to Phu Tho 11/18/10
 Date: 2010-11-18 12:56
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: seventeenth-day-trip-to-phu-tho-111810
 Status: published
 

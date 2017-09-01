@@ -1,8 +1,7 @@
 Title: Soc Tran Trip
 Date: 2010-12-03 23:40
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: soc-tran-trip
 Status: published
 

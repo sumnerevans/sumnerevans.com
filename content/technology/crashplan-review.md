@@ -2,7 +2,7 @@ Title: CrashPlan Review
 Date: 2013-02-28 19:47
 Author: sumner
 Category: Technology
-Tags: Backup, CrashPlan, Review, Technology
+Tags: Backup, CrashPlan, Review
 Slug: crashplan-review
 Status: published
 

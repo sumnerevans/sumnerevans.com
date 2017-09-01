@@ -1,8 +1,7 @@
 Title: Twentieth Day - Sunday in Hanoi 11/21/10
 Date: 2010-11-21 09:17
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: sunday-in-hanoi
 Status: published
 

@@ -1,8 +1,7 @@
 Title: Day 15:Malaga, Spain
 Date: 2012-05-26 19:16
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-15malaga-spain
 Status: draft
 

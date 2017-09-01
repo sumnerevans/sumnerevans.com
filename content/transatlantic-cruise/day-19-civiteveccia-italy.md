@@ -1,8 +1,7 @@
 Title: Day 19: Civiteveccia, Italy
 Date: 2017-04-07 16:00
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-19-civiteveccia-italy
 Status: draft
 

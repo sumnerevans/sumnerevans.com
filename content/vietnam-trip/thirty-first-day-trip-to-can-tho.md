@@ -1,8 +1,7 @@
 Title: Thirty-first Day - Trip to Can Tho 12/02/10
 Date: 2010-12-02 10:05
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: thirty-first-day-trip-to-can-tho
 Status: published
 

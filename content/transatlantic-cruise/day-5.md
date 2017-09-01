@@ -1,8 +1,7 @@
 Title: Day 5
 Date: 2012-05-05 23:22
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-5
 Status: draft
 

@@ -1,8 +1,7 @@
 Title: Hue and Hoi An
 Date: 2010-11-30 14:50
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: hue-and-hoi-ps-hoi-will-not-be-ti
 Status: published
 

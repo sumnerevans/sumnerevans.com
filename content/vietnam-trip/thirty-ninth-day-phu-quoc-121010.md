@@ -1,8 +1,7 @@
 Title: Thirty-ninth Day - Phu Quoc and Trip to Saigon 12/10/10
 Date: 2010-12-10 21:46
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: thirty-ninth-day-phu-quoc-121010
 Status: published
 

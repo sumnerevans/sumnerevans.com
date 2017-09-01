@@ -1,8 +1,7 @@
 Title: Third Day - Hanoi 11/4/2010 5:45 PM
 Date: 2010-11-04 10:59
 Author: sumner
-Category: Trip to Vietnam, Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: third-day-in-vietnam-1142010-545-p
 Status: published
 

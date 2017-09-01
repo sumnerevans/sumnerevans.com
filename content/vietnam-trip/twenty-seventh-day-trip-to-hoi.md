@@ -1,8 +1,7 @@
 Title: Twenty-seventh Day - Trip to Hoi An 11/28/10
 Date: 2010-11-28 12:11
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: twenty-seventh-day-trip-to-hoi
 Status: published
 

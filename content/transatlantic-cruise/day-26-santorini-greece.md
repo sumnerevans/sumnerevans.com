@@ -1,8 +1,7 @@
 Title: Day 26: Santorini, Greece
 Date: 2012-06-02 20:33
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-26-santorini-greece
 Status: draft
 

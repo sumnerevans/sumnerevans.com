@@ -1,8 +1,7 @@
 Title: Day 22: Corfu, Greece
 Date: 2012-06-02 20:30
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-22-corfu-greece
 Status: draft
 

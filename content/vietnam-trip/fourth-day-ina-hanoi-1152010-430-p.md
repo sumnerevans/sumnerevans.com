@@ -1,8 +1,7 @@
 Title: Fourth Day - Hanoi 11/5/2010 4:30 PM
 Date: 2010-11-05 10:17
 Author: sumner
-Category: Trip to Vietnam, Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: fourth-day-ina-hanoi-1152010-430-p
 Status: published
 

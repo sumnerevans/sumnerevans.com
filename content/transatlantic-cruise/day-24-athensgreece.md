@@ -1,8 +1,7 @@
 Title: Day 24: Athens,Greece
 Date: 2012-05-26 19:23
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-24-athensgreece
 Status: published
 

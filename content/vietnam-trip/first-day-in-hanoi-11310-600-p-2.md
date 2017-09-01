@@ -1,8 +1,7 @@
 Title: First Day - Hanoi 11/2/10 6:00 PM
 Date: 2010-11-02 23:52
 Author: sumner
-Category: Trip to Vietnam, Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: first-day-in-hanoi-11310-600-p-2
 Status: published
 

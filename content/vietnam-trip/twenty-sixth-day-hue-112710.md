@@ -1,8 +1,7 @@
 Title: Twenty-sixth Day - Hue 11/27/10
 Date: 2010-11-27 09:56
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: twenty-sixth-day-hue-112710
 Status: published
 

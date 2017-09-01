@@ -1,8 +1,7 @@
 Title: Quick Update On Our Trip
 Date: 2010-11-10 18:19
 Author: sumner
-Category: Trip to Vietnam, Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: update-on-our-trip
 Status: published
 

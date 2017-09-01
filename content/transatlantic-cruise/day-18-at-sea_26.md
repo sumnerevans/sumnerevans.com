@@ -1,8 +1,7 @@
 Title: Day 18: At sea
 Date: 2012-05-26 19:18
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-18-at-sea_26
 Status: draft
 

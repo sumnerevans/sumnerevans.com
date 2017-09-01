@@ -1,8 +1,7 @@
 Title: Trip to Ba be and Phu Tho
 Date: 2010-11-19 13:56
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: trip-to-babe-and-phu-tho
 Status: published
 

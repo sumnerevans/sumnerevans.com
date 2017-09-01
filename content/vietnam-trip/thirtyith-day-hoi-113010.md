@@ -1,8 +1,7 @@
 Title: Twenty-ninth Day - Hoi An 11/30/10
 Date: 2010-11-30 14:28
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: thirtyith-day-hoi-113010
 Status: published
 

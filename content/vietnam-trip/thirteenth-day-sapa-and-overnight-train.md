@@ -1,8 +1,7 @@
 Title: Thirteenth Day- Sapa and Overnight Train 11/14/10
 Date: 2010-11-14 10:49
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: thirteenth-day-sapa-and-overnight-train
 Status: published
 

@@ -1,8 +1,7 @@
 Title: Day 17: Barcelona, Spain
 Date: 2012-05-26 19:17
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-17-barcelona-spain_26
 Status: draft
 

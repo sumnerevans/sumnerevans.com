@@ -1,8 +1,7 @@
 Title: Looking Back
 Date: 2010-12-15 21:23
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: looking-back
 Status: published
 

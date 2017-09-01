@@ -1,7 +1,7 @@
 Title: How to Mac-ify Your PC for Free
 Date: 2013-02-08 11:42
 Author: sumner
-Category: Uncategorized
+Category: Technology
 Slug: how-to-mac-ify-your-pc
 Status: draft
 

@@ -1,8 +1,7 @@
 Title: Sixteenth Day - Homestay At Ba Be Lake 11/16/10
 Date: 2010-11-18 03:58
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: sixteenth-day-homestay-at-ba-be-lake
 Status: published
 

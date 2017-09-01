@@ -1,8 +1,7 @@
 Title: Day 3: Start of Cruise - At Sea
 Date: 2012-05-02 23:11
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-3-start-of-cruise-at-sea
 Status: published
 

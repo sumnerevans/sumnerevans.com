@@ -1,8 +1,7 @@
 Title: Day 9: At sea
 Date: 2012-05-26 19:11
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-9-at-sea_26
 Status: draft
 

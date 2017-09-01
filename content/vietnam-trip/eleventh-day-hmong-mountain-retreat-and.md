@@ -1,8 +1,7 @@
 Title: Eleventh Day - H'mong Mountain Retreat and Sapa 11-12-10
 Date: 2010-11-12 10:06
 Author: sumner
-Category: Trip to Vietnam, Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: eleventh-day-hmong-mountain-retreat-and
 Status: published
 

@@ -1,8 +1,7 @@
 Title: Seventh Day - Hanoi 11/8/10 4:32 PM
 Date: 2010-11-08 09:35
 Author: sumner
-Category: Trip to Vietnam, Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: seventh-day-in-hanoi-12810-432-p
 Status: published
 

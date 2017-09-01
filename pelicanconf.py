@@ -36,7 +36,7 @@ EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 GOOGLE_ANALYTICS = 'UA-104941015-1'
 DISQUS_SITENAME = 'sumnerevans'
 
-PLUGIN_PATHS = 'plugins'
+PLUGIN_PATHS = ['plugins']
 PLUGINS = ['post_stats', 'representative_image', 'neighbors', 'related_posts']
 
 # Feed generation is usually not desired when developing

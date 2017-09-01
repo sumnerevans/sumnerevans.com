@@ -1,8 +1,7 @@
 Title: Second Day - Hanoi 11/3/2010 6:00 PM
 Date: 2010-11-03 12:27
 Author: sumner
-Category: Trip to Vietnam, Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: second-day-in-hanoi
 Status: published
 

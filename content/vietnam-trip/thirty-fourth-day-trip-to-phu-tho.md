@@ -1,8 +1,7 @@
 Title: Thirty-fourth Day - Trip to Phu Quoc 12/5/10
 Date: 2010-12-05 21:50
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: thirty-fourth-day-trip-to-phu-tho
 Status: published
 

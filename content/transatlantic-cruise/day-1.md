@@ -1,8 +1,7 @@
 Title: Day 1: Flight to Ft. Lauderdale FL
 Date: 2012-05-01 01:00
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-1
 Status: published
 

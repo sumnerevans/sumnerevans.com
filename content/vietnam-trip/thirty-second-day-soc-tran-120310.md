@@ -1,8 +1,7 @@
 Title: Thirty-second Day - Soc Tran 12/03/10
 Date: 2010-12-03 18:53
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: thirty-second-day-soc-tran-120310
 Status: published
 

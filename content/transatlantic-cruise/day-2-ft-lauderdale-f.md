@@ -1,8 +1,7 @@
 Title: Day 2: Ft. Lauderdale FL
 Date: 2012-05-02 02:05
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-2-ft-lauderdale-f
 Status: draft
 

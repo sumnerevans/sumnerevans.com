@@ -1,8 +1,7 @@
 Title: Thirtyith Day - Cu Chi Tunnels (Saigon) 12/01/10
 Date: 2010-12-02 00:46
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: thirtyith-day-cu-chi-tunnels-saigon
 Status: published
 

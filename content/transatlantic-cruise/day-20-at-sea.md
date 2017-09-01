@@ -1,8 +1,7 @@
 Title: Day 20: At Sea
 Date: 2012-05-21 18:13
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-20-at-sea
 Status: published
 

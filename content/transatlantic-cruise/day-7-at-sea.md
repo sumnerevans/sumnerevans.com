@@ -1,8 +1,7 @@
 Title: Day 7: at sea
 Date: 2012-05-26 19:08
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-7-at-sea
 Status: draft
 

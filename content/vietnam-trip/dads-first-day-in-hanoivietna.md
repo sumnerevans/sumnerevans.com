@@ -1,8 +1,7 @@
 Title: Twenty-first Day - Dad's First Day in Hanoi/Vietnam 11/22/2010 3:00 PM
 Date: 2010-11-22 07:54
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: dads-first-day-in-hanoivietna
 Status: published
 

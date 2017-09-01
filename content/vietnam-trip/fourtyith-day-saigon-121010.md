@@ -1,8 +1,7 @@
 Title: Fourtyith Day - Saigon 12/11/10
 Date: 2010-12-11 21:46
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: fourtyith-day-saigon-121010
 Status: published
 

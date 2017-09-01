@@ -1,8 +1,7 @@
 Title: Eighth Day - Sapa 11/9/10 5:00 PM
 Date: 2010-11-09 10:41
 Author: sumner
-Category: Trip to Vietnam, Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: eighth-day-sapa-11910-500-p
 Status: published
 

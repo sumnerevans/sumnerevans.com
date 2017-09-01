@@ -1,7 +1,7 @@
 Title: Anouncements
 Date: 2010-12-16 07:13
 Author: sumner
-Category: Uncategorized
+Category: Trip to Vietnam
 Slug: anouncements
 Status: draft
 

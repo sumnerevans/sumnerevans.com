@@ -1,8 +1,7 @@
 Title: Fifteenth Day - Trip to Ba Be and Homestay 11/16/10
 Date: 2010-11-16 11:51
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: fifteenth-day-trip-to-ba-be-and-ba-be
 Status: published
 

@@ -1,8 +1,7 @@
 Title: Day 27: At Sea
 Date: 2012-06-07 06:54
 Author: sumner
-Category: Uncategorized
-Tags: Cruise and Europe
+Category: Transatlantic Cruise and Europe
 Slug: day-27-at-sea
 Status: published
 

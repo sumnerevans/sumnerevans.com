@@ -1,8 +1,7 @@
 Title: Pictures From Vietnam
 Date: 2010-12-16 03:26
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: pictures-from-vietna
 Status: published
 

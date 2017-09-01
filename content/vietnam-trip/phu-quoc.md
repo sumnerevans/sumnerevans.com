@@ -1,8 +1,7 @@
 Title: Phu Quoc
 Date: 2010-12-11 02:17
 Author: sumner
-Category: Uncategorized
-Tags: Trip to Vietnam
+Category: Trip to Vietnam
 Slug: phu-quoc
 Status: published
 

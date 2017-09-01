@@ -1,7 +1,7 @@
 Title: New Adventure
 Date: 2015-07-21 01:02
 Author: sumner
-Category: Uncategorized
+Category: Baltic Cruise and Northern Europe
 Slug: new-adventure
 Status: published
 

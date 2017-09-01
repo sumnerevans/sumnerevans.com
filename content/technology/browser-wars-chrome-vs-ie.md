@@ -2,7 +2,7 @@ Title: Browser Wars: Chrome vs. IE
 Date: 2013-03-03 19:10
 Author: sumner
 Category: Technology
-Tags: Browser Wars, Chrome, IE, Technology
+Tags: Browser Wars, Chrome, IE
 Slug: browser-wars-chrome-vs-ie
 Status: published
 
