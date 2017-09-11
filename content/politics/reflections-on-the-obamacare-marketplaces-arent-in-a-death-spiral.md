@@ -45,7 +45,7 @@ Article Analysis
 
 -   This is why I don't think that either party is any good.
 
-> Map: Insurers are leaving the ACA marketplace
+> ![Map: Insurers are leaving the ACA marketplace](https://espnfivethirtyeight.files.wordpress.com/2017/05/ambj-marketplace-0512-1.png?w=2048&h=475&quality=90&strip=info)
 
 -   I find it fascinating to see that the places that experienced the
     largest reductions in healthcare options were the places that Trump
