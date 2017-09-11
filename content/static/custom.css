@@ -6,6 +6,10 @@
        url('fonts/Iosevka-Term.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
+a {
+  transition: color 0.5s;
+}
+
 aside div img {
   max-width: 200px;
 }
@@ -67,13 +71,7 @@ aside div img {
 
 .portfolio-item .content h2 .gh-logo {
   text-decoration: none;
-  color: #595959;
   margin: 0 10px;
-  transition: color 0.5s;
-}
-
-.portfolio-item .content h2 .gh-logo:hover {
-  color: #000;
 }
 
 .portfolio-item .content h2 .dates {
