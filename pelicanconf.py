@@ -39,6 +39,8 @@ DISQUS_SITENAME = 'sumnerevans'
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['post_stats', 'representative_image', 'neighbors', 'related_posts']
 
+IGNORE_FILES = ['.vim-template:.md']
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None

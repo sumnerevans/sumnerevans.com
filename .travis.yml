@@ -2,11 +2,6 @@ language: python
 python:
 - 3.6
 cache: pip
-addons:
-  apt:
-    packages:
-    - optipng
-    - libjpeg-progs
 install:
 - pip install --upgrade pip
 - pip install -r requirements.txt
