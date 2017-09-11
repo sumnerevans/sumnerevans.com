@@ -38,6 +38,7 @@ DISQUS_SITENAME = 'sumnerevans'
 
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['post_stats', 'representative_image', 'neighbors', 'related_posts']
+PYGMENTS_STYLE = 'autumn'
 
 IGNORE_FILES = ['.vim-template:.md']
 
