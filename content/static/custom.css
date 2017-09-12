@@ -86,16 +86,16 @@ aside div img {
   font-size: 1.2em;
 }
 
-.portfolio-item .content .tags {
+.portfolio-item .tags {
   margin-bottom: 10px;
   line-height: 2em;
 }
 
-.portfolio-item .content .tags .tag-label {
+.portfolio-item .tags .tag-label {
   font-weight: bold;
 }
 
-.portfolio-item .content .tags span:not(.tag-label) {
+.portfolio-item .tags span:not(.tag-label) {
   color: black;
   font-family: 'Iosevka Term', monospace;
   background-color: #adcfff;
