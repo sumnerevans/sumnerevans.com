@@ -1,6 +1,6 @@
 Title: My Thoughts on Windows 8
 Date: 2013-01-17 16:02
-Author: sumner
+Author: Sumner Evans
 Category: Technology
 Slug: my-thoughts-on-windows-8
 Status: published

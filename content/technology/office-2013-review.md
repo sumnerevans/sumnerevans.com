@@ -1,6 +1,6 @@
 Title: Office 2013 Review
 Date: 2013-01-27 15:12
-Author: sumner
+Author: Sumner Evans
 Category: Technology
 Tags: Office 2013, Review
 Slug: office-2013-review

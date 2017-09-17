@@ -1,6 +1,6 @@
 Title: My About-Face on Modern UI/Metro
 Date: 2014-03-28 05:56
-Author: sumner
+Author: Sumner Evans
 Category: Technology
 Slug: my-about-face-on-modern-ui-metro
 Status: draft

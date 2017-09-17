@@ -1,6 +1,6 @@
 Title: Browser Wars: Firefox vs. Chrome
 Date: 2014-02-17 11:52
-Author: sumner
+Author: Sumner Evans
 Category: Technology
 Tags: Browser Wars, Firefox, Chrome
 Slug: browser-wars-ff-vs-chrome

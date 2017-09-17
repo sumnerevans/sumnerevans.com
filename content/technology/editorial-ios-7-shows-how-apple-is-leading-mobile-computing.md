@@ -1,6 +1,6 @@
 Title: Editorial: iOS 7 shows how Apple is leading mobile computing
 Date: 2013-06-24 06:24
-Author: sumner
+Author: Sumner Evans
 Category: Technology
 Tags: Apple, Appleinsider, iOS 7
 Slug: editorial-ios-7-shows-how-apple-is-leading-mobile-computing

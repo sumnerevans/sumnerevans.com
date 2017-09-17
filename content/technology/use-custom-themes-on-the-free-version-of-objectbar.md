@@ -1,6 +1,6 @@
 Title: Use Custom Themes on the Free Version of ObjectBar
 Date: 2013-02-08 11:56
-Author: sumner
+Author: Sumner Evans
 Category: Technology
 Tags: Custom Themes, ObjectBar, ObjectBar Free
 Slug: use-custom-themes-on-the-free-version-of-objectbar

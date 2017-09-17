@@ -1,8 +1,8 @@
 Title: Change from Great Britain Settings to US Settings on RPi
 Date: 2013-06-26 16:07
-Author: sumner
+Author: Sumner Evans
 Category: Technology
-Tags: GB Settings, Locale, Raspberry Pi, Technology, US Settings
+Tags: GB Settings, Locale, Raspberry Pi, US Settings
 Slug: change-from-great-britain-settings-to-us-settings-on-rpi
 Status: published
 

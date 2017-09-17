@@ -1,8 +1,8 @@
 Title: 3 Tips to Survive Windows 8
 Date: 2013-01-22 23:36
-Author: sumner
+Author: Sumner Evans
 Category: Technology
-Tags: Charm Bar, Modern Taskbar, Start Screen, Technology, Tip, Windows 8
+Tags: Charm Bar, Modern Taskbar, Start Screen, Tip, Windows 8
 Slug: 3-tips-to-survive-windows-8
 Status: published
 
