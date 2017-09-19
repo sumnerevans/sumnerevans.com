@@ -4,22 +4,21 @@ addons:
 python:
 - 3.6
 cache: pip
-before_install:
-- openssl aes-256-cbc -K $encrypted_f058d753363d_key -iv $encrypted_f058d753363d_iv
-  -in travis_sws_deploy_rsa.enc -out /tmp/travis_sws_deploy_rsa -d
 install:
 - pip install --upgrade pip
 - pip install -r requirements.txt
 script:
 - make publish
 before_deploy:
+  - openssl aes-256-cbc -K $encrypted_f058d753363d_key -iv $encrypted_f058d753363d_iv
+    -in travis_sws_deploy_rsa.enc -out travis_sws_deploy_rsa -d
   - eval "$(ssh-agent -s)"
-  - chmod 600 /tmp/travis_sws_deploy_rsa
-  - ssh-add /tmp/travis_sws_deploy_rsa
+  - chmod 600 travis_sws_deploy_rsa
+  - ssh-add travis_sws_deploy_rsa
+  - ssh -i travis_sws_deploy_rsa sumnerevans@sumnerevans.com ls
 deploy:
   skip_cleanup: true
   provider: script
-  script:
-    - make deploy
+  script: make deploy
   on:
     branch: source
