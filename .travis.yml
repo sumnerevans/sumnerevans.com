@@ -2,16 +2,22 @@ language: python
 python:
 - 3.6
 cache: pip
+before_install:
+- openssl aes-256-cbc -K $encrypted_f058d753363d_key -iv $encrypted_f058d753363d_iv
+  -in travis_sws_deploy_rsa.enc -out /tmp/travis_sws_deploy_rsa -d
 install:
 - pip install --upgrade pip
 - pip install -r requirements.txt
 script:
 - make publish
+before_deploy:
+  - eval "$(ssh-agent -s)"
+  - chmod 600 /tmp/travis_sws_deploy_rsa
+  - ssh-add /tmp/travis_sws_deploy_rsa
 deploy:
-  provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: output
-  target_branch: master
+  provider: script
+  script:
+    - make deploy
   on:
     branch: source
