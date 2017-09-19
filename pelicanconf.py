@@ -30,8 +30,7 @@ CUSTOM_CSS = 'static/custom.css'
 
 DEFAULT_LANG = 'en'
 
-STATIC_PATHS = ['images', 'static', 'extra/CNAME']
-EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+STATIC_PATHS = ['images', 'static']
 
 GOOGLE_ANALYTICS = 'UA-104941015-1'
 DISQUS_SITENAME = 'sumnerevans'
