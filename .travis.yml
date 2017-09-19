@@ -1,4 +1,6 @@
 language: python
+addons:
+  ssh_known_hosts: sumnerevans.com
 python:
 - 3.6
 cache: pip
