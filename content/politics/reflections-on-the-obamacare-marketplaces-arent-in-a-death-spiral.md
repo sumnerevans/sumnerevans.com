@@ -2,6 +2,7 @@ Title: Analysys and reflections on "The Obamacare marketplaces aren't in a death
 Date: 2017-05-21 21:51
 Author: Sumner Evans
 Category: Politics
+Tags: ObamaCare
 Slug: reflections-on-the-obamacare-marketplaces-arent-in-a-death-spiral
 Status: published
 
