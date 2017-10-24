@@ -7,7 +7,7 @@ Slug: at-sea-1
 Status: published
 
 Today we were at sea and it was fairly rough. The swells were up to 6
-metres (20ft). Of course, the ship didn’t go up that high, but it was
+metres (20ft). Of course, the ship didn't go up that high, but it was
 going up and down quite a bit. Mom spent most of the day in the cabin,
 only coming out for dinner. I was up more than her. I ate all three
 meals, but towards the middle of the afternoon it was really getting

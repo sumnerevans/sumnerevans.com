@@ -78,21 +78,21 @@ cool facts about St. Paul's.
     the Vatican and there is not quite the same hierarchy as in the Catholic
     Church. The Anglican Church is linked to the Episcopal Church in the United
     States. The Anglicans continue the Catholic traditions but are separate from
-    the Catholic’s.
+    the Catholic's.
 
 After the cathedral, we went to lunch at this place called POD. I got a sandwich
 which was ok. After lunch we went to the British Museum. It is a very
-overwhelming museum; there is *so* much to see. We used Rick Steve’s audio tour
+overwhelming museum; there is *so* much to see. We used Rick Steve's audio tour
 to take us through the main artifacts in the Egypt, Assyria, and Greece.
 Probably the most famous artifact on display is the Rosetta Stone. The British
 Museum has one of the largest collections of Egyptian and Greek artifacts
-because the British were good at “borrowing” from the countries that they
+because the British were good at "borrowing" from the countries that they
 occupied. They were so good that they even borrowed all of the statues from the
 Parthenon in Athens.  When we were in Athens (you can read about that in [my
-post from last trip]({filename}day-24-athens-greece.md)), we saw the Parthenon
-museum where they have casts of the stones that are displayed in the British
-Museum. There were so many artifacts that I can’t describe them all. You will
-just have to go to the museum yourself to see them.
+post from last trip]({filename}/transatlantic-cruise/day-24-athens-greece.md)),
+we saw the Parthenon museum where they have casts of the stones that are
+displayed in the British Museum.  There were so many artifacts that I can’t
+describe them all. You will just have to go to the museum yourself to see them.
 
 In between seeing the Egyptian and Assyrian artifacts and seeing the
 Greek artifacts, we stopped by the cafe, had a snack, and rested our
@@ -100,7 +100,7 @@ feet.
 
 After doing the Rick Steve’s tour, we went on our own through some of
 the other galleries. At this point, everything was beginning to morph
-into just “things that dead people used, worshiped, or looked at”. I
+into just "things that dead people used, worshipped, or looked at". I
 think it would be great if you could live in London and get a pass and
 do just one room for a few hours every day.
 
