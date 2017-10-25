@@ -34,9 +34,6 @@ STATIC_PATHS = ['images', 'static']
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{slug}.html'
 
-GOOGLE_ANALYTICS = 'UA-104941015-1'
-DISQUS_SITENAME = 'sumnerevans'
-
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['post_stats', 'representative_image', 'neighbors', 'related_posts']
 PYGMENTS_STYLE = 'autumn'

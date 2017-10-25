@@ -60,8 +60,6 @@ took off and sent them to us. (We returned the favor of course.)
   </tr>
 </table>
 
-
-
 After parasailing, I swam in the pool for a few minutes and then headed
 back to the ship. I won't bore you with the details on the rest of the
 evening, and I'm really far behind on writing anyway, so bye!
