@@ -11,11 +11,5 @@ install:
 - pip install -r requirements.txt
 script:
 - make publish
-deploy:
-  skip_cleanup: true
-  provider: script
-  script:
-  - ls -lah
-  - make deploy
-on:
-  branch: master
+after_success:
+- test $TRAVIS_BRANCH = "master" && ls -lah && make deploy

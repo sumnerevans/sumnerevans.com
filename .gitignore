@@ -1,3 +1,5 @@
+sws_deploy_rsa
+sws_deploy_rsa.pub
 output
 *.pid
 
