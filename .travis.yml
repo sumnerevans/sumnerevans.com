@@ -12,4 +12,4 @@ install:
 script:
 - make publish
 after_success:
-- test $TRAVIS_BRANCH = "master" && ls -lah && make deploy
+- test $TRAVIS_BRANCH = "master" && make deploy
