@@ -1,4 +1,4 @@
-Title: 2016-12-26 - Denver to New Orleans
+Title: Denver to New Orleans
 Date: 2016-12-26 19:49
 Author: Sumner Evans
 Category: Caribbean Cruise
@@ -53,12 +53,12 @@ had some Jambalaya (jum-bah-lie-uh) and a beignet. The Jambalaya was a bit
 spicier than I expected, but it was good. The beignet was good too (I mainly ate
 the powdered sugar on top though).
 
-[![Cafe Beignet](images/carribean-cruise/cafe-beignet.jpg "Cafe
-Beignet")](images/carribean-cruise/cafe-beignet.jpg)
+[![Cafe Beignet]({filename}/images/carribean-cruise/cafe-beignet.jpg "Cafe
+Beignet")]({filename}/images/carribean-cruise/cafe-beignet.jpg)
 
 [![Performers at Cafe
-Beignet](images/carribean-cruise/performers-cafe-beignet.jpg "Performers at Cafe
-Beignet")](images/carribean-cruise/performers-cafe-beignet.jpg)
+Beignet]({filename}/images/carribean-cruise/performers-cafe-beignet.jpg "Performers at Cafe
+Beignet")]({filename}/images/carribean-cruise/performers-cafe-beignet.jpg)
 
 After lunch, we continued down Bourbon St. About half way through the French
 Quarter, it became much more residential. Crime seems to be a fairly big problem
@@ -87,8 +87,8 @@ edible and included with the price of the room. Then we walked down to Jimmy
 Johns to get sandwiches for tomorrow. I got this photo while we were out getting
 Jimmy Johns.
 
-[![A cool building lit up at night](images/carribean-cruise/cool-building-at-night.jpg "A cool building lit up at night")
-](images/carribean-cruise/cool-building-at-night.jpg)
+[![A cool building lit up at night]({filename}/images/carribean-cruise/cool-building-at-night.jpg "A cool building lit up at night")
+]({filename}/images/carribean-cruise/cool-building-at-night.jpg)
 
 Now we are back in the hotel getting ready to go to bed.
 

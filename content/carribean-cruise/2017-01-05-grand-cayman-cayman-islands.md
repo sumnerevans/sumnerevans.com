@@ -1,4 +1,4 @@
-Title: 2017-01-05 - Grand Cayman, Cayman Islands
+Title: Grand Cayman, Cayman Islands
 Date: 2017-01-05 16:47
 Author: sumner
 Category: Caribbean Cruise
@@ -29,25 +29,25 @@ Out at the sandbar, we were able to hold and "kiss" the stingrays.
 <table class="gallery">
   <tr>
     <td>
-      <a href="images/carribean-cruise/cayman1.jpg" target="_blank">
-        <img src="images/carribean-cruise/cayman1.jpg" />
+      <a href="{filename}/images/carribean-cruise/cayman1.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cayman1.jpg" />
       </a>
     </td>
     <td>
-      <a href="images/carribean-cruise/cayman2.jpg" target="_blank">
-        <img src="images/carribean-cruise/cayman2.jpg" />
+      <a href="{filename}/images/carribean-cruise/cayman2.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cayman2.jpg" />
       </a>
     </td>
   </tr>
   <tr>
     <td>
-      <a href="images/carribean-cruise/cayman3.jpg" target="_blank">
-        <img src="images/carribean-cruise/cayman3.jpg" />
+      <a href="{filename}/images/carribean-cruise/cayman3.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cayman3.jpg" />
       </a>
     </td>
     <td>
-      <a href="images/carribean-cruise/cayman4.jpg" target="_blank">
-        <img src="images/carribean-cruise/cayman4.jpg" />
+      <a href="{filename}/images/carribean-cruise/cayman4.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cayman4.jpg" />
       </a>
     </td>
   </tr>
@@ -66,25 +66,25 @@ that decision. The coral was amazing and there was a great variety of fish.
 <table class="gallery">
   <tr>
     <td>
-      <a href="images/carribean-cruise/cayman5.jpg" target="_blank">
-        <img src="images/carribean-cruise/cayman5.jpg" />
+      <a href="{filename}/images/carribean-cruise/cayman5.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cayman5.jpg" />
       </a>
     </td>
     <td>
-      <a href="images/carribean-cruise/cayman6.jpg" target="_blank">
-        <img src="images/carribean-cruise/cayman6.jpg" />
+      <a href="{filename}/images/carribean-cruise/cayman6.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cayman6.jpg" />
       </a>
     </td>
   </tr>
   <tr>
     <td>
-      <a href="images/carribean-cruise/cayman7.jpg" target="_blank">
-        <img src="images/carribean-cruise/cayman7.jpg" />
+      <a href="{filename}/images/carribean-cruise/cayman7.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cayman7.jpg" />
       </a>
     </td>
     <td>
-      <a href="images/carribean-cruise/cayman8.jpg" target="_blank">
-        <img src="images/carribean-cruise/cayman8.jpg" />
+      <a href="{filename}/images/carribean-cruise/cayman8.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cayman8.jpg" />
       </a>
     </td>
   </tr>
@@ -97,49 +97,49 @@ ton of fish.
 <table class="gallery">
   <tr>
     <td rowspan="2" colspan="2">
-      <a href="images/carribean-cruise/cayman9.jpg" target="_blank">
-        <img src="images/carribean-cruise/cayman9.jpg" />
+      <a href="{filename}/images/carribean-cruise/cayman9.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cayman9.jpg" />
       </a>
     </td>
     <td>
-      <a href="images/carribean-cruise/cayman10.jpg" target="_blank">
-        <img src="images/carribean-cruise/cayman10.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="images/carribean-cruise/cayman11.jpg" target="_blank">
-        <img src="images/carribean-cruise/cayman11.jpg" />
+      <a href="{filename}/images/carribean-cruise/cayman10.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cayman10.jpg" />
       </a>
     </td>
   </tr>
   <tr>
     <td>
-      <a href="images/carribean-cruise/cayman12.jpg" target="_blank">
-        <img src="images/carribean-cruise/cayman12.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="images/carribean-cruise/cayman13.jpg" target="_blank">
-        <img src="images/carribean-cruise/cayman13.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="images/carribean-cruise/cayman14.jpg" target="_blank">
-        <img src="images/carribean-cruise/cayman14.jpg" />
+      <a href="{filename}/images/carribean-cruise/cayman11.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cayman11.jpg" />
       </a>
     </td>
   </tr>
   <tr>
     <td>
-      <a href="images/carribean-cruise/cayman15.jpg" target="_blank">
-        <img src="images/carribean-cruise/cayman15.jpg" />
+      <a href="{filename}/images/carribean-cruise/cayman12.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cayman12.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="{filename}/images/carribean-cruise/cayman13.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cayman13.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="{filename}/images/carribean-cruise/cayman14.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cayman14.jpg" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="{filename}/images/carribean-cruise/cayman15.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cayman15.jpg" />
       </a>
     </td>
     <td colspan="2">
-      <a href="images/carribean-cruise/cayman16.jpg" target="_blank">
-        <img src="images/carribean-cruise/cayman16.jpg" />
+      <a href="{filename}/images/carribean-cruise/cayman16.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cayman16.jpg" />
       </a>
     </td>
   </tr>

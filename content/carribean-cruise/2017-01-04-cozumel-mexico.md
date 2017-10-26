@@ -1,4 +1,4 @@
-Title: 2017-01-04 - Cozumel, Mexico
+Title: Cozumel, Mexico
 Date: 2017-01-04 21:17
 Author: sumner
 Category: Caribbean Cruise
@@ -29,26 +29,26 @@ pictures with captions describing what each one is showing.
 <table class="gallery">
   <tr>
     <td>
-      <a href="images/carribean-cruise/cozumel1.jpg" target="_blank">
-        <img src="images/carribean-cruise/cozumel1.jpg" />
+      <a href="{filename}/images/carribean-cruise/cozumel1.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cozumel1.jpg" />
       </a>
     </td>
     <td rowspan="2" width="50%">
-      <a href="images/carribean-cruise/cozumel2.jpg" target="_blank">
-        <img src="images/carribean-cruise/cozumel2.jpg" />
+      <a href="{filename}/images/carribean-cruise/cozumel2.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cozumel2.jpg" />
       </a>
     </td>
     <td rowspan="2" width="30%">
-      <a href="images/carribean-cruise/cozumel4.jpg" target="_blank">
-        <img src="images/carribean-cruise/cozumel4.jpg" />
+      <a href="{filename}/images/carribean-cruise/cozumel4.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cozumel4.jpg" />
       </a>
     </td>
   </tr>
 
   <tr>
     <td>
-      <a href="images/carribean-cruise/cozumel3.jpg" target="_blank">
-        <img src="images/carribean-cruise/cozumel3.jpg" />
+      <a href="{filename}/images/carribean-cruise/cozumel3.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/cozumel3.jpg" />
       </a>
     </td>
   </tr>
@@ -56,7 +56,7 @@ pictures with captions describing what each one is showing.
 
 # Cenota
 
-On our way back to the ferry, our driver stopped at a cenota, a sinkhole where
+On our way back to the ferry, our driver stopped at a *cenota*, a sinkhole where
 water comes up from the ground in a spring. I was the only one brave enough to
 jump in. It was not freezing like some springs that I've been to, but it was
 cool and refreshing. We couldn't stay long since we had to be at the ferry boat

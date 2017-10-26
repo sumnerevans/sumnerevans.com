@@ -1,11 +1,10 @@
-Title: 2017-01-01 - Costa Maya, Mexico
+Title: Costa Maya, Mexico
 Date: 2017-01-01 10:21
 Author: sumner
 Category: Caribbean Cruise
 Tags: Cruise, Mayan Ruins, Travel
 Slug: 2017-01-01-costa-maya-mexico
 Status: published
-Image: images/carribean-cruise/costa-maya1.jpg
 
 Today we were in Costa Maya, Mexico. (Yay! Another country on my list of "been
 there's".) Costa Maya itself is not a very big town and the only industry is
@@ -116,21 +115,21 @@ temple, it was almost guaranteed that there would be some human sacrifices.
 <table class="gallery">
   <tr>
     <td colspan="2">
-      <a href="images/carribean-cruise/costa-maya1.jpg" target="_blank">
-        <img src="images/carribean-cruise/costa-maya1.jpg" />
+      <a href="{filename}/images/carribean-cruise/costa-maya1.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/costa-maya1.jpg" />
       </a>
     </td>
   </tr>
 
   <tr>
     <td>
-      <a href="images/carribean-cruise/costa-maya2.jpg" target="_blank">
-        <img src="images/carribean-cruise/costa-maya2.jpg" />
+      <a href="{filename}/images/carribean-cruise/costa-maya2.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/costa-maya2.jpg" />
       </a>
     </td>
     <td>
-      <a href="images/carribean-cruise/costa-maya3.jpg" target="_blank">
-        <img src="images/carribean-cruise/costa-maya3.jpg" alt="The main temple" />
+      <a href="{filename}/images/carribean-cruise/costa-maya3.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/costa-maya3.jpg" alt="The main temple" />
       </a>
       The main temple
     </td>
@@ -191,26 +190,26 @@ items. It was a very good meal.
 <table class="gallery">
   <tr>
     <td colspan="3">
-      <a href="images/carribean-cruise/costa-maya4.jpg" target="_blank">
-        <img src="images/carribean-cruise/costa-maya4.jpg" />
+      <a href="{filename}/images/carribean-cruise/costa-maya4.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/costa-maya4.jpg" />
       </a>
     </td>
   </tr>
 
   <tr>
     <td>
-      <a href="images/carribean-cruise/costa-maya5.jpg" target="_blank">
-        <img src="images/carribean-cruise/costa-maya5.jpg" />
+      <a href="{filename}/images/carribean-cruise/costa-maya5.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/costa-maya5.jpg" />
       </a>
     </td>
     <td>
-      <a href="images/carribean-cruise/costa-maya6.jpg" target="_blank">
-        <img src="images/carribean-cruise/costa-maya6.jpg" alt="The main temple" />
+      <a href="{filename}/images/carribean-cruise/costa-maya6.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/costa-maya6.jpg" alt="The main temple" />
       </a>
     </td>
     <td>
-      <a href="images/carribean-cruise/costa-maya7.jpg" target="_blank">
-        <img src="images/carribean-cruise/costa-maya7.jpg" alt="The main temple" />
+      <a href="{filename}/images/carribean-cruise/costa-maya7.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/costa-maya7.jpg" alt="The main temple" />
       </a>
     </td>
   </tr>

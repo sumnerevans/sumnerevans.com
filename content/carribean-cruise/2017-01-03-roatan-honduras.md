@@ -1,4 +1,4 @@
-Title: 2017-01-03 - Roatan, Honduras
+Title: Roatan, Honduras
 Date: 2017-01-03 21:05
 Author: sumner
 Category: Caribbean Cruise
@@ -35,21 +35,21 @@ my hair and pulling it. It was a definitely unique experience though.
 <table class="gallery">
   <tr>
     <td rowspan="2" width="70%">
-      <a href="images/carribean-cruise/roatan1.jpg" target="_blank">
-        <img src="images/carribean-cruise/roatan1.jpg" />
+      <a href="{filename}/images/carribean-cruise/roatan1.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/roatan1.jpg" />
       </a>
     </td>
 
     <td>
-      <a href="images/carribean-cruise/roatan2.jpg" target="_blank">
-        <img src="images/carribean-cruise/roatan2.jpg" />
+      <a href="{filename}/images/carribean-cruise/roatan2.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/roatan2.jpg" />
       </a>
     </td>
   </tr>
   <tr>
     <td>
-      <a href="images/carribean-cruise/roatan3.jpg" target="_blank">
-        <img src="images/carribean-cruise/roatan3.jpg" />
+      <a href="{filename}/images/carribean-cruise/roatan3.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/roatan3.jpg" />
       </a>
     </td>
   </tr>
@@ -69,14 +69,14 @@ too.
 <table class="gallery">
   <tr>
     <td>
-      <a href="images/carribean-cruise/roatan4.jpg" target="_blank">
-        <img src="images/carribean-cruise/roatan4.jpg" />
+      <a href="{filename}/images/carribean-cruise/roatan4.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/roatan4.jpg" />
       </a>
     </td>
 
     <td>
-      <a href="images/carribean-cruise/roatan5.jpg" target="_blank">
-        <img src="images/carribean-cruise/roatan5.jpg" />
+      <a href="{filename}/images/carribean-cruise/roatan5.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/roatan5.jpg" />
       </a>
     </td>
   </tr>
@@ -106,14 +106,14 @@ fun riding them in the water.
 <table class="gallery">
   <tr>
     <td>
-      <a href="images/carribean-cruise/roatan6.jpg" target="_blank">
-        <img src="images/carribean-cruise/roatan6.jpg" />
+      <a href="{filename}/images/carribean-cruise/roatan6.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/roatan6.jpg" />
       </a>
     </td>
 
     <td>
-      <a href="images/carribean-cruise/roatan7.jpg" target="_blank">
-        <img src="images/carribean-cruise/roatan7.jpg" />
+      <a href="{filename}/images/carribean-cruise/roatan7.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/roatan7.jpg" />
       </a>
     </td>
   </tr>
@@ -143,44 +143,44 @@ not doing so good. I thought it was pretty cool and I had a lot of fun.
 <table class="gallery">
   <tr>
     <td colspan="3">
-      <a href="images/carribean-cruise/roatan14.jpg" target="_blank">
-        <img src="images/carribean-cruise/roatan14.jpg" />
+      <a href="{filename}/images/carribean-cruise/roatan14.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/roatan14.jpg" />
       </a>
     </td>
   </tr>
   <tr>
     <td>
-      <a href="images/carribean-cruise/roatan8.jpg" target="_blank">
-        <img src="images/carribean-cruise/roatan8.jpg" />
+      <a href="{filename}/images/carribean-cruise/roatan8.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/roatan8.jpg" />
       </a>
     </td>
 
     <td>
-      <a href="images/carribean-cruise/roatan9.jpg" target="_blank">
-        <img src="images/carribean-cruise/roatan9.jpg" />
+      <a href="{filename}/images/carribean-cruise/roatan9.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/roatan9.jpg" />
       </a>
     </td>
 
     <td>
-      <a href="images/carribean-cruise/roatan10.jpg" target="_blank">
-        <img src="images/carribean-cruise/roatan10.jpg" />
+      <a href="{filename}/images/carribean-cruise/roatan10.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/roatan10.jpg" />
       </a>
     </td>
   </tr>
   <tr>
     <td>
-      <a href="images/carribean-cruise/roatan11.jpg" target="_blank">
-        <img src="images/carribean-cruise/roatan11.jpg" />
+      <a href="{filename}/images/carribean-cruise/roatan11.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/roatan11.jpg" />
       </a>
     </td>
     <td>
-      <a href="images/carribean-cruise/roatan12.jpg" target="_blank">
-        <img src="images/carribean-cruise/roatan12.jpg" />
+      <a href="{filename}/images/carribean-cruise/roatan12.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/roatan12.jpg" />
       </a>
     </td>
     <td>
-      <a href="images/carribean-cruise/roatan13.jpg" target="_blank">
-        <img src="images/carribean-cruise/roatan13.jpg" />
+      <a href="{filename}/images/carribean-cruise/roatan13.jpg" target="_blank">
+        <img src="{filename}/images/carribean-cruise/roatan13.jpg" />
       </a>
     </td>
   </tr>

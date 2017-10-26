@@ -35,7 +35,7 @@ ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{slug}.html'
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['post_stats', 'representative_image', 'neighbors', 'related_posts']
+PLUGINS = ['post_stats', 'neighbors', 'related_posts']
 PYGMENTS_STYLE = 'autumn'
 
 IGNORE_FILES = ['.vim-template:.md']
@@ -66,4 +66,4 @@ LINKS = (('resume', '/static/resume.pdf'),)
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
