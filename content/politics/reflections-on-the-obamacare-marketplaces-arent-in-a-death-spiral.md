@@ -36,6 +36,8 @@ Article Analysis
     paying for my health issues would be a good idea), thus I believe
     that it is not something that I can delegate to the government.
 
+---
+
 > The problem with Obamacare, Laszewski believes, is that it prioritized
 > lower-income people over those with more moderate incomes. But he said
 > the GOP bill to repeal and replace parts of the ACA, which narrowly
@@ -45,6 +47,8 @@ Article Analysis
 > cases creating an unbalanced marketplace.
 
 -   This is why I don't think that either party is any good.
+
+---
 
 > ![Map: Insurers are leaving the ACA marketplace](https://espnfivethirtyeight.files.wordpress.com/2017/05/ambj-marketplace-0512-1.png?w=2048&h=475&quality=90&strip=info)
 
