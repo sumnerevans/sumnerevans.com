@@ -106,10 +106,12 @@ aside div img {
   font-weight: bold;
 }
 
-/* Medium link */
-/* ul.social a.sc-medium { */
-  /* background-color: #00ab6b; */
-/* } */
+.portfolio-item .video-link img {
+  max-width: none;
+  float: none;
+  width: 90%;
+  margin: 0 auto;
+}
 
 /* Image Galleries */
 .gallery {
