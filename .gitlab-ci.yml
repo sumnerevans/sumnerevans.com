@@ -18,6 +18,8 @@ pelican:
 
 deploy:
   stage: deploy
+  only:
+    - master
   before_script:
     - apk update && apk upgrade && apk add openssh rsync
 
@@ -34,5 +36,3 @@ deploy:
     # Send the content up to sumnerevans.com
     - rsync -vr --delete-after output/ sumnerevans@sumnerevans.com:sumnerevans.com
     - scp -i sws_deploy_rsa content/extra/google665b11e17b58ce89.html sumnerevans@sumnerevans.com:sumnerevans.com
-  only:
-    - master
