@@ -13,10 +13,10 @@ to GitHub Pages. In this article, I will describe how I set this up.
 
 # Overview
 I am hosting the source code for my website publicly on GitHub at
-[github.com/sumnerevans/sumnerevans.github.io](https://github.com/sumnerevans/sumnerevans.github.io)
+[github.com/sumnerevans/sumnerevans.com](https://github.com/sumnerevans/sumnerevans.com)
 on the `source` branch. I am then using Travis CI to build my site on every push
 to `source` and automatically deploy it to the `master` branch of my
-`sumnerevans.github.io` repository.
+`sumnerevans.com` repository.
 
 ## Prerequisites
 - I assume that you have basic competency using Git and GitHub. I do not give
@@ -51,7 +51,7 @@ token for use in the "Set up Travis CI" step.
 Now you need to add all of your Pelican source code to the `source` branch and
 commit it. If you used the `pelican-quickstart` command to create your site, you
 should have a `Makefile`. If not, you can look at the one for this site:
-[`sumnerevans.github.com/Makefile`](https://github.com/sumnerevans/sumnerevans.github.io/blob/source/Makefile).
+[`sumnerevans.com/Makefile`](https://github.com/sumnerevans/sumnerevans.com/blob/source/Makefile).
 
 Ensure that the `Makefile` has a `publish` (or similar) command which outputs
 the built site to an output directory.
