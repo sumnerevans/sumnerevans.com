@@ -30,7 +30,13 @@ CUSTOM_CSS = 'static/custom.css'
 
 DEFAULT_LANG = 'en'
 
-STATIC_PATHS = ['images', 'static']
+STATIC_PATHS = ['images', 'static', 'extra/google665b11e17b58ce89.html']
+EXTRA_PATH_METADATA = {
+    'extra/google665b11e17b58ce89.html': {
+        'path': 'google665b11e17b58ce89.html',
+    },
+}
+
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{slug}.html'
 
