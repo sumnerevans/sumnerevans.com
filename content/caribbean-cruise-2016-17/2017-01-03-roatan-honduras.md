@@ -1,7 +1,7 @@
 Title: Roatan, Honduras
 Date: 2017-01-03 21:05
 Author: sumner
-Category: Caribbean Cruise
+Category: Caribbean Cruise 2016-17
 Tags: Honduras, Horseback Riding, Monkey, Petting Zoo, Roatan, Sloth, Snorkeling
 Slug: 2017-01-03-roatan-honduras
 Status: published

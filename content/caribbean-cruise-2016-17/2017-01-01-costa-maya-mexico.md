@@ -1,7 +1,7 @@
 Title: Costa Maya, Mexico
 Date: 2017-01-01 10:21
 Author: sumner
-Category: Caribbean Cruise
+Category: Caribbean Cruise 2016-17
 Tags: Cruise, Mayan Ruins, Travel
 Slug: 2017-01-01-costa-maya-mexico
 Status: published

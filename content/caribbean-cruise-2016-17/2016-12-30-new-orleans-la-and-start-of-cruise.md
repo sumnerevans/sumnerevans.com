@@ -1,7 +1,7 @@
 Title: New Orleans, LA and Start of Cruise
 Date: 2016-12-30 10:00
 Author: sumner
-Category: Caribbean Cruise
+Category: Caribbean Cruise 2016-17
 Tags: Cruise, Louisiana, New Orleans
 Slug: 2016-12-30-new-orleans-la-and-start-of-cruise
 Status: published

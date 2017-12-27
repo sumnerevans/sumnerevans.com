@@ -1,7 +1,7 @@
 Title: Harvest Caye, Belize
 Date: 2017-01-02 10:32
 Author: sumner
-Category: Caribbean Cruise
+Category: Caribbean Cruise 2016-17
 Tags: Belize, Cruise, Harvest Caye, Paddle Board, Parasailing
 Slug: 2017-01-02-harvest-caye-belize
 Status: published

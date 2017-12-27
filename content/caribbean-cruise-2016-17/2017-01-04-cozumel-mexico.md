@@ -1,7 +1,7 @@
 Title: Cozumel, Mexico
 Date: 2017-01-04 21:17
 Author: sumner
-Category: Caribbean Cruise
+Category: Caribbean Cruise 2016-17
 Tags: Cenota, Cozumel, Mexico, Tulum
 Slug: 2017-01-04-cozumel-mexico
 Status: published

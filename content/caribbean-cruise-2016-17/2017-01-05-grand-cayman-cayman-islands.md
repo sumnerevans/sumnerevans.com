@@ -1,7 +1,7 @@
 Title: Grand Cayman, Cayman Islands
 Date: 2017-01-05 16:47
 Author: sumner
-Category: Caribbean Cruise
+Category: Caribbean Cruise 2016-17
 Tags: Cayman Islands, Grand Cayman, Snorkeling, Stingray
 Slug: 2017-01-05-grand-cayman-cayman-islands
 Status: published

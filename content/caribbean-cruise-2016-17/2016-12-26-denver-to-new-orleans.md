@@ -1,7 +1,7 @@
 Title: Denver to New Orleans
 Date: 2016-12-26 19:49
 Author: Sumner Evans
-Category: Caribbean Cruise
+Category: Caribbean Cruise 2016-17
 Tags: Colorado, Denver, French Quarter, Lousiana, New Orleans, St. Louis Cathedral
 Slug: 2016-12-26-denver-to-new-orleans
 Status: published

@@ -1,7 +1,7 @@
 Title: New Orleans, LA
 Date: 2016-12-28 18:50
 Author: sumner
-Category: Caribbean Cruise
+Category: Caribbean Cruise 2016-17
 Tags: Battle of New Orleans, Louisiana, New Orleans
 Slug: 2016-12-28-new-orleans-la
 Status: published

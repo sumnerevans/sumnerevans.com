@@ -1,7 +1,7 @@
 Title: New Orleans, LA
 Date: 2016-12-29 18:50
 Author: sumner
-Category: Caribbean Cruise
+Category: Caribbean Cruise 2016-17
 Tags: Cruise, Louisiana, New Orleans, WWII Museum
 Slug: 2016-12-29-new-orleans
 Status: published
