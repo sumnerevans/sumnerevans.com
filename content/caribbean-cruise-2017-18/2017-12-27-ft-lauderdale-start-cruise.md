@@ -1,5 +1,5 @@
 Title: Ft. Lauderdale, Start of Cruise
-Date: 2017-12-27 08:19
+Date: 2017-12-27 08:00
 Author: Sumner Evans
 Category: Caribbean Cruise 2017-18
 Tags: Ft. Lauderdale, Florida, Cruise
@@ -36,7 +36,7 @@ Indonesia, they also really liked Hannah and I since we reminded them of their
 children back home.) After dinner, we went over to say hello to him. His name is
 Gede and he actually remembered us!
 
-We then went over to BILLBOARD on Board where two pianists play hits from the
+We then went over to *BILLBOARD on Board* where two pianists play hits from the
 last century or so. We only stayed a couple minutes because there was a variety
 show on the main stage where they showcased some of the upcoming entertainment.
 
