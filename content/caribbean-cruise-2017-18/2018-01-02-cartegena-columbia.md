@@ -2,10 +2,11 @@ Title: Cartegena, Columbia
 Date: 2018-01-02 23:00
 Author: Sumner Evans
 Category: Caribbean Cruise 2017-18
-Tags: (<>)
+Tags: Cartegena, Columbia
 Slug: 2018-01-02-cartegena-columbia
 Status: published
 
+TODO
 - fortress
   - defended against the British invasion
 - monastery with view of city
