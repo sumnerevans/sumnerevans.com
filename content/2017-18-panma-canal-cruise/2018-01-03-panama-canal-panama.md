@@ -1,10 +1,10 @@
 Title: Panama Canal, Panama
 Date: 2018-01-03 23:00
 Author: Sumner Evans
-Category: Caribbean Cruise 2017-18
+Category: Panama Canal Cruise
 Tags: Panama Canal, Panama
 Slug: 2018-01-03-panama-canal-panama
-Status: published
+Status: draft
 
 TODO
 - went through Gatun Locks

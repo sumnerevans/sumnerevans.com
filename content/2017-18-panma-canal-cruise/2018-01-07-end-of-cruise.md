@@ -1,10 +1,10 @@
 Title: End of Cruise
 Date: 2018-01-07 15:42
 Author: Sumner Evans
-Category: Caribbean Cruise 2017-18
+Category: Panama Canal Cruise
 Tags: Ft. Lauderdale, Florida, Denver, Colorado
 Slug: 2018-01-07-end-of-cruise
-Status: published
+Status: draft
 
 Today was the end of our cruise :(
 
@@ -24,5 +24,5 @@ The flight was a bit turbulent, and I swear there were babies in every row of
 the plane so the crying levels were real. Good thing I'm just a big baby and
 took a nap for most of the flight XD.
 
-Well, we are home now,
-TODO
+Well, we are home now, and it's back to school! I may also post a reflections
+post if I feel like it.

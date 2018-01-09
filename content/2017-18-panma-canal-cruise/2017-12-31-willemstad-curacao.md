@@ -1,10 +1,11 @@
 Title: Willemstad, Curacao
 Date: 2017-12-31 15:17
 Author: Sumner Evans
-Category: Caribbean Cruise 2017-18
+Category: Panama Canal Cruise
 Tags: Willemstad, Curacao, New Years, Snorkelling, Turtles
 Slug: 2017-12-31-willemstad-curacao
-Status: published
+Status: draft
+
 
 Today we were in Curacao, and our tour started at 08:00. The tour today was a
 tour in the back of pickup trucks which they had put seats and a canopy in. We
