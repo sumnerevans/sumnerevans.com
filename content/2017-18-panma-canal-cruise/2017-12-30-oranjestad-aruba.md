@@ -39,8 +39,30 @@ The next stop was an old gold refinery. Aruba used to have significant deposits
 of gold, but they mined it all away. While there, we tried to duplicate a
 picture that we took 16 years ago.
 
+
 TODO
-![](duplicate pic)
+<table>
+  <tr>
+    <td>
+      <a href="{filename}/images/panama-canal-cruise/aruba1.jpg" target="_blank">
+        <img src="{filename}/images/panama-canal-cruise/aruba1.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="{filename}/images/panama-canal-cruise/aruba2.jpg" target="_blank">
+        <img src="{filename}/images/panama-canal-cruise/aruba2.jpg" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      2001
+    </td>
+    <td>
+      2017
+    </td>
+  </tr>
+</table>
 
 Next we travelled further along the north part of the island. The northern coast
 is a national park, so there are no developments in the area; only a few (mostly
