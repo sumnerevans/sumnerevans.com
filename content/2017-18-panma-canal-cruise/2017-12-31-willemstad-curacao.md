@@ -4,7 +4,7 @@ Author: Sumner Evans
 Category: Panama Canal Cruise
 Tags: Willemstad, Curacao, New Years, Snorkelling, Turtles
 Slug: 2017-12-31-willemstad-curacao
-Status: draft
+Status: published
 
 
 Today we were in Curacao, and our tour started at 08:00. The tour today was a

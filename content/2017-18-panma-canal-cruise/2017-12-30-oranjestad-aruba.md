@@ -4,7 +4,7 @@ Author: Sumner Evans
 Category: Panama Canal Cruise
 Tags: Oranjestad, Aruba, Snorkelling, ATVs
 Slug: 2017-12-30-oranjestad-aruba
-Status: draft
+Status: published
 
 Today we were in Aruba, but we didn't arrive until late morning. I woke up late,
 so by the time I got upstairs, the daily ping pong tournament had begun. I

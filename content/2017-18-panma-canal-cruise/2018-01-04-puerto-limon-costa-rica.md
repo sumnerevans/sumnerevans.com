@@ -44,6 +44,6 @@ tricks, and he was also pretty funny. Some of his tricks included his dogs
 appearing and disappearing out of nowhere.
 
 The waters are pretty rough. I don't get seasick easily, but I probably look
-drunk as I walk around because of the slight rocking of the ship back and forth.
-The captain said it would still be bad tomorrow, but should get smoother by the
-day after tomorrow.
+drunk as I walk around because of the rocking of the ship back and forth.  The
+captain said it would still be bad tomorrow, but should get smoother by the day
+after tomorrow.
