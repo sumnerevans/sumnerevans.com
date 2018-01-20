@@ -4,7 +4,7 @@ Author: Sumner Evans
 Category: Panama Canal Cruise
 Tags: Cartegena, Columbia
 Slug: 2018-01-02-cartegena-columbia
-Status: draft
+Status: published
 
 Today we were in Cartegena, Columbia. We only had a couple of hours in the city
 because tomorrow we are going to the Panama Canal and we need to be "in line" at
@@ -13,7 +13,7 @@ the canal pretty early in the morning.
 Our guide met us at the cruise terminal and took us around the city. Our first
 stop was at the main fortress: *Castillo San Felipe de Barajas*.
 
-![Castillo San Felipe de Barajas](TODO)
+![Castillo San Felipe de Barajas]({filename}/images/panama-canal-cruise/cartegena-1.jpg)
 
 Cartegena was a very important city in colonial times and had many forts to
 protect it. In 1741, the British attempted to take Cartegena because by
@@ -25,13 +25,13 @@ delay the British. This delay allowed the Spanish's greatest ally--disease--to
 work. By the time the British arrived at the fortress, they were not in good
 fighting condition and lost the *Battle for Cartegena de Indias*.
 
-![Blas de Lezo](TODO)
+![Blas de Lezo]({filename}/images/panama-canal-cruise/cartegena-2.jpg)
 
 After getting a look at the fortress, we drove to the *Convento de la Popa*, the
 primary monastery in Cartegena. From this monastery, we had a panoramic view of
 the entire city.
 
-![Panorama from the "La Popa" Monastery](TODO)
+![Panorama from the "La Popa" Monastery]({filename}/images/panama-canal-cruise/cartegena-3.jpg)
 
 We drove back to the old town of Cartegena for a walking tour. The entire old
 town is a UNESCO World Heritage site. As we walked around, our guide pointed out
@@ -64,7 +64,10 @@ After eating lunch on the boat, I spent the afternoon playing chess with Alex. I
 mainly was teaching him some stuff to help him improve his chess game. He's a
 good leaner, hopefully I didn't teach him to poorly.
 
-TODO
-This evening's show was the *Island Magic Steelband*.
-
-- steel pan, drum show?
+This evening's show was the *Island Magic Steelband*, a steelband from Trinidad
+and Tobago. The band consisted of four members: one of them played the bass
+steel drums, one played the steelpan, one played a double steelpan with lower
+tones, and another played traditional drums. Unlike most steelbands which play
+reggae, they played classical and Broadway music. They were really good and I
+quite enjoyed the show. I wasn't the only one who enjoyed it either, the theatre
+was packed and they got two standing ovations.
