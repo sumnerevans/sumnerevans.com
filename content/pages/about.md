@@ -16,16 +16,17 @@ I was homeschooled through high school, but I also attended Red Rocks Community
 College doing a few classes a semester through high school. I also worked at
 Can/Am Technologies, Inc. as a software developer during high school. I
 developed on a full web development stack: JS (ExtJS), C# .NET, Oracle PL/SQL.
-(See my portfolio for more info).
+(See my [portfolio]({filename}/pages/portfolio.html) for more info).
 
-When I'm not doing school, I enjoy playing soccer and volleyball and I am a 3rd
-Degree Black Belt in ATA TaeKwonDo.
+When I'm not doing school, I enjoy playing soccer and volleyball. I also used to
+practice TaeKwonDo regularly, but I have not had enough time since I started
+college. While I did TaeKwonDo, I achieved my 3rd Degree Black Belt.
 
-This site is the place to get updates on my life. I maintain a blog here where I
-post occasionally. I post about my travels, technology, politics, etc. On my
-portfolio page, I have an up-to-date overview of [my professional
-achievements](/pages/portfolio.html). I also have an always-up-to-date link to
-my resume. You can also find links to all of my social media accounts from this
-site.
+This site is the place to get updates on my life. I maintain a [blog](/) here
+where I post occasionally. I post about my travels, technology, politics, etc.
+On my portfolio page, I have an up-to-date overview of [my professional
+achievements]({filename}/pages/portfolio.html). I also have an always-up-to-date
+link to my [resume]({filename}/static/resume.pdf). You can also find links to
+all of my social media accounts from this site.
 
 Happy reading!
