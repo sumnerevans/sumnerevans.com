@@ -40,25 +40,24 @@ of gold, but they mined it all away. While there, we tried to duplicate a
 picture that we took 16 years ago.
 
 
-TODO
 <table>
   <tr>
-    <td>
+    <td width="50%">
       <a href="{filename}/images/panama-canal-cruise/aruba1.jpg" target="_blank">
         <img src="{filename}/images/panama-canal-cruise/aruba1.jpg" />
       </a>
     </td>
-    <td>
+    <td width="50%">
       <a href="{filename}/images/panama-canal-cruise/aruba2.jpg" target="_blank">
         <img src="{filename}/images/panama-canal-cruise/aruba2.jpg" />
       </a>
     </td>
   </tr>
   <tr>
-    <td>
+    <td align="center">
       2001
     </td>
-    <td>
+    <td align="center">
       2017
     </td>
   </tr>
