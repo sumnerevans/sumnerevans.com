@@ -34,7 +34,7 @@ water.
 Our first main stop was a blowhole. This blowhole spewed the water up pretty
 high.
 
-![picture of Hannah and I at the blowhole](TODO)
+![Picture of Hannah and I at the blowhole]({filename}/images/panama-canal-cruise/curacao.jpg)
 
 The island is made of igneous rock with coral on top, so the ground is just a
 bunch of old coral formations.
