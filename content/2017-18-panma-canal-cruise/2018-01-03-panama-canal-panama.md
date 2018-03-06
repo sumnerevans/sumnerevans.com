@@ -64,7 +64,20 @@ through these locks on a smaller ship because we really got a feel for the
 technological wonder of the lock systems. We were also inside of the locks,
 we could see the sides of the locks and even reach out and touch the walls.
 
-TODO pics
+<table class="gallery">
+  <tr>
+    <td>
+      <a href="{filename}/images/panama-canal-cruise/panama5.jpg" target="_blank">
+        <img src="{filename}/images/panama-canal-cruise/panama5.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="{filename}/images/panama-canal-cruise/panama6.jpg" target="_blank">
+        <img src="{filename}/images/panama-canal-cruise/panama6.jpg" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 After transiting the locks and reaching the Pacific, we went under the Bridge of
 the Americas, the first and only permanent bridge across the canal. (The
