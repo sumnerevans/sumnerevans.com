@@ -44,7 +44,7 @@ PLUGIN_PATHS = ['plugins']
 PLUGINS = ['post_stats', 'neighbors', 'related_posts']
 PYGMENTS_STYLE = 'autumn'
 
-IGNORE_FILES = ['.vim-template:.md']
+IGNORE_FILES = ['.vim-template:.md', '.vim-template:.rst']
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
