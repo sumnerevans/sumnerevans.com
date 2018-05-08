@@ -70,10 +70,7 @@ SOCIAL = (
     ('stack-overflow', 'http://stackoverflow.com/users/2319844/'),
     ('github', 'https://github.com/sumnerevans'),
     ('instagram', 'https://www.instagram.com/sumner.evans/'),
-    ('facebook', 'https://www.facebook.com/sumner.evans98'),
     ('twitter', 'https://twitter.com/sumner_evans'),
-    ('medium', 'https://medium.com/@sumner.evans'),
-    ('youtube', 'https://www.youtube.com/channel/UCyrdRO4oJRpszr0ovN1FwBA/'),
 )
 
 MENUITEMS = (
@@ -82,10 +79,7 @@ MENUITEMS = (
     ('Tags', '/tags.html'),
 )
 
-LINKS = ((
-    'resume',
-    '/static/resume.pdf',
-), )
+LINKS = (('resume', '/static/resume.pdf'), )
 
 DEFAULT_PAGINATION = 10
 

@@ -2,7 +2,7 @@ title: About
 
 Hello, welcome to my website! I am so glad you stopped by to check it out!
 
-Let me introduce myself. My name is Sumner, I am 19 years old and live in
+Let me introduce myself. My name is Sumner, I am 20 years old and live in
 Denver, Colorado. I am a Senior in Computer Science at Colorado School of Mines.
 After I graduate, I am going to stay at Mines to complete a Masters Degree in
 Computer Science through the five-year masters degree program.
