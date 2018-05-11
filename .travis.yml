@@ -1,6 +1,4 @@
 language: python
-addons:
-  ssh_known_hosts: sumnerevans.com
 python:
 - 3.6
 cache: pip
@@ -10,6 +8,8 @@ install:
 script:
 # this tests to make sure that it builds properly
 - make publish
+
+# Deploy to GitHub Pages.
 deploy:
   provider: pages
   skip_cleanup: true

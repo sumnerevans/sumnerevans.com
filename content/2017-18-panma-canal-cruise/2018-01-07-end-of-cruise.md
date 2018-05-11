@@ -10,7 +10,7 @@ Today was the end of our cruise :(
 
 I woke up rather early to go say goodbye to Alex and Eric.
 
-![Alex, Eric, and me]({filename}/images/panama-canal-cruise/alex-eric.jpg)
+[![Alex, Eric, and me]({filename}/images/panama-canal-cruise/alex-eric.jpg)]({filename}/images/panama-canal-cruise/alex-eric.jpg)
 
 Then we went to eat breakfast. Then we finished packing our bags and then played
 some ping pong while we waited to disembark. Eventually we just decided to play
