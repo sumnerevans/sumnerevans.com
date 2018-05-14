@@ -17,3 +17,11 @@ deploy:
   local_dir: output
   on:
     branch: master
+
+notifications:
+  webhooks:
+    urls:
+      - "https://scalar.vector.im/api/neb/services/hooks/dHJhdmlzLWNpLyU0MHN1bW5lciUzQW1hdHJpeC5vcmcvJTIxTWFoekVncmlqQlJhTVFMQlJTJTNBbWF0cml4Lm9yZw"
+    on_success: change  # always|never|change
+    on_failure: always
+    on_start: never
