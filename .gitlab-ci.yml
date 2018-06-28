@@ -1,0 +1,38 @@
+image: python:3.6-alpine
+
+# Build the pelican site
+pelican:
+  stage: build
+  before_script:
+    - apk update && apk upgrade && apk add git make
+    - pip install --upgrade pip
+    - pip install -r requirements.txt
+
+    # Theme
+    - git clone https://github.com/alexandrevicenzi/Flex
+  script:
+    - make publish
+  artifacts:
+    paths:
+      - output
+
+deploy:
+  stage: deploy
+  before_script:
+    - apk update && apk upgrade && apk add openssh rsync
+
+    # SSH Key
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
+
+    # Known Hosts
+    - echo "$SSH_KNOWN_HOSTS" > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    # Send the content up to sumnerevans.com
+    - rsync -vr --delete-after output/ sumnerevans@sumnerevans.com:sumnerevans.com
+    - scp -i sws_deploy_rsa content/extra/google665b11e17b58ce89.html sumnerevans@sumnerevans.com:sumnerevans.com
+  only:
+    - master

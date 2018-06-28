@@ -69,6 +69,7 @@ SOCIAL = (
     ('linkedin', 'https://www.linkedin.com/in/sumnerevans'),
     ('stack-overflow', 'http://stackoverflow.com/users/2319844/'),
     ('github', 'https://github.com/sumnerevans'),
+    ('gitlab', 'https://gitlab.com/sumner'),
     ('instagram', 'https://www.instagram.com/sumner.evans/'),
     ('twitter', 'https://twitter.com/sumner_evans'),
 )
