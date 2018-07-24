@@ -41,7 +41,10 @@ EXTRA_PATH_METADATA = {
     },
     'extra/google665b11e17b58ce89.html': {
         'path': 'google665b11e17b58ce89.html'
-    }
+    },
+    'extra/.htaccess': {
+        'path': '.htaccess'
+    },
 }
 
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
