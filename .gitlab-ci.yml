@@ -1,7 +1,6 @@
-image: python:3.6-alpine
-
 # Build the pelican site
 pelican:
+  image: python:3.6-alpine
   stage: build
   before_script:
     - ./cicd/pelican/before_script.sh
@@ -12,6 +11,7 @@ pelican:
       - output
 
 deploy:
+  image: alpine
   stage: deploy
   only:
     - master
