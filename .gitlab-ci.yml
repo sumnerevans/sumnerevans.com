@@ -2,6 +2,8 @@
 pelican:
   image: python:3.6-alpine
   stage: build
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
   before_script:
     - ./cicd/pelican/before_script.sh
   script:

@@ -30,8 +30,8 @@ achievements <portfolio_>`_. I also have an always-up-to-date link to my
 `resume`_. You can also find links to all of my
 social media accounts from this site.
 
-.. blog: /
-.. portfolio: {filename}/pages/portfolio.html
-.. resume: {filename}/static/resume.pdf
+.. _blog: /
+.. _portfolio: /pages/portfolio.html
+.. _resume: /static/resume.pdf
 
 Happy reading!
