@@ -19,16 +19,17 @@ Can/Am Technologies, Inc. as a software developer during high school. I
 developed on a full web development stack: JS (ExtJS), C# .NET, Oracle PL/SQL.
 (See my `portfolio`_) for more info).
 
-When I'm not doing school, I enjoy playing soccer and volleyball. I also used to
-practice TaeKwonDo regularly, but I have not had enough time since I started
-college. While I did TaeKwonDo, I achieved my 3rd Degree Black Belt.
+When I'm not doing school, I enjoy playing soccer and volleyball. During high
+school, I won the FRCCA State Championship with Denver Eagles my senior year. I
+also used to practice TaeKwonDo regularly, but I have not had enough time since
+I started college. While I did TaeKwonDo, I achieved my 3rd Degree Black Belt.
 
 This site is the place to get updates on my life. I maintain a `blog`_ here
 where I post occasionally. I post about my travels, technology, politics, etc.
 On my portfolio page, I have an up-to-date overview of `my professional
 achievements <portfolio_>`_. I also have an always-up-to-date link to my
-`resume`_. You can also find links to all of my
-social media accounts from this site.
+`resume`_. You can also find links to all of my social media accounts from this
+site.
 
 .. _blog: /
 .. _portfolio: /pages/portfolio.html
