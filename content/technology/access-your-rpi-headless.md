@@ -12,27 +12,24 @@ control their RPi remotely, from a Windows computer on the network.
 **DISCLAIMER:** I AM NOT RESPONSIBLE FOR ANY DAMAGE CAUSED BY YOUR USE OF THE
 INSTRUCTIONS ON THIS POST.
 
-This guide makes a few assumptions. First, you have installed [Debian
-Linux](http://en.wikipedia.org/wiki/Debian "Debian") (or similar) on your RPi.
-Second, you know how to use the command line to install software and execute a
-few other commands. If you meet those criteria, you should be able to follow
-this guide.
+This guide makes a few assumptions. First, you have installed Debian Linux (or
+similar) on your RPi.  Second, you know how to use the command line to install
+software and execute a few other commands. If you meet those criteria, you
+should be able to follow this guide.
 
-Let's get started by enabling [SSH](http://en.wikipedia.org/wiki/Secure_Shell
-"Secure Shell") on the RPi.
+Let's get started by enabling SSH on the RPi.
 
 Enable the SSH Server on the RPi
 ================================
 
 1.  Run this command: `sudo raspi-config`
-2.  If you see an "SSH" (or something similar) command in the list, use
-    the arrow keys to go down to it and press enter. Then skip to
-    Step 5. If you do not, don't panic, it's just buried a little
-    deeper.
-3.  Move down the list using the arrow keys to the "Advanced Options"
-    item and<!--more--> press enter
-4.  Move down the list using the arrow keys to the "SSH" (or similar)
-    command and press enter
+2.  If you see an "SSH" (or something similar) command in the list, use the
+    arrow keys to go down to it and press enter. Then skip to Step 5. If you do
+    not, don't panic, it's just buried a little deeper.
+3.  Move down the list using the arrow keys to the "Advanced Options" item and
+    press enter
+4.  Move down the list using the arrow keys to the "SSH" (or similar) command
+    and press enter
 5.  Select "Enable" using your arrow keys and press enter
 
 Now you can access your RPi using a [SSH
