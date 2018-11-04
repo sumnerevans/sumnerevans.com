@@ -169,17 +169,18 @@ Competition Results
 
 Then (finally) the announcement of the winners came. As he was announcing that
 the finalists for the region, two CSU teams placed 5th and 4th, then *Three
-Slythery Bois* placed third, *Dream Team 2.0* (Sam Sartor, Jack Garner, me)
-placed **second**, and *((+)(((+)s)m)j)* (Sam Reinehr, Matt Baldin, and Joseph
-McKinsey) placed first! The Mines teams had managed to hold off the other
+Slythery Bois* placed **third**, *Dream Team 2.0* (Sam Sartor, Jack Garner, me)
+placed **second**, and *((+)(((+)s)m)j)* (Sam Reinehr, Matt Baldin, Joseph
+McKinsey) placed **first**! The Mines teams had managed to hold off the other
 schools to take all three podium spots on-location at CSU!
 
 Then he announced the winners regionally. He said "we had two top-five finishers
 at this site"! That meant that we got at least fifth! In fact, we'd done better
-than that, we finished **fourth-place regionally**!
+than that, we finished **fourth-place regionally**! Sam Reinehr's team took
+**first-place regionally**.
 
 Sam Reinehr's team went into the last hour with one problem left and managed to
-finish it. They were able to do that and beat out *Utah Arches* (University of
+finish it. They were able to do that to beat out *Utah Arches* (University of
 Utah). That secured them a first place finish regionally, and earned them a trip
 to ICPC Worlds in Porto, Portugal this spring.
 
@@ -191,9 +192,11 @@ A couple of other cool things that happened:
   first). But at location, Mines teams were first on all problems.
 - All Mines teams got at least one problem.
 - *The Open Sourcerers*, a team of all freshmen (Jake Vossen, Kieran Lewis, and
-  Nick Redhorse) completed 4 problems for a middle-of-the-pack finish regionally
-  and a top-ten finish on-location (at the time of this writing, full standings
-  are not available).
+  Nick Redhorse) completed 4 problems for a 28th-place finish regionally and a
+  10th-place finish on-location.
+- Six of the top 25 teams in the region were from Mines.
+- Four of the top 20 teams in the region were from Mines.
+- Seven of the top 10 teams on site were from Mines.
 - CU Boulder did not even send any teams (maybe they are still reeling after how
   badly we beat them at HackCU...)
 
@@ -202,6 +205,6 @@ best that my team and I had ever gotten (the previous two years, Sam and I were
 on a team with Robbie Merillat and we got 3rd on-site, 13th regionally in 2016;
 and 6th on-site, 15th regionally in 2017).
 
-All in all, the competition was a great success for both my team, Sam Reinehr's
-team, and all of Mines. Sam and Jack were amazing teammates, and I'm really
-proud of how well we worked together.
+All in all, the competition was a great success for my team, Sam Reinehr's team,
+and all of Mines. Sam and Jack were amazing teammates, and I'm really proud of
+how well we worked together.
