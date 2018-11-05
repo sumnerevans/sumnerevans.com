@@ -8,11 +8,14 @@ ICPC Regionals
 :slug: 2018-icpc-regionals
 :status: published
 
-Today I competed in the ICPC Rocky Mountain Regionals at CSU. ICPC is the
-International Collegiate Programming Contest. It's an algorithmic competition
-for college students. I've competed in ICPC three times now, but today was is
-the best my team has ever done. But I'm getting ahead of myself. Some background
-on what we did.
+Today I competed in the ICPC Rocky Mountain Regionals at CSU.
+
+.. image:: {filename}/images/school/2018-icpc.jpg
+
+ICPC is the International Collegiate Programming Contest. It's an algorithmic
+competition for college students. I've competed in ICPC three times now, but
+today was is the best my team has ever done. But I'm getting ahead of myself.
+Some background on what we did.
 
 It all started Friday afternoon. I'd just finished up my phone interview with
 Google at about 15:15, so I went downstairs to ALAMODE to find Jack Garner. Then
