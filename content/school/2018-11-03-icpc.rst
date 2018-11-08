@@ -170,6 +170,8 @@ could see if anyone had solved any problems in the last hour of the competition.
 Competition Results
 ===================
 
+**Full standings can be found here:** https://rmc18.kattis.com/standings
+
 Then (finally) the announcement of the winners came. As he was announcing that
 the finalists for the region, two CSU teams placed 5th and 4th, then *Three
 Slythery Bois* placed **third**, *Dream Team 2.0* (Sam Sartor, Jack Garner, me)
