@@ -121,18 +121,19 @@ By the time that we were done, Jack had code on the board, and I quickly typed
 it into a Python file. Jack's code had just a couple bugs which were easy to fix
 (it was basically flawless considering he coded it up on a whiteboard). We
 submitted **G** 11 minutes later which bumped our ranking regionally, and helped
-solidify our second-place spot at CSU with 4 problems solved in 65 minutes for a
-total of 4 problems solved in 186 minutes (including penalty) minutes).
+solidify our second-place spot at CSU with 4 problems solved in the first 65
+minutes of the competition and a total time of 186 minutes (including penalty)
+minutes.
 
 Meanwhile, Sam had started working on **F** because it was a ray-tracing problem
 which is his thing. He'd reduced the bulk of the problem to solving a matrix
 equation, but was having a hard time. I don't remember exactly what order things
 happened from here, but I think that he started up coding up some of it while
 Jack worked out a solution to **H**. I bounced between helping both of them. It
-took us a total of 27 to finish **H** (unfortunately we had a slight snafu with
-calculating the area of a rectangle... maybe some things are better left
-unwritten...). At this point, it was the 92nd minute of the competition and we
-had 5 problems solved. I think we were close to second in the region at this
+took us a total of 27 minutes to finish **H** (unfortunately we had a slight
+snafu with calculating the area of a rectangle... maybe some things are better
+left unwritten...). At this point, it was the 92nd minute of the competition and
+we had 5 problems solved. I think we were close to second in the region at this
 point (definitely second on site at CSU).
 
 At this point, Jack and I started working on **E**. We figured out the recursive
@@ -172,12 +173,12 @@ Competition Results
 
 **Full standings can be found here:** https://rmc18.kattis.com/standings
 
-Then (finally) the announcement of the winners came. As he was announcing that
-the finalists for the region, two CSU teams placed 5th and 4th, then *Three
-Slythery Bois* placed **third**, *Dream Team 2.0* (Sam Sartor, Jack Garner, me)
-placed **second**, and *((+)(((+)s)m)j)* (Sam Reinehr, Matt Baldin, Joseph
-McKinsey) placed **first**! The Mines teams had managed to hold off the other
-schools to take all three podium spots on-location at CSU!
+Then (finally) the announcement of the winners came. He first announced the
+finalists for the region. Two CSU teams placed 5th and 4th, then *Three Slythery
+Bois* placed **third**, *Dream Team 2.0* (Sam Sartor, Jack Garner, me) placed
+**second**, and *((+)(((+)s)m)j)* (Sam Reinehr, Matt Baldin, Joseph McKinsey)
+placed **first**! The Mines teams had managed to hold off the other schools to
+take all three podium spots on-location at CSU!
 
 Then he announced the winners regionally. He said "we had two top-five finishers
 at this site"! That meant that we got at least fifth! In fact, we'd done better
@@ -186,8 +187,9 @@ than that, we finished **fourth-place regionally**! Sam Reinehr's team took
 
 Sam Reinehr's team went into the last hour with one problem left and managed to
 finish it. They were able to do that to beat out *Utah Arches* (University of
-Utah). That secured them a first place finish regionally, and earned them a trip
-to ICPC Worlds in Porto, Portugal this spring.
+Utah). That secured them a first place finish regionally, and earned them a
+repeat trip to ICPC World Finals which will be hosted in Porto, Portugal this
+spring.
 
 A couple of other cool things that happened:
 
@@ -195,13 +197,13 @@ A couple of other cool things that happened:
   well with 5 problems solved.
 - Mines teams were first on all problems except for **D** (Alberta White was
   first). But at location, Mines teams were first on all problems.
-- All Mines teams got at least one problem.
+- All Mines teams solved at least one problem.
 - *The Open Sourcerers*, a team of all freshmen (Jake Vossen, Kieran Lewis, and
   Nick Redhorse) completed 4 problems for a 28th-place finish regionally and a
   10th-place finish on-location.
 - Six of the top 25 teams in the region were from Mines.
 - Four of the top 20 teams in the region were from Mines.
-- Seven of the top 10 teams on site were from Mines.
+- Seven of the top 10 teams on-location were from Mines.
 - CU Boulder did not even send any teams (maybe they are still reeling after how
   badly we beat them at HackCU...)
 
