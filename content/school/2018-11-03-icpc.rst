@@ -10,7 +10,10 @@ ICPC Regionals
 
 Today I competed in the ICPC Rocky Mountain Regionals at CSU.
 
-.. image:: {filename}/images/school/2018-icpc.jpg
+.. figure:: {static}/images/school/2018-icpc.jpg
+   :alt: CS@Mines at ICPC
+
+   Photo Credit: CPW
 
 ICPC is the International Collegiate Programming Contest. It's an algorithmic
 competition for college students. I've competed in ICPC three times now, but
