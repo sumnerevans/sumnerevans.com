@@ -51,7 +51,12 @@ ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{slug}.html'
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['post_stats', 'neighbors', 'related_posts']
+PLUGINS = [
+    'post_stats',
+    'neighbors',
+    'related_posts',
+    'representative_image',
+]
 PYGMENTS_STYLE = 'autumn'
 
 ARTICLE_EXCLUDES = ['extra']
