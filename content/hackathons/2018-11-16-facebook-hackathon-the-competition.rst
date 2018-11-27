@@ -9,10 +9,10 @@ Facebook Global Hackathon Finals - The Competition
 :status: published
 :image: /images/hackathon/2018-11-15-fb-team.jpg
 
-I woke up at 8:00 on Thursday morning and after a quick shower. Then I went down
-to eat some breakfast (provided again by Facebook). Then, we got on a bus and
-went over to Facebook HQ. This is a picture of building 18, one of the smaller
-buildings on the campus.
+I woke up at 8:00 on Thursday morning. After a quick shower, I went down to eat
+some breakfast (provided again by Facebook). Then, we got on a bus and went over
+to Facebook HQ. This is a picture of building 18, one of the smaller buildings
+on the campus.
 
 .. image:: /images/hackathon/2018-11-15-fb-hq.jpg
    :alt: image of the outside of the Facebook HQ building 18
