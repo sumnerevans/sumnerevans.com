@@ -319,3 +319,25 @@ tired, and so we headed back on the early bus to the hotel.
 After getting back, I went straight to bed. Hackathons are a test of endurance
 of both the brain and the body. If programming competitions are a sprint, then
 hackathons are marathons.
+
+**Edit (11-29-2018 13:40)** *Sam pointed out an error in the timeline of
+events. I have copied his words below.*
+
+    I do want to metion *[sic]* one correction to the timeline. I was working on
+    the linear algebra solver all through the night on a separate branch and it
+    was calculating position correctly in the hard-coded room before I went to
+    bed.
+
+    In the morning me and Jack were having tons of trouble with the compass
+    data. We had a discussion and decided that we should focus on adding
+    orientation to the wall-solving branch instead. We merged the branch into
+    master and then spent an hour hacking out an orientation calculation.
+
+    So although the master branch went from GPS to walls in an hour, it took a
+    lot lot longer than that to actually write the code. Don't give us too much
+    credit.
+
+    Its a great piece of storytelling, you don't have to change it. I'm just
+    setting the record straight that I can not, in fact, pull a fully
+    interactive multivariate solver out of my [butt] in an hour. Much less when
+    I'm operating on an hour of sleep.
