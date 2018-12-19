@@ -16,7 +16,7 @@ Pi, and an iPad Pro 9.7 inch.
 I was homeschooled through high school, but I also attended Red Rocks Community
 College doing a few classes a semester through high school. I also worked at
 Can/Am Technologies, Inc. as a software developer during high school.  (See my
-`portfolio`_) for more info).
+`portfolio`_ for more info).
 
 When I'm not doing school, I enjoy playing soccer, volleyball, and I've been
 getting into racquetball lately. During high school, I won the FRCCA State

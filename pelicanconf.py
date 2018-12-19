@@ -30,11 +30,7 @@ CUSTOM_CSS = 'static/custom.css'
 
 DEFAULT_LANG = 'en'
 
-STATIC_PATHS = [
-    'images',
-    'static',
-    'extra',
-]
+STATIC_PATHS = ['images', 'static', 'extra']
 EXTRA_PATH_METADATA = {
     'extra/CNAME': {
         'path': 'CNAME'
@@ -55,6 +51,7 @@ PLUGINS = [
     'post_stats',
     'neighbors',
     'related_posts',
+    'render_math',
     'representative_image',
 ]
 PYGMENTS_STYLE = 'autumn'
@@ -96,3 +93,10 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 
 TYPOGRIFY = True
+
+# Math Typsetting with MathJAX
+MATH_JAX = {
+    'tex_extensions': [
+        'color.js', 'cancel.js', 'mhchem.js', 'AMSmath.js', 'AMSsymbols.js'
+    ],
+}

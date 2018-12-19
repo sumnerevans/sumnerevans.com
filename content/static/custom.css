@@ -129,3 +129,27 @@ aside div img {
 .gallery img {
   padding: 5px;
 }
+
+/* Admonitions */
+div.admonition {
+  border-radius: 5px;
+}
+
+div.admonition p {
+  padding: 10px;
+  margin: 0;
+}
+
+div.admonition.warning {
+  border: 1px solid #9F6000;
+  border-radius: 5px;
+}
+
+div.admonition.warning p.admonition-title {
+  border-bottom: 1px solid #9F6000;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #FEEFB3;
+  font-weight: bold;
+}
+

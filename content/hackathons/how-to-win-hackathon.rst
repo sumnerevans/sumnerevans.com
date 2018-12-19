@@ -6,7 +6,7 @@ How to Win a Hackathon
 :category: Hackathon
 :tags: Facebook Hackathon, Win, Hackathon, Prize, Hackathon Demo
 :slug: how-to-win-hackathon
-:status: draft
+:status: published
 
 Objectively, I'm pretty good at winning prizes at hackathons. I'm not entirely
 sure how/why, but I am. In this article I intend to try and describe some of the
@@ -139,14 +139,212 @@ a few tips:
   mapping using just the fire escape floor-plans of buildings for a while, and
   the hackathon was a great opportunity to take a stab at it.
 
+**Bring all the electronics.**
+  Does your computer have ethernet? If not, get an adapter. At good hackathons,
+  they will have wired connections for you. Are you driving to the hackathon?
+  Bring external monitors as well!
+
+  Do you have some cool electronics lying around (servos, Raspberry Pi's,
+  arduinos, Wii-Fit Boards, etc.)? Bring them if you can! If you are driving to
+  the hackathon, then you pile all of your junk into your car. That's how we won
+  HackCU, we had a Wii-Fit board and some other electronics, and we built our
+  project around those components.
+
 3. What to Do at a Hackathon
 ----------------------------
+
+Now, for the hackathon itself. It's a ton of fun being at a hackathon, there are
+always so many people there who are passionate about technology. Make sure you
+talk to some of them and make some new friends! Also, hackathons always have a
+bunch of swag. Make sure to get some!
+
+Besides getting all of the goodies, the most important thing to do is figure out
+what you are going to do for your project. At a 24 hour hackathon, you need to
+decide within 15 minutes of when coding begins. As you figure out what you are
+going to do, stretch the boundaries of your idea. Normally the best idea is the
+one which you are most excited about the extensions that could potentially be
+made to it after you have a base product developed or that has broad
+applications in areas you care about. For example, when we were at Facebook, we
+thought the concept of indoor navigation using AR was great, and we thought of a
+ton of extensions to the basic idea including collaborative map-making and
+multiple story mapping.
+
+Once you have a great, big, grand idea, then it's time to boil it down to a
+minimal proof-of-concept. Make sure that you don't loose track of the bigger
+picture though! (The big picture helps a lot with demos.) Determining what the
+minimal proof-of-concept is is a nontrivial problem. Here are just a couple of
+tips which might get you going in the correct direction:
+
+- Think about the *primary* user flow. What will the user have to do to
+  accomplish the purpose of your application? For example, at MHacks, the main
+  user flow did not include login, so we didn't spend any time on it. (In fact,
+  login would have just hindered our demo.)
+
+- Think about *gimmicks*, that is things which will make your hack memorable.
+  Sometimes this is a physical thing like the Datanium Node at MHacks which had
+  a little Arduino-controlled flag.
+
+- Think about the tagline for your project. What would you tell a marketer your
+  app does? Make sure your project actually does that (or something
+  approximating that).
+
+- Think about how you can split up the work. It's best if you have :math:`n`
+  fairly disjoint pieces of the project, where :math:`n` is the number of people
+  on your team. This will allow you to diverge and work separately, maximizing
+  the man-hours available, and minimizing the amount of time which you are
+  blocked by each other.
+
+  .. warning::
+
+    Don't go overboard with this, you want to have the pieces of your
+    app working together as soon as possible, so don't diverge too much that you
+    don't communicate with one another. We made this mistake at MHacks, and we
+    didn't connect everything up until the last hour of the hackathon (and that
+    was a 36-hour hackathon, so that was fairly impressive).
+
+- I always strive to learn something new at each hackathon. We took this to the
+  extreme at Facebook by learning Kotlin and Android development at the
+  hackathon. That was a risky strategy, but it worked out, and I learned a lot
+  while doing so.
+
+So now you know what you are all working on, it's time to get coding! You've
+prioritized a set of components to implement, but what about the micro-decisions
+about how to implement those features? Rule number one at a hackathon is to
+**optimize write-time over run-time**. Who cares if your algorithm is
+:math:`\mathcal{O}(n!)`? You'll only ever have like 3 items anyway. Who cares if
+you have to cast everything 100 times? If doing something nasty prevents even a
+quarter-hour of refactoring, then it's worth it; it's a hackathon after all.
+Rule number two, **test early, test often**. Try to have *something* working at
+all times. That way if everything goes south, you can at least save face and
+have something to show. In order to do this, you need to ensure that you are
+communicating constantly. That way, you can integrate and test your components
+as often as possible, and reallocate development resources if someone get
+blocked.
+
+And that's a great segue to the third rule: **don't be blocked**. Blocked people
+don't write code that gets demoed. Don't be blocked. If you need help, see if
+anyone on your team can help. If they can't immediately, try Googling a bit
+more, and then if necessary, pair up with someone and figure it out together.
+
+At some point, it may be the case that a significant portion of your team is
+blocked. In this case, the fourth rule applies: **be willing to pivot**. Don't
+ever be too attached to any part of the application that you are willing to
+drive yourself into the ground in an attempt to get it to work. In fact, don't
+even be too attached to your entire idea! At MinneHack 2018, Sam's team scrapped
+their entire project midway through the hackathon yet ended up coming back to
+win second place!
+
+Even if your idea changes significantly during the hackathon, it is important to
+keep this next rule in mind: **constantly think about what to demo**.  Make sure
+that you have an idea of what you want to show to the judges at all times. Any
+time coding anything that will not be shown to the judges is a waste of time
+(unless it's for a contingency plan, such as using GPS instead of ARCore to
+locate the user).
+
+Now, although you shouldn't be too attached to your idea that you aren't willing
+to jettison it, you should balance that with this next rule which is to **sell
+the idea to yourself**. Even if you don't like the idea that much (maybe you
+were overruled by your teammates when you were deciding what direction to go, I
+know the feeling, I've had that happen to me, and I've done it to others), make
+yourself like it. No, make yourself **love** it. If you aren't convinced it's
+amazing, you won't convince the judges that it's amazing.
+
+Which leads us to the last rule, and probably the most important one: **have
+fun**! Yes, it's a competition, but this is also what you enjoy doing. You are
+there to write a bunch of code, eat some junk food, and hang out with friends.
+Doing well is just an added benefit.
 
 4. Things to do during hackathon demos
 --------------------------------------
 
+In the last section, I talked a lot about thinking about demos. Even if you have
+the best project in the world, if you can't demo it effectively, you don't win.
+Here are a few tips to make your demos amazing.
+
+- Make sure that you have a good motivation. Don't make it too contrived. It
+  doesn't have to be your sick grandma that inspired you, it can just be that
+  you are terrible at navigating new buildings, or that parking is a nightmare
+  at school. Anything to let the judges connect with your project is good.
+
+- Demos should follow a story arc like the classic "hero's journey". Who is the
+  hero? Your app! Make sure to quickly present the problem, then *pow* your app
+  solves all of your problems. Then show them *how* it does so. This *how* part
+  of the demo should take up the majority of the time. At the end, try and save
+  time for a couple of sentences about the future of your app.
+
+  Make sure you have your demo somewhat scripted (who will say what, etc.), but
+  don't script it too much that it feels fake. Be natural, be excited, be human.
+
+  Since you probably don't have every single word scripted, make sure that you
+  at least have a list of all the words and phrases that you *really* want to
+  make sure you say. You may not hit all of them, and that's ok, but try and say
+  as many of them as you can. For example, at HackCU, we made sure to always
+  describe our app as *distributed inventory tracking* that uses *IoT* and
+  *cloud computing*. At Facebook, we made sure to always mention that it used
+  *AR*, *structure from motion*, and *simutaneous location and mapping*.
+
+- Be sure to show the *features* of your app, not the technology or code behind
+  it. In the real world, features (not code) are what make companies money. At a
+  hackathon, features (not code) are what make you win.
+
+- Of course, it's smart to talk a little bit about the technology you used
+  (especially if you are targeting a sponsor prize, or you are using a
+  cutting-edge technology), but that should not be the *primary* focus of your
+  demo.
+
+  This balancing act is important, especially with non-technical judges. When
+  you start "talking computer" at them, their brain turns off and you
+  automatically are out of the running. If you just mention a couple of
+  buzzwords associated with your project though, they may think "hey, that's
+  something my engineers talk about a lot, these people must be smart!". With a
+  technical judge, they hear the technology that you are using and their
+  appetites are whetted enough that they may have questions about it, and that's
+  where you can let the technical aspects of your project really shine. Always
+  be ready to explain exactly how you used each of the technologies you say that
+  you used.
+
+- After your demo (and maybe during it), the judges may have questions about
+  what your app can do. Always say that your app can do whatever they ask if it
+  can do. If the judge asks if it can make breakfast, think of some way that it
+  can help them make breakfast (even if that's an entirely ridiculous idea).
+
 5. General tips
 ---------------
+
+Everything I've mentioned above is important, but there are a couple of things
+which just don't fit into any of the categories because they are much more
+general. Here are my general suggestions:
+
+- Back each other up, especially during demos. If somebody is totally bombing
+  the demo, do something to rescue the situation. The classic "as you can tell,
+  it's very complicated... so now we want to <do something else that is not
+  whatever train wreck you were on before>" is a good go-to.
+
+  However, this applies to more than just demos. This also applies to coding and
+  general wellbeing. Having unhappy teammates is not good for many reasons: they
+  don't write good code, and they are your friends, so you should care about
+  them!
+
+- Pretend to know what you are doing. Fake it 'til you make it is a real
+  strategy at hackathons. I've faked being an FPGA expert, a voice-over artist,
+  a blockchain developer, an IoT wizard, an AWS specialist, a frontend
+  developer, an Android developer... the list goes on.
+
+- Respect the other competitors. They are taking their time to be there, so say
+  hi to them, if they are willing to share what they are working on, be
+  genuinely interested.
+
+- Everything that you ever learned about teamwork and being a decent human being
+  applies.
+
+- Lastly, have fun! Be competitive, but not too competitive. Don't let your
+  competitiveness take away from the fun of hanging out with friends for 24+
+  hours while coding and not sleeping.
+
+So there you have it! Those are my tips on how to win a hackathon. Hopefully
+they've been helpful for you. Happy hacking!
+
+-------------------------------------------------------------------------------
 
 .. [1] Many people have a misconception of the word *hack*. In the common
    vernacular, *hacking* is used to refer to an act which is more correctly
@@ -156,107 +354,3 @@ a few tips:
    which *work*, but are very messy. Think of it like using duct-tape to hang
    something up on a wall instead of doing the "right" thing which would be to
    hang it up using a nail.
-
-- While there:
-
-  - Decide your project quickly. At a 24 hour hackathon, you can only afford to
-    spend half-an-hour on this (at most).
-
-  - Think big, then figure out what the minimal Proof-of-Concept would be
-
-    - Think big helps during demos because you can then talk about the future of
-      your app.
-
-  - Strive to learn something new. Maybe don't learn an entirely new language or
-    platform (it worked for us, but YMMV)
-
-  - Create clear, separate tasks for people to do, but not too separate.
-
-  - Do what works, and do it fast. Test quickly, and connect all of the
-    components as soon as possible.
-
-  - Think about what to demo constantly. As you code, your project idea may even
-    change, but make sure that you have an idea of what you want to show to the
-    judges at all time. Time coding anything that will not be shown to the
-    judges is a waste of time (unless it's for a contingency plan, such as using
-    GPS instead of ARCore to locate the user just in case everything else went
-    south)
-
-  - Communicate with one another constantly, make sure that nobody is blocked.
-    Blocked people don't write code that gets demoed.
-
-  - Sell the idea to yourself. Even if you don't like the idea that much, make
-    yourself like it. No, make yourself **love** it. If you aren't convinced
-    it's amazing, you won't convince the judges that it's amazing.
-
-  - Have fun. It's a competition, but this is also what you enjoy doing. You are
-    here to write a bunch of code, eat really poorly, and hang out with friends.
-    Winning is just an added benefit.
-
-  - Be willing to pivot. Something will inevitably go wrong, you will have to
-    course correct, and you may even need to start over from scratch.
-
-- Demos
-
-  - Make sure that you have a good motivation. Don't make it too contrived. It
-    doesn't have to be your sick grandma that inspired you, it can just be that
-    you are terrible at navigating new buildings, or that you have trouble
-    parking at school. Anything to let the judges connect with your project is
-    good.
-
-  - Demos are the classic "heroes story", present the problem, then *pow* your
-    app solves all of your problems. Here's how (and describe the cool things
-    your app does)
-
-  - Show the features of your app, not the tech. Features are what make money,
-    feature are what win hackathons.
-
-  - It's fine to mention the technology you used (especially if you are
-    targeting a sponsor prize, or are using a cutting-edge technology), but
-    that's not the primary focus of the demo. This is especially true when you
-    have non-technical judges. When you start "talking computer" their brain
-    turns off and you automatically are out of the running. With a technical
-    judge, they hear the tech that you are using and then may have questions
-    about it, and that's where you can really shine (see below).
-
-  - Script it, but not too much. Be natural, it helps add humanity to your
-    presentation.
-
-  - Make sure you have a list of words/phrases that you *really* want to make
-    sure you say. You may not hit all of them, and that's ok, but hit as many of
-    them as you can.
-
-- Questions
-
-  - Always say that your app can do whatever they ask if it can do. If the
-    judge asks if it can make breakfast, think of some way that it can help them
-    make breakfast (even if that's an entirely ridiculous idea).
-
-  - Be prepared to elaborate on the technology that you used. If your judge(s)
-    are technical, your demo should have whetted their appetite(s) just enough
-    for them to want to ask question about how exactly you used said technology.
-
-- General stuff
-
-  - Back each other up, especially during demos. If somebody is totally bombing
-    the demo, do something to rescue the situation. The classic "as you can
-    tell, it's very complicated... so now we want to <do something else that is
-    not whatever train wreck you were on before>"
-
-  - Pretend to know what you are doing. Fake it 'til you make it is a real
-    strategy at hackathons.
-
-  - Respect the other competitors
-
-  - Everything that you ever learned about teamwork applies
-
-  - If you are the put-a-team-together type of person, make sure that you cover
-    your own weaknesses with your teammates.
-
-    - Sam: writes a lot of code
-    - Jack: solid with algorithms, great to pair with
-    - Fisher: dark horse
-
-  - Be competitive, but not too competitive. Don't let your competitiveness take
-    away from the fun of hanging out with friends for 24+ hours and not
-    sleeping.
