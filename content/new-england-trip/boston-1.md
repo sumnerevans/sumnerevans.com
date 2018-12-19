@@ -130,7 +130,7 @@ On the other side of the park is a museum, the Museum of Concord. We stopped
 here as well. The coolest thing in the museum was one of the lanterns hung in
 the Old North Church.
 
-[![One of the lanterns hung in the Old North Church]({filename}/images/new-england-trip/lantern.jpg)]({filename}/images/new-england-trip/lantern.jpg)
+[![One of the lanterns hung in the Old North Church]({static}/images/new-england-trip/lantern.jpg)]({static}/images/new-england-trip/lantern.jpg)
 *One of the lanterns hung in the Old North Church.*
 
 After the museum we proceeded to the North Bridge. There is a monument to the
@@ -145,15 +145,15 @@ or something like that. The Minutemen statue is much nicer.
 <table class="gallery">
   <tr>
     <td>
-      <a href="{filename}/images/new-england-trip/british-memorial.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/british-memorial.jpg"
+      <a href="{static}/images/new-england-trip/british-memorial.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/british-memorial.jpg"
              alt="Memorial to the British who Died at the North Bridge." />
       </a>
       Memorial to the British who Died at the North Bridge.
     </td>
     <td>
-      <a href="{filename}/images/new-england-trip/minutemen.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/minutemen.jpg"
+      <a href="{static}/images/new-england-trip/minutemen.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/minutemen.jpg"
              alt="The Minutemen Statue on the other side of the North Bridge" />
       </a>
       The Minutemen Statue on the other side of the North Bridge.

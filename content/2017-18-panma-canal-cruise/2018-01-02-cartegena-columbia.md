@@ -13,7 +13,7 @@ the canal pretty early in the morning.
 Our guide met us at the cruise terminal and took us around the city. Our first
 stop was at the main fortress: *Castillo San Felipe de Barajas*.
 
-![Castillo San Felipe de Barajas]({filename}/images/panama-canal-cruise/cartegena-1.jpg)
+![Castillo San Felipe de Barajas]({static}/images/panama-canal-cruise/cartegena-1.jpg)
 
 Cartegena was a very important city in colonial times and had many forts to
 protect it. In 1741, the British attempted to take Cartegena because by
@@ -25,13 +25,13 @@ delay the British. This delay allowed the Spanish's greatest ally--disease--to
 work. By the time the British arrived at the fortress, they were not in good
 fighting condition and lost the *Battle for Cartegena de Indias*.
 
-![Blas de Lezo]({filename}/images/panama-canal-cruise/cartegena-2.jpg)
+![Blas de Lezo]({static}/images/panama-canal-cruise/cartegena-2.jpg)
 
 After getting a look at the fortress, we drove to the *Convento de la Popa*, the
 primary monastery in Cartegena. From this monastery, we had a panoramic view of
 the entire city.
 
-![Panorama from the "La Popa" Monastery]({filename}/images/panama-canal-cruise/cartegena-3.jpg)
+![Panorama from the "La Popa" Monastery]({static}/images/panama-canal-cruise/cartegena-3.jpg)
 
 We drove back to the old town of Cartegena for a walking tour. The entire old
 town is a UNESCO World Heritage site. As we walked around, our guide pointed out

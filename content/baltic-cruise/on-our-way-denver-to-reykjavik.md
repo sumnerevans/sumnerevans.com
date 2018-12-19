@@ -22,8 +22,8 @@ tablet. I am writing this using my wireless keyboard which is really nice to
 have. I’ve been using an app called Byword for writing. I am loving it so far. I
 have a full review in the works which will be published someday :).
 
-[![Mom and Hannah Sleeping on the Plane]({filename}/images/baltic-cruise/mom-hannah-plane1.jpg)
-]({filename}/images/baltic-cruise/mom-hannah-plane1.jpg)
+[![Mom and Hannah Sleeping on the Plane]({static}/images/baltic-cruise/mom-hannah-plane1.jpg)
+]({static}/images/baltic-cruise/mom-hannah-plane1.jpg)
 *Mom and Hannah Sleeping on the Plane*
 
 We have one or two little kids sitting behind us. One of them is kicking mom’s

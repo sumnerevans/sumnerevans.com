@@ -49,13 +49,13 @@ said that it is often used for weddings.
 <table class="gallery">
   <tr>
     <td>
-      <a href="{filename}/images/new-england-trip/bermuda-1.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/bermuda-1.jpg" />
+      <a href="{static}/images/new-england-trip/bermuda-1.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/bermuda-1.jpg" />
       </a>
     </td>
     <td>
-      <a href="{filename}/images/new-england-trip/bermuda-2.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/bermuda-2.jpg" />
+      <a href="{static}/images/new-england-trip/bermuda-2.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/bermuda-2.jpg" />
       </a>
     </td>
   </tr>
@@ -66,7 +66,7 @@ His descendants still live in that house.
 
 We went a few other places as well, but they were not as memorable to me.
 
-#### Random info doesn’t really fit into the narrative: {#randominfodoesntreallyfitintothenarrative:}
+#### Random info doesn't really fit into the narrative: {#randominfodoesntreallyfitintothenarrative:}
 
 -   As we were walking through the town, nearly everyone who drove or rode by in
     their cars or scooters knew her and stopped to say hi.

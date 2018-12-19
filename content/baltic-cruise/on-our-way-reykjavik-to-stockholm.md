@@ -45,10 +45,10 @@ included. The cost is sorta offset by the fact that they give you 2 free checked
 bags. I got a baguette which is surprisingly good for airplane food. I also got
 7-up. This time they gave me a cup and a full bottle of 7-up.
 
-[![]({filename}/images/baltic-cruise/airplane-meal.jpg)]({filename}/images/baltic-cruise/airplane-meal.jpg)
+[![]({static}/images/baltic-cruise/airplane-meal.jpg)]({static}/images/baltic-cruise/airplane-meal.jpg)
 *My Airplane Meal*
 
-[![]({filename}/images/baltic-cruise/airplane-wing.jpg)]({filename}/images/baltic-cruise/airplane-wing.jpg)
+[![]({static}/images/baltic-cruise/airplane-wing.jpg)]({static}/images/baltic-cruise/airplane-wing.jpg)
 
 I am literally typing just to stay awake so I apologize if this is too lengthy.
 I am determined to stay awake until 19:00 Stockholm time which is a full 9 hours

@@ -8,7 +8,7 @@ Status: published
 
 Today we spent the entire day at the National World War II Museum.
 
-[![]({filename}/images/carribean-cruise/wwii-museum.jpg)]({filename}/images/carribean-cruise/wwii-museum.jpg)
+[![]({static}/images/carribean-cruise/wwii-museum.jpg)]({static}/images/carribean-cruise/wwii-museum.jpg)
 
 There were three main exhibits: an exhibit about the European Theatre of the war
 and an exhibition about the Pacific Theatre of the war and an exhibit with some

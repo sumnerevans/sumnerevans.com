@@ -29,26 +29,26 @@ pictures with captions describing what each one is showing.
 <table class="gallery">
   <tr>
     <td>
-      <a href="{filename}/images/carribean-cruise/cozumel1.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/cozumel1.jpg" />
+      <a href="{static}/images/carribean-cruise/cozumel1.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/cozumel1.jpg" />
       </a>
     </td>
     <td rowspan="2" width="50%">
-      <a href="{filename}/images/carribean-cruise/cozumel2.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/cozumel2.jpg" />
+      <a href="{static}/images/carribean-cruise/cozumel2.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/cozumel2.jpg" />
       </a>
     </td>
     <td rowspan="2" width="30%">
-      <a href="{filename}/images/carribean-cruise/cozumel4.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/cozumel4.jpg" />
+      <a href="{static}/images/carribean-cruise/cozumel4.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/cozumel4.jpg" />
       </a>
     </td>
   </tr>
 
   <tr>
     <td>
-      <a href="{filename}/images/carribean-cruise/cozumel3.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/cozumel3.jpg" />
+      <a href="{static}/images/carribean-cruise/cozumel3.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/cozumel3.jpg" />
       </a>
     </td>
   </tr>

@@ -62,7 +62,7 @@ and a myriad of other sites.  It was neat to get a bird’s eye (literally) view
 of the city.
 
 [![Views of the Boston Skyline from the Whale Watching Boat (top) and the
-Prudential Center (bottom)]({filename}/images/new-england-trip/boston-skyline.jpg)]({filename}/images/new-england-trip/boston-skyline.jpg)
+Prudential Center (bottom)]({static}/images/new-england-trip/boston-skyline.jpg)]({static}/images/new-england-trip/boston-skyline.jpg)
 *Views of the Boston Skyline from the Whale Watching Boat (top) and the
 Prudential Center (bottom)*
 

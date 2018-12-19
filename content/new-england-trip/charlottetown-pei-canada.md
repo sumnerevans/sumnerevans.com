@@ -24,18 +24,18 @@ The countryside was very pretty. Here are a few photos.
 <table class="gallery">
   <tr>
     <td>
-      <a href="{filename}/images/new-england-trip/pei1.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/pei1.jpg" />
+      <a href="{static}/images/new-england-trip/pei1.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/pei1.jpg" />
       </a>
     </td>
     <td>
-      <a href="{filename}/images/new-england-trip/pei2.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/pei2.jpg" />
+      <a href="{static}/images/new-england-trip/pei2.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/pei2.jpg" />
       </a>
     </td>
     <td>
-      <a href="{filename}/images/new-england-trip/pei3.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/pei3.jpg" />
+      <a href="{static}/images/new-england-trip/pei3.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/pei3.jpg" />
       </a>
     </td>
   </tr>
@@ -55,32 +55,32 @@ traps.
 <table class="gallery">
   <tr>
     <td colspan="4" rowspan="2" width="65%">
-      <a href="{filename}/images/new-england-trip/pei4.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/pei4.jpg" />
+      <a href="{static}/images/new-england-trip/pei4.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/pei4.jpg" />
       </a>
     </td>
     <td colspan="2">
-      <a href="{filename}/images/new-england-trip/pei5.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/pei5.jpg" />
+      <a href="{static}/images/new-england-trip/pei5.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/pei5.jpg" />
       </a>
     </td>
   </tr>
   <tr>
     <td colspan="2">
-      <a href="{filename}/images/new-england-trip/pei6.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/pei6.jpg" />
+      <a href="{static}/images/new-england-trip/pei6.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/pei6.jpg" />
       </a>
     </td>
   </tr>
   <tr>
     <td colspan="3">
-      <a href="{filename}/images/new-england-trip/pei8.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/pei8.jpg" />
+      <a href="{static}/images/new-england-trip/pei8.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/pei8.jpg" />
       </a>
     </td>
     <td colspan="3">
-      <a href="{filename}/images/new-england-trip/pei7.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/pei7.jpg" />
+      <a href="{static}/images/new-england-trip/pei7.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/pei7.jpg" />
       </a>
     </td>
   </tr>
@@ -97,7 +97,7 @@ to the car.
 Here’s a picture I took at a different beach where we were not getting
 sandblasted.
 
-[![]({filename}/images/new-england-trip/pei9.jpg)]({filename}/images/new-england-trip/pei9.jpg)
+[![]({static}/images/new-england-trip/pei9.jpg)]({static}/images/new-england-trip/pei9.jpg)
 
 #### Anne of Green Gables
 
@@ -105,7 +105,7 @@ On our way back to Charlottetown we stopped at Lucy Maud Montgomery's house, the
 house where Anne of Green Gables was based. I'm no fan of the series, so I won't
 dwell on the subject.
 
-[![]({filename}/images/new-england-trip/pei10.jpg)]({filename}/images/new-england-trip/pei10.jpg)
+[![]({static}/images/new-england-trip/pei10.jpg)]({static}/images/new-england-trip/pei10.jpg)
 
 ### Walking City
 
@@ -120,25 +120,25 @@ row of what I presume are homes.
 <table class="gallery">
   <tr>
     <td>
-      <a href="{filename}/images/new-england-trip/pei11.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/pei11.jpg" />
+      <a href="{static}/images/new-england-trip/pei11.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/pei11.jpg" />
       </a>
     </td>
     <td>
-      <a href="{filename}/images/new-england-trip/pei12.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/pei12.jpg" />
+      <a href="{static}/images/new-england-trip/pei12.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/pei12.jpg" />
       </a>
     </td>
     <td>
-      <a href="{filename}/images/new-england-trip/pei13.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/pei13.jpg" />
+      <a href="{static}/images/new-england-trip/pei13.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/pei13.jpg" />
       </a>
     </td>
   </tr>
   <tr>
     <td colspan="3">
-      <a href="{filename}/images/new-england-trip/pei14.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/pei14.jpg" />
+      <a href="{static}/images/new-england-trip/pei14.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/pei14.jpg" />
       </a>
     </td>
   </tr>
@@ -148,7 +148,7 @@ At the end of that street is Confederation Hall, the birthplace of Canada. It
 was in that building that the founders of Canada met to discuss becoming a
 nation in 1864.
 
-[![]({filename}/images/new-england-trip/pei15.jpg)]({filename}/images/new-england-trip/pei15.jpg)
+[![]({static}/images/new-england-trip/pei15.jpg)]({static}/images/new-england-trip/pei15.jpg)
 
 We turned left in front of Confederation Hall and walked down Victoria Row, a
 pedestrian street somewhat like 16th Street Mall in Denver but much shorter
@@ -162,7 +162,7 @@ didn't give us one :(. We made up for it by getting some of their ice cream.
 After that, it was time to head back to the ship, but before we got back, we
 walked along some of the boardwalk and got this nice picture of the ship.
 
-[![]({filename}/images/new-england-trip/pei16.jpg)]({filename}/images/new-england-trip/pei16.jpg)
+[![]({static}/images/new-england-trip/pei16.jpg)]({static}/images/new-england-trip/pei16.jpg)
 
 ### Evening
 
@@ -193,9 +193,9 @@ captain's father and I went up to the top deck and watched us sail under the
 bridge. While we were up there, I got some great pictures of the sunset and of
 Confederation Bridge.
 
-[![]({filename}/images/new-england-trip/bridge.gif)]({filename}/images/new-england-trip/bridge.gif)
+[![]({static}/images/new-england-trip/bridge.gif)]({static}/images/new-england-trip/bridge.gif)
 
-[![]({filename}/images/new-england-trip/pei17.jpg)]({filename}/images/new-england-trip/pei17.jpg)
+[![]({static}/images/new-england-trip/pei17.jpg)]({static}/images/new-england-trip/pei17.jpg)
 
 #### Meeting the Captain
 

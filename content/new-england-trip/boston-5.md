@@ -32,7 +32,7 @@ Another plaque commemorated an officer who died at the Battle of Bunker Hill.
 There was a very nice organ in the back. I would have loved to hear it play
 during a service.
 
-[![]({filename}/images/new-england-trip/old-north-church.jpg)]({filename}/images/new-england-trip/old-north-church.jpg)
+[![]({static}/images/new-england-trip/old-north-church.jpg)]({static}/images/new-england-trip/old-north-church.jpg)
 
 ### Paul Revere House
 

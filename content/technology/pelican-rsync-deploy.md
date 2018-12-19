@@ -38,7 +38,7 @@ it `source`). After you've created the `source` branch, push it to GitHub.
 Next, go to the Settings page for your GitHub Pages repository and click on
 "Branches". From the Default Branch dropdown, select "source".
 
-![select the branch from the dropdown]({filename}/images/technology/gh-pages-default-branch.png)
+![select the branch from the dropdown]({static}/images/technology/gh-pages-default-branch.png)
 
 Later on, we will be setting up Travis CI to use [GitHub Pages
 Deployment](https://docs.travis-ci.com/user/deployment/pages/). You will need to
@@ -72,7 +72,7 @@ Once you're signed in to Travis CI, and all of your GitHub repositories have
 been synchronised, go to your Travis CI profile page and enable your GitHub
 Pages repository.
 
-![enable Travis on site]({filename}/images/technology/travis-site-enable.png)
+![enable Travis on site]({static}/images/technology/travis-site-enable.png)
 
 Now, go to the Travis CI settings for your repository and enable "Build only
 if .travis.yml is present" and "Build on branch updates".
@@ -81,7 +81,7 @@ Down in the Environment Variables, add an environment variable with name
 `GITHUB_TOKEN` and value of the Personal Access Token that you generated
 earlier. Make sure that you have "Display value in build log" disabled.
 
-![change environment variables]({filename}/images/technology/travis-env-var.png)
+![change environment variables]({static}/images/technology/travis-env-var.png)
 
 Now you need to configure Travis CI. To do this, create a `.travis.yml` file in
 the root of your repository and add the following to it:

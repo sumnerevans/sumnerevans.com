@@ -12,8 +12,8 @@ been in such dense fog for such a long time.
 <table class="gallery">
   <tr>
     <td colspan="2">
-      <a href="{filename}/images/carribean-cruise/fog-street.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/fog-street.jpg" alt="Fog on the street" />
+      <a href="{static}/images/carribean-cruise/fog-street.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/fog-street.jpg" alt="Fog on the street" />
       </a>
       Fog on the street
     </td>
@@ -21,14 +21,14 @@ been in such dense fog for such a long time.
 
   <tr>
     <td>
-      <a href="{filename}/images/carribean-cruise/fog-dock.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/fog-dock.jpg" alt="Fog at the dock" />
+      <a href="{static}/images/carribean-cruise/fog-dock.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/fog-dock.jpg" alt="Fog at the dock" />
       </a>
       Fog at the dock
     </td>
     <td>
-      <a href="{filename}/images/carribean-cruise/fog-building.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/fog-building.jpg" alt="Fog obscuring the top of a building" />
+      <a href="{static}/images/carribean-cruise/fog-building.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/fog-building.jpg" alt="Fog obscuring the top of a building" />
       </a>
       Fog obscuring the top of a building
     </td>
@@ -76,8 +76,8 @@ Below are some pictures from the Laura Plantation.
 <table class="gallery">
   <tr class="picture-row">
     <td colspan="4">
-      <a href="{filename}/images/carribean-cruise/laura-house.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/laura-house.jpg" alt="The Laura
+      <a href="{static}/images/carribean-cruise/laura-house.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/laura-house.jpg" alt="The Laura
           Plantation House" />
       </a>
       The Laura Plantation House
@@ -85,22 +85,22 @@ Below are some pictures from the Laura Plantation.
   </tr>
   <tr>
     <td>
-      <a href="{filename}/images/carribean-cruise/laura-room.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/laura-room.jpg" alt="Room at Laura
+      <a href="{static}/images/carribean-cruise/laura-room.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/laura-room.jpg" alt="Room at Laura
           Plantation" />
       </a>
       Room at Laura Plantation
     </td>
     <td>
-      <a href="{filename}/images/carribean-cruise/laura-crib.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/laura-crib.jpg" alt="Room at Laura
+      <a href="{static}/images/carribean-cruise/laura-crib.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/laura-crib.jpg" alt="Room at Laura
           Plantation" />
       </a>
       Room at Laura Plantation
     </td>
     <td width="50%" colspan="2" rowspan="2">
-      <a href="{filename}/images/carribean-cruise/laura-tree.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/laura-tree.jpg" alt="Large tree at the
+      <a href="{static}/images/carribean-cruise/laura-tree.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/laura-tree.jpg" alt="Large tree at the
           Laura Plantation" />
       </a>
       Large tree at the Laura Plantation
@@ -108,14 +108,14 @@ Below are some pictures from the Laura Plantation.
   </tr>
   <tr>
     <td>
-      <a href="{filename}/images/carribean-cruise/laura-portraits.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/laura-portraits.jpg" alt="Portraits" />
+      <a href="{static}/images/carribean-cruise/laura-portraits.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/laura-portraits.jpg" alt="Portraits" />
       </a>
       Portraits
     </td>
     <td>
-      <a href="{filename}/images/carribean-cruise/laura-yard.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/laura-yard.jpg" alt="The front yard of
+      <a href="{static}/images/carribean-cruise/laura-yard.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/laura-yard.jpg" alt="The front yard of
           Laura Plantation" />
       </a>
       The front yard of Laura Plantation
@@ -132,8 +132,8 @@ the road to the plantation home.
 <table class="gallery">
   <tr>
     <td>
-      <a href="{filename}/images/carribean-cruise/oak-alley-from-house.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/oak-alley-from-house.jpg" alt="View of
+      <a href="{static}/images/carribean-cruise/oak-alley-from-house.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/oak-alley-from-house.jpg" alt="View of
           Oak Alley from the plantation house" />
       </a>
       View of Oak Alley from the plantation house
@@ -155,42 +155,42 @@ Here are some pictures of the Oak Alley Plantation.
 <table class="gallery">
   <tr class="picture-row">
     <td colspan="3">
-      <a href="{filename}/images/carribean-cruise/oak-alley.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/oak-alley.jpg" alt="Oak Alley" />
+      <a href="{static}/images/carribean-cruise/oak-alley.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/oak-alley.jpg" alt="Oak Alley" />
       </a>
       Oak Alley
     </td>
   </tr>
   <tr>
     <td>
-      <a href="{filename}/images/carribean-cruise/oak-alley-mantle.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/oak-alley-mantle.jpg" alt="Mantle at
+      <a href="{static}/images/carribean-cruise/oak-alley-mantle.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/oak-alley-mantle.jpg" alt="Mantle at
           Oak Alley" />
       </a>
     </td>
     <td>
-      <a href="{filename}/images/carribean-cruise/oak-alley-table.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/oak-alley-table.jpg" alt="Dining table
+      <a href="{static}/images/carribean-cruise/oak-alley-table.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/oak-alley-table.jpg" alt="Dining table
           at Oak Alley" />
       </a>
     </td>
     <td>
-      <a href="{filename}/images/carribean-cruise/oak-alley-bedroom.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/oak-alley-bedroom.jpg" alt="Bedroom at
+      <a href="{static}/images/carribean-cruise/oak-alley-bedroom.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/oak-alley-bedroom.jpg" alt="Bedroom at
           Oak Alley" />
       </a>
     </td>
   </tr>
   <tr>
     <td>
-      <a href="{filename}/images/carribean-cruise/oak-alley-bedroom2.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/oak-alley-bedroom2.jpg" alt="Bedroom at
+      <a href="{static}/images/carribean-cruise/oak-alley-bedroom2.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/oak-alley-bedroom2.jpg" alt="Bedroom at
           Oak Alley" />
       </a>
     </td>
     <td colspan="2">
-      <a href="{filename}/images/carribean-cruise/oak-alley-garden.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/oak-alley-garden.jpg" alt="Garden at
+      <a href="{static}/images/carribean-cruise/oak-alley-garden.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/oak-alley-garden.jpg" alt="Garden at
           Oak Alley" />
       </a>
     </td>

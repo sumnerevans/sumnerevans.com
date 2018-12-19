@@ -1,7 +1,7 @@
 How to Win a Hackathon
 ######################
 
-:date: 2018-12-04 23:27
+:date: 2018-12-18 22:58
 :authors: Sumner Evans
 :category: Hackathon
 :tags: Facebook Hackathon, Win, Hackathon, Prize, Hackathon Demo

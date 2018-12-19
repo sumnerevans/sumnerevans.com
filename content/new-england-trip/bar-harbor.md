@@ -25,62 +25,62 @@ just post a bunch of pictures and let them speak for themselves.
 <table class="gallery">
   <tr>
     <td>
-      <a href="{filename}/images/new-england-trip/bar-harbor1.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/bar-harbor1.jpg" />
+      <a href="{static}/images/new-england-trip/bar-harbor1.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/bar-harbor1.jpg" />
       </a>
     </td>
     <td>
-      <a href="{filename}/images/new-england-trip/bar-harbor2.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/bar-harbor2.jpg" />
+      <a href="{static}/images/new-england-trip/bar-harbor2.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/bar-harbor2.jpg" />
       </a>
     </td>
     <td>
-      <a href="{filename}/images/new-england-trip/bar-harbor3.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/bar-harbor3.jpg" />
-      </a>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-      <a href="{filename}/images/new-england-trip/bar-harbor4.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/bar-harbor4.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="{filename}/images/new-england-trip/bar-harbor5.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/bar-harbor5.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="{filename}/images/new-england-trip/bar-harbor6.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/bar-harbor6.jpg" />
+      <a href="{static}/images/new-england-trip/bar-harbor3.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/bar-harbor3.jpg" />
       </a>
     </td>
   </tr>
 
   <tr>
     <td>
-      <a href="{filename}/images/new-england-trip/bar-harbor7.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/bar-harbor7.jpg" />
+      <a href="{static}/images/new-england-trip/bar-harbor4.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/bar-harbor4.jpg" />
       </a>
     </td>
     <td>
-      <a href="{filename}/images/new-england-trip/bar-harbor8.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/bar-harbor8.jpg" />
+      <a href="{static}/images/new-england-trip/bar-harbor5.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/bar-harbor5.jpg" />
       </a>
     </td>
     <td>
-      <a href="{filename}/images/new-england-trip/bar-harbor9.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/bar-harbor9.jpg" />
+      <a href="{static}/images/new-england-trip/bar-harbor6.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/bar-harbor6.jpg" />
+      </a>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <a href="{static}/images/new-england-trip/bar-harbor7.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/bar-harbor7.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="{static}/images/new-england-trip/bar-harbor8.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/bar-harbor8.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="{static}/images/new-england-trip/bar-harbor9.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/bar-harbor9.jpg" />
       </a>
     </td>
   </tr>
 
   <tr>
     <td colspan="3">
-      <a href="{filename}/images/new-england-trip/bar-harbor10.jpg" target="_blank">
-        <img src="{filename}/images/new-england-trip/bar-harbor10.jpg" />
+      <a href="{static}/images/new-england-trip/bar-harbor10.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/bar-harbor10.jpg" />
       </a>
     </td>
   </tr>

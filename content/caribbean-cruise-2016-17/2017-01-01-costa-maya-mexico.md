@@ -115,21 +115,21 @@ temple, it was almost guaranteed that there would be some human sacrifices.
 <table class="gallery">
   <tr>
     <td colspan="2">
-      <a href="{filename}/images/carribean-cruise/costa-maya1.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/costa-maya1.jpg" />
+      <a href="{static}/images/carribean-cruise/costa-maya1.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/costa-maya1.jpg" />
       </a>
     </td>
   </tr>
 
   <tr>
     <td>
-      <a href="{filename}/images/carribean-cruise/costa-maya2.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/costa-maya2.jpg" />
+      <a href="{static}/images/carribean-cruise/costa-maya2.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/costa-maya2.jpg" />
       </a>
     </td>
     <td>
-      <a href="{filename}/images/carribean-cruise/costa-maya3.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/costa-maya3.jpg" alt="The main temple" />
+      <a href="{static}/images/carribean-cruise/costa-maya3.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/costa-maya3.jpg" alt="The main temple" />
       </a>
       The main temple
     </td>
@@ -190,26 +190,26 @@ items. It was a very good meal.
 <table class="gallery">
   <tr>
     <td colspan="3">
-      <a href="{filename}/images/carribean-cruise/costa-maya4.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/costa-maya4.jpg" />
+      <a href="{static}/images/carribean-cruise/costa-maya4.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/costa-maya4.jpg" />
       </a>
     </td>
   </tr>
 
   <tr>
     <td>
-      <a href="{filename}/images/carribean-cruise/costa-maya5.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/costa-maya5.jpg" />
+      <a href="{static}/images/carribean-cruise/costa-maya5.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/costa-maya5.jpg" />
       </a>
     </td>
     <td>
-      <a href="{filename}/images/carribean-cruise/costa-maya6.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/costa-maya6.jpg" alt="The main temple" />
+      <a href="{static}/images/carribean-cruise/costa-maya6.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/costa-maya6.jpg" alt="The main temple" />
       </a>
     </td>
     <td>
-      <a href="{filename}/images/carribean-cruise/costa-maya7.jpg" target="_blank">
-        <img src="{filename}/images/carribean-cruise/costa-maya7.jpg" alt="The main temple" />
+      <a href="{static}/images/carribean-cruise/costa-maya7.jpg" target="_blank">
+        <img src="{static}/images/carribean-cruise/costa-maya7.jpg" alt="The main temple" />
       </a>
     </td>
   </tr>

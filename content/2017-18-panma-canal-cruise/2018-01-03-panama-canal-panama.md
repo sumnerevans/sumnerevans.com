@@ -23,14 +23,14 @@ another hour.
 <table class="gallery">
   <tr>
     <td>
-      <a href="{filename}/images/panama-canal-cruise/panama1.jpg" target="_blank">
-        <img src="{filename}/images/panama-canal-cruise/panama1.jpg" />
+      <a href="{static}/images/panama-canal-cruise/panama1.jpg" target="_blank">
+        <img src="{static}/images/panama-canal-cruise/panama1.jpg" />
       </a>
     </td>
 
     <td>
-      <a href="{filename}/images/panama-canal-cruise/panama2.jpg" target="_blank">
-        <img src="{filename}/images/panama-canal-cruise/panama2.jpg" />
+      <a href="{static}/images/panama-canal-cruise/panama2.jpg" target="_blank">
+        <img src="{static}/images/panama-canal-cruise/panama2.jpg" />
       </a>
     </td>
 
@@ -39,14 +39,14 @@ another hour.
   <tr>
 
     <td>
-      <a href="{filename}/images/panama-canal-cruise/panama3.jpg" target="_blank">
-        <img src="{filename}/images/panama-canal-cruise/panama3.jpg" />
+      <a href="{static}/images/panama-canal-cruise/panama3.jpg" target="_blank">
+        <img src="{static}/images/panama-canal-cruise/panama3.jpg" />
       </a>
     </td>
 
     <td>
-      <a href="{filename}/images/panama-canal-cruise/panama4.jpg" target="_blank">
-        <img src="{filename}/images/panama-canal-cruise/panama4.jpg" />
+      <a href="{static}/images/panama-canal-cruise/panama4.jpg" target="_blank">
+        <img src="{static}/images/panama-canal-cruise/panama4.jpg" />
       </a>
     </td>
   </tr>
@@ -67,13 +67,13 @@ we could see the sides of the locks and even reach out and touch the walls.
 <table class="gallery">
   <tr>
     <td>
-      <a href="{filename}/images/panama-canal-cruise/panama5.jpg" target="_blank">
-        <img src="{filename}/images/panama-canal-cruise/panama5.jpg" />
+      <a href="{static}/images/panama-canal-cruise/panama5.jpg" target="_blank">
+        <img src="{static}/images/panama-canal-cruise/panama5.jpg" />
       </a>
     </td>
     <td>
-      <a href="{filename}/images/panama-canal-cruise/panama6.jpg" target="_blank">
-        <img src="{filename}/images/panama-canal-cruise/panama6.jpg" />
+      <a href="{static}/images/panama-canal-cruise/panama6.jpg" target="_blank">
+        <img src="{static}/images/panama-canal-cruise/panama6.jpg" />
       </a>
     </td>
   </tr>
@@ -87,7 +87,7 @@ it is not yet complete.)
 We then disembarked the ferry and got on to the bus which took us back around
 the Gatun Lake to our boat. On our way, we got some nice views of Panama City.
 
-[![Panama City]({filename}/images/panama-canal-cruise/panama-city.jpg)]({filename}/images/panama-canal-cruise/panama-city.jpg)
+[![Panama City]({static}/images/panama-canal-cruise/panama-city.jpg)]({static}/images/panama-canal-cruise/panama-city.jpg)
 
 By the time we got back to the boat, it was very late and we went to the LIDO
 (the buffet) for a quick dinner.

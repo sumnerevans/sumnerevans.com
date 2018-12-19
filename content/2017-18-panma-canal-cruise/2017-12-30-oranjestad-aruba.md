@@ -43,13 +43,13 @@ picture that we took 16 years ago.
 <table>
   <tr>
     <td width="50%">
-      <a href="{filename}/images/panama-canal-cruise/aruba1.jpg" target="_blank">
-        <img src="{filename}/images/panama-canal-cruise/aruba1.jpg" />
+      <a href="{static}/images/panama-canal-cruise/aruba1.jpg" target="_blank">
+        <img src="{static}/images/panama-canal-cruise/aruba1.jpg" />
       </a>
     </td>
     <td width="50%">
-      <a href="{filename}/images/panama-canal-cruise/aruba2.jpg" target="_blank">
-        <img src="{filename}/images/panama-canal-cruise/aruba2.jpg" />
+      <a href="{static}/images/panama-canal-cruise/aruba2.jpg" target="_blank">
+        <img src="{static}/images/panama-canal-cruise/aruba2.jpg" />
       </a>
     </td>
   </tr>
