@@ -13,6 +13,14 @@ sure how/why, but I am. In this article I intend to try and describe some of the
 things which have helped me and my teams at hackathons.  Please note that these
 are merely my experiences. Your mileage may vary.
 
+.. note::
+
+    This article was partially inspired by Yaron Malin's post: `Hackathon
+    Winning Secrets <yaron_>`_. Yaron was on the team which won third place at
+    the Facebook Global Hackathon Finals.
+
+.. _yaron: https://medium.com/@yaron1m/hackathon-winning-secrets-3d2a41cacf9
+
 Before I can talk about how to win a hackathon, we need to be clear about the
 definition of a hackathon. A hackathon is **not** a competition where you try
 and crack into computer systems [1]_. Rather, it is a competition where you are

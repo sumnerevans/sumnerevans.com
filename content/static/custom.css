@@ -131,6 +131,7 @@ aside div img {
 }
 
 /* Admonitions */
+/* Color reference: https://isabelcastillo.com/error-info-messages-css */
 div.admonition {
   border-radius: 5px;
 }
@@ -140,16 +141,28 @@ div.admonition p {
   margin: 0;
 }
 
+div.admonition p.admonition-title {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  font-weight: bold;
+}
+
 div.admonition.warning {
   border: 1px solid #9F6000;
-  border-radius: 5px;
 }
 
 div.admonition.warning p.admonition-title {
   border-bottom: 1px solid #9F6000;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
   background-color: #FEEFB3;
-  font-weight: bold;
+  color: #9F6000;
 }
 
+div.admonition.note {
+  border: 1px solid #00529B;
+}
+
+div.admonition.note p.admonition-title {
+  border-bottom: 1px solid #00529B;
+  background-color: #BDE5F8;
+  color: #00529B;
+}
