@@ -126,7 +126,7 @@ a few tips:
 
   In addition to keeping your eyes open for things that bug you, start thinking
   about what technology you want to use at the hackathon. This requires that you
-  are in-tune with the current state of technology, and know interests you.
+  are in-tune with the current state of technology, and know what interests you.
   Often, I've shown up to a hackathon with a hammer (technology) looking for a
   nail (problem).
 
@@ -162,7 +162,7 @@ Besides getting all of the goodies, the most important thing to do is figure out
 what you are going to do for your project. At a 24 hour hackathon, you need to
 decide within 15 minutes of when coding begins. As you figure out what you are
 going to do, stretch the boundaries of your idea. Normally the best idea is the
-one which you are most excited about the extensions that could potentially be
+one which you are most excited about the *extensions* that could potentially be
 made to it after you have a base product developed or that has broad
 applications in areas you care about. For example, when we were at Facebook, we
 thought the concept of indoor navigation using AR was great, and we thought of a
@@ -211,9 +211,11 @@ So now you know what you are all working on, it's time to get coding! You've
 prioritized a set of components to implement, but what about the micro-decisions
 about how to implement those features? Rule number one at a hackathon is to
 **optimize write-time over run-time**. Who cares if your algorithm is
-:math:`\mathcal{O}(n!)`? You'll only ever have like 3 items anyway. Who cares if
-you have to cast everything 100 times? If doing something nasty prevents even a
-quarter-hour of refactoring, then it's worth it; it's a hackathon after all.
+:math:`\mathcal{O}(n!)`? Most likely, you will have :math:`n < 5` anyway, and
+even factorial algorithms are fast enough. Who cares if you have to cast
+everything 100 times? If doing something nasty prevents even a quarter-hour of
+refactoring, then it's worth it; it's a hackathon after all.
+
 Rule number two, **test early, test often**. Try to have *something* working at
 all times. That way if everything goes south, you can at least save face and
 have something to show. In order to do this, you need to ensure that you are
@@ -252,14 +254,14 @@ amazing, you won't convince the judges that it's amazing.
 Which leads us to the last rule, and probably the most important one: **have
 fun**! Yes, it's a competition, but this is also what you enjoy doing. You are
 there to write a bunch of code, eat some junk food, and hang out with friends.
-Doing well is just an added benefit.
+Winning is just an added benefit.
 
 4. Things to do during hackathon demos
 --------------------------------------
 
-In the last section, I talked a lot about thinking about demos. Even if you have
-the best project in the world, if you can't demo it effectively, you don't win.
-Here are a few tips to make your demos amazing.
+In the last section, kept mentioning demos. Why? Because they are important!
+Even if you have the best project in the world, if you can't demo it
+effectively, you don't win. Here are a few tips to make your demos amazing.
 
 - Make sure that you have a good motivation. Don't make it too contrived. It
   doesn't have to be your sick grandma that inspired you, it can just be that
@@ -279,29 +281,28 @@ Here are a few tips to make your demos amazing.
   at least have a list of all the words and phrases that you *really* want to
   make sure you say. You may not hit all of them, and that's ok, but try and say
   as many of them as you can. For example, at HackCU, we made sure to always
-  describe our app as *distributed inventory tracking* that uses *IoT* and
-  *cloud computing*. At Facebook, we made sure to always mention that it used
-  *AR*, *structure from motion*, and *simutaneous location and mapping*.
+  describe our app as "distributed inventory tracking" that uses "IoT" and
+  "cloud computing". At Facebook, we made sure to always mention that it used
+  "AR", "structure from motion", and "simultaneous location and mapping".
 
 - Be sure to show the *features* of your app, not the technology or code behind
   it. In the real world, features (not code) are what make companies money. At a
   hackathon, features (not code) are what make you win.
 
 - Of course, it's smart to talk a little bit about the technology you used
-  (especially if you are targeting a sponsor prize, or you are using a
-  cutting-edge technology), but that should not be the *primary* focus of your
+  (especially if you are targeting a technoical sponsor prize, or you are using
+  a cutting-edge technology), but that should not be the *primary* focus of your
   demo.
 
   This balancing act is important, especially with non-technical judges. When
-  you start "talking computer" at them, their brain turns off and you
-  automatically are out of the running. If you just mention a couple of
-  buzzwords associated with your project though, they may think "hey, that's
-  something my engineers talk about a lot, these people must be smart!". With a
-  technical judge, they hear the technology that you are using and their
-  appetites are whetted enough that they may have questions about it, and that's
-  where you can let the technical aspects of your project really shine. Always
-  be ready to explain exactly how you used each of the technologies you say that
-  you used.
+  you start "talking computer" at them, their brain turns off and you are
+  automatically out of the running. However, if you just mention a couple of
+  buzzwords associated with your project, they may think "hey, that's something
+  my engineers talk about a lot, these people must be smart!". With a technical
+  judge, they hear the technology that you are using and their appetites are
+  whetted enough that they may have questions about it, and that's where you can
+  let the technical aspects of your project really shine. Always be ready to
+  explain in more detail how you used each of the technologies you mention.
 
 - After your demo (and maybe during it), the judges may have questions about
   what your app can do. Always say that your app can do whatever they ask if it
@@ -332,7 +333,8 @@ general. Here are my general suggestions:
 
 - Respect the other competitors. They are taking their time to be there, so say
   hi to them, if they are willing to share what they are working on, be
-  genuinely interested.
+  genuinely interested. Who knows? Maybe one of them will be your future
+  co-worker!
 
 - Everything that you ever learned about teamwork and being a decent human being
   applies.
@@ -342,7 +344,10 @@ general. Here are my general suggestions:
   hours while coding and not sleeping.
 
 So there you have it! Those are my tips on how to win a hackathon. Hopefully
-they've been helpful for you. Happy hacking!
+they've been helpful for you. Do you think I've missed something? Do you have
+any additional tips? Comment your thoughts below!
+
+Happy hacking!
 
 -------------------------------------------------------------------------------
 
