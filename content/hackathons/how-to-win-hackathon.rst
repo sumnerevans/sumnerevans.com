@@ -267,7 +267,7 @@ Winning is just an added benefit.
 4. Things to do during hackathon demos
 --------------------------------------
 
-In the last section, kept mentioning demos. Why? Because they are important!
+In the last section, I kept mentioning demos. Why? Because they are important!
 Even if you have the best project in the world, if you can't demo it
 effectively, you don't win. Here are a few tips to make your demos amazing.
 
