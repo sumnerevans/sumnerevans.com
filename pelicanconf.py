@@ -56,7 +56,7 @@ PLUGINS = [
 ]
 PYGMENTS_STYLE = 'autumn'
 
-ARTICLE_EXCLUDES = ['extra']
+ARTICLE_EXCLUDES = ['extra', 'scss']
 IGNORE_FILES = [
     '.vim-template:.md',
     '.vim-template:.rst',

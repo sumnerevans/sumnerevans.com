@@ -1,3 +1,5 @@
+content/static/custom.css
+content/static/custom.css.map
 sws_deploy_rsa
 sws_deploy_rsa.pub
 output
@@ -169,3 +171,14 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/linux,macos,windows,python
+
+# Created by https://www.gitignore.io/api/sass
+# Edit at https://www.gitignore.io/?templates=sass
+
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+# End of https://www.gitignore.io/api/sass
