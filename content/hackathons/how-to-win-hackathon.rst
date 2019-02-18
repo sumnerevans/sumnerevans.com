@@ -36,8 +36,8 @@ each of them. At the `Xilinx`_ hackathon, my team won the Grand Prize. At
 `MinneHack 2018`_, we did not win anything, but gained valuable experience. At
 `HackCU`_, we won Judges Favorite, Best Use of AWS, and the Dish Network sponsor
 challenge. At `MHacks`_, we won Best Use of GCP and the Facebook Best Social
-Good Hack award at MHacks. Most recently at the `Global Hackathon Finals at
-Facebook <facebook_>`_, we won First Place.
+Good Hack award. Most recently at the `Global Hackathon Finals at Facebook
+<facebook_>`_, we won First Place.
 
 As you can tell, I have some experience with hackathons, and a good track record
 of success at them as well. However, hackathons are a team effort. Three of the
@@ -87,15 +87,15 @@ qualities of hackathon teammates are a passion for engineering (hackathons are
 mini tests of engineering prowess) and the ability to compete and work hard,
 while still having a ton of fun.
 
-You may notice that I do *not* consider "technical competence" is one of the top
-three most important qualities in a hackathon teammate. That's because I believe
-that people who are diligent and passionate can overcome technical incompetency
-fairly easily. This is not to say that technical competence is not a factor to
-consider, however. In fact, I generally try to ensure that I cover my own
-weaknesses with my teammates. For example, Robby is an Electrical Engineer and
-has a lot more hardware experience that I do (my knowledge is approximately zero
-in that department). Sam is great with mathematics and algorithms, and just is
-generally one of the best programmers that I know.
+You may notice that I do *not* consider "technical competence" to be one of the
+top three most important qualities in a hackathon teammate. That's because I
+believe that people who are diligent and passionate can overcome technical
+incompetency fairly easily. This is not to say that technical competence is
+*not* a factor to consider, however. In fact, I generally try to ensure that I
+cover my own weaknesses with my teammates. For example, Robby is an Electrical
+Engineer and has a lot more hardware experience that I do (my knowledge is
+approximately zero in that department). Sam is great with mathematics and
+algorithms, and just is generally one of the best programmers that I know.
 
 Since technical competence is not a large factor in my decisions for who to ask
 to be on my teams for hackathons, I often like asking some underclassmen to be
@@ -128,9 +128,9 @@ a few tips:
 **Start thinking about what you may want to do at the hackathon.**
   Keep track of all the times you think to yourself, "hey, it'd be cool if..."
   and "man, this is terrible". Just keeping track of this will get your creative
-  juices flowing. It is a lot easier to steer a ship that is moving than one
-  that is still. The same applies to your brain as it explores the set of
-  problems which you could attempt to solve.
+  juices flowing. It is a lot easier to steer a moving ship than one which is
+  still. The same applies to your brain as it explores the set of problems which
+  you could attempt to solve.
 
   In addition to keeping your eyes open for things that bug you, start thinking
   about what technology you want to use at the hackathon. This requires that you
@@ -188,7 +188,7 @@ tips which might get you going in the correct direction:
   user flow did not include login, so we didn't spend any time on it. (In fact,
   login would have just hindered our demo.)
 
-- Think about *gimmicks*, that is things which will make your hack memorable.
+- Think about *gimmicks*, that is, things which will make your hack memorable.
   Sometimes this is a physical thing like the Datanium Node at MHacks which had
   a little Arduino-controlled flag.
 
@@ -298,7 +298,7 @@ effectively, you don't win. Here are a few tips to make your demos amazing.
   hackathon, features (not code) are what make you win.
 
 - Of course, it's smart to talk a little bit about the technology you used
-  (especially if you are targeting a technoical sponsor prize, or you are using
+  (especially if you are targeting a technical sponsor prize, or you are using
   a cutting-edge technology), but that should not be the *primary* focus of your
   demo.
 
