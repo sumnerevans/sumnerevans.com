@@ -1,0 +1,9 @@
+HackCU V
+########
+
+:date: 2019-02-24 22:58
+:authors: Sumner Evans
+:category: Hackathon
+:tags: HackCU, Hackathon, Prize
+:slug: hackcu-v
+:status: draft
