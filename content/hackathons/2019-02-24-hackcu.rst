@@ -7,3 +7,11 @@ HackCU V
 :tags: HackCU, Hackathon, Prize
 :slug: hackcu-v
 :status: draft
+
+A couple of weeks ago, I, along with nearly 30 other Mines students, attended
+the HackCU hackathon at CU Boulder.
+
+Since the hackathon was so close and since I was driving up to the hackathon, I
+decided to bring *all* of my electronics. I brought my desktop, my ThinkPad, my
+MacBook Pro, my iPad, a Raspberry Pi, and a variety of other assorted cables and
+electronics.

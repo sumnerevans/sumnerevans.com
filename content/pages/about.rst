@@ -6,12 +6,12 @@ Hello, welcome to my website! I am so glad you stopped by to check it out!
 Let me introduce myself. My name is Sumner, I am 20 years old and live in
 Denver, Colorado. I am a Graduate Student in Computer Science at Colorado School
 of Mines. I graduated with my undergraduate degree in Computer Science in May
-2018.
+2018. I have accepted a job at The Trade Desk and will be starting there in June
+of this year.
 
 Computers are my passion. I really enjoy programming and the computer science
-courses I've taken so far at Mines have been very interesting. I run Arch Linux
-on my 15" Retina MacBook Pro (Mid 2014). I also have a Google Pixel, a Raspberry
-Pi, and an iPad Pro 9.7 inch.
+courses I've taken so far at Mines have been very interesting. I have a list of
+all my gear `here <gear_>`_.
 
 I was homeschooled through high school, but I also attended Red Rocks Community
 College doing a few classes a semester through high school. I also worked at
@@ -33,6 +33,7 @@ site.
 
 .. _blog: /
 .. _portfolio: /pages/portfolio.html
+.. _gear: /pages/gear.html
 .. _resume: /static/resume.pdf
 
 Happy reading!
