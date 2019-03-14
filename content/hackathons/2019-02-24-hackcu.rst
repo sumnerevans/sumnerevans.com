@@ -5,13 +5,86 @@ HackCU V
 :authors: Sumner Evans
 :category: Hackathon
 :tags: HackCU, Hackathon, Prize
-:slug: hackcu-v
+:slug: 2019-02-24-hackcu-v
 :status: draft
 
-A couple of weeks ago, I, along with nearly 30 other Mines students, attended
-the HackCU hackathon at CU Boulder.
+A couple of weeks ago, nearly 30 Mines students (myself included), attended the
+HackCU hackathon at CU Boulder.
 
 Since the hackathon was so close and since I was driving up to the hackathon, I
-decided to bring *all* of my electronics. I brought my desktop, my ThinkPad, my
-MacBook Pro, my iPad, a Raspberry Pi, and a variety of other assorted cables and
-electronics.
+decided to bring *all* of my electronics. I brought my desktop, a monitor, my
+mechanical keyboard, my ThinkPad, my MacBook Pro, my iPad, a Raspberry Pi, and a
+variety of other assorted cables and electronics. It was a good thing I did,
+too, since we ended up using all of them during the hackathon.
+
+For this hackathon, I decided to make a team of me and 3 freshmen. My team
+consisted of Ben Perkins, Nick Jarmusz, Jesus Nunez, and myself. Ben had been to
+a few hackathons during high school, and also attended MHacks this fall. This
+was Nick an Jesus's first time at a hackathon.
+
+All of the Mines people headed out from Mines at 8:00, or at least that was the
+plan. In actuality only one member of my team was at the meeting point at 8:00.
+(The other cars heading up had similar luck getting everyone there on time.) At
+around 8:15 Jesus and I decided to go to the Trads to check to make sure that
+Ben was awake. He wasn't. Nick was also late, but he was at least awake. We left
+at about 8:50.
+
+The drive up was pretty uneventful and we got there at around 9:30, which was
+perfectly fine since things didn't even start until 10:30.
+
+We wandered around looking at the vendors' booths. Then there was an opening
+ceremony. After that, we got some lunch (the catered food was really good).
+Then, they were setting up tables, and not allowing people to claim tables. They
+didn't do a good job patrolling, and a bunch of other people started camping
+out. The Mines people wanted to be generally in the same area, so we were rather
+annoyed. After complaining, we were able to get our tables.
+
+Like last year's HackCU, they had way too few power strips, but we were able to
+manage initially (I actually ended up going to Target to buy a power strip at
+one point during the hackathon). We set up our computers and talked about what
+we were going to make, and grabbed some lunch.
+
+We had a couple of ideas initially, mainly related to machine learning or VR (I
+had brought my desktop with its Nvidia GTX 2070 for that reason). We didn't
+really have any ideas that were cool until we thought of using WiFi ping signals
+to identify users' locations and then cluster devices using ML to make estimates
+of how many people are in a space and their general movement patterns.
+
+We started by doing some academic research into work done by Stanford and others
+in using WiFi to track users' movements throughout a space. Things we researched
+included:
+
+* `ArrayTrack: Fine-Grained Indoor Location System <arraytrack_>`_
+* `Waitz <waitz_>`_
+* `SpotFi: Decimeter Level Localization Using WiFi <spotfi_>`_
+* `Accurate, Low-Energy Trajectory Mapping for Mobile Devices <ctrack_>`_
+
+.. _arraytrack: https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final51.pdf
+.. _waitz: https://ucsdwaitz.com/
+.. _spotfi: https://web.stanford.edu/~skatti/pubs/sigcomm15-spotfi.pdf
+.. _ctrack:  http://db.csail.mit.edu/pubs/ctrack-cr.pdf
+
+Having done this research, we were not only confident that our idea was viable,
+but also that we would be able to point to the research in case our system was
+terribly inaccurate. If it did, in fact, give terrible accuracy, we could say
+that we didn't have time to integrate all of the research in this space and that
+with more time and better equipment, we would be able to greatly increase
+accuracy. (It's always good to have a scapegoat...)
+
+We determined that we would have to build the following main components for a
+minimal proof-of-concept.
+
+- **WiFi Ping Capture:** We needed some way of capturing WiFi pings made by
+  devices. This system also needed to give us a way to determine the signal
+  strength of each of the pings.
+
+- **Signal Analysis:** We needed a way to use the signal strength to create
+  estimate the distance from the detection node to the device.
+
+- **Triangulation:** We needed a way to triangulate devices given distances from
+  at least three devices.
+
+- **Visualization:** We needed a user interface to show the locations of devices
+  relative to the three detection nodes.
+
+If we had time, we wanted to extend it further by adding a few more components:
