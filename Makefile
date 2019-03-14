@@ -41,10 +41,10 @@ html: content/static/custom.css
 clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
 
-regenerate:
+regenerate: content/static/custom.css
 	$(PELICAN) -r $(INPUTDIR) -o $(OUTPUTDIR) -s $(CONFFILE) $(PELICANOPTS)
 
-serve:
+serve: content/static/custom.css
 ifdef PORT
 	cd $(OUTPUTDIR) && $(PY) -m pelican.server $(PORT)
 else
@@ -59,7 +59,7 @@ else
 endif
 
 
-devserver:
+devserver: content/static/custom.css
 ifdef PORT
 	$(BASEDIR)/develop_server.sh restart $(PORT)
 else

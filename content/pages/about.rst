@@ -3,11 +3,11 @@ About
 
 Hello, welcome to my website! I am so glad you stopped by to check it out!
 
-Let me introduce myself. My name is Sumner, I am 20 years old and live in
+Let me introduce myself. My name is Sumner, I am 21 years old and live in
 Denver, Colorado. I am a Graduate Student in Computer Science at Colorado School
-of Mines. I graduated with my undergraduate degree in Computer Science in May
-2018. I have accepted a job at The Trade Desk and will be starting there in June
-of this year.
+of Mines and will graduate in May. I graduated with my undergraduate degree in
+Computer Science from Mines in May 2018. I have accepted a job at The Trade Desk
+and will be starting there in June of this year.
 
 Computers are my passion. I really enjoy programming and the computer science
 courses I've taken so far at Mines have been very interesting. I have a list of
