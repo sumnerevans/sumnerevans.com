@@ -74,17 +74,21 @@ accuracy. (It's always good to have a scapegoat...)
 We determined that we would have to build the following main components for a
 minimal proof-of-concept.
 
-- **WiFi Ping Capture:** We needed some way of capturing WiFi pings made by
+* **WiFi Ping Capture:** We needed some way of capturing WiFi pings made by
   devices. This system also needed to give us a way to determine the signal
   strength of each of the pings.
 
-- **Signal Analysis:** We needed a way to use the signal strength to create
+* **Signal Analysis:** We needed a way to use the signal strength to create
   estimate the distance from the detection node to the device.
 
-- **Triangulation:** We needed a way to triangulate devices given distances from
+* **Triangulation:** We needed a way to triangulate devices given distances from
   at least three devices.
 
-- **Visualization:** We needed a user interface to show the locations of devices
+* **Visualization:** We needed a user interface to show the locations of devices
   relative to the three detection nodes.
 
 If we had time, we wanted to extend it further by adding a few more components:
+
+* **Device Clustering:** often, people have many devices. In these cases, we
+  wanted to be able to cluster devices together using data analytics so that we
+  could track numbers of *people* rather than numbers of devices.
