@@ -6,7 +6,7 @@ HackCU V
 :category: Hackathon
 :tags: HackCU, Hackathon, Prize
 :slug: 2019-02-24-hackcu-v
-:status: draft
+:status: published
 
 A couple of weeks ago, nearly 30 Mines students (myself included), attended the
 HackCU hackathon at CU Boulder.
