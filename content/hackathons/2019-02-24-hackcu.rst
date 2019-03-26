@@ -18,7 +18,7 @@ variety of other assorted cables and electronics. It was a good thing I did,
 too, since we ended up using all of them during the hackathon.
 
 For this hackathon, I decided to make a team of me and 3 freshmen. My team
-consisted of Ben Perkins, Nick Jarmusz, Jesus Nunez, and myself. Ben had been to
+consisted of Ben Perkins, Nick Jarmusz, Jesus Nuñez, and myself. Ben had been to
 a few hackathons during high school, and also attended MHacks this fall. This
 was Nick an Jesus's first time at a hackathon.
 
@@ -81,14 +81,122 @@ minimal proof-of-concept.
 * **Signal Analysis:** We needed a way to use the signal strength to create
   estimate the distance from the detection node to the device.
 
-* **Triangulation:** We needed a way to triangulate devices given distances from
-  at least three devices.
+* **Trilateration:** We needed a way to determine the position of each device
+  given distances from at least three capture nodes. (Trilateration is where you
+  use distances, rather than angles to calculate positions. Triangulation, which
+  is what is often used incorrectly to refer to trilateration, uses angles to
+  calculate distances.)
 
 * **Visualization:** We needed a user interface to show the locations of devices
   relative to the three detection nodes.
 
 If we had time, we wanted to extend it further by adding a few more components:
 
-* **Device Clustering:** often, people have many devices. In these cases, we
+* **Device Clustering:** Often, people have many devices. In these cases, we
   wanted to be able to cluster devices together using data analytics so that we
   could track numbers of *people* rather than numbers of devices.
+
+* **User Tracking:** We wanted to be able to track a given person's motions
+  through the space with a high degree of accuracy.
+
+At this point, we split off and started working on various components of the
+system. Nick and I got set up for TensorFlow (in case we needed it later on, it
+takes forever to get running). Ben started trying to figure out how to make a
+Raspberry Pi into a hotspot that can capture pings, and Jesus did a ton of
+research on how to use signal strength to measure distance from antenna to
+device, and trilaterate based on three of those distance measurements.
+
+By about 18:00, I started working on the trilateration logic. By 22:00, that was
+basically completed. In the meantime, Ben and Jesus kept working like a champ
+and determined that the Raspberry Pi was not going to cut it since the WiFi
+adapters did not have the ability to be set it up in *monitor mode* which is
+what we needed for it to receive pings. They began working on using laptops to
+act as our detection nodes instead. Nick worked on getting a server set up to
+accept data from the ping collection nodes.
+
+I took a nap for a couple of hours, and then at around midnight, I started
+working on the frontend for displaying the location of all of the devices we
+were tracking. I hate frontend dev. I just threw together some Bootstrap (the
+base of which I stole from a previous project, as always). By about 04:00, most
+of the frontend was complete, the backend of the web server needed to be hooked
+up though, and that didn't come until later that morning. I went to bed for a
+couple of hours, and then when I got up, I worked with Nick to hook up the
+frontend. We completed that around 10:00, but we still were having trouble
+figuring out how to calculate distance from signal strength. (Nick and Jesus had
+worked on it for a while earlier in the morning but hadn't quite cracked it yet.
+I don't remember exactly when as I was asleep/workong on other stuff.) We only
+had two hours left, so we all worked on it together to figure out what equations
+were necessary to make the trilateration work correctly. We finished about half
+an hour before noon, and took the next few minutes to clean up and prepare for
+demos.
+
+Nick had to go back to school because of a band concert (I think), so he headed
+out before demos. Jesus, Ben, and I held down the fort.
+
+--------------------------------------------------------------------------------
+
+We demoed to about 8 judges (many of whom were sponsor judges, since we entered
+into a lot of sponsor prizes). It was a lot more than some of the teams around
+us, not sure why that was (maybe they wanted a second look at some of the
+projects?).
+
+I was quite tired at that point, and it was difficult to stay enthusiastic about
+the project while demoing, but we made it work.
+
+Eventually, the representative from MLH came over to our table and told us that
+we were in the top 5 and would be demoing our project in front of everyone! That
+was extremely cool, I'd never made it to the finals of an MLH hackathon. At this
+point, we were in a sort of pinch. My laptop was tied down being a fake WiFi
+access point, and my desktop was running the web application. All of our other
+laptops were likewise utilized. So, I pulled out my Mac. I was running Ubuntu on
+my MacBook Pro because of needing it to do ROS development for Human Centered
+Robotics, so we used my MacBook to hook up to the projector for the demo (good
+thing I brought everything...).
+
+We demoed second. It went pretty well. Demos can always go better, but it worked
+out fine. After all of the demos, we waited around and listened to all of the
+sponsor prizes. Easton, Kristin, and Zach won Second Place in the Dish Network
+Challenge (the same challenge that Robby, Jack Garner, David, and I had won the
+year before).
+
+.. image:: {static}/images/hackathon/2019-02-24-dish-network-prize.jpg
+   :target: {static}/images/hackathon/2019-02-24-dish-network-prize.jpg
+   :width: 70%
+   :align: center
+
+Fisher and Jake won best random hack for their *Cookie Injection with Real
+Cookies* game. (Their random prize was a cheese grater.)
+
+.. image:: {static}/images/hackathon/2019-02-24-random-hack.jpg
+   :target: {static}/images/hackathon/2019-02-24-random-hack.jpg
+   :width: 70%
+   :align: center
+
+Then they finally came out to announce the winners of the overall competition.
+They announced third place. It went to a hack called *MLarketplace* which was
+basically a marketplace for plug-and-play Machine Learning algorithms. Then they
+announced second place. My team won second place! We were extremely happy about
+that, especially considering the quality of the competition.
+
+.. image:: {static}/images/hackathon/2019-02-24-second-place.jpg
+   :target: {static}/images/hackathon/2019-02-24-second-place.jpg
+   :width: 70%
+   :align: center
+
+An app called *Mentor* which was a companion iPad application and Atom plugin
+which converted abstract syntax trees from one language to another as an
+educational tool. They demoed with converting Python to Go.
+
+After the demos were over, I had to pack up all of my stuff (that was a
+non-trivial task, considering I had three computers, one of which I had to take
+the GPU out of to pack up). We then headed back to Mines and went to Thai Gold
+for dinner. Then I headed home and slept for a *very* long time.
+
+Anyway, overall, I was extremely happy with how my team did. All of them were
+freshmen, it was the first time going to a hackathon for Nick and Jesus. Ben
+came in clutch, and I think he was the real MVP of the team (he stayed up the
+entire time, and did a lot of the dirty work as well as stepped up as a leader
+of the team). I'm happy that I've gotten to represent Mines at so many
+hackathons and that I was able to finish strong at my last hackathon. I also
+have confidence that Colorado School of Mines will also continue to have great
+success at hackathons long into the future.

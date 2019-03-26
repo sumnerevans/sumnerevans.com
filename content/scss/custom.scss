@@ -138,6 +138,10 @@ aside div img {
       background-color: #adcfff;
       padding: 3px 5px;
     }
+
+    td {
+      border-top: none;
+    }
   }
 
   &.collapsed {

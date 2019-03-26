@@ -251,15 +251,13 @@ demo that we did on stage was the first time we had a done full-run of our demo;
 so as I was doing it, it did not feel good.
 
 You can watch our demo (and the other five finalists) here_ (our demo starts at
-~3:30):
+~3:30). I've included a video of just our demo below:
 
 .. _here: https://www.facebook.com/hackathon/videos/2306855209387580/
 
 .. raw:: html
 
-      <iframe
-        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fhackathon%2Fvideos%2F2306855209387580%2F&width=500&show_text=false&height=281&appId"
-        width="500" height="281" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true"></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qYet1ka1J3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 After the demos were over, we definitely didn't think that we would win. All of
 the other finalists had amazing demos, and I would have been happy to loose to
