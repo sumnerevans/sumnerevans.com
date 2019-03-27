@@ -1,15 +1,15 @@
 HackCU V
 ########
 
-:date: 2019-02-24 22:58
+:date: 2019-03-25 23:58
 :authors: Sumner Evans
 :category: Hackathon
 :tags: HackCU, Hackathon, Prize
 :slug: 2019-02-24-hackcu-v
 :status: published
 
-A couple of weeks ago, nearly 30 Mines students (myself included), attended the
-HackCU hackathon at CU Boulder.
+A couple of weekends ago (Feb. 23-24), nearly 30 Mines students (myself
+included), attended the HackCU hackathon at CU Boulder.
 
 Since the hackathon was so close and since I was driving up to the hackathon, I
 decided to bring *all* of my electronics. I brought my desktop, a monitor, my
