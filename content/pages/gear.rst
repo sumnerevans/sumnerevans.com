@@ -34,6 +34,10 @@ Accessories
 
 - **VR** (`Oculus Rift with Touch <oculus_>`_)
 
+- **Headphones** (`Audio Technica ATH-M50X <ath-m50x_>`_)
+
+- **Earbuds** (`Google Pixel Buds <pixelbuds_>`_)
+
 Mobile Devices
 --------------
 
@@ -53,3 +57,5 @@ Other Electronics
 .. _tonormic: https://www.amazon.com/dp/B01KHMUQ2M
 .. _oculus: https://www.amazon.com/dp/B073X8N1YW
 .. _ultradock: https://www.amazon.com/dp/B01N9RW2A3
+.. _ath-m50x: https://www.amazon.com/dp/B076BXN5MD
+.. _pixelbuds: https://store.google.com/product/google_pixel_buds
