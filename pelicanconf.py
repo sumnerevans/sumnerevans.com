@@ -77,6 +77,7 @@ SOCIAL = (
     ('gitlab', 'https://gitlab.com/sumner'),
     ('instagram', 'https://www.instagram.com/sumner.evans/'),
     ('twitter', 'https://twitter.com/sumner_evans'),
+    ('keybase', 'https://keybase.io/jsve'),
 )
 
 MENUITEMS = (

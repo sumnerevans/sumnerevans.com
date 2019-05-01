@@ -126,21 +126,24 @@ aside div img {
 
   .tags {
     margin-bottom: 10px;
-    line-height: 2em;
+    line-height: 1.5em;
 
     .tag-label {
       font-weight: bold;
     }
 
-    span:not(.tag-label) {
+    span:not(.tag-label):not(.caps) {
       color: black;
       font-family: 'Iosevka Term', monospace;
       background-color: #adcfff;
-      padding: 3px 5px;
+      padding: 0 5px;
+      margin-top: 3px;
+      display: inline-block;
     }
 
     td {
       border-top: none;
+      line-height: 1.5em;
     }
   }
 
