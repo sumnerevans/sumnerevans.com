@@ -38,6 +38,9 @@ Accessories
 
 - **Earbuds** (`Google Pixel Buds <pixelbuds_>`_)
 
+- **Webcam** (`Logitech HD Pro Webcam C920 <logitech_>`_)
+
+
 Mobile Devices
 --------------
 
@@ -59,3 +62,4 @@ Other Electronics
 .. _ultradock: https://www.amazon.com/dp/B01N9RW2A3
 .. _ath-m50x: https://www.amazon.com/dp/B076BXN5MD
 .. _pixelbuds: https://store.google.com/product/google_pixel_buds
+.. _logitech: https://www.amazon.com/dp/B006JH8T3S
