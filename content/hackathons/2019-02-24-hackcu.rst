@@ -165,12 +165,16 @@ year before).
    :align: center
 
 Fisher and Jake won best random hack for their *Cookie Injection with Real
-Cookies* game. (Their random prize was a cheese grater.)
+Cookies* game. (Their random prize was a cheese grater.) Jake wrote a
+reflections post about the hackathon on his blog which you can find `here
+<jakeblog_>`_.
 
 .. image:: {static}/images/hackathon/2019-02-24-random-hack.jpg
    :target: {static}/images/hackathon/2019-02-24-random-hack.jpg
    :width: 70%
    :align: center
+
+.. _jakeblog: https://jake.vossen.dev/blogs/hack-cu-v-reflections.html
 
 Then they finally came out to announce the winners of the overall competition.
 They announced third place. It went to a hack called *MLarketplace* which was
