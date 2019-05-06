@@ -124,7 +124,7 @@ couple of hours, and then when I got up, I worked with Nick to hook up the
 frontend. We completed that around 10:00, but we still were having trouble
 figuring out how to calculate distance from signal strength. (Nick and Jesus had
 worked on it for a while earlier in the morning but hadn't quite cracked it yet.
-I don't remember exactly when as I was asleep/workong on other stuff.) We only
+I don't remember exactly when as I was asleep/working on other stuff.) We only
 had two hours left, so we all worked on it together to figure out what equations
 were necessary to make the trilateration work correctly. We finished about half
 an hour before noon, and took the next few minutes to clean up and prepare for
