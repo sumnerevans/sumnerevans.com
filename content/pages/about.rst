@@ -30,6 +30,7 @@ achievements <portfolio_>`_. I also have an always-up-to-date link to my
 `resume`_. You can also find links to all of my social media accounts from this
 site.
 
+.. _thetradedesk: https://www.thetradedesk.com/
 .. _blog: /
 .. _portfolio: /pages/portfolio.html
 .. _gear: /pages/gear.html
