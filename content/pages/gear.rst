@@ -44,7 +44,8 @@ Accessories
 Mobile Devices
 --------------
 
-- **Smartphone** (Google Pixel 1*, 32 GB; iPhone 5s, 32 GB)
+- **Smartphone** (Google Pixel 3a*, 64 GB; Google Pixel 1, 32 GB; iPhone 5s, 32
+  GB)
 - **Smartwatch** (Huawei Watch Black Stainless Steel)
 - **Tablet** (iPad Pro 9.7 inch, 128 GB)
 
