@@ -1,0 +1,58 @@
+Mines High School Programming Competition 2019
+##############################################
+
+.. default-role:: math
+
+:date: 2019-04-15 12:05
+:authors: Sumner Evans
+:category: School
+:tags: High School Programming Competition, Programming Competition
+:slug: 2019-04-15-hspc
+:status: draft
+
+For the last two years, the Mines Computer Science Department has hosted a High
+School Programming Competition modelled after the `International Collegiate
+Programming Contest (ICPC) <icpc_>`_. The Mines ACM Student Chapter does the
+vast majority of organization and operations for the competition. As Chair of
+Mines ACM, I was responsible for a lot of the organizational aspects of the
+competition.
+
+The competition saw teams from around the Denver metro area, and even as far
+away as Steamboat come to compete by solving programming problems. The problems
+ranged in difficulty from a problem requiring contestants to take two numbers
+and multiply them together, to a problem where the students were required to
+solve the `Minimum Spanning Tree <mst_>`_ problem.
+
+In this post, I'm going to talk about the problems in the competition, and then
+describe the actual competition.
+
+The Problems
+------------
+
+There were ten problems in the competition. The problems can be viewed at
+https://mines19.kattis.com/problems. The problems were as follows:
+
+- **A: Alliteration** -- Keep track of the most commonly seen first letter in a
+  line of words.
+- **B: Number Reduction** -- Output the number of steps to perform the *Colatz
+  Conjecture* on a given integer `n`.
+- **C: Classrooms and Calculators** -- Given a set of *scheduling conflicts*,
+  determine the `n^{th}` day without a conflict.
+- **D: Darts for Programmers** -- Maximize ranges around a circular array.
+- **E: Tree Skiing** -- Calculate the number of Manhattan-paths (with the
+  restriction of not being able to backtrack) between two points on a grid. This
+  is alternatively a combinatorics problem.
+- **F: Ski Traffic** -- Calculate the time required to arrive at a ski slope,
+  given a set of conditions such as traffic.
+- **G: Misty** -- Solve the minimum spanning tree problem.
+- **H: Hack-a-Holics** -- Multiply two numbers together.
+- **I: Sudoku Verify** -- Verify a Sudoku puzzle.
+- **J: Rent Division** -- Calculate how much rent a set of roommates must pay to
+  equal out their total contribution (where their total contribution includes
+  shared, non-rent expenses).
+
+Problem **H** was designed to be the easiest problem, while **G** was designed
+to be the hardest problem.
+
+.. _icpc: https://icpc.baylor.edu/
+.. _mst: https://en.wikipedia.org/wiki/Minimum_spanning_tree
