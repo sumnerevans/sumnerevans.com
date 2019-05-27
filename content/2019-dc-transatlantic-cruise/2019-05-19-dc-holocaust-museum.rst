@@ -1,7 +1,7 @@
 Washington D.C. - The Holocaust Museum
 ######################################
 
-:date: 2019-05-20 18:59
+:date: 2019-05-19 18:59
 :authors: Sumner Evans
 :category: Trip to D.C. and Transatlantic Cruise
 :tags: Travel, Washington D.C., Holocaust Museum, Washington Monument, Lincoln
