@@ -4,10 +4,9 @@ About
 Hello, welcome to my website! I am so glad you stopped by to check it out!
 
 Let me introduce myself. My name is Sumner, I am 21 years old and live in
-Denver, Colorado. I am a Graduate Student in Computer Science at Colorado School
-of Mines and will graduate in May. I graduated with my undergraduate degree in
-Computer Science from Mines in May 2018. I have accepted a job at The Trade Desk
-and will be starting there in June of this year.
+Denver, Colorado. I am a Software Engineer at `theTradeDesk`_. I graduated with
+my undergraduate degree in Computer Science from Mines in May 2018 and then
+graduated with my masters degree in Computer Science from Mines in May 2019.
 
 Computers are my passion. I really enjoy programming and the computer science
 courses I've taken so far at Mines have been very interesting. I have a list of
@@ -18,11 +17,11 @@ College doing a few classes a semester through high school. I also worked at
 Can/Am Technologies, Inc. as a software developer during high school.  (See my
 `portfolio`_ for more info).
 
-When I'm not doing school, I enjoy playing soccer, volleyball, and I've been
-getting into racquetball lately. During high school, I won the FRCCA State
-Championship with Denver Eagles my senior year. I also used to practice
-TaeKwonDo regularly, but I have not had enough time since I started college.
-While I did TaeKwonDo, I achieved my 3rd Degree Black Belt.
+When I'm not working, I enjoy playing soccer, volleyball, and I've been getting
+into racquetball lately. During high school, I won the FRCCA State Championship
+with Denver Eagles my senior year. I also used to practice TaeKwonDo regularly,
+but I have not had enough time since I started college.  While I did TaeKwonDo,
+I achieved my 3rd Degree Black Belt.
 
 This site is the place to get updates on my life. I maintain a `blog`_ here
 where I post occasionally. I post about my travels, technology, politics, etc.
@@ -31,6 +30,7 @@ achievements <portfolio_>`_. I also have an always-up-to-date link to my
 `resume`_. You can also find links to all of my social media accounts from this
 site.
 
+.. _thetradedesk: https://www.thetradedesk.com/
 .. _blog: /
 .. _portfolio: /pages/portfolio.html
 .. _gear: /pages/gear.html

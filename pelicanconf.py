@@ -6,8 +6,8 @@ AUTHOR = 'Sumner Evans'
 SITENAME = 'Jonathan Sumner Evans'
 SITEURL = ''
 SITETITLE = 'Jonathan Sumner Evans'
-SITESUBTITLE = 'Graduate Student in Computer Science at Colorado School of Mines'
-SITEDESCRIPTION = 'Sumner\'s portfolio, thoughts, and writings'
+SITESUBTITLE = 'Software Engineer at The Trade Desk'
+SITEDESCRIPTION = "Sumner's portfolio, thoughts, and writings"
 SITELOGO = SITEURL + '/images/profile.jpg'
 FAVICON = SITEURL + '/images/favicon.ico'
 
