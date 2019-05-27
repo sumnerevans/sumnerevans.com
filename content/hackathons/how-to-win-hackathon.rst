@@ -34,10 +34,16 @@ Why You Should Listen to Me
 I have been to five hackathons and successfully created and demoed a project at
 each of them. At the `Xilinx`_ hackathon, my team won the Grand Prize. At
 `MinneHack 2018`_, we did not win anything, but gained valuable experience. At
-`HackCU`_, we won Judges Favorite, Best Use of AWS, and the Dish Network sponsor
-challenge. At `MHacks`_, we won Best Use of GCP and the Facebook Best Social
-Good Hack award. Most recently at the `Global Hackathon Finals at Facebook
-<facebook_>`_, we won First Place.
+`HackCU IV`_, we won Judges Favorite, Best Use of AWS, and the Dish Network
+sponsor challenge. At `MHacks`_, we won Best Use of GCP and the Facebook Best
+Social Good Hack award. Most recently at the `Global Hackathon Finals at
+Facebook <facebook_>`_, we won First Place.
+
+.. note::
+
+    Since writing this post, I attended another hackathon, HackCU V, where my
+    team won second place. You can read about it in my `HackCU V blog post
+    <HackCU V_>`_.
 
 As you can tell, I have some experience with hackathons, and a good track record
 of success at them as well. However, hackathons are a team effort. Three of the
@@ -57,7 +63,8 @@ success and I hope that you can learn from both my mistakes and my successes.
 
 .. _Xilinx: /pages/portfolio.html#Parqyng-Lots
 .. _MinneHack 2018: /pages/portfolio.html#BlockMRS
-.. _HackCU: /pages/portfolio.html#Wii-Track
+.. _HackCU IV: /pages/portfolio.html#Wii-Track
+.. _HackCU V: {filename}/hackathons/2019-02-24-hackcu.rst
 .. _MHacks: /pages/portfolio.html#Datanium
 .. _facebook: /pages/portfolio.html#HypAR-Map
 

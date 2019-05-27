@@ -21,7 +21,7 @@ too, since we ended up using all of them during the hackathon.
 For this hackathon, I decided to make a team of me and 3 freshmen. My team
 consisted of Ben Perkins, Nick Jarmusz, Jesus Nuñez, and myself. Ben had been to
 a few hackathons during high school, and also attended MHacks this fall. This
-was Nick an Jesus's first time at a hackathon.
+was Nick's and Jesus's first time at a hackathon.
 
 All of the Mines people headed out from Mines at 8:00, or at least that was the
 plan. In actuality only one member of my team was at the meeting point at 8:00.
