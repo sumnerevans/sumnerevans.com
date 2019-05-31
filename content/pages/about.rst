@@ -4,9 +4,10 @@ About
 Hello, welcome to my website! I am so glad you stopped by to check it out!
 
 Let me introduce myself. My name is Sumner, I am 21 years old and live in
-Denver, Colorado. I am a Software Engineer at `The Trade Desk`_. I graduated with
-my undergraduate degree in Computer Science from Mines in May 2018 and then
-graduated with my masters degree in Computer Science from Mines in May 2019.
+Denver, Colorado. I am a Software Engineer at `The Trade Desk`_. I graduated
+with my undergraduate degree in Computer Science from Colorado School of Mines
+in May 2018 and then graduated with my masters degree in Computer Science from
+Mines in May 2019.
 
 Computers are my passion. I really enjoy programming and the computer science
 courses I took at Mines have been very interesting. Now that I have a job, I'm
@@ -15,7 +16,7 @@ situation. I have a list of all my gear `here <gear_>`_.
 
 I was homeschooled through high school, but I also attended Red Rocks Community
 College doing a few classes a semester during high school. I also worked at
-Can/Am Technologies, Inc. as a software developer during high school.  (See my
+`Can/Am Technologies, Inc. <canam_>`_ as a software developer during high school.  (See my
 `portfolio`_ for more info).
 
 When I'm not working, I enjoy playing soccer, volleyball, and I've been getting
@@ -32,6 +33,7 @@ achievements <portfolio_>`_. I also have an always-up-to-date link to my
 site.
 
 .. _The Trade Desk: https://www.thetradedesk.com/
+.. _canam: https://canamtechnologies.com/
 .. _blog: /
 .. _portfolio: /pages/portfolio.html
 .. _gear: /pages/gear.html

@@ -47,7 +47,9 @@ work.  But, like all false religions, the American Religion is misguided. Its
 saviour is imperfect, because its us; its saints are often elevated for
 accomplishment, not character; and its sacraments lead to vanity.
 
-Yet through it all, the American flag has become a worldwide symbol of freedom,
-prosperity, and stability.
-
-- Flag was cool
+Despite of all this, the American flag has become a worldwide symbol of freedom,
+prosperity, and stability. So much so that an entire exhibit is dedicated to the
+display of the most famous flag: the one that the *Star Spangled Banner* was
+written about. I enjoyed seeing that flag, it was very large, and it would have
+been cool to see it being raised over the Fort McHenry after the all-night naval
+bombardment by the British forces during the War of 1812.

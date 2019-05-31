@@ -6,6 +6,6 @@ Washington D.C. - The Museum of the Bible
 :category: Trip to D.C. and Transatlantic Cruise
 :tags: Travel, Washington D.C., Museum of the Bible
 :slug: 2019-05-22-bible-museum
-:status: published
+:status: draft
 
 (<>)
