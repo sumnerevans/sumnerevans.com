@@ -6,9 +6,14 @@ Gear
 Computers
 ---------
 
-I run Arch Linux on all of my computers. Here is a list of all of them.
+I run Arch Linux on all of my daily drivers. I use the i3 window manager. You
+can find my `full dotfiles <dotfiles_>`_ and `miscellaneous scripts <scripts_>`_
+in their respective GitLab repositories.
 
-- **Desktop** (custom-built, `Part List on PCPartPicker <partlist_>`_)
+.. _dotfiles: https://gitlab.com/sumner/dotfiles.git
+.. _scripts: https://gitlab.com/sumner/scripts.git
+
+- **Desktop*** (custom-built, `Part List on PCPartPicker <partlist_>`_)
 
   - AMD Ryzen 7 2700X
   - Nvidia RTX 2070
@@ -17,6 +22,7 @@ I run Arch Linux on all of my computers. Here is a list of all of them.
 
 - **Laptop*** (ThinkPad T580: 32 GB RAM, 512 GB NVMe SSD, Intel Core i7-8650U,
   Nvidia GeForce MX150)
+
 - **Laptop** (MacBook Pro: 15", Retina display, Mid 2014, 16 GB RAM, 512 GB SSD)
 
 Accessories
