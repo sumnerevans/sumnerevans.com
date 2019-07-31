@@ -1,0 +1,11 @@
+Washington D.C. to New York City
+################################
+
+:date: 2019-05-23 22:31
+:authors: Sumner Evans
+:category: Trip to D.C. and Transatlantic Cruise
+:tags: Travel, Washington D.C., New York City, Broadway show
+:slug: 2019-05-23-dc-to-nyc
+:status: published
+
+(<>)
