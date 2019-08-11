@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+from datetime import datetime
 
 AUTHOR = 'Sumner Evans'
 SITENAME = 'Jonathan Sumner Evans'
@@ -17,7 +18,7 @@ CC_LICENSE = {
     'slug': 'by-sa',
 }
 
-COPYRIGHT_YEAR = 2017
+COPYRIGHT_YEAR = datetime.now().year
 
 MAIN_MENU = True
 
