@@ -1,23 +1,18 @@
-# Build the pelican site
-pelican:
+# Build and deploy the pelican site.
+pages:
   image: python:3.6-alpine
-  stage: build
-  variables:
-    GIT_SUBMODULE_STRATEGY: recursive
-  before_script:
-    - ./cicd/pelican/before_script.sh
-  script:
-    - ./cicd/pelican/script.sh
-  artifacts:
-    paths:
-      - output
-
-deploy:
-  image: alpine
   stage: deploy
   only:
     - master
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
   before_script:
-    - ./cicd/deploy/before_script.sh
+    - apk update && apk upgrade && apk add git make nodejs nodejs-npm
+    - pip install --upgrade pip
+    - pip install -r requirements.txt
+    - npm install -g sass
   script:
-    - ./cicd/deploy/script.sh
+    - make publish
+  artifacts:
+    paths:
+      - public
