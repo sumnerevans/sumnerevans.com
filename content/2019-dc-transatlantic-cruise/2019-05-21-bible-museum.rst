@@ -1,5 +1,5 @@
-Washington D.C. - The Museum of the Bible
-#########################################
+Washington D.C. -- The Museum of the Bible
+##########################################
 
 :date: 2019-05-21 21:00
 :authors: Sumner Evans

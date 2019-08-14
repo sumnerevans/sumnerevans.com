@@ -1,5 +1,5 @@
-Washington D.C. - The American History Museum
-#############################################
+Washington D.C. -- The American History Museum
+##############################################
 
 :date: 2019-05-20 20:00
 :authors: Sumner Evans

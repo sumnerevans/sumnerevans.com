@@ -8,10 +8,14 @@ Queen Mary 2 Crossing
 :slug: 2019-05-24-2019-05-31-queen-mary-2-crossing
 :status: published
 
+.. role:: strike
+    :class: strike
+
 Instead of giving you a day-by-day on what we did on the crossing (I was told
-that it is *not* a cruise), I'm going to just talk about some of the highlights
-and make some observations about my time on board the Queen Mary 2. We didn't
-stop in any ports, so it was just what we did on board.
+that it is *not* a cruise because that's only lowly peasants would go on a
+cruise), I'm going to just talk about some of the highlights and make some
+observations about my time on board the Queen Mary 2. We didn't stop in any
+ports, so it was just what we did on board.
 
 WWII Veteran Presentations
 ==========================
@@ -27,7 +31,8 @@ seeing him in person. In addition to the host, there were a few Vietnam Veteran
 
 The veterans' experiences spanned the entire war. One of the veterans was a
 sailor on board one of the ships in Pearl Harbor on the December 7, 1941 while
-another veteran was the radio operator in Eisenhower's war room on VE Day.
+another veteran was the radio operator in Eisenhower's war room on VE Day who
+sent the message that Germany had surrendered to the allies.
 
 The one who was there at Pearl Harbor, Stu, was on a ship that was hit by a
 torpedo (maybe multiple torpedos, I don't remember exactly) and was rapidly
@@ -37,9 +42,6 @@ sank straight down, rather than sideways. Stu escaped his ship by swimming to
 shore through water that was covered in burning oil from ruptured fuel tanks.
 He came up for breath once, in the middle of the inferno, and I remember him
 clearly saying "that was the hottest breath of air I've ever taken".
-
-The one who was present in Eisenhower's war room was actually the one who sent
-the message that Germany had surrendered to the allies.
 
 A few of the veterans were captured and were held as prisoners of war, and one
 one of the days they related their stories. On Memorial Day, which happened
@@ -104,12 +106,22 @@ with their own, more exclusive dining room.
 I was initially worried that I would be the only one on board under 45, but
 luckily I was proven wrong almost immediately. Before we even left New York, I
 met a guy named Chase who is also 21. He is headed to Spain for the summer for a
-study abroad 
+study abroad program. We hit it off immediately, since he was a history major,
+and I love history.
+
+The next day, I met three teenage guys at the ping-pong tournament. They were
+onboard with their grandma. Two of them, Graham and Griffin, are heading in to
+their senior year of high school while the other, Blake, is heading into his
+freshman year (I think) of high school. We ended up hanging out quite a bit
+during the :strike:`cruise` crossing. That evening, there was a Young Adults
+get-together. I met quite a few more young people at that event. One of them was
+Ryan, who just graduated with a degree in computer science and is going to start
+at Ratheon.
 
 - friends
 
   - Met chase on day 1
-  - met Graham, Griffin, and Blake on day 2
+  - met Graham, Griffin, and Blake on day 2 @ ping pong tournament
 
     - workout session day 3?
     - Chess
@@ -118,9 +130,26 @@ study abroad
 
   - Aaron on day 4 or so after First Man
 
+- lectures
+
+  - GARBO
+  - The Special Relationship between 10 Downing and the White House
+
 - the nature of routine (it became routine what we did every day very quickly)
 
-  - Trivia
 
 - First Man and Darkest Hour
 - Planetarium
+
+- Shows
+
+  - Pianist
+  - Comedian
+  - 
+
+- General observations:
+
+  - I've gotten better at learning names
+  - the nature of routine (it became routine what we did every day very quickly)
+
+    - Trivia
