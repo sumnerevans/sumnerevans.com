@@ -29,6 +29,34 @@ about WWII. The host was a man from local television in Denver, so it was funny
 seeing him in person. In addition to the host, there were a few Vietnam Veteran
 "escorts" who helped the WWII veterans throughout the cruise.
 
+.. raw:: html
+
+    <table class="gallery">
+      <tr>
+        <td>
+          <a href="{static}/images/dc-transatlantic-cruise/veterans-0.jpg"
+             target="_blank">
+            <img src="{static}/images/dc-transatlantic-cruise/veterans-0.jpg"
+              alt="Picture of two veterans giving their presentation." />
+          </a>
+        </td>
+        <td>
+          <a href="{static}/images/dc-transatlantic-cruise/veterans-1.jpg"
+             target="_blank">
+            <img src="{static}/images/dc-transatlantic-cruise/veterans-1.jpg"
+              alt="Picture of two veterans giving their presentation." />
+          </a>
+        </td>
+        <td>
+          <a href="{static}/images/dc-transatlantic-cruise/veterans-2.jpg"
+             target="_blank">
+            <img src="{static}/images/dc-transatlantic-cruise/veterans-2.jpg"
+              alt="Picture of two veterans giving their presentation." />
+          </a>
+        </td>
+      </tr>
+    </table>
+
 The veterans' experiences spanned the entire war. One of the veterans was a
 sailor on board one of the ships in Pearl Harbor on the December 7, 1941 while
 another veteran was the radio operator in Eisenhower's war room on VE Day who
@@ -51,6 +79,15 @@ General Matz, appointed by Donald Trump as the secretary of the American Battle
 Monuments Commission, talked about the work that the Battle Monuments Commission
 does to maintain the cemeteries, memorials, and monuments commemorating the
 sacrifices of the U.S. Armed Forces overseas.
+
+On the last day of the crossing, one of the veterans played his saxophone. I was
+very impressed that he was able to do that, considering his age! They also had
+all of the veterans up on stage at that time, and I got a picture.
+
+.. image:: {static}/images/dc-transatlantic-cruise/veteran-sax.jpg
+   :align: center
+   :target: {static}/images/dc-transatlantic-cruise/veteran-sax.jpg
+   :width: 75%
 
 Many of the veterans on board participated in the D-Day landings. In fact, many
 of them are continuing on to the 75th Anniversary of D-Day commemorations that
@@ -116,7 +153,7 @@ freshman year (I think) of high school. We ended up hanging out quite a bit
 during the :strike:`cruise` crossing. That evening, there was a Young Adults
 get-together. I met quite a few more young people at that event. One of them was
 Ryan, who just graduated with a degree in computer science and is going to start
-at Ratheon.
+at Raytheon.
 
 - friends
 

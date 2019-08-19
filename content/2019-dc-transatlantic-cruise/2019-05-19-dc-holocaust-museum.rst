@@ -90,22 +90,22 @@ We stayed at the museum until close. We stopped and got food from the food
 trucks which lined the street in front of the Washington Monument. We sat in the
 shade of the Washington Monument as we ate.
 
-.. image:: {attach}/images/dc-transatlantic-cruise/washington-monument.jpg
+.. image:: {static}/images/dc-transatlantic-cruise/washington-monument.jpg
    :align: center
-   :target: {attach}/images/dc-transatlantic-cruise/washington-monument.jpg
+   :target: {static}/images/dc-transatlantic-cruise/washington-monument.jpg
    :width: 75%
 
 After that, we walked over to the Lincoln Memorial, and on the way we stopped at
 the WWII Memorial, one of the more recent monuments in DC.
 
-.. {attach}/images/dc-transatlantic-cruise/wwii-fountain.mp4
+.. {static}/images/dc-transatlantic-cruise/wwii-fountain.mp4
 ..     :align: center
 ..     :width: 75%
 
 .. raw:: html
 
     <video
-      src="{attach}/images/dc-transatlantic-cruise/wwii-fountain.mp4"
+      src="{static}/images/dc-transatlantic-cruise/wwii-fountain.mp4"
       width="75%"
       class="align-center"
       autoplay="true"
