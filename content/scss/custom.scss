@@ -212,8 +212,10 @@ aside div img {
 
 /* Admonitions */
 /* Color reference: https://isabelcastillo.com/error-info-messages-css */
+/* Default is "info" color. */
 div.admonition {
   border-radius: 5px;
+  border: 1px solid #00529B;
 
   p {
     padding: 10px;
@@ -223,6 +225,9 @@ div.admonition {
       border-top-right-radius: 5px;
       border-top-left-radius: 5px;
       font-weight: bold;
+      border-bottom: 1px solid #00529B;
+      background-color: #BDE5F8;
+      color: #00529B;
     }
   }
 
@@ -233,16 +238,6 @@ div.admonition {
       border-bottom: 1px solid #9F6000;
       background-color: #FEEFB3;
       color: #9F6000;
-    }
-  }
-
-  &.note {
-    border: 1px solid #00529B;
-
-    p.admonition-title {
-      border-bottom: 1px solid #00529B;
-      background-color: #BDE5F8;
-      color: #00529B;
     }
   }
 }
