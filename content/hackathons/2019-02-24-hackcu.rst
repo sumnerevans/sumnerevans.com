@@ -190,7 +190,7 @@ that, especially considering the quality of the competition.
 
 An app called *Mentor* which was a companion iPad application and Atom plugin
 which converted abstract syntax trees from one language to another as an
-educational tool. They demoed with converting Python to Go.
+educational tool won first place. They demoed with converting Python to Go.
 
 After the demos were over, I had to pack up all of my stuff (that was a
 non-trivial task, considering I had three computers, one of which I had to take
