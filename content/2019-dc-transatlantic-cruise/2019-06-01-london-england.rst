@@ -43,6 +43,25 @@ morning.
 First stop was the Tower of London, which isn't much of a tower... I didn't go
 in, but I walked around it and then went across Tower Bridge.
 
+.. image:: {static}/images/dc-transatlantic-cruise/tower-bridge.jpg
+   :align: center
+   :target: {static}/images/dc-transatlantic-cruise/tower-bridge.jpg
+   :width: 75%
+
+I continued walking along the Thames River enjoying the experience of being in
+London. I find it very interesting being in England because while the language
+is the same, and you can read all of the signs, and you can understand what all
+of the people (except for some of the tourists) are saying, it is a very
+different culture. The architecture is more European, they have funny accents,
+they have a longer history, and their idioms are different.
+
+I was getting hungry at this point, and I didn't really want to spend a lot of
+money for lunch. Nothing right along the Thames was cheap, so I went down one of
+the main streets and found a bunch of street vendors. I saw a vendor serving
+fish and chips, but they only accepted cash, so I had to go find an ATM and
+withdraw some British Pound notes. The fish and chips were kinda crappy, to be
+honest, but it was filling enough, and I had fun people watching as I ate.
+
 The last
 time I was here, we went inside of most of the sites, but this time I went 
 
