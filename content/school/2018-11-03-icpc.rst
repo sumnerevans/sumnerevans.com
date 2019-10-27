@@ -153,9 +153,9 @@ Exceeded*! We should have just converted it to Python 2 right then and there,
 but we decided that it may be our algorithm that was actually too slow (wrong
 assumption, :math:`\mathcal{O}(nm^2)` was perfectly fine). We spent over an hour
 trying to optimize, and then in a last ditch effort, we converted it to Python 2
-and our original algorithm worked. We probably could have made it to top 3 in
-the region if we hadn't wasted ~2 man-hours on that problem, which was kinda
-annoying.
+and our original algorithm worked. We probably could have solved another problem
+and beaten the team ahead of us in the region on time if we hadn't wasted ~2
+man-hours on that problem, which was kinda annoying.
 
 By this time, Sam had given up for the time being on **F** and started on **I**.
 He solved it, we coded it up, and it worked first time!
