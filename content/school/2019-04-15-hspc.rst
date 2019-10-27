@@ -18,7 +18,7 @@ Mines ACM, I was responsible for a lot of the organizational aspects of the
 competition.
 
 The competition saw teams from around the Denver metro area, and even as far
-away as Steamboat come to compete by solving programming problems. The problems
+away as Steamboat, come to compete by solving programming problems. The problems
 ranged in difficulty from a problem requiring contestants to take two numbers
 and multiply them together, to a problem where the students were required to
 implement an algorithm to solve the `Minimum Spanning Tree <mst_>`_ problem.
@@ -50,7 +50,8 @@ The Problems
 
 There were ten problems in the competition written by six different authors. The
 problems can be viewed at https://mines19.kattis.com/problems. The following
-lists each of the problems' names and a short description of the problem:
+lists each of the problems' names and a short description of the problem in the
+order in which they appeared in competition:
 
 - **A: Alliteration** -- Keep track of the most commonly seen first letter in a
   line of words.
@@ -238,7 +239,7 @@ C - Classrooms an Calculators
 :Author: Matt Iverson
 :Attempts: 70
 :Correct: 1
-:Percentage: 1%
+:Percentage: 1% (lowest in competition)
 
 Despite its actual difficulty in competition, this was not intended to be the
 hardest problems in the competition. I think that the description and sample
