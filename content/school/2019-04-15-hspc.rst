@@ -120,7 +120,7 @@ Another way to state the above function is "if `x` is even, divide by two, if
 Conjecture at `this Wikipedia article
 <https://en.wikipedia.org/wiki/Collatz_conjecture>`_.
 
-To solve the actual problem, you can just to keep applying the above function on
+To solve the actual problem, you can just keep applying the above function on
 the input until you get 1, keeping track of how many steps it takes. Then,
 output the number of steps.
 
