@@ -279,12 +279,12 @@ where `A` is an array of the day numbers which the friends can play in the first
 `\prod d_i` days, and `|A|` denotes the length of `A`. One way to break the
 formula down for easier comprehension is as follows:
 
-* **1**: calculates the number of *full periods* required before getting to the
+* **1**: the number of *full periods* required before getting to the
   `n^\text{th}` day.
-* **2**: the number of days per period
-* **3**: the number of days that the friends have to play in the partial period
-* **4**: the number of days into the partial pattern that the friends have to go
-  before arriving at the `n^\text{th}` day
+* **2**: the number of days per period.
+* **3**: the number of days that the friends have to play in the partial period.
+* **4**: the number of days into the partial period that the friends have to go
+  before arriving at the `n^\text{th}` day.
 
 I - Sudoku Verify
 -----------------
@@ -304,10 +304,10 @@ structures. It is critical that you read the input into a good data structure (a
 determine whether or not every row, column, and region is valid. This is
 difficult because you first have to get all of the numbers in that row, column,
 or region in a data structure that is easy to use. One option is to put all of
-the numbers in the row into a set, and subtract that set from a base set: `\{1,
-2,\ldots,9\}`. If there are any leftovers after the subtraction, then the puzzle
-solution is invalid (there was a duplicate somewhere in that row, column, or
-region).
+the numbers in the row/column/region into a set, and subtract that set from a
+base set: `\{1, 2,\ldots,9\}`. If there are any leftovers after the subtraction,
+then the puzzle solution is invalid (there was a duplicate somewhere in that
+row, column, or region).
 
 E - Tree Skiing
 ---------------
