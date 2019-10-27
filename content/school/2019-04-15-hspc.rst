@@ -391,11 +391,11 @@ the algorithm. For the time limit for this problem, you can be fairly
 inefficient with how you detect cycles (no need to implement something like a
 disjoint-set data structure [5]_ or something ridiculous like that). Storing
 sets of already connected vertices is sufficient for solving this problem under
-the time limit, and I think that even doing a BFS/DFS to see if you can reach
-one vertex from the other vertex in the current tree may be fast enough.
-Additionally, since the point of this problem was to make contestants implement
-an algorithm, I intentionally designed the input format such that reading in the
-graph would not be too difficult.
+the time limit, and even doing a BFS/DFS to see if you can reach one vertex from
+the other vertex in the current tree is fast enough (assuming a reasonably
+efficient BFS/DFS implementation). Additionally, since the point of this problem
+was to make contestants implement an algorithm, I intentionally designed the
+input format such that reading in the graph would not be too difficult.
 
 .. note::
 
