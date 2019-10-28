@@ -331,19 +331,21 @@ give you a TLE. Two solutions which will work for this problem are:
 * Alternatively, you can notice that for any path to reach the clearing, you
   must go north exactly of `k` times, and west exactly `m` times where `k` is
   the number of "N"s in the input, and `m` is the number of "W"s in the input.
+  (Note that `k = n - m` where `n` is the length of the friend's path.)
   Thus, any given path can be described by which steps you go north (all
   non-north movements are by default going west).
 
-  Thus, the number of paths from the start to the clearing are precisely
+  Thus, the number of paths from the start to the clearing are precisely `n`
+  choose `k` (or `n` choose `m`, they are equivalent). We can compute `n` choose
+  `k` as follows:
 
   .. math::
 
     \binom{n}{k} = \frac{n!}{k!(n - k)!}
 
-  where `n` is the length of the path and `k` is as defined above. It's
-  critical, however, to remember that your friend has already taken one of the
-  paths, and you cannot go on that path. Thus, the answer is actually
-  `\binom{n}{k} - 1`.
+  where `n` and `k` are as defined above. It's critical, however, to remember
+  that your friend has already taken one of the paths, and you cannot go on that
+  path. Thus, the answer is actually `\binom{n}{k} - 1`.
 
 G - Misty
 ---------
