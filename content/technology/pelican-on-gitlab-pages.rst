@@ -17,11 +17,10 @@ automatically handling the Let's Encrypt SSL Certificate on custom domains, I've
 moved to GitLab Pages for hosting as well.
 
 In summary, I am hosting my site publicly on GitLab Pages here:
-https://gitlab.com/sumner/sumnerevans.com. Unlike my previous setup, the
-``master`` branch is the branch from which everything is deployed. When a new
-commit is added to ``master``, I use GitLab CI/CD to deploy to GitLab Pages
-automatically. Currently, it takes about 2-3 minutes for it to deploy after I
-commit a change.
+https://sumnerevans.com. Unlike my previous setup, the ``master`` branch is the
+branch from which everything is deployed. When a new commit is added to
+``master``, I use GitLab CI/CD to deploy to GitLab Pages automatically.
+Currently, it takes about 2-3 minutes for it to deploy after I commit a change.
 
 In this article, I'm going to walk you through how to set up the deployment
 pipeline to get your site deploying on GitLab Pages.
@@ -107,6 +106,34 @@ the status of your build by going to the "CI / CD" tab of your repo. You can
 also access the settings for GitLab Pages in "Settings -> Pages". There you can
 add a new domain to allow it to use a custom domain (as I do), and otherwise
 manage your site.
+
+Optional: Set up a Custom Domain
+================================
+
+By default, your website will be hosted at a site similar to this:
+https://sumner.gitlab.io/sumnerevans.com/. That's the default site for GitLab
+Pages. GitLab allows you to use a custom domain, which is what I'm doing (and
+which is why you are probably seeing this article on https://sumnerevans.com). I
+also let GitLab handle the Let's Encrypt certificate so that my site is served
+with HTTPS.
+
+To set this up, go to the Settings of your repository, and click on "Pages" in
+the sidebar. From there, click on "New Domain" and enter in your domain. Then,
+toggle the switch which says "Automatic certificate management using Let's
+Encrypt". Then, you need to follow the instructions on the next page. There are
+two steps that you have to do:
+
+1. Edit your domain's DNS CNAME record to point to GitLab (GitLab should give
+   you the exact CNAME value that you need to use).
+2. Add a DNS TXT record to verify that you are, in fact, the owner of the
+   domain.
+
+If you don't know how to do that, then I recommend that you look up the
+documentation for your domain name registrar.
+
+Once you have done all of this and the DNS records have propagated (you may have
+to click the "Refresh" button to make GitLab check the verification status), it
+will automatically acquire a Let's Encrypt certificate for your domain.
 
 Conclusion
 ==========
