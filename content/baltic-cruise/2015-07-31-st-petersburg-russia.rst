@@ -1,10 +1,12 @@
-Title: 7-31-2015 - St. Petersburg, Russia
-Date: 2015-07-31 12:47
-Author: sumner
-Category: Baltic Cruise and Northern Europe
-Tags: Russia, St. Petersburg
-Slug: 7-31-2015-st-petersburg-russia
-Status: published
+7-31-2015 - St. Petersburg, Russia
+==================================
+
+:date: 2015-07-31 12:47
+:authors: Sumner Evans
+:category: Baltic Cruise and Northern Europe
+:tags: Russia, St. Petersburg
+:slug: 7-31-2015-st-petersburg-russia
+:status: published
 
 Today we were again in St. Petersburg. I will start describing today from when
 we met our guide outside the cruise terminal. We first drove to a souvenir shop
@@ -22,8 +24,14 @@ The museum is huge. It has over 3 million items. The guide said if you spent 20
 seconds looking at each exhibit, 8 hours a day, 5 days per week, year round it
 would take 7 years. That’s wrong. It would take 8. Here’s the math:
 
-3,000,000 items \* (20s/item) \* (1min/60s) \* (1hr/60min) \* (1wk/40hr)
-\* (1yr/52wk) = 8.01 yr
+.. math::
+
+   3,000,000\text{ items}
+   \times \frac{20\text{s}}{\text{item}}
+   \times \frac{1\text{min}}{60\text{s}}
+   \times \frac{1\text{hr}}{60\text{min}}
+   \times \frac{1\text{wk}}{40\text{hr}}
+   \times \frac{1\text{yr}}{52\text{wk}} = 8.01\text{ yr}
 
 We obviously didn't see all of the exhibits, but she took us to the main
 masterpieces and some of the more interesting exhibits. I won't try and describe
@@ -66,7 +74,7 @@ After lunch, we drove to a submarine museum. We were able to tour a Soviet
 submarine used during WWII. It was about 70 metres long and the crew consisted
 of 54 people. It had 6 forward torpedo tubes and 6 extra torpedoes in the front
 and 2 rear torpedoes. Our guide was a former Soviet submarine commander who
-served in the large nuclear submarines.  He didn't speak a word of English, so
+served in the large nuclear submarines. He didn't speak a word of English, so
 our guide had to translate what he was saying. The submarine that we went in
 could only stay underwater for 72 hours because it didn’t have enough battery
 capacity. I think that air was also an issue, but it was rather unclear coming
