@@ -282,6 +282,15 @@ effectively, you don't win. Here are a few tips to make your demos amazing.
   doesn't have to be your sick grandma that inspired you, it can just be that
   you are terrible at navigating new buildings, or that parking is a nightmare
   at school. Anything to let the judges connect with your project is good.
+  
+- Do some research to see if there is compelling data to support your claims. A
+  lot of times you can get away with just spewing anecdotes, but often, having
+  hard data to back up your assertions can increase your credibility. We did
+  this at MHacks when we looked up how many people have access to SMS and how
+  many have access to the Internet. We noticed that there's a 1 billion person
+  difference and we used that as one of our marketing taglines: "brining data to
+  the next billion people". We didn't cite the organizations whose statistics we
+  used in our demo, but we had them if we were further probed.
 
 - Demos should follow a story arc like the classic "hero's journey". Who is the
   hero? Your app! Make sure to quickly present the problem, then *pow* your app
