@@ -143,7 +143,11 @@ The weather was so nice, so I decided to walk back to my hotel instead of taking
 the Tube. I also wanted to find something to eat, and I found an English pub and
 got a burger. Then, I continued wandering around and ran across Westminster
 Cathedral, the seat of the Roman Catholic Church in England and Wales. It's a
-relatively recent addition to the London skyline (it was completed in 1903).
+relatively recent addition to the London skyline (it was completed in 1903). The
+Church of England separated from the Catholic Church under King Henry VIII in
+1534. It was not until the late 1800s that the Catholic Church was officially
+re-established in England; and the Catholic Church decided to build Westminster
+Cathedral.
 
 It has been a full day of travel, sightseeing, and experiencing so I am going to
 go to bed.
