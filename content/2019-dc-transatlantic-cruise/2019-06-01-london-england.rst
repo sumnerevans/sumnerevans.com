@@ -21,7 +21,7 @@ to get into London. The trains don't leave that often from the station going
 directly to London, and one was about to leave. I hadn't had a chance to convert
 any currency, so I had to take a terrible exchange rate at the station. It cost
 nearly $50 to get into London! Luckily, once I got on the train everything went
-very smoothly, and I arrived in Victoria Station in London a couple hours later.
+very smoothly and I arrived in Victoria Station in London a couple hours later.
 
 After I arrived in Victoria Station, I went straight to the hotel that I am
 staying at: Chester Hotel Victoria. It's not a very nice hotel (it's 2 stars),
@@ -99,16 +99,17 @@ headed back to the hotel to get ready to go to Evensong at Westminster Abbey.
 Despite the fact that its main funding sources seem to be tourists buying
 tickets for tours, the gift shop, and the Government, Westminster Abbey is also
 an operating Anglican congregation. As such, they conduct services throughout
-the week including Choral Evensong. There was quite a queue outside of the Abbey
-of people wanting to attend the service. Most seemed to be tourists who were
-either interested in attending a service, or interested in getting to go inside
-of the Abbey when there aren't hundreds of other tourists. I was primarily there
-for the first, but the lack of irreverent tourists was nice.
+the week including Choral Evensong which is what I attended. There was quite a
+queue outside of the Abbey of people wanting to attend the service. Most seemed
+to be tourists who were either interested in attending a service, or interested
+in getting to go inside of the Abbey when there aren't hundreds of other
+tourists. I was primarily there for the first, but the lack of irreverent
+tourists was nice.
 
 I'm sure some were also there to try and grab a picture inside the Abbey while
 there weren't that many people around, but photos are prohibited for people
 attending the service (which is a good thing in my book). That's the funny thing
-about vacation pictures; taking pictures of static things like monuments and
+about vacation pictures: taking pictures of static things like monuments and
 buildings is fairly pointless (not saying that I'm not guilty of this). I mean,
 if you think about it, iconic locales have had *many* professional photographers
 take photos of the exact same thing that you are trying to take a picture of.
@@ -117,9 +118,28 @@ camera that isn't total garbage like whatever you are using. Stop. Grab, like,
 one picture so that you can remember you were there and then use Google to find
 good pictures of it.
 
-- Evensong was interesting, and got to walk inside of Westminster Abbey without
-  the crowds (no pics, but whatever)
+The Evensong service consisted of choral music, prayers, Scripture readings,
+corporate recitation of the Apostle's Creed, and other liturgy. I appreciated
+that the Apostle's Creed and the Lord's Prayer were recited during the service;
+I don't think I've ever been in a service where the Lord's Prayer was recited
+corporately as part of the planned service, and I definitely haven't been in one
+where the Apostle's Creed was recited so having those as part of the service was
+a new experience. I think that more traditional, Evangelical churches should
+corporately affirm these core Christian texts through recitation.
 
-- on the way back, I went to a English pub and had a burger
+After I exited the Abbey, I got this picture of it from the outside with the
+light of the evening sun illuminating its façade beautifully. (See, there I go
+being a hypocrite and taking pictures that other people have probably taken more
+competently than myself.)
 
-- Went to bed
+.. image:: {static}/images/dc-transatlantic-cruise/westminster-abbey.jpg
+   :align: center
+   :target: {static}/images/dc-transatlantic-cruise/westminster-abbey.jpg
+   :width: 50%
+
+The weather was so nice, so I decided to walk back to my hotel instead of taking
+the Tube. I also wanted to find something to eat, and I found an English pub and
+got a burger.
+
+It has been a full day of travel, sightseeing, and experiencing so I am going to
+go to bed.
