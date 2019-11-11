@@ -8,7 +8,7 @@ Southampton, England to London, England
        Palace, Tower of London, Tower Bridge, Evensong, Westminster Abbey,
        British Pub
 :slug: 2019-06-01-london-england
-:status: draft
+:status: published
 
 Today we docked in Southampton, England. I disembarked as early as possible so
 that I could get in to London for as much of the day as possible. I did the
@@ -30,15 +30,16 @@ once I had gotten my bearings. I was too early to check in, so I just left my
 bags there so that I could go sight seeing.
 
 I've been to London before, and I've been to most of the touristy locations. For
-this trip, then I decided to focus on trying to experience London more. Of
-course, one of the most Londonesque experiences is riding the Tube. We had,
-utilized it when we were last here, but navigating it alone was a different
-experience for sure. Since I am only here for a few days, I had to be somewhat
-smart with what tickets I got. I figured that I would be riding it at least four
-times today, and that was the price cutoff for buying individual tickets vs. the
-day ticket. So, I grabbed a full day ticket, and headed off. I think I'll buy
-individual tickets tomorrow, as I'll only be here for a few hours in the
-morning.
+this trip, then I decided to focus on trying to experience London more, while
+still going and seeing some of the touristy sites as well. Of course, one of the
+most Londonesque experiences is riding the Tube. We had utilized it when we were
+last here, but navigating it alone was a different experience for sure. Good
+thing they speak English here. Since I am only here for a few days, I had to be
+somewhat smart with what tickets I got. I figured that I would be riding it at
+least four times today, and that was the price cutoff for buying individual
+tickets vs. the day ticket. So, I grabbed a full day ticket, and headed off. I
+think I'll buy individual tickets tomorrow, as I'll only be here for a few hours
+in the morning.
 
 First stop was the Tower of London, which isn't much of a tower... I didn't go
 in, but I walked around it and then went across Tower Bridge.
@@ -56,29 +57,65 @@ different culture. The architecture is more European, they have funny accents,
 they have a longer history, and their idioms are different.
 
 I was getting hungry at this point, and I didn't really want to spend a lot of
-money for lunch. Nothing right along the Thames was cheap, so I went down one of
-the main streets and found a bunch of street vendors. I saw a vendor serving
-fish and chips, but they only accepted cash, so I had to go find an ATM and
-withdraw some British Pound notes. The fish and chips were kinda crappy, to be
-honest, but it was filling enough, and I had fun people watching as I ate.
+money for lunch. Nothing right along the Thames was cheap, so I went down the
+main street that leads to London Bridge and found a bunch of street vendors. I
+saw a vendor serving fish and chips, but they only accepted cash, so I had to go
+find an ATM and withdraw some British Pound notes. The fish and chips were kinda
+crappy, to be honest, but it was filling enough, and I had fun people watching
+as I ate. The area I was in is a *very* touristy area (basically everything
+along the Thames between Tower Bridge and the Palace of Westminster is touristy)
+so there were people from all over the world walking by.
 
-The last
-time I was here, we went inside of most of the sites, but this time I went 
+At this point, I decided to walk across London Bridge to head towards St. Paul's
+Cathedral. On the way, I came across the Monument to the Great Fire of London.
+It's basically just a tall tower that commemorates the Great Fire of London
+which happened in 1666 and destroyed much of the city.
 
-I wanted to go around to all of the tourist spots along the Thames river.
+I really like St. Paul's Cathedral. For one, the architecture is magnificent, I
+like it better than Westminster. I think that it also holds a special spot in my
+heart due to the well-known WWII photograph of St. Paul's rising above the smoke
+of a burning London during the Blitz. The cathedral's dome and spires appear to
+be floating on a cloud of smoke; and it is illuminated by the light of the
+burning fires all around. The billows of smoke behind the cathedral serve as an
+eerie backdrop of the scene; and the light reflecting off of the smoke provides
+that iconic silhouette of the cathedral's dome.
 
-, but I
-wanted to explore the areas around them
+.. figure:: https://upload.wikimedia.org/wikipedia/en/b/b2/Stpaulsblitz.jpg
+   :align: center
+   :target: https://en.wikipedia.org/wiki/St_Paul%27s_Survives
+   :figwidth: 50%
+   :width: 100%
+   :alt: a picture of St. Paul's rising above the smoke of fires in London
+         during the Blitz
 
-- Got a day tube pass and
-- went over to Tower of London and Tower Bridge
+   Herbert Mason (`St. Paul's Survives
+   <https://en.wikipedia.org/wiki/St_Paul%27s_Survives>`_)
 
-- Walked along the Thames looking for food (it was expensive!) until I got to a
-  place where they had street vendors. Got fish and chips that were kinda
-  crappy, but whatever
+I continued walking around near St. Paul's and then hopped back on the Tube and
+headed back to the hotel to get ready to go to Evensong at Westminster Abbey.
 
-- Went across the bridge to St. Paul's, then hopped on the tube to go to
-  the hotel and get ready to go to Evensong.
+-------------------------------------------------------------------------------
+
+Despite the fact that its main funding sources seem to be tourists buying
+tickets for tours, the gift shop, and the Government, Westminster Abbey is also
+an operating Anglican congregation. As such, they conduct services throughout
+the week including Choral Evensong. There was quite a queue outside of the Abbey
+of people wanting to attend the service. Most seemed to be tourists who were
+either interested in attending a service, or interested in getting to go inside
+of the Abbey when there aren't hundreds of other tourists. I was primarily there
+for the first, but the lack of irreverent tourists was nice.
+
+I'm sure some were also there to try and grab a picture inside the Abbey while
+there weren't that many people around, but photos are prohibited for people
+attending the service (which is a good thing in my book). That's the funny thing
+about vacation pictures; taking pictures of static things like monuments and
+buildings is fairly pointless (not saying that I'm not guilty of this). I mean,
+if you think about it, iconic locales have had *many* professional photographers
+take photos of the exact same thing that you are trying to take a picture of.
+The difference is that they are actually good at taking photos and are using a
+camera that isn't total garbage like whatever you are using. Stop. Grab, like,
+one picture so that you can remember you were there and then use Google to find
+good pictures of it.
 
 - Evensong was interesting, and got to walk inside of Westminster Abbey without
   the crowds (no pics, but whatever)
