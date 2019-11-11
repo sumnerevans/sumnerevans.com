@@ -40,41 +40,43 @@ stop), but it was an interesting experience nonetheless.
 Gamla Stan is very pretty, almost Germanic-looking in places. I think pictures
 speak louder than words on this, so here they are.
 
-<table class="gallery">
+<center>
+<table class="gallery" width="60%">
   <tr>
     <td colspan="2">
-      <a href="images/baltic-cruise/gamla-stan1.jpg" target="_blank">
-        <img src="images/baltic-cruise/gamla-stan1.jpg" />
+      <a href="{static}/images/baltic-cruise/gamla-stan1.jpg" target="_blank">
+        <img src="{static}/images/baltic-cruise/gamla-stan1.jpg" />
       </a>
     </td>
   </tr>
 
   <tr>
     <td>
-      <a href="images/baltic-cruise/gamla-stan2.jpg" target="_blank">
-        <img src="images/baltic-cruise/gamla-stan2.jpg" />
+      <a href="{static}/images/baltic-cruise/gamla-stan2.jpg" target="_blank">
+        <img src="{static}/images/baltic-cruise/gamla-stan2.jpg" />
       </a>
     </td>
     <td>
-      <a href="images/baltic-cruise/gamla-stan3.jpg" target="_blank">
-        <img src="images/baltic-cruise/gamla-stan3.jpg" />
+      <a href="{static}/images/baltic-cruise/gamla-stan3.jpg" target="_blank">
+        <img src="{static}/images/baltic-cruise/gamla-stan3.jpg" />
       </a>
     </td>
   </tr>
 
   <tr>
     <td>
-      <a href="images/baltic-cruise/gamla-stan4.jpg" target="_blank">
-        <img src="images/baltic-cruise/gamla-stan4.jpg" />
+      <a href="{static}/images/baltic-cruise/gamla-stan4.jpg" target="_blank">
+        <img src="{static}/images/baltic-cruise/gamla-stan4.jpg" />
       </a>
     </td>
     <td>
-      <a href="images/baltic-cruise/gamla-stan5.jpg" target="_blank">
-        <img src="images/baltic-cruise/gamla-stan5.jpg" />
+      <a href="{static}/images/baltic-cruise/gamla-stan5.jpg" target="_blank">
+        <img src="{static}/images/baltic-cruise/gamla-stan5.jpg" />
       </a>
     </td>
   </tr>
 </table>
+</center>
 
 We eventually made it to the Nobel museum, a museum about the Nobel prize and
 some about Alfred Nobel himself. Although interesting, it was nothing to write

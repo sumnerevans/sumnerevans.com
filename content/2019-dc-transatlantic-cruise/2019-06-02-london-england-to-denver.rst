@@ -8,7 +8,9 @@ London, England and Back Home
        Buckingham Palace, Tower of London, Tower Bridge, Evensong, Westminster
        Abbey, British Pub
 :slug: 2019-06-02-london-england-to-denver
-:status: draft
+:status: published
+
+
 
 - Woke up, stored the bags, went to the supermarket nearby to get a little
   breakfast, then tube to Buckingham Palace.

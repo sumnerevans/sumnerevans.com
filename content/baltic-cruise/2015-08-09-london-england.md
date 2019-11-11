@@ -18,7 +18,7 @@ experience, especially for a suburbs boy like me.
 
 I'm going to pause a moment and say that I like to think of myself as a sort of
 country boy but I totally need a Walmart within 10 minutes of my house. I'd like
-to think that I’d do well in a city too, but I don't know, I've never tried it.
+to think that I'd do well in a city too, but I don't know, I've never tried it.
 
 Anyway, there apparently was a Korean Heritage Festival or something going on in
 Trafalgar Square so it took us a while to find where we were trying to go: the
@@ -42,22 +42,22 @@ We crossed London Bridge (not to be confused with Tower Bridge) which isn't very
 impressive. We passed the Shard building, the tallest building in Western Europe
 and then drove across Tower Bridge. Then we got off in front of the Tower of
 London.  The hop on-hop off tour included a river tour along the River Thames so
-we boarded the boat. Here’s some of the more interesting things our guide
+we boarded the boat. Here's some of the more interesting things our guide
 pointed out:
 
 -   Shakespeare's Globe, a building built according to Shakespeare's original
     Globe Theatre. You can still go see plays acted out without stage lighting
-    or microphones (just like they were in Shakespeare’s day).
+    or microphones (just like they were in Shakespeare's day).
 
 -   We passed under Waterloo Bridge which was built during WWII. It is nicknamed
     the Women's Bridge since it was mainly women that constructed it because all
     the men were off fighting a war. It was built using self cleansing stone so
     every time it rains (which is fairly often in London) the bridge looks like
-    it’s brand new. The guide had a sense of humor. He said, "women, you'll be
+    it's brand new. The guide had a sense of humor. He said, "women, you'll be
     proud. This is the only bridge in London to be completed on time and under
     budget".
 
-The guide also pointed out some other sites that I’ve already mentioned or will
+The guide also pointed out some other sites that I've already mentioned or will
 mention. After the boat tour we got back on the bus and went passed the Tower of
 London and some other less important landmarks on our way back to Trafalgar
 Square.

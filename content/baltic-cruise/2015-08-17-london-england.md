@@ -17,7 +17,7 @@ to the advancement of aviation. They had everything from Spitfires to Lockheed
 Martin multi-purpose, supersonic war planes, dirigible cockpits to vertical and
 horizontal takeoff airplanes.
 
-[![](images/baltic-cruise/london-planes1.jpg)](images/baltic-cruise/london-planes1.jpg)
+[![]({static}/images/baltic-cruise/london-planes1.jpg)]({static}/images/baltic-cruise/london-planes1.jpg)
 
 On one of the walls, there was a large display outlining aeronautical
 advancements each year from the start of the 1900s to 2001. It was very
@@ -27,7 +27,7 @@ aeronautics went from slow, rather flimsy biplanes to jets capable of flying
 300+ mph and enormous bombers like the B–17, dubbed the "Super Fortress".
 
 We then walked to yet another huge hangar filled with airplanes.  (Actually, I
-think it was two hangars put together, but that’s beside the point.) I really
+think it was two hangars put together, but that's beside the point.) I really
 enjoyed seeing all of the WWII fighters and bombers from both the Axis and the
 Allies. They also had some really cool (relatively) modern fighter-bombers on
 display. I can't describe everything to you, there were at least a hundred

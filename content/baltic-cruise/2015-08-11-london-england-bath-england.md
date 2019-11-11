@@ -9,12 +9,12 @@ Status: published
 Today we went on an excursion to Bath, the town built around the only hot spring
 in Great Britain. To get there, we had to ride the underground to Paddington
 Station where we got a train to Bath Spa. The ride took two hours. I slept most
-of the way so I don’t remember much of it.
+of the way so I don't remember much of it.
 
 We started by going to the main attraction in Bath: the Roman Baths.  Built by
 the Romans staring in AD 43, the site was forgotten and silt from the nearby
 river gradually covered the area after the fall of the Roman Empire. The Roman
-Baths were not discovered again until the late 1800’s. The hot springs didn't
+Baths were not discovered again until the late 1800's. The hot springs didn't
 cease to function and the area had a lot of activity in between those periods.
 Initially it was mainly poor people who used the waters for healing purposes,
 but then the Queen came and was healed of her rheumatism and suddenly, Bath was

@@ -110,13 +110,15 @@ I'm sure some were also there to try and grab a picture inside the Abbey while
 there weren't that many people around, but photos are prohibited for people
 attending the service (which is a good thing in my book). That's the funny thing
 about vacation pictures: taking pictures of static things like monuments and
-buildings is fairly pointless (not saying that I'm not guilty of this). I mean,
-if you think about it, iconic locales have had *many* professional photographers
-take photos of the exact same thing that you are trying to take a picture of.
-The difference is that they are actually good at taking photos and are using a
-camera that isn't total garbage like whatever you are using. Stop. Grab, like,
-one picture so that you can remember you were there and then use Google to find
-good pictures of it.
+buildings is fairly pointless (not saying that I'm not guilty of this). I think
+it's especially true in places that don't change with the time of the day
+(inside) or places where taking pictures is not exactly respectful (a cathedral,
+for example). I mean, if you think about it, iconic locales have had *many*
+professional photographers take photos of the exact same thing that you are
+trying to take a picture of. The difference is that they are actually good at
+taking photos and are using a camera that isn't total garbage like whatever you
+are using. Stop. Grab, like, one picture so that you can remember you were there
+and then use Google to find good pictures of it.
 
 The Evensong service consisted of choral music, prayers, Scripture readings,
 corporate recitation of the Apostle's Creed, and other liturgy. I appreciated
@@ -139,7 +141,9 @@ competently than myself.)
 
 The weather was so nice, so I decided to walk back to my hotel instead of taking
 the Tube. I also wanted to find something to eat, and I found an English pub and
-got a burger.
+got a burger. Then, I continued wandering around and ran across Westminster
+Cathedral, the seat of the Roman Catholic Church in England and Wales. It's a
+relatively recent addition to the London skyline (it was completed in 1903).
 
 It has been a full day of travel, sightseeing, and experiencing so I am going to
 go to bed.
