@@ -1,13 +1,12 @@
 Southampton, England to London, England
 #######################################
 
-:date: 2019-06-01 23:58
+:date: 2019-05-31 23:58
 :authors: Sumner Evans
 :category: Trip to D.C. and Transatlantic Cruise
-:tags: Southampton, England, London, British Museum, The Tube, Buckingham
-       Palace, Tower of London, Tower Bridge, Evensong, Westminster Abbey,
-       British Pub
-:slug: 2019-06-01-london-england
+:tags: Southampton, England, London, The Tube, Tower of London, Tower Bridge,
+       St. Paul's Cathedral, Evensong, Westminster Abbey, British Pub
+:slug: 2019-05-31-london-england
 :status: published
 
 Today we docked in Southampton, England. I disembarked as early as possible so
