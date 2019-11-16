@@ -8,8 +8,9 @@ London, England and Back Home
        Buckingham Palace
 :slug: 2019-06-01-london-england-to-denver
 :status: published
+:image: /images/dc-transatlantic-cruise/buckingham-palace2.jpg
 
-Today is my last day of vacation. I flew back to Denver in the afternoon, and I
+Today was my last day of vacation. I flew back to Denver in the afternoon, and I
 am starting my job at The Trade Desk on Monday which is just two days away! But,
 that means that I had most of the morning to be in London. So, I decided to go
 over to Buckingham Palace and then to the British Museum.

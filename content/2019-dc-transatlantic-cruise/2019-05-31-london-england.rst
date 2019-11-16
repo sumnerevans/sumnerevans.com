@@ -8,6 +8,7 @@ Southampton, England to London, England
        St. Paul's Cathedral, Evensong, Westminster Abbey, British Pub
 :slug: 2019-05-31-london-england
 :status: published
+:image: /images/dc-transatlantic-cruise/tower-bridge.jpg
 
 Today we docked in Southampton, England. I disembarked as early as possible so
 that I could get in to London for as much of the day as possible. I did the
