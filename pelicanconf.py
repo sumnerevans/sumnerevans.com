@@ -9,8 +9,9 @@ SITEURL = ''
 SITETITLE = 'Jonathan Sumner Evans'
 SITESUBTITLE = 'Software Engineer at The Trade Desk'
 SITEDESCRIPTION = "Sumner's portfolio, thoughts, and writings"
-SITELOGO = SITEURL + '/images/profile.jpg'
-FAVICON = SITEURL + '/images/favicon.ico'
+SITELOGO = SITEURL + '/images/profile-informal.jpg'
+FAVICON = SITEURL + '/images/favicon-informal.ico'
+BROWSER_COLOR = '#333333'
 
 CC_LICENSE = {
     'name': 'Creative Commons Attribution-ShareAlike',
