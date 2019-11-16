@@ -78,7 +78,7 @@ those clocks finally received his well-deserved prize.
 When the international community got together to decide where to place the Prime
 Meridian, the obvious choice was the Royal Observatory since it had been used
 for years as the basis for ocean navigation. Greenwich Mean Time (GMT) is based
-of of the time in Greenwich and is the base time from which all times in the
+off of the time in Greenwich and is the base time from which all times in the
 world are measured. For example, Denver, Colorado is GMT–7 or GMT–6 depending on
 weather or not Daylight Saving Time is in effect.
 
@@ -98,7 +98,7 @@ middle of the 1800s) to today.
 After the Florence Nightingale Museum we rode the underground to Piccadilly
 Circus (which has nothing to do with a circus). Basically it is the Time Square
 of London. There is a large electronic billboard on one of the buildings that
-shows various ads. We took some pictures and then walked to Chinatown. I don’t
+shows various ads. We took some pictures and then walked to Chinatown. I don't
 think that Chinatown is as Chinatowny as it was in the past, it's become more
 tourist-ified. Still much of the Chinatown feel has been maintained. We ate at a
 restaurant in the heart of Chinatown. It felt very authentic, there were even

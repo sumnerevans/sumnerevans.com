@@ -23,7 +23,7 @@ it was formed millions of years ago, I postulate that it was formed during the
 Flood. I mean, the Bible does say that the “fountains of the great deep burst
 forth” (Gen. 7:11 ESV).  Anyway, back to what we did.
 
-[![Geothermal Vents](images/baltic-cruise/iceland4.jpg "Geothermal Vents")](images/baltic-cruise/iceland4.jpg)
+[![Geothermal Vents]({static}/images/baltic-cruise/iceland4.jpg "Geothermal Vents")]({static}/images/baltic-cruise/iceland4.jpg)
 *Geothermal Vents*
 
 We continued driving through beautiful scenery and after about an hours ride, we
@@ -36,13 +36,13 @@ was filmed close by. (I'm not saying this because I watch/endorse *Game of
 Thrones*, I just had already thought that it was a great place for film and she
 confirmed that when she mentioned *Game of Thrones*.)
 
-[![](images/baltic-cruise/iceland5.jpg)](images/baltic-cruise/iceland5.jpg)
+[![]({static}/images/baltic-cruise/iceland5.jpg)]({static}/images/baltic-cruise/iceland5.jpg)
 
 We then rode to a beautiful waterfall, the biggest in Iceland (I think).  At
 this stop we also ate lunch. Mom and I both tried the traditional Icelandic lamb
 soup. I thought it was pretty good.
 
-[![](images/baltic-cruise/iceland6.jpg)](images/baltic-cruise/iceland6.jpg)
+[![]({static}/images/baltic-cruise/iceland6.jpg)]({static}/images/baltic-cruise/iceland6.jpg)
 
 Then we rode to the Geyser area. The first recorded discovery of a geyser was
 the main geyser in the area. It was named Geyser and all other geysers are named
@@ -55,7 +55,7 @@ though because it spouted three times in a row. Our guide said that's very rare.
 We watched it spout a few other times as well. I was able to get a burst photo
 of the water.
 
-[![Geyser](images/baltic-cruise/iceland-geyser.jpg)](images/baltic-cruise/iceland-geyser.jpg)
+[![Geyser]({static}/images/baltic-cruise/iceland-geyser.jpg)]({static}/images/baltic-cruise/iceland-geyser.jpg)
 
 There was also a small pool that was so clear that you could see down into the
 underground tunnels. One right beside it was a very pretty deep blue color.

@@ -13,14 +13,14 @@ We flew to New Orleans and walked around the French Quarter.
 ----
 
 Today we began another adventure. We began the day in Denver, CO and ended up in
-New Orleans, LA (pronounced: naw-lens). My day started at 04:00. Yes, that’s 4
-*AM*. Let’s just say I don’t want to have to wake up at 04:00 again any time
+New Orleans, LA (pronounced: naw-lens). My day started at 04:00. Yes, that's 4
+*AM*. Let's just say I don't want to have to wake up at 04:00 again any time
 soon.
 
 # Flight to New Orleans
 
 We drove to DIA, checked in, and went through security. For some reason we were
-TSA Pre so we got to go in the short (non-existent) line and we didn’t even have
+TSA Pre so we got to go in the short (non-existent) line and we didn't even have
 to take off our shoes! TSA Pre For The Win! Once through security, we had tons
 of time because someone in our family (dad) likes to arrive at things about
 twice as early as necessary. It all worked out ok because we were able to eat a
@@ -31,7 +31,7 @@ and who has come down for a few Mines recruiting events for Google
 (\#connections). I sleep through basically the entire flight so I was happy
 about that. After getting our bags at baggage claim, we went outside to the taxi
 rank. As soon as we stepped outside, we were hit with Southern, humid air, you
-know, the air that makes you immediately feel sweaty. I don’t like feeling
+know, the air that makes you immediately feel sweaty. I don't like feeling
 sweaty, but I am thankful that it is not –23 ºC (–9 ºF) or something terrible
 like that.
 
@@ -43,10 +43,10 @@ Mom was able to find a nice big room for us to stay in for the next few nights.
 
 # Walking the French Quarter
 
-Our hotel is basically right on Bourbon (burr-bin) Street (it’s actually called
+Our hotel is basically right on Bourbon (burr-bin) Street (it's actually called
 Carondelet St. (I have no idea how to pronounce that) here, but inside the
 French Quarter, it becomes Bourbon Street). We were able to walk straight down
-to the heart of the French Quarter. Taking away all the “Gentlemen’s Clubs”, it
+to the heart of the French Quarter. Taking away all the “Gentlemen's Clubs”, it
 feels very European. We stopped at Cafe Beignet (bin-yay) for a late lunch. It
 was basically a glorified food stand with a large courtyard with live music. I
 had some Jambalaya (jum-bah-lie-uh) and a beignet. The Jambalaya was a bit
@@ -77,12 +77,12 @@ need to meet our guide for tomorrows plantation tour.
 
 We were ready to be off our feet so we walked to the St. Charles tram.
 Unfortunately, everyone and their brother had the same idea and the tram was
-*packed*. I’m pretty sure it was packed mainly with tourists. We decided that it
-wasn’t going to be much fun and gave up. Maybe we can ride it another day.
+*packed*. I'm pretty sure it was packed mainly with tourists. We decided that it
+wasn't going to be much fun and gave up. Maybe we can ride it another day.
 
 Back at the hotel, we hung out for a few minutes. I worked on this blog post
-(you’re welcome) and then we went downstairs for dinner. There is a
-buffet-style restaurant downstairs with food. It isn’t spectacular, but it was
+(you're welcome) and then we went downstairs for dinner. There is a
+buffet-style restaurant downstairs with food. It isn't spectacular, but it was
 edible and included with the price of the room. Then we walked down to Jimmy
 Johns to get sandwiches for tomorrow. I got this photo while we were out getting
 Jimmy Johns.
@@ -98,5 +98,5 @@ Half of the day was spent travelling, but we were still able to see a lot of New
 Orleans this afternoon. I think the best way to describe New Orleans is Quebec
 City mixed with Las Vegas. Architecturally, it reminds me of Quebec City, mainly
 because of the French influence and multitude of art venues I think. But it also
-has a darker side, the Vegas Strip side. I haven’t had much time to formulate my
-thoughts yet, so I think that’s it for now.
+has a darker side, the Vegas Strip side. I haven't had much time to formulate my
+thoughts yet, so I think that's it for now.

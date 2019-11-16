@@ -104,7 +104,7 @@ you some of the highlights here.
     extent of the horror that was the Holocaust.
 
     [![Memorial to the Murdered Jews of
-    Europe](images/baltic-cruise/berlin1.jpg)](images/baltic-cruise/berlin1.jpg)
+    Europe]({static}/images/baltic-cruise/berlin1.jpg)]({static}/images/baltic-cruise/berlin1.jpg)
 
     *Memorial to the Murdered Jews of Europe*
 

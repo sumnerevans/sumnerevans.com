@@ -2,8 +2,8 @@ Title: 8-1-2015 - Tallinn, Estonia
 Date: 2015-08-01 12:49
 Author: sumner
 Category: Baltic Cruise and Northern Europe
-Tags: Estonia, Tallin
-Slug: 8-1-2015-tallin-estonia
+Tags: Estonia, Tallinn
+Slug: 8-1-2015-tallinn-estonia
 Status: published
 
 Today we were in Tallinn, Estonia. We arrived in port at about 7:00 and, after
@@ -73,7 +73,7 @@ Our guide said that everyone who comes to Estonia (especially Tallinn) love it
 and would like to come back. I have to say that I would like to go back someday
 as well. She said that because Estonia is not a very well known tourist
 destination, we should tell people about it when we got home. Well, I am
-recommending Tallinn to you right now. I’m not saying this because she told us
+recommending Tallinn to you right now. I'm not saying this because she told us
 to, but I truly enjoyed my time in Estonia.
 
 ------------------------------------------------------------------------
@@ -96,9 +96,9 @@ could pass through.
 
 We began our tour in the upper town. We went into two churches, a Russian
 Orthodox church and a Lutheran cathedral. A service was being held in the
-Russian Orthodox church while we were there so we were able to see a very
+Russian Orthodox church while we were there so we were able to see a very
 different kind of worship. It did feel a bit awkward to be watching a church
-service as a tourist, but I’m sure the people are very used to it. One
+service as a tourist, but I'm sure the people are very used to it. One
 interesting thing about the Lutheran church was that it was decorated with a
 wooden coat-of-arms for every royal family in Estonia. We took the short leg
 down into the lower city and saw the main square. We were able to walk into the

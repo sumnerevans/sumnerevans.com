@@ -1,7 +1,7 @@
 Queen Mary 2 Crossing
 #####################
 
-:date: 2019-05-31 23:58
+:date: 2019-05-31 23:50
 :authors: Sumner Evans
 :category: Trip to D.C. and Transatlantic Cruise
 :tags: Cruise, Queen Mary 2, WWII, Veterans

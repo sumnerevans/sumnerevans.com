@@ -93,7 +93,7 @@ Churchill's life. It was very interesting learning about his post and pre war
 career. I'll outline his life chronologically here.
 
 1.  Churchill was born into an aristocratic family. His mother was an American,
-    his father a Britton.
+    his father a Briton.
 2.  He became an MP (Member of Parliament) and quickly rose to the position of
     Lord of the Admiralty (basically the political head of the Navy).
 3.  His career was nearly ended after the failed Gallipoli invasion of which he

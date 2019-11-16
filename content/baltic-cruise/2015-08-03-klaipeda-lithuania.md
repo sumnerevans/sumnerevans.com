@@ -6,7 +6,7 @@ Tags: Klaipeda, Lithuania
 Slug: 8-3-2015-klaipeda-lithuania
 Status: published
 
-Today we were in Klaipeda, Lithuania. Unlike Tallin and Riga, Klaipeda is not
+Today we were in Klaipeda, Lithuania. Unlike Tallinn and Riga, Klaipeda is not
 the capitol of Lithuania. The capitol, Vilnius is 300 km (186 mi) away and the
 second largest city is in between Vilnius and Klaipeda.  Klaipeda is the
 industrial centre of Lithuania. The large number of container ships was an
@@ -21,7 +21,7 @@ and occupied Lithuania. Then, the Soviets came back and reoccupied Lithuania.
 
 Lithuania, unlike Estonia, is very religious, our guide said that "most" people
 are Roman Catholic. In fact, classes on religion are required for younger
-children, and the priests are involved in the children’s education. Of course
+children, and the priests are involved in the children's education. Of course
 accommodations are made for other religions, but most Lithuanians are happy to
 have this Priestly involvement.
 
@@ -61,7 +61,7 @@ hustle and bustle of city life.
 
 ------------------------------------------------------------------------
 
-We then drove to a small town where where there was a Catholic church with a
+We then drove to a small town where there was a Catholic church with a
 Franciscan monk monastery. The drive was very pretty and we were able to see the
 countryside. Diana is Catholic, so she was able to explain the various things in
 the church better than a secular or Protestant guide would have been able to.
@@ -73,7 +73,7 @@ their way to and from their normal activities. There were pendants hanging all
 around the altar which symbolized healing to that part of the body.
 
 After the church, we drove to another village/town where we went to the house of
-a middle aged man. His mother lived with him, she’s like 90 something. We didn't
+a middle aged man. His mother lived with him, she's like 90 something. We didn't
 see either of them, but I guess they were friends with our guide so we just
 walked around their garden. It was very peaceful and relaxing. I will try and
 post some pictures here.
@@ -99,7 +99,7 @@ It is these human interactions that really make life experience enjoyable and I
 really enjoyed getting to get to know them better.
 
 After that we went back to the town of Klaipeda and walked around the city.
-There wasn’t much to see, just a square with a small statue and some pretty
+There wasn't much to see, just a square with a small statue and some pretty
 streets. We went into an amber shop. There were some exhibits displaying bugs
 embedded in the amber, that was kinda cool, but after looking at that, I went to
 sit down. There was also a statue of a cat and around the corner a statue of a
@@ -108,5 +108,5 @@ mouse.
 She then drove us back to the boat, we said goodbye and got her address to send
 a postcard to Ignas.
 
-The rest of the evening was much like yesterday's. You’d be bored if I described
+The rest of the evening was much like yesterday's. You'd be bored if I described
 it to you, so I won't.

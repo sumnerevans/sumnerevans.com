@@ -3,6 +3,7 @@ content/static/custom.css.map
 sws_deploy_rsa
 sws_deploy_rsa.pub
 output
+public
 *.pid
 
 # Created by https://www.gitignore.io/api/linux,macos,windows,python

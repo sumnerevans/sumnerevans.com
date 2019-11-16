@@ -41,11 +41,11 @@ rooms, a family room and then a bedroom with panoramic views of the lake. I
 think that our suite is the best in the hotel. I'll post some pictures of the
 room here.
 
-[![](images/baltic-cruise/iceland1.jpg)](images/baltic-cruise/iceland1.jpg)
+[![]({static}/images/baltic-cruise/iceland1.jpg)]({static}/images/baltic-cruise/iceland1.jpg)
 
-[![](images/baltic-cruise/iceland2.jpg)](images/baltic-cruise/iceland2.jpg)
+[![]({static}/images/baltic-cruise/iceland2.jpg)]({static}/images/baltic-cruise/iceland2.jpg)
 
-[![](images/baltic-cruise/iceland3.jpg)](images/baltic-cruise/iceland3.jpg)
+[![]({static}/images/baltic-cruise/iceland3.jpg)]({static}/images/baltic-cruise/iceland3.jpg)
 
 ------------------------------------------------------------------------
 

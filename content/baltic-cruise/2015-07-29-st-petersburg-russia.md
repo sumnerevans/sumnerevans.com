@@ -69,7 +69,7 @@ I got a picture from a better vantage point. I doctored that one up to make it
 look as sketchy as possible without totally obscuring the image too much. Here
 it is
 
-[![](images/baltic-cruise/st-petersburg1.jpg)](images/baltic-cruise/st-petersburg1.jpg)
+[![]({static}/images/baltic-cruise/st-petersburg1.jpg)]({static}/images/baltic-cruise/st-petersburg1.jpg)
 
 We walked along the top of the fortress walls which overlook a bit of the bay.
 (It doesn't seem like there is a bay because there are so many islands, but it

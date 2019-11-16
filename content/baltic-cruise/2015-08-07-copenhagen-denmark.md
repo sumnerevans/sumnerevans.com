@@ -15,7 +15,7 @@ guide took when we were parked in front of a water feature. Our guide had
 virtually perfect English and his son, Otto, who made the caboose of our
 caravan, had terrific English also.
 
-[![](images/baltic-cruise/copenhagen1.jpg)](images/baltic-cruise/copenhagen1.jpg)
+[![]({static}/images/baltic-cruise/copenhagen1.jpg)]({static}/images/baltic-cruise/copenhagen1.jpg)
 
 I'm not going to try and describe everything we saw in order, but I will tell
 you about the things I remember.

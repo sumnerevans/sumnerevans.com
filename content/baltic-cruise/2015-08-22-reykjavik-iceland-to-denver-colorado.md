@@ -49,6 +49,11 @@ reflections on the trip on my personal blog:
 [sumnerevans.wordpress.com](https://sumnerevans.wordpress.com) so be sure to
 check that out.
 
+**Note: Here are links if you are interested:**
+
+* [Reflections on Trip 1]({filename}/baltic-cruise/reflections-on-trip-1.md)
+* [Reflections on Trip 2]({filename}/baltic-cruise/reflections-on-trip-2.md)
+
 So with that I will conclude my discourse on the events of this trip. I hope
-that you’ve all enjoyed reading and please do check out my reflections on the
+that you've all enjoyed reading and please do check out my reflections on the
 trip. They'll probably be profound.

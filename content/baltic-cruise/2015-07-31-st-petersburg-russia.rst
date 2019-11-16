@@ -22,7 +22,7 @@ quality, but it is cool.
 We then drove to the Hermitage museum, the famous art museum in St.  Petersburg.
 The museum is huge. It has over 3 million items. The guide said if you spent 20
 seconds looking at each exhibit, 8 hours a day, 5 days per week, year round it
-would take 7 years. That’s wrong. It would take 8. Here’s the math:
+would take 7 years. That's wrong. It would take 8. Here's the math:
 
 .. math::
 
@@ -55,7 +55,7 @@ about a third.
 
 ------------------------------------------------------------------------
 
-After the Hermitage (and I haven’t described a fraction of what we saw there) we
+After the Hermitage (and I haven't described a fraction of what we saw there) we
 went to the main shopping district, Nevsky Prospect. It was really boring. The
 shops were the same as at home. It was funny though, we went into a department
 store that was really big. Mom, Tom (Mr.  Coco), and Bob (another man who was
@@ -76,14 +76,14 @@ of 54 people. It had 6 forward torpedo tubes and 6 extra torpedoes in the front
 and 2 rear torpedoes. Our guide was a former Soviet submarine commander who
 served in the large nuclear submarines. He didn't speak a word of English, so
 our guide had to translate what he was saying. The submarine that we went in
-could only stay underwater for 72 hours because it didn’t have enough battery
+could only stay underwater for 72 hours because it didn't have enough battery
 capacity. I think that air was also an issue, but it was rather unclear coming
 through translation. The modern Russian nuclear subs can stay under for 40+
 days. The US subs can stay underwater for ~30 days.
 
 ------------------------------------------------------------------------
 
-We sailed away from St. Petersburg at about 18:00. Going out wasn’t that
+We sailed away from St. Petersburg at about 18:00. Going out wasn't that
 interesting until we passed a former Soviet military base (we began to pass it
 during dinner, so about 19:00). We saw all sorts of old abandoned military
 equipment and structures on the various islands. I went out to the balcony after
@@ -102,5 +102,5 @@ end, politics is about people and discussions about it are best had in person.
 
 ------------------------------------------------------------------------
 
-Tomorrow we are in Tallin, Estonia, a former USSR state. It will be interesting
+Tomorrow we are in Tallinn, Estonia, a former USSR state. It will be interesting
 to see their opinion of the Russians.
