@@ -98,10 +98,6 @@ shade of the Washington Monument as we ate.
 After that, we walked over to the Lincoln Memorial, and on the way we stopped at
 the WWII Memorial, one of the more recent monuments in DC.
 
-.. {static}/images/dc-transatlantic-cruise/wwii-fountain.mp4
-..     :align: center
-..     :width: 75%
-
 .. raw:: html
 
     <video
