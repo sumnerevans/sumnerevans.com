@@ -15,6 +15,7 @@ to Facebook HQ. This is a picture of building 18, one of the smaller buildings
 on the campus.
 
 .. image:: /images/hackathon/2018-11-15-fb-hq.jpg
+   :target: /images/hackathon/2018-11-15-fb-hq.jpg
    :alt: image of the outside of the Facebook HQ building 18
 
 Once inside, we got to go see the area that we would be working in. It was a
@@ -22,6 +23,7 @@ very nice space, and was set up for all 21 teams. They even had signs above our
 tables telling us which table was ours!
 
 .. image:: /images/hackathon/2018-11-15-fb-table.jpg
+   :target: /images/hackathon/2018-11-15-fb-table.jpg
    :alt: our table at the hackathon
    :width: 75%
    :align: center
@@ -29,6 +31,7 @@ tables telling us which table was ours!
 Then, after the obligatory team picture...
 
 .. image:: /images/hackathon/2018-11-15-fb-team.jpg
+   :target: /images/hackathon/2018-11-15-fb-team.jpg
    :alt: picture of the team on the front stage in front of the Facebook Global
          Hackathon Finals logo
    :width: 75%
@@ -37,6 +40,7 @@ Then, after the obligatory team picture...
 we got our workspace set up using the awesome monitors provided by Facebook.
 
 .. image:: /images/hackathon/2018-11-15-fb-workstations.jpg
+   :target: /images/hackathon/2018-11-15-fb-workstations.jpg
    :alt: our workspace, decked out with nice monitors
    :width: 75%
    :align: center
@@ -47,6 +51,7 @@ maps on the ground which showed a correctly oriented map of the campus with a
 red dot indicating your location.
 
 .. image:: /images/hackathon/2018-11-15-fb-map.jpg
+   :target: /images/hackathon/2018-11-15-fb-map.jpg
    :alt: a map of the Facebook campus on the ground
    :width: 75%
    :align: center
@@ -103,6 +108,7 @@ development environments set up, learning Kotlin, and mocking up some designs
 for our app.
 
 .. image:: {static}/images/hackathon/fb-flowchart.jpg
+   :target: {static}/images/hackathon/fb-flowchart.jpg
    :alt: a flowchart of the user interaction
    :width: 50%
    :align: center
@@ -195,6 +201,7 @@ time, too. The event organizer, Bambi, was literally in the middle yelling "10,
 In the meantime, I started working on a logo for our project:
 
 .. image:: /images/hypar-map-logo.png
+   :target: /images/hypar-map-logo.png
    :alt: the HypAR Map logo
    :width: 50%
    :align: center
@@ -294,6 +301,7 @@ You can watch a video of the `award ceremony here`_ (we get first at ~8:20).
         width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
 
 .. image:: {static}/images/hackathon/fb-award.jpg
+   :target: {static}/images/hackathon/fb-award.jpg
    :alt: the team with our massive check
    :width: 75%
    :align: center

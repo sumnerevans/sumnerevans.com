@@ -43,6 +43,7 @@ us find him.
 At the hotel, we got checked in. Each of us got a room all to ourselves!
 
 .. image:: /images/hackathon/2018-11-14-facebook-hackathon-room.jpg
+   :target: /images/hackathon/2018-11-14-facebook-hackathon-room.jpg
    :alt: My huge room
    :align: center
    :width: 50%
