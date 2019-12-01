@@ -93,6 +93,7 @@ MENUITEMS = (
 )
 
 LINKS = (('resume', '/static/resume.pdf'), )
+LINKS_IN_NEW_TAB = False
 
 DEFAULT_PAGINATION = 15
 

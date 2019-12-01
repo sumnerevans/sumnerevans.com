@@ -8,6 +8,8 @@ pelican = "*"
 beautifulsoup4 = "*"
 typogrify = "*"
 Markdown = "*"
+yapf = "*"
+flake8 = "*"
 
 [packages]
 
