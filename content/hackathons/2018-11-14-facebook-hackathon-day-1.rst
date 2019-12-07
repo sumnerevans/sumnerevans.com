@@ -42,8 +42,8 @@ us find him.
 
 At the hotel, we got checked in. Each of us got a room all to ourselves!
 
-.. image:: /images/hackathon/2018-11-14-facebook-hackathon-room.jpg
-   :target: /images/hackathon/2018-11-14-facebook-hackathon-room.jpg
+.. image:: {static}/images/hackathon/2018-11-14-facebook-hackathon-room.jpg
+   :target: {static}/images/hackathon/2018-11-14-facebook-hackathon-room.jpg
    :alt: My huge room
    :align: center
    :width: 50%
@@ -56,7 +56,7 @@ After lunch, we went back to the room and Sam and I worked on our High
 Performance Computing project milestone report until dinner which was provided
 at the hotel by Facebook. At the dinner, we met a team from Canada.
 
-.. figure:: /images/hackathon/2018-11-14-dinner.jpg
+.. figure:: {static}/images/hackathon/2018-11-14-dinner.jpg
    :alt: Dinner buffet served on the first day of the hackathon
    :align: center
    :figwidth: 50%
