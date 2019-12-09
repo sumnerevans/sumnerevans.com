@@ -14,9 +14,7 @@ Montreal underground city.
 For breakfast we decided to go to Tim Hortons. It’s the thing to do in
 Canada. I got a coffee. Because that’s what you do at Tim’s.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3219-1.jpg){.alignnone
-.size-full .wp-image-973 width="2448"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3219-1.jpg)
+![Cup of Tim Hortons coffee]({static}/images/new-england-trip/tim-hortons.jpg)
 
 ### Hop on Hop Off Bus
 
