@@ -67,6 +67,7 @@ and forth to keep the time.
       class="align-center"
       autoplay="true"
       controls="true"
+      muted="true"
       loop="true">
     </video>
 
