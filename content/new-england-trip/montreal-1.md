@@ -44,15 +44,13 @@ Behind the main building is a chapel whose interior is very modern
 looking compared to the main building. It is a combination of the old
 architecture and new minimalistic architecture (the last picture).
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3173-2.jpg){.alignnone
-.size-full .wp-image-961 width="2448"
-height="3264"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3173-2.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3157-1.jpg){.alignnone
-.size-full .wp-image-960 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3157-1.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3160-1.jpg){.alignnone
-.size-full .wp-image-958 width="2448"
-height="3264"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3160-1.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3156-1.jpg){.alignnone
-.size-full .wp-image-959 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3156-1.jpg)
+![Notre Dame facade lit up by the sun]({static}/images/new-england-trip/notre-dame1.jpg)
+
+![Notre Dame altar]({static}/images/new-england-trip/notre-dame2.jpg)
+
+![Notre Dame pipe organ]({static}/images/new-england-trip/notre-dame3.jpg)
+
+![Another view of the Notre Dame pipe organ]({static}/images/new-england-trip/notre-dame4.jpg)
 
 ### Walking through Montreal
 
@@ -71,9 +69,7 @@ modern manner. There are 99 stairs going up to the entrance and many
 pilgrims stop at each stair to pray. We did not go inside, but we got a
 picture of it from the outside.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3162-2.jpg){.alignnone
-.size-full .wp-image-963 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3162-2.jpg)
+![St. Joseph's Oratory]({static}/images/new-england-trip/st-josephs-oratory.jpg)
 
 ### Mount Royal
 
@@ -82,9 +78,7 @@ Royal is the Central Park of Montreal. We saw all sorts of people
 hanging out in the park doing a variety of activities. We continued to
 an overlook spot where we got a good view of Montreal.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3166-1.jpg){.alignnone
-.size-full .wp-image-964 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3166-1.jpg)
+![View of Montreal from Mt. Royal]({static}/images/new-england-trip/mt-royal.jpg)
 
 ### Mass at Notre Dame
 
@@ -108,9 +102,7 @@ on around the area. Lots of people were just walking around but there
 were also street vendors set up all along the Old Dock. I ate poutine
 from one of the food trucks. We continued along the Old Dock.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3178-2.jpg){.alignnone
-.size-full .wp-image-965 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3178-2.jpg)
+![Old Montreal Dock]({static}/images/new-england-trip/old-dock.jpg)
 
 #### Zip Line
 
@@ -120,12 +112,9 @@ Dock. Then we did the zip line. It was awesome. Mom was nervous to do it
 but both of us had a ton of fun. I took a few pictures of other people
 doing the zip line.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3181-1.jpg){.alignnone
-.size-full .wp-image-967 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3181-1.jpg)  
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3194-1.jpg){.alignnone
-.size-full .wp-image-966 width="2448"
-height="3264"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3194-1.jpg)
+![View from the zipline tower]({static}/images/new-england-trip/zipline.jpg)
+
+![View of the zipline tower with the sunset in the background]({static}/images/new-england-trip/zipline1.jpg)
 
 After the zip line, we walked back through the Old Dock and Old Town to
 our hotel. There was one pedestrian street that we went up that seemed
@@ -133,6 +122,4 @@ like the place for buskers. It was like 16th Street Mall in Denver. Once
 back at the hotel, I worked a little bit on my blog and then headed to
 bed.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3201-1.jpg){.alignnone
-.size-full .wp-image-968 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3201-1.jpg)
+![Montreal street]({static}/images/new-england-trip/montreal1.jpg)
