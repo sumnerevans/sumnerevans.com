@@ -43,7 +43,7 @@ left. On well, lesson learned. I’m really glad I had the stuff I needed to tak
 them out them. The other lesson I learned: when flying overseas, just expect to
 loose a night of sleep.
 
-On another note, I unplugged my iPhone at \~13:30 MST, it is now 23:42 MST and I
+On another note, I unplugged my iPhone at ~13:30 MST, it is now 23:42 MST and I
 am still at 35% battery life. I even watched a 90 minute movie, enabled
 in-flight Wi-Fi, and turned on Bluetooth to use my keyboard. I’ve also been
 playing music for the entire flight. I’m impressed.

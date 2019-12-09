@@ -46,13 +46,12 @@ the most turbulence I've ever been in (or at least that I can remember).
 
 It's been a hectic trip, but it was totally worth it. I'll be posting some
 reflections on the trip on my personal blog:
-[sumnerevans.wordpress.com](https://sumnerevans.wordpress.com) so be sure to
-check that out.
+[sumnerevans.com](https://sumnerevans.com) so be sure to check that out.
 
 **Note: Here are links if you are interested:**
 
-* [Reflections on Trip 1]({filename}/baltic-cruise/reflections-on-trip-1.md)
-* [Reflections on Trip 2]({filename}/baltic-cruise/reflections-on-trip-2.md)
+* [Reflections on Trip 1]({filename}/baltic-cruise/reflections-on-trip-1.rst)
+* [Reflections on Trip 2]({filename}/baltic-cruise/reflections-on-trip-2.rst)
 
 So with that I will conclude my discourse on the events of this trip. I hope
 that you've all enjoyed reading and please do check out my reflections on the

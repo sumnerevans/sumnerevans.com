@@ -3,7 +3,7 @@ Date: 2015-07-21 01:02
 Author: sumner
 Category: Baltic Cruise and Northern Europe
 Slug: new-adventure
-Status: published
+Status: draft
 
 We are going on a vacation! We will start with a cruise on the Baltic
 Sea, and then we will spend about a week and an half in England.
