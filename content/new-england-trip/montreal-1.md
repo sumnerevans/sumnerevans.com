@@ -112,9 +112,9 @@ Dock. Then we did the zip line. It was awesome. Mom was nervous to do it
 but both of us had a ton of fun. I took a few pictures of other people
 doing the zip line.
 
-![View from the zipline tower]({static}/images/new-england-trip/zipline.jpg)
+![View from the zipline tower]({static}/images/new-england-trip/zipline1.jpg)
 
-![View of the zipline tower with the sunset in the background]({static}/images/new-england-trip/zipline1.jpg)
+![View of the zipline tower with the sunset in the background]({static}/images/new-england-trip/zipline2.jpg)
 
 After the zip line, we walked back through the Old Dock and Old Town to
 our hotel. There was one pedestrian street that we went up that seemed
