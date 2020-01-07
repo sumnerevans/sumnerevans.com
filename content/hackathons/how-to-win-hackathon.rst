@@ -7,6 +7,7 @@ How to Win a Hackathon
 :tags: Facebook Hackathon, Win, Hackathon, Prize, Hackathon Demo
 :slug: how-to-win-hackathon
 :status: published
+:image: /images/hackathon/fb-award.jpg
 
 Objectively, I'm pretty good at winning prizes at hackathons. I'm not entirely
 sure how/why, but I am. In this article I intend to try and describe some of the
