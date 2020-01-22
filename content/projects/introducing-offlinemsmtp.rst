@@ -57,7 +57,7 @@ options at the `project's GitLab page <gitlab_>`_.
 
 .. _gitlab: https://gitlab.com/sumner/offlinemsmtp
 
-``offlinemsmtp`` ``v0.3.5``, is available via PyPi_ and the AUR_.
+``offlinemsmtp`` version ``0.3.5``, is available via PyPi_ and the AUR_.
 
 .. _PyPi: https://pypi.org/project/offlinemsmtp/
 .. _AUR: https://aur.archlinux.org/packages/offlinemsmtp/
