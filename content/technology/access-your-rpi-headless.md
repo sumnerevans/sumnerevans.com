@@ -32,18 +32,16 @@ Enable the SSH Server on the RPi
     and press enter
 5.  Select "Enable" using your arrow keys and press enter
 
-Now you can access your RPi using a [SSH
-client](http://en.wikipedia.org/wiki/Comparison_of_SSH_clients "Comparison of
-SSH clients"). The SSH client needs to access the RPi using an IP address. To
-set this up, you need to give your RPi a static IP address on your network and
-then you can access it from the client. If that doesn't make sense at all, just
-follow the instructions. It should work.
+Now you can access your RPi using a SSH client. The SSH client needs to access
+the RPi using an IP address. To set this up, you need to give your RPi a static
+IP address on your network and then you can access it from the client. If that
+doesn't make sense at all, just follow the instructions. It should work.
 
 1.  Run this command: `sudo ifconfig`
-2.  [![](images/technology/putty-to-rpi-1.png)](images/technology/putty-to-rpi-1.png)
-    Find the IP address
 
-    Find the IP address of the RPi. For me, I am using a wireless adapter so I
+    [![]({static}/images/technology/putty-to-rpi-1.png)]({static}images/technology/putty-to-rpi-1.png)
+
+2.  Find the IP address of the RPi. For me, I am using a wireless adapter so I
     have to look at "wlan0" for the information I need. If you are using a wired
     connection, look in eth0. Regardless of what interface you are using, you
     will need to look for the `inet addr`. For me it looks like this:
@@ -86,15 +84,16 @@ Install PuTTY on Windows
     textbox (I used RPi) and click on "Save"
 6.  Click Open
 
-    [![PuTTY Configuration Window](images/technology/putty-config-1.png)
-    ](images/technology/putty-config-1.png)<br>
-    PuTTY Configuration Window
+    [![PuTTY Configuration
+    Window]({static}/images/technology/putty-config-1.png)
+    ]({static}/images/technology/putty-config-1.png)<br>
+    *PuTTY Configuration Window*
 
 7.  Hopefully you should see something like this:
 
     [![PuTTY asking for login
-    information](images/technology/login-as-putty-1.png)
-    ](images/technology/login-as-putty-1.png)<br>
+    information]({static}/images/technology/login-as-putty-1.png)
+    ]({static}/images/technology/login-as-putty-1.png)<br>
     PuTTY asking for login information
 
     If that doesn't work, try to restart your RPi. If that doesn't help, Google
@@ -107,9 +106,8 @@ Install PuTTY on Windows
 You have now successfully SSHed in to your RPi. Now you can run commands on the
 RPi from your computer. Now, what happens when you try to run `startx`? Nothing.
 It doesn't work. What can we do about that? Well, we can install XRDP to allow
-us to use [Remote Desktop
-Connection](http://en.wikipedia.org/wiki/Remote_Desktop_Services "Remote Desktop
-Services") in Windows to access the desktop. Let's do that now.
+us to use Remote Desktop Connection in Windows to access the desktop. Let's do
+that now.
 
 Install XRDP
 ============
@@ -122,8 +120,8 @@ Install XRDP
 5.  In the "Computer" field type the IP address of you RPi and click "Connect"
 6.  You should see a window thing like this
 
-    [![Login to XRDP Window](images/technology/login-to-xrdp-1.png)
-    ](images/technology/login-to-xrdp-1.png)<br>
+    [![Login to XRDP Window]({static}/images/technology/login-to-xrdp-1.png)
+    ]({static}/images/technology/login-to-xrdp-1.png)<br>
     Login to XRDP Window
 7.  Enter your username and password into the fields and click on "OK"
 8.  Wait a few moments and you will see your desktop

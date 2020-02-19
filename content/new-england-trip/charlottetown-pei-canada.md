@@ -199,7 +199,7 @@ Confederation Bridge.
 
 #### Meeting the Captain
 
-Near the end of dinner, Captain Noel O’Driscoll, the captain of the ship, came
+Near the end of dinner, Captain Noel O'Driscoll, the captain of the ship, came
 by to say hello to his parents. We were introduced to him and had a nice
 conversation. During our conversation we asked him how much clearance we had
 under Confederation Bridge. He said two metres (6.6 ft). For a ship of our size,
@@ -207,15 +207,11 @@ that's not that much clearance. In fact, they had to lower one of the ship’s
 antennas to be able to pass under safely. I was able to get a picture with the
 Captain and his father.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_2945-1.jpg){.alignnone
-.size-full .wp-image-933 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_2945-1.jpg)
+[![]({static}/images/new-england-trip/captain.jpg)]({static}/images/new-england-trip/captain.jpg)
 
 #### Beautiful Sunset
 
 At the tail end of dinner there was a beautiful sunset. These pictures really
 don't do it justice.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_2924-1.jpg){.alignnone
-.size-full .wp-image-934 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_2924-1.jpg)
+[![]({static}/images/new-england-trip/sunset-boat.jpg)]({static}/images/new-england-trip/sunset-boat.jpg)

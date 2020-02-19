@@ -9,7 +9,7 @@ We started out the day very early at about 3:15. We finished the last
 bits of packing that we had to do and then waited for our driver to come
 take us to the airport. The drive was uneventful and we made it through
 the airport fine. Nothing of note happened on the flight. The process of
-getting  our luggage and  the rental car was very easy. We walked maybe
+getting our luggage and the rental car was very easy. We walked maybe
 two, maybe three hundred yards to get our bags which were right there,
 no wait whatsoever. From there it was another two or three hundred yards
 to the rental car place. In the plane right before we were told to,
@@ -22,12 +22,13 @@ easy and, though not the cream of the crop, the hotel is nice enough. It
 has a place to sleep and, really, that's all that we need if for. The
 cruise is the nice part of the trip. We had a very nice meal at the
 local mall's food court. It was the nicest food court experience that I
-have ever had. The  out was made to look like a Roman courtyard and
+have ever had. The out was made to look like a Roman courtyard and
 instead of separately owned restaurants they were all owned by on
 company. So you ordered what you wanted at the restaurant that you
 decided to get food from and then you went to the check out counters
 which were for all of the restaurants. The food was delicious I had
 something from the Mexican place I'm not sure what but whatever it was,
 was good. The rest of the day went by without much of interest
-happening.  
+happening.
+
     \~Sumner

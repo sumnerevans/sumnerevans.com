@@ -1,4 +1,4 @@
-Title: ﻿5-30-2016: Halifax, Nova Scotia, Canada
+Title: Halifax, Nova Scotia, Canada
 Date: 2016-05-30 19:00
 Author: sumner
 Category: New England Trip
@@ -43,8 +43,8 @@ as many cruise liners had docked in the past. They would take the
 passengers in groups into the processing center. The immigrants would
 undergo health examinations and have their papers examined. Then, if
 they were eligible to immigrate, their documents would be stamped with a
-“Landed Immigrant” stamp. (They have since renamed that to “Permanent
-Resident”.) They were then free to move about in Canada.
+"Landed Immigrant" stamp. (They have since renamed that to "Permanent
+Resident".) They were then free to move about in Canada.
 
 The Trans-Canada Railway would take many of those immigrants to places
 elsewhere in Nova Scotia and the Maritime Provinces (the ones by the
@@ -55,9 +55,9 @@ recent immigrants. In the film, they told stories about their
 experiences arriving in Canada and learning the culture. One of the best
 lines from the film:
 
-> Everyone was so apologetic, I would step in front of them and they’d
-> say “sorry” and I’d be like, “you don’t need to say sorry for that”,
-> and they’d say “sorry” again!
+> Everyone was so apologetic, I would step in front of them and they'd
+> say "sorry" and I'd be like, "you don't need to say sorry for that",
+> and they'd say "sorry" again!
 
 It was neat to see all of the people who wanted to become Canadian
 because they knew that Canada represented a better life for them and or
@@ -72,11 +72,11 @@ another ship. The captains of each vessel assumed that the other would
 go one way, but in reality, they went the other way. The smaller vessel
 broadsided the *Empress of Ireland* and she sunk in only 15 minutes.
 After the sinking of the *Titanic*, the number of lifeboats on the
-*Empress of Ireland* was more than doubled (20 to 42). This didn’t help
+*Empress of Ireland* was more than doubled (20 to 42). This didn't help
 because of the crew did not have time to deploy most of them. Of the
 around 1200 passengers, only a few hundred survived.
 
-Interestingly, the captain didn’t “fall” out of the ship onto a
+Interestingly, the captain didn't "fall" out of the ship onto a
 lifeboat. (Looking at you Costa Concordia.)
 
 ### The Halifax Citadel {#thehalifaxcitadel}
@@ -99,7 +99,7 @@ The current Halifax Citadel was built after the War of 1812 and did its
 job very well, Halifax has not been attacked since.
 
 We arrived at the Citadel right before the changing of the guard
-ceremony so we watched that. It’s nothing like the Changing of the Guard
+ceremony so we watched that. It's nothing like the Changing of the Guard
 at Buckingham Palace, but it was still interesting. We then headed
 inside to the main building at the center of the star shaped citadel. We
 began by walking through some of an exhibit on the history of the

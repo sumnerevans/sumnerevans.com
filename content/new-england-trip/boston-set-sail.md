@@ -1,4 +1,4 @@
-Title: 5-21-2016 Boston, Massachusetts and Set Sail
+Title: Boston, Massachusetts and Set Sail
 Date: 2016-05-21 19:00
 Author: sumner
 Category: New England Trip

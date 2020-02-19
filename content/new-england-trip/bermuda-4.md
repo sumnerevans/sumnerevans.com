@@ -43,7 +43,7 @@ daily sudoko puzzle.
 ### Formal Dinner {#formaldinner}
 
 Dinner tonight was a formal "gala" dinner so we dressed up all nicely in suit
-and tie. I was happy because they had Surf and Turf on the menu.  (Surf and Turf
-is steak and lobster.)
+and tie.  I was happy because they had Surf and Turf on the menu.  (Surf and
+Turf is steak and lobster.)
 
 We then went down to hear the Piano Guy before heading to bed.

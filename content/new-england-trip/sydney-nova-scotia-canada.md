@@ -1,4 +1,4 @@
-Title: 5-31-2016: Sydney, Nova Scotia, Canada
+Title: Sydney, Nova Scotia, Canada
 Date: 2016-05-31 19:00
 Author: sumner
 Category: New England Trip
@@ -15,14 +15,14 @@ Museum.
 
 On our way to the Alexander Graham Bell Museum, our guide talked about a
 few interesting things about Sydney, Nova Scotia, and Canada in general.
-(He also said some of this on the ride back, but I’ll just summarise it
+(He also said some of this on the ride back, but I'll just summarise it
 all here.)
 
 By the way, if you want a solid source of information about any of the
-topics I’ve written about, I am not that solid source so don’t cite me
+topics I've written about, I am not that solid source so don't cite me
 on any of this. The reason I do this is a) to let people back home know
-that I’m alive and b) to sort all of the information I’ve learned and
-things I’ve seen in my own mind.
+that I'm alive and b) to sort all of the information I've learned and
+things I've seen in my own mind.
 
 -   The Town of Sydney is located on the island of Cape Breton, the
     northern island of Nova Scotia.
@@ -37,9 +37,7 @@ English). It is said that this lookout spot was the reason that
 Alexander Graham Bell decided to settle in Nova Scotia after his success
 with the telephone.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_2759.jpg){.alignnone
-.size-full .wp-image-898 width="1280"
-height="960"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_2759.jpg)
+[![]({static}/images/new-england-trip/nova-scotia1.jpg)]({static}/images/new-england-trip/nova-scotia1.jpg)
 
 #### The Museum
 
@@ -67,11 +65,9 @@ his most notable contributions.
     others were very unsuccessful, but Alexander kept busy with all of
     his projects.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_2764.jpg){.alignnone
-.size-full .wp-image-903 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_2764.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_2766.jpg){.alignnone
-.size-full .wp-image-904 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_2766.jpg)  
+[![]({static}/images/new-england-trip/nova-scotia2.jpg)]({static}/images/new-england-trip/nova-scotia2.jpg)
+[![]({static}/images/new-england-trip/nova-scotia3.jpg)]({static}/images/new-england-trip/nova-scotia3.jpg)
+
 Alexander is best know for his work on the telephone. It was neat
 learning about how he created the telephone after taking Physics II
 which focuses a lot on electromagnetism. The telephone uses the
@@ -87,9 +83,7 @@ stuff I learned in Physics is actually used in real life.
 
 Outside the museum, there was a great view of a lighthouse.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_2770.jpg){.alignnone
-.size-full .wp-image-899 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_2770.jpg)
+[![]({static}/images/new-england-trip/nova-scotia4.jpg)]({static}/images/new-england-trip/nova-scotia4.jpg)
 
 ### Evening
 

@@ -10,7 +10,7 @@ Today my mom and I arrived in New York, New York. We made it through the
 Denver TSA Security fairly quickly, and got to our gate with plenty of
 time. We boarded the plane without issue, but I had the fortune of
 sitting in front of a baby who kicked my seat throughout the flight and
-screamed when she wasn’t kicking. (Maybe a slight exaggeration, but not
+screamed when she wasn't kicking. (Maybe a slight exaggeration, but not
 much of one.) I was able to plug in my headphones and sleep through a
 lot of it.
 
@@ -24,7 +24,7 @@ got our bags and headed to the taxi queue. While in line, we got our
 first introduction to New York. The dispatcher who told people which
 taxi to go to got in an argument with one of the taxi drivers.
 Apparently the taxi driver had done something wrong or annoying. F-bombs
-were flying around between them and one guy in line said “I’m home now”.
+were flying around between them and one guy in line said “I'm home now”.
 We eventually got a taxi, but the traffic between the LaGuardia Airport
 and Penn Station in Manhattan where we are staying was atrocious. It
 took about 45 minutes to go like 9 miles.
@@ -41,15 +41,14 @@ was still just as long. I guess that’s what happens when your hotel is
 ### Out on the Town {#outonthetown}
 
 After dropping our stuff off at the room, the first order of business
-was to get food in our stomachs. We hadn’t eaten since before boarding
+was to get food in our stomachs. We hadn't eaten since before boarding
 our flight in DIA. We wandered around a bit and took some pictures. I
 have decided that every single building here is tall. Even unimpressive
 buildings are tall. I wonder if being around tall buildings makes
 people's egos tall... That would explain a lot.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_1534-1.jpg){.alignnone
-.size-full .wp-image-805 width="3196"
-height="2396"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_1534-1.jpg)  
+[![]({static}/images/new-england-trip/nyc1.jpg)]({static}/images/new-england-trip/nyc1.jpg)
+
 We ended up at a pizza restaurant because that seemed like an
 appropriate thing to do considering New York is famous for its pizza. It
 was very similar to Garlic Knot pizza back home which makes sense
@@ -60,7 +59,7 @@ pictures do not do it justice. If you stand in the middle of Time Square
 (a feat which is in and of itself difficult with all of the people
 moving about) you can see two lighted billboard stacks and there are
 screens all around the outside of the square as well. We walked around
-soaking up the sights and took a few pictures. (Actually, I didn’t take
+soaking up the sights and took a few pictures. (Actually, I didn't take
 any pictures because my phone died. Good job me.)
 
 We then headed back to the hotel where I am writing this now. Tomorrow

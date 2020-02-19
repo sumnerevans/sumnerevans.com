@@ -9,16 +9,9 @@ Status: published
 
 <div align="CENTER">
 
-**Day 1**
+<b>Day 1</b>
 
 </div>
-
-**  
-**  
-
-<div align="JUSTIFY">
-
-<div style="text-align: justify;">
 
 Today was VERY tiring. We had to get up at 3:00 in the morning!! We were
 VERY lucky to have a driver drive us to the airport. The flight was
@@ -31,8 +24,8 @@ is VERY exciting. Oma (my grandma and my moms mom) is coming to Fort
 Lauderdale. (That is where we are staying before the cruise.) AHHH!!!
 Did you know that Wednesday is when we are leaving for the cruise! I
 can't wait! See you all later!
-</p>
-\~Hannah\~     :)
+
+~Hannah~     :)
 
 Sumner:
 
@@ -62,8 +55,4 @@ something from the Mexican place. I'm not sure what but whatever it was,
 was good. The rest of the day went by without much of interest
 happening.
 
-\~Sumner
-
-</div>
-
-</div>
+~Sumner

@@ -1,4 +1,4 @@
-Title: 6-3-2016: Quebec City, Quebec, Canada
+Title: Quebec City, Quebec, Canada
 Date: 2016-06-03 19:00
 Author: sumner
 Category: New England Trip
@@ -6,7 +6,7 @@ Tags: Canada, Chateau de Frontenac, Citadelle, Cruise, Quebec, Quebec City, Trav
 Slug: quebec-city-quebec-canada
 Status: published
 
- Today we went on a walking tour of Quebec City.
+Today we went on a walking tour of Quebec City.
 
 ### Lower Town
 
@@ -28,7 +28,7 @@ construction, some of the stone of the old dock was found. We went into
 the hotel lobby and saw the remains of the wall. In the lobby there were
 a few models that show what the dock looked like at a few different
 points in history. Out on the street in front of the hotel, they had put
-darker colored bricks in a few places to show the shoreline at those
+darker coloured bricks in a few places to show the shoreline at those
 same points in history.
 
 The streets were very pretty and I can understand why all of Quebec
@@ -52,19 +52,33 @@ they built the iconic tower to once again be the tallest building in the
 city. Still later, they built a fourth wing to make a complete square
 shape around the tower.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3037-1-1.jpg){.alignnone
-.size-full .wp-image-949 width="3356"
-height="2498"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3037-1-1.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3040-1.jpg){.alignnone
-.size-full .wp-image-950 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3040-1.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3110-1.jpg){.alignnone
-.size-full .wp-image-951 width="2448"
-height="3264"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3110-1.jpg)  
-We sent inside the hotel to see the interior of the lobby. It is very
-grand.
+<center>
+<table class="gallery" width="60%">
+  <tr>
+    <td colspan="2">
+      <a href="{static}/images/new-england-trip/quebec1.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/quebec1.jpg" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="{static}/images/new-england-trip/quebec2.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/quebec2.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="{static}/images/new-england-trip/quebec3.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/quebec3.jpg" />
+      </a>
+    </td>
+  </tr>
+</table>
+</center>
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3041-1.jpg){.alignnone
-.size-full .wp-image-943 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3041-1.jpg)
+We went inside the hotel to see the interior of the lobby. It is very grand.
+
+[![]({static}/images/new-england-trip/quebec4.jpg)]({static}/images/new-england-trip/quebec4.jpg)
 
 ------------------------------------------------------------------------
 
@@ -87,17 +101,41 @@ decided that we wanted to walk the city wall and visit the citadel.
 We walked a good distance along the wall and got some great pictures of
 it and the views from it. Here are some of the best photographs.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3077-1.jpg){.alignnone
-.size-full .wp-image-944 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3077-1.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3079-1.jpg){.alignnone
-.size-full .wp-image-947 width="2448"
-height="3264"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3079-1.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3080-2.jpg){.alignnone
-.size-full .wp-image-946 width="2448"
-height="3264"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3080-2.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3081-1.jpg){.alignnone
-.size-full .wp-image-945 width="2448"
-height="3264"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3081-1.jpg)[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3091-1.jpg){.alignnone
-.size-full .wp-image-948 width="2448"
-height="3264"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3091-1.jpg)
+<center>
+<table class="gallery" width="80%">
+  <tr>
+    <td colspan="2">
+      <a href="{static}/images/new-england-trip/quebec5.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/quebec5.jpg" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="{static}/images/new-england-trip/quebec6.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/quebec2.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="{static}/images/new-england-trip/quebec7.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/quebec3.jpg" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="{static}/images/new-england-trip/quebec8.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/quebec8.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="{static}/images/new-england-trip/quebec9.jpg" target="_blank">
+        <img src="{static}/images/new-england-trip/quebec9.jpg" />
+      </a>
+    </td>
+  </tr>
+</table>
+</center>
 
 ### Citadel
 
@@ -106,7 +144,7 @@ take the guided tour of the premises.
 
 #### History of the Citadel
 
-The Quebec Citadelle (that’s how they spell it in French) has gone
+The Quebec Citadelle (that's how they spell it in French) has gone
 through many evolutions. The oldest buildings still standing are a
 couple powder magazines. All of the other buildings were either added
 later or destroyed.
@@ -141,15 +179,14 @@ the Union.
 
 Our tour guide was very good and engaging. She took us all around the
 citadel and showed us many interesting things. The entire complex is
-actually active military so we couldn’t just wander alone and there were
+actually active military so we couldn't just wander alone and there were
 actual military people in the compound. The first stop was the parade
 grounds where they perform a changing of the guard ceremony during the
-summer. We were a bit early to see it (they don’t start for another few
-weeks) but we got to see them practicing.
+summer. We were a bit early to see it (they don't start for another few
+weeks) but we got to see them practising.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3096-2.jpg){.alignnone
-.size-full .wp-image-954 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3096-2.jpg)  
+[![]({static}/images/new-england-trip/quebec10.jpg)]({static}/images/new-england-trip/quebec10.jpg)
+
 We then walked to the powder house where there was a small museum about
 life in the citadel during the time when it was a more active military
 base. The powder store was designed with very thick walls, but a weak
@@ -169,9 +206,7 @@ At the end of the tour we stopped at a very large cannon. This cannon
 had a range of about 5km (3mi) and protected the Quebec harbor. From
 this vantage point, we were able to get great pictures of the city.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3105-2.jpg){.alignnone
-.size-full .wp-image-953 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/06/img_3105-2.jpg)
+[![]({static}/images/new-england-trip/quebec11.jpg)]({static}/images/new-england-trip/quebec11.jpg)
 
 ### Evening
 

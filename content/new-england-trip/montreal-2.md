@@ -1,4 +1,4 @@
-Title: 6-5-2016: Montreal, Quebec, Canada
+Title: Montreal, Quebec, Canada
 Date: 2016-06-12 09:44
 Author: sumner
 Category: New England Trip
@@ -68,7 +68,7 @@ bit and then grabbed a bite to eat in one of the biggest food courts
 ever. There were probably 15 vendors in the food court. The whole area
 was very impressive.
 
-Our hotel isn’t part of the underground city but there was a building
+Our hotel isn't part of the underground city but there was a building
 only a block away from our hotel that was part of the underground city.
 Not wanting to go out into the rain, we decided to walk all the way
 around to that building in the underground city. The main part of the

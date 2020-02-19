@@ -1,4 +1,4 @@
-Title: 5-17-2016: New York, New York
+Title: New York, New York
 Date: 2016-05-17 19:00
 Author: sumner
 Category: New England Trip
@@ -6,7 +6,7 @@ Tags: Bike, Bus Tour, Central Park, Intrepid Museum, New York, Rockefeller Cente
 Slug: new-york-2
 Status: published
 
-Although it’s the 18th, I’ll be writing this as if it were yesterday.
+Although it's the 18th, I'll be writing this as if it were yesterday.
 
 **TL;DR** today we rode the Big Bus tour bus around Lower Manhattan.
 Then we walked to the Intrepid Museum. After that we went biked around
@@ -23,14 +23,14 @@ sights we were seeing from the bus. He was a New York Native who grew up
 somewhere near Central Park. We drove past a bunch of interesting sites
 in downtown New York. Everything from museums and monuments to Wall
 Street and Broadway. I would elaborate on what we learned, but that
-would be a lot of writing so I won’t. Besides, judging by the dismal
+would be a lot of writing so I won't. Besides, judging by the dismal
 number of views I’m getting on my posts, you probably don’t care anyway.
 
 I will mention one more thing: the best quote from the guide:
 
 > Choice, seems to be a thing these days, you can choose anything.
 >
-> *\~ the Tour Guide*
+>   *~ the Tour Guide*
 
 ### The Intrepid Museum {#theintrepidmuseum}
 
@@ -63,21 +63,18 @@ to the flight deck. We then went up to the flight deck and looked at
 more planes up there. Then we went up to the bridge. The Intrepid was
 the flagship for one of the task groups in the task force for the Battle
 of the Philippines. We saw the admirals cabin and the room where he
-conducted the movements of the entire task group. He didn’t actually
+conducted the movements of the entire task group. He didn't actually
 have control over the ship, that was the ship’s captain’s
 responsibility. The admiral was also only a part of a larger task force.
 
-Next we went into the captain’s quarters and to the room where the boat
-was steered. The captain didn’t actually steer the ship, he only told
+Next we went into the captain's quarters and to the room where the boat
+was steered. The captain didn't actually steer the ship, he only told
 the person which way and how fast to go. In fact, the navigator was the
 one who actually determined what course needed to be taken.
 
-\[caption width="2448" id="attachment\_824" align="aligncenter"\][![The
-Bridge of the
-Intrepid](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_1673-2.jpg "The Bridge of the Intrepid"){.size-full
-.wp-image-824 width="2448"
-height="3264"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_1673-2.jpg)
-The Bridge of the Intrepid\[/caption\]
+[![The Bridge of the
+Intrepid]({static}/images/new-england-trip/intrepid.jpg)]({static}/images/new-england-trip/intrepid.jpg)
+*The Bridge of the Intrepid*
 
 ### Failing Remedial Bus 057 {#failingremedialbus057}
 
@@ -86,7 +83,7 @@ elected to ride the bus up to Central Park so we waited at the bus stop
 for the correct bus. It came and pulled over and we were very proud of
 ourselves for being in the right place. Then it took back off into
 traffic. The driver totally left us behind. I guess we were supposed to
-wave him down or something. Anyway, we didn’t even have a chance to try
+wave him down or something. Anyway, we didn't even have a chance to try
 Bus 101, we flunked out at Bus 057: Remedial Getting On Bus class.
 
 ### No Soup For You! {#nosoupforyou}
@@ -94,10 +91,10 @@ Bus 101, we flunked out at Bus 057: Remedial Getting On Bus class.
 Because of our epic failure to get on the bus, we had to walk to Central
 Park. On our way, we came across The Soup Man of Seinfeld fame. Look it
 up. I got jambalaya and I even got bread and an apple with it. We
-thought it might have been funny if we made him mad and see if he’d
-actually say “No Soup for You!” but we didn’t. We walked into Central
-Park and ate our soup. It was really good. (I’m pretty sure everything
-would have seemed good at that point, I don’t even remember what we’d
+thought it might have been funny if we made him mad and see if he'd
+actually say "No Soup for You!" but we didn't. We walked into Central
+Park and ate our soup. It was really good. (I'm pretty sure everything
+would have seemed good at that point, I don’t even remember what we'd
 eaten for breakfast that morning.)
 
 ### Biking Central Park {#bikingcentralpark}
@@ -121,14 +118,14 @@ studios for NBC (including MSNBC) and FOX. (I know, the media arch
 rivals have offices within a few hundred metres of each other. We began
 by joining a guided tour of the center (also on the New York Pass). The
 guide explained some of the history of the building and of the
-Rockefeller family. I’ll summarize it here,
+Rockefeller family. I'll summarize it here,
 
 Essentially John D. Rockefeller got really rich on oil with the Standard
 Oil Company. The government forced him to split his company because at
 that point he controlled vast portions of the oil industry in the United
 States. The companies that broke off became big in their own right (Exon
 and Chevron). Rockefeller had stock in all of the break-off companies
-and he died with a net worth of something to the order of \$300 billion
+and he died with a net worth of something to the order of $300 billion
 of today’s dollars. Rockefeller was the richest person in US history.
 His son, John D. Rockefeller Jr. (Junior) inherited the entirety of his
 fathers fortune. It was Junior who built the Rockefeller Center. He
@@ -143,7 +140,7 @@ wanted to go to the top of the Rockefeller Center before it got dark so
 we left the tour after half an hour. On the way up to the Rockefeller
 Center observation deck, we passed through a whole bunch of queues that
 would have been awful to stand in during high tourism season. It did
-take a while to get to the top, but it wasn’t nearly as bad as it could
+take a while to get to the top, but it wasn't nearly as bad as it could
 have been.
 
 The reason we wanted to come up to the top of the Rockefeller Center at
@@ -151,13 +148,10 @@ this time was to get a view of New York in the daytime. One neat thing
 about the Rockefeller Center’s observation deck is that you can see the
 Empire State Building from the observation deck.
 
-\[caption width="2048" id="attachment\_826"
-align="aligncenter"\][![Views from the Top of the Rockefeller
-Building.](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_2336-1.jpg "Views from the Top of the Rockefeller Building."){.size-full
-.wp-image-826 width="2048"
-height="2048"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_2336-1.jpg)
-Views from the Top of the Rockefeller Building. Originally posted on
-Instagram.\[/caption\]
+[![Views from the Top of the Rockefeller
+Building.]({static}/images/new-england-trip/nyc4.jpg)]({static}/images/new-england-trip/nyc4.jpg)
+*Views from the Top of the Rockefeller Building. Originally posted on
+Instagram.*
 
 ### Business, Dinner and Bed {#businessdinnerandbed}
 

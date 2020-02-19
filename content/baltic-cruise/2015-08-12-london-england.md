@@ -35,7 +35,7 @@ The boat had a crew of approximately 1000. We got to see everything on the boat.
 Here are just some of the things we got to see:
 
 -   the galley (kitchen)
--   the sleeping quarters for both the crew, officers and the captian
+-   the sleeping quarters for both the crew, officers and the captain
 -   the turrets
 -   the engine room
 -   the shell storage room, placed below water to prevent the entire magazine

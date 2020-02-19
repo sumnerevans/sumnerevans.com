@@ -14,7 +14,8 @@ between when we actually post while we are on the cruise as internet
 connectivity is limited). Both of us will be posting to this blog, but
 we will also post to our personal blogs.
 
-Hannah: [thesimplethoughtsmemoir.blogspot.com](http://thesimplethoughtsmemoir.blogspot.com/)  
-Sumner: [sumnerevans.wordpress.com](https://sumnerevans.wordpress.com/)
+**Hannah:** [thesimplethoughtsmemoir.blogspot.com](http://thesimplethoughtsmemoir.blogspot.com/)
+<br>
+**Sumner:** [sumnerevans.wordpress.com](https://sumnerevans.wordpress.com/)
 
 Thanks!

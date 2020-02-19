@@ -72,14 +72,14 @@ necessity for conducting international business these days. I still don't like
 that I only speak English, but more on that later.
 
 An observation specifically about Stockholm, their public transportation is
-amazing. We were able to get busses pretty much anywhere, and their subway
+amazing. We were able to get buses pretty much anywhere, and their subway
 system was fairly extensive as well. I really wish that there were more places
 in the States that have public transportation as good as it is in Stockholm.
-(Talkin’ to you Denver, Colorado.)
+(Talkin' to you Denver, Colorado.)
 
 Europe is big on the welfare state but it all comes at a cost. A very high cost.
 Everything is extremely expensive. A small sandwich could be 50 SEK Swedish
-Kroner (SEK) which is \$5.80.
+Kroner (SEK) which is $5.80.
 
 The last observation is about Asian tourists. The stereotype of Asian tourists
 taking lots of pictures is true. Now that selfies are a thing it's even worse.

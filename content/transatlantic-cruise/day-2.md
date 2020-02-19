@@ -5,16 +5,10 @@ Category: Transatlantic Cruise and Europe
 Slug: day-2
 Status: published
 
-<div style="text-align: center;">
-
-<div style="text-align: left;">
-
 **Hannah:**
-</p>
+
 <div style="text-align: center;">
-
-**Day 2**
-
+<b>Day 2</b>
 </div>
 
 Can you believe it? Tomorrow is the BIG day! We are going on our cruise
@@ -27,14 +21,13 @@ what's on the boat. It will be VERY exciting. Well I gotta go to bed
 now, see ya'll later!
 
 <div style="text-align: center;">
-
-**\~Hannah\~   :)**
-
+<b>~Hannah~   :)</b>
 </div>
 
-**  
-**  
-**Sumner:**  
+-------------------------------------------------------------------------------
+
+**Sumner:**
+
 Today Oma (our grandma) came to Ft. Lauderdale. She arrived at around
 ten o'clock. We decided to go to go to a few stores to get some things
 that we needed and then we went to have lunch. We drove around trying to
@@ -61,8 +54,4 @@ a few days, we won't have very good Internet access and we will have to
 pay a fortune to buy what time we do use so I'll write posts each day
 but not actually post them for a few days.
 
-\~ Sumner
-
-</div>
-
-</div>
+~ Sumner

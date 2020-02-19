@@ -20,7 +20,7 @@ Rubio the next George H. W. Bush.
 
 It’s time for We The People to take our country back from the political
 elites in both parties. It’s time for conservatives across the nation to
-stand for limited government as invisioned by our founders. It’s time
+stand for limited government as envisioned by our founders. It’s time
 for libertarians to stand for individual freedoms. It’s time for
 Christians stand for our principles and for what is right in the sight
 of God. **The only way we will do this is by uniting behind Ted Cruz.**

@@ -1,4 +1,4 @@
-Title: 6-4-2016: End of Cruise and Montreal, Quebec, Canada
+Title: End of Cruise and Montreal, Quebec, Canada
 Date: 2016-06-04 19:00
 Author: sumner
 Category: New England Trip
@@ -44,13 +44,42 @@ Behind the main building is a chapel whose interior is very modern
 looking compared to the main building. It is a combination of the old
 architecture and new minimalistic architecture (the last picture).
 
-![Notre Dame facade lit up by the sun]({static}/images/new-england-trip/notre-dame1.jpg)
-
-![Notre Dame altar]({static}/images/new-england-trip/notre-dame2.jpg)
-
-![Notre Dame pipe organ]({static}/images/new-england-trip/notre-dame3.jpg)
-
-![Another view of the Notre Dame pipe organ]({static}/images/new-england-trip/notre-dame4.jpg)
+<center>
+<table class="gallery" width="80%">
+  <tr>
+    <td colspan="3">
+      <a href="{static}/images/new-england-trip/notre-dame1.jpg" target="_blank">
+        <img
+          src="{static}/images/new-england-trip/notre-dame1.jpg"
+          alt="Notre Dame facade lit up by the sun" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="{static}/images/new-england-trip/notre-dame2.jpg" target="_blank">
+        <img
+          src="{static}/images/new-england-trip/notre-dame2.jpg"
+          alt="Notre Dame altar" />
+      </a>
+    </td>
+    <td>
+      <a href="{static}/images/new-england-trip/notre-dame3.jpg" target="_blank">
+        <img
+          src="{static}/images/new-england-trip/notre-dame3.jpg"
+          alt="Notre Dame pipe organ" />
+      </a>
+    </td>
+    <td>
+      <a href="{static}/images/new-england-trip/notre-dame4.jpg" target="_blank">
+        <img
+          src="{static}/images/new-england-trip/notre-dame4.jpg"
+          alt="Another view of the Notre Dame pipe organ" />
+      </a>
+    </td>
+  </tr>
+</table>
+</center>
 
 ### Walking through Montreal
 

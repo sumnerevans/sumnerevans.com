@@ -1,10 +1,11 @@
-Title: 5-16-2016: New York, New York
+Title: New York, New York
 Date: 2016-05-16 19:00
 Author: sumner
 Category: New England Trip
 Tags: 9/11, 9/11 Memorial, 9/11 Museum, Ellis Island, Empire State Building, Immigration, New York, Statue of Liberty, Subway, Travel
 Slug: new-york-day-1
 Status: published
+Image: /images/new-england-trip/lady-liberty.jpg
 
 Today seemed like a really long day because it was. We started out at
 07:45 and arrived back at the hotel at 23:00 (11 PM for those of you who
@@ -16,13 +17,12 @@ then went up the Empire State Building.
 
 ### Good Morning NYC {#goodmorningnyc}
 
-As I said, we started out at 7:45. Our first stop was in Time Square at
-the bus tour office to get tickets for The Ride, an entertainment/tour
-bus ride that is included in the New York Pass. The New York Pass
-includes a wide variety of attractions, one of which is The Ride. While
-I waited in line, mom went to get tickets for the hop-on hop-off guided
-bus tours which are also included in the New York Passs. She also
-grabbed some breakfast for us to eat.
+As I said, we started out at 7:45. Our first stop was in Time Square at the bus
+tour office to get tickets for The Ride, an entertainment/tour bus ride that is
+included in the New York Pass. The New York Pass includes a wide variety of
+attractions, one of which is The Ride. While I waited in line, mom went to get
+tickets for the hop-on hop-off guided bus tours which are also included in the
+New York Pass. She also grabbed some breakfast for us to eat.
 
 ### Subway 101 {#subway101}
 
@@ -30,7 +30,7 @@ Our next destination was Battery Park station where ferries to the
 Statue of Liberty and Ellis Island depart.
 
 Last night we went down into the Penn Station subway stop and bought
-Subway cards (I didn’t mention that we’d done that last night because it
+Subway cards (I didn't mention that we'd done that last night because it
 was late and I was tired). We found the nearest subway stop and boarded
 a train bound for Battery Park at the southern tip of Manhattan. At the
 stop right before Battery Park had to get out of our car move up the
@@ -39,7 +39,7 @@ the station. The reason for this is that when Hurricane Sandy came
 through New York, Battery Park station was destroyed and they have only
 been able to rebuild some of the train.
 
-I’ve decided that I like the London Tube better because it is much
+I've decided that I like the London Tube better because it is much
 better marked as to where to go for certain locations. In London, most
 of the subway exits were marked with a few landmarks that cold be
 accessed from that exit. Not so with the New York Subway. We got very
@@ -50,7 +50,7 @@ the road when we emerged from the subway.
 
 Before being able to board the ferry to the Statue of Liberty and Ellis
 Island, we had to go through airport-style security. I guess it makes
-sense, because we don’t want anyone coming and blowing up the Statue of
+sense, because we don't want anyone coming and blowing up the Statue of
 Liberty.
 
 It was super windy and very cold, but we made sure that we got seats on
@@ -61,12 +61,9 @@ for many people (we heard that over three quarters of immigrants passed
 through Ellis Island when it was operating as an immigration processing
 centre).
 
-\[caption width="2448" id="attachment\_811"
-align="aligncenter"\][![Arriving at Liberty
-Island.](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_1581-1.jpg){.size-full
-.wp-image-811 width="2448"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_1581-1.jpg)
-Arriving at Liberty Island.\[/caption\]
+[![Arriving at Liberty
+Island.]({static}/images/new-england-trip/lady-liberty.jpg)]({static}/images/new-england-trip/lady-liberty.jpg)
+*Arriving at Liberty Island.*
 
 #### On Liberty Island {#onlibertyisland}
 
@@ -81,17 +78,17 @@ interesting here.
 -   Although the Statue of Liberty was built to symbolize
     Franco-American unity, there was a hidden message as well. In
     France, the government was run by the dictator Napoleon Bonaparte.
-    Many private citizens didn’t like Napoleon’s tyrannical policies and
+    Many private citizens didn't like Napoleon's tyrannical policies and
     created the statue to erect in honor of liberty and send a message
     to Paris that the French people wanted more freedoms.
 -   Some rich guy agreed to pay for the statue if the Americans would
     provide the pedestal to put it on. The French on the project
     included Mr. Eiffel of the famed Eiffel Tower in Paris.
--   Fun’m pretty sure that this was the first Kickstarter campaign
+-   I'm pretty sure that this was the first Kickstarter campaign
     before Kickstarter was a thing.
 -   Emma Lazarus, an American poet, was the first to recognize that the
     Statue of Liberty would become an icon of immigration into America.
-    Her words  
+    Her words
 
     > Give me your tired, your poor
     >
@@ -101,7 +98,6 @@ interesting here.
     >
     > Send these the homeless.
 
-    <p>
     are inscribed in the pedestal of the statue.
 
 After the tour we walked back around to the pedestal entrance to have
@@ -109,17 +105,13 @@ the opportunity to go up the stairs to the statue balcony where there
 were great views of Manhattan and of the Statue itself. After taking a
 few pictures, we went back down to the ferry and went to Ellis Island.
 
-\[caption width="2448" id="attachment\_811"
-align="aligncenter"\][![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_1600-1.jpg){.alignnone
-.size-full .wp-image-812 width="960"
-height="1199"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_1600-1.jpg)
-Mom and me in front of the Statue of Liberty. (Originally posted on
-Instagram.)\[/caption\]\[caption width="3264" id="attachment\_813"
-align="aligncenter"\][![Manhattan from Liberty
-Island](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_1611-1.jpg){.size-full
-.wp-image-813 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_1611-1.jpg)
-Manhattan from Liberty Island\[/caption\]
+[![]({static}/images/new-england-trip/nyc2.jpg)]({static}/images/new-england-trip/nyc2.jpg)
+*Mom and me in front of the Statue of Liberty. (Originally posted on
+Instagram.)*
+
+[![Manhattan from Liberty
+Island]({static}/images/new-england-trip/nyc3.jpg)]({static}/images/new-england-trip/nyc3.jpg)
+*Manhattan from Liberty Island*
 
 ### Ellis Island: Gateway to America {#ellisisland:gatewaytoamerica}
 

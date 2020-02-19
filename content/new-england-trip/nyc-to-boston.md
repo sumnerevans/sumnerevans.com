@@ -1,4 +1,4 @@
-Title: 5-18-2016: New York, New York to Boston, Massachusetts
+Title: New York, New York to Boston, Massachusetts
 Date: 2016-05-18 19:00
 Author: sumner
 Category: New England Trip
@@ -6,7 +6,7 @@ Tags: Boston, Freedom Trail, Massetusetts, New York, Omni Parker Hotel, Travel
 Slug: nyc-to-boston
 Status: published
 
-Today was primarily spent traveling by train from New York to Boston. We
+Today was primarily spent travelling by train from New York to Boston. We
 woke up and got ready to go on the train. Our hotel is literally across
 the street from Penn Station where we caught our train. We grabbed some
 breakfast for on the train and then waited for the track to be
@@ -34,7 +34,7 @@ North Church and Bunker Hill. The walking tour we did only went through
 the first part of the trail. In all, the trail is only like 4 km (2.5
 miles) long which is nice for tourism.
 
-The lady who did our walking tour was “Paul Revere’s wife”. She took us
+The lady who did our walking tour was "Paul Revere's wife". She took us
 by all of the sites I mentioned and also took us into the cemetery where
 Paul Revere is buried. At the site of the Boston Massacre, she told us
 the story behind the massacre. Essentially, there was a mob of people
@@ -49,9 +49,9 @@ and when the smoke cleared, six colonists were dead. It was Samuel Adams
 beer existed) who created the propaganda that it was a massacre. He was
 the one who encouraged the iconic engraving of an orderly British line
 firing into helpless colonists. The propaganda worked obviously, we
-don’t pay taxes to the Queen anymore. They used propaganda to make the
+don't pay taxes to the Queen anymore. They used propaganda to make the
 Red Coats look bad just as the Black Lives Matter movement used
-propaganda (“Hands up, Don’t Shoot”) to make the cops look bad.
+propaganda ("Hands up, Don’t Shoot") to make the cops look bad.
 
 Throughout Boston’s history, there has been a very self-governing
 attitude towards government. From its founding, the colonists placed a
@@ -76,9 +76,8 @@ things about the State House:
     Boston from a balcony on the building.
 -   Other stuff that I can’t remember and is therefore not important.
 
-[![](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_2334-1.jpg){.alignnone
-.size-full .wp-image-832 width="3264"
-height="2448"}](http://www.the-evans.family/sumner/blog/wp-content/uploads/2016/05/img_2334-1.jpg)  
+[![]({static}/images/new-england-trip/boston1.jpg)]({static}/images/new-england-trip/boston1.jpg)
+
 We then walked around in the market area near the Old State House and
 ate some dinner. Then we came back to the hotel and I caught up on my
 blog for yesterday and went to bed.

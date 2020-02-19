@@ -79,7 +79,7 @@ heard it being played.
 After the Lutheran Cathedral, we went to the central market. We shopped for a
 while (I use the "we" pronoun in it’s most exclusive-of-I sense) and then
 decided it was about time to go back to the boat. The Cocos wanted to go by
-taxi, but we asked and it was going to be close to \$70 to get to the port. Mom
+taxi, but we asked and it was going to be close to $70 to get to the port. Mom
 suggested we go to the tourist center to see if there was public transportation
 to the port. There was and we walked down to the tram which took us straight to
 the port.
@@ -102,7 +102,7 @@ and our prize was 100 minutes of free internet (which is at a premium onboard).
 After that, I went down to watch the show. It was four guys who were very good
 singers, but not very dynamic. The most entertaining part of the show was when
 they had a volunteer come up from the audience. She really got into it. They
-sang a song to her and she didn’t want to leave. It was rather amusing. I can’t
+sang a song to her and she didn't want to leave. It was rather amusing. I can’t
 serve it justice in writing so I will just leave it up to your imagination.
 
 ------------------------------------------------------------------------

@@ -5,7 +5,7 @@ Category: Transatlantic Cruise and Europe
 Slug: day-3-start-of-cruise-at-sea
 Status: published
 
-**Sumner:**  
+**Sumner:**
 Today was tiring at best. We started the day out in Ft. Lauderdale and
 ended it out of site of the shore. We had breakfast in the hotel and
 then went back up to get ready to check out of the room at ten. Then we
@@ -30,40 +30,23 @@ worth it. We went to the buffet instead. After we had eaten we went up
 to pick up Hannah. One of the leaders of the club informed us that I was
 actually the *only* teenager on he ship. The other "teenager" turned out
 to be 67 not 17. Someone had made a typo. Anyway Hannah came down to
-have dinner and then we went back to the room to go to bed.  
-\~Sumner
+have dinner and then we went back to the room to go to bed.
+
+~Sumner
 
 **Hannah:**
 
-<div align="JUSTIFY">
-
-Today has been the best day in my
-
-</div>
-
-<div align="JUSTIFY">
-
-ENTIRE  
-life. (Of course, I will say that for other things too.) Anyway... This  
-morning was very hectic. Why? Because we had to get packed. And packing  
-in our family takes a while. (for the ladies. But not me.) we got lost  
-trying to get to the port, but we made it. Oh! This might tickle all of  
-you. So when we went drop our bags off at the port, an African American  
-man told us he would take them. He asked us where we are from and we  
-said Colorado. He said "are you Broncos fans?" And we said YES!  
-Isn't it funny that he did not believe us? well it was strange that he  
-would be asking us such a thing. Until he pointed out his hat. It was a  
-Broncos hat. We got the rental car dropped off and headed back to the  
-port. It was not until then that I realized how BIG the ship was/is. It  
-was
-
-</div>
-
-<div align="JUSTIFY">
-
-GIGANTIC!!!
-
-</div>
+Today has been the best day in my ENTIRE life. (Of course, I will say that for
+other things too.) Anyway... This  morning was very hectic. Why? Because we had
+to get packed. And packing  in our family takes a while. (for the ladies. But
+not me.) we got lost  trying to get to the port, but we made it. Oh! This might
+tickle all of  you. So when we went drop our bags off at the port, an African
+American  man told us he would take them. He asked us where we are from and we
+said Colorado. He said "are you Broncos fans?" And we said YES!  Isn't it funny
+that he did not believe us? well it was strange that he  would be asking us such
+a thing. Until he pointed out his hat. It was a  Broncos hat. We got the rental
+car dropped off and headed back to the  port. It was not until then that I
+realized how BIG the ship was/is. It  was GIGANTIC!!!
 
 <div align="JUSTIFY">
 
