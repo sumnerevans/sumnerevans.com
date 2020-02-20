@@ -49,7 +49,8 @@ We then walked into the centre of town and had lunch at an English pub.  I had a
 chicken and mushroom pie. It was served in a bowl and there was a huge puffy
 top. I actually took a picture of it, so here it is.
 
-[![]({static}/images/baltic-cruise/york1.jpg)]({static}/images/baltic-cruise/york1.jpg)
+[![My chicken and mushroom
+pie.]({static}/images/baltic-cruise/york1.jpg)]({static}/images/baltic-cruise/york1.jpg)
 
 ------------------------------------------------------------------------
 
@@ -64,7 +65,8 @@ reconstruction of the town during the 1800s with displays of various goods of
 the time. It was very similar to what York is like today (except there aren't
 any horse-drawn carriages anymore).
 
-[![]({static}/images/baltic-cruise/york2.jpg)]({static}/images/baltic-cruise/york2.jpg)
+[![The reconstruction of a town street from the
+1800s]({static}/images/baltic-cruise/york2.jpg)]({static}/images/baltic-cruise/york2.jpg)
 
 ------------------------------------------------------------------------
 

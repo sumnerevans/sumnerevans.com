@@ -24,9 +24,9 @@ top of the castle wall. Hannah's hip was bothering her and mom's knee wasn't
 doing well so they stayed in the grass in the courtyard.  From the wall we got
 some great views of the town and surrounding areas.
 
-[![]({static}/images/baltic-cruise/warwick1.jpg)]({static}/images/baltic-cruise/warwick1.jpg)
+[![View of a lush garden area from the top of Warwick Castle]({static}/images/baltic-cruise/warwick1.jpg)]({static}/images/baltic-cruise/warwick1.jpg)
 
-[![]({static}/images/baltic-cruise/warwick2.jpg)]({static}/images/baltic-cruise/warwick2.jpg)
+[![View of the Warwick skyline from the top of Warwick Castle]({static}/images/baltic-cruise/warwick2.jpg)]({static}/images/baltic-cruise/warwick2.jpg)
 
 ------------------------------------------------------------------------
 

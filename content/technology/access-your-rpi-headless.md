@@ -39,7 +39,7 @@ doesn't make sense at all, just follow the instructions. It should work.
 
 1.  Run this command: `sudo ifconfig`
 
-    [![]({static}/images/technology/putty-to-rpi-1.png)]({static}images/technology/putty-to-rpi-1.png)
+    [![Output of `ifconfig`]({static}/images/technology/putty-to-rpi-1.png)]({static}images/technology/putty-to-rpi-1.png)
 
 2.  Find the IP address of the RPi. For me, I am using a wireless adapter so I
     have to look at "wlan0" for the information I need. If you are using a wired

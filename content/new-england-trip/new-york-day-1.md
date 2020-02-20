@@ -105,12 +105,15 @@ the opportunity to go up the stairs to the statue balcony where there
 were great views of Manhattan and of the Statue itself. After taking a
 few pictures, we went back down to the ferry and went to Ellis Island.
 
-[![]({static}/images/new-england-trip/nyc2.jpg)]({static}/images/new-england-trip/nyc2.jpg)
+[![Mom and me in front of the Statue of
+Liberty.]({static}/images/new-england-trip/nyc2.jpg)]({static}/images/new-england-trip/nyc2.jpg)
+<br>
 *Mom and me in front of the Statue of Liberty. (Originally posted on
 Instagram.)*
 
 [![Manhattan from Liberty
 Island]({static}/images/new-england-trip/nyc3.jpg)]({static}/images/new-england-trip/nyc3.jpg)
+<br>
 *Manhattan from Liberty Island*
 
 ### Ellis Island: Gateway to America {#ellisisland:gatewaytoamerica}

@@ -20,6 +20,7 @@ breakfast. Then, I took the Tube up to Buckingham Palace and walked around there
 a little bit.
 
 .. image:: {static}/images/dc-transatlantic-cruise/buckingham-palace.jpg
+   :alt: Me in front of Buckingham Palace
    :align: center
    :target: {static}/images/dc-transatlantic-cruise/buckingham-palace.jpg
    :width: 75%
@@ -29,6 +30,7 @@ a little bit.
    <div style="margin: 10px;"></div>
 
 .. image:: {static}/images/dc-transatlantic-cruise/buckingham-palace2.jpg
+   :alt: A panorama of Buckingham Palace
    :align: center
    :target: {static}/images/dc-transatlantic-cruise/buckingham-palace2.jpg
    :width: 75%
@@ -88,6 +90,7 @@ Getting through the airport and the entire flight were uneventful. I did get
 some good views of Greenland and Northern Canada out the window though.
 
 .. image:: {static}/images/dc-transatlantic-cruise/greenland.jpg
+   :alt: A view over the plane wing of Greenland
    :align: center
    :target: {static}/images/dc-transatlantic-cruise/greenland.jpg
    :width: 50%

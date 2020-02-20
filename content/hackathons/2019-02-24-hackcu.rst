@@ -161,6 +161,7 @@ Challenge (the same challenge that Robby, Jack Garner, David, and I had won the
 year before).
 
 .. image:: {static}/images/hackathon/2019-02-24-dish-network-prize.jpg
+   :alt: Easton, Kristin, and Zach winning the Dish Network Prize
    :target: {static}/images/hackathon/2019-02-24-dish-network-prize.jpg
    :width: 70%
    :align: center
@@ -171,6 +172,7 @@ reflections post about the hackathon on his blog which you can find `here
 <jakeblog_>`_.
 
 .. image:: {static}/images/hackathon/2019-02-24-random-hack.jpg
+   :alt: Jake and Fisher winning the Best Random Hack Prize
    :target: {static}/images/hackathon/2019-02-24-random-hack.jpg
    :width: 70%
    :align: center
@@ -184,6 +186,7 @@ announced second place. My team won second place! We were extremely happy about
 that, especially considering the quality of the competition.
 
 .. image:: {static}/images/hackathon/2019-02-24-second-place.jpg
+   :alt: My team winning Second Place
    :target: {static}/images/hackathon/2019-02-24-second-place.jpg
    :width: 70%
    :align: center

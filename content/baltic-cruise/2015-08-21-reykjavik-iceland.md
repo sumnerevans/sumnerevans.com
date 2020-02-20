@@ -36,13 +36,13 @@ was filmed close by. (I'm not saying this because I watch/endorse *Game of
 Thrones*, I just had already thought that it was a great place for film and she
 confirmed that when she mentioned *Game of Thrones*.)
 
-[![]({static}/images/baltic-cruise/iceland5.jpg)]({static}/images/baltic-cruise/iceland5.jpg)
+[![Beautiful scenery]({static}/images/baltic-cruise/iceland5.jpg)]({static}/images/baltic-cruise/iceland5.jpg)
 
 We then rode to a beautiful waterfall, the biggest in Iceland (I think).  At
 this stop we also ate lunch. Mom and I both tried the traditional Icelandic lamb
 soup. I thought it was pretty good.
 
-[![]({static}/images/baltic-cruise/iceland6.jpg)]({static}/images/baltic-cruise/iceland6.jpg)
+[![Waterfall]({static}/images/baltic-cruise/iceland6.jpg)]({static}/images/baltic-cruise/iceland6.jpg)
 
 Then we rode to the Geyser area. The first recorded discovery of a geyser was
 the main geyser in the area. It was named Geyser and all other geysers are named
