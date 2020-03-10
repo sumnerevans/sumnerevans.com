@@ -241,8 +241,8 @@ C - Classrooms an Calculators
 :Correct: 1
 :Percentage: 1% (lowest in competition)
 
-Despite its actual difficulty in competition, this was not intended to be the
-hardest problems in the competition. I think that the description and sample
+Despite its actual difficulty in competition, this was not intended to be one of
+the hardest problems in the competition. I think that the description and sample
 inputs made it very appealing to attempt with a brute force solution by
 iterating through the days checking each one for whether or not they can play on
 a that day. However, that is where the difficulty of this problem was hidden.
