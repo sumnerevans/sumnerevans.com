@@ -256,9 +256,9 @@ calculate the precise number of days that will be required for the pattern to
 repeat (it's the LCM of `d_1, d_2, d_3`), but it is actually not necessary to
 compute the LCM for this problem. Instead, you can just observe that the pattern
 is guaranteed to repeat at least every `\prod d_i = d_1 \times d_2 \times d_3`
-days because `\text{LCM}(d_1, d_2, d_3)` is guaranteed to be a multiple of
-`\prod d_i` (proof of this is left to the reader). We call this product the
-*period*.
+days because `\prod d_i` is guaranteed to be a multiple of
+`\text{LCM}(d_1, d_2, d_3)` (proof of this is left to the reader). We call this
+product the *period*.
 
 You then need to extend the pattern for the first `\prod d_i` days forward until
 you find the `n^\text{th}` day they can play. An important detail here is that
