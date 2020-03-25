@@ -47,6 +47,12 @@ EXTRA_PATH_METADATA = {
     'extra/.htaccess': {
         'path': '.htaccess'
     },
+    'extra/.well-known/matrix/client': {
+        'path': '.well-known/matrix/client'
+    },
+    'extra/.well-known/matrix/server': {
+        'path': '.well-known/matrix/server'
+    },
 }
 
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'

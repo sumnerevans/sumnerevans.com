@@ -1,0 +1,5 @@
+{
+    "server": {
+        "m.server": "matrix.sumnerevans.com:443"
+    }
+}
