@@ -1,5 +1,3 @@
 {
-    "server": {
-        "m.server": "matrix.sumnerevans.com:443"
-    }
+    "m.server": "matrix.sumnerevans.com:443"
 }
