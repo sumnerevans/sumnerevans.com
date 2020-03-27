@@ -18,6 +18,10 @@ CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
 
 DELETE_OUTPUT_DIRECTORY = True
 
-# Following items are often useful when publishing
+# Analytics
 GOOGLE_ANALYTICS = 'UA-104941015-1'
+
+MATOMO_URL = 'matomo.sumnerevans.com'
+MATOMO_SITE_ID = '1'
+
 DISQUS_SITENAME = 'sumnerevans'
