@@ -123,6 +123,8 @@ ISSO_EMBED_JS_PATH = '/static/javascript/isso.min.js'
 # Each of the options will have "data-isso-" appended to the front of the key.
 # The value will remain the same, and must be a string.
 ISSO_OPTIONS = {
+    'avatar': 'false',
+    'gravatar': 'true',
     'reply-to-self': 'true',
     'reply-notifications': 'true',
 }
