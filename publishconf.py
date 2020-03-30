@@ -23,5 +23,3 @@ GOOGLE_ANALYTICS = 'UA-104941015-1'
 
 MATOMO_URL = 'matomo.sumnerevans.com'
 MATOMO_SITE_ID = '1'
-
-DISQUS_SITENAME = 'sumnerevans'

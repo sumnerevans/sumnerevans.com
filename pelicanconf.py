@@ -114,3 +114,15 @@ MATH_JAX = {
         'color.js', 'cancel.js', 'mhchem.js', 'AMSmath.js', 'AMSsymbols.js'
     ],
 }
+
+# Isso settings
+# See https://posativ.org/isso/docs/configuration/client/
+ISSO_URL = '//comments.sumnerevans.com'
+ISSO_EMBED_JS_PATH = '/static/javascript/isso.min.js'
+
+# Each of the options will have "data-isso-" appended to the front of the key.
+# The value will remain the same, and must be a string.
+ISSO_OPTIONS = {
+    'reply-to-self': 'true',
+    'reply-notifications': 'true',
+}
