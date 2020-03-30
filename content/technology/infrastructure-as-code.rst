@@ -16,5 +16,6 @@ things to write articles about
 * automatically provision DO droplet and infect it with NixOS
 * how to make a GitLab CI script to auto-deploy to personal infrastructure
   with secret management
+* Running Isso on NixOS
 
 * setting up non-Nix things
