@@ -10,6 +10,7 @@ typogrify = "*"
 Markdown = "*"
 yapf = "*"
 flake8 = "*"
+jedi = "*"
 
 [packages]
 
