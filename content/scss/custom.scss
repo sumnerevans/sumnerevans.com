@@ -234,16 +234,18 @@ div.admonition {
   $darkest-grey: #1a1a1a;
   $off-white: #eee;
   $dark-white: #aaa;
+  $link-color: #ff3c0f;
+  $link-hover-color: #ff7757;
 
   main {
     background-color: $base-grey;
     color: $off-white;
 
     a {
-      color: #ff3c0f;
+      color: $link-color;
 
       &:hover, &:active, &:focus {
-        color: #ff7757;
+        color: $link-hover-color;
       }
 
       &.btn {
@@ -295,6 +297,39 @@ div.admonition {
     .notification-section input {
       background: $darkest-grey;
       color: $off-white;
+    }
+
+    >h4 {
+      color: $off-white;
+    }
+
+    .isso-postbox > .form-wrapper .preview {
+      background: repeating-linear-gradient( -45deg, $dark-grey, $dark-grey 10px, $darkest-grey 10px, $darkest-grey 20px );
+    }
+
+    .isso-comment > div.text-wrapper {
+      > .isso-comment-header {
+        .author {
+          color: $off-white;
+        }
+
+        a.author:hover {
+          text-decoration: underline;
+        }
+
+        .spacer, a.permalink, .note, a.parent {
+          color: $dark-white;
+
+          &:hover {
+            color: $off-white !important;
+          }
+        }
+      }
+
+      > .isso-comment-footer a:hover {
+        color: $link-hover-color !important;
+        text-shadow: $darkest-grey 0 0 1px !important;
+      }
     }
   }
 
