@@ -7,6 +7,7 @@ INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/public
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
+PORT=8000
 
 
 DEBUG ?= 0
@@ -70,6 +71,6 @@ publish: content/static/custom.css
 	$(PELICAN) $(INPUTDIR) -o $(OUTPUTDIR) -s $(PUBLISHCONF) $(PELICANOPTS)
 
 content/static/custom.css: content/scss/custom.scss
-	sass content/scss/custom.scss content/static/custom.css
+	sass -s compressed content/scss/custom.scss content/static/custom.css
 
 .PHONY: html help clean regenerate serve serve-global devserver publish
