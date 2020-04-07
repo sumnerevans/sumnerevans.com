@@ -228,23 +228,35 @@ div.admonition {
 }
 
 /* Dark Theme */
-@media (prefers-color-scheme: dark) {
+@mixin dark-mode-rules {
   $base-grey: #333;
   $dark-grey: #222;
   $darkest-grey: #1a1a1a;
   $off-white: #eee;
   $dark-white: #aaa;
 
-  a {
-    color: #ff3c0f;
-  }
-
   main {
     background-color: $base-grey;
     color: $off-white;
 
+    a {
+      color: #ff3c0f;
+    }
+
+    a.btn {
+      color: $off-white;
+    }
+
+    .tag-cloud a {
+      color: $off-white;
+    }
+
     nav {
       border-bottom-color: $dark-grey;
+
+      a {
+        border-right-color: $dark-grey;
+      }
     }
 
     article {
@@ -263,8 +275,9 @@ div.admonition {
       }
     }
 
-    code, pre {
-      color: $darkest-grey;
+    // Override the pygments highlight color.
+    pre, div.highlight {
+      background-color: $dark-grey;
     }
   }
 
@@ -284,4 +297,14 @@ div.admonition {
   .portfolio-item.collapsed .content .expand-link {
     background: linear-gradient(0.25turn, transparent 0%, $base-grey 25%, $base-grey 75%, transparent 100%);
   }
+}
+
+@media (prefers-color-scheme: dark) {
+  body:not(.light_theme) {
+    @include dark-mode-rules;
+  }
+}
+
+body.dark_theme {
+  @include dark-mode-rules;
 }
