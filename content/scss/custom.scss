@@ -188,7 +188,6 @@ aside div img {
   }
 }
 
-
 /* Image Galleries */
 .gallery {
   text-align: center;
@@ -226,4 +225,63 @@ div.admonition {
 /* Isso Comments */
 #isso-thread .auth-section .input-wrapper {
   margin-right: 5px;
+}
+
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+  $base-grey: #333;
+  $dark-grey: #222;
+  $darkest-grey: #1a1a1a;
+  $off-white: #eee;
+  $dark-white: #aaa;
+
+  a {
+    color: #ff3c0f;
+  }
+
+  main {
+    background-color: $base-grey;
+    color: $off-white;
+
+    nav {
+      border-bottom-color: $dark-grey;
+    }
+
+    article {
+      header p {
+        color: $dark-white;
+      }
+
+      hr {
+        color: $dark-grey;
+        background-color: $dark-grey;
+      }
+
+      .related-posts {
+        border-bottom-color: $dark-grey;
+        border-top-color: $dark-grey;
+      }
+    }
+
+    code, pre {
+      color: $darkest-grey;
+    }
+  }
+
+  aside {
+    background-color: $dark-grey;
+  }
+
+  section#isso-thread {
+    div.textarea,
+    .auth-section p.input-wrapper input,
+    .notification-section input {
+      background: $darkest-grey;
+      color: $off-white;
+    }
+  }
+
+  .portfolio-item.collapsed .content .expand-link {
+    background: linear-gradient(0.25turn, transparent 0%, $base-grey 25%, $base-grey 75%, transparent 100%);
+  }
 }
