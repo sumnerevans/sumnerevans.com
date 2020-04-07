@@ -241,10 +241,14 @@ div.admonition {
 
     a {
       color: #ff3c0f;
-    }
 
-    a.btn {
-      color: $off-white;
+      &:hover, &:active, &:focus {
+        color: #ff7757;
+      }
+
+      &.btn {
+        color: $off-white;
+      }
     }
 
     .tag-cloud a {
