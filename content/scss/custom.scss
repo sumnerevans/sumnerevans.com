@@ -348,6 +348,10 @@ main img, video {
   .portfolio-item.collapsed .content .expand-link {
     background: linear-gradient(0.25turn, transparent 0%, $base-grey 25%, $base-grey 75%, transparent 100%);
   }
+
+  footer {
+    border-top-color: $darkest-grey;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
