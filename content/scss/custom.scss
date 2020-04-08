@@ -351,11 +351,11 @@ main img, video {
 }
 
 @media (prefers-color-scheme: dark) {
-  body:not(.light_theme) {
+  body:not(.light-theme) {
     @include dark-mode-rules;
   }
 }
 
-body.dark_theme {
+body.dark-theme {
   @include dark-mode-rules;
 }
