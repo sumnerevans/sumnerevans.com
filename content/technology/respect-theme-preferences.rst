@@ -355,6 +355,10 @@ Other Resources
 Here are a few other resources that helped me as I was implementing dark mode
 for this website and as I was writing this article.
 
-* https://kevinchen.co/blog/support-macos-mojave-dark-mode-on-websites/
-* https://medium.com/@jonas_duri/enable-dark-mode-with-css-variables-and-javascript-today-66cedd3d7845
-* https://css-tricks.com/dark-modes-with-css/
+* `Supporting macOS Mojave's Dark Mode on the web - Kevin Chen <kevinchen_>`_
+* `Use "prefers-color-scheme" to detect macOS dark mode with CSS and Javascript <medium_>`_
+* `Dark Mode in CSS | CSS-Tricks <csstricks_>`_
+
+.. _kevinchen: https://kevinchen.co/blog/support-macos-mojave-dark-mode-on-websites/
+.. _medium: https://medium.com/@jonas_duri/enable-dark-mode-with-css-variables-and-javascript-today-66cedd3d7845
+.. _csstricks: https://css-tricks.com/dark-modes-with-css/
