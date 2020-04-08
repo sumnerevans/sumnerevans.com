@@ -74,23 +74,25 @@ Set up GitLab CI/CD
 ===================
 
 Now we need to configure GitLab CI/CD to automatically build the site. To do
-that, add a ``.gitlab-ci.yml`` file with the following contents::
+that, add a ``.gitlab-ci.yml`` file with the following contents:
 
-  # Build and deploy the pelican site.
-  pages:
-    image: python:3.6-alpine
-    stage: deploy
-    only:
-      - master
-    before_script:
-      - apk update && apk upgrade && apk add git make
-      - pip install --upgrade pip
-      - pip install -r requirements.txt
-    script:
-      - make publish
-    artifacts:
-      paths:
-        - public
+.. code:: yaml
+
+   # Build and deploy the pelican site.
+   pages:
+     image: python:3.6-alpine
+     stage: deploy
+     only:
+       - master
+     before_script:
+       - apk update && apk upgrade && apk add git make
+       - pip install --upgrade pip
+       - pip install -r requirements.txt
+     script:
+       - make publish
+     artifacts:
+       paths:
+         - public
 
 .. note::
 

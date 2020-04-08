@@ -227,6 +227,15 @@ div.admonition {
   margin-right: 5px;
 }
 
+// Images
+main img, video {
+  opacity: 90%;
+
+  &:hover, &:active, &:focus {
+    opacity: 1;
+  }
+}
+
 /* Dark Theme */
 @mixin dark-mode-rules {
   $base-grey: #333;
@@ -236,6 +245,14 @@ div.admonition {
   $dark-white: #aaa;
   $link-color: #ff3c0f;
   $link-hover-color: #ff7757;
+
+  main img, video {
+    opacity: 70%;
+
+    &:hover, &:active, &:focus {
+      opacity: 1;
+    }
+  }
 
   main {
     background-color: $base-grey;
@@ -279,11 +296,6 @@ div.admonition {
         border-bottom-color: $dark-grey;
         border-top-color: $dark-grey;
       }
-    }
-
-    // Override the pygments highlight color.
-    pre, div.highlight {
-      background-color: $dark-grey;
     }
   }
 
