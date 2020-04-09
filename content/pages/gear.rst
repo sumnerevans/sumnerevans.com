@@ -7,11 +7,9 @@ Computers
 ---------
 
 I run Arch Linux on all of my daily drivers. I use the i3 window manager. You
-can find my `full dotfiles <dotfiles_>`_ and `miscellaneous scripts <scripts_>`_
-in their respective GitLab repositories.
+can find my `full dotfiles and miscellaneous scripts on GitLab. <dotfiles_>`_
 
 .. _dotfiles: https://gitlab.com/sumner/dotfiles.git
-.. _scripts: https://gitlab.com/sumner/scripts.git
 
 - **Desktop*:** A custom-built desktop. See the `part list on PCPartPicker
   <partlist_>`_. Highlights are:
