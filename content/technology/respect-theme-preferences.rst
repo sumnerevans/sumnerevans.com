@@ -10,8 +10,8 @@ Respecting Theme Preferences on Your Website
 
 You may have noticed that dark themes are becoming more and more common across
 the computing landscape. Everything from `Windows 10`_, `macOS Mojave and
-later`_, `iOS 13+ <iOS_>`_, and `Android 10+ <Android_>`_ to many `Linux
-<linuxde1_>`_ `desktop <linuxde2_>`_ `environments <linuxde3_>`_ and many
+later`_, `iOS 13+ <iOS_>`_, and `Android 10+ <Android_>`_ to `many <linuxde4_>`_
+`Linux <linuxde1_>`_ `desktop <linuxde2_>`_ `environments <linuxde3_>`_ and many
 `individual <browser1_>`_ `browsers <browser2_>`_ are including dark/light theme
 toggle settings.
 
@@ -49,6 +49,7 @@ website.
 .. _linuxde1: https://github.com/elementary-tweaks/elementary-tweaks
 .. _linuxde2: https://wiki.gnome.org/Apps/Tweaks
 .. _linuxde3: https://www.tecrobust.com/how-to-enable-dark-theme-dark-mode-in-manjaro-linux-kde/
+.. _linuxde4: https://itsfoss.com/dark-mode-ubuntu/
 .. _browser1: https://www.addictivetips.com/web/enable-the-dark-mode-on-chrome/
 .. _browser2: https://www.howtogeek.com/359033/how-to-enable-dark-mode-in-firefox/
 .. _so: https://meta.stackoverflow.com/questions/395949/dark-mode-beta-help-us-root-out-low-contrast-and-un-converted-bits
