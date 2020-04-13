@@ -186,6 +186,12 @@ aside div img {
       }
     }
   }
+
+  &:hover {
+    img.thumbnail {
+      opacity: 1;
+    }
+  }
 }
 
 /* Image Galleries */
