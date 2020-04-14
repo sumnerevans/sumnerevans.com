@@ -16,8 +16,8 @@ situation. I have a list of all my gear `here <gear_>`_.
 
 I was homeschooled through high school, but I also attended Red Rocks Community
 College doing a few classes a semester during high school. I also worked at
-`Can/Am Technologies, Inc. <canam_>`_ as a software developer during high school.  (See my
-`portfolio`_ for more info).
+`Can/Am Technologies, Inc. <canam_>`_ as a software developer during high
+school. (See my `portfolio`_ for more info).
 
 When I'm not working, I enjoy playing soccer, volleyball, and I've been getting
 into racquetball lately. During high school, I won the FRCCA State Championship
