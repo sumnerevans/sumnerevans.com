@@ -66,7 +66,7 @@ PLUGINS = [
     'render_math',
     'representative_image',
 ]
-PYGMENTS_STYLE = 'autumn'
+PYGMENTS_STYLE = 'emacs'
 PYGMENTS_STYLE_DARK = 'monokai'
 
 ARTICLE_EXCLUDES = ['extra', 'scss']
