@@ -32,6 +32,9 @@ PATH = 'content'
 TIMEZONE = 'America/Denver'
 
 THEME = 'Flex'
+THEME_COLOR = 'dark'
+THEME_COLOR_AUTO_DETECT_BROWSER_PREFERENCE = True
+THEME_COLOR_ENABLE_USER_OVERRIDE = True
 CUSTOM_CSS = 'static/custom.css'
 
 DEFAULT_LANG = 'en'
@@ -60,11 +63,12 @@ ARTICLE_URL = '{date:%Y}/{slug}.html'
 
 PLUGIN_PATHS = ['plugins']
 PLUGINS = [
-    'post_stats',
     'neighbors',
+    'post_stats',
     'related_posts',
     'render_math',
     'representative_image',
+    'tipue_search',
 ]
 PYGMENTS_STYLE = 'emacs'
 PYGMENTS_STYLE_DARK = 'monokai'
@@ -119,7 +123,6 @@ MATH_JAX = {
 # Isso settings
 # See https://posativ.org/isso/docs/configuration/client/
 ISSO_URL = '//comments.sumnerevans.com'
-ISSO_EMBED_JS_PATH = '/static/javascript/isso.min.js'
 
 # Each of the options will have "data-isso-" appended to the front of the key.
 # The value will remain the same, and must be a string.
@@ -129,3 +132,14 @@ ISSO_OPTIONS = {
     'reply-to-self': 'true',
     'reply-notifications': 'true',
 }
+
+# Search
+USE_TIPUE_SEARCH = True
+DIRECT_TEMPLATES = (
+    'index',
+    'tags',
+    'categories',
+    'authors',
+    'archives',
+    'search',
+)

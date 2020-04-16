@@ -13,6 +13,9 @@ flake8 = "*"
 jedi = "*"
 
 [packages]
+pygments-style-github = "*"
+Pygments = "*"
+pelican-minify = "*"
 
 [requires]
 python_version = "3.8"

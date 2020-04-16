@@ -27,13 +27,13 @@ was able to achieve:
 
    <p><b>Change theme to:</b></p>
    <div style="margin-bottom: 16px;">
-     <a class="btn" href="javascript:void(0)" style="margin-right: 8px;" onclick="switchTheme('dark')">
+     <a class="btn" href="javascript:void(0)" style="margin-right: 8px;" onclick="theme.switch('dark')">
        Dark Theme
      </a>
-     <a class="btn" href="javascript:void(0)" style="margin-right: 8px;" onclick="switchTheme('light')">
+     <a class="btn" href="javascript:void(0)" style="margin-right: 8px;" onclick="theme.switch('light')">
        Light Theme
      </a>
-     <a class="btn" href="javascript:void(0)" style="margin-right: 8px;"  onclick="switchTheme('browser')">
+     <a class="btn" href="javascript:void(0)" style="margin-right: 8px;"  onclick="theme.switch('browser')">
        Browser Theme
      </a>
    </div>
