@@ -134,7 +134,6 @@ ISSO_OPTIONS = {
 }
 
 # Search
-USE_TIPUE_SEARCH = True
 DIRECT_TEMPLATES = (
     'index',
     'tags',
