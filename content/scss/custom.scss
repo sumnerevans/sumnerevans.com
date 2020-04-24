@@ -254,10 +254,43 @@ main nav a {
   font-size: 13px;
 }
 
-// Align right on desktop
+// Left-aling nav on desktop
 @media screen and (min-width: 768px) {
   main nav {
-    text-align: right;
+    text-align: left;
+    padding-left: 8%;
+
+    a:first-child {
+      padding-left: 0;
+    }
+  }
+}
+
+// Width should be only 45rem;
+main article {
+  max-width: 45rem;
+
+  p {
+    text-align: justify;
+  }
+}
+
+main footer p {
+  padding: 0 8%;
+  max-width: 45rem;
+  margin: 2px 0;
+
+  img {
+    margin-top: 4px;
+  }
+}
+
+// Use a darker style for tipue search input all the time because, by default,
+// it's too bright.
+aside {
+  form.navbar-search input#tipue_search_input {
+    background-color: #222222;
+    color: #eeeeee;
   }
 }
 
@@ -267,6 +300,12 @@ main nav a {
   $grey: #333333;
   $dark-grey: #242121;
   $dark-white: #aaaaaa;
+
+  aside {
+    form.navbar-search input#tipue_search_input {
+      background-color: #1a1a1a;
+    }
+  }
 
   // Dim images more in dark mode.
   main img, video {

@@ -105,11 +105,9 @@ theme for this website.
    ``#222``. This allows the sidebar to be darker than the content in both the
    light and dark themes.
 
-2. **Don't just go and change all of the colors.** Some colors can be left
-   the same or nearly the same. The link text is one example of a color that
-   doesn't changed that much between light and dark themes on this site. I did
-   do a slight modification to the colors to increase contrast with the grey
-   background, but it was a very minor change.
+2. **Don't just go and change all of the colors.** Some colours can be left
+   the same or nearly the same. The link text is one example of a colour that
+   doesn't change between the light and dark themes on this site.
 
 3. **Dim your images.** Most of the time, images are naturally bright content
    which can be jarring in the middle of a dark-themed website. In order to
