@@ -92,7 +92,8 @@ SOCIAL = (
     ('stack-overflow', 'http://stackoverflow.com/users/2319844/'),
     ('github', 'https://github.com/sumnerevans'),
     ('gitlab', 'https://gitlab.com/sumner'),
-    ('instagram', 'https://www.instagram.com/sumner.evans/'),
+    ('youtube', 'https://www.youtube.com/channel/UCyrdRO4oJRpszr0ovN1FwBA'),
+    ('twitch', 'https://www.twitch.tv/sumnerevans'),
     ('twitter', 'https://twitter.com/sumner_evans'),
     ('keybase', 'https://keybase.io/jsve'),
 )
