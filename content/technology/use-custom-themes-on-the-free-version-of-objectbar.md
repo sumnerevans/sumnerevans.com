@@ -16,10 +16,10 @@ case.  You *can* use any theme that you want.
 To use your own theme, follow these steps:
 
 1.  Get the theme you want.
-2.  Copy the files to the root of ObjectBar's program files directory
-    (It should be something like
-    `C:\\Program Files\\Stardock\\Object Desktop\\Objectbar` (for 32-bit) and 
-    `C:\\Program Files (x86)\\Stardock\\Object Desktop\\ObjectBar` (for 64-bit)
+2.  Copy the files to the root of ObjectBar's program files directory.  It
+    should be something like
+    `C:\Program Files\Stardock\Object Desktop\Objectbar` (for 32-bit) and
+    `C:\Program Files (x86)\Stardock\Object Desktop\ObjectBar` (for 64-bit)
 3.  Run ObjectBar (if it isn't running already). Restart ObjectBar if it
     is running.
 4.  Right click on anything except for an item on the bar and select "Theme
@@ -31,4 +31,3 @@ To use your own theme, follow these steps:
     the "Skin" dropdown
 9.  Enjoy knowing that you just got in to ObjectDock's theme manager through the
     back door. :)
-

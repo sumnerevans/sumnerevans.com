@@ -270,7 +270,7 @@ main nav a {
 main article {
   max-width: 45rem;
 
-  p {
+  p, ul li, ol li {
     text-align: justify;
   }
 }
