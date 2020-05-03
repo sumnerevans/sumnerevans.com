@@ -25,14 +25,14 @@ emails. Here are a few:
 * **Keybase:** I'm jsve_ on Keybase.
 * **PGP Keyservers:** You can find my `key on a keyserver <keyserver_>`_. Just
   search for my email. I recommend using http://keys.gnupg.net because the MIT
-  one is overloaded all the time it seems.
+  keyserver is overloaded all the time it seems.
 * **Right here:**
 
   My full GPG Key ID is::
 
       3F15 C22B FD12 5095 F9C0 7275 8904 527A B500 22FD
 
-  You can download my public key here: |pubkey|_
+  You can download my public key here: |pubkey|_.
 
 .. _jsve: https://keybase.io/jsve
 .. _keyserver: http://keys.gnupg.net/pks/lookup?search=me%40sumnerevans.com&fingerprint=on&op=index
