@@ -59,8 +59,6 @@ year did a great job. Here are a few highlights of the competition:
 * Other teams that were first-to-solve a problem were *ACJ* (problem **C**),
   *Lobos* (problem **D**), and *Silver Creek Maroon* (problem **F**).
 
-.. TODO more?
-
 The Problems
 ============
 
@@ -95,7 +93,8 @@ appeared in competition:
 - **G: Tax Calc** -- Implement a stack calculator.
 - **H: Work From Home** -- Unit conversions, and arithmetic.
 - **I: Skittles** -- A bunch of non-trivial dictionary operations.
-- **J: Mountain Bike Trail** -- TODO
+- **J: Mountain Bike Trail** -- This problem involves efficiently storing and
+  manipulating the state of a non-trivial "world".
 - **K: Snails** -- Modified Fibonacci sequence requiring memoization.
 - **L: Magic Maze** -- Keep track of a set of transformations on a stack.
 
@@ -194,16 +193,16 @@ formatted time.
 .. tip::
 
    If you don't know what the modulo operator is, I recommend watching my
-   explanation starting at around 11:25_ in the video.
+   explanation starting at around 11:27_ in the video.
 
-   .. _11:25: https://youtu.be/tD3xvJF0kU0?t=685
+   .. _11:27: https://youtu.be/z6uFZfZ5GWI?t=687
 
 
 .. raw:: html
 
     <iframe width="560"
             height="315"
-            src="https://www.youtube.com/embed/tD3xvJF0kU0"
+            src="https://www.youtube.com/embed/z6uFZfZ5GWI"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
@@ -296,12 +295,11 @@ such a data type, some of the values for the sequence will exceed the size of a
 .. |memoize| replace:: *memoize*
 .. _memoize: https://en.wikipedia.org/wiki/Memoization
 
-.. TODO vid
 .. raw:: html
 
     <iframe width="560"
             height="315"
-            src="https://www.youtube.com/embed/"
+            src="https://www.youtube.com/embed/qt4L7XYMEqY"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
@@ -317,12 +315,32 @@ J - Mountain Bike Trail
 :Percentage: 0%
 
 This problem ended up being the most difficult in the competition with no teams
-solving it. There were two main factors that cause this problem to be difficult:
+solving it. The main factor that causes this problem to be difficult is having
+to solve it efficiently. You have to notice that you basically need to
+"collapse" each group. For example, if you have the sequence::
 
-1. Solving the problem in the general case.
-2. Solving the problem within the time limit.
+    3 back
+    2 back
+    1 back
+    just me
 
-.. TODO
+that can collapse into a single group. However, there may be many other groups
+that could interrupt this sequence.
+
+The way to solve this efficiently is to store whether or not a person who is
+``"n back"`` can be included in a group that has been previously seen. For
+example, if you see a ``"3 back"``, then you know that if someone down the trail
+says ``"2 back"``, that person can be part of the same group. You must also
+consider the fact that there could be multiple groups that can have somebody say
+``"n back"`` at any given time. If you have a sequence::
+
+    3 back
+    3 back
+
+then the next two people who say ``"2 back"`` can be rolled up into the previous
+groups. However, the third person down the trail who says ``"2 back"`` cannot be
+rolled up into a previous group. You can use an array to store this information
+efficiently.
 
 .. TODO vid
 .. raw:: html
@@ -451,18 +469,32 @@ need to enumerate the possible times in-order. There are many ways to accomplish
 each of these problems, but I'll present one of the more elegant (in my opinion)
 ways (although, it may not necessarily by the fastest).
 
-1. Use set unions and intersections to determine what the possible numbers for
-   each digit are.
+1. **Use set unions and intersections to determine what the possible numbers for
+   each digit are.**
+
+   Associate each of the segment numbers with the set of numbers that *must
+   have* that segment lit, and a set of numbers that must *not* have that
+   segment lit. For example, Segment 1 must be lit for ``0``, ``2``, ``3``,
+   ``5``, ``6``, ``7``, ``8``, and ``9``, but it cannot be lit for ``1`` or
+   ``4``.
+
+   If an segment is illuminated, then all of the numbers associated with that
+   segment could be possible. You can use *set intersections* to determine this.
+   If a segment is definitely *not* illuminated (not broken, and not lit), then
+   none of the numbers where that segment is not lit can be included. You can
+   determine this using *set subtraction*.
+
 2. Use recursion to generate possible times in-order. In this solution, the
-   recursion would return a list of possibilities of the *rest* of the time
-   string and the base-case would be a list of the possibilities for the
+   recursion would return a sorted list of possibilities of the *rest* of the
+   time string and the base-case would be a list of the possibilities for the
    right-most digit.
+
+   You still have to filter out "impossible" times such as ``25:00:00``, but
+   that is relatively easy once you've actually enumerated the possible times.
 
 One catch with this problem is that there are a few interesting edge cases in
 determining whether or not the time is valid, particularly with the one's place
 of the hours section.
-
-.. TODO
 
 .. TODO vid
 .. raw:: html
@@ -484,10 +516,24 @@ G - Tax Calc
 :Correct: 1
 :Percentage: 4%
 
-This problem is a simplified stack calculator. This problem is also trivial in
-any LISP dialect, but LISP was not available as a language to submit solutions
-in during the competition.
-.. TODO
+This problem is a simplified stack calculator. It's simplified because the input
+input for this problem is given in a very easily parsable manner and the stack
+is only ever one deep.
+
+All of the *tokens* in the input (parentheses, numbers, operators, etc.) are
+separated by spaces. Whenever you see a ``(`` token, you are guaranteed that the
+next token will be an operator. That will determine what you need to do with the
+rest of the numbers until the ``)`` token. That means that each set of
+parentheses defines a new *context* where the operator is applied to all of the
+operands and you may have *nested* contexts, where the result of an inner
+context gets plugged back in to an outer context.
+
+This is a classic stack problem, since, once you've computed the result of an
+inner computation, you only care about the result of the inner computation, and
+you can simplify that entire context into a single value.
+
+This problem can be solved using an explicit stack, or using an implicit stack
+using *recursion*.
 
 .. TODO vid
 .. raw:: html
