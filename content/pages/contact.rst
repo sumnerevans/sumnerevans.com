@@ -5,10 +5,13 @@ You may contact me in a variety of ways. Here are my preferred methods of
 communication, listed in order of how quickly you can expect to receive a
 response:
 
-* **Matrix:** ``@sumner:sumnerevans.com``
+* **Matrix:** |matrix|_
 * **Email:** me [at] sumnerevans [dot] com
 * **Social Media:** links to my social media profiles are listed below my
   profile picture.
+
+.. |matrix| replace:: ``@sumner:sumnerevans.com``
+.. _matrix: https://matrix.to/#/@sumner:sumnerevans.com
 
 Security
 --------
