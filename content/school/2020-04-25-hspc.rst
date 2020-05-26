@@ -10,7 +10,7 @@ Mines High School Programming Competition 2020
 :category: School
 :tags: High School Programming Competition, Competitive Programming, Mines, HSPC
 :slug: 2020-04-25-hspc
-:status: published
+:status: draft
 
 For the last three years, the Mines Computer Science Department has hosted a
 High School Programming Competition modelled after the `International Collegiate
