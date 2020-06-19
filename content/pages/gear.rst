@@ -41,6 +41,8 @@ Accessories
 - **Keyboards:** `Pok3r 3 60% Keyboard with Cherry MX Clears <pok3r3_>`_ and
   `CODE V3 87-Key with Cherry MX Clears <code_>`_
 
+- **Mouse:** `Logitech G300s <g300s_>`_
+
 - **Microphone:** `TONOR Professional Studio Condenser Microphone Kit
   <tonormic_>`_
 
@@ -79,6 +81,7 @@ Other Electronics
 .. _dellu2412m: https://www.amazon.com/dp/B07D1JCZL2
 .. _pok3r3: https://www.amazon.com/dp/B00OFM6F80
 .. _code: https://www.amazon.com/dp/B07MP1PV5B
+.. _g300s: https://www.amazon.com/dp/B00RH6R7C4
 .. _tonormic: https://www.amazon.com/dp/B01KHMUQ2M
 .. _oculus: https://www.amazon.com/dp/B073X8N1YW
 .. _ultradock: https://www.amazon.com/dp/B01N9RW2A3
