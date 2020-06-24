@@ -46,17 +46,27 @@ Facebook <facebook_>`_, we won First Place.
     team won second place. You can read about it in my `HackCU V blog post
     <HackCU V_>`_.
 
+.. figure:: {static}/images/hackathon/fb-award.jpg
+   :align: center
+   :target: {static}/images/hackathon/fb-award.jpg
+   :width: 100%
+   :alt: picture of my Facebook Hackathon team after we won First Place.
+
+   A picture of my team after winning First Place at the Global Hackathon Finals
+   at Facebook.
+
 As you can tell, I have some experience with hackathons, and a good track record
 of success at them as well. However, hackathons are a team effort. Three of the
-hackathons (Xilinx, MHacks, Facebook) I was on a team with Sam Sartor. Three of
-the hackathons (MinneHack, HackCU, MHacks) I was on a team with Robby Zampino.
-Two of the hackathons (MinneHack, HackCU), I was on a team with David Florness.
-Two of the hackathons (HackCU, Facebook), I was on a team with Jack Garner.  Two
-of the hackathons (Xilinx, MinneHack), I was on a team with Jack Rosenthal.  Two
-of the hackathons (MHacks, Facebook), I was on a team with Fisher Darling.  One
-hackathon (Xilinx), I was on a team with Daichi Jameson.  Each of them were
-amazing teammates at the various hackathons, and I definitely would not be
-writing this article if it were not for each of them.
+hackathons (Xilinx, MHacks, Facebook) I was on a team with `Sam Sartor`_. Three
+of the hackathons (MinneHack, HackCU, MHacks) I was on a team with `Robby
+Zampino`_.  Two of the hackathons (MinneHack, HackCU), I was on a team with
+`David Florness`_.  Two of the hackathons (HackCU, Facebook), I was on a team
+with `Jack Garner`_.  Two of the hackathons (Xilinx, MinneHack), I was on a team
+with `Jack Rosenthal`_.  Two of the hackathons (MHacks, Facebook), I was on a
+team with `Fisher Darling`_.  One hackathon (Xilinx), I was on a team with
+`Daichi Jameson`_.  Each of them were amazing teammates at the various
+hackathons, and I definitely would not be writing this article if it were not
+for each of them.
 
 To answer the actual question though, why should you listen to me? No real
 reason, actually. I'm just someone who has some experience and some degree of
@@ -68,6 +78,14 @@ success and I hope that you can learn from both my mistakes and my successes.
 .. _HackCU V: {filename}/hackathons/2019-02-24-hackcu.rst
 .. _MHacks: /pages/portfolio.html#Datanium
 .. _facebook: /pages/portfolio.html#HypAR-Map
+
+.. _Sam Sartor: https://samsartor.com
+.. _Robby Zampino: https://gitlab.com/robozman/
+.. _David Florness: https://david.florness.com/
+.. _Jack Garner: https://gitlab.com/jhgarner
+.. _Jack Rosenthal: https://jack.rosenth.al
+.. _Fisher Darling: https://gitlab.com/fisherdarling
+.. _Daichi Jameson: https://github.com/daichij/
 
 -------------------------------------------------------------------------------
 
@@ -120,9 +138,9 @@ the subsequent Facebook hackathon.
 
 Besides putting together a team, there are a few things which you should
 probably do before the hackathon even starts. Some teams do a lot of
-preparation, and even come to the hackathon with an idea. I'm not that
-organized/proactive, but I do try and prepare myself for the hackathon. Here are
-a few tips:
+preparation, and even come to the hackathon with an idea. I'm not that organized
+or proactive, but I do try and prepare myself for the hackathon. Here are a few
+tips:
 
 **Do your homework.**
   Your literal homework. It's not very fun if you have to worry about doing
@@ -133,7 +151,7 @@ a few tips:
   If you aren't in school, make sure that you clear your other responsibilities
   (whatever they may be) out of the way.
 
-**Start thinking about what you may want to do at the hackathon.**
+**Start thinking about what problems you may want to solve at the hackathon.**
   Keep track of all the times you think to yourself, "hey, it'd be cool if..."
   and "man, this is terrible". Just keeping track of this will get your creative
   juices flowing. It is a lot easier to steer a moving ship than one which is
@@ -142,9 +160,9 @@ a few tips:
 
   In addition to keeping your eyes open for things that bug you, start thinking
   about what technology you want to use at the hackathon. This requires that you
-  are in-tune with the current state of technology, and know what interests you.
-  Often, I've shown up to a hackathon with a hammer (technology) looking for a
-  nail (problem).
+  are in-tune with the current state of the tech industry and know what
+  interests you. Often, I've shown up to a hackathon with a hammer (technology)
+  looking for a nail (problem).
 
 **Think big.**
   Think of lots of ideas that are super big. Sometimes it's useful to start with
@@ -197,12 +215,13 @@ tips which might get you going in the correct direction:
   login would have just hindered our demo.)
 
 - Think about *gimmicks*, that is, things which will make your hack memorable.
-  Sometimes this is a physical thing like the Datanium Node at MHacks which had
-  a little Arduino-controlled flag.
+  Sometimes this is something physical. For example, at MHacks we had a box with
+  a little Arduino-controlled flag which popped up when an upload finished (like
+  a mailbox).
 
-- Think about the tagline for your project. What would you tell a marketer your
-  app does? Make sure your project actually does that (or something
-  approximating that).
+- Think of a tagline for your project. What would you tell a marketer your app
+  does? Make sure your project actually does that (or something approximating
+  that).
 
 - Think about how you can split up the work. It's best if you have :math:`n`
   fairly disjoint pieces of the project, where :math:`n` is the number of people
@@ -283,15 +302,15 @@ effectively, you don't win. Here are a few tips to make your demos amazing.
   doesn't have to be your sick grandma that inspired you, it can just be that
   you are terrible at navigating new buildings, or that parking is a nightmare
   at school. Anything to let the judges connect with your project is good.
-  
+
 - Do some research to see if there is compelling data to support your claims. A
   lot of times you can get away with just spewing anecdotes, but often, having
   hard data to back up your assertions can increase your credibility. We did
   this at MHacks when we looked up how many people have access to SMS and how
   many have access to the Internet. We noticed that there's a 1 billion person
-  difference and we used that as one of our marketing taglines: "brining data to
-  the next billion people". We didn't cite the organizations whose statistics we
-  used in our demo, but we had them if we were further probed.
+  difference and we used that as one of our marketing taglines: "bringing data
+  to the next billion people". We didn't cite the organizations whose statistics
+  we used in our demo, but we had them if we were further probed.
 
 - Demos should follow a story arc like the classic "hero's journey". Who is the
   hero? Your app! Make sure to quickly present the problem, then *pow* your app
