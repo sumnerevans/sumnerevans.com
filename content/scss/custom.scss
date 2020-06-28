@@ -285,6 +285,10 @@ main footer p {
   }
 }
 
+main .pagination {
+  max-width: 45rem;
+}
+
 // Use a darker style for tipue search input all the time because, by default,
 // it's too bright.
 aside {
