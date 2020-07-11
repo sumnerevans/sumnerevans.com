@@ -4,7 +4,7 @@ Respecting Theme Preferences on Your Website
 :date: 2020-04-07 15:00
 :authors: Sumner Evans
 :category: Programming
-:tags: JavaScript, Dark Theme, CSS, HTML
+:tags: JavaScript, Dark Theme, CSS, HTML, Dark Mode
 :slug: respect-theme-preferences
 :status: published
 
