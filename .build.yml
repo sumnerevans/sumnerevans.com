@@ -1,0 +1,32 @@
+# Build and deploy the pelican site.
+image: archlinux
+packages:
+  - git
+  - make
+  - npm
+  - openssh
+  - python-pipenv
+  - rsync
+sources:
+  - https://git.sr.ht/~sumner/sumnerevans.com
+secrets:
+  # SSH Known Hosts
+  - a9b7dc2e-293f-4fea-aec7-618689d4e5f2
+  # SSH Deploy Key
+  - f219888a-80af-4275-a777-89e8c7d277f0
+tasks:
+  - setup: |
+      cd sumnerevans.com
+      pipenv install --dev
+      npm install sass
+
+  - build: |
+      cd sumnerevans.com
+      export PATH=$PATH:$(pwd)/node_modules/.bin
+      pipenv run make publish
+
+  # Copy the website over to the server
+  - rsync: |
+      cd sumnerevans.com
+      ssh root@deploy.sumnerevans.com "mkdir -p /var/www/sumnerevans.com"
+      rsync -vr --delete-after public/ root@deploy.sumnerevans.com:/var/www/sumnerevans.com
