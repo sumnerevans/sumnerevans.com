@@ -69,6 +69,7 @@ PLUGINS = [
     'render_math',
     'representative_image',
     'tipue_search',
+    'pelican_youtube',
 ]
 PYGMENTS_STYLE = 'emacs'
 PYGMENTS_STYLE_DARK = 'monokai'

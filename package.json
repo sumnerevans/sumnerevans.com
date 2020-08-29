@@ -1,0 +1,19 @@
+{
+  "name": "sumnerevans.com",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://builds.sr.ht/~sumner/sumnerevans.com.svg)](https://builds.sr.ht/~sumner?search=%7Esumner%2Fsumnerevans.com) [![LiberaPay Account](http://img.shields.io/liberapay/receives/sumner.svg?logo=liberapay)](https://liberapay.com/sumner/donate)",
+  "main": "",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.26.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.sr.ht:~sumner/sumnerevans.com"
+  },
+  "author": "",
+  "license": "ISC"
+}
