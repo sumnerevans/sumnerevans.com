@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "sumnerevans.com"
+version = "0.1.0"
+description = "Sumner's website"
+authors = ["Sumner Evans <me@sumnerevans.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+beautifulsoup4 = "^4.9.1"
+Markdown = "^3.2.2"
+pelican = "^4.5.0"
+pelican-minify = "^0.9"
+pygments = "^2.6.1"
+pygments-style-github = "^0.4"
+typogrify = "^2.0.7"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.3"
+jedi = "^0.17.2"
+yapf = "^0.30.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

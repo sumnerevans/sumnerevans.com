@@ -5,7 +5,7 @@ packages:
   - make
   - npm
   - openssh
-  - python-pipenv
+  - python-poetry
   - rsync
 sources:
   - https://git.sr.ht/~sumner/sumnerevans.com
@@ -17,13 +17,13 @@ secrets:
 tasks:
   - setup: |
       cd sumnerevans.com
-      pipenv install --dev
+      poetry install --no-dev
       npm install sass
 
   - build: |
       cd sumnerevans.com
       export PATH=$PATH:$(pwd)/node_modules/.bin
-      pipenv run make publish
+      poetry run make publish
 
   # Copy the website over to the server
   - rsync: |
