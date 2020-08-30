@@ -25,7 +25,7 @@ know.
 There are a variety of ways that you can get my GPG key to verify my commits and
 emails. Here are a few:
 
-* **Keybase:** I'm jsve_ on Keybase.
+* **sourcehut:** https://meta.sr.ht/~sumner.pgp
 * **PGP Keyservers:** You can find my `key on a keyserver <keyserver_>`_. Just
   search for my email. I recommend using http://keys.gnupg.net because the MIT
   keyserver is overloaded all the time it seems.
@@ -37,7 +37,6 @@ emails. Here are a few:
 
   You can download my public key here: |pubkey|_.
 
-.. _jsve: https://keybase.io/jsve
 .. _keyserver: http://keys.gnupg.net/pks/lookup?search=me%40sumnerevans.com&fingerprint=on&op=index
 .. |pubkey| replace:: ``sumner-gpg-pubkey.asc``
 .. _pubkey: /static/sumner-gpg-pubkey.asc
