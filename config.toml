@@ -1,0 +1,115 @@
+baseURL = "https://sumnerevans.com"
+languageCode = "en-us"
+title = "Sumner Evans"
+theme = "smol"
+
+pygmentsCodefences = true
+pygmentsStyle = "github"
+pygmentsUseClasses = true
+
+Paginate = 15
+
+[minify]
+  minifyOutput = true
+
+[markup]
+  [markup.highlights]
+    style = "github"
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[params]
+  author = "Sumner Evans"
+  description = "Sumner Evans' Blog and Portfolio"
+  subtitle = "Software Engineer at The Trade Desk"
+
+  # Theme
+  themeColorAutoDetectBrowserPreference = true
+  themeColor = 'dark'
+
+  # Posts shown in homepage
+  mainSections = ["posts"]
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "gear"
+    name = "Gear"
+    url = "/gear/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "portfolio"
+    name = "Portfolio"
+    url = "/portfolio/"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 5
+
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 6
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 7
+
+# Footer
+  [[menu.footer]]
+    name = "sourcehut"
+    url = "https://sr.ht/~sumner"
+    weight = 1
+
+  [[menu.footer]]
+    name = "GitLab"
+    url = "https://gitlab.com/sumner"
+    weight = 2
+
+  [[menu.footer]]
+    name = "GitHub"
+    url = "https://github.com/sumnerevans"
+    weight = 3
+
+  [[menu.footer]]
+    name = "StackOverflow"
+    url = "https://stackoverflow.com/users/2319844/sumner-evans"
+    weight = 4
+
+  [[menu.footer]]
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/sumnerevans"
+    weight = 5
+
+  [[menu.footer]]
+    name = "YouTube"
+    url = "https://www.youtube.com/channel/UCyrdRO4oJRpszr0ovN1FwBA"
+    weight = 6
+
+  [[menu.footer]]
+    name = "Twitter"
+    url = "https://twitter.com/sumner_evans"
+    weight = 7
+
+  [[menu.footer]]
+    name = "Twitch"
+    url = "https://www.twitch.tv/sumnerevans"
+    weight = 8
