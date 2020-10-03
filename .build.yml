@@ -34,8 +34,9 @@ tasks:
       go build
 
   - setup: |
-      gem install scss
+      gem install sass
       echo "cd $REPO_NAME" >> ~/.buildenv
+      echo "export \$PATH=\"/home/build/.gem/ruby/2.7.0/bin:\$PATH\"" >> ~/.buildenv
 
   - build: |
       ../hugo/hugo
