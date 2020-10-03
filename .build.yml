@@ -1,33 +1,46 @@
-# Build and deploy the pelican site.
+# Build and deploy the Hugo site.
 image: archlinux
 packages:
   - git
-  - make
-  - npm
+  - hugo
+  - go
   - openssh
-  - python-poetry
+  - python-docutils
+  - python-pygments
   - rsync
 sources:
   - https://git.sr.ht/~sumner/sumnerevans.com
+  - https://github.com/sumnerevans/hugo.git
 secrets:
   # SSH Known Hosts
   - a9b7dc2e-293f-4fea-aec7-618689d4e5f2
   # SSH Deploy Key
   - f219888a-80af-4275-a777-89e8c7d277f0
+environment:
+  REPO_NAME: sumnerevans.com
+# triggers:
+#   - action: email
+#     condition: failure
+#     to: ~sumner/public-inbox@lists.sr.ht
+artifacts:
+  - sumnerevans.com/public
 tasks:
+  # Use my fork of Hugo that correctly formats Math.
+  # TODO: remove this step after https://github.com/gohugoio/hugo/pull/7763 is
+  # merged.
+  - build_hugo: |
+      cd hugo
+      go build --tags extended  # need extended support for SCSS
+
   - setup: |
-      cd sumnerevans.com
-      poetry install --no-dev
-      npm install sass
+      echo "cd $REPO_NAME" >> ~/.buildenv
 
   - build: |
-      cd sumnerevans.com
-      export PATH=$PATH:$(pwd)/node_modules/.bin
-      poetry run make publish
+      ../hugo/hugo --gc --minify
 
   # Copy the website over to the server
   - rsync: |
-      cd sumnerevans.com
       git branch --contains | grep master &&
-      ssh root@deploy.sumnerevans.com "mkdir -p /var/www/sumnerevans.com" &&
-      rsync -vr --delete-after public/ root@deploy.sumnerevans.com:/var/www/sumnerevans.com
+        ssh root@deploy.sumnerevans.com "mkdir -p /var/www/sumnerevans.com" &&
+        rsync -vr --delete-after public/ root@deploy.sumnerevans.com:/var/www/sumnerevans.com &&
+        echo "Deploy complete" || echo "Skipping deploy since not on master"
