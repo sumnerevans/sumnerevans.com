@@ -8,7 +8,6 @@ packages:
   - python-docutils
   - python-pygments
   - rsync
-  - rubygems
 sources:
   - https://git.sr.ht/~sumner/sumnerevans.com
   - https://github.com/sumnerevans/hugo.git
@@ -31,15 +30,13 @@ tasks:
   # merged.
   - build_hugo: |
       cd hugo
-      go build
+      go build --tags extended  # need extended support for SCSS
 
   - setup: |
-      gem install sass
       echo "cd $REPO_NAME" >> ~/.buildenv
-      echo "export \$PATH=\"/home/build/.gem/ruby/2.7.0/bin:\$PATH\"" >> ~/.buildenv
 
   - build: |
-      ../hugo/hugo
+      ../hugo/hugo --gc --minify
 
   # Copy the website over to the server
   - rsync: |
