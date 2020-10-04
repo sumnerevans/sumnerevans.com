@@ -30,6 +30,15 @@ Paginate = 15
   # Posts shown in homepage
   mainSections = ["posts"]
 
+  # Isso
+  issoUrl = "//comments.sumnerevans.com"
+
+  [params.issoOptions]
+    avatar = false
+    gravatar = true
+    reply-notifications = true
+    reply-to-self = true
+
 [menu]
   [[menu.main]]
     identifier = "about"
