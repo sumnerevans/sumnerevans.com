@@ -193,7 +193,7 @@ captain's father and I went up to the top deck and watched us sail under the
 bridge. While we were up there, I got some great pictures of the sunset and of
 Confederation Bridge.
 
-[![](./images/bridge.gif)](./images/bridge.gif)
+[![](./images/bridge.webp)](./images/bridge.webp)
 
 [![](./images/pei17.jpg)](./images/pei17.jpg)
 
