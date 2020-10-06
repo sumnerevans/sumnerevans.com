@@ -41,12 +41,12 @@ picture that we took 16 years ago.
 <table width="100%">
   <tr>
     <td width="50%">
-      <a href="../images/aruba1.jpg" target="_blank">
+      <a href="./images/aruba1.jpg" target="_blank">
         <img src="./images/aruba1.jpg" />
       </a>
     </td>
     <td width="50%">
-      <a href="../images/aruba2.jpg" target="_blank">
+      <a href="./images/aruba2.jpg" target="_blank">
         <img src="./images/aruba2.jpg" />
       </a>
     </td>

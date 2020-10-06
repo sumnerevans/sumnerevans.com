@@ -87,12 +87,11 @@ Probably the most famous artifact on display is the Rosetta Stone. The British
 Museum has one of the largest collections of Egyptian and Greek artifacts
 because the British were good at "borrowing" from the countries that they
 occupied. They were so good that they even borrowed all of the statues from the
-Parthenon in Athens. <!-- TODO fix link --> When we were in Athens (you can read
-about that in [my post from last
-trip]({filename}/transatlantic-cruise/day-24-athens-greece.md)), we saw the
-Parthenon museum where they have casts of the stones that are displayed in the
-British Museum.  There were so many artifacts that I can’t describe them all.
-You will just have to go to the museum yourself to see them.
+Parthenon in Athens. When we were in Athens (you can read about that in [my post
+from last trip]({{< ref "../2012-transatlantic-cruise/day-24-athens-greece.md"
+>}})), we saw the Parthenon museum where they have casts of the stones that are
+displayed in the British Museum.  There were so many artifacts that I can't
+describe them all.  You will just have to go to the museum yourself to see them.
 
 In between seeing the Egyptian and Assyrian artifacts and seeing the
 Greek artifacts, we stopped by the cafe, had a snack, and rested our

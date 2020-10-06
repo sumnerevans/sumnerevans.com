@@ -24,7 +24,7 @@ the tour so we had two guides looking out for wildlife along the river. They
 were really good at it too, we saw everything from alligators, to monkeys, to
 one and two-toed slots. We also saw a number of pretty birds.
 
-TODO: pics
+<!-- TODO: pics -->
 
 After the boat tour, we drove to a banana plantation and our guide explained how
 the bananas are harvested. Interestingly, each banana tree only produces one

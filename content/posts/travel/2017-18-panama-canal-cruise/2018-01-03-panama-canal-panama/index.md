@@ -88,8 +88,10 @@ the Gatun Lake to our boat. On our way, we got some nice views of Panama City.
 By the time we got back to the boat, it was very late and we went to the LIDO
 (the buffet) for a quick dinner.
 
+<!--
 ## Interesting facts about the Panama Canal
 
 - The Panama Canal is one of the Seven Wonders of the Modern World.
 - The Panama Canal
 TODO
+-->

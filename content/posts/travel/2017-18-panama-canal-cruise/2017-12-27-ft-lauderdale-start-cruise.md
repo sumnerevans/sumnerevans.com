@@ -12,9 +12,7 @@ Cruise check in was fairly painless, and we got onto the boat at around 12:15.
 Our ship is the Zuiderdam, a Holland America Line ship. It is the sister ship of
 the Noordam, the ship we went on on our first cruise in 2012. It was a
 transatlantic cruise to Europe (see [Transatlantic
-Cruise]({category}Transatlantic Cruise and Europe)).
-
-<!-- TODO ^^^ -->
+Cruise](/categories/transatlantic-cruise-and-europe)).
 
 We got on the boat and dropped off our things in our rooms. Then we went to the
 dining room for lunch.

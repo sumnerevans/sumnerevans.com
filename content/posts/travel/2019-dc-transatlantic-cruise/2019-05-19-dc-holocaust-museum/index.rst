@@ -94,7 +94,7 @@ shade of the Washington Monument as we ate.
 
 .. image:: ./images/washington-monument.jpg
    :align: center
-   :target: {static}/images/dc-transatlantic-cruise/washington-monument.jpg
+   :target: ./images/washington-monument.jpg
    :width: 75%
 
 After that, we walked over to the Lincoln Memorial, and on the way we stopped at
