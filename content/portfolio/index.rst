@@ -10,7 +10,7 @@ achievements. For a more concise overview, please view my resume_.
 Experience
 ==========
 
-**The Trade Desk** -- Software Engineer -- June 2019 - Present
+|ttd|_ -- Software Engineer -- June 2019 - Present
     Key Technologies: ReactJS, C#, SQL
 
     I am a member of the Connected TV engineering team. I am responsible for
@@ -22,45 +22,45 @@ Experience
     * Implementing ingestion of the ``ifa_type`` field in OpenRTB requests.
     * Implementing many of the frontend features for Connected TV planning.
 
-**Colorado School of Mines** -- Instructor (Programming Languages) -- August 2020 - Present
+|csm|_ -- Instructor (Programming Languages) -- August 2020 - Present
     I am teaching a section of *CSCI 400 Principles of Programming Languages*
     this Fall 2020 semester.
 
-**Colorado School of Mines** -- Instructor (Programming Languages) -- January 2019 - May 2019
+|csm|_ -- Instructor (Programming Languages) -- January 2019 - May 2019
     I taught a section of *CSCI 400 Principles of Programming Languages* in
     Spring of 2019. Topics that the class covers include: programming language
     concepts, evaluation, and implementation; OOP; Lambda Calculus; and Racket
     (a LISP dialect).
 
-**Colorado School of Mines** -- Instructor (Algorithms) -- August 2018 - December 2018
+|csm|_ -- Instructor (Algorithms) -- August 2018 - December 2018
     I taught a section of *CSCI 406 Algorithms* in Fall of 2018. Topics that the
     class covers include: analysis of algorithms, evaluation of data structures,
     sorting algorithms, dynamic programming, graph algorithms, and
     NP-completeness.
 
-**Pivotal** -- Software Engineering Intern -- May 2018 - August 2018
+|pivotal|_ -- Software Engineering Intern -- May 2018 - August 2018
     I worked on the *Infra* pod on the Tracker team, the team responsible for
     developing *Pivotal Tracker*. I anchored the development of a new system for
     imaging workstations for consistent workflows on all machines used by the
     Tracker team. I also participated in a LEAN Product process to determine the
     needs of the Tracker team.
 
-**CS Unplugged** -- CS@Mines on Tour Presenter -- January 2017 - May 2018
+|unplugged|_ -- CS@Mines on Tour Presenter -- January 2017 - May 2018
     I gave presentations to high school students about the Computer Science
     Department at Mines. I also led computer science related workshops for
     middle school students.
 
-**Colorado School of Mines** -- Teachers Assistant (Data Structures) -- August 2017 - May 2018
+|csm|_ -- Teachers Assistant (Data Structures) -- August 2017 - May 2018
     I assisted students during TA office hours and during the in-class lab
     sessions. I was nominated for the Student Employee of the Year by CPW, the
     faculty member responsible for the course.
 
-**Kenzan** -- Software Development Intern -- June 2017 - August 2017
+|kenzan|_ -- Software Development Intern -- June 2017 - August 2017
     I contributed to OSS projects including React and Node.js on behalf of
     Kenzan. I also worked to improve the Kenzan.com website by implementing a
     CI/CD Jenkins pipeline with a WebPack build.
 
-**Can/Am Technologies** -- Software Developer -- February 2013 - August 2016
+|canam|_ -- Software Developer -- February 2013 - August 2016
     I worked on the Teller Development Team designing and building new features
     for Teller, an enterprise point-of-sale system geared towards municipal
     governments.
@@ -75,7 +75,7 @@ Experience
 Education
 =========
 
-**Colorado School of Mines** -- M.S. Computer Science, 4.0 GPA -- August 2018 - May 2019
+|csm|_ -- M.S. Computer Science, 4.0 GPA -- August 2018 - May 2019
     I worked with Dr. Dinesh Mehta on a project to automate group selection for
     projects in CSCI 406 Algorithms.
 
@@ -94,7 +94,7 @@ Education
     * Human-Centered Robotics
     * Bioinformatics
 
-**Colorado School of Mines** -- B.S. Computer Science, 3.9 GPA -- August 2018 - May 2019
+|csm|_ -- B.S. Computer Science, 3.9 GPA -- August 2018 - May 2019
     I graduated with a degree in Computer Science from Colorado School of Mines.
     I was awarded the *Outstanding Graduating Senior* award for Computer
     Science.
@@ -118,7 +118,7 @@ Education
     * Linear Algebra
     * Data Structures
 
-**Red Rocks Community College** -- Mines Transfer Program, 4.0 GPA -- August 2012 - May 2016
+|rrcc|_ -- Mines Transfer Program, 4.0 GPA -- August 2012 - May 2016
     Through high school, I took classes at Red Rocks Community College via the
     transfer program between Colorado School of Mines and Red Rocks. I was a
     member of the Phi Theta Kappa Honor Society for three years.
@@ -136,10 +136,25 @@ Education
 
     .. _claropresentation: https://youtu.be/yRGqNewEeoQ
 
+.. |ttd| replace:: **The Trade Desk**
+.. _ttd: https://thetradedesk.com
+.. |csm| replace:: **Colorado School of Mines**
+.. _csm: https://mines.edu
+.. |unplugged| replace:: **CS Unplugged**
+.. _unplugged: http://csunplugged.mines.edu/
+.. |pivotal| replace:: **Pivotal**
+.. _pivotal: https://pivotal.io
+.. |kenzan| replace:: **Kenzan**
+.. _kenzan: https://kenzan.com
+.. |canam| replace:: **Can/Am Technologies**
+.. _canam: https://canamtechnologies.com
+.. |rrcc| replace:: **Red Rocks Community College**
+.. _rrcc: https://rrcc.edu
+
 Projects
 ========
 
-**Sublime Music** -- November 2018 - Present
+|sublime-music|_ -- November 2018 - Present
   Sublime Music is a native, GTK3 Subsonic_, Airsonic_, Revel_, Gonic_,
   Navidrome_ client for the Linux Desktop that is written in Python. Sublime
   Music allows users to connect to multiple Subsonic API-compliant servers, and
@@ -151,22 +166,27 @@ Projects
   via ``playerctl``, ``i3status-rust``, KDE Connect, and other DBus MPRIS
   clients; a sophisticated play queue; playlist management; and more.
 
-  Sublime Music is available via the `AUR <sublime_aur_>`_, `NixOS unstable
-  <sublime_nix_>`_, `Debian Testing <sublime_deb_>`_ as a `Flatpak <sublime_flatpak_>`_, and via `PyPi
-  <sublime_pypi_>`_.
+  Sublime Music is developed on `GitLab <sublime_gitlab_>`_ and is available via
+  the `AUR <sublime_aur_>`_, `NixOS 20.09 <sublime_nix_>`_ and `NixOS unstable
+  <sublime_nix_unstable_>`_, `Debian Testing <sublime_deb_>`_, as a `Flatpak
+  <sublime_flatpak_>`_, and via `PyPi <sublime_pypi_>`_.
 
+  .. |sublime-music| replace:: **Sublime Music**
+  .. _sublime-music: https://sublimemusic.app
+  .. _sublime_gitlab: https://gitlab.com/sublime-music/sublime-music
   .. _Subsonic: http://www.subsonic.org/pages/index.jsp
   .. _Airsonic: https://airsonic.github.io/
   .. _Revel: https://gitlab.com/robozman/revel
   .. _Gonic: https://github.com/sentriz/gonic
   .. _Navidrome: https://www.navidrome.org/
   .. _sublime_aur: https://aur.archlinux.org/packages/sublime-music/
-  .. _sublime_nix: https://search.nixos.org/packages?query=sublime-music&from=0&size=30&sort=relevance&channel=unstable
+  .. _sublime_nix: https://search.nixos.org/packages?show=sublime-music&query=sublime-music&channel=20.09
+  .. _sublime_nix_unstable: https://search.nixos.org/packages?show=sublime-music&query=sublime-music&channel=unstable
   .. _sublime_deb: https://packages.debian.org/bullseye/sublime-music
   .. _sublime_flatpak: https://gitlab.com/sumner/sublime-music/-/releases
   .. _sublime_pypi: https://pypi.org/project/sublime-music/
 
-**Visplay** -- February 2018 - Present
+|visplay|_ -- February 2018 - Present
   Visplay is a Mines ACM project. It's goal is to create a digital signage
   system with a dynamic, hierarchical configuration system which can be used in
   a wide variety of hardware and infrastructure configurations.
@@ -178,7 +198,10 @@ Projects
 
   Currently, I am working in an advisory role as an industry project mentor.
 
-**Tracktime** -- June 2018 - Present
+  .. |visplay| replace:: **Visplay**
+  .. _visplay: https://gitlab.com/ColoradoSchoolOfMines/visplay
+
+|tracktime|_ -- June 2018 - Present
   Tracktime is a filesystem-backed time tracking solution with a command line
   interface. It uses a sane directory structure to organize CSV files that store
   time tracking data for each day.
@@ -192,14 +215,14 @@ Projects
   Tracktime is written in Python, and is available via `PyPi <tt_pypi_>`_ and on
   the `AUR <tt_aur_>`_.
 
+  .. |tracktime| replace:: **Tracktime**
+  .. _tracktime: https://sr.ht/~sumner/tracktime
   .. _tt_pypi: https://pypi.org/project/tracktime/
   .. _tt_aur: https://aur.archlinux.org/packages/tracktime/
 
-**offlinemsmtp** -- June 2018 - Present
+|offlinemsmtp|_ -- June 2018 - Present
   Read my blog post announcing ``offlinemsmtp`` v0.3.5: `Introducing
-  offlinemsmtp`_
-
-  .. _Introducing offlinemsmtp: {{< ref "/posts/projects/introducing-offlinemsmtp" >}}
+  offlinemsmtp`_.
 
   ``offlinemsmtp`` allows you to use the ``msmtp`` SMTP email sending program
   offline. While offline, it enqueues emails to be sent once an internet
@@ -208,15 +231,17 @@ Projects
   ``offlinemsmtp`` is written in Python, and is available via `PyPi <offlinemsmtp_pypi_>`_ and on
   the `AUR <offlinemsmtp_aur_>`_.
 
+  .. |offlinemsmtp| replace:: **offlinemsmtp**
+  .. _offlinemsmtp: https://sr.ht/~sumner/offlinemsmtp
   .. _offlinemsmtp_pypi: https://pypi.org/project/offlinemsmtp/
   .. _offlinemsmtp_aur: https://aur.archlinux.org/packages/offlinemsmtp/
+  .. _Introducing offlinemsmtp: {{< ref "/posts/projects/introducing-offlinemsmtp" >}}
 
-**MLocate** -- February 2019
+|mlocate|_ -- February 2019
   This project won *Second Place* at `HackCU V <hackcu_>`_.
 
   Read my blog post about this hackathon:
   `HackCU V <{{< ref "/posts/hackathons/hackcu-v" >}}>`_
-
 
   MLocate is a comprehensive system for tracking and locating devices within an
   indoor space just using Wi-Fi ping signals. Using three specially configured
@@ -234,16 +259,17 @@ Projects
   Jarmusz`_, (all freshmen) and myself. We developed it during a 24 hour period
   at the `HackCU V <hackcu_>`_ hackathon.
 
+  .. |mlocate| replace:: **MLocate**
+  .. _mlocate: https://gitlab.com/ColoradoSchoolOfMines/mlocate
+
 .. _project-hypar-map:
 
-**HypAR Map** -- November 2018
+|hyparmap|_ -- November 2018
   This project won *First Place* at the Facebook Global Hackathon Finals at
   Facebook HQ.
 
   Read my blog post about this hackathon: `Facebook Global Hackathon Finals -
   The Competition <fbblog_>`_.
-
-  .. _fbblog: {{< ref "/posts/hackathons/2018-11-16-facebook-hackathon-the-competition" >}}
 
   HypAR Map helps users navigate around unfamiliar locations by overlaying a map
   of the area using augmented reality. The map can come from any photo (for
@@ -258,11 +284,15 @@ Projects
   Darling`_, and myself. We developed it during a 24 hour period at the Facebook
   Global Hackathon Finals at Facebook HQ in Menlo Park, CA.
 
-  Watch our `demo on YouTube <https://www.youtube.com/watch/qYet1ka1J3I_>`_.
+  Watch our `demo on YouTube <https://www.youtube.com/watch/qYet1ka1J3I>`_.
+
+  .. |hyparmap| replace:: **HypAR Map**
+  .. _hyparmap: https://gitlab.com/ColoradoSchoolOfMines/facebook-hackathon
+  .. _fbblog: {{< ref "/posts/hackathons/2018-11-16-facebook-hackathon-the-competition" >}}
 
 .. _project-datanium:
 
-**Datanium** -- October 2018
+|datanium|_ -- October 2018
   This project won *Best Use of GCP* and the *Facebook Best Social Good Hack*
   awards at MHacks_.
 
@@ -280,9 +310,12 @@ Projects
   Darling`_, and myself. We developed it during a 36 hour period at the `MHacks
   2018 <mhacks_>`_ hackathon.
 
+  .. |datanium| replace:: **Datanium**
+  .. _datanium: https://gitlab.com/ColoradoSchoolOfMines/datanium
+
 .. _project-wii-track:
 
-**Wii-Track** -- February 2018
+|wiitrack|_ -- February 2018
   This project won *Judges Favorite*, *Best Use of AWS*, and the *Dish Network*
   sponsor challenge at `HackCU IV <hackcu_>`_.
 
@@ -298,9 +331,12 @@ Projects
   Zampino`_, and myself. We developed it during a 24 hour period at the `HackCU
   IV <hackcu_>`_ hackathon.
 
+  .. |wiitrack| replace:: **Wii-Track**
+  .. _wiitrack: https://github.com/ColoradoSchoolOfMines/wii-track
+
 .. _project-blockmrs:
 
-**BlockMRS** -- January 2018
+|blockmrs|_ -- January 2018
   BlockMRS is a privacy concious, decentralized, blockchain-backed, medical
   record system for the 21st Century. It stores patient records in IPFS using
   asymmetric encryption giving patients control over their health data.
@@ -312,7 +348,10 @@ Projects
   `Robby Zampino`_, and myself. We developed it during a 24 hour period at the
   `MinneHack 2018 <minnehack_>`_ hackathon.
 
-**Virtual Reality Final Project** -- August 2017 - December 2017
+  .. |blockmrs| replace:: **BlockMRS**
+  .. _blockmrs: https://github.com/ColoradoSchoolOfMines/blockmrs
+
+|vrfp|_ -- August 2017 - December 2017
   Read our `final report on GitHub <vr-report_>`_.
 
   This was the final project from my independent study in Virtual Reality under
@@ -323,11 +362,13 @@ Projects
   which implemented a new type of program architecture called Deferred Immediate
   Mode.
 
+  .. |vrfp| replace:: **Virtual Reality Final Project**
+  .. _vrfp: https://github.com/CSM-Dream-Team/final-project
   .. _vr-report: https://github.com/CSM-Dream-Team/final-project/blob/master/doc/report/final-report.pdf
 
 .. _project-parqyng-lots:
 
-**Parqyng Lots** -- October 2017
+|parqyng|_ -- October 2017
   This project won the *Grand Prize* at the 2017 Xilinx PYNQ Hackathon.
 
   Parqyng Lots tracks the number of cars in an arbitrary number of parking lots
@@ -340,11 +381,14 @@ Projects
   myself. I worked on the web interface and also helped implement the tracking
   system using the sensors provided by Xilinx.
 
-  Watch our `video on YouTube <https://www.youtube.com/watch/qi9YZLhS0gk_>`_.
+  Watch our `video on YouTube <https://www.youtube.com/watch/qi9YZLhS0gk>`_.
+
+  .. |parqyng| replace:: **Parqyng Lots**
+  .. _parqyng: https://github.com/ColoradoSchoolOfMines/parqyng-lots
 
 .. _project-wireless-debugging:
 
-**Wireless Debugging** -- May 2017 - June 2017
+|widb|_ -- May 2017 - June 2017
   Wireless Debugging is a mobile SDK and sample web server for streaming mobile
   app logs to a web UI console. I worked on this project on a team of five CS
   students during Mines Computer Science Field Session. This project was done
@@ -356,15 +400,21 @@ Projects
   parsing library and the mobile API implementation for iOS. I was involved in
   the development of the other components as well.
 
-**Chess++** -- August 2016
+  .. |widb| replace:: **Wireless Debugging**
+  .. _widb: https://github.com/sumnerevans/wireless-debugging
+
+|chesspp|_ -- August 2016
   Chess++ was my final project for CSCI 261 at Colorado School of Mines during
   the Summer II Semester of 2016.
 
   Chess++ allows two players to play a standard Chess game against one another
   on the computer.
 
-**Snowflakes** -- November 2016
-  See a `live demo <https://sumnerevans.github.io/snowflakes/_>`_.
+  .. |chesspp| replace:: **Chess++**
+  .. _chesspp: https://github.com/sumnerevans/chessplusplus
+
+|snowflakes|_ -- November 2016
+  See a `live demo <https://sumnerevans.github.io/snowflakes/>`_.
 
   Snowflakes is an interactive "screensaver" built for the Mines ACM JavaScript
   Hackathon.
@@ -373,14 +423,20 @@ Projects
   `Jack Rosenthal`_, and myself. We used EaselJS to manipulate a fullscreen
   canvas to render the interactive elements.
 
-**Quadratic Solver** -- September 2016
-  See a `live demo <https://qs.sumnerevans.com/_>`__.
+  .. |snowflakes| replace:: **Snowflakes**
+  .. _snowflakes: https://github.com/sumnerevans/snowflakes
+
+|qs|_ -- September 2016
+  See a `live demo <https://qs.sumnerevans.com/>`__.
 
   Quadratic Solver solves quadratic equations and shows the steps required to
   get the answer.
 
-  Quadratic Solver uses `MathJax <https://www.mathjax.org/_>`_ to display
+  Quadratic Solver uses `MathJax <https://www.mathjax.org/>`_ to display
   beautifully formatted solutions to quadratic equations.
+
+  .. |qs| replace:: **Quadratic Solver**
+  .. _qs: https://github.com/sumnerevans/quadratic-solver
 
 .. _hackcu: https://hackcu.org
 .. _mhacks: https://mhacks.org
@@ -391,94 +447,131 @@ Publications
 
 .. _publication-dreams-of-flight:
 
-**Dreams of Flight** -- May 2014
-  `Read the paper <claro_>`_
-
+|claro|_ -- Fall 2013
   I wrote this creative writing piece about Orville and Wilbur Wright and the
   first flight at Kitty Hawk for my Twentieth Century World History class in
   Fall 2013. I had written this piece for an assignment called *A Picture is
   Worth a Thousand Words*. We were tasked with writing an approximately 1000
   word narrative from the perspective of a person in a significant photo from
-  the 20th Century. Later in 2013 I was published in *CLARO*, Red Rock Community
-  College's Interdisciplinary Scholarly Journal. In May 2014, I `presented at
-  the CLARO academic conference <presentation-dreams-of-flight_>`_.
+  the 20th Century. Later in 2013 I was published in the |claro2013|_, Red Rocks
+  Community College's Interdisciplinary Scholarly Journal. In May 2014, I
+  `presented at the CLARO academic conference
+  <presentation-dreams-of-flight_>`_.
 
-.. _claro: ./dreams-of-flight.pdf
+  .. |claro| replace:: **Dreams of Flight**
+  .. _claro: ./dreams-of-flight.pdf
+  .. |claro2013| replace:: 2013 edition of *CLARO*
+  .. _claro2013: https://www.rrcc.edu/claro/2013
 
 Presentations
 =============
 
-**Open Standards** -- November 2019
+|openstandards|_ -- November 2019
   I gave this presentation at the Mines Linux Users Group with `Robby Zampino`_.
   We discussed what standards exist, and why open standards are better than
   closed ones. We also gave a few examples of different open standards in many
   different industries.
 
-**Makefiles** -- March 2019
+  .. |openstandards| replace:: **Open Standards**
+  .. _openstandards: https://gitlab.com/sumner/lug-open-standards
+
+|makefiles|_ -- March 2019
   I gave this presentation at the Mines Linux Users Group. I covered the basics
   of GNU ``make`` as well as how to make a ``Makefile``.
 
-**Mutt** -- February 2019
+  .. |makefiles| replace:: **Makefiles**
+  .. _makefiles: https://gitlab.com/sumner/lug-makefiles
+
+|mutt|_ -- February 2019
   I gave this presentation at the Mines Linux Users Group. I covered the basics
   of the Mutt CLI email client. I discussed the basics of using Mutt and some of
   the most useful configurations including how to configure it to be used with
   GPG encryption and signatures.
 
-**PGP** -- February 2019
+  .. |mutt| replace:: **Mutt**
+  .. _mutt: https://gitlab.com/sumner/lug-mutt
+
+|pgp|_ -- February 2019
   I gave this presentation at the Mines Cybersecurity Club (OreSec) with `David
   Florness`_. We discussed the cryptographic theory behind PGP/GPG such as
   symmetric vs. asymmetric encryption and the PGP protocol.  Then we had an
   interactive time where we showed how to use GPG.
 
-**ZSH** -- January 2019
+  .. |pgp| replace:: **PGP**
+  .. _pgp: https://gitlab.com/sumner/oresec-pgp
+
+|zsh|_ -- January 2019
   I gave this presentation at the Mines Linux Users Group with `Jordan
   Newport`_. We covered ZSH, an alternative shell to BASH. We discussed
   everything from the basics, to some really cool quality-of-life improvements
   which make using the shell enjoyable.
 
-**LaTeX** -- January 2019
+  .. |zsh| replace:: **ZSH**
+  .. _zsh: https://gitlab.com/sumner/lug-zsh
+
+|latex|_ -- January 2019
   I gave this presentation at the Mines Linux Users Group with `Joseph
   McKinsey`_.  We gave an extensive introduction to the LaTeX typesetting
   language. We covered everything from the very basics of using LaTeX all the
   way up to advanced LaTeX topics such as using it for presentations!
 
-**i3wm** -- March 2017, October 2018
+  .. |latex| replace:: **LaTeX**
+  .. _latex: https://gitlab.com/sumner/lug-latex
+
+|i3wm|_ -- March 2017, October 2018
   I gave this presentation at the Mines Linux Users Group. I discussed the
   traditional motif for window management and then presented a better
   alternative: tiling window managers. I presented i3wm, my personal favourite
   tiling window manager. I talked about the pros of using it as well as how to
   use it and customize it.
 
-**Idris** -- March, June 2018
+  .. |i3wm| replace:: **i3wm**
+  .. _i3wm: https://gitlab.com/sumner/lug-i3
+
+|idris|_ -- March, June 2018
   I first gave this presentation at the Mines Linux Users Group with `Sam
   Sartor`_. I also gave the presentation for the Wednesday tech talk while
   interning at Pivotal. In both talks, we covered Idris, dependent types, and
   using Idris as a proof assistant.
 
-**Universal Package Formats** -- January 2018
+  .. |idris| replace:: **Idris**
+  .. _idris: https://github.com/sumnerevans/lug-idris
+
+|upf|_ -- January 2018
   I gave this presentation at the Mines Linux Users Group with `Robby Zampino`_.
   We covered the background and history of packages and package formats, and
-  some of the new <em>universal package formats</em>: AppImage, Snaps, and
-  Flatpak.
+  some of the new *universal package formats*: AppImage, Snaps, and Flatpak.
 
-**Filesystems** -- November 2017
+  .. |upf| replace:: **Universal Package Formats**
+  .. _upf: https://github.com/sumnerevans/lug-universal-packages
+
+|fs|_ -- November 2017
   I gave this presentation at the Mines Linux Users Group with `Sam Sartor`_.
   We covered the background and history of filesystems and some current
   filesystems used in Linux, Windows, and macOS. We also covered some more
   fringe filesystems like ``Btrfs`` and ``ZFS`` and network filesystems such as
   Samba and ``sshfs`` as well as virtual filesystems such as ``proc``.
 
-**SSH** -- February 2017
+  .. |fs| replace:: **Filesystems**
+  .. _fs: https://github.com/sumnerevans/lug-filesystems
+
+|ssh|_ -- February 2017
   I gave this presentation at the Mines Linux Users Group. I discussed what SSH
   is and its applications and then demonstrated how to configure it for easier
   login and management.  Then I briefly talked about how to set up SSH on your
   own server.
 
-**JavaScript Crash Course** -- February 2017
+  .. |ssh| replace:: **SSH**
+  .. _ssh: https://gitlab.com/sumner/lug-ssh
+
+|jscc|_ -- February 2017
   I gave this presentation at the Mines Linux Users Group with `Sam Sartor`_.
   We covered the history of JavaScript, gave an overview of the language
   constructs, and discussed many of the possible pitfalls along the way. We also
   talked about the DOM and HTML5 Canvas manipulation.
+
+  .. |jscc| replace:: **JavaScript Crash Course**
+  .. _jscc: https://github.com/sumnerevans/lug-js-crash-course
 
 .. _presentation-dreams-of-flight:
 
@@ -490,7 +583,7 @@ Presentations
   significant photo from the 20th Century.
 
   Watch the video of my `presentation on YouTube
-  <https://www.youtube.com/watch/yRGqNewEeoQ_>`_.
+  <https://www.youtube.com/watch/yRGqNewEeoQ>`_.
 
 .. _Ben Perkins: https://www.bencarlson.dev/
 .. _Daichi Jameson: https://gitlab.com/daichij
