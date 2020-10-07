@@ -18,10 +18,10 @@ secrets:
   - f219888a-80af-4275-a777-89e8c7d277f0
 environment:
   REPO_NAME: sumnerevans.com
-# triggers:
-#   - action: email
-#     condition: failure
-#     to: ~sumner/public-inbox@lists.sr.ht
+triggers:
+  - action: email
+    condition: failure
+    to: alerts@sumnerevans.com
 artifacts:
   - sumnerevans.com/public
 tasks:
