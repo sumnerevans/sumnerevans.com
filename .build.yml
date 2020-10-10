@@ -22,8 +22,6 @@ triggers:
   - action: email
     condition: failure
     to: alerts@sumnerevans.com
-artifacts:
-  - sumnerevans.com/public
 tasks:
   # Use my fork of Hugo that correctly formats Math.
   # TODO: remove this step after https://github.com/gohugoio/hugo/pull/7763 is
