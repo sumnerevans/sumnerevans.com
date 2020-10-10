@@ -2,37 +2,44 @@
 title: "Gear"
 ---
 
-\* indicates daily driver
+Daily Drivers
+-------------
 
-Computers
----------
+I have two primary computers: a laptop and a desktop. I also have a VPS running
+DigitalOcean which hosts my personal infrastructure_. [1]_
 
-I run Arch Linux on my desktop, and NixOS on my laptop. I use the i3 window
-manager. You can find my `full dotfiles and miscellaneous scripts on sourcehut.
+I run Arch Linux on my desktop and NixOS on my laptop and main infrastructure
+server. I plan to move all of my computers over to NixOS eventually.
+
+I use the i3 window manager, i3status-rust, ZSH, NeoVim, and mutt mong other
+things. You can find my `full dotfiles and miscellaneous scripts on sourcehut.
 <dotfiles_>`_
 
+.. _infrastructure: https://git.sr.ht/~sumner/infrastructure
 .. _dotfiles: https://git.sr.ht/~sumner/dotfiles
 
-- **Desktop*:** A custom-built desktop. See the `part list on PCPartPicker
-  <partlist_>`_. Highlights are:
+.. [1] I'm still converting everything over to NixOS, but most of the things I
+   use regularly are migrated.
+
+Here's a list of my daily driver machines. I name them after planets in the Star
+Wars universe.
+
+- **Desktop:** (hostname: ``coruscant``) A custom-built desktop. See the `part
+  list on PCPartPicker <partlist_>`_. Highlights are:
 
   - AMD Ryzen 7 2700X
   - Nvidia RTX 2070
   - 32 GB DDR4-3200 RAM
   - 512 GB NVMe and a 1 TB SSD
 
-- **Laptop*:** ThinkPad T580
+- **Laptop:** (hostname: ``jedha``) A ThinkPad T580
 
   - Intel Core i7-8650U
   - Nvidia GeForce MX150
   - 32 GB RAM
   - 512 GB NVMe SSD
 
-- **Laptop:** MacBook Pro: 15", Retina display, Mid 2014. I primarily use this
-  as a test machine for macOS and various Linux distributions that I try.
-
-  - 16 GB RAM
-  - 512 GB SSD
+- **DigitalOcean VPS:** (hostname: ``scarif``)
 
 Accessories
 -----------
@@ -67,6 +74,8 @@ Accessories
 Mobile Devices
 --------------
 
+\* indicates daily driver
+
 - **Smartphone*:** Google Pixel 3a (64 GB, Just Black)
 - **Smartphone:** Google Pixel 1 (32 GB, Quite Black)
 - **Smartphone:** iPhone 5s (32 GB, Space Gray)
@@ -78,6 +87,12 @@ Other Electronics
 -----------------
 
 - **Raspberry Pi 1**
+- **Laptop:** MacBook Pro: 15", Retina display, Mid 2014. I primarily use this
+  as a test machine for macOS and various Linux distributions that I try.
+
+  - 16 GB RAM
+  - 512 GB SSD
+
 
 .. _partlist: https://pcpartpicker.com/user/sumner/saved/#view=Lxc9Jx
 .. _dells2417dg: https://www.amazon.com/dp/B01IOO4SGK

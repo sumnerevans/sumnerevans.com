@@ -21,7 +21,7 @@ Things I'm passionate about:
 
 I'm grateful to have a great job where I am able to exercise my love of
 programming and computer science. On the side, I work on a variety of open
-source projects, which you can find on my portfolio_.
+source projects, which you can find on my [portfolio][1].
 
 I was homeschooled through high school, but I also attended Red Rocks Community
 College doing a few classes a semester during high school. I also worked at
@@ -38,8 +38,8 @@ This site is the place to get updates on my life. I maintain a [blog](/) here
 where I post occasionally. I post about my travels, technology, politics, etc.
 On my portfolio page, I have an up-to-date overview of [my professional
 achievements][1]. I also have an always-up-to-date link to my
-[resume](/portfolio/resume.pdf). You can also find links to all of my social
-media accounts from this site.
+[resume](/portfolio/resume.pdf) there. You can also find links to all of the
+social media accounts that I actually use from this site.
 
 Happy reading!
 
