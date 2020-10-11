@@ -82,6 +82,12 @@ Paginate = 15
     url = "/tags/"
     weight = 7
 
+  [[menu.main]]
+    identifier = "rss"
+    name = "RSS"
+    url = "/index.xml"
+    weight = 8
+
 # Footer
   [[menu.footer]]
     name = "sourcehut"
