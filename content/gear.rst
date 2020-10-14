@@ -6,7 +6,7 @@ Daily Drivers
 -------------
 
 I have two primary computers: a laptop and a desktop. I also have a VPS running
-DigitalOcean which hosts my personal infrastructure_. [1]_
+DigitalOcean which hosts my personal infrastructure_.
 
 I run Arch Linux on my desktop and NixOS on my laptop and main infrastructure
 server. I plan to move all of my computers over to NixOS eventually.
@@ -17,9 +17,6 @@ things. You can find my `full dotfiles and miscellaneous scripts on sourcehut.
 
 .. _infrastructure: https://git.sr.ht/~sumner/infrastructure
 .. _dotfiles: https://git.sr.ht/~sumner/dotfiles
-
-.. [1] I'm still converting everything over to NixOS, but most of the things I
-   use regularly are migrated.
 
 Here's a list of my daily driver machines. I name them after planets in the Star
 Wars universe.
