@@ -13,7 +13,7 @@ sources:
   - https://github.com/sumnerevans/hugo.git
 secrets:
   # SSH Known Hosts
-  - a9b7dc2e-293f-4fea-aec7-618689d4e5f2
+  - 5f8876fe-b2b7-44f8-8ad5-6fa9bffbc52a
   # SSH Deploy Key
   - f219888a-80af-4275-a777-89e8c7d277f0
 environment:
@@ -39,6 +39,6 @@ tasks:
   # Copy the website over to the server
   - rsync: |
       git branch --contains | grep master &&
-        ssh root@deploy.sumnerevans.com "mkdir -p /var/www/sumnerevans.com" &&
-        rsync -vr --delete-after public/ root@deploy.sumnerevans.com:/var/www/sumnerevans.com &&
+        ssh root@bespin.sumnerevans.com "mkdir -p /var/www/sumnerevans.com" &&
+        rsync -vr --delete-after public/ root@bespin.sumnerevans.com:/var/www/sumnerevans.com &&
         echo "Deploy complete" || echo "Skipping deploy since not on master"
