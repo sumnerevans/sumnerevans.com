@@ -6,7 +6,7 @@ Daily Drivers
 -------------
 
 I have two primary computers: a laptop and a desktop. I also have a VPS running
-DigitalOcean which hosts my personal infrastructure_.
+Linode which hosts my personal infrastructure_.
 
 I run Arch Linux on my desktop and NixOS on my laptop and main infrastructure
 server. I plan to move all of my computers over to NixOS eventually.
@@ -36,7 +36,10 @@ Wars universe.
   - 32 GB RAM
   - 512 GB NVMe SSD
 
-- **DigitalOcean VPS:** (hostname: ``scarif``)
+- **Linode VPS:** (hostname: ``bespin``)
+
+- **DigitalOcean VPS:** (hostname: ``scarif``, currently being depricated in
+  favor of ``bespin``)
 
 Accessories
 -----------
