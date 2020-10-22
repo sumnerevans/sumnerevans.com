@@ -7,6 +7,9 @@ pygmentsCodefences = true
 pygmentsStyle = "github"
 pygmentsUseClasses = true
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 Paginate = 15
 
 [minify]
