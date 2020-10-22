@@ -11,7 +11,7 @@ Linode which hosts my personal infrastructure_.
 I run Arch Linux on my desktop and NixOS on my laptop and main infrastructure
 server. I plan to move all of my computers over to NixOS eventually.
 
-I use the i3 window manager, i3status-rust, ZSH, NeoVim, and mutt mong other
+I use the i3 window manager, i3status-rust, ZSH, NeoVim, and mutt among other
 things. You can find my `full dotfiles and miscellaneous scripts on sourcehut.
 <dotfiles_>`_
 
