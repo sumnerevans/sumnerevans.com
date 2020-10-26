@@ -38,9 +38,6 @@ Wars universe.
 
 - **Linode VPS:** (hostname: ``bespin``)
 
-- **DigitalOcean VPS:** (hostname: ``scarif``, currently being depricated in
-  favor of ``bespin``)
-
 Accessories
 -----------
 
