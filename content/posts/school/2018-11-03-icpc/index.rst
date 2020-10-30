@@ -138,8 +138,8 @@ point (definitely second on site at CSU).
 
 At this point, Jack and I started working on **E**. We figured out the recursive
 formulation for it (it is very similar to the DP project which I did for
-Algorithms), figured out to calculate everything, and then wrote up some code on
-the whiteboard so we could be just copy from there to the computer. Sam
+Algorithms), figured out how to calculate everything, and then wrote up some
+code on the whiteboard so we could be just copy from there to the computer. Sam
 continued working on **F** while we were doing this, but unfortunately he missed
 some edge case and his solution failed with a wrong answer.
 
@@ -198,8 +198,8 @@ A couple of other cool things that happened:
 
 - *NP = No Problem* (Easton Bornemeier, Kristin Farris, and Matt Iverson) did
   well with 5 problems solved.
-- Mines teams were first on all problems except for **D** (Alberta White was
-  first). But at location, Mines teams were first on all problems.
+- Mines teams were first to solve all problems except for **D** (Alberta White
+  was first). But at location, Mines teams were first to solve all problems.
 - All Mines teams solved at least one problem.
 - *The Open Sourcerers*, a team of all freshmen (Jake Vossen, Kieran Lewis, and
   Nick Redhorse) completed 4 problems for a 28th-place finish regionally and a
