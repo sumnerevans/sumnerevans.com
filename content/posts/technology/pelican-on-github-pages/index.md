@@ -10,7 +10,7 @@ tags: [Pelican, Travis CI, GitHub, GitHub Pages]
 Since writing this article, I have made a few major shifts in my personal
 website infrastructure. I migrated from GitHub to GitLab and subsequently from
 GitLab to sourcehut. Then I migrated from Pelican to Hugo. I also am now hosting
-my website on a DigitalOcean VPS.
+my website on a Linode VPS.
 
 -------------------------------------------------------------------------------
 

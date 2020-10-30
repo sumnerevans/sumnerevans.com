@@ -11,7 +11,7 @@ tags: [Pelican, GitLab, GitLab CI/CD, GitLab Pages]
 
    Since writing this article, I have migrated from Pelican_ to Hugo_. I have
    also migrated away from GitLab_ to sourcehut_ and I'm deploying my site to a
-   DigitalOcean VPS.
+   Linode VPS.
 
    .. _Pelican: https://getpelican.com
    .. _Hugo: https://gethugo.io
