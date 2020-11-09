@@ -8,12 +8,12 @@ Daily Drivers
 I have two primary computers: a laptop and a desktop. I also have a VPS running
 Linode which hosts my personal infrastructure_.
 
-I run Arch Linux on my desktop and NixOS on my laptop and main infrastructure
+I run Arch Linux on my desktop and NixOS on my laptops and main infrastructure
 server. I plan to move all of my computers over to NixOS eventually.
 
-I use the i3 window manager, i3status-rust, ZSH, NeoVim, and mutt among other
-things. You can find my `full dotfiles and miscellaneous scripts on sourcehut.
-<dotfiles_>`_
+I use the i3 window manager or Sway, i3status-rust, ZSH, NeoVim, and mutt among
+other things. You can find my `full dotfiles and miscellaneous scripts on
+sourcehut.  <dotfiles_>`_
 
 .. _infrastructure: https://git.sr.ht/~sumner/infrastructure
 .. _dotfiles: https://git.sr.ht/~sumner/dotfiles
@@ -28,6 +28,9 @@ Wars universe.
   - Nvidia RTX 2070
   - 32 GB DDR4-3200 RAM
   - 512 GB NVMe and a 1 TB SSD
+
+- **Laptop:** (hostname: ``mustafar``) A Samsung Galaxy Chromebook that I have
+  hacked to run Linux.
 
 - **Laptop:** (hostname: ``jedha``) A ThinkPad T580
 
