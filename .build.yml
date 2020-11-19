@@ -36,9 +36,11 @@ tasks:
   - build: |
       ../hugo/hugo --gc --minify
 
-  # Copy the website over to the server
   - rsync: |
-      git branch --contains | grep master &&
-        ssh root@bespin.sumnerevans.com "mkdir -p /var/www/sumnerevans.com" &&
-        rsync -vr --delete-after public/ root@bespin.sumnerevans.com:/var/www/sumnerevans.com &&
-        echo "Deploy complete" || echo "Skipping deploy since not on master"
+      # Skip if not on master
+      git branch --contains | grep master || echo "Skipping deploy since not on master"
+      git branch --contains | grep master || complete-build
+
+      # Copy the website over to the server
+      ssh root@bespin.sumnerevans.com "mkdir -p /var/www/sumnerevans.com"
+      rsync -vr --delete-after public/ root@bespin.sumnerevans.com:/var/www/sumnerevans.com
