@@ -22,17 +22,21 @@ Experience
     * Implementing ingestion of the ``ifa_type`` field in OpenRTB requests.
     * Implementing many of the frontend features for Connected TV planning.
 
-|csm|_ -- Instructor (Programming Languages) -- August 2020 - Present
+|csm|_ -- Adjunct Professor (Advanced Computer Architecture) -- Starting January 2021
+    I will be teaching *CSCI 564 Advanced Computer Architecture* in the Spring
+    semester of 2021.
+
+|csm|_ -- Adjunct Professor (Programming Languages) -- August 2020 - Present
     I am teaching a section of *CSCI 400 Principles of Programming Languages*
     this Fall 2020 semester.
 
-|csm|_ -- Instructor (Programming Languages) -- January 2019 - May 2019
+|csm|_ -- Adjunct Professor (Programming Languages) -- January 2019 - May 2019
     I taught a section of *CSCI 400 Principles of Programming Languages* in
     Spring of 2019. Topics that the class covers include: programming language
     concepts, evaluation, and implementation; OOP; Lambda Calculus; and Racket
     (a LISP dialect).
 
-|csm|_ -- Instructor (Algorithms) -- August 2018 - December 2018
+|csm|_ -- Adjunct Professor (Algorithms) -- August 2018 - December 2018
     I taught a section of *CSCI 406 Algorithms* in Fall of 2018. Topics that the
     class covers include: analysis of algorithms, evaluation of data structures,
     sorting algorithms, dynamic programming, graph algorithms, and

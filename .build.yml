@@ -1,16 +1,10 @@
 # Build and deploy the Hugo site.
-image: archlinux
+image: nixos/unstable
 packages:
-  - git
-  - hugo
-  - go
-  - openssh
-  - python-docutils
-  - python-pygments
-  - rsync
+  - nixos.openssh
+  - nixos.rsync
 sources:
   - https://git.sr.ht/~sumner/sumnerevans.com
-  - https://github.com/sumnerevans/hugo.git
 secrets:
   # SSH Known Hosts
   - 5f8876fe-b2b7-44f8-8ad5-6fa9bffbc52a
@@ -23,18 +17,12 @@ triggers:
     condition: failure
     to: alerts@sumnerevans.com
 tasks:
-  # Use my fork of Hugo that correctly formats Math.
-  # TODO: remove this step after https://github.com/gohugoio/hugo/pull/7763 is
-  # merged.
-  - build_hugo: |
-      cd hugo
-      go build --tags extended  # need extended support for SCSS
-
   - setup: |
       echo "cd $REPO_NAME" >> ~/.buildenv
 
   - build: |
-      ../hugo/hugo --gc --minify
+      nix-channel --update
+      nix-shell --command "hugo --gc --minify"
 
   - rsync: |
       # Skip if not on master
