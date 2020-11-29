@@ -10,8 +10,8 @@
               src = self.fetchFromGitHub {
                 owner = "sumnerevans";
                 repo = "hugo";
-                rev = "9bf6ae3ac7a7cc1f48a1e70a2e72dd1c92a11473";
-                sha256 = "1y3j43xjf2ln5xvs1h46iz4k1yf5ql84shri3mcsphfli363nf2n";
+                rev = "c6a704383a79b9bdc1234b47f240276651561eb0";
+                sha256 = "16bhxqjs3vgxxxib03sfghfn14ldx64fvirygvcnziy0xzhwd70v";
               };
             }
           );
