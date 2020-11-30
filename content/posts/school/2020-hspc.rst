@@ -7,8 +7,6 @@ tags: [High School Programming Competition, Competitive Programming, Mines, HSPC
 
 .. default-role:: math
 
-.. TODO update date
-
 For the last three years, the Mines Computer Science Department has hosted a
 High School Programming Competition modelled after the `International Collegiate
 Programming Contest (ICPC) <icpc_>`_. I wrote about last year's competition in
@@ -345,15 +343,15 @@ rolled up into a previous group. You can use an array to store this information
 efficiently.
 
 .. TODO vid
-.. raw:: html
+.. .. raw:: html
 
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+..     <iframe width="560"
+..             height="315"
+..             src="https://www.youtube.com/embed/"
+..             frameborder="0"
+..             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+..             allowfullscreen>
+..     </iframe>
 
 L - Magic Maze
 --------------
@@ -373,15 +371,15 @@ the actual direction to go is. Un-transform actions become trivial in this
 setup, because you can just remove the top `n` elements from the stack.
 
 .. TODO vid
-.. raw:: html
+.. .. raw:: html
 
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+..     <iframe width="560"
+..             height="315"
+..             src="https://www.youtube.com/embed/"
+..             frameborder="0"
+..             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+..             allowfullscreen>
+..     </iframe>
 
 E - Encrypted Counting
 ----------------------
@@ -409,15 +407,15 @@ reset, and then continue to iterate through the string.
 .. _rle: https://en.wikipedia.org/wiki/Run-length_encoding
 
 .. TODO vid
-.. raw:: html
+.. .. raw:: html
 
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+..     <iframe width="560"
+..             height="315"
+..             src="https://www.youtube.com/embed/"
+..             frameborder="0"
+..             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+..             allowfullscreen>
+..     </iframe>
 
 D - Paint Bucket
 ----------------
@@ -498,15 +496,15 @@ determining whether or not the time is valid, particularly with the one's place
 of the hours section.
 
 .. TODO vid
-.. raw:: html
+.. .. raw:: html
 
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+..     <iframe width="560"
+..             height="315"
+..             src="https://www.youtube.com/embed/"
+..             frameborder="0"
+..             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+..             allowfullscreen>
+..     </iframe>
 
 G - Tax Calc
 ------------
@@ -537,12 +535,12 @@ This problem can be solved using an explicit stack, or using an implicit stack
 using *recursion*.
 
 .. TODO vid
-.. raw:: html
+.. .. raw:: html
 
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+..     <iframe width="560"
+..             height="315"
+..             src="https://www.youtube.com/embed/"
+..             frameborder="0"
+..             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+..             allowfullscreen>
+..     </iframe>
