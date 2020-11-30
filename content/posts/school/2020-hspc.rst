@@ -1,9 +1,8 @@
 ---
 title: Mines High School Programming Competition 2020
-date: 2020-04-25T12:05:00-06:00
+date: 2020-11-29T23:09:04-06:00
 categories: [School]
 tags: [High School Programming Competition, Competitive Programming, Mines, HSPC]
-published: false
 ---
 
 .. default-role:: math
@@ -22,7 +21,7 @@ I wrote two of the problems, and I volunteered during the competition.
 Due to the current COVID-19 crisis, the competition was held remotely, which
 meant that we were unable to enforce a no-internet rule as we are able to during
 on-site competitions. Luckily, the problems are all unique, and written by Mines
-students an Mines alum specifically for the competition which makes it very
+students and Mines alum specifically for the competition which makes it very
 difficult to search the internet for answers.
 
 The competition had a total of 30 teams from all around Colorado. The problems
@@ -116,6 +115,11 @@ are likely many alternative ways to solve each of these problems.
 A new addition this year is that each of the problems has an associated YouTube
 video with a detailed explanation of how to solve the problem as well as a
 demonstration of how to implement the solution into code.
+
+.. note::
+   Some of the problems do not have corresponding YouTube videos yet, I'm
+   working on it, and if you comment below which ones I should prioritize, that
+   will motivate me to actually finish making the videos.
 
 A - Flatter Land
 ----------------
@@ -441,12 +445,11 @@ in whatever language you are using.
 .. _BFS: https://en.wikipedia.org/wiki/Breadth-first_search
 .. _DFS: https://en.wikipedia.org/wiki/Depth-first_search
 
-.. TODO vid
 .. raw:: html
 
     <iframe width="560"
             height="315"
-            src="https://www.youtube.com/embed/"
+            src="https://www.youtube.com/embed/VOOLq6ed0wI"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>

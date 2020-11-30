@@ -15,9 +15,10 @@ Things I'm passionate about:
 
 * Programming
 * Computer Science
-* Free and Open Source Software
-* Self hosting and owning my data
+* Software Architecture and Software Engineering
 * Teaching
+* Self hosting and owning my data
+* Free and Open Source Software
 
 I'm grateful to have a great job where I am able to exercise my love of
 programming and computer science. On the side, I work on a variety of open
