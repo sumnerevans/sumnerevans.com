@@ -14,7 +14,7 @@ Programming Contest (ICPC) <icpc_>`_. I wrote about last year's competition in
 I wrote two of the problems, and I volunteered during the competition.
 
 .. _icpc: https://icpc.baylor.edu/
-.. _hspc2019: {filename}2019-04-15-hspc.rst
+.. _hspc2019: {{< ref "/posts/school/2019-hspc" >}}
 
 Due to the current COVID-19 crisis, the competition was held remotely, which
 meant that we were unable to enforce a no-internet rule as we are able to during
