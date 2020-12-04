@@ -11,7 +11,7 @@ Experience
 ==========
 
 |ttd|_ -- Software Engineer -- June 2019 - Present
-    Key Technologies: ReactJS, C#, SQL
+    *Key Technologies:* ReactJS, C#, SQL
 
     I am a member of the Connected TV engineering team. I am responsible for
     building features related to Connected TV across the entire stack from the
@@ -22,20 +22,26 @@ Experience
     * Implementing ingestion of the ``ifa_type`` field in OpenRTB requests.
     * Implementing many of the frontend features for Connected TV planning.
 
+|csm|_ -- Instructor (Advanced Computer Architecture) -- Starting January 2021
+    I will be teaching *CSCI 400 Principles of Programming Languages* this
+    coming Spring 2021 semester.
+
 |csm|_ -- Instructor (Programming Languages) -- August 2020 - Present
     I am teaching a section of *CSCI 400 Principles of Programming Languages*
-    this Fall 2020 semester.
+    this Fall 2020 semester. Topics that the class covered include: functional
+    programming concepts, type inference, OCaml, programming language
+    implementation, and formal semantics.
 
 |csm|_ -- Instructor (Programming Languages) -- January 2019 - May 2019
-    I taught a section of *CSCI 400 Principles of Programming Languages* in
-    Spring of 2019. Topics that the class covers include: programming language
-    concepts, evaluation, and implementation; OOP; Lambda Calculus; and Racket
-    (a LISP dialect).
+    I taught *CSCI 400 Principles of Programming Languages* in Spring of 2019.
+    Topics that the class covered include: programming language concepts,
+    evaluation, and implementation; OOP; Lambda Calculus; and Racket (a LISP
+    dialect).
 
 |csm|_ -- Instructor (Algorithms) -- August 2018 - December 2018
     I taught a section of *CSCI 406 Algorithms* in Fall of 2018. Topics that the
-    class covers include: analysis of algorithms, evaluation of data structures,
-    sorting algorithms, dynamic programming, graph algorithms, and
+    class covered include: analysis of algorithms, evaluation of data
+    structures, sorting algorithms, dynamic programming, graph algorithms, and
     NP-completeness.
 
 |pivotal|_ -- Software Engineering Intern -- May 2018 - August 2018
@@ -61,6 +67,8 @@ Experience
     CI/CD Jenkins pipeline with a WebPack build.
 
 |canam|_ -- Software Developer -- February 2013 - August 2016
+    *Key Technologies:* C#, ExtJS, SQL
+
     I worked on the Teller Development Team designing and building new features
     for Teller, an enterprise point-of-sale system geared towards municipal
     governments.
