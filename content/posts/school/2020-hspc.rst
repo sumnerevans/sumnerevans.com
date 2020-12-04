@@ -16,7 +16,7 @@ I wrote two of the problems, and I volunteered during the competition.
 .. _icpc: https://icpc.baylor.edu/
 .. _hspc2019: {{< ref "/posts/school/2019-hspc" >}}
 
-Due to the current COVID-19 crisis, the competition was held remotely, which
+Due to the current COVID-19 lockdown, the competition was held remotely, which
 meant that we were unable to enforce a no-internet rule as we are able to during
 on-site competitions. Luckily, the problems are all unique, and written by Mines
 students and Mines alum specifically for the competition which makes it very
@@ -101,7 +101,7 @@ few of the difficulties were miscalculated by the problem authors, and I will
 mention those in each subsection.
 
 I do not try and build up from first principles in each of these explanations
-(and corresponding videos).  Rather, I try and make the explanations accessible
+(and corresponding videos). Rather, I try and make the explanations accessible
 to anyone who feels like solving the problem is within their grasp, but they
 can't figure out one or two of the key ideas to crack the problem. For the
 easiest problems, I start much closer to first principles, but as the problems

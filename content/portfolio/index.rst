@@ -167,9 +167,9 @@ Projects
   clients; a sophisticated play queue; playlist management; and more.
 
   Sublime Music is developed on `GitLab <sublime_gitlab_>`_ and is available via
-  the `AUR <sublime_aur_>`_, `NixOS 20.09 <sublime_nix_>`_ and `NixOS unstable
-  <sublime_nix_unstable_>`_, `Debian Testing <sublime_deb_>`_, as a `Flatpak
-  <sublime_flatpak_>`_, and via `PyPi <sublime_pypi_>`_.
+  the `AUR <sublime_aur_>`_, `NixOS 20.09 <sublime_nix_>`_ and later, `Debian
+  Testing <sublime_deb_>`_, as a `Flatpak <sublime_flatpak_>`_, and via `PyPi
+  <sublime_pypi_>`_.
 
   .. |sublime-music| replace:: **Sublime Music**
   .. _sublime-music: https://sublimemusic.app

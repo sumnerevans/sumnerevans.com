@@ -16,7 +16,7 @@ Things I'm passionate about:
 * Programming
 * Computer Science
 * Software Architecture and Software Engineering
-* Teaching
+* CS Education
 * Self hosting and owning my data
 * Free and Open Source Software
 
