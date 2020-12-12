@@ -5,6 +5,9 @@ title: "Portfolio"
 This page is my extended Curriculum Vitae containing all of my professional
 achievements. For a more concise overview, please view my resume_.
 
+.. contents:: Table of Contents
+   :backlinks: none
+
 .. _resume: ./resume.pdf
 
 Experience
@@ -194,21 +197,6 @@ Projects
   .. _sublime_flatpak: https://gitlab.com/sumner/sublime-music/-/releases
   .. _sublime_pypi: https://pypi.org/project/sublime-music/
 
-|visplay|_ -- February 2018 - Present
-  Visplay is a Mines ACM project. It's goal is to create a digital signage
-  system with a dynamic, hierarchical configuration system which can be used in
-  a wide variety of hardware and infrastructure configurations.
-
-  I worked on the initial design of the overall architecture of the project. I
-  have also contributed in a project management role. I worked on the Python
-  components of the project which consume the configuration files and generate
-  playlists. I also led development of the web configuration frontend.
-
-  Currently, I am working in an advisory role as an industry project mentor.
-
-  .. |visplay| replace:: **Visplay**
-  .. _visplay: https://gitlab.com/ColoradoSchoolOfMines/visplay
-
 |tracktime|_ -- June 2018 - Present
   Tracktime is a filesystem-backed time tracking solution with a command line
   interface. It uses a sane directory structure to organize CSV files that store
@@ -244,6 +232,21 @@ Projects
   .. _offlinemsmtp_pypi: https://pypi.org/project/offlinemsmtp/
   .. _offlinemsmtp_aur: https://aur.archlinux.org/packages/offlinemsmtp/
   .. _Introducing offlinemsmtp: {{< ref "/posts/projects/introducing-offlinemsmtp" >}}
+
+|visplay|_ -- February 2018 - May 2020
+  Visplay is a Mines ACM project. It's goal is to create a digital signage
+  system with a dynamic, hierarchical configuration system which can be used in
+  a wide variety of hardware and infrastructure configurations.
+
+  I worked on the initial design of the overall architecture of the project. I
+  have also contributed in a project management role. I worked on the Python
+  components of the project which consume the configuration files and generate
+  playlists. I also led development of the web configuration frontend.
+
+  Currently, I am working in an advisory role as an industry project mentor.
+
+  .. |visplay| replace:: **Visplay**
+  .. _visplay: https://gitlab.com/ColoradoSchoolOfMines/visplay
 
 |mlocate|_ -- February 2019
   This project won *Second Place* at `HackCU V <hackcu_>`_.
