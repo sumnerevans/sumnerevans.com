@@ -288,7 +288,7 @@ such a data type, some of the values for the sequence will exceed the size of a
 
 .. note::
 
-   If you are using Python, you don't have to worry baout integer size, since
+   If you are using Python, you don't have to worry about integer size, since
    Python arbitrary-length integers. That means it will automatically expand to
    the necessary number of bits required to represent your integer.
 
