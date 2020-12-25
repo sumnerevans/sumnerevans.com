@@ -29,11 +29,11 @@ Experience
     I will be teaching *CSCI 400 Principles of Programming Languages* this
     coming Spring 2021 semester.
 
-|csm|_ -- Instructor (Programming Languages) -- August 2020 - Present
-    I am teaching a section of *CSCI 400 Principles of Programming Languages*
-    this Fall 2020 semester. Topics that the class covered include: functional
-    programming concepts, type inference, OCaml, programming language
-    implementation, and formal semantics.
+|csm|_ -- Instructor (Programming Languages) -- August 2020 - December 2020
+    I taught a section of *CSCI 400 Principles of Programming Languages* in
+    Fall of 2020. Topics that the class covered include: functional programming
+    concepts, type inference, OCaml, programming language implementation, and
+    formal semantics.
 
 |csm|_ -- Instructor (Programming Languages) -- January 2019 - May 2019
     I taught *CSCI 400 Principles of Programming Languages* in Spring of 2019.
