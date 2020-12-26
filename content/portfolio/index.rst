@@ -5,7 +5,7 @@ title: "Portfolio"
 This page is my extended Curriculum Vitae containing all of my professional
 achievements. For a more concise overview, please view my resume_.
 
-.. contents:: Table of Contents
+.. contents:: **Table of Contents**
    :backlinks: none
 
 .. _resume: ./resume.pdf
@@ -26,8 +26,8 @@ Experience
     * Implementing many of the frontend features for Connected TV planning.
 
 |csm|_ -- Instructor (Advanced Computer Architecture) -- Starting January 2021
-    I will be teaching *CSCI 400 Principles of Programming Languages* this
-    coming Spring 2021 semester.
+    I will be teaching *CSCI 564 Advanced Computer Architecture* this coming
+    Spring 2021 semester.
 
 |csm|_ -- Instructor (Programming Languages) -- August 2020 - December 2020
     I taught a section of *CSCI 400 Principles of Programming Languages* in
