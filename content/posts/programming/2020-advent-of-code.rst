@@ -57,7 +57,8 @@ The following were my results across all of the days.
       2   00:04:43   609      0   00:07:35   554      0
       1   00:08:00  1134      0   00:09:30   945      0
 
-A few highlights include the following (numbers reported as part 1/part 2):
+A few highlights for me on the global leaderboard include the following (numbers
+reported as part 1/part 2):
 
 * Top 1000 days: 9/10
 * Best day overall: 226/168 (day 9)
@@ -65,11 +66,26 @@ A few highlights include the following (numbers reported as part 1/part 2):
 * Worst day overall: 4269/1760 (day 20)
 * Worst day per part: 4269/5233 (day 20/day 13)
 * Fastest solve per part: 03:39/07:33 (day 6/day 9)
-* Longest solve per part: 04:32:46/06:01:56 (day 20)
+* Longest solve per part: 04:32:46/06:01:56 (day 20/day 20)
+* Average global leaderboard placement per part: 1418.28/1629.52
 
 Other people on the Mines leaderboard who solved all of the problems are `Colin
 Siles`_, McPqndq_, `Easton Bornemeier`_, `Keshav Vembar`_, johntaylor1309,
-`Jackson Garner`_, Andrew, (anonymous user #134619), AdamSandstedt_.
+`Jackson Garner`_, Andrew, (anonymous user #134619), and `Adam Sandstedt`_.
+
+A few highlights for me on the Mines leaderboard include the following (numbers
+reported as part 1/part 2):
+
+* Top 3 days: 11/10
+
+  * Firsts: 2/3
+  * Seconds: 5/3
+  * Thirds: 4/4
+
+* Best day overall: 1/1 (day 9)
+* Worst day overall: 2/10 (day 13)
+* Best recovery: 10/1 (day 4)
+* Average leaderboard placement per part: 4.36/4.2
 
 .. _Colin Siles: https://github.com/sColin16
 .. _McPqndq: https://github.com/mcbobby123
@@ -78,6 +94,8 @@ Siles`_, McPqndq_, `Easton Bornemeier`_, `Keshav Vembar`_, johntaylor1309,
 .. _Jackson Garner: https://github.com/jhgarner
 .. _Adam Sandstedt: https://github.com/AdamSandstedt
 
+.. TODO
+
 A few things I learned:
 
 * Template
@@ -85,6 +103,11 @@ A few things I learned:
 * My math skills are ass
 * I'm bad at cellular automata
 * We've got some really good competitive programmers at Mines
+
+My Favorite Problems
+====================
+
+My favorite problem overall was day 20. It was a very fun and rewarding problem.
 
 Problem Summaries
 =================
@@ -130,51 +153,39 @@ and a link to the VOD on YouTube.
 
 6. **(438/448, 3/3)** This problem was another input verification problem. The
    first part was counting the *union* of each group's responses and the second
-   part was counting the *intersection* of each group's responses. `Day 6 VOD on
-   YouTube`_.
+   part was counting the *intersection* of each group's responses. My
+   implementation was pretty messy, but it was actually pretty reasonable as far
+   as implementation time. Still only got 3rd on the private leaderboard. `Day 6
+   VOD on YouTube`_.
 
-7. **(360/830, 1/4)** This problem was another input verification problem. The
-   first part was counting the *union* of each group's responses and the second
-   part was counting the *intersection* of each group's responses. `Day 7 VOD on
-   YouTube`_.
+7. **(360/830, 1/4)** This problem was a tree problem involving counting the
+   number of child (part 1) and parent (part 2) nodes of a specific node. It
+   also involved some annoying input parsing (knowing regex really helped me
+   here). Part 1 was pretty good, but I really faltered on part 2 (common
+   theme). I tried to be too "cute" instead of doing the easy thing of creating
+   a new tree for solving part 2. `Day 7 VOD on YouTube`_.
 
-..       -------Part 1--------   -------Part 2--------
-.. Day       Time  Rank  Score       Time  Rank  Score
-..  21   00:37:49  1489      0   00:58:18  1837      0
-..  20   04:32:46  4269      0   06:01:56  1760      0
-..  19   01:03:50  1931      0   05:58:15  4038      0
-..  18   00:26:27  1225      0   00:43:41  1219      0
-..  17   00:53:00  2348      0   00:56:46  2006      0
-..  16   00:10:02   399      0   00:26:58   254      0
-..  15   00:13:56  1055      0   00:15:28   464      0
-..  14   00:23:12  1982      0   00:43:30  1388      0
-..  13   00:06:21   573      0   03:50:06  5233      0
-..  12   00:09:49   775      0   00:39:10  2405      0
-..  11   00:28:55  2173      0   01:05:09  3183      0
-..  10   00:07:25  1095      0   00:19:54   708      0
-..   9   00:04:03   227      0   00:07:33   168      0
-..   8   00:09:07  1923      0   00:12:57   580      0
-..   7   00:12:51   360      0   00:27:50   830      0
-..   6   00:03:39   438      0   00:07:41   558      0
-..   5   00:10:35  1359      0   00:22:43  2656      0
-..   4   00:15:09  2854      0   00:30:14  1294      0
-..   3   00:08:47  1930      0   00:18:05  2689      0
-..   2   00:04:43   609      0   00:07:35   554      0
-..   1   00:08:00  1134      0   00:09:30   945      0
+8. **(1923/580, 5/3)** This problem involved implementing a simple emulator for
+   a very simple "assembly" language. TODO `Day 8 VOD on YouTube`_.
 
+9. **(227/168, 1/1)** TODO `Day 9 VOD on YouTube`_.
+10. **(1095/708, 5/4)** TODO `Day 10 VOD on YouTube`_.
+11. **(2173/3183, 5/7)** TODO `Day 11 VOD on YouTube`_.
+12. **(775/2405, 3/7)** TODO `Day 12 VOD on YouTube`_.
+13. **(573/5233, 2/10)** TODO `Day 13 VOD on YouTube`_.
+14. **(1982/1388, 8/5)** TODO `Day 14 VOD on YouTube`_.
+15. **(1055/464, 5/2)** TODO `Day 15 VOD on YouTube`_.
+16. **(399/254, 2/1)** TODO `Day 16 VOD on YouTube`_.
+17. **(2348/2006, 5/5)** TODO `Day 17 VOD on YouTube`_.
+18. **(1225/1219, 2/2)** TODO `Day 18 VOD on YouTube`_.
+19. **(1931/4038, 5/4)** TODO `Day 19 VOD on YouTube`_.
+20. **(4269/1760, 8/4)** TODO `Day 20 VOD on YouTube`_.
+21. **(1489/1837, 6/5)** TODO `Day 21 VOD on YouTube`_.
+22. **(439/573, 3/4)** TODO `Day 22 VOD on YouTube`_.
+23. **(613/1792, 2/4)** TODO `Day 23 VOD on YouTube`_.
+24. **(1084/1049, 5/3)** TODO `Day 24 VOD on YouTube`_.
+25. **(3173/2555, 8/6)** TODO `Day 25 VOD on YouTube`_.
 
-Like, think about it like this: here's a short description of the core idea
-behind each of these problems (and if applicable the class where the idea is
-taught at Mines, ignoring 101 because it's not a prereq for anything except
-graduation) (this will end up in a blog post probably lol)
-
-1 - double and tripple nested for loops (261/262)
-2 - input parsing and counting occurrences in a string (261)
-3 - modular arithmetic + very simple simulation (261/262)
-4 - nontrivial data parsing + input verification (262)
-5 - binary search or identifying that it's a bitmap (341)
-6 - using a set (261)
-7 - annoying input parsing + trees (262/406)
 8 - having a general idea of how a processor works (341)
 9 - sliding window (262 I guess?, but not really taught explicitly)
 10 - it's a DAG (406) or it's crazy math (discrete math theoretically, but not in actuality)
@@ -186,12 +197,13 @@ graduation) (this will end up in a blog post probably lol)
 16 - nontrivial input parsing + input verification + nontrivial inferences (discrete + 262?)
 17 - cellular automata in even more dimensions (262 I guess?, but not really ever taught explicitly)
 18 - a calculator with different rules for associativity
-
-Yes, a lot of these are 262, but to be honest, most people who have taken 262
-would have trouble identifying the correct data structure to use for the
-problems. (Source: I TA'd 262 for a year.) Hell, a lot of people in that class
-who showed up for office hours couldn't even get syntax for for loops right.
-
+19 - regex grossness
+20 - sea monsters
+21 - inferences
+22 - recursive war
+23 - linked list
+24 - hexagonal grid
+25 - Diffie-Hellman
 
 .. _Day 1 VOD on YouTube: https://youtu.be/8Ufl86KHwuI
 .. _Day 2 VOD on YouTube: https://youtu.be/Pwf2wb8tsaw
@@ -200,6 +212,24 @@ who showed up for office hours couldn't even get syntax for for loops right.
 .. _Day 5 VOD on YouTube: https://youtu.be/M41frXqyqm8
 .. _Day 6 VOD on YouTube: https://youtu.be/8lDqlXydco4
 .. _Day 7 VOD on YouTube: https://youtu.be/ejR-IpbELBE
+.. _Day 8 VOD on YouTube: https://youtu.be/EzF7JNB7ISA
+.. _Day 9 VOD on YouTube: https://youtu.be/6V1mV5wz1Ms
+.. _Day 10 VOD on YouTube: https://youtu.be/7TFQsvCxCIU
+.. _Day 11 VOD on YouTube: https://youtu.be/I4aIVh7JLkU
+.. _Day 12 VOD on YouTube: https://youtu.be/UryFzQPgx1o
+.. _Day 13 VOD on YouTube: https://youtu.be/OV3e3l3LKow
+.. _Day 14 VOD on YouTube: https://youtu.be/KDXdNYr-GVE
+.. _Day 15 VOD on YouTube: https://youtu.be/MyCjuvWL2xk
+.. _Day 16 VOD on YouTube: https://youtu.be/kG_dMdgxU_I
+.. _Day 17 VOD on YouTube: https://youtu.be/Mjd6CWwxHzw
+.. _Day 18 VOD on YouTube: https://youtu.be/LahmCoZCWOk
+.. _Day 19 VOD on YouTube: https://youtu.be/lo9huRNT_7w
+.. _Day 20 VOD on YouTube: https://youtu.be/6Hff1j9tNwI
+.. _Day 21 VOD on YouTube: https://youtu.be/45KAlQk5gjM
+.. _Day 22 VOD on YouTube: https://youtu.be/GmePVJCRhjc
+.. _Day 23 VOD on YouTube: https://youtu.be/WOWQXzZzc3U
+.. _Day 24 VOD on YouTube: https://youtu.be/wJaF9oMZwrs
+.. _Day 25 VOD on YouTube: https://youtu.be/C1_LIZC0SHU
 
 .. _Eric Wastl: https://twitter.com/ericwastl
 .. _twitch: https://twitch.tv/sumnerevans
