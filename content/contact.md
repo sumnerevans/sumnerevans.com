@@ -27,7 +27,7 @@ emails. Here are a few:
   keyserver is overloaded all the time it seems.
 * **Right here:**
 
-  My full GPG Key ID is::
+  My full GPG Key ID is:
 
       3F15 C22B FD12 5095 F9C0 7275 8904 527A B500 22FD
 

@@ -32,15 +32,16 @@ during high school. (See my [portfolio][1] for more info).
 When I'm not working, I enjoy playing soccer, volleyball, and I've been getting
 into racquetball lately. During high school, I won the FRCCA State Championship
 with Denver Eagles my senior year. I also used to practice TaeKwonDo regularly,
-but I have not had enough time since I started college.  While I did TaeKwonDo,
-I achieved my 3rd Degree Black Belt.
+but I have not had enough time since I started college. While I did TaeKwonDo,
+I achieved my 3rd Degree Black Belt and won multiple state titles.
 
 This site is the place to get updates on my life. I maintain a [blog](/) here
-where I post occasionally. I post about my travels, technology, politics, etc.
-On my portfolio page, I have an up-to-date overview of [my professional
-achievements][1]. I also have an always-up-to-date link to my
-[resume](/portfolio/resume.pdf) there. You can also find links to all of the
-social media accounts that I actually use from this site.
+where I post occasionally. I post about my travels, technology, education,
+projects updates, politics, and many other random topics. On my portfolio page,
+I have an up-to-date overview of [my professional achievements][1]. I also have
+an always-up-to-date link to my [resume](/portfolio/resume.pdf) there. You can
+also find links to all of the social media accounts that I actually use in the
+footer of this site.
 
 Happy reading!
 
