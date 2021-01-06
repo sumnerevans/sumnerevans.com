@@ -108,18 +108,18 @@ Paginate = 15
     weight = 3
 
   [[menu.footer]]
-    name = "StackOverflow"
-    url = "https://stackoverflow.com/users/2319844/sumner-evans"
+    name = "Twitch"
+    url = "https://www.twitch.tv/sumnerevans"
     weight = 4
-
-  [[menu.footer]]
-    name = "LinkedIn"
-    url = "https://www.linkedin.com/in/sumnerevans"
-    weight = 5
 
   [[menu.footer]]
     name = "YouTube"
     url = "https://www.youtube.com/channel/UCyrdRO4oJRpszr0ovN1FwBA"
+    weight = 5
+
+  [[menu.footer]]
+    name = "StackOverflow"
+    url = "https://stackoverflow.com/users/2319844/sumner-evans"
     weight = 6
 
   [[menu.footer]]
@@ -128,6 +128,11 @@ Paginate = 15
     weight = 7
 
   [[menu.footer]]
-    name = "Twitch"
-    url = "https://www.twitch.tv/sumnerevans"
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/sumnerevans"
     weight = 8
+
+  [[menu.footer]]
+    name = "Liberapay"
+    url = "https://liberapay.com/sumner"
+    weight = 9
