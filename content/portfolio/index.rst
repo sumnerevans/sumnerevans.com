@@ -25,9 +25,11 @@ Experience
     * Implementing ingestion of the ``ifa_type`` field in OpenRTB requests.
     * Implementing many of the frontend features for Connected TV planning.
 
-|csm|_ -- Instructor (Advanced Computer Architecture) -- Starting January 2021
-    I will be teaching *CSCI 564 Advanced Computer Architecture* this coming
-    Spring 2021 semester.
+|csm|_ -- Instructor (Advanced Computer Architecture) -- January 2021 - Present
+    I am teaching *CSCI 564 Advanced Computer Architecture* this Spring 2021
+    semester. Topics that the class cover include: performance analysis, cache,
+    virtual memory, pipelining, branch prediction, out-of-order execution,
+    and multiprocessors.
 
 |csm|_ -- Instructor (Programming Languages) -- August 2020 - December 2020
     I taught a section of *CSCI 400 Principles of Programming Languages* in
