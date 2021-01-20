@@ -1,8 +1,8 @@
 ---
-Title: Analysys and reflections on "The Obamacare marketplaces aren't in a death spiral"
+Title: Analysis and reflections on "The Obamacare marketplaces aren't in a death spiral"
 Date: 2017-05-21T21:51:00-0600
 Categories: [Politics]
-Tags: [ObamaCare]
+Tags: [Obamacare]
 ---
 
 I recently read an interesting article from FiveThirtyEight about the state of
