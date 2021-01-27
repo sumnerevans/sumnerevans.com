@@ -56,40 +56,46 @@ Paginate = 15
     weight = 2
 
   [[menu.main]]
+    identifier = "teaching"
+    name = "Teaching"
+    url = "/teaching/"
+    weight = 3
+
+  [[menu.main]]
     identifier = "gear"
     name = "Gear"
     url = "/gear/"
-    weight = 3
+    weight = 4
 
   [[menu.main]]
     identifier = "portfolio"
     name = "Portfolio"
     url = "/portfolio/"
-    weight = 4
+    weight = 5
 
   [[menu.main]]
     identifier = "posts"
     name = "Posts"
     url = "/posts/"
-    weight = 5
+    weight = 6
 
   [[menu.main]]
     identifier = "categories"
     name = "Categories"
     url = "/categories/"
-    weight = 6
+    weight = 7
 
   [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
-    weight = 7
+    weight = 8
 
   [[menu.main]]
     identifier = "rss"
     name = "RSS"
     url = "/index.xml"
-    weight = 8
+    weight = 9
 
 # Footer
   [[menu.footer]]
