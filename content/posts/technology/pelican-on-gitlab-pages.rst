@@ -35,7 +35,7 @@ Currently, it takes about 2-3 minutes for it to deploy after I commit a change.
 In this article, I'm going to walk you through how to set up the deployment
 pipeline to get your site deploying on GitLab Pages.
 
-.. _blog post: ../2017-09-11-pelican-auto-deploy-github-pages
+.. _blog post: {{<ref "./pelican-on-github-pages">}}
 
 
 .. admonition:: Prerequisites

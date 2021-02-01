@@ -110,7 +110,7 @@ theme for this website.
 
    .. image:: ./images/2019-02-24-second-place.jpg
       :alt: My team winning Second Place
-      :target: ../../hackathons/2019-02-24-hackcu-v
+      :target: {{<ref "../../hackathons/hackcu-v">}}
       :align: center
 
    I use this dimming effect in light mode as well (but with only 90% opacity

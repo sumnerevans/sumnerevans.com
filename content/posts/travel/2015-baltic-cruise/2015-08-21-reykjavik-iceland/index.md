@@ -24,7 +24,6 @@ Flood. I mean, the Bible does say that the “fountains of the great deep burst
 forth” (Gen. 7:11 ESV).  Anyway, back to what we did.
 
 [![Geothermal Vents](./images/iceland4.jpg "Geothermal Vents")](./images/iceland4.jpg)
-*Geothermal Vents*
 
 We continued driving through beautiful scenery and after about an hours ride, we
 stopped at a place near a large lake. This location was the seat of government
@@ -36,13 +35,13 @@ was filmed close by. (I'm not saying this because I watch/endorse *Game of
 Thrones*, I just had already thought that it was a great place for film and she
 confirmed that when she mentioned *Game of Thrones*.)
 
-[![Beautiful scenery](./images/iceland5.jpg)](./images/iceland5.jpg)
+[![Beautiful scenery](./images/iceland5.jpg "Beautiful scenery")](./images/iceland5.jpg)
 
 We then rode to a beautiful waterfall, the biggest in Iceland (I think).  At
 this stop we also ate lunch. Mom and I both tried the traditional Icelandic lamb
 soup. I thought it was pretty good.
 
-[![Waterfall](./images/iceland6.jpg)](./images/iceland6.jpg)
+[![Waterfall](./images/iceland6.jpg "Waterfall")](./images/iceland6.jpg)
 
 Then we rode to the Geyser area. The first recorded discovery of a geyser was
 the main geyser in the area. It was named Geyser and all other geysers are named
@@ -57,7 +56,8 @@ of the water.
 
 <center>
 <a href="./images/iceland-geyser.jpg">
-  <img alt="Geyser" src="./images/iceland-geyser.jpg" />
+  <img alt="Geyser" src="./images/iceland-geyser.jpg" /><br />
+  Geyser
 </a>
 </center>
 

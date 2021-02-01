@@ -25,6 +25,7 @@ pkgs.mkShell {
     docutils
     git
     hugo
+    linkchecker
     openssh
     python38Packages.pygments
     rnix-lsp
