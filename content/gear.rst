@@ -68,7 +68,8 @@ Accessories
 
 - **Webcam:** `Logitech HD Pro Webcam C920 <logitech_>`_
 
-- **USB Splitter:** `UGREEN USB 3.0 Sharing Switch Selector <ugreen_>`_
+- **USB Splitter (4x4):** `CableMatters 4 Port USB 3.0 Switch Hub
+  <cablematters_>`_
 
 
 Mobile Devices
@@ -108,4 +109,4 @@ Other Electronics
 .. _audioengine-a2plus: https://www.amazon.com/dp/B010OIVSDA
 .. _pixelbuds: https://store.google.com/product/google_pixel_buds
 .. _logitech: https://www.amazon.com/dp/B006JH8T3S
-.. _ugreen: https://www.amazon.com/dp/B01N6GD9JO
+.. _cablematters: https://www.amazon.com/dp/B083JKDNRJ
