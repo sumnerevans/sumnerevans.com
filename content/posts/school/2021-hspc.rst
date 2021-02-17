@@ -17,15 +17,7 @@ also hosted a live broadcast during the competition with another CS@Mines alum,
 commentary on the competition, host interviews with problem authors, and talk to
 former HSPC and ICPC contestants.
 
-.. raw:: html
-
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/1-W1Jh2ZibI"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+{{< youtube id="1-W1Jh2ZibI" >}}
 
 .. _icpc: https://icpc.baylor.edu/
 .. _hspc2019: {{< ref "./2019-hspc" >}}
@@ -127,15 +119,7 @@ are likely many alternative ways to solve each of these problems.
 Slightly less detailed solution sketches were presented at the closing
 ceremonies which can be viewed below.
 
-.. raw:: html
-
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/-7Zf7zbDpxI"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+{{< youtube id="-7Zf7zbDpxI" >}}
 
 A - M-Climb
 -----------
@@ -157,15 +141,7 @@ M because each rock requires 1 litre of paint.
 
 You can watch an interview with the problem author here:
 
-.. raw:: html
-
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/A8u67MRyuEo"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+{{< youtube id="A8u67MRyuEo" >}}
 
 B - 13 Floors
 -------------
@@ -183,15 +159,7 @@ the number.
 
 You can watch an interview with the problem author here:
 
-.. raw:: html
-
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/H3uyK2qFfA0"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+{{< youtube id="H3uyK2qFfA0" >}}
 
 C - Rolling the Dice
 --------------------
@@ -219,15 +187,7 @@ split, you have to convert all of the strings to integers, and then the solution
 
 You can watch an interview with the problem author here:
 
-.. raw:: html
-
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/yZa3WKo6RW4"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+{{< youtube id="yZa3WKo6RW4" >}}
 
 D - Tall Enough
 ---------------
@@ -314,15 +274,7 @@ to avoid indexing mistakes, especially along the edges of the grid.
 
 You can watch an interview with the problem author here:
 
-.. raw:: html
-
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/1ok8sB7JO_8"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+{{< youtube id="1ok8sB7JO_8" >}}
 
 H - Powering Teslopolis
 -----------------------
@@ -342,15 +294,7 @@ powered. It is important not to go out-of-bounds when
 
 You can watch an interview with the problem author here:
 
-.. raw:: html
-
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/8kF9dFtv4Qk"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+{{< youtube id="8kF9dFtv4Qk" >}}
 
 J - Quadratic Autopilot
 -----------------------
@@ -428,15 +372,7 @@ gone, you should be left with a single number.
 
 You can watch an interview with the problem author here:
 
-.. raw:: html
-
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/bVdkmqvTCuI"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+{{< youtube id="bVdkmqvTCuI" >}}
 
 M - Delivery Driver
 -------------------
@@ -490,15 +426,7 @@ There are two main ways to make this cache:
 
 You can watch an interview with the problem author here:
 
-.. raw:: html
-
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/r2nU-A74doQ"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+{{< youtube id="r2nU-A74doQ" >}}
 
 
 .. [1] https://en.wikipedia.org/wiki/Dynamic_programming

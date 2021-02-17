@@ -136,15 +136,7 @@ required to determine how far away the two people on either end of the line of
 people are from each other. The equation for this is `(n - 1) \times x` because
 there are `n - 1` gaps of size `x` between the people on either end of the line.
 
-.. raw:: html
-
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/WnW_XFnU3KM"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+{{< youtube id="WnW_XFnU3KM" >}}
 
 H - Work From Home
 ------------------
@@ -161,15 +153,7 @@ the total cost of electricity. There is one additional complexity which is that
 you have to always round up if you have a fractional dollar. You never round
 down. The best way to do this is to use your language's *ceiling* function.
 
-.. raw:: html
-
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/Otau4U8M6Kk"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+{{< youtube id="Otau4U8M6Kk" >}}
 
 F - Late Larry
 --------------
@@ -198,15 +182,7 @@ formatted time.
    .. _11:27: https://youtu.be/z6uFZfZ5GWI?t=687
 
 
-.. raw:: html
-
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/z6uFZfZ5GWI"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+{{< youtube id="z6uFZfZ5GWI" >}}
 
 I - Skittles
 ------------
@@ -229,15 +205,7 @@ This problem involves two main steps:
    probably have to implement a "minimum value greater than zero in the
    dictionary" function to accomplish this.
 
-.. raw:: html
-
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/nscAF6-Q-Mo"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+{{< youtube id="nscAF6-Q-Mo" >}}
 
 C - CDOT Pathfinder
 -------------------
@@ -254,15 +222,7 @@ minimize the travel time between each city. This will likely require you to use
 nested ``for`` loops. One difficulty is making sure that you correctly pair the
 distance and average speed values together.
 
-.. raw:: html
-
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/lTcAA0ohT_g"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+{{< youtube id="lTcAA0ohT_g" >}}
 
 K - Snails
 ----------
@@ -295,15 +255,7 @@ such a data type, some of the values for the sequence will exceed the size of a
 .. |memoize| replace:: *memoize*
 .. _memoize: https://en.wikipedia.org/wiki/Memoization
 
-.. raw:: html
-
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/qt4L7XYMEqY"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+{{< youtube id="qt4L7XYMEqY" >}}
 
 J - Mountain Bike Trail
 -----------------------
@@ -343,15 +295,7 @@ rolled up into a previous group. You can use an array to store this information
 efficiently.
 
 .. TODO vid
-.. .. raw:: html
-
-..     <iframe width="560"
-..             height="315"
-..             src="https://www.youtube.com/embed/"
-..             frameborder="0"
-..             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-..             allowfullscreen>
-..     </iframe>
+.. {{< youtube id="qt4L7XYMEqY" >}}
 
 L - Magic Maze
 --------------
@@ -371,15 +315,7 @@ the actual direction to go is. Un-transform actions become trivial in this
 setup, because you can just remove the top `n` elements from the stack.
 
 .. TODO vid
-.. .. raw:: html
-
-..     <iframe width="560"
-..             height="315"
-..             src="https://www.youtube.com/embed/"
-..             frameborder="0"
-..             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-..             allowfullscreen>
-..     </iframe>
+.. {{< youtube id="qt4L7XYMEqY" >}}
 
 E - Encrypted Counting
 ----------------------
@@ -407,15 +343,7 @@ reset, and then continue to iterate through the string.
 .. _rle: https://en.wikipedia.org/wiki/Run-length_encoding
 
 .. TODO vid
-.. .. raw:: html
-
-..     <iframe width="560"
-..             height="315"
-..             src="https://www.youtube.com/embed/"
-..             frameborder="0"
-..             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-..             allowfullscreen>
-..     </iframe>
+.. {{< youtube id="qt4L7XYMEqY" >}}
 
 D - Paint Bucket
 ----------------
@@ -443,15 +371,7 @@ in whatever language you are using.
 .. _BFS: https://en.wikipedia.org/wiki/Breadth-first_search
 .. _DFS: https://en.wikipedia.org/wiki/Depth-first_search
 
-.. raw:: html
-
-    <iframe width="560"
-            height="315"
-            src="https://www.youtube.com/embed/VOOLq6ed0wI"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
+{{< youtube id="VOOLq6ed0wI" >}}
 
 B - Broken Clock
 ----------------
@@ -496,15 +416,7 @@ determining whether or not the time is valid, particularly with the one's place
 of the hours section.
 
 .. TODO vid
-.. .. raw:: html
-
-..     <iframe width="560"
-..             height="315"
-..             src="https://www.youtube.com/embed/"
-..             frameborder="0"
-..             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-..             allowfullscreen>
-..     </iframe>
+.. {{< youtube id="qt4L7XYMEqY" >}}
 
 G - Tax Calc
 ------------
@@ -535,12 +447,4 @@ This problem can be solved using an explicit stack, or using an implicit stack
 using *recursion*.
 
 .. TODO vid
-.. .. raw:: html
-
-..     <iframe width="560"
-..             height="315"
-..             src="https://www.youtube.com/embed/"
-..             frameborder="0"
-..             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-..             allowfullscreen>
-..     </iframe>
+.. {{< youtube id="qt4L7XYMEqY" >}}

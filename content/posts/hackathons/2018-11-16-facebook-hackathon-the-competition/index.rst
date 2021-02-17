@@ -259,9 +259,7 @@ You can watch our demo (and the other five finalists) here_ (our demo starts at
 
 .. _here: https://www.facebook.com/hackathon/videos/2306855209387580/
 
-.. raw:: html
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/qYet1ka1J3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{{< youtube id="qYet1ka1J3I" >}}
 
 After the demos were over, we definitely didn't think that we would win. All of
 the other finalists had amazing demos, and I would have been happy to loose to
@@ -293,9 +291,15 @@ You can watch a video of the `award ceremony here`_ (we get first at ~8:20).
 
 .. raw:: html
 
-      <iframe
-        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fhackathon%2Fvideos%2F2195929524067524%2F&show_text=0&width=560"
-        width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+   <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden">
+     <iframe
+        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fhackathon%2Fvideos%2F2195929524067524%2F&show_text=0"
+        style="position:absolute;top:0;left:0;width:100%;height:100%;border:0"
+        scrolling="no"
+        frameborder="0"
+        allowTransparency="true"
+        allowFullScreen="true"></iframe>
+   </div>
 
 .. image:: ./images/fb-award.jpg
    :target: ./images/fb-award.jpg
