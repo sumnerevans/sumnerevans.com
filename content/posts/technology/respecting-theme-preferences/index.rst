@@ -64,8 +64,10 @@ theme for this website.
           This text is very unreadable because it has <i>too</i> much contrast.
         </p>
         <p>
-          The <tt>background-color</tt> is <tt>black</tt> and the <tt>color</tt>
-          is <tt>white</tt>.
+          The <tt style="background-color: #fff3">background-color</tt> is
+          <tt style="background-color: #fff3">black</tt> and the
+          <tt style="background-color: #fff3">color</tt> is
+          <tt style="background-color: #fff3">white</tt>.
         </p>
         <p>
           All of the letters kinda run together because your brain is
@@ -78,8 +80,10 @@ theme for this website.
           This text is much more readable because the contrast is not so stark.
         </p>
         <p>
-          The <tt>background-color</tt> is <tt>#222</tt> and the <tt>color</tt>
-          is <tt>#ddd</tt>.
+          The <tt style="background-color: #ffffff18">background-color</tt> is
+          <tt style="background-color: #ffffff18">#222</tt> and the
+          <tt style="background-color: #ffffff18">color</tt> is
+          <tt style="background-color: #ffffff18">#ddd</tt>.
         </p>
         <p>
           The letters stand out on the page distinctly, but the contrast is not
