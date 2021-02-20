@@ -220,7 +220,7 @@ not present if there are any missing. There are many ways of accomplishing this,
 but one easy way is to put the characters of the input string into a *set*, then
 perform a set subtraction with a set of all of the upper-case letters. If there
 are any remaining letters, print them in sorted order. If there are no remaining
-letters, print "Alphabet Soup!".
+letters, print ``Alphabet Soup!``.
 
 See the interview with Colin on `B - 13 Floors`_.
 
@@ -236,7 +236,7 @@ I - Tic-Tac-Toe
 This problem requires you to determine which player won a tic-tac-toe game.  The
 first challenge is reading the input into a 2-D list or array. Then, once you've
 read in the input, the easiest thing to do is hard-code the 16 win
-configurations with ``if`` statements. If none of the win conditions is true,
+configurations with ``if`` statements. If none of the win conditions are met,
 then nobody has won so you should output ``N``.
 
 See the interview with Jack on `A - M-Climb`_.
@@ -251,9 +251,9 @@ F - Follow the Prize
 :Percentage of Teams: 91%
 
 For this problem, you need to keep track of which cup holds the prize in a
-variable. Then, in a loop, go through all of the swaps in order.  If at any
-point one of the cups being swapped matches your variable, you need to update
-your variable to refer to the swapped cup.
+variable. Then, in a loop, go through all of the swaps in order. If at any point
+one of the cups being swapped matches your variable, you need to update your
+variable to refer to the swapped cup.
 
 See the interview with Colin on `B - 13 Floors`_.
 
@@ -421,7 +421,7 @@ There are two main ways to make this cache:
 2. Via a technique called *memoisation* [2]_ which involves creating a
    dictionary of function inputs to function outputs. Then, at the beginning of
    the function, check to see if the value has already been computed and is in
-   the dictionary.  If it is, then return that, otherwise compute the value,
+   the dictionary. If it is, then return that, otherwise compute the value,
    store it in the dictionary, and then return the value.
 
 You can watch an interview with the problem author here:
