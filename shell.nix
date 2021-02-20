@@ -10,8 +10,8 @@
               src = self.fetchFromGitHub {
                 owner = "sumnerevans";
                 repo = "hugo";
-                rev = "e53d6eedcec5e564c089dfc087159a637cc806a3";
-                sha256 = "0f9h5cg3bhr8la19djayck2rnnr1rcnq68hjhyigp7j4fk6jj4nm";
+                rev = "6c92ca16c9cc4405f683bf1995603ca9154e30b1";
+                sha256 = "0bbv6lf5bcn7d1q7lxvnrp0494bcxmcsi2d2abxn71dmndk16vvi";
               };
             }
           );
@@ -27,9 +27,8 @@ pkgs.mkShell {
     hugo
     linkchecker
     openssh
-    python38Packages.pygments
+    python3Packages.pygments
     rnix-lsp
-    #rst2html5
     rsync
   ];
 }
