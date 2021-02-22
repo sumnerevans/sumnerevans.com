@@ -1,6 +1,6 @@
 ---
 title: Mines High School Programming Competition 2020
-date: 2020-11-29T23:09:04-06:00
+date: 2020-04-25T23:00:00-06:00
 categories: [School]
 tags: [High School Programming Competition, Competitive Programming, Mines, HSPC]
 ---

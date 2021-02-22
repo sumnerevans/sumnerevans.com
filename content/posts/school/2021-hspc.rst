@@ -1,6 +1,6 @@
 ---
 title: Mines High School Programming Competition 2021
-date: 2021-01-16T13:15:00-06:00
+date: 2021-01-13T17:48:00-06:00
 categories: [School]
 tags: [High School Programming Competition, Competitive Programming, Mines, HSPC]
 ---
