@@ -13,6 +13,32 @@ achievements. For a more concise overview, please view my resume_.
 Experience
 ==========
 
+.. raw:: html
+
+    <details open>
+      <summary>
+        <h3 style="display:inline">The Trade Desk -- Software Engineer -- June 2019</h3>
+        <span style="float:right">June 2019 - Present</span>
+      </summary>
+      <p><i>Key Technologies:</i> React JS, C#, SQL</p>
+      <p>
+        I am a member of the Connected TV engineering team. I am responsible for
+        building features related to Connected TV across the entire stack from
+        the high performance bidding systems to the client UI for advertisers.
+      </p>
+      <p>Notable projects include:</p>
+      <ul>
+        <li>
+          Implementing ingestion of the ``ifa_type`` field in OpenRTB
+          requests.
+        </li>
+        <li>
+          Implementing many of the frontend features for Connected TV
+          planning.
+        </li>
+      </ul>
+    </details>
+
 |ttd|_ -- Software Engineer -- June 2019 - Present
     *Key Technologies:* ReactJS, C#, SQL
 
@@ -20,10 +46,21 @@ Experience
     building features related to Connected TV across the entire stack from the
     high performance bidding systems to the client UI for advertisers.
 
-    Notable projects include:
+    .. raw:: html
 
-    * Implementing ingestion of the ``ifa_type`` field in OpenRTB requests.
-    * Implementing many of the frontend features for Connected TV planning.
+        <details>
+          <summary>Notable projects include</summary>
+          <ul>
+            <li>
+              Implementing ingestion of the ``ifa_type`` field in OpenRTB
+              requests.
+            </li>
+            <li>
+              Implementing many of the frontend features for Connected TV
+              planning.
+            </li>
+          </ul>
+        </details>
 
 |csm|_ -- Instructor (Advanced Computer Architecture) -- January 2021 - Present
     I am teaching *CSCI 564 Advanced Computer Architecture* this Spring 2021
