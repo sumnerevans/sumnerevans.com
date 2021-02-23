@@ -562,8 +562,8 @@ Presentations
   I gave this presentation at the Mines Linux Users Group with `Sam Sartor`_.
   We covered the background and history of filesystems and some current
   filesystems used in Linux, Windows, and macOS. We also covered some more
-  fringe filesystems like ``Btrfs`` and ``ZFS`` and network filesystems such as
-  Samba and ``sshfs`` as well as virtual filesystems such as ``proc``.
+  fringe filesystems like Btrfs and ZFS and network filesystems such as Samba
+  and sshfs as well as virtual filesystems such as ``/proc``.
 
   .. |fs| replace:: **Filesystems**
   .. _fs: https://github.com/sumnerevans/lug-filesystems
@@ -571,7 +571,7 @@ Presentations
 |ssh|_ -- February 2017
   I gave this presentation at the Mines Linux Users Group. I discussed what SSH
   is and its applications and then demonstrated how to configure it for easier
-  login and management.  Then I briefly talked about how to set up SSH on your
+  login and management. Then I briefly talked about how to set up SSH on your
   own server.
 
   .. |ssh| replace:: **SSH**
