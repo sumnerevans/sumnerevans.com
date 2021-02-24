@@ -19,7 +19,7 @@ former HSPC and ICPC contestants.
 
 {{< youtube id="1-W1Jh2ZibI" >}}
 
-.. _icpc: https://icpc.baylor.edu/
+.. _icpc: https://icpc.global/
 .. _hspc2019: {{< ref "./2019-hspc" >}}
 .. _hspc2020: {{< ref "./2020-hspc" >}}
 .. _Sam Sartor: https://samsartor.com
@@ -224,10 +224,10 @@ letters, print ``Alphabet Soup!``.
 
 See the interview with Colin on `B - 13 Floors`_.
 
-I - Tic-Tac-Toe
----------------
+I - Tic-Tac-Toe Solver
+----------------------
 
-:Description: https://mines21.kattis.com/problems/mines21.tictactoe
+:Description: https://mines21.kattis.com/problems/mines21.tictactoesolver
 :Author: Jack Garner
 :Attempts: 113
 :Correct: 44
@@ -350,7 +350,7 @@ See the interview with John on `H - Powering Teslopolis`_.
 L - Math in Another Universe
 ----------------------------
 
-:Description: https://mines21.kattis.com/problems/mines21.mathanotheruniverse
+:Description: https://mines21.kattis.com/problems/mines21.mathinanotheruniverse
 :Author: Mohammed Alnasser
 :Attempts: 105
 :Correct: 26

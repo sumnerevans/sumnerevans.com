@@ -405,7 +405,7 @@ input format such that reading in the graph would not be too difficult.
    algorithm and the name, I was able to then add in another of my favorite
    topics: Star Wars, and I did so without even mentioning any names.
 
-.. _icpc: https://icpc.baylor.edu/
+.. _icpc: https://icpc.global/
 .. _mst: https://en.wikipedia.org/wiki/Minimum_spanning_tree
 .. _graph theory: https://en.wikipedia.org/wiki/Graph_theory
 

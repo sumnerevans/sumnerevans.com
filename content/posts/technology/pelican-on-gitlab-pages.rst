@@ -14,7 +14,7 @@ tags: [Pelican, GitLab, GitLab CI/CD, GitLab Pages]
    Linode VPS.
 
    .. _Pelican: https://getpelican.com
-   .. _Hugo: https://gethugo.io
+   .. _Hugo: https://gohugo.io
    .. _GitLab: https://gitlab.com/sumner/sumnerevans.com
    .. _sourcehut: https://git.sr.ht/~sumner/sumnerevans.com
 

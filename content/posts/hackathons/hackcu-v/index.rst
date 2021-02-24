@@ -58,9 +58,9 @@ included:
 * `Accurate, Low-Energy Trajectory Mapping for Mobile Devices <ctrack_>`_
 
 .. _arraytrack: https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final51.pdf
-.. _waitz: https://ucsdwaitz.com/
+.. _waitz: https://www.waitz.io/
 .. _spotfi: https://web.stanford.edu/~skatti/pubs/sigcomm15-spotfi.pdf
-.. _ctrack:  http://db.csail.mit.edu/pubs/ctrack-cr.pdf
+.. _ctrack:  https://www.usenix.org/legacy/events/nsdi11/tech/full_papers/Thiagarajan.pdf
 
 Having done this research, we were not only confident that our idea was viable,
 but also that we would be able to point to the research in case our system was

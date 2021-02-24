@@ -13,7 +13,7 @@ Programming Contest (ICPC) <icpc_>`_. I wrote about last year's competition in
 `this post <hspc2019_>`_. This year, although I am no longer a student at Mines,
 I wrote two of the problems, and I volunteered during the competition.
 
-.. _icpc: https://icpc.baylor.edu/
+.. _icpc: https://icpc.global/
 .. _hspc2019: {{< ref "/posts/school/2019-hspc" >}}
 
 Due to the current COVID-19 lockdown, the competition was held remotely, which
