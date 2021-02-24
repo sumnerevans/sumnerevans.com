@@ -69,7 +69,7 @@ To answer the actual question though, why should you listen to me? No real
 reason, actually. I'm just someone who has some experience and some degree of
 success and I hope that you can learn from both my mistakes and my successes.
 
-.. _Xilinx: {{< ref "/portfolio#project-parqyng-lots" >}}
+.. _Xilinx: {{< ref "/portfolio#project-parqyng" >}}
 .. _MinneHack 2018: {{< ref "/portfolio#project-blockmrs" >}}
 .. _HackCU IV: {{< ref "/portfolio#project-wii-track" >}}
 .. _HackCU V: {{< ref "/posts/hackathons/hackcu-v" >}}
