@@ -17,7 +17,12 @@ also hosted a live broadcast during the competition with another CS@Mines alum,
 commentary on the competition, host interviews with problem authors, and talk to
 former HSPC and ICPC contestants.
 
-{{< youtube id="1-W1Jh2ZibI" >}}
+.. raw:: html
+
+    <details class="youtube-expander" open>
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines High School Programming Competition 2021</summary>
+      {{< youtube id="1-W1Jh2ZibI" title="CS@Mines High School Programming Competition 2021" >}}
+    </details>
 
 .. _icpc: https://icpc.global/
 .. _hspc2019: {{< ref "./2019-hspc" >}}
@@ -119,7 +124,12 @@ are likely many alternative ways to solve each of these problems.
 Slightly less detailed solution sketches were presented at the closing
 ceremonies which can be viewed below.
 
-{{< youtube id="-7Zf7zbDpxI" >}}
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Solution Sketch Presentation</summary>
+      {{< youtube id="-7Zf7zbDpxI" title="CS@Mines HSPC 2021 Solution Sketch Presentation" >}}
+    </details>
 
 A - M-Climb
 -----------
@@ -139,9 +149,12 @@ For this problem, you must multiply `m` (the number of rocks) by `n` (the cost
 of a litre of paint). This gives you the total price of paint for painting the
 M because each rock requires 1 litre of paint.
 
-You can watch an interview with the problem author here:
+.. raw:: html
 
-{{< youtube id="A8u67MRyuEo" >}}
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Jack Garner (Contest Organizer and Problem Author)</summary>
+      {{< youtube id="A8u67MRyuEo" title="CS@Mines HSPC 2021 Interview with Jack Garner (Contest Organizer and Problem Author)" >}}
+    </details>
 
 B - 13 Floors
 -------------
@@ -157,9 +170,12 @@ using an ``if`` statement to determine if the given number is greater than or
 equal to 13. If it is, then print the number plus one. If it is not, then print
 the number.
 
-You can watch an interview with the problem author here:
+.. raw:: html
 
-{{< youtube id="H3uyK2qFfA0" >}}
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Colin Siles (Problem Author)</summary>
+      {{< youtube id="H3uyK2qFfA0" title="CS@Mines HSPC 2021 Interview with Colin Siles (Problem Author)" >}}
+    </details>
 
 C - Rolling the Dice
 --------------------
@@ -185,9 +201,12 @@ split, you have to convert all of the strings to integers, and then the solution
            \text{average of $X$ and $X \times Y$}
        } + \underbrace{Z}_{\text{offset by $Z$}}
 
-You can watch an interview with the problem author here:
+.. raw:: html
 
-{{< youtube id="yZa3WKo6RW4" >}}
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Adam Sandstedt (Problem Author)</summary>
+      {{< youtube id="yZa3WKo6RW4" title="CS@Mines HSPC 2021 Interview with Adam Sandstedt (Problem Author)" >}}
+    </details>
 
 D - Tall Enough
 ---------------
@@ -203,7 +222,12 @@ the input. If any of the numbers are less than 48, then ``False`` should be
 printed. If all of the numbers are greater than or equal to 48, then ``True``
 should be printed.
 
-See the interview with Jack on `A - M-Climb`_.
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Jack Garner (Contest Organizer and Problem Author)</summary>
+      {{< youtube id="A8u67MRyuEo" title="CS@Mines HSPC 2021 Interview with Jack Garner (Contest Organizer and Problem Author)" >}}
+    </details>
 
 G - Alphabet Soup
 -----------------
@@ -222,7 +246,12 @@ perform a set subtraction with a set of all of the upper-case letters. If there
 are any remaining letters, print them in sorted order. If there are no remaining
 letters, print ``Alphabet Soup!``.
 
-See the interview with Colin on `B - 13 Floors`_.
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Colin Siles (Problem Author)</summary>
+      {{< youtube id="H3uyK2qFfA0" title="CS@Mines HSPC 2021 Interview with Colin Siles (Problem Author)" >}}
+    </details>
 
 I - Tic-Tac-Toe Solver
 ----------------------
@@ -239,7 +268,12 @@ read in the input, the easiest thing to do is hard-code the 16 win
 configurations with ``if`` statements. If none of the win conditions are met,
 then nobody has won so you should output ``N``.
 
-See the interview with Jack on `A - M-Climb`_.
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Jack Garner (Contest Organizer and Problem Author)</summary>
+      {{< youtube id="A8u67MRyuEo" title="CS@Mines HSPC 2021 Interview with Jack Garner (Contest Organizer and Problem Author)" >}}
+    </details>
 
 F - Follow the Prize
 --------------------
@@ -255,7 +289,12 @@ variable. Then, in a loop, go through all of the swaps in order. If at any point
 one of the cups being swapped matches your variable, you need to update your
 variable to refer to the swapped cup.
 
-See the interview with Colin on `B - 13 Floors`_.
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Colin Siles (Problem Author)</summary>
+      {{< youtube id="H3uyK2qFfA0" title="CS@Mines HSPC 2021 Interview with Colin Siles (Problem Author)" >}}
+    </details>
 
 E - Marble Maze
 ---------------
@@ -272,9 +311,12 @@ Then, move each of the `N` marbles step-by-step through the maze according to
 the rules for each grid square, toggling the seesaw states as needed. Be careful
 to avoid indexing mistakes, especially along the edges of the grid.
 
-You can watch an interview with the problem author here:
+.. raw:: html
 
-{{< youtube id="1ok8sB7JO_8" >}}
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Sam Sartor (Problem Author)</summary>
+      {{< youtube id="1ok8sB7JO_8" title="CS@Mines HSPC 2021 Interview with Sam Sartor (Problem Author)" >}}
+    </details>
 
 H - Powering Teslopolis
 -----------------------
@@ -292,9 +334,12 @@ alternatives, the simplest option is to create an if statement for each
 neighbor. If any neighbors are power cells, then the cell you're looking at is
 powered. It is important not to go out-of-bounds when
 
-You can watch an interview with the problem author here:
+.. raw:: html
 
-{{< youtube id="8kF9dFtv4Qk" >}}
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with John Henke (Problem Author)</summary>
+      {{< youtube id="8kF9dFtv4Qk" title="CS@Mines HSPC 2021 Interview with John Henke (Problem Author)" >}}
+    </details>
 
 J - Quadratic Autopilot
 -----------------------
@@ -345,7 +390,12 @@ in front. Once you've found the square you were looking for, you can stop adding
 moves to the queue, but it is important to finish processing whatever is still
 left in the queue so you get all the paths!
 
-See the interview with John on `H - Powering Teslopolis`_.
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with John Henke (Problem Author)</summary>
+      {{< youtube id="8kF9dFtv4Qk" title="CS@Mines HSPC 2021 Interview with John Henke (Problem Author)" >}}
+    </details>
 
 L - Math in Another Universe
 ----------------------------
@@ -370,9 +420,12 @@ gone, you should be left with a single number.
    String* found and enabled them to solve this problem 34 minutes into the
    competition.
 
-You can watch an interview with the problem author here:
+.. raw:: html
 
-{{< youtube id="bVdkmqvTCuI" >}}
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Mohammed Alnasser (Problem Author)</summary>
+      {{< youtube id="bVdkmqvTCuI" title="CS@Mines HSPC 2021 Interview with Mohammed Alnasser (Problem Author)" >}}
+    </details>
 
 M - Delivery Driver
 -------------------
@@ -424,10 +477,12 @@ There are two main ways to make this cache:
    the dictionary. If it is, then return that, otherwise compute the value,
    store it in the dictionary, and then return the value.
 
-You can watch an interview with the problem author here:
+.. raw:: html
 
-{{< youtube id="r2nU-A74doQ" >}}
-
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Sumner Evans (Problem Author)</summary>
+      {{< youtube id="r2nU-A74doQ" title="CS@Mines HSPC 2021 Interview with Sumner Evans (Problem Author)" >}}
+    </details>
 
 .. [1] https://en.wikipedia.org/wiki/Dynamic_programming
 .. [2] https://en.wikipedia.org/wiki/Memoize

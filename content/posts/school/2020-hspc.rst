@@ -136,7 +136,12 @@ required to determine how far away the two people on either end of the line of
 people are from each other. The equation for this is `(n - 1) \times x` because
 there are `n - 1` gaps of size `x` between the people on either end of the line.
 
-{{< youtube id="WnW_XFnU3KM" >}}
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;Mines HSPC 2020 Problem A: Flatter Land Solution and Explanation</summary>
+      {{< youtube id="WnW_XFnU3KM" title="Mines HSPC 2020 Problem A: Flatter Land Solution and Explanation" >}}
+    </details>
 
 H - Work From Home
 ------------------
@@ -153,7 +158,12 @@ the total cost of electricity. There is one additional complexity which is that
 you have to always round up if you have a fractional dollar. You never round
 down. The best way to do this is to use your language's *ceiling* function.
 
-{{< youtube id="Otau4U8M6Kk" >}}
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;Mines HSPC 2020 Problem H: Work From Home Solution and Explanation</summary>
+      {{< youtube id="Otau4U8M6Kk" title="Mines HSPC 2020 Problem H: Work From Home Solution and Explanation" >}}
+    </details>
 
 F - Late Larry
 --------------
@@ -181,8 +191,12 @@ formatted time.
 
    .. _11:27: https://youtu.be/z6uFZfZ5GWI?t=687
 
+.. raw:: html
 
-{{< youtube id="z6uFZfZ5GWI" >}}
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;Mines HSPC 2020 Problem F: Late Larry Solution and Explanation</summary>
+      {{< youtube id="z6uFZfZ5GWI" title="Mines HSPC 2020 Problem F: Late Larry Solution and Explanation" >}}
+    </details>
 
 I - Skittles
 ------------
@@ -205,7 +219,12 @@ This problem involves two main steps:
    probably have to implement a "minimum value greater than zero in the
    dictionary" function to accomplish this.
 
-{{< youtube id="nscAF6-Q-Mo" >}}
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;Mines HSPC 2020 Problem I: Skittles Solution and Explanation</summary>
+      {{< youtube id="nscAF6-Q-Mo" title="Mines HSPC 2020 Problem I: Skittles Solution and Explanation" >}}
+    </details>
 
 C - CDOT Pathfinder
 -------------------
@@ -222,7 +241,12 @@ minimize the travel time between each city. This will likely require you to use
 nested ``for`` loops. One difficulty is making sure that you correctly pair the
 distance and average speed values together.
 
-{{< youtube id="lTcAA0ohT_g" >}}
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;Mines HSPC 2020 Problem C: CDOT Pathfinder Solution and Explanation</summary>
+      {{< youtube id="lTcAA0ohT_g" title="Mines HSPC 2020 Problem C: CDOT Pathfinder Solution and Explanation" >}}
+    </details>
 
 K - Snails
 ----------
@@ -255,7 +279,12 @@ such a data type, some of the values for the sequence will exceed the size of a
 .. |memoize| replace:: *memoize*
 .. _memoize: https://en.wikipedia.org/wiki/Memoization
 
-{{< youtube id="qt4L7XYMEqY" >}}
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;Mines HSPC 2020 Problem K: Snails Solution and Explanation</summary>
+      {{< youtube id="qt4L7XYMEqY" title="Mines HSPC 2020 Problem K: Snails Solution and Explanation" >}}
+    </details>
 
 J - Mountain Bike Trail
 -----------------------
@@ -371,7 +400,12 @@ in whatever language you are using.
 .. _BFS: https://en.wikipedia.org/wiki/Breadth-first_search
 .. _DFS: https://en.wikipedia.org/wiki/Depth-first_search
 
-{{< youtube id="VOOLq6ed0wI" >}}
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;Mines HSPC 2020 Problem D: Paint Bucket Solution and Explanation</summary>
+      {{< youtube id="VOOLq6ed0wI" title="Mines HSPC 2020 Problem D: Paint Bucket Solution and Explanation" >}}
+    </details>
 
 B - Broken Clock
 ----------------

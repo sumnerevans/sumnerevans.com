@@ -259,7 +259,12 @@ You can watch our demo (and the other five finalists) here_ (our demo starts at
 
 .. _here: https://www.facebook.com/hackathon/videos/2306855209387580/
 
-{{< youtube id="qYet1ka1J3I" >}}
+.. raw:: html
+
+    <details class="youtube-expander" open>
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines Demo at Facebook Global Hackathon Finals</summary>
+      {{< youtube id="qYet1ka1J3I" title="CS@Mines Demo at Facebook Global Hackathon Finals" >}}
+    </details>
 
 After the demos were over, we definitely didn't think that we would win. All of
 the other finalists had amazing demos, and I would have been happy to loose to
