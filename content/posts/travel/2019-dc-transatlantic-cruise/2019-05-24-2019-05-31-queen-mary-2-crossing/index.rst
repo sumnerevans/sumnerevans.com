@@ -9,10 +9,10 @@ tags: [Cruise, Queen Mary 2, WWII, Veterans]
     :class: strike
 
 Instead of giving you a day-by-day on what we did on the crossing (I was told
-that it is *not* a cruise because that's only lowly peasants would go on a
-cruise), I'm going to just talk about some of the highlights and make some
-observations about my time on board the Queen Mary 2. We didn't stop in any
-ports, so it was just what we did on board.
+that it is *not* a cruise because only lowly peasants would go on a cruise), I'm
+going to just talk about some of the highlights and make some observations about
+my time on board the Queen Mary 2. We didn't stop in any ports, so it was just
+what we did on board.
 
 WWII Veteran Presentations
 ==========================
@@ -22,9 +22,10 @@ Generations Foundation*, a group which helps tell the stories of WWII veterans,
 was on board with 21 WWII veterans. The Cunard Cruise Line and the Greatest
 Generations foundation had coordinated events every morning where one or two of
 the veterans were interviewed by a host and were able to tell their stories
-about WWII. The host was a man from local television in Denver, so it was funny
-seeing him in person. In addition to the host, there were a few Vietnam Veteran
-"escorts" who helped the WWII veterans throughout the cruise.
+about WWII. The host was a man from a local television station in Denver, so it
+was funny seeing him in person. In addition to the host, there were a few
+Vietnam War veteran "escorts" who helped the WWII veterans throughout the
+cruise.
 
 .. raw:: html
 
@@ -97,43 +98,42 @@ it ten times worse". Another one said that "the main omission was the body parts
 strewn across the beach and in the water". Hearing their accounts gave me a much
 greater appreciation for the slaughter that happened on the beaches of Normandy.
 
-One of the veterans story was especially moving to me. It was Frank Divita, a
-man from New York City. He had a distinct New York accent, and in another life
-could have easily played the tough New York organized crime gangster in a movie
-(or in real life, for that matter). But his tough guy appearance melted away
-quickly when he began talking about his experiences in the war, specifically on
-D-Day. He was a Marine on one of the landing craft (LCMs) that took men to the
-shores on D-Day. His job was to lower the ramp to let the men out, but also let
-the German machine gun bullets in. He had moved to this position after his
-crewmate who was originally in that role had been killed. He talked about
-hearing the bullets hitting the front of the craft and freezing when he was
-supposed to lower the ramp. As soon as he lowered it, machine gun fire rained
-in. The two men next to him were hit immediately. He related his fear that he
-would be next. I think that Frank mentioned that one of the wounded beside him
-actually survived, despite taking multiple bullets. The other one was fatally
-wounded. As Frank talked about him, you could tell that he became very
-emotional. He talked about how the man was really no more than a boy, maybe 18
-or 19 years old. As the boy lay on the floor of the LCM, he cried out for his
-mother. Frank said a prayer over him, and administered some morphine. "And
-then,", said Frank, clearly having a hard time getting the words out, "he
-died.". Watching this man, now in his 90s, who looked like your typical New York
-City tough-guy, nearly breaking down as he described what had happened to him
-three-quarters of a century ago was very impactful. I will never forget his
-story.
+One veteran's story was especially moving to me. It was Frank Divita, a man from
+New York City. He had a distinct New York accent, and in another life could have
+easily played the tough New York organized crime gangster in a movie (or in real
+life, for that matter). But his tough guy appearance melted away quickly when he
+began talking about his experiences in the war, specifically on D-Day. He was a
+Marine on one of the landing craft (LCMs) that took men to the shores on D-Day.
+His job was to lower the ramp to let the men out, but also let the German
+machine gun bullets in. He had moved to this position after his crewmate who was
+originally in that role had been killed. He talked about hearing the bullets
+hitting the front of the craft and freezing when he was supposed to lower the
+ramp. As soon as he lowered it, machine gun fire rained in. The two men next to
+him were hit immediately. He related his fear that he would be next. I think
+that Frank mentioned that one of the wounded beside him actually survived,
+despite taking multiple bullets. The other one was fatally wounded. As Frank
+talked about him, you could tell that he became very emotional. He talked about
+how the man was really no more than a boy, maybe 18 or 19 years old. As the boy
+lay on the floor of the LCM, he cried out for his mother. Frank said a prayer
+over him, and administered some morphine. "And then,", said Frank, clearly
+having a hard time getting the words out, "he died.". Watching this man, now in
+his 90s, who looked like your typical New York City tough-guy, nearly breaking
+down as he described what had happened to him three-quarters of a century ago
+was very impactful. I will never forget his story.
 
 Making Some New Friends
 =======================
 
 On a lighter note, I met a bunch of people and made some new friends. Mom and I
-were at a table with two other couples. One was from England, and one was from
-Sweden originally, but now live in California. The Swedish couple were heading
-over for the summer to their home in Sweden, and the couple from England were
-heading back home after having gone the other direction on the Queen Mary 2 last
-week. Both of the men were retired engineers. It seemed like quite a few of the
-people that we met were engineers, and mom and I decided that the reason for
-that was that engineers tend to make enough money to live comfortably and go on
-cruises, but not enough money to be in the large suites at the front of the boat
-with their own, more exclusive dining room.
+were at a table with two couples. One was from England, and one was from Sweden
+originally, but now live in California. The Swedish couple were heading over for
+the summer to their home in Sweden, and the couple from England were heading
+back home after having gone the other direction on the Queen Mary 2 last week.
+Both of the men were retired engineers. It seemed like quite a few of the people
+that we met were engineers, and mom and I decided that the reason for that was
+that engineers tend to make enough money to live comfortably and go on cruises,
+but not enough money to be in the large suites at the front of the boat with
+their own, more exclusive dining room.
 
 I was initially worried that I would be the only one on board under 45, but
 luckily I was proven wrong almost immediately. Before we even left New York, I
@@ -208,22 +208,25 @@ his "support" to them. They accepted. He moved to Lisbon (on the German's dime)
 and began to send the Germans information about the British. He had never been
 to the UK, so his main sources of intelligence were what he read in British
 newspapers and at in the library in Lisbon. He began to build out a fake network
-of sup-agents who "fed" him information that he then forwarded on to the
+of sub-agents who "fed" him information that he then forwarded on to the
 Germans. Eventually, the British took notice of GARBO's potential as a double
 agent and had him moved to London where he continued to build out his "network"
 of spies. Despite many "setbacks" that GARBO faced (such as one of his "agents"
-falling ill and dying conveniently right before a massive troop movement), his
+conveniently falling ill and dying right before a massive troop movement), his
 intelligence was so "valuable" to the Germans that they did not attempt to set
-up any other spy networks. (The Germans were so saddened by the death of the
-fictitious sub-agent, that they gave his wife a pension, which GARBO took for
-himself.)
+up any other spy networks. (In fact, the Germans were so saddened by the death
+of the fictitious sub-agent, that they gave his wife a pension, which GARBO took
+for himself.)
 
 GARBO's biggest achievement was his crucial role in Operation Fortitude which
 successfully deceived the German High Command, all the way up to Hitler himself,
 into believing that the Normandy Invasion was a diversion, and that the *real*
 landing would occur in the Pas-de-Calais. GARBO became so trusted by the Germans
 that even after they had lost the war, GARBO (known by the Germans as *Alaric*)
-was awarded the Iron Cross for his service to the Third Reich.
+was awarded the Iron Cross for his service to the Third Reich. GARBO also was
+awarded a Most Excellent Order of the British Empire (MBE) by Great Britain for
+his contribution to the war effort on the allied side. He is likely the only
+person to have received high honours from both sides during WWII.
 
 The other talk was about the Special Relationship between 10 Downing and the
 White House. The basic gist of it was describing the way that American and
@@ -233,7 +236,7 @@ anecdotes that he talked about highlight the cooperation very well.
 
 First, during the Cold War, the British were unable to fund the technological
 developments required for intercepting and deciphering Soviet radio signals
-which bounced of off the ionosphere. The Americans did, however. The problem was
+which bounced off of the ionosphere. The Americans did, however. The problem was
 that intercepting those signals which bounced off of the ionosphere required
 receivers to be placed in specific locations on the globe, locations where the
 Americans had no presence. The British, however, at this time still had a

@@ -89,8 +89,9 @@ project during field session a couple summers ago (Reece did all of the UI
 stuff, so I only ever delt with a bit of systems-level stuff with ``adb``).
 Fisher had done one super simple Android app in the past, and Jack was the most
 experienced of us all having actually created an app 6 years ago when he was in
-8th grade. We also decided to use Kotlin (which none of us had any experience
-with), and since it's so new, none of us had any experience with ARCore either.
+8th grade. We also decided we would use Kotlin (which none of us had any
+experience with), and since it's so new, none of us had any experience with
+ARCore either.
 
 .. _Wireless Debugging: {{< ref "/portfolio#project-wireless-debugging" >}}
 
@@ -125,17 +126,17 @@ suitable for use in the app.
 
 By midnight on Thursday, Sam and Fisher had connected their pieces together to
 create a proof-of-concept which used GPS and the hard-coded data to locate the
-user in the building.  It was far from done, but we had something that (if
+user in the building. It was far from done, but we had something that (if
 everything else failed) we could demo.
 
 There were three main features that were missing at that point.
 
 1. The map did not rotate itself correctly as you walked around the building,
-2. GPS data was slow, we only got a new location every 5 seconds.
+2. GPS data was slow; we only got a new location every 5 seconds.
 3. It only worked with a single, hard-coded image.
 
 Sam had theorized that he could create and solve a linear system of equations to
-solve for the position of the user just using the location of walls in the AR
+determine the position of the user just using the location of walls in the AR
 space. If he could do that, then the first two problems would be solved
 immediately. Two components would be necessary: an interface for lining up walls
 in the AR space with walls in the map-space; and the actual math for calculating
@@ -165,7 +166,7 @@ correctly using compass data, but we were unsuccessful until we retrieved Sam
 from the couch he was sleeping on. Sam came over and, as if he had some
 revelation during his short sleep, paired up with Jack and wrote a ton of code
 that solved the linear system! Sam was using hard-coded wall data, and as soon
-as he got it working, the map oriented correctly and the red marker follow the
+as he got it working, the map oriented correctly and the red marker followed the
 person without even needing to use the compass or GPS for orientation and
 location! None of that was completed until there was less than an hour to go in
 the competition.
@@ -218,10 +219,10 @@ Facebook. If you made it to the top six, you were given three minutes to
 present.
 
 Preparations included figuring out how to allocate the time to various parts of
-the demo, who would talk about what, what keywords to include (gotta have all
-the buzzwords if you want to win), how we were going to stand...  basically
-everything. We only ran through the full demo a few times before we had to do
-our demo.
+the demo, who would talk about each aspect of the project, what keywords to
+include (gotta have all the buzzwords if you want to win), how we were going to
+stand...  basically everything. We only ran through the full demo a few times
+before we had to do our demo.
 
 The actual demos were amazing. It was a really neat environment because we got
 to watch all of the other demos as well! Everyone's projects were great, and I
@@ -240,7 +241,7 @@ had a chance of winning.
 
 Thus, the next hour was another frantic hour of preparation. We had to figure
 out how to screenshare from the phone to the projectors, and hook it all up with
-the Facebook live stream that they were going to do for the final demos.  The AV
+the Facebook live stream that they were going to do for the final demos. The AV
 guys from Facebook were super helpful, and got us hooked up with a great setup.
 
 We decided to tweak our demo to better highlight the features of our app. To do
@@ -284,7 +285,7 @@ way possible. He started out by saying "this product really brought a holistic
 view of the world to us". I thought, well, that's us. Then he said, "it used
 very impressive technology". I was thinking, great, that's really us! And then
 he said "and a great use of ML". At that point, I realized that wasn't
-describing our app anymore. The second place prize went to Hedwig, a team from
+describing our app any more. The second place prize went to Hedwig, a team from
 Melbourn, Australia. Their application was very impressive.
 
 Then they called us up for the first-place prize! The prize was $10,000 for the
@@ -351,6 +352,5 @@ events. I have copied his words below.*
 
     Its a great piece of storytelling, you don't have to change it. I'm just
     setting the record straight that I can not, in fact, pull a fully
-    interactive multivariate solver out of my [butt] in an hour. Much less when
-    I'm operating on an hour of sleep.
-
+    interactive multivariate solver out of my ass in an hour. Much less when I'm
+    operating on an hour of sleep.

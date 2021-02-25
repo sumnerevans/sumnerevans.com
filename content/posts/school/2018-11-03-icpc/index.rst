@@ -14,15 +14,15 @@ Today I competed in the ICPC Rocky Mountain Regionals at CSU.
 
 ICPC is the International Collegiate Programming Contest. It's an algorithmic
 competition for college students. I've competed in ICPC three times now, but
-today was is the best my team has ever done. But I'm getting ahead of myself.
-Some background on what we did.
+today was the best my team has ever done. But I'm getting ahead of myself. Some
+background on what we did.
 
 It all started Friday afternoon. I'd just finished up my phone interview with
 Google at about 15:15, so I went downstairs to ALAMODE to find Jack Garner. Then
 we headed in to Denver to pick us Sam Sartor who was at his job. Sidenote,
 driving in downtown Denver is terrible. We had to go around the block multiple
-times, just to find him. Anyway, we finally caught up to him and drove up to
-Fort Collins (specifically the Best Western near the CSU campus). On the way, we
+times just to find him. Anyway, we finally caught up to him and drove up to Fort
+Collins (specifically the Best Western near the CSU campus). On the way, we
 stopped to get some Qdoba (we had some leftover catering trays from an event
 that had happened at school a couple of months back, and when you bring them in
 to Qdoba, they give you a free burrito).
@@ -162,11 +162,12 @@ away from getting it right), but unfortunately time expired before he was able
 to finish it.
 
 Both our submissions on **E** and **I** happened in the last hour of the
-competition when the scoreboards were frozen. Going in to the last hour, we were
-in 6th place regionally, 2nd on-site at CSU. The final standings were not
-announced until 3:30 (30 minutes after the competition ended) so the suspense
-was real! After time expired, we went around to talk to other teams so that we
-could see if anyone had solved any problems in the last hour of the competition.
+competition when the scoreboards were frozen bringing us to seven problems
+solved. Going in to the last hour, we were in 6th place regionally, 2nd on-site
+at CSU. The final standings were not announced until 3:30 (30 minutes after the
+competition ended) so the suspense was real! After time expired, we went around
+to talk to other teams so that we could see if anyone had solved any problems in
+the last hour of the competition.
 
 Competition Results
 ===================
@@ -192,14 +193,15 @@ repeat trip to ICPC World Finals which will be hosted in Porto, Portugal this
 spring.
 
 My team went into the last hour at 6th place, and managed to leapfrog Utah
-Canyonlands and Alberta Gold to get 4th place regionally.
+Canyonlands and Alberta Gold on time to get 4th place regionally.
 
 A couple of other cool things that happened:
 
 - *NP = No Problem* (Easton Bornemeier, Kristin Farris, and Matt Iverson) did
   well with 5 problems solved.
 - Mines teams were first to solve all problems except for **D** (Alberta White
-  was first). But at location, Mines teams were first to solve all problems.
+  was first). Seven firsts were due to *((+)(((+)s)m)j)*. But on location, Mines
+  teams were first to solve all problems.
 - All Mines teams solved at least one problem.
 - *The Open Sourcerers*, a team of all freshmen (Jake Vossen, Kieran Lewis, and
   Nick Redhorse) completed 4 problems for a 28th-place finish regionally and a

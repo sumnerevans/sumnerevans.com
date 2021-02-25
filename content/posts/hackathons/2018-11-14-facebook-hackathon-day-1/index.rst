@@ -12,9 +12,10 @@ way.
 We qualified for the Facebook hackathon at MHacks with our `Datanium project`_.
 Unfortunately, Robby was unable to make it to the finals since he had too many
 assignments and projects due this week. So we ended up replacing him with Jack
-Garner who I had on my HackCU team and on my ICPC team.
+Garner who I had on my HackCU team and on my `ICPC team`_.
 
 .. _Datanium project: {{< ref "/portfolio#project-datanium" >}}
+.. _ICPC team: {{< ref "../../school/2018-11-03-icpc/index.rst" >}}
 
 Facebook is paying for the entirety our trip, plane tickets, hotel rooms,
 transportation to and from the hotel, transportation from the hotel to and from
