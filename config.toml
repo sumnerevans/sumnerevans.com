@@ -25,6 +25,7 @@ Paginate = 15
   author = "Sumner Evans"
   description = "Sumner Evans' Blog and Portfolio"
   subtitle = "Software Engineer at The Trade Desk"
+  dateFmt = "2006-01-02"
 
   # Theme
   themeColorAutoDetectBrowserPreference = true
