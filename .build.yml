@@ -11,6 +11,7 @@ packages:
 sources:
   - https://git.sr.ht/~sumner/sumnerevans.com
   - https://github.com/sumnerevans/hugo.git
+  - https://git.sr.ht/~sircmpwn/openring
 secrets:
   # SSH Known Hosts
   - 5f8876fe-b2b7-44f8-8ad5-6fa9bffbc52a
@@ -30,10 +31,19 @@ tasks:
       cd hugo
       go build --tags extended  # need extended support for SCSS
 
+  - build_openring: |
+      cd openring
+      go build -o openring
+      sudo cp openring /usr/local/bin/
+
   - setup: |
       echo "cd $REPO_NAME" >> ~/.buildenv
 
   - build: |
+      /usr/local/bin/openring \
+        -S feed_urls.txt \
+        < resources/other-feeds.html.tmpl \
+        > themes/smol/layouts/partials/webring.html
       ../hugo/hugo --gc --minify
 
   - rsync: |
