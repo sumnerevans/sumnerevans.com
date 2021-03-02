@@ -5,3 +5,4 @@ https://stackoverflow.blog/feed/
 https://jakevossen.libsyn.com/rss
 http://way-cooler.org/feed.xml
 https://emersion.fr/blog/rss.xml
+https://www.joelonsoftware.com/feed/
