@@ -6,7 +6,7 @@
 # For a list of all options, see https://errata-ai.gitbook.io/vale/getting-started/styles
 extends: repetition
 message: '"%s" is repeated.'
+ignorecase: true
 level: error
-alpha: true
 tokens:
   - '[^\s]+'
