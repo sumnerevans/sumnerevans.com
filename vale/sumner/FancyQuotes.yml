@@ -1,0 +1,6 @@
+extends: existence
+message: "Don't use fancy quotes"
+level: error
+nonword: true
+tokens:
+  - '[“”]'

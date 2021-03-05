@@ -1,0 +1,15 @@
+---
+# Error: sumner.HeadingPunctuation
+# Checks for punctuation in headings
+extends: existence
+message: "Don't use end punctuation in headings."
+nonword: true
+level: error
+scope: heading
+action:
+  name: edit
+  params:
+    - remove
+    - '.?!'
+tokens:
+  - '[A-Za-z][.](?:\s|$)'

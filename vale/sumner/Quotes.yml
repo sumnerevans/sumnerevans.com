@@ -1,0 +1,6 @@
+extends: existence
+message: 'Are you sure you want the punctuation in the quote?'
+level: warning
+nonword: true
+tokens:
+  - '["“][^"”“]+[.,]["”]'

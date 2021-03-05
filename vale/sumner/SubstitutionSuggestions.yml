@@ -1,0 +1,13 @@
+---
+# Suggestion: sumner.SubstitutionSuggestions
+# Adapter from: gitlab.SubstitutionSuggestions
+extends: substitution
+message: 'Consider %s instead of "%s".'
+level: suggestion
+ignorecase: true
+swap:
+  dev: '"developer"'
+  docs: '"documentation"'
+  once that: '"after that"'
+  once the: '"after the"'
+  once you: '"after you"'

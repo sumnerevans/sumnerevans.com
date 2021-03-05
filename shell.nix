@@ -38,10 +38,12 @@ in pkgs.mkShell {
     git
     hugo
     linkchecker
+    nodePackages.htmlhint
     openring
     openssh
     python3Packages.pygments
     rnix-lsp
     rsync
+    vale
   ];
 }
