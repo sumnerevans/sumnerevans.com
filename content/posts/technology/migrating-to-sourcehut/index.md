@@ -237,8 +237,11 @@ are many more compelling features that may convince you to switch. For example:
 * the hosted wikis are git-backed and markdown powered,
 * and much more.
 
-Are you ready to give sourcehut a try? If so, head on over to https://sr.ht and
-sign up!
+What do you think? Are you ready to give sourcehut a try? If so, head on over to
+https://sr.ht and sign up! Did I forget to mention a feature of sourcehut that
+you find super useful? Is there a feature that sourcehut is missing that is
+essential to your workflow, or is there something else that I'm missing? Start a
+discussion in the comments below!
 
 [ghsponsors]: https://github.com/sponsors
 [ghsecurity]: https://github.com/features/security
