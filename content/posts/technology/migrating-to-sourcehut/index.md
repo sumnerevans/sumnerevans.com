@@ -31,14 +31,17 @@ controversial][cccontroversy] and [overtly political][ccispolitical]
 *Contributor Covenant* is a self-proclaimed LGBT activist and vocal opponent of
 meritocracies -- an essential social structure for writing and maintaining
 quality software.) Censorship is also on the rise in commercial git hosting
-platforms. For example, [GitHub took down the youtube-dl repo][ghytdl] without
-notifying the developers due to a [DMCA request by record labels][gldmca].
+platforms. For example, [GitHub took down the youtube-dl repo][ghytdl] *without
+notifying the developers* due to a [DMCA request by record labels][gldmca].
 Although GitHub [revamped their policies after that incident][ghytdlresponse],
 and claim to be on the side of developers, time will tell whether they live up
-to their promises. On the economic side, the main revenue streams for GitHub and
-GitLab come from enterprise contracts which means that they are not beholden to
-the individual users of their software. Also, since Microsoft acquired GitHub,
-they are additionally beholden to Microsoft shareholders.
+to their promises. Even if GitHub does end up defending developers, the fact
+that the project is entirely dependant on GitHub for collaboration, and GitHub
+is able to take down repos at will, is problematic. On the economic side, the
+main revenue streams for GitHub and GitLab come from enterprise contracts which
+means that they are not beholden to the individual users of their software.
+Also, since Microsoft acquired GitHub, they are additionally beholden to
+Microsoft shareholders.
 
 However, possibly one of the greatest concerns with the dominance of commercial
 git hosting services is the fact that the are not fully open source. GitHub is
