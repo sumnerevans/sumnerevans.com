@@ -24,7 +24,7 @@ emails. Here are a few:
 * **sourcehut:** https://meta.sr.ht/~sumner.pgp
 * **PGP Keyservers:** You can find my [key on a keyserver][1]. Just
   search for my email. I recommend using http://keys.gnupg.net because the MIT
-  keyserver is overloaded all the time it seems.
+  keyserver is often overloaded.
 * **Right here:**
 
   My full GPG Key ID is:

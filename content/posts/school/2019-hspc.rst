@@ -26,7 +26,8 @@ the problems in the competition (with relatively detailed solution sketches).
 Competition Highlights
 ======================
 
-**Full standings can be viewed at:** https://mines19.kattis.com/standings
+**You can view full standings for the competition at:**
+https://mines19.kattis.com/standings
 
 This year's competition was very exciting. All of the contestants at HSPC this
 year did a great job. Here are a few highlights of the competition:
@@ -131,10 +132,10 @@ F - Ski Traffic
 :Correct: 18
 :Percentage: 38%
 
-This problem requires you to read in the time, day, whether or not the weather
-is bad, whether or not it snowed, and whether or not it is a holiday. Then you
-have to multiply the time by the factors specified in the problem, depending on
-the values of the variables you read in.
+This problem requires you to read in the time, day, whether the weather is bad,
+whether it snowed, and whether it is a holiday. Then you have to multiply the
+time by the factors specified in the problem, depending on the values of the
+variables you read in.
 
 The difficulty of this problem comes from a few sources. First, you have to
 carefully read the description to make sure you understand how each of the
@@ -250,20 +251,20 @@ solving the problem under the time limit.
 The key observation you must make for this problem is that the pattern of
 availability will repeat itself after a certain amount of days. You can
 calculate the precise number of days that will be required for the pattern to
-repeat (it's the LCM of `d_1, d_2, d_3`), but it is actually not necessary to
-compute the LCM for this problem. Instead, you can just observe that the pattern
-is guaranteed to repeat at least every `\prod d_i = d_1 \times d_2 \times d_3`
-days because `\prod d_i` is guaranteed to be a multiple of
-`\text{LCM}(d_1, d_2, d_3)` (proof of this is left to the reader). We call this
-product the *period*.
+repeat (it's the least-common multiple (LCM) of `d_1, d_2, d_3`), but it is
+actually not necessary to compute the LCM for this problem. Instead, you can
+just observe that the pattern is guaranteed to repeat at least every `\prod d_i
+= d_1 \times d_2 \times d_3` days because `\prod d_i` is guaranteed to be a
+multiple of `\text{LCM}(d_1, d_2, d_3)` (proof of this is left to the reader).
+We call this product the *period*.
 
 You then need to extend the pattern for the first `\prod d_i` days forward until
 you find the `n^\text{th}` day they can play. An important detail here is that
 there are going to be some number of full repeats of the pattern, call them
 *full periods* (it could be 0), and then one partial repeat of the pattern: the
 *partial period*. Thus, we can use math to calculate the number of days taken up
-by all of the full periods, and add that to the number of days that we need to
-go into the partial period. Stated mathematically, you can use the following
+by all the full periods and add that to the number of days that we need to go
+into the partial period. Stated mathematically, you can use the following
 formula to perform the extension process:
 
 .. math::
@@ -398,11 +399,11 @@ input format such that reading in the graph would not be too difficult.
 
 .. note::
 
-   This was by far my favorite problem. I wanted to put a graph theory problem
+   This was by far my favourite problem. I wanted to put a graph theory problem
    in the competition and I had been working on this problem for nearly a year.
    I chose the algorithm and the name of the problem at the same time because if
    you say MST really fast, it kinda sounds like "misty". After I thought of the
-   algorithm and the name, I was able to then add in another of my favorite
+   algorithm and the name, I was able to then add in another of my favourite
    topics: Star Wars, and I did so without even mentioning any names.
 
 .. _icpc: https://icpc.global/

@@ -35,7 +35,8 @@ how to solve each of the problems with live code demonstrations.
 Competition Highlights
 ======================
 
-**Full standings can be viewed at:** https://mines20.kattis.com/standings
+**You can view full standings for the competition at:**
+https://mines20.kattis.com/standings
 
 This year's competition was very exciting. All of the contestants at HSPC this
 year did a great job. Here are a few highlights of the competition:

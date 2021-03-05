@@ -13,7 +13,7 @@ Collegiate Programming Contest (ICPC) <icpc_>`_. I wrote about the `2019
 <hspc2019_>`_ and `2020 <hspc2020_>`_ competitions on this blog. This year, I
 wrote one of the problems and helped with some of the administrative backend. I
 also hosted a live broadcast during the competition with another CS@Mines alum,
-`Sam Sartor`_ which can be viewed on YouTube. In the broadcast, we provide
+`Sam Sartor`_ which you can view on YouTube. In the broadcast, we provided
 commentary on the competition, host interviews with problem authors, and talk to
 former HSPC and ICPC contestants.
 
@@ -34,7 +34,7 @@ competition was held remotely. As such, we were again unable to enforce a
 no-internet rule as we are able to during on-site competitions. Luckily, the
 problems are all unique, and written by Mines students and Mines alum
 specifically for the competition which makes it very difficult to search the
-internet for answers.
+internet for answers. The the
 
 The competition saw a total of 55 teams from all around the nation, the most
 ever in a CS@Mines HSPC. The problems ranged in difficulty from a problem
@@ -49,7 +49,8 @@ the problem authors are also available.
 Competition Highlights
 ======================
 
-**Full standings can be viewed at:** https://mines21.kattis.com/standings
+**You can view full standings for the competition at:**
+https://mines21.kattis.com/standings
 
 This year's competition was very exciting. All of the contestants at HSPC this
 year did a great job. Here are a few highlights of the competition:
@@ -59,7 +60,7 @@ year did a great job. Here are a few highlights of the competition:
 * Five teams solved all thirteen of the problems.
 * The top three teams were from out-of-state.
 * River Hill High School won both first and third place. Both teams solved all
-  of the problems within the first ninety minutes.
+  of the problems in the first ninety minutes.
 * Teams from Colorado won fourth and fifth place, with Rocky Mountain High
   School taking fourth, and STEM School Highlands Ranch (winners last year)
   taking fifth.

@@ -92,25 +92,25 @@ theme for this website.
         </p>
       </div>
 
-   Using a grey for your background color rather than pure black also gives you
+   Using a grey for your background colour rather than pure black also gives you
    the option to use darker greys as accent colors. For example, for this site,
    if you turn on dark mode (you can turn it on via the links in the footer) the
-   background color for the content you are reading is ``#333`` and the text
-   color is ``#eee``. The sidebar on the left has a darker background color of
+   background colour for the content you are reading is ``#333`` and the text
+   colour is ``#eee``. The sidebar on the left has a darker background colour of
    ``#222``. This allows the sidebar to be darker than the content in both the
    light and dark themes.
 
-2. **Don't just go and change all of the colors.** Some colours can be left
-   the same or nearly the same. The link text is one example of a colour that
+2. **Don't just go and change all the colours.** Some colours can be left the
+   same or nearly the same. The link text is one example of a colour that
    doesn't change between the light and dark themes on this site.
 
 3. **Dim your images.** Most of the time, images are naturally bright content
-   which can be jarring in the middle of a dark-themed website. In order to
-   counteract that, one option that has worked well for me is to dim the images
-   by default. Then, on hover you can un-dim the images (restoring them to their
-   full brightness). In my case, I set images to have a 70% opacity when not
-   hovered, and a 100% opacity (no transparency) when it's hovered. For example,
-   see the following image:
+   which can be jarring in the middle of a dark-themed website. To counteract
+   that, one option that has worked well for me is to dim the images by default.
+   Then, on hover you can un-dim the images (restoring them to their full
+   brightness). In my case, I set images to have a 70% opacity when not hovered,
+   and a 100% opacity (no transparency) when it's hovered. For example, see the
+   following image:
 
    .. image:: ./images/2019-02-24-second-place.jpg
       :alt: My team winning Second Place
@@ -187,7 +187,7 @@ I'm just passing a lambda here for brevity.
    When you add a media query listener, it will not be called on page load, it
    will only be called when the theme actually changes. You will likely want
    your code to run both when the page loads and when the user changes their
-   theme, so I recommend extracting the theme-dependent logic out to its own
+   theme, so I recommend extracting the theme-dependant logic out to its own
    function like so:
 
    .. code:: javascript
@@ -240,7 +240,7 @@ like:
       color: white;
     }
 
-Now, if the user's color scheme preference is for dark mode *or* there is a
+Now, if the user's colour scheme preference is for dark mode *or* there is a
 ``dark-theme`` class on the ``<body>``, dark mode will be enabled. Additionally,
 if there is a ``light-theme`` class on the ``<body>``, the dark theme styles
 will not be applied, even if the browser or OS color scheme preference is set to
@@ -250,7 +250,7 @@ the dark theme.
 
    To avoid manual duplication of your CSS styles (and thus adhering to the DRY
    principle), you can use a CSS compiler such as SASS, SCSS, or LESS. For
-   example, if you use SCSS you can declare a mixin that includes all of your
+   example, if you use SCSS you can declare a mixin that includes all your
    dark-theme styles. Then, you can ``@include`` your mixin as the styles for
    both the media-query-based and class-based dark theme detection strategies.
    The example above would become:

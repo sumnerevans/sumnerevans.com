@@ -14,8 +14,13 @@ feature-packed native GTK client for Subsonic-compatible servers such as
 Airsonic_, Gonic_, and Navidrome_. Sublime Music is in beta and version 0.11.0
 is available on the AUR_ and PyPi_.
 
-`Hooked already? Check out the website! <website_>`_
-----------------------------------------------------
+.. raw:: html
+
+    <h2 style="text-align:center">
+      <a href="https://sublimemusic.app" target="_blank">
+        Hooked already? Check out the website!
+      </a>
+    </h2>
 
 .. figure:: ./images/albums.png
    :align: center
@@ -37,8 +42,8 @@ years ago, I decided to write my own Subsonic client. I have worked on Sublime
 Music on and off since then.
 
 I took design inspiration from my favourite music players including iTunes,
-Spotify, and DSub and I also followed the Gnome HIG to design the app to look
-right at home on the Linux desktop.
+Spotify, and DSub and I also followed the Gnome Human Interface Guidelines to
+design the app to look right at home on the Linux desktop.
 
 Features
 --------
@@ -76,8 +81,8 @@ Other future initiatives include:
 
 * **Support for additional backends.** Sublime Music was designed with
   extensibility in mind. Developers can use the `Adapter API`_ to implement
-  adapters for other music services such as YouTube Music. If you are interested
-  in implementing an adapter, join our `Matrix chat <matrix_>`_ to discuss!
+  adapters for other music services such as YouTube Music. If writing an adapter
+  is something that interests you, join our `Matrix chat <matrix_>`_ to discuss!
 
 * **Flatpak support.** Currently, Flatpak builds are broken due to dependency
   issues. Once these are fixed, I will try and get Sublime Music on FlatHub.
@@ -88,7 +93,10 @@ Other future initiatives include:
 Ways to Contribute
 ------------------
 
-There are many ways that you can contribute to Sublime Music.
+You can contribute to Sublime Music in many different ways, including:
+
+* **Tell your friends** about Sublime Music! Word-of-mouth recommendations are
+  the best way to spread the word.
 
 * **Join the discussion** on our `Matrix chat <matrix_>`_. Discuss ideas with,
   suggest features to, or get help from other users and developers.
@@ -105,9 +113,9 @@ There are many ways that you can contribute to Sublime Music.
   does have many rough edges, so you will likely have to fix bugs in the core
   application as well.
 
-* **Contribute bug fixes or new features** to the core application. There are
-  many bugs and features that need to be worked on. Check the `Issues
-  <issues_>`_ page for a list of things that need to be worked on.
+* **Contribute bug fixes or new features** to the core application. Sublime
+  Music has many bugs and features that you can work on (check the `Issues
+  <issues_>`_ page for a list).
 
 Credits
 -------

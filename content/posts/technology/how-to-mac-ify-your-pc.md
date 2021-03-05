@@ -51,7 +51,7 @@ of the tools that we will be using.
 4.  Once you get the link to the download, click on it to the the site
     download, click "Download Now".
 5.  Once it's downloaded, click on the .exe file to start the setup.
-6.  Click "I agree to the the terms of this license agreement" and click
+6.  Click "I agree to the terms of this license agreement" and click
     "Next".
 7.  Uncheck everything on the next page. Click "Next".
 8.  If you want to install to a different location, selected it and

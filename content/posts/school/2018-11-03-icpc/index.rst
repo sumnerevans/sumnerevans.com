@@ -5,7 +5,8 @@ categories: [School]
 tags: [ICPC, Competitive Programming, Mines]
 ---
 
-Today I competed in the ICPC Rocky Mountain Regionals at CSU.
+Today I competed in the International Collegiate Programming Contest (ICPC)
+Rocky Mountain Regionals at Colorado State University (CSU).
 
 .. figure:: ./images/2018-icpc.jpg
    :alt: CS@Mines at ICPC
@@ -43,15 +44,15 @@ back from the Cold Stone to the hotel, we got blasted with some terrible wind. I
 was carrying a whiteboard that I had brought to the practice competition, and I
 almost lost it a couple of times.
 
-At the hotel, some of us hung out in Kieran and Jake's room, and then we decided
-it was a good idea to go to bed since we had an entire programming competition
-the next day.
+At the hotel, some of us hung out in Kieran and Jake's room. After a little
+while, we decided it was a good idea to go to bed because we had an entire
+programming competition the next day.
 
 -------------------------------------------------------------------------------
 
 That brings us to today. After waking up at 7:30 and taking a quick shower, I
-went to grab some food at the hotel and then we drove the 3 minutes over to the
-CSU campus.
+went to grab some food at the hotel. Then we drove the 3 minutes over to the CSU
+campus.
 
 My team (Sam Sartor and Jack Garner) and I had brought the house. We had two
 whiteboards, 8 whiteboard markers, volumes 1-4A of Donald Knuth's *Art of
@@ -72,7 +73,7 @@ were the first to solve a problem in the entire competition.
 By this time, I'd identified the next easiest problem (Problem D) for them to
 solve. They submitted it at 24 minutes.
 
-As they were solving that problem, I went through all of the problems in the
+As they were solving that problem, I went through all the problems in the
 competition (there were 12) and determined what types of problems they were. My
 initial pass got me the following:
 
@@ -108,22 +109,22 @@ I thought they would be).
 I'd started thinking about problem **C**, and then when Sam finished **D**, we
 paired up and coded **C** while Jack worked on **G** (we saw a few teams
 completing it on the standings, so we figured it must be a fairly easy one). Our
-first solution to **C** failed on a *Time Limit Exceeded* error, but we were
-able to fix that and submit a correct solution on 54 minutes which brought us to
+first solution to **C** failed on a *Time Limit Exceeded* error. but we were
+able to fix that and submit a correct solution on 54 minutes. That brought us to
 2nd place of the teams competing at CSU with 3 problems completed.
 
-In the middle of us coding up **C**, Jack had figured out a formula for **G**
-and I told him to write up the code which we needed to use on a whiteboard (we
-fully utilized both whiteboards during the entire competition) so that Sam and I
-could finish ironing out the bugs in **C**.
+In the middle of us coding up **C**, Jack had figured out a formula for **G**. I
+told him to write up the code which we needed to use on a whiteboard (we fully
+utilized both whiteboards during the entire competition) so that Sam and I could
+finish ironing out the bugs in **C**.
 
-By the time that we were done, Jack had code on the board, and I quickly typed
-it into a Python file. Jack's code had just a couple bugs which were easy to fix
-(it was basically flawless considering he coded it up on a whiteboard). We
-submitted **G** 11 minutes later which bumped our ranking regionally, and helped
-solidify our second-place spot at CSU with 4 problems solved in the first 65
-minutes of the competition and a total time of 186 minutes (including penalty)
-minutes.
+By the time that we finished **C**, Jack had code on the board, and I quickly
+typed it into a Python file. Jack's code had just a couple bugs which were easy
+to fix (it was basically flawless considering he coded it up on a whiteboard).
+We submitted **G** 11 minutes later which bumped our ranking regionally, and
+helped solidify our second-place spot at CSU with 4 problems solved in the first
+65 minutes of the competition and a total time of 186 minutes (including
+penalty) minutes.
 
 Meanwhile, Sam had started working on **F** because it was a ray-tracing problem
 which is his thing. He'd reduced the bulk of the problem to solving a matrix
@@ -158,11 +159,11 @@ By this time, Sam had given up for the time being on **F** and started on **I**.
 He solved it, we coded it up, and it worked first time!
 
 Sam tried to work through **F**, and got extremely close (one or two edge cases
-away from getting it right), but unfortunately time expired before he was able
-to finish it.
+away from getting it right). Unfortunately time expired before he was able to
+finish it.
 
 Both our submissions on **E** and **I** happened in the last hour of the
-competition when the scoreboards were frozen bringing us to seven problems
+competition while the scoreboard was frozen bringing us to seven problems
 solved. Going in to the last hour, we were in 6th place regionally, 2nd on-site
 at CSU. The final standings were not announced until 3:30 (30 minutes after the
 competition ended) so the suspense was real! After time expired, we went around
@@ -212,7 +213,7 @@ A couple of other cool things that happened:
 - CU Boulder did not even send any teams (maybe they are still reeling after how
   badly we beat them at HackCU...)
 
-For me, the second-place finish on location, fourth-place regionally was the
+For me, the second-place finish on-location, fourth-place regionally was the
 best that my team and I had ever gotten (the previous two years, Sam and I were
 on a team with Robbie Merillat and we got 3rd on-site, 13th regionally in 2016;
 and 6th on-site, 15th regionally in 2017).

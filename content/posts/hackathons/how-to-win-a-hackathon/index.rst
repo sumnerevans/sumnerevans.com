@@ -203,8 +203,8 @@ multiple story mapping.
 Once you have a great, big, grand idea, then it's time to boil it down to a
 minimal proof-of-concept. Make sure that you don't loose track of the bigger
 picture though! (The big picture helps a lot with demos.) Determining what the
-minimal proof-of-concept is is a nontrivial problem. Here are just a couple of
-tips which might get you going in the correct direction:
+minimal proof-of-concept entails is a nontrivial problem. Here are just a couple
+of tips which might get you going in the correct direction:
 
 - Think about the *primary* user flow. What will the user have to do to
   accomplish the purpose of your application? For example, at MHacks, the main
@@ -246,7 +246,7 @@ about how to implement those features? Rule number one at a hackathon is to
 :math:`\mathcal{O}(n!)`? Most likely, you will have :math:`n < 5` anyway, and
 even factorial algorithms are fast enough. Who cares if you have to cast
 everything 100 times? If doing something nasty prevents even a quarter-hour of
-refactoring, then it's worth it; it's a hackathon after all.
+refactoring, then it's worth it. It's a hackathon after all.
 
 Rule number two, **test early, test often**. Try to have *something* working at
 all times. That way if everything goes south, you can at least save face and
@@ -288,7 +288,7 @@ fun**! Yes, it's a competition, but this is also what you enjoy doing. You are
 there to write a bunch of code, eat some junk food, and hang out with friends.
 Winning is just an added benefit.
 
-4. Things to do during hackathon demos
+4. Things to do During Hackathon Demos
 --------------------------------------
 
 In the last section, I kept mentioning demos. Why? Because they are important!
@@ -311,8 +311,8 @@ effectively, you don't win. Here are a few tips to make your demos amazing.
 
 - Demos should follow a story arc like the classic "hero's journey". Who is the
   hero? Your app! Make sure to quickly present the problem, then *pow* your app
-  solves all of your problems. Then show them *how* it does so. This *how* part
-  of the demo should take up the majority of the time. At the end, try and save
+  solves all your problems. Then show them *how* it does so. This *how* part of
+  the demo should take up the majority of the time. At the end, try and save
   time for a couple of sentences about the future of your app.
 
   Make sure you have your demo somewhat scripted (who will say what, etc.), but
@@ -350,7 +350,7 @@ effectively, you don't win. Here are a few tips to make your demos amazing.
   can do. If the judge asks if it can make breakfast, think of some way that it
   can help them make breakfast (even if that's an entirely ridiculous idea).
 
-5. General tips
+5. General Tips
 ---------------
 
 Everything I've mentioned above is important, but there are a couple of things
@@ -384,7 +384,7 @@ general. Here are my general suggestions:
   competitiveness take away from the fun of hanging out with friends for 24+
   hours while coding and not sleeping.
 
-So there you have it! Those are my tips on how to win a hackathon. Hopefully
+There you have it! Those are my tips on how to win a hackathon. Hopefully
 they've been helpful for you. Do you think I've missed something? Do you have
 any additional tips? Comment your thoughts below!
 

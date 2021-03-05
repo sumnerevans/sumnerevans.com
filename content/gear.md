@@ -4,12 +4,12 @@ title: "Gear"
 
 ## Daily Drivers
 
-I have two primary computers: a laptop and a desktop. I also have a VPS running
+I have two primary computers: a laptop and a desktop. I also have a VPS on
 Linode which hosts my personal
 [infrastructure](https://git.sr.ht/~sumner/infrastructure).
 
-I run Arch Linux on my desktop and NixOS on my laptops and main infrastructure
-server. I plan to move all of my computers over to NixOS eventually.
+I run Arch Linux on my desktop and NixOS on my laptops and Linode VPS. I plan to
+move all of my computers over to NixOS eventually.
 
 I use the i3 window manager or Sway, i3status-rust, ZSH, NeoVim, and mutt among
 other things. You can find [all of my configuration repos on
@@ -19,7 +19,7 @@ Here's a list of my daily driver machines. I name them after planets in the Star
 Wars universe.
 
 - **Desktop:** (hostname: `coruscant`) A custom-built desktop. See the [part
-  list on PCPartPicker][partlist].  Highlights are:
+  list on PCPartPicker][partlist]. Highlights are:
 
   - AMD Ryzen 7 2700X
   - Nvidia RTX 2070
@@ -41,9 +41,9 @@ Wars universe.
 ## Accessories
 
 - **Monitors:**
-  - [Dell S2417DG Monitor][dells2417dg] (2560x1440, 165Hz)
-  - [Dell P2421D Monitor][dellp2421d] (2560x1440)
-  - [Dell U2412M Monitor][dellu2412m] (1920x1200)
+  - [Dell S2417DG Monitor][dells2417dg] (2560×1440, 165Hz)
+  - [Dell P2421D Monitor][dellp2421d] (2560×1440)
+  - [Dell U2412M Monitor][dellu2412m] (1920×1200)
 
 - **Keyboards:**
   - [Ergedox EZ with Cherry MX Blues][ergodox-ez]
@@ -67,7 +67,7 @@ Wars universe.
 
 - **Webcam:** [Logitech HD Pro Webcam C920][logitech]
 
-- **USB Splitter (4x4):** [CableMatters 4 Port USB 3.0 Switch Hub][cablematters]
+- **USB Splitter (4×4):** [CableMatters 4 Port USB 3.0 Switch Hub][cablematters]
 
 ## Mobile Devices
 
@@ -88,7 +88,6 @@ Wars universe.
 
   - 16 GB RAM
   - 512 GB SSD
-
 
 [partlist]: https://pcpartpicker.com/user/sumner/saved/#view=Lxc9Jx
 [samsung-galaxy-chromebook]: https://www.samsung.com/us/computing/chromebooks/12-14/galaxy-chromebook--256gb-storage--8gb-ram---fiesta-red-xe930qca-k01us/
