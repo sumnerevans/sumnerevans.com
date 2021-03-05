@@ -38,10 +38,13 @@ on the side of developers, time will tell whether they live up to their
 promises. Even if GitHub does end up defending developers, the fact that the
 project is entirely dependant on GitHub for collaboration, and GitHub is able to
 take down repos at will, is problematic. On the economic side, the main revenue
-streams for GitHub and GitLab come from enterprise contracts which means that
-they are not beholden to the individual users of their software. Also, since
-Microsoft acquired GitHub, they are additionally beholden to Microsoft
-shareholders.
+streams GitLab come from enterprise contracts which means that they are not
+beholden to the individual users of their software. While it is less clear how
+profitable GitHub is, Microsoft did not buy them merely for charitable purposes.
+Microsoft (and its shareholders) clearly see extractable value in the Open
+Source communities that GitHub hosts. Regardless of whether that comes in the
+from of data mining, advertising (remember, Microsoft also owns LinkedIn),
+encouraging the use of Azure, or any other scheme, it's a concerning trend.
 
 However, possibly one of the greatest concerns with the dominance of commercial
 git hosting services is the fact that the are not fully open source. GitHub is
