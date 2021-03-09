@@ -34,7 +34,7 @@ competition was held remotely. As such, we were again unable to enforce a
 no-internet rule as we are able to during on-site competitions. Luckily, the
 problems are all unique, and written by Mines students and Mines alum
 specifically for the competition which makes it very difficult to search the
-internet for answers. The the
+internet for answers.
 
 The competition saw a total of 55 teams from all around the nation, the most
 ever in a CS@Mines HSPC. The problems ranged in difficulty from a problem
@@ -263,7 +263,7 @@ I - Tic-Tac-Toe Solver
 :Correct: 44
 :Percentage of Teams: 80%
 
-This problem requires you to determine which player won a tic-tac-toe game.  The
+This problem requires you to determine which player won a tic-tac-toe game. The
 first challenge is reading the input into a 2-D list or array. Then, once you've
 read in the input, the easiest thing to do is hard-code the 16 win
 configurations with ``if`` statements. If none of the win conditions are met,
@@ -451,7 +451,7 @@ The following is a recursive formulation for the problem:
    Let `P(d, c)` be the maximum profit achievable through the rest of the
    sequence by working in `c` on day `d`, `p[d, c]` be the profit for day `d` in
    city `c` from the table, `T(c1, c2)` be the transition cost from `c1` to
-   `c2`, and `N` be the number of days.  Then,
+   `c2`, and `N` be the number of days. Then,
 
    .. math::
 

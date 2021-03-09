@@ -9,4 +9,4 @@ message: '"%s" is repeated.'
 ignorecase: true
 level: error
 tokens:
-  - '[A-Za-z1-9-]+'
+  - '\b[a-z-]+[^.!,;:"]'
