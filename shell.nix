@@ -1,4 +1,5 @@
-let 
+{ forWebsiteBuild ? false }:
+let
   pkgs = import <nixpkgs> {
     # Use this overlay until https://github.com/gohugoio/hugo/pull/7763 is
     # merged.
@@ -14,6 +15,7 @@ let
       )
     ];
   };
+  lib = pkgs.lib;
 
   openring = with pkgs; buildGoModule {
     name = "openring";
@@ -26,18 +28,20 @@ let
 
     vendorSha256 = "17pdqmwr6xlvzh6ywryiwlg7798xbb8gkhhmlqbb4bmj86d57c05";
   };
-in pkgs.mkShell {
+in
+pkgs.mkShell {
   buildInputs = with pkgs; [
     docutils
     git
     hugo
-    linkchecker
-    nodePackages.htmlhint
     openring
     openssh
     python3Packages.pygments
-    rnix-lsp
     rsync
+  ] ++ (lib.lists.optional (!forWebsiteBuild) [
+    linkchecker
+    nodePackages.htmlhint
+    rnix-lsp
     vale
-  ];
+  ]);
 }
