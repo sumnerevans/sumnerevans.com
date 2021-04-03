@@ -7,13 +7,7 @@ let
         self: super: {
           hugo = super.hugo.overrideAttrs (
             old: {
-              version = "master";
-              src = self.fetchFromGitHub {
-                owner = "sumnerevans";
-                repo = "hugo";
-                rev = "26e28ef869996fa4fcf9258597a49cb936b0c629";
-                sha256 = "sha256-Pu5huIkRDUPvVSjfbbZ0FrRllOHHyEzbNODFN5NmqP8=";
-              };
+              patches = (old.patches or [ ]) ++ [ ./hugo-rst-patches.patch ];
             }
           );
         }

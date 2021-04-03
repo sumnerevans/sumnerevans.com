@@ -1,0 +1,120 @@
+From 26e28ef869996fa4fcf9258597a49cb936b0c629 Mon Sep 17 00:00:00 2001
+From: Sumner Evans <me@sumnerevans.com>
+Date: Fri, 2 Oct 2020 10:42:14 -0600
+Subject: [PATCH] markup/rst: use MathJax for rst math output and use short
+ pygments highlighting
+
+* As noted in #7759, rst2html exports math using the "HTML math.css"
+  formatter by default. This means that any math typeset in
+  reStructuredText is not formatted using MathJax which is not ideal.
+  This commit adds a --math-output parameter configure rst2html to
+  output math ready for MathJax to process. Note that I had to pick a
+  URL for MathJax, but it doesn't end up in the resulting output because
+  the <script> tag is in the header which gets cut out by code further
+  down.
+
+* As noted in #5349, rst2html can generate HTML with short or long form
+  class names for syntax highlighting. Pygments (via the pygmentize
+  command) seems to generate short form by default without any way to
+  switch this. This means most/any stylesheets for code provided with
+  various themes won't work when using rST output. This can easily be
+  fixed by providing the --syntax-highlight=short flag to rst2html.
+
+Fixes: #5349
+Fixes: #7759
+---
+ .github/workflows/test.yml                    |  3 ++
+ docs/content/en/content-management/formats.md |  2 +-
+ markup/rst/convert.go                         |  8 +++--
+ markup/rst/convert_test.go                    | 30 +++++++++++++++++++
+ 4 files changed, 40 insertions(+), 3 deletions(-)
+
+diff --git a/.github/workflows/test.yml b/.github/workflows/test.yml
+index caa123f3..bead3139 100644
+--- a/.github/workflows/test.yml
++++ b/.github/workflows/test.yml
+@@ -33,6 +33,9 @@ jobs:
+       run: |
+         pip install docutils
+         rst2html.py --version
++    - name: Install pygments
++      run: |
++        pip install pygments
+     - if: matrix.os == 'ubuntu-latest'
+       name: Install pandoc on Linux
+       run: |
+diff --git a/docs/content/en/content-management/formats.md b/docs/content/en/content-management/formats.md
+index 5654be7f..e49bbb8c 100644
+--- a/docs/content/en/content-management/formats.md
++++ b/docs/content/en/content-management/formats.md
+@@ -50,7 +50,7 @@ tool on your machine to be able to use these formats.
+ Hugo passes reasonable default arguments to these external helpers by default:
+ 
+ - `asciidoctor`: `--no-header-footer -`
+-- `rst2html`: `--leave-comments --initial-header-level=2`
++- `rst2html`: `--leave-comments --initial-header-level=2 --syntax-highlight=short --math-output "MathJax https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"`
+ - `pandoc`: `--mathjax`
+ 
+ {{% warning "Performance of External Helpers" %}}
+diff --git a/markup/rst/convert.go b/markup/rst/convert.go
+index 4c11c4be..4cb72cbc 100644
+--- a/markup/rst/convert.go
++++ b/markup/rst/convert.go
+@@ -76,10 +76,14 @@ func (c *rstConverter) getRstContent(src []byte, ctx converter.DocumentContext)
+ 	// handle Windows manually because it doesn't do shebangs
+ 	if runtime.GOOS == "windows" {
+ 		python := internal.GetPythonExecPath()
+-		args := []string{path, "--leave-comments", "--initial-header-level=2"}
++		args := []string{path,
++			"--leave-comments", "--initial-header-level=2", "--syntax-highlight=short",
++			"--math-output", "MathJax https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"}
+ 		result = internal.ExternallyRenderContent(c.cfg, ctx, src, python, args)
+ 	} else {
+-		args := []string{"--leave-comments", "--initial-header-level=2"}
++		args := []string{
++			"--leave-comments", "--initial-header-level=2", "--syntax-highlight=short",
++			"--math-output", "MathJax https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"}
+ 		result = internal.ExternallyRenderContent(c.cfg, ctx, src, path, args)
+ 	}
+ 	// TODO(bep) check if rst2html has a body only option.
+diff --git a/markup/rst/convert_test.go b/markup/rst/convert_test.go
+index 269d92ca..1cc3665a 100644
+--- a/markup/rst/convert_test.go
++++ b/markup/rst/convert_test.go
+@@ -36,3 +36,33 @@ func TestConvert(t *testing.T) {
+ 	c.Assert(err, qt.IsNil)
+ 	c.Assert(string(b.Bytes()), qt.Equals, "<div class=\"document\">\n\n\n<p>testContent</p>\n</div>")
+ }
++
++func TestConvertMathJax(t *testing.T) {
++	if !Supports() {
++		t.Skip("rst not installed")
++	}
++	c := qt.New(t)
++	p, err := Provider.New(converter.ProviderConfig{Logger: loggers.NewErrorLogger()})
++	c.Assert(err, qt.IsNil)
++	conv, err := p.New(converter.DocumentContext{})
++	c.Assert(err, qt.IsNil)
++	b, err := conv.Convert(converter.RenderContext{Src: []byte(":math:`ax^2 + bx + c = 0`")})
++	c.Assert(err, qt.IsNil)
++	c.Assert(string(b.Bytes()), qt.Equals,
++		"<div class=\"document\">\n\n\n<p><span class=\"math\">\\(ax^2 + bx + c = 0\\)</span></p>\n</div>")
++}
++
++func TestConvertCodeFormatting(t *testing.T) {
++	if !Supports() {
++		t.Skip("rst not installed")
++	}
++	c := qt.New(t)
++	p, err := Provider.New(converter.ProviderConfig{Logger: loggers.NewErrorLogger()})
++	c.Assert(err, qt.IsNil)
++	conv, err := p.New(converter.DocumentContext{})
++	c.Assert(err, qt.IsNil)
++	b, err := conv.Convert(converter.RenderContext{Src: []byte(".. code:: c\n\n   int i = 0;")})
++	c.Assert(err, qt.IsNil)
++	c.Assert(string(b.Bytes()), qt.Equals,
++		"<div class=\"document\">\n\n\n<pre class=\"code c literal-block\">\n<span class=\"kt\">int</span> <span class=\"n\">i</span> <span class=\"o\">=</span> <span class=\"mi\">0</span><span class=\"p\">;</span>\n</pre>\n</div>")
++}
+-- 
+2.30.1
+
