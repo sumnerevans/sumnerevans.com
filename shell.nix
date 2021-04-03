@@ -17,16 +17,18 @@ let
   };
   lib = pkgs.lib;
 
-  openring = with pkgs; buildGoModule {
-    name = "openring";
+  openring = with pkgs; buildGoModule rec {
+    pname = "openring";
+    version = "master";
 
-    src = fetchgit {
-      url = "https://git.sr.ht/~sircmpwn/openring";
+    src = fetchFromSourcehut {
+      owner = "~sircmpwn";
+      repo = pname;
       rev = "f13edb5dfd882ce608d61cf6b6740650ce9d84a3";
-      sha256 = "1qbqz61pbpn2c7kixn8mwdvp2302g7kxplqf0srk1xjrnbpmbbk7";
+      sha256 = "sha256-Z65V77JZ9jCzBg7T2+d5Agxxd+MV2R7nYcLedYP5eOE=";
     };
 
-    vendorSha256 = "17pdqmwr6xlvzh6ywryiwlg7798xbb8gkhhmlqbb4bmj86d57c05";
+    vendorSha256 = "sha256-BbBTmkGyLrIWphXC+dBaHaVzHuXRZ+4N/Jt2k3nF7Z4=";
   };
 in
 pkgs.mkShell {
