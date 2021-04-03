@@ -32,16 +32,16 @@ in
 pkgs.mkShell {
   buildInputs = with pkgs; [
     docutils
-    git
     hugo
     openring
-    openssh
     python3Packages.pygments
-    rsync
   ] ++ (lib.lists.optional (!forWebsiteBuild) [
+    git
     linkchecker
     nodePackages.htmlhint
+    openssh
     rnix-lsp
+    rsync
     vale
   ]);
 }

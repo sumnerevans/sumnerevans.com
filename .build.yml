@@ -17,12 +17,13 @@ tasks:
   - setup: |
       echo "cd $REPO_NAME" >> ~/.buildenv
 
-  - build: |
+  - openring: |
       nix-shell \
         --arg forWebsiteBuild true \
         --command "openring -S feed_urls.txt \
                              < resources/other-feeds.html.tmpl \
                              > themes/smol/layouts/partials/webring.html"
+  - hugo: |
       nix-shell \
         --arg forWebsiteBuild true \
         --command "hugo --gc --minify"
