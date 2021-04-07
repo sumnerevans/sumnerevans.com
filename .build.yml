@@ -26,7 +26,7 @@ tasks:
   - hugo: |
       nix-shell \
         --arg forWebsiteBuild true \
-        --command "hugo --gc --minify"
+        --command "hugo --verbose --gc --minify"
 
   - rsync: |
       # Skip if not on master
