@@ -8,11 +8,10 @@ I have two primary computers: a laptop and a desktop. I also have a VPS on
 Linode which hosts my personal
 [infrastructure](https://git.sr.ht/~sumner/infrastructure).
 
-I run Arch Linux on my desktop and NixOS on my laptops and Linode VPS. I plan to
-move all of my computers over to NixOS eventually.
-
-I use the i3 window manager or Sway, i3status-rust, ZSH, NeoVim, and mutt among
-other things. You can find [all of my configuration repos on
+I run [NixOS](https://nixos.org/) on all my computers, and use [Nix Home
+Manager](https://nix-community.github.io/home-manager/) to manage my
+configuration. I use the i3 window manager or Sway, i3status-rust, ZSH, NeoVim,
+and mutt among other things. You can find [all of my configuration repos on
 sourcehut](https://sr.ht/~sumner/configuration/).
 
 Here's a list of my daily driver machines. I name them after planets in the Star
