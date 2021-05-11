@@ -14,8 +14,8 @@ Collegiate Programming Contest (ICPC) <icpc_>`_. I wrote about the `2019
 wrote one of the problems and helped with some of the administrative backend. I
 also hosted a live broadcast during the competition with another CS@Mines alum,
 `Sam Sartor`_ which you can view on YouTube. In the broadcast, we provided
-commentary on the competition, host interviews with problem authors, and talk to
-former HSPC and ICPC contestants.
+commentary on the competition, hosted interviews with problem authors, and
+talked to former HSPC and ICPC contestants.
 
 .. raw:: html
 

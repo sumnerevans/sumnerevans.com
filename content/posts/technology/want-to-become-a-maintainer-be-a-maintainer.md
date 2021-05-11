@@ -14,7 +14,8 @@ contribution to the project.
 Normally the motivation behind such comments is well-intentioned: the person is
 enthusiastic about helping the project, wants to contribute more, and feels like
 their ability to contribute is hampered by the fact that they don't have access
-to all the maintainer tools.
+to all the maintainer tools. Sometimes, this is the case. However, in many
+cases, 
 
 you don't need to be a maintainer to contribute meaningfully
 
