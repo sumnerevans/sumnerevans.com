@@ -1,8 +1,8 @@
 https://drewdevault.com/blog/index.xml
 https://sourcehut.org/blog/index.xml
 https://www.thedroneely.com/posts/rss.xml
-https://stackoverflow.blog/feed/
 https://jakevossen.libsyn.com/rss
 https://emersion.fr/blog/rss.xml
 https://www.joelonsoftware.com/feed/
 https://weekly.nixos.org/feeds/all.rss.xml
+https://veronneau.org/feeds/atom.xml
