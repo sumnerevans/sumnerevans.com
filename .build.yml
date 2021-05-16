@@ -19,18 +19,18 @@ tasks:
 
   # let Nix do it's thing during this stage so the next ones are fast
   - nix-shell-env: |
-      nix-shell \
+      time nix-shell \
         --arg forWebsiteBuild true \
         --command "echo nix-shell environment is cached"
 
   - openring: |
-      nix-shell \
+      time nix-shell \
         --arg forWebsiteBuild true \
         --command "openring -S feed_urls.txt \
                              < resources/other-feeds.html.tmpl \
                              > themes/smol/layouts/partials/webring.html"
   - hugo: |
-      nix-shell \
+      time nix-shell \
         --arg forWebsiteBuild true \
         --command "hugo --verbose --gc --minify"
 
@@ -41,4 +41,4 @@ tasks:
 
       # Copy the website over to the server
       ssh root@bespin.sumnerevans.com "mkdir -p /var/www/sumnerevans.com"
-      rsync -vr --delete-after public/ root@bespin.sumnerevans.com:/var/www/sumnerevans.com
+      time rsync -vr --delete-after public/ root@bespin.sumnerevans.com:/var/www/sumnerevans.com
