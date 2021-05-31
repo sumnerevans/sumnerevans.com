@@ -1,7 +1,5 @@
 # Build and deploy the Hugo site.
 image: nixos/unstable
-sources:
-  - https://git.sr.ht/~sumner/sumnerevans.com
 secrets:
   # SSH Deploy Key
   - f219888a-80af-4275-a777-89e8c7d277f0
@@ -27,6 +25,7 @@ tasks:
         --command "openring -S feed_urls.txt \
                              < resources/other-feeds.html.tmpl \
                              > themes/smol/layouts/partials/webring.html"
+
   - hugo: |
       time nix-shell \
         --arg forWebsiteBuild true \
