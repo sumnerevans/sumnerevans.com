@@ -72,7 +72,8 @@ Wars universe.
 
 \* indicates daily driver
 
-- **Smartphone\*:** Google Pixel 3a (64 GB, Just Black)
+- **Smartphone\*:** iPhone 12 Mini (64 GB, Blue)
+- **Smartphone:** Google Pixel 3a (64 GB, Just Black)
 - **Smartphone:** Google Pixel 1 (32 GB, Quite Black)
 - **Smartphone:** iPhone 5s (32 GB, Space Gray)
 - **Smartwatch\*:** Amazfit Bip S (Carbon Black)
