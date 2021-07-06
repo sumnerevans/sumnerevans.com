@@ -5,24 +5,23 @@ title: "About"
 Hello, welcome to my website! I am so glad you stopped by to check it out!
 
 Let me introduce myself. My name is Sumner, I am 23 years old and live in
-Denver, Colorado. I am a Software Engineer at [The Trade
-Desk](https://www.thetradedesk.com/) and an Adjunct Professor at [Colorado
-School of Mines](https://mines.edu). I graduated with my undergraduate degree in
-Computer Science from Colorado School of Mines in May 2018 and then graduated
-with my masters degree in Computer Science from Mines in May 2019.
+Denver, Colorado. I am a Software Engineer at [Beeper](https://beeper.com/) and
+an Adjunct Professor at [Colorado School of Mines](https://mines.edu). I am a
+Colorado School of Mines alum (bachelor's in CS, 2018; masters in CS, 2019).
 
 Things I'm passionate about:
 
 * Programming
 * Computer Science
 * Software Architecture and Software Engineering
-* CS Education
-* Self hosting and owning my data
+* Self hosting and data ownership
 * Free and Open Source Software
+* Distributed systems
+* CS Education
 
-I'm grateful to have a great job where I am able to exercise my love of
-programming and computer science. On the side, I work on a variety of open
-source projects, which you can find on my [portfolio][1].
+I'm grateful to have a great job where I am able to exercise my passions. On the
+side, I also work on a variety of open source projects, which you can find on my
+[portfolio][1].
 
 I was homeschooled through high school, but I also attended Red Rocks Community
 College doing a few classes a semester during high school. I also worked at

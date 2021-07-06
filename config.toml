@@ -23,8 +23,8 @@ Paginate = 15
 
 [params]
   author = "Sumner Evans"
-  description = "I'm a Software Engineer at The Trade Desk and an Adjunct Professor at Colorado School of Mines. This is my personal website, portfolio, and blog."
-  subtitle = "Software Engineer at The Trade Desk"
+  description = "I'm a Software Engineer at Beeper and an Adjunct Professor at Colorado School of Mines. This is my personal website, portfolio, and blog."
+  subtitle = "Software Engineer at Beeper"
   dateFmt = "2006-01-02"
 
   # Theme
