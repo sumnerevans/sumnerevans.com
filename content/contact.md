@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+date: 2021-03-05 09:04:00
 ---
 
 You may contact me in a variety of ways. Here are my preferred methods of
@@ -10,7 +11,7 @@ response:
 * **Email:** me [at] sumnerevans [dot] com
 * **Social Media:** links to my social media profiles are listed in the footer.
 
-# Security
+## Security
 
 I prefer E2E encrypted DMs in Matrix.
 

@@ -1,5 +1,6 @@
 ---
 title: "About"
+date: 2021-08-01 09:04:00
 ---
 
 Hello, welcome to my website! I am so glad you stopped by to check it out!
@@ -28,10 +29,10 @@ College doing a few classes a semester during high school. I also worked at
 [Can/Am Technologies](https://canamtechnologies.com/) as a software developer
 during high school. (See my [portfolio][1] for more info).
 
-When I'm not working, I enjoy playing soccer, volleyball, and I've been getting
-into racquetball lately. During high school, I won the FRCCA State Championship
-with Denver Eagles my senior year. I am also a 3rd Degree Black Belt in ATA
-Taekwondo and I have won multiple state titles.
+When I'm not working, I enjoy playing soccer, volleyball, and racquetball. I
+also train in ATA Taekwondo where I earned my 3rd Degree Black Belt. During high
+school, I won the FRCCA State Championship with Denver Eagles my senior year,
+and won multiple state titles in Taekwondo.
 
 This site is the place to get updates on my life. I maintain a [blog](/) here
 where I post occasionally. I post about my travels, technology, education,
