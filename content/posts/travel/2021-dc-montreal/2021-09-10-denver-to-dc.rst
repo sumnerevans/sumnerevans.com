@@ -42,13 +42,59 @@ College of William and Mary where he is getting a PhD in computer science.
 After leaving our bags at my hotel, we walked down towards the mall and went to
 the museum of natural history for a few hours. We spent a while looking at a
 whole lot of gems in the geology part of the museum. It was an impressive
-collection. In 
+collection. At Mines, we have a fairly large geology museum, but this one was
+larger for sure. We joked that if Mines' museum was going to be second place to
+another museum, at least it was the Smithsonian.
 
-* water in DC
+There was another exhibit all about water and its affects on geography and
+geology. One display showed all of the areas around Washington D.C. that used to
+be water. The entire National Mall was once a waterway and there were many
+streams throughout what is now the city!
 
-We went through
-some other exhibits as well including 
+After that exhibit, we wandered through some other exhibits including a dinosaur
+exhibit and an exhibit featuring a bunch of different mammals. I especially
+enjoyed the exhibit about Australian animals. I think it's cool how diverse the
+ecology is there because it was geographically isolated for such a long time. We
+went fairly quickly through the exhibits, mainly looking at the various objects
+rather than trying to read everything.
 
-American history museum:
+After we finished at the Natural History Museum, we decided to go over to the
+American History Museum. We went to the flag display where they have the flag
+that was flown over Ft. McHenry during the attempted invasion of 
+TODO
+during the
+War of 1812. That battle is what inspired Francis Scott Key to write the Star
+Spangled Banner.
 
-* flag
+We then went through another exhibit about various American inventions. By this
+time in the day, we were both fairly tired since both of us had gotten up early
+for travel, so we went fairly quickly through the exhibit. It was neat looking
+at the various objects and learning a bit about them, though.
+
+After leaving the history museum, we walked over to the Washington Monument and
+relaxed for a few minutes while we waited for Jo to get off of work and come to
+meet us. I decided to get a photo of myself doing a side kick in front of the
+Washington Monument to show the people back at my taekwondo school.
+
+TODO
+
+Sam and I walked around the WWII Memorial, and then headed back to Union Station
+where we met up with Jo. She recommend that we try a nearby pizza place so we
+walked over there. It was a nice place with Italian-style pizza. It was a
+beautiful evening as well, and it was nice getting to catch up with friends. We
+all had gone to Mines together, but both of them have since moved to the east
+coast for work and school.
+
+We headed back to my hotel after dinner so I could check in. My room is quite
+the experience. It has RGB lights everywhere, and you can control them with a
+little screen thing. None of us quite knew what to think about it. But hey, I
+got it for $80/night.
+
+TODO pic of room
+
+After a while, Sam and Jo left for her apartment so that they could let Robby
+(who was flying in from Denver) in when he arrived.
+
+Tomorrow, we are all going to meet up and go to the Air and Space Museum. I have
+been there before, but I don't think I'll ever get enough of looking at rockets
+and planes.
