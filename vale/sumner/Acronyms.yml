@@ -135,6 +135,7 @@ exceptions:
   - REPL
   - REST
   - RFC
+  - RGB
   - RHEL
   - RPC
   - RPM
@@ -175,6 +176,7 @@ exceptions:
   - TLS
   - TODO
   - TOML
+  - TSA
   - TTL
   - UNIX
   - URI
@@ -188,6 +190,8 @@ exceptions:
   - VPS
   - WIP
   - WSL
+  - WWI
+  - WWII
   - XML
   - XSS
   - YAML
