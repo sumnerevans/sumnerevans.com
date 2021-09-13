@@ -8,7 +8,7 @@ let
         self: super: {
           hugo = super.hugo.overrideAttrs (
             old: {
-              patches = (old.patches or [ ]) ++ [ ./hugo-rst-patches.patch ];
+              patches = (old.patches or []) ++ [ ./hugo-rst-patches.patch ];
             }
           );
         }
@@ -23,13 +23,16 @@ pkgs.mkShell {
     hugo
     openring
     python3Packages.pygments
-  ] ++ (lib.lists.optional (!forWebsiteBuild) [
-    git
-    linkchecker
-    nodePackages.htmlhint
-    openssh
-    rnix-lsp
-    rsync
-    vale
-  ]);
+  ] ++ (
+    lib.lists.optional (!forWebsiteBuild) [
+      git
+      libheif
+      linkchecker
+      nodePackages.htmlhint
+      openssh
+      rnix-lsp
+      rsync
+      vale
+    ]
+  );
 }
