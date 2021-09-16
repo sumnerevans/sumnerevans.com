@@ -12,5 +12,5 @@ draft: true
 * flight to Montreal
 * ordeal through customs
 * Met Ian and Eric and went to hotel
-* Met team at a bar and grill
+* Met team at a bar and grill - had a burger
 * in hotel now
