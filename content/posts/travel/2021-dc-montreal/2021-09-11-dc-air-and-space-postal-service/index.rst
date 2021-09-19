@@ -18,7 +18,7 @@ who lost their lives on that terrible day.
 .. image:: ./images/911-display.png
    :alt: A 9/11 commemoration display
    :align: center
-   :target: ./images/911-display.jpg
+   :target: ./images/911-display.png
 
 Then I walked over to the Air and Space Museum. I always love seeing rockets and
 planes. Unfortunately, probably about 70% of the museum is closed for
@@ -99,7 +99,8 @@ in commemoration of 9/11.
 .. image:: ./images/911-pentagon.png
    :alt: A view from the hotel of the 9/11 commemoration beam near the Pentagon
    :align: center
-   :target: ./images/911-pentagon.jpg
+   :width: 70%
+   :target: ./images/911-pentagon.png
 
 Tomorrow, we are planning to go to the Building Museum. My flight leaves around
 4:00, so I should have a few hours to see the exhibits before I have to head
