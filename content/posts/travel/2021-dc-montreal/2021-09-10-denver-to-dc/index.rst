@@ -3,6 +3,7 @@ title: "Denver to Washington D.C."
 date: 2021-09-10T09:25:00-06:00
 categories: [Trip to D.C. and Montreal]
 tags: [Travel, Washington D.C., Denver]
+image: ./images/side-kick-washington.png
 ---
 
 Next week, Beeper is having a company retreat in Montreal, Canada. Since I

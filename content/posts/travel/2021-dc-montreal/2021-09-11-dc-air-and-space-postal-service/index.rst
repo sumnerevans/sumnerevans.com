@@ -4,6 +4,7 @@ date: 2021-09-11T09:25:00-06:00
 categories: [Trip to D.C. and Montreal]
 tags: [Travel, Washington D.C., National Air and Space Museum, National Postal
 Museum]
+image: ./images/911-display.png
 ---
 
 I woke up this morning around 08:30 with the plan to meet up with Sam, Jo, and
