@@ -11,12 +11,11 @@ The museum is not part of the Smithsonian, but it was very well done. It is
 located in a vast building that used to be an administrative office for the
 Pension Bureau.
 
-In covered the "courtyard" of the building, they had an exhibit about the
+In the covered "courtyard" of the building, they had an exhibit about the
 renovation of the Notre Dame Cathedral in Paris. They are sourcing parts for the
-room from all over the world. Also downstairs was an exhibit that discussing
-some of the buildings that define city skylines and another exhibit which
-explored some of the different materials that have been used to create unique
-buildings.
+roof from all over the world. Also downstairs was an exhibit that discussed some
+of the buildings that define city skylines and another exhibit which explored
+some of the different materials that have been used to create unique buildings.
 
 We then headed upstairs. There was an exhibit about the twin towers that had
 photographs of them throughout the decades and also had images of the new One
@@ -31,10 +30,10 @@ layers in various places so that you could see "inside the walls". On the other
 side were a variety of common household items from various time periods which
 defined the domestic sphere. In the middle of the exhibit were a number of
 models of famous homes and housing structures like apartments. There were models
-of Monticello, Mount Vernon, and Oak Alley. All of which I have visited. I wrote
-about `my visit to Oak Alley <oa_>`_ a few years ago on this blog. There were also models of other famous homes like Fallingwater.
-
-.. _oa: ../../2016-17-caribbean-cruise/2016-12-27-new-orleans-la/
+of Monticello, Mount Vernon, and Oak Alley; all of which I have visited. I wrote
+about `my visit to Oak Alley
+<../../2016-17-caribbean-cruise/2016-12-27-new-orleans-la/>`_ a few years ago on
+this blog. There were also models of other famous homes like Fallingwater.
 
 At about 13:00, I left to hop on the train to DCA for my flight to Montreal.
 Using the Metro to get to DCA is very easy since it's just a normal stop on one
