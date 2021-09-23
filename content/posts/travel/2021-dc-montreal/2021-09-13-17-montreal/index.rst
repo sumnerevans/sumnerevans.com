@@ -1,10 +1,20 @@
 ---
-title: "Montreal"
+title: "Montreal --- Work Trip!"
 date: 2021-09-17T09:25:00-06:00
 categories: [Trip to D.C. and Montreal]
 tags: [Travel, Montreal, Beeper, Work]
 draft: true
 ---
+
+As I mentioned in my `previous post <../2021-09-10-denver-to-dc>`_, the main
+reason for my travel was for a work retreat with Beeper in Montreal. The purpose
+of the retreat was for all of us to get to work together in person. For most of
+us (myself included), it was the first time meeting anyone else on the team in
+person. In fact, the closest person to me in the company lives in Provo Utah.
+
+Instead of relating to you what we did every
+
+On Tuesday, we went on
 
 * walking tour on Tuesday
 
