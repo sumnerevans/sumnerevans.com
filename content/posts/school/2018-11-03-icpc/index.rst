@@ -9,6 +9,7 @@ Today I competed in the International Collegiate Programming Contest (ICPC)
 Rocky Mountain Regionals at Colorado State University (CSU).
 
 .. figure:: ./images/2018-icpc.jpg
+   :align: center
    :alt: CS@Mines at ICPC
 
    Photo Credit: CPW

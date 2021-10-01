@@ -2,7 +2,7 @@
 title: "Denver to Washington D.C."
 date: 2021-09-10T09:25:00-06:00
 categories: [Trip to D.C. and Montreal]
-tags: [Travel, Washington D.C., Denver]
+tags: [Travel, Washington D.C., Denver, National Natural History Museum]
 image: ./images/side-kick-washington.png
 ---
 

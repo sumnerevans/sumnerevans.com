@@ -2,7 +2,8 @@
 title: "Montreal to Denver"
 date: 2021-09-18T09:25:00-06:00
 categories: [Trip to D.C. and Montreal]
-tags: [Travel, Montreal, Beeper, Work]
+tags: [Travel, Montreal, Denver]
+image: ./images/montreal-airport.png
 draft: true
 ---
 
@@ -29,10 +30,13 @@ We all got to the gate and it was still a couple hours before our flight. We
 kinda regretted not sleeping more, but I took the opportunity to get some
 writing done and chat.
 
-.. image:: ./images/montreal-airport.png
-   :alt: Caroline, Ian, and myself waiting for our flights in Montreal
+.. figure:: ./images/montreal-airport.png
    :align: center
    :target: ./images/montreal-airport.png
+   :width: 80%
+   :alt: Caroline, Ian, and myself waiting for our flights in Montreal
+
+   Caroline, Ian, and myself waiting for our flights in Montreal.
 
 -------------
 

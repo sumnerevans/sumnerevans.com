@@ -34,6 +34,9 @@ app developer. I really enjoyed all of my interactions with my coworkers, and I
 gained a great deal of confidence in their competence and our ability to
 collectively get the necessary work done.
 
+Our whole-company meetings were really great as well. Brad (CTO) led a company
+retrospective for the past few months 
+
 Walking Tour
 ============
 

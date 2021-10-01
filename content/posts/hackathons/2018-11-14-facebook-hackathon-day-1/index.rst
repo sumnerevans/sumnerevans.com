@@ -44,7 +44,7 @@ At the hotel, we got checked in. Each of us got a room all to ourselves!
    :target: ./images/2018-11-14-facebook-hackathon-room.jpg
    :alt: My huge room
    :align: center
-   :width: 50%
+   :width: 60%
 
 After we settled in, we went to go eat some lunch at a nearby Pho restaurant. As
 we were walking, we saw some mid-sized houses and decided to play a "guess the
@@ -57,7 +57,7 @@ at the hotel by Facebook. At the dinner, we met a team from Canada.
 .. figure:: ./images/2018-11-14-dinner.jpg
    :alt: Dinner buffet served on the first day of the hackathon
    :align: center
-   :figwidth: 50%
+   :width: 60%
 
    Dinner buffet served on the first day of the hackathon.
 

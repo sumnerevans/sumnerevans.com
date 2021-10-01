@@ -2,7 +2,7 @@
 title: "Washington D.C. to Montreal"
 date: 2021-09-12T09:25:00-06:00
 categories: [Trip to D.C. and Montreal]
-tags: [Travel, Washington D.C., Montreal]
+tags: [Travel, Washington D.C., National Building Museum, Montreal]
 ---
 
 This morning, I met up with Sam, Jo, and Robby and we went to breakfast together
@@ -34,6 +34,8 @@ of Monticello, Mount Vernon, and Oak Alley; all of which I have visited. I wrote
 about `my visit to Oak Alley
 <../../2016-17-caribbean-cruise/2016-12-27-new-orleans-la/>`_ a few years ago on
 this blog. There were also models of other famous homes like Fallingwater.
+
+-------------------------------------------------------------------------------
 
 At about 13:00, I left to hop on the train to DCA for my flight to Montreal.
 Using the Metro to get to DCA is very easy since it's just a normal stop on one
