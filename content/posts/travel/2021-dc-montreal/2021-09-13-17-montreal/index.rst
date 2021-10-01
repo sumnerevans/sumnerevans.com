@@ -12,9 +12,32 @@ of the retreat was for all of us to get to work together in person. For most of
 us (myself included), it was the first time meeting anyone else on the team in
 person. In fact, the closest person to me in the company lives in Provo Utah.
 
-Instead of relating to you what we did every
+Instead of relating to you what we did every chronologically, I'm going to give
+you some highlights and overall thoughts on the week.
 
-On Tuesday, we went on
+Working With My Coworkers
+=========================
+
+Meeting my coworkers in person was the best part of the trip. We are an
+all-remote company, so these retreats are the only times we have to work
+in-person. I really enjoyed getting to meet everyone and interact with them in
+both work and non-work situations. We had somewhat normal work days every day,
+but we took advantage of our physical proximity to have more vision, planning,
+and retrospective meetings. We went out to eat in the evenings and on a few
+days, we had extra evening activities.
+
+I think one of the best parts of the whole experience was that I was able to get
+to know people who are not on my direct team. For example, one evening, I sat at
+a table with Caroline, the Chief of Staff; Scott, who is on my bridge team;
+Alex, an Android developer; Ian, an iOS developer; and Annie, a React desktop
+app developer. I really enjoyed all of my interactions with my coworkers, and I
+gained a great deal of confidence in their competence and our ability to
+collectively get the necessary work done.
+
+Walking Tour
+============
+
+On Tuesday, we went on a walking tour around Old Town Montreal.
 
 * walking tour on Tuesday
 
@@ -31,6 +54,8 @@ On Tuesday, we went on
 
 * reflections
 
+  * cool to interact with people not on my team
+  * cool to interact in non-work capacity
   * we have come a long way
   * we are so far away from being done
   * we have big goals, but we have a super young and energetic team to get it
