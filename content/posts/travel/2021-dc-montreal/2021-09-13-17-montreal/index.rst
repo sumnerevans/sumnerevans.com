@@ -4,7 +4,6 @@ date: 2021-09-17T09:25:00-06:00
 categories: [Trip to D.C. and Montreal]
 tags: [Travel, Montreal, Beeper, Work]
 image: ./images/team.jpg
-draft: true
 ---
 
 As I mentioned in my `previous post <../2021-09-10-denver-to-dc>`_, the main
@@ -77,6 +76,23 @@ customers and see if they like it. Our team has the motivation to ship a great
 product, we are willing to take quick wins where we can, and we have the talent
 to accomplish whatever ambitious goals we set before ourselves.
 
+We Are on the Brink of Greatness
+--------------------------------
+
+At one point on the last day, Annie asked everyone if we wanted to go to a shop
+down the street. I off-handedly mentioned that I was "on the brink of
+greatness". I wasn't, I was just about to commit my code, but the phrase stuck
+and became our de-facto motto for the retreat. It fits pretty well, too, because
+as a company, we are aiming for a lofty goal of fundamentally changing the chat
+landscape to an open, federated system where walled garden chat networks are the
+exception, not the norm. And while we aren't there yet, that goal seems within
+reach.
+
+The entire experience of the retreat has given me confidence in the team's
+ability to work together towards that goal and go from being on the brink of
+greatness into actually accomplishing our goals. I'm excited to see what the
+next few years have in store for us!
+
 Walking Tour
 ============
 
@@ -93,8 +109,9 @@ tour.
    The team on our walking tour of Old Montreal.
 
 Montreal was founded in 1642 by French colonists led by a French military
-officer Paul Chomedey de Maisonneuve and a nun named Jeanne Mance. Mance was
-granted the status as a co-founder of Montreal in 2012.
+officer Paul Chomedey de Maisonneuve and a nun named Jeanne Mance. Despite being
+integral to the founding of the city, Mance was only granted the status of
+co-founder of Montreal in 2012.
 
 On one part of the tour, we passed some large stone warehouses that are now used
 as residences and shops. The warehouses were constructed over the spot of the
@@ -117,12 +134,12 @@ juxtaposed with the Bank of Montreal's head office (which exemplifies the
 British influence on the city).
 
 I really enjoyed getting to go on the walking tour and hang out with my
-teammates while also learning about and sight-seeing in Montreal.
+teammates while learning about and sight-seeing in Montreal.
 
 Dinnertime!
 ===========
 
-Every evening after work, we would go get dinner. On some evenings, we went as a
+Every evening after work, we went to dinner. On some evenings, we went as a
 whole team, but other times we split up and went in smaller groups to dinner. On
 Monday, the whole team went to Terrase William Gray which was a restaurant on a
 rooftop terrace overlooking Montreal's Old Port area.
@@ -173,8 +190,8 @@ after we were done, we went to an ice cream place.
     </table>
 
 On Thursday, the entire team went to a really fancy restaurant where they served
-a four-course fixed-menu meal. Then, on Friday, a few of us went to a Chinese
-noodle soup restaurant.
+a four-course fixed-menu meal (which I don't have a good picture of). Then, on
+Friday, a few of us went to a Chinese noodle soup restaurant.
 
 .. figure:: ./images/noodles.jpg
    :align: center
@@ -187,3 +204,7 @@ noodle soup restaurant.
 
 All of the food we had was great, and it was nice to be able to get to know my
 teammates outside of work.
+
+Overall, I really enjoyed my time in Montreal getting to meet and work with my
+coworkers and enjoy great food together, all while being in the beautiful
+history-rich city of Montreal.
