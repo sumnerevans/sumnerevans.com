@@ -3,6 +3,7 @@ title: "Montreal --- Work Trip!"
 date: 2021-09-17T09:25:00-06:00
 categories: [Trip to D.C. and Montreal]
 tags: [Travel, Montreal, Beeper, Work]
+image: ./images/team.jpg
 draft: true
 ---
 
@@ -26,6 +27,14 @@ but we took advantage of our physical proximity to have more vision, planning,
 and retrospective meetings. We went out to eat in the evenings and on a few
 days, we had extra evening activities.
 
+.. figure:: ./images/team.jpg
+   :align: center
+   :target: ./images/team.jpg
+   :alt: The Beeper team in Montreal
+
+   Left to right: Alex, Scott, Tulir, Caroline, Nick, me, Brad, Annie, Kilian,
+   Ian, Eric, and Eric R.
+
 I think one of the best parts of the whole experience was that I was able to get
 to know people who are not on my direct team. For example, one evening, I sat at
 a table with Caroline, the Chief of Staff; Scott, who is on my bridge team;
@@ -43,6 +52,13 @@ It was also an opportunity for us to refocus and recognize that there are a lot
 of things that we still have to improve. Despite all of the work we have to do,
 I have extreme confidence in my team and our ability to bring Matrix to the
 masses.
+
+.. figure:: ./images/retro.jpg
+   :align: center
+   :target: ./images/retro.jpg
+   :alt: Brad looks on as Tulir discusses topics during our team retro.
+
+   Brad (right) looks on as Tulir discusses topics during our team retro.
 
 I would characterize our team as motivated, smart, and scrappy. Many of the
 people in the company were hired out of the Matrix and reverse-engineering
@@ -67,6 +83,14 @@ Walking Tour
 On Tuesday, all of us went on a walking tour around Old Town Montreal. I'll
 relate just a few of the interesting things that our guide told us about on the
 tour.
+
+.. figure:: ./images/walking-tour.png
+   :align: center
+   :target: ./images/walking-tour.png
+   :width: 70%
+   :alt: The team on our walking tour of Old Montreal.
+
+   The team on our walking tour of Old Montreal.
 
 Montreal was founded in 1642 by French colonists led by a French military
 officer Paul Chomedey de Maisonneuve and a nun named Jeanne Mance. Mance was
@@ -99,35 +123,67 @@ Dinnertime!
 ===========
 
 Every evening after work, we would go get dinner. On some evenings, we went as a
-whole team, but other times we split up and went in smaller groups to dinner.
-On Monday, we went to Terrase William Gray
+whole team, but other times we split up and went in smaller groups to dinner. On
+Monday, the whole team went to Terrase William Gray which was a restaurant on a
+rooftop terrace overlooking Montreal's Old Port area.
 
-* work meetings
+.. figure:: ./images/terrase-william-gray.jpg
+   :align: center
+   :width: 70%
+   :target: ./images/terrase-william-gray.jpg
+   :alt: Scott and myself at Terrase William Gray
 
-  * kickoff + retro
-  * discussions about things
-  * weekly pruning + move to Linear
-  * lightning talks
+   Scott and myself at Terrase William Gray
 
-* reflections
+On Tuesday, a group of us biked over to a poutine restaurant. We joked as we
+were riding that doing the bike ride offset the fact that we were eating one of
+the least healthy foods on the planet.
 
-  * cool to interact with people not on my team
-  * cool to interact in non-work capacity
-  * we have come a long way
-  * we are so far away from being done
-  * we have big goals, but we have a super young and energetic team to get it
-    done
-  * I trust my team: they are amazing people and super smart
-  * I like the feeling of being the dumbest person in the room
-  * You have to oscillate between feeling incompetent and feeling like a
-    rockstar super quickly
+.. figure:: ./images/poutine.jpg
+   :align: center
+   :width: 70%
+   :target: ./images/poutine.jpg
+   :alt: The team eating poutine
 
-* dinners
+   (Left to right) Kilian, Tulir, me, Alex, Eric, Nick, and Ian at a poutine
+   restaurant.
 
-  * Terrase William Gray - bougie, had bird
-  * poutine
-  * ramen + ice cream
-  * hella fancy place
-  * noodles
+On Wednesday, a number of us went to a really good ramen restaurant and then
+after we were done, we went to an ice cream place.
 
-work trip!?
+.. raw:: html
+
+    <table class="gallery">
+      <tr>
+        <td>
+          <a href="./images/ramen.png" target="_blank">
+            <img src="./images/ramen.png"
+              alt="Eating Ramen" />
+          </a><br><br>
+          Caroline, Kilian, Eric R, and myself eating ramen.
+        </td>
+        <td>
+          <a href="./images/ice-cream.jpg" target="_blank">
+            <img src="./images/ice-cream.jpg"
+              alt="Eating ice cream" />
+          </a><br>
+          Tulir, Scott, Caroline, Ian, Kilian, Eric, Alex eating ice cream.
+        </td>
+      </tr>
+    </table>
+
+On Thursday, the entire team went to a really fancy restaurant where they served
+a four-course fixed-menu meal. Then, on Friday, a few of us went to a Chinese
+noodle soup restaurant.
+
+.. figure:: ./images/noodles.jpg
+   :align: center
+   :width: 70%
+   :target: ./images/noodles.jpg
+   :alt: Eating Chinese noodle soup
+
+   Eric, Tulir, Ian, Annie, Nathan (Annie's husband), and myself eating Chinese
+   noodle soup.
+
+All of the food we had was great, and it was nice to be able to get to know my
+teammates outside of work.
