@@ -139,7 +139,8 @@ A - M-Climb
 :Author: Jack Garner
 :Attempts: 71
 :Correct: 55
-:Percentage of Teams: 100%
+:% of Teams: 100%
+:Concept: basic operations on variables
 
 M-Climb was designed to be a very trivial problem. It was inspired by the annual
 M-Climb tradition at Mines where freshmen hike up Mount Zion to the big M with
@@ -164,7 +165,8 @@ B - 13 Floors
 :Author: Colin Siles
 :Attempts: 73
 :Correct: 55
-:Percentage of Teams: 100%
+:% of Teams: 100%
+:Concept: conditionals (``if`` statements)
 
 This problem was intended to be a fairly trivial problem as well. It involves
 using an ``if`` statement to determine if the given number is greater than or
@@ -185,7 +187,8 @@ C - Rolling the Dice
 :Author: Adam Sandstedt
 :Attempts: 92
 :Correct: 53
-:Percentage of Teams: 96%
+:% of Teams: 96%
+:Concept: basic string processing and operations on variables
 
 The math at the core of this problem is fairly easy, however, parsing is
 slightly non-trivial. The input format is ``XdY+Z``, and you have to extract
@@ -216,7 +219,8 @@ D - Tall Enough
 :Author: Jack Garner
 :Attempts: 81
 :Correct: 54
-:Percentage of Teams: 98%
+:% of Teams: 98%
+:Concept: a ``for`` loop with a conditional
 
 This problem requires the use of a *loop* to iterate over all of the numbers in
 the input. If any of the numbers are less than 48, then ``False`` should be
@@ -237,7 +241,8 @@ G - Alphabet Soup
 :Author: Colin Siles
 :Attempts: 99
 :Correct: 50
-:Percentage of Teams: 91%
+:% of Teams: 91%
+:Concept: loops + a set or list
 
 This problem requires taking a string of characters and verifying that every
 letter of the alphabet is present in the string, and printing the ones which are
@@ -261,7 +266,8 @@ I - Tic-Tac-Toe Solver
 :Author: Jack Garner
 :Attempts: 113
 :Correct: 44
-:Percentage of Teams: 80%
+:% of Teams: 80%
+:Concept: conditionals (``if`` statements)
 
 This problem requires you to determine which player won a tic-tac-toe game. The
 first challenge is reading the input into a 2-D list or array. Then, once you've
@@ -283,7 +289,8 @@ F - Follow the Prize
 :Author: Colin Siles
 :Attempts: 90
 :Correct: 50
-:Percentage of Teams: 91%
+:% of Teams: 91%
+:Concept: loops
 
 For this problem, you need to keep track of which cup holds the prize in a
 variable. Then, in a loop, go through all of the swaps in order. If at any point
@@ -304,7 +311,8 @@ E - Marble Maze
 :Author: Sam Sartor
 :Attempts: 44
 :Correct: 26
-:Percentage of Teams: 47%
+:% of Teams: 47%
+:Concept: conditionals + loops + 2-D arrays
 
 The key to this problem is to keep a separate bit of state for each seesaw.
 
@@ -326,14 +334,15 @@ H - Powering Teslopolis
 :Author: John Henke
 :Attempts: 72
 :Correct: 29
-:Percentage of Teams: 53%
+:% of Teams: 53%
+:Concept: conditionals + loops + 2-D arrays
 
 For this problem, you likely want to use a nested for loop to search every row
 and column of Teslopolis. For every cell in the grid, you need to check all of
 the adjacent cells (including diagnols) for a power station. Although there are
 alternatives, the simplest option is to create an if statement for each
 neighbor. If any neighbors are power cells, then the cell you're looking at is
-powered. It is important not to go out-of-bounds when
+powered. It is important not to go out-of-bounds when at an edge.
 
 .. raw:: html
 
@@ -349,7 +358,8 @@ J - Quadratic Autopilot
 :Author: David Florness
 :Attempts: 60
 :Correct: 21
-:Percentage of Teams: 38%
+:% of Teams: 38%
+:Concept: operations on variables
 
 This problem requires solving for `a`, `b`, and `c` in terms of the input
 points' coordinates. The best way to solve this is to take the three equations
@@ -376,7 +386,8 @@ K - Knight Walk
 :Author: John Henke
 :Attempts: 9
 :Correct: 8
-:Percentage: 15%
+:% of Teams: 15%
+:Concept: BFS on an implicit graph
 
 For this problem, you can use a breadth first search (BFS) to find the knight's
 path. However, unlike a traditional BFS where you are given the full graph to
@@ -405,7 +416,8 @@ L - Math in Another Universe
 :Author: Mohammed Alnasser
 :Attempts: 105
 :Correct: 26
-:Percentage: 47%
+:% of Teams: 47%
+:Concept: basic parsing and expression evaluation
 
 This problem is about finding a way to parse a mathematical formula. You can
 start by splitting the formula on any spaces. You can then search the input for
@@ -435,7 +447,8 @@ M - Delivery Driver
 :Author: Sumner Evans
 :Attempts: 38
 :Correct: 10
-:Percentage: 18%
+:% of Teams: 18%
+:Concept: dynamic programming
 
 This problem requires *dynamic programming* [1]_, a technique for optimizing
 *recursive* algorithms. There are two main steps to dynamic programming:
