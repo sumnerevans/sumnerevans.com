@@ -6,3 +6,5 @@ tags: [Matrix, Mautrix, Go]
 draft: true
 ---
 
+In this post, I'm going to give you some tips about how to write a Matrix bot
+from scratch in Go.

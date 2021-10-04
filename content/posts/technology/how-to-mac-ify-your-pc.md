@@ -2,7 +2,7 @@
 Title: How to Mac-ify Your PC for Free
 Date: 2013-02-08T11:42:00-0600
 Categories: [Technology]
-published: false
+draft: true
 ---
 
 **NOTE:** I haven't tested this on any OS other than Windows 8 but it should

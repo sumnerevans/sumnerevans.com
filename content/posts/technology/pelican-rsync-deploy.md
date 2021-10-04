@@ -3,7 +3,7 @@ Title: Setting up Pelican to Automatically Deploy Over Rsync
 Date: 2017-12-04T11:44:00-0600
 Categories: [Technology]
 Tags: [Pelican, Travis CI, GitHub, Rsync]
-published: false
+draft: true
 ---
 
 I recently converted my site from WordPress to a statically generated

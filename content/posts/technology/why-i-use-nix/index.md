@@ -3,7 +3,7 @@ title: Why I Use Nix
 date: 2021-04-29T17:00:00-0600
 categories: [Technology]
 tags: [Nix, NixOS, Functional Programming, Declarative, Open Source]
-published: false
+draft: true
 ---
 
 It's the dream of every programmer and system administrator: **deterministic

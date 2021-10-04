@@ -3,7 +3,7 @@ title: "Advent of Code 2020: A Retrospective"
 date: 2020-12-17T13:00:00-06:00
 categories: [Programming]
 tags: [Advent of Code, python, competition]
-published: false
+draft: true
 ---
 
 Every year since 2015, `Eric Wastl`_ creates a two-part programming problems for

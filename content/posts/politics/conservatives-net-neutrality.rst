@@ -3,7 +3,7 @@ title: Conservatives Should be for Net Neutrality
 date: 2018-07-07T10:23:00-0600
 category: [Politics]
 tags: [Net Neutrality, Conservatives]
-published: false
+draft: true
 ---
 
 **Thesis:** Conservatives should be pro-Net Neutrality.
