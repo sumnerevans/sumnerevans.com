@@ -9,6 +9,8 @@ Let me introduce myself. My name is Sumner, I am 23 years old and live in
 Denver, Colorado. I am a Software Engineer at [Beeper](https://beeper.com/) and
 an Adjunct Professor at [Colorado School of Mines](https://mines.edu). I am a
 Colorado School of Mines alum (bachelor's in CS, 2018; masters in CS, 2019).
+Previously, I have worked at [The Trade Desk](https://thetradedesk.com) and
+[Can/Am Technologies](https://canamtechnologies.com/).
 
 Things I'm passionate about:
 
@@ -24,13 +26,8 @@ I'm grateful to have a great job where I am able to exercise my passions. On the
 side, I also work on a variety of open source projects, which you can find on my
 [portfolio][1].
 
-I was homeschooled through high school, but I also attended Red Rocks Community
-College doing a few classes a semester during high school. I also worked at
-[Can/Am Technologies](https://canamtechnologies.com/) as a software developer
-during high school. (See my [portfolio][1] for more info).
-
 When I'm not working, I enjoy playing soccer, volleyball, and racquetball. I
-also train in ATA Taekwondo where I earned my 3rd Degree Black Belt. During high
+also train in ATA Taekwondo where I am a 3rd Degree Black Belt. During high
 school, I won the FRCCA State Championship with Denver Eagles my senior year,
 and won multiple state titles in Taekwondo.
 
