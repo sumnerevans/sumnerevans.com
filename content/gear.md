@@ -36,7 +36,8 @@ Wars universe.
   - 32 GB RAM
   - 512 GB NVMe SSD
 
-- **Linode VPS:** (hostname: `bespin`)
+- **Linode VPS:** (hostname: `bespin`) (migrating to Hetzner)
+- **Linode VPS:** (hostname: `nevarro`)
 
 ## Accessories
 
