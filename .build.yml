@@ -36,8 +36,8 @@ tasks:
       git branch --contains | grep master || echo "Skipping deploy since not on master"
       git branch --contains | grep master || complete-build
 
-      ssh-keyscan bespin.sumnerevans.com >> ~/.ssh/known_hosts
+      ssh-keyscan morak.sumnerevans.com >> ~/.ssh/known_hosts
 
       # Copy the website over to the server
-      ssh root@bespin.sumnerevans.com "mkdir -p /var/www/sumnerevans.com"
-      time rsync -vr --delete-after public/ root@bespin.sumnerevans.com:/var/www/sumnerevans.com
+      ssh root@morak.sumnerevans.com "mkdir -p /var/www/sumnerevans.com"
+      time rsync -vr --delete-after public/ root@morak.sumnerevans.com:/var/www/sumnerevans.com
