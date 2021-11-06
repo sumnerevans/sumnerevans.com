@@ -5,9 +5,9 @@ date: 2021-04-18 09:04:00
 
 ## Daily Drivers
 
-I have two primary computers: a laptop and a desktop. I also have a VPS on
-Linode which hosts my personal
-[infrastructure](https://git.sr.ht/~sumner/infrastructure).
+I have two primary computers: a laptop and a desktop. I also have multiple VPS's
+on Linode and Hetzner which host my [personal
+infrastructure](https://git.sr.ht/~sumner/nixos-configuration).
 
 I run [NixOS](https://nixos.org/) on all my computers, and use [Nix Home
 Manager](https://nix-community.github.io/home-manager/) to manage my
@@ -27,7 +27,7 @@ Wars universe.
   - 512 GB NVMe and a 1 TB SSD
 
 - **Laptop:** (hostname: `mustafar`) A [Samsung Galaxy
-    Chromebook][samsung-galaxy-chromebook] that I have hacked to run Linux.
+  Chromebook][samsung-galaxy-chromebook] that I have hacked to run Linux.
 
 - **Laptop:** (hostname: `jedha`) A ThinkPad T580
 
@@ -38,16 +38,18 @@ Wars universe.
 
 - **Linode VPS:** (hostname: `bespin`)
 - **Hetzner VPS:** (hostname: `morak`)
-- **Linode VPS:** (hostname: `nevarro`)
+- **Hetzner VPS:** (hostname: `kessel`)
 
 ## Accessories
 
 - **Monitors:**
+
   - [Dell S2417DG Monitor][dells2417dg] (2560×1440, 165Hz)
   - [Dell P2421D Monitor][dellp2421d] (2560×1440)
   - [Dell U2412M Monitor][dellu2412m] (1920×1200)
 
 - **Keyboards:**
+
   - [Ergedox EZ with Cherry MX Blues][ergodox-ez]
   - [CODE V3 87-Key with Cherry MX Clears][code]
   - [Pok3r 3 60% Keyboard with Cherry MX Clears][pok3r3]
