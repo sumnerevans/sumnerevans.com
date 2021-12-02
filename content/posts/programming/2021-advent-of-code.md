@@ -5,16 +5,16 @@ categories: [Programming]
 tags: [Advent of Code, python, competition]
 ---
 
-Every year since 2015, [Eric Wastl][1] creates a two-part programming problems
+Every year since 2015, [Eric Wastl][1] creates a two-part programming problem
 for each of the 25 days of Advent. He publishes a new problem every day at
 [adventofcode.com](https://adventofcode.com) at exactly midnight EST which is
 22:00 the day before for me in MST. Last year, I decided to do the problems as
 soon as they came out and streamed my problem solving sessions on my [Twitch
-channel][2] and upload them to [my Youtube channel][3]. This year, I'm going to
-do the same thing!
+channel][2] and uploaded them to [my Youtube channel][3].
 
-I will update this post every day with my thoughts on each problem, and give a
-brief solution sketch.
+This year, I'm doing to do the same thing! This year, however, I'm also going to
+maintain this blog post. I will update this post every day with my thoughts on
+each problem, and give a brief solution sketch.
 
 As with last year, I am participating in a private leaderboad for the Colorado
 School of Mines CS department with a bunch of Mines students and alum.
