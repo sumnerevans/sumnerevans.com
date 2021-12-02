@@ -28,9 +28,12 @@ Summary of Results
 
 The following is my results across all of the days.
 
-          -------Part 1--------   -------Part 2--------
-    Day       Time  Rank  Score       Time  Rank  Score
-      1   00:00:49    38     63   00:02:22    66     35
+```
+      -------Part 1--------   -------Part 2--------
+Day       Time  Rank  Score       Time  Rank  Score
+  2   00:03:03  1045      0   00:04:57   856      0
+  1   00:00:49    38     63   00:02:22    66     35
+```
 
 Day 1: Sonar Sweep
 ==================
@@ -38,7 +41,7 @@ Day 1: Sonar Sweep
 | <!-- -->    | <!-- -->    |
 |-------------|-------------|
 | **Link:** | https://adventofcode.com/2021/day/1 |
-| **Solution:** | https://github.com/sumnerevans/advent-of-code/blob/master/2021/01.py |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/01.py), [OCaml](https://github.com/sumnerevans/advent-of-code/blob/master/2021/01.ml) |
 | **Part 1:** | 00:00:49, 38th |
 | **Part 2:** | 00:02:22, 66th |
 
@@ -91,5 +94,46 @@ for i, j, k in zip(seq, seq[1:], seq[2:]):
 ```
 
 After calculating this list, the same algorithm as Part 1 works.
+
+</details>
+
+Day 2: Dive!
+============
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/2 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/02.py), [OCaml](https://github.com/sumnerevans/advent-of-code/blob/master/2021/02.ml) |
+| **Part 1:** | 00:03:03, 1045th |
+| **Part 2:** | 00:04:57, 856th |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 2 | Python (1045*, 856**)</summary>
+  {{< youtube id="ZFZiaNXGq1Y" title="Advent of Code 2021 - Day 2 | Python (1045*, 856**)" >}}
+</details>
+
+This problem went well, almost got top 1000 on part 1, and got top 1000 on part
+2. The problem is a basic state machine where you have to keep track of position
+and (for part 2) "aim".
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+The only interesting thing that I did for part 1 is use a regular expression to
+parse each line. Other than that, it was just a few `if` statements to determine
+how to modify the `f` (forward) and `dep` (depth) variables. (You can read the
+problem description on the AoC website for details on how you are supposed to
+modify them.)
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+Part 2 is basically the same as part 1, except there is an additional variable
+that you have to keep track of "aim" (`a`). This determines how "down" or "up"
+your submarine is headed. The "up" and "down" commands no longer change your
+actual position, but rather the aim, and forward changes your depth as well as
+your lateral direction.
 
 </details>
