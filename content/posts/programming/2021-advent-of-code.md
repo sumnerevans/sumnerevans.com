@@ -31,6 +31,7 @@ The following is my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+  3   00:06:56  1338      0   00:38:16  3718      0
   2   00:03:03  1045      0   00:04:57   856      0
   1   00:00:49    38     63   00:02:22    66     35
 ```
@@ -135,5 +136,93 @@ that you have to keep track of "aim" (`a`). This determines how "down" or "up"
 your submarine is headed. The "up" and "down" commands no longer change your
 actual position, but rather the aim, and forward changes your depth as well as
 your lateral direction.
+
+</details>
+
+Day 3: Binary Diagnostic
+========================
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/3 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/03.py) |
+| **Part 1:** | 00:06:56, 1338th |
+| **Part 2:** | 00:38:16, 3718th |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 3 | Python (1338*, 3718**)</summary>
+  {{< youtube id="xVgcF0uBOWM" title="Advent of Code 2021 - Day 3 | Python (1338*, 3718**)" >}}
+</details>
+
+Part 1 of this problem went fairly well, but part 2 was a disaster. One thing
+that I think helped with both parts was keeping the input as a string and
+operating on the individual characters, because thinking through the actual
+bitwise operations sounded difficult.
+
+Overall, this problem was more interesting than Day 2, and I enjoyed refactoring
+at the end. I think that I should have taken a couple more minutes at the start
+of part 2 to think about how to best implement it. I think that would have
+allowed me to avoid a couple foot-guns.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+To calculate "gamma", you have to determine, for each column of the input what
+the most common bit is (`1` or `0`) and that most common bit becomes that
+column's value in the bit representation of "gamma". Epsilon is just the
+complement of gamma (that is, reverse all the `1`s and `0`s).
+
+To do this, I created two lists, one to keep track of how many `1`s were present
+in each column of the input, and another to track how many `0`s were present in
+each column of the input. Then, I `zip`ped the lists together so that I could
+compare whether there were more `1`s or `0`s at each column.
+
+During the stream, I just used a `for` loop to accomplish this, but afterwards I
+converted it to a fairly nice list comprehension:
+
+```python
+# Store the bitmap as a list of integers. If there are more zeros than ones, then
+# that index is 0, otherwise, that index should be 1.
+gamma = [0 if zeros > ones else 1 for zeros, ones in zip(freq0, freq1)]
+```
+
+Obviously it can be simplified further to avoid the ternary, but I tend to go
+for readability over succinctness.
+
+Python has a nice feature where you can just use the `int` constructor with a
+second parameter which is the base to use. So `int("11", 2) == 3`, for example.
+I used this to my advantage by just joining the results together as a string and
+then passing it to `int`.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+Part 2 was more difficult. At each step, the task was to filter the list of
+elements in the input by some rules. The rules depend on calculating whether `0`
+or `1` is the most common bit at the \\(n^{\text{th}}\\) column for *all* of the
+elements remaining in the list, where \\(n\\) is the iteration number.
+
+There are two values that you have to calculate: the "oxygen generator rating"
+and the "CO2 scrubber rating". To calculate the "oxygen generator rating", at
+each step you only filter the elements that do not have the most common element,
+whereas with the "CO2 scubber rating" you do the opposite.
+
+There are a few gotchas with this part. First (and I screwed this up when I was
+solving), you have to be sure that you recompute the frequencies *every
+iteration*. This was a key insight that I totally missed. Secondly, you have to
+keep track of the remaining candidates for oxygen and CO2 independently.
+
+I screwed up this pretty badly, and took *forever* to solve. There are a few
+things that I am going to keep in mind in the future:
+
+* Read the examples sooner. If I had, I think I would have understood what to do
+  a lot quicker.
+
+* I reused `i` multiple times which bit me. I need to get out of that habit.
+
+* I need to actually pull down the test input as well as the problem input a lot
+  sooner, and verify against it for these harder problems.
 
 </details>
