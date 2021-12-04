@@ -31,6 +31,7 @@ The following is my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+  4   00:16:54   845      0   00:37:47  2325      0
   3   00:06:56  1338      0   00:38:16  3718      0
   2   00:03:03  1045      0   00:04:57   856      0
   1   00:00:49    38     63   00:02:22    66     35
@@ -224,5 +225,68 @@ things that I am going to keep in mind in the future:
 
 * I need to actually pull down the test input as well as the problem input a lot
   sooner, and verify against it for these harder problems.
+
+</details>
+
+Day 4: Giant Squid
+==================
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/4 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/04.py) |
+| **Part 1:** | 00:16:54, 845th |
+| **Part 2:** | 00:37:47, 2325th |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 4 | Python (845*, 2325**)</summary>
+  {{< youtube id="Lahkxd4INSo" title="Advent of Code 2021 - Day 4 | Python (845*, 2325**)" >}}
+</details>
+
+Today's part 2 was another disaster (see below for details). Part 1 went pretty
+decently, and I made it to the top 1000 again.
+
+I liked the problem, but the edge case that I failed to handle cost me ~17
+minutes, and probably 6 points on the Mines leaderboard (which is devastating,
+since I am currently sitting at 4th with 301 points, but first second and third
+are clustered at 316, 313, and 312).
+
+The test infrastructure that I added somewhat helped, but I have some
+improvements that I need to make before tomorrow.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+The core of the problem was calculating if a board has won bingo. Luckily we
+only had to handle rows and columns, since diagonals are really quite annoying
+to implement.
+
+To determine if a given row or column had won, I converted to a set, subtracted
+the set of numbers that had been called, and then checked if I got the empty
+set. If I did, then it was bingo, and the board had won.
+
+```python
+def checkset(row_or_col: List[int], called: List[int]) -> bool:
+    return set(row_or_col) - set(called) == set()
+```
+
+For part 1, you just have to keep adding numbers from the sequence of called
+numbers until a board wins. The score calculation was a bit annoying, since you
+have to sum up all of the numbers that had *not* been called. I missed that, and
+submitted the wrong thing (thinking it was the sum of the ones that *had* been
+called).
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For part 2, the task was to determine which board won last. I understood the
+task right away, but then I made a fatal mistake. Every time a board won, I
+would remove it from the list of boards. Then, when there was one board
+remaining, I did the score calculation. However, this is incorrect. You must
+play out the game until that last board wins bingo.
+
+I spent about 17 minutes fixing that bug.
 
 </details>
