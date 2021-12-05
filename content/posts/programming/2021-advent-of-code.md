@@ -31,6 +31,7 @@ The following is my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+  5   00:13:24  1238      0   00:36:27  2733      0
   4   00:16:54   845      0   00:37:47  2325      0
   3   00:06:56  1338      0   00:38:16  3718      0
   2   00:03:03  1045      0   00:04:57   856      0
@@ -288,5 +289,95 @@ remaining, I did the score calculation. However, this is incorrect. You must
 play out the game until that last board wins bingo.
 
 I spent about 17 minutes fixing that bug.
+
+</details>
+
+Day 5: Hydrothermal Venture
+===========================
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/5 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/05.py) |
+| **Part 1:** | 00:13:24, 1238th |
+| **Part 2:** | 00:36:27, 2733rd |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 5 | Python (1238*, 2733**)</summary>
+  {{< youtube id="cZ13TeADxKM" title="Advent of Code 2021 - Day 5 | Python (1238*, 2733**)" >}}
+</details>
+
+Today was not ideal. It was not as disastrous as yesterday, but it was still
+fairly unfortunate.
+
+I thought that the problem was nice. The core of the problem was determining
+intersections of horizontal, vertical, and (for part 2) diagonal lines. On part
+2, I forgot basic algebra concepts; namely that slope can be positive or
+negative. That cost me many minutes of debugging.
+
+The test infrastructure improvements I made after yesterday were useful, and
+saved me a couple seconds.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+Because the size of the grid is fairly small (no numbers are over 3 digits),
+it's efficient enough to just store the number of lines that go over a given
+point in a `position -> number of lines covering` dictionary.
+
+For part 1, the key was to ignore all diagonal lines. To do that, either `x1 ==
+x2` or `y1 == y2`. If so, then it is a horizontal or vertical line.
+
+The input can be provided with the first point "higher" than the second point,
+so I used something that I thought was pretty clever to handle that: I just
+sorted the position tuples. (Note that after solving, I added new helper
+functions that allows me to perform directional ranges meaning that the range
+will work regardless of whether the end is greater than the start or not.)
+
+Then, I used a double `for` loop which fills in `G` with the line in regardless
+of whether the line is vertical or horizontal. It is guaranteed to work here
+because one of the for loops will only have a single iteration.
+
+```python
+G = defaultdict(int)
+for x in range(x1, x2 + 1):
+    for y in range(y1, y2 + 1):
+        G[(x, y)] += 1
+```
+
+I also made use of 
+[`defaultdict`](https://docs.python.org/3.8/library/collections.html#collections.defaultdict).
+This allows me to index into a dictionary and if that key is not in the
+dictionary, it will initialize it using the constructor given. In this case
+`int` (which is `0` by default).
+
+I then just counted how many items in the graph were greater than 0.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For part 2, I thought I could use basically the same logic as part 1 with
+sorting the points, but I made a fatal mistake. While the `x` points are sorted
+correctly, the `y` coordinate could go either up or down depending on which
+diagonal the line is on. Literally elementary school math, but I managed to
+screw it up. I managed to waste a ton of time figuring that out.
+
+The way I ended up solving it on stream was using an if statement to determine
+if `y` should go up or down. I then refactored it to calculate slope.
+
+After the stream, I came up with an even more ingenious way to handle diagonals
+that involves the new directional range function.
+
+```python
+for x, y in zip(dirange(x1, x2), dirange(y1, y2)):
+    G[(x, y)] += 1
+```
+
+What this does is goes through all of the `(x, y)` pairs starting at `(x1, y1)`
+and going to `(x2, y2)`. This works even if `x1 > x2` or `y1 > y2` because
+`dirange` figures out the correct direction to iterate in in order to always go
+from the start to the end of the range.
 
 </details>
