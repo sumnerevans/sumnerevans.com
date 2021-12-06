@@ -31,6 +31,7 @@ The following is my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+  6   00:03:14   122      0   00:06:50   175      0
   5   00:13:24  1238      0   00:36:27  2733      0
   4   00:16:54   845      0   00:37:47  2325      0
   3   00:06:56  1338      0   00:38:16  3718      0
@@ -379,5 +380,81 @@ What this does is goes through all of the `(x, y)` pairs starting at `(x1, y1)`
 and going to `(x2, y2)`. This works even if `x1 > x2` or `y1 > y2` because
 `dirange` figures out the correct direction to iterate in in order to always go
 from the start to the end of the range.
+
+</details>
+
+Day 6: Lanternfish
+==================
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/6 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/06.py) |
+| **Part 1:** | 00:03:14, 122th |
+| **Part 2:** | 00:06:50, 175th |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 6 | Python (122*, 175**)</summary>
+  {{< youtube id="N7cWDWK-2oU" title="Advent of Code 2021 - Day 6 | Python (122*, 175**)" >}}
+</details>
+
+Today went very well for me (besides one hiccup with a missing import in my
+starter code which probably cost me a leaderboad spot). I got top 200 on both
+parts. I think there were two main reasons for the success:
+
+1. I went with the easy, inefficient solution for part 1. Instead of trying to
+   prematurely optimize, I just went ahead and simulated the exponential growth.
+
+2. I realized it would be inefficient to do 256 almost immediately (my test
+   infrastructure helped me with that). I then paused for a moment to think of
+   the optimization necessary, and figured that out very quickly.
+
+After solving part 2, I refactored so that both part 1 and part 2 use the same
+code.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+For part 1, I took the most straightforward simulation approach, which was to
+simulate the reproduction of the lanternfish at every single day exactly as the
+problem description specified. I recreated the list of lanternfish every single
+day, which is very inefficient, but for 80 days, it is efficient enough.
+
+For each lanternfish in the list at any given day, I added one or two elements
+to the new array. If the lanternfish was at `0`, then I added an 8 and a 6 to
+the new array, and if the lanternfish was anything else (say `x`), I just added
+`x - 1` to the list.
+
+Then, the answer is the number of lanternfish after 80 iterations.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+As mentioned above, for part 2 you have to make an optimization. The
+optimization is to use a dictionary to an aggregation of all of the lanternfish
+at the same stage in life. For example, for the sample input:
+```
+3,4,3,1,2
+```
+the corresponding dictionary would be:
+```python
+{
+  1: 1,  # one lanternfish at 1 day until breeding
+  2: 1,
+  3: 2,  # two lanternfish at 3 days until breeding
+  4: 1
+}
+```
+
+Then, at each day I just recreated the dictionary following the rules of
+regeneration, but instead of moving the fish to the new life-stage one at a
+time, the dictionary allows me to do it in bulk.
+
+The only other interesting thing that I did for this problem was use a
+[`defaultdict`](https://docs.python.org/3.8/library/collections.html#collections.defaultdict).
+This allowed me to index into, and then modify, the new dictionary without
+worrying about whether the key exists or not in the dictionary.
 
 </details>
