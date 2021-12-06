@@ -7,7 +7,7 @@ You may contact me in a variety of ways. Here are my preferred methods of
 communication, listed in order of how quickly you can expect to receive a
 response:
 
-* **Matrix:** [`@sumner:nevarro.com`](https://matrix.to/#/@sumner:nevarro.com)
+* **Matrix:** [`@sumner:nevarro.space`](https://matrix.to/#/@sumner:nevarro.space)
 * **Email:** me [at] sumnerevans [dot] com
 * **Social Media:** links to my social media profiles are listed in the footer.
 
