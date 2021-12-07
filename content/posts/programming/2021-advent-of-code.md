@@ -31,6 +31,7 @@ The following is my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+  7   00:02:29   252      0   00:10:14  1865      0
   6   00:03:14   122      0   00:06:50   175      0
   5   00:13:24  1238      0   00:36:27  2733      0
   4   00:16:54   845      0   00:37:47  2325      0
@@ -458,3 +459,72 @@ This allowed me to index into, and then modify, the new dictionary without
 worrying about whether the key exists or not in the dictionary.
 
 </details>
+
+Day 7: The Treachery of Whales
+==============================
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/7 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/07.py), [OCaml](https://github.com/sumnerevans/advent-of-code/blob/master/2021/07.ml) |
+| **Part 1:** | 00:02:29, 252nd |
+| **Part 2:** | 00:10:14, 1865th |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 7 | Python (252*, 1865**)</summary>
+  {{< youtube id="VceuLfVAu90" title="Advent of Code 2021 - Day 7 | Python (252*, 1865**)" >}}
+</details>
+
+Part 1 went fairly well for me today. Part 2 did not go quite as well (I missed
+a key insight into the problem), but it was not a decent enough performance so I
+didn't loose too many points on the Mines leaderboard.
+
+I also solved this problem in OCaml after cleaning up my Python code.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+For both parts, brute force is fast enough. The core brute-force algorithm is
+checking every single possible alignment point, and determining which of them
+gives you the best total "fuel cost" as defined by the problem. The fuel cost
+for every submarine is just the distance from the submarine's position to the
+alignment point. Then, you can just iterate over the possible alignment
+locations which are all integer values between the minimum element in the
+sequence and the maximum element in the sequence.
+
+During my initial solve, I just used a for loop to do the minimization because
+that was easy, and I didn't have to think very hard about it. After the stream,
+I converted it to use much more functional code (more details below).
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For part 2, the only thing that changes is the cost function. Instead of being
+the distance between the alignment location and the submarine position, the cost
+of moving $n$ places is
+\\[\sum_{k=1}^n k.\\]
+It is efficient enough to do a `for` loop to calculate this manually (which is
+what I did), but you can also use the formula
+\\[\sum_{k=1}^n k = \frac{n(n+1)}{2}\\]
+which makes the program run *much* faster.
+
+The reason my part 2 code did not work first time was because I missed a key
+insight which was that the alignment point did not necessarily have to be at one
+of the existing submarine locations. This cost me many minutes of debugging.
+
+</details>
+
+After my initial solution, I refactored my Python code to be more functional.
+The core of the algorithm is now very concise, and uses the `min` function with
+generators to minimize the sum of the costs for each of the crab submarines.
+
+```python
+def calc_best_alignment(seq: List[int], cost_fn: Callable[[int, int], int]) -> int:
+    return min(sum(cost_fn(v, k) for k in seq) for v in irange(*seqminmax(seq)))
+
+seq = [int(x) for x in lines[0].split(",")]
+print("Part 1:", calc_best_alignment(seq, lambda x, y: abs(x - y)))
+print("Part 2:", calc_best_alignment(seq, lambda a, b: sum(irange(1, abs(a - b)))))
+```
