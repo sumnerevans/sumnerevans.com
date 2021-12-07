@@ -389,7 +389,7 @@ Day 6: Lanternfish
 | <!-- -->    | <!-- -->    |
 |-------------|-------------|
 | **Link:** | https://adventofcode.com/2021/day/6 |
-| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/06.py) |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/06.py), [OCaml](https://github.com/sumnerevans/advent-of-code/blob/master/2021/06.ml) |
 | **Part 1:** | 00:03:14, 122th |
 | **Part 2:** | 00:06:50, 175th |
 
