@@ -13,6 +13,10 @@ draft: true
    level at Mines, and thus I have recieved compensation from Mines.
 
 TODO
+Computer science is one of the fastest growing majors in the nation right now.
+It's also one of the most competitive due to the number of graduates each year.
+Because of this, people look for many ways to differentiate themselves from all
+the other graduates.
 
 I think there are three main reasons why most people decide to get a master's
 degree in computer science: financial, academic, and social.
