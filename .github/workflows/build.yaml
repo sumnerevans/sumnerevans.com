@@ -40,6 +40,6 @@ jobs:
         env:
           HOST: morak.sumnerevans.com
           KEY: ${{ secrets.DEPLOY_SSH_KEY }}
-          SOURCE: ./public
-          TARGET: /var/www/sumnerevans.com/
+          SOURCE: ./public/
+          TARGET: /var/www/sumnerevans.com
           VERBOSE: true
