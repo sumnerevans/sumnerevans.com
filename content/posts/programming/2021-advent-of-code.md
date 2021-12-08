@@ -31,6 +31,7 @@ The following is my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+  8   00:07:24   890      0   00:44:03  1066      0
   7   00:02:29   252      0   00:10:14  1865      0
   6   00:03:14   122      0   00:06:50   175      0
   5   00:13:24  1238      0   00:36:27  2733      0
@@ -528,3 +529,83 @@ seq = [int(x) for x in lines[0].split(",")]
 print("Part 1:", calc_best_alignment(seq, lambda x, y: abs(x - y)))
 print("Part 2:", calc_best_alignment(seq, lambda a, b: sum(irange(1, abs(a - b)))))
 ```
+
+Day 8: Seven Segment Search
+===========================
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/8 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/08.py) |
+| **Part 1:** | 00:07:24, 890th |
+| **Part 2:** | 00:44:03, 1066th |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 8 | Python (890*, 1066**)</summary>
+  {{< youtube id="fG_qObFZntI" title="Advent of Code 2021 - Day 8 | Python (890*, 1066**)" >}}
+</details>
+
+This problem was fun. It involved dealing with a seven-segment display, which
+automatically makes it interesting IMO. I have some experience with writing
+problems related to seven-segment displays (see [*Broken Clock* from HSPC
+2020]({{< ref "/posts/school/2020-hspc#b-broken-clock" >}})).
+
+One of the hardest parts of the problem was figuring out what it was asking and
+understanding the format that the problem was being provided in. After that,
+part 1 was fairly simple. Part 2 required some logic, and I floundered around
+for a while trying to figure it out, and was finally successful.
+
+Although I liked the problem, it was not great for me on the leaderboard. I lost
+another 5 points on Colin, and Ryan jumped me with another 1*, 1** placement for
++6 over my 4*, 5** today. Ryan is now at 654, Kelly at 653, and I'm at 652.
+Colin is still ahead of the pack at 679. It's going to really be interesting to
+see how things shake out down the stretch!
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+Part 1 required that you count how many elements on the *output* part of each
+line were of length 2 (corresponding to the digit 1), 4 (corresponding to the
+digit 4), 3 (corresponding to the digit 7), and 7 (corresponding to the digit
+8). These are the only digits with that corresponding number of segments
+illuminated.
+
+It took forever to read through the problem, and then I messed up and didn't
+realize that I just had to compare lengths (I thought I had to compare actual
+values, which was not the case).
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For part 2, you actually have to infer a mapping of the scrambled segment IDs to
+the actual segment IDs, and then use that to determine the numbers being output.
+
+There are two sets of constraints you can create for each line:
+
+1. Each of the characters in strings with unique segment counts (2, 4, 3, 7)
+   must map to one of the characters in the actual seven segment display for
+   that number. For example, if you have `eg`, then you know that `e` can either
+   map to `c` or `f`, and `g` can map to `c` or `f` as well. You can make these
+   constraints for each of the unique segment counts and their corresponding
+   digit.
+
+2. You can look at the number of times that each character occurs in the signal
+   patterns on the left of the `|`. If a letter occurs eight times on the left
+   hand side, then it could either map to `a` or `c` because those are the only
+   two segments that appear in eight of the possible digits. You can make these 
+   constraints for each of the segments.
+
+After generating these constraints, I used my handy
+`infer_one_to_one_from_possibles` function which performs simple inference to
+get a 1:1 mapping of key to value.
+
+Then, you can use that mapping to determine the values of each of the digits on
+the right hand side of the `|`, convert that to an integer, and add it to the
+answer. I messed that part up as I was solving because I accidentally used the
+digits on the left hand side instead of the right hand side, and that cost me a
+bit of time (and possibly a point on the leaderboard, although I don't think it
+would have been enough).
+
+</details>
