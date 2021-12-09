@@ -31,6 +31,7 @@ The following is my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+  9   00:22:40  5314      0   00:39:34  2937      0
   8   00:07:24   890      0   00:44:03  1066      0
   7   00:02:29   252      0   00:10:14  1865      0
   6   00:03:14   122      0   00:06:50   175      0
@@ -39,6 +40,19 @@ Day       Time  Rank  Score       Time  Rank  Score
   3   00:06:56  1338      0   00:38:16  3718      0
   2   00:03:03  1045      0   00:04:57   856      0
   1   00:00:49    38     63   00:02:22    66     35
+```
+
+Language statistics:
+
+```
+===============================================================================
+ Language            Files        Lines         Code     Comments       Blanks
+===============================================================================
+ OCaml                   4          228          191           16           21
+ Python                  9         1853         1319          173          361
+===============================================================================
+ Total                  13         2081         1510          189          382
+===============================================================================
 ```
 
 Day 1: Sonar Sweep
@@ -609,3 +623,92 @@ bit of time (and possibly a point on the leaderboard, although I don't think it
 would have been enough).
 
 </details>
+
+Day 9: Smoke Basin
+==================
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/9 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/09.py) |
+| **Part 1:** | 00:22:40, 5314th |
+| **Part 2:** | 00:39:34, 2937th |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 9 | Python (5314*, 2937**)</summary>
+  {{< youtube id="bMjGUiAsD3U" title="Advent of Code 2021 - Day 9 | Python (5314*, 2937**)" >}}
+</details>
+
+Today was my worst day yet. Absolutely bombed both parts. Lots of things went
+wrong. Probably the biggest was that my grid adjacency helper function didn't
+actually do what I needed it to, and it had been so long since I'd programmed it
+that I couldn't actually remember how it worked to modify it.
+
+Also, I had a couple of other errors, including that I missed that the low
+points had to be strictly less than all adjacent points, but that was a small
+error compared to the time I wasted on a function that was broken.
+
+Part 2 went a little bit better, but I failed to implement a basic flood fill
+for a number of minutes.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+As I mentioned above, part 1 went very poorly because of my assumption that past
+me had implemented the `grid_adjs` function in the way I wanted it to work
+today. However, that was a fatal assumption: past me is stupid; and present me
+is equally stupid because present me assumed that past me was good at
+programming.
+
+Fundamentally, the problem required that you check every square of a grid and
+see if its compass-neighbors are strictly greater than it. If so, then that
+square is a "low point" and \\(1 + h\\) where \\(h\\) is the value of the
+square.
+
+It's actually fairly simple if your past self doesn't come up and stab you in
+the back.
+
+I refactored everything on stream, and improved my `grid_adjs` function and
+actually documented it this time. Hopefully future me will understand how to use
+the function in the future. The final version of the code is actually fairly
+concise:
+
+```python
+def part1(lines: List[str]) -> int:
+    ans = 0
+    L = [[int(y) for y in x] for x in lines]
+
+    for r in range(len(L)):
+        for c in range(len(L[0])):
+            if all(
+                L[ar][ac] > L[r][c]
+                for ar, ac in grid_adjs((r, c), ((0, len(L)), (0, len(L[0]))))
+            ):
+                ans += 1 + L[r][c]
+
+    return ans
+```
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+The second part of the problem involved flood filling all of the areas bounded
+by the edge of the grid and `9`s. I floundered around for a while trying to
+remember how to do flood fill, but eventually I remembered and implemented a
+fast enough solution.
+
+While I was cleaning up the code on stream, I made a change that drastically
+improved the performance of part 2. Basically, I had been performing a
+flood-fill starting from every single square on the grid. This is unnecessary
+and creates many duplicates. So, I refactored it to skip flood-fills from any
+square that had already been added to a basin.
+
+</details>
+
+Unfortunately, today was so bad on the Mines leaderboard (got 10*, 8**) that I
+now am a full ten points back from 3rd place, and 17 points behind 2nd place
+meaning that I'm on track for another 4th place finish on the Mines leaderboard.
+
+But, at least when you sort by Global Score, I'm still first.
