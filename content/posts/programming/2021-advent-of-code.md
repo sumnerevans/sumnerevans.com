@@ -31,6 +31,7 @@ The following is my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+ 10   00:11:12  1902      0   00:19:18  1640      0
   9   00:22:40  5314      0   00:39:34  2937      0
   8   00:07:24   890      0   00:44:03  1066      0
   7   00:02:29   252      0   00:10:14  1865      0
@@ -49,9 +50,9 @@ Language statistics:
  Language            Files        Lines         Code     Comments       Blanks
 ===============================================================================
  OCaml                   4          228          191           16           21
- Python                  9         1853         1319          173          361
+ Python                 10         2049         1464          188          397
 ===============================================================================
- Total                  13         2081         1510          189          382
+ Total                  14         2277         1655          204          418
 ===============================================================================
 ```
 
@@ -712,3 +713,58 @@ now am a full ten points back from 3rd place, and 17 points behind 2nd place
 meaning that I'm on track for another 4th place finish on the Mines leaderboard.
 
 But, at least when you sort by Global Score, I'm still first.
+
+Day 10: Syntax Scoring
+======================
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/10 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/10.py) |
+| **Part 1:** | 00:11:12, 1902th |
+| **Part 2:** | 00:19:18, 1640th |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 10 | Python (1902*, 1640**)</summary>
+  {{< youtube id="uDvh1F43KGE" title="Advent of Code 2021 - Day 10 | Python (1902*, 1640**)" >}}
+</details>
+
+Another bad day today, I just couldn't get my head around what I was supposed to
+be doing, and I clearly haven't done enough stack problems, and I also need to
+start reading the problems better.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+Part 1 is a simple parentheses matching problem. If you get mismatched
+parentheses, then there is a specific score for the mismatched character. The
+main thing that went wrong was that I forgot to pop from the stack in the right
+cases.
+
+Reading comprehension was also a problem. I read that I was supposed to only
+consider invalid lines, and I understood what caused a line to be invalid, I
+just floundered around for a while trying to figure out where to put it in the
+code.
+
+Maybe I'm just rushing it too much, but I didn't feel like I was rushing through
+it as I was solving.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For the second part of the problem you have to consider lines that aren't
+immediately invalid (and are instead just incomplete). After processing the
+line, you have to use the stack to determine what characters need to be added
+to the back of the string.
+
+The biggest mistake I made was that I didn't reverse the list I was using as my
+stack, so I spent a while debugging before I realized that I just needed to
+reverse the list before computing the score for the line.
+
+</details>
+
+I lost another 6 points to 3rd place on the Mines leaderboard, so I'm now 16
+points behind the podium. And we are getting to the point where the days are a
+lot harder to get points because there aren't as many people solving each night.
