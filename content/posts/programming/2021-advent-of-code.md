@@ -31,6 +31,7 @@ The following is my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+ 11   00:52:24  4855      0   00:54:24  4535      0
  10   00:11:12  1902      0   00:19:18  1640      0
   9   00:22:40  5314      0   00:39:34  2937      0
   8   00:07:24   890      0   00:44:03  1066      0
@@ -50,9 +51,9 @@ Language statistics:
  Language            Files        Lines         Code     Comments       Blanks
 ===============================================================================
  OCaml                   4          228          191           16           21
- Python                 10         2049         1464          188          397
+ Python                 11         2389         1715          215          459
 ===============================================================================
- Total                  14         2277         1655          204          418
+ Total                  15         2617         1906          231          480
 ===============================================================================
 ```
 
@@ -768,3 +769,61 @@ reverse the list before computing the score for the line.
 I lost another 6 points to 3rd place on the Mines leaderboard, so I'm now 16
 points behind the podium. And we are getting to the point where the days are a
 lot harder to get points because there aren't as many people solving each night.
+
+Day 11: Dumbo Octopus
+=====================
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/11 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/11.py) |
+| **Part 1:** | 00:52:24, 4855th |
+| **Part 2:** | 00:54:24, 4535th |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 11 | Python (4855*, 4535**)</summary>
+  {{< youtube id="Z01y9SO8m-c" title="Advent of Code 2021 - Day 11 | Python (4855*, 4535**)" >}}
+</details>
+
+Well, today was the worst day yet. I did so bad at part 1 that I had to give up
+and start rewriting the entire function. After solving, I managed to get my
+original approach over the hump with help from chat, and got the solution via
+that method.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+For part 1, my original approach was to run the flashing simulation like a
+flood-fill. Every time an octopus flashed, I reset it to `0`, and then
+propagated that outwards. I had multiple bugs with my logic, though. The most
+tragic of which were having to do with the modulo operator. I was using `% 9`
+instead of `% 10`, and I also failed to do the operator precedence correctly
+(`%` binds tighter than `+`).
+
+As I was solving, I just gave up and rewrote with a different approach that was
+a bit less intelligent, but was easier to reason about. It was still a sort of
+flood fill, but I didn't use modulo and didn't set the octopus to `0` until
+after the entire simulation for each iteration was complete. I just keep
+iterating over the entire grid, and if there's an element that is 9 or larger,
+then I increment all of the points around it (unless that square has been
+already handled).
+
+I think the lesson is that I should not use modulo unless absolutely necessary,
+and if I do have to use it, I should think about it for a long time to make sure
+it works how I want it to.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+Part 2 was very similar to part 1. All that changed was that instead of 100
+iterations, you keep iterating until every octopus flashes in a single
+iteration. The core simulation was the same, and the check at the end was fairly
+simple to write as well (just make sure that the number of flashed octopuses)
+was the same as the size of the grid.
+
+I had an off-by-one error, but the test case saved me on that and I just added 1
+to the answer and it was fine.
+
+</details>
