@@ -31,6 +31,7 @@ The following is my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+ 12   00:10:51   422      0   00:43:27  2240      0
  11   00:52:24  4855      0   00:54:24  4535      0
  10   00:11:12  1902      0   00:19:18  1640      0
   9   00:22:40  5314      0   00:39:34  2937      0
@@ -51,9 +52,9 @@ Language statistics:
  Language            Files        Lines         Code     Comments       Blanks
 ===============================================================================
  OCaml                   4          228          191           16           21
- Python                 11         2389         1715          215          459
+ Python                 12         2618         1869          240          509
 ===============================================================================
- Total                  15         2617         1906          231          480
+ Total                  16         2846         2060          256          530
 ===============================================================================
 ```
 
@@ -827,3 +828,101 @@ I had an off-by-one error, but the test case saved me on that and I just added 1
 to the answer and it was fine.
 
 </details>
+
+Day 12: Passage Pathing
+=======================
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/12 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/12.py) |
+| **Part 1:** | 00:10:51, 422th |
+| **Part 2:** | 00:43:27, 2240th |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 12 | Python (422*, 2240**)</summary>
+  {{< youtube id="TCGlSYrciXw" title="Advent of Code 2021 - Day 12 | Python (422*, 2240**)" >}}
+</details>
+
+I liked this problem, probably my favourite one so far. I did fairly well on
+part 1, getting back into the top 1000 globally, and 3rd place on the Mines
+leaderboard. Part 2 on the other hand, went quite poorly; even though I liked
+the problem.
+
+I think this problem is my favourite because it is a graph problem. Graphs are
+my favourite subject in all of computer science, so it was right up my alley.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+Part 1 was a path-counting problem where you have to count the number of of
+paths from the `start` node to the `end` node. However, there's a twist: you can
+visit some nodes (large ones that are annotated by uppercase letters) multiple
+times. In general, I find it easiest to write path-counting algorithms using
+recursion because you can think of it like you are summing up the counts at each
+level of the recursion tree.
+
+The base case is when you get to the `end` node. In that case, just return `1`
+since a path was found.
+
+Otherwise, look at all of the neighbors in the graph, and sum the recursive
+calls to the function for each of the neighbors. However, I had to have some
+extra conditionals to ensure that I didn't loop back to `start` and so that I
+could avoid revisiting small (lowercase) caves.
+
+In the end, my recursive function ended up being fairly concise:
+
+```python
+def paths(key, visited: Set[str]) -> int:
+    if key == "end":
+        return 1
+
+    count = 0
+    for a in G[key]:
+        if a == "start":
+            continue
+        if a.islower() and a in visited:
+            # This is a small cave, and we've only been here once.
+            continue
+
+        count += paths(a, {*visited, a})
+
+    return count
+
+paths("start", set())  # this generates the answer
+```
+
+(Yes, I know that I could simplify the `for` loop down to a `sum` with a
+generator expression, but I think this is more readable splatted out like this.)
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For part 2, there was an added twist, you can visit *one* small cave twice (and
+you can still visit big caves multiple times). Once you visit one small cave
+twice on a path, you cannot visit another small cave more than once.
+
+I made a few major mistakes:
+
+1. I thought that you could visit any number of small caves twice on a path.
+   This didn't cost me a ton of time in the scheme of things.
+2. I messed up my conditions, and didn't allow visiting any small caves after
+   visiting one small cave twice. I'm pretty sure I had a solution which had
+   this bug for about 15-20 minutes.
+
+Unfortunately, it was quite difficult to debug (that is the downside of
+implementing it recursively).
+
+In the end, the function is actually very similar to part 1, except the
+condition is slightly different. [See source
+here](https://github.com/sumnerevans/advent-of-code/blob/master/2021/12.py#L161).
+
+After I solved, I did a bit of optimizing by adding memoization.
+
+</details>
+
+At this point, I'm about to give up on trying to content for top 3 on the Mines
+leaderboard. I just need to hold off a late surge from Sam, Dorian, or Adam who
+have all been outperforming me the past few days.
