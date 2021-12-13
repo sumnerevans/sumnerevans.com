@@ -31,6 +31,7 @@ The following is my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+ 13   00:35:07  3962      0   00:36:37  2836      0
  12   00:10:51   422      0   00:43:27  2240      0
  11   00:52:24  4855      0   00:54:24  4535      0
  10   00:11:12  1902      0   00:19:18  1640      0
@@ -48,13 +49,14 @@ Day       Time  Rank  Score       Time  Rank  Score
 Language statistics:
 
 ```
+$ tokei -e inputs
 ===============================================================================
  Language            Files        Lines         Code     Comments       Blanks
 ===============================================================================
  OCaml                   4          228          191           16           21
- Python                 12         2618         1869          240          509
+ Python                 13         2866         2058          258          550
 ===============================================================================
- Total                  16         2846         2060          256          530
+ Total                  17         3094         2249          274          571
 ===============================================================================
 ```
 
@@ -926,3 +928,64 @@ After I solved, I did a bit of optimizing by adding memoization.
 At this point, I'm about to give up on trying to content for top 3 on the Mines
 leaderboard. I just need to hold off a late surge from Sam, Dorian, or Adam who
 have all been outperforming me the past few days.
+
+Day 13: Transparent Origami
+===========================
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/13 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/13.py) |
+| **Part 1:** | 00:35:07, 3962nd |
+| **Part 2:** | 00:36:37, 2836th |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 13 | Python (3962*, 2836**)</summary>
+  {{< youtube id="60kkZZFaPcw" title="Advent of Code 2021 - Day 13 | Python (3962*, 2836**)" >}}
+</details>
+
+Well, unlucky 13, I guess: today didn't go well. I enjoyed the problem, though!
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+For part 1, you just have to perform a single fold, and then print out the
+number of dots on the overlapped page.
+
+Input parsing went fairly well. Using a simple state machine to determine where
+in the input I was went flawlessly. Everything after that went poorly on part 1,
+though.
+
+First, I screwed up my math for doing the reflection for a good number of
+minutes. Doing arithmetic has been the bane of my existence for forever, and
+arithmetic involving subtraction and negatives are even worse. I never have been
+good at it (just ask [Sam Sartor](https://samsartor.com) about the VR bug).
+
+Second, I only solved for the \\(y\\) direction since that was what the sample
+input had, and I figured that I could do a bit of cheese and only solve that
+case. However, I failed to look at the actual input, which had \\(x\\) as the
+first fold direction. I spent over 11 minutes trying to figure out why it was
+working on the sample but not my input 🤦.
+
+The one nice thing about screwing up so badly on part 1 was that I implemented
+some nice debugging functions to print out the paper. That was supremely helpful
+on Part 2.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For part 2, you had to process all of the folds (instead of just the first one)
+and then when you print out the final folded paper, it prints a sequence of
+letters which is the answer.
+
+My delta time on this part was amazing because I had already implemented a
+function to print out the folded paper. All I had to do was add a for loop on
+top of the fold logic, print out the paper, and viola: answer.
+
+</details>
+
+At this point, I'm officially calling off the hunt for top 3 on the Mines
+leaderboard. Next goal is to try and hold off a late surge from Sam, Dorian, or
+Adam who all outperformed me again tonight.
