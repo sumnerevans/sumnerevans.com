@@ -31,6 +31,7 @@ The following is my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+ 14   00:07:33   391      0   01:08:40  3371      0
  13   00:35:07  3962      0   00:36:37  2836      0
  12   00:10:51   422      0   00:43:27  2240      0
  11   00:52:24  4855      0   00:54:24  4535      0
@@ -54,9 +55,9 @@ $ tokei -e inputs
  Language            Files        Lines         Code     Comments       Blanks
 ===============================================================================
  OCaml                   4          228          191           16           21
- Python                 13         2866         2058          258          550
+ Python                 14         3104         2230          278          596
 ===============================================================================
- Total                  17         3094         2249          274          571
+ Total                  18         3332         2421          294          617
 ===============================================================================
 ```
 
@@ -946,6 +947,10 @@ Day 13: Transparent Origami
 
 Well, unlucky 13, I guess: today didn't go well. I enjoyed the problem, though!
 
+In this problem, you are given the location of a set of dots on a piece of paper
+and you have to perform a sequence of folds on that piece of paper to get a
+point-cloud.
+
 <details class="advent-of-code-part-expander" open>
 <summary><h3>Part 1</h3></summary>
 
@@ -989,3 +994,136 @@ top of the fold logic, print out the paper, and viola: answer.
 At this point, I'm officially calling off the hunt for top 3 on the Mines
 leaderboard. Next goal is to try and hold off a late surge from Sam, Dorian, or
 Adam who all outperformed me again tonight.
+
+Day 14: Extended Polymerization
+===============================
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/14 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/14.py) |
+| **Part 1:** | 00:07:33, 391st |
+| **Part 2:** | 01:08:40, 3371th |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 14 | Python (391*, 3371**)</summary>
+  {{< youtube id="6FEL2eyOi5Q" title="Advent of Code 2021 - Day 14 | Python (391*, 3371**)" >}}
+</details>
+
+The streak of bad part 2s continued today. I got back to the top 1000 for part
+1, but I floundered hard on part 2. There were many reasons (mainly due to a
+really stupid bug with my cache that I fought for a long time even after getting
+a correct solution).
+
+The core of the problem was taking a template sequence and expanding each of the
+pairs for \\(n\\) iterations. For example, if you have an insertion rule `AB ->
+C`, you would on a given iteration replace all `AB` in the template with `ACB`.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+For part 1, \\(n = 10\\) which is manageable with brute force. I was a bit slow
+on this (4th on Mines leaderboard), but I was happy that I got back into top
+1000 again.
+
+I just did a simple `for` loop across all of the pairs in the template, and
+reconstructed the template every subsequent day. At the end, I used a `Counter`
+to get the minimum and maximum number of occurrences of each character in the
+string and performed the necessary subtraction.
+
+The biggest thing I had to remember is that (due to the way I constructed the
+string) I had to add the last character of the template to the string on every
+iteration. Luckily I remembered, so this wasn't that big of an issue, and the
+algorithm ended up being pretty elegant. Here's my cleaned up version:
+
+```python
+def part1(lines: List[str]) -> int:
+    template = lines[0]
+    insertion_rules = {a: b for a, b in map(lambda line: line.split(" -> "), lines[2:])}
+
+    for _ in range(10):
+        new_template = (
+            "".join(a + insertion_rules[a + b] for a, b in window(template, 2))
+            + template[-1]
+        )
+        template = new_template
+
+    min_, max_ = seqminmax(Counter(template).values())
+    return max_ - min_
+```
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+The challenge with part 2 was that \\(n = 40\\) which is too large to brute
+force. I chose to use a memoized recursive solution.
+
+The basic idea was to have a recursive function that gives you a count of the
+number of each character between two bounding characters for some depth,
+\\(d\\). Here's a math-ish formulation of the function (\\(I\\) is a mapping of
+start and end character to character to insert between the start and end):
+\\[
+c(a, b, d) = \begin{cases}
+  [I[a, b] \rightarrow 1] & d = 1 \cr
+  c(a, I[a, b], d - 1) + [I[a, b] \rightarrow 1] + c(I[a, b], b, d-1) & otherwise
+\end{cases}
+\\]
+where the \\(+\\) operator on mappings merges the maps with a sum if there are equal
+keys.
+
+The base case is relatively simple: if you have the `AB -> C` insertion rule,
+calling the recursive function with `A`, `B` and depth of `1` would give you
+`{'C': 1}` because a single `C` would be inserted between the `A` and `B`
+(result is `ACB`).
+
+The recursive case is when \\(d \neq 1\\) in which case, you have to make
+recursive calls on both of the resulting pairs, as well as add another \\(I[A,
+B]\\) to the count.
+
+I don't think this was the best approach for multiple reasons:
+
+1. After talking to friends and watching [Jonathan
+   Paulson](https://www.youtube.com/watch?v=7zvA-o47Uo0), the simpler solution
+   was to keep track of the number of each of the pairs in the sequence. For
+   example, if you have the `AB -> C` insertion rule, at any given iteration,
+   for every `AB`, you add 1 to the count of `AC`s and `CB`s for that iteration.
+   Another way of thinking about it:
+   ```python
+   {"AB": 3}           # initial sequence
+   {"AC": 3, "CB": 3}  # one iteration
+   ```
+   This is a lot easier to reason about than the recursive method, I think,
+   however counting everything up at the end is slightly more annoying I think.
+
+2. The recursive formulation was nontrivial to figure out the base and recursive
+   steps for. I think this is mainly due to me not really thinking recursively
+   very often. I enjoyed this aspect of the problem, though.
+
+3. This is the main issue: when using
+   [`functools.cache`](https://docs.python.org/3/library/functools.html#functools.cache),
+   if you return something mutable like dictionaries, if you modify the return
+   value of the cached function, you are modifying the actual mutable reference.
+   This really bit me hard as I was solving because I was mutating my cache,
+   making the computations totally wrong.
+
+   During the solve, I converted everything over to just use tuples, but during
+   the cleanup, I realized that all I really had to do was to treat the return
+   value as immutable. I guess this is where a language with immutability by
+   default would come in handy.
+
+Despite this, I still like my solution: it's fairly elegant. As I cleaned up
+part 2, I converted to use `Counter`s across the board, and used the `+`
+operator on them (which merges `Counter`s together) to fix all of my mutability
+woes.
+
+</details>
+
+Overall, I thought it was a neat problem, but I didn't immediately see the easy
+optimization for part 2, so I lost a ton of time.
+
+I lost another 7 points to Sam today, so he's now at 1123 points, and I'm at
+1140 points on the Mines leaderboard. It's going to be a lot tighter than I
+would have hoped down the stretch to hold on to fourth place. Third is totally
+out of reach (Ryan has 1195 points, which is virtually insurmountable).
