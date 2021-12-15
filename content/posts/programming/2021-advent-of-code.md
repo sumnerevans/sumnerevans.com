@@ -31,6 +31,7 @@ The following is my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+ 15   00:05:10    84     17   01:51:23  3682      0
  14   00:07:33   391      0   01:08:40  3371      0
  13   00:35:07  3962      0   00:36:37  2836      0
  12   00:10:51   422      0   00:43:27  2240      0
@@ -55,9 +56,9 @@ $ tokei -e inputs
  Language            Files        Lines         Code     Comments       Blanks
 ===============================================================================
  OCaml                   4          228          191           16           21
- Python                 14         3104         2230          278          596
+ Python                 15         3400         2447          303          650
 ===============================================================================
- Total                  18         3332         2421          294          617
+ Total                  19         3628         2638          319          671
 ===============================================================================
 ```
 
@@ -1127,3 +1128,88 @@ I lost another 7 points to Sam today, so he's now at 1123 points, and I'm at
 1140 points on the Mines leaderboard. It's going to be a lot tighter than I
 would have hoped down the stretch to hold on to fourth place. Third is totally
 out of reach (Ryan has 1195 points, which is virtually insurmountable).
+
+Day 15: Chiton
+==============
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/15 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/15.py) |
+| **Part 1:** | 00:05:10, 84th |
+| **Part 2:** | 01:51:23, 3682nd |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 15 | Python (84*, 3682**)</summary>
+  {{< youtube id="0OdB9y2b8nY" title="Advent of Code 2021 - Day 15 | Python (84*, 3682**)" >}}
+</details>
+
+Yet another bad part 2 (the trend continued). This one was especially painful,
+because I could have had an amazing delta time, but I had two bugs that
+cancelled each other out on part 1, but did not on part 2. More on that later.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+The core of the problem is a Dijkstra's shortest-cost path algorithm. Basically,
+you are given a grid of numbers, and you need to find the shortest-cost path
+from the top left to the bottom right where the cost is the sum of the numbers
+that you pass over. You can only go in compass directions (no diagonals).
+
+To model this as a graph, problem, then, I chose to conceptually put the nodes
+on the top-left corner of each of the squares, and then edges each have a cost
+which is the cost of going "through" a square. Thus, if you have the following
+grid:
+```
+123
+321
+342
+```
+the `(0, 1)` entry in the graph would have the following items:
+```python
+{
+    (2, (0, 0)),  # it costs 2 to go to (0, 0)
+    (2, (0, 2)),  # it costs 1 to go to (0, 2)
+    (2, (1, 1)),  # it costs 1 to go to (1, 1)
+},
+```
+
+Then, you can run Dijkstra's algorithm on the resulting graph. I had it in my
+starter code already (which is why I was able to solve quickly and leaderboard).
+
+There are few gotchas with this approach:
+
+1. You have to make sure to count the bottom-right square manually in the cost.
+2. You have to set the cost of the top-left square to 0.
+
+I didn't actually realize that these two were both the case on part 1, and my
+solution was correct because the top left and bottom right were actually the
+exact same value meaning that my two bugs cancelled out. I was not so fortunate
+on part 2.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For part 2, you are given some rules to expand the grid. I did the grid
+expansion more or less correctly (I did have a bug where I forgot to
+wrap-around, but I fixed that fairly early).
+
+The biggest bug that I had was (as I mentioned in my notes on part 1), was that
+I was counting the first square, and not counting the last square in the cost.
+I spent probably an hour and a half on that issue alone, causing my delta time
+(and thus my delta ranking) to be absolute garbage today.
+
+My Twitch chat bailed me out and mentioned that I should read the part of the
+description that talked about what to count again.
+
+</details>
+
+Despite another terrible performance on part 2, I did like the problem. It's a
+cool little graph problem (which are my favourite category of problems).
+
+Luckily, this was a hard enough problem, and I did well enough on part 1 that I
+only lost one point to Sam today. He's at 1208, and I'm at 1224. I did gain 11
+points on Ryan today, but I fully expect to loose those back promptly. Colin and
+Kelly are leagues ahead of all of us at 1327 and 1311, respectively.
