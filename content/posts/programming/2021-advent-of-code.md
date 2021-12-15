@@ -1144,9 +1144,10 @@ Day 15: Chiton
   {{< youtube id="0OdB9y2b8nY" title="Advent of Code 2021 - Day 15 | Python (84*, 3682**)" >}}
 </details>
 
-Yet another bad part 2 (the trend continued). This one was especially painful,
-because I could have had an amazing delta time, but I had two bugs that
-cancelled each other out on part 1, but did not on part 2. More on that later.
+Yet another bad part 2 (the trend continued). I leaderboarded on the first part,
+but had an awful delta time. This one was especially painful, because I could
+have had an amazing delta time, but I had two bugs that cancelled each other out
+on part 1, but did not on part 2. More on that later.
 
 <details class="advent-of-code-part-expander" open>
 <summary><h3>Part 1</h3></summary>
@@ -1213,3 +1214,8 @@ Luckily, this was a hard enough problem, and I did well enough on part 1 that I
 only lost one point to Sam today. He's at 1208, and I'm at 1224. I did gain 11
 points on Ryan today, but I fully expect to loose those back promptly. Colin and
 Kelly are leagues ahead of all of us at 1327 and 1311, respectively.
+
+So far, we have had five people get on the global leaderboard from Mines: myself
+(115 points), Aiden (104), Colin (69), Kelly (13), and Ryan (11). Last year,
+only one person (Colin) leaderboarded at all, so it's awesome to have so many
+people who've gotten to the top 100 from Mines!
