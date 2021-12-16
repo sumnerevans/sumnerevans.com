@@ -31,6 +31,7 @@ The following is my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+ 16   01:40:59  3439      0   01:55:56  3005      0
  15   00:05:10    84     17   01:51:23  3682      0
  14   00:07:33   391      0   01:08:40  3371      0
  13   00:35:07  3962      0   00:36:37  2836      0
@@ -56,9 +57,9 @@ $ tokei -e inputs
  Language            Files        Lines         Code     Comments       Blanks
 ===============================================================================
  OCaml                   4          228          191           16           21
- Python                 15         3400         2447          303          650
+ Python                 16         3670         2644          327          699
 ===============================================================================
- Total                  19         3628         2638          319          671
+ Total                  20         3898         2835          343          720
 ===============================================================================
 ```
 
@@ -1219,3 +1220,104 @@ So far, we have had five people get on the global leaderboard from Mines: myself
 (115 points), Aiden (104), Colin (69), Kelly (13), and Ryan (11). Last year,
 only one person (Colin) leaderboarded at all, so it's awesome to have so many
 people who've gotten to the top 100 from Mines!
+
+Day 16: Packet Decoder
+======================
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/16 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/16.py) |
+| **Part 1:** | 01:40:59, 3439th |
+| **Part 2:** | 01:55:56, 3005th |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 16 | Python (3439*, 3005**)</summary>
+  {{< youtube id="iFRbRXXtZMw" title="Advent of Code 2021 - Day 16 | Python (3439*, 3005**)" >}}
+</details>
+
+The best way to describe how today went is "tragic". I made a few crucial
+errors, that are entirely my own stupidity at fault.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+The problem consisted of recursively parsing a hex string into "packets". The
+packets can be nested within one another.
+
+The core of the solution is a recursive function that iteratively parses
+packets. The function itself is a state machine that keeps parsing until it has
+processed either all of the remaining bits, or the requisite number of packets.
+
+I made three crucial mistakes on this part (ordered roughly in the way I
+encountered them):
+
+1. I didn't parse literals correctly, and thought that it was a hard-coded at 15
+   elements. However, that's totally not how it works. You have to parse chunks
+   of 5 bits until you get a chunk with a `0` in the leftmost position, then you
+   should stop iterating. Then combine all of the 4-bit chunks together to get
+   the actual number.
+
+2. I didn't read how to actually use the *length type ID*. The length type ID
+   specifies both the number of bits to consider when calculating the length and
+   how to interpret that length. I immediately understood and correctly
+   implemented the first part: how many bits to consider.
+
+   But I failed multiple times to read the other part correctly. I initially
+   interpreted the length as the number of bits total in the subpackets in both
+   cases. Then, I saw **number of sub-packets immediately contained** in the
+   problem description, and converted both cases to do that. Then I realized
+   that the length type ID also specifies what that length represents (it
+   represents either the number of bits that the subpackets take up, or the
+   number of subpackets).
+
+3. I failed to increment my bit location pointer by `11` when the length type ID
+   was 1 (the case where the length specified the number of subpackets). This
+   caused everything to be shifted incorrectly on the next loop.
+
+4. I named the variable I was using as a condition for my loop the same thing as
+   the output of a function call within the loop. So I basically had:
+   ```python
+   while x < L:
+      # lots of bad code
+      L = call_to_function()
+      x += 1
+   ```
+   (obviously with lots more code in between).
+
+   This failed miserably and overrode my `L` variable that I needed for the loop
+   condition.
+
+The thing about today was that there were multiple very painful mistakes.
+Normally, I only end up with one fatal mistake per day. Today, though, it seemed
+made so many fatal mistakes it was a total disaster. To add insult to injury, if
+I was read the section about length type ID more carefully the first time, I
+could have avoided a *lot* of the issues. I think I was definitely rushing too
+much at that point.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For part 2, the same parser was required, but the operator types were given
+meanings, and you had to calculate the value that was encoded.
+
+I made a bad copy-paste mistake and forgot to change `5` to `6` and `7` for the
+less than and equal to cases, respectively. This cost me another 5 minutes.
+
+</details>
+
+Sam (1298) pulled within 1 point of me (1299) today on the Mines leaderboard.
+The top 3 are pretty much untouchable at this point: Colin (1415), Kelly (1403),
+Ryan (1343). It will be interesting to see who gets the edge down the stretch
+between me and Sam.
+
+I am also considering stopping streaming my solutions. I will continue updating
+this every day, but dealing with chat during stream is getting too stressful. I
+will probably also continue uploading to YouTube, as well. In the past, I mainly
+streamed under the assumption that nobody was watching. I used my VODs as way to
+do a self-retrospective. But now, people are actually watching (I've been raided
+the past few days, and I'm very grateful to all of the viewers), but it's
+getting way too stressful, and I don't want to have to explain to people what
+I'm doing as I'm doing it.
