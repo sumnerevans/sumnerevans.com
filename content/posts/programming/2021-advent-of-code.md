@@ -31,6 +31,7 @@ The following is my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+ 17   00:10:48   240      0   00:16:56   271      0
  16   01:40:59  3439      0   01:55:56  3005      0
  15   00:05:10    84     17   01:51:23  3682      0
  14   00:07:33   391      0   01:08:40  3371      0
@@ -1321,3 +1322,96 @@ do a self-retrospective. But now, people are actually watching (I've been raided
 the past few days, and I'm very grateful to all of the viewers), but it's
 getting way too stressful, and I don't want to have to explain to people what
 I'm doing as I'm doing it.
+
+Day 17: Packet Decoder
+======================
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/17 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/17.py) |
+| **Part 1:** | 00:10:48, 240th |
+| **Part 2:** | 00:16:56, 271th |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 17 | Python (240*, 271**)</summary>
+  {{< youtube id="tXm7Dsv3EM8" title="Advent of Code 2021 - Day 17 | Python (240*, 271**)" >}}
+</details>
+
+I was pretty happy about today, and the problem was a fairly short and
+straightforward one, too.
+
+I decided not to stream today live, and instead just record the VOD for YouTube.
+I didn't want to deal with chat (they really distracted me yesterday, and got me
+on to a lot of tangents yesterday which really extended the stream time). Having
+the video to look back on is nice (hence why I still will record my solves), but
+I have a lot of other things that I need to catch up on and so engaging with my
+Twitch chat is the one thing that has to be dropped (at least for now).
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+To solve part 1, I just brute forced all possibilities for initial \\(x\\) and
+\\(y\\) velocities and simulated the trajectory's path using a time-step
+simulation. Apparently there's a closed-form solution for this one as well, but
+I couldn't be bothered to figure it out.
+
+I spent proportionally more time actually reading the problem today, so I think
+that helped me significantly since I was able to implement without any
+problem-comprehension-induced problems. (There were other bugs, more on that in
+a moment.)
+
+To do the time step itself, I just used a while loop and went until the \\((x,
+y)\\) position was either below the target, to the right of the target, or in
+the target. If it goes beyond the target without hitting it at some point, you
+can stop and give up.
+
+For part 1, the task was to find the maximum height you can reach while still
+hitting the target. I initially chose \\(x \in [0, 100)\\) and \\(y \in [0,
+100)\\) as my bounds, and that gives the correct answer for the example case.
+However, it does not give the correct answer for the actual input. This makes
+sense, because the target area is beyond `200` in the \\(x\\) direction. While I
+solved, I decided to just increase the bounds to \\(x \in [0, 1000)\\) and \\(y
+\in [0, 1000)\\) which is quite slow, but gets the correct answer.
+
+In actuality, the bounds can be much tighter. In my cleaned up solution, I have
+\\(x \in [0, x_2]\\) and \\(y \in [0, \lvert y_1 \lvert)\\) where \\(x_2\\) is
+the largest \\(x\\) value in the target bounding box and \\(y_1\\) is the
+smallest \\(y\\) value in the target bounding box.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+To solve part 2, you just have to count the number of initial velocities that
+would result in a hit on the target. The simulation is the same, but the range
+of initial \\(y\\) values changes because you can start out with a negative
+value (since height is not an objective).
+
+As I solved, I thought that \\(x\\) may be able to be negative as well, and I
+failed to take a step back and think about the impracticality of it being
+negative, given the target was in the positive \\(x\\) direction. I finally just
+set the ranges to of \\(x \in [0, 500)\\) and \\(y \in [-300, 300)\\), which
+worked.
+
+Just like with part 1, the bounds can be much tighter: \\(x \in [0, x_2]\\) and
+\\(y \in [y_1, \lvert y_1 \lvert)\\) where \\(x_2\\) is the largest \\(x\\)
+value in the target bounding box and \\(y_1\\) is the smallest \\(y\\) value in
+the target bounding box (note that at least for all of the inputs that I've
+heard about, \\(y_1 < 0\\). If there is an input where that is not the case,
+then the bounds may be different).
+
+</details>
+
+I got first on part 1 on the Mines leaderboard, but my floundering to find the
+proper brute-force bounds let Kelly and Ryan slip in before me on part 2. Still,
+a 1*, 3** day is pretty good for me. I gained 7 points over Sam who calculated a
+closed-form solution for part 1 for third place, but there is not a closed form
+solution for part 2 (that we were able to think of), so he basically had to
+rewrite everything.
+
+At the top of the table, Colin (5*, 4**) just hit 1500, and Kelly gained 6
+points on Colin and is now at 1494. It's going to be exciting down the stretch!
+Ryan is at 1431, putting my 1389 and Sam's 1381 in a distant fourth and fifth
+place.
