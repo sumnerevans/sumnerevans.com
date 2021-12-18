@@ -29,25 +29,26 @@ Summary of Results
 The following is my results across all of the days.
 
 ```
-      -------Part 1--------   -------Part 2--------
-Day       Time  Rank  Score       Time  Rank  Score
- 17   00:10:48   240      0   00:16:56   271      0
- 16   01:40:59  3439      0   01:55:56  3005      0
- 15   00:05:10    84     17   01:51:23  3682      0
- 14   00:07:33   391      0   01:08:40  3371      0
- 13   00:35:07  3962      0   00:36:37  2836      0
- 12   00:10:51   422      0   00:43:27  2240      0
- 11   00:52:24  4855      0   00:54:24  4535      0
- 10   00:11:12  1902      0   00:19:18  1640      0
-  9   00:22:40  5314      0   00:39:34  2937      0
-  8   00:07:24   890      0   00:44:03  1066      0
-  7   00:02:29   252      0   00:10:14  1865      0
-  6   00:03:14   122      0   00:06:50   175      0
-  5   00:13:24  1238      0   00:36:27  2733      0
-  4   00:16:54   845      0   00:37:47  2325      0
-  3   00:06:56  1338      0   00:38:16  3718      0
-  2   00:03:03  1045      0   00:04:57   856      0
-  1   00:00:49    38     63   00:02:22    66     35
+      --------Part 1--------   --------Part 2--------
+Day       Time   Rank  Score       Time   Rank  Score
+ 18   17:42:08  11447      0   17:50:55  11230      0
+ 17   00:10:48    240      0   00:16:56    271      0
+ 16   01:40:59   3439      0   01:55:56   3005      0
+ 15   00:05:10     84     17   01:51:23   3682      0
+ 14   00:07:33    391      0   01:08:40   3371      0
+ 13   00:35:07   3962      0   00:36:37   2836      0
+ 12   00:10:51    422      0   00:43:27   2240      0
+ 11   00:52:24   4855      0   00:54:24   4535      0
+ 10   00:11:12   1902      0   00:19:18   1640      0
+  9   00:22:40   5314      0   00:39:34   2937      0
+  8   00:07:24    890      0   00:44:03   1066      0
+  7   00:02:29    252      0   00:10:14   1865      0
+  6   00:03:14    122      0   00:06:50    175      0
+  5   00:13:24   1238      0   00:36:27   2733      0
+  4   00:16:54    845      0   00:37:47   2325      0
+  3   00:06:56   1338      0   00:38:16   3718      0
+  2   00:03:03   1045      0   00:04:57    856      0
+  1   00:00:49     38     63   00:02:22     66     35
 ```
 
 Language statistics:
@@ -1415,3 +1416,84 @@ At the top of the table, Colin (5*, 4**) just hit 1500, and Kelly gained 6
 points on Colin and is now at 1494. It's going to be exciting down the stretch!
 Ryan is at 1431, putting my 1389 and Sam's 1381 in a distant fourth and fifth
 place.
+
+Day 18: Snailfish
+=================
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/18 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/18.py) |
+| **Part 1:** | 17:42:08, 11447th |
+| **Part 2:** | 17:50:55, 11230th |
+
+Today was the worst day yet, and a total unmitigated disaster. I started solving
+on release, but I didn't get it until the afternoon of the day after (I tested
+for my fourth degree black belt in ATA taekwondo in the morning [I passed, so at
+least one good thing happened to me today], and didn't get back to it until
+afternoon).
+
+I recorded some of my solve, but I am not going to upload it. There is no
+value in it, as I not only didn't solve, but I just went around in circles.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+The core algorithm that I used for Part 1 involved a recursive function that
+performed a single explosion, a function that handled number splits, a `for`
+loop, and a function to handle calculating magnitude.
+
+For the reduction function, it processes a pair at some depth and returns
+instructions for the layer above about what to do. I start by recursing into the
+left side of the pair. If running the reduction there gives me an instruction,
+then I handle that. If it didn't give an instruction (no reduction was done), I
+recursed into the right side of the pair. 
+
+The logic for handling the instructions was very annoying, and I screwed it up
+multiple times. Basically, my instructions were `"done"`, `"explodeBoth"`,
+`"explodeRight"`, `"nothing"`, and `"explodeLeft"`, and each one had to be
+handled separately.
+
+If after doing the reduction there were no explosions, then splits have to be
+performed. This is a fairly simple traversal to see if there are any elements
+greater than or equal to 10, and splitting them.
+
+I missed that I was supposed to do *all* explosions before processing *even one*
+split. No idea how much time that cost me across all of my different attempts,
+but that was stupid. I read that part of the description, but it still didn't
+register with me for a long time what it actually meant as far as the code.
+
+Early on, I missed that explosions propagate left and right regardless of how
+deep in the tree they happen.
+
+I had to rewrite everything multiple times. I got to the point at least two
+times that I just was unable to debug my code because it was structured so
+poorly. I think that I was probably close on multiple occasions, but it became
+impossible to debug. I do think that the fact that I did that a few times was
+good, as that helped me find bugs. Still, I should reread the problem more
+often, since I carried over some misconceptions between attempts.
+
+The only bright side was that my use of test cases was effective. They allowed
+me to have checkpoints along the way to make sure that everything was working
+properly and I didn't regress as I went through and implemented each part of
+each function.
+
+Still, overall it was an absolute unmitigated catastrophe.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+Part 2 is just a trivial double-nested `for` loop over all of the combinations
+of numbers, shove the values into the adder from part 1, and check the
+magnitude.
+
+Whichever magnitude is greater is the answer.
+
+</details>
+
+Luckily, being this late into the year, I only got 8*, 8** on the Mines
+leaderboard. Sam got 4*, 4** and we are now tied at 1467. Nobody gained places
+on part 2 so far on the leaderboard. Colin, Kelly, and Dorian got podium, Sam,
+Adam, Ryan, and Jack all slipped in before me.
