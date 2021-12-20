@@ -31,6 +31,7 @@ The following is my results across all of the days.
 ```
       --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
+ 20   00:45:49   1489      0   01:07:34   2108      0
  18   17:42:08  11447      0   17:50:55  11230      0
  17   00:10:48    240      0   00:16:56    271      0
  16   01:40:59   3439      0   01:55:56   3005      0
@@ -59,9 +60,9 @@ $ tokei -e inputs
  Language            Files        Lines         Code     Comments       Blanks
 ===============================================================================
  OCaml                   4          228          191           16           21
- Python                 16         3670         2644          327          699
+ Python                 20         5170         3767          441          962
 ===============================================================================
- Total                  20         3898         2835          343          720
+ Total                  24         5398         3958          457          983
 ===============================================================================
 ```
 
@@ -1497,3 +1498,108 @@ Luckily, being this late into the year, I only got 8*, 8** on the Mines
 leaderboard. Sam got 4*, 4** and we are now tied at 1467. Nobody gained places
 on part 2 so far on the leaderboard. Colin, Kelly, and Dorian got podium, Sam,
 Adam, Ryan, and Jack all slipped in before me.
+
+Day 19: Beacon Scanner
+======================
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/19 |
+| **Solutions:** | None yet |
+| **Part 1:** | |
+| **Part 2:** | |
+
+I haven't solved this one yet. I spent about three hours night of trying to
+figure it out, but I haven't been able to figure out the necessary rotation
+logic. I have had to finish grading final exams for the class I taught this
+semester at Mines, and I finished that just after midnight on Monday (I took a
+break to solve day 20). I then worked on this for another couple hours, but made
+no progress.
+
+I think I'm going to have to give up on this one. I am just too stupid to figure
+out the rotations.
+
+Day 20: Trench Map
+==================
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/20 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/20.py) |
+| **Part 1:** | 00:45:49, 1489th |
+| **Part 2:** | 01:07:34, 2108th |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 20 | Python (1489*, 2108**)</summary>
+  {{< youtube id="cCwYTA7pr_M" title="Advent of Code 2021 - Day 20 | Python (1489*, 2108**)" >}}
+</details>
+
+Today was a sort of Conway's Game of Life (CGL). I liked the concept, but there
+was a catch that I didn't detect until somebody mentioned it in the Mines Advent
+of Code chat.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+In a CGL, the core of the algorithm is to iterate through some grid of squares,
+and for each element of the grid, determine if that element should be alive (in
+this case `#`) or dead (`.`) for the next generation. You have to perform the
+calculation of aliveness for every single square based on the old generation's
+grid.
+
+In a normal CGL, the rules are based on the number of alive neighbors. With this
+modified CGL, the rules are based off of the state of the 9 cells around the
+given cell, including the cell itself, and a bitmap that is provided in the
+input. The 9 cells are used to create a bitmap and then you have to take that to
+determine which element of the 512-character long bitmap of the "algorithm" to
+use as the new value for that square. Luckily, my `grid_adjs` function iterated
+in the correct order for creating the bitmap, which was nice.
+
+The way that I implemented the CGL image was using a set to store the presence
+of a given square being alive in the image. For example, if the image was:
+```
+###
+.#.
+#..
+```
+I would store it as:
+```
+{(0, 0), (0, 1), (0, 2), (1, 1), (2, 0)}
+```
+which is a sparse representation of the image. In talking to others, it seems
+like storing the grid as a double array is actually faster (because of cache
+lines, avoiding hashing, etc.), but I think this is fairly easy to reason about,
+which is good because then my brain can comprehend it.
+
+The only catch (and it's a big one) is that the input flashes. When computing
+out the infinite picture, all empty space switches to filled space and back
+again, oscillating between the two every generation.
+
+I didn't realize this until people started commenting about it in the Mines
+Advent of Code chat. Luckily, I'd written a bunch of code to print the grid
+already, so I decided to just cheese the solution for part 1. I just ran the
+algorithm with a lot of padding, and then stuck the result into vim and cut out
+all the sides and then wrote a quick script to count `#`s.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+Part 2 required 50 iterations, so I actually had to fix the underlying issue. I
+ended up using a flag that basically oscillates back and forth that tells me
+what the value of a border element (one that is beyond the image) is. (I
+actually didn't implement it as a flag, I just used mod to determine which value
+it should be).
+
+For the first iteration, it's `False` because all of the space outside the
+image is `.`s. For the next iteration, it's `True` because all of the space
+outside of the image is `#`, etc.
+
+When computing the next generation, if I ever get a coordinate outside of the
+stored image, I just use whatever the flag has as the value.
+
+</details>
+
+After the last two days, it was refreshing to actually finish the problem. I'll
+take it.
