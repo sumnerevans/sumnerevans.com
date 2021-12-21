@@ -31,6 +31,7 @@ The following is my results across all of the days.
 ```
       --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
+ 21   00:07:55    352      0   00:22:56    144      0
  20   00:45:49   1489      0   01:07:34   2108      0
  18   17:42:08  11447      0   17:50:55  11230      0
  17   00:10:48    240      0   00:16:56    271      0
@@ -60,9 +61,9 @@ $ tokei -e inputs
  Language            Files        Lines         Code     Comments       Blanks
 ===============================================================================
  OCaml                   4          228          191           16           21
- Python                 20         5170         3767          441          962
+ Python                 21         5625         4054          505         1066
 ===============================================================================
- Total                  24         5398         3958          457          983
+ Total                  25         5853         4245          521         1087
 ===============================================================================
 ```
 
@@ -1325,8 +1326,8 @@ the past few days, and I'm very grateful to all of the viewers), but it's
 getting way too stressful, and I don't want to have to explain to people what
 I'm doing as I'm doing it.
 
-Day 17: Packet Decoder
-======================
+Day 17: Trick Shot
+==================
 
 | <!-- -->    | <!-- -->    |
 |-------------|-------------|
@@ -1603,3 +1604,112 @@ stored image, I just use whatever the flag has as the value.
 
 After the last two days, it was refreshing to actually finish the problem. I'll
 take it.
+
+Day 21: Dirac Dice
+==================
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/21 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/21.py) |
+| **Part 1:** | 00:07:55, 352th |
+| **Part 2:** | 00:22:56, 144th |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 21 | Python (352*, 144**)</summary>
+  {{< youtube id="tXm7Dsv3EM8" title="Advent of Code 2021 - Day 21 | Python (352*, 144**)" >}}
+</details>
+
+I'm very happy about how today went. It was a nice simulation for part 1, and
+then a neat recursion problem for part 2.
+
+The problem involved a circular board where players' pawns were moved around the
+board with the basic mechanic of making three dice rolls, and advancing the pawn
+by the sum of the values of the dice rolls, then adding the value of the square
+that the pawn landed on to that player's score.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+For part 1, the objective was fairly straightforward: simulate the game until
+someone hits 1000. At that point, just multiply the number of dice rolls by the
+score of the player who lost the game.
+
+The most important thing to do is to switch between the players, and make sure
+to increment the correct player's score and move the correct player's pawn.
+Also, dealing with circular board is slightly nontrivial. Because I didn't want
+to figure out how to do the proper modulo logic while I was solving, I just did
+a ghetto method:
+```python
+spot = p1 + dice_vals
+while spot > 10:
+    spot -= 10
+p1 = spot
+```
+It's ugly, and a bit slow, but effective!
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+Part 2 was where the fun began. Instead of the dice being deterministic as in
+part 1, they are now nondeterministic, and create branching universes. You have
+to calculate the total number of universes in which each player wins and return
+the max. I formulated this recursively. There are a few key insights that I made
+fairly quickly:
+
+1. The three nondeterministic rolls will result in a distribution of outcomes
+   (and therefore a distribution of end positions for the current player).
+
+   On a player's turn, the nondeterministic rolls will result in one roll-sum of
+   3, three roll-sums of 4, six roll-sums of 5, etc. That means that if, for
+   example, the player is currently at 1, in one universe, the player will land
+   on 4. In three universes, the player will land on 5, etc.
+
+2. Given the players locations and scores, and the current player, all of the
+   game outcomes can be determined.
+
+3. It is likely that you may arrive at the same game state via multiple
+   different methods (at the very least, you will get this because there are
+   multiple rolls at any given game state that will get you to the exact same
+   game state).
+
+Thus, I precomputed a roll frequency map, and then applied the following
+recursive formulation (\\(F\\) is the frequency map of roll values \\(r\\) to
+roll frequencies \\(f\\), the \\(+\\) operator is the \\(+\\) operator under the
+circular set (it wraps around), and \\(p_i\\) is the position of player \\(i\\),
+and \\(s_i\\) is the score for player \\(i\\):
+
+\\[
+W(p_1, p_2, s_1, s_2, c) = \begin{cases}
+  [1, 0] & s_1 > 0 \cr
+  [0, 1] & s_2 > 0 \cr
+  \sum_{r, f \in F} f \cdot W(p_1 + r, p_2, s_1 + (p_1 + r), s_2, 2) & c = 1 \cr
+  \sum_{r, f \in F} f \cdot W(p_1, p_2 + r, s_1, s_2 + (p_1 + r), 1) & c = 2
+\end{cases}
+\\]
+
+There are a finite set of possible values for the function because of the
+constraints of the problem. Precisely, it is \\(10 \times 10 \times 21 \times 21
+\times 2 = 88\,200\\) possible inputs to the recursive function. That is not a
+very large number, so storing it in an LRU cache works wonders for performance.
+
+The solution, then is just the maximum value of the vector returned by \\(W(P_1,
+P_2, 0, 0, 1)\\) where \\(P_i\\) is the start position for that player from the
+input.
+
+</details>
+
+I was pretty happy with how part 2 went because I spent the necessary time to
+think about the optimization required before actually coding it up. I'm sure I
+could have shaved some time off somewhere, but I think it would have been
+difficult, and overall, I'm really not disappointed.
+
+I got 3**, 1* on the Mines leaderboard, which means that if I solve day 19, I
+may have a chance to retake 3th place. (Ryan hasn't solved day 19 or day 20, so
+if he does, I'll be back down to 4th.)
+
+I'm currently in 5th with Colin (1860), Kelly (1848), Sam (1716), and Adam
+(1644) ahead of me at 1642. Ryan is at 1600, and I'm assuming that he will
+eventually solve 19 and 20.
