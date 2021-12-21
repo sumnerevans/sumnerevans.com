@@ -33,6 +33,7 @@ The following is my results across all of the days.
 Day       Time   Rank  Score       Time   Rank  Score
  21   00:07:55    352      0   00:22:56    144      0
  20   00:45:49   1489      0   01:07:34   2108      0
+ 19       >24h  11368      0          -      -      -
  18   17:42:08  11447      0   17:50:55  11230      0
  17   00:10:48    240      0   00:16:56    271      0
  16   01:40:59   3439      0   01:55:56   3005      0
@@ -61,9 +62,9 @@ $ tokei -e inputs
  Language            Files        Lines         Code     Comments       Blanks
 ===============================================================================
  OCaml                   4          228          191           16           21
- Python                 21         5625         4054          505         1066
+ Python                 21         5565         4013          479         1073
 ===============================================================================
- Total                  25         5853         4245          521         1087
+ Total                  25         5793         4204          495         1094
 ===============================================================================
 ```
 
@@ -1506,9 +1507,9 @@ Day 19: Beacon Scanner
 | <!-- -->    | <!-- -->    |
 |-------------|-------------|
 | **Link:** | https://adventofcode.com/2021/day/19 |
-| **Solutions:** | None yet |
-| **Part 1:** | |
-| **Part 2:** | |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/19.py) |
+| **Part 1:** | >24h, 11368th |
+| **Part 2:** | - |
 
 I haven't solved this one yet. I spent about three hours night of trying to
 figure it out, but I haven't been able to figure out the necessary rotation
@@ -1519,6 +1520,22 @@ no progress.
 
 I think I'm going to have to give up on this one. I am just too stupid to figure
 out the rotations.
+
+-------------------------------------------------------------------------------
+
+**Update (2021-12-21):** I solved part 1. It's some of the ugliest code I've
+ever written, and takes forever to run. Now I just have to figure out how to do
+part 2. I'm close, but I'm off by a rotation or something. Not really sure how
+to debug.
+
+<!--
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+Conceptually
+
+</details>
+-->
 
 Day 20: Trench Map
 ==================
