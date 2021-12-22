@@ -31,9 +31,10 @@ The following is my results across all of the days.
 ```
       --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
+ 22   00:09:58    503      0   03:45:25   2276      0
  21   00:07:55    352      0   00:22:56    144      0
  20   00:45:49   1489      0   01:07:34   2108      0
- 19       >24h  11368      0          -      -      -
+ 19       >24h  11368      0       >24h  11815      0
  18   17:42:08  11447      0   17:50:55  11230      0
  17   00:10:48    240      0   00:16:56    271      0
  16   01:40:59   3439      0   01:55:56   3005      0
@@ -62,9 +63,9 @@ $ tokei -e inputs
  Language            Files        Lines         Code     Comments       Blanks
 ===============================================================================
  OCaml                   4          228          191           16           21
- Python                 21         5565         4013          479         1073
+ Python                 22         5458         3936          462         1060
 ===============================================================================
- Total                  25         5793         4204          495         1094
+ Total                  26         5686         4127          478         1081
 ===============================================================================
 ```
 
@@ -1509,7 +1510,7 @@ Day 19: Beacon Scanner
 | **Link:** | https://adventofcode.com/2021/day/19 |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/19.py) |
 | **Part 1:** | >24h, 11368th |
-| **Part 2:** | - |
+| **Part 2:** | >24h, 11815th |
 
 I haven't solved this one yet. I spent about three hours night of trying to
 figure it out, but I haven't been able to figure out the necessary rotation
@@ -1528,14 +1529,14 @@ ever written, and takes forever to run. Now I just have to figure out how to do
 part 2. I'm close, but I'm off by a rotation or something. Not really sure how
 to debug.
 
-<!--
-<details class="advent-of-code-part-expander" open>
-<summary><h3>Part 1</h3></summary>
+**Update (2021-12-22):** I finally solved part 2! The runtime for part 2 is way
+better than for part 1.
 
-Conceptually
-
-</details>
--->
+I'm not going to write any description for this one, I'm really not the person
+you should be asking for help on this one. I literally retarded when it comes to
+applying linear algebra of any level to an actual problem, and that bit me very
+badly on this problem. I want to thank Colin for sending me the correct rotation
+results for all 24 rotations: that was a lifesaver.
 
 Day 20: Trench Map
 ==================
@@ -1730,3 +1731,63 @@ if he does, I'll be back down to 4th.)
 I'm currently in 5th with Colin (1860), Kelly (1848), Sam (1716), and Adam
 (1644) ahead of me at 1642. Ryan is at 1600, and I'm assuming that he will
 eventually solve 19 and 20.
+
+Day 22: Reactor Reboot
+======================
+
+| <!-- -->    | <!-- -->    |
+|-------------|-------------|
+| **Link:** | https://adventofcode.com/2021/day/21 |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/21.py) |
+| **Part 1:** | 00:09:58, 503th |
+| **Part 2:** | 03:45:25, 2276th |
+
+Another horrific part 2 today, but at least I solved night-of unlike days 19 and
+20. Also, part 1 went well: I got to top 1000 again.
+
+At its core, the problem is a cuboid-intersection problem. Given a sequence of
+additions and removals of cuboids, determine the resulting volume.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+For the first part, the space that you have to simulate is only \\(100 \times
+100 \times 100 = 1\,000\,000\\), which is small enough to just brute force. I
+was pretty happy that I was able to do that fairly quickly. I just used a set to
+store all of the lit squares. I then just iterated through all of the
+\\((x,y,z)\\) coordinates the box that was being turned on or off, and just did
+the necessary additions and removals. The important optimization to make the
+brute-force approach work properly is restricting the coordinates to within the
+bounding box that the problem asked for.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+Part 2 required that you operate on the entire search space, which is
+significantly more difficult.
+
+My first attempt was to use set math to determine how much each addition and
+removal changed the total lit volume. I spent multiple hours trying to figure
+that out, but the set math exploded way too quickly, and I finally gave up for
+a much easier to-reason-about (albeit highly inefficient) method.
+
+One of the core parts of the problem is that intersections are easy, but unions
+are hard, so, my algorithm only uses intersections.
+
+Given a bounding cuboid, I created six cuboids which represent the "infinite"
+complement of the bounding cuboid. Then, I intersect all of those six infinite
+cuboids and keep all of the non-zero intersections as the new set of lit
+cuboids. If the bounding cuboid was "on", then I also add it to the set of lit
+cuboids.
+
+This is very inefficient, and causes the number of cuboids that must be
+considered to balloon very quickly, but it runs the input in around 25 seconds,
+which is fast enough that it wasn't worth optimizing for the purpose of solving!
+
+I'm sure there's a better algorithm for this, but this was the thing that my
+tiny brain could think about and not screw up, and when doing Advent of Code,
+that's the most important part.
+
+</details>
