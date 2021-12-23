@@ -23,8 +23,7 @@ School of Mines CS department with a bunch of Mines students and alum.
 [2]: https://twitch.tv/sumnerevans
 [3]: https://www.youtube.com/channel/UCyrdRO4oJRpszr0ovN1FwBA
 
-Summary of Results
-==================
+# Summary of Results
 
 The following is my results across all of the days.
 
@@ -69,15 +68,14 @@ $ tokei -e inputs
 ===============================================================================
 ```
 
-Day 1: Sonar Sweep
-==================
+# Day 1: Sonar Sweep
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/1 |
+| <!-- -->       | <!-- -->                                                                                                                                                      |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2021/day/1                                                                                                                           |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/01.py), [OCaml](https://github.com/sumnerevans/advent-of-code/blob/master/2021/01.ml) |
-| **Part 1:** | 00:00:49, 38th |
-| **Part 2:** | 00:02:22, 66th |
+| **Part 1:**    | 00:00:49, 38th                                                                                                                                                |
+| **Part 2:**    | 00:02:22, 66th                                                                                                                                                |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 1 | Python (38*, 66**)</summary>
@@ -101,7 +99,7 @@ for i, j in zip(seq, seq[1:]):
 ```
 
 This iterates through all sequential pairs in the list. I then check to see if
-``j > i`` and if so, increment a counter.
+`j > i` and if so, increment a counter.
 
 </details>
 
@@ -131,24 +129,23 @@ After calculating this list, the same algorithm as Part 1 works.
 
 </details>
 
-Day 2: Dive!
-============
+# Day 2: Dive!
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/2 |
+| <!-- -->       | <!-- -->                                                                                                                                                      |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2021/day/2                                                                                                                           |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/02.py), [OCaml](https://github.com/sumnerevans/advent-of-code/blob/master/2021/02.ml) |
-| **Part 1:** | 00:03:03, 1045th |
-| **Part 2:** | 00:04:57, 856th |
+| **Part 1:**    | 00:03:03, 1045th                                                                                                                                              |
+| **Part 2:**    | 00:04:57, 856th                                                                                                                                               |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 2 | Python (1045*, 856**)</summary>
   {{< youtube id="ZFZiaNXGq1Y" title="Advent of Code 2021 - Day 2 | Python (1045*, 856**)" >}}
 </details>
 
-This problem went well, almost got top 1000 on part 1, and got top 1000 on part
-2. The problem is a basic state machine where you have to keep track of position
-and (for part 2) "aim".
+This problem went well, almost got top 1000 on part 1, and did get top 1000 on
+part 2. The problem is a basic state machine where you have to keep track of
+position and (for part 2) "aim".
 
 <details class="advent-of-code-part-expander" open>
 <summary><h3>Part 1</h3></summary>
@@ -172,15 +169,14 @@ your lateral direction.
 
 </details>
 
-Day 3: Binary Diagnostic
-========================
+# Day 3: Binary Diagnostic
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/3 |
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/3                                            |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/03.py) |
-| **Part 1:** | 00:06:56, 1338th |
-| **Part 2:** | 00:38:16, 3718th |
+| **Part 1:**    | 00:06:56, 1338th                                                               |
+| **Part 2:**    | 00:38:16, 3718th                                                               |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 3 | Python (1338*, 3718**)</summary>
@@ -234,7 +230,7 @@ then passing it to `int`.
 
 Part 2 was more difficult. At each step, the task was to filter the list of
 elements in the input by some rules. The rules depend on calculating whether `0`
-or `1` is the most common bit at the \\(n^{\text{th}}\\) column for *all* of the
+or `1` is the most common bit at the \\(n^{\text{th}}\\) column for _all_ of the
 elements remaining in the list, where \\(n\\) is the iteration number.
 
 There are two values that you have to calculate: the "oxygen generator rating"
@@ -243,32 +239,31 @@ each step you only filter the elements that do not have the most common element,
 whereas with the "CO2 scubber rating" you do the opposite.
 
 There are a few gotchas with this part. First (and I screwed this up when I was
-solving), you have to be sure that you recompute the frequencies *every
-iteration*. This was a key insight that I totally missed. Secondly, you have to
+solving), you have to be sure that you recompute the frequencies _every
+iteration_. This was a key insight that I totally missed. Secondly, you have to
 keep track of the remaining candidates for oxygen and CO2 independently.
 
-I screwed up this pretty badly, and took *forever* to solve. There are a few
+I screwed up this pretty badly, and took _forever_ to solve. There are a few
 things that I am going to keep in mind in the future:
 
-* Read the examples sooner. If I had, I think I would have understood what to do
+- Read the examples sooner. If I had, I think I would have understood what to do
   a lot quicker.
 
-* I reused `i` multiple times which bit me. I need to get out of that habit.
+- I reused `i` multiple times which bit me. I need to get out of that habit.
 
-* I need to actually pull down the test input as well as the problem input a lot
+- I need to actually pull down the test input as well as the problem input a lot
   sooner, and verify against it for these harder problems.
 
 </details>
 
-Day 4: Giant Squid
-==================
+# Day 4: Giant Squid
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/4 |
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/4                                            |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/04.py) |
-| **Part 1:** | 00:16:54, 845th |
-| **Part 2:** | 00:37:47, 2325th |
+| **Part 1:**    | 00:16:54, 845th                                                                |
+| **Part 2:**    | 00:37:47, 2325th                                                               |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 4 | Python (845*, 2325**)</summary>
@@ -304,8 +299,8 @@ def checkset(row_or_col: List[int], called: List[int]) -> bool:
 
 For part 1, you just have to keep adding numbers from the sequence of called
 numbers until a board wins. The score calculation was a bit annoying, since you
-have to sum up all of the numbers that had *not* been called. I missed that, and
-submitted the wrong thing (thinking it was the sum of the ones that *had* been
+have to sum up all of the numbers that had _not_ been called. I missed that, and
+submitted the wrong thing (thinking it was the sum of the ones that _had_ been
 called).
 
 </details>
@@ -323,15 +318,14 @@ I spent about 17 minutes fixing that bug.
 
 </details>
 
-Day 5: Hydrothermal Venture
-===========================
+# Day 5: Hydrothermal Venture
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/5 |
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/5                                            |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/05.py) |
-| **Part 1:** | 00:13:24, 1238th |
-| **Part 2:** | 00:36:27, 2733rd |
+| **Part 1:**    | 00:13:24, 1238th                                                               |
+| **Part 2:**    | 00:36:27, 2733rd                                                               |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 5 | Python (1238*, 2733**)</summary>
@@ -356,8 +350,8 @@ Because the size of the grid is fairly small (no numbers are over 3 digits),
 it's efficient enough to just store the number of lines that go over a given
 point in a `position -> number of lines covering` dictionary.
 
-For part 1, the key was to ignore all diagonal lines. Only lines with either `x1
-== x2` or `y1 == y2` need to be considered.
+For part 1, the key was to ignore all diagonal lines. Only lines where either
+`x1 == x2` or `y1 == y2` need to be considered.
 
 The input can be provided with the first point "higher" than the second point,
 so I used something that I thought was pretty clever to handle that: I just
@@ -376,7 +370,7 @@ for x in range(x1, x2 + 1):
         G[(x, y)] += 1
 ```
 
-I also made use of 
+I also made use of
 [`defaultdict`](https://docs.python.org/3.8/library/collections.html#collections.defaultdict).
 This allows me to index into a dictionary and if that key is not in the
 dictionary, it will initialize it using the constructor given. In this case
@@ -413,15 +407,14 @@ from the start to the end of the range.
 
 </details>
 
-Day 6: Lanternfish
-==================
+# Day 6: Lanternfish
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/6 |
+| <!-- -->       | <!-- -->                                                                                                                                                      |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2021/day/6                                                                                                                           |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/06.py), [OCaml](https://github.com/sumnerevans/advent-of-code/blob/master/2021/06.ml) |
-| **Part 1:** | 00:03:14, 122th |
-| **Part 2:** | 00:06:50, 175th |
+| **Part 1:**    | 00:03:14, 122th                                                                                                                                               |
+| **Part 2:**    | 00:06:50, 175th                                                                                                                                               |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 6 | Python (122*, 175**)</summary>
@@ -465,10 +458,13 @@ Then, the answer is the number of lanternfish after 80 iterations.
 As mentioned above, for part 2 you have to make an optimization. The
 optimization is to use a dictionary to aggregate of all of the lanternfish at
 the same stage in life. For example, for the sample input:
+
 ```
 3,4,3,1,2
 ```
+
 the corresponding dictionary would be:
+
 ```python
 {
   1: 1,  # one lanternfish at 1 day until breeding
@@ -489,15 +485,14 @@ worrying about whether the key existed or not in the dictionary.
 
 </details>
 
-Day 7: The Treachery of Whales
-==============================
+# Day 7: The Treachery of Whales
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/7 |
+| <!-- -->       | <!-- -->                                                                                                                                                      |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2021/day/7                                                                                                                           |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/07.py), [OCaml](https://github.com/sumnerevans/advent-of-code/blob/master/2021/07.ml) |
-| **Part 1:** | 00:02:29, 252nd |
-| **Part 2:** | 00:10:14, 1865th |
+| **Part 1:**    | 00:02:29, 252nd                                                                                                                                               |
+| **Part 2:**    | 00:10:14, 1865th                                                                                                                                              |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 7 | Python (252*, 1865**)</summary>
@@ -532,12 +527,12 @@ I converted it to use much more functional code (more details below).
 
 For part 2, the only thing that changes is the cost function. Instead of being
 the distance between the alignment location and the submarine position, the cost
-of moving $n$ places is
+of moving \\(n\\) places is
 \\[\sum_{k=1}^n k.\\]
 It is efficient enough to do a `for` loop to calculate this manually (which is
 what I did), but you can also use the formula
 \\[\sum_{k=1}^n k = \frac{n(n+1)}{2}\\]
-which makes the program run *much* faster.
+which makes the program run _much_ faster.
 
 The reason my part 2 code did not work first time was because I missed a key
 insight which was that the alignment point did not necessarily have to be at one
@@ -558,15 +553,14 @@ print("Part 1:", calc_best_alignment(seq, lambda x, y: abs(x - y)))
 print("Part 2:", calc_best_alignment(seq, lambda a, b: sum(irange(1, abs(a - b)))))
 ```
 
-Day 8: Seven Segment Search
-===========================
+# Day 8: Seven Segment Search
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/8 |
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/8                                            |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/08.py) |
-| **Part 1:** | 00:07:24, 890th |
-| **Part 2:** | 00:44:03, 1066th |
+| **Part 1:**    | 00:07:24, 890th                                                                |
+| **Part 2:**    | 00:44:03, 1066th                                                               |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 8 | Python (890*, 1066**)</summary>
@@ -583,16 +577,10 @@ understanding the format that the problem was being provided in. After that,
 part 1 was fairly simple. Part 2 required some logic, and I floundered around
 for a while trying to figure it out, and was finally successful.
 
-Although I liked the problem, it was not great for me on the leaderboard. I lost
-another 5 points on Colin, and Ryan jumped me with another 1*, 1** placement for
-+6 over my 4*, 5** today. Ryan is now at 654, Kelly at 653, and I'm at 652.
-Colin is still ahead of the pack at 679. It's going to really be interesting to
-see how things shake out down the stretch!
-
 <details class="advent-of-code-part-expander" open>
 <summary><h3>Part 1</h3></summary>
 
-Part 1 required that you count how many elements on the *output* part of each
+Part 1 required that you count how many elements on the _output_ part of each
 line were of length 2 (corresponding to the digit 1), 4 (corresponding to the
 digit 4), 3 (corresponding to the digit 7), and 7 (corresponding to the digit
 8). These are the only digits with that corresponding number of segments
@@ -622,7 +610,7 @@ There are two sets of constraints you can create for each line:
 2. You can look at the number of times that each character occurs in the signal
    patterns on the left of the `|`. If a letter occurs eight times on the left
    hand side, then it could either map to `a` or `c` because those are the only
-   two segments that appear in eight of the possible digits. You can make these 
+   two segments that appear in eight of the possible digits. You can make these
    constraints for each of the segments.
 
 After generating these constraints, I used my handy
@@ -638,15 +626,20 @@ would have been enough).
 
 </details>
 
-Day 9: Smoke Basin
-==================
+Although I liked the problem, it was not great for me on the leaderboard. I lost
+another 5 points on Colin (679), and Ryan jumped me with another 1*, 1\*\*
+placement for +6 over my 4*, 5\*\* today. Ryan is now at 654, Kelly at 653, and
+I'm at 652. It's going to really be interesting to see how things shake out down
+the stretch!
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/9 |
+# Day 9: Smoke Basin
+
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/9                                            |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/09.py) |
-| **Part 1:** | 00:22:40, 5314th |
-| **Part 2:** | 00:39:34, 2937th |
+| **Part 1:**    | 00:22:40, 5314th                                                               |
+| **Part 2:**    | 00:39:34, 2937th                                                               |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 9 | Python (5314*, 2937**)</summary>
@@ -721,21 +714,20 @@ square that had already been added to a basin.
 
 </details>
 
-Unfortunately, today was so bad on the Mines leaderboard (got 10*, 8**) that I
-now am a full ten points back from 3rd place, and 17 points behind 2nd place
+Unfortunately, today was so bad on the Mines leaderboard (got 10\*, 8\*\*) that
+I now am a full ten points back from 3rd place, and 17 points behind 2nd place
 meaning that I'm on track for another 4th place finish on the Mines leaderboard.
 
 But, at least when you sort by Global Score, I'm still first.
 
-Day 10: Syntax Scoring
-======================
+# Day 10: Syntax Scoring
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/10 |
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/10                                           |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/10.py) |
-| **Part 1:** | 00:11:12, 1902th |
-| **Part 2:** | 00:19:18, 1640th |
+| **Part 1:**    | 00:11:12, 1902th                                                               |
+| **Part 2:**    | 00:19:18, 1640th                                                               |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 10 | Python (1902*, 1640**)</summary>
@@ -782,15 +774,14 @@ I lost another 6 points to 3rd place on the Mines leaderboard, so I'm now 16
 points behind the podium. And we are getting to the point where the days are a
 lot harder to get points because there aren't as many people solving each night.
 
-Day 11: Dumbo Octopus
-=====================
+# Day 11: Dumbo Octopus
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/11 |
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/11                                           |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/11.py) |
-| **Part 1:** | 00:52:24, 4855th |
-| **Part 2:** | 00:54:24, 4535th |
+| **Part 1:**    | 00:52:24, 4855th                                                               |
+| **Part 2:**    | 00:54:24, 4535th                                                               |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 11 | Python (4855*, 4535**)</summary>
@@ -840,15 +831,14 @@ to the answer and it was fine.
 
 </details>
 
-Day 12: Passage Pathing
-=======================
+# Day 12: Passage Pathing
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/12 |
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/12                                           |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/12.py) |
-| **Part 1:** | 00:10:51, 422th |
-| **Part 2:** | 00:43:27, 2240th |
+| **Part 1:**    | 00:10:51, 422th                                                                |
+| **Part 2:**    | 00:43:27, 2240th                                                               |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 12 | Python (422*, 2240**)</summary>
@@ -911,7 +901,7 @@ generator expression, but I think this is more readable splatted out like this.)
 <details class="advent-of-code-part-expander" open>
 <summary><h3>Part 2</h3></summary>
 
-For part 2, there was an added twist, you can visit *one* small cave twice (and
+For part 2, there was an added twist, you can visit _one_ small cave twice (and
 you can still visit big caves multiple times). Once you visit one small cave
 twice on a path, you cannot visit another small cave more than once.
 
@@ -938,15 +928,14 @@ At this point, I'm about to give up on trying to content for top 3 on the Mines
 leaderboard. I just need to hold off a late surge from Sam, Dorian, or Adam who
 have all been outperforming me the past few days.
 
-Day 13: Transparent Origami
-===========================
+# Day 13: Transparent Origami
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/13 |
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/13                                           |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/13.py) |
-| **Part 1:** | 00:35:07, 3962nd |
-| **Part 2:** | 00:36:37, 2836th |
+| **Part 1:**    | 00:35:07, 3962nd                                                               |
+| **Part 2:**    | 00:36:37, 2836th                                                               |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 13 | Python (3962*, 2836**)</summary>
@@ -1003,15 +992,14 @@ At this point, I'm officially calling off the hunt for top 3 on the Mines
 leaderboard. Next goal is to try and hold off a late surge from Sam, Dorian, or
 Adam who all outperformed me again tonight.
 
-Day 14: Extended Polymerization
-===============================
+# Day 14: Extended Polymerization
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/14 |
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/14                                           |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/14.py) |
-| **Part 1:** | 00:07:33, 391st |
-| **Part 2:** | 01:08:40, 3371th |
+| **Part 1:**    | 00:07:33, 391st                                                                |
+| **Part 2:**    | 01:08:40, 3371th                                                               |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 14 | Python (391*, 3371**)</summary>
@@ -1024,8 +1012,9 @@ really stupid bug with my cache that I fought for a long time even after getting
 a correct solution).
 
 The core of the problem was taking a template sequence and expanding each of the
-pairs for \\(n\\) iterations. For example, if you have an insertion rule `AB ->
-C`, you would on a given iteration replace all `AB` in the template with `ACB`.
+pairs for \\(n\\) iterations. For example, if you have an insertion rule:
+`AB -> C`, you would on a given iteration replace all `AB` in the template with
+`ACB`.
 
 <details class="advent-of-code-part-expander" open>
 <summary><h3>Part 1</h3></summary>
@@ -1074,8 +1063,8 @@ number of each character between two bounding characters for some depth,
 start and end character to character to insert between the start and end):
 \\[
 c(a, b, d) = \begin{cases}
-  [I[a, b] \rightarrow 1] & d = 1 \cr
-  c(a, I[a, b], d - 1) + [I[a, b] \rightarrow 1] + c(I[a, b], b, d-1) & otherwise
+[I[a, b] \rightarrow 1] & d = 1 \cr
+c(a, I[a, b], d - 1) + [I[a, b] \rightarrow 1] + c(I[a, b], b, d-1) & otherwise
 \end{cases}
 \\]
 where the \\(+\\) operator on mappings merges the maps with a sum if there are equal
@@ -1098,10 +1087,12 @@ I don't think this was the best approach for multiple reasons:
    example, if you have the `AB -> C` insertion rule, at any given iteration,
    for every `AB`, you add 1 to the count of `AC`s and `CB`s for that iteration.
    Another way of thinking about it:
+
    ```python
    {"AB": 3}           # initial sequence
    {"AC": 3, "CB": 3}  # one iteration
    ```
+
    This is a lot easier to reason about than the recursive method, I think,
    however counting everything up at the end is slightly more annoying I think.
 
@@ -1136,15 +1127,14 @@ I lost another 7 points to Sam today, so he's now at 1123 points, and I'm at
 would have hoped down the stretch to hold on to fourth place. Third is totally
 out of reach (Ryan has 1195 points, which is virtually insurmountable).
 
-Day 15: Chiton
-==============
+# Day 15: Chiton
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/15 |
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/15                                           |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/15.py) |
-| **Part 1:** | 00:05:10, 84th |
-| **Part 2:** | 01:51:23, 3682nd |
+| **Part 1:**    | 00:05:10, 84th                                                                 |
+| **Part 2:**    | 01:51:23, 3682nd                                                               |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 15 | Python (84*, 3682**)</summary>
@@ -1168,12 +1158,15 @@ To model this as a graph, problem, then, I chose to conceptually put the nodes
 on the top-left corner of each of the squares, and then edges each have a cost
 which is the cost of going "through" a square. Thus, if you have the following
 grid:
+
 ```
 123
 321
 342
 ```
+
 the `(0, 1)` entry in the graph would have the following items:
+
 ```python
 {
     (2, (0, 0)),  # it costs 2 to go to (0, 0)
@@ -1227,15 +1220,14 @@ So far, we have had five people get on the global leaderboard from Mines: myself
 only one person (Colin) leaderboarded at all, so it's awesome to have so many
 people who've gotten to the top 100 from Mines!
 
-Day 16: Packet Decoder
-======================
+# Day 16: Packet Decoder
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/16 |
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/16                                           |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/16.py) |
-| **Part 1:** | 01:40:59, 3439th |
-| **Part 2:** | 01:55:56, 3005th |
+| **Part 1:**    | 01:40:59, 3439th                                                               |
+| **Part 2:**    | 01:55:56, 3005th                                                               |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 16 | Python (3439*, 3005**)</summary>
@@ -1264,7 +1256,7 @@ encountered them):
    should stop iterating. Then combine all of the 4-bit chunks together to get
    the actual number.
 
-2. I didn't read how to actually use the *length type ID*. The length type ID
+2. I didn't read how to actually use the _length type ID_. The length type ID
    specifies both the number of bits to consider when calculating the length and
    how to interpret that length. I immediately understood and correctly
    implemented the first part: how many bits to consider.
@@ -1283,12 +1275,14 @@ encountered them):
 
 4. I named the variable I was using as a condition for my loop the same thing as
    the output of a function call within the loop. So I basically had:
+
    ```python
    while x < L:
       # lots of bad code
       L = call_to_function()
       x += 1
    ```
+
    (obviously with lots more code in between).
 
    This failed miserably and overrode my `L` variable that I needed for the loop
@@ -1298,7 +1292,7 @@ The thing about today was that there were multiple very painful mistakes.
 Normally, I only end up with one fatal mistake per day. Today, though, it seemed
 made so many fatal mistakes it was a total disaster. To add insult to injury, if
 I was read the section about length type ID more carefully the first time, I
-could have avoided a *lot* of the issues. I think I was definitely rushing too
+could have avoided a _lot_ of the issues. I think I was definitely rushing too
 much at that point.
 
 </details>
@@ -1328,15 +1322,14 @@ the past few days, and I'm very grateful to all of the viewers), but it's
 getting way too stressful, and I don't want to have to explain to people what
 I'm doing as I'm doing it.
 
-Day 17: Trick Shot
-==================
+# Day 17: Trick Shot
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/17 |
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/17                                           |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/17.py) |
-| **Part 1:** | 00:10:48, 240th |
-| **Part 2:** | 00:16:56, 271th |
+| **Part 1:**    | 00:10:48, 240th                                                                |
+| **Part 2:**    | 00:16:56, 271th                                                                |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 17 | Python (240*, 271**)</summary>
@@ -1411,25 +1404,24 @@ then the bounds may be different).
 
 I got first on part 1 on the Mines leaderboard, but my floundering to find the
 proper brute-force bounds let Kelly and Ryan slip in before me on part 2. Still,
-a 1*, 3** day is pretty good for me. I gained 7 points over Sam who calculated a
-closed-form solution for part 1 for third place, but there is not a closed form
-solution for part 2 (that we were able to think of), so he basically had to
-rewrite everything.
+a 1\*, 3\*\* day is pretty good for me. I gained 7 points over Sam who
+calculated a closed-form solution for part 1 for third place, but there is not a
+closed form solution for part 2 (that we were able to think of), so he basically
+had to rewrite everything.
 
-At the top of the table, Colin (5*, 4**) just hit 1500, and Kelly gained 6
+At the top of the table, Colin (5\*, 4\*\*) just hit 1500, and Kelly gained 6
 points on Colin and is now at 1494. It's going to be exciting down the stretch!
 Ryan is at 1431, putting my 1389 and Sam's 1381 in a distant fourth and fifth
 place.
 
-Day 18: Snailfish
-=================
+# Day 18: Snailfish
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/18 |
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/18                                           |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/18.py) |
-| **Part 1:** | 17:42:08, 11447th |
-| **Part 2:** | 17:50:55, 11230th |
+| **Part 1:**    | 17:42:08, 11447th                                                              |
+| **Part 2:**    | 17:50:55, 11230th                                                              |
 
 Today was the worst day yet, and a total unmitigated disaster. I started solving
 on release, but I didn't get it until the afternoon of the day after (I tested
@@ -1451,7 +1443,7 @@ For the reduction function, it processes a pair at some depth and returns
 instructions for the layer above about what to do. I start by recursing into the
 left side of the pair. If running the reduction there gives me an instruction,
 then I handle that. If it didn't give an instruction (no reduction was done), I
-recursed into the right side of the pair. 
+recursed into the right side of the pair.
 
 The logic for handling the instructions was very annoying, and I screwed it up
 multiple times. Basically, my instructions were `"done"`, `"explodeBoth"`,
@@ -1462,7 +1454,7 @@ If after doing the reduction there were no explosions, then splits have to be
 performed. This is a fairly simple traversal to see if there are any elements
 greater than or equal to 10, and splitting them.
 
-I missed that I was supposed to do *all* explosions before processing *even one*
+I missed that I was supposed to do _all_ explosions before processing _even one_
 split. No idea how much time that cost me across all of my different attempts,
 but that was stupid. I read that part of the description, but it still didn't
 register with me for a long time what it actually meant as far as the code.
@@ -1497,20 +1489,19 @@ Whichever magnitude is greater is the answer.
 
 </details>
 
-Luckily, being this late into the year, I only got 8*, 8** on the Mines
-leaderboard. Sam got 4*, 4** and we are now tied at 1467. Nobody gained places
+Luckily, being this late into the year, I only got 8*, 8\*\* on the Mines
+leaderboard. Sam got 4*, 4\*\* and we are now tied at 1467. Nobody gained places
 on part 2 so far on the leaderboard. Colin, Kelly, and Dorian got podium, Sam,
 Adam, Ryan, and Jack all slipped in before me.
 
-Day 19: Beacon Scanner
-======================
+# Day 19: Beacon Scanner
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/19 |
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/19                                           |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/19.py) |
-| **Part 1:** | >24h, 11368th |
-| **Part 2:** | >24h, 11815th |
+| **Part 1:**    | >24h, 11368th                                                                  |
+| **Part 2:**    | >24h, 11815th                                                                  |
 
 I haven't solved this one yet. I spent about three hours night of trying to
 figure it out, but I haven't been able to figure out the necessary rotation
@@ -1522,7 +1513,7 @@ no progress.
 I think I'm going to have to give up on this one. I am just too stupid to figure
 out the rotations.
 
--------------------------------------------------------------------------------
+---
 
 **Update (2021-12-21):** I solved part 1. It's some of the ugliest code I've
 ever written, and takes forever to run. Now I just have to figure out how to do
@@ -1538,15 +1529,14 @@ applying linear algebra of any level to an actual problem, and that bit me very
 badly on this problem. I want to thank Colin for sending me the correct rotation
 results for all 24 rotations: that was a lifesaver.
 
-Day 20: Trench Map
-==================
+# Day 20: Trench Map
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/20 |
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/20                                           |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/20.py) |
-| **Part 1:** | 00:45:49, 1489th |
-| **Part 2:** | 01:07:34, 2108th |
+| **Part 1:**    | 00:45:49, 1489th                                                               |
+| **Part 2:**    | 01:07:34, 2108th                                                               |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 20 | Python (1489*, 2108**)</summary>
@@ -1576,15 +1566,19 @@ in the correct order for creating the bitmap, which was nice.
 
 The way that I implemented the CGL image was using a set to store the presence
 of a given square being alive in the image. For example, if the image was:
+
 ```
 ###
 .#.
 #..
 ```
+
 I would store it as:
+
 ```
 {(0, 0), (0, 1), (0, 2), (1, 1), (2, 0)}
 ```
+
 which is a sparse representation of the image. In talking to others, it seems
 like storing the grid as a double array is actually faster (because of cache
 lines, avoiding hashing, etc.), but I think this is fairly easy to reason about,
@@ -1623,15 +1617,14 @@ stored image, I just use whatever the flag has as the value.
 After the last two days, it was refreshing to actually finish the problem. I'll
 take it.
 
-Day 21: Dirac Dice
-==================
+# Day 21: Dirac Dice
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/21 |
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/21                                           |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/21.py) |
-| **Part 1:** | 00:07:55, 352th |
-| **Part 2:** | 00:22:56, 144th |
+| **Part 1:**    | 00:07:55, 352th                                                                |
+| **Part 2:**    | 00:22:56, 144th                                                                |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 21 | Python (352*, 144**)</summary>
@@ -1658,12 +1651,14 @@ to increment the correct player's score and move the correct player's pawn.
 Also, dealing with circular board is slightly nontrivial. Because I didn't want
 to figure out how to do the proper modulo logic while I was solving, I just did
 a ghetto method:
+
 ```python
 spot = p1 + dice_vals
 while spot > 10:
     spot -= 10
 p1 = spot
 ```
+
 It's ugly, and a bit slow, but effective!
 
 </details>
@@ -1701,10 +1696,10 @@ and \\(s_i\\) is the score for player \\(i\\):
 
 \\[
 W(p_1, p_2, s_1, s_2, c) = \begin{cases}
-  [1, 0] & s_1 > 0 \cr
-  [0, 1] & s_2 > 0 \cr
-  \sum_{r, f \in F} f \cdot W(p_1 + r, p_2, s_1 + (p_1 + r), s_2, 2) & c = 1 \cr
-  \sum_{r, f \in F} f \cdot W(p_1, p_2 + r, s_1, s_2 + (p_1 + r), 1) & c = 2
+[1, 0] & s_1 > 0 \cr
+[0, 1] & s_2 > 0 \cr
+\sum_{r, f \in F} f \cdot W(p_1 + r, p_2, s_1 + (p_1 + r), s_2, 2) & c = 1 \cr
+\sum_{r, f \in F} f \cdot W(p_1, p_2 + r, s_1, s_2 + (p_1 + r), 1) & c = 2
 \end{cases}
 \\]
 
@@ -1724,7 +1719,7 @@ think about the optimization required before actually coding it up. I'm sure I
 could have shaved some time off somewhere, but I think it would have been
 difficult, and overall, I'm really not disappointed.
 
-I got 3**, 1* on the Mines leaderboard, which means that if I solve day 19, I
+I got 3\*_, 1_ on the Mines leaderboard, which means that if I solve day 19, I
 may have a chance to retake 3th place. (Ryan hasn't solved day 19 or day 20, so
 if he does, I'll be back down to 4th.)
 
@@ -1732,18 +1727,17 @@ I'm currently in 5th with Colin (1860), Kelly (1848), Sam (1716), and Adam
 (1644) ahead of me at 1642. Ryan is at 1600, and I'm assuming that he will
 eventually solve 19 and 20.
 
-Day 22: Reactor Reboot
-======================
+# Day 22: Reactor Reboot
 
-| <!-- -->    | <!-- -->    |
-|-------------|-------------|
-| **Link:** | https://adventofcode.com/2021/day/21 |
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/21                                           |
 | **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/21.py) |
-| **Part 1:** | 00:09:58, 503th |
-| **Part 2:** | 03:45:25, 2276th |
+| **Part 1:**    | 00:09:58, 503th                                                                |
+| **Part 2:**    | 03:45:25, 2276th                                                               |
 
-Another horrific part 2 today, but at least I solved night-of unlike days 19 and
-20. Also, part 1 went well: I got to top 1000 again.
+Another horrific part 2 today, but at least I solved night-of unlike with days
+19 and 20. Also, part 1 went well: I got to top 1000 again.
 
 At its core, the problem is a cuboid-intersection problem. Given a sequence of
 additions and removals of cuboids, determine the resulting volume.
