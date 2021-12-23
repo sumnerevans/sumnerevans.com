@@ -356,8 +356,8 @@ Because the size of the grid is fairly small (no numbers are over 3 digits),
 it's efficient enough to just store the number of lines that go over a given
 point in a `position -> number of lines covering` dictionary.
 
-For part 1, the key was to ignore all diagonal lines. To do that, either `x1 ==
-x2` or `y1 == y2`. If so, then it is a horizontal or vertical line.
+For part 1, the key was to ignore all diagonal lines. Only lines with either `x1
+== x2` or `y1 == y2` need to be considered.
 
 The input can be provided with the first point "higher" than the second point,
 so I used something that I thought was pretty clever to handle that: I just
@@ -463,8 +463,8 @@ Then, the answer is the number of lanternfish after 80 iterations.
 <summary><h3>Part 2</h3></summary>
 
 As mentioned above, for part 2 you have to make an optimization. The
-optimization is to use a dictionary to an aggregation of all of the lanternfish
-at the same stage in life. For example, for the sample input:
+optimization is to use a dictionary to aggregate of all of the lanternfish at
+the same stage in life. For example, for the sample input:
 ```
 3,4,3,1,2
 ```
@@ -485,7 +485,7 @@ time, the dictionary allows me to do it in bulk.
 The only other interesting thing that I did for this problem was use a
 [`defaultdict`](https://docs.python.org/3.8/library/collections.html#collections.defaultdict).
 This allowed me to index into, and then modify, the new dictionary without
-worrying about whether the key exists or not in the dictionary.
+worrying about whether the key existed or not in the dictionary.
 
 </details>
 
@@ -505,7 +505,7 @@ Day 7: The Treachery of Whales
 </details>
 
 Part 1 went fairly well for me today. Part 2 did not go quite as well (I missed
-a key insight into the problem), but it was not a decent enough performance so I
+a key insight into the problem), but it was a decent enough performance so I
 didn't loose too many points on the Mines leaderboard.
 
 I also solved this problem in OCaml after cleaning up my Python code.
@@ -866,12 +866,12 @@ my favourite subject in all of computer science, so it was right up my alley.
 <details class="advent-of-code-part-expander" open>
 <summary><h3>Part 1</h3></summary>
 
-Part 1 was a path-counting problem where you have to count the number of of
-paths from the `start` node to the `end` node. However, there's a twist: you can
-visit some nodes (large ones that are annotated by uppercase letters) multiple
-times. In general, I find it easiest to write path-counting algorithms using
-recursion because you can think of it like you are summing up the counts at each
-level of the recursion tree.
+Part 1 was a path-counting problem where you have to count the number of paths
+from the `start` node to the `end` node. However, there's a twist: you can visit
+some nodes (large ones that are annotated by uppercase letters) multiple times.
+In general, I find it easiest to write path-counting algorithms using recursion
+because you can think of it like you are summing up the counts at each level of
+the recursion tree.
 
 The base case is when you get to the `end` node. In that case, just return `1`
 since a path was found.
@@ -1597,8 +1597,8 @@ again, oscillating between the two every generation.
 I didn't realize this until people started commenting about it in the Mines
 Advent of Code chat. Luckily, I'd written a bunch of code to print the grid
 already, so I decided to just cheese the solution for part 1. I just ran the
-algorithm with a lot of padding, and then stuck the result into vim and cut out
-all the sides and then wrote a quick script to count `#`s.
+algorithm with a lot of padding, and then stuck the result into `vim` and cut
+out all the sides and then wrote a quick script to count `#`s.
 
 </details>
 
@@ -1791,3 +1791,10 @@ tiny brain could think about and not screw up, and when doing Advent of Code,
 that's the most important part.
 
 </details>
+
+I somehow managed to retake third place tonight. At 1808 I'm miles behind Colin
+(1950) and Kelly (1932), and only a point ahead of Sam Sartor (1807) now. Adam
+is at 1725, and Ryan is in 6th place with 1714, hewever he hasn't solved day 19
+or day 22 part 2 yet, so if he does that, he'll jump back above me to third
+place. Dorian (1619), Jordan (1501), Jack (1418), and restitux (1396) round out
+the top ten going in to day 23.
