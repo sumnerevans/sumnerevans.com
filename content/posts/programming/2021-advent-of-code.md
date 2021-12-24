@@ -1928,3 +1928,127 @@ On part 1, I got 4th on the Mines leaderboard behind Kelly, Colin, and Sam, but
 for part 2, I solved 3rd behind Colin and Kelly. Dorian slipped in with 4th on
 part 2, so I'm guaranteed to gait at least one point on Sam today. He hasn't
 solved yet, but I fully expect him to.
+
+# Day 24: Arithmetic Logic Unit
+
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/24                                           |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/24.py) |
+| **Part 1:**    | 14:47:42, 4676th                                                               |
+| **Part 2:**    | 14:51:51, 4547th                                                               |
+
+The trend of really bad days continues. I had three failed attempts before
+finally finding the right combination of tools to solving this problem.
+
+In talking to Colin, Kelly, and Sam (who all solved before me), I should have
+just manually inspected the input, and solved it more or less by hand. But why
+do that when you can instead spend way longer solving it with code!
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+My first attempt was to do a pure brute-force. Obviously this didn't work since
+the search space is \\(9^{14}\\) which I would need around 700 years to find a
+solution at 1000 checks per second. I think this was decently useful since I was
+able to get my brain around the problem.
+
+My second attempt was to try and apply inference rules from the last instruction
+all the way to the first instruction. For example, we know that at the end of
+the run, the state will be:
+
+```
+(w_k, x_l, y_m, 0)
+```
+
+so if the last command was `add z y`, then it must be the case that the state
+prior to the last command was:
+
+```
+(w_k, x_l, y_m, -y_m)
+```
+
+since adding the value in the `y` position to the value in the `x` position
+must be `0`.
+
+Similar rules can be created for multiplication, but the modulos and
+conditionals made everything really annoying to implement.
+
+What I realized with this second attempt was that I was basically doing symbolic
+computation, but in a really ghetto way, which led me to my third attempt: using
+[SymPy](https://www.sympy.org/en/index.html), a symbolic computation library for
+Python.
+
+For each of the instructions in the list of instructions, I created a SymPy
+equation. For example, for the `add z y` example, I would basically add an
+equation like the following to the set of equations:
+
+```
+Eq(zprime, z + y)
+```
+
+There were multiple problems with this. The most annoying one was that the SymPy
+library version 1.9 has a regression where it cannot do simplication across
+`Piecewise` functions. This caused me a lot of consternation, and I eventually
+downgraded to 1.8 and everything worked fine (argh!!!!).
+
+The second problem was that, although I was able to represent the constraints
+more easily, I still had to do a massive loop at the end to check and see for
+which values the equations were solvable.
+
+After banging my head at this for a long time, I finally gave up and went to
+bed. After I woke up, I (with some input from the Mines Advent of Code chat)
+decided to try and convert to use z3. I had only really heard of z3 in the
+context of solving SAT problems, not more complicated expressions like the ones
+involved in the problem. However, I was pleasantly surprised (although,
+disappointed that I hadn't just converted to use z3 the night before).
+
+I created a
+[`z3.Optimize`](https://z3prover.github.io/api/html/classz3py_1_1_optimize.html)
+object and then added an equation to it for every line of the input. I also
+added constraints for each of the initial conditions, and for the end condition.
+As I process the input, I keep track of the current state of the ALU.
+
+For example, if the current state of the ALU is: \\((w1, x3, y4, z4)\\) then
+after applying the `add z y` instruction, the resulting ALU state is: \\((w1,
+x3, y5, z4)\\) and I would add a new equation: \\(y_5 = y_4 + z_4\\) to the set
+of equations in the solver.
+
+Whenever an `inp` instruction is seen, I introduce a new variable \\(d_i\\)
+for the \\(i^{\text{th}}\\) digit of the number. At the very end, I just set
+Z3's goal to maximize the sum of all of the \\(d_i\\) values, and asked it to
+find the optimal solution. It took about 5 or so minutes to finish, but it gave
+the right answer!
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+Part 2 just requires you to instead of minimize instead of maximize the digits.
+Like with part 1, Z3 did this in a few of minutes.
+
+For some reason, though I can't get Z3 to do both the maximization and then the
+minimization. If I just do one, then it works fine (albeit slowly). But if I try
+and do the maximization and then the minimization, it fails. I'm guessing
+there's some sort of global state that is messing it up, but I don't really
+know.
+
+</details>
+
+Sam was smart and went to bed and then came back to it the morning and solved
+before I did, so I lost two points to him today. We are now tied for third at
+1981 points. Here's the leaderboard going into day 25 (`.` means solved part 1,
+`*` means solved both parts, ` ` means didn't solve).
+
+```
+                  1111111111222222
+         1234567890123456789012345
+ 1) 2131 ************************  Colin
+ 2) 2115 ************************  Kelly
+ 3) 1981 ************************  Sumner
+ 4) 1981 ************************  Sam
+ 5) 1783 ***********************   Dorian
+ 6) 1767 **********************.   Adam
+ 7) 1714 ****************** **.    Ryan
+```
