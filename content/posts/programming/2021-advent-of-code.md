@@ -30,6 +30,8 @@ The following is my results across all of the days.
 ```
       --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
+ 24   14:47:42   4676      0   14:51:51   4547      0
+ 23   04:11:39   3515      0   05:11:51   1990      0
  22   00:09:58    503      0   03:45:25   2276      0
  21   00:07:55    352      0   00:22:56    144      0
  20   00:45:49   1489      0   01:07:34   2108      0
@@ -54,7 +56,8 @@ Day       Time   Rank  Score       Time   Rank  Score
   1   00:00:49     38     63   00:02:22     66     35
 ```
 
-Language statistics:
+Language statistics (note that some of this is boilerplate that I copy to every
+Python file):
 
 ```
 $ tokei -e inputs
@@ -62,9 +65,9 @@ $ tokei -e inputs
  Language            Files        Lines         Code     Comments       Blanks
 ===============================================================================
  OCaml                   4          228          191           16           21
- Python                 22         5458         3936          462         1060
+ Python                 24         6454         4716          546         1192
 ===============================================================================
- Total                  26         5686         4127          478         1081
+ Total                  28         6682         4907          562         1213
 ===============================================================================
 ```
 
@@ -1792,3 +1795,136 @@ is at 1725, and Ryan is in 6th place with 1714, hewever he hasn't solved day 19
 or day 22 part 2 yet, so if he does that, he'll jump back above me to third
 place. Dorian (1619), Jordan (1501), Jack (1418), and restitux (1396) round out
 the top ten going in to day 23.
+
+# Day 23: Amphipod
+
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/23                                           |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/23.py) |
+| **Part 1:**    | 04:11:39, 3515th                                                               |
+| **Part 2:**    | 05:11:51, 1990th                                                               |
+
+Another _really_ hard day, and back outside of the top 1000 again. I did solve
+night-of at much cost to my sleep schedule.
+
+At its core, the problem is a Dijkstra's shortest path finding problem, but
+computing the neighbors set for a given node is very nontrivial.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+The most complicated problem of the first part was figuring out adjacent elements to a given
+map state. For example, given the following map state:
+
+```
+#############
+#...........#
+###B#C#B#D###
+  #A#D#C#A#
+  #########
+```
+
+<details>
+<summary>Expand to see the valid next states when moving just the leftmost `B`...</summary>
+
+```
+#############
+#B..........#
+###.#C#B#D###
+  #A#D#C#A#
+  #########
+```
+
+```
+#############
+#.B.........#
+###.#C#B#D###
+  #A#D#C#A#
+  #########
+```
+
+```
+#############
+#...B.......#
+###.#C#B#D###
+  #A#D#C#A#
+  #########
+```
+
+```
+#############
+#.....B.....#
+###.#C#B#D###
+  #A#D#C#A#
+  #########
+```
+
+```
+#############
+#.......B...#
+###.#C#B#D###
+  #A#D#C#A#
+  #########
+```
+
+```
+#############
+#.........B.#
+###.#C#B#D###
+  #A#D#C#A#
+  #########
+```
+
+```
+#############
+#..........B#
+###.#C#B#D###
+  #A#D#C#A#
+  #########
+```
+
+</details>
+
+However, if there's ever anything in the way of a piece moving, then it cannot
+continue moving it. I read that part of the description, but I failed to
+implement it correctly (I ended up having amphipods teleporting through one
+another in the hallway).
+
+I chose to represent the board state as a 14-element tuple. The first seven
+values represented the valid places for an amphipod to be in the hallway, the
+next four represented the valid places for an amphipod to be in the top row of a
+room, and the last four represented the valid places for an amphipod to be in
+the bottom row of the room. Unfortunately, this made computing distances, and
+thus cost, very difficult and error-prone.
+
+Also, generating the neighbors for a given tuple is very nontrivial, although
+the function I made was fairly nice: it just `yield`s all of the potential
+neighbors. The logic was verbose, but effective and quick. After much pain, I
+was able to figure it out.
+
+A also decided to use some actual software engineering on this problem to avoid
+having to deal with too many random indices that I could mess up (and also to
+help with comparisons in the priority queue elements). I created a square class
+which represented either an empty square, or an amphipod. If it represented an
+amphipod, it tracked the type as well as the number of times the amphipod had
+been moved already. This was fairly effective in keeping the logic straight.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+Part 2 required an additional two layers to be added to each of the columns. The
+logic for computing neighbors became significantly more complicated (and much
+more ugly), but it was relatively straightforward. The biggest thing that I
+screwed up was that my modifications to my distance map were incorrect, so my
+cost was off by a factor of 1000 or so. I ended up creating the expanded
+distance matrix programmatically, which fixed the bug.
+
+</details>
+
+On part 1, I got 4th on the Mines leaderboard behind Kelly, Colin, and Sam, but
+for part 2, I solved 3rd behind Colin and Kelly. Dorian slipped in with 4th on
+part 2, so I'm guaranteed to gait at least one point on Sam today. He hasn't
+solved yet, but I fully expect him to.
