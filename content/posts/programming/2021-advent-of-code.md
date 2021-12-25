@@ -2051,4 +2051,7 @@ before I did, so I lost two points to him today. We are now tied for third at
  5) 1783 ***********************   Dorian
  6) 1767 **********************.   Adam
  7) 1714 ****************** **.    Ryan
+ 8) 1501 *****************  ***    jordannewport
+ 9) 1456 **********************    jack Garner
+10) 1435 ****************** ***    restitux
 ```
