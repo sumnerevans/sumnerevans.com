@@ -25,11 +25,15 @@ School of Mines CS department with a bunch of Mines students and alum.
 
 # Summary of Results
 
+I managed to solve all of the problems this year, for a total of 50 stars. This
+is the second year in a row that I've completed all of the problems.
+
 The following is my results across all of the days.
 
 ```
       --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
+ 25   00:16:45    605      0   00:16:51    503      0
  24   14:47:42   4676      0   14:51:51   4547      0
  23   04:11:39   3515      0   05:11:51   1990      0
  22   00:09:58    503      0   03:45:25   2276      0
@@ -56,6 +60,14 @@ Day       Time   Rank  Score       Time   Rank  Score
   1   00:00:49     38     63   00:02:22     66     35
 ```
 
+I got global leaderboard on two days 1 (part 1 and 2) and 15 (part 1) for a
+total of 115 points on the global leaderboard. This year was the first time I'd
+ever made global leaderboard, so that was really cool.
+
+I got top 200 on six occasions, and top 500 twelve times (I had two more at rank
+503). I made top 1000 eighteen times, and top 5000 on all but five parts. I also
+solved within 24 hours on every day except for day 19.
+
 Language statistics (note that some of this is boilerplate that I copy to every
 Python file):
 
@@ -65,11 +77,22 @@ $ tokei -e inputs
  Language            Files        Lines         Code     Comments       Blanks
 ===============================================================================
  OCaml                   4          228          191           16           21
- Python                 24         6454         4716          546         1192
+ Python                 25         6597         4819          557         1221
 ===============================================================================
- Total                  28         6682         4907          562         1213
+ Total                  29         6825         5010          573         1242
 ===============================================================================
 ```
+
+## Mines Leaderboard
+
+At the end of the competition (2021-12-24 23:32 MST), this is the state of the
+Mines leaderboard:
+
+![Leaderboard end state](./leaderboard-end-state.png "State of the top 10 of the Mines leaderboard after day 25")
+
+Six people leaderboarded globally:
+
+![Leaderboard end state using global sort](./leaderboard-global-sort.png "The six people who got points on the global leaderboard of the people from Mines")
 
 # Day 1: Sonar Sweep
 
@@ -1916,7 +1939,7 @@ been moved already. This was fairly effective in keeping the logic straight.
 <summary><h3>Part 2</h3></summary>
 
 Part 2 required an additional two layers to be added to each of the columns. The
-logic for computing neighbors became significantly more complicated (and much
+logic for computing neighbours became significantly more complicated (and much
 more ugly), but it was relatively straightforward. The biggest thing that I
 screwed up was that my modifications to my distance map were incorrect, so my
 cost was off by a factor of 1000 or so. I ended up creating the expanded
@@ -1929,129 +1952,52 @@ for part 2, I solved 3rd behind Colin and Kelly. Dorian slipped in with 4th on
 part 2, so I'm guaranteed to gait at least one point on Sam today. He hasn't
 solved yet, but I fully expect him to.
 
-# Day 24: Arithmetic Logic Unit
+# Day 25: Sea Cucumber
 
 | <!-- -->       | <!-- -->                                                                       |
 | -------------- | ------------------------------------------------------------------------------ |
-| **Link:**      | https://adventofcode.com/2021/day/24                                           |
-| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/24.py) |
-| **Part 1:**    | 14:47:42, 4676th                                                               |
-| **Part 2:**    | 14:51:51, 4547th                                                               |
+| **Link:**      | https://adventofcode.com/2021/day/25                                           |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/25.py) |
+| **Part 1:**    | 00:16:45, 605th                                                                |
+| **Part 2:**    | 00:16:51, 503rd                                                                |
 
-The trend of really bad days continues. I had three failed attempts before
-finally finding the right combination of tools to solving this problem.
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 25 | Python (605*, 503**)</summary>
+  {{< youtube id="kF-lhTOACPM" title="Advent of Code 2021 - Day 25 | Python (605*, 503**)" >}}
+</details>
 
-In talking to Colin, Kelly, and Sam (who all solved before me), I should have
-just manually inspected the input, and solved it more or less by hand. But why
-do that when you can instead spend way longer solving it with code!
+Well, today didn't go terribly, but I lost to Sam and Kelly, so I ended up in
+fourth place on the Mines leaderboard. This is the second year in a row that
+I've been off the podium, which is sad.
+
+The problem was an interesting CGL-like problem with two steps per generation
+instead of one. I had a few major bugs with how I was recreating the set of
+points in the CGL which cost me significantly.
 
 <details class="advent-of-code-part-expander" open>
 <summary><h3>Part 1</h3></summary>
 
-My first attempt was to do a pure brute-force. Obviously this didn't work since
-the search space is \\(9^{14}\\) which I would need around 700 years to find a
-solution at 1000 checks per second. I think this was decently useful since I was
-able to get my brain around the problem.
+The core algorithm for this problem was a two-step process for creating a new
+configuration of sea cucumbers. The rules were fairly simple: move all of the
+right-facing ones first, then the downwards facing ones. One annoying thing was
+the wrap-around of the grid, but that wasn't too bad in the end.
 
-My second attempt was to try and apply inference rules from the last instruction
-all the way to the first instruction. For example, we know that at the end of
-the run, the state will be:
+I stored the cucumbers in a dictionary of `(row, column) -> "v" or ">"`, and
+then every iteration, I just created a new dictionary with all of the `>`s
+shifted (if they were able to) and then all of the `v`s shifted if they were
+able to.
 
-```
-(w_k, x_l, y_m, 0)
-```
-
-so if the last command was `add z y`, then it must be the case that the state
-prior to the last command was:
-
-```
-(w_k, x_l, y_m, -y_m)
-```
-
-since adding the value in the `y` position to the value in the `x` position
-must be `0`.
-
-Similar rules can be created for multiplication, but the modulos and
-conditionals made everything really annoying to implement.
-
-What I realized with this second attempt was that I was basically doing symbolic
-computation, but in a really ghetto way, which led me to my third attempt: using
-[SymPy](https://www.sympy.org/en/index.html), a symbolic computation library for
-Python.
-
-For each of the instructions in the list of instructions, I created a SymPy
-equation. For example, for the `add z y` example, I would basically add an
-equation like the following to the set of equations:
-
-```
-Eq(zprime, z + y)
-```
-
-There were multiple problems with this. The most annoying one was that the SymPy
-library version 1.9 has a regression where it cannot do simplication across
-`Piecewise` functions. This caused me a lot of consternation, and I eventually
-downgraded to 1.8 and everything worked fine (argh!!!!).
-
-The second problem was that, although I was able to represent the constraints
-more easily, I still had to do a massive loop at the end to check and see for
-which values the equations were solvable.
-
-After banging my head at this for a long time, I finally gave up and went to
-bed. After I woke up, I (with some input from the Mines Advent of Code chat)
-decided to try and convert to use z3. I had only really heard of z3 in the
-context of solving SAT problems, not more complicated expressions like the ones
-involved in the problem. However, I was pleasantly surprised (although,
-disappointed that I hadn't just converted to use z3 the night before).
-
-I created a
-[`z3.Optimize`](https://z3prover.github.io/api/html/classz3py_1_1_optimize.html)
-object and then added an equation to it for every line of the input. I also
-added constraints for each of the initial conditions, and for the end condition.
-As I process the input, I keep track of the current state of the ALU.
-
-For example, if the current state of the ALU is: \\((w1, x3, y4, z4)\\) then
-after applying the `add z y` instruction, the resulting ALU state is: \\((w1,
-x3, y5, z4)\\) and I would add a new equation: \\(y_5 = y_4 + z_4\\) to the set
-of equations in the solver.
-
-Whenever an `inp` instruction is seen, I introduce a new variable \\(d_i\\)
-for the \\(i^{\text{th}}\\) digit of the number. At the very end, I just set
-Z3's goal to maximize the sum of all of the \\(d_i\\) values, and asked it to
-find the optimal solution. It took about 5 or so minutes to finish, but it gave
-the right answer!
+The two big bugs that I had were that I forgot to add the unchanged elements
+back to the dictionary at each step it two different places. This cost me many
+minutes, and may have cost me third place.
 
 </details>
 
 <details class="advent-of-code-part-expander" open>
 <summary><h3>Part 2</h3></summary>
 
-Part 2 just requires you to instead of minimize instead of maximize the digits.
-Like with part 1, Z3 did this in a few of minutes.
-
-For some reason, though I can't get Z3 to do both the maximization and then the
-minimization. If I just do one, then it works fine (albeit slowly). But if I try
-and do the maximization and then the minimization, it fails. I'm guessing
-there's some sort of global state that is messing it up, but I don't really
-know.
+Just click the correct link. The hardest part was figuring out which link to
+push. I knew that all I had to do was press a link, but I couldn't figure out
+which one to actually click, which was annoying.
 
 </details>
-
-Sam was smart and went to bed and then came back to it the morning and solved
-before I did, so I lost two points to him today. We are now tied for third at
-1981 points. Here's the leaderboard going into day 25 (`.` means solved part 1,
-`*` means solved both parts, ` ` means didn't solve).
-
-```
-                  1111111111222222
-         1234567890123456789012345
- 1) 2131 ************************  Colin
- 2) 2115 ************************  Kelly
- 3) 1981 ************************  Sumner
- 4) 1981 ************************  Sam
- 5) 1783 ***********************   Dorian
- 6) 1767 **********************.   Adam
- 7) 1714 ****************** **.    Ryan
- 8) 1501 *****************  ***    jordannewport
- 9) 1456 **********************    jack Garner
-10) 1435 ****************** ***    restitux
-```
