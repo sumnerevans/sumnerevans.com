@@ -1,31 +1,3 @@
-commit ef5e893d1d784aa8117ba0013454127543a18133
-Author: Sumner Evans <me@sumnerevans.com>
-Date:   Fri Oct 2 10:42:14 2020 -0600
-
-    markup/rst: use MathJax for rst math output and use short pygments highlighting
-    
-    * As noted in #7759, rst2html exports math using the "HTML math.css"
-      formatter by default. This means that any math typeset in
-      reStructuredText is not formatted using MathJax which is not ideal.
-      This commit adds a --math-output parameter configure rst2html to
-      output math ready for MathJax to process. Note that I had to pick a
-      URL for MathJax, but it doesn't end up in the resulting output because
-      the <script> tag is in the header which gets cut out by code further
-      down.
-    
-    * As noted in #5349, rst2html can generate HTML with short or long form
-      class names for syntax highlighting. Pygments (via the pygmentize
-      command) seems to generate short form by default without any way to
-      switch this. This means most/any stylesheets for code provided with
-      various themes won't work when using rST output. This can easily be
-      fixed by providing the --syntax-highlight=short flag to rst2html.
-    
-    Fixes: #5349
-    Fixes: #7759
-    
-    Co-authored-by: Stephen Finucane <stephen@that.guru>
-    Signed-off-by: Sumner Evans <me@sumnerevans.com>
-
 diff --git a/.github/workflows/test.yml b/.github/workflows/test.yml
 index 32ff0449..7701b08b 100644
 --- a/.github/workflows/test.yml
@@ -40,6 +12,21 @@ index 32ff0449..7701b08b 100644
      - if: matrix.os == 'ubuntu-latest'
        name: Install pandoc on Linux
        run: |
+diff --git a/common/hugo/version_current.go b/common/hugo/version_current.go
+index f5a71c77..cd52d447 100644
+--- a/common/hugo/version_current.go
++++ b/common/hugo/version_current.go
+@@ -16,7 +16,7 @@ package hugo
+ // CurrentVersion represents the current build version.
+ // This should be the only one.
+ var CurrentVersion = Version{
+-	Number:     0.91,
+-	PatchLevel: 2,
+-	Suffix:     "",
++	Number:     0.92,
++	PatchLevel: 0,
++	Suffix:     "-DEV",
+ }
 diff --git a/docs/content/en/content-management/formats.md b/docs/content/en/content-management/formats.md
 index 1ae20ba5..4ff8115e 100644
 --- a/docs/content/en/content-management/formats.md
@@ -112,3 +99,35 @@ index 5d2882de..9063bb4c 100644
 +	c.Assert(string(b.Bytes()), qt.Equals,
 +		"<div class=\"document\">\n\n\n<pre class=\"code c literal-block\">\n<span class=\"kt\">int</span> <span class=\"n\">i</span> <span class=\"o\">=</span> <span class=\"mi\">0</span><span class=\"p\">;</span>\n</pre>\n</div>")
 +}
+diff --git a/snap/snapcraft.yaml b/snap/snapcraft.yaml
+index 09dc915a..fa960594 100644
+--- a/snap/snapcraft.yaml
++++ b/snap/snapcraft.yaml
+@@ -8,7 +8,7 @@ description: |
+ license: "Apache-2.0"
+ base: core20
+ confinement: strict
+-grade: stable # "devel" or "stable"
++grade: devel # "devel" or "stable"
+ 
+ package-repositories:
+   - type: apt
+diff --git a/temp/0.91.2-relnotes-ready.md b/temp/0.91.2-relnotes-ready.md
+deleted file mode 100644
+index f40da42b..00000000
+--- a/temp/0.91.2-relnotes-ready.md
++++ /dev/null
+@@ -1,13 +0,0 @@
+-
+-
+-This is a bug-fix release with a couple of important fixes.
+-
+-* Revert "config/security: Add HOME to default exec env var whitelist" 623dda71 [@bep](https://github.com/bep) 
+-* Make sure we always create the /public folder aee9e11a [@bep](https://github.com/bep) #8166 
+-* Fix "stuck on build" in error situations in content processing bd63c1aa [@bep](https://github.com/bep) #8166 
+-* deps: Run "go mod tidy" 9eb05807 [@bep](https://github.com/bep) 
+-* deps: Upgrade github.com/evanw/esbuild v0.14.7 => v0.14.8 654f513a [@bep](https://github.com/bep) 
+-* releaser: Prepare repository for 0.92.0-DEV 759cdf3f [@bep](https://github.com/bep) 
+-
+-
+-
