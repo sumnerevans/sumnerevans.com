@@ -26,31 +26,26 @@ index 1ae20ba5..4ff8115e 100644
  
  {{% warning "Performance of External Helpers" %}}
 diff --git a/markup/rst/convert.go b/markup/rst/convert.go
-index b86b35f1..fbd74498 100644
+index b86b35f1..eeebaf38 100644
 --- a/markup/rst/convert.go
 +++ b/markup/rst/convert.go
-@@ -81,12 +81,16 @@ func (c *rstConverter) getRstContent(src []byte, ctx converter.DocumentContext)
- 	// invoke directly so that shebangs work as expected
+@@ -82,10 +82,14 @@ func (c *rstConverter) getRstContent(src []byte, ctx converter.DocumentContext)
  	// handle Windows manually because it doesn't do shebangs
  	if runtime.GOOS == "windows" {
--		pythonBinary, _ := internal.GetPythonBinaryAndExecPath()
+ 		pythonBinary, _ := internal.GetPythonBinaryAndExecPath()
 -		args := []string{binaryPath, "--leave-comments", "--initial-header-level=2"}
--		result, err = internal.ExternallyRenderContent(c.cfg, ctx, src, pythonBinary, args)
-+		python := internal.GetPythonExecPath()
-+		args := []string{path,
++		args := []string{binaryPath,
 +			"--leave-comments", "--initial-header-level=2", "--syntax-highlight=short",
 +			"--math-output", "MathJax https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"}
-+		result = internal.ExternallyRenderContent(c.cfg, ctx, src, pythonBinary, args)
+ 		result, err = internal.ExternallyRenderContent(c.cfg, ctx, src, pythonBinary, args)
  	} else {
 -		args := []string{"--leave-comments", "--initial-header-level=2"}
--		result, err = internal.ExternallyRenderContent(c.cfg, ctx, src, binaryName, args)
 +		args := []string{
 +			"--leave-comments", "--initial-header-level=2", "--syntax-highlight=short",
 +			"--math-output", "MathJax https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"}
-+		result = internal.ExternallyRenderContent(c.cfg, ctx, src, binaryName, args)
+ 		result, err = internal.ExternallyRenderContent(c.cfg, ctx, src, binaryName, args)
  	}
  
- 	if err != nil {
 diff --git a/markup/rst/convert_test.go b/markup/rst/convert_test.go
 index 5d2882de..9063bb4c 100644
 --- a/markup/rst/convert_test.go
