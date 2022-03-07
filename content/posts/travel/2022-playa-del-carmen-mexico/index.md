@@ -1,12 +1,12 @@
 ---
 title: "Playa del Carmen, Mexico --- Work Retreat"
-date: 2022-02-19T09:25:00-06:00
+date: 2022-03-06T09:25:00-06:00
 categories: [Work Retreats]
 tags: [Travel, Playa del Carmen, Beeper, Work]
 ---
 
-A couple weeks ago, my company had our 2022 Q1 work retreat in Playa del Carmen,
-Mexico (about an hour south of Cancun). As with the [previous work
+A couple weeks ago, my company had our week-long 2022 Q1 work retreat in Playa
+del Carmen, Mexico (about an hour south of Cancun). As with the [previous work
 trip](../2021-dc-montreal/2021-09-13-17-montreal), the purpose of the retreat
 was for us to get to work together in person and to bond as a team. I got to see
 many of the people who were in Montreal again, and got to meet some of the new
