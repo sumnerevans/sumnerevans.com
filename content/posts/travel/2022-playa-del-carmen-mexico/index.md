@@ -267,10 +267,10 @@ table, and we enjoyed a large variety of fare and plenty of cocktails. At the
 dinner, I had a conversation with Wellington about functional programming. We
 discussed how it's seeing a resurgence lately with reactivity systems and
 serverless architectures. Since I have had the opportunity to [teach Programming
-Languages at Colorado School of Mines]({{< ref "/portfolio#experience-pl-f21"
->}}) (the primary functional programming class), I am always interested in
-talking about industry applications of academic concepts such as functional
-programming.
+Languages at Colorado School of Mines]({{< ref
+"/portfolio#experience-adjunct-mines" >}}) (the primary functional programming
+class), I am always interested in talking about industry applications of
+academic concepts such as functional programming.
 
 {{< figure
       src="./images/catch-table.jpg"
