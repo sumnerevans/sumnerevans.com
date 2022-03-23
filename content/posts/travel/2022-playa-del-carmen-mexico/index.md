@@ -4,6 +4,7 @@ date: 2022-03-06T09:25:00-06:00
 categories: [Work Retreats]
 tags: [Travel, Playa del Carmen, Beeper, Work]
 image: ./images/catamaran-team.jpg
+description: "A couple weeks ago, my company had our week-long 2022 Q1 work retreat in Playa del Carmen, Mexico. These are my thoughts and reflections on the trip."
 ---
 
 A couple weeks ago, my company had our week-long 2022 Q1 work retreat in Playa
