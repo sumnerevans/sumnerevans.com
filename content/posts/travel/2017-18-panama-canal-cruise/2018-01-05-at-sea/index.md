@@ -3,6 +3,7 @@ Title: "At Sea"
 Date: 2018-01-05T23:00:00-0600
 Categories: [Panama Canal Cruise]
 Tags: [At Sea]
+image: ./images/formal-night.jpg
 ---
 
 Today we were at sea. I had a lot of fun, but it isn't very interesting to write
