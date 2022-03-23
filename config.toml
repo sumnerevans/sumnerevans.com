@@ -37,6 +37,7 @@ Paginate = 15
 [params]
   author = "Sumner Evans"
   description = "I'm a Software Engineer at Beeper and an Adjunct Professor at Colorado School of Mines. This is my personal website, portfolio, and blog."
+  title = "Sumner Evans"
   subtitle = "Software Engineer at Beeper"
   dateFmt = "2006-01-02"
 
