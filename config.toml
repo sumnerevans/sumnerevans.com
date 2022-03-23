@@ -40,6 +40,7 @@ Paginate = 15
   title = "Sumner Evans"
   subtitle = "Software Engineer at Beeper"
   dateFmt = "2006-01-02"
+  logo = "profile.jpg"
 
   # Theme
   themeColorAutoDetectBrowserPreference = true
