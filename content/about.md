@@ -5,7 +5,7 @@ date: 2021-08-01 09:04:00
 
 Hello, welcome to my website! I am so glad you stopped by to check it out!
 
-Let me introduce myself. My name is Sumner, I am 23 years old and live in
+Let me introduce myself. My name is Sumner, I am 24 years old and live in
 Denver, Colorado. I am a Software Engineer at [Beeper](https://beeper.com/) and
 an Adjunct Professor at [Colorado School of Mines](https://mines.edu). I am a
 Colorado School of Mines alum (bachelor's in CS, 2018; masters in CS, 2019).
@@ -27,7 +27,7 @@ side, I also work on a variety of open source projects, which you can find on my
 [portfolio][1].
 
 When I'm not working, I enjoy playing soccer, volleyball, and racquetball. I
-also train in ATA Taekwondo where I am a 3rd Degree Black Belt. During high
+also train in ATA Taekwondo where I am a 4rd Degree Black Belt. During high
 school, I won the FRCCA State Championship with Denver Eagles my senior year,
 and won multiple state titles in Taekwondo.
 
