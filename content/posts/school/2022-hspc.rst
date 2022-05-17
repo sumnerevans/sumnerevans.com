@@ -1,0 +1,551 @@
+---
+title: Mines High School Programming Competition 2022
+date: 2022-04-09T17:48:00-06:00
+categories: [School]
+tags: [High School Programming Competition, Competitive Programming, Mines, HSPC]
+---
+
+.. default-role:: math
+
+For the last five years, the Mines Computer Science Department has hosted a High
+School Programming Competition (HSPC) modelled after the `International
+Collegiate Programming Contest (ICPC) <icpc_>`_. I wrote about the `2019
+<hspc2019_>`_, `2020 <hspc2020_>`_, and `2021 <hspc2021_>`_ competitions on this
+blog. This year, I wrote three of the problems and helped `Colin Siles
+<https://colinsiles.dev>`_ with organizing the competition.
+
+.. _icpc: https://icpc.global/
+.. _hspc2019: {{< ref "./2019-hspc" >}}
+.. _hspc2020: {{< ref "./2020-hspc" >}}
+.. _hspc2021: {{< ref "./2021-hspc" >}}
+
+For the first time since the 2019 competition, this year's HSPC featured
+in-person teams. There was also a remote option to increase the reach of the
+competition. Like the past two competitions, we allowed contestants to access
+the internet. The problems from every year are new and written by Mines students
+and some Mines alum specifically for the competition.
+
+Also for the first time we ran two concurrent competitions: a beginner
+competition and an advanced competition. The beginner competition was designed
+for first-year computer science students, while the advanced competition was
+designed for computer science students who had more experience. To allow for
+such a large number of teams, the problem writers created twenty unique
+problems: the most ever!
+
+The beginner competition featured 39 teams while the advanced competition
+featured 26 teams. The 65 teams came from across the nation and the total count
+was a ten-team increase over last year resulting the largest CS@Mines HSPC ever.
+
+In this post, I'm going to give a few highlights of the competition, and then
+explain the problems in the competition (with relatively detailed solution
+sketches).
+
+Competition Highlights
+======================
+
+**You can view full standings for the beginner competition at:**
+https://mines22beginner.kattis.com/standings
+
+**You can view full standings for the advanced competition at:**
+https://mines22advanced.kattis.com/standings
+
+This year's competition was very exciting. Here are a few highlights from the
+competition as a whole:
+
+* All teams solved a problem. (Though there was one team that dropped out of the
+  competition mid-way through.)
+* All of the problems in both competitions were solved by at least one team.
+
+Highlights from the advanced competition include:
+
+* River Hill High School, the reigning champions, were unable to keep their hold
+  on the top spot, but still ended up on the podium in third place with 10
+  problems solved.
+* Last year's runners up (PEN Academy) won first place.
+* The first place (PEN Academy) and second place (Cherry Creek High School)
+  teams both solved 11 out of 13 problems.
+
+  Cherry Creek High School made a gallant effort in the last hour to equalize
+  solved problems with PEN Academy and were within a single bug fix of solving a
+  12th problem which would have allowed them to win the competition outright.
+
+  However, PEN Academy held them off with a late solve of their own, and ended
+  up holding on to first on based on time.
+* The *Cherry Creek Cobras* were the only team to solve Edgar Mine.
+* The honor of being first to solve a problem stretched all the way down to 13th
+  on the scoreboard with *Cyber Wolves I* from Grandview High School solving
+  problem K (Toll Booths) 13 minutes into the competition.
+* The eventual first place winners from PEN Academy also have the honor of first
+  to solve any problem in the competition with their solve of problem A
+  (Blaster's Dash) one minute into the competition.
+* Teams from Colorado included Cherry Creek High School (2nd), Regis Jesuit High
+  School (4th), Rocky Mountain High School (6th), and Golden High School (9th).
+
+Highlights from the beginner competition include:
+
+* Two teams (from *Future Forward at Bollman* and *Colorado Academy* )solved all
+  of the problems in the beginner competition.
+* All but five teams solved at least two problems, and all but eight solved
+  three.
+* The honor of being first to solve a problem stretched all the way down to 25th
+  on the scoreboard with *Keygen Catastrophe* from Arapahoe High School solving
+  problem A (Blaster's Dash) 3 minutes into the competition.
+* Teams from Colorado won all four top spots in the beginner competition.
+
+The Problems
+============
+
+.. warning::
+
+   The rest of this post should be treated like a solutions manual. I hope that
+   this is an extremely helpful resource when you get stuck, but you should
+   *try* to solve each of the problems before reading the solutions. There's no
+   magic amount of time that you should try to solve the problem before looking
+   at the solution sketch, but I think a good rule of thumb is after you've
+   tried at least three ideas on your own, then you can read at the solution
+   sketch.
+
+   **Remember: You will not learn anything if you just read the explanations!**
+
+There were twenty problems in the competition written by eight different
+authors. The problems can be viewed at
+https://mines21beginner.kattis.com/problems and
+https://mines21advanced.kattis.com/problems. The following lists the problems
+featured in each competition and a short description of the algorithm required
+to solve the problem, listed in the order in which they appeared in each
+respective competition:
+
+**Beginner Competition:**
+
+- **A: Blaster's Dash** -- Basic arithmetic.
+- **B: Knight's Move** -- 2-D grid computations with basic bounds checking.
+- **C: Weather Nodes** -- List processing with a two-pass algorithm.
+- **D: Toll Booths** -- List processing with a one-pass algorithm.
+- **E: Hard Rocks and Atomic Clocks** -- Modular arithmetic.
+- **F: Daniel's Debugging Disaster** -- Basic probability.
+- **G: Tic-Tac-Toe AI** -- Lots of ``if`` statements.
+- **H: Office Hours** -- Use a dictionary or array to store a summary of data,
+  then find the maximum.
+- **I: 3-Puzzle** -- Determine the number of steps to solve a 3-Puzzle.
+- **J: Mines Meal Plans** -- More annoying ``if`` statements.
+- **K: Premier League Table** -- Summarize a series of data and print a sorted
+  table of information.
+- **L: CS Building Blueprint** -- Determine the quadrilateral classification of
+  four points in 2-D Cartesian space.
+
+**Advanced Competition:**
+
+- **A: Blaster's Dash** -- Basic arithmetic.
+- **B: Babel** -- Flood fill
+* **C: CS Building Blueprint** -- Determine the quadrilateral classification of
+  four points in 2-D Cartesian space.
+- **D: Daniel's Debugging Disaster** -- Basic probability.
+- **E: Edgar Mine** -- Greedy interval covering.
+- **F: Radioactive Blastervium** -- Principle of Inclusion Exclusion
+- **G: Office Hours 2** -- Find the two hours in a week that will maximize the
+  total set of students able to attend office hours.
+- **H: Premier League Table** -- Summarize a series of data and print a sorted
+  table of information.
+- **I: Crafting Recipes** -- Use a dictionary and recursion to compute a total
+  weight of multiple subcomponents.
+- **J: Ultimate License Plate** -- Advanced probability
+- **K: Toll Booths** -- List processing with a one-pass algorithm.
+- **L: Lost on Campus** -- Dijkstra's, or modified BFS
+- **M: Spelling with Chemistry** -- Dynamic programming
+
+As you can see, there were some repeats across the competition.
+
+Problem **A** was designed to be the easiest problem, while **M** was intended
+to be the hardest problem. The following subsections are going to describe the
+problems and provide fairly detailed solution sketches for each one, sorted by
+their intended relative difficulty with the easiest ones first. Interviews with
+the problem authors of each problem are also provided.
+
+I do not try and build up from first principles in each of these explanations
+(and corresponding videos). Rather, I try and make the explanations accessible
+to anyone who feels like solving the problem is within their grasp, but they
+can't figure out one or two of the key ideas to crack the problem. For the
+easiest problems, I start much closer to first principles, but as the problems
+get harder, I start assuming more and more base understanding of programming.
+
+Additionally, I'm only presenting a single solution for each problem here. There
+are likely many alternative ways to solve each of these problems.
+
+Slightly less detailed solution sketches were presented at the closing
+ceremonies which can be viewed below.
+
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Solution Sketch Presentation</summary>
+      {{< youtube id="-7Zf7zbDpxI" title="CS@Mines HSPC 2021 Solution Sketch Presentation" >}}
+    </details>
+
+A - M-Climb
+-----------
+
+:Description: https://mines21.kattis.com/problems/mines21.mclimb
+:Author: Jack Garner
+:Attempts: 71
+:Correct: 55
+:% of Teams: 100%
+:Concept: basic operations on variables
+
+M-Climb was designed to be a very trivial problem. It was inspired by the annual
+M-Climb tradition at Mines where freshmen hike up Mount Zion to the big M with
+10-pound rocks from their hometown, and then whitewash the M (and themselves).
+All while singing the fight song over and over very loudly.
+
+For this problem, you must multiply `m` (the number of rocks) by `n` (the cost
+of a litre of paint). This gives you the total price of paint for painting the
+M because each rock requires 1 litre of paint.
+
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Jack Garner (Contest Organizer and Problem Author)</summary>
+      {{< youtube id="A8u67MRyuEo" title="CS@Mines HSPC 2021 Interview with Jack Garner (Contest Organizer and Problem Author)" >}}
+    </details>
+
+B - 13 Floors
+-------------
+
+:Description: https://mines21.kattis.com/problems/mines21.13floors
+:Author: Colin Siles
+:Attempts: 73
+:Correct: 55
+:% of Teams: 100%
+:Concept: conditionals (``if`` statements)
+
+This problem was intended to be a fairly trivial problem as well. It involves
+using an ``if`` statement to determine if the given number is greater than or
+equal to 13. If it is, then print the number plus one. If it is not, then print
+the number.
+
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Colin Siles (Problem Author)</summary>
+      {{< youtube id="H3uyK2qFfA0" title="CS@Mines HSPC 2021 Interview with Colin Siles (Problem Author)" >}}
+    </details>
+
+C - Rolling the Dice
+--------------------
+
+:Description: https://mines21.kattis.com/problems/mines21.rollingthedice
+:Author: Adam Sandstedt
+:Attempts: 92
+:Correct: 53
+:% of Teams: 96%
+:Concept: basic string processing and operations on variables
+
+The math at the core of this problem is fairly easy, however, parsing is
+slightly non-trivial. The input format is ``XdY+Z``, and you have to extract
+``X``, ``Y``, and ``Z``. The easiest way to do this is to split the string by
+``d`` to get ``X`` and ``Y+Z``, and then split the second part by ``+``. Once
+split, you have to convert all of the strings to integers, and then the solution
+`S` is given by the following equation:
+
+.. math::
+
+   S = \underbrace{
+           \frac{X + (X \times Y)}{2}
+       }_{
+           \text{average of $X$ and $X \times Y$}
+       } + \underbrace{Z}_{\text{offset by $Z$}}
+
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Adam Sandstedt (Problem Author)</summary>
+      {{< youtube id="yZa3WKo6RW4" title="CS@Mines HSPC 2021 Interview with Adam Sandstedt (Problem Author)" >}}
+    </details>
+
+D - Tall Enough
+---------------
+
+:Description: https://mines21.kattis.com/problems/mines21.tallenough
+:Author: Jack Garner
+:Attempts: 81
+:Correct: 54
+:% of Teams: 98%
+:Concept: a ``for`` loop with a conditional
+
+This problem requires the use of a *loop* to iterate over all of the numbers in
+the input. If any of the numbers are less than 48, then ``False`` should be
+printed. If all of the numbers are greater than or equal to 48, then ``True``
+should be printed.
+
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Jack Garner (Contest Organizer and Problem Author)</summary>
+      {{< youtube id="A8u67MRyuEo" title="CS@Mines HSPC 2021 Interview with Jack Garner (Contest Organizer and Problem Author)" >}}
+    </details>
+
+G - Alphabet Soup
+-----------------
+
+:Description: https://mines21.kattis.com/problems/mines21.alphabetsoup
+:Author: Colin Siles
+:Attempts: 99
+:Correct: 50
+:% of Teams: 91%
+:Concept: loops + a set or list
+
+This problem requires taking a string of characters and verifying that every
+letter of the alphabet is present in the string, and printing the ones which are
+not present if there are any missing. There are many ways of accomplishing this,
+but one easy way is to put the characters of the input string into a *set*, then
+perform a set subtraction with a set of all of the upper-case letters. If there
+are any remaining letters, print them in sorted order. If there are no remaining
+letters, print ``Alphabet Soup!``.
+
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Colin Siles (Problem Author)</summary>
+      {{< youtube id="H3uyK2qFfA0" title="CS@Mines HSPC 2021 Interview with Colin Siles (Problem Author)" >}}
+    </details>
+
+I - Tic-Tac-Toe Solver
+----------------------
+
+:Description: https://mines21.kattis.com/problems/mines21.tictactoesolver
+:Author: Jack Garner
+:Attempts: 113
+:Correct: 44
+:% of Teams: 80%
+:Concept: conditionals (``if`` statements)
+
+This problem requires you to determine which player won a tic-tac-toe game. The
+first challenge is reading the input into a 2-D list or array. Then, once you've
+read in the input, the easiest thing to do is hard-code the 16 win
+configurations with ``if`` statements. If none of the win conditions are met,
+then nobody has won so you should output ``N``.
+
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Jack Garner (Contest Organizer and Problem Author)</summary>
+      {{< youtube id="A8u67MRyuEo" title="CS@Mines HSPC 2021 Interview with Jack Garner (Contest Organizer and Problem Author)" >}}
+    </details>
+
+F - Follow the Prize
+--------------------
+
+:Description: https://mines21.kattis.com/problems/mines21.followtheprize
+:Author: Colin Siles
+:Attempts: 90
+:Correct: 50
+:% of Teams: 91%
+:Concept: loops
+
+For this problem, you need to keep track of which cup holds the prize in a
+variable. Then, in a loop, go through all of the swaps in order. If at any point
+one of the cups being swapped matches your variable, you need to update your
+variable to refer to the swapped cup.
+
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Colin Siles (Problem Author)</summary>
+      {{< youtube id="H3uyK2qFfA0" title="CS@Mines HSPC 2021 Interview with Colin Siles (Problem Author)" >}}
+    </details>
+
+E - Marble Maze
+---------------
+
+:Description: https://mines21.kattis.com/problems/mines21.marblemaze
+:Author: Sam Sartor
+:Attempts: 44
+:Correct: 26
+:% of Teams: 47%
+:Concept: conditionals + loops + 2-D arrays
+
+The key to this problem is to keep a separate bit of state for each seesaw.
+
+Then, move each of the `N` marbles step-by-step through the maze according to
+the rules for each grid square, toggling the seesaw states as needed. Be careful
+to avoid indexing mistakes, especially along the edges of the grid.
+
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Sam Sartor (Problem Author)</summary>
+      {{< youtube id="1ok8sB7JO_8" title="CS@Mines HSPC 2021 Interview with Sam Sartor (Problem Author)" >}}
+    </details>
+
+H - Powering Teslopolis
+-----------------------
+
+:Description: https://mines21.kattis.com/problems/mines21.poweringteslopolis
+:Author: John Henke
+:Attempts: 72
+:Correct: 29
+:% of Teams: 53%
+:Concept: conditionals + loops + 2-D arrays
+
+For this problem, you likely want to use a nested for loop to search every row
+and column of Teslopolis. For every cell in the grid, you need to check all of
+the adjacent cells (including diagnols) for a power station. Although there are
+alternatives, the simplest option is to create an if statement for each
+neighbor. If any neighbors are power cells, then the cell you're looking at is
+powered. It is important not to go out-of-bounds when at an edge.
+
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with John Henke (Problem Author)</summary>
+      {{< youtube id="8kF9dFtv4Qk" title="CS@Mines HSPC 2021 Interview with John Henke (Problem Author)" >}}
+    </details>
+
+J - Quadratic Autopilot
+-----------------------
+
+:Description: https://mines21.kattis.com/problems/mines21.quadraticautopilot
+:Author: David Florness
+:Attempts: 60
+:Correct: 21
+:% of Teams: 38%
+:Concept: operations on variables
+
+This problem requires solving for `a`, `b`, and `c` in terms of the input
+points' coordinates. The best way to solve this is to take the three equations
+you are given, and just start substituting until you are able to write one of
+them in terms of just the coordinates. After much algebra, you will get a
+solution.
+
+.. math::
+
+   b &= \frac{
+          x_1^2(y_2 - y_3) + x_2^2(y_3 - y_1) + x_3^2(y_1 - y_2)
+       }{
+          (x_2 - x_3)(x_1^2 - x_2^2) - (x_1 - x_2)(x_2^2 - x_3^2)
+       } \\
+   a &= \frac{y_1 - y_2 - b(x_1 - x_2)}{x_1^2 - x_2^2} \\
+   c &= y_1 - a{x_1^2} - bx_1
+
+We were unable to get an interview with David.
+
+K - Knight Walk
+---------------
+
+:Description: https://mines21.kattis.com/problems/mines21.knightwalk
+:Author: John Henke
+:Attempts: 9
+:Correct: 8
+:% of Teams: 15%
+:Concept: BFS on an implicit graph
+
+For this problem, you can use a breadth first search (BFS) to find the knight's
+path. However, unlike a traditional BFS where you are given the full graph to
+traverse, for this problem, you have an *implicit* graph.
+
+To do the BFS, first, you can create a *queue* data structure and place the
+starting position into it. Then, until the queue is empty, you pop off the front
+of the queue. You can then look at every position the knight can reach from the
+position you just popped off and add those to the back of your queue. Then,
+repeat the process of adding moves to your queue and taking off the move that's
+in front. Once you've found the square you were looking for, you can stop adding
+moves to the queue, but it is important to finish processing whatever is still
+left in the queue so you get all the paths!
+
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with John Henke (Problem Author)</summary>
+      {{< youtube id="8kF9dFtv4Qk" title="CS@Mines HSPC 2021 Interview with John Henke (Problem Author)" >}}
+    </details>
+
+L - Math in Another Universe
+----------------------------
+
+:Description: https://mines21.kattis.com/problems/mines21.mathinanotheruniverse
+:Author: Mohammed Alnasser
+:Attempts: 105
+:Correct: 26
+:% of Teams: 47%
+:Concept: basic parsing and expression evaluation
+
+This problem is about finding a way to parse a mathematical formula. You can
+start by splitting the formula on any spaces. You can then search the input for
+any plus or minus signs. Once you find one, replace it and it's operands with
+the result of the operation. When all of the plus and minus signs are gone, you
+can do the same thing with multiplication and division signs. Once those are
+gone, you should be left with a single number.
+
+.. note::
+
+   There are ways to cheese this problem by adding parentheses and using your
+   languaguage's ``eval`` functionality, a trick which *The Fellowship of the
+   String* found and enabled them to solve this problem 34 minutes into the
+   competition.
+
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Mohammed Alnasser (Problem Author)</summary>
+      {{< youtube id="bVdkmqvTCuI" title="CS@Mines HSPC 2021 Interview with Mohammed Alnasser (Problem Author)" >}}
+    </details>
+
+M - Delivery Driver
+-------------------
+
+:Description: https://mines21.kattis.com/problems/mines21.deliverydriver
+:Author: Sumner Evans
+:Attempts: 38
+:Correct: 10
+:% of Teams: 18%
+:Concept: dynamic programming
+
+This problem requires *dynamic programming* [1]_, a technique for optimizing
+*recursive* algorithms. There are two main steps to dynamic programming:
+
+1. Find the recursive formulation.
+2. Determine a strategy for storing previous calls to the recursive formulation
+   so that you don't have to recompute values over and over again.
+
+The following is a recursive formulation for the problem:
+
+.. admonition:: Recursive Formulation
+
+   Let `P(d, c)` be the maximum profit achievable through the rest of the
+   sequence by working in `c` on day `d`, `p[d, c]` be the profit for day `d` in
+   city `c` from the table, `T(c1, c2)` be the transition cost from `c1` to
+   `c2`, and `N` be the number of days. Then,
+
+   .. math::
+
+        P(N, c) &= p[N, c] \\
+        P(d, c) &= p[d, c] + \max
+          \begin{cases}
+            P(d + 1, c) \\
+            T(c, c1) + P(d + 1, c1) \\
+            T(c, c2) + P(d + 1, c2)
+          \end{cases}
+
+The key insight from Dynamic Programming is that you can *cache* the results of
+`P` because `P` will need to be evaluated with the same parameters many times.
+There are two main ways to make this cache:
+
+1. By creating an `3 \times N` table where the cells represent `P` evaluated at
+   the corresponding day and city. Then, fill in the table in such a way that
+   the dependencies are always evaluated before they are needed. In the
+   recursive formulation above, the dependencies for `P(d, c)` are `P(d+1, c)`,
+   `P(d+1, c1)`, and `P(d+1, c2)`.
+2. Via a technique called *memoisation* [2]_ which involves creating a
+   dictionary of function inputs to function outputs. Then, at the beginning of
+   the function, check to see if the value has already been computed and is in
+   the dictionary. If it is, then return that, otherwise compute the value,
+   store it in the dictionary, and then return the value.
+
+.. raw:: html
+
+    <details class="youtube-expander">
+      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines HSPC 2021 Interview with Sumner Evans (Problem Author)</summary>
+      {{< youtube id="r2nU-A74doQ" title="CS@Mines HSPC 2021 Interview with Sumner Evans (Problem Author)" >}}
+    </details>
+
+.. [1] https://en.wikipedia.org/wiki/Dynamic_programming
+.. [2] https://en.wikipedia.org/wiki/Memoize

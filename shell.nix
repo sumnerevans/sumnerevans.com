@@ -8,7 +8,18 @@ let
         self: super: {
           hugo = super.hugo.overrideAttrs (
             old: {
-              patches = (old.patches or []) ++ [ ./hugo-rst-patches.patch ];
+              patches = (old.patches or [ ]) ++ [ ./hugo-rst-patches.patch ];
+            }
+          );
+        }
+      )
+      (
+        self: super: {
+          docutils = super.docutils.overrideAttrs (
+            old: {
+              propagatedBuildInputs = (old.propagatedBuildInputs or [ ]) ++ [
+                super.python3Packages.pygments
+              ];
             }
           );
         }
