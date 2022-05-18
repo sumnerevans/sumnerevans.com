@@ -10,63 +10,137 @@ draft: true
 
    I earned my Master's degree in Computer Science from Colorado School of Mines
    in Spring 2019. I have also taught classes at both an undergrad and graduate
-   level at Mines, and thus I have recieved compensation from Mines.
+   level at Mines, and thus I have received compensation from Mines.
 
-TODO
-Computer science is one of the fastest growing majors in the nation right now.
-It's also one of the most competitive due to the number of graduates each year.
-Because of this, people look for many ways to differentiate themselves from all
-the other graduates.
+"Master of Science in Computer Science", it sounds so grand, doesn't it? But is
+it worth it? I'm writing this post to give my opinion on whether or not getting
+a master's degree is worth the effort and money. **I want to be very clear, this
+post is my opinion only.**
+
+.. TODO talk about how great my experience was
 
 I think there are three main reasons why most people decide to get a master's
-degree in computer science: financial, academic, and social.
+degree in computer science: financial and academic. However, some also may be
+motivated by the social aspects of continuing school.
 
-In this article, I'm going to examine each one of these reasons in turn and give
-you my honest opinion. TODO
+Probably the most common reason people want to get an advanced computer science
+degree is financial. Computer science is one of the fastest growing majors in
+the nation right now. It's also one of the most competitive due to the number of
+graduates each year. Because of this, people look for many ways to differentiate
+themselves from all the other graduates to get the higher-paying jobs. One way
+that people do this is by getting a master's degree on addition to their
+undergraduate computer science or other engineering degree.
 
-1 - Financial
-=============
+Others see the master's degree as a way to grow academically. Whether their goal
+is to become an educator, continue on to a PhD program, become a researcher in
+industry or academia, or just generally expand their knowledge of the field,
+these people are motivated primarily because they enjoy learning.
+
+Many of the people who pursue master's degrees have a social motivation as well.
+Maybe they just want more of the "college experience". Maybe they were able to
+do their undergraduate degree in less than the normal four years and want one
+extra year before having to get a real job. These people are generally motivated
+by one or both of the other reasons, but the social aspect may be the
+determining factor if they are on the fence.
+
+In the rest of the article, I am going to examine each one of these reasons in
+turn and give you my honest opinion about the merits of that motivation, and
+provide you with some things to think about when weighing your options.
+
+Financial
+=========
 
 Many people enter computer science with the goal of finding a high-paying job
 right out of college. Many people continue on to get a master's degree in
-computer science for the same reason.
+computer science for the same reason. In this section, I'm going to answer this
+question: *does getting a master's degree improve my job offer potential enough
+to warrant the cost?* or stated more simply *is getting a master's degree worth
+the money?*.
 
-* They want to make more money in their job out of college.
+Most schools that offer a master's program tout higher starting salaries for
+master's degree graduates than their undergraduate counterparts. In many cases,
+the difference in starting salary is $10k-20k higher for master's graduates. So
+the first question is: *are these numbers accurate?* To be perfectly honest, I
+don't know the answer, but I think that it is almost certainly true that people
+with master's degrees end up with higher starting salaries. However, the
+*reason* for this is not as straightforward as it may seem.
 
-  * A lot of schools tout the higher starting salaries
+Schools generally want to attribute the entirety of the starting salary increase
+to the additional education received in the master's degree program. However, I
+think this is somewhat misleading as there is a great degree of *selection bias*
+to account for. Consider the typical student who enters a graduate program. In
+most schools you must have a fairly high cumulative GPA to be able to get into a
+graduate program. At Mines, for example, you must have received at least a 3.0
+GPA in an undergraduate program to be accepted to the graduate program. Thus,
+the students who enter the program are at least decent students. Additionally,
+anyone who enters a graduate program will at the very least not hate school.
+(Most of my undergraduate friends just wanted out after four years and couldn't
+imagine themselves doing another year.) Because of these factors, the students
+who enter graduate programs are already some of the best, most motivated
+students in their undergraduate classes; students that would probably get top
+offers right out of a four-year undergraduate degree.
 
-* There's some truth to this. Personally, I got a great offer right out of
-  college. And I know quite a few of my peers who got their Masters got great
-  offers as well.
-* However, I know a lot of undergraduate students that have gotten offers that
-  are similar or even higher to those of some of the graduate students that I
-  know.
-* The thing is, **Grad school is not a magic pill that will make you a better
-  Computer Scientist or Software Engineer**
-* Students who are top undergraduate students will be able to get very
-  competitive offers without a Master's.
-* Students who are top graduate students will be able to get the top offers.
-* So if you are a top student, you will likely get a great offer with a Master's
-  degree, but you could get a really *good* offer with just a Bachelor's.
-* On the other hand, students who are struggling to find an internship or job
-  with just an undergraduate degree will likely continue to struggle to find an
-  internship or job, even with the extra line on your resume, and extra piece of
-  paper.
-* Having a masters degree does not make you automatically more employable.
-* **If the only reason you are thinking of grad school is so that you can be
-  more employable, don't go to grad school. Work on being more employable.**
+My thesis is that **the primary reason that the starting salary is higher for
+graduates with master's degrees is because the calibre of student who enters
+such programs would already receive higher-than-average starting salaries if
+they did not attend graduate school**. In effect, the natural selection that
+occurs getting into the graduate program weeds out the below-average students
+(the ones who get mediocre offers) from the equation.
 
-  * Maybe you need to get involved with some computer science related clubs on
-    campus.
-  * Maybe you need to do some side projects and put them on GitHub.
-  * There are tons of ways to make yourself more employable, and you can find
-    tons of advice here on YouTube.
-  * If your goal is increasing your employability, then look to things that
-    don't cost tens of thousands of dollars per year year in tuition.
-  * I know many friends who weren't exceptional students during undergrad (they
-    got good grades, but not great) but who did tons of things to make
-    themselves employable (involement in student/professional orgs and such) and
-    got really good offers right out of school.
+Anecdotally, I know plenty of top undergraduate student students that have
+received offers that are equal to or better than offers accepted by some of the
+more average graduate students. I have also seen graduate students get very high
+offers after getting their master's degree, but I am fairly confident they would
+have received a commensurate offer if they entered the job market right after
+receiving their bachelor's.
+
+Getting a master's degree is not a silver bullet that will make you a better
+computer scientist or software engineer. If you are struggling to get offers
+with just your undergraduate degree, you will likely continue to struggle to get
+offers once you have an extra line on your resume, and extra piece of paper in a
+frame. And if you are getting competitive offers with a bachelor's, you'll get
+competitive offers with a master's as well.
+
+So what about you and your decision?
+
+* If you are a top undergraduate student, you will be able to get highly
+  competitive offers *without* a master's degree. And if you are a top
+  undergraduate student, you will likely be a top graduate student, so you will
+  be able to get similarly highly competitive offers *with* a master's degree as
+  well.
+
+* If you are an average undergraduate student, you will be able to get decent
+  offers *without* a master's degree. You will probably be a below-average
+  graduate student, but you will gain some experience and possibly increase your
+  chances of getting a better offer once you complete your master's degree.
+
+* If you are a below-average undergraduate student, then you probably won't be
+  able to even get into a graduate program. But if you are somehow able to get
+  into a graduate program, you'll probably struggle as a graduate student as
+  well.
+
+  For these students, getting a master's degree as a way to become more
+  employable will be a very stressful and expensive endeavour. You may succeed,
+  but there are easier ways to get good offers.
+
+**If the only reason you are thinking of getting a master's degree is so that
+you can be more employable, don't get a master's degree. Work on being more
+employable.** Getting a master's degree does not make you automatically more
+employable. There are much cheaper ways to become more employable including:
+getting involved with computer-science related clubs or making open source side
+projects and putting them on GitHub.
+
+**If your goal is to increase your employability, always consider options that
+don't cost tens of thousands of dollars first.**
+
+.. note::
+
+   From a financial standpoint, I think that getting a master's degree makes the
+   most sense for those who are above average undergraduate students, but not
+   quite top undergraduate students. These students are at a threshold where
+   companies may wonder if it's worth taking the risk on hiring them. A master's
+   degree may act as a "proof" that you are in fact a worthwhile investment, and
+   companies will be more likely to take a risk and hire you.
 
   * One caveat.
 
