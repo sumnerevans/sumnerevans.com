@@ -86,7 +86,7 @@ Set up GitLab CI/CD
 Now we need to configure GitLab CI/CD to automatically build the site. To do
 that, add a ``.gitlab-ci.yml`` file with the following contents:
 
-.. code:: yaml
+.. code::
 
    # Build and deploy the pelican site.
    pages:
