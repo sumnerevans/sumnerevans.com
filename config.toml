@@ -16,7 +16,7 @@ Paginate = 15
   minifyOutput = true
 
 [markup]
-  [markup.highlights]
+  [markup.highlight]
     style = "github"
   [markup.goldmark.renderer]
     unsafe = true
