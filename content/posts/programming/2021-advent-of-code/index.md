@@ -1954,6 +1954,19 @@ for part 2, I solved 3rd behind Colin and Kelly. Dorian slipped in with 4th on
 part 2, so I'm guaranteed to gait at least one point on Sam today. He hasn't
 solved yet, but I fully expect him to.
 
+# Day 24: Amphipod
+
+| <!-- -->       | <!-- -->                                                                       |
+| -------------- | ------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2021/day/24                                           |
+| **Solutions:** | [Python](https://github.com/sumnerevans/advent-of-code/blob/master/2021/24.py) |
+| **Part 1:**    | 14:47:42, 4676th                                                               |
+| **Part 2:**    | 14:51:51, 4547th                                                               |
+
+(Edit: 2022-05-24) I forgot to write about this one I guess. This one required
+reverse-engineering a simple program in a simple assembly language. I did
+horribly, but I eventually figured out how to use Z3 to give me the answer.
+
 # Day 25: Sea Cucumber
 
 | <!-- -->       | <!-- -->                                                                       |
