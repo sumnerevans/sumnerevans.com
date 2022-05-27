@@ -109,8 +109,8 @@ The Problems
 
 There were twenty problems in the competition written by eight different
 authors. The problems can be viewed at
-https://mines21beginner.kattis.com/problems and
-https://mines21advanced.kattis.com/problems. The following lists the problems
+https://mines22beginner.kattis.com/problems and
+https://mines22advanced.kattis.com/problems. The following lists the problems
 featured in each competition and a short description of the algorithm required
 to solve the problem, listed in the order in which they appeared in each
 respective competition:
