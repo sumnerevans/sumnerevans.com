@@ -24,7 +24,7 @@ up leaving about 20 minutes late, but luckily the jet stream helped us out and
 we arrived in Lisbon about 20 minutes earlier than expected.
 
 The food service on the second leg was quite nice. The dinner was a vegetable
-stir fry with a salad, break and butter, and a snickerdoodle cookie. For
+stir fry with a salad, bread and butter, and a snickerdoodle cookie. For
 breakfast a few hours later, we were served some Chobani yoghurt.
 
 {{< figure
