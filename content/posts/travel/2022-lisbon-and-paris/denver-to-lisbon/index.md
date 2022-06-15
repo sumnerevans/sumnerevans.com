@@ -30,7 +30,7 @@ breakfast a few hours later, we were served some Chobani yoghurt.
 {{< figure
       src="./images/flight-food.jpg"
       link="./images/flight-food.jpg"
-      target="\_blank"
+      target="_blank"
       title="The dinner service on my flight from IAD to LIS"
       caption="The meal exceeded my expectations, and even included a complimentary beverage."
 >}}
@@ -44,7 +44,7 @@ city out the window.
 {{< figure
       src="./images/flight-view.jpg"
       link="./images/flight-view.jpg"
-      target="\_blank"
+      target="_blank"
       title="The view from my seat on the approach into Lisbon"
       caption="This is the West coast of Iberia."
 >}}
@@ -65,7 +65,7 @@ drink and then walked back up to the venue.
 {{< figure
       src="./images/beach.jpg"
       link="./images/beach.jpg"
-      target="\_blank"
+      target="_blank"
       title="The beach near the retreat venue"
       caption="It was a bit cold getting into the Atlantic, but once we got in, it was refreshing."
 >}}
@@ -78,7 +78,7 @@ time chatting around the fire, trying to fight off jet lag.
 {{< figure
       src="./images/fire.jpg"
       link="./images/fire.jpg"
-      target="\_blank"
+      target="_blank"
       title="The Beeper team enjoying some quality time around the fire"
       caption="Adam did a good job starting the fire, and didn't even have to use gasoline! This fire is Chief Safety Officer approved."
 >}}
