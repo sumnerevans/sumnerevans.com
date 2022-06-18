@@ -1,11 +1,10 @@
 ---
-title: "Ericeira, Portugal"
+title: "Ericeira, Portugal --- Work Retreat"
 date: 2022-06-10T12:00:00-06:00
 categories: [Work Retreats]
 tags: [Travel, Denver, Ericeira, Portugal]
 description: "My thoughts and reflections on the Beeper Summer 2022 retreat in Ericeira, Portugal."
-image: ./images/flight.jpg
-draft: true
+image: ./images/tent.jpg
 ---
 
 I spent the first week of my trip at a Beeper company retreat in Ericeira,
@@ -86,6 +85,8 @@ meals, we ran out of food too quickly which was very unfortunate.
 Since it was a work trip, we did have to do *some* work. However, we focused on
 more collaborative full-company or cross-team meetings and projects.
 
+### Retro!
+
 In what seems to be the standing tradition at the retreats, we had a
 retrospective meeting on Monday morning to kick off the week. At the retro,
 everyone had a few minutes to write sticky notes covering five categories: what
@@ -107,12 +108,17 @@ facing.
       caption="Caroline (standing left) is discussing her retro sticky notes as Brad (standing right) looks on."
 >}}
 
+### On Mission
+
 On Tuesday, Eric laid out the company vision and how it relates to our short,
 medium, and long term plans. He has done this every retreat, and while overall
 the same, each time a few more ideas come into focus and I am finding it easier
 to see how what we are working on currently aligns with the very ambitious goal
-that we have to make "the best damn chat app". One of the new things this time
-was the unveiling of our mission statement: "TODO".
+that we have to "build the best damn chat app". One of the new things this time
+was the unveiling of our mission statement: *make it easy for everyone on Earth
+to chat with each other*.
+
+### Discuss and Plan
 
 Other meetings included an hour or so on Monday discussing what we could build
 for the support team to help them improve their processes. Out of that, a few
@@ -121,13 +127,16 @@ Additionally on Monday afternoon, each of the engineering teams had a tooling
 planning session. My team (Scott, Eric Rabil, Tulir, and myself) spent a lot of
 ours by walking around the neighborhood talking about things that we wanted to
 make easier for ourselves such as improving our deployment queue functionality
-and consolidating more logic in shared libraries. We also had a security
-brainstorming meeting on Tuesday led by Brad to discuss what we could do to
-harden the security of the platform. After that we also had a discussion about
-database reliability and how to ensure that bridges (the services which connect
-Beeper to the external networks) reliably reconnect in the case of temporary
-database outages (an issue that we have been running into more recently due to
-the large number of upgrades happening to the database layer of our platform).
+and consolidating more logic in shared libraries.
+
+We also had a security brainstorming meeting on Tuesday led by Brad to discuss
+what we could do to harden the security of the platform. After that we also had
+a discussion about database reliability and how to ensure that bridges (the
+services which connect Beeper to the external networks) reliably reconnect in
+the case of temporary database outages (an issue that we have been running into
+more recently due to the large number of upgrades happening to the database
+layer of our platform).
+
 On Wednesday, we had a meeting to discuss how to scale the platform. One of the
 main things that we discussed as a potential option is to create a specialized
 server for non-federated bridge traffic. This is a project that myself and Toni
@@ -136,10 +145,12 @@ out and eventually get it into production as well as possible alternative
 approaches. The project is called *hungryserv* since it's for **unfed**erated
 traffic.
 
-Monday and Tuesday and some of Wednesday were intentionally very meeting heavy
-as we wanted to make sure everyone was aligned so that the back half of the week
-could be used to work on cross-team initiatives and other collaborative
-projects.
+### Writing Some Code
+
+Monday and Tuesday and some of Wednesday were (I think intentionally) very
+meeting heavy and the meetings were a great way to make sure everyone was
+aligned. In the back half of the week, we focused on cross-team initiatives and
+other collaborative projects.
 
 I spent most of my time working on hungryserv (the unfederated Matrix homeserver
 proof of concept that I mentioned earlier). Toni worked on roomserv which is
@@ -158,13 +169,29 @@ It was a neat collaboration with someone that I don't normally have any context
 to collaborate with (Ian is on the iOS team currently, so we don't interact
 often day-to-day).
 
+I also paired with Rabil to finish up proper bridging of link previews from
+iMessage to Beeper. This feature allows, iMessage users to see a nice preview of
+the link in the message sent from Beeper and vice versa. All of the other
+bridges have had this for a while, but iMessage had some specific challenges
+that made it more difficult, and was best done when we could each quickly ask
+questions of one another while staring at each other's code.
+
+{{< figure 
+      src="./images/code-by-the-fire.jpg"
+      link="./images/code-by-the-fire.jpg"
+      target="_blank"
+      title="Sumner, Eric Rabil, and Tulir coding while sitting near the fire"
+      caption="I'm pretty sure we were putting the finishing touches on iMessage link previews here."
+>}}
+
+
 One of the major cross-team initiatives for the week was message send status
 indicators which will help inform users when errors happen while bridging their
 messages to other platforms. Scott led a mini "hackathon" and facilitated many
 discussions and test sessions to ensure that the way that we were handling it is
 consistent across all of the apps, makes sense to the users, and also has as few
-edge cases as possible. I didn't participate much in those discussions, but I
-did contribute in a small way by writing a bit of bridge "mock" code (code that
+edge cases as possible. I didn't participate much in the hackathon, but I did
+contribute in a small way by writing a bit of bridge "mock" code (code that
 emulates what a real bridge would do) to help the client teams test their
 functionality.
 
@@ -193,7 +220,7 @@ time I walked over to him it would be so that he could deploy a new hash to
 production. After a few times, every time I'd come over he'd see me and ask what
 I'd broken that time. Even the next day when I came over to talk to Nick, his
 first question was "what hash do I need to deploy?" and "what have you done this
-time?".
+time?" :)
 
 Alma do Paço has a large fire pit within the ruins area and every evening we
 started a fire and sat around talking and drinking until late into the evening.
@@ -205,19 +232,19 @@ during the last retreat]({{<ref
 was there to oversee and approve the fire.
 
 The nightly bonfires were great team bonding times and I think a couple of good
-ideas came out of discussions around the fire, however, the vast majority of the
-ideas were horrible. One evening, we played a game that was some twisted
-combination of charades and taboo that was very fun and got everyone doing
-ridiculous motions and saying ridiculous things to get their team to guess the
-words in a deck of cards. Another time, Scott told a "story" about the barwich:
-an ice cream sandwich on bottom combined with an ice cream bar on top. He told
-this elaborate story about how he'd seen them in Japan years ago, but hadn't
-seen them again... until a store in Portugal! On Monday, we had s'mores around
-the fire and it was the first time that some of the non-North-American team
-members had had a s'more! These were very fancy s'mores, though: they were
-chocolate covered marshmallows so you had to be very careful to not melt the
-chocolate off the marshmallow. We also had very tiny sticks and which made
-roasting the marshmallows a quite warming experience.
+ideas came out of discussions around the fire, however, the most of the ideas
+were probably horrible and mainly inspired by the alcohol. One evening, we
+played a game that was some twisted combination of charades and taboo that was
+very fun and got everyone doing ridiculous motions and saying ridiculous things
+to get their team to guess the words in a deck of cards. Another time, Scott
+told a "story" about the barwich: an ice cream sandwich on bottom combined with
+an ice cream bar on top. He told this elaborate story about how he'd seen them
+in Japan years ago, but hadn't seen them again... until a store in Portugal! On
+Monday, we had s'mores around the fire and it was the first time that some of
+the non-North-American team members had had a s'more! These were very fancy
+s'mores, though: they were chocolate covered marshmallows so you had to be very
+careful to not melt the chocolate off the marshmallow. We also had very tiny
+sticks and which made roasting the marshmallows a quite warming experience.
 
 {{< figure 
       src="./images/fire.jpg"
@@ -244,7 +271,7 @@ including this one where we took a team picture:
       src="./images/biking-team.jpg"
       link="./images/biking-team.jpg"
       target="_blank"
-      title="The team in front a a scenic cliff overlook during our biking tour"
+      title="The team in front of a scenic cliff overlook during our biking tour"
       caption="The views were spectacular during the entire ride, but the company was even better!"
 >}}
 
@@ -263,10 +290,10 @@ definitely got our exercise!
 
 I made a few trips down to the beach: [on Sunday when I arrived]({{<ref
 "../denver-to-lisbon" >}}), on Wednesday with Scott, Finn, and Nick, and on
-Friday with a lot more of the team. I got in on Sunday and on Friday. It was
-much warmer on Sunday and while cold, it was refreshing. The tide was also high,
-so the rocks which protect much of the beach from the large waves were
-effective, but still submerged enough that you could swim over them.
+Friday with a lot more of the team. I got into the water on Sunday and on
+Friday. It was much warmer on Sunday and while cold, it was refreshing. The tide
+was also high, so the rocks which protect much of the beach from the large waves
+were effective, but still submerged enough that you could swim over them.
 
 On Friday, it was a different story entirely: it was very cold, and the tide was
 low so the rocks were exposed making walking out to open water difficult in that
@@ -278,9 +305,69 @@ was very cold as well, so we didn't stay long in the water.
 
 ### Thursday Event
 
-On Thursday, we went
+On Thursday, we went on a bus tour to Óbidos (a mediaeval town), Fátima (a
+Catholic church built on the location where Mary is said to have appeared to
+three children), and Nazaré, a town known for its surfing and is massive waves.
 
-Dinner at seaside restaurant on Thursday.
+Our guide didn't give as much commentary as I would have hoped, but I'll show
+you some pictures of each location.
 
+{{< figure 
+      src="./images/obidos.jpg"
+      link="./images/obidos.jpg"
+      target="_blank"
+      title="A panoramic shot taken from the top of the wall around Óbidos"
+>}}
 
+{{< figure 
+      src="./images/fatima.jpg"
+      link="./images/fatima.jpg"
+      target="_blank"
+      title="The main square at the church at Fátima"
+      caption="On the left is a shrine where Catholics make pilgrimages to light candles and such. The square is modeled very similar to the square in the Vatican and has been visited by the Pope multiple times."
+>}}
 
+{{< figure 
+      src="./images/nazare.jpg"
+      link="./images/nazare.jpg"
+      target="_blank"
+      title="The coast of Nazaré"
+      caption="There were no big waves the day that we was there, but apparently, the waves get very big. A surfer recently surfed a wave that was 26.21 metres (86 feet) high!"
+>}}
+
+During the tour, we stopped at a seafood restaurant and Caroline, Rabil, and
+myself shared a dish with freshly baked fish, potatoes, and vegetables.
+
+{{< figure 
+      src="./images/fish-lunch.jpg"
+      link="./images/fish-lunch.jpg"
+      target="_blank"
+      title="The waiter presenting the freshly caught fish"
+      caption="The fish was very fresh, caught that morning I assume."
+>}}
+
+### Dinner by the Seaside
+
+After the tour, we went back to Alma do Paço for a few hours and then headed to
+a dinner at a seaside restaurant.
+
+The food was quite good, but the view was amazing.
+
+{{< figure 
+      src="./images/dinner-thursday.jpg"
+      link="./images/dinner-thursday.jpg"
+      target="_blank"
+      title="The team eating dinner on Thursday"
+      caption="The sunset was a beautiful to our meal."
+>}}
+
+## Conclusion
+
+I always enjoy the retreats; they are great times to bond with the team,
+collaborate in person, and bring everything that we work on day-to-day into
+perspective.
+
+It was a pleasure meeting some new co-workers, and I enjoyed continuing getting
+to know the ones that I'd already met a bit better. I'm looking forward to the
+next retreat and I'm excited to be a part of what Beeper is going to accomplish
+in the future!
