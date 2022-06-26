@@ -27,9 +27,10 @@ side, I also work on a variety of open source projects, which you can find on my
 [portfolio][1].
 
 When I'm not working, I enjoy playing soccer, volleyball, and racquetball. I
-also train in ATA Taekwondo where I am a 4rd Degree Black Belt. During high
-school, I won the FRCCA State Championship with Denver Eagles my senior year,
-and won multiple state titles in Taekwondo.
+also train in ATA Taekwondo under Chief Master Corina Black where I am a 4rd
+Degree Black Belt. During high school, I won the FRCCA State Championship with
+Denver Eagles my senior year. I have also won multiple state titles in
+Taekwondo.
 
 This site is the place to get updates on my life. I maintain a [blog](/) here
 where I post occasionally. I post about my travels, technology, education,
