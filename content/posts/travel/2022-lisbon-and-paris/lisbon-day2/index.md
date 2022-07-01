@@ -1,11 +1,13 @@
 ---
 title: "Lisbon, Portugal - Day 2"
 date: 2022-06-12T12:00:00-06:00
-categories: [Travel]
+categories: [Trip to Portugal and France]
 tags: [Travel, Lisbon, Portugal]
 description: "TODO"
 draft: true
 ---
+
+Today, I went to the Alfama district and to the Castelo de São Jorge.
 
 Went to Alfama district and saw the castle
 

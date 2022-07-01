@@ -1,7 +1,7 @@
 ---
 title: "Denver to Lisbon, Portugal"
 date: 2022-06-05T12:00:00-06:00
-categories: [Work Retreats, Travel]
+categories: [Trip to Portugal and France, Work Retreats]
 tags: [Travel, Denver, Lisbon, Portugal]
 description: "Today I ventured across the Atlantic for the first time since 2019 for a work retreat near Lisbon, Portugal"
 image: ./images/beach.jpg

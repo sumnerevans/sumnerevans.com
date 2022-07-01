@@ -1,7 +1,7 @@
 ---
 title: "Lisbon, Portugal - Day 3"
 date: 2022-06-13T12:00:00-06:00
-categories: [Travel]
+categories: [Trip to Portugal and France]
 tags: [Travel, Lisbon, Portugal]
 description: "TODO"
 draft: true
