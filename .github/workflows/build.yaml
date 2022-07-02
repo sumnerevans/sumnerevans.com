@@ -20,19 +20,19 @@ jobs:
       - name: Cache nix shell environment
         run: nix-shell
           --arg forWebsiteBuild true
-          --command "echo nix-shell environment is cached"
+          --run "echo nix-shell environment is cached"
 
       - name: Webring
         run: nix-shell
           --arg forWebsiteBuild true
-          --command "openring -S feed_urls.txt
+          --run "openring -S feed_urls.txt
           < resources/other-feeds.html.tmpl
           > themes/smol/layouts/partials/webring.html"
 
       - name: Hugo
         run: nix-shell
           --arg forWebsiteBuild true
-          --command "hugo --verbose --gc --minify"
+          --run "hugo --verbose --gc --minify"
 
       - name: rsync
         if: github.ref == 'refs/heads/master'
