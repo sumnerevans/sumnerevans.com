@@ -7,13 +7,13 @@ description: "TODO"
 draft: true
 ---
 
+(In morning we took an Uber van or something)
 Monday woke up late then went to the beach in cascais
 Stopped for lunch at a place and got seafood spaghetti.
 Went paddle boarding and napped a lot in the sun
 
 Then we went to a place that served muscles and had two buckets full plus some steak and salmon and tuna tartare
 Then we took the train back.
-(In morning we took an Uber van or something)
 
 The buckets were with pesto and with garlic sauce.
 Also had gin
