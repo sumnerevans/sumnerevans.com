@@ -20,13 +20,16 @@ own.
 ## Avoiding the tourist traps
 
 Hugo is a Lisbon native, and he spoke his mind about what he thought about
-things. For example he railed against a particular attraction: the >>>>>>>>>TODO
-elevator which he rightly described as a tourist trap. Every day, the line for
+things. For example he railed against a particular attraction: the Santa Justa
+Elevator which he rightly described as a tourist trap. Every day, the line for
 the elevator is constantly long. The elevator literally just takes you on a 30
-second ride up to a view above the city for the small price of TODO>>>>>>>>>>>
-EUR 5. He explained that it was a total rip-off, and even gave the tip that if
-you really want to go on it for some reason, you can just get on at the top and
-go down for free.
+second ride up to a view above the city for the small price of €5.30. He
+explained that it was a total rip-off, and even gave the tip that if you really
+want to go on it for some reason, you can just get on at the top and go down for
+free.
+
+He also threw shade on some of the false wives tales that are told by guides
+about various attractions.
 
 ## Culture: Portugal's primary export
 
@@ -43,15 +46,16 @@ primary industry in Portugal is tourism.
 
 ## Travelling the world in a day
 
-When we arrived at one particular overlook, he pointed out the
-TODO>>>>>>>>>>>>>> bridge that is very similar in style to the Golden Gate
-Bridge and a statue of Jesus that is similar to the Jesus statue in Rio. He said
-"and here we have a bridge that is normally in San Francisco, and a Jesus that
-is normally in Rio" TODO>>>>>was there something else>>>>>>>>>>>>> and then
-said: "you can visit all these sites in one day and take pictures and put them
-on social media. Then you can say you went to San Francisco and Rio
-TODO>>>>>>>>>>somewhere else?>>>>>>>>>> and because your friends are stupid,
-they will think you went to all of those places!
+When we arrived at one particular overlook, he pointed out the Ponte 25 de Abril
+Bridge that is very similar in style to the Golden Gate Bridge and a Christ the
+Redeemer statue that is similar to the one in Rio. He said "and here we have a
+bridge that is normally in San Francisco, and a Jesus that is normally in Rio"
+and then said: "you can visit all these sites in one day and take pictures and
+put them on social media. Then you can say you went to San Francisco, Rio, and
+Lisbon and because your friends are stupid, they will think you went to all of
+those places!"
+
+TODO story about bridge being the worse company
 
 ## Learning some more history
 
@@ -59,15 +63,16 @@ Hugo explained that the first evidence of people living in the Lisbon area was
 the Phonetians. The next major civilization to settle the area was the Romans
 who named the area Lusitania. Ruins of structures they built still exist in some
 places. The next major influence was the Moors who occupied much of the Iberian
-peninsula during the NNNNNNNNNNNNNNNNNNNth to the NNNNNNNNNNNNNNNNNNNth
-centuries. After the Christian reconquest, the Kingdom of Portugal was
-established in 1143. From that point on, the borders of the country have not
+peninsula during the 8th to the 15th centuries. Portugal was retaken in the 12th
+century from the Moors during the Christian reconquest, the Kingdom of Portugal
+was established in 1143. From that point on, the borders of the country have not
 changed, and in that way, Portugal has a claim to the title of oldest country in
-Europe. After a revolution in the TODO>>>>>>>>>>> 1970's, Portugal became a
-Republic and it has been since that point.
+Europe. After much political upheaval in the 20th century (revolutions, coup
+d'état, and dictators), an bloodless revolution in the 1970's ushered in the
+Portuguese Third Republic which is the current government of the country.
 
-The 1754 earthquake + tsunami + fire destroyed most of the city hit many of the
-Muslim and Jewish areas weee saved since they were not celebrating all saints
+TODO The 1754 earthquake + tsunami + fire destroyed most of the city hit many of the
+Muslim and Jewish areas were saved since they were not celebrating all saints
 day
 
 The earthquake was an example that the philosopher used to demonstrate that
@@ -79,11 +84,12 @@ Lisbon is home to one of the first public urinals. There is one right outside of
 the castle walls that is still available for use today.
 
 Portugal and England have the honour of having the oldest alliance in the world.
-They entered an alliance in TODO>>>>>>>>>>>>>YEAR AND WHAT FOR>>>>>>>>
+They entered an alliance in 1386 after England helped the Portuguese win a
+battle.
 
-They are famous for TODO>>>>>>>>>WHAT ARE THEY CALLED?>>>>>>>>> tiles which, if
-crafted authentically, have insulating properties because they 
-have an airgap between the outer and inner layers.
+They are famous for these particular painted tiles which, if crafted
+authentically, have insulating properties because they have an airgap between
+the outer and inner layers.
 TODO>>>>>>>>>>>>>FACT CHECK>>>>>>>>>>>
 For a long time, the tiles were sold as souvenirs, but now it is illegal to sell
 them because of their rarity and historical significance.
