@@ -2,7 +2,7 @@
 title: "Lisbon, Portugal - Day 1"
 date: 2022-06-11T12:00:00-06:00
 categories: [Trip to Portugal and France]
-tags: [Travel, Lisbon, Portugal]
+tags: [Travel, Lisbon, Portugal, Taekwondo]
 description: "On the Saturday after my work retreat ended, I went to train an ATA school in Lisbon and worked out with Mr. Folgado."
 image: ./images/praca.jpg
 ---

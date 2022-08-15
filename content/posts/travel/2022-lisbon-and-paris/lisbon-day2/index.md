@@ -2,7 +2,13 @@
 title: "Lisbon, Portugal - Day 2"
 date: 2022-06-12T12:00:00-06:00
 categories: [Trip to Portugal and France]
-tags: [Travel, Lisbon, Portugal]
+tags:
+  - Travel
+  - Lisbon
+  - Portugal
+  - Castelo de São Jorge
+  - Alfama
+  - Feast of Saint Anthony
 image: ./images/city.jpg
 description: "Today, I went to the Alfama district and toured the Castelo de São Jorge. Then, in the evening, I went out with some people from the hostel to the streets where there were celebrations for the Feast of Saint Anthony"
 ---
