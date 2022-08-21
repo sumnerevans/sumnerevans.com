@@ -4,7 +4,6 @@ date: 2022-06-14T12:00:00-06:00
 categories: [Trip to Portugal and France]
 tags: [Travel, Lisbon, Portugal]
 description: "Today I went on a walking tour in the morning, and then flew to Paris!"
-draft: true
 ---
 
 Today was my last day in Lisbon. I spent the morning on a walking tour of the
@@ -55,8 +54,6 @@ put them on social media. Then you can say you went to San Francisco, Rio, and
 Lisbon and because your friends are stupid, they will think you went to all of
 those places!"
 
-TODO story about bridge being the worse company
-
 ## Learning some more history
 
 Hugo explained that the first evidence of people living in the Lisbon area was
@@ -71,12 +68,38 @@ Europe. After much political upheaval in the 20th century (revolutions, coup
 d'état, and dictators), an bloodless revolution in the 1970's ushered in the
 Portuguese Third Republic which is the current government of the country.
 
-TODO The 1754 earthquake + tsunami + fire destroyed most of the city hit many of the
-Muslim and Jewish areas were saved since they were not celebrating all saints
-day
+In 1755, an earthquake hit Portugal and the aftermath had far-reaching
+ramifications on the city of Lisbon into the present time. The earthquake
+happened on All Saints Day which was a Christian holiday and one of the main
+things people did was light candles in their homes. When the earthquake hit, the
+candles started fires and quickly, the city was ablaze. Panic spread quickly,
+and people fled to the one place that wasn't shaking or on fire: the ocean. But
+as we in the modern era know, coastal earthquakes are followed by tsunamis. The
+earthquake was followed by a large tsunami, and many people ran to the ocean and
+died in the ensuing wave; similar to what often happens in present times in 3rd
+world when tsunamis occur. The destruction of the city was comprehensive.
+However, there were some sectors which fared better than others: namely those
+occupied by the Muslim and Jewish minorities. Hugo described it like so:
 
-The earthquake was an example that the philosopher used to demonstrate that
-bad things happen to everyone
+> Muslims and Jews have only one thing in common: they are not Christians. And
+> as such, they were not celebrating All Saints Day and did not have candles
+> lit in their houses when the fire hit.
+
+The buildings in the Jewish and Muslim were generally saved from the fire,
+though they still took earthquake damage. The buildings also were centered
+around the old castle which is on a hill, so they were not damaged by the
+tsunami either.
+
+Because of the destruction, most of the city has been rebuilt since the middle
+of the 18th century.
+
+The disaster was fertile ground for philosophical debate among the elite
+thinkers of the time. Many took it as proof that bad things can happen to
+anyone, no matter how powerful. Portugal was at the height of its empire at that
+time with colonies spanning the globe. They were leaders in transcontinental
+commerce with trade routes to the Americas, around the African Cape and to
+India, the East Indies, and even as far as Japan. Yet even at the height of
+their empire, nothing could stop the natural catastrophe.
 
 ## Other random facts
 
@@ -89,45 +112,40 @@ battle.
 
 They are famous for these particular painted tiles which, if crafted
 authentically, have insulating properties because they have an airgap between
-the outer and inner layers.
-TODO>>>>>>>>>>>>>FACT CHECK>>>>>>>>>>>
-For a long time, the tiles were sold as souvenirs, but now it is illegal to sell
-them because of their rarity and historical significance.
-TODO>>>>>>>>>>>>>END FACT CHECK>>>>>>>>>>>
-There are many imitation tiles that just have pretty patterns but no actual
-insulating properties, but there are very few authentic ones being created
-today. TODO>>>>>>>>>>>>>>>OR NONE?>>>>>>>>>>>>>
+the outer and inner layers. There are many imitation tiles that just have pretty
+patterns but no actual insulating properties, but there are very few authentic
+ones being created today.
 
 There was a large campaign for dog adoption a few years ago, and many dog parks
-and other resources were set up to help dog owners.
-It was quite successful from a humane TODO>>>>>>>is that the right word?>>>>>>>
-standpoint
-TODO>>>>>>>>>>>how successful?>>>>>>>>>
-Although there has been success on the animal TODO>>>>>rights, but not>>>>>>
-front, there is still one major inhumane thing that exists in Portugal: bull
-fighting. Since a few years ago, it is illegal to televise bull fights and Hugo
-hopes that they will be illegal in a few years.
+and other resources were set up to help dog owners. It was quite successful from
+a humane standpoint. Although there has been success on the animal rights front,
+there is still one major inhumane thing that exists in Portugal: bull fighting.
+Since a few years ago, it is illegal to televise bull fights and Hugo hopes that
+they will be illegal in a few years.
 
 Hugo was a great guide, and I really enjoyed the tour. I recommend you take his
-tour if you have the chance. He is on Instagram: TODO>>>>>>IG LINK>>>>>>
+tour if you have the chance. He is on Instagram:
+https://www.instagram.com/hugoschepensmelo and he said he's open to DMs. Next
+time I'm in Lisbon, I'll be DM-ing him for sure for recommendations and another
+tour!
 
 After the tour was over, Hugo gave some recommendations for restaurants in the
-area.
-TODO WHERE AND WHO WITH>>>>>>>>>>
+area. I went to a place that was very local (not many of the wait staff spoke
+any English). I had a rice and seafood dish that was quite large and filling.
 
------------
+---
 
 After lunch, it was getting towards mid-afternoon, so I headed over to the
-airport and went to the TODO>>>>>lounge_name>>>>>>>>> airport lounge for a while
-to do some blog catchup. It was the first time I'd ever been in an airport
-lounge. I recently got the CapitalOne Venture X card which has Priority Pass
-lounge access, so I figured it would be fun to take advantage of it for a couple
-hours.
+airport and went to the ANA Lounge for a while to do some blog catchup. It was
+the first time I'd ever been in an airport lounge. I recently got the CapitalOne
+Venture X card which has Priority Pass lounge access, so I figured it would be
+fun to take advantage of it for a couple hours.
 
 My flight to Paris on TAP Air Portugal was in the evening and arrived fairly
 late into Paris. On the approach to Orly (the airport outside of Paris) I was
 able to see the Eiffel Tower out the window!
 
-After disembarking, I took the train to Gare du Nord and went to my hostel: St.
-Christopher's Inn. It was not nearly as nice as the one in Lisbon, but it was a
-bed for the night.
+After disembarking, I took the train to Gare du Nord. I got to the train just in
+time, as they closed the gate less than a minute after I got to the platform.
+Once at Gare du Nord, I went to my hostel: St. Christopher's Inn. It was not
+nearly as nice as the one in Lisbon, but it was a bed for the night.
