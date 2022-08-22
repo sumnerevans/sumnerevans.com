@@ -231,7 +231,7 @@ waiter.
                alt="Enjoying a cocktail with the team" />
         </a><br>
         <b>Enjoying a cocktail with the team</b><br>
-        Don't know what it was, but it was went down way too smoothly.
+        Don't know what it was, but it went down way too smoothly.
       </td>
       <td>
         <a href="./images/porfirios-surf-and-turf.jpg" target="_blank">
