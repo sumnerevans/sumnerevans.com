@@ -2,7 +2,14 @@
 title: "Lisbon, Portugal - Day 4"
 date: 2022-06-14T12:00:00-06:00
 categories: [Trip to Portugal and France]
-tags: [Travel, Lisbon, Portugal]
+tags:
+  - Travel
+  - Lisbon
+  - Portugal
+  - History
+  - Walking Tour
+  - Paris
+  - France
 description: "Today I went on a walking tour in the morning, and then flew to Paris!"
 ---
 

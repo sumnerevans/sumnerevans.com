@@ -2,7 +2,13 @@
 title: "Lisbon, Portugal - Day 3"
 date: 2022-06-13T12:00:00-06:00
 categories: [Trip to Portugal and France]
-tags: [Travel, Lisbon, Portugal]
+tags:
+  - Travel
+  - Lisbon
+  - Portugal
+  - Beach
+  - Cascais
+  - Paddle Boarding
 image: ./images/dinner.jpg
 description: "Today I went to the beach at Cascais with some people I met at the hostel."
 ---
