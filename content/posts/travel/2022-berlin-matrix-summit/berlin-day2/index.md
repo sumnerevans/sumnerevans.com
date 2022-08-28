@@ -1,6 +1,6 @@
 ---
-title: "Berlin Matrix Summit 2022"
-date: 2022-08-29:00:00-06:00
+title: "Berlin Day 1"
+date: 2022-08-23:00:00-06:00
 categories: [Berlin Matrix Summit 2022]
 tags:
   - Travel
@@ -11,4 +11,10 @@ description: "TODO"
 draft: true
 ---
 
-This week, I was in Berlin for the 
+Went to Pergemonmuseum
+
+Worked from TUB
+
+Met with Kim
+
+Went to NixOS Meetup

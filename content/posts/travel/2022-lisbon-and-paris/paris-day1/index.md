@@ -6,3 +6,5 @@ tags: [Travel, Lisbon, Portugal]
 description: "TODO"
 draft: true
 ---
+
+Today was my first day in Paris!
