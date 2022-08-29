@@ -60,10 +60,11 @@ TODO>>>>>>>>>>> waterfall with green water
 
 After lunch, we continued walking to see the small bison herd that is kept
 within the park. Apparently, the Bison were brought during the 19th century and 
-a small herd has lived there ever since. It was quite surreal seeing
+a small herd has lived there ever since. It was quite surreal seeing Bison in
+the middle of a coastal Californian city.
 
-* went to see the Bison
-
+By that time, we were quite tired from walking around so we headed back for the
+day.
 
 # Muir Woods Forest
 
