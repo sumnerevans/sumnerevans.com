@@ -8,7 +8,8 @@ science at my alma mater, Colorado School of Mines.
 
 ## Current Teaching
 
-*Summer break*
+* [CSCI 400 Principles of Programming Languages](https://lambda.mines.edu/f22-syllabus/)
+  * [Schedule](https://elearning.mines.edu/courses/40213/pages/schedule)
 
 ## Previous Teaching
 
