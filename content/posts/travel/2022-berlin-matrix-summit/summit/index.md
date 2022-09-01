@@ -7,6 +7,7 @@ tags:
   - Berlin
   - Germany
   - Matrix Community Summit
+image: ./images/first-day.jpg
 description: |
   The Berlin Matrix Community Summit was the first Matrix-only event. Hosted in
   Berlin, it was an action-packed meeting of many of the greatest Matrix-minds.
