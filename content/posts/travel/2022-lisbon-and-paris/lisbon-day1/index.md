@@ -95,10 +95,10 @@ engineering or engineering-adjacent fields and many other fields.
       src="./images/hostel.jpg"
       link="./images/hostel.jpg"
       target="_blank"
-      title="The \"family room\" area of the hostel"
+      title="The 'family room' area of the hostel"
       caption="Everyone was very friendly and came from such diverse backgrounds. It had a real international feel."
 >}}
 
-I went to bed around 10:00
-since I was quite tired, and apparently there is a massive holiday tomorrow with
-parties in the streets that go all night, so I want to be awake enough for that.
+I went to bed around 10:00 since I was quite tired, and apparently there is a
+massive holiday tomorrow with parties in the streets that go all night, so I
+want to be awake enough for that.
