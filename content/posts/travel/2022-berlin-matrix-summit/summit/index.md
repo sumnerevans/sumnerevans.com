@@ -23,11 +23,11 @@ which Matrix had a large presence such as FOSDEM, but this was the first
 ever Matrix-only event.
 
 The people attending the event had quite diverse reasons for attending. Some,
-like myself, work full time at companies building on top of Matrix. Others were
-system administrators at various institutions that are running Matrix servers
-for their chat platforms. Still others were enthusiasts building projects with
-Matrix or wanting to learn more about the ecosystem. In total, at least
-fifty-seven people were in attendance!
+like myself, work full time at companies building on top of Matrix. Others are
+system administrators at institutions that are running Matrix servers for their
+internal chat needs. Still others are enthusiasts building projects with Matrix
+or wanting to learn more about the ecosystem. In total, at least fifty-seven
+people were in attendance!
 
 {{< figure
       src="./images/first-day.jpg"
@@ -38,7 +38,7 @@ fifty-seven people were in attendance!
 >}}
 
 The summit was held at c-base, an open-source-focused hackerspace in the heart
-of Berlin. There were three rooms for talks and workshops, and a packed schedule
+of Berlin. There were three rooms for talks and workshops and a packed schedule
 with three tracks throughout most of Friday and Saturday. There was also space
 outside by the River Spree with tables to hang out at.
 
@@ -63,8 +63,8 @@ is a maintainer of a Python bot library and runs a homeserver for a couple dozen
 users, networkException is a high school student who maintains various open
 source projects including some related to Matrix, Henri and Charles are working
 on two unrelated social media platforms built on top of Matrix, and that was
-just a some of the participants in the barcamp which itself a small subset of
-all the conference attendees.
+just a some of the participants in the barcamp which itself was a small subset
+of all the conference attendees.
 
 # Talks and Workshops
 
@@ -97,10 +97,10 @@ highlights of talks and workshops that I enjoyed.
   In a presentation about his homeserver setup, Alex Babel discussed how he uses
   GitHub, ArgoCD, and Kubernetes to manage his Synapse instance. The talk was
   quite interesting and it was cool to see a smaller homeserver deployed using
-  Kubernetes. We deploy using Kubernetes at Beeper, but it's managed by another
-  team, and it's quite complicated, so I don't really have a grasp of what's
-  going on, but it was easy to understand Alex's setup since it was at a smaller
-  scale.
+  Kubernetes. We deploy using Kubernetes at Beeper, but I'm not directly on the
+  team that manages it, and it's quite complicated, so I don't really have a
+  grasp of what's going on, but it was easy to understand Alex's setup since it
+  was at a smaller scale.
 
 * **Ben's Rust SDK talk**
 
@@ -120,14 +120,12 @@ highlights of talks and workshops that I enjoyed.
 
   Yan, one of the main summit organizers gave the keynote presentation to
   conclude the summit. His talk was about the future of Matrix, and he
-  "communicated with a user in the future" via Matrix who told him all of the
-  great things that would happen in the Matrix ecosystem.
-
-  The conclusion of the talk was an admonition to go build the future we want to
-  see!
+  communicated with a "friend from the future" via Matrix. This friend sent him
+  notes about what future would bring in the Matrix ecosystem. The conclusion of
+  the talk was an admonition to go build the future we want to see!
 
 There were other talks that I attended that were very good including one by Hato
-about Matrix-backed collaboration widgets that they have written for for
+about Matrix-backed collaboration widgets that his company has written for
 public-sector clients and Kim's presentation about the Matrix Reminder Bot and
 his workflow with it. Additionally, there were many other talks and workshops
 that I wasn't able to attend.
@@ -148,7 +146,7 @@ interested in the project, and the attendees had many great questions.
       link="./images/hungryserv.jpg"
       target="_blank"
       title="Presenting our new sharded architecture"
-      caption="Hungryserv is the center of our new sharded architecture for scaling our infrastructure to support more bridges."
+      caption="Hungryserv is the center of our new sharded architecture for scaling our infrastructure to support more users."
 >}}
 
 On Saturday, I gave a presentation about [what Beeper is working on]({{< ref
@@ -161,7 +159,7 @@ challenges we have, and described what it's like working at Beeper.
       link="./images/what-is-beeper-working-on.jpg"
       target="_blank"
       title="Presenting what Beeper is working on"
-      caption="Here I'm presenting our simple business model: users pay money for a service"
+      caption="Here I'm presenting our simple business model: users pay us money for a service!"
 >}}
 
 I also teamed up with Kim to give a workshop on how to write Matrix bots in
@@ -202,17 +200,18 @@ running a Matrix server for their university's IT department to a digital
 activist advocating for data sovereignty and privacy laws in the EU.
 
 On Sunday, there was nothing in particular scheduled, but a handful of people
-gathered back at c-base to hack on various Matrix-related projects.
+gathered back at c-base to hack on various Matrix-related projects. It was a
+nice, relaxing way to end the conference.
 
 ## Lange Nacht der Museen
 
-On Saturday, a few of us headed out after dinner to *Lange Nacht der Museen*, an
-event in Berlin where the museums are open late into the night and you can visit
-all of them for a discounted fee. Christian, networkException, Jan, and myself
-went, and we started at the Deutsches Technikmuseum which is a technology museum
-inside of an old train station. The museum had displays about the history of
-many different technologies including automobiles, motorcycles, audio-visual
-equipment, networks, and computers.
+On Saturday night, a few of us headed out after dinner to *Lange Nacht der
+Museen*, an event in Berlin where the museums are open late into the night and
+you can visit all of them for a discounted fee. Christian, networkException,
+Jan, and myself went, and we started at the Deutsches Technikmuseum which is a
+technology museum inside of an old train station. The museum had displays about
+the history of many different technologies including automobiles, motorcycles,
+audio-visual equipment, networks, and computers.
 
 <figure>
   <table class="gallery">
@@ -250,9 +249,9 @@ equipment, networks, and computers.
 
 After the Technikmuseum, we went over to the planetarium. It was about to close,
 but we managed to go in and see a short animated film about a space station and
-the interactions between an astronaut, a fish, a tiger, and a boy who I think
-was based off of the Mowgli character. It was a cute little film, and a fun way
-to end the evening.
+the interactions between an astronaut, a fish, a tiger, and a boy (who I think
+was based off of Mowgli). It was a cute little film, and a fun way to end the
+evening.
 
 # Conclusion
 
@@ -264,11 +263,11 @@ I think the Matrix ecosystem has a bright future ahead of it. I feel like all of
 us in the community are at the start of something big. There are so many smart,
 energized people working on Matrix, and I feel fortunate that I was able to get
 to know a few of them at the summit. I hope that history will consider many of
-the people in attendance at the summit as pioneers of their respective niches
+the people in attendance at this summit as pioneers of their respective niches
 within the Matrix ecosystem.
 
 Matrix is a community. It's not dependent on a single company. And after
 attending the first ever Matrix Community Summit, I can say with confidence that
-together, the Matrix community is strong.
+the Matrix community is strong.
 
 The future of Matrix is bright: now we just have to go build it!
