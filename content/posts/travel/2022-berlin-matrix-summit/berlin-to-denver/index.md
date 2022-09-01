@@ -23,3 +23,9 @@ summit.
 train to airport was fine
 
 My connection was through Munich
+
+Nobody in the middle seat on my flight from MUC -> DEN (D in 3-3-3)
+
+It felt every bit of the ten hours
+
+Global Entry is the best thing ever

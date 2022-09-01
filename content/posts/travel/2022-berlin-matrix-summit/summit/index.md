@@ -10,7 +10,6 @@ tags:
 description: |
   The Berlin Matrix Community Summit was the first Matrix-only event. Hosted in
   Berlin, it was an action-packed meeting of many of the greatest Matrix-minds.
-draft: true
 ---
 
 The main purpose of my trip this week was for the Berlin Matrix Community
@@ -59,19 +58,12 @@ Austria, Christian works on bridges at Element, I work on Bridges at Beeper,
 Aiman just started working at a company that is building tools for bridging
 chats across multiple chat networks through Matrix, Jose works at a company
 building tools for businesses to bridge customer support chats into Matrix, Kim
-develops bots and runs a homeserver for a couple dozen users, networkException
-is a high school student who maintains various open source projects including
-some related to Matrix, Henri and Charles are working on two unrelated social
-media platforms built on top of Matrix, and that was just a some of the
-participants in the barcamp which itself a small subset of all the conference
-attendees.
-
-At the end of the day, we had a barbecue sponsored by Beeper with steaks,
-bratwursts, grilled vegetables, and cheeses along with some break and lots of
-different sauces. Yan and Nadine were the main ones in charge of the conference
-food, but as the only Beeper employee in attendance, I did my best to help. They
-had thought of pretty much everything, though, so my role was mainly to take
-credit for securing funding for the food :)
+is a maintainer of a Python bot library and runs a homeserver for a couple dozen
+users, networkException is a high school student who maintains various open
+source projects including some related to Matrix, Henri and Charles are working
+on two unrelated social media platforms built on top of Matrix, and that was
+just a some of the participants in the barcamp which itself a small subset of
+all the conference attendees.
 
 # Talks and Workshops
 
@@ -123,10 +115,6 @@ highlights of talks and workshops that I enjoyed.
       title="Ben presenting the new Matrix Rust SDK"
   >}}
 
-* **Hato's presentation about collaboration widgets for public-sector**
-
-* **Kim's Matrix Reminder Bot demo**
-
 * **Yan's Conclusion Talk**
 
   Yan, one of the main summit organizers gave the keynote presentation to
@@ -137,9 +125,14 @@ highlights of talks and workshops that I enjoyed.
   The conclusion of the talk was an admonition to go build the future we want to
   see!
 
-There were many other great talks and workshops, some that I was able to attend,
-and others that I wasn't able to attend. The quality of the talks was fantastic,
-and I learned tons from everyone at the summit.
+There were other talks that I attended that were very good including one by Hato
+about Matrix-backed collaboration widgets that they have written for for
+public-sector clients and Kim's presentation about the Matrix Reminder Bot and
+his workflow with it. Additionally, there were many other talks and workshops
+that I wasn't able to attend.
+
+In all, the quality of the talks was fantastic, and I learned tons from everyone
+at the summit.
 
 # Presentation Time!
 
@@ -181,30 +174,100 @@ I'm passionate about.
 
 # The Hallway Track
 
-* long night at the museum
-* Sunday hang out
-* Beeper BBQ
-* Element dinner
+One of my favourite parts of the entire event was being able to meet and talk to
+so many people in the community. The organizers provided many great
+opportunities for such interactions including barbecue dinners on Thursday and
+Saturday (sponsored by Beeper) and a dinner at a nearby Chinese restaurant on
+Friday (sponsored by Element).
 
+During the barbecues, we had steaks, bratwursts, grilled vegetables, and cheeses
+along with some bread and lots of different sauces. Yan and Nadine were the main
+ones in charge of the conference food, but as the only Beeper employee in
+attendance, I did my best to help. They had thought of pretty much everything,
+though, so my role was mainly to take credit for securing funding for the food
+:)
 
-* talks on the next days
-  * valentin workshop
-  * Alex K8S
-  * ??
-  * Yan conclusion
+{{< figure
+      src="./images/bbq.jpg"
+      link="./images/bbq.jpg"
+      target="_blank"
+      title="Yan and Nadine fixing food for the barbecue"
+      caption="We ate outside overlooking a beautiful view of the Spree."
+>}}
 
-* Dinner with Kim
+Food is always such a great unifier, and it was cool to interact with people
+outside of the formal scheduled event. I talked with everyone from some students
+running a Matrix server for their university's IT department to a digital
+activist advocating for data sovereignty and privacy laws in the EU.
+
+On Sunday, there was nothing in particular scheduled, but a handful of people
+gathered back at c-base to hack on various Matrix-related projects.
+
+## Lange Nacht der Museen
+
+On Saturday, a few of us headed out after dinner to *Lange Nacht der Museen*, an
+event in Berlin where the museums are open late into the night and you can visit
+all of them for a discounted fee. Christian, networkException, Jan, and myself
+went, and we started at the Deutsches Technikmuseum which is a technology museum
+inside of an old train station. The museum had displays about the history of
+many different technologies including automobiles, motorcycles, audio-visual
+equipment, networks, and computers.
+
+<figure>
+  <table class="gallery">
+    <tr>
+      <td>
+        <a href="./images/cray.jpg" target="_blank">
+          <img src="./images/cray.jpg"
+               alt="A CRAY-2 computer" />
+        </a>
+        <b>A CRAY-2 computer</b><br>
+        There are so many wires! Imagine having to debug which one was faulty!
+      </td>
+      <td>
+        <a href="./images/motorcycle.jpg" target="_blank">
+          <img src="./images/motorcycle.jpg"
+               alt="An early motorcycle" />
+        </a><br>
+        <b>An early motorcycle</b><br>
+        I don't think this would pass any modern safety inspections...
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <a href="./images/benz.jpg" target="_blank">
+          <img src="./images/benz.jpg"
+               alt="An early Benz automobile" />
+        </a><br>
+        <b>An early Benz automobile</b><br>
+        This car came out a few years after the Ford Model T, and it's obvious
+        that even then, it was meant as a luxury alternative.
+      </td>
+    </tr>
+  </table>
+</figure>
+
+After the Technikmuseum, we went over to the planetarium. It was about to close,
+but we managed to go in and see a short animated film about a space station and
+the interactions between an astronaut, a fish, a tiger, and a boy who I think
+was based off of the Mowgli character. It was a cute little film, and a fun way
+to end the evening.
 
 # Conclusion
 
+In all, the summit provided many opportunities to meet people in the community
+and get to know them on a personal level. I'm grateful for the organizers
+putting together such a great schedule!
+
 I think the Matrix ecosystem has a bright future ahead of it. I feel like all of
 us in the community are at the start of something big. There are so many smart,
-energized people working on Matrix, and I feel fortunate to have been able to
-get to know a few of them at the summit.
+energized people working on Matrix, and I feel fortunate that I was able to get
+to know a few of them at the summit. I hope that history will consider many of
+the people in attendance at the summit as pioneers of their respective niches
+within the Matrix ecosystem.
 
-I think that history will look at many of the people in attendance at the summit
-as pioneers of their respective niches in the Matrix ecosystem. The great thing
-about the Matrix ecosystem is that it's not dependent on a single entity; there
-is no single point of failure.
+Matrix is a community. It's not dependent on a single company. And after
+attending the first ever Matrix Community Summit, I can say with confidence that
+together, the Matrix community is strong.
 
 The future of Matrix is bright: now we just have to go build it!

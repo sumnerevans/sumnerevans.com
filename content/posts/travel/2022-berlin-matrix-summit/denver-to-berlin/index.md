@@ -10,7 +10,6 @@ tags:
 description: |
   I'm once again headed across the pond! This time it is for the first ever
   Berlin Matrix Community Summit.
-draft: true
 ---
 
 This week, I am heading to Berlin for the week for the Berlin Matrix Community
@@ -26,12 +25,11 @@ it's just a German airline thing, but they didn't turn on the fasten seatbelt
 light even when it was quite bumpy.
 
 A from Germany guy that is attending the conference that I've been in contact
-with told me about a TODO>>>>>>>>>>>>>>>>EUR9 transit ticket that allows access
-to almost all public transit within Germany for the month of August. It was
-fortunate that he told me about it, because it was not obvious how to buy it at
-the ticket machine, but I found it and got on the TODO>>>>>>>>(SPELLING)>>>>>>S Bahn 
-to TODO>>>>>>>>(SPELLING)>>>>>>Janovitzbruke. My hotel was only a couple hundred
-meters away from the station.
+with told me about a 9€ transit ticket that allows access to almost all public
+transit within Germany for the month of August. It was fortunate that he told me
+about it, because it was not obvious how to buy it at the ticket machine, but I
+found it and got on the S-Bahn to Jannowitzbrücke. My hotel was only a couple
+hundred meters away from the station.
 
 By the time I got to Berlin, I was quite tired, but it was too early to go to
 bed so I tried to stay awake by going to get some dinner and wander around. I
