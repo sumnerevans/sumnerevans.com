@@ -16,7 +16,7 @@ two days and then we both took Friday and Monday off for a long weekend.
 
 On Wednesday, we both worked from his apartment. That is the nice thing
 about having a remote job in software engineering: you can work anywhere that
-has Wi-Fi. In the evening, we went to a bougie food court. I had a nice bowl of
+has Wi-Fi. In the evening, we went to a trendy food court. I had a nice bowl of
 ramen.
 
 On Thursday, I took my standup meeting from his apartment, and then we took the

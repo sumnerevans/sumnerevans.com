@@ -26,6 +26,9 @@ Wars universe.
   - 32 GB DDR4-3200 RAM
   - 512 GB NVMe and a 1 TB SSD
 
+- **Laptop:** (hostname: `scarif`) A
+  [ThinkPad T14s Gen 3 - AMD](https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadt/thinkpad-t14s-gen-3-(14-inch-amd)/21cq000gus).
+
 - **Laptop:** (hostname: `mustafar`) A [Samsung Galaxy
   Chromebook][samsung-galaxy-chromebook] that I have hacked to run Linux.
 
