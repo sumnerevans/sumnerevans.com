@@ -49,9 +49,9 @@ with ``offlinemsmtp`` it would become::
     set sendmail = "offlinemsmtp -a personal"
 
 You can find more information about ``offlinemsmtp`` and its configuration
-options at the `project's sourcehut page <sourcehut_>`_.
+options at the `project's GitHub page <github_>`_.
 
-.. _sourcehut: https://sr.ht/~sumner/offlinemsmtp
+.. _github: https://github.com/sumnerevans/offlinemsmtp
 
 ``offlinemsmtp`` version ``0.3.5``, is available via PyPi_ and the AUR_.
 
