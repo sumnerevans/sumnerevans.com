@@ -7,16 +7,16 @@ date: 2021-04-18 09:04:00
 
 I have two primary computers: a laptop and a desktop. I also have multiple VPS's
 on Linode and Hetzner which host my [personal
-infrastructure](https://git.sr.ht/~sumner/nixos-configuration).
+infrastructure](https://github.com/sumnerevans/nixos-configuration).
 
 I run [NixOS](https://nixos.org/) on all my computers, and use [Nix Home
 Manager](https://nix-community.github.io/home-manager/) to manage my
 configuration. I use the i3 window manager or Sway, i3status-rust, ZSH, NeoVim,
-and mutt among other things. You can find [all of my configuration repos on
-sourcehut](https://sr.ht/~sumner/configuration/).
+and mutt among other things. You can find all of my [NixOS
+configuration](https://github.com/sumnerevans/nixos-configuration) and [home-manager configuration](https://github.com/sumnerevans/home-manager-configuration).
 
-Here's a list of my daily driver machines. I name them after planets in the Star
-Wars universe.
+Here's a list of my machines. I name them after planets in the Star Wars
+universe.
 
 - **Desktop:** (hostname: `coruscant`) A custom-built desktop. See the [part
   list on PCPartPicker][partlist]. Highlights are:
@@ -29,16 +29,6 @@ Wars universe.
 - **Laptop:** (hostname: `scarif`) A
   [ThinkPad T14s Gen 3 - AMD](https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadt/thinkpad-t14s-gen-3-(14-inch-amd)/21cq000gus).
 
-- **Laptop:** (hostname: `mustafar`) A [Samsung Galaxy
-  Chromebook][samsung-galaxy-chromebook] that I have hacked to run Linux.
-
-- **Laptop:** (hostname: `jedha`) A ThinkPad T580
-
-  - Intel Core i7-8650U
-  - Nvidia GeForce MX150
-  - 32 GB RAM
-  - 512 GB NVMe SSD
-
 - **Linode VPS:** (hostname: `bespin`)
 - **Hetzner VPS:** (hostname: `morak`)
 - **Hetzner VPS:** (hostname: `kessel`)
@@ -49,7 +39,6 @@ Wars universe.
 
   - [Dell S2417DG Monitor][dells2417dg] (2560×1440, 165Hz)
   - [Dell P2421D Monitor][dellp2421d] (2560×1440)
-  - [Dell U2412M Monitor][dellu2412m] (1920×1200)
 
 - **Keyboards:**
 
@@ -84,11 +73,12 @@ Wars universe.
 - **Smartphone:** Google Pixel 3a (64 GB, Just Black)
 - **Smartphone:** Google Pixel 1 (32 GB, Quite Black)
 - **Smartphone:** iPhone 5s (32 GB, Space Gray)
-- **Smartwatch\*:** Amazfit Bip S (Carbon Black)
+- **Smartwatch\*:** Fossil Gen 6 Black
+- **Smartwatch:** Amazfit Bip S (Carbon Black)
 - **Smartwatch:** Huawei Watch Black Stainless Steel
 - **Tablet\*:** iPad Pro 9.7 inch (128 GB)
 
-## Other Electronics
+## Other Devices
 
 - **Raspberry Pi 1**
 - **Laptop:** MacBook Pro: 15", Retina display, Mid 2014. I primarily use this
@@ -96,6 +86,16 @@ Wars universe.
 
   - 16 GB RAM
   - 512 GB SSD
+
+- **Laptop:** (hostname: `mustafar`) A [Samsung Galaxy
+  Chromebook][samsung-galaxy-chromebook] that I have hacked to run Linux.
+
+- **Laptop:** (hostname: `jedha`) A ThinkPad T580
+
+  - Intel Core i7-8650U
+  - Nvidia GeForce MX150
+  - 32 GB RAM
+  - 512 GB NVMe SSD
 
 [partlist]: https://pcpartpicker.com/user/sumner/saved/#view=Lxc9Jx
 [samsung-galaxy-chromebook]: https://www.samsung.com/us/computing/chromebooks/12-14/galaxy-chromebook--256gb-storage--8gb-ram---fiesta-red-xe930qca-k01us/
