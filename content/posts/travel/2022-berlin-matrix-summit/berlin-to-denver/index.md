@@ -13,19 +13,26 @@ tags:
 description: |
   Today I had to leave the beautiful city of Berlin to head back home from the
   Matrix Community Summit.
-draft: true
 ---
 
 Today I had to leave the beautiful city of Berlin to head back home from the
 Matrix Community Summit. I thoroughly enjoyed my time in the city and at the
 summit.
 
-train to airport was fine
+Getting to the airport via the train was uneventful and my quick flight to
+Munich was fine as well. On the flight from Munich to Denver, the seat
+configuration was a 3-3-3 in economy, and I was in D (outside of the middle
+row). In a stroke of luck, the middle seat in the row was unoccupied, so I was
+able to put my backpack under the middle seat and have more legroom.
 
-My connection was through Munich
+Despite having done this exact same flight a couple weeks ago when coming back
+from Lisbon, this flight felt much longer. It felt every bit like a ten hour
+flight.
 
-Nobody in the middle seat on my flight from MUC -> DEN (D in 3-3-3)
+Getting through customs was a breeze because I have Global Entry. It is so
+convenient to be able to skip all of the customs and immigration queues. And, it
+makes me feel superior to the other lowly travellers who have to wait in the
+long lines 😂
 
-It felt every bit of the ten hours
-
-Global Entry is the best thing ever
+I'm going to look back fondly on my trip to Berlin, and I hope that I will see
+many of the people at the summit at another event in the future.
