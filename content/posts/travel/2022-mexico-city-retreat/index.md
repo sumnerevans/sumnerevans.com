@@ -21,9 +21,9 @@ retreats.
 We had fifteen members of the team at this retreat. We stayed at a hotel called
 [*Camino Real
 Polanco*](https://www.caminoreal.com/en/caminoreal/camino-real-polanco-mexico),
-and we were able to utilize some office space from another Y-Combinator tech
-startup. Having the office was a nice change from the remote locale of the
-Portugal retreat.
+and we were able to utilize some office space from another Y-Combinator startup.
+Having the office was a nice change from the remote locale of the Portugal
+retreat.
 
 I shared a room with Bradley who works on our desktop app. The hotel room was
 quite nice and there were quite a few restaurants close by. The retreat was less
@@ -80,15 +80,15 @@ wouldn't bend at the sticky part and subsequently fall off of the windows.
 There were a few themes which I think were especially prevalent throughout the
 retro which was overall extremely positive.
 
-On the infrastructure side, there was an overwhelming sense that the
-Hungryserv project has been a resounding success. The project was a brainchild
-of a couple of discussions that myself and Toni had just before the Portugal
-retreat. During the last retreat, it was still vaporware, but over the last few
-months, with much of the infrastructure team dedicated to the project, we are
-now ready to ship to production. In fact, even a few months ago, we were close
-enough to having it working that I was able to
-[present](../../../portfolio#presentation-hungryserv) the project at the [2022
-Berlin Matrix Community Summit](../2022-berlin-matrix-summit/summit).
+On the infrastructure side, there was an overwhelming sense that the Hungryserv
+project has been a resounding success. The project was a brainchild of a couple
+of discussions that myself and Toni had just before the Portugal retreat. During
+the last retreat, it was still vaporware, but over the last few months, with
+Tulir, Toni, and myself full-time on the project, we are now ready to ship to
+production. In fact, even in August ago, we were close enough to having it
+working that I was able to [give a
+presentation](../../../portfolio#presentation-hungryserv) about the project at
+the [2022 Berlin Matrix Community Summit](../2022-berlin-matrix-summit/summit).
 
 Another highlight was the progress on the iOS application over the past few
 months since we reorganized the teams a couple months ago to put more people on
@@ -121,8 +121,12 @@ information consolidated in a single presentation. The second presentation was
 about how encrypted messages work in Matrix. Brad covered things like how the
 device verification process and what keys exist and how they are shared between
 devices. I was generally familiar with how encryption works in the Matrix
-ecosystem, however I didn't know much about key sharing or device verification
-worked, so it was great to get some background on that.
+ecosystem, however I didn't know much about how key sharing or device
+verification worked, so it was great to get some background on that.
+
+On Thursday, we had a meeting about best practices for clients to follow. Some
+of the topics were around how to handle specific edge cases while other
+discussions included best practices for event storage structures.
 
 Although there are many pieces to Matrix, it is elegant and simple in many ways.
 Many of the problems that our clients have are due to mishandling of sync or
@@ -131,28 +135,43 @@ that everyone in the company has a working understanding of those fundamental
 pieces of the system we can more effectively identify the root causes of bugs
 and fix the issues that our users experience.
 
-On Thursday, we had a meeting about best practices for clients to follow. Some
-of the topics were around how to handle specific edge cases while other
-discussions included best practices for event storage structures.
-
-### TODO TITLE
+### Odds and Ends
 
 Other than the meetings with the entire team, there were quite a few other
 planning meetings that subsets of the team participated in. Most of the people
 that I work with directly were not at the retreat, but I joined in a couple of
 ad hoc conversations about various topics.
 
-
-
-* Sygnal
-* Max on infinite backfill
+Max was the only person there on my direct team, and he was working on infinite
+backfill for the Slack bridge. I provided "moral support" to his efforts, and
+occasionally offered insights into how the other infinite-backfill-enabled
+bridges work.
 
 ### BRAD Day
 
-* BRAD DAY
-  * GroupMe bridge
+Every three weeks we have a Beeper Radical Awesomeness Day (BRAD). It's a day
+that every employee in the company can work on anything we want, so long as it's
+company-related, and as long as we present it at the following week's demo
+meeting.
+
+It just so happened that the Friday of the retreat coincided with our regularly
+scheduled BRAD days, so we all got to hack on fun projects on Friday. I chose to
+work on the [GroupMe bridge](https://github.com/beeper/groupme) which had been
+worked on by Annie and Nick at the Montreal retreat over a year ago, but needed
+some serious attention. I spent the day getting it up to current Beeper
+standards for bridge building, and will continue working on it during the next
+BRAD day.
+
+Other people on the team did cool projects as well. Max worked on rendering a UI
+on an embedded device that has a BlackBerry keyboard and a monochrome screen;
+Tiago worked on integrating Google's password store into the Android app; and
+Wellington added recently used emojis to the iOS app. There were quite a few
+other cool projects as well. It's always nice to have some time to work on
+features that aren't currently high priority on the roadmap.
 
 ## Eating Well
+
+One of the best things about Beeper retreats is the awesome food that we get.
 
 ### Salsa
 
@@ -166,13 +185,16 @@ companies where single teams are that size. Leading up to this retreat, I think
 that culturally, we were one team: we all have a strong common goal and mandate
 and we are all focused towards it.
 
-However, I think there was a divide within the team between "people who
-understood Matrix" and "people who cope with Matrix". After this retreat, I
-think that divide has been broken, and everyone now has a working understanding
-of the underlying technology we are building Beeper on.
+However, I think there were some functional divides within the team. The biggest
+divide was between "people who understood Matrix" and "people who cope with
+Matrix". After this retreat, I think that divide has been bridged, and everyone
+now has a working understanding of the underlying technology we are building
+Beeper on.
 
-I think there was also a shift towards understanding that we have control over
-the entire stack. If there are server changes that can make clients easier to
+The other divide was between client-side and server-side. During the retreat, I
+think there was a shift towards understanding that we have control over the
+entire stack. Our client devs don't have to treat the server as a black box that
+can't be modified. If there are server changes that can make clients easier to
 write, then we can make those changes. If they are generally applicable to
 others, we can even contribute them to the Matrix Spec through the MSC process,
 but developing things that work is our priority.
@@ -180,4 +202,4 @@ but developing things that work is our priority.
 The retreat was a great opportunity to foster relationships across the team and
 remember that we are all working towards the common goal of making the best damn
 chat app in the world. We are at the beginning of something great and I'm
-excited to see where it goes from here.
+excited to see what we can accomplish as a team!
