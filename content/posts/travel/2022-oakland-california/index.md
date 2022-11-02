@@ -12,7 +12,7 @@ who works at Salesforce out in San Francisco. I flew in in the evening on
 Tuesday to minimize the time I had to take off of work. I worked for the first
 two days and then we both took Friday and Monday off for a long weekend.
 
-# Working from California
+## Working from California
 
 On Wednesday, we both worked from his apartment. That is the nice thing
 about having a remote job in software engineering: you can work anywhere that
@@ -33,7 +33,7 @@ who just started at Salesforce, joined us. Both Brooks and Jack were students in
 the [Architecture class I taught]({{< ref "/portfolio#experience-adjunct-mines"
 >}}) a couple semesters ago, so it was a fun reunion.
 
-# Golden Gate Park
+## Golden Gate Park
 
 As I mentioned, we both took Friday and Monday off of work to have a long
 weekend, and spent the weekend sightseeing.
@@ -66,7 +66,10 @@ the middle of a coastal Californian city.
 By that time, we were quite tired from walking around so we headed back for the
 day.
 
-# Muir Woods Forest
+## Muir Woods Forest
+
+The next day, Jack and I headed over to the Muir Woods National Monument. It's a
+forest full of beautiful redwoods.
 
 Went to Muir Woods Forest the next day
 
@@ -76,7 +79,7 @@ Went to Muir Woods Forest the next day
 * Went to a seafood restaurant for dinner
 * Tried to see the Golden Gate Bridge but it was covered entirely in fog
 
-# Fisherman's Wharf
+## Fisherman's Wharf
 
 Went to walk around the pier
 
@@ -87,8 +90,21 @@ Went to walk around the pier
 * Went to the Golden Gate and walked around it
 * Went over to Lombard street
 
-# Raquetball
+## Raquetball
 
-On Monday, we went to a gym to play racquetball
+On Monday, we went to a gym to play racquetball. When we were in school, Jack
+was the president of the racquetball club at Mines, and we played fairly
+regularly. Neither of us had really played since then (especially because the
+pandemic closed things down). We played for a couple hours in the morning, and
+then he took me to the airport for my mid-afternoon flight.
 
-Played racquetball for a few hours, then headed to the airport
+-----------------
+
+I enjoyed spending time in California. It was the first time I'd been able to
+visit the state for an extended period of time. The only other time that I'd
+spent time in California was for the [Facebook Global Hackathon Finals]({{< ref
+"../../hackathons/2018-11-16-facebook-hackathon-the-competition" >}}), but we
+were at Facebook headquarters and the hotel for almost the entire time.
+
+It was great getting to spend time with Jack. We'd spent tons of time together
+during school since we were in the same clubs and activities. I'm 
