@@ -5,7 +5,6 @@ categories: [Work Retreats]
 tags: [Travel, Mexico City, Mexico, Beeper, Work]
 description: |
   My thoughts and reflections on the Beeper Fall 2022 retreat in Mexico City.
-draft: true
 ---
 
 This week, my company (Beeper) had our Fall retreat in in Mexico City, Mexico.
@@ -23,7 +22,7 @@ We had fifteen members of the team at this retreat. We stayed at a hotel called
 Polanco*](https://www.caminoreal.com/en/caminoreal/camino-real-polanco-mexico),
 and we were able to utilize some office space from another Y-Combinator startup.
 Having the office was a nice change from the remote locale of the Portugal
-retreat.
+retreat. The office had a great view of the city.
 
 I shared a room with Bradley who works on our desktop app. The hotel room was
 quite nice and there were quite a few restaurants close by. The retreat was less
@@ -53,14 +52,15 @@ everyone else working on.
 
 ## Working and Learning
 
-This retreat was the most meeting-heavy one we've had, but each was extremely
-valuable. We had five full-team meetings, and I think that if our retreat
-consisted just of those meetings it would have been worth it.
+This retreat was the most meeting-heavy one we've had, but each meeting was
+extremely valuable. We had five full-team meetings, and I think that if the only
+thing that we did during the retreat were those meetings, the whole retreat
+would have been worth it.
 
 On Tuesday, Eric talked about our plan for next year and laid out an exciting
-vision for growth. It's always great to hear his high-level thoughts on where
-the company is going. Obviously I can't share most of it publicly, but I can say
-that the future is bright, and you can expect big things from Beeper coming into
+vision for the company. It's always great to hear his high-level thoughts on
+where the company is going. Obviously I can't share most of it publicly, but I
+can say that the future is bright, and you can expect big things from Beeper in
 the new year.
 
 ### Retro
@@ -69,7 +69,7 @@ The week kicked off with a retro meeting led by Brad. We of course had to get
 our sticky note peeling lesson from Annie so that our retro post-it notes
 wouldn't bend at the sticky part and subsequently fall off of the windows.
 
-{{< figure 
+{{< figure
       src="./images/retro.jpg"
       link="./images/retro.jpg"
       target="_blank"
@@ -77,22 +77,22 @@ wouldn't bend at the sticky part and subsequently fall off of the windows.
       caption="We had a beautiful view of Mexico City in the background as the team participated in what has become the unofficial starting point of each retreat."
 >}}
 
-There were a few themes which I think were especially prevalent throughout the
+There were a few themes which I felt were especially prevalent throughout the
 retro which was overall extremely positive.
 
 On the infrastructure side, there was an overwhelming sense that the Hungryserv
 project has been a resounding success. The project was a brainchild of a couple
 of discussions that myself and Toni had just before the Portugal retreat. During
 the last retreat, it was still vaporware, but over the last few months, with
-Tulir, Toni, and myself full-time on the project, we are now ready to ship to
-production. In fact, even in August ago, we were close enough to having it
-working that I was able to [give a
+Tulir, Toni, and myself full-time on the project, we are now poised to ship to
+production. In fact, even in August, we were close enough to having it working
+that I was able to [give a
 presentation](../../../portfolio#presentation-hungryserv) about the project at
 the [2022 Berlin Matrix Community Summit](../2022-berlin-matrix-summit/summit).
 
-Another highlight was the progress on the iOS application over the past few
-months since we reorganized the teams a couple months ago to put more people on
-the iOS project. The team has worked hard restructuring much of the app
+Another highlight was the reorganization of the teams a couple months ago which
+put more people on the iOS project. Since then, we've made great progress on the
+iOS application. The team has worked hard restructuring much of the app
 including rewriting the backend data storage systems and rewriting the
 conversation view. Although most of the work they've done is not immediately
 visible, the improvements have made the app significantly faster and more
@@ -105,6 +105,10 @@ power-user features and a greatly improved timeline. All of the clients have
 also implemented functionality to display when each message gets delivered
 successfully to the external network.
 
+I always like the retros because it's a time for us to take a step back from the
+day-to-day and take stock of what we've accomplished, and think about what we
+can do to be a more effective team.
+
 ### Matrix is Simple
 
 Unfortunately, not everything is going well, and the complexity of the Matrix
@@ -114,26 +118,27 @@ building Beeper on) is simple.
 
 On Tuesday and Wednesday, Brad gave two comprehensive presentations covering the
 fundamentals of Matrix from a client perspective. The first one was about the
-inner workings of sync: the only real-time way that data is provided to client.
-In general, I was quite familiar with sync because I implemented significant
-portions of it for Hungryserv. I think it was valuable to have all of that
-information consolidated in a single presentation. The second presentation was
-about how encrypted messages work in Matrix. Brad covered things like how the
-device verification process and what keys exist and how they are shared between
-devices. I was generally familiar with how encryption works in the Matrix
-ecosystem, however I didn't know much about how key sharing or device
-verification worked, so it was great to get some background on that.
+inner workings of sync: the way that data is provided to the clients in
+real-time. In general, I was quite familiar with sync because I implemented
+significant portions of it for Hungryserv. I think it was valuable to have all
+of that information consolidated in a single presentation. The second
+presentation was about how encrypted messages work in Matrix. Brad covered
+things like how the device verification process works and what keys exist and
+how they are shared between devices. I was generally familiar with how
+encryption works in the Matrix ecosystem, however I didn't know much about how
+key sharing or device verification worked, so it was great to get some
+background on that.
 
 On Thursday, we had a meeting about best practices for clients to follow. Some
-of the topics were around how to handle specific edge cases while other
-discussions included best practices for event storage structures.
+of the topics discussed were how to handle specific edge cases while other
+topics included best practices for event storage structures.
 
 Although there are many pieces to Matrix, it is elegant and simple in many ways.
 Many of the problems that our clients have are due to mishandling of sync or
 encryption deep within the various libraries that we are using. I think that now
 that everyone in the company has a working understanding of those fundamental
-pieces of the system we can more effectively identify the root causes of bugs
-and fix the issues that our users experience.
+pieces we can more effectively identify the root causes of bugs and fix the
+issues that our users experience.
 
 ### Odds and Ends
 
@@ -163,23 +168,72 @@ standards for bridge building, and will continue working on it during the next
 BRAD day.
 
 Other people on the team did cool projects as well. Max worked on rendering a UI
-on an embedded device that has a BlackBerry keyboard and a monochrome screen;
-Tiago worked on integrating Google's password store into the Android app; and
+on an embedded device that has a BlackBerry keyboard and a monochrome screen
+with the goal of eventually having it run a lightweight Beeper client; Tiago
+worked on integrating Google's password store into the Android app; and
 Wellington added recently used emojis to the iOS app. There were quite a few
 other cool projects as well. It's always nice to have some time to work on
-features that aren't currently high priority on the roadmap.
+quality-of-life features that aren't currently high priority on the roadmap.
 
-## Eating Well
+## Salsa Time
 
-One of the best things about Beeper retreats is the awesome food that we get.
+One of the best things about Beeper retreats is the awesome food we get to have
+every day.
 
-### Salsa
+This retreat, we had caterers serve us breakfast and lunch every day. The food
+was great every day.
+
+In the evenings we went to various restaurants for team dinners. For example, on
+Wednesday, we went to a fantastic Tapas restaurant. There was so much rich and
+delicious food!
+
+{{< figure
+      src="./images/tapas.jpg"
+      link="./images/tapas.jpg"
+      target="_blank"
+      title="The team enjoying a huge selection of tapas"
+      caption="Every dish was great, and they kept coming!"
+>}}
+
+On Tuesday, we went to a salsa cooking class. The class was hosted in a historic
+district of Mexico City by local culinary instructors. We fixed four delicious
+salsas: a pico de gallo, a chilli oil salsa, a creamy tomato-based salsa, and a
+roasted salsa. The salsas were all "table salsas" meaning that they are
+traditionally served at the table to add flavour to the dish. These salsas tend
+to be spicier than the other type of salsa which is a "cooking salsa". Such
+salsas are used in the dishes themselves while being cooked.
+
+<figure>
+  <table class="gallery">
+    <tr>
+      <td>
+        <a href="./images/salsa1.jpg" target="_blank">
+          <img src="./images/salsa1.jpg"
+               alt="Natalia explaining one of the salsas we were making" />
+        </a><br>
+        <b>Natalia explaining one of the salsas we were cooking</b><br>
+        We even got to wear fun colourful aprons while we made the salsas!
+        It was amazing how delicious they were with such simple ingredients.
+      </td>
+      <td>
+        <a href="./images/salsa2.jpg" target="_blank">
+          <img src="./images/salsa2.jpg"
+               alt="Fixing quesadillas to eat with the salsas" />
+        </a><br>
+        <b>Fixing quesadillas to to eat with the salsas</b><br><br>
+        The best part of the evening was that we got got to eat the fruit of our
+        labours :)<br>
+        I especially enjoyed the chilli oil and creamy tomato salsas.
+      </td>
+    </tr>
+  </table>
+</figure>
 
 ## Are We One Team?
 
-During the retrospective meeting, Scott proposed the question "Are we one team?"
-with the connotation of trying to identify if we see ourselves as a single team
-with specializations in various areas, or as disparate teams at the same
+During the retrospective meeting, Scott posed the question "Are we one team?"
+with the connotation of trying to understand if we see ourselves as a single
+team with specializations in various areas, or as separate teams at the same
 organization. The Beeper team is still under 30 people and there are many large
 companies where single teams are that size. Leading up to this retreat, I think
 that culturally, we were one team: we all have a strong common goal and mandate
@@ -202,4 +256,4 @@ but developing things that work is our priority.
 The retreat was a great opportunity to foster relationships across the team and
 remember that we are all working towards the common goal of making the best damn
 chat app in the world. We are at the beginning of something great and I'm
-excited to see what we can accomplish as a team!
+excited to see what we can accomplish as one team!
