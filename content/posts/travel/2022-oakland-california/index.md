@@ -51,10 +51,10 @@ that they were able to cultivate.
 TODO>>>>>>>>>>>>>c MORE ABOUT THE GARDENS
 
 By the time we were done wandering at the gardens, it was well into the
-afternoon and, getting food was the most pressing concern.
-We found a burrito restaurant TODO>>>>>>>>>> NAME
-The burritos were quite good. One unique thing they did was slightly toast the
-tortilla so it was crispy rather than soft on the outside.
+afternoon and, getting food was the most pressing concern. We found a burrito
+restaurant Casa Barajas The burritos were quite good. One unique thing they did
+was slightly toast the tortilla so it was crispy rather than soft on the
+outside.
 
 TODO>>>>>>>>>>> waterfall with green water
 
