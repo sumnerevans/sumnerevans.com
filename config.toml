@@ -58,6 +58,11 @@ Paginate = 15
     reply-notifications = true
     reply-to-self = true
 
+  # Plausible
+  [params.plausible]
+    domain = "sumnerevans.com"
+    plausibleRoot = "https://plausible.nevarro.space"
+
 [menu]
   [[menu.main]]
     identifier = "about"
