@@ -6,6 +6,9 @@ date: 2021-08-01 09:04:00
 I have had the opportunity to teach courses in mulitple areas of computer
 science at my alma mater, Colorado School of Mines.
 
+For all teaching-related correspondence, please use this email:
+teaching [at] sumnerevans [dot] com
+
 ## Current Teaching
 
 * [CSCI 400 Principles of Programming Languages](https://lambda.mines.edu/f22-syllabus/)
