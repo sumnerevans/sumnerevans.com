@@ -85,3 +85,19 @@ the River Seine to the Tour Eiffel.
       title="A view of the Eiffel Tower from the top of the Arc de Triomphe"
       caption="Due to heavy-handed city planning, the city is quite uniform making it so visually appealing."
 >}}
+
+## Eiffel Tower
+
+My next destination was the Eiffel Tower. I decided to walk from the Arc de
+Triomphe to the tower so that I could see some of the nice streets outside the
+main tourist trap area.
+
+* road names of random scientists
+
+* statue to the WW1?
+
+* statue across from Tour Eiffel
+
+* went up the tower
+
+

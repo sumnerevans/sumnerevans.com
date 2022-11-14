@@ -13,3 +13,4 @@ draft: true
 * castle under the Louvre
 * was a palace
 * reminded me more of the museum in st petersburg than the british museum
+* walked over to Notre Dame
