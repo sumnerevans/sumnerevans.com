@@ -6,6 +6,10 @@ tags:
   - Travel
   - Paris
   - France
+  - Place de la Concorde
+  - Champs-Élysées
+  - Arc de Triomphe
+  - Eiffel Tower
 description: |
   Today I went to the Place de la Concorde, the Arc de Triomphe, and
   the Eiffel Tower.

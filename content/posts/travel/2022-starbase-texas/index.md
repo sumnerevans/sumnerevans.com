@@ -9,11 +9,12 @@ tags:
 description: |
   I went to visit my friend, Nic, who is a photojournalist reporting on SpaceX's
   Starbase facility in Texas.
+image: ./images/full-stack.jpg
 draft: true
 ---
 
 On my way back from my work retreat in Mexico City, I took the weekend to visit
-a friend, Nic, who lives near SpaceX's Starbase facility in southern Texas. Nic
+my friend, Nic, who lives near SpaceX's Starbase facility in southern Texas. Nic
 is a photojournalist for [nasaspaceflight.com](https://nasaspaceflight.com) and
 reports on the developments at Starbase.
 
@@ -64,10 +65,7 @@ view of the vehicle on the pad.
 After that, we drove down the beach to the Rio Grande. It is only 50 yards wide
 or so at the point where it meets the Gulf, and Mexico is just right there.
 
--------
-
-In the evening, we went to 
-
+In the evening, we went to ===============TODO
 It's a community of space enthusiasts near Starbase. Some of them are
 journalists for various space-related news outlets (such as my friend, Nic)
 while others are digital nomads. It's a neat community of people who are all
@@ -84,4 +82,13 @@ nothing actually ended up happening all day.
 In the meantime, once the cameras were setup, we went back to Nic's apartment
 and I did a couple of hours of work before my flight back to Denver. I flew
 Southwest out of Harlingen this time on a flight through Austin. Conveniently,
-the flight 
+there wasn't a plane-change in Austin, and I was the only person going on to
+Denver. That meant I was able to have my pick of seats on my way back to Denver.
+I was able to get a seat on the front row, which was great.
+
+In all, I really enjoyed getting to spend time with Nic. We've been best friends
+since childhood. It seems like there's some cool things happening down at
+Starbase, and I'm excited to follow the progress that SpaceX makes in building a
+space program to return us to the moon, and eventually to Mars. It's exciting
+that I was able to see a fully-stacked Starship in-person. It will put better
+perspective the scale of what SpaceX is doing.
