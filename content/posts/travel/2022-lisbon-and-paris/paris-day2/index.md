@@ -6,6 +6,13 @@ tags:
   - Travel
   - Paris
   - France
-description: "TODO"
+  - Normandy
+description: |
+  Today I took a day-trip to the Normandy beaches.
 draft: true
 ---
+
+Today, I took a day trip to the Normandy beaches. It was quite a long bus ride
+in the morning
+
+Our guide

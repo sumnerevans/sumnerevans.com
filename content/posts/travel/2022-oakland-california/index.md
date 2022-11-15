@@ -51,17 +51,20 @@ that they were able to cultivate.
 TODO>>>>>>>>>>>>>c MORE ABOUT THE GARDENS
 
 By the time we were done wandering at the gardens, it was well into the
-afternoon and, getting food was the most pressing concern. We found a burrito
-restaurant Casa Barajas The burritos were quite good. One unique thing they did
-was slightly toast the tortilla so it was crispy rather than soft on the
-outside.
+afternoon and getting food was the most pressing concern. We found a burrito
+restaurant Casa Barajas near the park. The burritos were quite good. One unique
+thing they did was slightly toast the tortilla so it was crispy rather than soft
+on the outside.
 
-TODO>>>>>>>>>>> waterfall with green water
+After lunch, we walked over to ======TODO island which had an artificial
+waterfall. Interestingly, the water was tinted green. We weren't quite sure why,
+though we looked it up later and it was due to an algae and it caused the entire
+water system to have that green tint to it.
 
-After lunch, we continued walking to see the small bison herd that is kept
-within the park. Apparently, the Bison were brought during the 19th century and 
-a small herd has lived there ever since. It was quite surreal seeing Bison in
-the middle of a coastal Californian city.
+After looking at the green waterfall, we continued walking to see the small
+bison herd that is kept within the park. Apparently, the Bison were brought
+during the 19th century and a small herd has lived there ever since. It was
+quite surreal seeing Bison in the middle of a coastal Californian city.
 
 By that time, we were quite tired from walking around so we headed back for the
 day.
@@ -104,7 +107,12 @@ I enjoyed spending time in California. It was the first time I'd been able to
 visit the state for an extended period of time. The only other time that I'd
 spent time in California was for the [Facebook Global Hackathon Finals]({{< ref
 "../../hackathons/2018-11-16-facebook-hackathon-the-competition" >}}), but we
-were at Facebook headquarters and the hotel for almost the entire time.
+were at Facebook headquarters and the hotel for almost the entire time. (Funnily
+enough, Jack was on my team for that hackathon, and I'd consider our win at that
+hackathon to be the crowning achievement of my college career, and I think it
+will remain one of the peaks of my entire career.)
 
 It was great getting to spend time with Jack. We'd spent tons of time together
-during school since we were in the same clubs and activities. I'm 
+during school since we were in the same clubs and activities. I was glad to get
+to catch up with him and see California. It was very nice of him to host me at
+his apartment, and I really appreciated it.
