@@ -61,7 +61,7 @@ Paginate = 15
   # Plausible
   [params.plausible]
     domain = "sumnerevans.com"
-    plausibleRoot = "https://plausible.nevarro.space"
+    plausibleRoot = "https://plausible.io"
 
 [menu]
   [[menu.main]]
