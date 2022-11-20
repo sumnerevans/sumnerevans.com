@@ -73,10 +73,10 @@ culture and identity for centuries. As the first ally to the United States,
 France has continued to be an ally even through its various iterations of
 republics, empires, and monarchies.
 
-After scaling many more stairs that I expected to have to, I reached the top of
-the Arc. The views all around are magnificent, and it was amazing seeing the
-city sprawling beautifully away in all directions. It has a great view across
-the River Seine to the Tour Eiffel.
+After scaling many more stairs that I expected to have to, I reached the top.
+The views all around are magnificent, and it was amazing seeing the city
+sprawling beautifully away in all directions. It has a great view across the
+River Seine to the Tour Eiffel.
 
 {{< figure
       src="./images/arc-view.jpg"
@@ -88,13 +88,32 @@ the River Seine to the Tour Eiffel.
 
 ## Eiffel Tower
 
-My next destination was the Eiffel Tower. I decided to walk from the Arc de
-Triomphe to the tower so that I could see some of the nice streets outside the
-main tourist trap area.
+My next destination was the Eiffel Tower, but rather than ride the subway to it,
+I decided to just walk from the Arc de Triomphe to the tower. I took a route via
+some side streets outside the main tourist-y area. The area that I walked
+through had lots of streets named after scientists and explorers. There was Rue
+Galilée, Rue Kepler, Rue Newton, and Rue Euler. The streets were very nice, and
+seemed more residential. There were lots of people who looked like locals
+walking around. I even saw a boy walking to or from his fencing practice.
 
-* road names of random scientists
+Then I came to the Place des Etats-Unis which is a road that goes around the
+Thomas Jefferson Square. The square holds a monument to the Americans who
+volunteered to fight in the French armed forces during WWI and died in service.
+Oddly, there is a plaque on the back which was added much later that
+commemorates something about American volunteers during WWII who joined the
+resistance in Vichy France. I did a bunch of searching online and found nothing
+about why the additional plaque was added.
 
-* statue to the WW1?
+{{< figure
+      src="./images/memorial-volunteers.jpg"
+      link="./images/memorial-volunteers.jpg"
+      target="_blank"
+      title="Monument aux Volontaires américains"
+>}}
+
+In general, I was surprised by the amount of monuments and statues which
+commemorated Americans. Given that France is our oldest ally, I guess it makes
+sense, but it was still unexpected.
 
 * statue across from Tour Eiffel
 
