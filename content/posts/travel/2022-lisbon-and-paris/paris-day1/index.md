@@ -9,7 +9,6 @@ tags:
 description: |
   Today I went to the Place de la Concorde, the Arc de Triomphe, and
   the Eiffel Tower.
-draft: true
 image: ./images/arc-view.jpg
 ---
 
@@ -115,8 +114,54 @@ In general, I was surprised by the amount of monuments and statues which
 commemorated Americans. Given that France is our oldest ally, I guess it makes
 sense, but it was still unexpected.
 
-* statue across from Tour Eiffel
+Eventually I arrived at another square with a statue of somebody on a horse. I
+have no idea who it was of, but he was looking straight at the Eiffel Tower, so
+he has a pretty nice view.
 
-* went up the tower
+I took my time walking down to the Eiffel Tower, enjoying the fountains that
+lead down to it.
 
+{{< figure
+      src="./images/eiffel-tower-1.jpg"
+      link="./images/eiffel-tower-1.jpg"
+      target="_blank"
+      title="The Eiffel Tower!"
+      caption="I've seen it in so many pictures, it was cool to see it in person!"
+>}}
 
+I wandered around the grounds of the tower, it's base is larger than I expected.
+I guess I should have expected such a large structure to have a fairly wide
+base, but hey, I studied computer science, not civil engineering at school ;)
+
+I bought a ticket to take the stairs up the tower to the first and second level
+viewing platforms. I accidentally got in the line for the elevator, but quickly
+realized my mistake. There are 674 steps to get to the second floor, and if you
+decide to visit and are willing and able to do that many stairs, it's worth it.
+I hate standing in line unnecessarily, so avoiding the line for the elevator was
+ideal.
+
+I then had to take the elevator to the top. The views were absolutely
+spectacular. The sky were clear and there was a beautiful view in all
+directions.
+
+{{< figure
+      src="./images/eiffel-tower-2.jpg"
+      link="./images/eiffel-tower-2.jpg"
+      target="_blank"
+      title="The view from the Eiffel Tower"
+      caption="I now understand why people fall in love with Paris. The city is so beautiful!"
+>}}
+
+At this point, it was fairly late in the evening, and I headed back to the
+hotel. I asked for a recommendation for a French restaurant, and went to [Bistro
+Lyonnais](https://goo.gl/maps/xfZUEEhPQpsbb7dC8) which was a very short walk
+from my hotel. I got French Onion soup, and steak and frites. It was a fantastic
+meal, and the service was excellent as well. I think I like European-style
+service better than American-style: they leave you alone to enjoy the food.
+
+The meal was a reasonable price as well. The exchange rate from USD to EUR is so
+favourable right now, which makes all of the prices a lot more palatable. It's
+hovering around 1:1 right now, so it really is the time to travel to Europe.
+
+Anyway, tomorrow is an early day: I'm heading on a day trip to the Normandy
+beaches, so I'm off to bed!
