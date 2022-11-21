@@ -34,8 +34,8 @@ good, it was worth it to just eat the cost.
 
 ## Place de la Concorde
 
-My first destination was the Place de la Concorde. I got my first glimpse of the
-Eiffel Tower!
+My first destination was the Place de la Concorde. I got my first daytime
+glimpse of the Eiffel Tower!
 
 {{< figure
       src="./images/concorde.jpg"

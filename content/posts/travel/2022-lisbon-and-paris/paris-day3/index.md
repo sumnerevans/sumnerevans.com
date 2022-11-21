@@ -10,6 +10,8 @@ description: "TODO"
 draft: true
 ---
 
+Today I went to the Louvre.
+
 * castle under the Louvre
 * was a palace
 * reminded me more of the museum in st petersburg than the british museum

@@ -12,9 +12,10 @@ description: |
 image: ./images/full-stack.jpg
 ---
 
-On my way back from my work retreat in Mexico City, I took the weekend to visit
-my friend, Nic, who lives near SpaceX's Starbase facility in southern Texas. Nic
-is a photojournalist for [nasaspaceflight.com](https://nasaspaceflight.com) and
+On my way back from my [work retreat in Mexico City]({{< ref
+"../2022-mexico-city-retreat" >}}), I took the weekend to visit my friend, Nic,
+who lives near SpaceX's Starbase facility in southern Texas. Nic is a
+photojournalist for [nasaspaceflight.com](https://nasaspaceflight.com) and
 reports on the developments at Starbase.
 
 My flight on Saturday was to Harlingen through Houston. The flight path from
