@@ -10,7 +10,6 @@ description: |
   I went to visit my friend, Nic, who is a photojournalist reporting on SpaceX's
   Starbase facility in Texas.
 image: ./images/full-stack.jpg
-draft: true
 ---
 
 On my way back from my work retreat in Mexico City, I took the weekend to visit
@@ -21,10 +20,10 @@ reports on the developments at Starbase.
 My flight on Saturday was to Harlingen through Houston. The flight path from
 Mexico City to Houston took me basically right over my final destination, but I
 wouldn't arrive for some number of hours because of my connection. The United
-flight I was on from Houston to Harlingen was on a Embraer ============TODO
-50-seater plane. The flight itself was only 45 minutes, but we taxied for what
-felt like half an hour. At that rate it felt like we could have almost driven
-the plane to Harlingen!
+flight I was on from Houston to Harlingen was on an Embraer 50-seater plane. The
+flight itself was only 45 minutes, but we taxied for what felt like half an
+hour. At that rate it felt like we could have almost driven the plane to
+Harlingen!
 
 The flight arrived at around 21:00, so we didn't do anything that night. The
 next morning, we went to his church for the service. It's a small Baptist church
@@ -49,10 +48,10 @@ Starship that landed and didn't explode.
 >}}
 
 Then we drove over to the launch facility. There was a Starship on the
-suborbital pad, and a fully-stacked Starship atop the first stage =========TODO
-on the orbital pad. The orbital rocket is massive. We walked around the
-perimeter of the facility to a vantage point where we were able to get a great
-view of the vehicle on the pad.
+suborbital pad, and a fully-stacked Starship atop its first stage on the orbital
+pad. The orbital rocket is massive. We walked around the perimeter of the
+facility to a vantage point where we were able to get a great view of the
+vehicle on the pad.
 
 {{< figure
       src="./images/full-stack.jpg"
@@ -65,11 +64,11 @@ view of the vehicle on the pad.
 After that, we drove down the beach to the Rio Grande. It is only 50 yards wide
 or so at the point where it meets the Gulf, and Mexico is just right there.
 
-In the evening, we went to ===============TODO
-It's a community of space enthusiasts near Starbase. Some of them are
-journalists for various space-related news outlets (such as my friend, Nic)
-while others are digital nomads. It's a neat community of people who are all
-interested in various aspects of documenting what's happening at Starbase.
+In the evening, we went to Rocket Ranch. It's a community of space enthusiasts
+near Starbase. Some of them are journalists for various space-related news
+outlets (such as my friend, Nic) while others are digital nomads. It's a neat
+community of people who are all interested in various aspects of documenting
+what's happening at Starbase.
 
 ------
 
@@ -90,5 +89,5 @@ In all, I really enjoyed getting to spend time with Nic. We've been best friends
 since childhood. It seems like there's some cool things happening down at
 Starbase, and I'm excited to follow the progress that SpaceX makes in building a
 space program to return us to the moon, and eventually to Mars. It's exciting
-that I was able to see a fully-stacked Starship in-person. It will put better
-perspective the scale of what SpaceX is doing.
+that I was able to see a fully-stacked Starship in-person. I now have a better
+perspective on the scale of what SpaceX is doing.
