@@ -163,6 +163,13 @@ from my hotel. I got French Onion soup, and steak and frites. It was a fantastic
 meal, and the service was excellent as well. I think I like European-style
 service better than American-style: they leave you alone to enjoy the food.
 
+{{< figure
+      src="./images/steak.jpg"
+      link="./images/steak.jpg"
+      target="_blank"
+      title="My steak and frites meal"
+>}}
+
 The meal was a reasonable price as well. The exchange rate from USD to EUR is so
 favourable right now, which makes all of the prices a lot more palatable. It's
 hovering around 1:1 right now, so it really is the time to travel to Europe.
