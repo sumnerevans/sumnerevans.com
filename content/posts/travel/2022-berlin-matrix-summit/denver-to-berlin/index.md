@@ -24,7 +24,7 @@ Both flights were rather uneventful, though there was some turbulence. Maybe
 it's just a German airline thing, but they didn't turn on the fasten seatbelt
 light even when it was quite bumpy.
 
-A from Germany guy that is attending the conference that I've been in contact
+A guy from Germany that is attending the conference that I've been in contact
 with told me about a 9€ transit ticket that allows access to almost all public
 transit within Germany for the month of August. It was fortunate that he told me
 about it, because it was not obvious how to buy it at the ticket machine, but I
