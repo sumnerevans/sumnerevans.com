@@ -29,9 +29,14 @@ universe.
 - **Laptop:** (hostname: `scarif`) A
   [ThinkPad T14s Gen 3 - AMD](https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadt/thinkpad-t14s-gen-3-(14-inch-amd)/21cq000gus).
 
-- **Linode VPS:** (hostname: `bespin`)
-- **Hetzner VPS:** (hostname: `morak`)
-- **Hetzner VPS:** (hostname: `kessel`)
+- **Cloud Dev Machine:** (hostname: `tatooine`) A Hetzner VPS (CPX41) running a
+  continuous tmux session for development.
+
+- **Server:** (hostname: `morak`) A Hetzner VPS (CPX11) running websites and
+  cloud storage infrastructure.
+
+- **Synapse Server:** (hostname: `kessel`) A Hetzner VPS (CCX12) running all of
+  my high-performance Synapse server and related infrastructure.
 
 ## Accessories
 
@@ -59,17 +64,16 @@ universe.
 
 - **Speakers:** [Audioengine A2+][audioengine-a2plus]
 
-- **Earbuds:** [Google Pixel Buds][pixelbuds]
+- **Earbuds:** [AirPods Pro][airpods]
 
 - **Webcam:** [Logitech HD Pro Webcam C920][logitech]
-
-- **USB Splitter (4×4):** [CableMatters 4 Port USB 3.0 Switch Hub][cablematters]
 
 ## Mobile Devices
 
 \* indicates daily driver
 
-- **Smartphone\*:** iPhone 12 Mini (64 GB, Blue)
+- **Smartphone\*:** ASUS Zenfone 9
+- **Smartphone:** iPhone 12 Mini (64 GB, Blue)
 - **Smartphone:** Google Pixel 3a (64 GB, Just Black)
 - **Smartphone:** Google Pixel 1 (32 GB, Quite Black)
 - **Smartphone:** iPhone 5s (32 GB, Space Gray)
