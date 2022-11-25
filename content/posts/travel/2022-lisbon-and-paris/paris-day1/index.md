@@ -161,7 +161,10 @@ hotel. I asked for a recommendation for a French restaurant, and went to [Bistro
 Lyonnais](https://goo.gl/maps/xfZUEEhPQpsbb7dC8) which was a very short walk
 from my hotel. I got French Onion soup, and steak and frites. It was a fantastic
 meal, and the service was excellent as well. I think I like European-style
-service better than American-style: they leave you alone to enjoy the food.
+service better than American-style: they leave you alone to enjoy the food. They
+also seem to pay more attention to detail. The plates had the name of the
+restaurant on one side, and I noticed the server placed the plate down so that
+the name was the right way up.
 
 {{< figure
       src="./images/steak.jpg"

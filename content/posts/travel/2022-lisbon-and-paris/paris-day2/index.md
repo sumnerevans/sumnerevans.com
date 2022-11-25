@@ -13,6 +13,14 @@ draft: true
 ---
 
 Today, I took a day trip to the Normandy beaches. It was quite a long bus ride
-in the morning
+in the morning to get from Paris to Omaha Beach.
+
+The same waters the same sand the same hills and the same fields
+
+Very different circumstances. To liberate and to commemorate.
+
+For many to die, that the west might live.
+The tides come and go. The forces of creation are constant. The forces of men are fleeting.
+The graves are arranged facing west
 
 Our guide
