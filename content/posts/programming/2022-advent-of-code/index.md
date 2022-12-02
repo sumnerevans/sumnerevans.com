@@ -56,8 +56,8 @@ Day       Time  Rank  Score       Time  Rank  Score
 | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Link:**      | https://adventofcode.com/2022/day/1                                                                                                                                 |
 | **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d01/01.go), [OCaml](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d01/01.ml) |
-| **Part 1:**    | 00:03:27, 1461th                                                                                                                                                      |
-| **Part 2:**    | 00:08:04, 2857th                                                                                                                                                      |
+| **Part 1:**    | 00:03:27, 1461th                                                                                                                                                    |
+| **Part 2:**    | 00:08:04, 2857th                                                                                                                                                    |
 
 Considering this was my first time using Go under time pressure to solve an
 Advent of Code problem, I think I did pretty well. I had lots of issues with
@@ -98,5 +98,68 @@ be generic over all integer types.
 </details>
 
 I put myself into a pretty big hole on the Mines leaderboard from today with an
-8*, 10** performance. I think that's just going to be expected given I'm using
+8\*, 10\*\* performance. I think that's just going to be expected given I'm using
 Go now.
+
+# Day 2: Rock Paper Scissors
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/2                                             |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d02/02.go) |
+| **Part 1:**    | 00:14:26, 5517th                                                                |
+| **Part 2:**    | 00:19:30, 4347th                                                                |
+
+Today was horrible. I failed at reading comprehension, and then incompetence set
+in and I forgot how to play rock-paper-scissors.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+The input consisted of a list of rock-paper-scissors (RPS) rounds formatted as
+`OPPONENT MY_RESPONSE`. The selection was given by `ABC` for the opponent and
+`XYZ` for my response.
+
+The goal was to calculate how many points I'd win given the sequence.
+
+Overall, the input parsing was a lot smoother today. I went with stringly-typed
+for the two fields.
+
+The first issue that I had was that I thought it was in the format `MY_RESPONSE
+OPPONENT` so that cost me a large number of minutes.
+
+The second issue that I ran into was just implementing the scoring logic. It was
+hard keeping track of what ABC and XYZ actually stood for, and I had to talk to
+myself so that I could work through all of the combinations.
+
+There's an elegant mathematical way of doing this using mod, which I did not use
+while solving. I figured there was one, but I didn't want to have to figure it
+out during my solve (though it may have been helpful).
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For the second part, you interpreted your response differently. You interpreted
+it as your desired outcome (win, lose, draw) and then had to calculate which
+option to choose.
+
+I ended up solving this with a ton of `case` statements. I later refactored to
+have a few less case statements, but all of the mathematical solutions that I've
+seen are way uglier, so I didn't refactor to use them. 
+
+I submitted the wrong value which cost me a minute, but honestly, that wasn't
+the main reason I failed today.
+
+</details>
+
+Overall, the problem was just annoying to implement, and I'm hoping for
+something more algorithmic tomorrow.
+
+I continue to dig myself into a pretty big hole on the Mines leaderboard with an
+15\*, 13\*\* performance. I think that I'm already about to write this year off
+as a rebuilding year (doing this in Go, and all). I'm hoping that the static
+typing of Go will give me a boost later on in the competition. Unfortunately, by
+then I assume that many fewer people will be competing so I'll have no chance to
+catch up.
