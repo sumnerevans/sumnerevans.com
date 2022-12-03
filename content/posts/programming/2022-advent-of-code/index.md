@@ -47,6 +47,7 @@ The following are my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+  3   00:11:02  3285      0   00:18:05  3187      0
   2   00:14:26  5517      0   00:19:30  4347      0
   1   00:03:27  1461      0   00:08:04  2857      0
 ```
@@ -126,8 +127,7 @@ The goal was to calculate how many points I'd win given the sequence.
 Overall, the input parsing was a lot smoother today. I went with stringly-typed
 for the two fields.
 
-The first issue that I had was that I thought it was in the format `MY_RESPONSE
-OPPONENT` so that cost me a large number of minutes.
+The first issue that I had was that I thought it was in the format `MY_RESPONSE OPPONENT` so that cost me a large number of minutes.
 
 The second issue that I ran into was just implementing the scoring logic. It was
 hard keeping track of what ABC and XYZ actually stood for, and I had to talk to
@@ -148,7 +148,7 @@ option to choose.
 
 I ended up solving this with a ton of `case` statements. I later refactored to
 have a few less case statements, but all of the mathematical solutions that I've
-seen are way uglier, so I didn't refactor to use them. 
+seen are way uglier, so I didn't refactor to use them.
 
 I submitted the wrong value which cost me a minute, but honestly, that wasn't
 the main reason I failed today.
@@ -164,3 +164,64 @@ as a rebuilding year (doing this in Go, and all). I'm hoping that the static
 typing of Go will give me a boost later on in the competition. Unfortunately, by
 then I assume that many fewer people will be competing so I'll have no chance to
 catch up.
+
+# Day 3: Rucksack Reorganization
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/3                                             |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d03/03.go) |
+| **Part 1:**    | 00:11:02, 3285th                                                                |
+| **Part 2:**    | 00:18:05, 3187th                                                                |
+
+Today was more fun than yesterday, but I still did horribly as far as time. At
+least I was able to comprehend the problem fairly well, except I screwed up the
+scoring which cost me, and I also didn't know how to deal with char arrays very
+well in Go. This is what happens when you switch languages haha.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+For part 1, you have to split each string in the input in half and then figure
+out what character is present in both halves. Then you have to calculate the
+score for that character.
+
+To calculate the character that is in both halves, I decided to just load both
+halves into a set and do an intersection. Obviously, this is not the most
+efficient method, but it (should) have been fairly quick to code. Unfortunately,
+I got caught by the fact that `string`s in Go are not just `[]rune`, so I wasted
+a lot of time trying to convert it to `[]rune` so that I could use my `Set`
+helper data structure. Unfortunately, I chose a very bad way of doing this
+(complicated `for` loop) because I forgot that you can just construct them like
+this: `[]rune(s)` where `s` is the string to convert to a `rune` array.
+
+After that, the next challenge is figuring out the score for the chosen
+character. I forgot that in ASCII A-Z come before a-z and that they are
+separated by a bunch of special characters. Thus, when I tried to combine the
+cases together, things went poorly. Once I handled each case separately, things
+went much more smoothly.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For the second part, instead of finding the common character between the halves
+of each string, you had to find the common character between three lines.
+
+The main issue for me was implementing the windowing correctly. I just totally
+botched it. I didn't handle the last window correctly, and I also had a bug
+where I would skip the element right after the window.
+
+After I unravelled myself from my own incompetence, calculating the score was
+trivial.
+
+</details>
+
+I definitely enjoyed this problem more than last nights problem as there were
+not as many annoying implementation details that were difficult to deal with.
+
+I continue to perform very poorly on the Mines leaderboard (8*, 8**). I'm just
+hoping that I can medal at some point this year. There's a lot more people
+competing this year who are good (some of whom were in the Algorithms class I
+taught last spring), so my chances are not great.
