@@ -12,7 +12,15 @@ description: |
 draft: true
 ---
 
-Today, I took a day trip to the Normandy beaches. It was quite a long bus ride
+Today, I took a day trip to the Normandy beaches. The tour visited Omaha Beach,
+the American Cemetery at Omaha, and Juneau Beach. ============TODO
+
+Instead of narrating exactly what we saw, I'm going to just give a few thoughts
+about the emotions that I felt about the day.
+
+
+
+It was quite a long bus ride
 in the morning to get from Paris to Omaha Beach.
 
 The same waters the same sand the same hills and the same fields
