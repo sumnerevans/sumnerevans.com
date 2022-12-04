@@ -47,6 +47,7 @@ The following are my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+  4   00:03:46   669      0   00:13:17  3984      0
   3   00:11:02  3285      0   00:18:05  3187      0
   2   00:14:26  5517      0   00:19:30  4347      0
   1   00:03:27  1461      0   00:08:04  2857      0
@@ -235,6 +236,11 @@ taught last spring), so my chances are not great.
 | **Part 1:**    | 00:03:46, 669th                                                                 |
 | **Part 2:**    | 00:13:17, 3984th                                                                |
 
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 4 | Go (669*, 3984**)</summary>
+  {{< youtube id="UqS6PInmj9o" title="Advent of Code 2022 - Day 4 | Go (669*, 3984**)" >}}
+</details>
+
 Today was the first time that I cracked the top 1000 with my solution. I was
 able to get 669th on the first part, before utterly collapsing on the second
 part.
@@ -290,8 +296,8 @@ incorrectly in almost every way possible.
 
 I defined a function on the `Pair` to determine if the pair intersected or not.
 My first mistake was that I used `Min` for calculating the minimum start and
-ends of the segments which is not what you want. You want the *maximum* start
-time, and the *minimum* end time. Then if the start time is less than or equal
+ends of the segments which is not what you want. You want the _maximum_ start
+time, and the _minimum_ end time. Then if the start time is less than or equal
 to the end time, the there is an overlap.
 
 I then incorrectly dealt with segments that only overlapped on a single element.
