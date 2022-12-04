@@ -221,7 +221,98 @@ trivial.
 I definitely enjoyed this problem more than last nights problem as there were
 not as many annoying implementation details that were difficult to deal with.
 
-I continue to perform very poorly on the Mines leaderboard (8*, 8**). I'm just
-hoping that I can medal at some point this year. There's a lot more people
+I continue to perform very poorly on the Mines leaderboard (8\*, 8\*\*). I'm
+just hoping that I can medal at some point this year. There's a lot more people
 competing this year who are good (some of whom were in the Algorithms class I
 taught last spring), so my chances are not great.
+
+# Day 4: Rucksack Reorganization
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/4                                             |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d04/04.go) |
+| **Part 1:**    | 00:03:46, 669th                                                                 |
+| **Part 2:**    | 00:13:17, 3984th                                                                |
+
+Today was the first time that I cracked the top 1000 with my solution. I was
+able to get 669th on the first part, before utterly collapsing on the second
+part.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+For part 1, the hardest part reading the input into a reasonable format. The
+fact that I'm using Go meant that I used `struct`s for storing the data rather
+than tuples as I would have in Python.
+
+```go
+type Section struct {
+	Start, End int
+}
+
+type Pair struct {
+	Section1, Section2 Section
+}
+
+type Day04 struct {
+	Pairs []Pair
+}
+```
+
+This data format allowed me to keep track of what I was dealing with fairly
+effectively and not make mistakes related to interpreting data incorrectly.
+
+Reading input in Go is much more difficult than reading input in Python.
+
+On the other hand, Go allows me to define functions on structs, and I was able
+to define a `contains` function on the `Section` struct which just determined if
+the given `Section` was contained within the first one.
+
+```go
+func (s Section) Contains(other Section) bool {
+	return s.Start <= other.Start && other.End <= s.End
+}
+```
+
+After that it was just a matter of incrementing the answer when one section
+contained the other.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+In the second part, I fell victim to incompetence (I forgot to save the test
+file that I had). I have a great test infrastructure, but it was useless because
+there was to test to run. Then I implemented the intersection functionality
+incorrectly in almost every way possible.
+
+I defined a function on the `Pair` to determine if the pair intersected or not.
+My first mistake was that I used `Min` for calculating the minimum start and
+ends of the segments which is not what you want. You want the *maximum* start
+time, and the *minimum* end time. Then if the start time is less than or equal
+to the end time, the there is an overlap.
+
+I then incorrectly dealt with segments that only overlapped on a single element.
+I was returning an integer (being the cardinality of the overlap, but I was off
+by one because the cardinality of a overlap that starts and ends at the same
+point is 1, not 0.)
+
+This last error could be easily avoided by just returning a boolean and not
+dealing with cardinality at all.
+
+My final function is as follows:
+
+```go
+func (s Section) Intersects(other Section) bool {
+	return lib.Max(s.Start, other.Start) <= lib.Min(s.End, other.End)
+}
+```
+
+</details>
+
+On the Mines leaderboard, I got 4th place on part 1, the best I've done so far.
+But happened with the global leaderboard, I fell on part 2 all the way down to
+13th place. At the top, Ryan (446) has pulled ahead of Kelly (443) for first
+place. Colin is tied with Kelly and Sam is in fourth with 407 points.
