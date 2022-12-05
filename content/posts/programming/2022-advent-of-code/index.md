@@ -47,6 +47,7 @@ The following are my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+  5   00:18:24  2321      0   00:26:01  3205      0
   4   00:03:46   669      0   00:13:17  3984      0
   3   00:11:02  3285      0   00:18:05  3187      0
   2   00:14:26  5517      0   00:19:30  4347      0
@@ -322,3 +323,71 @@ On the Mines leaderboard, I got 4th place on part 1, the best I've done so far.
 But happened with the global leaderboard, I fell on part 2 all the way down to
 13th place. At the top, Ryan (446) has pulled ahead of Kelly (443) for first
 place. Colin is tied with Kelly and Sam is in fourth with 407 points.
+
+# Day 5: Supply Stacks
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/5                                             |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d05/05.go) |
+| **Part 1:**    | 00:18:24, 2321th                                                                |
+| **Part 2:**    | 00:26:01, 3205th                                                                |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 5 | Go (2321*, 3205**)</summary>
+  {{< youtube id="rh2U3Tz5KI4" title="Advent of Code 2022 - Day 5 | Go (2321*, 3205**)" >}}
+</details>
+
+Today was an interesting problem with annoying parsing step which made me slow
+on Part 1. Then I fell into a trap with slices in Go on Part 2 that cost.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+The hardest part of the entire problem was parsing the input. The stacks at the
+top of the problem were really annoying to parse correctly. I know other people
+who just hard-coded them, and that probably would have been smarter than what I
+did, but then I'd have to figure out a way to differentiate between when I'm
+running the test and the actual input.
+
+I ended up using a regular expression to find what character (if any) was in the
+stacks at the given height.
+
+Then, reading in the moves was pretty easy because I was able to use my
+`lib.AllInts` function to extract the moves.
+
+After everything was parsed, I was able to implement the swapping logic fairly
+quickly. I made the nice decision to represent the stacks as lists with the
+first element being the top of the stack. It made the swapping code fairly
+convenient:
+
+```go
+move := []string{d.Stacks[m.From][0]}
+d.Stacks[m.From] = d.Stacks[m.From][1:]
+d.Stacks[m.To] = append(move, d.Stacks[m.To]...)
+```
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For part 2, I got caught by the fact that taking a slice of a list in Go doesn't
+make a copy of the elements. I think it's just a pointer with a length under the
+hood. This caused a big bug because I was mutating memory that I really did not
+intend to mutate.
+
+I finally realized this and just copied the data using `append` with the `...`
+operator on the slice. That actually copied the data and it worked first time
+after that.
+
+Overall, not too disappointed with that bug because it wasn't entirely obvious
+what Go does under the hood. Now I know (and have a utility function) so I hope
+I don't make that mistake again.
+
+</details>
+
+My 6\*, 6\*\* performance on the Mines leaderboard has me in 8th place
+currently. I'm hoping that there are some harder algorithmic questions later on
+so that I can pass up Jayden and Eugin and catch up with Sam and Keshav, but
+with how slowly I've been solving, that's still a pretty tall order.
