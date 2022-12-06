@@ -391,3 +391,58 @@ My 6\*, 6\*\* performance on the Mines leaderboard has me in 8th place
 currently. I'm hoping that there are some harder algorithmic questions later on
 so that I can pass up Jayden and Eugin and catch up with Sam and Keshav, but
 with how slowly I've been solving, that's still a pretty tall order.
+
+# Day 6: Tuning Trouble
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/6                                             |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d06/06.go) |
+| **Part 1:**    | 00:04:50, 1891th                                                                |
+| **Part 2:**    | 00:06:23, 2071th                                                                |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 6 | Go (1891*, 2071**)</summary>
+  {{< youtube id="9y2Y20w4MCw" title="Advent of Code 2022 - Day 6 | Go (1891*, 2071**)" >}}
+</details>
+
+Today was a sliding window problem. The challenge was to find the first sliding
+window of size \\(n\\) such that all of the characters in the window are unique.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+The hardest part was reading it into a reasonable data structure. I ended up
+going with `[]rune` instead of `string` because the ergonomics of treating a
+`string` like a list of characters is not great in Go.
+
+I ended up just throwing all of the characters in the window into a set and
+checking the size of the set. If it was 4 (the window size I was looking for), I
+would just return the current index.
+
+Managing the window was somewhat annoying, but my method of appending and
+removing from the end was reasonable, and worked well enough. It also had the
+nice properly of the index being on the last character of the window rather than
+the first.
+
+After solving, I realized that I could just use slices, and I refactored my code
+to do so. (I also added a sliding window slices function to my solving library.)
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+Part 2 was the same as part 1, except windows of size 14 instead of 4.
+
+I had a bug in the part 1 implementation where I was only iterating until
+`len(input) - n` where `n` was the size of the window I was looking for. This is
+incorrect because I was never doing anything that could go out of bounds. Thus,
+I had to just iterate to `len(input)` instead. If I had my sliding window
+function already, then I wouldn't have had this problem. That cost me quite a
+few places on the global rankings, but oh well.
+
+</details>
+
+My 8\*, 8\*\* performance on the Mines leaderboard has me up to 7th place
+currently.
