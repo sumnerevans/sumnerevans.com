@@ -8,7 +8,8 @@ communication, listed in order of how quickly you can expect to receive a
 response:
 
 * **Matrix:** [`@sumner:nevarro.space`](https://matrix.to/#/@sumner:nevarro.space)
-* **Email:** me [at] sumnerevans [dot] com
+* **Email:** me [at] sumnerevans [dot] com (for teaching-related correspondence,
+    please use this email: teaching [at] sumnerevans [dot] com)
 * **Social Media:** links to my social media profiles are listed in the footer.
 
 ## Security
