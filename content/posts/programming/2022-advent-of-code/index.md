@@ -26,8 +26,7 @@ this year, which will slow me down significantly.
 
 The reason for the switch is twofold:
 
-1. I've been using Go extensively at work, so I'm very comfortable writing it
-   now.
+1. I've been using Go extensively at work, so I'm comfortable writing it now.
 2. I want a statically typed language so that I can avoid the annoying type
    errors that have plagued my solves in the past.
 
@@ -47,6 +46,8 @@ The following are my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+  7   00:39:14  3323      0   00:45:19  2879      0
+  6   00:04:50  1891      0   00:06:23  2071      0
   5   00:18:24  2321      0   00:26:01  3205      0
   4   00:03:46   669      0   00:13:17  3984      0
   3   00:11:02  3285      0   00:18:05  3187      0
@@ -446,3 +447,79 @@ few places on the global rankings, but oh well.
 
 My 8\*, 8\*\* performance on the Mines leaderboard has me up to 7th place
 currently.
+
+# Day 7: No Space Left On Device
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/7                                             |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d07/07.go) |
+| **Part 1:**    | 00:39:14, 3323rd                                                                |
+| **Part 2:**    | 00:45:19, 2879th                                                                |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 7 | Go (3323*, 2879**)</summary>
+  {{< youtube id="3h8l9lqczbY" title="Advent of Code 2022 - Day 7 | Go (3323*, 2879**)" >}}
+</details>
+
+Today was much more challenging than I expected, but it seems like it was fairly
+challenging to most people considering I solved part 1 in just under 40 minutes,
+and still was sub 5000.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+At its core, the problem required keeping track of the size of directories and
+then doing some processing with that. The input was given as a sequence of `cd`
+and `ls` commands which showed the directory structure and the sizes of the
+files in each directory.
+
+The hardest part was choosing a data structure to keep track of the directory
+structure. It took me along while, but I eventually landed on a recursive data
+structure with an internal mapping of `name -> item` where `item` was either a
+file or another directory.
+
+My struct ended up needing a flag for whether it was a directory or not, which
+is slightly ugly, but I think it helped avoid some errors. I did wish for
+OCaml/Rust enum variants though...
+
+The next challenge was keeping track of the current path so that I could store
+the file size in the correct location in the data structure. I ended up storing
+the path as a list of strings, and then reconstructing the path when appending.
+When I refactored, I just passed the list to the add function rather than a
+string.
+
+I implemented the actual "add file" functionality using recursion which I think
+was a good decision.
+
+The next challenge was to find all of the sizes of all of the directories in the
+filesystem tree. I used a BFS to traverse the tree and for all of the
+directories, I checked if their size was less than the threshold.
+
+The main problem that I had during this part of the implementation was the fact
+that I implemented the `IsDir` flag incorrectly. I should have just used the
+presence of `Size > 0` as a proxy for the flag, but instead I spent precious
+minutes debugging why the flag was set incorrectly.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+Part 2 required finding the smallest directory which (if deleted) would cause
+the total used size to fall below a given threshold.
+
+I was able to solve this part pretty easily by modifying my iteration logic to
+result in a list of integers representing the sizes of the directories.
+
+The biggest challenge was that I overcomplicated the data structures (common
+pattern) and had to do a couple transformations that were quite annoying.
+
+</details>
+
+My 10\*, 10\*\* performance on the Mines leaderboard kept me stable at 7th
+place. I lost tons of points to Sam tonight. He had a 2\*, 2\*\* performance,
+which has put him at 727 points against my 696. Josh (697) and Keshav (719) also
+outrank me. At the top of the leaderboard, Kelly (796) is starting to pull away
+from Colin (787) and Ryan (783) who both had bad nights (4*, 7\*\*) and (6*,
+5\*\*), respectively.
