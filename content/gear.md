@@ -64,7 +64,7 @@ universe.
 
 - **Speakers:** [Audioengine A2+][audioengine-a2plus]
 
-- **Earbuds:** [AirPods Pro][airpods]
+- **Earbuds:** AirPods Pro
 
 - **Webcam:** [Logitech HD Pro Webcam C920][logitech]
 
