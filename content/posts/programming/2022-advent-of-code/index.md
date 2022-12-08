@@ -46,6 +46,7 @@ The following are my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+  8   00:08:11   556      0   00:33:16  2632      0
   7   00:39:14  3323      0   00:45:19  2879      0
   6   00:04:50  1891      0   00:06:23  2071      0
   5   00:18:24  2321      0   00:26:01  3205      0
@@ -523,3 +524,70 @@ which has put him at 727 points against my 696. Josh (697) and Keshav (719) also
 outrank me. At the top of the leaderboard, Kelly (796) is starting to pull away
 from Colin (787) and Ryan (783) who both had bad nights (4*, 7\*\*) and (6*,
 5\*\*), respectively.
+
+# Day 8: Treetop Tree House
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/8                                             |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d08/08.go) |
+| **Part 1:**    | 00:08:11, 556th                                                                 |
+| **Part 2:**    | 00:33:16, 2632nd                                                                |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 8 | Go (556*, 2632**)</summary>
+  {{< youtube id="cz8FD6jUW1A" title="Advent of Code 2022 - Day 8 | Go (556*, 2632**)" >}}
+</details>
+
+Today was an interesting nice grid problem. I did pretty well on part 1, and
+then choked really badly on part 2. I'm happy to have returned to top 1000 on
+part 1. I wish I could have kept the momentum up into part 2.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+For part 1, you are given a grid of trees of a certain height. The problem was
+to find the set of trees that are visible from the edges of the grid. Visibility
+is defined by the height of the tree being greater than any of the trees between
+itself and the edge in the four cardinal directions.
+
+I decided to implement my solution by iterating from all four sides of the grid
+and incrementing a counter whenever I encounter a taller tree. This method
+worked quite well, and I was able to implement it for rows very easily (iterate
+from the left and from the right keeping track of the current highest tree, and
+incrementing the answer and updating the highest tree if I encountered a higher
+tree).
+
+To account for the vertical directions in the grid, I was able to utilize my
+`lib.Columns` utility function which transposes a grid. Then I was able to
+copy-paste my code for rows but use the transposed grid instead.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+On part 2, I totally collapsed. The challenge was to find the tree which had the
+longest product of sight-lines in the four cardinal directions.
+
+My first implementation of calculating sight lines in the four directions for a
+given tree was just flat out incorrect. Instead of incrementing the sight line
+length before checking if the tree is tall enough to block the sight line, I was
+incrementing after checking if the tree was too tall.
+
+I ended up declaring bankruptcy on that first implementation, and then I finally
+implemented it correctly.
+
+I think it was a good decision to declare bankruptcy and rewrite. I could have
+wasted a lot of time if I had continued trying to debug my first implementation.
+
+</details>
+
+I podiumed on the Mines leaderboard for the first time today on part 1 before
+collapsing on part 2. Sam beat me by literally a second on part 1 (ahhhhh!) so I
+ended up with a 2*, 7** finish.
+
+I (805) have now jumped over Eugin (803) for 6th place, and I'm 10 points behind
+Keshav (815). Sam's 1\*, 1\*\* performance puts him at 843, which is probably
+going to be enough to secure him 4th place, and puts him in possible contention
+for 3rd.
