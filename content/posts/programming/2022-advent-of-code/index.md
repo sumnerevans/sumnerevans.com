@@ -46,6 +46,7 @@ The following are my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+  9   00:27:34  3536      0   00:36:51  2009      0
   8   00:08:11   556      0   00:33:16  2632      0
   7   00:39:14  3323      0   00:45:19  2879      0
   6   00:04:50  1891      0   00:06:23  2071      0
@@ -585,9 +586,83 @@ wasted a lot of time if I had continued trying to debug my first implementation.
 
 I podiumed on the Mines leaderboard for the first time today on part 1 before
 collapsing on part 2. Sam beat me by literally a second on part 1 (ahhhhh!) so I
-ended up with a 2*, 7** finish.
+ended up with a 2\*, 7\*\* finish.
 
 I (805) have now jumped over Eugin (803) for 6th place, and I'm 10 points behind
 Keshav (815). Sam's 1\*, 1\*\* performance puts him at 843, which is probably
 going to be enough to secure him 4th place, and puts him in possible contention
 for 3rd.
+
+# Day 9: Rope Bridge
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/9                                             |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d09/09.go) |
+| **Part 1:**    | 00:27:34, 3536th                                                                |
+| **Part 2:**    | 00:36:51, 2009th                                                                |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 9 | Go (3536*, 2009**)</summary>
+  {{< youtube id="_tIfYJZ3Vjk" title="Advent of Code 2022 - Day 9 | Go (3536*, 2009**)" >}}
+</details>
+
+Today I fell victim to another tooling problem. I'm not sure how much it cost
+me, but it was pretty bad, and I'm never going to use `gotestfmt` for Advent of
+Code again.
+
+I think I did a decent job recovering on part 2, which I'm happy about.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+Part 1, the challenge was to simulate a rope where the head of the rope and the
+tail of the rope follow some certain properties. Namely, they always stay
+connected to one another by at most a distance of one in all 8 grid directions.
+
+The rules are simple when moving horizontally and vertically. But moving
+diagonally is where things get interesting. If the head is more than 1 away from
+the tail in a diagonal direction, you move the tail towards the head along the
+appropriate diagonal (it depends on which quadrant the head is in relative to
+the tail).
+
+I had so many bugs, and I couldn't figure out diagonals to save my life. I had
+to write in a notebook to figure out how to deal with the diagonals.
+
+But, the worst part was that during my debugging, I added a ton of print
+statements. This bit me because `gotestfmt` doesn't output anything until all of
+the tests have run. That meant that I couldn't see the any output until all of
+those prints were buffered to the console. I think I had the correct answer for
+a little while, but I didn't know it because `gotestfmt` was so slow because of
+all of the program output.
+
+My automatic submission code worked well, though, so that's at least good.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+On part 2, I was able to adapt my code pretty quickly. Basically, the rope
+becomes 10 segments long (instead of the 2 in part 1). You move the head the
+same as in part 1, but then perform the "follow the leader" logic with every
+element in the rope.
+
+After solving, I made my code generic so that it can handle arbitrary-length
+ropes. A small consolation for the disaster which was part 1 and `gotestfmt`.
+
+</details>
+
+Overall, I liked the problem, despite doing horribly. It was an interesting
+state machine.
+
+On the Mines leaderboard, I got 8\*, 5\*\* which is honestly better than I
+thought I would do considering how horribly slow I was. I'm now at 5th place
+with 910 points, but I'm now pretty well out of striking distance of Sam in 4th
+place at 953. The top three people have now passed the 1000 point mark (Kelly
+1017, Colin 1007, Ryan 1006).
+
+I added an additional 5 points between myself and 6th place (Eugin, 903) but I'm
+definitely not out of the woods, yet because Josh (897) and Jayden (884) are
+both within striking distance. (Jayden would be beating me if it weren't for a
+couple days that he didn't solve as soon as the problem came out.)
