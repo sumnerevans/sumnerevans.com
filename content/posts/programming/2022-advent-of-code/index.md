@@ -657,12 +657,12 @@ Overall, I liked the problem, despite doing horribly. It was an interesting
 state machine.
 
 On the Mines leaderboard, I got 8\*, 5\*\* which is honestly better than I
-thought I would do considering how horribly slow I was. I'm now at 5th place
-with 910 points, but I'm now pretty well out of striking distance of Sam in 4th
-place at 953. The top three people have now passed the 1000 point mark (Kelly
-1017, Colin 1007, Ryan 1006).
+thought I would do considering how horribly slow I was. I'm now at 6th place
+with 910 points, but I gained 4 points on Keshav (916). Sam (953) is pretty much
+out of striking distance in 4th place. The top three people have now passed the
+1000 point mark (Kelly 1017, Colin 1007, Ryan 1006).
 
-I added an additional 5 points between myself and 6th place (Eugin, 903) but I'm
+I added an additional 5 points between myself and 7th place (Eugin, 903) but I'm
 definitely not out of the woods, yet because Josh (897) and Jayden (884) are
 both within striking distance. (Jayden would be beating me if it weren't for a
 couple days that he didn't solve as soon as the problem came out.)
