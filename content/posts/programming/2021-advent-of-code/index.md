@@ -3,6 +3,7 @@ title: "Advent of Code 2021"
 date: 2021-12-01T09:00:00-06:00
 categories: [Programming]
 tags: [Advent of Code, python, competition]
+image: ./map.png
 ---
 
 Every year since 2015, [Eric Wastl][1] creates a two-part programming problem
@@ -26,7 +27,10 @@ School of Mines CS department with a bunch of Mines students and alum.
 # Summary of Results
 
 I managed to solve all of the problems this year, for a total of 50 stars. This
-is the second year in a row that I've completed all of the problems.
+is the second year in a row that I've completed all of the problems. Here's what
+the map looks like:
+
+![Advent of Code map](./map.png "I like how the map always relates to the story.")
 
 The following is my results across all of the days.
 
