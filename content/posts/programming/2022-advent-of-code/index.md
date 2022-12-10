@@ -666,3 +666,88 @@ I added an additional 5 points between myself and 7th place (Eugin, 903) but I'm
 definitely not out of the woods, yet because Josh (897) and Jayden (884) are
 both within striking distance. (Jayden would be beating me if it weren't for a
 couple days that he didn't solve as soon as the problem came out.)
+
+# Day 10: Cathode-Ray Tube
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/10                                            |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d10/10.go) |
+| **Part 1:**    | 00:21:27, 4404th                                                                |
+| **Part 2:**    | 00:45:18, 4534th                                                                |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 10 | Go (4404*, 4534**)</summary>
+  {{< youtube id="zJx5O6Mkca8" title="Advent of Code 2022 - Day 10 | Go (4404*, 4534**)" >}}
+</details>
+
+Today was a fun problem which I did somewhat horribly on due to failure to read
+the instructions, and assuming that things were much more complicated than they
+really were.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+For the problem, you are asked to simulate a very simple CPU given some set of
+instructions. The instructions are either `noop` (which means do nothing) or
+`addx` which means add something to the `x` register (the only register in the
+CPU).
+
+That would be fine to simulate, except `noop` takes one clock cycle, while
+`addx` takes two. Implementing the timing correctly took the vast majority of my
+time.
+
+My first misunderstanding was that I didn't realize that I had to stall the CPU
+for the add operation to happen. I know that it's described in the test case
+prose, but I didn't read that, obviously. I thought that I was supposed to
+simulate some sort of variable-length pipeline CPU that allows for concurrent
+instructions.
+
+After realizing that I was stupid and that wasn't what I was supposed to do, I
+separated the program counter from the CPU clock. Then the next challenge was to
+make sure to check the value of the `X` register in all of the correct places.
+(Part 1 requires that you check the value of `X` on the 20th, 60th, 100th,
+140th, 180th, and 220th cycles.)
+
+I had multiple issues while doing this. The first was that I didn't copy down
+the checking code to everywhere that I was incrementing the clock. Then, I was
+checking every time that the index was equal to a multiple of 20, so I had to
+skip every other multiple of 20 starting with 40 using modulo tricks.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+On part 2, the `X` value now becomes a 3-wide "cursor". If the clock cycle
+equals the cursor position modulo 40, then it writes a `#` to the screen.
+
+The modulo 40 thing is very important, and I totally missed it for a long time.
+
+Another thing that I missed was that the clock starts at 0, not 1 for part 2.
+
+But the stupidest thing that I did the entire night was that I didn't copy my
+cursor-checking code correctly to every place that I incremented the clock. Even
+though that was literally one of my biggest mistakes on part 1, I managed to
+follow up and make the exact same mistake on part 2.
+
+My test infrastructure also was really not designed for strings, so I had a bear
+of a time dealing with that. But, I don't think it was the fundamental reason
+why I was so slow. I'm probably not going to make any modifications to it before
+tomorrow and just hope that it's a problem that outputs a number next time.
+
+</details>
+
+I think this was my favorite problem so far. My test infrastructure is totally
+not geared towards these types of questions, but they don't come up that often,
+so I think that I should be able to get away with not fixing it that much.
+
+On the Mines leaderboard, I got 10\*, 7\*\*. I'm solidly in 6th place with 1031
+points. I'm only 4 points back from Keshav (1035), while Sam (1085) extended his
+lead over us with a 4\*, 2\*\* performance. Meanwhile, Eugin (1023), Jayden
+(1011), and Josh (1010) are all within striking distance if I continue to do
+this poorly. Jayden gained 6 points on me on the night with a 6\*, 5\*\*
+performance, so he is definitely going to keep me on my toes down the stretch!
+
+At the top of the leaderboard, Colin (1139) and Ryan (1140) swapped places,
+while Kelly is 11 points clear at 1151.
