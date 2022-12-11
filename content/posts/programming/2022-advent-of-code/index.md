@@ -46,6 +46,8 @@ The following are my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+ 11   00:23:51   910      0   01:25:59  4261      0
+ 10   00:21:27  4404      0   00:45:18  4534      0
   9   00:27:34  3536      0   00:36:51  2009      0
   8   00:08:11   556      0   00:33:16  2632      0
   7   00:39:14  3323      0   00:45:19  2879      0
@@ -751,3 +753,110 @@ performance, so he is definitely going to keep me on my toes down the stretch!
 
 At the top of the leaderboard, Colin (1139) and Ryan (1140) swapped places,
 while Kelly is 11 points clear at 1151.
+
+# Day 11: Cathode-Ray Tube
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/11                                            |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d11/11.go) |
+| **Part 1:**    | 00:23:51, 910th                                                                 |
+| **Part 2:**    | 01:25:59, 4261th                                                                |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 11 | Go (910*, 4261**)</summary>
+  {{< youtube id="fIsPQWdyooM" title="Advent of Code 2022 - Day 11 | Go (910*, 4261**)" >}}
+</details>
+
+I managed to not suck at part 1, but then Advent of Number Theory began on part
+2 and I had another classic part 2 collapse.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+The core of the problem was keeping track of how many times a given set of
+object was passed around between "monkeys". For part 1, it was enough to just
+simulate the passing of the objects because the "worry level" (think size) of
+the objects was restricted by a convenient divisor operation.
+
+Overall, I felt pretty smooth with my implementation. I was a bit slow on the
+parsing part, but honestly, I'm not disappointed at all. It set me up really
+well for actually implementing the simulation.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+Part 2 is where things went horribly wrong. Instead of doing 20 iterations, you
+have to do 10000. At first, I thought that I could probably just solve it with
+arbitrarily sized integers, so I started converting my code to use `big.Int`. My
+Twitch chat steered me away from that, but I wasted a lot of time wandering
+around the wilderness trying to think of a more intelligent solution.
+
+Eventually, I started writing down the loops that the "worry level" for each
+object went through. I realized that there had to be some periodicity to their
+movement between the monkeys.
+
+Then, after another eternity, I realized that really all that mattered was the
+factors of each worry level, and specifically, whether they had any of the
+factors that could be tested at any point.
+
+The final revelation that I had (after another hard think) was that I could,
+store each of the worry levels as just the number modulo all of the possible
+test numbers.
+
+So, for example, the worry level `54` could be represented as just:
+
+```
+Mod 3: 54 % 3 = 0
+Mod 5: 54 % 5 = 4
+Mod 7: 54 % 7 = 5
+...
+```
+
+Then, whenever an operation is performed, I just could do the
+operation on each of the numbers under their appropriate modulus.
+
+So, if the operation was `+ 3`, I could just perform the operations the
+representation for the worry level would become:
+
+```
+Mod 3: (0 + 3) % 3 = 0
+Mod 5: (4 + 3) % 5 = 2
+Mod 7: (6 + 3) % 7 = 2
+...
+```
+
+Then, whenever I needed to do a check on a number, I could just check if the
+corresponding mod number was 0.
+
+I thought I was petty clever, but then after solving, I was informed in the
+Twitch chat by Eric Wastl that all I had to do was mod by the product of all of
+the test numbers after every operation (because all of the test numbers are
+prime), and then I wouldn't have to keep track of the number modulo each of the
+different possible test numbers.
+
+During my cleanup, I went ahead and implemented that solution, and man, it was
+so trivial to make the modification. I guess I should have paid attention during
+Discrete Math class...
+
+</details>
+
+I really enjoyed part 1. I think mainly because I was able to software engineer
+my way to victory on it. But then on part 2, I went on a pointless side-quest
+into trying to `big.Int` my way to victory and then I totally couldn't remember
+that any of the convenient properties of modulus existed.
+
+On the Mines leaderboard, my performance mirrored my performance globally. I got
+4\*, 10\*\*, loosing on part 2 to literally everyone who was solving night-of.
+That puts me at 1137 points total.
+
+I did manage to hop into 5th place because Keshav (1136) went 10\*, 9\*\* and I
+my part 1 performance fended off advances from Eugin (1131, 7\*, 5\*\*), Josh
+(1116, 6*, 8\*\*), and Jayden (1116, 8*, 7\*\*).
+
+Kelly (1268, 2*, 1\*\*) continues to defend his top position with Ryan (1254,
+3*, 3**) and Colin (1252, 5\*, 2**) clustered in a tight race for second place.
+Sam (1200, 1\*, 4\*\*) continues to distance himself from 5th place, but is all
+but out of contention for the top 3 places.

@@ -103,3 +103,5 @@ sorts about it.
 >}}
 
 ---------
+
+The next stop was Arromanches. It's a town near Gold Beach.
