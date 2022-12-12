@@ -46,6 +46,7 @@ The following are my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+ 12   01:24:19  5663      0   01:28:11  5221      0
  11   00:23:51   910      0   01:25:59  4261      0
  10   00:21:27  4404      0   00:45:18  4534      0
   9   00:27:34  3536      0   00:36:51  2009      0
@@ -860,3 +861,87 @@ Kelly (1268, 2*, 1\*\*) continues to defend his top position with Ryan (1254,
 3*, 3**) and Colin (1252, 5\*, 2**) clustered in a tight race for second place.
 Sam (1200, 1\*, 4\*\*) continues to distance himself from 5th place, but is all
 but out of contention for the top 3 places.
+
+# Day 12: Hill Climbing Algorithm
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/12                                            |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d12/12.go) |
+| **Part 1:**    | 01:24:19, 5663rd                                                                |
+| **Part 2:**    | 01:28:11, 5221st                                                                |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 12 | Go (5663*, 5221**)</summary>
+  {{< youtube id="5efwUmVPtzA" title="Advent of Code 2022 - Day 12 | Go (5663*, 5221**)" >}}
+</details>
+
+Well, tonight went very badly due to poor tooling, and bad reading
+comprehension (are you seeing a trend here?). The time spent fixing my library
+is not wasted. I assume there will be at least one more graph problem at some
+point this year, so I should be ready for that now.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+Part 1 requires a simple BFS to find a path through a grid of letters with some
+certain rules. Importantly, from a given node, you can only go to the four
+compass-adjacent cell, and only if the value of the adjacent cell is either
+**less than your current cell**, or one later in the alphabet. That "less than
+your current cell" part was important, and I didn't read it at all, causing me
+to loose quite a bit of time.
+
+However, even if I had read it correctly, it wouldn't have been able to rescue
+me from the horrifyingly bad time I had using a priority queue. You might be
+wondering, why was he using a priority queue for BFS? Well, I was trying to use
+the more general Dijkstra's to solve the problem (and I figure I'll need a true
+Dijkstra implementation at some point, so I decided to bite the bullet and
+implement it). I was also in the middle of implementing Dijkstra's algorithm
+before the problem was released because I knew that I would need it eventually,
+but I hadn't finished yet.
+
+I was about half way through implementing the basics of the algorithm before the
+competition started, but it was definitely not ready yet, and I had to finish
+implementing during my solve. While the core of my Dijkstra's implementation was
+probably half way written by the time the problem released, my priority queue
+implementation was very much not complete. I'd looked up the documentation on
+the `heap` standard library, but I didn't really understand how to hold it, so I
+ended up shooting myself in the foot multiple times by not understanding how it
+worked.
+
+Eventually I figured out how to use it (it was some of the ugliest hacks that
+I'd ever done to get it to work), and then I proceeded to shoot myself in the
+foot again with utter incompetence with dealing with grid coordinates (I was
+using my `lib.Point` utility struct, but that uses \((X, Y)\) not \(R, C\)
+coordinates, so I got very confused). Then after that I continued to shoot
+myself in the foot with the aforementioned "less than your current cell" reading
+comprehension error. I spent about 10 minutes before I realized my reading
+mistake.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For part 2, I was able to reuse most of my code, except I just modelled it as
+having a single starting node that had zero-cost edges to all of the `a` nodes
+in the grid. That allowed me to really easily find the optimal path from any `a`
+to the `E` node.
+
+</details>
+
+I'm definitely writing this one off as mainly tooling problems. I should be much
+faster on graph searching problems in the future.
+
+On the Mines leaderboard, I lost to literally everyone who was solving night-of,
+resulting in a 10\*, 10\*\* score. I now have 1237 points, and I am all the way
+down to 7th place. Keshav (1247) gained 11 points on me with a 4\*, 5\*\* night
+and Eugin (1239) passed me with a 6\*, 6\*\* result as well. Jayden (1222, 7\*,
+7\*\*) also gained points on me tonight, and is really getting too close for
+comfort.
+
+At the top of the table, Kelly (1386, 1\*, 1\*\*) solved parts 1 and 2 at 8:54
+and 10:05, respectively He is now a full 20 points clear of Colin (1366, 3\*,
+3\*\*) due to Sam (1316, 2\*, 2\*\*) sliding in to steal a couple more points
+from Colin. However, Colin did manage to regain second place from Ryan (1358)
+who had a 8\*, 8\*\* showing tonight.
