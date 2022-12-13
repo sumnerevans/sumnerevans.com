@@ -46,6 +46,7 @@ The following are my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+ 13   00:19:23   880      0   00:30:52  1238      0
  12   01:24:19  5663      0   01:28:11  5221      0
  11   00:23:51   910      0   01:25:59  4261      0
  10   00:21:27  4404      0   00:45:18  4534      0
@@ -945,3 +946,81 @@ and 10:05, respectively He is now a full 20 points clear of Colin (1366, 3\*,
 3\*\*) due to Sam (1316, 2\*, 2\*\*) sliding in to steal a couple more points
 from Colin. However, Colin did manage to regain second place from Ryan (1358)
 who had a 8\*, 8\*\* showing tonight.
+
+# Day 13: Distress Signal
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/13                                            |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d13/13.go) |
+| **Part 1:**    | 00:19:23, 880th                                                                 |
+| **Part 2:**    | 00:30:52, 1238th                                                                |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 13 | Go (880*, 1238**)</summary>
+  {{< youtube id="5efwUmVPtzA" title="Advent of Code 2022 - Day 13 | Go (880*, 1238**)" >}}
+</details>
+
+Tonight was Advent of Sorting and Advent of Recursion. I did pretty well,
+returning once again to top 1000 on part 1, and unlike the previous times I got
+top 1000 on part 1, I managed to not totally collapse on part 2.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+This problem required parsing a bunch of lists where the elements were either
+integers, or a recursive list of the same type. I chose to use Go's built-in
+`json` library to parse the input. This worked out reasonably well, but I had to
+parse into `[]any` instead of anything more strongly typed because Go doesn't
+have type variants. This caused some pain when working with the objects because
+I had to do type checks (effectively having to use duck typing) everywhere.
+
+Other than that, parsing went well. My `lib.ParseGroups` function worked great
+(I'd added it after Day 1's disaster).
+
+I was proud of myself for choosing to create a recursive `Cmp` function to
+compare arbitrary objects. Although it was quite annoying to implement with all
+of the type unwrapping, I think I implemented it fairly cleanly. I did have a
+bit of trouble deciding what to output from the function. I tried just using a
+boolean at first, but I ended up returning an integer representing whether the
+LHS is less than, equal to, or greater than the RHS.
+
+I did have a couple of bugs (mainly logic bugs), and then one bad typo (I wrote
+`1` instead of `-1` somewhere). Those possibly cost me a spot on the Mines
+leaderboard.
+
+Once the comparison function was written, it was fairly trivial to just run it
+for each pair of lists.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For part 2, I was very lucky to have the `Cmp` function because you had to take
+all of the lists from the input (rather than just each of the pairs) and sort
+them. The `sort.Slice` function came in handy for this (it seems to have been
+easier for me to use than my friends who were using Python, because they had to
+use `cmp_to_key` or similar).
+
+After sorting, you have to go through the list and find the index of some
+particular special lists. Unfortunately, the code that I had to write to check
+for those lists was quite ugly due to all of the duck typing that I had to do. I
+also made the mistake of not properly checking the length of the lists in
+question, so I ended up with two incorrect answers. My test infrastructure
+helped mitigate the damage to only a couple minutes.
+
+</details>
+
+On the Mines leaderboard, I clawed back to 6th place with a 4\*, 4\*\* night
+putting me at 1349 points. I hopped over Eugin (1341, 9\*, 9\*\*) and pulled to
+within three of Keshav (1352, 7\*, 8\*\*).
+
+The top 3 places on both parts were taken by Kelly (1504), Colin (1482), and Sam
+(1430), in that order on each part. I managed to beat out Ryan (1468, 5\*,
+5\*\*) and then Josh slid in a solve on part 1 before Keshav and then both Josh
+(1322, 6*, 6\*\*) and Jayden (1327, 8*, 7\*\*) solved part 2 before Keshav as
+well. The fact that they are solving night-of this late into the competition
+really is helping me down the stretch to have a chance to make up point
+differentials in the tight grouping of everyone from 5th place to 9th place who
+are all in the 30 point span from 1322 to 1352 after tonight.
