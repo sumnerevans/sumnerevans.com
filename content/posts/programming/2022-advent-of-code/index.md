@@ -46,6 +46,7 @@ The following are my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+ 14   00:17:06   420      0   00:30:12  1123      0
  13   00:19:23   880      0   00:30:52  1238      0
  12   01:24:19  5663      0   01:28:11  5221      0
  11   00:23:51   910      0   01:25:59  4261      0
@@ -1024,3 +1025,75 @@ well. The fact that they are solving night-of this late into the competition
 really is helping me down the stretch to have a chance to make up point
 differentials in the tight grouping of everyone from 5th place to 9th place who
 are all in the 30 point span from 1322 to 1352 after tonight.
+
+# Day 14: Regolith Reservoir
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/14                                            |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d14/14.go) |
+| **Part 1:**    | 00:17:06, 420th                                                                 |
+| **Part 2:**    | 00:30:12, 1123rd                                                                |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 14 | Go (420*, 1123**)</summary>
+  {{< youtube id="l9TXHuwisdc" title="Advent of Code 2022 - Day 14 | Go (420*, 1123**)" >}}
+</details>
+
+Today was a nice little simulation problem. I did fairly well on part 1, though
+parsing was quite annoying in Go. I was pretty smooth with the implementation on
+that part which saved me.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+For this problem, you are given the location of some rocks, and you have to
+simulate sand falling down through the rocks, one grain at a time.
+
+Parsing the location of the rocks was fairly nontrivial and quite annoying. Once
+parsed, the problem is just a simple simulation. You can simulate the grains
+falling down one by one stacking on each other using the rules provided in the
+instructions.
+
+For part 1, you need to know when the sand would start falling off the edge of
+the given set of rocks. This can be accomplished by checking if the \(y\) value
+has exceeded the
+furthest down rock.
+
+The thing that tripped me up the most was not `break`ing in the correct place
+and so I got into an infinite loop. Luckily I was able to fix that fairly
+quickly.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For part 2, the problem changes: you get an infinite floor at two below the
+lowest rock provided in the input. Then, you have to determine when the sand
+would stack up to the starting point.
+
+I screwed this up a bit 
+with an incorrect condition check negation. I was checking to see if the start
+point was *not* covered in sand, rather than checking that it *was* covered.
+
+That cost me quite a bit of time, but I also had an issue with indices (I was
+using the `lib.Point` struct which is `(x, y)` rather than `(r, c)` and I
+switched them around on accident during my debugging.)
+
+I dropped a lot of positions due to these errors, but I wouldn't classify this
+as a collapse like some of the previous days.
+
+I have yet to find that elusive part 2 sub-1000 day. I have come close the last
+couple nights off of good part 1 performances, but I didn't quite adapt quick
+enough.
+
+</details>
+
+On the Mines leaderboard, I managed a podium spot at 3rd place on part 1 before
+falling to 5th on part 2. I think that should bump me up to 5th places because
+(as of writing this), Keshav has not solved, and there have been a few people
+who have solved between us.
+
+Kelly (1622, 1\*, 1\*\*), Colin (1598, 2\*, 2\*\*), Ryan (1579, 5\*, 4\*\*), and
+Sam (1543, 4\*, 3\*\*) continue to occupy the top four positions.
