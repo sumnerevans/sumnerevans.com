@@ -1660,7 +1660,7 @@ take it.
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 21 | Python (352*, 144**)</summary>
-  {{< youtube id="tXm7Dsv3EM8" title="Advent of Code 2021 - Day 21 | Python (352*, 144**)" >}}
+  {{< youtube id="tyAlJNO5Pbc" title="Advent of Code 2021 - Day 21 | Python (352*, 144**)" >}}
 </details>
 
 I'm very happy about how today went. It was a nice simulation for part 1, and
