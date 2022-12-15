@@ -46,6 +46,7 @@ The following are my results across all of the days.
 ```
       -------Part 1--------   -------Part 2--------
 Day       Time  Rank  Score       Time  Rank  Score
+ 15   00:25:44  1097      0   01:24:58  2171      0
  14   00:17:06   420      0   00:30:12  1123      0
  13   00:19:23   880      0   00:30:52  1238      0
  12   01:24:19  5663      0   01:28:11  5221      0
@@ -1097,3 +1098,83 @@ who have solved between us.
 
 Kelly (1622, 1\*, 1\*\*), Colin (1598, 2\*, 2\*\*), Ryan (1579, 5\*, 4\*\*), and
 Sam (1543, 4\*, 3\*\*) continue to occupy the top four positions.
+
+# Day 15: Beacon Exclusion Zone
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/15                                            |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d15/15.go) |
+| **Part 1:**    | 00:25:44, 1097th                                                                |
+| **Part 2:**    | 01:27:58, 2171st                                                                |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 15 | Go (1097*, 2171**)</summary>
+  {{< youtube id="bS4JgC753yw" title="Advent of Code 2022 - Day 15 | Go (1097*, 2171**)" >}}
+</details>
+
+Today was hard. My delta time was horrible on Part 2 primarily because I
+couldn't figure out the necessary optimizations to make it work. (Then a couple
+bugs further exacerbated my problems.)
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+For this problem, you are given a set of pairs of sensors and their nearest
+beacon. You are guaranteed to know the nearest beacon to each sensor and that
+there are never two beacons that are equidistant from a sensor.
+
+Given that information, you know that there can be no other sensor within that
+"radius" of the sensor. The shape is really a diamond because the distances are
+measured in Manhattan distances. This area is called the sensor's **exclusion
+zone**.
+
+For part 1, the challenge is to figure out where on a particular line (10 for
+the sample, and 2000000 for the actual input) there definitely could not be a
+beacon.
+
+To do this, I iterated through all of the sensors, and calculated how much of
+the line would be covered up by the sensors exclusion zone. I did this using the
+fact that the amount of squares covered by the exclusion zone reduces by two for
+every step away from the sensor (reducing by one on either side).
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For part 2, you have to find the single square in a 4 million by 4 million
+square that is not covered by one of the beacon's exclusion zone.
+
+I started by implementing the brute force \(\mathcal{O}(n^2)\) solution, but for
+obvious reasons, that didn't cut it.
+
+Eventually, I realized that I would need to do something more intelligent. I
+first realized that all I cared about were the actual segments that are covered
+by each diamond.
+
+Next I realized that if I sorted said segments by their leftmost point, I could
+iterate through them, keeping track of the rightmost point that was covered by a
+previous interval. If there was ever a situation where the current interval in
+question did not touch a previous interval, then there would be no interval that
+covered that point, making it the point that I was looking for.
+
+I was pretty happy with figuring it out, because it was a fun algorithmic
+problem. I was a bit disappointed at how long it took me to figure out the
+proper algorithmic optimization, but on the other hand, I'm glad that we are to
+the point in the year where using Go really isn't going to slow me down. The
+main thing slowing me down today was not knowing how to optimize, not that I was
+slow at implementing.
+
+</details>
+
+On the Mines leaderboard, I had a decent 4\*, 5\*\* day maintaining my 5th place
+position.
+
+Colin (1715) moved a few points closer to Kelly today with a 1\*, 2\*\*
+performance as Kelly (1736, 3\*, 3\*\*) dropped points to Ryan (1693, 2\*,
+4\*\*) on part 1, and Sam (1657, 5\*, 1\*\*) on part 2.
+
+Sam's comeback on part 2 was quite impressive. His 15:04 delta time was nearly
+half of the next lowest (Colin at 29:32). He's very good at these geometric
+problems.
