@@ -44,23 +44,26 @@ in a row.
 The following are my results across all of the days.
 
 ```
-      -------Part 1--------   -------Part 2--------
-Day       Time  Rank  Score       Time  Rank  Score
- 15   00:25:44  1097      0   01:24:58  2171      0
- 14   00:17:06   420      0   00:30:12  1123      0
- 13   00:19:23   880      0   00:30:52  1238      0
- 12   01:24:19  5663      0   01:28:11  5221      0
- 11   00:23:51   910      0   01:25:59  4261      0
- 10   00:21:27  4404      0   00:45:18  4534      0
-  9   00:27:34  3536      0   00:36:51  2009      0
-  8   00:08:11   556      0   00:33:16  2632      0
-  7   00:39:14  3323      0   00:45:19  2879      0
-  6   00:04:50  1891      0   00:06:23  2071      0
-  5   00:18:24  2321      0   00:26:01  3205      0
-  4   00:03:46   669      0   00:13:17  3984      0
-  3   00:11:02  3285      0   00:18:05  3187      0
-  2   00:14:26  5517      0   00:19:30  4347      0
-  1   00:03:27  1461      0   00:08:04  2857      0
+      --------Part 1--------   -------Part 2--------
+Day       Time   Rank  Score       Time  Rank  Score
+ 18   00:13:20   1777      0   01:55:16  3193      0
+ 17   01:20:55   2050      0       >24h  9670      0
+ 16   18:26:29  12682      0          -     -      -
+ 15   00:25:44   1097      0   01:24:58  2171      0
+ 14   00:17:06    420      0   00:30:12  1123      0
+ 13   00:19:23    880      0   00:30:52  1238      0
+ 12   01:24:19   5663      0   01:28:11  5221      0
+ 11   00:23:51    910      0   01:25:59  4261      0
+ 10   00:21:27   4404      0   00:45:18  4534      0
+  9   00:27:34   3536      0   00:36:51  2009      0
+  8   00:08:11    556      0   00:33:16  2632      0
+  7   00:39:14   3323      0   00:45:19  2879      0
+  6   00:04:50   1891      0   00:06:23  2071      0
+  5   00:18:24   2321      0   00:26:01  3205      0
+  4   00:03:46    669      0   00:13:17  3984      0
+  3   00:11:02   3285      0   00:18:05  3187      0
+  2   00:14:26   5517      0   00:19:30  4347      0
+  1   00:03:27   1461      0   00:08:04  2857      0
 ```
 
 # Day 1: Calorie Counting
@@ -111,8 +114,8 @@ be generic over all integer types.
 </details>
 
 I put myself into a pretty big hole on the Mines leaderboard from today with an
-8\*, 10\*\* performance. I think that's just going to be expected given I'm using
-Go now.
+8\*, 10\*\* performance for 101 points. I think that's just going to be expected
+given I'm using Go now.
 
 # Day 2: Rock Paper Scissors
 
@@ -170,11 +173,11 @@ Overall, the problem was just annoying to implement, and I'm hoping for
 something more algorithmic tomorrow.
 
 I continue to dig myself into a pretty big hole on the Mines leaderboard with an
-15\*, 13\*\* performance. I think that I'm already about to write this year off
-as a rebuilding year (doing this in Go, and all). I'm hoping that the static
-typing of Go will give me a boost later on in the competition. Unfortunately, by
-then I assume that many fewer people will be competing so I'll have no chance to
-catch up.
+15\*, 13\*\* performance bringing me up to 191 points. I think that I'm already
+about to write this year off as a rebuilding year (doing this in Go, and all).
+I'm hoping that the static typing of Go will give me a boost later on in the
+competition. Unfortunately, by then I assume that many fewer people will be
+competing so I'll have no chance to catch up.
 
 # Day 3: Rucksack Reorganization
 
@@ -232,10 +235,10 @@ trivial.
 I definitely enjoyed this problem more than last nights problem as there were
 not as many annoying implementation details that were difficult to deal with.
 
-I continue to perform very poorly on the Mines leaderboard (8\*, 8\*\*). I'm
-just hoping that I can medal at some point this year. There's a lot more people
-competing this year who are good (some of whom were in the Algorithms class I
-taught last spring), so my chances are not great.
+I continue to perform very poorly on the Mines leaderboard (295, 8\*, 8\*\*).
+I'm just hoping that I can medal at some point this year. There's a lot more
+people competing this year who are good (some of whom were in the Algorithms
+class I taught last spring), so my chances are not great.
 
 # Day 4: Rucksack Reorganization
 
@@ -328,10 +331,11 @@ func (s Section) Intersects(other Section) bool {
 
 </details>
 
-On the Mines leaderboard, I got 4th place on part 1, the best I've done so far.
-But happened with the global leaderboard, I fell on part 2 all the way down to
-13th place. At the top, Ryan (446) has pulled ahead of Kelly (443) for first
-place. Colin is tied with Kelly and Sam is in fourth with 407 points.
+On the Mines leaderboard, I got 4th place on part 1 and I'm on 398 points, the
+best I've done so far. But similar to what happened with the global leaderboard,
+I fell on part 2 all the way down to 13th place. At the top, Ryan (446) has
+pulled ahead of Kelly (443) for first place. Colin is tied with Kelly and Sam is
+in fourth with 407 points.
 
 # Day 5: Supply Stacks
 
@@ -396,10 +400,10 @@ I don't make that mistake again.
 
 </details>
 
-My 6\*, 6\*\* performance on the Mines leaderboard has me in 8th place
-currently. I'm hoping that there are some harder algorithmic questions later on
-so that I can pass up Jayden and Eugin and catch up with Sam and Keshav, but
-with how slowly I've been solving, that's still a pretty tall order.
+My 6\*, 6\*\* performance on the Mines leaderboard has me in 8th place currently
+with 506 points. I'm hoping that there are some harder algorithmic questions
+later on so that I can pass up Jayden and Eugin and catch up with Sam and
+Keshav, but with how slowly I've been solving, that's still a pretty tall order.
 
 # Day 6: Tuning Trouble
 
@@ -453,7 +457,7 @@ few places on the global rankings, but oh well.
 
 </details>
 
-My 8\*, 8\*\* performance on the Mines leaderboard has me up to 7th place
+My 8\*, 8\*\* performance on the Mines leaderboard has me (610) up to 7th place
 currently.
 
 # Day 7: No Space Left On Device
@@ -525,12 +529,12 @@ pattern) and had to do a couple transformations that were quite annoying.
 
 </details>
 
-My 10\*, 10\*\* performance on the Mines leaderboard kept me stable at 7th
-place. I lost tons of points to Sam tonight. He had a 2\*, 2\*\* performance,
-which has put him at 727 points against my 696. Josh (697) and Keshav (719) also
-outrank me. At the top of the leaderboard, Kelly (796) is starting to pull away
-from Colin (787) and Ryan (783) who both had bad nights (4*, 7\*\*) and (6*,
-5\*\*), respectively.
+My 10\*, 10\*\* performance on the Mines leaderboard kept me stable at 7th place
+on 710 points. I lost tons of points to Sam tonight. He had a 2\*, 2\*\*
+performance, which has put him at 727 points against my 696. Josh (697) and
+Keshav (719) also outrank me. At the top of the leaderboard, Kelly (796) is
+starting to pull away from Colin (787) and Ryan (783) who both had bad nights
+(4*, 7\*\*) and (6*, 5\*\*), respectively.
 
 # Day 8: Treetop Tree House
 
@@ -1074,9 +1078,9 @@ For part 2, the problem changes: you get an infinite floor at two below the
 lowest rock provided in the input. Then, you have to determine when the sand
 would stack up to the starting point.
 
-I screwed this up a bit 
+I screwed this up a bit
 with an incorrect condition check negation. I was checking to see if the start
-point was *not* covered in sand, rather than checking that it *was* covered.
+point was _not_ covered in sand, rather than checking that it _was_ covered.
 
 That cost me quite a bit of time, but I also had an issue with indices (I was
 using the `lib.Point` struct which is `(x, y)` rather than `(r, c)` and I
@@ -1178,3 +1182,126 @@ performance as Kelly (1736, 3\*, 3\*\*) dropped points to Ryan (1693, 2\*,
 Sam's comeback on part 2 was quite impressive. His 15:04 delta time was nearly
 half of the next lowest (Colin at 29:32). He's very good at these geometric
 problems.
+
+# Day 16: Proboscidea Volcanium
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/16                                            |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d16/16.go) |
+| **Part 1:**    | 18:26:29, 12682nd                                                               |
+| **Part 2:**    |                                                                                 |
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+I am doing a DFS with additional pruning through the state space of
+`(currently open valves, position, time, flow)`. It works, but is fairly slow,
+and I haven't been able to properly optimize hence why I haven't solved part 2
+yet.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+No clue :(
+
+</details>
+
+Luckily it was a bad day for everyone else as well. As of writing this (night of
+12/17) only Colin and Kelly have solved part 2. I did do the worst of all of the
+people who did solve part 1 (7th).
+
+# Day 17: Pyroclastic Flow
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/17                                            |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d17/17.go) |
+| **Part 1:**    | 01:20:55, 2050th                                                                |
+| **Part 2:**    | >224h, 9670th                                                                   |
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+Part 1 required simulating a tetris game. I felt pretty smooth for a good
+portion of the implementation, but I had so many off by one errors and other
+random issues.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+Part 2 is a cycle-finding problem. To detect a cycle, I am storing a mapping of
+
+```
+(current configuration of the last 200 lines, current direction index, current shape)
+```
+
+to
+
+```
+(iteration that the configuration was last seen, height of the stack at that point)
+```
+
+Then, whenever the cycle is detected, I can jump forward to near the end and
+finish simulating the rest of the way.
+
+</details>
+
+I went 5\*, 4\*\* on the day, despite not solving part 2 until after day 18 was
+released. I lost to Kelly (1\*, 1\*\*), Colin (2\*, 3\*\*), and Jayden (3\*,
+2\*\*). I also dropped points on part 1to Keshav (4\*), but he hasn't solved
+part 2 yet.
+
+# Day 18: Boiling Boulders
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/18                                            |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d18/18.go) |
+| **Part 1:**    | 00:13:20, 1777th                                                                |
+| **Part 2:**    | 01:55:16, 3193rd                                                                |
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+This was a very conceptually simple problem that I royally screwed up the
+implementation of multiple times before landing on the correct one. I chose the
+\(\mathcal{O}(n^2)\) algorithm while initially implementing because it was just
+easier to manage.
+
+Basically, for every cell, determine whether there's a cell above, below, left,
+right, behind, or in-front of the cell, and if not, then that face is exposed,
+and should increment the count.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For part 2, I created a "mould" for the rock by:
+
+1. Inverting the cells in the grid to finding the cells that are *not* part of
+   the original rock that was scanned. I only cared about cells that were within
+   1 of the bounds of the original rock that was scanned.
+
+2. Doing a BFS to find all of the cubes reachable from \((0, 0, 0)\). This gave
+   me a list of cubes that the lava would fill in once the object came into
+   contact with the lava. This can be thought of as a mould for the object since
+   it doesn't care about internal holes.
+
+3. Invert the result of step 2. This basically uses the mould and creates a
+   "copy" of the original, but without the internal holes.
+
+4. Run the same algorithm as in part 1.
+
+</details>
+
+I had a 5\*, 7\*\* day on the leaderboard and I'm sitting on 1845 points now.
+Kelly (2080, 7\*, 5\*\*) started late, yet managed to still beat me on part 2.
+Colin (2063) did very well with a (1\*, 1\*\*) night and Jayden (1711, 3\*,
+3\*\*), Keshav (1785, 2\*, 4\*\*), and Ryan (1865, 4\*\*, 2\*\*) all tied each
+other.
