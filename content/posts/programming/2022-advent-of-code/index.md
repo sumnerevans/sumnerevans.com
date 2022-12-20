@@ -46,6 +46,8 @@ The following are my results across all of the days.
 ```
       --------Part 1--------   -------Part 2--------
 Day       Time   Rank  Score       Time  Rank  Score
+ 20   00:56:49   1513      0   01:59:13  2451      0
+ 19   01:50:10   1086      0          -     -      -
  18   00:13:20   1777      0   01:55:16  3193      0
  17   01:20:55   2050      0       >24h  9670      0
  16   18:26:29  12682      0          -     -      -
@@ -1284,7 +1286,7 @@ and should increment the count.
 
 For part 2, I created a "mould" for the rock by:
 
-1. Inverting the cells in the grid to finding the cells that are *not* part of
+1. Inverting the cells in the grid to finding the cells that are _not_ part of
    the original rock that was scanned. I only cared about cells that were within
    1 of the bounds of the original rock that was scanned.
 
@@ -1305,3 +1307,68 @@ Kelly (2080, 7\*, 5\*\*) started late, yet managed to still beat me on part 2.
 Colin (2063) did very well with a (1\*, 1\*\*) night and Jayden (1711, 3\*,
 3\*\*), Keshav (1785, 2\*, 4\*\*), and Ryan (1865, 4\*\*, 2\*\*) all tied each
 other.
+
+# Day 19: Not Enough Minerals
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/19                                            |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d19/19.go) |
+| **Part 1:**    | 01:50:10, 1086th                                                                |
+| **Part 2:**    |                                                                                 |
+
+My part 1 code was horrifying, and totally does not work in the general case.
+Still haven't gotten part 2.
+
+I did get 2nd place on star 1 on the Mines leaderboard. At this point, a lot of
+people have dropped off due to the extreme difficulty of the previous few days
+and it's really only Kelly, Colin, and myself solving.
+
+# Day 20: Grove Positioning System
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/20                                            |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d20/20.go) |
+| **Part 1:**    | 00:56:49, 1513rd                                                                |
+| **Part 2:**    | 01:59:13, 2451st                                                                |
+
+This problem was pretty difficult, but then I screwed myself over on part 2 with
+pure incompetence (as usual).
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+For part 1, you have to shift every element of a list by their value. I started
+out by using a list and trying to figure out the shuffle that way, but tracking
+which item needed to be moved next was very annoying.
+
+I finally realized that, since Go has actual pointers, I could just use a
+circular doubly-linked list for the operations. The only challenge was to keep
+track of the move order of the elements. I did this by just storing a list of
+pointers in the list. Since it is a circular linked list, keeping track of a
+single element is sufficient (no need to keep track of a specific "head" node).
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For part 2, I realized that I could just mod may way to victory, but I failed to
+implement the mod correctly for a while. You have to do the modulo on the length
+of the sequence minus one.
+
+Then, I also failed to perform the modulo before doing my offset checks. That
+wasted me so much time debugging it and wondering why it wasn't working. As soon
+as I calculated the modulo'd offset in the correct place, it worked very well.
+
+I'm pretty annoyed with myself for part 2. I could have had a really good delta
+time if I didn't totally screw up.
+
+</details>
+
+I got 3\*, 3\*\* on the Mines leaderboard (though, only Kelly, Colin, and myself
+are solving at this point). I'm currently at 3rd place with 2017 points, but if
+Ryan and/or Sam catch up, they will easily pass me.
+
+Kelly (2314) went 2\*, 2\*\* on the day while Colin (2296) went 1\*, 1\*\*.
