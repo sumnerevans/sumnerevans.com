@@ -3,14 +3,32 @@ title: "Contact"
 date: 2021-03-05 09:04:00
 ---
 
-You may contact me in a variety of ways. Here are my preferred methods of
-communication, listed in order of how quickly you can expect to receive a
-response:
+<center>
+  <p style="font-size: 1.5em">Quick Links</p>
+  <p style="font-size: 4em; margin: 0.4em;">
+    <a href="https://matrix.to/#/@sumner:nevarro.space" target="_blank">
+      <i class="fa fa-matrix-org"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/sumnerevans" target="_blank">
+      <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/sumnerevans" target="_blank">
+      <i class="fa fa-github"></i>
+    </a>
+    <a href="https://twitter.com/sumner_evans" target="_blank">
+      <i class="fa fa-twitter"></i>
+    </a>
+  </p>
+</center>
+
+Here are my preferred methods of communication, listed in order of how quickly
+you can expect to receive a response:
 
 * **Matrix:** [`@sumner:nevarro.space`](https://matrix.to/#/@sumner:nevarro.space)
-* **Email:** me [at] sumnerevans [dot] com (for teaching-related correspondence,
-    please use this email: teaching [at] sumnerevans [dot] com)
-* **Social Media:** links to my social media profiles are listed in the footer.
+* **Teaching Email:** teaching [at] sumnerevans [dot] com (for teaching-related
+  correspondence only)
+* **Email:** me [at] sumnerevans [dot] com
+* **LinkedIn DMs** (if you have no other option): https://www.linkedin.com/in/sumnerevans
 
 ## Security
 
