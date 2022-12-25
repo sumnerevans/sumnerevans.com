@@ -3,6 +3,7 @@ title: "Advent of Code 2022"
 date: 2022-12-01T09:00:00-06:00
 categories: [Programming]
 tags: [Advent of Code, Go, competition]
+image: ./map.png
 ---
 
 Every year since 2015, [Eric Wastl][1] creates a two-part programming problem
@@ -17,7 +18,8 @@ which I intend to do again this year.
 This year, I'm going to be streaming my solves eventually, but for the first few
 days, I'm going to skip that because of illness. I will try and keep this blog
 post up-to-date every day with my thoughts on each problem, and give a brief
-solution sketch.
+solution sketch. (Until I get to the point where I don't really understand
+what's going on.)
 
 As with the last last two years, I am participating in a private leaderboad for
 the Colorado School of Mines CS department with a bunch of Mines students and
@@ -38,34 +40,131 @@ We'll see how that goes.
 
 # Summary of Results
 
-My main goal is to solve all of the problems and get 50 stars for the third year
-in a row.
+I accomplished my main goal of solving all of the problems and getting all 50
+stars for the third year in a row.
+
+![All the stars](./map.png "All the stars!")
 
 The following are my results across all of the days.
 
 ```
-      --------Part 1--------   -------Part 2--------
-Day       Time   Rank  Score       Time  Rank  Score
- 20   00:56:49   1513      0   01:59:13  2451      0
- 19   01:50:10   1086      0          -     -      -
- 18   00:13:20   1777      0   01:55:16  3193      0
- 17   01:20:55   2050      0       >24h  9670      0
- 16   18:26:29  12682      0          -     -      -
- 15   00:25:44   1097      0   01:24:58  2171      0
- 14   00:17:06    420      0   00:30:12  1123      0
- 13   00:19:23    880      0   00:30:52  1238      0
- 12   01:24:19   5663      0   01:28:11  5221      0
- 11   00:23:51    910      0   01:25:59  4261      0
- 10   00:21:27   4404      0   00:45:18  4534      0
-  9   00:27:34   3536      0   00:36:51  2009      0
-  8   00:08:11    556      0   00:33:16  2632      0
-  7   00:39:14   3323      0   00:45:19  2879      0
-  6   00:04:50   1891      0   00:06:23  2071      0
-  5   00:18:24   2321      0   00:26:01  3205      0
-  4   00:03:46    669      0   00:13:17  3984      0
-  3   00:11:02   3285      0   00:18:05  3187      0
-  2   00:14:26   5517      0   00:19:30  4347      0
-  1   00:03:27   1461      0   00:08:04  2857      0
+      --------Part 1--------   --------Part 2--------
+Day       Time   Rank  Score       Time   Rank  Score
+ 25   02:27:45   4003      0   02:27:45   3074      0
+ 24   02:19:41   2418      0   02:40:15   2372      0
+ 23   00:47:41   1081      0   00:48:42    891      0
+ 22   00:33:57    486      0   03:49:52   1570      0
+ 21   00:10:44    865      0   01:49:16   3155      0
+ 20   00:56:49   1513      0   01:59:13   2451      0
+ 19   01:50:10   1086      0       >24h  11277      0
+ 18   00:13:20   1777      0   01:55:16   3193      0
+ 17   01:20:55   2050      0       >24h   9670      0
+ 16   18:26:29  12682      0       >24h  17871      0
+ 15   00:25:44   1097      0   01:24:58   2171      0
+ 14   00:17:06    420      0   00:30:12   1123      0
+ 13   00:19:23    880      0   00:30:52   1238      0
+ 12   01:24:19   5663      0   01:28:11   5221      0
+ 11   00:23:51    910      0   01:25:59   4261      0
+ 10   00:21:27   4404      0   00:45:18   4534      0
+  9   00:27:34   3536      0   00:36:51   2009      0
+  8   00:08:11    556      0   00:33:16   2632      0
+  7   00:39:14   3323      0   00:45:19   2879      0
+  6   00:04:50   1891      0   00:06:23   2071      0
+  5   00:18:24   2321      0   00:26:01   3205      0
+  4   00:03:46    669      0   00:13:17   3984      0
+  3   00:11:02   3285      0   00:18:05   3187      0
+  2   00:14:26   5517      0   00:19:30   4347      0
+  1   00:03:27   1461      0   00:08:04   2857      0
+```
+
+It was a pretty bad year for me in general. I failed to make top 10,000 on three
+occasions, and I only cracked top 1000 on eight occasions. I also had three >24h
+solves. I also failed to have a single day with sub-1000 solves on both parts,
+which is pretty abysmal.
+
+But, honestly, I really should just be happy that I solved everything in time
+for being able to solve day 25 part 2 right after part 1. I barely made it on
+solving day 16 part 2. I submitted that about a half hour before day 25 opened.
+
+## Mines Leaderboard
+
+At the end of the competition (2022-12-25 00:51 MST), this is the state of the
+Mines leaderboard:
+
+![Leaderboard end state](./leaderboard-end-state.png "State of the top 10 of the Mines leaderboard after day 25")
+
+![Leaderboard medalists](./leaderboard-medalists.png "The participants who gained a podium spot on any part throughout the competition on the Mines leaderboard")
+
+Three of us (Kelly, Colin, and myself) solved everything by Christmas. I managed
+to get 3rd place on the Mines leaderboard by default this year because nobody
+else was solving up until the last day. As you can see, I failed to get better
+than 2nd place on any part during the entire competition, and failed to get
+better than 3rd on part 2 on any day which is absolutely abysmal. Ryan, Sam, and
+Jayden all managed better metal counts, and both Sam and Ryan would likely pass
+me if they ever decide to solve the rest of the problems.
+
+After coming short of Colin in both 2020 and 2021 by 3 and 11 points,
+respectively, Kelly ran away with this one by a 23-point margin. He's been
+practicing competitive programming a lot more this year, and it shows. He even
+switched programming languages from Python to Kotlin about half way through the
+competition and still was consistently beating everyone. He failed to podium on
+the Mines leaderobard on only two days. Colin was extremely consistent as well,
+only failing to podium three days, but especially down the stretch, Kelly was
+too strong and was able to string together chains of 1\*, 1\*\* days which put
+first place out of reach.
+
+There were strong performances from many others as well. Jayden, Keshav, Josh,
+and Eugin in particular gave me lots of problems (though I was eventually able
+to outlast them by powering through the horrible day 16, day 17, and day 19
+sequence).
+
+Particularly impressive were Jayden and Tyler, both freshmen. Tyler got up to 24
+stars while Jayden got 37 stars, and even beat me on a couple problems down the
+stretch. I think they are going to be really difficult to contend with in future
+years once they have a bit more algorithms and data structures knowledge.
+
+## Using Go
+
+In general, some of my woes can be blamed on using Go instead of Python, and not
+having as much of a standard library and it being a less expressive language in
+general. There were a couple days that I just had to write utility functions
+before actually solving (day 12 for example) which significantly slowed me down.
+
+There were also a couple things that were really annoying to do in Go:
+
+- **Not having tuples.** They aren't a thing in Go. This is convenient in a way
+  (I don't ever have to worry about forgetting what each index represents
+  because I have to create a struct or some other specific data structure to
+  store all data).
+- **Not having frozensets or frozendicts for using as keys in dictionaries.** I
+  ended up having to use bitmaps or fixed-sized arrays instead on a lot of
+  problems.
+
+On the other hand, I think that using a strongly typed language helped me to
+make significantly less coding mistakes. Towards the end of the year, the
+problems were so hard that the thing slowing me down was my stupidity and not
+knowing how to actually solve the problems rather than the language getting in
+the way of my ability to solve at speed. One language feature that I really
+enjoyed using was type aliasing. For example, I would often alias a primitive
+type with a wrapper so that I could implement methods on the type and also more
+easily keep track of what type of data I was dealing with.
+
+I'll probably use Go again next year, though. I do think that it prevented more
+problems than it caused. I may try a hybrid model where I have the option to
+solve in Python or Go next year.
+
+Language statistics (my boilerplate is fairly extensive, though):
+
+```
+$ tokei -e '*.txt' -e '*.json'
+===============================================================================
+ Language            Files        Lines         Code     Comments       Blanks
+===============================================================================
+ Go                     50         7646         6331          293         1022
+ OCaml                   1           46           37            4            5
+===============================================================================
+ Total                  51         7692         6368          297         1027
+===============================================================================
 ```
 
 # Day 1: Calorie Counting
@@ -1209,6 +1308,25 @@ yet.
 
 No clue :(
 
+**Update 2022-12-24:** I solved this just in time for day 25 using some very bad
+code with a 3.5 hour runtime on Isengard (one of the school servers that I have
+access to). Not sure how much memory it used, but it was a lot.
+
+I'll just leave you with this glorious output from executing my solution (the
+fail is just because it couldn't auto-submit the answer for me for reasons):
+
+```
+--- FAIL: Test_Day16 (12879.97s)
+    --- PASS: Test_Day16/Part_1 (0.00s)
+    --- FAIL: Test_Day16/Part_2 (12879.97s)
+        --- PASS: Test_Day16/Part_2/1_Test_cases (0.74s)
+            --- PASS: Test_Day16/Part_2/1_Test_cases/Test_1 (0.74s)
+        --- FAIL: Test_Day16/Part_2/2_Actual_input (12879.23s)
+FAIL
+FAIL    github.com/sumnerevans/advent-of-code/y2022/d16 12880.797s
+FAIL
+```
+
 </details>
 
 Luckily it was a bad day for everyone else as well. As of writing this (night of
@@ -1372,3 +1490,268 @@ are solving at this point). I'm currently at 3rd place with 2017 points, but if
 Ryan and/or Sam catch up, they will easily pass me.
 
 Kelly (2314) went 2\*, 2\*\* on the day while Colin (2296) went 1\*, 1\*\*.
+
+# Day 21: Monkey Math
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/21                                            |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d21/21.go) |
+| **Part 1:**    | 00:10:44, 865th                                                                 |
+| **Part 2:**    | 01:49:16, 3155th                                                                |
+
+Part 1 went well for me tonight, and I cracked top 1000 again. Part 2 was much
+more difficult, and I made it even harder on myself by not using any nice
+techniques.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+For part 1, the entire problem is just to evaluate some tree of expressions.
+
+Everything went smoothly and I was able to solve fairly quickly, getting third
+on the Mines leaderboard behind Colin and Sam.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+Part 2 was a total disaster, though. I ended up doing the full symbolic
+computation necessary to get a closed form for the human monkey. I actually
+enjoyed doing that, but I was annoyed by the fact that binary search on the
+human monkey value would have done the trick.
+
+I actually got tipped off to the binary search technique by the Mines Discord
+chat, but I couldn't figure out how to actually implement it (my high and low
+values kept going off to infinity).
+
+The symbolic computation method was kinda cool, though, so I guess it was fine.
+
+</details>
+
+Luckily, only four people on the Mines leaderboard solved, so I still got 4th
+place on part 2.
+
+# Day 22: Monkey Map
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/22                                            |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d22/22.go) |
+| **Part 1:**    | 00:33:57, 486th                                                                 |
+| **Part 2:**    | 03:49:52, 1570th                                                                |
+
+Part 1 went quite well, and I followed it up with another classic part 2
+collapse.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+For part 1, the problem just requires tracking your current position and
+orientation on an oddly shaped grid. My `GridPoint` utility struct came in
+handy, as I stored both position as well as direction as a `GridPoint`.
+
+The only challenge is that you have to wrap around to the other side if you fall
+of an edge. I accomplished this by just going to the furthest extreme on the
+opposite side and then iterating until I found a square that wasn't off the map.
+It is a kinda dumb solution, but quite easy to implement.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For part 2, the horrible realization is that the map given is actually a cube
+and you have to wrap as if it was a cube.
+
+I ended up just hard-coding the cube shape because I couldn't figure out how to
+do anything more intelligent.
+
+I messed it up in about every way possible. I screwed up my translation
+functions for multiple edges. But the worst thing that happened was that I
+forgot to actually check if the place that I was moving on the next face was a
+wall or not (literally the entire point of the problem).
+
+I did make a good decision to actually cut out a physical cube to figure out the
+necessary transformations.
+
+![cube](./cube.png "My paper cut-out cube for helping to determine the necessary edge transformations.")
+
+</details>
+
+On the Mines leaderboard I got 2nd on part 1 behind Kelly (1\*, 1\*\*). On part
+2, Colin (3\*, 2\*\*) and Jayden (5\*, 3\*\*) solved before me giving me 4th
+place. Sam solved part 1 (4\*) as well.
+
+# Day 23: Unstable Diffusion
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/23                                            |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d23/23.go) |
+| **Part 1:**    | 00:47:41, 1081st                                                                |
+| **Part 2:**    | 00:48:42, 891st                                                                 |
+
+Today went pretty well overall, despite failing to crack top 1000 on part 1, I
+managed to make up places on part 2 to crack the top 1000 on part 2 for the
+first time this year.
+
+It was a nice CGL problem, which we haven't had any of this year until now.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+Today's problem was mainly a matter of implementing the given algorithm for
+moving the elves. I did a pretty good job of that overall, but the problem
+description failed to describe what to do when an elf couldn't propose a new
+location (i.e. all four directions were blocked). In that case, I didn't copy
+the elf to the next state, which was incorrect (you're supposed to just have the
+elf stay if it can't propose any new location).
+
+I wasted way too much time on this before realizing why my elves were
+disappearing. That omission from the problem description almost certainly cost
+me a top 1000 spot.
+
+Part 1 was just to simulate the process for ten iterations, which was pretty
+easy.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For part 2, all you have to do is step the CGL state until none of the elves are
+moving. This was a fairly trivial change in my code (I already had a break
+statement for when there were no moves able to be made, so I just updated it to
+actually return that as the answer).
+
+</details>
+
+Only Kelly (1\*, 1\*\*), Colin (2\*, 2\*\*) and myself (3\*, 3\*\*) solved
+tonight.
+
+# Day 24: Blizzard Basin
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/24                                            |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d24/24.go) |
+| **Part 1:**    | 02:19:41, 2418th                                                                |
+| **Part 2:**    | 02:40:15, 2372nd                                                                |
+
+Today was debugging hell on part 1, and then I totally failed to add on part 2.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+Part 1 required navigating through a blizzard. I realized fairly early on that I
+would have to pre-compute the positions of the blizzards at all possible times,
+and then my state would only be a combination of the current time, and the
+current position. I tried to create some fancy memoized function for calculating
+the blizzard state, but I ended up just falling back to precomputing 1000 of
+iterations of the blizzards.
+
+Indexing was a bit of a horror show and wraparound was difficult due to the
+outside of the grid being walls, so the 0th index and the last index were
+effectively useless (besides the entrance and exit locations).
+
+I did have a fairly unfortunate problem which boiled down to me not using slices
+correctly. I stored the state of the blizzards in a fixed-size array (2687 items
+to be exact), but the test cases don't have that many elements. So, in order to
+make things work correctly, I needed to do all of my operations on just the
+slice corresponding to the active blizzards. I failed to do this, which caused
+me to have to spend like an hour debugging why I couldn't find a path through
+the maze.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+For part 2, you have to travel from the start to the end, then to the start, and
+then back to the end again (because an elf forgot his snack).
+
+I solved this by copy-pasting my code three times and just reverse the start and
+end positions, and updating the start time for each passage through the storm
+accordingly.
+
+Unfortunately, I totally failed at this for a long time because for the final
+return trip to the goal, I started at the time of the end of the first traversal
+rather than the second. The basic problem was that I was doing something like
+this:
+
+```
+timeToGoal = traverse(time=0, start=start, end=end)
+timeBackToStart = traverse(time=timeToGoal, start=end, end=start)
+timeBackToGoal = traverse(time=timeBackToStart, start=start, end=end)
+```
+
+but critically the value returned by `traverse` only included the time of the
+actual traversal, not the time already passed, so the last call really needed to
+be:
+
+```
+timeBackToGoal = traverse(time=timetoGoal+timeBackToStart, start=start, end=end)
+```
+
+That cost me probably 10-15 minutes.
+
+</details>
+
+Only Kelly (1\*, 1\*\*), Colin (2\*, 2\*\*) and myself (3\*, 3\*\*) solved
+tonight.
+
+# Day 25: Full of Hot Air
+
+| <!-- -->       | <!-- -->                                                                        |
+| -------------- | ------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2022/day/25                                            |
+| **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d25/25.go) |
+| **Part 1:**    | 02:27:45, 4003nd                                                                |
+| **Part 2:**    | 02:27:45, 3074th                                                                |
+
+Today was another horrible performance on my part. I couldn't figure out how to
+solve the problem to save my life.
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 1</h3></summary>
+
+Part 1 required that you compute the sum of some SNAFU numbers, and then print
+the SNAFU number corresponding to their sum.
+
+Computing the sum was relatively trivial to me. I was fairly fast all things
+considered I think.
+
+However, doing the reverse computation took me probably over two hours.
+
+I tried to find some closed-form way of doing it by converting to base5 and then
+doing something intelligent, but I failed at doing multiple different
+implementations. I saw later that I was definitely on the correct track, but I
+wasn't doing the rounding correctly. I was using floor, rather than round, and
+that was my problem.
+
+I eventually gave up and just implemented a binary-search-like solution which
+just iterated through each place and found which two multipliers bounded the
+target number (multipliers being -2, -1, 0, 1, or 2). Then, I figured out which
+multiplier came closest to the goal and then went to the next lower place with
+the number removed from the target sum.
+
+Unfortunately, I had some leading zeros on my solution, which caused me to have
+to wait for a minute before submitting again. Luckily, I was able to check my
+work by running the number I got back into my SNAFU Number -> integer conversion
+function, so I was confident that my answer would be correct once the timeout
+passed.
+
+</details>
+
+<details class="advent-of-code-part-expander" open>
+<summary><h3>Part 2</h3></summary>
+
+My autosubmission code worked great and gave me a zero-second delta time, so I
+guess that's nice.
+
+</details>
+
+Only Kelly (1\*, 1\*\*), Colin (2\*, 2\*\*) and myself (3\*, 3\*\*) solved
+tonight. (See top of article for more commentary on the final placements.)
