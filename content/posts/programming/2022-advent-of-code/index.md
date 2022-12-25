@@ -1340,7 +1340,7 @@ people who did solve part 1 (7th).
 | **Link:**      | https://adventofcode.com/2022/day/17                                            |
 | **Solutions:** | [Go](https://github.com/sumnerevans/advent-of-code/blob/master/y2022/d17/17.go) |
 | **Part 1:**    | 01:20:55, 2050th                                                                |
-| **Part 2:**    | >224h, 9670th                                                                   |
+| **Part 2:**    | >24h, 9670th                                                                    |
 
 <details class="advent-of-code-part-expander" open>
 <summary><h3>Part 1</h3></summary>

@@ -1,6 +1,6 @@
 ---
 title: "2022 In Review"
-date: 2022-12-31T08:00:00-06:00
+date: 2022-12-25T08:00:00-06:00
 categories: [Life Updates]
 tags: [Year In Review]
 ---
@@ -16,7 +16,10 @@ I'm thankful for...
 * My church.
 * Getting to ski with a bunch of friends in Utah at the beginning of the year.
 * My new apartment in Golden.
-* Getting to work on many interesting projects with great people at my job.
+* Getting to celebrate my sister's graduation and wedding.
+* My great coworkers.
+* Getting to work on many interesting projects with great people at my job,
+  including a really fun greenfield project to write a custom homeserver.
 * Getting to travel to
   [many]({{< ref "../../travel/2022-playa-del-carmen-mexico" >}})
   [exotic]({{< ref "../../travel/2022-lisbon-and-paris/ericeira-portugal" >}})
@@ -33,17 +36,18 @@ I'm thankful for...
 * Getting to travel to see
   [multiple]({{< ref "../../travel/2022-oakland-california" >}})
   [friends]({{< ref "../../travel/2022-starbase-texas" >}}).
-* Getting to celebrate my sister's graduation and wedding.
 * My vacation in
   [Lisbon and Paris](/categories/trip-to-portugal-and-france), and all of the
-  cool people I met on the way.
+  amazing people I met on the way.
 * The opportunity to
   [teach]({{< ref "../../../portfolio#experience-adjunct-mines" >}})
   *CSCI 406 Algorithms* and *CSCI 400 Principles of Programming Languages*.
+* Getting all 50 stars on
+  [this year's Advent of Code]({{< ref "../../programming/2022-advent-of-code" >}})
 * Passing my first midterm towards my 5th degree black belt while I was at ATA
   Worlds.
 * Being able to participate in training seminars and compete at ATA Worlds.
-* Passing my Level 3 instructor certification test.
+* Passing my Level 3 Legacy Instructor certification test.
 
 And so much more.
 
