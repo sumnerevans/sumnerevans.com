@@ -15,8 +15,11 @@ date: 2021-03-05 09:04:00
     <a href="https://github.com/sumnerevans" target="_blank">
       <i class="fa fa-github"></i>
     </a>
-    <a href="https://twitter.com/sumner_evans" target="_blank">
-      <i class="fa fa-twitter"></i>
+    <a href="https://www.youtube.com/@sumnerevans" target="_blank">
+      <i class="fa fa-youtube-play"></i>
+    </a>
+    <a href="https://liberapay.com/sumner" target="_blank">
+      <i class="fa fa-liberapay"></i>
     </a>
   </p>
 </center>

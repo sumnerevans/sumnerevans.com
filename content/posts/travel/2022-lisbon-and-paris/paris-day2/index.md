@@ -104,4 +104,27 @@ sorts about it.
 
 ---------
 
-The next stop was Arromanches. It's a town near Gold Beach.
+The next stop was Arromanches. It's a town near Gold Beach where we stopped for
+lunch before proceeding to a hill overlooking the beach where there is a D-Day
+museum.
+
+We watched a film with footage from the day of the battle, but there were two
+other things that I found most compelling. First, from the heights above the
+beach you can still see to this day the remnants of the temporary port that the
+engineers built to allow the allies to offload materiel from larger vessels
+before the capture of already-established deep water ports.
+
+{{< figure 
+      src="./images/arromanches.jpg"
+      link="./images/arromanches.jpg"
+      target="_blank"
+      title="Overlooking the beach at Arromanches"
+      caption="Even at high tide, the remnants of the temporary port can be seen."
+>}}
+
+Seeing the remnants of the port that is featured in so many pictures was
+stunning. It just gave some perspective on the magnitude of the engineering
+operation needed surge in troops and supplies into the ever-growing beachhead.
+
+The second thing that was very impactful was a statue of a D-Day veteran looking
+at his younger self emerging from the waves on the beach.

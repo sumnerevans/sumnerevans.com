@@ -1,6 +1,6 @@
 ---
 title: "2022 In Review"
-date: 2022-12-25T08:00:00-06:00
+date: 2022-12-31T08:00:00-06:00
 categories: [Life Updates]
 tags: [Year In Review]
 ---
