@@ -11,7 +11,6 @@ description: |
   Today I took a day-trip to the Normandy beaches. It was a very moving
   experience, and it made me even more grateful for the sacrifices of the
   Greatest Generation during the war.
-draft: true
 ---
 
 Today, I took a day trip to the Normandy beaches. The tour visited Omaha Beach,
@@ -127,4 +126,44 @@ stunning. It just gave some perspective on the magnitude of the engineering
 operation needed surge in troops and supplies into the ever-growing beachhead.
 
 The second thing that was very impactful was a statue of a D-Day veteran looking
-at his younger self emerging from the waves on the beach.
+at his younger self emerging from the waves on the beach. The younger version of
+the veteran was formed from welded-together bolts, and only the front was
+formed, evoking a sense of ephemeralness. Further down the metal sculpture were
+similar representations of men emerging from the waves onto the beach. The way
+the sculpture was crafted, from one angle you could see the man being
+represented, but from another angle, the figure could almost be mistaken for a
+pile of debris.
+
+<center>
+<table class="gallery">
+  <tr>
+    <td>
+      <a href="./images/veteran1.jpg" target="_blank">
+        <img src="./images/veteran1.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="./images/veteran2.jpg" target="_blank">
+        <img src="./images/veteran2.jpg" />
+      </a>
+    </td>
+  </tr>
+</table>
+</center>
+
+---------
+
+The last stop on the tour was a brief stop at Juno beach, the Canadian landing
+site. Among the exhibits were some of the defensive works that constituted the
+coastal obstacles.
+
+{{< figure 
+      src="./images/juno.jpg"
+      link="./images/juno.jpg"
+      target="_blank"
+      title="Defensive works at Juno beach"
+>}}
+
+After that, we took the long ride back back to Paris. It was late by the time we
+got back, and after a quick dinner I went to bed. I have to be up tomorrow early
+for a tour of the Louvre!
