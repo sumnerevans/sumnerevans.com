@@ -11,6 +11,7 @@ description: |
   Today I took a day-trip to the Normandy beaches. It was a very moving
   experience, and it made me even more grateful for the sacrifices of the
   Greatest Generation during the war.
+image: ./images/cemetery.jpg
 ---
 
 Today, I took a day trip to the Normandy beaches. The tour visited Omaha Beach,
