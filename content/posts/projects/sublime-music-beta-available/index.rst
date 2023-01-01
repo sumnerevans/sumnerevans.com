@@ -101,7 +101,7 @@ You can contribute to Sublime Music in many different ways, including:
 * **Join the discussion** on our `Matrix chat <matrix_>`_. Discuss ideas with,
   suggest features to, or get help from other users and developers.
 
-* **Report issues or suggest features** on the `GitLab repository <issues_>`_.
+* **Report issues or suggest features** on the `GitHub repository <issues_>`_.
 
 * **Package Sublime Music** for your distribution or operating system. Sublime
   Music is currently packaged for Arch Linux and Debian and is available on
@@ -131,7 +131,7 @@ Thanks especially to:
   great advocate for Sublime Music.
 
 Thanks also to everyone who has reported issues and requested features on
-GitLab, interacted in the Matrix chat, or told their friends about Sublime
+GitHub, interacted in the Matrix chat, or told their friends about Sublime
 Music!
 
 .. _website: https://sublimemusic.app
@@ -144,4 +144,4 @@ Music!
 .. _Navidrome: https://www.navidrome.org/
 .. _Adapter API: https://sublime-music.gitlab.io/sublime-music/adapter-api.html
 .. _matrix: https://matrix.to/#/!veTDkgvBExJGKIBYlU:matrix.org
-.. _issues: https://gitlab.com/sublime-music/sublime-music/-/issues
+.. _issues: https://github.com/sublime-music/sublime-music/issues
