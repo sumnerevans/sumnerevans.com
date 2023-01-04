@@ -1,8 +1,12 @@
 https://drewdevault.com/blog/index.xml
-https://sourcehut.org/blog/index.xml
-https://www.thedroneely.com/posts/rss.xml
-https://jakevossen.libsyn.com/rss
 https://emersion.fr/blog/rss.xml
-https://www.joelonsoftware.com/feed/
-https://weekly.nixos.org/feeds/all.rss.xml
+https://intuitiveexplanations.com/feed.xml
+https://matrix.org/blog/feed
+https://medium.com/feed/@ericmigi
+https://mgs.blog/feed
+https://sourcehut.org/blog/index.xml
+https://stackoverflow.blog/feed/
 https://veronneau.org/feeds/atom.xml
+https://weekly.nixos.org/feeds/all.rss.xml
+https://www.joelonsoftware.com/feed/
+https://www.thedroneely.com/posts/rss.xml
