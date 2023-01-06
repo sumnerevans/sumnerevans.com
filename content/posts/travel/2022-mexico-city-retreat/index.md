@@ -1,5 +1,5 @@
 ---
-title: "Mexico City, Mexico --- Work Retreat"
+title: "Mexico City, Mexico - Work Retreat"
 date: 2022-10-22T09:25:00-06:00
 categories: [Work Retreats]
 tags: [Travel, Mexico City, Mexico, Beeper, Work]

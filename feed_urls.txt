@@ -1,3 +1,4 @@
+https://chrpaul.de/feed.xml
 https://drewdevault.com/blog/index.xml
 https://emersion.fr/blog/rss.xml
 https://intuitiveexplanations.com/feed.xml

@@ -1,5 +1,5 @@
 ---
-title: "Montreal --- Work Trip!"
+title: "Montreal - Work Trip!"
 date: 2021-09-17T09:25:00-06:00
 categories: [Trip to D.C. and Montreal, Work Retreats]
 tags: [Travel, Montreal, Beeper, Work]

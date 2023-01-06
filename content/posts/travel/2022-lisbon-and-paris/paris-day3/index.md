@@ -10,7 +10,9 @@ description: "TODO"
 draft: true
 ---
 
-Today I went to the Louvre.
+Today, I went to the Louvre and walked to Notre Dame.
+
+
 
 * castle under the Louvre
 * was a palace
