@@ -22,7 +22,7 @@ universe.
   list on PCPartPicker][partlist]. Highlights are:
 
   - AMD Ryzen 7 2700X
-  - Nvidia RTX 2070
+  - AMD Radeon RX 6600
   - 32 GB DDR4-3200 RAM
   - 512 GB NVMe and a 1 TB SSD
 
