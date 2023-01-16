@@ -11,11 +11,12 @@ teaching [at] sumnerevans [dot] com
 
 ## Current Teaching
 
-* [CSCI 400 Principles of Programming Languages](https://lambda.mines.edu/f22-syllabus/)
-  * [Schedule](https://elearning.mines.edu/courses/40213/pages/schedule)
+* [CSCI 341 Computer Organization](https://elearning.mines.edu/courses/47606)
+  * [Schedule](https://elearning.mines.edu/courses/47606/pages/course-schedule)
 
 ## Previous Teaching
 
+* [CSCI 400 Principles of Programming Languages](https://lambda.mines.edu/f22-syllabus/) (Fall 2022)
 * [CSCI 406 Algorithms](https://elearning.mines.edu/courses/36726) (Spring 2022)
 * [CSCI 400 Principles of Programming Languages](https://lambda.mines.edu/f21b-syllabus/) (Fall 2021)
 * [CSCI 564 Advanced Computer Architecture](./csci564-s21/) (Spring 2021)
