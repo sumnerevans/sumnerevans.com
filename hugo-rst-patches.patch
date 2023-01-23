@@ -1,23 +1,33 @@
-diff --git a/.editorconfig b/.editorconfig
-new file mode 100644
-index 00000000..2c3bac04
---- /dev/null
-+++ b/.editorconfig
-@@ -0,0 +1,2 @@
-+[*.go]
-+indent_style = tab
-diff --git a/.envrc b/.envrc
-new file mode 100644
-index 00000000..1d953f4b
---- /dev/null
-+++ b/.envrc
-@@ -0,0 +1 @@
-+use nix
+commit bd7c7c64d0cc10e3fb6c81668455b485e64bfa46
+Author: Sumner Evans <me@sumnerevans.com>
+Date:   Fri Oct 2 10:42:14 2020 -0600
+
+    markup/rst: use MathJax for rst math output and use short pygments highlighting
+    
+    * As noted in #7759, rst2html exports math using the "HTML math.css"
+      formatter by default. This means that any math typeset in
+      reStructuredText is not formatted using MathJax which is not ideal.
+      This commit adds a --math-output parameter configure rst2html to
+      output math ready for MathJax to process. Note that I had to pick a
+      URL for MathJax, but it doesn't end up in the resulting output because
+      the <script> tag is in the header which gets cut out by code further
+      down.
+    
+    * As noted in #5349, rst2html can generate HTML with short or long form
+      class names for syntax highlighting. Pygments (via the pygmentize
+      command) seems to generate short form by default without any way to
+      switch this. This means most/any stylesheets for code provided with
+      various themes won't work when using rST output. This can easily be
+      fixed by providing the --syntax-highlight=short flag to rst2html.
+    
+    Fixes: #5349
+    Fixes: #7759
+
 diff --git a/.github/workflows/test.yml b/.github/workflows/test.yml
-index 32ff0449..7701b08b 100644
+index ca1f5d95..7d190623 100644
 --- a/.github/workflows/test.yml
 +++ b/.github/workflows/test.yml
-@@ -33,6 +33,9 @@ jobs:
+@@ -52,6 +52,9 @@ jobs:
        run: |
          pip install docutils
          rst2html.py --version
@@ -27,20 +37,11 @@ index 32ff0449..7701b08b 100644
      - if: matrix.os == 'ubuntu-latest'
        name: Install pandoc on Linux
        run: |
-diff --git a/.gitignore b/.gitignore
-index 1b78398c..8c57486c 100644
---- a/.gitignore
-+++ b/.gitignore
-@@ -1,3 +1,4 @@
-+.direnv
- /hugo
- docs/public*
- /.idea
 diff --git a/docs/content/en/content-management/formats.md b/docs/content/en/content-management/formats.md
-index 1ae20ba5..4ff8115e 100644
+index a9889882..87f818d1 100644
 --- a/docs/content/en/content-management/formats.md
 +++ b/docs/content/en/content-management/formats.md
-@@ -50,7 +50,7 @@ tool on your machine to be able to use these formats.
+@@ -43,7 +43,7 @@ tool on your machine to be able to use these formats.
  Hugo passes reasonable default arguments to these external helpers by default:
  
  - `asciidoctor`: `--no-header-footer -`
@@ -49,18 +50,6 @@ index 1ae20ba5..4ff8115e 100644
  - `pandoc`: `--mathjax`
  
  {{% warning "Performance of External Helpers" %}}
-diff --git a/markup/internal/external.go b/markup/internal/external.go
-index 97cf5cc7..1342ce2d 100644
---- a/markup/internal/external.go
-+++ b/markup/internal/external.go
-@@ -27,6 +27,7 @@ func ExternallyRenderContent(
- 	argsv = append(argsv, hexec.WithStderr(&cmderr))
- 	argsv = append(argsv, hexec.WithStdin(bytes.NewReader(content)))
- 
-+	logger.Debugf("%s %v", binaryName, argsv)
- 	cmd, err := cfg.Exec.New(binaryName, argsv...)
- 	if err != nil {
- 		return nil, err
 diff --git a/markup/rst/convert.go b/markup/rst/convert.go
 index b86b35f1..eeebaf38 100644
 --- a/markup/rst/convert.go
@@ -119,20 +108,4 @@ index 5d2882de..9063bb4c 100644
 +	c.Assert(err, qt.IsNil)
 +	c.Assert(string(b.Bytes()), qt.Equals,
 +		"<div class=\"document\">\n\n\n<pre class=\"code c literal-block\">\n<span class=\"kt\">int</span> <span class=\"n\">i</span> <span class=\"o\">=</span> <span class=\"mi\">0</span><span class=\"p\">;</span>\n</pre>\n</div>")
-+}
-diff --git a/shell.nix b/shell.nix
-new file mode 100644
-index 00000000..50835d04
---- /dev/null
-+++ b/shell.nix
-@@ -0,0 +1,10 @@
-+{ pkgs ? import <nixpkgs> {} }:
-+pkgs.mkShell {
-+  buildInputs = with pkgs; [
-+    docutils
-+    go
-+    mage
-+    python3Packages.pygments
-+    rnix-lsp
-+  ];
 +}
