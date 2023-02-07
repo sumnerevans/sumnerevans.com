@@ -1,7 +1,8 @@
-http://blog.golang.org/feed.atom
+https://blog.beeper.com/feed
 https://chrpaul.de/feed.xml
 https://drewdevault.com/blog/index.xml
 https://emersion.fr/blog/rss.xml
+https://go.dev/blog/feed.atom
 https://intuitiveexplanations.com/feed.xml
 https://matrix.org/blog/feed
 https://medium.com/feed/@ericmigi
