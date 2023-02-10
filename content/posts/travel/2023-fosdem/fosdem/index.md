@@ -8,6 +8,8 @@ tags:
   - Matrix
   - Matrix Community Meetup
   - HSBXL
+  - Go
+  - NixOS
   - Brussels
 description: |
   I attended FOSDEM for the first time this year and I had a blast!

@@ -2,7 +2,7 @@
 title: "Advent of Code 2021"
 date: 2021-12-01T09:00:00-06:00
 categories: [Programming]
-tags: [Advent of Code, python, competition]
+tags: [Advent of Code, Python, Competition]
 image: ./map.png
 ---
 
