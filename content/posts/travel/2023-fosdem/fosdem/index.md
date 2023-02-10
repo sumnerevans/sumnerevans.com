@@ -230,13 +230,10 @@ the needs of their clients.
 At the end of the morning, Yan (who had MC'd the dev room all day) presented a
 talk about a bunch of exciting projects in the Matrix ecosystem that are a bit
 less well known. The Matrix ecosystem is growing constantly, and there are some
-excellent community projects that are pushing the boundaries of what can be
-done.
-
-<!-- Outside of the dev room, I ran into Milton and Conor who are working on a really -->
-<!-- interesting project for using Matrix as the backing store for a web forum. It's -->
-<!-- really neat to see the very wide variety of things that people are trying to use -->
-<!-- Matrix for. -->
+excellent community projects that are pushing the boundaries of what can be done
+with Matrix. For example, outside of the dev room, I ran into Milton and Conor
+who are working on a really interesting project for using Matrix as the backing
+store for a web forum.
 
 ## NixOS
 
