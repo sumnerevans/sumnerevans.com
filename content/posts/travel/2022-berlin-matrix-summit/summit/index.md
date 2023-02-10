@@ -6,6 +6,7 @@ tags:
   - Travel
   - Berlin
   - Germany
+  - Matrix
   - Matrix Community Summit
 image: ./images/first-day.jpg
 description: |
