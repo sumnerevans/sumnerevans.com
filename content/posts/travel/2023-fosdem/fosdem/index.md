@@ -36,7 +36,7 @@ location in the heart of Brussels. They were gracious enough to host the meetup.
 [Yan](https://www.linkedin.com/in/yncyrydybyl/) (who was one of the organizers
 of the Berlin summit) and [Kim](https://github.com/harharlinks) (who attended
 the Berlin summit) did a great job organizing the meetup.
-[Famedy](https://www.famedly.com/) and [Nordeck](https://nordeck.net/)
+[Famedly](https://www.famedly.com/) and [Nordeck](https://nordeck.net/)
 graciously funded pizza and drinks for the event.
 
 The meetup was a great success. By the time I arrived at HSBXL a few minutes
