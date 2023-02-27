@@ -61,10 +61,12 @@ downtown Boston, the Boston airport, Boston Harbor, Fenway Stadium, Central Park
 and a myriad of other sites.  It was neat to get a bird’s eye (literally) view
 of the city.
 
-[![Views of the Boston Skyline from the Whale Watching Boat (top) and the
-Prudential Center (bottom)](./images/boston-skyline.jpg)](./images/boston-skyline.jpg)
-*Views of the Boston Skyline from the Whale Watching Boat (top) and the
-Prudential Center (bottom)*
+{{< figure
+  src="./images/boston-skyline.jpg"
+  link="./images/boston-skyline.jpg"
+  target="_blank"
+  caption="Views of the Boston Skyline from the Whale Watching Boat (top) and the Prudential Center (bottom)"
+>}}
 
 ### Boston Cream Pie {#bostoncreampie}
 
