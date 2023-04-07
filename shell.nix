@@ -13,17 +13,6 @@ let
           );
         }
       )
-      (
-        self: super: {
-          docutils = super.docutils.overrideAttrs (
-            old: {
-              propagatedBuildInputs = (old.propagatedBuildInputs or [ ]) ++ [
-                super.python3Packages.pygments
-              ];
-            }
-          );
-        }
-      )
     ];
   };
   lib = pkgs.lib;
