@@ -6,7 +6,6 @@ tags: [Travel, Amsterdam, Netherlands, Beeper, Work]
 description: |
   This week, my company had our week-long 2023 Q1 work retreat in Amsterdam,
   Netherlands. These are my thoughts and reflections on the trip.
-draft: true
 ---
 
 This week, my company (Beeper) had our first retreat of the new year in
@@ -24,10 +23,10 @@ personal level, discuss future plans, and reflect on the progress we have made.
 
 Since the last retreat, we have gained a new team member, Joonas, who is yet
 another Finn bringing our Finish contingency up to four people. Joonas
-previously worked at Oura, the company that makes smart rings, as an iOS
-developer and he was hired onto our iOS team earlier this year. He has been
-helping out on the backend team wrangling our iMessage bridge and helping bring
-it to even more of our users.
+previously worked at Oura (the smart ring company) as an iOS developer and he
+was hired onto our iOS team earlier this year, however he has been helping out
+on the backend team wrangling our iMessage bridge and helping bring it to even
+more of our users.
 
 This retreat was also the largest we've had so far with 22 people in attendance.
 We stayed at
@@ -66,8 +65,8 @@ bridges, and many other bug fixes and architectural improvements across the
 entire platform.
 
 There is also a lot of optimism about what we will accomplish next. We are
-focusing on polishing our apps and scaling our backend so that we can start
-onboarding more and more people on our waitlist!
+focusing on polishing our apps and scaling our backend so that we can onboarding
+even more people from our waitlist!
 
 The next few months are going to be very exciting for Beeper. Since we've
 stabilized our app architectures, we are going to be able to focus on building
@@ -111,16 +110,16 @@ new helper functions he had added to the library was very nice.
 I was also able to collaborate with the support team on a few new features for
 Chatwoot. I added functionality to create Chatwoot conversations for all users
 who don't currently have active conversations on startup, and I created a
-dashboard for the Chatwoot app to provide links to some important resources for
-our support team.
+dashboard within Chatwoot to provide links to some important resources for our
+support team.
 
 ### Deploying to Production
 
-I have been trying to learn our production stack beyond bridges and one of the
-ways that Brad has been helping me do that is by working on and deploying
-non-bridge backend work. For example, the Chatwoot changes required deployment,
-and having other people on the backend team there to double-check that what I
-was doing things correctly was really handy.
+I have been trying to learn how our production stack works beyond bridges, and
+one of the ways that Brad (my boss) has been helping me do that is by having me
+work on and deploy non-bridge backend work. The Chatwoot changes required
+deployment, and having other people on the backend team there to double-check
+that what I was deploying things correctly was really handy.
 
 On Friday, we had a BRAD day. It's a day that every employee in the company can
 work on anything we want, so long as it's company-related, and as long as we
@@ -130,7 +129,7 @@ know how write code to deploy containers to our production environment yet, so
 that is what I did. It was good experience to learn more about how our
 kubernetes setup works.
 
----
+### Other Progress
 
 There were many other things that we worked on. The client teams developed ideas
 for how to add polish to our apps, Scott and Max worked on the new Signal
@@ -198,7 +197,7 @@ On Wednesday, we went to
 "French bowling". The goal was to throw large meta balls towards a small wooden
 red ball. Whichever team gets closest to the red ball got points. Points are
 determined by the number of your team's balls that are closer to the red ball
-than all the other team's balls.
+than all the other team's balls (similar to curling scoring).
 
 I played with Max against Ivan and Jess. Ivan and Jess made a great comeback and
 won by one point!
@@ -213,17 +212,43 @@ won by one point!
 
 ### Tulips
 
-Thursday was "Adventure Day". The team split up to go on various 
-adventures around Amsterdam. I went with G, Annie, Michelle, Bradley, Josh,
-Laser,
-TODO!!!!!!!!!!!!!!!!!!!!!!!!!!!! (jess?)
-to Kuekenhof
-TODO!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-to see the tulips.
-Most of the tulips were not quite in bloom yet, but there was a greenhouse that
-had many tulips in bloom.
+Thursday was "Adventure Day". The team split up to go on various adventures
+around Amsterdam. I went with G, Annie, Michelle, Bradley, Josh, Laser, and Jess
+to Keukenhof to see the tulips. Most of the tulips were not quite in bloom yet,
+but there was a greenhouse that had many tulips in bloom.
 
-TODO PICTURES
+<figure>
+  <table class="gallery">
+    <tr>
+      <td>
+        <a href="./images/tulips1.jpg" target="_blank">
+          <img src="./images/tulips1.jpg"
+               alt="Tulips at Keukenhof" />
+        </a>
+      </td>
+      <td>
+        <a href="./images/tulips2.jpg" target="_blank">
+          <img src="./images/tulips2.jpg"
+               alt="Tulips at Keukenhof" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="./images/tulips3.jpg" target="_blank">
+          <img src="./images/tulips3.jpg"
+               alt="Tulips at Keukenhof" />
+        </a>
+      </td>
+      <td>
+        <a href="./images/tulips4.jpg" target="_blank">
+          <img src="./images/tulips4.jpg"
+               alt="Tulips at Keukenhof" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</figure>
 
 ### I Can Play the Nine Ball!
 
