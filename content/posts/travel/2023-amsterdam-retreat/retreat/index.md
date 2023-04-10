@@ -6,6 +6,7 @@ tags: [Travel, Amsterdam, Netherlands, Beeper, Work]
 description: |
   This week, my company had our week-long 2023 Q1 work retreat in Amsterdam,
   Netherlands. These are my thoughts and reflections on the trip.
+image: ./images/team.jpg
 ---
 
 This week, my company (Beeper) had our first retreat of the new year in
@@ -41,6 +42,13 @@ meetings.
       link="./images/team-room.jpg"
       target="_blank"
       title="Everyone in the coworking space listening to Eric discuss our plans"
+>}}
+
+{{< figure
+      src="./images/team.jpg"
+      link="./images/team.jpg"
+      target="_blank"
+      title="A group picture with everyone who made it to the retreat"
 >}}
 
 ## Retro
