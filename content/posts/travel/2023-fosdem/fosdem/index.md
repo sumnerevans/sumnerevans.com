@@ -4,7 +4,7 @@ date: 2023-02-05T06:25:00-06:00
 categories: [Trip to FOSDEM 2023]
 tags:
   - Travel
-  - FOSDEM 2023
+  - FOSDEM
   - Matrix
   - Matrix Community Meetup
   - HSBXL
