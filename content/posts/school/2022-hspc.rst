@@ -318,7 +318,7 @@ Daniel's Debugging Disaster
 :Description: https://mines22beginner.kattis.com/problems/mines22.danielsdebuggingdisaster
 :Author: Sumner Evans
 :Beginner: Problem F, 11/14 (79%) solved/tries, 28% solve rate
-:Beginner: Problem D, 19/28 (68%) solved/tries, 73% solve rate
+:Advanced: Problem D, 19/28 (68%) solved/tries, 73% solve rate
 :Concept: basic probability
 
 .. admonition:: Problem Summary
