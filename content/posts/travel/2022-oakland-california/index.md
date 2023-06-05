@@ -166,7 +166,7 @@ got a good view.
 >}}
 
 We stopped for lunch at Fog Harbor Fish House. I had the Seafood Penne and it
-was delicious. The seafood really is so much better on the costs...
+was delicious. The seafood really is so much better on the coasts...
 
 By the time we were done with lunch, the fog had lifted even more, so we took
 a bus over to the Golden Gate Bridge.
