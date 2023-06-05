@@ -8,7 +8,6 @@ description: |
   House late in the evening. In between, I walked around the city, and met up
   with my coworkers for dinner.
 image: ./images/boats.jpg
-draft: true
 ---
 
 Today I went to visit the Van Gogh Museum in the morning, and the Anne Frank
@@ -84,14 +83,25 @@ Frank House for my time slot. I was fortunate to get a ticket at all (I booked
 only a couple weeks in advance), but the only time available was quite late in
 the evening.
 
-It was a very impactful museum.
-There were two things that 
+It was a very impactful museum. The displays throughout the house thoughtfully
+conveyed the story of Anne Frank and her family. The rooms remain unfurnished as
+was the wish of Otto Frank, the only survivor of the people who hid in the
+annex.
 
-poignancy
+I was saddened by the loss of innocence experienced by those who were forced
+into hiding. Yet I was encouraged by Anne's determination to continue to pursue
+her dreams of becoming a journalist.
 
-her memory will live on
+I was saddened by the total loss of freedom that the inhabitants of the annex
+endured. Yet I was encouraged by Anne's ability to experience freedom through
+the written word.
 
-* Anne Frank House
+I was saddened by the hopes of liberation that were shattered by their discovery
+and deportation to their deaths at various concentration camps. Yet I was
+encouraged by the account of great resilience and courage in the face of extreme
+persecution from the written words of a child.
 
-  * what struck me was the hope of liberation after the D-Day landings
-  * her story lives on
+In these confrontations with the ephemeral nature of life, I can't help but take
+a step back and think about what really matters in life. Anne's legacy is one of
+determination, resilience, courage, endurance, and fortitude. Anne's life was
+cut short by the horrors of the Nazi rule, but her compelling story lives on.
