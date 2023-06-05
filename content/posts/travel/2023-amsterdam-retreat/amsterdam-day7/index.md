@@ -4,8 +4,8 @@ date: 2023-04-01T09:25:00-06:00
 categories: [Trip to Amsterdam]
 tags: [Travel, Amsterdam, Netherlands]
 description: |
-  I once again ventured across the pond for a work retreat in Amsterdam.
-draft: true
+  My last day in Amsterdam before I headed back home. I wandered around the
+  beautiful streets of Amsterdam and had a nice lunch.
 ---
 
 I woke up late on my last day in Amsterdam, and missed breakfast at the hotel.
