@@ -18,15 +18,15 @@ science at my alma mater, Colorado School of Mines.
 For all teaching-related correspondence, please use this email:
 teaching [at] sumnerevans [dot] com
 
-### Current Class
+### Fall 2023
 
-* [CSCI 341 Computer Organization](https://elearning.mines.edu/courses/47606)
-  * [Schedule](https://elearning.mines.edu/courses/47606/pages/course-schedule)
+I will be teaching CSCI 406 with Dr. Dinesh Mehta.
 
 ### Previous Classes
 
+* CSCI 341 Computer Organization (Spring 2023)
 * [CSCI 400 Principles of Programming Languages](https://lambda.mines.edu/f22-syllabus/) (Fall 2022)
-* [CSCI 406 Algorithms](https://elearning.mines.edu/courses/36726) (Spring 2022)
+* CSCI 406 Algorithms (Spring 2022)
 * [CSCI 400 Principles of Programming Languages](https://lambda.mines.edu/f21b-syllabus/) (Fall 2021)
 * [CSCI 564 Advanced Computer Architecture](./csci564-s21/) (Spring 2021)
 * [CSCI 400 Principles of Programming Languages](https://lambda.mines.edu/f20b-syllabus/) (Fall 2020)
