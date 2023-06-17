@@ -50,7 +50,7 @@ Paginate = 15
   mainSections = ["posts"]
 
   # Isso
-  issoUrl = "//comments.sumnerevans.com"
+  # issoUrl = "//comments.sumnerevans.com"
 
   [params.issoOptions]
     avatar = false
