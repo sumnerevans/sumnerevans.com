@@ -35,9 +35,6 @@ universe.
 - **Server:** (hostname: `morak`) A Hetzner VPS (CPX11) running websites and
   cloud storage infrastructure.
 
-- **Synapse Server:** (hostname: `kessel`) A Hetzner VPS (CCX12) running all of
-  my high-performance Synapse server and related infrastructure.
-
 ## Accessories
 
 - **Monitors:**
