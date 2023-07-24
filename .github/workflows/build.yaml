@@ -35,7 +35,7 @@ jobs:
 
       - name: rsync
         if: github.ref == 'refs/heads/master'
-        uses: up9cloud/action-rsync@v1.3
+        uses: up9cloud/action-rsync@v1.4
         env:
           HOST: morak.sumnerevans.com
           KEY: ${{ secrets.DEPLOY_SSH_KEY }}
