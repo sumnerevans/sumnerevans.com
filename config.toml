@@ -10,7 +10,7 @@ pygmentsUseClasses = true
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
-Paginate = 15
+# paginate = 15
 
 [minify]
   minifyOutput = true
