@@ -8,13 +8,13 @@ description: "My company, Beeper, had our first retreat in Montreal, Canada. The
 ---
 
 As I mentioned in my `previous post <../2021-09-10-denver-to-dc>`_, the main
-reason for my travel was for a work retreat with Beeper in Montreal. The purpose
+reason for my travel was a work retreat with Beeper in Montreal. The purpose
 of the retreat was for all of us to get to work together in person. For most of
 us (myself included), it was the first time meeting anyone else on the team in
 person. In fact, the closest person to me in the company lives in Provo, Utah.
 
-Instead of relating to you what we did every chronologically, I'm going to give
-you some highlights and overall thoughts on the week.
+Instead of relating to you what we did chronologically, I'm going to give you
+some highlights and overall thoughts on the week.
 
 Working With My Coworkers
 =========================
