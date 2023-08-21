@@ -20,7 +20,8 @@ teaching [at] sumnerevans [dot] com
 
 ### Fall 2023
 
-I will be teaching CSCI 406 with Dr. Dinesh Mehta.
+I am teaching [CSCI 406 Algorithms](https://elearning.mines.edu/courses/50549)
+with Dr. Dinesh Mehta.
 
 ### Previous Classes
 
