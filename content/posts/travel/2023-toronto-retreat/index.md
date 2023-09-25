@@ -225,5 +225,5 @@ the people I already knew.
 
 This post is a bit light on details intentionally because we worked on and
 discussed a lot of things that we aren't quite ready to announce yet. But I will
-this: I'm very excited about where we're headed and what we will accomplish as a
-team!
+say this: I'm very excited about where we're headed and what we will accomplish
+as a team!
