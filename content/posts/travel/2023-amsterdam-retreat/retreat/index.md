@@ -14,11 +14,11 @@ Amsterdam, Netherlands. We aim for about three retreats a year, though due to
 holidays and a recent push towards our 
 [beta exit](https://blog.beeper.com/p/beeper-update-4-out-of-beta)
 milestone, it has been a little while since we have all gotten together. The
-[last retreat](../../2022-mexico-city-retreat)
+[last retreat]({{< ref "/posts/travel/2022-mexico-city-retreat" >}})
 was in Mexico City in October and before that we had
-[three](../../2021-dc-montreal/2021-09-13-17-montreal)
-[other](../../2022-playa-del-carmen-mexico)
-[retreats](../../2022-lisbon-and-paris/ericeira-portugal).
+[three]({{< ref "/posts/travel/2021-dc-montreal/2021-09-13-17-montreal" >}})
+[other]({{< ref "/posts/travel/2022-playa-del-carmen-mexico" >}})
+[retreats]({{< ref "/posts/travel/2022-lisbon-and-paris/ericeira-portugal" >}}).
 The goal of each retreat is to provide an opportunity to connect as a team on a
 personal level, discuss future plans, and reflect on the progress we have made.
 
