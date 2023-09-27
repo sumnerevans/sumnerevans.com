@@ -11,7 +11,7 @@ tags:
 description: |
   This week, my company had our week-long 2023 Q3 work retreat in Toronto,
   Canada. These are my thoughts and reflections on the trip.
-image: ./images/skyline.jpg
+image: ./images/team.jpg
 ---
 
 This week, my company (Beeper) had our fall work retreat in Toronto, Canada. It
@@ -84,6 +84,13 @@ startup that was a block away from the hotel.
       link="./images/workspace.jpg"
       target="_blank"
       title="The team listening to Eric lay out our plan for the next few months."
+>}}
+
+{{< figure
+      src="./images/team.jpg"
+      link="./images/team-fullres.jpg"
+      target="_blank"
+      title="Our team at the Top Hat office."
 >}}
 
 ## The iMessage Corner of Happiness!
