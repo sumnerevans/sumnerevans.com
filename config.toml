@@ -125,19 +125,9 @@ pygmentsUseClasses = true
     weight = 1
 
   [[menu.footer]]
-    name = "GitLab"
-    url = "https://gitlab.com/sumner"
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/sumnerevans"
     weight = 2
-
-  [[menu.footer]]
-    name = "sourcehut"
-    url = "https://sr.ht/~sumner"
-    weight = 3
-
-  [[menu.footer]]
-    name = "Twitch"
-    url = "https://www.twitch.tv/sumnerevans"
-    weight = 4
 
   [[menu.footer]]
     name = "YouTube"
@@ -150,14 +140,9 @@ pygmentsUseClasses = true
     weight = 6
 
   [[menu.footer]]
-    name = "Twitter"
+    name = "X (Twitter)"
     url = "https://twitter.com/sumner_evans"
     weight = 7
-
-  [[menu.footer]]
-    name = "LinkedIn"
-    url = "https://www.linkedin.com/in/sumnerevans"
-    weight = 8
 
   [[menu.footer]]
     name = "Liberapay"
