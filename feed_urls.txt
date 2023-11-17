@@ -1,9 +1,7 @@
 https://blog.beeper.com/feed
 https://blog.danslimmon.com/feed
 https://chrpaul.de/feed.xml
-https://drewdevault.com/blog/index.xml
 https://elijahpotter.dev/rss.xml
-https://emersion.fr/blog/rss.xml
 https://go.dev/blog/feed.atom
 https://intuitiveexplanations.com/feed.xml
 https://lukaswerner.com/feed.xml
