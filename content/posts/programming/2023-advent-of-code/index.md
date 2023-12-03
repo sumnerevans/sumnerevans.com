@@ -20,12 +20,7 @@ year as well.
 This year, I'm leaving my fate up to chance by spinning a wheel every night
 which will dictate what language I use for that night.
 
-{{< figure
-      src="./wheel.png"
-      target="_blank"
-      title="Spinner wheel which will decide my fate every night"
-      caption="The random spinner wheeel which will decide my fate every night"
->}}
+{{< figure src="./wheel.png" target="_blank" title="Spinner wheel which will decide my fate every night" caption="The random spinner wheel which will decide my fate every night" >}}
 
 I'm going to be streaming some of my solves and I will try and keep this blog
 post up-to-date every day with my thoughts on each problem.
@@ -64,7 +59,7 @@ $ tokei -e '*.txt' -e '*.json'
 # Day 1: Trebuchet?!
 
 | <!-- -->       | <!-- -->                                                                                |
-| -------------- | ----------------------------------------------------------------------------------------|
+| -------------- | --------------------------------------------------------------------------------------- |
 | **Link:**      | https://adventofcode.com/2023/day/1                                                     |
 | **Solutions:** | [TypeScript](https://github.com/sumnerevans/advent-of-code/blob/master/y2023/d01/01.ts) |
 | **Part 1:**    | 00:11:38, 5636th                                                                        |
@@ -106,19 +101,19 @@ I did get to abuse the JavaScript type system a bit to construct the final
 number:
 
 ```js
-return parseInt('' + ints[0] + ints[ints.length - 1])
+return parseInt("" + ints[0] + ints[ints.length - 1]);
 ```
 
 </details>
 
 # Day 2: Cube Conundrum
 
-| <!-- -->       | <!-- -->                                                                                     |
-| -------------- | ---------------------------------------------------------------------------------------------|
-| **Link:**      | https://adventofcode.com/2023/day/2                                                          |
+| <!-- -->       | <!-- -->                                                                             |
+| -------------- | ------------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2023/day/2                                                  |
 | **Solutions:** | [F#](https://github.com/sumnerevans/advent-of-code/blob/master/y2023/d02/Program.fs) |
-| **Part 1:**    | 00:44:29, 9493th                                                                             |
-| **Part 2:**    | >24h, 94541st                                                                                |
+| **Part 1:**    | 00:44:29, 9493th                                                                     |
+| **Part 2:**    | >24h, 94541st                                                                        |
 
 <details class="youtube-expander">
   <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2023 - Day 2 | Random Wheel Spin (*9493, **94541)</summary>
