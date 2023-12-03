@@ -39,9 +39,10 @@ post up-to-date every day with my thoughts on each problem.
 The following are my results across all of the days.
 
 ```
-      -------Part 1--------   -------Part 2--------
-Day       Time  Rank  Score       Time  Rank  Score
-  1   00:11:38  5636      0   00:21:47  2021      0
+      -------Part 1--------   --------Part 2--------
+Day       Time  Rank  Score       Time   Rank  Score
+  2   00:44:29  9493      0       >24h  94541      0
+  1   00:11:38  5636      0   00:21:47   2021      0
 ```
 
 Language statistics:
@@ -51,10 +52,12 @@ $ tokei -e '*.txt' -e '*.json'
 ===============================================================================
  Language            Files        Lines         Code     Comments       Blanks
 ===============================================================================
- Go                     50         7646         6331          293         1022
- OCaml                   1           46           37            4            5
+ F#                      1           49           44            1            4
+ MSBuild                 1           12            9            0            3
+ OCaml                   1           37           19           14            4
+ TypeScript              1           48           44            0            4
 ===============================================================================
- Total                  51         7692         6368          297         1027
+ Total                   4          146          116           15           15
 ===============================================================================
 ```
 
@@ -107,3 +110,29 @@ return parseInt('' + ints[0] + ints[ints.length - 1])
 ```
 
 </details>
+
+# Day 2: Cube Conundrum
+
+| <!-- -->       | <!-- -->                                                                                     |
+| -------------- | ---------------------------------------------------------------------------------------------|
+| **Link:**      | https://adventofcode.com/2023/day/2                                                          |
+| **Solutions:** | [F#](https://github.com/sumnerevans/advent-of-code/blob/master/y2023/d02/Program.fs) |
+| **Part 1:**    | 00:44:29, 9493th                                                                             |
+| **Part 2:**    | >24h, 94541st                                                                                |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2023 - Day 2 | Random Wheel Spin (*9493, **94541)</summary>
+  {{< youtube id="30a0xIioxMs" title="Advent of Code 2023 - Day 2 | Random Wheel Spin (*9493, **94541)" >}}
+</details>
+
+Today I spun **F#**! It took me a long time to just install and learn how to
+read input in F#, and then it took an even longer time to solve part 1 since I
+wasn't really sure what functions I could even use. F# has some constructs
+that are similar to other functional languages that I've used in the past, which
+helped the learning curve.
+
+I was hampered by not having syntax highlighting and a language server. I'll
+have to figure that out before I spin F# again.
+
+I don't think that I did anything super novel today, so I'm not going to make
+comments about either of the parts.
