@@ -41,29 +41,45 @@ title: "Portfolio"
       <summary>Notable projects include...</summary>
       <ul>
         <li>
-          Core member of a team which implemented a homeserver called
+          Reverse engineered and implemented many core features for
+          <a href="https://blog.beeper.com/p/introducing-beeper-mini-get-blue"><b>Beeper Mini</b></a>
+          including sending media, tapbacks, typing indicators, read receipts,
+          edits, unsends, link previews, adding and removing group members, and
+          changing group names and avatars.
+        </li>
+        <li>
+          Started a project called
           <a href="#presentation-hungryserv">Hungryserv</a>
-          which enabled us to scale from hundreds of users to tens of thousands of users.
+          a <b>Matrix</b>-compatible homeserver written in <b>Go</b>
+          which enabled us to scale from hundreds to tens of thousands of users.
+          I created the initial proof of concept and then was a core member of the
+          team that productionized the project, implementing many core features
+          along the way.
         </li>
         <li>
-          Implemented a
-          <a href="https://github.com/beeper/linkedin" target="_blank">LinkedIn Messages</a>
-          bridge in <b>Python</b>.
-        </li>
-        <li>
-          Built a
+          Streamlined our support team's ability to chat directly with users by
+          building a
           <a href="https://github.com/beeper/chatwoot/" target="_blank">Chatwoot bot</a>
-          in <b>Go</b> to help streamline our support team's process.
+          in <b>Go</b>.
         </li>
         <li>
-          Instrumented bridge metrics for measuring message send latency and reliability. Built a
-          service to process those metrics and send them to BigQuery.
+          Reverse-engineered the
+          <a href="https://github.com/beeper/linkedin-messaging-api" target="_blank">LinkedIn Messaging API</a>
+          and implemented a
+          <a href="https://github.com/beeper/linkedin" target="_blank">LinkedIn bridge</a>
+          in <b>Python</b>.
+        </li>
+        <li>
+          Measured message send <b>latency and reliability</b> by
+          instrumenting bridge <b>metrics</b>. Built a service to process those
+          metrics and send them to BigQuery.
         </li>
         <li>
           Defined a framework for importing users' chat history, and implemented it in the
           <a href="https://github.com/mautrix/whatsapp" target="_blank">WhatsApp</a>,
           <a href="https://github.com/mautrix/facebook" target="_blank">Facebook</a>,
-          <a href="https://github.com/mautrix/instagram" target="_blank">Instagram</a>, and 
+          <a href="https://github.com/mautrix/instagram" target="_blank">Instagram</a>, and
+          (in progress)
           <a href="https://github.com/mautrix/imessage" target="_blank">iMessage</a>
           bridges.
         </li>
