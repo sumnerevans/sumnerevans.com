@@ -20,7 +20,11 @@ year as well.
 This year, I'm leaving my fate up to chance by spinning a wheel every night
 which will dictate what language I use for that night.
 
-{{< figure src="./wheel.png" target="_blank" title="Spinner wheel which will decide my fate every night" caption="The random spinner wheel which will decide my fate every night" >}}
+{{< figure
+    src="./wheel.png"
+    target="_blank"
+    title="Spinner wheel which will decide my fate every night"
+    caption="The random spinner wheel which will decide my fate every night" >}}
 
 I'm going to be streaming some of my solves and I will try and keep this blog
 post up-to-date every day with my thoughts on each problem.
@@ -36,6 +40,8 @@ The following are my results across all of the days.
 ```
       -------Part 1--------   --------Part 2--------
 Day       Time  Rank  Score       Time   Rank  Score
+  7   01:11:56  8044      0   02:06:29   8720      0
+  5   01:14:02  9429      0          -      -      -
   2   00:44:29  9493      0       >24h  94541      0
   1   00:11:38  5636      0   00:21:47   2021      0
 ```
@@ -47,12 +53,15 @@ $ tokei -e '*.txt' -e '*.json'
 ===============================================================================
  Language            Files        Lines         Code     Comments       Blanks
 ===============================================================================
- F#                      1           49           44            1            4
- MSBuild                 1           12            9            0            3
- OCaml                   1           37           19           14            4
+ Batch                   1           92           71            0           21
+ F#                      3           78           63            5           10
+ Kotlin                  4          171          115           31           25
+ MSBuild                 4           44           38            0            6
+ OCaml                   2          229          189           19           21
+ Shell                   1          249          106          117           26
  TypeScript              1           48           44            0            4
 ===============================================================================
- Total                   4          146          116           15           15
+ Total                  16          911          626          172          113
 ===============================================================================
 ```
 
@@ -131,3 +140,43 @@ have to figure that out before I spin F# again.
 
 I don't think that I did anything super novel today, so I'm not going to make
 comments about either of the parts.
+
+# Day 7: Camel Cards
+
+| <!-- -->       | <!-- -->                                                                            |
+| -------------- | ----------------------------------------------------------------------------------- |
+| **Link:**      | https://adventofcode.com/2023/day/7                                                 |
+| **Solutions:** | [OCaml](https://github.com/sumnerevans/advent-of-code/blob/master/y2023/d07/d07.ml) |
+| **Part 1:**    | 01:11:56, 8044th                                                                    |
+| **Part 2:**    | 02:06:29, 8720th                                                                    |
+
+<details class="youtube-expander">
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2023 - Day 7 | Random Wheel Spin (*8044, **8720)</summary>
+  {{< youtube id="f8iZByyR1Cc" title="Advent of Code 2023 - Day 7 | Random Wheel Spin (*8044, **8720)" >}}
+</details>
+
+Today I spun **OCaml**! It took a very long time for me to get into functional
+programming mode. The first task was to parse the hand into a tuple of
+`(hand_type, hand_values)` where `hand_values` was just a tuple of integers
+representing the card values.
+
+In order to do that, I sorted the characters in the hand and then compressed
+them into a sorted list of `(count, character)` tuples. Then, I pattern matched
+on the different possible combinations of counts. For example, if you have
+`AA233`, then it would sort into:
+```ocaml
+[(1, '2'); (2; 'A'); (2, '3')]
+```
+which I was able to pattern match with:
+```ocaml
+match hand with
+  ...
+  | [_; (2, _); (2, _)] -> (TwoPair, ...)
+```
+
+It took me a very long time to figure out how to do it properly, but eventually
+I was able to get it.
+
+I had a really horrible part 2 delta because my pattern matching-foo was not
+very good, and I missed a couple of cases that forced me to just debug through
+each hand one at a time.
