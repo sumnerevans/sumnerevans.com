@@ -164,10 +164,13 @@ In order to do that, I sorted the characters in the hand and then compressed
 them into a sorted list of `(count, character)` tuples. Then, I pattern matched
 on the different possible combinations of counts. For example, if you have
 `AA233`, then it would sort into:
+
 ```ocaml
 [(1, '2'); (2; 'A'); (2, '3')]
 ```
+
 which I was able to pattern match with:
+
 ```ocaml
 match hand with
   ...
@@ -180,3 +183,37 @@ I was able to get it.
 I had a really horrible part 2 delta because my pattern matching-foo was not
 very good, and I missed a couple of cases that forced me to just debug through
 each hand one at a time.
+
+# Day 8: Haunted Wasteland
+
+| <!-- -->       | <!-- -->                                                                             |
+| -------------- | ------------------------------------------------------------------------------------ |
+| **Link:**      | https://adventofcode.com/2023/day/8                                                  |
+| **Solutions:** | [F#](https://github.com/sumnerevans/advent-of-code/blob/master/y2023/d08/Program.fs) |
+| **Part 1:**    | 00:20:16, 5859th                                                                     |
+| **Part 2:**    | 00:42:07, 2970th                                                                     |
+
+Today I spun **F#**. It was quite fortunate, because this problem was inherently
+pretty recursive in nature. Trees problems are normally very amenable to
+recursive thinking. The problem for me was that I couldn't recursively think.
+
+For part 1, I got away with a non-tail-recursive function. I'm not sure if the
+non-tail-recursive approach works for part 2 or not, but in my attempts to
+optimize part 2 I converted to use a tail-recursive approach which was
+sufficiently space-efficient. This is the core of the algorithm. I think it's
+quite clean.
+
+```ocaml
+let rec step_p1 current directionIdx =
+    if current = "ZZZ" then
+        directionIdx
+    else
+        let (left, right) = map[current]
+
+        match directions[directionIdx % directions.Length] with
+        | 'L' -> (step_p1 left (directionIdx + 1))
+        | 'R' -> (step_p1 right (directionIdx + 1))
+        | _ -> failwith "invalid direction"
+
+printfn "%A" (step_p1 "AAA" 0)
+```
