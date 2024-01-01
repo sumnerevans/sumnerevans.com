@@ -43,9 +43,7 @@
                 linkchecker
                 nodePackages.htmlhint
                 openssh
-                rnix-lsp
                 rsync
-                vale
               ];
             };
             ci = pkgs.mkShell { packages = ciPackages; };
