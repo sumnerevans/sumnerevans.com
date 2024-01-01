@@ -217,3 +217,13 @@ let rec step_p1 current directionIdx =
 
 printfn "%A" (step_p1 "AAA" 0)
 ```
+
+-----
+
+**Update:** as you can tell from the lack of posts, I decided to give up on this
+year. I had a very busy early December due to lots of grading finishing up the
+fall semester as well as a quite busy time at work (we released
+[Beeper Mini](https://blog.beeper.com/p/introducing-beeper-mini-get-blue)).
+
+I'm hoping that next year I'll be able to get back to this and spin the wheel
+again!
