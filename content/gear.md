@@ -29,9 +29,6 @@ universe.
 - **Laptop:** (hostname: `scarif`) A
   [ThinkPad T14s Gen 3 - AMD](https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadt/thinkpad-t14s-gen-3-(14-inch-amd)/21cq000gus).
 
-- **Cloud Dev Machine:** (hostname: `tatooine`) A Hetzner VPS (CPX41) running a
-  continuous tmux session for development.
-
 - **Server:** (hostname: `morak`) A Hetzner VPS (CPX11) running websites and
   cloud storage infrastructure.
 
@@ -74,7 +71,7 @@ universe.
 - **Smartphone:** Google Pixel 3a (64 GB, Just Black)
 - **Smartphone:** Google Pixel 1 (32 GB, Quite Black)
 - **Smartphone:** iPhone 5s (32 GB, Space Gray)
-- **Smartwatch\*:** Fossil Gen 6 Black
+- **Smartwatch:** Fossil Gen 6 Black
 - **Smartwatch:** Amazfit Bip S (Carbon Black)
 - **Smartwatch:** Huawei Watch Black Stainless Steel
 - **Tablet\*:** iPad Pro 9.7 inch (128 GB)

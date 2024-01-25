@@ -1,7 +1,7 @@
 ---
 title: "Starbase, Texas"
 date: 2022-10-24T09:25:00-06:00
-categories: [Trip to Starbase]
+categories: [Travel]
 tags:
   - Travel
   - Starbase

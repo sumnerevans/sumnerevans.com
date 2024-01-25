@@ -1,7 +1,7 @@
 ---
 title: "Oakland, California"
 date: 2022-08-01T12:00:00-06:00
-categories: [Trip to Oakland]
+categories: [Travel]
 tags: [Travel, Oakland, San Francisco, California]
 description: "This week, I went to see my friend, Jack, in Oakland."
 image: ./images/golden-gate-bridge.jpg
