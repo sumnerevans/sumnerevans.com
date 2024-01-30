@@ -69,7 +69,7 @@ on reverse engineering iMessage. I'd met him online through Beeper, and by
 coincidence, I found out he lived in LA, pretty close to where Ethan lives. It
 was cool to meet him in person because I've interacted with him in a technical
 capacity a fair bit recently since I've been
-[working on improving Beeper's iMessage bridge]({{ ref "/posts/travel/2023-toronto-retreat#the-imessage-corner-of-happiness" }}).
+[working on improving Beeper's iMessage bridge]({{< ref "/posts/travel/2023-toronto-retreat#the-imessage-corner-of-happiness" >}}).
 
 ## Exploring LA
 
@@ -132,7 +132,7 @@ a great hanging out and really getting to know each other on a deeper level.
 
 Ethan is Catholic, and so on Sunday, we went together to Mass. I had never been
 to a Catholic Mass in English before. The only other time I had been to Mass was
-[a French Mass in Montreal]({{ ref "/posts/travel/2016-new-england-trip/2016-06-04-montreal-1#mass-at-notre-dame" }})
+[a French Mass in Montreal]({{< ref "/posts/travel/2016-new-england-trip/2016-06-04-montreal-1#mass-at-notre-dame" >}})
 where I understood nothing about what was going on. I still didn't know what was
 going on at the English Catholic Mass, but that was a function of not being
 Catholic rather than a function of not knowing the language.
