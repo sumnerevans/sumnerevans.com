@@ -1,8 +1,13 @@
 ---
 title: "Amsterdam - Day 7"
 date: 2023-04-01T09:25:00-06:00
-categories: [Trip to Amsterdam]
-tags: [Travel, Amsterdam, Netherlands]
+categories:
+  - Travel
+  - Trip to Amsterdam
+tags:
+  - Travel
+  - Amsterdam
+  - Netherlands
 description: |
   My last day in Amsterdam before I headed back home. I wandered around the
   beautiful streets of Amsterdam and had a nice lunch.

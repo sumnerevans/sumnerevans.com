@@ -1,7 +1,9 @@
 ---
 title: "FOSDEM 2023"
 date: 2023-02-05T06:25:00-06:00
-categories: [Trip to FOSDEM 2023]
+categories:
+  - Travel
+  - Trip to FOSDEM 2023
 tags:
   - Travel
   - FOSDEM

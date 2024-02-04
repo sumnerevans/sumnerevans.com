@@ -1,7 +1,9 @@
 ---
 title: "Toronto, Canada - Work Retreat"
 date: 2023-09-22T06:25:00-06:00
-categories: [Travel, Work Retreats]
+categories:
+  - Travel
+  - Work Retreats
 tags:
   - Travel
   - Toronto

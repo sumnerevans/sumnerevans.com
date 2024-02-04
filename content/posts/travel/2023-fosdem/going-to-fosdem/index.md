@@ -1,7 +1,9 @@
 ---
 title: "See you at FOSDEM!"
 date: 2023-01-06T06:25:00-06:00
-categories: [Trip to FOSDEM 2023]
+categories:
+  - Travel
+  - Trip to FOSDEM 2023
 tags:
   - Travel
   - FOSDEM

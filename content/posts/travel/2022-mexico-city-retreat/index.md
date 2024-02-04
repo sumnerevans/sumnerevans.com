@@ -1,8 +1,15 @@
 ---
 title: "Mexico City, Mexico - Work Retreat"
 date: 2022-10-22T09:25:00-06:00
-categories: [Work Retreats]
-tags: [Travel, Mexico City, Mexico, Beeper, Work]
+categories:
+  - Travel
+  - Work Retreats
+tags:
+  - Travel
+  - Mexico City
+  - Mexico
+  - Beeper
+  - Work
 description: |
   My thoughts and reflections on the Beeper Fall 2022 retreat in Mexico City.
 image: ./images/retro.jpg

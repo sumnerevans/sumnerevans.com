@@ -1,8 +1,16 @@
 ---
 title: "Amsterdam, Netherlands - Work Retreat"
 date: 2023-03-31T09:25:00-06:00
-categories: [Trip to Amsterdam, Work Retreats]
-tags: [Travel, Amsterdam, Netherlands, Beeper, Work]
+categories:
+  - Travel
+  - Trip to Amsterdam
+  - Work Retreats
+tags:
+  - Travel
+  - Amsterdam
+  - Netherlands
+  - Beeper
+  - Work
 description: |
   This week, my company had our week-long 2023 Q1 work retreat in Amsterdam,
   Netherlands. These are my thoughts and reflections on the trip.

@@ -1,8 +1,15 @@
 ---
 title: "Amsterdam - Day 1"
 date: 2023-03-24T09:25:00-06:00
-categories: [Trip to Amsterdam]
-tags: [Travel, Amsterdam, Netherlands, Van Gogh, Anne Frank]
+categories:
+  - Travel
+  - Trip to Amsterdam
+tags:
+  - Travel
+  - Amsterdam
+  - Netherlands
+  - Van Gogh
+  - Anne Frank
 description: |
   Today I went to visit the Van Gogh Museum in the morning, and the Anne Frank
   House late in the evening. In between, I walked around the city, and met up
