@@ -15,16 +15,9 @@ as some mathematics topics.
 I have had the opportunity to teach courses in mulitple areas of computer
 science at my alma mater, Colorado School of Mines.
 
-For all teaching-related correspondence, please use this email:
-teaching [at] sumnerevans [dot] com
-
-### Fall 2023
-
-I am teaching [CSCI 406 Algorithms](https://elearning.mines.edu/courses/50549)
-with Dr. Dinesh Mehta.
-
 ### Previous Classes
 
+* CSCI 406 Algorithms (Fall 2023)
 * CSCI 341 Computer Organization (Spring 2023)
 * [CSCI 400 Principles of Programming Languages](https://lambda.mines.edu/f22-syllabus/) (Fall 2022)
 * CSCI 406 Algorithms (Spring 2022)
