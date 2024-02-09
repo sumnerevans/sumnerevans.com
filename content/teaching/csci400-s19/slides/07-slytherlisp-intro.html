@@ -1,0 +1,384 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SlytherLisp Introduction &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/slides/07-slytherlisp-intro.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="The Lambda Calculus" href="08-lambda-calculus.html" />
+    <link rel="prev" title="OOP &amp; Exceptions" href="06-oop-exceptions.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="slytherlisp-introduction">
+<h1>SlytherLisp Introduction<a class="headerlink" href="#slytherlisp-introduction" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These slides are also available in PDF format: <a class="reference internal" href="/teaching/csci400-s19/_static/slides/07-slytherlisp-intro-43.pdf" target="_blank">4:3 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/07-slytherlisp-intro-169.pdf" target="_blank">16:9 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/07-slytherlisp-intro-1610.pdf" target="_blank">16:10 PDF</a>.</p>
+</div>
+<div class="section" id="cons-cells-building-blocks-of-pl">
+<h2>Cons Cells: Building Blocks of PL<a class="headerlink" href="#cons-cells-building-blocks-of-pl" title="Permalink to this headline">¶</a></h2>
+<p>A <strong>cons cell</strong> (short for “construct”) is a data structure for which we can
+build many others from. It consists of two references to other objects.</p>
+<a class="reference internal image-reference" href="../_images/conscell.svg"><img alt="../_images/conscell.svg" src="../_images/conscell.svg" width="150pt" /></a>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">CAR:</th><td class="field-body">Contents of the address register</td>
+</tr>
+<tr class="field-even field"><th class="field-name">CDR:</th><td class="field-body">Contents of the decrement register</td>
+</tr>
+</tbody>
+</table>
+<p>Both can be a reference (e.g., pointer) to anything.</p>
+</div>
+<div class="section" id="building-lists-using-cons-cells">
+<h2>Building Lists using Cons Cells<a class="headerlink" href="#building-lists-using-cons-cells" title="Permalink to this headline">¶</a></h2>
+<p>Suppose we want to represent a list using cons cells. We can take inspiration
+from linked lists:</p>
+<ul class="simple">
+<li><strong>CAR</strong> will be a reference to the list item.</li>
+<li><strong>CDR</strong> will be a reference to the next cell.</li>
+<li>The last item in the list will have a CDR with the special value <strong>NIL</strong>.</li>
+</ul>
+<p>For example, here is a <strong>cons cell diagram</strong> for the list <code class="docutils literal notranslate"><span class="pre">(42&nbsp;69&nbsp;613)</span></code>:</p>
+<a class="reference internal image-reference" href="../_images/conslist.svg"><img alt="../_images/conslist.svg" src="../_images/conslist.svg" width="200pt" /></a>
+</div>
+<div class="section" id="building-trees-using-cons-lists">
+<h2>Building Trees using Cons Lists<a class="headerlink" href="#building-trees-using-cons-lists" title="Permalink to this headline">¶</a></h2>
+<p>Represent the following AST using cons cells:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">+</span> <span class="p">(</span><span class="o">/</span> <span class="mi">10</span> <span class="mi">2</span><span class="p">)</span> <span class="p">(</span><span class="o">*</span> <span class="mi">3</span> <span class="mi">3</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="what-is-slytherlisp">
+<h2>What is SlytherLisp?<a class="headerlink" href="#what-is-slytherlisp" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>SlytherLisp is a programming language.</li>
+<li>You’re going to implement an interpreter for this language.</li>
+</ul>
+</div>
+<div class="section" id="basic-syntax">
+<h2>Basic Syntax<a class="headerlink" href="#basic-syntax" title="Permalink to this headline">¶</a></h2>
+<p>SlytherLisp uses <strong>s-expressions</strong> as its unit of syntax. For example, to
+write</p>
+<div class="math notranslate nohighlight">
+\[\frac{2^3}{4 \times 5}\]</div>
+<p>in SlytherLisp, you would use:</p>
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">/</span><span class="w"> </span><span class="p">(</span><span class="nb">expt</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">*</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="admonition-built-in-math-functions admonition">
+<p class="first admonition-title">Built-in Math Functions</p>
+<div class="last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">+</span>     <span class="n">expt</span>        <span class="n">remainder</span>
+<span class="o">-</span>     <span class="n">sqrt</span>        <span class="n">ceil</span>
+<span class="o">*</span>     <span class="nb">abs</span>         <span class="n">floor</span>
+<span class="o">/</span>     <span class="n">floordiv</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="more-built-in-functions">
+<h2>More Built-in Functions<a class="headerlink" href="#more-built-in-functions" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">print</span></code>, which takes <em>n</em> arguments and prints them separated by spaces on
+the same line (just like Python!):</p>
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">print</span><span class="w"> </span><span class="s">&quot;Hello, World!&quot;</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">input</span></code>, which prompts for a line of input and returns the typed string.</p>
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nf">input</span><span class="w"> </span><span class="s">&quot;What is your name? &quot;</span><span class="p">)</span><span class="w">  </span><span class="c1">;; =&gt; &quot;Jack&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">define</span></code> syntax can be used to define a variable:</p>
+<pre class="literal-block">
+(define <em>variable-name</em> <em>value</em>)
+</pre>
+<p>For example:</p>
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="nv">name</span><span class="w"> </span><span class="p">(</span><span class="nf">input</span><span class="w"> </span><span class="s">&quot;What is your name? &quot;</span><span class="p">))</span><span class="w"></span>
+<span class="p">(</span><span class="nf">print</span><span class="w"> </span><span class="s">&quot;Nice to meet you,&quot;</span><span class="w"> </span><span class="nv">name</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="defining-our-own-functions">
+<h2>Defining Our Own Functions<a class="headerlink" href="#defining-our-own-functions" title="Permalink to this headline">¶</a></h2>
+<p>Using the <code class="docutils literal notranslate"><span class="pre">define</span></code> syntax, we can also add to the language with our own
+functions:</p>
+<pre class="literal-block">
+(define (<em>function-name</em> <em>parameter-name</em>...)
+  <em>statement-1</em>
+  ...
+  <em>statement-n</em>)
+</pre>
+<p>For example, we could define a function to determine if a number is even or
+not.</p>
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="nf">is-even?</span><span class="w"> </span><span class="nv">n</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nb">not</span><span class="w"> </span><span class="p">(</span><span class="nb">remainder</span><span class="w"> </span><span class="nv">n</span><span class="w"> </span><span class="mi">2</span><span class="p">)))</span><span class="w"></span>
+
+<span class="p">(</span><span class="nf">is-even?</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w">  </span><span class="c1">;; =&gt; #t</span><span class="w"></span>
+<span class="p">(</span><span class="nf">is-even?</span><span class="w"> </span><span class="mi">11</span><span class="p">)</span><span class="w">  </span><span class="c1">;; =&gt; #f</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="selection-using-if">
+<h2>Selection: Using <code class="docutils literal notranslate"><span class="pre">if</span></code><a class="headerlink" href="#selection-using-if" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">if</span></code> is a syntax which looks like this:</p>
+<pre class="literal-block">
+(if <em>predicate</em> <em>consequent</em> <em>alternative</em>)
+</pre>
+<p>Here is an example:</p>
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="nv">age</span><span class="w"> </span><span class="p">(</span><span class="nf">make-integer</span><span class="w"> </span><span class="p">(</span><span class="nf">input</span><span class="w"> </span><span class="s">&quot;How old are you? &quot;</span><span class="p">)))</span><span class="w"></span>
+
+<span class="p">(</span><span class="nf">print</span><span class="w"> </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">&lt;=</span><span class="w"> </span><span class="nv">age</span><span class="w"> </span><span class="mi">18</span><span class="p">)</span><span class="w"></span>
+<span class="w">         </span><span class="s">&quot;Minors not allowed.&quot;</span><span class="w"></span>
+<span class="w">         </span><span class="s">&quot;Welcome&quot;</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="what-s-special-about-if">
+<h2>What’s Special About <code class="docutils literal notranslate"><span class="pre">if</span></code>?<a class="headerlink" href="#what-s-special-about-if" title="Permalink to this headline">¶</a></h2>
+<p>Suppose we want to define our own <code class="docutils literal notranslate"><span class="pre">if</span></code> function, like so:</p>
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="nf">my-if</span><span class="w"> </span><span class="nv">predicate</span><span class="w"> </span><span class="nv">consequent</span><span class="w"> </span><span class="nv">alternative</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="nv">predicate</span><span class="w"> </span><span class="nv">consequent</span><span class="w"> </span><span class="nv">alternative</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>What could go wrong?</p>
+</div>
+<div class="section" id="functions-vs-macros">
+<h2>Functions vs. Macros<a class="headerlink" href="#functions-vs-macros" title="Permalink to this headline">¶</a></h2>
+<p>In SlytherLisp, there’s two different kinds of things you can put at the
+beginning of an s-expression to be called:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Functions:</th><td class="field-body">What you are familiar with: <code class="docutils literal notranslate"><span class="pre">eval</span></code> is called recursively on the
+parameters, then the function is called on the results.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Macros:</th><td class="field-body">Macros don’t get the convenience of having their parameters evaluated for
+them: they have to choose when (and if) this happens. Instead of returning a
+result, macros return an AST to replace their position.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="what-can-users-make">
+<h2>What can users make?<a class="headerlink" href="#what-can-users-make" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><strong>Functions:</strong> Primitive (built-in) and user crafted</li>
+<li><strong>Macros:</strong> Primitive only – user crafted macros can be added to your
+implementation for extra credit</li>
+</ul>
+<p>Both macros and functions are first class, and can be passed around just like
+normal data. They even both live in the same namespace as variables.</p>
+</div>
+<div class="section" id="recursion">
+<h2>Recursion<a class="headerlink" href="#recursion" title="Permalink to this headline">¶</a></h2>
+<p>Recursion is SlytherLisp’s only technique for iteration. For example, to
+compute the sum of numbers from 1 to 100:</p>
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="nf">sum-to-100</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="nf">sum-iter</span><span class="w"> </span><span class="nv">n</span><span class="w"> </span><span class="nv">a</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="nv">n</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="nv">a</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="nf">sum-iter</span><span class="w"> </span><span class="p">(</span><span class="nb">-</span><span class="w"> </span><span class="nv">n</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="nv">n</span><span class="w"> </span><span class="nv">a</span><span class="p">))))</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nf">sum-iter</span><span class="w"> </span><span class="mi">100</span><span class="w"> </span><span class="mi">0</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Some kinds of recursion can be optimized into simple loops. We will learn about
+this in the coming weeks.</p>
+</div>
+<div class="section" id="scoping">
+<h2>Scoping<a class="headerlink" href="#scoping" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>A <strong>scope</strong> refers to the period of which a variable is visible.</li>
+<li>Languages limit the scope of variables to be just within the function to help
+avoid the risk of collision in two identically named variables. But it raises
+the question: <em>what does it mean to be within a function?</em><ul>
+<li>In <strong>lexical scoping</strong> <a class="footnote-reference" href="#id2" id="id1">[1]</a>, the variable is visible when it is within the
+same function <em>structure-wise</em>.</li>
+<li>In <strong>dynamic scoping</strong>, the variable is visible when it is within the same
+function <em>environment-wise</em>.</li>
+</ul>
+</li>
+</ul>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Also called “static scoping”.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="lexical-scoping">
+<h2>Lexical Scoping<a class="headerlink" href="#lexical-scoping" title="Permalink to this headline">¶</a></h2>
+<p>SlytherLisp uses lexical scoping: a variable is in scope when it is within the
+same function <em>structure-wise</em>.</p>
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="nf">reference</span><span class="w"> </span><span class="nv">base</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="nf">get-absolute</span><span class="w"> </span><span class="nv">offset</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="nv">base</span><span class="w"> </span><span class="nv">offset</span><span class="p">))</span><span class="w"></span>
+<span class="w">  </span><span class="nv">get-absolute</span><span class="p">)</span><span class="w"></span>
+
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="nv">my-reference</span><span class="w"> </span><span class="p">(</span><span class="nf">reference</span><span class="w"> </span><span class="mi">10</span><span class="p">))</span><span class="w"></span>
+<span class="p">(</span><span class="nf">my-reference</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w">     </span><span class="c1">;; =&gt; 15</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="closures">
+<h2>Closures<a class="headerlink" href="#closures" title="Permalink to this headline">¶</a></h2>
+<p>The term <strong>closure</strong> refers to a function and it’s definition environment. It’s
+what kept track of the variables where the function was defined in the previous
+example.</p>
+<p>We can use closures to maintain internal state:</p>
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="nf">counter</span><span class="w"> </span><span class="nv">value</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="nf">change-value</span><span class="w"> </span><span class="nv">delta</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="k">set!</span><span class="w"> </span><span class="nv">value</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="nv">value</span><span class="w"> </span><span class="nv">delta</span><span class="p">))</span><span class="w">    </span><span class="c1">;; set! will change a variable</span><span class="w"></span>
+<span class="w">                                    </span><span class="c1">;; rather than define a new</span><span class="w"></span>
+<span class="w">    </span><span class="nv">value</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="nv">change-value</span><span class="p">)</span><span class="w"></span>
+
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="nv">my-counter</span><span class="w"> </span><span class="p">(</span><span class="nf">counter</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span><span class="w"></span>
+<span class="p">(</span><span class="nf">print</span><span class="w"> </span><span class="p">(</span><span class="nf">my-counter</span><span class="w"> </span><span class="mi">2</span><span class="p">))</span><span class="w">              </span><span class="c1">;; =&gt; 7</span><span class="w"></span>
+<span class="p">(</span><span class="nf">print</span><span class="w"> </span><span class="p">(</span><span class="nf">my-counter</span><span class="w"> </span><span class="mi">-3</span><span class="p">))</span><span class="w">             </span><span class="c1">;; =&gt; 4</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Brainstorm uses for closures with your learning group.</p>
+</div>
+<div class="section" id="closures-in-javascript">
+<h2>Closures in JavaScript<a class="headerlink" href="#closures-in-javascript" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="cm">/* A Lehmer Linear Congruential Generator in JavaScript */</span><span class="w"></span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">prng</span><span class="p">(</span><span class="nx">seed</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">seed</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">next</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nx">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="mf">16807</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nx">x</span><span class="p">)</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mf">2147483647</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">x</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">next</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="dynamic-scoping">
+<h2>Dynamic Scoping<a class="headerlink" href="#dynamic-scoping" title="Permalink to this headline">¶</a></h2>
+<p>In <strong>dynamic scoping</strong>, the calling environment determines the visible
+variables. Suppose that SlytherLisp used dynamic scoping:</p>
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="nf">func-a</span><span class="w"> </span><span class="nv">x</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="nv">y</span><span class="p">))</span><span class="w"></span>
+
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="nf">func-b</span><span class="w"> </span><span class="nv">x</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="nv">y</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nf">func-a</span><span class="w"> </span><span class="nv">x</span><span class="p">))</span><span class="w"></span>
+
+<span class="p">(</span><span class="nf">print</span><span class="w"> </span><span class="p">(</span><span class="nf">func-b</span><span class="w"> </span><span class="mi">10</span><span class="p">))</span><span class="w">     </span><span class="c1">;; =&gt; 12</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="exercise">
+<h2>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h2>
+<p>Consider this code:</p>
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="nf">func</span><span class="w"> </span><span class="nv">x</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="nv">y</span><span class="w"> </span><span class="nv">x</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="nf">f</span><span class="w"> </span><span class="nv">z</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="nv">y</span><span class="w"> </span><span class="nv">z</span><span class="p">))</span><span class="w"></span>
+<span class="w">  </span><span class="nv">f</span><span class="p">)</span><span class="w"></span>
+
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="nv">adder</span><span class="w"> </span><span class="p">(</span><span class="nf">func</span><span class="w"> </span><span class="mi">3</span><span class="p">))</span><span class="w"></span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="nv">y</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"></span>
+<span class="p">(</span><span class="nf">print</span><span class="w"> </span><span class="p">(</span><span class="nf">adder</span><span class="w"> </span><span class="mi">-2</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>What would be printed if the language used Dynamic Scoping?</li>
+<li>What would be printed if the language used Lexical Scoping?</li>
+</ul>
+</div>
+<div class="section" id="why-would-we-ever-choose-dynamic-scoping">
+<h2>Why would we ever choose dynamic scoping?<a class="headerlink" href="#why-would-we-ever-choose-dynamic-scoping" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Easy to implement</li>
+<li>First class functions don’t need to carry around definition environment</li>
+</ul>
+</div>
+<div class="section" id="scoping-in-the-wild">
+<h2>Scoping in the Wild<a class="headerlink" href="#scoping-in-the-wild" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><strong>Static:</strong> C, C++, Pascal, Python</li>
+<li><strong>Dynamic:</strong> C preprocessor macros, Early Lisps, Emacs Lisp, Bash</li>
+<li><strong>Allows both:</strong> Common Lisp, Scheme, Perl</li>
+</ul>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

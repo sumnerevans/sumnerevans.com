@@ -1,0 +1,331 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Python &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/slides/05-more-python.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="OOP &amp; Exceptions" href="06-oop-exceptions.html" />
+    <link rel="prev" title="Python Introduction" href="04-python-intro.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="more-python">
+<h1>More Python<a class="headerlink" href="#more-python" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These slides are also available in PDF format: <a class="reference internal" href="/teaching/csci400-s19/_static/slides/05-more-python-43.pdf" target="_blank">4:3 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/05-more-python-169.pdf" target="_blank">16:9 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/05-more-python-1610.pdf" target="_blank">16:10 PDF</a>.</p>
+</div>
+<div class="section" id="generators">
+<h2>Generators<a class="headerlink" href="#generators" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="generator-functions">
+<h3>Generator Functions<a class="headerlink" href="#generator-functions" title="Permalink to this headline">¶</a></h3>
+<p>A special kind of function exists called a <strong>generator function</strong> (also referred
+to as a <em>coroutine</em>). A generator function yields values rather than returning
+them: rather than exiting the function call, the function continues to run and
+yield more values.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">one_to</span><span class="p">(</span><span class="n">stop</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">stop</span><span class="p">:</span>
+        <span class="k">yield</span> <span class="n">x</span>
+        <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="using-generator-functions">
+<h3>Using Generator Functions<a class="headerlink" href="#using-generator-functions" title="Permalink to this headline">¶</a></h3>
+<p>Calling a generator function produces a <strong>generator object</strong>:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_gen</span> <span class="o">=</span> <span class="n">one_to</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Calling <code class="docutils literal notranslate"><span class="pre">next</span></code> on the generator object gets us the next thing it yields:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">my_gen</span><span class="p">))</span>     <span class="c1"># =&gt; 1</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">my_gen</span><span class="p">))</span>     <span class="c1"># =&gt; 2</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">my_gen</span><span class="p">))</span>     <span class="c1"># =&gt; 3</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">my_gen</span><span class="p">))</span>     <span class="c1"># =&gt; 4</span>
+</pre></div>
+</div>
+<p>When the function exits, calling <code class="docutils literal notranslate"><span class="pre">next</span></code> raises a <code class="docutils literal notranslate"><span class="pre">StopIteration</span></code> exception:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">my_gen</span><span class="p">))</span>     <span class="c1"># =&gt; 5</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">my_gen</span><span class="p">))</span>     <span class="c1"># raises StopIteration</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="generators-are-lazy">
+<h3>Generators Are Lazy<a class="headerlink" href="#generators-are-lazy" title="Permalink to this headline">¶</a></h3>
+<p>Generator functions do not compute the next value until asked!  Take the
+following example:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fib_seq</span><span class="p">():</span>
+    <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span>
+    <span class="k">yield</span> <span class="n">a</span>
+    <span class="k">yield</span> <span class="n">b</span>
+
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">yield</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+        <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="n">fib</span> <span class="o">=</span> <span class="n">fib_seq</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">fib</span><span class="p">),</span> <span class="nb">next</span><span class="p">(</span><span class="n">fib</span><span class="p">),</span> <span class="nb">next</span><span class="p">(</span><span class="n">fib</span><span class="p">),</span> <span class="nb">next</span><span class="p">(</span><span class="n">fib</span><span class="p">),</span> <span class="nb">next</span><span class="p">(</span><span class="n">fib</span><span class="p">))</span>  <span class="c1"># 0 1 1 2 3</span>
+</pre></div>
+</div>
+<p>This property is called <em>lazy evaluation</em>.</p>
+</div>
+<div class="section" id="but-we-rarely-use-next-directly">
+<h3>But we rarely use <code class="docutils literal notranslate"><span class="pre">next</span></code> directly…<a class="headerlink" href="#but-we-rarely-use-next-directly" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">for</span></code> loops can use it for us:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Prints 1, 2, then 3</span>
+<span class="c1"># The loop exits on StopIteration</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">one_to</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We can create lists, sets, and many other things from generator objects:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">one_to</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>   <span class="c1"># =&gt; [1, 2, 3, 4, 5, 6, 7, 8]</span>
+<span class="nb">set</span><span class="p">(</span><span class="n">one_to</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>    <span class="c1"># =&gt; {1, 2, 3, 4, 5, 6, 7, 8}</span>
+<span class="nb">tuple</span><span class="p">(</span><span class="n">one_to</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>  <span class="c1"># =&gt; (1, 2, 3, 4, 5, 6, 7, 8)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="generator-functions-another-example">
+<h3>Generator Functions: Another Example<a class="headerlink" href="#generator-functions-another-example" title="Permalink to this headline">¶</a></h3>
+<p>We could define a function (similar to) <code class="docutils literal notranslate"><span class="pre">range</span></code> that we talked about last
+time:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">stop</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">start</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">stop</span><span class="p">:</span>
+        <span class="k">yield</span> <span class="n">i</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="n">step</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="generator-expressions-anonymous-generator-functions">
+<h3>Generator Expressions (Anonymous Generator Functions)<a class="headerlink" href="#generator-expressions-anonymous-generator-functions" title="Permalink to this headline">¶</a></h3>
+<p>A generator function can be created anonymously:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">x</span> <span class="o">*</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">nums</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Consider this similar to the following set builder notation (from mathematics):</p>
+<div class="math notranslate nohighlight">
+\[\left\{ x \times 2 : x \in \mathtt{nums} \ | \ x \bmod 2 = 0 \right\}\]</div>
+<p>There’s three parts to a generator expression:</p>
+<ol class="arabic simple">
+<li>The output expression which computes each value, this is <code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">*</span> <span class="pre">2</span></code> above</li>
+<li>Preforming something for every element in a sequence, this is
+<code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">x</span> <span class="pre">in</span> <span class="pre">nums</span></code> above</li>
+<li>Selecting a subset of elements to operate on, this is
+<code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">x</span> <span class="pre">%</span> <span class="pre">2</span> <span class="pre">==</span> <span class="pre">0</span></code> above</li>
+</ol>
+</div>
+<div class="section" id="ges-multiple-loops">
+<h3>GEs: Multiple Loops<a class="headerlink" href="#ges-multiple-loops" title="Permalink to this headline">¶</a></h3>
+<p>Multiple loops can be written inside of a GE, and the loops will be evaluated
+<em>outside-in</em>:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">gen</span> <span class="o">=</span> <span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
+<span class="go">                  if y % 3 == 0</span>
+<span class="go">                  for x in range(y))</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">list</span><span class="p">(</span><span class="n">gen</span><span class="p">)</span>
+<span class="go">[(0, 3), (1, 3), (2, 3),</span>
+<span class="go"> (0, 6), (1, 6), (2, 6), (3, 6), (4, 6), (5, 6)]</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The syntax for dependent <code class="docutils literal notranslate"><span class="pre">for</span></code> statements is a bit strange. Keep in mind
+that the variable must exist before it is used.</p>
+</div>
+</div>
+<div class="section" id="ges-syntax-details">
+<h3>GEs: Syntax Details<a class="headerlink" href="#ges-syntax-details" title="Permalink to this headline">¶</a></h3>
+<p>If a GE is the only argument to a function call, the second set of parentheses
+can be omitted:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The smallest was:&quot;</span><span class="p">,</span>
+    <span class="nb">min</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Give me a number: &quot;</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)))</span>
+</pre></div>
+</div>
+<p>You could use this to build lists or sets, for example:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="nb">list</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>   <span class="c1"># =&gt; [1, 2, 3]</span>
+<span class="nb">set</span><span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>    <span class="c1"># =&gt; {1, 2, 3}</span>
+</pre></div>
+</div>
+<p>But Python provides a more convenient syntax for that…</p>
+</div>
+<div class="section" id="comprehensions">
+<h3>Comprehensions<a class="headerlink" href="#comprehensions" title="Permalink to this headline">¶</a></h3>
+<p>A <strong>list comprehension</strong> is written as a GE with brackets. Think of it as a
+eager generator expression:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">x</span> <span class="o">*</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">nums</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Similarly, a <strong>set comprehension</strong> is written as a GE with braces:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">x</span> <span class="o">%</span> <span class="mi">7</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">5</span><span class="p">)}</span>
+</pre></div>
+</div>
+<p>And we can even write <strong>dictionary comprehensions</strong>:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="n">x</span><span class="p">:</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="applications-of-ges">
+<h3>Applications of GEs<a class="headerlink" href="#applications-of-ges" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">File readers</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">reader</span> <span class="o">=</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">line</span><span class="p">)</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">f</span><span class="p">)</span>
+<span class="k">while</span> <span class="n">event_queue</span><span class="p">:</span>
+    <span class="n">process_event</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">reader</span><span class="p">))</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Hash function pRNGs</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">rng</span> <span class="o">=</span> <span class="p">(</span><span class="n">h</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">/</span> <span class="n">MAX_HASH</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">count</span><span class="p">())</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>The possibilities are endless!</strong> I use GEs and comprehensions all the time
+since they are highly expressive.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="modules">
+<h2>Modules<a class="headerlink" href="#modules" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Modules<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Often times, we wish to break our software into several files and namespaces.
+Python provides a very simple way to do this:</p>
+<ol class="arabic simple">
+<li>Write your functions in a file called <code class="docutils literal notranslate"><span class="pre">somemodule.py</span></code></li>
+<li>Type <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">somemodule</span></code> at the top of your program.</li>
+<li>You’ll now have access to an object named <code class="docutils literal notranslate"><span class="pre">somemodule</span></code> whose members are
+the objects from <code class="docutils literal notranslate"><span class="pre">somemodule.py</span></code></li>
+</ol>
+</div>
+<div class="section" id="bringing-things-into-our-namespace">
+<h3>Bringing Things Into our Namespace<a class="headerlink" href="#bringing-things-into-our-namespace" title="Permalink to this headline">¶</a></h3>
+<p>Typing <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">somemodule</span></code> will provide you with a module object which you
+can access members, but does not declare any new variables in your namespace
+except for the <code class="docutils literal notranslate"><span class="pre">somemodule</span></code> object.</p>
+<p>To bring in certain members, you can use a <code class="docutils literal notranslate"><span class="pre">from</span></code> statement:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">somemodule</span> <span class="kn">import</span> <span class="n">f1</span><span class="p">,</span> <span class="n">f2</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="aliasing">
+<h3>Aliasing<a class="headerlink" href="#aliasing" title="Permalink to this headline">¶</a></h3>
+<p>Often times we don’t want to call the module in our namespace what the filename
+is, so we can use <code class="docutils literal notranslate"><span class="pre">as</span></code> to rename:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">somemodule</span> <span class="k">as</span> <span class="nn">mod</span>
+
+<span class="n">mod</span><span class="o">.</span><span class="n">f1</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Or, using a <code class="docutils literal notranslate"><span class="pre">from</span></code>:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">somemodule</span> <span class="kn">import</span> <span class="n">f1</span> <span class="k">as</span> <span class="n">somefunc</span>
+
+<span class="n">somefunc</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>You will often see aliasing used with <code class="docutils literal notranslate"><span class="pre">itertools</span></code>:</p>
+<div class="last highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">itertools</span> <span class="k">as</span> <span class="nn">it</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="more-complex-modules">
+<h3>More Complex Modules<a class="headerlink" href="#more-complex-modules" title="Permalink to this headline">¶</a></h3>
+<p>We may wish to make very complex modules, which are composed of multiple files.
+To do so:</p>
+<ol class="arabic simple">
+<li>Create a directory with the desired module name (e.g., <code class="docutils literal notranslate"><span class="pre">somemodule</span></code>)</li>
+<li>Put a file in that directory named <code class="docutils literal notranslate"><span class="pre">__init__.py</span></code>.
+When <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">somemodule</span></code> is typed, this is the file that will be imported.</li>
+<li>Create other parts of the module under other file names, these can be
+imported by typing <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">somemodule.somefile</span></code>. From within our module,
+we can type <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">.somefile</span> <span class="pre">import</span> <span class="pre">x</span></code>.</li>
+</ol>
+</div>
+<div class="section" id="self-learning">
+<h3>Self Learning<a class="headerlink" href="#self-learning" title="Permalink to this headline">¶</a></h3>
+<p>I think the best way to become familiar with Python (or any language) is to use
+it! Here are some ideas which can help you:</p>
+<ul class="simple">
+<li><strong>Kattis:</strong> <a class="reference external" href="https://open.kattis.com/" target="_blank">https://open.kattis.com/</a></li>
+<li>Implement a data structures/algorithms assignment in Python.</li>
+<li>If you learn better by reading:
+<a class="reference external" href="https://pythontips.com/2013/09/01/best-python-resources/" target="_blank">https://pythontips.com/2013/09/01/best-python-resources/</a> has some good
+resources.</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

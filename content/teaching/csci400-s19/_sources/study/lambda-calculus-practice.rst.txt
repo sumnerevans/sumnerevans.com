@@ -1,0 +1,22 @@
+Lambda Calculus Practice Problems
+=================================
+
+.. default-role:: math
+
+.. sidebar:: Answers:
+
+    1. FALSE
+    2. TRUE
+    3. TRUE
+    4. 2
+    5. 3
+
+Evaluate each of these expressions, that is, `\beta`-reduce each of the
+following expressions until you cannot `\beta`-reduce any more.
+
+1. `(λp.λq.pqp)(λx.λy.y)(λx.λy.x)`
+2. `(λp.λq.ppq)(λx.λy.y)(λx.λy.x)`
+3. `(λp.p(λx.λy.y)(λx.λy.x))(λx.λy.y)`
+4. `(λp.λa.λb.pab)(λx.λy.y)(λf.(λx.fx))(λf.(λx.f(fx)))`
+5. `(λc.c(λx.λy.y))(λx.λy.λf.fxy)(λf.λx.f(fx))(λf.λx.f(f(fx)))`
+

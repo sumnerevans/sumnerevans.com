@@ -1,0 +1,110 @@
+Language Explore Project
+========================
+
+In the Language Explore Project, you will research a programming language of
+your own choice, learn the language and write a few programs in it, and make a
+presentation to share it with the rest of the class.
+
+The criterions for the language you may choose are:
+
+1. **Nobody in your group can already have in-depth familiarity with the
+   language.** The purpose of this project is to learn a new programming
+   language, and I don't want you to explore a language you use frequently.
+   It's fine if someone has basic familiarity (maybe read a bit of code, or
+   written a function or two), but if you've written more than 100 lines of
+   code in the language, you probably have in-depth familiarity and cannot
+   explore that language.
+
+2. **The language cannot be esoteric.** The programs you will have to implement
+   should have reasonably complex functionality, and often times this is hard
+   to achieve with an esoteric language.
+
+3. **The language cannot be Python or Racket.** These are the languages we are
+   using in the course.
+
+Languages which are very similar to what you know also may not be a prime
+candidate. For example, Racket is very similar to Scheme, so you would have to
+convince me what you would learn from exploring Scheme that you are not getting
+from Racket.
+
+Find a Group, Find a Language (5 points)
+----------------------------------------
+
+:Due Date: Friday, February 15 at 23:59
+
+First, find a group you would like to work with. You should work in a group of
+**3 to 4 students**. You are welcome to use your SlytherLisp groups [1]_, or
+create new groups.
+
+Then, find a programming language you would like to explore that meets the
+criterion above. A good place to start might be a `list of programming
+languages by category`_. Read up on the language, does it intrigue you enough
+to write a few programs in it?
+
+.. _list of programming languages by category: https://en.wikipedia.org/wiki/List_of_programming_languages_by_type
+
+Finally, email me your language selection and group selection. If I am OK with
+your choice of language, I will send you a link to schedule a time to demo your
+programs with me.  **Please CC all of your group members when you email me!**
+
+.. note::
+
+   **No more than three groups can share the same language**, as I will only
+   allow one presentation per language per presentation day. This means, I will
+   allocate languages on a **first come, first served basis**. There is a
+   chance I will tell your group to find another language if three groups have
+   already selected.
+
+.. [1] at least for groups of 3. Groups of two might have to find another group
+       of two to pair with.
+
+Programs (70 points)
+--------------------
+
+The next part of the assignment is to write some programs in your language.
+Your programs should provide a demonstration of the languages features, or
+potentially something it's pretty good for. For example, if you were exploring
+a Lisp-like language [2]_, you may want to write a program demonstrating
+symbolic computation, as Lisp is particularly good for this. As another
+example, if your language is really good at concurrency, you'll definitely want
+to write an program which makes good use of concurrency.
+
+I expect two to three programs of reasonable size in your submission. I'm not
+looking for small code snippets, but decently sized programs; think
+approximately the complexity of a CSCI-262 project.
+
+Make sure to include in a comment at the top of each program with who wrote the
+program. If you pair programmed or the whole group contributed, make a note of
+that. It's OK if programs are completed individually, I just expect that
+everyone in your group will have written at least one program in total.
+
+.. [2] ...which you probably aren't, as it would be too similar to Racket.
+
+.. warning::
+
+    Programs should be of your own work. Copying & pasting an 8-queens example
+    from your language's Wikipedia page *will* be considered plagarism. (An
+    8-queens program of your own work typically makes a good program though).
+
+Presentation (25 points)
+------------------------
+
+:Due Date: April 16, 18, or 23 depending on your group's presentation slot.
+
+Make a presentation that:
+
+1. Briefly, introduces the programming language, its goals, and its history
+
+2. Classifies the language, and provides an overview of the language's features
+
+3. Demonstrates what is interesting and unique about the language
+
+4. Demonstrates syntactic details that may make the language more expressive,
+   but avoid describing lots of syntactic details (find a select few details
+   that are important to the language)
+
+5. Briefly, demonstrate one of your programs you wrote for this assignment.
+
+The presentation should be 9 to 12 minutes in length. You will be cut off at 12
+minutes: please practice before-hand and make sure your presentation does not
+exceed 12 minutes.

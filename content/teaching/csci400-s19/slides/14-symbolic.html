@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Symbolic Computation &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/slides/14-symbolic.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Tail-Call Optimization" href="15-tco.html" />
+    <link rel="prev" title="Racket Pattern Matching" href="13-pm.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="symbolic-computation">
+<h1>Symbolic Computation<a class="headerlink" href="#symbolic-computation" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These slides are also available in PDF format: <a class="reference internal" href="/teaching/csci400-s19/_static/slides/14-symbolic-43.pdf" target="_blank">4:3 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/14-symbolic-169.pdf" target="_blank">16:9 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/14-symbolic-1610.pdf" target="_blank">16:10 PDF</a>.</p>
+</div>
+<div class="section" id="lga-discussion">
+<h2>LGA Discussion<a class="headerlink" href="#lga-discussion" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>What questions did you have on the reading? Can your group members answer,
+or you can ask me.</li>
+<li>Define <strong>symbolic computation</strong> in your own words.</li>
+<li>What structures in Racket would you find useful for symbolic computation?</li>
+<li>Share what other applications you came up with for symbolic computation.
+Formulate some more with your group.</li>
+</ol>
+</div>
+<div class="section" id="symbolic-computation-defined">
+<h2>Symbolic Computation Defined<a class="headerlink" href="#symbolic-computation-defined" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Wikipedia considers symbolic computation to be simply <em>computer algebra</em>.</li>
+<li>While computer algebra is a form of symbolic computation, there are plenty of
+other applications.<ul>
+<li>Programming languages</li>
+<li>Compilers</li>
+<li>Artificial intelligence</li>
+<li>…</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="lisp-symbolic-computation">
+<h2>Lisp &amp; Symbolic Computation<a class="headerlink" href="#lisp-symbolic-computation" title="Permalink to this headline">¶</a></h2>
+<p>Lisp dialects have a <strong>homoiconic syntax</strong>: the code is data, and data is code.
+Lists being the structure of the language syntax, code can be manipulated just
+like lists.</p>
+<ul class="simple">
+<li>The concept of “quoting” is fairly unique to just Lisp.</li>
+<li>It leads to a natural way to manipulate and work on <em>code</em> in the language.</li>
+<li><strong>Key point:</strong> we can manipulate code before it is evaluated!</li>
+</ul>
+<div class="admonition-john-mccarthy-1958 admonition">
+<p class="first admonition-title">John McCarthy (1958)</p>
+<p class="last">Recursive Functions of Symbolic Expressions and their Computation by Machine</p>
+</div>
+<ul class="simple">
+<li>Today we will explore a practical application of symbolic computation in
+artificial intelligence.</li>
+</ul>
+</div>
+<div class="section" id="boolean-expressions-as-s-expressions">
+<h2>Boolean Expressions as S-Expressions<a class="headerlink" href="#boolean-expressions-as-s-expressions" title="Permalink to this headline">¶</a></h2>
+<p>To represent boolean expressions in Racket, we need to formalize an
+s-expression syntax for them:</p>
+<table border="1" class="docutils align-default">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Conjunction</strong></td>
+<td><span class="math notranslate nohighlight">\(a \land b \land c \ldots\)</span></td>
+<td><code class="docutils literal notranslate"><span class="pre">(and</span> <span class="pre">a</span> <span class="pre">b</span> <span class="pre">c</span> <span class="pre">...)</span></code></td>
+</tr>
+<tr class="row-even"><td><strong>Disjunction</strong></td>
+<td><span class="math notranslate nohighlight">\(a \lor b \lor c \ldots\)</span></td>
+<td><code class="docutils literal notranslate"><span class="pre">(or</span> <span class="pre">a</span> <span class="pre">b</span> <span class="pre">c</span> <span class="pre">...)</span></code></td>
+</tr>
+<tr class="row-odd"><td><strong>Negation</strong></td>
+<td><span class="math notranslate nohighlight">\(\lnot a\)</span></td>
+<td><code class="docutils literal notranslate"><span class="pre">(not</span> <span class="pre">a)</span></code></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition-practice-convert-to-s-expression admonition">
+<p class="first admonition-title">Practice: convert to s-expression</p>
+<ol class="last arabic simple">
+<li><span class="math notranslate nohighlight">\(a \land (b \lor c \lor d) \land d\)</span></li>
+<li><span class="math notranslate nohighlight">\(\lnot a \land (a \lor \lnot b) \land \lnot (a \lor b)\)</span></li>
+</ol>
+</div>
+</div>
+<div class="section" id="conjunctive-normal-form">
+<h2>Conjunctive Normal Form<a class="headerlink" href="#conjunctive-normal-form" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Depending on your background, you may already know this. Bear with me while
+I explain it to everyone else.</p>
+</div>
+<p>A boolean expression is in <strong>conjunctive normal form</strong> (CNF) if and only if all
+of the below are true:</p>
+<ul class="simple">
+<li>It only contains conjunctions, disjunctions, and negations.</li>
+<li>Negations only contain a variable, not a conjunction or disjunction.</li>
+<li>Disjunctions only contain variables and negations.</li>
+</ul>
+<p>Example:</p>
+<div class="math notranslate nohighlight">
+\[(a \lor b \lor c) \land (\lnot a \lor b)\]</div>
+<div class="admonition-learning-group-activity admonition">
+<p class="first admonition-title">Learning Group Activity</p>
+<p class="last">Come up with an expression in CNF (not the example), and one not in CNF.</p>
+</div>
+</div>
+<div class="section" id="verifying-cnf-in-racket">
+<h2>Verifying CNF in Racket<a class="headerlink" href="#verifying-cnf-in-racket" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define/match</span><span class="w"> </span><span class="p">(</span><span class="n">in-cnf?</span><span class="w"> </span><span class="n">expr</span><span class="w"> </span><span class="p">[</span><span class="n">level</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">root</span><span class="p">])</span><span class="w"></span>
+<span class="w">  </span><span class="p">[((</span><span class="n">?</span><span class="w"> </span><span class="nb">symbol?</span><span class="p">)</span><span class="w"> </span><span class="k">_</span><span class="p">)</span><span class="w"> </span><span class="no">#t</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="o">`</span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="o">,</span><span class="p">(</span><span class="n">?</span><span class="w"> </span><span class="nb">symbol?</span><span class="p">))</span><span class="w"> </span><span class="k">_</span><span class="p">)</span><span class="w"> </span><span class="no">#t</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[((</span><span class="n">list-rest</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">or</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="k">or</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">root</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">and</span><span class="p">))</span><span class="w"></span>
+<span class="w">   </span><span class="p">(</span><span class="nb">andmap</span><span class="w"> </span><span class="p">(</span><span class="k">λ</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="n">in-cnf?</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">or</span><span class="p">))</span><span class="w"> </span><span class="n">args</span><span class="p">)]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[((</span><span class="n">list-rest</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">and</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">root</span><span class="p">)</span><span class="w"></span>
+<span class="w">   </span><span class="p">(</span><span class="nb">andmap</span><span class="w"> </span><span class="p">(</span><span class="k">λ</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="n">in-cnf?</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">and</span><span class="p">))</span><span class="w"> </span><span class="n">args</span><span class="p">)]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="k">_</span><span class="w"> </span><span class="k">_</span><span class="p">)</span><span class="w"> </span><span class="no">#f</span><span class="p">])</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="conversion-to-cnf">
+<h2>Conversion to CNF<a class="headerlink" href="#conversion-to-cnf" title="Permalink to this headline">¶</a></h2>
+<p>We can convert any boolean expression composed of just conjunctions,
+disjunctions, and negations to CNF using the following mathematical properties:</p>
+<ul class="simple">
+<li><strong>Elimination of double-negation:</strong> <span class="math notranslate nohighlight">\(\lnot \lnot a \to a\)</span></li>
+<li><strong>DeMorgan’s Law (Conjunction):</strong> <span class="math notranslate nohighlight">\(\lnot (a \land b) \to (\lnot a \lor \lnot b)\)</span></li>
+<li><strong>DeMorgan’s Law (Disjunction):</strong> <span class="math notranslate nohighlight">\(\lnot (a \lor b) \to (\lnot a \land \lnot b)\)</span></li>
+<li><strong>Distributive Property:</strong> <span class="math notranslate nohighlight">\(a \lor (b \land c) \to (a \lor b) \land (a \lor c)\)</span></li>
+</ul>
+</div>
+<div class="section" id="practice-convert-to-cnf">
+<h2>Practice: Convert to CNF<a class="headerlink" href="#practice-convert-to-cnf" title="Permalink to this headline">¶</a></h2>
+<p>Convert each expression to CNF:</p>
+<ol class="arabic simple">
+<li><span class="math notranslate nohighlight">\(\lnot (a \land \lnot b)\)</span></li>
+<li><span class="math notranslate nohighlight">\(\lnot ((a \lor b) \land \lnot (c \lor d))\)</span></li>
+<li><span class="math notranslate nohighlight">\(\lnot ((a \lor b) \land (c \lor d))\)</span></li>
+</ol>
+</div>
+<div class="section" id="racket-convert-to-cnf">
+<h2>Racket: Convert to CNF<a class="headerlink" href="#racket-convert-to-cnf" title="Permalink to this headline">¶</a></h2>
+<p>Here’s the base structure we want our code to follow:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">boolean-&gt;cnf</span><span class="w"> </span><span class="n">expr</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">in-cnf?</span><span class="w"> </span><span class="n">expr</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">expr</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="n">boolean-&gt;cnf</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="k">match</span><span class="w"> </span><span class="n">expr</span><span class="w"></span>
+<span class="w">        </span><span class="k">...</span><span class="p">))))</span><span class="w"> </span><span class="c1">;; cases for the conversions we know</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="double-negation-pattern-match">
+<h2>Double Negation Pattern Match<a class="headerlink" href="#double-negation-pattern-match" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="o">`</span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="o">,</span><span class="n">e</span><span class="p">))</span><span class="w"> </span><span class="n">e</span><span class="p">]</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="simplify-and-or-of-single-argument">
+<h2>Simplify and/or of single argument<a class="headerlink" href="#simplify-and-or-of-single-argument" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="o">`</span><span class="p">(</span><span class="ss">or</span><span class="w"> </span><span class="o">,</span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="n">e</span><span class="p">]</span><span class="w"></span>
+<span class="p">[</span><span class="o">`</span><span class="p">(</span><span class="ss">and</span><span class="w"> </span><span class="o">,</span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="n">e</span><span class="p">]</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="demorgan-s-law">
+<h2>DeMorgan’s Law<a class="headerlink" href="#demorgan-s-law" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">DeMorgan’s Law for Conjunction</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="o">`</span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="p">(</span><span class="ss">and</span><span class="w"> </span><span class="o">,@</span><span class="p">(</span><span class="n">list-rest</span><span class="w"> </span><span class="n">args</span><span class="p">)))</span><span class="w"></span>
+<span class="w">  </span><span class="o">`</span><span class="p">(</span><span class="ss">or</span><span class="w"> </span><span class="o">,@</span><span class="p">(</span><span class="nb">map</span><span class="w"> </span><span class="p">(</span><span class="nb">curry</span><span class="w"> </span><span class="nb">list</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">not</span><span class="p">)</span><span class="w"> </span><span class="n">args</span><span class="p">))]</span><span class="w"></span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">DeMorgan’s Law for Disjunction</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="o">`</span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="p">(</span><span class="ss">or</span><span class="w"> </span><span class="o">,@</span><span class="p">(</span><span class="n">list-rest</span><span class="w"> </span><span class="n">args</span><span class="p">)))</span><span class="w"></span>
+<span class="w">  </span><span class="o">`</span><span class="p">(</span><span class="ss">and</span><span class="w"> </span><span class="o">,@</span><span class="p">(</span><span class="nb">map</span><span class="w"> </span><span class="p">(</span><span class="nb">curry</span><span class="w"> </span><span class="nb">list</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">not</span><span class="p">)</span><span class="w"> </span><span class="n">args</span><span class="p">))]</span><span class="w"></span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="explosion-of-and-or-with-nested-expression">
+<h2>Explosion of and/or with nested expression<a class="headerlink" href="#explosion-of-and-or-with-nested-expression" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">and</span></code> in <code class="docutils literal notranslate"><span class="pre">and</span></code> simplification</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="o">`</span><span class="p">(</span><span class="ss">and</span><span class="w"> </span><span class="o">,@</span><span class="p">(</span><span class="n">list-no-order</span><span class="w"> </span><span class="p">(</span><span class="n">list-rest</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">and</span><span class="w"> </span><span class="n">inside</span><span class="p">)</span><span class="w"> </span><span class="n">outside</span><span class="w"> </span><span class="k">...</span><span class="p">))</span><span class="w"></span>
+<span class="w">  </span><span class="o">`</span><span class="p">(</span><span class="ss">and</span><span class="w"> </span><span class="o">,@</span><span class="n">inside</span><span class="w"> </span><span class="o">,@</span><span class="n">outside</span><span class="p">)]</span><span class="w"></span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><code class="docutils literal notranslate"><span class="pre">or</span></code> in <code class="docutils literal notranslate"><span class="pre">or</span></code> simplification</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="o">`</span><span class="p">(</span><span class="ss">or</span><span class="w"> </span><span class="o">,@</span><span class="p">(</span><span class="n">list-no-order</span><span class="w"> </span><span class="p">(</span><span class="n">list-rest</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">or</span><span class="w"> </span><span class="n">inside</span><span class="p">)</span><span class="w"> </span><span class="n">outside</span><span class="w"> </span><span class="k">...</span><span class="p">))</span><span class="w"></span>
+<span class="w">  </span><span class="o">`</span><span class="p">(</span><span class="ss">or</span><span class="w"> </span><span class="o">,@</span><span class="n">inside</span><span class="w"> </span><span class="o">,@</span><span class="n">outside</span><span class="p">)]</span><span class="w"></span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="distributive-law">
+<h2>Distributive Law<a class="headerlink" href="#distributive-law" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="o">`</span><span class="p">(</span><span class="ss">or</span><span class="w"> </span><span class="o">,@</span><span class="p">(</span><span class="n">list-no-order</span><span class="w"> </span><span class="p">(</span><span class="n">list-rest</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">and</span><span class="w"> </span><span class="n">and-args</span><span class="p">)</span><span class="w"> </span><span class="n">args</span><span class="w"> </span><span class="k">...</span><span class="p">))</span><span class="w"></span>
+<span class="w">  </span><span class="o">`</span><span class="p">(</span><span class="ss">or</span><span class="w"> </span><span class="o">,@</span><span class="p">(</span><span class="nb">cdr</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"></span>
+<span class="w">       </span><span class="p">(</span><span class="ss">and</span><span class="w"> </span><span class="o">,@</span><span class="p">(</span><span class="nb">map</span><span class="w"></span>
+<span class="w">                </span><span class="p">(</span><span class="k">λ</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">or</span><span class="w"> </span><span class="p">(</span><span class="nb">car</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="n">x</span><span class="p">))</span><span class="w"></span>
+<span class="w">                </span><span class="n">and-args</span><span class="p">)))]</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="recurse-otherwise">
+<h2>Recurse otherwise…<a class="headerlink" href="#recurse-otherwise" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">[(</span><span class="n">list-rest</span><span class="w"> </span><span class="n">sym</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"></span>
+<span class="w"> </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="n">sym</span><span class="w"> </span><span class="p">(</span><span class="nb">map</span><span class="w"> </span><span class="n">boolean-&gt;cnf</span><span class="w"> </span><span class="n">args</span><span class="p">))]</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="putting-it-all-together">
+<h2>Putting it all together<a class="headerlink" href="#putting-it-all-together" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">boolean-&gt;cnf</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="ss">or</span><span class="w"> </span><span class="p">(</span><span class="ss">and</span><span class="w"> </span><span class="ss">a</span><span class="w"> </span><span class="ss">b</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="ss">and</span><span class="w"> </span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="ss">c</span><span class="p">)</span><span class="w"> </span><span class="ss">d</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="ss">and</span><span class="w"> </span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="ss">e</span><span class="p">)</span><span class="w"> </span><span class="ss">f</span><span class="p">)))</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">(</span><span class="ss">and</span><span class="w"> </span><span class="p">(</span><span class="ss">or</span><span class="w"> </span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="ss">c</span><span class="p">)</span><span class="w"> </span><span class="ss">a</span><span class="w"> </span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="ss">e</span><span class="p">))</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="ss">or</span><span class="w"> </span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="ss">c</span><span class="p">)</span><span class="w"> </span><span class="ss">b</span><span class="w"> </span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="ss">e</span><span class="p">))</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="ss">or</span><span class="w"> </span><span class="ss">d</span><span class="w"> </span><span class="ss">a</span><span class="w"> </span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="ss">e</span><span class="p">))</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="ss">or</span><span class="w"> </span><span class="ss">d</span><span class="w"> </span><span class="ss">b</span><span class="w"> </span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="ss">e</span><span class="p">))</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="ss">or</span><span class="w"> </span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="ss">c</span><span class="p">)</span><span class="w"> </span><span class="ss">a</span><span class="w"> </span><span class="ss">f</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="ss">or</span><span class="w"> </span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="ss">c</span><span class="p">)</span><span class="w"> </span><span class="ss">b</span><span class="w"> </span><span class="ss">f</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="ss">or</span><span class="w"> </span><span class="ss">d</span><span class="w"> </span><span class="ss">a</span><span class="w"> </span><span class="ss">f</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="ss">or</span><span class="w"> </span><span class="ss">d</span><span class="w"> </span><span class="ss">b</span><span class="w"> </span><span class="ss">f</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="sat-solving">
+<h2>SAT Solving<a class="headerlink" href="#sat-solving" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>satisfiability problem</strong> <a class="footnote-reference" href="#id2" id="id1">[1]</a> in computer science asks:</p>
+<blockquote>
+<div>Given a boolean expression, is there any set of assignments to the variables
+which results in the equation evaluating to true?</div></blockquote>
+<p>For example:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">(and</span> <span class="pre">a</span> <span class="pre">(not</span> <span class="pre">a))</span></code>: not satisfiable</li>
+<li><code class="docutils literal notranslate"><span class="pre">(and</span> <span class="pre">a</span> <span class="pre">a)</span></code>: satisfiable</li>
+</ul>
+<p>(you could imagine much larger inputs)</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>If you’ve taken algorithms, you probably know that this problem is
+<strong>NP-complete</strong></td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="davis-puntam-lodgemann-loveland-algorithm">
+<h2>Davis-Puntam-Lodgemann-Loveland Algorithm<a class="headerlink" href="#davis-puntam-lodgemann-loveland-algorithm" title="Permalink to this headline">¶</a></h2>
+<pre class="literal-block">
+procedure DPLL(<span class="math notranslate nohighlight">\(e\)</span>):
+   if <span class="math notranslate nohighlight">\(e\)</span> is true:
+      return true
+   if <span class="math notranslate nohighlight">\(e\)</span> is false:
+      return false
+   <span class="math notranslate nohighlight">\(v \gets\)</span> select-variable(<span class="math notranslate nohighlight">\(e\)</span>)
+   <span class="math notranslate nohighlight">\(e_1 \gets\)</span> simplify(assume-true(<span class="math notranslate nohighlight">\(v\)</span>, <span class="math notranslate nohighlight">\(e\)</span>))
+   if DPLL(<span class="math notranslate nohighlight">\(e_1\)</span>):
+      return true
+   <span class="math notranslate nohighlight">\(e_2 \gets\)</span> simplify(assume-false(<span class="math notranslate nohighlight">\(v\)</span>, <span class="math notranslate nohighlight">\(e\)</span>))
+   return DPLL(<span class="math notranslate nohighlight">\(e_2\)</span>)
+</pre>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">DPLL will work with any variable selection from <code class="docutils literal notranslate"><span class="pre">select-variable</span></code>, but
+certain selections may lead to a more efficent solution on average than
+others.</p>
+</div>
+</div>
+<div class="section" id="dpll-example">
+<h2>DPLL: Example<a class="headerlink" href="#dpll-example" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/dpll-example.svg"><img alt="../_images/dpll-example.svg" src="../_images/dpll-example.svg" width="100%" /></a>
+<ul class="simple">
+<li>We never reached true, so this equation is not satisfiable</li>
+</ul>
+</div>
+<div class="section" id="dpll-exercise">
+<h2>DPLL: Exercise<a class="headerlink" href="#dpll-exercise" title="Permalink to this headline">¶</a></h2>
+<p>Draw the DPLL tree for the following expression, and determine whether the
+equation is satisfiable or not:</p>
+<div class="math notranslate nohighlight">
+\[(a \lor \lnot b) \land (\lnot a \lor b) \land (\lnot a \lor \lnot b)\]</div>
+</div>
+<div class="section" id="dpll-in-racket">
+<h2>DPLL in Racket<a class="headerlink" href="#dpll-in-racket" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">solve-cnf</span><span class="w"> </span><span class="n">expr</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">solve-rec</span><span class="w"> </span><span class="n">expr</span><span class="w"> </span><span class="n">bindings</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="k">case</span><span class="w"> </span><span class="n">expr</span><span class="w"></span>
+<span class="w">      </span><span class="p">[(</span><span class="no">#t</span><span class="p">)</span><span class="w"> </span><span class="n">bindings</span><span class="p">]</span><span class="w"></span>
+<span class="w">      </span><span class="p">[(</span><span class="no">#f</span><span class="p">)</span><span class="w"> </span><span class="no">#f</span><span class="p">]</span><span class="w"></span>
+<span class="w">      </span><span class="p">[</span><span class="k">else</span><span class="w"></span>
+<span class="w">        </span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">([</span><span class="n">sym</span><span class="w"> </span><span class="p">(</span><span class="n">choose-symbol</span><span class="w"> </span><span class="n">expr</span><span class="p">)])</span><span class="w"></span>
+<span class="w">          </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">solve-assume</span><span class="w"> </span><span class="n">value</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="p">(</span><span class="n">solve-rec</span><span class="w"> </span><span class="p">(</span><span class="n">assume</span><span class="w"> </span><span class="n">sym</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="n">expr</span><span class="p">)</span><span class="w"></span>
+<span class="w">                       </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="n">sym</span><span class="w"> </span><span class="n">value</span><span class="p">)</span><span class="w"> </span><span class="n">bindings</span><span class="p">)))</span><span class="w"></span>
+<span class="w">          </span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">([</span><span class="n">sym-true</span><span class="w"> </span><span class="p">(</span><span class="n">solve-assume</span><span class="w"> </span><span class="no">#t</span><span class="p">)])</span><span class="w"></span>
+<span class="w">            </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="n">sym-true</span><span class="w"></span>
+<span class="w">              </span><span class="n">sym-true</span><span class="w"></span>
+<span class="w">              </span><span class="p">(</span><span class="n">solve-assume</span><span class="w"> </span><span class="no">#f</span><span class="p">))))]))</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="n">solve-rec</span><span class="w"> </span><span class="n">expr</span><span class="w"> </span><span class="o">&#39;</span><span class="p">()))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="choose-symbol">
+<h2>choose-symbol<a class="headerlink" href="#choose-symbol" title="Permalink to this headline">¶</a></h2>
+<p>Not a good heuristic, but it works!</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">choose-symbol</span><span class="w"> </span><span class="n">expr</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">symbol?</span><span class="w"> </span><span class="n">expr</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">expr</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="n">choose-symbol</span><span class="w"> </span><span class="p">(</span><span class="nb">cadr</span><span class="w"> </span><span class="n">expr</span><span class="p">))))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="assuming-and-simplifying">
+<h2>Assuming and Simplifying<a class="headerlink" href="#assuming-and-simplifying" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">assume</span><span class="w"> </span><span class="n">var</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="n">expr</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">cond</span><span class="w"></span>
+<span class="w">    </span><span class="p">[(</span><span class="nb">eq?</span><span class="w"> </span><span class="n">var</span><span class="w"> </span><span class="n">expr</span><span class="p">)</span><span class="w"> </span><span class="n">value</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">[(</span><span class="nb">equal?</span><span class="w"> </span><span class="o">`</span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="o">,</span><span class="n">var</span><span class="p">)</span><span class="w"> </span><span class="n">expr</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">not</span><span class="w"> </span><span class="n">value</span><span class="p">)]</span><span class="w"></span>
+<span class="w">    </span><span class="p">[(</span><span class="nb">symbol?</span><span class="w"> </span><span class="n">expr</span><span class="p">)</span><span class="w"> </span><span class="n">expr</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="k">else</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="k">match</span><span class="w"> </span><span class="n">expr</span><span class="w"></span>
+<span class="w">        </span><span class="p">[</span><span class="o">`</span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="o">,</span><span class="k">_</span><span class="p">)</span><span class="w"> </span><span class="n">expr</span><span class="p">]</span><span class="w"></span>
+<span class="w">        </span><span class="p">[(</span><span class="n">list-rest</span><span class="w"> </span><span class="n">sym</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"></span>
+<span class="w">         </span><span class="k">...</span><span class="p">])]))</span><span class="w"> </span><span class="c1">;; handle conjunction/disjunction</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="handling-conjunction-disjunction">
+<h2>Handling Conjunction/Disjunction<a class="headerlink" href="#handling-conjunction-disjunction" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">([</span><span class="n">look-for</span><span class="w"> </span><span class="p">(</span><span class="k">case</span><span class="w"> </span><span class="n">sym</span><span class="w"></span>
+<span class="w">                  </span><span class="p">[(</span><span class="k">and</span><span class="p">)</span><span class="w"> </span><span class="no">#f</span><span class="p">]</span><span class="w"></span>
+<span class="w">                  </span><span class="p">[(</span><span class="k">or</span><span class="p">)</span><span class="w"> </span><span class="no">#t</span><span class="p">])])</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">f</span><span class="w"> </span><span class="n">item</span><span class="w"> </span><span class="n">acc</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">eq?</span><span class="w"> </span><span class="n">acc</span><span class="w"> </span><span class="n">look-for</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="n">acc</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">([</span><span class="n">result</span><span class="w"> </span><span class="p">(</span><span class="n">assume</span><span class="w"> </span><span class="n">var</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="n">item</span><span class="p">)])</span><span class="w"></span>
+<span class="w">        </span><span class="p">(</span><span class="k">cond</span><span class="w"></span>
+<span class="w">          </span><span class="p">[(</span><span class="nb">eq?</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="n">look-for</span><span class="p">)</span><span class="w"> </span><span class="n">result</span><span class="p">]</span><span class="w"></span>
+<span class="w">          </span><span class="p">[(</span><span class="nb">eq?</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="p">(</span><span class="nb">not</span><span class="w"> </span><span class="n">look-for</span><span class="p">))</span><span class="w"> </span><span class="n">acc</span><span class="p">]</span><span class="w"></span>
+<span class="w">          </span><span class="p">[</span><span class="k">else</span><span class="w"> </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="n">acc</span><span class="p">)]))))</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">([</span><span class="n">result</span><span class="w"> </span><span class="p">(</span><span class="nb">foldl</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">&#39;</span><span class="p">()</span><span class="w"> </span><span class="n">args</span><span class="p">)])</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="k">cond</span><span class="w"></span>
+<span class="w">      </span><span class="p">[(</span><span class="nb">null?</span><span class="w"> </span><span class="n">result</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">not</span><span class="w"> </span><span class="n">look-for</span><span class="p">)]</span><span class="w"></span>
+<span class="w">      </span><span class="p">[(</span><span class="nb">eq?</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="n">look-for</span><span class="p">)</span><span class="w"> </span><span class="n">result</span><span class="p">]</span><span class="w"></span>
+<span class="w">      </span><span class="p">[</span><span class="k">else</span><span class="w"> </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="n">sym</span><span class="w"> </span><span class="n">result</span><span class="p">)])))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>Putting It All Together<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">solve</span><span class="w"> </span><span class="n">expr</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="n">solve-cnf</span><span class="w"> </span><span class="p">(</span><span class="n">boolean-&gt;cnf</span><span class="w"> </span><span class="n">expr</span><span class="p">)))</span><span class="w"></span>
+
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">solve</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="ss">and</span><span class="w"> </span><span class="ss">a</span><span class="w"> </span><span class="ss">b</span><span class="p">))</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">((</span><span class="ss">b</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="no">#t</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="ss">a</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="no">#t</span><span class="p">))</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">solve</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="ss">or</span><span class="w"> </span><span class="p">(</span><span class="ss">and</span><span class="w"> </span><span class="ss">a</span><span class="w"> </span><span class="ss">b</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="ss">and</span><span class="w"> </span><span class="ss">c</span><span class="w"> </span><span class="ss">d</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="ss">and</span><span class="w"> </span><span class="ss">e</span><span class="w"> </span><span class="ss">f</span><span class="p">)))</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">((</span><span class="ss">d</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="no">#t</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="ss">f</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="no">#t</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="ss">c</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="no">#t</span><span class="p">))</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">solve</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="ss">and</span><span class="w"> </span><span class="ss">a</span><span class="w"> </span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="ss">a</span><span class="p">)))</span><span class="w"></span>
+<span class="no">#f</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">solve</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="ss">and</span><span class="w"> </span><span class="p">(</span><span class="ss">or</span><span class="w"> </span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="ss">a</span><span class="p">)</span><span class="w"> </span><span class="ss">b</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="ss">or</span><span class="w"> </span><span class="ss">a</span><span class="w"> </span><span class="p">(</span><span class="ss">not</span><span class="w"> </span><span class="ss">b</span><span class="p">))))</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">((</span><span class="ss">b</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="no">#t</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="ss">a</span><span class="w"> </span><span class="o">.</span><span class="w"> </span><span class="no">#t</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+\documentclass{exam}
+
+\usepackage{ifxetex}
+\ifxetex
+    \usepackage{unicode-math}
+    \usepackage{fontspec}
+\else
+    \usepackage{lmodern}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \DeclareUnicodeCharacter{3BB}{\lambda}
+\fi
+
+\usepackage[letterpaper,margin=1in]{geometry}
+
+\title{Lambda Calculus Homework}
+\author{}
+
+\makeatletter
+\renewcommand\@maketitle{%
+\begin{center}
+    \bfseries
+    \centering
+    \LARGE CSCI-400: \@title
+\end{center}
+\bigskip
+\begin{center}
+\makebox[0.8\textwidth]{Name:\enspace\hrulefill\hrulefill\enspace{}CWID:\enspace\hrulefill}
+\end{center}
+\bigskip
+\begin{itemize}
+    \item A \textbf{printed} copy is due in class on Thursday, February 21.
+    \item Handwritten or typed answers are acceptable. If handwritten,
+        please write clear and legibly.
+\end{itemize}
+}
+\makeatother
+\cfoot{Page \thepage\ of \numpages}
+
+\begin{document}
+\maketitle
+\thispagestyle{foot}
+
+\begin{questions}
+    \question[50]
+        Fully beta reduce each of the following lambda terms. Check your
+        answer using the \texttt{lc} tool shown in class. \textbf{Do not use
+        any shorthands in your evaluation}.
+
+        \textbf{Note:} it is acceptable to skip currying steps. You should not
+        skip any other steps: show all of you work!
+
+        \begin{parts}
+            \part $(λp.λq.pqp)(λx.λy.y)(λx.λy.x)$
+
+            \vspace{\stretch{2}}
+
+            \part $(λp.λq.ppq)(λx.λy.y)(λx.λy.x)$
+
+            \vspace{\stretch{2}}
+
+            \part $(λp.p(λx.λy.y)(λx.λy.x))(λx.λy.y)$
+
+            \vspace{\stretch{2}}
+
+            \clearpage
+
+            \part $(λp.λa.λb.pab)(λx.λy.y)(λf.(λx.fx))(λf.(λx.f(fx)))$
+
+            \vspace{\stretch{2}}
+
+            \part $(λc.c(λx.λy.y))(λx.λy.λf.fxy)(λf.λx.f(fx))(λf.λx.f(f(fx)))$
+
+            \vspace{\stretch{2}}
+        \end{parts}
+
+    \question[20]
+        Identify which variables are free and which are bound in each of the
+        lambda terms:
+
+        \begin{parts}
+            \part $λx.xy$
+
+            \vspace{\stretch{1}}
+
+            \part $(λx.x)m$
+
+            \vspace{\stretch{1}}
+        \end{parts}
+
+    \newpage
+    \bonusquestion[10]
+        Write a lambda calculus abstraction which, when a Church numeral $n$ is
+        applied, evaluates to the Church numeral $n - 1$. Note that this is the
+        inverse of the \texttt{SUCC} function. Then, explain how your
+        abstraction works and provide an example for the Church numeral 5. (Note
+        that this abstraction need not handle 0.)
+
+
+\end{questions}
+
+\end{document}

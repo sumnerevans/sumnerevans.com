@@ -1,0 +1,33 @@
+LGA-10: Symbolic Computation
+----------------------------
+
+1. Read `this blog post on symbolic computation`__. Note that the blog post is
+   using a language from which Racket took inspiration: Common Lisp. The
+   structures presented should look familiar, although many will not work in
+   Racket. As  you read along, try and think of the equivalent Racket
+   structures.
+
+   .. note::
+
+      Some of the exercises would require you to have a Common Lisp environment
+      setup. Obviously, I don't expect you to have this. You may feel free to
+      skip these.
+
+   __ http://stevelosh.com/blog/2016/06/symbolic-computation/
+
+2. The blog post above features evaluating Lisp using symbolic computation. We
+   can use the same technique for other things too. Suppose we had a Racket
+   function for symbolic integration. You could imagine it acting like this::
+
+      > (integrate '(* 2 x) 'x)
+      '(expt x 2)
+      > (integrate '(/ 1 x) 'x)
+      '(log x 2)
+
+   Think about another usage for symbolic computation. What would be some
+   samples of the inputs and outputs?
+
+3. What features of Racket would you find most useful for symbolic computation?
+   Hint: How about *pattern matching*? (Think of how you would use it)!
+
+4. Be prepared to discuss with your learning group.

@@ -1,0 +1,84 @@
+Exam 1 Study Guide
+==================
+Things to know for Exam 1
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+PL Concepts
+-----------
+
+* What is the difference between the design and implementation of a programming
+  language?
+* **Given a mathematical expression, can you express it as an abstract syntax
+  tree? Can you express it as an s-expression?**
+* What are the differences between compiled and interpreted languages? Can you
+  name advantages and disadvantages for both?
+* What is a *Hybrid Intepreter*?
+
+  * Describe the general idea of VM Bytecode. Can VM bytecode be run directly on
+    a CPU?
+  * Describe the general idea of Just in Time Compilation.
+
+* What are the 4 evaluation metrics we use for programming languages?
+
+  * What impacts does simplicity have on the metrics?
+  * What is orthogonality? Can you give an example of something not very
+    orthogonal in a programming language you know? What impacts does
+    orthogonality have on our evaluation metrics?
+  * What is a programming-language level abstraction? Can you give an example?
+    Can you name a non-programming language level abstraction found elsewhere in
+    computer science?
+  * What features impact reliability?
+
+* In your own words, what is *expressivity*?
+
+* What is the difference between implicit and explicit type specification?
+* What is a *binding*?
+* What is static typing? Dynamic typing? Untyped system? What are the
+  advantages and disadvantages of each?
+* What is *type safety*?
+* What is an *implicit type conversion*?
+* What is strong vs. weak typing? How is this different from static and dynamic
+  typing? *How is an untyped system weakly typed by definition?*
+* **Given a snippet of code from a language, can you make an argument for how
+  that language could be categorized in any of the above type-categories?**
+* What benefits does *encapulation* give us in OO languages?
+* What is polymorphism? What is duck typing?
+* What is the diamond problem?
+* What are some of the benefits of generator expressions/coroutines?
+
+Python
+------
+
+* Be able to read and write simple Python code.
+* Be able to read and write simple Python functions which use ``*args`` or
+  ``**kwargs``.
+* What is a *generator function*?
+
+  * How does ``yield`` differ from ``return``?
+  * How can we use ``next`` to retrieve the next item from an iterator?
+  * What is the ``StopIteration`` exception? When is it raised? How can we
+    catch it?
+  * How can we convert the outputs of a generator object into a list? How about
+    a set? Tuple? Dictionary?
+
+* **Be able to read and write generator expressions, list comprehensions, tuple
+  comprehensions, dictionary comprehensions.**
+* How can we use ``isinstance`` for polymorphism in Python?
+* How can we use ``hasattr`` for polymorphism in Python? What is the name of
+  this kind of polymorphism? How does it differ from using ``isinstance``?
+* What is the ``__init__`` method when we are writing a class? Can you write an
+  ``__init__`` method for something simple?
+* What is ``self`` used for in *instance methods* in Python? In what position
+  is ``self`` passed?
+* How can we inherit from another class in Python?
+* How can we inherit from multiple classes in Python?
+* What is Python's solution to the diamond problem?
+* How can you raise an exception in Python?
+* How can you catch an exception in Python? How about a specific exception
+  type? How can you access the exception object that was caught?
+* How does ``else`` behave when paired with a ``for`` loop? ``while`` loop?
+  ``try``/``except``?
+* What does the ``finally`` block do in Python? Why do we need it? What
+  alternatives can commonly be used for a substitute?
+* How can we make custom exception types in Python? Why might we want less
+  custom exception types (and use more of the builtins)?

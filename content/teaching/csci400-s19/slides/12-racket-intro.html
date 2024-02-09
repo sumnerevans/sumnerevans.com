@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Racket Intro &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/slides/12-racket-intro.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Racket Pattern Matching" href="13-pm.html" />
+    <link rel="prev" title="Parsing" href="11-parsing.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="racket-intro">
+<h1>Racket Intro<a class="headerlink" href="#racket-intro" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These slides are also available in PDF format: <a class="reference internal" href="/teaching/csci400-s19/_static/slides/12-racket-intro-43.pdf" target="_blank">4:3 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/12-racket-intro-169.pdf" target="_blank">16:9 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/12-racket-intro-1610.pdf" target="_blank">16:10 PDF</a>.</p>
+</div>
+<div class="section" id="what-is-racket">
+<h2>What is Racket?<a class="headerlink" href="#what-is-racket" title="Permalink to this headline">¶</a></h2>
+<div class="beamer-simplecolumns docutils container">
+<div class="docutils container">
+<ul class="simple">
+<li>Racket is a programming language</li>
+<li>Racket is also a metaprogramming language: one of its primary intentions
+is for designing other programming languages</li>
+<li>Originally a Scheme implementation: you will find it very similar to
+SlytherLisp</li>
+<li>Primary paradigms: functional, language-oriented</li>
+</ul>
+</div>
+<a class="reference internal image-reference" href="../_images/racket-logo.svg"><img alt="../_images/racket-logo.svg" src="../_images/racket-logo.svg" width="130pt" /></a>
+</div>
+</div>
+<div class="section" id="racket-documentation">
+<h2>Racket Documentation<a class="headerlink" href="#racket-documentation" title="Permalink to this headline">¶</a></h2>
+<p>There are two main, official resources for the Racket language.</p>
+<ol class="arabic simple">
+<li><a class="reference external" href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+<li><a class="reference external" href="https://docs.racket-lang.org/reference/index.html" target="_blank">The Racket Reference</a></li>
+</ol>
+</div>
+<div class="section" id="setting-up-racket">
+<h2>Setting up Racket<a class="headerlink" href="#setting-up-racket" title="Permalink to this headline">¶</a></h2>
+<p>For this course, we will use <strong>Racket 7</strong>. This version is already installed on
+the ALAMODE machines.</p>
+<p>If you are installing on your own Linux machine, check your distribution’s
+package manager for Racket. It is OK if it is version 6: 99% of what we do in
+this course will be compatible.</p>
+</div>
+<div class="section" id="racket-editor-advice">
+<h2>Racket Editor Advice<a class="headerlink" href="#racket-editor-advice" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Racket ships with an IDE: Dr. Racket. This works well, especially for
+learning. If you’re not sold on using another editor, I would recommend it.</p>
+</li>
+<li><p class="first">If you use a Language Client, I recommend the <code class="docutils literal notranslate"><span class="pre">racket-langserver</span></code> which can
+be installed using:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">raco</span> <span class="n">pkg</span> <span class="n">install</span> <span class="n">racket</span><span class="o">-</span><span class="n">langserver</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">If you’re a Vim guru, I recommend adding the <strong>vim-sexp</strong> plugin to assist
+with s-expression editing.</p>
+</li>
+<li><p class="first">If you’re an Emacs guru, try out <strong>lispy</strong> or <strong>smartparens</strong>.</p>
+</li>
+<li><p class="first">Other editors: see if an <em>s-expression aware</em> editing mode is available.</p>
+</li>
+</ul>
+</div>
+<div class="section" id="it-all-starts-with-a-lang">
+<h2>It all starts with a #lang<a class="headerlink" href="#it-all-starts-with-a-lang" title="Permalink to this headline">¶</a></h2>
+<p>The very first line of a Racket source file is typically this line:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="kn">#lang </span><span class="nn">racket</span><span class="w"></span>
+</pre></div>
+</div>
+<p>This tells the Racket interpreter to use the Racket programming language. We
+will explore other languages in Racket throughout the semester, and you’ll even
+have the chance to make your own.</p>
+</div>
+<div class="section" id="defining-a-function">
+<h2>Defining a Function<a class="headerlink" href="#defining-a-function" title="Permalink to this headline">¶</a></h2>
+<p>The same syntax as SlytherLisp can be used to define a function:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="kn">#lang </span><span class="nn">racket</span><span class="w"></span>
+
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">fahrenheit-&gt;celsius</span><span class="w"> </span><span class="n">temperature</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nb">*</span><span class="w"> </span><span class="p">(</span><span class="nb">/</span><span class="w"> </span><span class="mi">9</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">-</span><span class="w"> </span><span class="n">temperature</span><span class="w"> </span><span class="mi">32</span><span class="p">)))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Just like SlytherLisp, functions return the value of the last expression in
+their body.</p>
+</div>
+<div class="section" id="lists">
+<h2>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
+<p>A cons cell (called <em>pair</em> in Racket) can be built with the <code class="docutils literal notranslate"><span class="pre">cons</span></code> function:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+</div>
+<p>We can use this to build lists, of course:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">&#39;</span><span class="p">())))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Note the difference to SlytherLisp above: SlytherLisp uses <code class="docutils literal notranslate"><span class="pre">NIL</span></code> to denote
+the empty list, whereas Racket uses <code class="docutils literal notranslate"><span class="pre">'()</span></code>.</p>
+<p>As a convenience, you can use the <code class="docutils literal notranslate"><span class="pre">list</span></code> function to build a list:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">list*</span></code> will produce a list where the last CDR is the last element instead of
+<code class="docutils literal notranslate"><span class="pre">'()</span></code>.</p>
+</div>
+<div class="section" id="quoting">
+<h2>Quoting<a class="headerlink" href="#quoting" title="Permalink to this headline">¶</a></h2>
+<p>Racket follows similar quoting rules to SlytherLisp: the <code class="docutils literal notranslate"><span class="pre">'</span></code> symbol causes
+the adjacent element to not be evaluated:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="n">x</span><span class="w"></span>
+<span class="mi">10</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">x</span><span class="w"></span>
+<span class="o">&#39;</span><span class="ss">x</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="mi">25</span><span class="p">)</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="mi">25</span><span class="p">)</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="p">(</span><span class="ss">+</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="mi">25</span><span class="p">)</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="p">(</span><span class="ss">+</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="mi">25</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="quasiquotations">
+<h2>Quasiquotations<a class="headerlink" href="#quasiquotations" title="Permalink to this headline">¶</a></h2>
+<p>A quasiquotation starts with a backtick, and elements which start with a
+comma are evaluated, elements which don’t start with a comma are not:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="nb">&gt;</span><span class="w"> </span><span class="o">`</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="o">,</span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="ss">+</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="p">(</span><span class="ss">+</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="o">`</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="p">(</span><span class="ss">+</span><span class="w"> </span><span class="o">,</span><span class="n">x</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="o">,</span><span class="n">x</span><span class="p">)</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="p">(</span><span class="ss">+</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Note that quasiquotations are not available in SlytherLisp, this is something
+you could possibly implement for D6 (language extension) or D7 (extra credit).</p>
+</div>
+<div class="section" id="quasiquotation-splicing">
+<h2>Quasiquotation Splicing<a class="headerlink" href="#quasiquotation-splicing" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">,&#64;</span></code> in a quasiquoted pattern will unquote and “splice” the elements of a
+list directly:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="nb">&gt;</span><span class="w"> </span><span class="o">`</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="o">,@</span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="mi">5</span><span class="p">)))</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="mi">9</span><span class="p">)</span><span class="w"></span>
+
+<span class="c1">;; compare to...</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="o">`</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="o">,</span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="mi">5</span><span class="p">)))</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="p">(</span><span class="mi">5</span><span class="w"> </span><span class="mi">9</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="practice">
+<h2>Practice<a class="headerlink" href="#practice" title="Permalink to this headline">¶</a></h2>
+<p>With your learning group, evaluate each of these expressions. Write the result
+down on a sheet of paper:</p>
+<ol class="arabic simple">
+<li><code class="docutils literal notranslate"><span class="pre">(cons</span> <span class="pre">'(1</span> <span class="pre">2</span> <span class="pre">3)</span> <span class="pre">'(1</span> <span class="pre">2</span> <span class="pre">3))</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">(cons</span> <span class="pre">1</span> <span class="pre">'(2</span> <span class="pre">3))</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">(car</span> <span class="pre">`((+</span> <span class="pre">1</span> <span class="pre">2)</span> <span class="pre">,(+</span> <span class="pre">1</span> <span class="pre">2)</span> <span class="pre">3))</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">(cdr</span> <span class="pre">`((+</span> <span class="pre">1</span> <span class="pre">2)</span> <span class="pre">,(+</span> <span class="pre">1</span> <span class="pre">2)</span> <span class="pre">3))</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">(cdr</span> <span class="pre">(cdr</span> <span class="pre">(list*</span> <span class="pre">'x</span> <span class="pre">'y</span> <span class="pre">'z)))</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">(eval</span> <span class="pre">(cons</span> <span class="pre">+</span> <span class="pre">'(1</span> <span class="pre">2</span> <span class="pre">3)))</span></code></li>
+</ol>
+</div>
+<div class="section" id="built-in-data-types">
+<h2>Built-In Data Types<a class="headerlink" href="#built-in-data-types" title="Permalink to this headline">¶</a></h2>
+<p>In Racket, we have all of the normal suspects for types:</p>
+<ul class="simple">
+<li>Booleans - <code class="docutils literal notranslate"><span class="pre">#t</span></code> or <code class="docutils literal notranslate"><span class="pre">#f</span></code></li>
+<li>Numbers - <em>exact</em> (integer, rational) or <em>inexact</em> (floating point number)</li>
+<li>Characters - a single <em>Unicode</em> character</li>
+<li>Strings (Unicode) - a fixed-size array of characters (can be mutable or
+immutable)</li>
+<li>Bytes and Byte Strings - exact integer in the range <span class="math notranslate nohighlight">\([0, 256)\)</span> and
+string thereof</li>
+<li>Symbols - an atomic value that prints like an identifier preceded with <code class="docutils literal notranslate"><span class="pre">'</span></code></li>
+<li>Keywords - similar to a symbol, but prefixed with <code class="docutils literal notranslate"><span class="pre">#:</span></code></li>
+<li>Pairs and Lists - already discussed (analogous to cons cells)</li>
+<li>Vectors - a fixed-length array of arbitrary values</li>
+<li>Hash Tables - an implementation of a dictionary</li>
+<li>Boxes - effectively a single-element vector, printed with <code class="docutils literal notranslate"><span class="pre">#&amp;</span></code></li>
+<li>Void and Undefined - <code class="docutils literal notranslate"><span class="pre">#&lt;void&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">#&lt;undefined&gt;</span></code></li>
+</ul>
+</div>
+<div class="section" id="functions-as-data">
+<h2>Functions as Data<a class="headerlink" href="#functions-as-data" title="Permalink to this headline">¶</a></h2>
+<p>One of the most important concepts of the Racket language is that functions
+themselves are data and can be passed around just like any other type of data.</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">call-n-times</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="n">arg</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">=</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">arg</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="n">f</span><span class="w"> </span><span class="p">(</span><span class="n">call-n-times</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="p">(</span><span class="nb">-</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">arg</span><span class="p">))))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>This forms the basis for <strong>higher-order functions</strong>: functions that operate on
+and/or return functions.</p>
+</div>
+<div class="section" id="common-higher-order-functions">
+<h2>Common Higher Order Functions<a class="headerlink" href="#common-higher-order-functions" title="Permalink to this headline">¶</a></h2>
+<p>All of these functions are available in Racket:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">(map</span> <span class="pre">f</span> <span class="pre">lst)</span></code>: apply <code class="docutils literal notranslate"><span class="pre">f</span></code> to each element in <code class="docutils literal notranslate"><span class="pre">lst</span></code> and return the
+resultant list.</li>
+<li><code class="docutils literal notranslate"><span class="pre">(filter</span> <span class="pre">f</span> <span class="pre">lst)</span></code>: apply <code class="docutils literal notranslate"><span class="pre">f</span></code> to each element in <code class="docutils literal notranslate"><span class="pre">lst</span></code>, which should
+return <code class="docutils literal notranslate"><span class="pre">#t</span></code> or <code class="docutils literal notranslate"><span class="pre">#f</span></code> for each element. Return the list with only the
+elements which <code class="docutils literal notranslate"><span class="pre">f</span></code> returned <code class="docutils literal notranslate"><span class="pre">#t</span></code>.</li>
+<li><code class="docutils literal notranslate"><span class="pre">(compose</span> <span class="pre">f</span> <span class="pre">g</span> <span class="pre">...</span> <span class="pre">z)</span></code>: return a function which computes
+<code class="docutils literal notranslate"><span class="pre">(f</span> <span class="pre">(g</span> <span class="pre">(...</span> <span class="pre">(z</span> <span class="pre">args...)</span> <span class="pre">...)))</span></code>.</li>
+<li><code class="docutils literal notranslate"><span class="pre">(curry</span> <span class="pre">f</span> <span class="pre">arg</span> <span class="pre">...)</span></code>: return a function which computes <code class="docutils literal notranslate"><span class="pre">(f</span> <span class="pre">arg</span> <span class="pre">...</span>&#160; <span class="pre">args...)</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">(curryr</span> <span class="pre">f</span> <span class="pre">arg</span> <span class="pre">...)</span></code>: return a function which computes <code class="docutils literal notranslate"><span class="pre">(f</span> <span class="pre">args...</span>&#160; <span class="pre">arg...)</span></code></li>
+</ul>
+</div>
+<div class="section" id="anonymous-functions">
+<h2>Anonymous Functions<a class="headerlink" href="#anonymous-functions" title="Permalink to this headline">¶</a></h2>
+<p>It becomes convenient to write functions without assigning them to a variable
+frequently when using these functions. This is a function which takes an <code class="docutils literal notranslate"><span class="pre">x</span></code>
+and squares it:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">lambda</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">*</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">x</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>For example:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="nb">map</span><span class="w"> </span><span class="p">(</span><span class="k">lambda</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">*</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">x</span><span class="p">))</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="p">))</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="mi">9</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+</div>
+<p><strong>For fun:</strong> implement this squaring function using <code class="docutils literal notranslate"><span class="pre">curry</span></code> or <code class="docutils literal notranslate"><span class="pre">curryr</span></code> and
+<code class="docutils literal notranslate"><span class="pre">expt</span></code>.</p>
+</div>
+<div class="section" id="examples-map">
+<h2>Examples: Map<a class="headerlink" href="#examples-map" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="nb">map</span><span class="w"> </span><span class="nb">add1</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="mi">6</span><span class="p">)</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">invert</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">/</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="n">x</span><span class="p">))</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="nb">map</span><span class="w"> </span><span class="n">invert</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="m">1/2</span><span class="w"> </span><span class="m">1/3</span><span class="w"> </span><span class="m">1/5</span><span class="p">)</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="nb">map</span><span class="w"> </span><span class="p">(</span><span class="nb">compose</span><span class="w"> </span><span class="n">invert</span><span class="w"> </span><span class="n">invert</span><span class="p">)</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="nb">map</span><span class="w"> </span><span class="p">(</span><span class="nb">compose</span><span class="w"> </span><span class="nb">exact-&gt;inexact</span><span class="w"> </span><span class="n">fahrenheit-&gt;celsius</span><span class="p">)</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">32</span><span class="w"> </span><span class="mi">50</span><span class="w"> </span><span class="mi">75</span><span class="p">))</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">(</span><span class="mf">0.0</span><span class="w"> </span><span class="mf">32.4</span><span class="w"> </span><span class="mf">77.4</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="examples-filter">
+<h2>Examples: Filter<a class="headerlink" href="#examples-filter" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="nb">filter</span><span class="w"> </span><span class="nb">even?</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">(</span><span class="mi">2</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="nb">filter</span><span class="w"> </span><span class="nb">odd?</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="nb">filter</span><span class="w"> </span><span class="p">(</span><span class="k">lambda</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="nb">-</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="mi">0</span><span class="p">))</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="mi">5</span><span class="p">))</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">(</span><span class="mi">4</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="binding-local-variables">
+<h2>Binding Local Variables<a class="headerlink" href="#binding-local-variables" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">let</span></code> macro will bind local variables:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">([</span><span class="n">a</span><span class="w"> </span><span class="mi">10</span><span class="p">]</span><span class="w"></span>
+<span class="w">      </span><span class="p">[</span><span class="n">b</span><span class="w"> </span><span class="mi">20</span><span class="p">])</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;~a ~a~%&quot;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">b</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">let*</span></code> will bind in order, equivalent to nesting a bunch of lets together:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">let*</span><span class="w"> </span><span class="p">([</span><span class="n">a</span><span class="w"> </span><span class="mi">10</span><span class="p">]</span><span class="w"></span>
+<span class="w">       </span><span class="p">[</span><span class="n">b</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="mi">10</span><span class="p">)])</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;~a ~a~%&quot;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">b</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Equivalent to:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">([</span><span class="n">a</span><span class="w"> </span><span class="mi">10</span><span class="p">])</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">([</span><span class="n">b</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="mi">10</span><span class="p">)])</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;~a ~a~%&quot;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">b</span><span class="p">)))</span><span class="w"></span>
+</pre></div>
+</div>
+<p><strong>With your learning group:</strong> devise a case where <code class="docutils literal notranslate"><span class="pre">let</span></code> and <code class="docutils literal notranslate"><span class="pre">let*</span></code> would
+both produce different results (not resulting in an error).</p>
+</div>
+<div class="section" id="putting-it-all-together">
+<h2>Putting it all together<a class="headerlink" href="#putting-it-all-together" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Write a function which will take the <code class="docutils literal notranslate"><span class="pre">sin</span></code> of all odd numbers in a list.
+(use <code class="docutils literal notranslate"><span class="pre">map</span></code>/<code class="docutils literal notranslate"><span class="pre">filter</span></code>)</li>
+<li>Do it again using recursion. (Hint: use <code class="docutils literal notranslate"><span class="pre">null?</span></code> to check for the empty
+list)</li>
+</ol>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

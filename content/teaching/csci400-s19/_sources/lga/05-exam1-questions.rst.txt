@@ -1,0 +1,14 @@
+LGA-05: Exam 1 Questions
+========================
+
+In the next class, we will be having a review session to prepare for Exam 1. You
+will be reviewing with your learning group members.
+
+Each member of your learning group must create 2-4 questions (depending on the
+difficulty of each of the problems) which might appear on the test. If you are
+feeling uninspired, look at the `Exam 1 Topics`_ for ideas.
+
+Bring a **printed** copy of your questions for each member of your learning
+group.
+
+.. _Exam 1 Topics: /study/exam1.html

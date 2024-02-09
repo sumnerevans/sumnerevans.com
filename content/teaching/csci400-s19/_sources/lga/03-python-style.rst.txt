@@ -1,0 +1,21 @@
+LGA-03: Python Style
+====================
+
+You can complete this LGA individually, or as a group (if you meet up outside
+of class). It's up to you and your group.
+
+Read the `Python Style Guide (PEP 8) <PEP 8_>`_. Note down a few things that
+intrigue you, you think are a good idea, or you're not sure why they are a
+style requirement. Then, provide answers the following questions:
+
+1. What are some advantages of an official language style guide? Disadvantages?
+2. What does the style guide mean by "A Foolish Consistency is the Hobgoblin of
+   Little Minds"?
+3. Python allows you to use either parentheses or a backslash to continue a
+   line. When might one be more appropriate than the other? Support your answer
+   with examples.
+4. Should ``camelCase`` ever be used in Python?
+5. What is a "docstring"? Give an example of a function with a docstring.
+6. Name one style habit you'll have to break while coding in Python.
+
+.. _PEP 8: https://www.python.org/dev/peps/pep-0008/

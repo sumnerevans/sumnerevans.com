@@ -1,0 +1,483 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOP &amp; Exceptions &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/slides/06-oop-exceptions.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="SlytherLisp Introduction" href="07-slytherlisp-intro.html" />
+    <link rel="prev" title="More Python" href="05-more-python.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="oop-exceptions">
+<h1>OOP &amp; Exceptions<a class="headerlink" href="#oop-exceptions" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These slides are also available in PDF format: <a class="reference internal" href="/teaching/csci400-s19/_static/slides/06-oop-exceptions-43.pdf" target="_blank">4:3 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/06-oop-exceptions-169.pdf" target="_blank">16:9 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/06-oop-exceptions-1610.pdf" target="_blank">16:10 PDF</a>.</p>
+</div>
+<div class="section" id="object-oriented-programming">
+<h2>Object Oriented Programming<a class="headerlink" href="#object-oriented-programming" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="what-is-oop">
+<h3>What is OOP?<a class="headerlink" href="#what-is-oop" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Object oriented programming is a type of programming with objects that
+maintain internal state and pass messages between each other.</li>
+<li>First appeared in the mid-1960s in Simula: a programming language designed
+for discrete event simulations</li>
+<li>It should not come as a surprise that OOP was first used for simulations, the
+real world can easily be modeled using objects that pass messages between
+eachother and maintain state</li>
+<li>Smalltalk (1971) also featured OOP and really caused OOP to kick off. Go to
+CPW’s office sometime and chat with him about Smalltalk: he really likes this
+language!</li>
+</ul>
+</div>
+<div class="section" id="oop-common-patterns">
+<h3>OOP: Common Patterns<a class="headerlink" href="#oop-common-patterns" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Classes:</th><td class="field-body">Classes provide a definition for the data format and the procedures
+available for member objects.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Objects:</th><td class="field-body">Objects are instances of a certain class, that follow the rules
+defined in the class.</td>
+</tr>
+</tbody>
+</table>
+<p>Each of these have a variety of kinds of fields:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2">Instance Variables:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Variables which are associated with each individual object, these preform
+the state-maintenance we need for OOP.</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Class Variables:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Variables which are associated with the class itself, all of the objects of
+that class share this variable and do not have their own copy.</td>
+</tr>
+</tbody>
+</table>
+<p>Likewise class/instance methods refer to the methods available from the class
+versus the instance.</p>
+</div>
+<div class="section" id="oop-not-just-tossing-functions-in-a-class">
+<h3>OOP: Not just tossing functions in a class<a class="headerlink" href="#oop-not-just-tossing-functions-in-a-class" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><p>Object-oriented programming is more than just classes and objects; it’s a
+whole programming paradigm based around objects (data structures) that
+contain data fields and methods. It is essential to understand this; using
+classes to organize a bunch of unrelated methods together is not object
+orientation.</p>
+<p class="attribution">&mdash;Junade Ali, Mastering PHP Design Patterns</p>
+</div></blockquote>
+</div>
+<div class="section" id="encapsulation">
+<h3>Encapsulation<a class="headerlink" href="#encapsulation" title="Permalink to this headline">¶</a></h3>
+<p><strong>Encapsulation</strong> prevents external code from being concerned with the inner
+workings of an object by allowing the objects methods to define how state is
+manipulated.</p>
+<ul class="simple">
+<li>Some languages distinguish between private and public variables to specify
+which variables should be able to be modified by other objects, and which
+ones should not be.</li>
+<li>Python does this by convention: private methods and variables should be
+prefixed with an underscore.</li>
+</ul>
+</div>
+<div class="section" id="inheritance">
+<h3>Inheritance<a class="headerlink" href="#inheritance" title="Permalink to this headline">¶</a></h3>
+<p>Often times, one object may share variables and methods with another class.</p>
+<div class="admonition-example admonition">
+<p class="first admonition-title">Example</p>
+<p>An <code class="docutils literal notranslate"><span class="pre">Employee</span></code> might inherit from a <code class="docutils literal notranslate"><span class="pre">Person</span></code> as:</p>
+<ul class="simple">
+<li>Both have variables to store first and last names</li>
+<li>They share a method to generate a full name</li>
+</ul>
+<p class="last">But the <code class="docutils literal notranslate"><span class="pre">Employee</span></code> also has variables that make HR people happy…</p>
+</div>
+</div>
+<div class="section" id="polymorphism">
+<h3>Polymorphism<a class="headerlink" href="#polymorphism" title="Permalink to this headline">¶</a></h3>
+<p>Polymorphism allows methods to take objects of different types.</p>
+<ul class="simple">
+<li>Instances of subclasses can be called on functions that take their parent’s
+type, for example, if <code class="docutils literal notranslate"><span class="pre">load_elevator</span></code> can be called on a <code class="docutils literal notranslate"><span class="pre">Person</span></code>,
+<code class="docutils literal notranslate"><span class="pre">Employee</span></code> inherits from <code class="docutils literal notranslate"><span class="pre">Person</span></code>, then <code class="docutils literal notranslate"><span class="pre">load_elevator</span></code> should be able
+to be called on an <code class="docutils literal notranslate"><span class="pre">Employee</span></code> instance as well.</li>
+<li>Statically typed languages often provide <strong>generics</strong>, which allows a method
+to be called on multiple types, even if there is not inheritance between
+them. An example is templates in C++.</li>
+<li>Dynamically typed languages provide a method to check if an object is an
+instance of another to allow the same function to take multiple types. In
+Python, this is <code class="docutils literal notranslate"><span class="pre">isinstance</span></code>.</li>
+</ul>
+</div>
+<div class="section" id="polymorphism-techniques-isinstance">
+<h3>Polymorphism Techniques: <code class="docutils literal notranslate"><span class="pre">isinstance</span></code><a class="headerlink" href="#polymorphism-techniques-isinstance" title="Permalink to this headline">¶</a></h3>
+<p>In Python, we can use <code class="docutils literal notranslate"><span class="pre">isinstance</span></code> to make our functions take objects of
+different types:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># n can be an int or a float</span>
+<span class="k">def</span> <span class="nf">frobnicate</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="nb">float</span><span class="p">):</span>
+        <span class="k">return</span> <span class="o">...</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+        <span class="k">return</span> <span class="o">...</span>
+    <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;I only take ints and floats&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="polymorphism-techniques-duck-typing">
+<h3>Polymorphism Techniques: Duck Typing<a class="headerlink" href="#polymorphism-techniques-duck-typing" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div>If it walks like a duck and quacks like a duck, then it must be a duck!</div></blockquote>
+<p><strong>Duck typing</strong> is a specific kind of polymorphism where we accept any object
+which has certain variables or methods, even if the objects do not have a
+common parent.</p>
+<p>In Python, we can do this with <code class="docutils literal notranslate"><span class="pre">hasattr</span></code>:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;walk&quot;</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s2">&quot;quack&quot;</span><span class="p">):</span>
+        <span class="n">x</span><span class="o">.</span><span class="n">walk</span><span class="p">()</span>
+        <span class="n">x</span><span class="o">.</span><span class="n">quack</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;I only take ducks!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="oop-in-python-an-intro">
+<h3>OOP in Python: An Intro<a class="headerlink" href="#oop-in-python-an-intro" title="Permalink to this headline">¶</a></h3>
+<p>To define a class in Python, use the <code class="docutils literal notranslate"><span class="pre">class</span></code> syntax:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fname</span><span class="p">,</span> <span class="n">lname</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fname</span> <span class="o">=</span> <span class="n">fname</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">lname</span> <span class="o">=</span> <span class="n">lname</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>The <code class="docutils literal notranslate"><span class="pre">__init__</span></code> method is the name of the <strong>magic method</strong> that Python calls
+to construct an instance of the class.</li>
+<li>To construct an instance, call <code class="docutils literal notranslate"><span class="pre">Person(fname,</span> <span class="pre">lname)</span></code>.</li>
+<li>All instance methods (such as <code class="docutils literal notranslate"><span class="pre">__init__</span></code>) take a reference to the instance
+as their first argument. By convention, this is usually named <code class="docutils literal notranslate"><span class="pre">self</span></code>.</li>
+</ul>
+</div>
+<div class="section" id="magic-methods">
+<h3>Magic Methods<a class="headerlink" href="#magic-methods" title="Permalink to this headline">¶</a></h3>
+<p><strong>Magic methods</strong> are special method names recognized by Python’s internals
+when it needs to preform a certain action. They start and end with a double
+underscore.</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">__init__</span></code> gets called on newly constructed instances of the object.</li>
+<li><code class="docutils literal notranslate"><span class="pre">__del__</span></code> gets called when an instance is destructed.</li>
+<li><code class="docutils literal notranslate"><span class="pre">__eq__</span></code> gets called to test if two instances are equal.</li>
+<li><code class="docutils literal notranslate"><span class="pre">__call__</span></code> gets called when an instance is called as a function.</li>
+<li><code class="docutils literal notranslate"><span class="pre">__getitem__</span></code> gets called when an instance gets square brackets (such as to
+get an item from a list)</li>
+<li><code class="docutils literal notranslate"><span class="pre">__repr__</span></code> called by the built-in <code class="docutils literal notranslate"><span class="pre">repr()</span></code> function for the “official”
+string representation of an object.</li>
+<li><code class="docutils literal notranslate"><span class="pre">__str__</span></code> called by the built-in <code class="docutils literal notranslate"><span class="pre">str()</span></code> function for the “informal”, more
+human-readable, string representation of an object.</li>
+</ul>
+<p>There’s plenty of more, see “<a class="reference external" href="https://docs.python.org/3/reference/datamodel.html" target="_blank">Data Model</a>” in the Python Documentation for
+more information.</p>
+</div>
+<div class="section" id="example-of-using-magic-methods">
+<h3>Example of Using Magic Methods<a class="headerlink" href="#example-of-using-magic-methods" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Employee</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
+    <span class="o">...</span>
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">fname</span><span class="si">}</span><span class="s1"> </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">lname</span><span class="si">}</span><span class="s1">&#39;</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;&lt;Employee name=&quot;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">&quot; salary=$</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">salary</span><span class="si">}</span><span class="s1">&gt;&#39;</span>
+</pre></div>
+</div>
+<p>Then, to use this:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">Employee</span><span class="p">(</span><span class="s1">&#39;Linus Torvalds&#39;</span><span class="p">,</span> <span class="mi">250000</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">s</span><span class="p">))</span>
+<span class="go">&lt;Employee name=&quot;Linus Torvalds&quot; salary=$250000&gt;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="inheritance-in-python">
+<h3>Inheritance in Python<a class="headerlink" href="#inheritance-in-python" title="Permalink to this headline">¶</a></h3>
+<p>The type written in parentheses after the name defines the <strong>base class</strong>. This
+class will inherit from the base class.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Employee</span><span class="p">(</span><span class="n">Person</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ssn</span><span class="p">,</span> <span class="n">account</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">ssn</span> <span class="o">=</span> <span class="n">ssn</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">account</span> <span class="o">=</span> <span class="n">account</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">Employee</span></code> inherits from <code class="docutils literal notranslate"><span class="pre">Person</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">super()</span></code> refers to the object in it’s base class. In this case, we call
+the init of our base class with the remaining arguments.</li>
+</ul>
+</div>
+<div class="section" id="multiple-inheritance">
+<h3>Multiple Inheritance<a class="headerlink" href="#multiple-inheritance" title="Permalink to this headline">¶</a></h3>
+<p>Unlike Java, Python classes can inherit from multiple base classes, allowing
+common variables and methods from two classes. For example (maybe in a GUI
+toolkit):</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Button</span><span class="p">(</span><span class="n">Rectangle</span><span class="p">,</span> <span class="n">Clickable</span><span class="p">,</span> <span class="n">Labeled</span><span class="p">):</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="the-diamond-problem">
+<h3>The Diamond Problem<a class="headerlink" href="#the-diamond-problem" title="Permalink to this headline">¶</a></h3>
+<div class="docutils container">
+<div class="docutils container">
+<p>Suppose we have a base class <code class="docutils literal notranslate"><span class="pre">A</span></code>. We also have subclasses <code class="docutils literal notranslate"><span class="pre">B</span></code> and
+<code class="docutils literal notranslate"><span class="pre">C</span></code> that inherit from <code class="docutils literal notranslate"><span class="pre">A</span></code>. <code class="docutils literal notranslate"><span class="pre">D</span></code> inherits from both <code class="docutils literal notranslate"><span class="pre">B</span></code> and <code class="docutils literal notranslate"><span class="pre">C</span></code>.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">B</span></code> and <code class="docutils literal notranslate"><span class="pre">C</span></code> both override the same method from <code class="docutils literal notranslate"><span class="pre">A</span></code>, which method
+does <code class="docutils literal notranslate"><span class="pre">D</span></code> get?</p>
+<ul class="simple">
+<li>Python and Perl’s solution: take the method from the first base class
+listed when the class was declared.</li>
+<li>C++: requires explicit statement of which class the method will dispatch
+from.</li>
+<li>Java: only allows single inheritance.</li>
+</ul>
+</div>
+<div class="docutils container">
+<a class="reference internal image-reference" href="../_images/diamond.svg"><img alt="../_images/diamond.svg" src="../_images/diamond.svg" width="130pt" /></a>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="error-handling">
+<h2>Error Handling<a class="headerlink" href="#error-handling" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="error-handling-theory">
+<h3>Error Handling: Theory<a class="headerlink" href="#error-handling-theory" title="Permalink to this headline">¶</a></h3>
+<p>Our programs may encounter errors, for example, if a file was not found, or we
+were not able to connect to a remote server. Rather than crashing the entire
+program, software engineers often desire a way to clean up the error and report
+an error occurred.</p>
+</div>
+<div class="section" id="old-school-error-handling">
+<h3>Old School Error Handling<a class="headerlink" href="#old-school-error-handling" title="Permalink to this headline">¶</a></h3>
+<p>In a C program, you might handle errors like this:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/* Return code -1 = error, and errno will be set */</span><span class="w"></span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">malloc</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="cm">/* ... */</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">pid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fork</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pid</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">-1</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="k">goto</span><span class="w"> </span><span class="n">fail</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="cm">/* ... */</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">z</span><span class="p">;</span><span class="w"></span>
+<span class="nl">fail</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="cm">/* cleanup from error */</span><span class="w"></span>
+<span class="w">    </span><span class="n">free</span><span class="p">(</span><span class="n">A</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">-1</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="what-s-the-issue-with-old-school">
+<h3>What’s the issue with old school?<a class="headerlink" href="#what-s-the-issue-with-old-school" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Return codes for errors are never standard, and the programmer always needs
+to look up what a function call might return.</li>
+<li>If a programmer forgets to handle an error from a function they call, it
+could have undesired results.</li>
+<li>Functions which handle errors that just want to pass the error up to their
+caller have to have this error handling code, even though they are not using
+it directly.</li>
+</ol>
+</div>
+<div class="section" id="go-s-error-handling">
+<h3>Go’s Error Handling<a class="headerlink" href="#go-s-error-handling" title="Permalink to this headline">¶</a></h3>
+<p>In Go, functions that return errors return two values: the result, and an error
+object:</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="nx">f</span><span class="p">,</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="nx">os</span><span class="p">.</span><span class="nx">Open</span><span class="p">(</span><span class="s">&quot;filename.ext&quot;</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+</div>
+<p>It is then the programmer’s responsibility to handle the error, potentially
+returning the error to the caller:</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="nx">err</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="kc">nil</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">err</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="is-go-any-better">
+<h3>Is Go Any Better?<a class="headerlink" href="#is-go-any-better" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Return codes for errors are never standard, and the programmer always needs
+to look up what a function call might return. <strong>Taken care of using error
+objects!</strong></li>
+<li>If a programmer forgets to handle an error from a function they call, it
+could have undesired results. <strong>Still an issue!</strong></li>
+<li>Functions which handle errors that just want to pass the error up to their
+caller have to have this error handling code, even though they are not using
+it directly. <strong>Still an issue!</strong></li>
+</ol>
+</div>
+<div class="section" id="how-about-python">
+<h3>How About Python?<a class="headerlink" href="#how-about-python" title="Permalink to this headline">¶</a></h3>
+<p>Python provides an <strong>exception handling</strong> system.</p>
+<ul class="simple">
+<li>An exception is a special kind of object, like an error object in Go.</li>
+<li>Exceptions are <em>raised</em>, not returned.</li>
+<li>A <code class="docutils literal notranslate"><span class="pre">try</span></code>/<code class="docutils literal notranslate"><span class="pre">except</span></code> block can be used to intercept an exception, and preform
+cleanup from the error.</li>
+<li>If function only cares about passing the error to their caller, they need not
+write any error handling code just to pass it to their caller.</li>
+</ul>
+</div>
+<div class="section" id="try-except-example">
+<h3>Try/Except Example<a class="headerlink" href="#try-except-example" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">graph</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">point</span> <span class="ow">in</span> <span class="n">data</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">point</span><span class="p">,</span> <span class="n">GraphPoint</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;need GraphPoint data&#39;</span><span class="p">)</span>
+        <span class="o">...</span>
+
+<span class="k">def</span> <span class="nf">graph_string</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">user_convert</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">graph</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">graph_from_user</span><span class="p">():</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">graph_string</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;point&gt;&#39;</span><span class="p">))</span>
+        <span class="k">except</span> <span class="ne">TypeError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="try-except-else">
+<h3>Try/Except/Else<a class="headerlink" href="#try-except-else" title="Permalink to this headline">¶</a></h3>
+<p>An <code class="docutils literal notranslate"><span class="pre">else</span></code> block placed after a <code class="docutils literal notranslate"><span class="pre">try</span></code>/<code class="docutils literal notranslate"><span class="pre">except</span></code> will be executed only if
+the exception did not occur:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">FileNotFoundError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;File Opened!&#39;</span><span class="p">)</span>
+        <span class="k">break</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="try-except-finally">
+<h3>Try/Except/Finally<a class="headerlink" href="#try-except-finally" title="Permalink to this headline">¶</a></h3>
+<p>Code listed in the <code class="docutils literal notranslate"><span class="pre">finally</span></code> block of a <code class="docutils literal notranslate"><span class="pre">try</span></code>/<code class="docutils literal notranslate"><span class="pre">except</span></code>/(<code class="docutils literal notranslate"><span class="pre">else</span></code>) will
+always be executed, regardless of whether an exception occurs.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># note that this &quot;GUIDialog&quot; is made up, but this</span>
+<span class="c1"># presents a real-world type usage</span>
+<span class="k">def</span> <span class="nf">promptyn</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">g</span> <span class="o">=</span> <span class="n">GUIDialog</span><span class="p">(</span><span class="n">buttons</span><span class="o">=</span><span class="n">YESNO</span><span class="p">,</span> <span class="n">text</span><span class="o">=</span><span class="n">prompt</span><span class="p">)</span>
+        <span class="n">g</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">g</span><span class="o">.</span><span class="n">response</span><span class="p">()</span>
+    <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">&quot;Unable to set prompt string&quot;</span><span class="p">)</span>
+    <span class="k">finally</span><span class="p">:</span>
+        <span class="n">g</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Note that the context manager (<code class="docutils literal notranslate"><span class="pre">with</span></code> statement) in Python can often be used
+as a substitute for a <code class="docutils literal notranslate"><span class="pre">finally</span></code>.</p>
+</div>
+<div class="section" id="custom-exceptions">
+<h3>Custom Exceptions<a class="headerlink" href="#custom-exceptions" title="Permalink to this headline">¶</a></h3>
+<p>Python has a large set of built-in exceptions, but when one of the built-ins is
+insufficient, you can subclass <code class="docutils literal notranslate"><span class="pre">Exception</span></code> and make your own.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">PlottingError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="k">pass</span>
+</pre></div>
+</div>
+<p>Note that you should usually try and use one of exceptions the language
+provides rather than define your own.</p>
+</div>
+<div class="section" id="is-python-any-better">
+<h3>Is Python Any Better?<a class="headerlink" href="#is-python-any-better" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Return codes for errors are never standard, and the programmer always needs
+to look up what a function call might return. <strong>Solved!</strong></li>
+<li>If a programmer forgets to handle an error from a function they call, it
+could have undesired results. <strong>Solved!</strong></li>
+<li>Functions which handle errors that just want to pass the error up to their
+caller have to have this error handling code, even though they are not using
+it directly. <strong>Solved!</strong></li>
+</ol>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

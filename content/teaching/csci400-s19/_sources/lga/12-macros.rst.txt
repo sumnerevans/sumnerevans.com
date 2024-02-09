@@ -1,0 +1,11 @@
+LGA-12: Macros
+==============
+
+1. Read `Fear of Macros`__ (yes, the *whole thing*). You may also find it
+   useful to read `Pattern-Based Macros`__ in the Racket Guide.
+
+2. **After you have read Fear of Macros,** write one interesting macro to share
+   with your group.
+
+__ http://www.greghendershott.com/fear-of-macros/all.html
+__ http://docs.racket-lang.org/guide/pattern-macros.html

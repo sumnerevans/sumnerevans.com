@@ -1,0 +1,11 @@
+Office Hours
+============
+
+* Sumner's office hours are on **Tuesdays, 15:30-16:30**, and
+  **Thursdays, 11:30-12:30** in **BB 251**.
+
+* Ben's office hours are **Wednesday and Friday, 14:00 to 15:30** in the
+  **ALAMODE Linux Lab** (BB 136). Here_ is a photo of Ben so you know what he
+  looks like.
+
+.. _Here: _static/face_of_ta.jpg

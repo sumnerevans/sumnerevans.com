@@ -1,0 +1,454 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PL Evaluation and Typing Systems &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/slides/03-evaluation-typing.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Python Introduction" href="04-python-intro.html" />
+    <link rel="prev" title="Programming Language Concepts" href="02-pl-concepts.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pl-evaluation-and-typing-systems">
+<h1>PL Evaluation and Typing Systems<a class="headerlink" href="#pl-evaluation-and-typing-systems" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These slides are also available in PDF format: <a class="reference internal" href="/teaching/csci400-s19/_static/slides/03-evaluation-typing-43.pdf" target="_blank">4:3 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/03-evaluation-typing-169.pdf" target="_blank">16:9 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/03-evaluation-typing-1610.pdf" target="_blank">16:10 PDF</a>.</p>
+</div>
+<div class="section" id="evaluating-a-programming-language">
+<h2>Evaluating a Programming Language<a class="headerlink" href="#evaluating-a-programming-language" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="evaluation-metrics">
+<h3>Evaluation Metrics<a class="headerlink" href="#evaluation-metrics" title="Permalink to this headline">¶</a></h3>
+<p>Evaluating programming languages based on:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Writability:</th><td class="field-body">How easy is it to write good code?</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Readability:</th><td class="field-body">How easy is it to read well written code? Is the language easy
+enough to learn?</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Reliability:</th><td class="field-body">What features does the language provide to make sure our code
+works as it is supposed to?</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Feasibility:</th><td class="field-body">Does an interpreter or compiler actually exist for the platform
+we need to use? Is it fast enough for our application?</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<div class="admonition-a-system-of-trade-offs admonition">
+<p class="first admonition-title">A System of Trade-Offs</p>
+<p class="last">Often times, adding features which improve one metric can harm another
+metric. Examples to come…</p>
+</div>
+</div>
+<div class="section" id="simplicity">
+<h3>Simplicity<a class="headerlink" href="#simplicity" title="Permalink to this headline">¶</a></h3>
+<p>The overall simplicity of a language plays a large role in both writability and
+readability.</p>
+<p>For example, these features are <em>non-simple</em>:</p>
+<ul class="simple">
+<li><strong>Feature Multiplicity:</strong> <span class="emoji">👍</span> Writability, <span class="emoji">👎</span> Readability</li>
+<li><strong>Operator Overloading:</strong> <span class="emoji">👍</span> Writability, <span class="emoji">👎</span> Readability</li>
+<li><strong>Large Grammars:</strong> <span class="emoji">👍</span> Writability, <span class="emoji">👎</span> Readability</li>
+</ul>
+<p></p>
+<div class="admonition-simplicity-can-be-carried-too-far admonition">
+<p class="first admonition-title">Simplicity can be carried too far</p>
+<p class="last">Assembly languages and esoteric languages generally aren’t considered very
+writable or readable.</p>
+</div>
+</div>
+<div class="section" id="orthogonality">
+<h3>Orthogonality<a class="headerlink" href="#orthogonality" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Orthogonality:</th><td class="field-body">how consistent is the language with itself?</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<div class="admonition-example-of-a-lack-of-orthogonality-c admonition">
+<p class="first admonition-title">Example of a lack of orthogonality (C++)</p>
+<p>Parameters are passed by value, unless they were specified with an <code class="docutils literal notranslate"><span class="pre">&amp;</span></code>.</p>
+<p class="last"><em>Or unless they were an array.</em></p>
+</div>
+<p></p>
+<div class="admonition-example-of-a-lack-of-orthogonality-c-c admonition">
+<p class="first admonition-title">Example of a lack of orthogonality (C/C++)</p>
+<p>Arrays can contain data of any type, including pointers.</p>
+<p>Unless it’s a function pointer.</p>
+<p class="last">But you can wrap that function pointer in a <code class="docutils literal notranslate"><span class="pre">struct</span></code> and you should be
+fine.</p>
+</div>
+<p><strong>Impacts of poor orthogonality:</strong> poor readability, poor writability, and
+potentially reduced reliability.</p>
+</div>
+<div class="section" id="abstraction">
+<h3>Abstraction<a class="headerlink" href="#abstraction" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Abstraction:</th><td class="field-body">The ability to define and use complicated structures and
+operations in a way that allows implementation to be ignored.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Examples:</strong></p>
+<ul class="simple">
+<li><strong>Functions:</strong> Simplest form of abstraction. Often taken for granted, but
+gives us easy recursion.</li>
+<li><strong>Heap Memory:</strong> Imagine trying to create a large unbalanced binary tree in
+a single-dimensional array.</li>
+<li><strong>Generics:</strong> Allows us to define operations that apply to multiple data
+types without reimplementing for each type.</li>
+</ul>
+<p></p>
+<div class="admonition-with-your-learning-group admonition">
+<p class="first admonition-title">With your learning group…</p>
+<p class="last">What other kinds of PL-level abstractions can you name?</p>
+</div>
+<p></p>
+<p><strong>Good Abstractions:</strong> <span class="emoji">👍</span> Writability,
+<span class="emoji">👍</span> Readability, <span class="emoji">👍</span> Reliability</p>
+</div>
+<div class="section" id="abstraction-downsides">
+<h3>Abstraction Downsides?<a class="headerlink" href="#abstraction-downsides" title="Permalink to this headline">¶</a></h3>
+<p><strong>With your learning group…</strong></p>
+<ol class="arabic simple">
+<li>Can abstractions be taken <em>too</em> far? If so, give an example?</li>
+<li>Where else do we find abstractions in Computer Science?</li>
+</ol>
+</div>
+<div class="section" id="reliability-features">
+<h3>Reliability Features<a class="headerlink" href="#reliability-features" title="Permalink to this headline">¶</a></h3>
+<p>Some languages come with features <em>designed for reliablitiy</em>:</p>
+<ul class="simple">
+<li><strong>Type Checking:</strong> Making sure the type of data can be used with the function
+or operation you are calling. Independent of static/dynamic: more on this
+later.</li>
+<li><strong>Exception Handling:</strong> The ability of a running program to intercept
+run-time errors and take corrective measures.</li>
+<li><strong>Taint Protection:</strong> Protects the security of an application by not allowing
+privileged operations to be preformed on tainted data (e.g., user input from
+a web application).</li>
+</ul>
+<p></p>
+<p>Some features can <em>harm</em> a language’s reliability:</p>
+<ul class="simple">
+<li><strong>Goto:</strong> the ability to jump to different locations in the code without
+restriction.</li>
+<li><strong>Aliasing:</strong> allows two different symbolic names (variables, function names,
+etc.) to refer to the same data. Think pointers in C/C++.</li>
+</ul>
+</div>
+<div class="section" id="expressivitiy">
+<h3>Expressivitiy<a class="headerlink" href="#expressivitiy" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Expressivity:</th><td class="field-body">How easy is it for the programmer to express their solution to a
+problem in the language?</td>
+</tr>
+</tbody>
+</table>
+<p>With your learning group:</p>
+<ol class="arabic simple">
+<li>Think of a scenario and two programming languages, where expressing a
+solution to the problem might be easier in one language than another.</li>
+<li>If one language is less expressive than another, how might it be less
+<strong>writable</strong>?</li>
+<li>If one language is less expressive than another, how might it be less
+<strong>readable</strong>?</li>
+<li>If one language is less expressive than another, how might it be less
+<strong>reliable</strong>?</li>
+</ol>
+<p>Be prepared to share your answers with the class.</p>
+</div>
+</div>
+<div class="section" id="type-systems">
+<h2>Type Systems<a class="headerlink" href="#type-systems" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="type-systems-overview">
+<h3>Type Systems: Overview<a class="headerlink" href="#type-systems-overview" title="Permalink to this headline">¶</a></h3>
+<p>When we refer to “type systems”, we aren’t just talking about how you have to
+write the type of a variable in C, whereas you don’t in Python. There’s a lot
+that goes in:</p>
+<ul class="simple">
+<li>Static/Dynamic Typing</li>
+<li>Untyped Systems</li>
+<li>Implicit/Explicit Type Specification</li>
+<li>Strong/Weak Typing</li>
+<li>Gradual Typing</li>
+<li>Duck Typing – covered later in the course</li>
+</ul>
+</div>
+<div class="section" id="explicit-implicit">
+<h3>Explicit/Implicit<a class="headerlink" href="#explicit-implicit" title="Permalink to this headline">¶</a></h3>
+<p>In a language with <strong>explicit type specification</strong>, the type of a variable
+<em>must</em> be specified:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+<p>In a language with <strong>implicit type specification</strong>, the type of a variable need
+not be specified:</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="p">=</span><span class="w"> </span><span class="mi">10</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Explicit/implicit has nothing to do with static/dynamic. We will talk about
+that in a second…</p>
+</div>
+</div>
+<div class="section" id="bindings">
+<h3>Bindings<a class="headerlink" href="#bindings" title="Permalink to this headline">¶</a></h3>
+<p>A <strong>binding</strong> refers to the association between:</p>
+<ul class="simple">
+<li>a variable and its type,</li>
+<li>a function and its definition,</li>
+<li>a type and its representation (e.g., <code class="docutils literal notranslate"><span class="pre">int</span></code> is 32-bits),</li>
+<li>or an operation and its symbol (e.g., multiplication is usually <code class="docutils literal notranslate"><span class="pre">*</span></code>)</li>
+</ul>
+<p></p>
+<p><strong>Binding time</strong> refers to the time at which a binding takes place.</p>
+<div class="admonition-common-binding-times admonition">
+<p class="first admonition-title">Common Binding Times</p>
+<p class="last">Design time, implementation time, compile time, link time, run time</p>
+</div>
+</div>
+<div class="section" id="static-typing">
+<h3>Static Typing<a class="headerlink" href="#static-typing" title="Permalink to this headline">¶</a></h3>
+<p>In a <strong>statically typed</strong> language, the language design makes it possible to
+bind the type of any piece of data <strong>before run time</strong>.</p>
+<p></p>
+<p><strong>Advantages:</strong></p>
+<ul class="simple">
+<li>No need to do type checking at run time, this can be done at compile time.</li>
+<li><span class="emoji">👍</span> Reliability</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul class="simple">
+<li>Generics are needed to create operations and functions that apply to multiple
+types</li>
+<li><span class="emoji">👎</span> Writability</li>
+</ul>
+</div>
+<div class="section" id="dynamic-typing">
+<h3>Dynamic Typing<a class="headerlink" href="#dynamic-typing" title="Permalink to this headline">¶</a></h3>
+<p>In a <strong>dynamically typed</strong> language, the language design makes it possible to
+bind the type of any piece of data <strong>during run time</strong>.</p>
+<p>Commonly, the type of data is associated with the data itself.</p>
+<p></p>
+<p><strong>Advantages:</strong></p>
+<ul class="simple">
+<li>Collections can be of mixed type without generics, functions can take
+multiple types without generics</li>
+<li>Types can be dynamically created at run time</li>
+<li><span class="emoji">👍</span> Writability</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul class="simple">
+<li>Type checking must be done at run time; makes things slow</li>
+<li><span class="emoji">👎</span> Reliability</li>
+</ul>
+<div class="admonition-gradual-typing admonition">
+<p class="first admonition-title">Gradual Typing</p>
+<p class="last"><strong>Gradual Typing</strong> can be used to refer to a language which allows optional
+explicit typing in a dynamically typed language.</p>
+</div>
+</div>
+<div class="section" id="untyped-systems">
+<h3>Untyped Systems<a class="headerlink" href="#untyped-systems" title="Permalink to this headline">¶</a></h3>
+<p>In an <strong>untyped</strong> language, data cannot be bound to a type.</p>
+<p>Commonly, the functions and operations called on the variables determine the
+type.</p>
+<p></p>
+<p><strong>Advantages:</strong></p>
+<ul class="simple">
+<li>No need to do type checking, ever.</li>
+<li><span class="emoji">👍</span> Feasibility</li>
+</ul>
+<p><strong>Disadvanges:</strong></p>
+<ul class="simple">
+<li><span class="emoji">👎</span> <span class="emoji">👎</span> <span class="emoji">👎</span> Reliability</li>
+</ul>
+</div>
+<div class="section" id="strongly-and-weakly-typed">
+<h3>Strongly and Weakly Typed<a class="headerlink" href="#strongly-and-weakly-typed" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Type safety</strong> means a language will not allow bits to be intepreted as the
+incorrect data type. For example: treating the bits of an integer as a
+floating point number.</li>
+<li><strong>Implicit type conversions</strong> are when a language will automatically convert
+data types to allow an expression to be computed.</li>
+<li><strong>Strongly typed</strong> programming languages are both type safe <em>and</em> do not
+allow implicit type conversions.</li>
+<li><strong>Weakly typed</strong> programming languages are either not type safe <em>or</em> allow
+implicit type conversions.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">By definition, untyped languages are also weakly typed.</p>
+</div>
+</div>
+<div class="section" id="exercise-type-systems-1">
+<h3>Exercise: Type Systems 1<a class="headerlink" href="#exercise-type-systems-1" title="Permalink to this headline">¶</a></h3>
+<p>Given the code snippet from a fake language below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">a</span> <span class="o">+=</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Explicit or implicit?</li>
+<li>Is it possible that the language is statically typed?</li>
+<li>Is it possible that the language is dynamically typed?</li>
+<li>Weak or strong?</li>
+</ul>
+</div>
+<div class="section" id="exercise-type-systems-2">
+<h3>Exercise: Type Systems 2<a class="headerlink" href="#exercise-type-systems-2" title="Permalink to this headline">¶</a></h3>
+<p>Given the code snippet from a fake language below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">a</span> <span class="o">+=</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Explicit or implicit?</li>
+<li>Is it possible that the language is statically typed?</li>
+<li>Is it possible that the language is dynamically typed?</li>
+<li>Weak or strong?</li>
+</ul>
+</div>
+<div class="section" id="exercise-type-systems-3">
+<h3>Exercise: Type Systems 3<a class="headerlink" href="#exercise-type-systems-3" title="Permalink to this headline">¶</a></h3>
+<p>Given the code snippet from a fake language below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="n">user_input</span><span class="p">())</span>
+<span class="n">a</span> <span class="o">+=</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Explicit or implicit?</li>
+<li>Is it possible that the language is statically typed?</li>
+<li>Is it possible that the language is dynamically typed?</li>
+<li>Weak or strong?</li>
+</ul>
+</div>
+<div class="section" id="exercise-type-systems-4">
+<h3>Exercise: Type Systems 4<a class="headerlink" href="#exercise-type-systems-4" title="Permalink to this headline">¶</a></h3>
+<p>Given the code snippet from a fake language below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">++++++++</span><span class="p">[</span><span class="o">&gt;++++</span><span class="p">[</span><span class="o">&gt;++&gt;+++&gt;+++&gt;+&lt;&lt;&lt;&lt;-</span><span class="p">]</span><span class="o">&gt;+</span>
+<span class="o">&gt;+&gt;-&gt;&gt;+</span><span class="p">[</span><span class="o">&lt;</span><span class="p">]</span><span class="o">&lt;-</span><span class="p">]</span><span class="o">&gt;&gt;.&gt;---.+++++++..+++.&gt;&gt;</span>
+<span class="o">.&lt;-.&lt;.+++.------.-----+----.&gt;&gt;+.&gt;++.</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>Explicit or implicit?</li>
+<li>Is it possible that the language is statically typed?</li>
+<li>Is it possible that the language is dynamically typed?</li>
+<li>Weak or strong?</li>
+</ul>
+</div>
+<div class="section" id="type-systems-language-examples">
+<h3>Type Systems: Language Examples<a class="headerlink" href="#type-systems-language-examples" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils align-default">
+<colgroup>
+<col width="2%" />
+<col width="49%" />
+<col width="49%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td><span class="thoriz">Strong</span></td>
+<td><span class="thoriz">Weak</span></td>
+</tr>
+<tr class="row-even"><td><span class="thvert">Static</span></td>
+<td>Haskell, Rust, Go</td>
+<td>C, C++</td>
+</tr>
+<tr class="row-odd"><td><span class="thvert">Dynamic</span></td>
+<td>Python, Ruby, Java</td>
+<td>PHP, JavaScript</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

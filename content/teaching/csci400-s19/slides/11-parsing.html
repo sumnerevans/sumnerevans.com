@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parsing &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/slides/11-parsing.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Racket Intro" href="12-racket-intro.html" />
+    <link rel="prev" title="Regular Expressions" href="10-re.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="parsing">
+<h1>Parsing<a class="headerlink" href="#parsing" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These slides are also available in PDF format: <a class="reference internal" href="/teaching/csci400-s19/_static/slides/11-parsing-43.pdf" target="_blank">4:3 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/11-parsing-169.pdf" target="_blank">16:9 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/11-parsing-1610.pdf" target="_blank">16:10 PDF</a>.</p>
+</div>
+<div class="section" id="activity-overview">
+<h2>Activity &amp; Overview<a class="headerlink" href="#activity-overview" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="learning-group-activity">
+<h3>Learning Group Activity<a class="headerlink" href="#learning-group-activity" title="Permalink to this headline">¶</a></h3>
+<p>Review the learning group activity with your group. Compare your solutions to
+the practice problems. Did anyone have any issues with the problems?</p>
+<p>Then, as a learning group, work on a regular expression to match double-quoted
+string literals:</p>
+<pre class="literal-block">
+print(<strong>&quot;Hello, World!&quot;</strong>)
+if (strcspn(cmdline, <strong>&quot;'\&quot;`&quot;</strong>) != strlen(cmdline)) {
+printf(<strong>&quot;&lt;text:p text:style-name=\&quot;Glossary\&quot;&gt;&quot;</strong>);
+escape(<strong>&quot;\&quot;1 &lt; 2\&quot;&quot;</strong>)
+</pre>
+<p>What you should match is shown in <strong>bold</strong>. Try your regular expressions at the
+Python REPL.</p>
+</div>
+<div class="section" id="parsing-high-level-overview">
+<h3>Parsing: High Level Overview<a class="headerlink" href="#parsing-high-level-overview" title="Permalink to this headline">¶</a></h3>
+<p>Suppose we have the following source code (which, presumably, might be for some
+programming language):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alpha</span> <span class="o">=</span> <span class="n">beta</span> <span class="o">+</span> <span class="n">gamma</span> <span class="o">*</span> <span class="mi">4</span>
+</pre></div>
+</div>
+<ul>
+<li><p class="first">How does our language implementation know what to do with this code?</p>
+</li>
+<li><p class="first">How do we determine the order of operations on this expression so that we
+compute <code class="docutils literal notranslate"><span class="pre">beta</span> <span class="pre">+</span> <span class="pre">(gamma</span> <span class="pre">*</span> <span class="pre">4)</span></code> rather than <code class="docutils literal notranslate"><span class="pre">(beta</span> <span class="pre">+</span> <span class="pre">gamma)</span> <span class="pre">*</span> <span class="pre">4</span></code>?</p>
+</li>
+<li><p class="first">How can we represent this code in memory in a way that makes it easy to
+evaluate or compile?</p>
+</li>
+<li><p class="first">How do we handle cases where programmers write the same expression but with
+different spacing or style, like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alpha</span><span class="o">=</span><span class="n">beta</span><span class="o">+</span><span class="n">gamma</span>   <span class="o">*</span><span class="mi">4</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="parsing-goal-is-code-to-ast">
+<h3>Parsing: Goal is Code to AST<a class="headerlink" href="#parsing-goal-is-code-to-ast" title="Permalink to this headline">¶</a></h3>
+<div class="docutils container">
+<div class="docutils container">
+<ul class="simple">
+<li>The goal of parsing is to convert textual source code into a
+representation that makes it easy to interpret compile.</li>
+<li>We typically represent this using an <strong>abstract syntax tree</strong>. The
+abstract syntax tree for <code class="docutils literal notranslate"><span class="pre">alpha</span> <span class="pre">=</span> <span class="pre">beta</span> <span class="pre">+</span> <span class="pre">gamma</span> <span class="pre">*</span> <span class="pre">4</span></code> is shown.</li>
+<li>Conveys order of operation and nesting of parentheses: Product is a
+child of Sum here.</li>
+</ul>
+</div>
+<div class="docutils container">
+<a class="reference internal image-reference" href="../_images/ast.svg"><img alt="../_images/ast.svg" height="170pt" src="../_images/ast.svg" /></a>
+</div>
+</div>
+</div>
+<div class="section" id="parsing-two-stages">
+<h3>Parsing: Two Stages<a class="headerlink" href="#parsing-two-stages" title="Permalink to this headline">¶</a></h3>
+<p>Parsers are typically implemented using two stages:</p>
+<div class="beamer-simplecolumns docutils container">
+<div class="admonition-lexical-analysis admonition">
+<p class="first admonition-title">Lexical Analysis</p>
+<p class="last">During lexical analysis, the input is <strong>tokenized</strong> to produce a
+sequence of tokens from the input.</p>
+</div>
+<div class="admonition-syntactic-analysis admonition">
+<p class="first admonition-title">Syntactic Analysis</p>
+<p class="last">During syntactic analysis, the tokens from lexical analysis are formed
+into an abstract syntax tree.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="lexical-analysis">
+<h2>Lexical Analysis<a class="headerlink" href="#lexical-analysis" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Lexical Analysis<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>During lexical analysis, we <strong>tokenize</strong> the input into a list tokens
+consisting of two fields:</p>
+<ul class="simple">
+<li>Token Type</li>
+<li>Data (optional)</li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">alpha=beta+gamma*4</span></code> <span class="math notranslate nohighlight">\(\xrightarrow{\text{LA}}\)</span>
+<code class="docutils literal notranslate"><span class="pre">Id(alpha),</span> <span class="pre">Equals,</span> <span class="pre">Id(beta),</span> <span class="pre">Plus,</span> <span class="pre">Id(gamma),</span> <span class="pre">Times,</span> <span class="pre">Int(4)</span></code></p>
+<ul class="simple">
+<li>Tokens which won’t appear in the AST are called <strong>control tokens</strong>: these
+control the operation of the parser.</li>
+</ul>
+</div>
+<div class="section" id="lexical-analysis-implementation">
+<h3>Lexical Analysis: Implementation<a class="headerlink" href="#lexical-analysis-implementation" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">tokens_p</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">    \s*(?:  (=)|(\+)|(\*)    # operators</span>
+<span class="s1">       |    (-?\d+)          # integers</span>
+<span class="s1">       |    (\w+)            # identifiers</span>
+<span class="s1">       |    (.)              # error</span>
+<span class="s1">       )\s*&#39;&#39;&#39;</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">VERBOSE</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">tokenize</span><span class="p">(</span><span class="n">code</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">tokens_p</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="n">code</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">):</span>
+           <span class="k">yield</span> <span class="n">Equals</span><span class="p">()</span>
+        <span class="o">...</span>
+        <span class="k">elif</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+           <span class="k">yield</span> <span class="n">Id</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+        <span class="k">elif</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">6</span><span class="p">):</span>
+           <span class="k">raise</span> <span class="ne">SyntaxError</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="syntactic-analysis">
+<h2>Syntactic Analysis<a class="headerlink" href="#syntactic-analysis" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h3>Syntactic Analysis<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>During syntactic analysis, we turn the token stream from the lexical analysis
+into an abstract syntax tree.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Id(alpha),</span> <span class="pre">Equals,</span> <span class="pre">Id(beta),</span> <span class="pre">Plus,</span> <span class="pre">Id(gamma),</span> <span class="pre">Times,</span> <span class="pre">Int(4)</span></code> <span class="math notranslate nohighlight">\(\xrightarrow{\text{SA}}\)</span> AST</p>
+<p>In general, there’s two ways to parse a stream of tokens:</p>
+<ul class="simple">
+<li><strong>Top-Down:</strong> form the node at the root of the syntax tree, then recursively
+form the children.</li>
+<li><strong>Bottom-Up:</strong> start by forming the leaf nodes, then forming their parents.</li>
+</ul>
+</div>
+<div class="section" id="language-grammars">
+<h3>Language Grammars<a class="headerlink" href="#language-grammars" title="Permalink to this headline">¶</a></h3>
+<p>In order to parse a language, we need a notation to formalize the constructs
+of our language. We define a set of <em>production rules</em> that state what the
+various constructs are formed of:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{split}
+    \text{Assign}  &amp;\to \text{Id}\ \text{Equals}\ \text{Sum} \\
+    \text{Sum}     &amp;\to \text{Sum}\ \text{Plus}\ \text{Product} \\
+    \text{Sum}     &amp;\to \text{Product} \\
+    \text{Product} &amp;\to \text{Product}\ \text{Times}\ \text{Value} \\
+    \text{Product} &amp;\to \text{Value} \\
+    \text{Value}   &amp;\to \text{Int} \\
+    \text{Value}   &amp;\to \text{Id} \\
+\end{split}\end{split}\]</div>
+<p>This is actually a specific kind of context-free grammar called a LR
+(left-recursive) grammar. It makes it convenient for using shift-reduce parsers
+(coming up!)</p>
+</div>
+<div class="section" id="shift-reduce-parsing">
+<h3>Shift-Reduce Parsing<a class="headerlink" href="#shift-reduce-parsing" title="Permalink to this headline">¶</a></h3>
+<p><strong>Shift-reduce</strong> is a type of <strong>bottom-up</strong> parser. We place a cursor at the
+beginning of the token stream, and parse each step using one of two
+transitions:</p>
+<ul class="simple">
+<li><strong>Shift:</strong> move the cursor to the next token to the right.</li>
+<li><strong>Reduce:</strong> match a production rule to the tokens directly to the left of the
+cursor, reducing them to the LHS of the production rule.</li>
+</ul>
+<p>We refer to the token just to the right of the cursor as the <strong>lookahead
+token</strong>. We use the lookahead token to determine that the left of the cursor
+can <strong>unambiguously</strong> be reduced, otherwise we will shift.</p>
+<div class="admonition-example-on-whiteboard admonition">
+<p class="first admonition-title">Example on Whiteboard</p>
+<p class="last"><a class="reference external" href="https://lambda.mines.edu/study/shift-reduce-example.html" target="_blank">Example shown on whiteboard</a> of using our grammar to create an AST using
+shift-reduce.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

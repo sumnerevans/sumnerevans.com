@@ -1,0 +1,18 @@
+LGA-06: Memory Management
+=========================
+
+Split this between your group. If you only have 3 members, you only need to
+complete three as a group. If you have four, one question should be completed
+twice.
+
+1. Research what is **reference counting**. Can you explain it to a student in
+   CSCI-262? *Name a few ways that reference counting garbarge collectors deal
+   with circular references.*
+
+2. Research what is a smart pointer in C++. Can you explain it to a student in
+   CSCI-262? *What issues do C++ smart pointers solve with explicit heap
+   dynamic lifetimes?*
+
+3. Write a simple C program with a memory leak. Research the **valgrind** tool.
+   Be prepared to demonstrate how to use valgrind to show that the program is
+   leaking memory to your learning group.

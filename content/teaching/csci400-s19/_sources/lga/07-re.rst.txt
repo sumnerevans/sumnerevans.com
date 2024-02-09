@@ -1,0 +1,11 @@
+LGA-07: Regular Expressions
+---------------------------
+
+Everyone completes this activity, not split.
+
+Complete exercises 1-4 on this practice website: http://regex.sketchengine.co.uk/
+
+When you get it right, the positive column should be all red, the negative
+column all black.
+
+Bring your solutions (typed, or on paper) to class.

@@ -1,0 +1,38 @@
+Shift Reduce Example (shown in class)
+=====================================
+
+Parsing::
+
+    Id(alpha) Equals Id(beta) Plus Id(gamma) Times Int(4)
+
+Using production rules::
+
+     Assign -> Id Equals Sum
+        Sum -> Sum Plus Product
+        Sum -> Product
+    Product -> Product Times Value
+    Product -> Value
+      Value -> Int
+      Value -> Id
+
+====== ===================================================================== ===============================================
+ Step   Parser State                                                          Parser Action
+====== ===================================================================== ===============================================
+0      ``| Id(alpha) Equals Id(beta) Plus Id(gamma) Times Int(4) END``        Shift
+1      ``Id(alpha) | Equals Id(beta) Plus Id(gamma) Times Int(4) END``        Shift
+2      ``Id(alpha) Equals | Id(beta) Plus Id(gamma) Times Int(4) END``        Shift
+3      ``Id(alpha) Equals Id(beta) | Plus Id(gamma) Times Int(4) END``        Reduce by ``Value -> Id``
+4      ``Id(alpha) Equals Value | Plus Id(gamma) Times Int(4) END``           Reduce by ``Product -> Value``
+5      ``Id(alpha) Equals Product | Plus Id(gamma) Times Int(4) END``         Reduce by ``Product -> Sum``
+6      ``Id(alpha) Equals Sum | Plus Id(gamma) Times Int(4) END``             Shift
+7      ``Id(alpha) Equals Sum Plus | Id(gamma) Times Int(4) END``             Shift
+8      ``Id(alpha) Equals Sum Plus Id(gamma) | Times Int(4) END``             Reduce by ``Value -> Id``
+9      ``Id(alpha) Equals Sum Plus Value | Times Int(4) END``                 Reduce by ``Product -> Value``
+10     ``Id(alpha) Equals Sum Plus Product | Times Int(4) END``               Shift
+11     ``Id(alpha) Equals Sum Plus Product Times | Int(4) END``               Shift
+12     ``Id(alpha) Equals Sum Plus Product Times Int(4) | END``               Reduce by ``Value -> Id``
+13     ``Id(alpha) Equals Sum Plus Product Times Value | END``                Reduce by ``Product -> Product Times Value``
+14     ``Id(alpha) Equals Sum Plus Product | END``                            Reduce by ``Sum -> Sum Plus Product``
+15     ``Id(alpha) Equals Sum | END``                                         Reduce by ``Assign -> Id Equals Sum``
+16     ``Assign | END``                                                       Finished, yield ``Assign``
+====== ===================================================================== ===============================================

@@ -1,0 +1,266 @@
+The Lambda Calculus
+===================
+
+.. note::
+   These slides are also available in PDF format: :slidespdf:`08-lambda-calculus`.
+
+
+.. default-role:: math
+
+.. |LC| replace:: `λ`-calculus
+
+A Quote to Start the Day
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+..
+
+    You realize that **everything** can be done with function composition?...
+    It's called **lambda calculus**.
+
+    -- Joseph McKinsey
+
+The Lambda Calculus
+~~~~~~~~~~~~~~~~~~~
+
+The |LC| is a mathematical language of **lambda terms** bound by a set of
+transformation rules. The |LC| notation was introduced in the 1930s by Alonzo
+Church.
+
+Just like programming languages, the |LC| has rules for what is a valid syntax:
+
+:Variables:
+    A variable (such as `x`) is valid term in the |LC|.
+:Abstractions:
+    If `t` is a term and `x` is a variable, then the term `λx.t` is a
+    lambda abstraction.
+:Applications:
+    If `t` and `s` are terms, then `ts` is the application term of `t` onto
+    `s`.
+
+Anonymous Functions
+~~~~~~~~~~~~~~~~~~~
+
+**Lambda abstractions** can be thought of as anonymous functions in the |LC|.
+
+A lambda abstraction which takes an `x` and returns a `t` is written as so:
+
+.. math::
+
+    λx.t
+
+.. admonition:: Example
+
+    Suppose in mathematics we define a function `f(x) = x + 2`. This could be
+    written as `(λ x.x + 2)` in the |LC| [#]_. Of course, this function
+    is anonymous and not bound to the name `f`.
+
+.. [#] Of course, we haven't said that either `+` nor `2` is valid in lambda
+       calculus yet. We will get to that...
+
+Functions are First Class
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In the |LC|, abstractions are not only first class functions, they are our only
+way of to encode data.
+
+Abstractions are used to encode everything:
+
+* Numbers
+* Booleans (true/false)
+* Conses
+* ...
+
+Currying
+~~~~~~~~
+
+Since abstractions in the |LC| may only take one argument, currying is
+typically used to denote functions of multiple arguments. For example, the
+function `f(x, y) = x` might be written as:
+
+.. math::
+
+    λx.(λy.x)
+
+Further, function application is left-associative, so `fxy` means
+`(fx)y`.
+
+Free and Bound Variables
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+The `λ` operator (which creates lambda abstractions) binds a variable to
+wherever it occurs in the expression.
+
+* Variables which are bound in an expression are called **bound variables**
+* Variables which are not bound in an expression are called **free variables**
+
+.. admonition:: Example
+
+    With your learning group, identify the free and bound variables in this
+    expression:
+
+    .. math::
+
+        λx.(λy.zy)(zx)
+
+Transformations
+~~~~~~~~~~~~~~~
+
+:`\alpha`-conversion:
+    Allows variables to be renamed to non-colliding names. For example,
+    `λx.x` is `\alpha`-equivalent to `λy.y`.
+:`\beta`-reduction:
+    Allows functions to be applied. For example, `(λx.λy.x)(λx.x)` is
+    `\beta`-equivalent to `λy.(λx.x)`.
+:`\eta`-conversion:
+    Allows functions with the same external properties to be substituted. For
+    example, `(λx.(fx))` is `\eta`-equivalent to `f` if `x` is not a free
+    variable in `f`.
+
+Examples: Alpha Equivalence
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+With your learning group, identify if each of the following are a valid
+`\alpha`-conversion. Turn in your answers on a sheet of paper with all of your
+names at the end of class for learning group participation credit for today.
+
+1. `λx.λx.x \to λy.λy.y`
+2. `λx.λx.x \to λy.λx.x`
+3. `λx.λx.x \to λy.λx.y`
+4. `λx.λy.x \to λy.λy.y`
+
+.. **Answers:** alpha eq, alpha eq, not equivalent, not equivalent
+
+Examples: Beta Reductions
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Fully `\beta`-reduce each of the following expressions:
+
+5. `(λx.λy.λf.fxy)(λx.λy.y)(λx.λy.x)(λx.λy.y)`
+6. `(λa.λb.a(λb.λf.λx.f(bfx))b)(λf.λx.fx)(λf.λx.f(fx))`
+
+Church Numerals
+~~~~~~~~~~~~~~~
+
+Since all data in the |LC| must be a function, we use a clever convention of
+functions (called **Church numerals**) to define numbers:
+
+:0: `λf.λx.x`
+:1: `λf.λx.fx`
+:2: `λf.λx.f(fx)`
+:3: `λf.λx.f(f(fx))`
+
+... and so on. In fact, the successor to any number `n` can be written as:
+
+.. math::
+
+    λf.λx.f(nfx)
+
+
+.. admonition:: Notice this
+
+    Defining numbers as functions in this way allows us to apply a Chuch
+    numeral `n` to a function to get a new function that applies the original
+    function `n` times.
+
+Shorthand Notations
+~~~~~~~~~~~~~~~~~~~
+
+While it's not a defined part of the |LC|, we define common shorthands for some
+features:
+
+* `0, 1, 2, \ldots` are shorthand for their corresponding Church numerals
+* `\{\text{SUCC}\} = λn.λf.λx.f(nfx)`
+
+.. note::
+
+    The notation "`=`" above is not a part of the |LC|. I'm using it for
+    saying "is shorthand for".
+
+Addition and Multiplication
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Adding `m` to `n` can be thought of as taking the successor to `n`, `m` times.
+Using our shorthand `\text{SUCC}`, this can be written as:
+
+.. math::
+
+    \{\text{ADD}\} = λm.λn.(m \,\{\text{SUCC}\}\, n)
+
+Similarly, multiplying `m` by `n` can be thought of as repeating `\text{ADD}\,
+n`, `m` times and then applying it to `0`, this can be written as:
+
+.. math::
+
+    \{\text{MULT}\} = λm.λn.(m (\{\text{ADD}\}\, n) 0)
+
+Boolean Logic
+~~~~~~~~~~~~~
+
+We use the following convention for true and false:
+
+.. math::
+
+    \begin{split}
+        \{\text{TRUE}\}  &= λx.λy.x \\
+        \{\text{FALSE}\} &= λx.λy.y \qquad\text{(Church numeral zero})
+    \end{split}
+
+From here, we can define some common boolean operators:
+
+.. math::
+
+    \begin{split}
+        \{\text{AND}\} &= λp.λq.p q p \\
+        \{\text{OR}\}  &= λp.λq.p p q \\
+        \{\text{NOT}\} &= λp.p\ \{\text{FALSE}\}\ \{\text{TRUE}\} \\
+        \{\text{IF}\}  &= λp.λa.λb.p a b \\
+        & \text{ (returns $a$ if the predicate is TRUE, $b$ otherwise)}
+    \end{split}
+
+Cons Cells
+~~~~~~~~~~
+
+By convention, we will represent a cons cell as a function that applies its
+argument to the CAR and CDR of the cons cell. This leads to the shorthand:
+
+.. math::
+
+    \begin{split}
+        \{\text{CONS}\} &= λx.λy.λf.f x y     \\
+        \{\text{CAR}\}  &= λc.c\ \{\text{TRUE}\}  \\
+        \{\text{CDR}\}  &= λc.c\ \{\text{FALSE}\} \\
+        \{\text{NIL}\}  &= λx.\{\text{TRUE}\}     \\
+    \end{split}
+
+Using this, we can define lists:
+
+.. math::
+
+    (\{\text{CONS}\}\, 1\ (\{\text{CONS}\}\, 2\ (\{\text{CONS}\}\, 3\ \{\text{NIL}\})))
+
+What else is there in Lambda Calculus?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Getting the predecessor (``{PRD}``) for a Church Numeral is hard, but doable
+  (extra credit).  To subtract `m` from `n`, apply the ``{PRD}`` function `m`
+  times to `n`.
+* For recursion, we need to reference ourselves in a lambda abstraction. This
+  is done using a Y-combinator.
+* The graduate level Theory of Computation (CSCI 561) class talks much more
+  extensively about the |LC|.
+* There are many extensions to the |LC| such as those encoded by the `λ`-cube.
+
+.. image:: ./08-graphics/lambda-cube.png
+   :width: 30%
+
+Why is any of this Useful?
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* |LC| can emulate a Turing machine. That means that anything you can
+  do with a classical computer, you can do with the |LC|. **This fact
+  underpins all of functional programming.**
+* Many functional programming languages (e.g., Haskell, Scheme, SlytherLisp)
+  are just practical implementations of the |LC|.
+* The |LC| gives us another perspective on *type theory* (using the
+  generalization of the |LC| called typed |LC|).
+* It is another way for us to quantify what is computable.

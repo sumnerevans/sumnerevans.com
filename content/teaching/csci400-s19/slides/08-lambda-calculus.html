@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Lambda Calculus &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/slides/08-lambda-calculus.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="The Lambda Calculus" href="08-lambda-calculus-implementation.html" />
+    <link rel="prev" title="SlytherLisp Introduction" href="07-slytherlisp-intro.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="the-lambda-calculus">
+<h1>The Lambda Calculus<a class="headerlink" href="#the-lambda-calculus" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These slides are also available in PDF format: <a class="reference internal" href="/teaching/csci400-s19/_static/slides/08-lambda-calculus-43.pdf" target="_blank">4:3 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/08-lambda-calculus-169.pdf" target="_blank">16:9 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/08-lambda-calculus-1610.pdf" target="_blank">16:10 PDF</a>.</p>
+</div>
+<div class="section" id="a-quote-to-start-the-day">
+<h2>A Quote to Start the Day<a class="headerlink" href="#a-quote-to-start-the-day" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>You realize that <strong>everything</strong> can be done with function composition?…
+It’s called <strong>lambda calculus</strong>.</p>
+<p class="attribution">&mdash;Joseph McKinsey</p>
+</div></blockquote>
+</div>
+<div class="section" id="id1">
+<h2>The Lambda Calculus<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>The <span class="math notranslate nohighlight">\(λ\)</span>-calculus is a mathematical language of <strong>lambda terms</strong> bound by a set of
+transformation rules. The <span class="math notranslate nohighlight">\(λ\)</span>-calculus notation was introduced in the 1930s by Alonzo
+Church.</p>
+<p>Just like programming languages, the <span class="math notranslate nohighlight">\(λ\)</span>-calculus has rules for what is a valid syntax:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Variables:</th><td class="field-body">A variable (such as <span class="math notranslate nohighlight">\(x\)</span>) is valid term in the <span class="math notranslate nohighlight">\(λ\)</span>-calculus.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Abstractions:</th><td class="field-body">If <span class="math notranslate nohighlight">\(t\)</span> is a term and <span class="math notranslate nohighlight">\(x\)</span> is a variable, then the term <span class="math notranslate nohighlight">\(λx.t\)</span> is a
+lambda abstraction.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Applications:</th><td class="field-body">If <span class="math notranslate nohighlight">\(t\)</span> and <span class="math notranslate nohighlight">\(s\)</span> are terms, then <span class="math notranslate nohighlight">\(ts\)</span> is the application term of <span class="math notranslate nohighlight">\(t\)</span> onto
+<span class="math notranslate nohighlight">\(s\)</span>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="anonymous-functions">
+<h2>Anonymous Functions<a class="headerlink" href="#anonymous-functions" title="Permalink to this headline">¶</a></h2>
+<p><strong>Lambda abstractions</strong> can be thought of as anonymous functions in the <span class="math notranslate nohighlight">\(λ\)</span>-calculus.</p>
+<p>A lambda abstraction which takes an <span class="math notranslate nohighlight">\(x\)</span> and returns a <span class="math notranslate nohighlight">\(t\)</span> is written as so:</p>
+<div class="math notranslate nohighlight">
+\[λx.t\]</div>
+<div class="admonition-example admonition">
+<p class="first admonition-title">Example</p>
+<p class="last">Suppose in mathematics we define a function <span class="math notranslate nohighlight">\(f(x) = x + 2\)</span>. This could be
+written as <span class="math notranslate nohighlight">\((λ x.x + 2)\)</span> in the <span class="math notranslate nohighlight">\(λ\)</span>-calculus <a class="footnote-reference" href="#id3" id="id2">[1]</a>. Of course, this function
+is anonymous and not bound to the name <span class="math notranslate nohighlight">\(f\)</span>.</p>
+</div>
+<table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>Of course, we haven’t said that either <span class="math notranslate nohighlight">\(+\)</span> nor <span class="math notranslate nohighlight">\(2\)</span> is valid in lambda
+calculus yet. We will get to that…</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="functions-are-first-class">
+<h2>Functions are First Class<a class="headerlink" href="#functions-are-first-class" title="Permalink to this headline">¶</a></h2>
+<p>In the <span class="math notranslate nohighlight">\(λ\)</span>-calculus, abstractions are not only first class functions, they are our only
+way of to encode data.</p>
+<p>Abstractions are used to encode everything:</p>
+<ul class="simple">
+<li>Numbers</li>
+<li>Booleans (true/false)</li>
+<li>Conses</li>
+<li>…</li>
+</ul>
+</div>
+<div class="section" id="currying">
+<h2>Currying<a class="headerlink" href="#currying" title="Permalink to this headline">¶</a></h2>
+<p>Since abstractions in the <span class="math notranslate nohighlight">\(λ\)</span>-calculus may only take one argument, currying is
+typically used to denote functions of multiple arguments. For example, the
+function <span class="math notranslate nohighlight">\(f(x, y) = x\)</span> might be written as:</p>
+<div class="math notranslate nohighlight">
+\[λx.(λy.x)\]</div>
+<p>Further, function application is left-associative, so <span class="math notranslate nohighlight">\(fxy\)</span> means
+<span class="math notranslate nohighlight">\((fx)y\)</span>.</p>
+</div>
+<div class="section" id="free-and-bound-variables">
+<h2>Free and Bound Variables<a class="headerlink" href="#free-and-bound-variables" title="Permalink to this headline">¶</a></h2>
+<p>The <span class="math notranslate nohighlight">\(λ\)</span> operator (which creates lambda abstractions) binds a variable to
+wherever it occurs in the expression.</p>
+<ul class="simple">
+<li>Variables which are bound in an expression are called <strong>bound variables</strong></li>
+<li>Variables which are not bound in an expression are called <strong>free variables</strong></li>
+</ul>
+<div class="admonition-example admonition">
+<p class="first admonition-title">Example</p>
+<p>With your learning group, identify the free and bound variables in this
+expression:</p>
+<div class="last math notranslate nohighlight">
+\[λx.(λy.zy)(zx)\]</div>
+</div>
+</div>
+<div class="section" id="transformations">
+<h2>Transformations<a class="headerlink" href="#transformations" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name" colspan="2"><span class="math notranslate nohighlight">\(\alpha\)</span>-conversion:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Allows variables to be renamed to non-colliding names. For example,
+<span class="math notranslate nohighlight">\(λx.x\)</span> is <span class="math notranslate nohighlight">\(\alpha\)</span>-equivalent to <span class="math notranslate nohighlight">\(λy.y\)</span>.</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2"><span class="math notranslate nohighlight">\(\beta\)</span>-reduction:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">Allows functions to be applied. For example, <span class="math notranslate nohighlight">\((λx.λy.x)(λx.x)\)</span> is
+<span class="math notranslate nohighlight">\(\beta\)</span>-equivalent to <span class="math notranslate nohighlight">\(λy.(λx.x)\)</span>.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2"><span class="math notranslate nohighlight">\(\eta\)</span>-conversion:</th></tr>
+<tr class="field-odd field"><td>&#160;</td><td class="field-body">Allows functions with the same external properties to be substituted. For
+example, <span class="math notranslate nohighlight">\((λx.(fx))\)</span> is <span class="math notranslate nohighlight">\(\eta\)</span>-equivalent to <span class="math notranslate nohighlight">\(f\)</span> if <span class="math notranslate nohighlight">\(x\)</span> is not a free
+variable in <span class="math notranslate nohighlight">\(f\)</span>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="examples-alpha-equivalence">
+<h2>Examples: Alpha Equivalence<a class="headerlink" href="#examples-alpha-equivalence" title="Permalink to this headline">¶</a></h2>
+<p>With your learning group, identify if each of the following are a valid
+<span class="math notranslate nohighlight">\(\alpha\)</span>-conversion. Turn in your answers on a sheet of paper with all of your
+names at the end of class for learning group participation credit for today.</p>
+<ol class="arabic simple">
+<li><span class="math notranslate nohighlight">\(λx.λx.x \to λy.λy.y\)</span></li>
+<li><span class="math notranslate nohighlight">\(λx.λx.x \to λy.λx.x\)</span></li>
+<li><span class="math notranslate nohighlight">\(λx.λx.x \to λy.λx.y\)</span></li>
+<li><span class="math notranslate nohighlight">\(λx.λy.x \to λy.λy.y\)</span></li>
+</ol>
+</div>
+<div class="section" id="examples-beta-reductions">
+<h2>Examples: Beta Reductions<a class="headerlink" href="#examples-beta-reductions" title="Permalink to this headline">¶</a></h2>
+<p>Fully <span class="math notranslate nohighlight">\(\beta\)</span>-reduce each of the following expressions:</p>
+<ol class="arabic simple" start="5">
+<li><span class="math notranslate nohighlight">\((λx.λy.λf.fxy)(λx.λy.y)(λx.λy.x)(λx.λy.y)\)</span></li>
+<li><span class="math notranslate nohighlight">\((λa.λb.a(λb.λf.λx.f(bfx))b)(λf.λx.fx)(λf.λx.f(fx))\)</span></li>
+</ol>
+</div>
+<div class="section" id="church-numerals">
+<h2>Church Numerals<a class="headerlink" href="#church-numerals" title="Permalink to this headline">¶</a></h2>
+<p>Since all data in the <span class="math notranslate nohighlight">\(λ\)</span>-calculus must be a function, we use a clever convention of
+functions (called <strong>Church numerals</strong>) to define numbers:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">0:</th><td class="field-body"><span class="math notranslate nohighlight">\(λf.λx.x\)</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">1:</th><td class="field-body"><span class="math notranslate nohighlight">\(λf.λx.fx\)</span></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">2:</th><td class="field-body"><span class="math notranslate nohighlight">\(λf.λx.f(fx)\)</span></td>
+</tr>
+<tr class="field-even field"><th class="field-name">3:</th><td class="field-body"><span class="math notranslate nohighlight">\(λf.λx.f(f(fx))\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>… and so on. In fact, the successor to any number <span class="math notranslate nohighlight">\(n\)</span> can be written as:</p>
+<div class="math notranslate nohighlight">
+\[λf.λx.f(nfx)\]</div>
+<div class="admonition-notice-this admonition">
+<p class="first admonition-title">Notice this</p>
+<p class="last">Defining numbers as functions in this way allows us to apply a Chuch
+numeral <span class="math notranslate nohighlight">\(n\)</span> to a function to get a new function that applies the original
+function <span class="math notranslate nohighlight">\(n\)</span> times.</p>
+</div>
+</div>
+<div class="section" id="shorthand-notations">
+<h2>Shorthand Notations<a class="headerlink" href="#shorthand-notations" title="Permalink to this headline">¶</a></h2>
+<p>While it’s not a defined part of the <span class="math notranslate nohighlight">\(λ\)</span>-calculus, we define common shorthands for some
+features:</p>
+<ul class="simple">
+<li><span class="math notranslate nohighlight">\(0, 1, 2, \ldots\)</span> are shorthand for their corresponding Church numerals</li>
+<li><span class="math notranslate nohighlight">\(\{\text{SUCC}\} = λn.λf.λx.f(nfx)\)</span></li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The notation “<span class="math notranslate nohighlight">\(=\)</span>” above is not a part of the <span class="math notranslate nohighlight">\(λ\)</span>-calculus. I’m using it for
+saying “is shorthand for”.</p>
+</div>
+</div>
+<div class="section" id="addition-and-multiplication">
+<h2>Addition and Multiplication<a class="headerlink" href="#addition-and-multiplication" title="Permalink to this headline">¶</a></h2>
+<p>Adding <span class="math notranslate nohighlight">\(m\)</span> to <span class="math notranslate nohighlight">\(n\)</span> can be thought of as taking the successor to <span class="math notranslate nohighlight">\(n\)</span>, <span class="math notranslate nohighlight">\(m\)</span> times.
+Using our shorthand <span class="math notranslate nohighlight">\(\text{SUCC}\)</span>, this can be written as:</p>
+<div class="math notranslate nohighlight">
+\[\{\text{ADD}\} = λm.λn.(m \,\{\text{SUCC}\}\, n)\]</div>
+<p>Similarly, multiplying <span class="math notranslate nohighlight">\(m\)</span> by <span class="math notranslate nohighlight">\(n\)</span> can be thought of as repeating <span class="math notranslate nohighlight">\(\text{ADD}\,
+n\)</span>, <span class="math notranslate nohighlight">\(m\)</span> times and then applying it to <span class="math notranslate nohighlight">\(0\)</span>, this can be written as:</p>
+<div class="math notranslate nohighlight">
+\[\{\text{MULT}\} = λm.λn.(m (\{\text{ADD}\}\, n) 0)\]</div>
+</div>
+<div class="section" id="boolean-logic">
+<h2>Boolean Logic<a class="headerlink" href="#boolean-logic" title="Permalink to this headline">¶</a></h2>
+<p>We use the following convention for true and false:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{split}
+    \{\text{TRUE}\}  &amp;= λx.λy.x \\
+    \{\text{FALSE}\} &amp;= λx.λy.y \qquad\text{(Church numeral zero})
+\end{split}\end{split}\]</div>
+<p>From here, we can define some common boolean operators:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{split}
+    \{\text{AND}\} &amp;= λp.λq.p q p \\
+    \{\text{OR}\}  &amp;= λp.λq.p p q \\
+    \{\text{NOT}\} &amp;= λp.p\ \{\text{FALSE}\}\ \{\text{TRUE}\} \\
+    \{\text{IF}\}  &amp;= λp.λa.λb.p a b \\
+    &amp; \text{ (returns $a$ if the predicate is TRUE, $b$ otherwise)}
+\end{split}\end{split}\]</div>
+</div>
+<div class="section" id="cons-cells">
+<h2>Cons Cells<a class="headerlink" href="#cons-cells" title="Permalink to this headline">¶</a></h2>
+<p>By convention, we will represent a cons cell as a function that applies its
+argument to the CAR and CDR of the cons cell. This leads to the shorthand:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{split}
+    \{\text{CONS}\} &amp;= λx.λy.λf.f x y     \\
+    \{\text{CAR}\}  &amp;= λc.c\ \{\text{TRUE}\}  \\
+    \{\text{CDR}\}  &amp;= λc.c\ \{\text{FALSE}\} \\
+    \{\text{NIL}\}  &amp;= λx.\{\text{TRUE}\}     \\
+\end{split}\end{split}\]</div>
+<p>Using this, we can define lists:</p>
+<div class="math notranslate nohighlight">
+\[(\{\text{CONS}\}\, 1\ (\{\text{CONS}\}\, 2\ (\{\text{CONS}\}\, 3\ \{\text{NIL}\})))\]</div>
+</div>
+<div class="section" id="what-else-is-there-in-lambda-calculus">
+<h2>What else is there in Lambda Calculus?<a class="headerlink" href="#what-else-is-there-in-lambda-calculus" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Getting the predecessor (<code class="docutils literal notranslate"><span class="pre">{PRD}</span></code>) for a Church Numeral is hard, but doable
+(extra credit).  To subtract <span class="math notranslate nohighlight">\(m\)</span> from <span class="math notranslate nohighlight">\(n\)</span>, apply the <code class="docutils literal notranslate"><span class="pre">{PRD}</span></code> function <span class="math notranslate nohighlight">\(m\)</span>
+times to <span class="math notranslate nohighlight">\(n\)</span>.</li>
+<li>For recursion, we need to reference ourselves in a lambda abstraction. This
+is done using a Y-combinator.</li>
+<li>The graduate level Theory of Computation (CSCI 561) class talks much more
+extensively about the <span class="math notranslate nohighlight">\(λ\)</span>-calculus.</li>
+<li>There are many extensions to the <span class="math notranslate nohighlight">\(λ\)</span>-calculus such as those encoded by the <span class="math notranslate nohighlight">\(λ\)</span>-cube.</li>
+</ul>
+<a class="reference internal image-reference" href="../_images/lambda-cube.png"><img alt="../_images/lambda-cube.png" src="../_images/lambda-cube.png" style="width: 30%;" /></a>
+</div>
+<div class="section" id="why-is-any-of-this-useful">
+<h2>Why is any of this Useful?<a class="headerlink" href="#why-is-any-of-this-useful" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><span class="math notranslate nohighlight">\(λ\)</span>-calculus can emulate a Turing machine. That means that anything you can
+do with a classical computer, you can do with the <span class="math notranslate nohighlight">\(λ\)</span>-calculus. <strong>This fact
+underpins all of functional programming.</strong></li>
+<li>Many functional programming languages (e.g., Haskell, Scheme, SlytherLisp)
+are just practical implementations of the <span class="math notranslate nohighlight">\(λ\)</span>-calculus.</li>
+<li>The <span class="math notranslate nohighlight">\(λ\)</span>-calculus gives us another perspective on <em>type theory</em> (using the
+generalization of the <span class="math notranslate nohighlight">\(λ\)</span>-calculus called typed <span class="math notranslate nohighlight">\(λ\)</span>-calculus).</li>
+<li>It is another way for us to quantify what is computable.</li>
+</ul>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

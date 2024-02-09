@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programming Language Concepts &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/slides/02-pl-concepts.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="PL Evaluation and Typing Systems" href="03-evaluation-typing.html" />
+    <link rel="prev" title="Welcome to Programming Languages!" href="01-intro.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="programming-language-concepts">
+<h1>Programming Language Concepts<a class="headerlink" href="#programming-language-concepts" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These slides are also available in PDF format: <a class="reference internal" href="/teaching/csci400-s19/_static/slides/02-pl-concepts-43.pdf" target="_blank">4:3 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/02-pl-concepts-169.pdf" target="_blank">16:9 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/02-pl-concepts-1610.pdf" target="_blank">16:10 PDF</a>.</p>
+</div>
+<div class="section" id="learning-group-activity">
+<h2>Learning Group Activity<a class="headerlink" href="#learning-group-activity" title="Permalink to this headline">¶</a></h2>
+<p>With your learning group:</p>
+<ol class="arabic simple">
+<li>Share your definitions of a programming language. Discuss what each
+definition entails, and whether you think it could be improved.</li>
+<li>Create one collective definition.</li>
+</ol>
+<p><strong>Got a good one?</strong> There will be a chance for you to share with the class.</p>
+</div>
+<div class="section" id="two-parts-to-a-language">
+<h2>Two Parts to a Language<a class="headerlink" href="#two-parts-to-a-language" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="design-vs-implementation">
+<h3>Design vs. Implementation<a class="headerlink" href="#design-vs-implementation" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Design:</strong> The language specification; that is, given an input, how <em>should</em>
+the implementation behave?</li>
+<li><strong>Implementation:</strong> A compiler or interpreter which behaves according to the
+language design.</li>
+</ul>
+<div class="admonition-example admonition">
+<p class="first admonition-title">Example</p>
+<p class="last">C is a programming language, but GCC is an implementation of the C
+programming language.</p>
+</div>
+</div>
+<div class="section" id="discuss">
+<h3>Discuss<a class="headerlink" href="#discuss" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Someone tells you a language is <em>fast</em>. Are they referring to the design, or
+the implementation? Or both? Why?</li>
+<li>Is it always correct to separate the concepts of design and implementation?
+When can we get into murky water?</li>
+</ol>
+</div>
+</div>
+<div class="section" id="abstract-syntax-trees">
+<h2>Abstract Syntax Trees<a class="headerlink" href="#abstract-syntax-trees" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Abstract Syntax Trees<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Consider this simple mathematical expression:</p>
+<div class="math notranslate nohighlight">
+\[(2 + 3) \times 4\]</div>
+<p>We could convert this to a tree structure that represents the same expression:</p>
+<a class="reference internal image-reference" href="../_images/math-ast.svg"><img alt="../_images/math-ast.svg" height="100pt" src="../_images/math-ast.svg" /></a>
+<p>This kind of tree structure which represents the syntax of an expression is
+called an <strong>Abstract Syntax Tree</strong> (AST).</p>
+</div>
+<div class="section" id="symbolic-expressions">
+<h3>Symbolic Expressions<a class="headerlink" href="#symbolic-expressions" title="Permalink to this headline">¶</a></h3>
+<p>Since drawing abstract syntax trees is a lot of work, there exists a notation
+called <strong>symbolic expressions</strong> (or <strong>s-expressions</strong>) that makes it a little
+easier.</p>
+<a class="reference internal image-reference" href="../_images/math-ast.svg"><img alt="../_images/math-ast.svg" height="100pt" src="../_images/math-ast.svg" /></a>
+<p>This converts to the following s-expression:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="o">*</span> <span class="p">(</span><span class="o">+</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">)</span> <span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="exercise">
+<h3>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h3>
+<p>With your learning group, for each math expression, draw an abstract syntax
+tree, and write out the resulting s-expression.</p>
+<ol class="arabic simple">
+<li><span class="math notranslate nohighlight">\(6 \times 7 + 8\)</span></li>
+<li><span class="math notranslate nohighlight">\(\dfrac{1}{2 \times 3 \times 4}\)</span></li>
+<li><span class="math notranslate nohighlight">\(2^3 + 5\)</span></li>
+</ol>
+</div>
+<div class="section" id="evaluating-an-ast">
+<h3>Evaluating an AST<a class="headerlink" href="#evaluating-an-ast" title="Permalink to this headline">¶</a></h3>
+<p>To get the result from abstract syntax tree, we could write a simple program to
+do this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">procedure</span> <span class="nb">eval</span><span class="p">(</span><span class="n">node</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">node</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">literal</span> <span class="n">then</span> <span class="k">return</span> <span class="n">node</span>
+    <span class="n">otherwise</span><span class="p">,</span> <span class="k">if</span> <span class="n">node</span><span class="o">.</span><span class="n">operator</span> <span class="ow">is</span><span class="o">...</span>
+        <span class="o">+</span><span class="p">,</span> <span class="n">then</span><span class="p">:</span>
+            <span class="nb">sum</span> <span class="o">&lt;-</span> <span class="mi">0</span>
+            <span class="k">for</span> <span class="n">each</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">node</span><span class="p">:</span>
+                <span class="nb">sum</span> <span class="o">&lt;-</span> <span class="nb">sum</span> <span class="o">+</span> <span class="nb">eval</span><span class="p">(</span><span class="n">child</span><span class="p">)</span>
+            <span class="k">return</span> <span class="nb">sum</span>
+        <span class="o">*</span><span class="p">,</span> <span class="n">then</span><span class="p">:</span>
+            <span class="o">...</span>
+</pre></div>
+</div>
+<p>A program which does this is called an <strong>interpreter</strong>. We’ll present a more
+formal definition of this in a few more slides.</p>
+</div>
+<div class="section" id="compiling-an-ast">
+<h3>Compiling an AST<a class="headerlink" href="#compiling-an-ast" title="Permalink to this headline">¶</a></h3>
+<p>You could imagine a program which takes in an AST and creates machine code
+(pseudocode omitted):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>                      <span class="n">ADD</span>     <span class="n">R1</span> <span class="o">&lt;-</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span>
+<span class="p">(</span><span class="o">*</span> <span class="p">(</span><span class="o">+</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">)</span> <span class="mi">4</span><span class="p">)</span>   <span class="o">-&gt;</span>    <span class="n">MUL</span>     <span class="n">R1</span> <span class="o">&lt;-</span> <span class="n">R1</span><span class="p">,</span> <span class="mi">4</span>
+                      <span class="n">RETURN</span>  <span class="n">R1</span>
+</pre></div>
+</div>
+<p>This kind of a program is called a <strong>compiler</strong>. Again, formal definition
+coming soon.</p>
+</div>
+</div>
+<div class="section" id="language-implementation-techniques">
+<h2>Language Implementation Techniques<a class="headerlink" href="#language-implementation-techniques" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="compiled-languages">
+<h3>Compiled Languages<a class="headerlink" href="#compiled-languages" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Compiler:</th><td class="field-body">A computer program which translates a high-level language (such as C) into
+machine code.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Machine Code:</th><td class="field-body">A set of instructions which can be directly executed by a CPU.</td>
+</tr>
+</tbody>
+</table>
+<p>Typically, when we speak of a <strong>compiled language</strong>, we refer to one which can
+be compiled to machine code. Compilers which translate to virtual machine
+bytecode (e.g., Java and Python) are better categorized as <strong>interpreted
+languages</strong>.</p>
+</div>
+<div class="section" id="compiler-implementations">
+<h3>Compiler Implementations<a class="headerlink" href="#compiler-implementations" title="Permalink to this headline">¶</a></h3>
+<div class="docutils container">
+<div class="docutils container">
+<p><strong>Advantages:</strong></p>
+<ul class="simple">
+<li>Runtime is <em>fast!</em></li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul class="simple">
+<li>Compile time is slow</li>
+<li>Source code cannot be a part of the input data</li>
+</ul>
+<div class="admonition-examples admonition">
+<p class="first admonition-title">Examples</p>
+<p class="last">C, C++, and FORTRAN are generally implemented as compiled languages</p>
+</div>
+</div>
+<div class="docutils container">
+<a class="reference internal image-reference" href="../_images/compiler.png"><img alt="../_images/compiler.png" class="align-center" src="../_images/compiler.png" style="width: 155pt;" /></a>
+</div>
+</div>
+</div>
+<div class="section" id="interpreted-languages">
+<h3>Interpreted Languages<a class="headerlink" href="#interpreted-languages" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Interpreter:</th><td class="field-body">A computer program which reads a high-level programming language and
+<strong>directly executes</strong> the instructions of the language itself.</td>
+</tr>
+</tbody>
+</table>
+<p>An <strong>interpreted language</strong> is a language designed to be implemented using an
+interpreter.</p>
+<div class="admonition-discuss admonition">
+<p class="first admonition-title">Discuss</p>
+<p>What could be the advantages of executing the language directly?
+Disadvantages?</p>
+<p class="last">Try and come up with an example of something that could be done with an
+interpreter model but not a compiler model.</p>
+</div>
+</div>
+<div class="section" id="interpreter-implementations">
+<h3>Interpreter Implementations<a class="headerlink" href="#interpreter-implementations" title="Permalink to this headline">¶</a></h3>
+<div class="docutils container">
+<div class="docutils container">
+<p><strong>Advantages:</strong></p>
+<ul class="simple">
+<li>No need to compile</li>
+<li>Source code <em>can</em> be a part of input data: you can transmit functions
+across the network to be run!</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul class="simple">
+<li>Runtime is slow</li>
+</ul>
+<div class="admonition-examples admonition">
+<p class="first admonition-title">Examples</p>
+<p class="last">BASIC, PHP, and Perl are generally implemented as interpreted
+languages</p>
+</div>
+</div>
+<div class="docutils container">
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/interpreter.svg"><img alt="../_images/interpreter.svg" src="../_images/interpreter.svg" width="155pt" /></a>
+<p class="caption"><span class="caption-text">Model of a classic interpreter. Modern interpreters are slightly
+more complicated.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="hybrid-interpreters">
+<h3>Hybrid Interpreters<a class="headerlink" href="#hybrid-interpreters" title="Permalink to this headline">¶</a></h3>
+<p>To speed up the execution of interpreted languages, implementers started
+getting clever:</p>
+<ul class="simple">
+<li><strong>Interpreted VM Bytecode:</strong> Input is lexed, parsed, then translated to
+bytecode. The bytecode gets optimized, then the low level bytecode is
+interpreted.  Examples: CPython, OpenJDK (Java), Ruby MRI</li>
+<li><strong>Just In Time Compiler:</strong> Source code is compiled as it’s executed, putting
+machine code on the processor “just in time”.
+Examples: PyPy, LuaJIT, Chrome V8</li>
+</ul>
+<p>Advantages include all the benefits of interpreted languages, with run times
+occasionally approaching compiled languages.</p>
+</div>
+<div class="section" id="bytecode-example">
+<h3>Bytecode Example<a class="headerlink" href="#bytecode-example" title="Permalink to this headline">¶</a></h3>
+<p>In CPython, the following Python function:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">hello</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, World!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>will be translated to the following bytecode <a class="footnote-reference" href="#id3" id="id2">[1]</a></p>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>2           0 LOAD_GLOBAL              0 (print)
+            2 LOAD_CONST               1 (&#39;Hello, World!&#39;)
+            4 CALL_FUNCTION            1
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These instructions cannot be performed directly by the CPU, however, if you
+can create a translation from every CPython bytecode instruction to a given
+CPU architecture, you can run Python on that architecture.</p>
+</div>
+<table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>the actual bytecode is a binary, non-human-readable format. This is a
+human-readable translation. (Source:
+<a class="reference external" href="https://opensource.com/article/18/4/introduction-python-bytecode" target="_blank">https://opensource.com/article/18/4/introduction-python-bytecode</a>)</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="typical-interpreter-structure">
+<h3>Typical Interpreter Structure<a class="headerlink" href="#typical-interpreter-structure" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><strong>Lexer:</strong> Source Code <span class="math notranslate nohighlight">\(\to\)</span> Tokens</li>
+<li><strong>Parser:</strong> Tokens <span class="math notranslate nohighlight">\(\to\)</span> Abstract Syntax Tree (AST)</li>
+<li><strong>Analyzer (optional):</strong> AST <span class="math notranslate nohighlight">\(\to\)</span> AST (optimized)</li>
+<li><strong>Evaluator:</strong> AST + Context <span class="math notranslate nohighlight">\(\to\)</span> Result + Context</li>
+</ol>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

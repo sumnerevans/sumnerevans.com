@@ -1,0 +1,14 @@
+LGA-09: Exam 2 Questions
+========================
+
+In the next class, we will be having a review session to prepare for Exam 2. You
+will be reviewing with your learning group members.
+
+Each member of your learning group must create 2-4 questions which might appear
+on the test. If you are feeling uninspired, look at the `Exam 2 Topics`_ for
+ideas.
+
+Bring a **printed** copy of your questions for each member of your learning
+group.
+
+.. _Exam 2 Topics: /study/exam2.html

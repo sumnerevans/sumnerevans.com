@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam 2 Study Guide &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/study/exam2.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Lambda Calculus Practice Problems" href="lambda-calculus-practice.html" />
+    <link rel="prev" title="Exam 1 Study Guide" href="exam1.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="exam-2-study-guide">
+<h1>Exam 2 Study Guide<a class="headerlink" href="#exam-2-study-guide" title="Permalink to this headline">¶</a></h1>
+<p><strong>EDIT 2018-03-08:</strong> Added second item to SlytherLisp section.</p>
+<div class="section" id="syltherlisp">
+<h2>SyltherLisp<a class="headerlink" href="#syltherlisp" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Be able to read and understand SlytherLisp code. (You will not be required to
+write any SlytherLisp code on the exam.)</li>
+<li>What is the difference between a <em>macro</em> and a <em>function</em>? Can you give an
+example of a language feature which can only be implemented using a macro?</li>
+</ul>
+</div>
+<div class="section" id="lambda-calculus">
+<h2>Lambda Calculus<a class="headerlink" href="#lambda-calculus" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>What is the three syntactical elements (terms) in the lambda calculus?</li>
+<li>What is <em>currying</em>?</li>
+<li>Understand how currying allows us to have functions which take multiple
+arguments in the λ-calculus.</li>
+<li>Can you identify whether a variable is bound or free in a lambda term?</li>
+<li>What are the three transformations we can preform on lambda terms? When can
+we apply these transformations? Given a term and a transformed version of it,
+can you identify which transformation was applied (or if the transformation
+is invalid)?</li>
+<li>What is a Church numeral? If I gave you any arbitrary positive integer, could
+you convert it to its corresponding Church numeral?</li>
+<li>When we apply a church numeral to a lambda abstraction, what new kind of
+abstraction do we get?</li>
+<li><strong>Be able to beta-reduce any lambda term and show each step (with and without
+currying).</strong></li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>You do not need to memorize the shorthands for <code class="docutils literal notranslate"><span class="pre">SUCC</span></code>, <code class="docutils literal notranslate"><span class="pre">ADD</span></code>, <code class="docutils literal notranslate"><span class="pre">MUL</span></code>,
+<code class="docutils literal notranslate"><span class="pre">CONS</span></code>, etc.</p>
+<p class="last">I will give you the shorthands if you need them. The only shorthand you
+need to know the translation for is Church numerals.</p>
+</div>
+</div>
+<div class="section" id="pl-concepts">
+<h2>PL Concepts<a class="headerlink" href="#pl-concepts" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">What is a <em>cons cell</em>? What are the left and right sides called? How can we
+use cons cells to build lists?</p>
+</li>
+<li><p class="first">What is static/lexical scoping? How does it differ from dynamic scoping?</p>
+</li>
+<li><p class="first">How can we use static/lexical scoping in combination with first class
+functions to provide us with <em>closures</em>?</p>
+</li>
+<li><p class="first">Given a piece of code in a Lisp-like language and its output, could you use
+the code to identify whether the language uses static/lexical scoping or
+dynamic scoping? e.g., in this code:</p>
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="nf">f</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="nf">printer</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="nf">print</span><span class="w"> </span><span class="nv">x</span><span class="p">))</span><span class="w"></span>
+<span class="w">  </span><span class="nv">printer</span><span class="p">)</span><span class="w"></span>
+
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="nv">myfunc</span><span class="w"> </span><span class="p">(</span><span class="nf">f</span><span class="p">))</span><span class="w"></span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="nv">x</span><span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"></span>
+<span class="p">(</span><span class="nf">myfunc</span><span class="p">)</span><span class="w"> </span><span class="c1">;; what would it mean if this printed 2?</span><span class="w"></span>
+<span class="w">         </span><span class="c1">;; what would it mean if it printed 3?</span><span class="w"></span>
+</pre></div>
+</div>
+</li>
+</ul>
+<div class="section" id="memory-management">
+<h3>Memory Management<a class="headerlink" href="#memory-management" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>What is a <em>pointer</em>? How is it different from (and similar to) a <em>reference</em>?</li>
+<li>In C or C++, why is <code class="docutils literal notranslate"><span class="pre">BASE[OFFSET]</span></code> equivalent to <code class="docutils literal notranslate"><span class="pre">OFFSET[BASE]</span></code>?</li>
+<li>What is an <em>object lifetime</em>?</li>
+<li>What is a <em>static lifetime</em>? What are the advantages? Disadvantages?</li>
+<li>How does static lifetimes allow for <em>direct addressing</em>?</li>
+<li>What is a <em>stack dynamic lifetime</em>? What are the advantages? Disadvantages?</li>
+<li>What is an <em>explicit heap dynamic lifetime</em>? What are the advantages?
+Disadvantages?</li>
+<li><strong>Name the 3 dangers of explicit heap dynamic lifetimes.</strong> Be sure you could
+identify which danger is demonstrated in a simple piece of C or C++ code.</li>
+<li>What is an <em>implicit dynamic lifetime</em>? What are the advantages?
+Disadvantages?</li>
+<li>What is <em>garbage collection</em>? Given a diagram like presented in lecture of
+the visible and working variables and the heap, could you identify which
+nodes on the heap can be garbage collected?</li>
+</ul>
+</div>
+<div class="section" id="regular-expressions-and-fsa">
+<h3>Regular Expressions and FSA<a class="headerlink" href="#regular-expressions-and-fsa" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>What is a character set in a regular expression?<ul>
+<li>How can we negate a character set?</li>
+<li>How do character sets differ from groups?</li>
+<li>What is the meaning of the special character sets <code class="docutils literal notranslate"><span class="pre">\s</span></code>, <code class="docutils literal notranslate"><span class="pre">\S</span></code>, <code class="docutils literal notranslate"><span class="pre">\d</span></code>,
+<code class="docutils literal notranslate"><span class="pre">\D</span></code>, <code class="docutils literal notranslate"><span class="pre">\w</span></code>, <code class="docutils literal notranslate"><span class="pre">\W</span></code>?</li>
+<li>How can we specify a range of characters in a character set?</li>
+</ul>
+</li>
+<li>How can we match any character in a regular expression?</li>
+<li>What is the meaning of <code class="docutils literal notranslate"><span class="pre">+</span></code>, <code class="docutils literal notranslate"><span class="pre">?</span></code>, <code class="docutils literal notranslate"><span class="pre">*</span></code> in a regular expression?</li>
+<li>What does it mean to be greedy/non-greedy in a regular expression? What are
+the non-greedy versions of the <code class="docutils literal notranslate"><span class="pre">+</span></code>, <code class="docutils literal notranslate"><span class="pre">?</span></code>, <code class="docutils literal notranslate"><span class="pre">*</span></code> operators?</li>
+<li>How can we “escape” characters with a special meaning in a regular
+expression?</li>
+<li>How can we use groups in a regular expression?<ul>
+<li>What is alternation?</li>
+<li>How can we make use of alternation?</li>
+<li>What is a capturing group?</li>
+<li>What is a non-capturing group? How is it written?</li>
+</ul>
+</li>
+<li>What is an anchor? What are the <code class="docutils literal notranslate"><span class="pre">\b</span></code>, <code class="docutils literal notranslate"><span class="pre">$</span></code>, <code class="docutils literal notranslate"><span class="pre">^</span></code> anchors?</li>
+<li>Given a regular expression, can you identify whether a string will match that
+regular expression?</li>
+<li>What is a finite state machine? What are the states? What are the
+transitions?</li>
+<li><strong>Be able to convert a regular expression to a finite state machine graph.</strong></li>
+<li>Be able to write a regular expression for matching a double-quoted string
+literal.</li>
+<li>How can we write regular expressions in Python? What is the meaning of
+<code class="docutils literal notranslate"><span class="pre">p.match</span></code> versus <code class="docutils literal notranslate"><span class="pre">p.search</span></code> or <code class="docutils literal notranslate"><span class="pre">p.fullmatch</span></code>? How about <code class="docutils literal notranslate"><span class="pre">p.finditer</span></code>?</li>
+<li>In Python, how can we use <code class="docutils literal notranslate"><span class="pre">m.group</span></code> on a match object in Python? What is
+<code class="docutils literal notranslate"><span class="pre">m.group(0)</span></code>?</li>
+<li>In Python, if an expression does not match, what does <code class="docutils literal notranslate"><span class="pre">p.match</span></code>,
+<code class="docutils literal notranslate"><span class="pre">p.fullmatch</span></code>, or <code class="docutils literal notranslate"><span class="pre">p.search</span></code> return?</li>
+</ul>
+</div>
+<div class="section" id="parsing">
+<h3>Parsing<a class="headerlink" href="#parsing" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>What are the two stages of parsing? What is the purpose of each stage?</li>
+<li>What are the inputs and outputs to parsing?</li>
+<li>Be able to draw an abstract syntax tree for a given string and a given
+grammar.</li>
+<li>What is the difference between a top-down parser and a bottom-up parser?</li>
+<li><strong>What is shift-reduce? Can you create a parse table given a grammar and an
+input string?</strong></li>
+<li>What is the <em>lookahead-token</em> in shift-reduce? How can we use it to determine
+if there is ambiguity?</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

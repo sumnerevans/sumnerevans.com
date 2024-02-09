@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Lambda Calculus &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/slides/08-lambda-calculus-implementation.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Memory Management" href="09-memory-management.html" />
+    <link rel="prev" title="The Lambda Calculus" href="08-lambda-calculus.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="the-lambda-calculus">
+<h1>The Lambda Calculus<a class="headerlink" href="#the-lambda-calculus" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These slides are also available in PDF format: <a class="reference internal" href="/teaching/csci400-s19/_static/slides/08-lambda-calculus-implementation-43.pdf" target="_blank">4:3 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/08-lambda-calculus-implementation-169.pdf" target="_blank">16:9 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/08-lambda-calculus-implementation-1610.pdf" target="_blank">16:10 PDF</a>.</p>
+</div>
+<div class="section" id="lambda-calculus-computational-model">
+<h2>Lambda Calculus Computational Model<a class="headerlink" href="#lambda-calculus-computational-model" title="Permalink to this headline">¶</a></h2>
+<div class="beamer-simplecolumns docutils container">
+<div class="docutils container">
+<ul>
+<li><p class="first">In order to have a computer do <span class="math notranslate nohighlight">\(\beta\)</span>-reductions, we need to define a
+model to represent terms on a computer. (AST!)</p>
+</li>
+<li><p class="first">For example: <span class="math notranslate nohighlight">\((λx.λy.xy)(λy.y)\)</span></p>
+</li>
+<li><p class="first">Could also be written as s-expression:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">application</span>
+  <span class="p">(</span><span class="n">abstraction</span>
+    <span class="n">x</span>
+    <span class="p">(</span><span class="n">abstraction</span>
+      <span class="n">y</span>
+      <span class="p">(</span><span class="n">application</span> <span class="n">x</span> <span class="n">y</span><span class="p">)))</span>
+  <span class="p">(</span><span class="n">abstraction</span> <span class="n">y</span> <span class="n">y</span><span class="p">))</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<a class="reference internal image-reference" href="../_images/lambda-ast.svg"><img alt="../_images/lambda-ast.svg" height="180pt" src="../_images/lambda-ast.svg" /></a>
+</div>
+</div>
+<div class="section" id="beta-reduction-algorithm-eager">
+<h2>Beta Reduction Algorithm (Eager)<a class="headerlink" href="#beta-reduction-algorithm-eager" title="Permalink to this headline">¶</a></h2>
+<p>To <span class="math notranslate nohighlight">\(\beta\)</span>-reduce a term <span class="math notranslate nohighlight">\(t\)</span>:</p>
+<ol class="arabic simple">
+<li>If <span class="math notranslate nohighlight">\(t\)</span> is a variable, it is already reduced. Return <span class="math notranslate nohighlight">\(t\)</span>.</li>
+<li>If <span class="math notranslate nohighlight">\(t\)</span> is an application:<ol class="loweralpha">
+<li><span class="math notranslate nohighlight">\(\beta\)</span>-reduce the left hand and right hand sides and let <span class="math notranslate nohighlight">\(m\)</span> and <span class="math notranslate nohighlight">\(n\)</span> be
+the results, respectively.</li>
+<li>If <span class="math notranslate nohighlight">\(m\)</span> is an abstraction, return the beta reduction of <span class="math notranslate nohighlight">\(m\)</span>’s term with all
+instances of <span class="math notranslate nohighlight">\(m\)</span>’s variable replaced with <span class="math notranslate nohighlight">\(n\)</span>.</li>
+<li>Otherwise, return the application of <span class="math notranslate nohighlight">\(m\)</span> onto <span class="math notranslate nohighlight">\(n\)</span>.</li>
+</ol>
+</li>
+<li>If <span class="math notranslate nohighlight">\(t\)</span> is an abstraction, <span class="math notranslate nohighlight">\(\beta\)</span>-reduce the term of the abstraction and
+return the abstraction.</li>
+</ol>
+</div>
+<div class="section" id="lazy-algorithm-motivation">
+<h2>Lazy Algorithm Motivation<a class="headerlink" href="#lazy-algorithm-motivation" title="Permalink to this headline">¶</a></h2>
+<p>While the eager algorithm will produce the correct results, we may end up
+evaluating terms we did not need to. For example, consider:</p>
+<div class="math notranslate nohighlight">
+\[(λx.λy.y)
+\underbrace{((λm.λn.m(λn.λf.λx.f(nfx))n)(λf.λx.f(fx))(λf.λx.f(f(fx))))}_{x}
+\underbrace{(λx.x)}_{y}\]</div>
+<p>We don’t want to have to spend all of that work evaluating <span class="math notranslate nohighlight">\(x\)</span> if we did not
+need to!</p>
+</div>
+<div class="section" id="reducible-expressions">
+<h2>Reducible Expressions<a class="headerlink" href="#reducible-expressions" title="Permalink to this headline">¶</a></h2>
+<div class="beamer-simplecolumns docutils container">
+<div class="docutils container">
+<div class="admonition-definition admonition">
+<p class="first admonition-title">Definition</p>
+<p class="last">A <strong>reducible expression</strong> (called <em>redex</em> for short) is an application with
+an abstraction as its left child.</p>
+</div>
+<p>In order to implement lazy evaluation, we will need to concern ourselves with
+the <strong>left-most</strong> of the <strong>outer-most</strong> redexes.</p>
+<p>A redex is outer-most if it can be reached from the root of the tree
+without going through another redex.</p>
+</div>
+<a class="reference internal image-reference" href="../_images/redex-tree.svg"><img alt="../_images/redex-tree.svg" height="150pt" src="../_images/redex-tree.svg" /></a>
+</div>
+</div>
+<div class="section" id="beta-reduction-algorithm-lazy">
+<h2>Beta Reduction Algorithm (Lazy)<a class="headerlink" href="#beta-reduction-algorithm-lazy" title="Permalink to this headline">¶</a></h2>
+<p>To lazy <span class="math notranslate nohighlight">\(\beta\)</span>-reduce a term:</p>
+<ol class="arabic simple">
+<li>Find the left-most of the outer-most redexes in the abstract syntax tree and
+preform a substitution to complete the application.</li>
+<li>If any redexes remain, go to step 1.</li>
+</ol>
+</div>
+<div class="section" id="is-substitution-always-safe">
+<h2>Is substitution always safe?<a class="headerlink" href="#is-substitution-always-safe" title="Permalink to this headline">¶</a></h2>
+<p>Consider the following (naïve) substitution procedure for a term <span class="math notranslate nohighlight">\(t\)</span> for a
+variable <span class="math notranslate nohighlight">\(v\)</span> with replacement <span class="math notranslate nohighlight">\(r\)</span>:</p>
+<ul class="simple">
+<li>If <span class="math notranslate nohighlight">\(t\)</span> is an <strong>application</strong>, substitute <span class="math notranslate nohighlight">\(v\)</span> for <span class="math notranslate nohighlight">\(r\)</span> onto the left and right
+sides.</li>
+<li>If <span class="math notranslate nohighlight">\(t\)</span> is an <strong>abstraction</strong> whose variable is <span class="math notranslate nohighlight">\(v\)</span>, return the abstraction
+unaltered.</li>
+<li>If <span class="math notranslate nohighlight">\(t\)</span> is an <strong>abstraction</strong> whose variable is not <span class="math notranslate nohighlight">\(v\)</span>, return the
+abstraction with <span class="math notranslate nohighlight">\(v\)</span> substituted for <span class="math notranslate nohighlight">\(r\)</span> onto the abstraction’s term.</li>
+<li>If <span class="math notranslate nohighlight">\(t\)</span> is a <strong>variable</strong> which is <span class="math notranslate nohighlight">\(v\)</span>, return <span class="math notranslate nohighlight">\(r\)</span>.</li>
+<li>If <span class="math notranslate nohighlight">\(t\)</span> is a <strong>variable</strong> which is not <span class="math notranslate nohighlight">\(v\)</span>, return <span class="math notranslate nohighlight">\(v\)</span>.</li>
+</ul>
+<p><em>What could possibly go wrong?</em></p>
+</div>
+<div class="section" id="alpha-renames-in-substitutions">
+<h2>Alpha Renames in Substitutions<a class="headerlink" href="#alpha-renames-in-substitutions" title="Permalink to this headline">¶</a></h2>
+<p>Suppose we wish to <span class="math notranslate nohighlight">\(\beta\)</span>-reduce the following term:</p>
+<div class="math notranslate nohighlight">
+\[(λx.λy.(λx.λy.xy)(xy))\]</div>
+<p>Using the previous (simple) rules of substitution with our <span class="math notranslate nohighlight">\(\beta\)</span>-reduction
+algoritm, we end up with this:</p>
+<div class="math notranslate nohighlight">
+\[(λx.λy.(λy.(xy)y))\]</div>
+<p><strong>Oops.</strong> The binding changed! These terms are <em>not</em> equivalent.</p>
+<p><strong>How to solve?</strong> <span class="math notranslate nohighlight">\(\alpha\)</span>-rename.</p>
+</div>
+<div class="section" id="alpha-renaming-condition">
+<h2>Alpha Renaming Condition<a class="headerlink" href="#alpha-renaming-condition" title="Permalink to this headline">¶</a></h2>
+<p>We must preform an <span class="math notranslate nohighlight">\(\alpha\)</span>-rename in order to preform a substitution of <span class="math notranslate nohighlight">\(v\)</span>
+for <span class="math notranslate nohighlight">\(r\)</span> in <span class="math notranslate nohighlight">\(t\)</span> if and only if all of the below are true:</p>
+<ol class="arabic simple">
+<li><span class="math notranslate nohighlight">\(t\)</span> is an abstraction.</li>
+<li><span class="math notranslate nohighlight">\(t\)</span>’s variable is not <span class="math notranslate nohighlight">\(v\)</span>.</li>
+<li><span class="math notranslate nohighlight">\(v\)</span> is a free variable in <span class="math notranslate nohighlight">\(t\)</span>’s term.</li>
+<li><span class="math notranslate nohighlight">\(t\)</span>’s variable appears at least once as a free variable in <span class="math notranslate nohighlight">\(r\)</span>.</li>
+</ol>
+<p>(revisit example on previous slide)</p>
+</div>
+<div class="section" id="lambda-calculus-where-from-here">
+<h2>Lambda Calculus: Where from Here?<a class="headerlink" href="#lambda-calculus-where-from-here" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Subtraction is hard, but doable. Check out the <a class="reference external" href="https://en.wikipedia.org/wiki/Church_encoding" target="_blank">Wikipedia page</a> on Church
+Numerals for more info.</li>
+<li>For recursion, we need to reference ourselves in a lambda abstraction. This
+is done using a Y-combinator.</li>
+<li>From there, we can use the <span class="math notranslate nohighlight">\(λ\)</span>-calculus to compute the solution to any problem that a
+Turing machine can.</li>
+<li>More on all of this in CSCI-561 (Theory of Computation).</li>
+<li>Many functional programming languages (e.g., Haskell, Scheme, SlytherLisp)
+are just practical implementations of the <span class="math notranslate nohighlight">\(λ\)</span>-calculus.</li>
+</ul>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

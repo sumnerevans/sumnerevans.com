@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Language-Oriented Programming &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/slides/17-lop.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Exam 1 Study Guide" href="../study/exam1.html" />
+    <link rel="prev" title="Macros" href="16-macros.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="language-oriented-programming">
+<h1>Language-Oriented Programming<a class="headerlink" href="#language-oriented-programming" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These slides are also available in PDF format: <a class="reference internal" href="/teaching/csci400-s19/_static/slides/17-lop-43.pdf" target="_blank">4:3 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/17-lop-169.pdf" target="_blank">16:9 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/17-lop-1610.pdf" target="_blank">16:10 PDF</a>.</p>
+</div>
+<div class="section" id="learning-group-activity">
+<h2>Learning Group Activity<a class="headerlink" href="#learning-group-activity" title="Permalink to this headline">¶</a></h2>
+<p>Share with your group the macro you made for class today. Explain how it works,
+and when you might use it.</p>
+<p>Why couldn’t you use a function instead of a macro for the scenario you
+selected?</p>
+</div>
+<div class="section" id="what-is-lop">
+<h2>What is LOP?<a class="headerlink" href="#what-is-lop" title="Permalink to this headline">¶</a></h2>
+<p><strong>Language-Oriented Programming</strong> is a programming paradigm where you either:</p>
+<ul class="simple">
+<li>Extend an existing programming language to create the syntax needed to solve
+your problem elegantly (<strong>extensible programming language</strong>)</li>
+<li>Or, create a new <strong>domain specific language</strong> for solving your problem</li>
+</ul>
+<p>Programming languages with <em>homoiconic syntax</em> and <em>macros</em> have historically
+been very good at LOP.</p>
+</div>
+<div class="section" id="extensible-syntax">
+<h2>Extensible Syntax<a class="headerlink" href="#extensible-syntax" title="Permalink to this headline">¶</a></h2>
+<div class="beamer-simplecolumns docutils container">
+<div class="docutils container">
+<ul class="simple">
+<li>The domain of extensible languages is well dominated by Lisp, with the
+others sharing in common homoiconic syntax and macros.</li>
+<li>The exception to the above is concatenative languages, like Forth.</li>
+</ul>
+</div>
+<a class="reference internal image-reference" href="../_images/extensible.png"><img alt="../_images/extensible.png" src="../_images/extensible.png" style="height: 150pt;" /></a>
+</div>
+</div>
+<div class="section" id="domain-specific-languages">
+<h2>Domain Specific Languages<a class="headerlink" href="#domain-specific-languages" title="Permalink to this headline">¶</a></h2>
+<p><strong>Domain Specific Languages</strong> are languages <em>tailored to solve a specific kind
+of problem</em>. For example, the <strong>object property definition language</strong> is
+created for defining properties about types of data:</p>
+<div class="highlight-lisp notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">type</span><span class="w"> </span><span class="nv">house</span><span class="w"></span>
+<span class="w">  </span><span class="ss">:bases</span><span class="w"> </span><span class="p">(</span><span class="nv">building</span><span class="w"> </span><span class="nv">living-space</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="ss">:nouns</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;house&quot;</span><span class="w"> </span><span class="s">&quot;home&quot;</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>More examples: HTML, CSS, Glade (GUI), Sieve (mail filtering), Regular
+Expressions …</li>
+<li>DSLs can be either intended to stand-alone in their own files, or to be used
+inline in other languages. In the latter case, we often call them <strong>domain
+specific mini-languages</strong>.</li>
+</ul>
+</div>
+<div class="section" id="a-domain-specific-mini-language-you-already-know">
+<h2>A Domain Specific Mini-Language you already know<a class="headerlink" href="#a-domain-specific-mini-language-you-already-know" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">match</span></code> is a DSL built into Racket… in fact, it just translates into a
+bunch of <code class="docutils literal notranslate"><span class="pre">cond</span></code>s and <code class="docutils literal notranslate"><span class="pre">let</span></code>s:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="nb">syntax-&gt;datum</span><span class="w"> </span><span class="p">(</span><span class="nb">expand-once</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="ss">match</span><span class="w"> </span><span class="ss">a</span><span class="w"> </span><span class="p">[(</span><span class="ss">list-rest</span><span class="w"> </span><span class="ss">b</span><span class="w"> </span><span class="ss">c</span><span class="p">)</span><span class="w"> </span><span class="ss">b</span><span class="p">]</span><span class="w"> </span><span class="p">[</span><span class="ss">_</span><span class="w"> </span><span class="ss">a</span><span class="p">])))</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">(</span><span class="ss">let</span><span class="w"> </span><span class="p">((</span><span class="ss">a1</span><span class="w"> </span><span class="ss">a</span><span class="p">))</span><span class="w"></span>
+<span class="w">   </span><span class="p">(</span><span class="ss">let</span><span class="w"> </span><span class="p">((</span><span class="ss">fail2</span><span class="w"></span>
+<span class="w">          </span><span class="p">(</span><span class="ss">λ</span><span class="w"> </span><span class="p">()</span><span class="w"></span>
+<span class="w">            </span><span class="p">(</span><span class="ss">match:error</span><span class="w"> </span><span class="ss">a1</span><span class="w"> </span><span class="p">(</span><span class="ss">syntax-srclocs</span><span class="w"> </span><span class="p">(</span><span class="ss">quote-syntax</span><span class="w"> </span><span class="ss">srcloc</span><span class="p">))</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">match</span><span class="p">))))</span><span class="w"></span>
+<span class="w">     </span><span class="p">(</span><span class="ss">let*</span><span class="w"> </span><span class="p">((</span><span class="ss">f3</span><span class="w"></span>
+<span class="w">             </span><span class="p">(</span><span class="ss">lambda</span><span class="w"> </span><span class="p">()</span><span class="w"></span>
+<span class="w">               </span><span class="p">(</span><span class="ss">syntax-parameterize</span><span class="w"></span>
+<span class="w">                </span><span class="p">((</span><span class="ss">fail</span><span class="w"> </span><span class="p">(</span><span class="ss">make-rename-transformer</span><span class="w"> </span><span class="p">(</span><span class="ss">quote-syntax</span><span class="w"> </span><span class="ss">fail2</span><span class="p">))))</span><span class="w"></span>
+<span class="w">                </span><span class="p">(</span><span class="ss">let</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="ss">a</span><span class="p">)))))</span><span class="w"></span>
+<span class="w">       </span><span class="p">(</span><span class="ss">cond</span><span class="w"></span>
+<span class="w">        </span><span class="p">((</span><span class="ss">pair?</span><span class="w"> </span><span class="ss">a1</span><span class="p">)</span><span class="w"></span>
+<span class="w">         </span><span class="p">(</span><span class="ss">let</span><span class="w"> </span><span class="p">((</span><span class="ss">unsafe-car6</span><span class="w"> </span><span class="p">(</span><span class="ss">unsafe-car</span><span class="w"> </span><span class="ss">a1</span><span class="p">))</span><span class="w"> </span><span class="p">(</span><span class="ss">unsafe-cdr7</span><span class="w"> </span><span class="p">(</span><span class="ss">unsafe-cdr</span><span class="w"> </span><span class="ss">a1</span><span class="p">)))</span><span class="w"></span>
+<span class="w">           </span><span class="p">(</span><span class="ss">syntax-parameterize</span><span class="w"></span>
+<span class="w">            </span><span class="p">((</span><span class="ss">fail</span><span class="w"> </span><span class="p">(</span><span class="ss">make-rename-transformer</span><span class="w"> </span><span class="p">(</span><span class="ss">quote-syntax</span><span class="w"> </span><span class="ss">f3</span><span class="p">))))</span><span class="w"></span>
+<span class="w">            </span><span class="p">(</span><span class="ss">let</span><span class="w"> </span><span class="p">((</span><span class="ss">c</span><span class="w"> </span><span class="ss">unsafe-cdr7</span><span class="p">))</span><span class="w"> </span><span class="p">(</span><span class="ss">let</span><span class="w"> </span><span class="p">((</span><span class="ss">b</span><span class="w"> </span><span class="ss">unsafe-car6</span><span class="p">))</span><span class="w"> </span><span class="p">(</span><span class="ss">let</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="ss">b</span><span class="p">))))))</span><span class="w"></span>
+<span class="w">        </span><span class="p">(</span><span class="ss">else</span><span class="w"> </span><span class="p">(</span><span class="ss">f3</span><span class="p">))))))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="why-dsls">
+<h2>Why DSLs?<a class="headerlink" href="#why-dsls" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Domain-specific syntax can eliminate repetitive code</li>
+<li>Domain-specific syntax can make it easier to express certain concepts</li>
+<li>Can be restricted, which allows us to prove certain things while compiling:<ul>
+<li><strong>Example:</strong> regular expressions are a DSL which can be translated to
+finite state machines, which we can prove certain properties about</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="dsls-in-racket">
+<h2>DSLs in Racket<a class="headerlink" href="#dsls-in-racket" title="Permalink to this headline">¶</a></h2>
+<p>There’s two things that go into a <code class="docutils literal notranslate"><span class="pre">#lang</span></code> in Racket:</p>
+<ul class="simple">
+<li>A <strong>reader module</strong>, which parses a custom syntax to (Racket)
+s-expression syntax</li>
+<li>A <strong>expander module</strong>, which provides the macros and functions in the
+language.</li>
+</ul>
+<div class="admonition-custom-reader-optional admonition">
+<p class="first admonition-title">Custom Reader Optional</p>
+<p class="last">Many DSLs just use s-expression syntax, as it’s easy and usually
+expressive enough for most applications. Racket comes with the <code class="docutils literal notranslate"><span class="pre">s-exp</span></code>
+reader which provides you with exactly this functionality.</p>
+</div>
+</div>
+<div class="section" id="let-s-make-a-dsl">
+<h2>Let’s make a DSL!<a class="headerlink" href="#let-s-make-a-dsl" title="Permalink to this headline">¶</a></h2>
+<div class="beamer-simplecolumns docutils container">
+<div class="docutils container">
+<ul>
+<li><p class="first">For the second part of lecture, I will be covering an example
+implementation of a DSL in detail.</p>
+</li>
+<li><p class="first">The DSL shown in class today is derived from one published in <strong>Volume
+55, Issue 1</strong> of the <strong>CACM</strong> by <strong>Matthew Flatt</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">doi</span><span class="p">:</span> <span class="mf">10.1145</span><span class="o">/</span><span class="mf">2063176.2063195</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<a class="reference internal image-reference" href="../_images/cacm.jpg"><img alt="../_images/cacm.jpg" src="../_images/cacm.jpg" style="height: 180pt;" /></a>
+</div>
+</div>
+<div class="section" id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h2>
+<p>Text-based adventures are some of the earliest computer games. They gained
+quite a lot of popularity in the 1970s and 1980s:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">You</span><span class="s1">&#39;re standing in a meadow.</span>
+<span class="n">There</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">house</span> <span class="n">to</span> <span class="n">the</span> <span class="n">north</span><span class="o">.</span>
+<span class="o">&gt;</span> <span class="n">north</span>
+<span class="n">You</span> <span class="n">are</span> <span class="n">standing</span> <span class="ow">in</span> <span class="n">front</span> <span class="n">of</span> <span class="n">a</span> <span class="n">house</span><span class="o">.</span>
+<span class="n">There</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">door</span> <span class="n">here</span><span class="o">.</span>
+<span class="o">&gt;</span> <span class="nb">open</span> <span class="n">door</span>
+<span class="n">The</span> <span class="n">door</span> <span class="ow">is</span> <span class="n">locked</span><span class="o">.</span>
+<span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Anyone who has written a text-based adventure in a general purpose language can
+tell you they often result in a load of spaghetti code. Let’s clean that up.</p>
+</div>
+<div class="section" id="conceptual-model">
+<h2>Conceptual Model<a class="headerlink" href="#conceptual-model" title="Permalink to this headline">¶</a></h2>
+<p>In order to define a DSL for text-based adventures, we must define a model
+which text-based adventures follow. This is a critical part of designing any
+DSL:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Items:</th><td class="field-body">Items have a state and the user can store them in their inventory.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Verbs:</th><td class="field-body">Verbs conduct an action on an item or the place. Verbs can have
+multiple names (e.g., <code class="docutils literal notranslate"><span class="pre">north</span></code> and <code class="docutils literal notranslate"><span class="pre">n</span></code>)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Places:</th><td class="field-body">Places have a description, items, and verbs which can move to other
+places.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="storing-our-model-in-racket">
+<h2>Storing our Model in Racket<a class="headerlink" href="#storing-our-model-in-racket" title="Permalink to this headline">¶</a></h2>
+<p>Using structs makes for an easy way to store objects in our model:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="n">verb</span><span class="w"> </span><span class="p">(</span><span class="n">aliases</span><span class="w">            </span><span class="c1">; list of names</span><span class="w"></span>
+<span class="w">              </span><span class="n">desc</span><span class="w">               </span><span class="c1">; string</span><span class="w"></span>
+<span class="w">              </span><span class="n">thing?</span><span class="p">))</span><span class="w">           </span><span class="c1">; does it take an item?</span><span class="w"></span>
+<span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="n">item</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="w">               </span><span class="c1">; symbol</span><span class="w"></span>
+<span class="w">              </span><span class="p">[</span><span class="n">state</span><span class="w"> </span><span class="kd">#:mutable</span><span class="p">]</span><span class="w">  </span><span class="c1">; state of item</span><span class="w"></span>
+<span class="w">              </span><span class="n">actions</span><span class="p">))</span><span class="w">          </span><span class="c1">; list of verb -&gt; function conses</span><span class="w"></span>
+<span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="k">place</span><span class="w"> </span><span class="p">(</span><span class="n">desc</span><span class="w">              </span><span class="c1">; string</span><span class="w"></span>
+<span class="w">               </span><span class="p">[</span><span class="n">items</span><span class="w"> </span><span class="kd">#:mutable</span><span class="p">]</span><span class="w"> </span><span class="c1">; list of items</span><span class="w"></span>
+<span class="w">               </span><span class="n">actions</span><span class="p">))</span><span class="w">         </span><span class="c1">; list of verb -&gt; function conses</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="making-syntax-easier">
+<h2>Making Syntax Easier<a class="headerlink" href="#making-syntax-easier" title="Permalink to this headline">¶</a></h2>
+<p>We can’t expect our users of our DSL to be using our structs directly, let’s
+make easy syntaxes to define them:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">define-verbs</span></code>: Define a list of verb aliases to their corresponding verb
+structs, additionally providing a name to refer to a list of all of the verbs</li>
+<li><code class="docutils literal notranslate"><span class="pre">define-item</span></code>: Define an item, specifying the verbs associated and what
+they do.</li>
+<li><code class="docutils literal notranslate"><span class="pre">define-place</span></code>: Define a place, specifying the verbs associated and what
+they do.</li>
+</ul>
+</div>
+<div class="section" id="define-verbs-example">
+<h2>define-verbs Example<a class="headerlink" href="#define-verbs-example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">define-verbs</span><span class="w"> </span><span class="n">all-verbs</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="n">north</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;go north&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="n">south</span><span class="w"> </span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;go south&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="n">east</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;go east&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="n">west</span><span class="w"> </span><span class="n">w</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;go west&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="n">up</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;go up&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="n">down</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;go down&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="n">in</span><span class="w"> </span><span class="n">enter</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;enter&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="n">out</span><span class="w"> </span><span class="n">leave</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;leave&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="n">get</span><span class="w"> </span><span class="n">grab</span><span class="w"> </span><span class="nb">take</span><span class="p">)</span><span class="w"> </span><span class="n">thing</span><span class="w"> </span><span class="s2">&quot;take&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="n">put</span><span class="w"> </span><span class="nb">drop</span><span class="p">)</span><span class="w"> </span><span class="n">thing</span><span class="w"> </span><span class="s2">&quot;drop&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="k">open</span><span class="w"> </span><span class="n">unlock</span><span class="p">)</span><span class="w"> </span><span class="n">thing</span><span class="w"> </span><span class="s2">&quot;open&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="n">close</span><span class="w"> </span><span class="n">lock</span><span class="p">)</span><span class="w"> </span><span class="n">thing</span><span class="w"> </span><span class="s2">&quot;close&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="n">knock</span><span class="p">)</span><span class="w"> </span><span class="n">thing</span><span class="w"> </span><span class="s2">&quot;knock&quot;</span><span class="p">])</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="implementing-define-verbs">
+<h2>Implementing define-verbs<a class="headerlink" href="#implementing-define-verbs" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define-syntax-rule</span><span class="w"> </span><span class="p">(</span><span class="n">define-verbs</span><span class="w"> </span><span class="n">all-id</span><span class="w"></span>
+<span class="w">                      </span><span class="p">[(</span><span class="n">id</span><span class="w"> </span><span class="n">aliases</span><span class="w"> </span><span class="k">...</span><span class="p">)</span><span class="w"> </span><span class="n">spec</span><span class="w"> </span><span class="k">...</span><span class="p">]</span><span class="w"> </span><span class="k">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">begin</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="n">define-one-verb</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="w"> </span><span class="n">aliases</span><span class="w"> </span><span class="k">...</span><span class="p">)</span><span class="w"> </span><span class="n">spec</span><span class="w"> </span><span class="k">...</span><span class="p">)</span><span class="w"> </span><span class="k">...</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">all-id</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="k">...</span><span class="p">))))</span><span class="w"></span>
+
+<span class="p">(</span><span class="k">define-syntax</span><span class="w"> </span><span class="n">define-one-verb</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">syntax-rules</span><span class="w"> </span><span class="p">(</span><span class="n">thing</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">[(</span><span class="k">_</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="w"> </span><span class="k">...</span><span class="p">)</span><span class="w"> </span><span class="n">desc</span><span class="p">)</span><span class="w"></span>
+<span class="w">     </span><span class="p">(</span><span class="k">begin</span><span class="w"></span>
+<span class="w">       </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="p">(</span><span class="n">verb</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">id</span><span class="w"> </span><span class="k">...</span><span class="p">)</span><span class="w"> </span><span class="n">desc</span><span class="w"> </span><span class="no">#f</span><span class="p">))</span><span class="w"></span>
+<span class="w">       </span><span class="k">...</span><span class="p">)]</span><span class="w"></span>
+<span class="w">    </span><span class="p">[(</span><span class="k">_</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="w"> </span><span class="k">...</span><span class="p">)</span><span class="w"> </span><span class="n">thing</span><span class="w"> </span><span class="n">desc</span><span class="p">)</span><span class="w"></span>
+<span class="w">     </span><span class="p">(</span><span class="k">begin</span><span class="w"></span>
+<span class="w">       </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">id</span><span class="w"> </span><span class="p">(</span><span class="n">verb</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">id</span><span class="w"> </span><span class="k">...</span><span class="p">)</span><span class="w"> </span><span class="n">desc</span><span class="w"> </span><span class="no">#t</span><span class="p">))</span><span class="w"></span>
+<span class="w">       </span><span class="k">...</span><span class="p">)]))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="define-item-example">
+<h2>define-item Example<a class="headerlink" href="#define-item-example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">define-item</span><span class="w"> </span><span class="n">door</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">closed</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="k">open</span><span class="w"> </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">have-item?</span><span class="w"> </span><span class="n">key</span><span class="p">)</span><span class="w"></span>
+<span class="w">          </span><span class="p">(</span><span class="k">begin</span><span class="w"></span>
+<span class="w">            </span><span class="p">(</span><span class="n">set-item-state!</span><span class="w"> </span><span class="n">door</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">open</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="s2">&quot;You use the key to unlock and open the door.&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">          </span><span class="s2">&quot;The door is locked.&quot;</span><span class="p">)]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="n">close</span><span class="w"> </span><span class="p">(</span><span class="n">set-item-state!</span><span class="w"> </span><span class="n">door</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">closed</span><span class="p">)</span><span class="w"></span>
+<span class="w">         </span><span class="s2">&quot;The door is now closed.&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="n">knock</span><span class="w"> </span><span class="s2">&quot;No one is home.&quot;</span><span class="p">])</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="define-item-implementation">
+<h2>define-item Implementation<a class="headerlink" href="#define-item-implementation" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define-syntax-rule</span><span class="w"> </span><span class="p">(</span><span class="n">define-item</span><span class="w"> </span><span class="n">id</span><span class="w"></span>
+<span class="w">                      </span><span class="n">start-state</span><span class="w"></span>
+<span class="w">                      </span><span class="p">[</span><span class="n">vrb</span><span class="w"> </span><span class="n">expr</span><span class="w"> </span><span class="n">exprs</span><span class="w"> </span><span class="k">...</span><span class="p">]</span><span class="w"> </span><span class="k">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="n">id</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="n">item</span><span class="w"></span>
+<span class="w">      </span><span class="o">&#39;</span><span class="ss">id</span><span class="w"></span>
+<span class="w">      </span><span class="n">start-state</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="n">vrb</span><span class="w"> </span><span class="p">(</span><span class="k">λ</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="n">expr</span><span class="w"> </span><span class="n">exprs</span><span class="w"> </span><span class="k">...</span><span class="p">))</span><span class="w"> </span><span class="k">...</span><span class="p">))))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="define-place-example">
+<h2>define-place Example<a class="headerlink" href="#define-place-example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">define-place</span><span class="w"> </span><span class="n">house-front</span><span class="w"></span>
+<span class="w">  </span><span class="s2">&quot;You are standing in front of a house.&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="n">door</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">([</span><span class="n">in</span><span class="w"> </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">eq?</span><span class="w"> </span><span class="p">(</span><span class="n">item-state</span><span class="w"> </span><span class="n">door</span><span class="p">)</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">open</span><span class="p">)</span><span class="w"></span>
+<span class="w">         </span><span class="n">room</span><span class="w"></span>
+<span class="w">         </span><span class="s2">&quot;The door is not open.&quot;</span><span class="p">)]</span><span class="w"></span>
+<span class="w">   </span><span class="p">[</span><span class="n">south</span><span class="w"> </span><span class="n">meadow</span><span class="p">]))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Implementation is very similar to <code class="docutils literal notranslate"><span class="pre">define-item</span></code>.</p>
+</div>
+<div class="section" id="game-logic-demo">
+<h2>Game Logic &amp; Demo<a class="headerlink" href="#game-logic-demo" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Game logic omitted from slides, as not super relevant to the DSL (available
+on course site)</li>
+<li>Demo game!</li>
+</ul>
+</div>
+<div class="section" id="announcements">
+<h2>Announcements<a class="headerlink" href="#announcements" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Today is last lecture</li>
+<li>Thursday (11/15) is optional lab day held in ALAMODE</li>
+<li>No class or office hours Tuesday (11/20) due to Thanksgiving Break</li>
+<li>Tuesday (11/27) is optional lab/work day (ALAMODE)</li>
+<li>Presentations 11/29, 12/4, 12/6</li>
+</ul>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

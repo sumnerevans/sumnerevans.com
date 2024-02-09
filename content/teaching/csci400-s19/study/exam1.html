@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam 1 Study Guide &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/study/exam1.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Exam 2 Study Guide" href="exam2.html" />
+    <link rel="prev" title="Language-Oriented Programming" href="../slides/17-lop.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="exam-1-study-guide">
+<h1>Exam 1 Study Guide<a class="headerlink" href="#exam-1-study-guide" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="things-to-know-for-exam-1">
+<h2>Things to know for Exam 1<a class="headerlink" href="#things-to-know-for-exam-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pl-concepts">
+<h3>PL Concepts<a class="headerlink" href="#pl-concepts" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>What is the difference between the design and implementation of a programming
+language?</li>
+<li><strong>Given a mathematical expression, can you express it as an abstract syntax
+tree? Can you express it as an s-expression?</strong></li>
+<li>What are the differences between compiled and interpreted languages? Can you
+name advantages and disadvantages for both?</li>
+<li>What is a <em>Hybrid Intepreter</em>?<ul>
+<li>Describe the general idea of VM Bytecode. Can VM bytecode be run directly on
+a CPU?</li>
+<li>Describe the general idea of Just in Time Compilation.</li>
+</ul>
+</li>
+<li>What are the 4 evaluation metrics we use for programming languages?<ul>
+<li>What impacts does simplicity have on the metrics?</li>
+<li>What is orthogonality? Can you give an example of something not very
+orthogonal in a programming language you know? What impacts does
+orthogonality have on our evaluation metrics?</li>
+<li>What is a programming-language level abstraction? Can you give an example?
+Can you name a non-programming language level abstraction found elsewhere in
+computer science?</li>
+<li>What features impact reliability?</li>
+</ul>
+</li>
+<li>In your own words, what is <em>expressivity</em>?</li>
+<li>What is the difference between implicit and explicit type specification?</li>
+<li>What is a <em>binding</em>?</li>
+<li>What is static typing? Dynamic typing? Untyped system? What are the
+advantages and disadvantages of each?</li>
+<li>What is <em>type safety</em>?</li>
+<li>What is an <em>implicit type conversion</em>?</li>
+<li>What is strong vs. weak typing? How is this different from static and dynamic
+typing? <em>How is an untyped system weakly typed by definition?</em></li>
+<li><strong>Given a snippet of code from a language, can you make an argument for how
+that language could be categorized in any of the above type-categories?</strong></li>
+<li>What benefits does <em>encapulation</em> give us in OO languages?</li>
+<li>What is polymorphism? What is duck typing?</li>
+<li>What is the diamond problem?</li>
+<li>What are some of the benefits of generator expressions/coroutines?</li>
+</ul>
+</div>
+<div class="section" id="python">
+<h3>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Be able to read and write simple Python code.</li>
+<li>Be able to read and write simple Python functions which use <code class="docutils literal notranslate"><span class="pre">*args</span></code> or
+<code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>.</li>
+<li>What is a <em>generator function</em>?<ul>
+<li>How does <code class="docutils literal notranslate"><span class="pre">yield</span></code> differ from <code class="docutils literal notranslate"><span class="pre">return</span></code>?</li>
+<li>How can we use <code class="docutils literal notranslate"><span class="pre">next</span></code> to retrieve the next item from an iterator?</li>
+<li>What is the <code class="docutils literal notranslate"><span class="pre">StopIteration</span></code> exception? When is it raised? How can we
+catch it?</li>
+<li>How can we convert the outputs of a generator object into a list? How about
+a set? Tuple? Dictionary?</li>
+</ul>
+</li>
+<li><strong>Be able to read and write generator expressions, list comprehensions, tuple
+comprehensions, dictionary comprehensions.</strong></li>
+<li>How can we use <code class="docutils literal notranslate"><span class="pre">isinstance</span></code> for polymorphism in Python?</li>
+<li>How can we use <code class="docutils literal notranslate"><span class="pre">hasattr</span></code> for polymorphism in Python? What is the name of
+this kind of polymorphism? How does it differ from using <code class="docutils literal notranslate"><span class="pre">isinstance</span></code>?</li>
+<li>What is the <code class="docutils literal notranslate"><span class="pre">__init__</span></code> method when we are writing a class? Can you write an
+<code class="docutils literal notranslate"><span class="pre">__init__</span></code> method for something simple?</li>
+<li>What is <code class="docutils literal notranslate"><span class="pre">self</span></code> used for in <em>instance methods</em> in Python? In what position
+is <code class="docutils literal notranslate"><span class="pre">self</span></code> passed?</li>
+<li>How can we inherit from another class in Python?</li>
+<li>How can we inherit from multiple classes in Python?</li>
+<li>What is Python’s solution to the diamond problem?</li>
+<li>How can you raise an exception in Python?</li>
+<li>How can you catch an exception in Python? How about a specific exception
+type? How can you access the exception object that was caught?</li>
+<li>How does <code class="docutils literal notranslate"><span class="pre">else</span></code> behave when paired with a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop? <code class="docutils literal notranslate"><span class="pre">while</span></code> loop?
+<code class="docutils literal notranslate"><span class="pre">try</span></code>/<code class="docutils literal notranslate"><span class="pre">except</span></code>?</li>
+<li>What does the <code class="docutils literal notranslate"><span class="pre">finally</span></code> block do in Python? Why do we need it? What
+alternatives can commonly be used for a substitute?</li>
+<li>How can we make custom exception types in Python? Why might we want less
+custom exception types (and use more of the builtins)?</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

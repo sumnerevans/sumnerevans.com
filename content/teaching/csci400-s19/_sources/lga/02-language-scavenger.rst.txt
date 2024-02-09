@@ -1,0 +1,21 @@
+LGA-02: Language Scavenger Hunt
+===============================
+
+Find **unique** answers to each of the following:
+
+1. Find a programming language which uses manifest/explicit and static typing.
+
+2. Find a programming language which uses inferred/implicit and static typing.
+
+3. Find a programming language which uses an untyped/typeless system.
+
+4. Find a declarative programming language.
+
+5. Find a pure functional programming language.
+
+6. Find a language that offers gradual typing.
+
+7. Find a language which will assume the type of a variable based on the first
+   letter of the variable name.
+
+8. Find a language which features ``GOTO``.

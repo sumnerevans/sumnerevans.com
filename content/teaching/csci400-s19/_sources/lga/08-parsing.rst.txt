@@ -1,0 +1,15 @@
+LGA-08: Parsing
+===============
+
+This can either be completed individually, or as a group outside of class.
+
+1. Read the docstring for the ``lex`` function in SlytherLisp (under
+   ``slyther/parser.py``. Write the tokens for this string::
+
+      (print (eval ''(1 2 (3 4))) 5)
+
+2. Design a set of production rules which could be used to parse SlytherLisp.
+   Ask on Piazza if you're stuck and need help!
+
+3. Use your production rules to parse the string in Part 1 using the
+   shift-reduce method and create a parse table.

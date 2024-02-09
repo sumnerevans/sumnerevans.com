@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Management &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/slides/09-memory-management.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Regular Expressions" href="10-re.html" />
+    <link rel="prev" title="The Lambda Calculus" href="08-lambda-calculus-implementation.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="memory-management">
+<h1>Memory Management<a class="headerlink" href="#memory-management" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These slides are also available in PDF format: <a class="reference internal" href="/teaching/csci400-s19/_static/slides/09-memory-management-43.pdf" target="_blank">4:3 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/09-memory-management-169.pdf" target="_blank">16:9 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/09-memory-management-1610.pdf" target="_blank">16:10 PDF</a>.</p>
+</div>
+<div class="section" id="review-pointers-and-references">
+<h2>Review: Pointers and References<a class="headerlink" href="#review-pointers-and-references" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="pointers">
+<h3>Pointers<a class="headerlink" href="#pointers" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>A <strong>pointer</strong> is a value that indicates location in memory.</li>
+<li>When we change the location the pointer points to, we say we <strong>assign</strong> the
+pointer a value.</li>
+<li>When we look at the data the pointer points to, we say we <strong>dereference</strong> the
+pointer.</li>
+</ul>
+</div>
+<div class="section" id="pointer-arithmetic">
+<h3>Pointer Arithmetic<a class="headerlink" href="#pointer-arithmetic" title="Permalink to this headline">¶</a></h3>
+<p>In C or C++:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">p[0]</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">*p</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">p[n]</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">*(p</span> <span class="pre">+</span> <span class="pre">n)</span></code></li>
+</ul>
+<div class="admonition-example-in-c-or-c admonition">
+<p class="first admonition-title">Example in C or C++</p>
+<div class="last highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="kt">double</span><span class="w"> </span><span class="n">nums</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span><span class="w"></span>
+<span class="w">   </span><span class="kt">double</span><span class="w"> </span><span class="o">*</span><span class="n">end</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nums</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="o">*</span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">nums</span><span class="p">;</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">end</span><span class="p">;</span><span class="w"> </span><span class="n">p</span><span class="o">++</span><span class="p">)</span><span class="w"></span>
+<span class="w">       </span><span class="o">*</span><span class="n">p</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">rand</span><span class="p">()</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">RAND_MAX</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="pointer-arithmetic-oddities">
+<h3>Pointer Arithmetic Oddities<a class="headerlink" href="#pointer-arithmetic-oddities" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Jack&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="cm">/* What does this print? */</span><span class="w"></span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%c</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">[</span><span class="n">name</span><span class="p">]);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Array accessess are written <code class="docutils literal notranslate"><span class="pre">BASE[OFFSET]</span></code>, which is equivalent to <code class="docutils literal notranslate"><span class="pre">*(BASE</span> <span class="pre">+</span>
+<span class="pre">OFFSET)</span></code>. Notice that <code class="docutils literal notranslate"><span class="pre">OFFSET[BASE]</span></code> is equivalent to <code class="docutils literal notranslate"><span class="pre">*(OFFSET</span> <span class="pre">+</span> <span class="pre">BASE)</span></code>,
+and since addition is commutative, the operations are equivalent.</p>
+</div>
+<div class="section" id="references">
+<h3>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>A <strong>reference</strong> is a special kind of pointer type</li>
+<li>References can be assigned to point to other data</li>
+<li>References can be dereferenced to get the corresponding data</li>
+<li><strong>Pointer arithmetic is not available on references</strong></li>
+</ul>
+</div>
+</div>
+<div class="section" id="object-lifetimes">
+<h2>Object Lifetimes<a class="headerlink" href="#object-lifetimes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Object Lifetimes<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>The <strong>lifetime</strong> of an object is the time between object creation and
+destruction; the time during which an object is bound to a memory cell</li>
+<li>Common lifetimes:<ul>
+<li>Static</li>
+<li>Stack Dynamic</li>
+<li>Explicit Heap</li>
+<li>Implicit Heap</li>
+</ul>
+</li>
+<li>Don’t confuse these static/dynamic and explicit/implicit words with typing
+systems, we’re referring to lifetimes here.</li>
+</ul>
+</div>
+<div class="section" id="static-lifetimes">
+<h3>Static Lifetimes<a class="headerlink" href="#static-lifetimes" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Static variables are bound to a memory cell <strong>before execution</strong> (typically,
+this means that binding time is during link time)</li>
+</ul>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span><span class="w"> </span><span class="nf">f</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="o">++</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="n">f</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">f</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="static-lifetimes-advantages-disadvantages">
+<h3>Static Lifetimes: Advantages &amp; Disadvantages<a class="headerlink" href="#static-lifetimes-advantages-disadvantages" title="Permalink to this headline">¶</a></h3>
+<p><strong>With your learning group:</strong></p>
+<ol class="arabic simple">
+<li>What are the advantages of a static lifetime?</li>
+<li>What are the disadvantages? Collectively come up with and write an example
+function (in any language, or even pseudocode) which could not be completed
+using just static lifetimes.</li>
+</ol>
+<p>Be prepared to share with the class.</p>
+</div>
+<div class="section" id="id2">
+<h3>Static Lifetimes: Advantages &amp; Disadvantages<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p><strong>Advantages:</strong></p>
+<ul class="simple">
+<li><strong>Direct addressing</strong> <span class="math notranslate nohighlight">\(\to\)</span> efficiency</li>
+<li>Useful for history-sensitive applications: caching, memoization</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul class="simple">
+<li>No recursion</li>
+<li>Bad for reliability</li>
+</ul>
+</div>
+<div class="section" id="stack-dynamic">
+<h3>Stack Dynamic<a class="headerlink" href="#stack-dynamic" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Lifetime: Created when declaration is encountered, destroyed when stack frame
+is cleared</li>
+</ul>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">z</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="cm">/* ... */</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">z</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="n">f</span><span class="p">(</span><span class="n">z</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>Variables might be allocated at beginning of method, not necessarily when
+declaration is encountered.</p>
+<p class="last">Languages may also have features which allow scopes which are not defined by
+a literal stack frame.</p>
+</div>
+</div>
+<div class="section" id="stack-dynamic-advantages-disadvantages">
+<h3>Stack Dynamic: Advantages &amp; Disadvantages<a class="headerlink" href="#stack-dynamic-advantages-disadvantages" title="Permalink to this headline">¶</a></h3>
+<p><strong>With your learning group:</strong></p>
+<ol class="arabic">
+<li><p class="first">What are the advantages of a stack dynamic lifetime? Disadvantages?</p>
+</li>
+<li><p class="first">How does a stack dynamic lifetime allow for recursion?</p>
+</li>
+<li><p class="first">When might static lifetime be more memory efficient than stack dynamic?
+Vice-versa?</p>
+</li>
+<li><div class="first line-block">
+<div class="line">Does stack dynamic allow for dynamically sized arrays?</div>
+<div class="line"><strong>Hint:</strong> <code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">3</span> <span class="pre">alloca</span></code></div>
+</div>
+</li>
+</ol>
+<p>Be prepared to share with the class.</p>
+</div>
+<div class="section" id="id3">
+<h3>Stack Dynamic: Advantages &amp; Disadvantages<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p><strong>Advantages:</strong></p>
+<ul class="simple">
+<li>Recursion possible (each call gets its own stack frame!)</li>
+<li>Conserves storage for short-lifetime variables</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul class="simple">
+<li>Allocating and deallocating must be done at run time</li>
+<li>Functions cannot be history sensitive (which might be a good restriction…)</li>
+<li>Indirect addressing</li>
+</ul>
+</div>
+<div class="section" id="explicit-heap-dynamic">
+<h3>Explicit Heap Dynamic<a class="headerlink" href="#explicit-heap-dynamic" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Allocated and deallocated at runtime by <strong>explicit directives</strong></li>
+<li>Accessed through pointers or references to heap memory (usually stored on
+stack)</li>
+</ul>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;How many numbers to input? &quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">amount</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot; %d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">amount</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="o">*</span><span class="n">nums</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">malloc</span><span class="p">(</span><span class="n">amount</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="kt">int</span><span class="p">));</span><span class="w"></span>
+<span class="w">    </span><span class="cm">/* do some things ... */</span><span class="w"></span>
+<span class="w">    </span><span class="n">free</span><span class="p">(</span><span class="n">nums</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="explicit-heap-dynamic-advantages-disadvantages">
+<h3>Explicit Heap Dynamic: Advantages &amp; Disadvantages<a class="headerlink" href="#explicit-heap-dynamic-advantages-disadvantages" title="Permalink to this headline">¶</a></h3>
+<p><strong>With your learning group:</strong></p>
+<ol class="arabic simple">
+<li>What are the advantages of an <strong>explicit</strong> heap dynamic lifetime?
+Disadvantages?</li>
+<li>What might be some of the <strong>dangers</strong> of explicit heap dynamic lifetimes?
+Write a few examples with your group.</li>
+</ol>
+<p>Be prepared to share with the class.</p>
+</div>
+<div class="section" id="dangers-of-explicit-heap-memory-leaks">
+<h3>Dangers of Explicit Heap: Memory Leaks<a class="headerlink" href="#dangers-of-explicit-heap-memory-leaks" title="Permalink to this headline">¶</a></h3>
+<p>A <strong>memory leak</strong> occurs when all references to a memory allocation have been
+lost but the memory has not been freed yet.</p>
+<p>This becomes especially noticable when the routine that allocates memory is
+frequently called.</p>
+</div>
+<div class="section" id="memory-leak-example">
+<h3>Memory Leak: Example<a class="headerlink" href="#memory-leak-example" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/* excuse me caller, free this for me! */</span><span class="w"></span>
+<span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nf">f</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">malloc</span><span class="p">(</span><span class="n">n</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="cm">/* ... */</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">A</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">result</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">10000000</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">f</span><span class="p">(</span><span class="n">i</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="cm">/* do some work, but don&#39;t free! */</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="dangers-of-explicit-heap-access-after-free">
+<h3>Dangers of Explicit Heap: Access after <code class="docutils literal notranslate"><span class="pre">free</span></code><a class="headerlink" href="#dangers-of-explicit-heap-access-after-free" title="Permalink to this headline">¶</a></h3>
+<p>A programmer may accidentally access memory they already freed! A pointer which
+points to freed data is called a <strong>dangling pointer</strong>.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">amount</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot; %d&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">amount</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">amount</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="n">A</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">malloc</span><span class="p">(</span><span class="n">amount</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">A</span><span class="p">[</span><span class="n">amount</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="sc">&#39;\0&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="cm">/* ... */</span><span class="w"></span>
+<span class="w">        </span><span class="n">free</span><span class="p">(</span><span class="n">A</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="dangers-of-explicit-heap-double-free">
+<h3>Dangers of Explicit Heap: Double Free<a class="headerlink" href="#dangers-of-explicit-heap-double-free" title="Permalink to this headline">¶</a></h3>
+<p>A programmer may accidentally free a pointer twice!</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">buf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">malloc</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;What is your favorite word? &quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">scanf</span><span class="p">(</span><span class="s">&quot;%s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">buf</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">strcmp</span><span class="p">(</span><span class="s">&quot;computers&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">buf</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Me too!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">        </span><span class="n">free</span><span class="p">(</span><span class="n">buf</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">free</span><span class="p">(</span><span class="n">buf</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="implicit-dynamic">
+<h3>Implicit Dynamic<a class="headerlink" href="#implicit-dynamic" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>In an implicit dynamic lifetime, allocation is caused automatically by
+instantiation.</li>
+<li>Deallocation can be done a number of ways: reference counting, garbage
+collection, or simply not allowing references.</li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">x</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="garbage-collection">
+<h3>Garbage Collection<a class="headerlink" href="#garbage-collection" title="Permalink to this headline">¶</a></h3>
+<p>Garbage collection provides means to automatically destroy inaccessible objects in an
+implicit dynamic system with references. The garbage collector is run occasionally.</p>
+<p>To run the garbage collector:</p>
+<ol class="arabic simple">
+<li>Iterate over all visible variables (the roots) and find where they point in
+the heap.</li>
+<li>For each of the corresponding entries in the heap, mark them as visited and
+visit all entries they reference.</li>
+<li>Repeat until you cannot visit any more entries, the unvisited entries can be
+freed.</li>
+</ol>
+</div>
+<div class="section" id="garbage-collection-example">
+<h3>Garbage Collection: Example<a class="headerlink" href="#garbage-collection-example" title="Permalink to this headline">¶</a></h3>
+<div class="center docutils container">
+<a class="reference internal image-reference" href="../_images/gc-paths.svg"><img alt="../_images/gc-paths.svg" height="160pt" src="../_images/gc-paths.svg" /></a>
+</div>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

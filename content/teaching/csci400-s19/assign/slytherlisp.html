@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SlytherLisp Project &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/assign/slytherlisp.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="LGA-02: Language Scavenger Hunt" href="../lga/02-language-scavenger.html" />
+    <link rel="prev" title="Language Explore Project" href="language-explore.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="slytherlisp-project">
+<h1>SlytherLisp Project<a class="headerlink" href="#slytherlisp-project" title="Permalink to this headline">¶</a></h1>
+<p>SlytherLisp is a lexically-scoped Scheme-like programming language. You will be
+implementing an interpreter for this language.</p>
+<div class="admonition-partners-required admonition">
+<p class="first admonition-title">Partners Required</p>
+<p>This project is very nontrivial. You are required to complete this project in
+a group of two or three. Please use <a class="reference external" href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a> as a resource in finding your
+group.</p>
+<p class="last">If you <em>really</em> want to work alone, you can email me and ask for permission.</p>
+</div>
+<p>You should find a group and get started on this project right away, as
+Deliverable 1 is due on February 21.</p>
+<p>After you have found a group, the first thing you need to do is download the
+starter code via one of the methods below.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">TAR File:</th><td class="field-body"><a class="reference external" href="/_static/slytherlisp-starter-code.tar.gz" target="_blank">slytherlisp-starter-code.tar.gz</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">GitLab:</th><td class="field-body"><a class="reference external" href="https://gitlab.com/sumner/slytherlisp-starter-code" target="_blank">sumner/slytherlisp-starter-code</a></td>
+</tr>
+</tbody>
+</table>
+<p>Next, before you do anything else, open and read <code class="docutils literal notranslate"><span class="pre">README.rst</span></code>. This will
+instruct you on how to setup and get going with the project.</p>
+</div>
+<div class="section" id="deliverable-1-basic-data-structures">
+<h1>Deliverable 1: Basic Data Structures<a class="headerlink" href="#deliverable-1-basic-data-structures" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Due Date:</th><td class="field-body">Thursday, February 21 at 23:59</td>
+</tr>
+</tbody>
+</table>
+<p>For this deliverable, you will be implementing a few simple data structures
+under <code class="docutils literal notranslate"><span class="pre">slyther/types.py</span></code>. Replace all of the lines that say <code class="docutils literal notranslate"><span class="pre">raise</span>
+<span class="pre">NotImplementedError('Deliverable</span> <span class="pre">1')</span></code>. Note that there’s some stuff for
+Deliverable 3 at the bottom of the file: you don’t have to do this (yet!).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">It is advised that you finish Deliverable 1 early so that you can get a head
+start on the next deliverable.</p>
+</div>
+</div>
+<div class="section" id="deliverable-2-parsing">
+<h1>Deliverable 2: Parsing<a class="headerlink" href="#deliverable-2-parsing" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Due Date:</th><td class="field-body">Tuesday, March 19 at 23:59</td>
+</tr>
+</tbody>
+</table>
+<p>For this deliverable, you will implement the lexer and parser of the
+language. You’ll be working under <code class="docutils literal notranslate"><span class="pre">slyther/parser.py</span></code>.</p>
+</div>
+<div class="section" id="deliverable-3-evaluator">
+<h1>Deliverable 3: Evaluator<a class="headerlink" href="#deliverable-3-evaluator" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Due Date:</th><td class="field-body">Tuesday, April 2 at 23:59 PM</td>
+</tr>
+</tbody>
+</table>
+<p>For this deliverable, you’ll be implementing the evaluator, builtins, REPL, and
+functions. You’ll be working under four different files:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">slyther/evaluator.py</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">slyther/types.py</span></code> (at the bottom)</li>
+<li><code class="docutils literal notranslate"><span class="pre">slyther/builtins.py</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">slyther/repl.py</span></code></li>
+</ul>
+<p>This one is a big deliverable, so please plan ahead and get started early.</p>
+<p>By the end of this deliverable, you should have a working REPL, which you can
+use to compute the results of basic mathematical operations, such as
+<code class="docutils literal notranslate"><span class="pre">(+</span> <span class="pre">1</span> <span class="pre">(*</span> <span class="pre">2</span> <span class="pre">3))</span></code>. Please be sure to test your REPL, as there are no unit tests
+for this. You will receive a low grade on this deliverable if you do not have a
+working REPL.</p>
+<p>You are not required to have tail-call optimization working for this
+deliverable.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">It is advised that you finish Deliverable 3 early so that you can get a head
+start on the next deliverable.</p>
+</div>
+</div>
+<div class="section" id="deliverable-4-language-structures">
+<h1>Deliverable 4: Language Structures<a class="headerlink" href="#deliverable-4-language-structures" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Due Date:</th><td class="field-body">Tuesday, April 9 at 23:59</td>
+</tr>
+</tbody>
+</table>
+<p>Deliverable 4 is an extension of Deliverable 3, you will complete the remainder
+of the builtin operations for the SlytherLisp language, as defined in the
+docstrings of <code class="docutils literal notranslate"><span class="pre">slyther/builtins.py</span></code>.</p>
+</div>
+<div class="section" id="deliverable-5-tail-call-optimization">
+<h1>Deliverable 5: Tail-Call Optimization<a class="headerlink" href="#deliverable-5-tail-call-optimization" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Due Date:</th><td class="field-body">Tuesday, April 23 at 23:59</td>
+</tr>
+</tbody>
+</table>
+<p>For this deliverable, you’ll be extending SlytherLisp by extending your work
+from Deliverable 3 to use <strong>tail-call optimization</strong>.</p>
+<p>Consider the following (simple) example:</p>
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="nf">print-n-times</span><span class="w"> </span><span class="nv">f</span><span class="w"> </span><span class="nv">args</span><span class="w"> </span><span class="nv">n</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">&lt;=</span><span class="w"> </span><span class="nv">n</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="nv">NIL</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">()</span><span class="w"></span>
+<span class="w">         </span><span class="p">(</span><span class="nf">print</span><span class="w"> </span><span class="p">(</span><span class="nb">eval</span><span class="w"> </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="nv">f</span><span class="w"> </span><span class="nv">args</span><span class="p">)))</span><span class="w"></span>
+<span class="w">         </span><span class="p">(</span><span class="nf">print-n-times</span><span class="w"> </span><span class="nv">f</span><span class="w"> </span><span class="nv">args</span><span class="w"> </span><span class="p">(</span><span class="nb">-</span><span class="w"> </span><span class="nv">n</span><span class="w"> </span><span class="mi">1</span><span class="p">)))))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Since the call to <code class="docutils literal notranslate"><span class="pre">print-n-times</span></code> is the last call of the function (what
+returns from <code class="docutils literal notranslate"><span class="pre">print-n-times</span></code> is returned by the function), we can reuse our
+current stack frame for that function call, rather than allocating a new stack
+frame and returning the result of the computation.</p>
+<p>My advice (for a starting point) is to move your <code class="docutils literal notranslate"><span class="pre">lisp_eval</span></code> function body
+into a loop, and if, at the bottom of the loop, it can reassign <code class="docutils literal notranslate"><span class="pre">expr</span></code> and
+<code class="docutils literal notranslate"><span class="pre">stg</span></code> and repeat rather than calling <code class="docutils literal notranslate"><span class="pre">lisp_eval</span></code> recursively, do so.</p>
+<p>You’ll probably need to make modifications to other parts of the interpreter as
+well.</p>
+<p>Test your optimization works using the <code class="docutils literal notranslate"><span class="pre">fib-iter</span></code> and <code class="docutils literal notranslate"><span class="pre">carmichael</span></code>
+examples. <strong>At this point, all of the provided code examples should run. You
+will receive a low grade on this deliverable if all of the code examples do not
+produce a correct result. Be sure to check your results for correctness. For
+example, if the primes example is producing numbers that are not prime, then it
+is not correct.</strong></p>
+<p>You are free to implement tail call optimization however you wish, but you
+implementation must be properly tail-call optimized. We will use the same
+definition as the Scheme specification to determine if your implementation is
+properly tail-call optimized:</p>
+<blockquote>
+<div>A Scheme implementation is properly tail-recursive if it supports an
+unbounded number of active tail calls. A call is active if the called
+procedure may still return.</div></blockquote>
+</div>
+<div class="section" id="deliverable-6-extending-the-language">
+<h1>Deliverable 6: Extending the Language<a class="headerlink" href="#deliverable-6-extending-the-language" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Due Date:</th><td class="field-body">Thursday, May 2 at 23:59</td>
+</tr>
+</tbody>
+</table>
+<p>Come up with a significant extension to the language. Suggestions include:</p>
+<ul class="simple">
+<li>A <code class="docutils literal notranslate"><span class="pre">match</span></code> macro that behaves like Racket’s pattern matching</li>
+<li>Adding a new syntax to the language (such as quasiquotations)</li>
+<li>Optimizing the abstract syntax tree</li>
+<li>Adding a library and/or namespace mechanism</li>
+<li>Adding a way to load and use Python libraries</li>
+<li>Allowing for user-defined macros. Since macros are first class, you could
+even add anonymous macros to the language.</li>
+<li>Making the <code class="docutils literal notranslate"><span class="pre">cons</span></code> form allow for a tail recursive CDR argument by using
+the <a class="reference external" href="https://homes.cs.washington.edu/~jrw12/tail-mod-cons.html" target="_blank">tail call modulo cons</a> technique.</li>
+<li>Adding functions with default parameters and keyword arguments</li>
+<li>A <code class="docutils literal notranslate"><span class="pre">use</span></code> macro, such as proposed in <a class="reference external" href="https://youtu.be/QM1iUe6IofM?t=41m34s" target="_blank">one of the LGA-06 videos</a></li>
+<li><a class="reference external" href="https://en.wikipedia.org/wiki/Call-with-current-continuation" target="_blank">Continuation</a></li>
+<li><a class="reference external" href="http://okmij.org/ftp/Scheme/macros.html" target="_blank">More</a> and <a class="reference external" href="http://okmij.org/ftp/Scheme/lazy-Fibonacci.txt" target="_blank">more</a> and <a class="reference external" href="http://okmij.org/ftp/Scheme/misc.html" target="_blank">more</a> inspiration</li>
+<li>Any other significant extension of your liking!</li>
+</ul>
+<p>Implement your extension, and <strong>document how it works</strong> in the <code class="docutils literal notranslate"><span class="pre">README.rst</span></code>
+file. <strong>Include at least one example program that makes use of your
+extension.</strong></p>
+</div>
+<div class="section" id="deliverable-7-extra-credit">
+<h1>Deliverable 7: Extra Credit<a class="headerlink" href="#deliverable-7-extra-credit" title="Permalink to this headline">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Due Date:</th><td class="field-body">Thursday, May 9 at 23:59</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This deliverable is optional. If you do not want the extra credit, you may
+simply ignore it.</p>
+</div>
+<p>Extend SlytherLisp in as many ways as you choose, and document your extensions
+for extra credit. Here are a few ideas which you could do for extra credit:</p>
+<ul class="simple">
+<li>Make the REPL nicer by using <a class="reference external" href="https://docs.python.org/3/library/readline.html" target="_blank">Readline</a> or <a class="reference external" href="https://github.com/jonathanslenders/python-prompt-toolkit" target="_blank">Prompt Toolkit</a>.</li>
+<li>Do a performance comparison of SlytherLisp on PyPy versus on CPython: and
+maybe even compare the same algorithms implemented on other languages.</li>
+<li>Rewrite SlytherLisp in a totally different programming language.</li>
+<li>Add the ability to import Python modules into SlytherLisp.</li>
+<li>Add a way to partially apply (curry) functions in Racket.</li>
+</ul>
+<p>You are not required to maintain passing unit tests for this extra credit
+deliverable. Have fun!</p>
+<p>This deliverable is worth up to <strong>50 points extra credit</strong>, but the allocation
+is determined based on the significance and effort of your work, so simple
+extensions will only receive a little extra credit. Please include an estimate
+for the number of hours you spent on this deliverable in your <code class="docutils literal notranslate"><span class="pre">README.rst</span></code>.</p>
+<p>Note that I am not able to offer extensions on this deliverable (nor can slip
+days be spent) as I will need time to grade before grades are due.</p>
+</div>
+<div class="section" id="grading-rubric">
+<h1>Grading Rubric<a class="headerlink" href="#grading-rubric" title="Permalink to this headline">¶</a></h1>
+<p>This project is worth 250 points of your overall grade in the course. The grade
+is divided up as follows:</p>
+<table border="1" class="docutils align-default">
+<colgroup>
+<col width="13%" />
+<col width="87%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Points</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>37</td>
+<td>Deliverable 1</td>
+</tr>
+<tr class="row-odd"><td>37</td>
+<td>Deliverable 2</td>
+</tr>
+<tr class="row-even"><td>37</td>
+<td>Deliverable 3</td>
+</tr>
+<tr class="row-odd"><td>37</td>
+<td>Deliverable 4</td>
+</tr>
+<tr class="row-even"><td>50</td>
+<td>Deliverable 5</td>
+</tr>
+<tr class="row-odd"><td>50</td>
+<td>Deliverable 6</td>
+</tr>
+<tr class="row-even"><td>50 XC</td>
+<td>Deliverable 7: Up to <strong>50 points of extra credit</strong>,
+which is 5% of your overall course grade.</td>
+</tr>
+</tbody>
+</table>
+<p>An astute reader may notice that the amount of points allocated to Deliverables
+1-6 does not add up to 250. That is because everyone gets 2 free points.</p>
+</div>
+<div class="section" id="grader-script">
+<h1>Grader Script<a class="headerlink" href="#grader-script" title="Permalink to this headline">¶</a></h1>
+<p>You can download the script the grader will be using <a class="reference external" href="/_static/slytherlisp-grader-script.sh" target="_blank">here</a> (SHA256 Checksum:
+<code class="docutils literal notranslate"><span class="pre">e9c1dcb16de8282005d6fc0d9a7b9300d2197860f4b42d3d79b22fb271cbe501</span></code>). I have
+only tested this script on Arch Linux (the distro in the ALAMODE machines).</p>
+<p><strong>Dependencies:</strong></p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">bc</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">python-virtualenv</span></code></li>
+</ul>
+<p>To use the script make it executable (<code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">+x</span>
+<span class="pre">slytherlisp-grader-script.sh</span></code>), then just type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">slytherlisp</span><span class="o">-</span><span class="n">grader</span><span class="o">-</span><span class="n">script</span><span class="o">.</span><span class="n">sh</span> <span class="o">&lt;</span><span class="n">your_submission_tar</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">deliverable_number</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Replacing <code class="docutils literal notranslate"><span class="pre">&lt;your_submission_tar&gt;</span></code> with the filename of the
+<code class="docutils literal notranslate"><span class="pre">submission.tar.bz2</span></code> file and <code class="docutils literal notranslate"><span class="pre">&lt;deliverable_number&gt;</span></code> with the deliverable
+you would like to grade.</p>
+<p>For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">slytherlisp</span><span class="o">-</span><span class="n">grader</span><span class="o">-</span><span class="n">script</span><span class="o">.</span><span class="n">sh</span> <span class="n">submission</span><span class="o">.</span><span class="n">tar</span><span class="o">.</span><span class="n">bz2</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>Will run all of the D1 tests on the code in <code class="docutils literal notranslate"><span class="pre">submission.tar.bz2</span></code>.</p>
+<p>Note that this script does not perform all of the tests (the grader will perform
+additional manual tests), but it will give you an idea of what your grade will
+be.</p>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

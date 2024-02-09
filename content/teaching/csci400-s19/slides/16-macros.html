@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Macros &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/slides/16-macros.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Language-Oriented Programming" href="17-lop.html" />
+    <link rel="prev" title="Tail-Call Optimization" href="15-tco.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="macros">
+<h1>Macros<a class="headerlink" href="#macros" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These slides are also available in PDF format: <a class="reference internal" href="/teaching/csci400-s19/_static/slides/16-macros-43.pdf" target="_blank">4:3 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/16-macros-169.pdf" target="_blank">16:9 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/16-macros-1610.pdf" target="_blank">16:10 PDF</a>.</p>
+</div>
+<div class="section" id="background-on-symbolic-computation">
+<h2>Background on Symbolic Computation<a class="headerlink" href="#background-on-symbolic-computation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Wikipedia considers symbolic computation to be simply <em>computer algebra</em>.</li>
+<li>While computer algebra is a form of symbolic computation, there are plenty of
+other applications.<ul>
+<li>Programming languages</li>
+<li>Compilers</li>
+<li>Artificial intelligence</li>
+<li>…</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="lisp-symbolic-computation">
+<h2>Lisp &amp; Symbolic Computation<a class="headerlink" href="#lisp-symbolic-computation" title="Permalink to this headline">¶</a></h2>
+<p>Lisp dialects have a <strong>homoiconic syntax</strong>: the code is data, and data is code.
+Lists being the structure of the language syntax, code can be manipulated just
+like lists.</p>
+<ul class="simple">
+<li>This is what (historically) gave LISP its name (LISt Processor)</li>
+<li>The concept of “quoting” is fairly unique to just Lisp.</li>
+<li>It leads to a natural way to manipulate and work on <em>code</em> in the language.</li>
+<li><strong>Key point:</strong> we can manipulate code before it is evaluated!</li>
+</ul>
+<div class="admonition-john-mccarthy-1958 admonition">
+<p class="first admonition-title">John McCarthy (1958)</p>
+<p class="last">Recursive Functions of Symbolic Expressions and their Computation by Machine</p>
+</div>
+</div>
+<div class="section" id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Even in the best software designs, it’s hard to avoid repetitive patterns.</li>
+<li>What if our language let us extend its syntax to account for these patterns?</li>
+</ul>
+<div class="admonition-exercise-for-home admonition">
+<p class="first admonition-title">Exercise for Home</p>
+<p class="last">Find a piece of code you wrote (in any language) which repeats a syntax
+pattern you couldn’t avoid by writing a function, class, etc.</p>
+</div>
+</div>
+<div class="section" id="what-do-i-mean-by-extend-syntax">
+<h2>What do I mean by “extend syntax”?<a class="headerlink" href="#what-do-i-mean-by-extend-syntax" title="Permalink to this headline">¶</a></h2>
+<p>We can implement most all of the functionality we need in Python using
+functions. But can we implement something like Racket’s <code class="docutils literal notranslate"><span class="pre">let</span></code> in Python?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">let</span> <span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+     <span class="n">y</span> <span class="o">=</span> <span class="mi">20</span><span class="p">)</span> <span class="ow">in</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>(Python does not support above)</p>
+</div>
+<div class="section" id="how-about-c-macros">
+<h2>How about C Macros?<a class="headerlink" href="#how-about-c-macros" title="Permalink to this headline">¶</a></h2>
+<p>The C Preprocessor lets us do simple text substitutions:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#define FOREVER for (;;)</span>
+
+<span class="n">main</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">FOREVER</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello, World!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>(they can get a little more complicated than that…)</p>
+<p>But what happens when we want to do more complex things? Like manipulate the
+body of that “<code class="docutils literal notranslate"><span class="pre">FOREVER</span></code> loop”?</p>
+</div>
+<div class="section" id="c-macros">
+<h2>C Macros<a class="headerlink" href="#c-macros" title="Permalink to this headline">¶</a></h2>
+<p>At some point, textual source manipulation cannot serve the purpose we need
+anymore. Let this source from MicroPython serve as an example:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">STATIC</span><span class="w"> </span><span class="n">mp_obj_t</span><span class="w"> </span><span class="n">machine_spi_init</span><span class="p">(...)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="p">...</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="n">STATIC</span><span class="w"> </span><span class="n">MP_DEFINE_CONST_FUN_OBJ_KW</span><span class="p">(</span><span class="n">machine_spi_init_obj</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">machine_spi_init</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">STATIC</span><span class="w"> </span><span class="n">mp_obj_t</span><span class="w"> </span><span class="n">machine_spi_deinit</span><span class="p">(...)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="p">...</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="n">STATIC</span><span class="w"> </span><span class="n">MP_DEFINE_CONST_FUN_OBJ_1</span><span class="p">(</span><span class="n">machine_spi_deinit_obj</span><span class="p">,</span><span class="w"> </span><span class="n">machine_spi_deinit</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">STATIC</span><span class="w"> </span><span class="n">mp_obj_t</span><span class="w"> </span><span class="n">mp_machine_spi_read</span><span class="p">(...)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="p">...</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="n">MP_DEFINE_CONST_FUN_OBJ_VAR_BETWEEN</span><span class="p">(</span><span class="n">mp_machine_spi_read_obj</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">mp_machine_spi_read</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">STATIC</span><span class="w"> </span><span class="n">mp_obj_t</span><span class="w"> </span><span class="n">mp_machine_spi_readinto</span><span class="p">(...)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="p">...</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+<span class="n">MP_DEFINE_CONST_FUN_OBJ_VAR_BETWEEN</span><span class="p">(</span><span class="n">mp_machine_spi_readinto_obj</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="n">mp_machine_spi_readinto</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="lisp-macros">
+<h2>Lisp Macros<a class="headerlink" href="#lisp-macros" title="Permalink to this headline">¶</a></h2>
+<p>Hopefully it’s become apparent that <strong>symbolic computation</strong> is the right tool
+for the job when it comes to macros.</p>
+<div class="beamer-simplecolumns docutils container">
+<div class="docutils container">
+<p><strong>Lisp Macros:</strong></p>
+<ul class="simple">
+<li>Compile time</li>
+<li>Syntax <span class="math notranslate nohighlight">\(\to\)</span> Syntax</li>
+</ul>
+</div>
+<div class="docutils container">
+<p><strong>Lisp Functions:</strong></p>
+<ul class="simple">
+<li>Run time</li>
+<li>Data <span class="math notranslate nohighlight">\(\to\)</span> Data</li>
+</ul>
+</div>
+</div>
+<ul class="simple">
+<li>Lisp dialects usually make the run time available during the compile time, so
+the normal language can be used to write macros.</li>
+</ul>
+</div>
+<div class="section" id="old-school-lisp-macros">
+<h2>Old-School Lisp Macros<a class="headerlink" href="#old-school-lisp-macros" title="Permalink to this headline">¶</a></h2>
+<p>Early Lisp macro systems operated on the simple contract of functions which
+take syntax, manipulate it, and returns a list containing the new syntax:</p>
+<div class="highlight-lisp notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">defmacro</span><span class="w"> </span><span class="nv">repeat-forever</span><span class="w"> </span><span class="p">(</span><span class="k">&amp;rest</span><span class="w"> </span><span class="nv">body</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="o">`</span><span class="p">(</span><span class="nb">prog</span><span class="w"> </span><span class="p">()</span><span class="w"></span>
+<span class="w">     </span><span class="nv">a</span><span class="w">   </span><span class="o">,@</span><span class="nv">body</span><span class="w"></span>
+<span class="w">         </span><span class="p">(</span><span class="k">go</span><span class="w"> </span><span class="nv">a</span><span class="p">)))</span><span class="w"></span>
+
+<span class="c1">;; we can then use the macro like this:</span><span class="w"></span>
+<span class="p">(</span><span class="nv">repeat-forever</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nb">format</span><span class="w"> </span><span class="no">t</span><span class="w"> </span><span class="s">&quot;HELLO WORLD~%&quot;</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="old-school-more-examples">
+<h2>Old-School: More Examples<a class="headerlink" href="#old-school-more-examples" title="Permalink to this headline">¶</a></h2>
+<p>“let” as a macro:</p>
+<div class="highlight-lisp notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">defmacro</span><span class="w"> </span><span class="k">let</span><span class="w"> </span><span class="p">(</span><span class="nv">bindings</span><span class="w"> </span><span class="k">&amp;rest</span><span class="w"> </span><span class="nv">body</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="o">`</span><span class="p">((</span><span class="k">lambda</span><span class="w"> </span><span class="o">,</span><span class="p">(</span><span class="nb">mapcar</span><span class="w"> </span><span class="nf">#&#39;</span><span class="nb">car</span><span class="w"> </span><span class="nv">bindings</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="o">,@</span><span class="nv">body</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">,@</span><span class="p">(</span><span class="nb">mapcar</span><span class="w"> </span><span class="nf">#&#39;</span><span class="nb">cadr</span><span class="w"> </span><span class="nv">bindings</span><span class="p">)))</span><span class="w"></span>
+
+<span class="c1">;; we can then use let like this:</span><span class="w"></span>
+<span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">((</span><span class="nv">a</span><span class="w"> </span><span class="mi">10</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="nv">b</span><span class="w"> </span><span class="mi">20</span><span class="p">))</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nb">format</span><span class="w"> </span><span class="no">t</span><span class="w"> </span><span class="s">&quot;~A ~A~%&quot;</span><span class="w"> </span><span class="nv">a</span><span class="w"> </span><span class="nv">b</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="old-school-another-example">
+<h2>Old-School: Another Example<a class="headerlink" href="#old-school-another-example" title="Permalink to this headline">¶</a></h2>
+<p>Suppose we wanted to define a syntax like this:</p>
+<div class="highlight-lisp notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nv">numeric-case</span><span class="w"> </span><span class="nv">num</span><span class="w"></span>
+<span class="w">  </span><span class="nv">negative</span><span class="w"></span>
+<span class="w">  </span><span class="nv">zero</span><span class="w"></span>
+<span class="w">  </span><span class="nv">positive</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+</div>
+<p>We could write a macro like this:</p>
+<div class="highlight-lisp notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">defmacro</span><span class="w"> </span><span class="nv">numeric-case</span><span class="w"> </span><span class="p">(</span><span class="nv">num</span><span class="w"> </span><span class="nv">negative</span><span class="w"> </span><span class="nv">zero</span><span class="w"> </span><span class="nv">positive</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="o">`</span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">((</span><span class="nv">result</span><span class="w"> </span><span class="o">,</span><span class="nv">num</span><span class="p">))</span><span class="w"></span>
+<span class="w">     </span><span class="p">(</span><span class="nb">cond</span><span class="w"></span>
+<span class="w">       </span><span class="p">((</span><span class="nb">&lt;</span><span class="w"> </span><span class="nv">result</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">,</span><span class="nv">negative</span><span class="p">)</span><span class="w"></span>
+<span class="w">       </span><span class="p">((</span><span class="nb">=</span><span class="w"> </span><span class="nv">result</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">,</span><span class="nv">zero</span><span class="p">)</span><span class="w"></span>
+<span class="w">       </span><span class="p">(</span><span class="no">t</span><span class="w"> </span><span class="o">,</span><span class="nv">positive</span><span class="p">))))</span><span class="w"></span>
+</pre></div>
+</div>
+<p><em>What could possibly go wrong?</em></p>
+</div>
+<div class="section" id="fixing-numeric-case-with-gensym">
+<h2>Fixing numeric-case with gensym<a class="headerlink" href="#fixing-numeric-case-with-gensym" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">gensym</span></code> is here to save us when we need really obscure symbol names:</p>
+<div class="highlight-lisp notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">defmacro</span><span class="w"> </span><span class="nv">numeric-case</span><span class="w"> </span><span class="p">(</span><span class="nv">num</span><span class="w"> </span><span class="nv">negative</span><span class="w"> </span><span class="nv">zero</span><span class="w"> </span><span class="nv">positive</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">((</span><span class="nv">sym</span><span class="w"> </span><span class="p">(</span><span class="nb">gensym</span><span class="p">)))</span><span class="w"></span>
+<span class="w">    </span><span class="o">`</span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">((</span><span class="o">,</span><span class="nv">sym</span><span class="w"> </span><span class="o">,</span><span class="nv">num</span><span class="p">))</span><span class="w"></span>
+<span class="w">       </span><span class="p">(</span><span class="nb">cond</span><span class="w"></span>
+<span class="w">         </span><span class="p">((</span><span class="nb">&lt;</span><span class="w"> </span><span class="o">,</span><span class="nv">sym</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">,</span><span class="nv">negative</span><span class="p">)</span><span class="w"></span>
+<span class="w">         </span><span class="p">((</span><span class="nb">=</span><span class="w"> </span><span class="o">,</span><span class="nv">sym</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="o">,</span><span class="nv">zero</span><span class="p">)</span><span class="w"></span>
+<span class="w">         </span><span class="p">(</span><span class="no">t</span><span class="w"> </span><span class="o">,</span><span class="nv">positive</span><span class="p">)))))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="more-macro-issues">
+<h2>More Macro Issues<a class="headerlink" href="#more-macro-issues" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>What happens if the programmer redefined one of the functions we used (e.g.,
+<code class="docutils literal notranslate"><span class="pre">&lt;</span></code> or <code class="docutils literal notranslate"><span class="pre">=</span></code>) in the previous example?</li>
+</ul>
+<div class="admonition-unhygienic-macros admonition">
+<p class="first admonition-title">Unhygienic Macros</p>
+<p class="last">Modern Lisp dialects typically provide what is called <strong>hygienic macros</strong>:
+macro systems which eliminate the issues we discovered with old-school Lisp
+macros (to varying degrees)</p>
+</div>
+</div>
+<div class="section" id="racket-s-hygienic-macros">
+<h2>Racket’s Hygienic Macros<a class="headerlink" href="#racket-s-hygienic-macros" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">define-syntax</span></code> defines compile-time syntax: a function that takes a
+“syntax” and returns a “syntax”.</li>
+<li>Typical syntax operations provide a convenient way to manipulate the syntax
+in a hygenic manner.</li>
+<li>You can also go unhygienic: <code class="docutils literal notranslate"><span class="pre">syntax-&gt;datum</span></code> converts syntax to lists,
+symbols, etc., and <code class="docutils literal notranslate"><span class="pre">datum-&gt;syntax</span></code> goes back.</li>
+</ul>
+</div>
+<div class="section" id="what-is-a-syntax">
+<h2>What is a “syntax”?<a class="headerlink" href="#what-is-a-syntax" title="Permalink to this headline">¶</a></h2>
+<p>Syntax literals can be written using <code class="docutils literal notranslate"><span class="pre">#'</span></code> <a class="footnote-reference" href="#id2" id="id1">[1]</a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="c1">#&#39;(if (&gt; 0 x) y z)</span>
+<span class="c1">#&lt;syntax:readline-input:1:2 (if (&gt; 0 x) y z)&gt;</span>
+<span class="o">&gt;</span> <span class="p">(</span><span class="n">define</span> <span class="n">stx</span> <span class="c1">#&#39;(if (&gt; 0 x) y z))</span>
+</pre></div>
+</div>
+<p>We can convert this to a list if we wish:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="p">(</span><span class="n">syntax</span><span class="o">-&gt;</span><span class="n">datum</span> <span class="n">stx</span><span class="p">)</span>
+<span class="s1">&#39;(if (&gt; 0 x) y z)</span>
+</pre></div>
+</div>
+<p>And back:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="p">(</span><span class="n">datum</span><span class="o">-&gt;</span><span class="n">syntax</span> <span class="n">stx</span> <span class="p">(</span><span class="n">syntax</span><span class="o">-&gt;</span><span class="n">datum</span> <span class="n">stx</span><span class="p">))</span>
+<span class="c1">#&lt;syntax (if (&gt; 0 x) y z)&gt;</span>
+</pre></div>
+</div>
+<p>If you didn’t have access to the original syntax object, you could pass
+<code class="docutils literal notranslate"><span class="pre">#f</span></code> as the first argument to <code class="docutils literal notranslate"><span class="pre">datum-&gt;syntax</span></code>.</p>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Note this is completely different from the function-namespace thing in
+old-school Lisps.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="going-unhygienic">
+<h2>Going Unhygienic<a class="headerlink" href="#going-unhygienic" title="Permalink to this headline">¶</a></h2>
+<p>We could write our <code class="docutils literal notranslate"><span class="pre">let</span></code> macro without considerations for hygiene:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define-syntax</span><span class="w"> </span><span class="p">(</span><span class="n">my-let</span><span class="w"> </span><span class="n">stx</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nb">datum-&gt;syntax</span><span class="w"></span>
+<span class="w">    </span><span class="n">stx</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">([</span><span class="n">stx-list</span><span class="w"> </span><span class="p">(</span><span class="nb">syntax-&gt;datum</span><span class="w"> </span><span class="n">stx</span><span class="p">)])</span><span class="w"></span>
+<span class="w">      </span><span class="o">`</span><span class="p">((</span><span class="ss">lambda</span><span class="w"> </span><span class="o">,</span><span class="p">(</span><span class="nb">map</span><span class="w"> </span><span class="nb">car</span><span class="w"> </span><span class="p">(</span><span class="nb">cadr</span><span class="w"> </span><span class="n">stx-list</span><span class="p">))</span><span class="w"></span>
+<span class="w">          </span><span class="o">,@</span><span class="p">(</span><span class="nb">cddr</span><span class="w"> </span><span class="n">stx-list</span><span class="p">))</span><span class="w"></span>
+<span class="w">        </span><span class="o">,@</span><span class="p">(</span><span class="nb">map</span><span class="w"> </span><span class="nb">cadr</span><span class="w"> </span><span class="p">(</span><span class="nb">cadr</span><span class="w"> </span><span class="n">stx-list</span><span class="p">))))))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>A little bit yucky, but it worked.</p>
+</div>
+<div class="section" id="doing-things-hygienic">
+<h2>Doing Things Hygienic<a class="headerlink" href="#doing-things-hygienic" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">syntax-case</span></code> acts like <code class="docutils literal notranslate"><span class="pre">match</span></code> but for syntax objects:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define-syntax</span><span class="w"> </span><span class="p">(</span><span class="n">my-let</span><span class="w"> </span><span class="n">stx</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">syntax-case</span><span class="w"> </span><span class="n">stx</span><span class="w"> </span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="p">[(</span><span class="k">_</span><span class="w"> </span><span class="p">([</span><span class="n">name</span><span class="w"> </span><span class="n">expr</span><span class="p">]</span><span class="w"> </span><span class="k">...</span><span class="p">)</span><span class="w"> </span><span class="n">body</span><span class="w"> </span><span class="k">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">     </span><span class="o">#&#39;</span><span class="p">((</span><span class="k">lambda</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="w"> </span><span class="k">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">          </span><span class="n">body</span><span class="w"> </span><span class="k">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">expr</span><span class="w"> </span><span class="k">...</span><span class="p">)]))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="define-syntax-rule-shorthand">
+<h2>define-syntax-rule Shorthand<a class="headerlink" href="#define-syntax-rule-shorthand" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">define-syntax-rule</span></code> is a shorthand for a <code class="docutils literal notranslate"><span class="pre">define-syntax</span></code> with a
+<code class="docutils literal notranslate"><span class="pre">syntax-case</span></code> of a single rule inside.</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define-syntax-rule</span><span class="w"> </span><span class="p">(</span><span class="n">my-let</span><span class="w"> </span><span class="p">([</span><span class="n">name</span><span class="w"> </span><span class="n">expr</span><span class="p">]</span><span class="w"> </span><span class="k">...</span><span class="p">)</span><span class="w"> </span><span class="n">body</span><span class="w"> </span><span class="k">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">((</span><span class="k">lambda</span><span class="w"> </span><span class="p">(</span><span class="n">name</span><span class="w"> </span><span class="k">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">     </span><span class="n">body</span><span class="w"> </span><span class="k">...</span><span class="p">)</span><span class="w"></span>
+<span class="w">   </span><span class="n">expr</span><span class="w"> </span><span class="k">...</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="application-of-macros-anaphora">
+<h2>Application of Macros: Anaphora<a class="headerlink" href="#application-of-macros-anaphora" title="Permalink to this headline">¶</a></h2>
+<p>In natural language, anaphora is a reference to a previously defined noun:</p>
+<blockquote>
+<div>Susan dropped <span class="math notranslate nohighlight">\(\underbrace{\text{the plate}}_{\text{referent}}\)</span>.
+<span class="math notranslate nohighlight">\(\underbrace{\text{It}}_{\text{anaphor}}\)</span> shattered loudly!</div></blockquote>
+<p>Lisp programmers call a similar technique the same name:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;~a~%&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">(</span><span class="n">aif</span><span class="w"> </span><span class="p">(</span><span class="nb">member</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="n">lst</span><span class="p">)</span><span class="w"></span>
+<span class="w">          </span><span class="n">it</span><span class="w"></span>
+<span class="w">          </span><span class="s2">&quot;10 not in the list&quot;</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="admonition-available-in-a-racket-package admonition">
+<p class="first admonition-title">Available in a Racket Package</p>
+<p class="last">The “anaphoric” package provides <code class="docutils literal notranslate"><span class="pre">aif</span></code>, <code class="docutils literal notranslate"><span class="pre">awhen</span></code>, <code class="docutils literal notranslate"><span class="pre">acond</span></code>, and
+<code class="docutils literal notranslate"><span class="pre">aand</span></code>.</p>
+</div>
+</div>
+<div class="section" id="anaphoric-if">
+<h2>Anaphoric If<a class="headerlink" href="#anaphoric-if" title="Permalink to this headline">¶</a></h2>
+<p>Example from <em>Fear of Macros</em>:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">require</span><span class="w"> </span><span class="n">racket/stxparam</span><span class="p">)</span><span class="w"></span>
+
+<span class="p">(</span><span class="n">define-syntax-parameter</span><span class="w"> </span><span class="n">it</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">lambda</span><span class="w"> </span><span class="p">(</span><span class="n">stx</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="nb">raise-syntax-error</span><span class="w"> </span><span class="p">(</span><span class="nb">syntax-e</span><span class="w"> </span><span class="n">stx</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;outside of anaphora&quot;</span><span class="p">)))</span><span class="w"></span>
+
+<span class="p">(</span><span class="k">define-syntax-rule</span><span class="w"> </span><span class="p">(</span><span class="n">aif</span><span class="w"> </span><span class="n">predicate</span><span class="w"> </span><span class="n">consequent</span><span class="w"> </span><span class="n">alternative</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">([</span><span class="n">result</span><span class="w"> </span><span class="n">predicate</span><span class="p">])</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="n">result</span><span class="w"></span>
+<span class="w">        </span><span class="p">(</span><span class="n">syntax-parameterize</span><span class="w"> </span><span class="p">([</span><span class="n">it</span><span class="w"> </span><span class="p">(</span><span class="nb">make-rename-transformer</span><span class="w"> </span><span class="o">#&#39;</span><span class="n">result</span><span class="p">)])</span><span class="w"></span>
+<span class="w">          </span><span class="n">consequent</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">alternative</span><span class="p">)))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

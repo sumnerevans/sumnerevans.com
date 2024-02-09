@@ -1,0 +1,135 @@
+Exam 2 Study Guide
+==================
+
+**EDIT 2018-03-08:** Added second item to SlytherLisp section.
+
+SyltherLisp
+-----------
+
+* Be able to read and understand SlytherLisp code. (You will not be required to
+  write any SlytherLisp code on the exam.)
+* What is the difference between a *macro* and a *function*? Can you give an
+  example of a language feature which can only be implemented using a macro?
+
+Lambda Calculus
+---------------
+
+* What is the three syntactical elements (terms) in the lambda calculus?
+* What is *currying*?
+* Understand how currying allows us to have functions which take multiple
+  arguments in the λ-calculus.
+* Can you identify whether a variable is bound or free in a lambda term?
+* What are the three transformations we can preform on lambda terms? When can
+  we apply these transformations? Given a term and a transformed version of it,
+  can you identify which transformation was applied (or if the transformation
+  is invalid)?
+* What is a Church numeral? If I gave you any arbitrary positive integer, could
+  you convert it to its corresponding Church numeral?
+* When we apply a church numeral to a lambda abstraction, what new kind of
+  abstraction do we get?
+* **Be able to beta-reduce any lambda term and show each step (with and without
+  currying).**
+
+.. note::
+
+    You do not need to memorize the shorthands for ``SUCC``, ``ADD``, ``MUL``,
+    ``CONS``, etc.
+
+    I will give you the shorthands if you need them. The only shorthand you
+    need to know the translation for is Church numerals.
+
+PL Concepts
+-----------
+
+* What is a *cons cell*? What are the left and right sides called? How can we
+  use cons cells to build lists?
+* What is static/lexical scoping? How does it differ from dynamic scoping?
+* How can we use static/lexical scoping in combination with first class
+  functions to provide us with *closures*?
+* Given a piece of code in a Lisp-like language and its output, could you use
+  the code to identify whether the language uses static/lexical scoping or
+  dynamic scoping? e.g., in this code:
+
+  .. sourcecode:: scheme
+
+    (define (f)
+      (define x 2)
+      (define (printer)
+        (print x))
+      printer)
+
+    (define myfunc (f))
+    (define x 3)
+    (myfunc) ;; what would it mean if this printed 2?
+             ;; what would it mean if it printed 3?
+
+Memory Management
+^^^^^^^^^^^^^^^^^
+
+* What is a *pointer*? How is it different from (and similar to) a *reference*?
+* In C or C++, why is ``BASE[OFFSET]`` equivalent to ``OFFSET[BASE]``?
+* What is an *object lifetime*?
+* What is a *static lifetime*? What are the advantages? Disadvantages?
+* How does static lifetimes allow for *direct addressing*?
+* What is a *stack dynamic lifetime*? What are the advantages? Disadvantages?
+* What is an *explicit heap dynamic lifetime*? What are the advantages?
+  Disadvantages?
+* **Name the 3 dangers of explicit heap dynamic lifetimes.** Be sure you could
+  identify which danger is demonstrated in a simple piece of C or C++ code.
+* What is an *implicit dynamic lifetime*? What are the advantages?
+  Disadvantages?
+* What is *garbage collection*? Given a diagram like presented in lecture of
+  the visible and working variables and the heap, could you identify which
+  nodes on the heap can be garbage collected?
+
+Regular Expressions and FSA
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* What is a character set in a regular expression?
+
+  * How can we negate a character set?
+  * How do character sets differ from groups?
+  * What is the meaning of the special character sets ``\s``, ``\S``, ``\d``,
+    ``\D``, ``\w``, ``\W``?
+  * How can we specify a range of characters in a character set?
+
+* How can we match any character in a regular expression?
+* What is the meaning of ``+``, ``?``, ``*`` in a regular expression?
+* What does it mean to be greedy/non-greedy in a regular expression? What are
+  the non-greedy versions of the ``+``, ``?``, ``*`` operators?
+* How can we "escape" characters with a special meaning in a regular
+  expression?
+* How can we use groups in a regular expression?
+
+  * What is alternation?
+  * How can we make use of alternation?
+  * What is a capturing group?
+  * What is a non-capturing group? How is it written?
+
+* What is an anchor? What are the ``\b``, ``$``, ``^`` anchors?
+* Given a regular expression, can you identify whether a string will match that
+  regular expression?
+* What is a finite state machine? What are the states? What are the
+  transitions?
+* **Be able to convert a regular expression to a finite state machine graph.**
+* Be able to write a regular expression for matching a double-quoted string
+  literal.
+* How can we write regular expressions in Python? What is the meaning of
+  ``p.match`` versus ``p.search`` or ``p.fullmatch``? How about ``p.finditer``?
+* In Python, how can we use ``m.group`` on a match object in Python? What is
+  ``m.group(0)``?
+* In Python, if an expression does not match, what does ``p.match``,
+  ``p.fullmatch``, or ``p.search`` return?
+
+Parsing
+^^^^^^^
+
+* What are the two stages of parsing? What is the purpose of each stage?
+* What are the inputs and outputs to parsing?
+* Be able to draw an abstract syntax tree for a given string and a given
+  grammar.
+* What is the difference between a top-down parser and a bottom-up parser?
+* **What is shift-reduce? Can you create a parse table given a grammar and an
+  input string?**
+* What is the *lookahead-token* in shift-reduce? How can we use it to determine
+  if there is ambiguity?

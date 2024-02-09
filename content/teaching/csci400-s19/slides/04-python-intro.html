@@ -1,0 +1,519 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Introduction &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/slides/04-python-intro.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="More Python" href="05-more-python.html" />
+    <link rel="prev" title="PL Evaluation and Typing Systems" href="03-evaluation-typing.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="python-introduction">
+<h1>Python Introduction<a class="headerlink" href="#python-introduction" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These slides are also available in PDF format: <a class="reference internal" href="/teaching/csci400-s19/_static/slides/04-python-intro-43.pdf" target="_blank">4:3 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/04-python-intro-169.pdf" target="_blank">16:9 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/04-python-intro-1610.pdf" target="_blank">16:10 PDF</a>.</p>
+</div>
+<div class="section" id="why-python">
+<h2>Why Python?<a class="headerlink" href="#why-python" title="Permalink to this headline">¶</a></h2>
+<p>Why study Python in Principles of Programming Languages?</p>
+<ul class="simple">
+<li>Multi-paradigm<ul>
+<li>Object-oriented</li>
+<li>Functional</li>
+<li>Procedural</li>
+</ul>
+</li>
+<li>Dynamically typed</li>
+<li>Relatively simple with little feature multiplicity</li>
+<li>Readability focused</li>
+<li>No specialized IDE required</li>
+<li>Fast, relative to other dynamically typed languages<ul>
+<li>And when it’s not fast enough, you can rewrite that performance-critical
+section in C. Python is natural to interop with C.</li>
+</ul>
+</li>
+<li><em>Highly General Purpose!</em><ul>
+<li>Web programming, machine learning, GUI programming, Email processing,
+education, simulations, web scraping…</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="installing-python">
+<h2>Installing Python<a class="headerlink" href="#installing-python" title="Permalink to this headline">¶</a></h2>
+<p>For this course, we will be using <strong>Python 3.6 or 3.7</strong>.</p>
+<ul class="simple">
+<li><strong>ALAMODE machines:</strong> already have Python 3.7</li>
+<li><strong>Arch Linux:</strong> install <code class="docutils literal notranslate"><span class="pre">python</span></code> for 3.7</li>
+<li><strong>Ubuntu 18.04:</strong> install the <code class="docutils literal notranslate"><span class="pre">python3</span></code> package for 3.6</li>
+<li><strong>Ubuntu 16.04 or 14.04:</strong> setup the <code class="docutils literal notranslate"><span class="pre">ppa:deadsnakes/ppa</span></code> then install
+<code class="docutils literal notranslate"><span class="pre">python3.7</span></code></li>
+<li><strong>Fedora 28:</strong> ships with Python 3.6</li>
+<li><strong>Other distros:</strong> ask on Piazza if you need help</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You are <em>required</em> to develop on Linux. I am unable to provide help for you
+setting up the projects on other systems.</p>
+</div>
+</div>
+<div class="section" id="style-basics">
+<h2>Style Basics<a class="headerlink" href="#style-basics" title="Permalink to this headline">¶</a></h2>
+<p>Python is one of the few languages with an official style guide (<a class="reference external" href="https://www.python.org/dev/peps/pep-0008/" target="_blank">PEP 8</a>).
+Here’s a quick summary:</p>
+<ul class="simple">
+<li>Use 4-spaces for each level of indentation. <strong>Never use hard tabs!</strong></li>
+<li>Use <code class="docutils literal notranslate"><span class="pre">snake_case</span></code> for function and variable names.</li>
+<li>Use <code class="docutils literal notranslate"><span class="pre">CapWords</span></code> for class names.</li>
+<li>Never <em>ever</em> use <code class="docutils literal notranslate"><span class="pre">camelCase</span></code> in Python.</li>
+</ul>
+</div>
+<div class="section" id="basic-input-and-output">
+<h2>Basic Input and Output<a class="headerlink" href="#basic-input-and-output" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>The <code class="docutils literal notranslate"><span class="pre">print</span></code> function takes any amount of arguments, and prints them
+separated by spaces on the same line.</li>
+<li>The <code class="docutils literal notranslate"><span class="pre">input</span></code> function takes an optional prompt string, prompts the user for
+input, and returns the string they typed.</li>
+</ul>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What is your name? &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Nice to meet you&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p></p>
+<div class="admonition-when-you-need-more-control admonition">
+<p class="first admonition-title">When you need more control…</p>
+<p class="last">Use <code class="docutils literal notranslate"><span class="pre">sys.stdout</span></code> and <code class="docutils literal notranslate"><span class="pre">sys.stdin</span></code> which behave like file buffers (similar
+to <code class="docutils literal notranslate"><span class="pre">cout</span></code> and <code class="docutils literal notranslate"><span class="pre">cin</span></code> in C++).</p>
+</div>
+</div>
+<div class="section" id="a-simple-example">
+<h2>A Simple Example<a class="headerlink" href="#a-simple-example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fizz Buzz&quot;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Fizz&quot;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Buzz&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition-indentation-denotes-scope admonition">
+<p class="first admonition-title">Indentation Denotes Scope</p>
+<p class="last">Any time Python sees a <code class="docutils literal notranslate"><span class="pre">:</span></code>, it expects an indented section to follow. The
+indented section denotes the scope of the operation.</p>
+</div>
+</div>
+<div class="section" id="builtin-types">
+<h2>Builtin Types<a class="headerlink" href="#builtin-types" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name"><code class="docutils literal notranslate"><span class="pre">bool</span></code>:</th><td class="field-body"><code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code></td>
+</tr>
+<tr class="field-even field"><th class="field-name"><code class="docutils literal notranslate"><span class="pre">int</span></code>:</th><td class="field-body">integers, not size-bound</td>
+</tr>
+<tr class="field-odd field"><th class="field-name"><code class="docutils literal notranslate"><span class="pre">float</span></code>:</th><td class="field-body">double-precision floating point numbers</td>
+</tr>
+<tr class="field-even field"><th class="field-name"><code class="docutils literal notranslate"><span class="pre">complex</span></code>:</th><td class="field-body">complex numbers</td>
+</tr>
+<tr class="field-odd field"><th class="field-name"><code class="docutils literal notranslate"><span class="pre">str</span></code>:</th><td class="field-body">for Unicode strings, immutable</td>
+</tr>
+<tr class="field-even field"><th class="field-name"><code class="docutils literal notranslate"><span class="pre">bytes</span></code>:</th><td class="field-body">for a sequence of bytes, immutable</td>
+</tr>
+<tr class="field-odd field"><th class="field-name"><code class="docutils literal notranslate"><span class="pre">list</span></code>:</th><td class="field-body">mutable ordered storage</td>
+</tr>
+<tr class="field-even field"><th class="field-name"><code class="docutils literal notranslate"><span class="pre">tuple</span></code>:</th><td class="field-body">immutable ordered storage</td>
+</tr>
+<tr class="field-odd field"><th class="field-name"><code class="docutils literal notranslate"><span class="pre">set</span></code>:</th><td class="field-body">mutable unordered storage</td>
+</tr>
+<tr class="field-even field"><th class="field-name"><code class="docutils literal notranslate"><span class="pre">frozenset</span></code>:</th><td class="field-body">immutable unordered storage</td>
+</tr>
+<tr class="field-odd field"><th class="field-name"><code class="docutils literal notranslate"><span class="pre">dict</span></code>:</th><td class="field-body">mutable key-value relation</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Functions:</th><td class="field-body">yup, they’re first class!</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Classes:</th><td class="field-body">they’re first class too (of type <code class="docutils literal notranslate"><span class="pre">type</span></code>)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="literals">
+<h2>Literals<a class="headerlink" href="#literals" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># List literals</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="c1"># Tuple literals</span>
+<span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="c1"># ... 1 element tuples are special</span>
+<span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">)</span>
+
+<span class="c1"># Dictionary literals</span>
+<span class="p">{</span><span class="s1">&#39;Ada&#39;</span><span class="p">:</span> <span class="s1">&#39;Lovelace&#39;</span><span class="p">,</span> <span class="s1">&#39;Alan&#39;</span><span class="p">:</span> <span class="s1">&#39;Turing&#39;</span><span class="p">}</span>
+
+<span class="c1"># Set literals</span>
+<span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="c1"># ...empty set is:</span>
+<span class="nb">set</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="string-formatting">
+<h2>String Formatting<a class="headerlink" href="#string-formatting" title="Permalink to this headline">¶</a></h2>
+<p>To format elements into a string, you <em>could</em> convert each element to a string
+then add them all together:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Time &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">hours</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;:&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">minutes</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Ow… my fingers hurt, and that was not too easy to read either. As an
+alternative, try <code class="docutils literal notranslate"><span class="pre">.format</span></code> on a string:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Time </span><span class="si">{}</span><span class="s2">:</span><span class="si">{}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">hours</span><span class="p">,</span> <span class="n">minutes</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Or, since Python 3.6, you can use an f-string:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Time </span><span class="si">{</span><span class="n">hours</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="n">minutes</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>See the Python documentation for more information. There’s plenty to this
+formatting language.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Do not use old-style (printf-style) string formatting in this course.</p>
+</div>
+</div>
+<div class="section" id="selection-if-statements">
+<h2>Selection (<code class="docutils literal notranslate"><span class="pre">if</span></code> statements)<a class="headerlink" href="#selection-if-statements" title="Permalink to this headline">¶</a></h2>
+<p>Python’s primary structure for selection is <code class="docutils literal notranslate"><span class="pre">if</span></code>:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">j</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">10</span> <span class="ow">or</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;whoa!&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;all is fine&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Notice you do not need parentheses surrounding the condition like in C or C++.</p>
+<p></p>
+<p>There’s also a ternary operator (good for simple conditionals):</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">bar</span><span class="p">,</span> <span class="n">baz</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">bar</span> <span class="k">if</span> <span class="n">bar</span> <span class="k">else</span> <span class="n">baz</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="why-no-switch-or-case">
+<h2>Why no <code class="docutils literal notranslate"><span class="pre">switch</span></code> or <code class="docutils literal notranslate"><span class="pre">case</span></code>?<a class="headerlink" href="#why-no-switch-or-case" title="Permalink to this headline">¶</a></h2>
+<p>Most <code class="docutils literal notranslate"><span class="pre">switch</span></code> or <code class="docutils literal notranslate"><span class="pre">case</span></code> statements over-complicate what could be
+done in a single line using a dictionary. Where this is not the case,
+you really shouldn’t be using a <code class="docutils literal notranslate"><span class="pre">switch</span></code> anyway.</p>
+<div class="beamer-simplecolumns docutils container">
+<div class="admonition-an-example-switch-in-c admonition">
+<p class="first admonition-title">An Example <code class="docutils literal notranslate"><span class="pre">switch</span></code> in C</p>
+<div class="last highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">c</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="sc">&#39;q&#39;</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">a</span><span class="o">++</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="sc">&#39;x&#39;</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">a</span><span class="o">--</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="sc">&#39;z&#39;</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">a</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="admonition-python-equivalent admonition">
+<p class="first admonition-title">Python Equivalent</p>
+<div class="last highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">diff</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;q&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">}</span>
+<span class="n">a</span> <span class="o">+=</span> <span class="n">diff</span><span class="p">[</span><span class="n">c</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="iteration">
+<h2>Iteration<a class="headerlink" href="#iteration" title="Permalink to this headline">¶</a></h2>
+<p>Python provides your traditional <code class="docutils literal notranslate"><span class="pre">while</span></code> loop, the syntax is similar to
+<code class="docutils literal notranslate"><span class="pre">if</span></code>:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+    <span class="n">j</span> <span class="o">/=</span> <span class="n">n</span>
+    <span class="n">n</span> <span class="o">+=</span> <span class="n">j</span>
+</pre></div>
+</div>
+<p>But under most cases, the <strong>range-based</strong> <code class="docutils literal notranslate"><span class="pre">for</span></code> loop is preferred:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">mylist</span><span class="p">:</span>  <span class="c1"># also works on any iterable</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Python’s <code class="docutils literal notranslate"><span class="pre">for</span></code> loop is a range-based <code class="docutils literal notranslate"><span class="pre">for</span></code> loop, unlike C’s <code class="docutils literal notranslate"><span class="pre">for</span></code>
+loop which is really just a fancy <code class="docutils literal notranslate"><span class="pre">while</span></code> loop.</p>
+</div>
+</div>
+<div class="section" id="generating-ranges">
+<h2>Generating Ranges<a class="headerlink" href="#generating-ranges" title="Permalink to this headline">¶</a></h2>
+<p>The generator function <code class="docutils literal notranslate"><span class="pre">range</span></code> creates an iterable for looping over a
+sequence of numbers. The syntax is <code class="docutils literal notranslate"><span class="pre">range(start,</span> <span class="pre">stop,</span> <span class="pre">step)</span></code>.</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">start</span></code> is the number to start on</li>
+<li><code class="docutils literal notranslate"><span class="pre">stop</span></code> is the number to stop <em>before</em></li>
+<li><code class="docutils literal notranslate"><span class="pre">step</span></code> is the amount to increment each time</li>
+</ul>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">0</span>
+<span class="mi">1</span>
+<span class="mi">2</span>
+<span class="mi">3</span>
+<span class="mi">4</span>
+</pre></div>
+</div>
+<div class="admonition-optional-parameters admonition">
+<p class="first admonition-title">Optional Parameters</p>
+<p class="last">Both <code class="docutils literal notranslate"><span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">step</span></code> are optional, and if omitted, will be assumed
+to be <code class="docutils literal notranslate"><span class="pre">0</span></code> and <code class="docutils literal notranslate"><span class="pre">1</span></code> respectively.</p>
+</div>
+</div>
+<div class="section" id="iterating-works-on-many-types-of-objects">
+<h2>Iterating Works on Many Types of Objects<a class="headerlink" href="#iterating-works-on-many-types-of-objects" title="Permalink to this headline">¶</a></h2>
+<p>These range based <code class="docutils literal notranslate"><span class="pre">for</span></code> loops are supported by a wide variety of objects.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">my_dictionary</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>  <span class="c1"># dictionaries</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>  <span class="c1"># files</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">element</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">my_list</span><span class="p">):</span>  <span class="c1"># when you need the index too</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">element</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="pairing-iteration-structures-with-else">
+<h2>Pairing Iteration Structures with <code class="docutils literal notranslate"><span class="pre">else</span></code><a class="headerlink" href="#pairing-iteration-structures-with-else" title="Permalink to this headline">¶</a></h2>
+<p>In Python, you can pair an <code class="docutils literal notranslate"><span class="pre">else</span></code> block with <code class="docutils literal notranslate"><span class="pre">for</span></code> and <code class="docutils literal notranslate"><span class="pre">while</span></code>. The
+block will be executed <em>only if</em> the loop finishes without encountering a
+<code class="docutils literal notranslate"><span class="pre">break</span></code> statement.</p>
+<p>An example of this can be seen below:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your guess: &quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">x</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You win!&quot;</span><span class="p">)</span>
+        <span class="k">break</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Truly incompetent!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="slicing">
+<h2>Slicing<a class="headerlink" href="#slicing" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mylist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+
+<span class="c1"># syntax is [start:stop:step], step optional</span>
+<span class="n">mylist</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span> <span class="c1"># =&gt; [2, 3]</span>
+
+<span class="c1"># unused parameters can be ommited</span>
+<span class="n">mylist</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># =&gt; [4, 3, 2, 1]</span>
+
+<span class="c1"># without the first element</span>
+<span class="n">mylist</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="c1"># =&gt; [2, 3, 4]</span>
+
+<span class="c1"># without the last element</span>
+<span class="n">mylist</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># =&gt; [1, 2, 3]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tuple-expansion-collection">
+<h2>Tuple Expansion &amp; Collection<a class="headerlink" href="#tuple-expansion-collection" title="Permalink to this headline">¶</a></h2>
+<p>Multiple assignments work like so:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;R. Stallman&quot;</span><span class="p">,</span> <span class="s2">&quot;L. Torvalds&quot;</span><span class="p">,</span> <span class="s2">&quot;E. Dijkstra&quot;</span><span class="p">)</span>
+<span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="n">names</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">*</span></code> can be used to collect a tuple:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># drop the lowest and highest grade</span>
+<span class="n">grades</span> <span class="o">=</span> <span class="p">(</span><span class="mi">79</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">93</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">99</span><span class="p">)</span>
+<span class="n">lowest</span><span class="p">,</span> <span class="o">*</span><span class="n">grades</span><span class="p">,</span> <span class="n">highest</span> <span class="o">=</span> <span class="n">grades</span>
+</pre></div>
+</div>
+<p>The same can be done to expand a tuple in a function call:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Each grade becomes a separate argument</span>
+<span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="n">grades</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<p>To define a function in Python, use the <code class="docutils literal notranslate"><span class="pre">def</span></code> syntax:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">myfun</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">,</span> <span class="n">arg3</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">arg1</span> <span class="o">==</span> <span class="s1">&#39;hello&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">arg2</span>
+    <span class="k">return</span> <span class="n">arg3</span>
+</pre></div>
+</div>
+<p>Even if your function does not take arguments, you still need the parentheses:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">noargs</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I&#39;m all lonely without arguments...&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="keyword-arguments">
+<h2>Keyword Arguments<a class="headerlink" href="#keyword-arguments" title="Permalink to this headline">¶</a></h2>
+<p>When we define a function in Python we may define <strong>keyword arguments</strong>.
+Keyword arguments differ from <em>positional arguments</em> in that keyword arguments:</p>
+<ul class="simple">
+<li>Take a default value if unspecified</li>
+<li>Can be placed either in order or out of order:<ul>
+<li><strong>In order:</strong> arguments are assigned in the order of the function
+definition</li>
+<li><strong>Out of order:</strong> the argument name is written in the call</li>
+</ul>
+</li>
+<li>Positional and keyword arguments can be mixed, so as long as the positional
+arguments go first.</li>
+</ul>
+</div>
+<div class="section" id="keyword-arguments-example">
+<h2>Keyword Arguments: Example<a class="headerlink" href="#keyword-arguments-example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">point_twister</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">z</span> <span class="o">-</span> <span class="n">y</span>
+
+<span class="c1"># all of these are valid calls</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">point_twister</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>       <span class="c1"># x=1, y=2, z=3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">point_twister</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>          <span class="c1"># x=1, y=2, z=0</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">point_twister</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>             <span class="c1"># x=1, y=1, z=0</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">point_twister</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>   <span class="c1"># x=1, y=0, z=2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">point_twister</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>        <span class="c1"># x=1, y=1, z=2</span>
+</pre></div>
+</div>
+<div class="admonition-style-note admonition">
+<p class="first admonition-title">Style Note</p>
+<p class="last">PEP 8 says that we should place spaces around our “<code class="docutils literal notranslate"><span class="pre">=</span></code>” in assignments, but
+these are not assignments, and should be written without spaces around the
+“<code class="docutils literal notranslate"><span class="pre">=</span></code>”.</p>
+</div>
+</div>
+<div class="section" id="passing-a-dictionary-as-the-keyword-arguments">
+<h2>Passing a Dictionary as the Keyword Arguments<a class="headerlink" href="#passing-a-dictionary-as-the-keyword-arguments" title="Permalink to this headline">¶</a></h2>
+<p>Just like a tuple or list can be expanded to the positional arguments of a
+function call using <code class="docutils literal notranslate"><span class="pre">*some_tuple</span></code>, a dictionary can be expanded to the
+keyword arguments of a function using <code class="docutils literal notranslate"><span class="pre">**some_dict</span></code>. For example:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">my_point</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;x&#39;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">point_twister</span><span class="p">(</span><span class="o">**</span><span class="n">my_point</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="args-and-kwargs">
+<h2><code class="docutils literal notranslate"><span class="pre">*args</span></code> and <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code><a class="headerlink" href="#args-and-kwargs" title="Permalink to this headline">¶</a></h2>
+<p>Python allows you to define functions that take an arbitrary number of
+positional arguments (<code class="docutils literal notranslate"><span class="pre">*args</span></code>) or keyword arguments (<code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>). In
+principle, this really just works like tuple expansion/collection.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">crazyprinter</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">arg</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">=</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">))</span>
+
+<span class="n">crazyprinter</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">,</span> <span class="s2">&quot;cheese&quot;</span><span class="p">,</span> <span class="n">bar</span><span class="o">=</span><span class="s2">&quot;foo&quot;</span><span class="p">)</span>
+<span class="c1"># hello</span>
+<span class="c1"># cheese</span>
+<span class="c1"># bar=foo</span>
+</pre></div>
+</div>
+<p>The names <code class="docutils literal notranslate"><span class="pre">args</span></code> and <code class="docutils literal notranslate"><span class="pre">kwargs</span></code> are merely a convention. For example, you
+could use the names <code class="docutils literal notranslate"><span class="pre">rest</span></code> and <code class="docutils literal notranslate"><span class="pre">kwds</span></code> instead if you wanted.</p>
+</div>
+<div class="section" id="args-and-kwargs-another-example">
+<h2><code class="docutils literal notranslate"><span class="pre">*args</span></code> and <code class="docutils literal notranslate"><span class="pre">**kwargs</span></code>: Another Example<a class="headerlink" href="#args-and-kwargs-another-example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fancy_args</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;a is&quot;</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;b is&quot;</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;c is&quot;</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;args is&quot;</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;kwargs is&quot;</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">)</span>
+
+<span class="n">fancy_args</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">d</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">e</span><span class="o">=</span><span class="mi">17</span><span class="p">)</span>
+<span class="c1"># a is 1</span>
+<span class="c1"># b is 2</span>
+<span class="c1"># c is 15</span>
+<span class="c1"># args is (3, 4)</span>
+<span class="c1"># kwargs is {&#39;d&#39;: 16, &#39;e&#39;: 17}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

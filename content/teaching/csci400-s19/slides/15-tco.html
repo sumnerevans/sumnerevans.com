@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tail-Call Optimization &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/slides/15-tco.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Macros" href="16-macros.html" />
+    <link rel="prev" title="Symbolic Computation" href="14-symbolic.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="tail-call-optimization">
+<h1>Tail-Call Optimization<a class="headerlink" href="#tail-call-optimization" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These slides are also available in PDF format: <a class="reference internal" href="/teaching/csci400-s19/_static/slides/15-tco-43.pdf" target="_blank">4:3 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/15-tco-169.pdf" target="_blank">16:9 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/15-tco-1610.pdf" target="_blank">16:10 PDF</a>.</p>
+</div>
+<div class="section" id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Recursion is a beautiful way to express many algorithms, as it typically
+makes our algorithm easier to prove.</li>
+<li>Calling a function requires <strong>space</strong> on the call stack for the variables,
+parameters, and return address from the call.</li>
+<li>What if we could translate <em>certain kinds</em> of recursion into loops at
+compile time so that we could use it feasibly?</li>
+</ol>
+</div>
+<div class="section" id="tail-calls">
+<h2>Tail-Calls<a class="headerlink" href="#tail-calls" title="Permalink to this headline">¶</a></h2>
+<p>A <strong>tail-call</strong> is a function call for which the return value of the call
+becomes the return value of the function. For example, <code class="docutils literal notranslate"><span class="pre">sqrt</span></code> is the
+tail-call of this function:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="kt">double</span><span class="w"> </span><span class="nf">distance</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">point</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">point</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">dx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">x</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">dy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">b</span><span class="p">.</span><span class="n">y</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">sqrt</span><span class="p">(</span><span class="n">dx</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">dx</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">dy</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">dy</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>A function which is <strong>tail-recursive</strong> only ever calls itself as a tail call.</p>
+</div>
+<div class="section" id="racket-example">
+<h2>Racket Example<a class="headerlink" href="#racket-example" title="Permalink to this headline">¶</a></h2>
+<p>Consider this Racket function:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="nb">sqrt</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">guess</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">&lt;</span><span class="w"> </span><span class="p">(</span><span class="nb">abs</span><span class="w"> </span><span class="p">(</span><span class="nb">-</span><span class="w"> </span><span class="p">(</span><span class="nb">expt</span><span class="w"> </span><span class="n">guess</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="n">x</span><span class="p">))</span><span class="w"> </span><span class="mf">0.001</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">guess</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="nb">sqrt</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="p">(</span><span class="nb">*</span><span class="w"> </span><span class="mf">0.5</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="n">guess</span><span class="w"> </span><span class="p">(</span><span class="nb">/</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="n">guess</span><span class="p">))))))</span><span class="w"></span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>The only place <code class="docutils literal notranslate"><span class="pre">sqrt</span></code> ever calls itself is in a tail position</li>
+<li><code class="docutils literal notranslate"><span class="pre">if</span></code> is a <strong>macro</strong>: it returns something to be evaluated rather than
+evaluating it itself</li>
+<li>Since <code class="docutils literal notranslate"><span class="pre">(sqrt</span> <span class="pre">x</span> <span class="pre">(*</span> <span class="pre">...))</span></code> is one of the returned forms from <code class="docutils literal notranslate"><span class="pre">if</span></code>, it is a
+tail call.</li>
+</ul>
+</div>
+<div class="section" id="practice-1">
+<h2>Practice 1<a class="headerlink" href="#practice-1" title="Permalink to this headline">¶</a></h2>
+<p>Identify the tail-calls and state whether the function is tail-recursive or
+not.</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">double-all</span><span class="w"> </span><span class="n">lst</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">null?</span><span class="w"> </span><span class="n">lst</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="o">&#39;</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="p">(</span><span class="nb">*</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">(</span><span class="nb">car</span><span class="w"> </span><span class="n">lst</span><span class="p">))</span><span class="w"></span>
+<span class="w">          </span><span class="p">(</span><span class="n">double-all</span><span class="w"> </span><span class="p">(</span><span class="nb">cdr</span><span class="w"> </span><span class="n">lst</span><span class="p">)))))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="practice-2">
+<h2>Practice 2<a class="headerlink" href="#practice-2" title="Permalink to this headline">¶</a></h2>
+<p>Identify the tail-calls and state whether the function is tail-recursive or
+not.</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">sum-list</span><span class="w"> </span><span class="n">lst</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">null?</span><span class="w"> </span><span class="n">lst</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="mi">0</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="p">(</span><span class="nb">car</span><span class="w"> </span><span class="n">lst</span><span class="p">)</span><span class="w"></span>
+<span class="w">       </span><span class="p">(</span><span class="n">sum-list</span><span class="w"> </span><span class="p">(</span><span class="nb">cdr</span><span class="w"> </span><span class="n">lst</span><span class="p">)))))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="practice-3">
+<h2>Practice 3<a class="headerlink" href="#practice-3" title="Permalink to this headline">¶</a></h2>
+<p>Identify the tail-calls and state whether the function is tail-recursive or
+not.</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">sum-list</span><span class="w"> </span><span class="n">lst</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">sum-iter</span><span class="w"> </span><span class="n">lst</span><span class="w"> </span><span class="n">acc</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">null?</span><span class="w"> </span><span class="n">lst</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="n">acc</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="n">sum-iter</span><span class="w"> </span><span class="p">(</span><span class="nb">cdr</span><span class="w"> </span><span class="n">lst</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="p">(</span><span class="nb">car</span><span class="w"> </span><span class="n">lst</span><span class="p">)</span><span class="w"> </span><span class="n">acc</span><span class="p">))))</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="n">sum-iter</span><span class="w"> </span><span class="n">lst</span><span class="w"> </span><span class="mi">0</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="practice-4">
+<h2>Practice 4<a class="headerlink" href="#practice-4" title="Permalink to this headline">¶</a></h2>
+<p>Identify the tail-calls and state whether the function is tail-recursive or
+not.</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">fib</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">&lt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">n</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="p">(</span><span class="n">fib</span><span class="w"> </span><span class="p">(</span><span class="nb">-</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="mi">1</span><span class="p">))</span><span class="w"></span>
+<span class="w">       </span><span class="p">(</span><span class="n">fib</span><span class="w"> </span><span class="p">(</span><span class="nb">-</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="mi">2</span><span class="p">)))))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="practice-5">
+<h2>Practice 5<a class="headerlink" href="#practice-5" title="Permalink to this headline">¶</a></h2>
+<p>Identify the tail-calls and state whether the function is tail-recursive or
+not.</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">fib</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">fib-iter</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">=</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+<span class="w">      </span><span class="n">a</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="n">fib-iter</span><span class="w"> </span><span class="p">(</span><span class="nb">-</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">b</span><span class="p">))))</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="n">fib-iter</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">1</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="translating-tail-recursion-to-loops">
+<h2>Translating Tail-Recursion to Loops<a class="headerlink" href="#translating-tail-recursion-to-loops" title="Permalink to this headline">¶</a></h2>
+<p>To translate a tail recursive function to a loop, we can surround the function
+body in an infinite loop, and when we tail-call ourselves, replace that with a
+reassignment of our arguments and a <code class="docutils literal notranslate"><span class="pre">continue</span></code>.</p>
+<p>How might this look in the code below?</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">fib_iter</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">fib_iter</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="loop-translation-example">
+<h2>Loop Translation Example<a class="headerlink" href="#loop-translation-example" title="Permalink to this headline">¶</a></h2>
+<p><strong>Before optimization:</strong></p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">fib_iter</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">fib_iter</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p><strong>After optimization:</strong> (not pretty, but shows what a compiler might do)</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">fib_iter</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">next_n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">next_a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">b</span><span class="p">,</span><span class="w"> </span><span class="n">next_b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">next_n</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">next_a</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">next_b</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="k">continue</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="can-we-do-better">
+<h2>Can we do better?<a class="headerlink" href="#can-we-do-better" title="Permalink to this headline">¶</a></h2>
+<p>What if we wanted our compiler to handle circular recursive cases like this:</p>
+<ol class="arabic simple">
+<li>Procedure <code class="docutils literal notranslate"><span class="pre">A</span></code> can tail-call procedure <code class="docutils literal notranslate"><span class="pre">B</span></code>.</li>
+<li>Procedure <code class="docutils literal notranslate"><span class="pre">B</span></code> can tail-call procedure <code class="docutils literal notranslate"><span class="pre">C</span></code>.</li>
+<li>Procedure <code class="docutils literal notranslate"><span class="pre">C</span></code> can tail-call procedure <code class="docutils literal notranslate"><span class="pre">A</span></code>.</li>
+</ol>
+<p><strong>Brainstorm optimization techniques with your learning group.</strong> Think aloud!</p>
+</div>
+<div class="section" id="the-trampoline-method">
+<h2>The Trampoline Method<a class="headerlink" href="#the-trampoline-method" title="Permalink to this headline">¶</a></h2>
+<p><strong>Idea:</strong> in interpreted languages, we have an <em>evaluator</em> function which takes
+an expression and the storage context, if we make this function call functions
+in a loop and have our functions return what it should call next, we can get
+free tail-call optimization that also supports circular tail calls!</p>
+<p>(figure on whiteboard)</p>
+</div>
+<div class="section" id="thinking-of-the-trampoline-visually">
+<h2>Thinking of the Trampoline Visually<a class="headerlink" href="#thinking-of-the-trampoline-visually" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/trampoline.jpg"><img alt="../_images/trampoline.jpg" src="../_images/trampoline.jpg" style="height: 160pt;" /></a>
+<p class="caption"><span class="caption-text">Think of these people as functions, one function returns its unevaluated
+tail-call to the trampoine rather than calling it itself.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="why-is-tco-important-to-slytherlisp">
+<h2>Why is TCO important to SlytherLisp?<a class="headerlink" href="#why-is-tco-important-to-slytherlisp" title="Permalink to this headline">¶</a></h2>
+<p>The only structure for looping in SlytherLisp is recursion, so we need to be
+able to efficiently be able to implement loops in SlytherLisp.</p>
+<p>You should implement TCO using the trampoline method. <strong>Hint:</strong> <code class="docutils literal notranslate"><span class="pre">lisp_eval</span></code>
+can be your trampoline.</p>
+</div>
+<div class="section" id="tail-recursive-modulo-cons">
+<h2>Tail Recursive Modulo Cons<a class="headerlink" href="#tail-recursive-modulo-cons" title="Permalink to this headline">¶</a></h2>
+<p>Some tail call optimizers have an additional trick in their hat: <strong>tail call
+modulo cons.</strong> This technique allows the CDR argument to a <code class="docutils literal notranslate"><span class="pre">cons</span></code> tail call
+to become a tail call.</p>
+<ol class="arabic simple">
+<li>Rather than waiting for the CDR to finish evaluating to construct the
+<code class="docutils literal notranslate"><span class="pre">cons</span></code> cell, the cell is constructed right away without setting the CDR
+argument.</li>
+<li>A reference to the CDR is passed back to the trampoline.</li>
+<li>The trampoline stores the result of the CDR evaluation into the CDR
+reference.</li>
+</ol>
+<p>The Racket compiler implements this technique. <strong>You are not required to
+implement this in SlytherLisp.</strong></p>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

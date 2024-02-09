@@ -1,0 +1,14 @@
+Schedule (Spring 2019)
+======================
+
+.. include:: ../schedule.rst
+
+.. toctree::
+   :glob:
+   :hidden:
+
+   assign/*
+   lga/*
+   slides/*
+   study/*
+   *

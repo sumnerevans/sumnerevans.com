@@ -1,0 +1,40 @@
+==========  ==========================================  ==============  ====================
+Day         Content                                     Available       Due
+==========  ==========================================  ==============  ====================
+January 8   Syllabus and Programming Language Concepts  LGA-01, LGA-02  LGA-01
+10          *Scheduling Anomaly --- NO CLASS*
+15          Language Evaluation and Typing Systems                      LGA-02
+17          Python Introduction                         LGA-03
+22          More Python                                 LGA-04          LGA-03
+24          OOP and Exceptions                          LGA-05          LGA-04
+29          Exam Review                                                 LGA-05
+31          **Exam 1**
+February 5  Slytherlisp Introduction                    SL D1, LEP
+7           Lambda Calculus                             HW 1
+12          *Career Day --- NO CLASS*
+14          More Lambda Calculus
+19          *President's Day --- NO CLASS*
+21          Memory Management                           LGA-06          SL D1
+26          Regular Expressions and FSA                 LGA-07          LGA-06, HW 1
+28          Parsing                                     SL D2, LGA-08   LGA-07
+March 5     Racket Intro                                HW 2            LGA-08
+7           Finish Racket Intro                         LGA-09
+12          Exam Review                                                 LGA-09
+14          Pattern Matching
+19          **Exam 2**                                  SL D3
+21          Lab Day                                     LGA-10          HW 2, SL D2
+26          *Spring Break --- NO CLASS*
+28          *Spring Break --- NO CLASS*
+April 2     Lab Day                                     SL D4           SL D3
+4           Macros
+9           Tail Call Optimization                      SL D5, LGA-11   SL D4
+11          *E-Days --- NO CLASS*
+16          Language Explore Project Presentations                      LEP Programs, LGA-11
+18          Language Explore Project Presentations
+23          Language Explore Project Presentations      SL D6 & 7       SL D5
+25          Lab Day
+30          Lab Day
+May 2       Lab Day                                                     SL D6
+7           *Finals Week --- NO CLASS*
+9           *Finals Week --- NO CLASS*                                  SL D7
+==========  ==========================================  ==============  ====================

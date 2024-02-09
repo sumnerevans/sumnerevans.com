@@ -1,0 +1,17 @@
+LGA-04: Object Oriented Programming
+===================================
+
+For this LGA, all you need to do ahead of time is watch one of the following
+two YouTube videos:
+
+* `OOP is Bad`__
+* `Stop Writing Classes`__
+
+__ https://www.youtube.com/watch?v=QM1iUe6IofM
+__ https://youtu.be/o9pEzgHorH0
+
+Before you leave class, assign who is watching each video, such that a roughly
+equal number of people in your group watch each video.
+
+All you have to do is watch and come prepared to have a discussion. I will give
+you credit for participating in the discussion.

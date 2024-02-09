@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LGA-10: Symbolic Computation &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/lga/10-symbolic.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="LGA-11: Tail Call Optimization" href="11-tco.html" />
+    <link rel="prev" title="LGA-09: Exam 2 Questions" href="09-exam2-questions.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="lga-10-symbolic-computation">
+<h1>LGA-10: Symbolic Computation<a class="headerlink" href="#lga-10-symbolic-computation" title="Permalink to this headline">¶</a></h1>
+<ol class="arabic">
+<li><p class="first">Read <a class="reference external" href="http://stevelosh.com/blog/2016/06/symbolic-computation/" target="_blank">this blog post on symbolic computation</a>. Note that the blog post is
+using a language from which Racket took inspiration: Common Lisp. The
+structures presented should look familiar, although many will not work in
+Racket. As  you read along, try and think of the equivalent Racket
+structures.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Some of the exercises would require you to have a Common Lisp environment
+setup. Obviously, I don’t expect you to have this. You may feel free to
+skip these.</p>
+</div>
+</li>
+<li><p class="first">The blog post above features evaluating Lisp using symbolic computation. We
+can use the same technique for other things too. Suppose we had a Racket
+function for symbolic integration. You could imagine it acting like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="p">(</span><span class="n">integrate</span> <span class="s1">&#39;(* 2 x) &#39;</span><span class="n">x</span><span class="p">)</span>
+<span class="s1">&#39;(expt x 2)</span>
+<span class="o">&gt;</span> <span class="p">(</span><span class="n">integrate</span> <span class="s1">&#39;(/ 1 x) &#39;</span><span class="n">x</span><span class="p">)</span>
+<span class="s1">&#39;(log x 2)</span>
+</pre></div>
+</div>
+<p>Think about another usage for symbolic computation. What would be some
+samples of the inputs and outputs?</p>
+</li>
+<li><p class="first">What features of Racket would you find most useful for symbolic computation?
+Hint: How about <em>pattern matching</em>? (Think of how you would use it)!</p>
+</li>
+<li><p class="first">Be prepared to discuss with your learning group.</p>
+</li>
+</ol>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

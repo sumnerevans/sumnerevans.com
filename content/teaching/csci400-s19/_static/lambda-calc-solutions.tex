@@ -1,0 +1,77 @@
+\documentclass{hw}
+
+\author{Jonathan Sumner Evans}
+\title{Solutions to $\lambda$-Calculus Examples}
+\class{CSCI 400}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Alpha Equivalence}
+
+Identify if each of the following are a valid $\alpha$-conversion.
+
+\begin{enumerate}
+    \item ${\lambda}x.{\lambda}x.x \to {\lambda}y.{\lambda}y.y$
+
+        This is a valid $\alpha$-conversion. We rename all of the instances of
+        $x$ to $y$.
+
+    \item $\underbrace{{\lambda}x}_1.\underbrace{{\lambda}x}_2.\underbrace{x}_3 \to {\lambda}y.{\lambda}x.x$
+
+        This is a valid alpha conversion. This is because the $x$ (3) is bound
+        by the second abstraction (2), \textbf{not} by the first abstraction
+        (1). Thus, by renaming the first $x$ to $y$, we end up with the term on
+        the right.
+
+        \textbf{The act of rebinding a variable is called ``variable
+            shadowing''. You might want to know that for the test.}
+
+    \item ${\lambda}x.\underbrace{{\lambda}x}_2.\underbrace{x}_3 \to
+        \underbrace{{\lambda}y}_1.{\lambda}x.y$
+
+        This is \textbf{not} a valid $\alpha$-conversion. The reason for this is
+        similar to the second problem. The $x$ (3) is bound to the second
+        abstraction (2) on the left hand side, however it is bound to the outer
+        abstraction (1) on the right hand side.
+
+    \item ${\lambda}x.{\lambda}y.x \to {\lambda}y.{\lambda}y.y$
+
+        This is \textbf{not} a valid $\alpha$-conversion. The reason is that
+        this introduces a \textbf{naming conflict}.
+
+\end{enumerate}
+
+\newpage
+\section{Beta Reductions}
+
+Fully $\beta$-reduce each of the following expressions:
+
+\begin{enumerate}
+    \setcounter{enumi}{4}
+    \item In this example, I am showing the full currying steps for each
+        application. Each of the applications only accepts a single term.
+        \begin{align*}
+            &({\lambda}x.{\lambda}y.{\lambda}f.fxy)\overbrace{({\lambda}x.{\lambda}y.y)}^{x}({\lambda}x.{\lambda}y.x)({\lambda}x.{\lambda}y.y)\\
+            \rightsquigarrow&({\lambda}y.{\lambda}f.f({\lambda}x.{\lambda}y.y)y)\overbrace{({\lambda}x.{\lambda}y.x)}^{y}({\lambda}x.{\lambda}y.y)\\
+            \rightsquigarrow&({\lambda}f.f({\lambda}x.{\lambda}y.y)({\lambda}x.{\lambda}y.x))\overbrace{({\lambda}x.{\lambda}y.y)}^{f}\\
+            \rightsquigarrow&({\lambda}x.{\lambda}y.y)\overbrace{({\lambda}x.{\lambda}y.y)}^x({\lambda}x.{\lambda}y.x)\\
+            \rightsquigarrow&({\lambda}y.y)\overbrace{({\lambda}x.{\lambda}y.x)}^y\\
+            \rightsquigarrow&({\lambda}x.{\lambda}y.x).
+        \end{align*}
+
+    \item In this example, I am not showing the full currying steps for each
+        application.
+        \begin{align*}
+            &({\lambda}a.{\lambda}b.a({\lambda}b.{\lambda}f.{\lambda}x.f(bfx))b)\overbrace{({\lambda}f.{\lambda}x.fx)}^a\overbrace{({\lambda}f.{\lambda}x.f(fx))}^b\\
+            \rightsquigarrow&({\lambda}f.{\lambda}x.fx)\overbrace{({\lambda}b.{\lambda}f.{\lambda}x.f(bfx))}^f\overbrace{({\lambda}f.{\lambda}x.f(fx))}^x\\
+            \rightsquigarrow&({\lambda}b.{\lambda}f.{\lambda}x.f(bfx))\overbrace{({\lambda}f.{\lambda}x.f(fx))}^b\\
+            \rightsquigarrow&({\lambda}f.{\lambda}x.f(({\lambda}f.{\lambda}x.f(fx))fx))\\
+            \rightsquigarrow&({\lambda}f.{\lambda}x.f(({\lambda}f.{\lambda}x.f(fx))\overbrace{f}^f\overbrace{x}^x))\\
+            \rightsquigarrow&({\lambda}f.{\lambda}x.f(f(fx))).
+        \end{align*}
+\end{enumerate}
+
+\end{document}

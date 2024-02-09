@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Racket Pattern Matching &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/slides/13-pm.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Symbolic Computation" href="14-symbolic.html" />
+    <link rel="prev" title="Racket Intro" href="12-racket-intro.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="racket-pattern-matching">
+<h1>Racket Pattern Matching<a class="headerlink" href="#racket-pattern-matching" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These slides are also available in PDF format: <a class="reference internal" href="/teaching/csci400-s19/_static/slides/13-pm-43.pdf" target="_blank">4:3 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/13-pm-169.pdf" target="_blank">16:9 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/13-pm-1610.pdf" target="_blank">16:10 PDF</a>.</p>
+</div>
+<div class="section" id="review-if">
+<h2>Review: If<a class="headerlink" href="#review-if" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">if</span></code> evaluates a predicate, and returns either the consequent or the
+alternative depending on the result:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="n">predicate</span><span class="w"></span>
+<span class="w">  </span><span class="n">consequent</span><span class="w"></span>
+<span class="w">  </span><span class="n">alternative</span><span class="p">)</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Example:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;n is ~a~%&quot;</span><span class="w"> </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nb">even?</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"></span>
+<span class="w">                      </span><span class="s2">&quot;even&quot;</span><span class="w"></span>
+<span class="w">                      </span><span class="s2">&quot;odd&quot;</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="review-let">
+<h2>Review: Let<a class="headerlink" href="#review-let" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">let</span></code> macro will bind local variables:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">([</span><span class="n">a</span><span class="w"> </span><span class="mi">10</span><span class="p">]</span><span class="w"></span>
+<span class="w">      </span><span class="p">[</span><span class="n">b</span><span class="w"> </span><span class="mi">20</span><span class="p">])</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;~a ~a~%&quot;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">b</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">let*</span></code> will bind in order, equivalent to nesting a bunch of lets together:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">let*</span><span class="w"> </span><span class="p">([</span><span class="n">a</span><span class="w"> </span><span class="mi">10</span><span class="p">]</span><span class="w"></span>
+<span class="w">       </span><span class="p">[</span><span class="n">b</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="mi">10</span><span class="p">)])</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;~a ~a~%&quot;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">b</span><span class="p">))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Equivalent to:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">([</span><span class="n">a</span><span class="w"> </span><span class="mi">10</span><span class="p">])</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">let</span><span class="w"> </span><span class="p">([</span><span class="n">b</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="mi">10</span><span class="p">)])</span><span class="w"></span>
+<span class="w">    </span><span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;~a ~a~%&quot;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">b</span><span class="p">)))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="introducing-cond">
+<h2>Introducing cond<a class="headerlink" href="#introducing-cond" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">cond</span></code> takes a series of clauses. You can think of it as replacing a big long
+<code class="docutils literal notranslate"><span class="pre">if</span></code> chain:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">cond</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="n">predicate-1</span><span class="w"> </span><span class="n">consequent-1</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="n">predicate-2</span><span class="w"> </span><span class="n">consequent-2</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="k">...</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="n">predicate-n</span><span class="w"> </span><span class="n">consequent-n</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="k">else</span><span class="w"> </span><span class="n">alternative</span><span class="p">])</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Equivalent to:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="n">predicate-1</span><span class="w"></span>
+<span class="w">  </span><span class="n">consequent-1</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="n">predicate-2</span><span class="w"></span>
+<span class="w">    </span><span class="n">consequent-2</span><span class="w"></span>
+<span class="w">    </span><span class="k">...</span><span class="w"></span>
+<span class="w">      </span><span class="p">(</span><span class="k">if</span><span class="w"> </span><span class="n">predicate-n</span><span class="w"></span>
+<span class="w">        </span><span class="n">consequent-n</span><span class="w"></span>
+<span class="w">        </span><span class="n">alternative</span><span class="p">)))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-cond">
+<h2>Example: cond<a class="headerlink" href="#example-cond" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;Your BMI rating is: ~a~%&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">(</span><span class="k">cond</span><span class="w"></span>
+<span class="w">          </span><span class="p">[(</span><span class="nb">&lt;</span><span class="w"> </span><span class="n">bmi</span><span class="w"> </span><span class="mf">18.5</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;underweight&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">          </span><span class="p">[(</span><span class="nb">&lt;</span><span class="w"> </span><span class="n">bmi</span><span class="w"> </span><span class="mf">24.9</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;normal&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">          </span><span class="p">[(</span><span class="nb">&lt;</span><span class="w"> </span><span class="n">bmi</span><span class="w"> </span><span class="mf">29.9</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;overweight&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">          </span><span class="p">[</span><span class="k">else</span><span class="w"> </span><span class="s2">&quot;obese&quot;</span><span class="p">]))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="introducing-case">
+<h2>Introducing case<a class="headerlink" href="#introducing-case" title="Permalink to this headline">¶</a></h2>
+<p>Case evaluates and returns the clause which has a quoted form <code class="docutils literal notranslate"><span class="pre">equal?</span></code> to the
+value passed.</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">case</span><span class="w"> </span><span class="n">value</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="n">a-1</span><span class="w"> </span><span class="n">a-2</span><span class="w"> </span><span class="k">...</span><span class="w"> </span><span class="n">a-n</span><span class="p">)</span><span class="w"> </span><span class="n">result-1</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="n">b-1</span><span class="w"> </span><span class="n">b-2</span><span class="w"> </span><span class="k">...</span><span class="w"> </span><span class="n">b-n</span><span class="p">)</span><span class="w"> </span><span class="n">result-2</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="k">...</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="k">else</span><span class="w"> </span><span class="n">result</span><span class="p">])</span><span class="w"></span>
+</pre></div>
+</div>
+<div class="admonition-careful admonition">
+<p class="first admonition-title">Careful</p>
+<p class="last">Parenthesis are needed around the values in each clause, even if there is
+only one value to match.</p>
+</div>
+</div>
+<div class="section" id="example-1-case">
+<h2>Example 1: case<a class="headerlink" href="#example-1-case" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">pet-classification</span><span class="w"> </span><span class="n">pet-type</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">case</span><span class="w"> </span><span class="n">pet-type</span><span class="w"></span>
+<span class="w">    </span><span class="p">[(</span><span class="n">cat</span><span class="w"> </span><span class="n">dog</span><span class="w"> </span><span class="n">fish</span><span class="p">)</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">normal</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">[(</span><span class="n">mouse</span><span class="w"> </span><span class="n">rat</span><span class="w"> </span><span class="n">ferret</span><span class="p">)</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">strange</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">[(</span><span class="n">zebra</span><span class="w"> </span><span class="n">gorilla</span><span class="w"> </span><span class="n">elephant</span><span class="p">)</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">not-a-pet</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="k">else</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">unknown</span><span class="p">]))</span><span class="w"></span>
+
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">pet-classification</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">cat</span><span class="p">)</span><span class="w"></span>
+<span class="o">&#39;</span><span class="ss">normal</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">pet-classification</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">ferret</span><span class="p">)</span><span class="w"></span>
+<span class="o">&#39;</span><span class="ss">strange</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">pet-classification</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">gorilla</span><span class="p">)</span><span class="w"></span>
+<span class="o">&#39;</span><span class="ss">not-a-pet</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">pet-classification</span><span class="w"> </span><span class="o">&#39;</span><span class="ss">horse</span><span class="p">)</span><span class="w"></span>
+<span class="o">&#39;</span><span class="ss">unknown</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-2-case">
+<h2>Example 2: case<a class="headerlink" href="#example-2-case" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">login-as</span><span class="w"> </span><span class="n">username</span><span class="w"> </span><span class="n">password</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">case</span><span class="w"> </span><span class="p">(</span><span class="nb">list</span><span class="w"> </span><span class="n">username</span><span class="w"> </span><span class="n">password</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">[((</span><span class="s2">&quot;bob&quot;</span><span class="w"> </span><span class="s2">&quot;secret&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="s2">&quot;jill&quot;</span><span class="w"> </span><span class="s2">&quot;ihatebob&quot;</span><span class="p">))</span><span class="w"> </span><span class="s2">&quot;Welcome!&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">[((</span><span class="s2">&quot;badguy&quot;</span><span class="w"> </span><span class="s2">&quot;badguy&quot;</span><span class="p">))</span><span class="w"> </span><span class="s2">&quot;Not authorized!&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="k">else</span><span class="w"> </span><span class="s2">&quot;Unknown username or password&quot;</span><span class="p">]))</span><span class="w"></span>
+
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">login-as</span><span class="w"> </span><span class="s2">&quot;jill&quot;</span><span class="w"> </span><span class="s2">&quot;ihatebob&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="s2">&quot;Welcome!&quot;</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">login-as</span><span class="w"> </span><span class="s2">&quot;jill&quot;</span><span class="w"> </span><span class="s2">&quot;ih8bob&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="s2">&quot;Unknown username or password&quot;</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="n">login-as</span><span class="w"> </span><span class="s2">&quot;badguy&quot;</span><span class="w"> </span><span class="s2">&quot;badguy&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="s2">&quot;Not authorized!&quot;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-3-case">
+<h2>Example 3: case<a class="headerlink" href="#example-3-case" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="c1">;; Note: this algorithm is not efficent</span><span class="w"></span>
+<span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">fib</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">case</span><span class="w"> </span><span class="n">n</span><span class="w"></span>
+<span class="w">    </span><span class="p">[(</span><span class="mi">0</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">n</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="k">else</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="p">(</span><span class="n">fib</span><span class="w"> </span><span class="p">(</span><span class="nb">-</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="mi">1</span><span class="p">))</span><span class="w"></span>
+<span class="w">             </span><span class="p">(</span><span class="n">fib</span><span class="w"> </span><span class="p">(</span><span class="nb">-</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="mi">2</span><span class="p">)))]))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="learning-group-activity">
+<h2>Learning Group Activity<a class="headerlink" href="#learning-group-activity" title="Permalink to this headline">¶</a></h2>
+<p>With your learning group, choose whether to implement each of these functions
+using either <code class="docutils literal notranslate"><span class="pre">case</span></code> or <code class="docutils literal notranslate"><span class="pre">cond</span></code>. Then, once you have decided, write an
+implementation:</p>
+<ol class="arabic simple">
+<li>A function, which, when passed an even number, divides it by two. When the
+function is passed an odd number, it will multiply it by three then add 1.
+If the function is passed anything else (e.g., a string), it will return
+<code class="docutils literal notranslate"><span class="pre">&quot;oh</span> <span class="pre">noes!&quot;</span></code>.</li>
+<li>A function <code class="docutils literal notranslate"><span class="pre">f</span></code> of parameter <code class="docutils literal notranslate"><span class="pre">n</span></code> which returns <code class="docutils literal notranslate"><span class="pre">'magic</span></code> when passed 0,
+10, 20, or 30, or <code class="docutils literal notranslate"><span class="pre">(f</span> <span class="pre">(floor</span> <span class="pre">(/</span> <span class="pre">n</span> <span class="pre">2)))</span></code> otherwise.</li>
+</ol>
+</div>
+<div class="section" id="pattern-matching-motivation">
+<h2>Pattern Matching: Motivation<a class="headerlink" href="#pattern-matching-motivation" title="Permalink to this headline">¶</a></h2>
+<p>What if we could combine the functionality of <code class="docutils literal notranslate"><span class="pre">let</span></code>, <code class="docutils literal notranslate"><span class="pre">cond</span></code>, and <code class="docutils literal notranslate"><span class="pre">case</span></code>
+(and even more) all into a single syntax?</p>
+<p>Racket has this: it’s called <code class="docutils literal notranslate"><span class="pre">match</span></code>!</p>
+</div>
+<div class="section" id="introducing-match">
+<h2>Introducing match<a class="headerlink" href="#introducing-match" title="Permalink to this headline">¶</a></h2>
+<p>Here is the basic syntax for match:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">match</span><span class="w"> </span><span class="n">value</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="n">pattern-1</span><span class="w"> </span><span class="n">result-1</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="n">pattern-2</span><span class="w"> </span><span class="n">result-2</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="k">...</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="n">pattern-n</span><span class="w"> </span><span class="n">result-n</span><span class="p">])</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Each of these patterns is a very special syntax form which Racket will use to
+determine if there is a match, as well as bind variable names inside of the
+body of the clause.</p>
+</div>
+<div class="section" id="basic-patterns">
+<h2>Basic Patterns<a class="headerlink" href="#basic-patterns" title="Permalink to this headline">¶</a></h2>
+<p>Simple constants will match when they are equivalent:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">match</span><span class="w"> </span><span class="n">user-input</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="s2">&quot;true&quot;</span><span class="w"> </span><span class="no">#t</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="s2">&quot;false&quot;</span><span class="w"> </span><span class="no">#f</span><span class="p">])</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Underscore can be used to match anything:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">match</span><span class="w"> </span><span class="n">user-input</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="s2">&quot;true&quot;</span><span class="w"> </span><span class="no">#t</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="s2">&quot;false&quot;</span><span class="w"> </span><span class="no">#f</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="k">_</span><span class="w"> </span><span class="p">(</span><span class="nb">error</span><span class="w"> </span><span class="s2">&quot;Not a valid input&quot;</span><span class="p">)])</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="binding-identifiers">
+<h2>Binding Identifiers<a class="headerlink" href="#binding-identifiers" title="Permalink to this headline">¶</a></h2>
+<p>If a variable name is used in a pattern, racket will bind what matches to that
+name:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">match</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="n">c</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="mi">10</span><span class="w"> </span><span class="s2">&quot;it&#39;s 10!&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="n">the-number</span><span class="w"> </span><span class="p">(</span><span class="nb">format</span><span class="w"> </span><span class="s2">&quot;sadly, only ~a...&quot;</span><span class="w"> </span><span class="n">the-number</span><span class="p">)])</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="testing-predicates">
+<h2>Testing Predicates<a class="headerlink" href="#testing-predicates" title="Permalink to this headline">¶</a></h2>
+<p>The pattern <code class="docutils literal notranslate"><span class="pre">(?</span> <span class="pre">predicate-function</span> <span class="pre">optional-binding)</span></code> can be used to test if
+<code class="docutils literal notranslate"><span class="pre">predicate-function</span></code> returns <code class="docutils literal notranslate"><span class="pre">#t</span></code> when called on the value.</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">match</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="n">c</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="n">?</span><span class="w"> </span><span class="nb">odd?</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;How odd...&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="n">?</span><span class="w"> </span><span class="nb">even?</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">format</span><span class="w"> </span><span class="s2">&quot;~a is even!&quot;</span><span class="w"> </span><span class="n">x</span><span class="p">)])</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="matching-lists">
+<h2>Matching Lists<a class="headerlink" href="#matching-lists" title="Permalink to this headline">¶</a></h2>
+<p>The pattern <code class="docutils literal notranslate"><span class="pre">(list</span> <span class="pre">...)</span></code> contains patterns and matches a list whose elements
+match the patterns in order.</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">match</span><span class="w"> </span><span class="n">some-list</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="nb">list</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;that list is empty!&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="nb">list</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">format</span><span class="w"> </span><span class="s2">&quot;the list has a single element: ~a&quot;</span><span class="w"> </span><span class="n">a</span><span class="p">)]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="nb">list</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="p">(</span><span class="n">?</span><span class="w"> </span><span class="nb">even?</span><span class="w"> </span><span class="n">b</span><span class="p">))</span><span class="w"> </span><span class="p">(</span><span class="nb">format</span><span class="w"> </span><span class="s2">&quot;~a and ~a, second is even&quot;</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">b</span><span class="p">)]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="k">_</span><span class="w"> </span><span class="s2">&quot;something else&quot;</span><span class="p">])</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="repeated-variable-names">
+<h2>Repeated Variable Names<a class="headerlink" href="#repeated-variable-names" title="Permalink to this headline">¶</a></h2>
+<p>Repeating a variable name will not only bind the value to the variable, but
+actually check that the elements are <code class="docutils literal notranslate"><span class="pre">equal?</span></code> too!</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">match</span><span class="w"> </span><span class="n">some-list</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="nb">list</span><span class="w"> </span><span class="p">(</span><span class="n">?</span><span class="w"> </span><span class="nb">even?</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;two even equivalent elements&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="nb">list</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;two elements, the same&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="nb">list</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;two elements, different&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[</span><span class="k">_</span><span class="w"> </span><span class="s2">&quot;something else&quot;</span><span class="p">])</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="variable-length-lists">
+<h2>Variable Length Lists<a class="headerlink" href="#variable-length-lists" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">(list-rest</span> <span class="pre">a</span> <span class="pre">b</span> <span class="pre">...</span> <span class="pre">z</span> <span class="pre">z-cdr)</span></code> pattern can be used to match the elements
+of a list and dump the rest of the elements in <code class="docutils literal notranslate"><span class="pre">z-cdr</span></code>. For example:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">match</span><span class="w"> </span><span class="n">some-list</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="nb">list</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;empty list&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="nb">list</span><span class="w"> </span><span class="k">_</span><span class="p">)</span><span class="w"> </span><span class="s2">&quot;one element&quot;</span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="n">list-rest</span><span class="w"> </span><span class="k">_</span><span class="w"> </span><span class="n">tail</span><span class="p">)</span><span class="w"> </span><span class="n">tail</span><span class="p">])</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="list-rest-as-a-common-recursive-pattern">
+<h2>list-rest as a Common Recursive Pattern<a class="headerlink" href="#list-rest-as-a-common-recursive-pattern" title="Permalink to this headline">¶</a></h2>
+<p>Consider the following function which sums the elements of a list:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">sum-list</span><span class="w"> </span><span class="n">lst</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">match</span><span class="w"> </span><span class="n">lst</span><span class="w"></span>
+<span class="w">    </span><span class="p">[(</span><span class="nb">list</span><span class="p">)</span><span class="w"> </span><span class="mi">0</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">[(</span><span class="n">list-rest</span><span class="w"> </span><span class="n">head</span><span class="w"> </span><span class="n">tail</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="nb">+</span><span class="w"> </span><span class="n">head</span><span class="w"> </span><span class="p">(</span><span class="n">sum-list</span><span class="w"> </span><span class="n">tail</span><span class="p">))]))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="quasiquotataions-as-a-pattern">
+<h2>Quasiquotataions as a Pattern<a class="headerlink" href="#quasiquotataions-as-a-pattern" title="Permalink to this headline">¶</a></h2>
+<p>Quasiquoted patterns match lists of matching symbols, with commas escaping the
+quotation (and can be any pattern):</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">extract-value</span><span class="w"> </span><span class="n">lst</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">match</span><span class="w"> </span><span class="n">lst</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="o">`</span><span class="p">(</span><span class="ss">sally</span><span class="w"> </span><span class="o">,</span><span class="n">x</span><span class="w"> </span><span class="o">,</span><span class="k">_</span><span class="p">)</span><span class="w"> </span><span class="n">x</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="o">`</span><span class="p">(</span><span class="ss">mary</span><span class="w"> </span><span class="o">,</span><span class="k">_</span><span class="w"> </span><span class="o">,</span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="n">y</span><span class="p">]))</span><span class="w"></span>
+</pre></div>
+</div>
+<p>Like <code class="docutils literal notranslate"><span class="pre">,&#64;</span></code> splices in a list to a quasiquotation, when used in a pattern, it
+will extract a pattern matching from the list:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="k">define</span><span class="w"> </span><span class="p">(</span><span class="n">extract-rest</span><span class="w"> </span><span class="n">lst</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">match</span><span class="w"> </span><span class="n">lst</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="o">`</span><span class="p">(</span><span class="ss">sally</span><span class="w"> </span><span class="o">,@</span><span class="p">(</span><span class="n">list-rest</span><span class="w"> </span><span class="n">x</span><span class="p">))</span><span class="w"> </span><span class="n">x</span><span class="p">]))</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="define-match">
+<h2>define/match<a class="headerlink" href="#define-match" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">match</span></code> is used to match the arguments of a function so often, that Racket
+provides a syntax for putting a syntax right inside of <code class="docutils literal notranslate"><span class="pre">define</span></code>.</p>
+<p>Example:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="c1">;; Return the first n elements of a list</span><span class="w"></span>
+<span class="p">(</span><span class="k">define/match</span><span class="w"> </span><span class="p">(</span><span class="nb">take</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="n">lst</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="mi">0</span><span class="w"> </span><span class="k">_</span><span class="p">)</span><span class="w"> </span><span class="o">&#39;</span><span class="p">()]</span><span class="w"></span>
+<span class="w">  </span><span class="p">[(</span><span class="k">_</span><span class="w"> </span><span class="p">(</span><span class="n">list-rest</span><span class="w"> </span><span class="n">head</span><span class="w"> </span><span class="n">tail</span><span class="p">))</span><span class="w"></span>
+<span class="w">   </span><span class="p">(</span><span class="nb">cons</span><span class="w"> </span><span class="n">head</span><span class="w"> </span><span class="p">(</span><span class="nb">take</span><span class="w"> </span><span class="p">(</span><span class="nb">-</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="n">tail</span><span class="p">))])</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="exercise">
+<h2>Exercise<a class="headerlink" href="#exercise" title="Permalink to this headline">¶</a></h2>
+<p>With your learning group, write a function using <code class="docutils literal notranslate"><span class="pre">define/match</span></code> which drops
+the first <code class="docutils literal notranslate"><span class="pre">n</span></code> elements of a list:</p>
+<div class="highlight-racket notranslate"><div class="highlight"><pre><span></span><span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="nb">drop</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">1</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="mi">4</span><span class="p">))</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="nb">drop</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">7</span><span class="p">))</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">()</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="nb">drop</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&#39;</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">4</span><span class="p">))</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="mi">4</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"></span>
+<span class="nb">&gt;</span><span class="w"> </span><span class="p">(</span><span class="nb">drop</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&#39;</span><span class="p">())</span><span class="w"></span>
+<span class="o">&#39;</span><span class="p">()</span><span class="w"></span>
+
+<span class="c1">;; OK if error when n is greater than the list length, e.g.,</span><span class="w"></span>
+<span class="c1">;;    (drop 1 &#39;())</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

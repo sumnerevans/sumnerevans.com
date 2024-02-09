@@ -1,0 +1,264 @@
+SlytherLisp Project
+-------------------
+
+SlytherLisp is a lexically-scoped Scheme-like programming language. You will be
+implementing an interpreter for this language.
+
+.. admonition:: Partners Required
+
+   This project is very nontrivial. You are required to complete this project in
+   a group of two or three. Please use Piazza_ as a resource in finding your
+   group.
+
+   If you *really* want to work alone, you can email me and ask for permission.
+
+You should find a group and get started on this project right away, as
+Deliverable 1 is due on February 21.
+
+After you have found a group, the first thing you need to do is download the
+starter code via one of the methods below.
+
+:TAR File: `slytherlisp-starter-code.tar.gz`_
+:GitLab:   `sumner/slytherlisp-starter-code`_
+
+.. _slytherlisp-starter-code.tar.gz: /_static/slytherlisp-starter-code.tar.gz
+.. _sumner/slytherlisp-starter-code: https://gitlab.com/sumner/slytherlisp-starter-code
+
+Next, before you do anything else, open and read ``README.rst``. This will
+instruct you on how to setup and get going with the project.
+
+Deliverable 1: Basic Data Structures
+------------------------------------
+
+:Due Date: Thursday, February 21 at 23:59
+
+For this deliverable, you will be implementing a few simple data structures
+under ``slyther/types.py``. Replace all of the lines that say ``raise
+NotImplementedError('Deliverable 1')``. Note that there's some stuff for
+Deliverable 3 at the bottom of the file: you don't have to do this (yet!).
+
+.. note::
+
+   It is advised that you finish Deliverable 1 early so that you can get a head
+   start on the next deliverable.
+
+Deliverable 2: Parsing
+----------------------
+
+:Due Date: Tuesday, March 19 at 23:59
+
+For this deliverable, you will implement the lexer and parser of the
+language. You'll be working under ``slyther/parser.py``.
+
+Deliverable 3: Evaluator
+------------------------
+
+:Due Date: Tuesday, April 2 at 23:59 PM
+
+For this deliverable, you'll be implementing the evaluator, builtins, REPL, and
+functions. You'll be working under four different files:
+
+* ``slyther/evaluator.py``
+* ``slyther/types.py`` (at the bottom)
+* ``slyther/builtins.py``
+* ``slyther/repl.py``
+
+This one is a big deliverable, so please plan ahead and get started early.
+
+By the end of this deliverable, you should have a working REPL, which you can
+use to compute the results of basic mathematical operations, such as
+``(+ 1 (* 2 3))``. Please be sure to test your REPL, as there are no unit tests
+for this. You will receive a low grade on this deliverable if you do not have a
+working REPL.
+
+You are not required to have tail-call optimization working for this
+deliverable.
+
+.. note::
+
+   It is advised that you finish Deliverable 3 early so that you can get a head
+   start on the next deliverable.
+
+Deliverable 4: Language Structures
+----------------------------------
+
+:Due Date: Tuesday, April 9 at 23:59
+
+Deliverable 4 is an extension of Deliverable 3, you will complete the remainder
+of the builtin operations for the SlytherLisp language, as defined in the
+docstrings of ``slyther/builtins.py``.
+
+Deliverable 5: Tail-Call Optimization
+-------------------------------------
+
+:Due Date: Tuesday, April 23 at 23:59
+
+For this deliverable, you'll be extending SlytherLisp by extending your work
+from Deliverable 3 to use **tail-call optimization**.
+
+Consider the following (simple) example:
+
+.. sourcecode:: scheme
+
+    (define (print-n-times f args n)
+      (if (<= n 0)
+          NIL
+          (let ()
+             (print (eval (cons f args)))
+             (print-n-times f args (- n 1)))))
+
+Since the call to ``print-n-times`` is the last call of the function (what
+returns from ``print-n-times`` is returned by the function), we can reuse our
+current stack frame for that function call, rather than allocating a new stack
+frame and returning the result of the computation.
+
+My advice (for a starting point) is to move your ``lisp_eval`` function body
+into a loop, and if, at the bottom of the loop, it can reassign ``expr`` and
+``stg`` and repeat rather than calling ``lisp_eval`` recursively, do so.
+
+You'll probably need to make modifications to other parts of the interpreter as
+well.
+
+Test your optimization works using the ``fib-iter`` and ``carmichael``
+examples. **At this point, all of the provided code examples should run. You
+will receive a low grade on this deliverable if all of the code examples do not
+produce a correct result. Be sure to check your results for correctness. For
+example, if the primes example is producing numbers that are not prime, then it
+is not correct.**
+
+You are free to implement tail call optimization however you wish, but you
+implementation must be properly tail-call optimized. We will use the same
+definition as the Scheme specification to determine if your implementation is
+properly tail-call optimized:
+
+    A Scheme implementation is properly tail-recursive if it supports an
+    unbounded number of active tail calls. A call is active if the called
+    procedure may still return.
+
+Deliverable 6: Extending the Language
+-------------------------------------
+
+:Due Date: Thursday, May 2 at 23:59
+
+Come up with a significant extension to the language. Suggestions include:
+
+* A ``match`` macro that behaves like Racket's pattern matching
+* Adding a new syntax to the language (such as quasiquotations)
+* Optimizing the abstract syntax tree
+* Adding a library and/or namespace mechanism
+* Adding a way to load and use Python libraries
+* Allowing for user-defined macros. Since macros are first class, you could
+  even add anonymous macros to the language.
+* Making the ``cons`` form allow for a tail recursive CDR argument by using
+  the `tail call modulo cons`_ technique.
+* Adding functions with default parameters and keyword arguments
+* A ``use`` macro, such as proposed in `one of the LGA-06 videos`_
+* Continuation_
+* More__ and more__ and more__ inspiration
+* Any other significant extension of your liking!
+
+__ http://okmij.org/ftp/Scheme/macros.html
+__ http://okmij.org/ftp/Scheme/lazy-Fibonacci.txt
+__ http://okmij.org/ftp/Scheme/misc.html
+.. _one of the LGA-06 videos: https://youtu.be/QM1iUe6IofM?t=41m34s
+.. _continuation: https://en.wikipedia.org/wiki/Call-with-current-continuation
+.. _tail call modulo cons: https://homes.cs.washington.edu/~jrw12/tail-mod-cons.html
+
+Implement your extension, and **document how it works** in the ``README.rst``
+file. **Include at least one example program that makes use of your
+extension.**
+
+Deliverable 7: Extra Credit
+---------------------------
+
+:Due Date: Thursday, May 9 at 23:59
+
+.. note::
+
+   This deliverable is optional. If you do not want the extra credit, you may
+   simply ignore it.
+
+Extend SlytherLisp in as many ways as you choose, and document your extensions
+for extra credit. Here are a few ideas which you could do for extra credit:
+
+- Make the REPL nicer by using Readline_ or `Prompt Toolkit`_.
+- Do a performance comparison of SlytherLisp on PyPy versus on CPython: and
+  maybe even compare the same algorithms implemented on other languages.
+- Rewrite SlytherLisp in a totally different programming language.
+- Add the ability to import Python modules into SlytherLisp.
+- Add a way to partially apply (curry) functions in Racket.
+
+.. _Readline: https://docs.python.org/3/library/readline.html
+.. _Prompt Toolkit: https://github.com/jonathanslenders/python-prompt-toolkit
+
+You are not required to maintain passing unit tests for this extra credit
+deliverable. Have fun!
+
+This deliverable is worth up to **50 points extra credit**, but the allocation
+is determined based on the significance and effort of your work, so simple
+extensions will only receive a little extra credit. Please include an estimate
+for the number of hours you spent on this deliverable in your ``README.rst``.
+
+Note that I am not able to offer extensions on this deliverable (nor can slip
+days be spent) as I will need time to grade before grades are due.
+
+Grading Rubric
+--------------
+
+This project is worth 250 points of your overall grade in the course. The grade
+is divided up as follows:
+
++---------+----------------------------------------------------------+
+| Points  | Description                                              |
++=========+==========================================================+
+| 37      | Deliverable 1                                            |
++---------+----------------------------------------------------------+
+| 37      | Deliverable 2                                            |
++---------+----------------------------------------------------------+
+| 37      | Deliverable 3                                            |
++---------+----------------------------------------------------------+
+| 37      | Deliverable 4                                            |
++---------+----------------------------------------------------------+
+| 50      | Deliverable 5                                            |
++---------+----------------------------------------------------------+
+| 50      | Deliverable 6                                            |
++---------+----------------------------------------------------------+
+| 50 XC   | Deliverable 7: Up to **50 points of extra credit**,      |
+|         | which is 5% of your overall course grade.                |
++---------+----------------------------------------------------------+
+
+An astute reader may notice that the amount of points allocated to Deliverables
+1-6 does not add up to 250. That is because everyone gets 2 free points.
+
+Grader Script
+-------------
+
+You can download the script the grader will be using `here`_ (SHA256 Checksum:
+``e9c1dcb16de8282005d6fc0d9a7b9300d2197860f4b42d3d79b22fb271cbe501``). I have
+only tested this script on Arch Linux (the distro in the ALAMODE machines).
+
+**Dependencies:**
+
+- ``bc``
+- ``python-virtualenv``
+
+To use the script make it executable (``chmod +x
+slytherlisp-grader-script.sh``), then just type::
+
+    ./slytherlisp-grader-script.sh <your_submission_tar> <deliverable_number>
+
+Replacing ``<your_submission_tar>`` with the filename of the
+``submission.tar.bz2`` file and ``<deliverable_number>`` with the deliverable
+you would like to grade.
+
+For example::
+
+    ./slytherlisp-grader-script.sh submission.tar.bz2 1
+
+Will run all of the D1 tests on the code in ``submission.tar.bz2``.
+
+Note that this script does not perform all of the tests (the grader will perform
+additional manual tests), but it will give you an idea of what your grade will
+be.
+
+.. _here: /_static/slytherlisp-grader-script.sh

@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Regular Expressions &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/slides/10-re.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Parsing" href="11-parsing.html" />
+    <link rel="prev" title="Memory Management" href="09-memory-management.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="regular-expressions">
+<h1>Regular Expressions<a class="headerlink" href="#regular-expressions" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These slides are also available in PDF format: <a class="reference internal" href="/teaching/csci400-s19/_static/slides/10-re-43.pdf" target="_blank">4:3 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/10-re-169.pdf" target="_blank">16:9 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/10-re-1610.pdf" target="_blank">16:10 PDF</a>.</p>
+</div>
+<div class="section" id="learning-group-activity">
+<h2>Learning Group Activity<a class="headerlink" href="#learning-group-activity" title="Permalink to this headline">¶</a></h2>
+<p>You should have researched one of these topics on the LGA:</p>
+<ul class="simple">
+<li>Reference Couting</li>
+<li>Smart Pointers</li>
+<li>Valgrind</li>
+</ul>
+<p>Explain to your group!</p>
+</div>
+<div class="section" id="id1">
+<h2>Regular Expressions<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p><strong>Regular expression</strong> languages describe a search pattern on a string.</p>
+<ul class="simple">
+<li>They are called <em>regular</em>, since they implement a <strong>regular language</strong>: a
+language which can be described using a finite state machine.</li>
+<li>Typically used for determining if a string matches a pattern, replacing a
+pattern in a string, or extracting information from a string.</li>
+<li>Regular expression languages are a <em>family of languages</em>, rather than just a
+single language. Many modern regular expression languages were inspired by
+Perl’s regular expression syntax.</li>
+</ul>
+</div>
+<div class="section" id="python-s-regular-expressions">
+<h2>Python’s Regular Expressions<a class="headerlink" href="#python-s-regular-expressions" title="Permalink to this headline">¶</a></h2>
+<p>Python’s regular expression language can be accessed using the <code class="docutils literal notranslate"><span class="pre">re</span></code> module:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">re</span>
+</pre></div>
+</div>
+<p>Regular expressions can be compiled using <code class="docutils literal notranslate"><span class="pre">re.compile</span></code>. This returns a
+regular expression object:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;ab[cd]&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>There’s a number of things we might want to do with <code class="docutils literal notranslate"><span class="pre">p</span></code> here:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">p.match</span></code>: Match the beginning of a string</li>
+<li><code class="docutils literal notranslate"><span class="pre">p.fullmatch</span></code>: Match the whole string, without allowing characters at the
+end</li>
+<li><code class="docutils literal notranslate"><span class="pre">p.search</span></code>: Match anywhere in the string</li>
+<li><code class="docutils literal notranslate"><span class="pre">p.finditer</span></code>: Iterate over all of the matches in the string</li>
+</ul>
+</div>
+<div class="section" id="character-sets">
+<h2>Character Sets<a class="headerlink" href="#character-sets" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">[abcd]</span></code> is a character set. It matches a single <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code>, <code class="docutils literal notranslate"><span class="pre">c</span></code>, or
+<code class="docutils literal notranslate"><span class="pre">d</span></code>, only once.</li>
+<li>Character sets also support a shorthand for ranges of characters, for
+example:<ul>
+<li><code class="docutils literal notranslate"><span class="pre">[0-9]</span></code> matches a single digit</li>
+<li><code class="docutils literal notranslate"><span class="pre">[a-z]</span></code> matches a lowercase letter</li>
+<li><code class="docutils literal notranslate"><span class="pre">[A-Z]</span></code> matches an uppercase letter</li>
+</ul>
+</li>
+<li>These can even be combined:<ul>
+<li><code class="docutils literal notranslate"><span class="pre">[a-zA-Z2]</span></code> will match a single lowercase letter, uppercase letter, or
+the digit <code class="docutils literal notranslate"><span class="pre">2</span></code>.</li>
+</ul>
+</li>
+<li>A <code class="docutils literal notranslate"><span class="pre">^</span></code> (caret) at the beginning of a character set <em>negates</em> the set:<ul>
+<li><code class="docutils literal notranslate"><span class="pre">[^0-9]</span></code> will match a single character that is <strong>not</strong> a digit.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="special-character-sets">
+<h2>Special Character Sets<a class="headerlink" href="#special-character-sets" title="Permalink to this headline">¶</a></h2>
+<p>As a convenience, Python gives us access to a few nice character sets:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">\s</span></code> matches any whitespace character</li>
+<li><code class="docutils literal notranslate"><span class="pre">\S</span></code> matches any non-whitespace character</li>
+<li><code class="docutils literal notranslate"><span class="pre">\d</span></code> matches any digit</li>
+<li><code class="docutils literal notranslate"><span class="pre">\D</span></code> matches any non-digit</li>
+<li><code class="docutils literal notranslate"><span class="pre">\w</span></code> matches any “word” character (capital letters, lowercase letters,
+digits, and underscores)</li>
+<li><code class="docutils literal notranslate"><span class="pre">\W</span></code> matches any non-word character</li>
+</ul>
+</div>
+<div class="section" id="any-character">
+<h2>Any character<a class="headerlink" href="#any-character" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">.</span></code> matches any character, exactly once.</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">t.ck</span></code> will match <code class="docutils literal notranslate"><span class="pre">tick</span></code>, <code class="docutils literal notranslate"><span class="pre">tock</span></code>, and <code class="docutils literal notranslate"><span class="pre">tuck</span></code>, but not <code class="docutils literal notranslate"><span class="pre">truck</span></code>.</li>
+</ul>
+<p>To match a literal period, write “<code class="docutils literal notranslate"><span class="pre">\.</span></code>”.</p>
+</div>
+<div class="section" id="match-objects">
+<h2>Match Objects<a class="headerlink" href="#match-objects" title="Permalink to this headline">¶</a></h2>
+<p>When we call <code class="docutils literal notranslate"><span class="pre">match</span></code>, <code class="docutils literal notranslate"><span class="pre">fullmatch</span></code>, or <code class="docutils literal notranslate"><span class="pre">search</span></code>, we get back a <strong>match
+object</strong>, or <code class="docutils literal notranslate"><span class="pre">None</span></code> if it did not match. When we iterate over <code class="docutils literal notranslate"><span class="pre">finditer</span></code>,
+we iterate on all of the match objects found.</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;[cd][ao][tg]&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="s1">&#39;cat&#39;</span><span class="p">,</span> <span class="s1">&#39;dog&#39;</span><span class="p">,</span> <span class="s1">&#39;cog&#39;</span><span class="p">,</span> <span class="s1">&#39;dat&#39;</span><span class="p">,</span> <span class="s1">&#39;datt&#39;</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">word</span><span class="p">)))</span>
+<span class="go">True</span>
+<span class="go">True</span>
+<span class="go">True</span>
+<span class="go">True</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;datum&#39;</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="n">p</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">word</span><span class="p">)))</span>
+<span class="go">False</span>
+<span class="go">False</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="how-many">
+<h2>How Many?<a class="headerlink" href="#how-many" title="Permalink to this headline">¶</a></h2>
+<p>Often times, we want to match the previous group a certain number of times:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">?</span></code> will match 0 or 1 times</li>
+<li><code class="docutils literal notranslate"><span class="pre">+</span></code> will match 1 or more times</li>
+<li><code class="docutils literal notranslate"><span class="pre">*</span></code> will match 0 or more times</li>
+<li><code class="docutils literal notranslate"><span class="pre">{n}</span></code> will match <code class="docutils literal notranslate"><span class="pre">n</span></code> times, exactly</li>
+<li><code class="docutils literal notranslate"><span class="pre">{m,n}</span></code> will match between <code class="docutils literal notranslate"><span class="pre">m</span></code> and <code class="docutils literal notranslate"><span class="pre">n</span></code> times</li>
+</ul>
+<p>For example:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">a?b</span></code> matches <code class="docutils literal notranslate"><span class="pre">ab</span></code> as well as <code class="docutils literal notranslate"><span class="pre">b</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">[A-Z]*</span></code> matches any amount of capital letters, including none at all</li>
+<li><code class="docutils literal notranslate"><span class="pre">[0-9]+</span></code> matches one or more digits</li>
+<li><code class="docutils literal notranslate"><span class="pre">.*</span></code> matches any character, zero or more times</li>
+</ul>
+</div>
+<div class="section" id="grouping">
+<h2>Grouping<a class="headerlink" href="#grouping" title="Permalink to this headline">¶</a></h2>
+<p>Grouping allows us to:</p>
+<ul class="simple">
+<li>Specify groups of characters to repeat</li>
+<li>Alternate on different sets of characters</li>
+<li>Capture the matched group and retrieve it in our match object</li>
+</ul>
+<p>Groups are written in parentheses, and alternation is specified using a
+vertical bar (<code class="docutils literal notranslate"><span class="pre">|</span></code>):</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">Thanks?(</span> <span class="pre">you)?</span></code> matches:<ul>
+<li><code class="docutils literal notranslate"><span class="pre">Thanks</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">Thank</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">Thank</span> <span class="pre">you</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">Thanks</span> <span class="pre">you</span></code></li>
+</ul>
+</li>
+<li><code class="docutils literal notranslate"><span class="pre">Thank(s|</span> <span class="pre">you)</span></code> matches:<ul>
+<li><code class="docutils literal notranslate"><span class="pre">Thanks</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">Thank</span> <span class="pre">you</span></code></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="grouping-using-captures">
+<h2>Grouping: Using Captures<a class="headerlink" href="#grouping-using-captures" title="Permalink to this headline">¶</a></h2>
+<p>On our match objects, we can obtain the result of a capture by calling
+<code class="docutils literal notranslate"><span class="pre">.group</span></code>:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;My name is (\w+) and I like (\w+)&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">m</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s1">&#39;My name is Jack and I like computers&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">&#39;Jack&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="go">&#39;computers&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>      <span class="c1"># the whole match</span>
+<span class="go">&#39;My name is Jack and I like computers&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">m</span><span class="o">.</span><span class="n">groups</span><span class="p">()</span>      <span class="c1"># a tuple containing all of the groups &gt; 0</span>
+<span class="go">(&#39;Jack&#39;, &#39;computers&#39;)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="non-capturing-groups">
+<h2>Non-capturing Groups<a class="headerlink" href="#non-capturing-groups" title="Permalink to this headline">¶</a></h2>
+<p>Groups which begin with <code class="docutils literal notranslate"><span class="pre">?:</span></code> are <strong>non-capturing groups</strong>. This means that
+they will not provide any visible group in the match object:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;My name is (\w+)(?:,| and) I like (\w+)&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">m</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s1">&#39;My name is Jack and I like computers&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">&#39;Jack&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="go">&#39;computers&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">m</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s1">&#39;My name is Jack, I like computers&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">&#39;Jack&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="go">&#39;computers&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="greedyness">
+<h2>Greedyness<a class="headerlink" href="#greedyness" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">+</span></code>, <code class="docutils literal notranslate"><span class="pre">*</span></code>, and <code class="docutils literal notranslate"><span class="pre">?</span></code> are called <em>greedy operators</em> since they will try and
+match <strong>as many characters as possible</strong>, this may lead to undesired results:</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;#(.*)#&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">p</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="s1">&#39;#hello# a b c #world#&#39;</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<span class="go">hello# a b c #world</span>
+</pre></div>
+</div>
+<p>If we wanted to match <strong>as little as possible</strong>, we can use the <em>non-greedy</em>
+version of the operator, which would be <code class="docutils literal notranslate"><span class="pre">+?</span></code>, <code class="docutils literal notranslate"><span class="pre">*?</span></code>, or <code class="docutils literal notranslate"><span class="pre">??</span></code>.</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;#(.*?)#&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">p</span><span class="o">.</span><span class="n">finditer</span><span class="p">(</span><span class="s1">&#39;#hello# a b c #world#&#39;</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+<span class="go">hello</span>
+<span class="go">world</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="anchors">
+<h2>Anchors<a class="headerlink" href="#anchors" title="Permalink to this headline">¶</a></h2>
+<p>Anchors match a certain kind of occurrence in a string, but not necessarily any
+characters.</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">^</span></code> anchors to the beginning of a string, or to the beginning of a line
+when <code class="docutils literal notranslate"><span class="pre">re.MULTILINE</span></code> is passed to <code class="docutils literal notranslate"><span class="pre">re.compile</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">$</span></code> anchors to the end of a string, or to the end of a line when
+<code class="docutils literal notranslate"><span class="pre">re.MULTILINE</span></code> is passed to <code class="docutils literal notranslate"><span class="pre">re.compile</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">\b</span></code> anchors to the boundary of a word: the transition from a <code class="docutils literal notranslate"><span class="pre">\w</span></code> to a
+<code class="docutils literal notranslate"><span class="pre">\W</span></code>, or visa versa. Also anchors to the beginning or end of a string.</li>
+</ul>
+<p>Examples:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">foo\b.*</span></code> matches <code class="docutils literal notranslate"><span class="pre">foo</span></code> and <code class="docutils literal notranslate"><span class="pre">foo-dle</span></code>, but not <code class="docutils literal notranslate"><span class="pre">foodle</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">^$</span></code> matches the empty string</li>
+<li><code class="docutils literal notranslate"><span class="pre">//.*(\n$|$)</span></code> matches <code class="docutils literal notranslate"><span class="pre">//</span> <span class="pre">hello</span></code> and <code class="docutils literal notranslate"><span class="pre">//</span> <span class="pre">hello\n</span></code>, but not
+<code class="docutils literal notranslate"><span class="pre">//</span> <span class="pre">hello\n\n</span></code></li>
+</ul>
+</div>
+<div class="section" id="tip-making-long-res-readable">
+<h2>Tip: Making Long REs Readable<a class="headerlink" href="#tip-making-long-res-readable" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes, when regular expressions get long, you need a way to comment them
+and break up sections to let other programmers (or yourself) know what’s going
+on.</p>
+<p>When you pass <code class="docutils literal notranslate"><span class="pre">re.VERBOSE</span></code> to <code class="docutils literal notranslate"><span class="pre">re.compile</span></code>, whitespaces are ignored, and
+<code class="docutils literal notranslate"><span class="pre">#</span></code> starts a comment until the end of line:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">p</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">    (\w+)                          # first name</span>
+<span class="s1">    \s+</span>
+<span class="s1">    (\w+)                          # last name</span>
+<span class="s1">    \s+</span>
+<span class="s1">    ([2-9]\d</span><span class="si">{2}</span><span class="s1">-[2-9]\d</span><span class="si">{2}</span><span class="s1">-\d</span><span class="si">{4}</span><span class="s1">)  # phone number</span>
+<span class="s1">&#39;&#39;&#39;</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">VERBOSE</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="re-examples-and-any-questions">
+<h2>RE Examples, and any Questions?<a class="headerlink" href="#re-examples-and-any-questions" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Matching a decimal number:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[0-9]+\.?[0-9]*
+</pre></div>
+</div>
+</li>
+<li><p class="first">Matching a C/C++ identifier:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">A</span><span class="o">-</span><span class="n">Za</span><span class="o">-</span><span class="n">z_</span><span class="p">][</span><span class="n">A</span><span class="o">-</span><span class="n">Za</span><span class="o">-</span><span class="n">z0</span><span class="o">-</span><span class="mi">9</span><span class="n">_</span><span class="p">]</span><span class="o">*</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Matching a Mines Email address:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>([A-Za-z0-9.+-]+)@(mymail\.)?mines\.edu
+</pre></div>
+</div>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="first admonition-title">Tip</p>
+<p class="last">If you want to test a regular expression, <a class="reference external" href="https://regexr.com/" target="_blank">RegExr.com</a> is a great resource.</p>
+</div>
+</div>
+<div class="section" id="finite-state-machines">
+<h2>Finite State Machines<a class="headerlink" href="#finite-state-machines" title="Permalink to this headline">¶</a></h2>
+<p>A <strong>finite state machine</strong> is any machine which has a finite number of states,
+and can only be in one state at a time. The machine has <em>transitions</em> that move
+it from one state to another.</p>
+<div class="figure align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/phone-fsa.svg"><img alt="../_images/phone-fsa.svg" height="160pt" src="../_images/phone-fsa.svg" /></a>
+<p class="caption"><span class="caption-text">A state diagram for your home phone</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="regular-expressions-as-finite-state-machines">
+<h2>Regular Expressions as Finite State Machines<a class="headerlink" href="#regular-expressions-as-finite-state-machines" title="Permalink to this headline">¶</a></h2>
+<p>Regular expressions can be represented as finite state machines as well.
+Consider the following regular expression:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>^fr?ee$
+</pre></div>
+</div>
+<p>This matches both <code class="docutils literal notranslate"><span class="pre">free</span></code> and <code class="docutils literal notranslate"><span class="pre">fee</span></code>, we can write this in a state diagram
+like this:</p>
+<a class="reference internal image-reference" href="../_images/free-fee-fsa.svg"><img alt="../_images/free-fee-fsa.svg" height="55pt" src="../_images/free-fee-fsa.svg" /></a>
+<div class="admonition-required-formalisms admonition">
+<p class="first admonition-title">Required Formalisms</p>
+<ul class="last simple">
+<li>Any state which <em>could</em> be a terminating state should be placed in
+<strong>double circles</strong>.</li>
+<li>The transitions have the letters on them. The states do not.</li>
+<li>Transitions correspond to only a single character, so repetition and
+groups must be encoded using the FSA.</li>
+</ul>
+</div>
+</div>
+<div class="section" id="another-example-c-c-identifiers">
+<h2>Another Example: C/C++ identifiers<a class="headerlink" href="#another-example-c-c-identifiers" title="Permalink to this headline">¶</a></h2>
+<p>Recall the regular expression for C and C++ identifiers:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">A</span><span class="o">-</span><span class="n">Za</span><span class="o">-</span><span class="n">z_</span><span class="p">][</span><span class="n">A</span><span class="o">-</span><span class="n">Za</span><span class="o">-</span><span class="n">z0</span><span class="o">-</span><span class="mi">9</span><span class="n">_</span><span class="p">]</span><span class="o">*</span>
+</pre></div>
+</div>
+<a class="reference internal image-reference" href="../_images/identifier-fsa.svg"><img alt="../_images/identifier-fsa.svg" height="100pt" src="../_images/identifier-fsa.svg" /></a>
+</div>
+<div class="section" id="regess">
+<h2>Regess!<a class="headerlink" href="#regess" title="Permalink to this headline">¶</a></h2>
+<p>This is an open source tool developed by Sam Sartor (took CSCI-400 Spring 2018)
+to help you visualize regular expressions using finite state graphs:</p>
+<p><a class="reference external" href="http://gh.samsartor.com/regess/" target="_blank">http://gh.samsartor.com/regess/</a></p>
+</div>
+<div class="section" id="translating-res-to-state-diagrams">
+<h2>Translating REs to State Diagrams<a class="headerlink" href="#translating-res-to-state-diagrams" title="Permalink to this headline">¶</a></h2>
+<p>With your learning group, translate each of these REs to a state diagram:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">[A-Z]+</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">[A-Z]?x</span></code> (try using <span class="math notranslate nohighlight">\(\epsilon\)</span> for the “no character” transition)</li>
+<li><code class="docutils literal notranslate"><span class="pre">([A-Z][1-5])+</span></code> (hint: draw a transition going backwards)</li>
+</ul>
+<p>Write your names on your paper and turn in for <strong>bonus</strong> learning group
+participation points.</p>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Programming Languages! &#8212; CSCI-400: Principles of Programming Languages</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    
+    <link rel="canonical" href="/teaching/csci400-s19/slides/01-intro.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Programming Language Concepts" href="02-pl-concepts.html" />
+    <link rel="prev" title="LGA-12: Macros" href="../lga/12-macros.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="../index.html">
+      <span class="ppltext">CSCI-400: Principles of Programming Languages
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="../_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-programming-languages">
+<h1>Welcome to Programming Languages!<a class="headerlink" href="#welcome-to-programming-languages" title="Permalink to this headline">¶</a></h1>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">These slides are also available in PDF format: <a class="reference internal" href="/teaching/csci400-s19/_static/slides/01-intro-43.pdf" target="_blank">4:3 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/01-intro-169.pdf" target="_blank">16:9 PDF</a>, <a class="reference internal" href="/teaching/csci400-s19/_static/slides/01-intro-1610.pdf" target="_blank">16:10 PDF</a>.</p>
+</div>
+<div class="section" id="who-am-i">
+<h2>Who am I?<a class="headerlink" href="#who-am-i" title="Permalink to this headline">¶</a></h2>
+<p>Sumner</p>
+<p>(and you should call me “Sumner”)</p>
+<p><strong>Absolutely not my name:</strong></p>
+<ul class="simple">
+<li>Jonathan (I don’t go by my first name ever; call me Sumner)</li>
+<li>Dr. Evans (I am NOT a doctor)</li>
+<li>Mr. Evans (Wait, my dad isn’t here)</li>
+<li>Professor Sumner (Insulting to actual professors)</li>
+</ul>
+</div>
+<div class="section" id="what-is-this-course">
+<h2>What is this course?<a class="headerlink" href="#what-is-this-course" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><strong>Programming Language Design &amp; Implementation:</strong><ul>
+<li>What makes a good programming language?</li>
+<li>What are the common trade-offs in programming language design?</li>
+<li>What techniques are used to implement programming languages?</li>
+<li>We’re even going to implement our own programming languages!</li>
+</ul>
+</li>
+<li><strong>Theoretical Foundations of Programming Languages</strong></li>
+</ul>
+</div>
+<div class="section" id="why-take-a-pl-course">
+<h2>Why take a PL course?<a class="headerlink" href="#why-take-a-pl-course" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first"><strong>If you’re going to be a software engineer:</strong></p>
+<ul class="simple">
+<li>As we work in a rapidly evolving industry, you’ll be able to learn new
+languages quicker, and make the right choices for your next software
+design</li>
+<li>You’ll learn practical skills, such as parsing complex inputs, even if the
+skills aren’t applied to making a programming language</li>
+</ul>
+</li>
+<li><p class="first"><strong>If you’re going to be a computer scientist:</strong></p>
+<ul class="simple">
+<li>Through programming languages, you will experience a very practical
+application of computational theory</li>
+<li>We will cover the mathematical foundations of programming languages</li>
+</ul>
+</li>
+<li><p class="first"><strong>If you’re going to do something else:</strong></p>
+<div class="admonition-quote-from-a-student-a-few-semesters-ago admonition">
+<p class="first admonition-title">Quote from a student a few semesters ago</p>
+<blockquote>
+<div><p>“I didn’t realize how useful PL would be until I wrote an assembler
+for my internship this past summer!”</p>
+</div></blockquote>
+<p class="last">(this student was in EE department)</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="what-goes-into-this-pl-course">
+<h2>What goes into this PL course?<a class="headerlink" href="#what-goes-into-this-pl-course" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><strong>Programming:</strong><ul>
+<li>Python (serving as a multi-paradigm OO-language)</li>
+<li>Racket (serving as a first step into language oriented programming)</li>
+<li>One language of your choice (Language Explore Project)</li>
+<li><em>Many more</em></li>
+</ul>
+</li>
+<li><strong>Theory:</strong><ul>
+<li>Parsing</li>
+<li>Typing systems</li>
+<li>Memory management</li>
+<li>Lambda calculus</li>
+<li>Regular expressions and finite state machines</li>
+<li><em>Much more</em></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="assignments-projects">
+<h2>Assignments &amp; Projects<a class="headerlink" href="#assignments-projects" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Homework:</th><td class="field-body">You’ll be given both programming and theory-related homework assignments</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">Explore Project:</th></tr>
+<tr class="field-even field"><td>&#160;</td><td class="field-body">You’ll be given the chance to study a language of your choice. You will
+submit some example programs that your wrote in this language and give a
+short presentation on it</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">SlytherLisp:</th><td class="field-body">You’ll implement a programming language interpreter for a Scheme-like
+programming language over the course of the semester</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="piazza">
+<h2>Piazza<a class="headerlink" href="#piazza" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="../_images/piazza-hut.png"><img alt="../_images/piazza-hut.png" src="../_images/piazza-hut.png" style="width: 150pt;" /></a>
+<div class="center docutils container">
+<a class="reference external" href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">https://piazza.com/mines/spring2019/csci400/home</a></div>
+</div>
+<div class="section" id="expectations">
+<h2>Expectations<a class="headerlink" href="#expectations" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><strong>Prerequisites:</strong> CSCI 262 (Data Structures) and CSCI 306 (Software
+Engineering) <a class="footnote-reference" href="#id2" id="id1">[1]</a></li>
+<li>Basic Linux skills are a <em>must</em>; CSCI 274 recommended</li>
+<li>All of your code is expected to run on the machines in the ALAMODE (BB 136)
+Linux lab</li>
+<li>Familiarity with C (or C++) will be helpful</li>
+</ul>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>If you have prior experience in Java or other OOP languages, I may (at my
+own discretion) waive this prerequisite. Please contact me if you are
+interested in pursuing this option.</td></tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="linux-support">
+<h2>Linux Support<a class="headerlink" href="#linux-support" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>Mines Linux Users Group</strong> can help you install, setup, and learn about
+Linux. They have meetings open to the campus Thursdays at 6 PM.</p>
+<p>They also have Linux Help Sessions at 5 PM every Thursday before the main
+meeting. Your instructor happens to be the Linux Help Guru.</p>
+<p>Sign up for the mailing list for more info: <a class="reference external" href="https://lug.mines.edu/mailinglist" target="_blank">https://lug.mines.edu/mailinglist</a>.</p>
+</div>
+<div class="section" id="learning-groups">
+<h2>Learning Groups<a class="headerlink" href="#learning-groups" title="Permalink to this headline">¶</a></h2>
+<p>You may notice you are seated with a Learning Group:</p>
+<ul class="simple">
+<li>Please sit with them each lecture</li>
+<li>You will be given assignments to complete with your group outside of lecture</li>
+<li>In class, you will often share your findings with your group members</li>
+<li>We will change groups every few weeks</li>
+</ul>
+</div>
+<div class="section" id="grading-policy">
+<h2>Grading Policy<a class="headerlink" href="#grading-policy" title="Permalink to this headline">¶</a></h2>
+<p>This course is worth 1000 points. The points are allocated as follows:</p>
+<ol class="arabic simple">
+<li><strong>Two Exams</strong>. 170 points each. Total 340 points.</li>
+<li><strong>Two Projects</strong>. Total 350 points.</li>
+<li><strong>Three Homework Assignments</strong>. Total 250 points.</li>
+<li><strong>Learning Group Participation</strong>. 60 points.</li>
+</ol>
+<p>The <a class="reference external" href="/syllabus.html" target="_blank">Syllabus</a> has a much more detailed explanation of this breakdown.</p>
+<p>The course uses the plus/minus grading scale.</p>
+</div>
+<div class="section" id="late-policy">
+<h2>Late Policy<a class="headerlink" href="#late-policy" title="Permalink to this headline">¶</a></h2>
+<p>You can turn in homework and deliverables on projects using the <strong>slip day
+system</strong>. Here’s how it works:</p>
+<ol class="arabic simple">
+<li>You currently have 8 slip days.</li>
+<li>For each 24-hours you turn in an assignment late, it will cost you one slip
+day.</li>
+<li>Note the number of slip days you are spending when you turn in.</li>
+<li>You cannot spend more than 5 slip days on a single assignment without asking
+for instructor permission.</li>
+</ol>
+</div>
+<div class="section" id="textbooks-and-other-resources">
+<h2>Textbooks and Other Resources<a class="headerlink" href="#textbooks-and-other-resources" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><strong>The Racket Guide:</strong> <a class="reference external" href="https://docs.racket-lang.org/guide/index.html" target="_blank">https://docs.racket-lang.org/guide/index.html</a></li>
+<li><strong>Beautiful Racket:</strong> <a class="reference external" href="https://beautifulracket.com/" target="_blank">https://beautifulracket.com/</a> (online, honor system
+payment)</li>
+<li><strong>Structure and Interpretation of Computer Programs:</strong>
+<a class="reference external" href="https://mitpress.mit.edu/sicp" target="_blank">https://mitpress.mit.edu/sicp</a> (online, free)</li>
+<li>Other readings may be requested by instructor throughout the semester</li>
+</ul>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="../index.html">Schedule</a></li>
+  <li><a href="../syllabus.html">Syllabus</a> (<a href="../_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="../officehours.html">Office Hours</a></li>
+  <li><a href="https://piazza.com/mines/spring2019/csci400/home" target="_blank">Piazza</a></li>
+  <li><a href="https://www.gradescope.com/courses/34528" target="_blank">Gradescope</a></li>
+  <li><a href="https://docs.racket-lang.org/guide/index.html" target="_blank">The Racket Guide</a></li>
+  <li><a href="https://beautifulracket.com/" target="_blank">Beautiful Racket</a></li>
+  <li><a href="https://mitpress.mit.edu/sicp/" target="_blank">SICP</a></li>
+  <li><a href="http://toilers.mines.edu/~jrosenth/101python" target="_blank">CSCI-101 Python</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 1980, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.5.0.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+The Lambda Calculus
+===================
+
+.. note::
+   These slides are also available in PDF format: :slidespdf:`08-lambda-calculus-implementation`.
+
+
+.. default-role:: math
+
+.. |LC| replace:: `λ`-calculus
+
+Lambda Calculus Computational Model
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. container:: beamer-simplecolumns
+
+   .. container::
+
+      * In order to have a computer do `\beta`-reductions, we need to define a
+        model to represent terms on a computer. (AST!)
+
+      * For example: `(λx.λy.xy)(λy.y)`
+
+      * Could also be written as s-expression::
+
+         (application
+           (abstraction
+             x
+             (abstraction
+               y
+               (application x y)))
+           (abstraction y y))
+
+   .. image:: 08-graphics/lambda-ast.svg
+      :height: 180pt
+
+Beta Reduction Algorithm (Eager)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To `\beta`-reduce a term `t`:
+
+1. If `t` is a variable, it is already reduced. Return `t`.
+
+2. If `t` is an application:
+
+   a. `\beta`-reduce the left hand and right hand sides and let `m` and `n` be
+      the results, respectively.
+   b. If `m` is an abstraction, return the beta reduction of `m`'s term with all
+      instances of `m`'s variable replaced with `n`.
+   c. Otherwise, return the application of `m` onto `n`.
+
+3. If `t` is an abstraction, `\beta`-reduce the term of the abstraction and
+   return the abstraction.
+
+Lazy Algorithm Motivation
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+While the eager algorithm will produce the correct results, we may end up
+evaluating terms we did not need to. For example, consider:
+
+.. math::
+
+   (λx.λy.y)
+   \underbrace{((λm.λn.m(λn.λf.λx.f(nfx))n)(λf.λx.f(fx))(λf.λx.f(f(fx))))}_{x}
+   \underbrace{(λx.x)}_{y}
+
+We don't want to have to spend all of that work evaluating `x` if we did not
+need to!
+
+Reducible Expressions
+~~~~~~~~~~~~~~~~~~~~~
+
+.. container:: beamer-simplecolumns
+
+   .. container::
+
+      .. admonition:: Definition
+
+         A **reducible expression** (called *redex* for short) is an application with
+         an abstraction as its left child.
+
+      In order to implement lazy evaluation, we will need to concern ourselves with
+      the **left-most** of the **outer-most** redexes.
+
+      .. raw:: latex
+
+         \medskip
+
+      A redex is outer-most if it can be reached from the root of the tree
+      without going through another redex.
+
+   .. image:: 08-graphics/redex-tree.svg
+      :height: 150pt
+
+Beta Reduction Algorithm (Lazy)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To lazy `\beta`-reduce a term:
+
+1. Find the left-most of the outer-most redexes in the abstract syntax tree and
+   preform a substitution to complete the application.
+2. If any redexes remain, go to step 1.
+
+Is substitution always safe?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Consider the following (naïve) substitution procedure for a term `t` for a
+variable `v` with replacement `r`:
+
+* If `t` is an **application**, substitute `v` for `r` onto the left and right
+  sides.
+
+* If `t` is an **abstraction** whose variable is `v`, return the abstraction
+  unaltered.
+
+* If `t` is an **abstraction** whose variable is not `v`, return the
+  abstraction with `v` substituted for `r` onto the abstraction's term.
+
+* If `t` is a **variable** which is `v`, return `r`.
+
+* If `t` is a **variable** which is not `v`, return `v`.
+
+*What could possibly go wrong?*
+
+Alpha Renames in Substitutions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Suppose we wish to `\beta`-reduce the following term:
+
+.. math::
+
+   (λx.λy.(λx.λy.xy)(xy))
+
+Using the previous (simple) rules of substitution with our `\beta`-reduction
+algoritm, we end up with this:
+
+.. math::
+
+   (λx.λy.(λy.(xy)y))
+
+**Oops.** The binding changed! These terms are *not* equivalent.
+
+**How to solve?** `\alpha`-rename.
+
+Alpha Renaming Condition
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+We must preform an `\alpha`-rename in order to preform a substitution of `v`
+for `r` in `t` if and only if all of the below are true:
+
+1. `t` is an abstraction.
+2. `t`'s variable is not `v`.
+3. `v` is a free variable in `t`'s term.
+4. `t`'s variable appears at least once as a free variable in `r`.
+
+(revisit example on previous slide)
+
+Lambda Calculus: Where from Here?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Subtraction is hard, but doable. Check out the `Wikipedia page`_ on Church
+  Numerals for more info.
+* For recursion, we need to reference ourselves in a lambda abstraction. This
+  is done using a Y-combinator.
+* From there, we can use the |LC| to compute the solution to any problem that a
+  Turing machine can.
+* More on all of this in CSCI-561 (Theory of Computation).
+* Many functional programming languages (e.g., Haskell, Scheme, SlytherLisp)
+  are just practical implementations of the |LC|.
+
+.. _Wikipedia page: https://en.wikipedia.org/wiki/Church_encoding

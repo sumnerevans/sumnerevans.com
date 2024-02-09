@@ -1,0 +1,9 @@
+LGA-11: Tail Call Optimization
+------------------------------
+
+Read this__ Stack Overflow post, and come to class with an explanation of Tail
+Call Optimization that would make sense to a CSCI 262 student. (If you can, find
+someone who is actually taking CSCI 262 and explain it to them and see if they
+understand!)
+
+__ https://stackoverflow.com/questions/310974/what-is-tail-call-optimization
