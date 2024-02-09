@@ -1,5 +1,5 @@
 ---
-title: Brussels Day 1
+title: Brussels - Day 1
 date: 2024-02-01T06:25:00-06:00
 categories:
   - Travel
@@ -11,6 +11,7 @@ tags:
 description: |
   I arrived in Brussels on Thursday before FOSDEM and I went to a few museums
   before heading over to my hotel.
+image: ./images/planes.jpg
 ---
 
 This year, I once again travelled to Brussels for FOSDEM (see my [post from last
