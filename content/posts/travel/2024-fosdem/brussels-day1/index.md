@@ -11,7 +11,6 @@ tags:
 description: |
   I arrived in Brussels on Thursday before FOSDEM and I went to a few museums
   before heading over to my hotel.
-draft: true
 ---
 
 This year, I once again travelled to Brussels for FOSDEM (see my [post from last
@@ -64,6 +63,28 @@ vast majority of the fighting during that war. They had many artillery pieces
 and even a tank on display! However, that was not the largest gallery, there was
 an entire hangar full of warplanes! Everything from biplanes used during WWI to
 more modern postwar craft were on display in the hangar.
+
+<table class="gallery">
+  <tr>
+    <td colspan="2">
+      <a href="./images/planes.jpg" target="_blank">
+        <img src="./images/planes.jpg" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="./images/napoleonic.jpg" target="_blank">
+        <img src="./images/napoleonic.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="./images/armour.jpg" target="_blank">
+        <img src="./images/armour.jpg" />
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
