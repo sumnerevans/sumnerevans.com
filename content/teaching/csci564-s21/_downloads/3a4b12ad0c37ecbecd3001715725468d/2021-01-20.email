@@ -1,0 +1,49 @@
+Hello everyone,
+
+Since we did not get through the entirety of Lecture 02, the worksheet
+corresponding to Lecture 02 will not be due until Friday, January 29.
+Please bring your Lecture 02 worksheet to class on Monday. Most likely,
+the worksheet for Lecture 03 will also be due on the 29th as well.
+
+*There is nothing due this week.*
+
+If you are not signed up already, make sure to RSVP for the C-MAPP event
+tomorrow! I will be there representing The Trade Desk, and it's a great
+opportunity to network with fellow students as well as industry
+professionals. 
+
+Today one of the metrics we discussed was bandwidth. I wanted to share a
+few interesting links related to that.
+
+First, AWS Snowmobile [1]. If you need to move amounts of data on the
+petabyte scale, you can basically charter a shipping container from AWS
+and they will move your data from one place to another using a semi
+truck. It is interesting to see that AWS is productising the *bandwidth*
+of something like a semi truck.
+
+Second, there was an interesting article from Western Digital last year
+[2] about how the bandwidth increases we are seeing in networking and
+flash storage technology are vastly outpacing the bandwidth increases we
+are seeing in DRAM technology. This means that the bandwidth between RAM
+and the CPU is becoming (or has already become) the bottleneck in many
+situations. This is especially problematic for data center applications
+because the CPUs and RAM in devices such as networked storage arrays are
+not are not able to keep up with the increased flash and network
+bandwidths.
+
+[1]: https://aws.amazon.com/snowmobile/
+[2]: https://blog.westerndigital.com/cpu-bandwidth-the-worrisome-2020-trend/
+
+Have a great weekend!
+
+Sumner
+
+-- 
+Jonathan Sumner Evans           Instructor: CSCI 564
+https://sumnerevans.com         CS@Mines Alumnus
++1 (720) 459-1501               M.S. Computer Science
+GPG: B50022FD                   Software Engineer @ The Trade Desk
+
+It's easy to parallelize your program if you don't care about
+performance.
+    -- Bo Wu (Advanced High Performance Computing, Fall 2018)

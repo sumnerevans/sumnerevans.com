@@ -1,0 +1,30 @@
+Hello everyone,
+
+I hope you are all ready for the incoming snow storm!
+
+I just want to clarify (in case you didn't see on Piazza) that Worksheet
+09 is *NOT* due today (we didn't finish it in class).
+
+Also, reminder that today I will be holding office hours from
+16:00-17:00.
+
+Over the weekend, I will fix some of the typos in the Lecture 09 slides.
+
+If you want to do some extra reading this weekend about branch
+prediction, I recommend this StackOverflow article which talks about a
+real-world application where code that takes advantage of branch
+prediction causes a massive performance increase:
+https://stackoverflow.com/q/11227809/2319844
+
+Have a warm weekend!
+
+Sumner
+
+-- 
+Jonathan Sumner Evans           Instructor: CSCI 564
+https://sumnerevans.com         CS@Mines Alumnus
++1 (720) 459-1501               M.S. Computer Science
+GPG: B50022FD                   Software Engineer @ The Trade Desk
+
+Jesus' economy doesn't use money, it uses blood.
+    -- Adam Hebener

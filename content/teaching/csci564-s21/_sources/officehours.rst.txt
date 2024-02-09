@@ -1,0 +1,28 @@
+Office Hours
+============
+
+* Sumner's primary office hours are on **Mondays from 18:00-19:00** (right after
+  class), and **Fridays from 16:00-17:00**. Both office hours are held on
+  **Mumble** (see below). Sumner is also available by appointment. If you have a
+  question about logistics (for example, grades), it is recommended to set up an
+  appointment if possible to keep office hours focused on content.
+* Adam's office hours are on **Tuesdays 13:00-15:00** on **Zoom** at this link:
+  https://mines.zoom.us/j/97884507218?pwd=elBsT0VuTGRQQnZhK2RSTFQ3Mno0QT09.
+
+Mumble Info
+-----------
+
+Mumble is an open-source voice chat software. You can download Mumble from
+https://mumble.info or from your distribution's package repository. There are
+also mobile applications available for iOS_ and Android_.
+
+.. _iOS: https://apps.apple.com/us/app/mumble/id443472808
+.. _Android: https://play.google.com/store/apps/details?id=se.lublin.mumla&hl=en_US&gl=US
+
+Connection information::
+
+    Server Address: mumble.sumnerevans.com
+    Port: 64738 (the default)
+    Username: whatever you want
+
+Please let me know if you have any issues installing or joining the server.

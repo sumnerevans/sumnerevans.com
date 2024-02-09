@@ -1,0 +1,21 @@
+Homework
+########
+
+All homework may either be typeset using LaTeX (or some other program) or
+hand-written. If hand-written, it must be clearly legible.
+
+* :download:`Homework 01 <../../homeworks/homework1/homework1.pdf>`
+  (:download:`LaTeX template <../../homeworks/homework1/homework1.tex>`). Due
+  2/12.
+
+* :download:`Homework 02 <../../homeworks/homework2/homework2.pdf>`
+  (:download:`LaTeX template <../../homeworks/homework2/homework2.tex>`). Due
+  3/5.
+
+* :download:`Homework 03 <../../homeworks/homework3/homework3.pdf>`
+  (:download:`LaTeX template <../../homeworks/homework3/homework3.tex>`). Due
+  3/26.
+
+* :download:`Homework 04 <../../homeworks/homework4/homework4.pdf>`
+  (:download:`LaTeX template <../../homeworks/homework4/homework4.tex>`). Due
+  4/30.

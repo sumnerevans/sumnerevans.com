@@ -1,0 +1,36 @@
+Hello everyone,
+
+I have a few follow-ups from this week.
+
+***
+REMINDER: Homework 1 is due this Friday. If you submit late, the 20%
+per-day late penalty policy applies to Homeworks.
+***
+
+Last lecture, there was a question about whether associativity had to be
+a power of 2. This CMU lecture (https://youtu.be/4_Z07m8tf6k?t=6033) has
+a good discussion about why it's not necessary. To summarize, the end
+multiplexer will be slightly more complex, but since the tag checks
+occur in parallel, there is not going to be any performance degradation.
+
+As I mentioned at the beginning of class today, I've added some
+supplementary links to relevant websites/articles to the Lectures page
+on the website. They are not required reading and won't be on any test,
+but if you are curious about learning more about any of the topics we've
+discussed, they are good resources.
+
+I also added a new page to the website with archives of previous emails
+I sent out so you don't have to go searching through your INBOX. You can
+find the archives here:
+https://sumnerevans.com/teaching/csci564-s21/mailarchive.html
+
+Have a great Presidents' Day!
+
+-- 
+Jonathan Sumner Evans           Instructor: CSCI 564
+https://sumnerevans.com         CS@Mines Alumnus
++1 (720) 459-1501               M.S. Computer Science
+GPG: B50022FD                   Software Engineer @ The Trade Desk
+
+It's not procrastination, it's lazy evaluation.
+    -- Daichi Jameson

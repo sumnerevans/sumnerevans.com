@@ -1,0 +1,54 @@
+Hello everyone,
+
+A few follow-ups from lecture.
+
+* Worksheet 09 is due on Friday. Everyone will get credit for the last
+  question (both parts) regardless of whether you put anything down
+  because I messed up the calculation. I'll send out another email
+  (probably sometime next week) with corrected solutions to that
+  problem.
+
+* Project 2 is now due on *Sunday* (rather than Friday). I am *not*
+  going to give extra-credit for submissions that are made before Friday
+  because I want to encourage you to actually spend time creating a good
+  custom prefetcher based on research.
+
+* Homework 3 is due after Spring Break on April 7.
+
+* The midterm:
+
+  * It has been graded. Please take a look and submit any regrade
+    requests by April 7th.
+
+  * Problem 11.1: I have given any answer that says "unknown" full
+    credit due to the nature of compiler optimizations. If there is
+    a branch prediction problem on the final, I will provide the code in
+    MIPS to make it clear what is happening.
+
+  * Here are the grade statistics as they stand currently (pending
+    outstanding regrade requests):
+
+    Minimum:    30.5
+    Maximum:    99.5
+    Mean:       78.03
+    Median:     79.0
+    Std. Dev:   13.42
+
+    Grade distribution per letter grade:
+
+    A | (10) **********
+    B | (17) *****************
+    C | (19) *******************
+    D | ( 8) ********
+    F | ( 4) ****
+
+Have a wonderful Spring Break!
+
+-- 
+Jonathan Sumner Evans           Instructor: CSCI 564
+https://sumnerevans.com         CS@Mines Alumnus
++1 (720) 459-1501               M.S. Computer Science
+GPG: B50022FD                   Software Engineer @ The Trade Desk
+
+A cyclic group is a baguette.
+    -- Sam Sartor

@@ -1,0 +1,136 @@
+Lectures
+========
+
+Lecture Slides
+--------------
+
+* :download:`Lecture 01: Introduction and Logistics <../../slides/01-intro.handout.pdf>`
+* :download:`Lecture 02: Performance Metrics <../../slides/02-perf.handout.pdf>`
+* :download:`Lecture 03: Amdahl's Law <../../slides/03-amdahls-law.handout.pdf>`
+* :download:`Lecture 04: Introduction to MIPS <../../slides/04-introduction-to-mips.handout.pdf>`
+* :download:`Lecture 05: Cache Introduction <../../slides/05-cache-intro.handout.pdf>`
+* :download:`Lecture 06: Cache Optimizations <../../slides/06-cache-optimizations.handout.pdf>`
+* :download:`Lecture 07: Virtual Memory <../../slides/07-virtual-memory.handout.pdf>`
+* :download:`Lecture 08: Pipelining <../../slides/08-pipelining-hazards.pdf>`
+* :download:`Lecture 09: Handling Branches <../../slides/09-handling-branches.handout.pdf>`
+* :download:`Lecture 10: Out-of-Order Execution <../../slides/10-out-of-order-execution.handout.pdf>`
+* :download:`Lecture 11: Main Memory <../../slides/11-main-memory.handout.pdf>`
+* :download:`Lecture 12: SIMD <../../slides/12-simd.handout.pdf>`
+* :download:`Lecture 13: Multiprocessors <../../slides/13-multiprocessor.handout.pdf>`
+* :download:`Lecture 14: Consistency and Coherence <../../slides/14-cache-coherence.handout.pdf>`
+
+.. note::
+
+   I have heard reports that some parts of these PDFs don't render properly in
+   Adobe Reader. I recommend that you view these PDFs in your browser or via
+   an alternative PDF viewer such as Zathura or Evince (Linux) or Foxit Reader
+   (Windows).
+
+Worksheets
+----------
+
+* :download:`Worksheet Lecture 02: Performance <../../worksheets/02-perf-worksheet.pdf>`
+  (:download:`Solutions <../../worksheets/02-perf-worksheet.solution.pdf>`)
+
+* :download:`Worksheet Lecture 03: Amdahl's Law <../../worksheets/03-amdahls-law-worksheet.pdf>`
+  (:download:`Solutions <../../worksheets/03-amdahls-law-worksheet.solution.pdf>`)
+
+* :download:`Worksheet Lecture 05: Cache Introduction <../../worksheets/05-cache-intro.pdf>`
+  (:download:`Solutions <../../worksheets/05-cache-intro.solution.pdf>`)
+
+* :download:`Worksheet Lecture 06: Cache Optimizations <../../worksheets/06-cache-optimizations.pdf>`
+  (:download:`Solutions <../../worksheets/06-cache-optimizations.solution.pdf>`)
+
+* :download:`Worksheet Lecture 08: Pipelining Hazards <../../worksheets/08-pipelining-hazards.pdf>`
+  (:download:`Solutions <../../worksheets/08-pipelining-hazards.solution.pdf>`)
+
+* :download:`Worksheet Lecture 09: Handling Branches <../../worksheets/09-handling-branches.pdf>`
+  (:download:`Solutions <../../worksheets/09-handling-branches.solution.pdf>`)
+
+* :download:`Worksheet Lecture 10: Out-of-Order Execution <../../worksheets/10-out-of-order-execution.pdf>`
+  (:download:`Solutions <../../worksheets/10-out-of-order-execution.solution.pdf>`)
+
+* :download:`Worksheet Lecture 11: Main Memory <../../worksheets/11-main-memory.pdf>`
+  (:download:`Solutions <../../worksheets/11-main-memory.solution.pdf>`)
+
+.. admonition:: Turning in Worksheets
+
+   You should turn in your worksheets on Gradescope_. They are due the Friday
+   after we finish covering them in class. You need to upload the worksheet as a
+   PDF. There are many apps that can do this. On Android the Google Drive app
+   has scan-to-PDF functionality. On iOS, you can scan using the Notes app and
+   export to a PDF.
+
+   Gradescope requires that you submit the same number of pages as the blank
+   worksheet template. If you don't want to print out the worksheet and instead
+   do the problems on a blank sheet of paper, you may need to add additional
+   blank pages to make the number of pages match the required number of pages.
+
+.. _Gradescope: https://www.gradescope.com/courses/210513
+
+Supplemental Links
+------------------
+
+* **Lecture 02: Performance Metrics**
+
+  * AWS takes advantage of the *bandwidth* of trucks carrying hard drives with
+    `AWS Snowmobile <https://aws.amazon.com/snowmobile/>`_
+  * `CPU Bandwidth - The Worrisome 2020 Trend <https://blog.westerndigital.com/cpu-bandwidth-the-worrisome-2020-trend/>`_
+
+* **Lecture 05: Cache Introduction**
+
+  * `Intel Ivy Bridge Cache Replacement Policy <https://blog.stuffedcow.net/2013/01/ivb-cache-replacement/>`_
+  * `Cache Replacement Policies on Wikipedia <https://en.wikipedia.org/wiki/Cache_algorithms>`_
+
+* **Lecture 06: Cache Optimizations**
+
+  * :download:`Address Breakdown from Lecture <../../notes/2021-02-10.address-breakdown.md>`
+  * `Disclosure of Hardware Prefetcher Control on Some Intel Processors
+    <https://software.intel.com/content/www/us/en/develop/articles/disclosure-of-hw-prefetcher-control-on-some-intel-processors.html>`_
+  * `Optimizing Application Performance on Intel® Core™ Microarchitecture Using
+    Hardware-Implemented Prefetchers
+    <https://software.intel.com/content/www/us/en/develop/articles/optimizing-application-performance-on-intel-coret-microarchitecture-using-hardware-implemented-prefetchers.html>`_
+
+* **Lecture 07: Virtual Memory**
+
+  * :download:`Notes from Lecture <../../notes/2021-02-22.public-notes.md>`
+  * `Virtual Memory – Translation-Lookaside Buffer (TLB)
+    <http://thebeardsage.com/virtual-memory-translation-lookaside-buffer-tlb/>`_
+  * Why ``realloc`` is actually efficient due to virtual memory and being able
+    to manipulate the page table. `A story of Realloc (and Laziness)
+    <https://blog.httrack.com/blog/2014/04/05/a-story-of-realloc-and-laziness/>`_
+
+* **Lecture 09: Branch Prediction**
+
+  * `Why is processing a sorted array faster than processing an unsorted array -
+    Stack Overflow <https://stackoverflow.com/q/11227809/2319844>`_
+  * A StackOverflow answer which talks about why predicated code isn't always
+    the best idea `gcc optimization flag -O3 makes code slower than -O2
+    <https://stackoverflow.com/a/43941854/2319844>`_
+  * `Linus Torvalds to the LKML on why CMOV (conditional move) is not always
+    that great <https://lkml.org/lkml/2007/1/3/121>`_
+
+* **Lecture 11: Main Memory**
+
+  * Flipping Bits in Memory Without Accessing Them: An Experimental Study of
+    DRAM Disturbance Errors (:download:`PDF <../kim-isca14.pdf>`, `DOI
+    10.1145/2678373.2665726 <https://dl.acm.org/doi/10.1145/2678373.2665726>`_)
+
+* **Lecture 13: Multiprocessors**
+
+  * `What is meant by superlinear speedup? Is it possible to have superlinear
+    speedup in practice? <https://cs.stackexchange.com/q/55433>`_
+
+* **Lecture 14: Consistency and Coherence**
+
+  * `C is not a low-level language
+    <https://queue.acm.org/detail.cfm?id=3212479>`_
+
+Lecture Recordings
+------------------
+
+Click `here <lecture_playlist_>`_ for the lecture recording YouTube playlist.
+
+.. include:: ../out/lecture-recordings.rst
+
+.. _lecture_playlist: https://www.youtube.com/playlist?list=PLpnr_TeIrBtAX4FlNQboNREUWveUhEV-0

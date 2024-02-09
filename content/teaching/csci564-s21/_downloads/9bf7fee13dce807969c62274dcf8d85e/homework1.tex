@@ -1,0 +1,77 @@
+\documentclass{exam}
+\usepackage[letterpaper,margin=1in]{geometry}
+
+\title{Homework 1}
+\author{}
+
+\makeatletter
+\renewcommand\@maketitle{%
+\begin{center}
+    \bfseries
+    \centering
+    \LARGE CSCI 564: \@title
+\end{center}
+\bigskip
+\begin{center}
+\makebox[0.8\textwidth]{Name:\enspace\hrulefill\hrulefill\enspace{}CWID:\enspace\hrulefill}
+\end{center}
+}
+\makeatother
+\cfoot{Page \thepage\ of \numpages}
+
+\begin{document}
+\maketitle
+\thispagestyle{foot}
+
+\textbf{For each of the following questions, please show all of your work, and
+explain your answers.}
+
+\begin{questions}
+    \question[12.5]
+        Compute the Clocks Per Instruction (CPI) of a machine which has an
+        average CPI for ALU operations of 1.1, a CPI for branches/jumps of 3.0,
+        and a hit rate of 60\% in the cache. A hit in the cache takes 1 cycle,
+        and a miss takes 120 cycles. Assume 22\% of instructions are loads, 12\%
+        are stores, 20\% are branches/jumps, and the rest are ALU operations.
+        Show all of the steps of your computation, and when you introduce a new
+        term, explain where the term comes from.
+
+        \vspace{\stretch{1}}
+
+    \question[12.5]
+        You are a processor designer and have to make a decision between
+        building two different processors:
+        \begin{enumerate}
+            \item a processor which executes at 1GHz and has an average CPI of
+                1.2, or
+            \item a processor which executes at 2GHz but has a CPI of 2.
+        \end{enumerate}
+        Which is better to build? Explain your reasoning and provide
+        quantitative analysis.
+
+        \vspace{\stretch{1}}
+
+    \newpage
+
+    \question[12.5]
+        A revolutionary new technology in memory improves your memory subsystem
+        so that memory latencies are reduced by a factor of 3.5. After replacing
+        your old memory with the new system, you observe that your workload now
+        spends half of its time waiting for memory. What percentage of the
+        original execution time of your workload (with the old memory system)
+        was spent waiting for memory? Explain your answer.
+
+        \vspace{\stretch{1}}
+
+    \question[12.5]
+        You're currently using a single-core machine, but you want to figure out
+        if it's worth investing in a dual-core machine. Assuming your
+        application is 60\% parallelizable, by how much could you decrease the
+        core frequency while achieving the same performance? Explain your
+        answer.
+
+        \vspace{\stretch{1}}
+
+\end{questions}
+
+\end{document}

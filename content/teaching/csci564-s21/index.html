@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syllabus &#8212; CSCI 564 Advanced Computer Architecture</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+  </head><body>
+<div class="cshead">
+  <div class="cshead-upper">
+    <a href="#">
+      <span class="ppltext">CSCI 564 Advanced Computer Architecture
+    </a>
+    <a href="http://cs.mines.edu" class="cslink">
+      <img src="_static/csmines.svg">
+    </a>
+  </div>
+</div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="syllabus">
+<h1>Syllabus<a class="headerlink" href="#syllabus" title="Permalink to this heading">¶</a></h1>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Instructor:</th><td class="field-body">(Jonathan) Sumner Evans (<a class="reference external" href="mailto:jonathanevans&#37;&#52;&#48;mines&#46;edu" target="_blank">jonathanevans<span>&#64;</span>mines<span>&#46;</span>edu</a>)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">TA:</th><td class="field-body">Adam Sandstedt (<a class="reference external" href="mailto:asandstedt&#37;&#52;&#48;mymail&#46;mines&#46;edu" target="_blank">asandstedt<span>&#64;</span>mymail<span>&#46;</span>mines<span>&#46;</span>edu</a>)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Course Advisor:</th><td class="field-body">Dr. Bo Wu (<a class="reference external" href="mailto:bwu&#37;&#52;&#48;mines&#46;edu" target="_blank">bwu<span>&#64;</span>mines<span>&#46;</span>edu</a>) <a class="footnote-reference" href="#id2" id="id1">[1]</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Lecture:</th><td class="field-body">Mondays and Wednesdays, 16:30 to 17:45 in GC MET</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Zoom:</th><td class="field-body"><a class="reference external" href="https://mines.zoom.us/j/91249307693?pwd=VTFqYkw5SEoyeE9TTEJqeFZjcFY5QT09" target="_blank">https://mines.zoom.us/j/91249307693?pwd=VTFqYkw5SEoyeE9TTEJqeFZjcFY5QT09</a>
+(Password: 856310)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Office Hours:</th><td class="field-body">See the <a class="reference external" href="https://sumnerevans.com/teaching/csci564-s21/officehours.html" target="_blank">Office Hours page on the course website</a> for a
+listing of the current schedule or email the instructor to schedule an
+appointment.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Course Website:</th><td class="field-body"><a class="reference external" href="https://sumnerevans.com/teaching/csci564-s21" target="_blank">https://sumnerevans.com/teaching/csci564-s21</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Matrix Chat:</th><td class="field-body"><a class="reference external" href="https://matrix.to/#aca-s21:sumnerevans.com" target="_blank">https://matrix.to/#aca-s21:sumnerevans.com</a></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Piazza:</th><td class="field-body"><a class="reference external" href="https://piazza.com/mines/spring2021/csci564" target="_blank">https://piazza.com/mines/spring2021/csci564</a></td>
+</tr>
+<tr class="field-even field"><th class="field-name">Prerequisites:</th><td class="field-body">CSCI 341 Computer Organization (or similar). Additionally, you should be
+able to program in C or C++.</td>
+</tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>You probably won’t ever need to contact the course advisor, but if you
+have concerns you wish not to bring to the attention of the instructor
+(e.g., anonymous concerns), you are welcome to contact the advisor.</td></tr>
+</tbody>
+</table>
+<div class="section" id="course-description-learning-objectives">
+<h2>Course Description &amp; Learning Objectives<a class="headerlink" href="#course-description-learning-objectives" title="Permalink to this heading">¶</a></h2>
+<p>CSCI 564 is a course covering <strong>advanced topics in computer architecture,
+including pipelining, caching, virtual memory, storage, multi-core processing
+and power</strong>. We will focus on understanding the various options available to
+computer architects when designing computer systems, with an emphasis on
+developing quantitative justifications for those options.</p>
+<p>In addition to being invaluable for computer architects, this topic is highly
+relevant for both future software engineers and computer scientists. Software
+engineers rely on performance gains made in the field of computer architecture,
+and understanding the fundamentals of concepts such as the memory hierarchy
+helps guide software engineers’ optimization strategies. Additionally, concepts
+such as caching are widespread in industry (albeit mainly at a higher level than
+the caches we will discuss). Future computer scientists will benefit from this
+class because it quantifies many core concepts of the underlying hardware of all
+modern computing systems.</p>
+</div>
+<div class="section" id="expectations">
+<h2>Expectations<a class="headerlink" href="#expectations" title="Permalink to this heading">¶</a></h2>
+<p>It is <strong>highly recommended</strong> that you use Linux for all of the projects in this
+course. If you choose to use a different type of system (such as macOS or
+Windows), the instructor nor the TAs will not be able to assist you with any
+platform-specific issues.</p>
+<p>Students are also expected to have be able to write either C or C++ before
+entering this course. <em>Neither the instructor nor the TA will help debug your
+code for you.</em></p>
+<div class="section" id="textbooks-and-other-resources">
+<h3>Textbooks and Other Resources<a class="headerlink" href="#textbooks-and-other-resources" title="Permalink to this heading">¶</a></h3>
+<ul class="simple">
+<li><strong>Required:</strong> Computer Architecture: A Quantitative Approach, Fifth Edition,
+John L. Hennessy and David A. Patterson.</li>
+<li><em>Recommended:</em> Synthesis Lectures on Computer Architecture. Link:
+<a class="reference external" href="http://www.morganclaypool.com/toc/cac/1/1" target="_blank">http://www.morganclaypool.com/toc/cac/1/1</a></li>
+<li>The instructor may also require and/or recommend readings from other online
+sources</li>
+</ul>
+</div>
+</div>
+<div class="section" id="topics">
+<h2>Topics<a class="headerlink" href="#topics" title="Permalink to this heading">¶</a></h2>
+<p>This is a tentative list of topics that we will discuss in class.</p>
+<table border="1" class="docutils align-default">
+<colgroup>
+<col width="43%" />
+<col width="57%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Performance Metrics</td>
+<td>Out-of-Order Execution</td>
+</tr>
+<tr class="row-even"><td>Amdahl’s Law</td>
+<td>Main Memory</td>
+</tr>
+<tr class="row-odd"><td>Cache</td>
+<td>SIMD</td>
+</tr>
+<tr class="row-even"><td>Cache Optimizations</td>
+<td>Multiprocessors</td>
+</tr>
+<tr class="row-odd"><td>Virtual Memory</td>
+<td>Consistency and Coherency</td>
+</tr>
+<tr class="row-even"><td>Pipelining</td>
+<td>Interconnection</td>
+</tr>
+<tr class="row-odd"><td>Handling Branches</td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="grading-policy">
+<h2>Grading Policy<a class="headerlink" href="#grading-policy" title="Permalink to this heading">¶</a></h2>
+<p>This course is worth 1000 points. The points are allocated as follows:</p>
+<ol class="arabic simple">
+<li><strong>Midterm.</strong> 100 points.</li>
+<li><strong>Final.</strong> 200 points.</li>
+<li><strong>Three Projects.</strong> Total 400 points.<ul>
+<li>Project 1: Cache Replacement Policies Simulator. 150 points.</li>
+<li>Project 2: Cache Prefetcher Simulator. 100 points.</li>
+<li>Project 3: Branch Prediction Simulator. 150 points.</li>
+</ul>
+</li>
+<li><strong>Four Homework Assignments.</strong> Total 200 points. 50 points each.</li>
+<li><strong>Class Participation (Mainly Worksheets).</strong> 100 points.</li>
+</ol>
+<p>Your grade letter will be derived using the <strong>standard plus-minus grading
+scale</strong>. The instructor reserves the right to move the scale down, but it will
+never move up.</p>
+<p>All projects will be due at 23:59 of the day listed on the schedule. The penalty
+for late submissions is 20% per day. If you need an extension for any reason,
+email the instructor to work something out.</p>
+<div class="section" id="autograded-projects">
+<h3>Autograded Projects<a class="headerlink" href="#autograded-projects" title="Permalink to this heading">¶</a></h3>
+<p>Most programming assignments have an auto-graded component where a portion of
+your grade is calculated immediately upon submission. The grading scripts are
+designed to mark all fully correct programs as correct, and do the best job
+possible assigning partial credit where applicable. However, under some cases,
+you may not receive as many points as you deserve. If you believe this to be the
+case, contact the course instructor so they can either fix the autograder to
+handle your case better, or manually grade your assignment.</p>
+<p>You are only allowed 3 submissions on autograded homework. This is because your
+grade is received quickly after submitting, and it may be tempting to use the
+autograder as the only means of testing. Students are expected to test their
+own code before submitting. If you run out of submissions and need more, then
+contact the instructor.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Autograded assigments are reviewed for plagarism a few weeks after the
+deadline, not when graded. While copying an assigment from another student
+may give you a good grade in the short term, the long term consequences
+could be severe. Plagarism is taken very seriously on these assignments.</p>
+</div>
+</div>
+</div>
+<div class="section" id="collaboration-policy-for-programming-projects-in-cs-courses">
+<h2>Collaboration Policy for Programming Projects in CS Courses<a class="headerlink" href="#collaboration-policy-for-programming-projects-in-cs-courses" title="Permalink to this heading">¶</a></h2>
+<p>The following policy exists for all courses in the CS department. This policy
+is a minimum standard; your instructor may decide to augment this policy.</p>
+<ol class="arabic simple">
+<li>If the project is an individual effort project, you are not allowed to give
+code you have developed to another student or use code provided by another
+student. If the project is a group project, you are only allowed to share
+code with your group members.</li>
+<li>You are encouraged to discuss programming projects with other students in
+the class, as long as the following rules are followed:</li>
+</ol>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li>You view another student’s code only for the purpose of offering or
+receiving debugging assistance. Students can only give advice on what
+problems to look for; they cannot debug your code for you. <strong>All changes
+to your code must be made by you.</strong></li>
+<li>Your discussion is subject to the <strong>empty hands policy</strong>, which means you
+leave the discussion without any record (electronic, mechanical, or
+otherwise) of the discussion.</li>
+</ol>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>Any material from any outside source such as books, projects, and in
+particular, from the Web, should be properly referenced and should only be
+used if specifically allowed for the assignment.</li>
+<li>To prevent unintended sharing, any code stored in a hosted repository (e.g.,
+on GitHub) must be private. For group projects, your team members may, of
+course, be collaborators.</li>
+<li>If you are aware of students violating this policy, you are encouraged to
+inform the professor of the course. Violating this policy will be treated as
+an academic misconduct for all students involved. See the Student Handbook
+for details on academic dishonesty.</li>
+</ol>
+</div>
+<div class="section" id="disability-support">
+<h2>Disability Support<a class="headerlink" href="#disability-support" title="Permalink to this heading">¶</a></h2>
+<p>The Colorado School of Mines is committed to ensuring the full participation of
+all students in its programs, including students with disabilities. If you are
+registered with Disability Support Services (DSS) and your instructor has
+received your letter of accommodations, please contact your instructor at your
+earliest convenience so you can discuss your needs in this course. For
+questions or other inquiries regarding disabilities, we encourage you to visit
+Disability Support Services (DSS) for more information.</p>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><h3>Quick Links</h3>
+<ul>
+  <li><a href="#">Syllabus</a> (<a href="_static/syllabus.pdf">PDF</a>)</li>
+  <li><a href="schedule.html">Schedule</a></li>
+  <li><a href="https://piazza.com/mines/spring2021/csci564" target="_blank">Piazza</a></li>
+  <li><a href="officehours.html">Office Hours</a></li>
+  <li><a href="homework.html">Homework</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="lectures.html">Lectures</a></li>
+  <li><a href="https://lists.sr.ht/~sumner/csci564-s21" target="_blank">Email Archives</a></li>
+  <li><a href="https://www.gradescope.com/courses/210513" target="_blank">Gradescope</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Sumner Evans.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    </div>
+  </body>
+</html>

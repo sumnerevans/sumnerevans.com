@@ -1,0 +1,20 @@
+Projects
+########
+
+* The starter code for each of the projects is provided in C.
+* If you need a review of C, please see this `C Programming Review`_
+  presentation by Jack Rosenthal.
+* There are a lot of bitwise operations in the code, and you will likely need to
+  do some bitwise operations yourself. If you want a fun way of reviewing
+  bitwise operations, try out the following Advent of Code problem and do it
+  with only bitwise operations (not using string operations):
+  https://adventofcode.com/2020/day/14
+
+Project Starter Code and Descriptions
+=====================================
+
+* `Project 1 Starter Code and Description <https://github.com/csci564/project1>`_
+* `Project 2 Starter Code and Description <https://github.com/csci564/project2>`_
+* `Project 3 Starter Code and Description <https://github.com/csci564/project3>`_
+
+.. _C Programming Review: https://docs.google.com/presentation/d/1yqzZmjBnJgo7Oi6s9ZE0EtvfM3zPhMc73fT4UU9C-FM/edit

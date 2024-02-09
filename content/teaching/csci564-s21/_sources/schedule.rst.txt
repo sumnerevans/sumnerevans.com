@@ -1,0 +1,9 @@
+Schedule
+########
+
+The following is an ever-evolving schedule for the class.
+
+.. include:: ../out/calendar-table.rst
+
+\* if you are interested in learning more about SIMD, reading the entirety of
+Chapter 4 is a good place to start.

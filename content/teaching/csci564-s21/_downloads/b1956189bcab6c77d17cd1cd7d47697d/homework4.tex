@@ -1,0 +1,233 @@
+\documentclass{exam}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{minted}
+\setminted{autogobble,python3,mathescape,linenos,frame=lines,framesep=2mm,fontsize=\footnotesize}
+\setlength{\parindent}{0cm}
+\usepackage{mdframed}
+\usepackage{multicol}
+
+\title{Homework 4}
+\author{}
+
+\makeatletter
+\renewcommand\@maketitle{%
+\begin{center}
+    \bfseries
+    \centering
+    \LARGE CSCI 564: \@title
+\end{center}
+\bigskip
+\begin{center}
+\makebox[0.8\textwidth]{Name:\enspace\hrulefill\hrulefill\enspace{}CWID:\enspace\hrulefill}
+\end{center}
+}
+\makeatother
+\cfoot{Page \thepage\ of \numpages}
+
+\begin{document}
+\maketitle
+\thispagestyle{foot}
+
+\textbf{For each of the following questions, please show all of your work, and
+explain your answers.}
+
+\begin{questions}
+    \question
+    \textbf{Virtual and Physical Addresses.} Consider these three
+    configurations:
+    \begin{enumerate}
+        \item 32-bit operating system, 4 KiB pages, 1 GiB of RAM
+        \item 32-bit operating system, 16 KiB pages, 2 GiB of RAM
+        \item 64-bit operating system, 16 KiB pages, 16 GiB of RAM
+    \end{enumerate}
+    \begin{parts}
+        \part[15]
+        Fill out the following table showing how many bits are needed for the
+        virtual address, physical address, virtual page number, physical page
+        number, and offset in each of the above configurations.
+
+        \def\arraystretch{2}%
+        \begin{tabular}{|c|c|c|c|c|c|}
+            \hline
+            & \textbf{Virtual Address}
+            & \textbf{Physical Address}
+            & \textbf{Virtual Page \#}
+            & \textbf{Physical Page \#}
+            & \textbf{Offset} \\
+            \hline
+            \textbf{1} & & & & & \\
+            \hline
+            \textbf{2} & & & & & \\
+            \hline
+            \textbf{3} & & & & & \\
+            \hline
+        \end{tabular}
+
+        \vspace{\stretch{2}}
+
+        \part[5]
+        What are some advantages of using a larger page size?
+
+        \vspace{\stretch{1}}
+
+        \part[5]
+        What are some disadvantages of using a larger page size?
+
+        \vspace{\stretch{1}}
+    \end{parts}
+
+    \newpage
+
+    \question[25]
+    \textbf{Using the TLB.} As described in the textbook and explained in class,
+    virtual memory uses a page table to track the mapping of virtual addresses
+    to physical addresses. To speed up this translation, modern processors
+    implement a cache of the most recently used translations called the
+    \textit{translation lookaside buffer (TLB)}. This exercise shows how the
+    page table and the TLB must be updated as addresses are accessed.
+
+    \setlength{\columnseprule}{0.5pt}
+    \begin{multicols}{2}
+        \textbf{Initial TLB State} {\color{red} (values are base-10)}
+
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            \textbf{Valid} & \textbf{Tag} & \textbf{Physical Page \#} & \textbf{LRU} \\
+            \hline
+            1 & 11 & 12 & 2 \\
+            \hline
+            1 & 7 & 4 & 3 \\
+            \hline
+            1 & 3 & 6 & 4 \\
+            \hline
+            0 & 4 & 9 & 1 \\
+            \hline
+        \end{tabular}
+
+        The LRU column works as follows: the \textit{older} an entry is, the
+        \textit{lower} its LRU number will be. Each time an entry is used, its
+        LRU number is set to 4 (since it is now the most-recently used), and the
+        other numbers are adjusted downward accordingly.
+
+        \columnbreak
+
+        \textbf{Initial Page Table State} {\color{red} (values are base-10)}
+
+        \begin{tabular}{|c|c|l|}
+            \hline
+            \textbf{Index} & \textbf{Valid} & \textbf{Physical Page or On Disk} \\
+            \hline
+            0 & 1 & 5 \\
+            \hline
+            1 & 0 & Disk \\
+            \hline
+            2 & 0 & Disk \\
+            \hline
+            3 & 1 & 6 \\
+            \hline
+            4 & 1 & 9 \\
+            \hline
+            5 & 1 & 11 \\
+            \hline
+            6 & 0 & Disk \\
+            \hline
+            7 & 1 & 4 \\
+            \hline
+            8 & 0 & Disk \\
+            \hline
+            9 & 0 & Disk \\
+            \hline
+            10 & 1 & 3 \\
+            \hline
+            11 & 1 & 12 \\
+            \hline
+        \end{tabular}
+    \end{multicols}
+
+    Assume 4 KiB pages and a four-entry fully-associative TLB with an LRU
+    replacement policy. If pages must be brought in from disk, give them the
+    next largest unused page number (that is, start at 13).
+
+    \textbf{Given the following list is a stream of virtual addresses seen on
+    the system, the initial TLB, and initial page table, show the final state of
+    the TLB and page table, and specify whether each memory address is a hit in
+    the TLB (H), a hit in the page table (TLB miss, M) or a page fault (PF).}
+
+    \begin{multicols}{2}
+        \def\arraystretch{1.5}%
+        \begin{tabular}{|l|l|}
+            \hline
+            \textbf{Address} & \textbf{Result (H, M, PF)} \\
+            \hline
+            \texttt{0x0FFF} & \\
+            \hline
+            \texttt{0x7A28} & \\
+            \hline
+            \texttt{0x3DAD} & \\
+            \hline
+            \texttt{0x3A98} & \\
+            \hline
+            \texttt{0x1C19} & \\
+            \hline
+            \texttt{0x1000} & \\
+            \hline
+            \texttt{0x22D0} & \\
+            \hline
+        \end{tabular}
+
+        \textbf{Final TLB State}
+
+        \def\arraystretch{1.5}%
+        \begin{tabular}{|l|l|l|l|}
+            \hline
+            \textbf{Valid} & \textbf{Tag} & \textbf{Physical Page \#} & \textbf{LRU} \\
+            \hline
+            & & & \\
+            \hline
+            & & & \\
+            \hline
+            & & & \\
+            \hline
+            & & & \\
+            \hline
+        \end{tabular}
+
+        \columnbreak
+
+        \textbf{Final Page Table State}
+
+        \def\arraystretch{1.5}%
+        \begin{tabular}{|l|l|l|l|}
+            \hline
+            \textbf{Index} & \textbf{Valid} & \textbf{Physical Page or On Disk} \\
+            \hline
+            0 & & \\
+            \hline
+            1 & & \\
+            \hline
+            2 & & \\
+            \hline
+            3 & & \\
+            \hline
+            4 & & \\
+            \hline
+            5 & & \\
+            \hline
+            6 & & \\
+            \hline
+            7 & & \\
+            \hline
+            8 & & \\
+            \hline
+            9 & & \\
+            \hline
+            10 & & \\
+            \hline
+            11 & & \\
+            \hline
+        \end{tabular}
+    \end{multicols}
+
+\end{questions}
+
+\end{document}

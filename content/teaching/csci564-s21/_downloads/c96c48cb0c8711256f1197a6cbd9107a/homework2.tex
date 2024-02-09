@@ -1,0 +1,93 @@
+\documentclass{exam}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{minted}
+\setminted{autogobble,python3,mathescape,linenos,frame=lines,framesep=2mm,fontsize=\footnotesize}
+\setlength{\parindent}{0cm}
+
+\title{Homework 2}
+\author{}
+
+\makeatletter
+\renewcommand\@maketitle{%
+\begin{center}
+    \bfseries
+    \centering
+    \LARGE CSCI 564: \@title
+\end{center}
+\bigskip
+\begin{center}
+\makebox[0.8\textwidth]{Name:\enspace\hrulefill\hrulefill\enspace{}CWID:\enspace\hrulefill}
+\end{center}
+}
+\makeatother
+\cfoot{Page \thepage\ of \numpages}
+
+\begin{document}
+\maketitle
+\thispagestyle{foot}
+
+\textbf{For each of the following questions, please show all of your work, and
+explain your answers.}
+
+\begin{questions}
+    \question Cache performance is a factor of several parameters. For each of
+    the following, describe the issues that arise if the value is either too
+    small or too large:
+    \begin{parts}
+        \part[3] Cache size
+            \vspace{\stretch{1}}
+
+        \part[3] Line size
+            \vspace{\stretch{1}}
+
+        \part[3] Associativity
+            \vspace{\stretch{5}}
+    \end{parts}
+
+    \newpage
+    \question Consider the \texttt{matrix\_add} function shown below:
+
+    \begin{minted}{c}
+        int matrix_add(int a[128][128], int b[128][128], int c[128][128]) {
+            int i, j;
+            for(i = 0; i < 128; i++)
+                for(j = 0;j < 128; j++)
+                    c[i][j] = a[i][j] + b[i][j];
+            return 0;
+        }
+    \end{minted}
+
+    In each iteration, the compiled code will load \texttt{a[i][j]} first, and
+    then load \texttt{b[i][j]}. After performing the sum of those two values,
+    the result will be stored in \texttt{c[i][j]}.
+
+    The processor has a 64 KiB, 2-way, 64 byte-block L1 data cache, and the
+    cache uses an LRU policy for determining which cache line to evict if a set
+    is full. The L1 data cache is write-back and write-allocate.
+
+    For the following questions, assume that the addresses of the \texttt{a},
+    \texttt{b}, and \texttt{c} arrays are \texttt{0x10000}, \texttt{0x20000},
+    and \texttt{0x30000}, respectively, and that the cache starts out completely
+    empty. \textbf{Explain all of your answers.}
+
+    \begin{parts}
+        \part[12.5] What is the L1 data cache miss rate for the
+        \texttt{matrix\_add} function?
+        How many misses are contributed by compulsory miss? How many misses are conflict misses? 
+        \vspace{\stretch{10}}
+
+        \part[12.5] If the L1 hit time is 1 cycle, and the L1 miss penalty is 20
+        cycles. What is the average memory access time?
+        \vspace{\stretch{1}}
+    \end{parts}
+
+    \newpage
+    \question[16] You are given a cache that has 16 byte blocks, 512 sets, and
+    is 2-way set associative. Integers are 4 bytes. Give the C code for a loop
+    that has a 100\% miss rate in this cache but whose hit rate rises to almost
+    100\% if you double the size of the cache. \textbf{Do not assume the
+    starting indexes of any arrays.}
+
+\end{questions}
+
+\end{document}

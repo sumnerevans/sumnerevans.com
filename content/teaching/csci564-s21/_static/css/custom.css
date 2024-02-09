@@ -1,0 +1,104 @@
+.emoji {
+    font-family: "Noto Color Emoji", "Segoe UI Emoji", sans-serif;
+}
+
+div.body {
+    min-height: calc(100vh - 113px);
+    height: auto;
+    padding-top: 47.5px;
+}
+
+div.sphinxsidebar {
+    top: 50px;
+}
+
+div.sphinxsidebar li {
+    padding-bottom: 8px;
+}
+
+div.cshead {
+    width: 100%;
+    top: 0px;
+    position: fixed;
+    z-index: 9999;
+}
+
+div.cshead-upper {
+    background-color: #D9D9D9;
+    padding: 5px;
+}
+
+div.cshead:after {
+    content: "";
+    display: block;
+    height: 12px;
+    background: linear-gradient(90deg, #D2492A 80%, #21314D 20%);
+}
+
+/* offset for anchor id's, since there is a fixed header */
+:target:before {
+    display: block;
+    content: " ";
+    height: 50px;
+    margin-top: -50px;
+    visibility: hidden;
+}
+
+.ppltext {
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    color: #21314D;
+}
+
+a.cslink {
+    display: block;
+    float: right;
+}
+
+a.cslink > img {
+    height: 26px;
+    width: auto;
+}
+
+div.admonition {
+    background-color: #e5e9fc;
+    border: 1px solid #c8aefc;
+}
+
+div.note {
+    background-color: #eee;
+    border: 1px solid #ccc;
+}
+
+div.seealso {
+    background-color: #ffc;
+    border: 1px solid #ff6;
+}
+
+div.warning {
+    background-color: #ffe4e4;
+    border: 1px solid #f66;
+}
+
+div.important {
+    background-color: #fceebf;
+    border: 1px solid #fcd249;
+}
+
+p.admonition-title {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.thoriz {
+    font-weight: bold;
+}
+
+.thvert {
+    font-weight: bold;
+}
+
+div.body {
+    max-width: none !important;
+}

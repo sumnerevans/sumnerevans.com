@@ -1,0 +1,18 @@
+Email Archives
+==============
+
+* :download:`CSCI 564: First class follow-up <../../notes/2021-01-13.email>`
+* :download:`[CSCI 564] Lecture 02 follow-up <../../notes/2021-01-20.email>`
+* :download:`[CSCI 564] 01/27 Lecture follow-up <../../notes/2021-01-27.email>`
+* :download:`[CSCI 564] 02/03 Lecture follow-up <../../notes/2021-02-03.email>`
+* :download:`[CSCI 564] 02/10 Lecture follow-up <../../notes/2021-02-10.email>`
+* :download:`[CSCI 564] Office Hours During Presidents' Day Break + Friday <../../notes/2021-02-15.email>`
+* :download:`[CSCI 564] 02/17 Lecture follow-up <../../notes/2021-02-18.email>`
+* :download:`[CSCI 564] 02/22 Lecture follow-up <../../notes/2021-02-22.email>`
+* :download:`[CSCI 564] REMINDER: Please fill out the student check in on Canvas <../../notes/2021-02-27.email>`
+* :download:`[CSCI 564] 03/01 Lecture follow-up <../../notes/2021-03-01.email>`
+* :download:`[CSCI 564] 03/10 Lecture follow-up <../../notes/2021-03-12.email>`
+* :download:`[CSCI 564] Extended office hours + logistics <../../notes/2021-03-14.email>`
+* :download:`Re: [CSCI 564] Extended office hours + logistics <../../notes/2021-03-14.2.email>`
+* :download:`[CSCI 564] Homework 2 Graded + exam clarifications <../../notes/2021-03-20.email>`
+* :download:`[CSCI 564] 03/24 Lecture follow-up <../../notes/2021-03-24.email>`

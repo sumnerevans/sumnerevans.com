@@ -1,0 +1,92 @@
+\documentclass{exam}
+\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage{minted}
+\setminted{autogobble,python3,mathescape,linenos,frame=lines,framesep=2mm,fontsize=\footnotesize}
+\setlength{\parindent}{0cm}
+\usepackage{mdframed}
+
+\title{Homework 3}
+\author{}
+
+\makeatletter
+\renewcommand\@maketitle{%
+\begin{center}
+    \bfseries
+    \centering
+    \LARGE CSCI 564: \@title
+\end{center}
+\bigskip
+\begin{center}
+\makebox[0.8\textwidth]{Name:\enspace\hrulefill\hrulefill\enspace{}CWID:\enspace\hrulefill}
+\end{center}
+}
+\makeatother
+\cfoot{Page \thepage\ of \numpages}
+
+\begin{document}
+\maketitle
+\thispagestyle{foot}
+
+\textbf{For each of the following questions, please show all of your work, and
+explain your answers.}
+
+\begin{mdframed}
+    \textbf{Key Terms}
+    \begin{itemize}
+        \item \textit{Aliasing} --- the mapping of two or more branches to the
+            same entry in the branch predictor data structure.
+        \item \textit{Negative interference} --- the branch prediction rate of
+            either or both aliased branches is reduced from what they would have
+            been without aliasing.
+        \item \textit{Positive interference} --- The branch prediction rate for
+            either or both aliased branches is increased from what they would
+            have been without aliasing.
+    \end{itemize}
+\end{mdframed}
+
+\begin{questions}
+    \question The size of the branch predictor can affect the amount of aliasing
+    (two branches mapping to the same entry in a branch prediction table)
+    between branches. While this sort of aliasing usually results in negative
+    interference, it can sometimes result in positive interference.
+
+    \begin{parts}
+        \part[10] Describe a branch T-NT (taken, not-taken) pattern for two
+        branches for which aliasing will result in \textit{negative}
+        interference.
+
+        \vspace{\stretch{4}}
+
+        \part[10] Describe a branch T-NT (taken, not-taken) pattern for two
+        branches for which aliasing will result in \textit{positive}
+        interference.
+
+        \vspace{\stretch{4}}
+
+        \part[5] Why is it that aliasing usually results in \textit{negative}
+        interference?
+
+        \vspace{\stretch{1}}
+    \end{parts}
+
+    \newpage
+    \question Assume we have a machine with a typical MIPS 5-stage pipeline that
+    uses branch prediction \textit{without} branch delay slots and has a branch
+    misprediction penalty of three cycles. One in every five instructions is a
+    branch for a certain program, of which 80\% are predicted correctly by our
+    branch predictor. Assume all non-branch instructions have a CPI of 1.
+
+    \begin{parts}
+        \part[10] How many cycles would it take to execute $n$ instructions?
+        \vspace{\stretch{1}}
+
+        \part[15] Now, imagine we instead have a Pentium 4 which has a 20-stage
+        pipeline. Because of this, the branch misprediction penalty is now a
+        staggering 19 cycles! What would your branch prediction rate have to be
+        such that it has the same performance as the MIPS machine from (a)?
+        \vspace{\stretch{2}}
+    \end{parts}
+
+\end{questions}
+
+\end{document}
