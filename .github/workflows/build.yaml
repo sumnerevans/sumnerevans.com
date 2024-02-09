@@ -46,16 +46,6 @@ jobs:
           nix develop '.#ci' \
             --command bash -c "hugo --verbose --gc --minify"
 
-      - name: rsync
-        if: github.ref == 'refs/heads/master'
-        uses: up9cloud/action-rsync@v1.4
-        env:
-          HOST: morak.sumnerevans.com
-          KEY: ${{ secrets.DEPLOY_SSH_KEY }}
-          SOURCE: ./public/
-          TARGET: /var/www/sumnerevans.com
-          VERBOSE: true
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
