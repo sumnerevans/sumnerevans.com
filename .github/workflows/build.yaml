@@ -47,7 +47,7 @@ jobs:
             --command bash -c "hugo --verbose --gc --minify"
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
           path: public
