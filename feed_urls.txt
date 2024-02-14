@@ -5,6 +5,7 @@ https://elijahpotter.dev/rss.xml
 https://go.dev/blog/feed.atom
 https://intuitiveexplanations.com/feed.xml
 https://jjtech.dev/feed.xml
+https://jsomers.net/blog/feed
 https://lukaswerner.com/feed.xml
 https://matrix.org/blog/feed
 https://medium.com/feed/@ericmigi
