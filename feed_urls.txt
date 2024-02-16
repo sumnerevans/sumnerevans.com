@@ -7,6 +7,7 @@ https://intuitiveexplanations.com/feed.xml
 https://jjtech.dev/feed.xml
 https://jsomers.net/blog/feed
 https://lukaswerner.com/feed.xml
+https://lukeplant.me.uk/blog/atom/index.xml
 https://matrix.org/blog/feed
 https://medium.com/feed/@ericmigi
 https://mgs.blog/feed
