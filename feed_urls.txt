@@ -6,6 +6,7 @@ https://go.dev/blog/feed.atom
 https://intuitiveexplanations.com/feed.xml
 https://jjtech.dev/feed.xml
 https://jsomers.net/blog/feed
+https://jvns.ca/atom.xml
 https://lukaswerner.com/feed.xml
 https://lukeplant.me.uk/blog/atom/index.xml
 https://matrix.org/blog/feed
