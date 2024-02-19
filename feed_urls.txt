@@ -14,6 +14,7 @@ https://mgs.blog/feed
 https://sourcehut.org/blog/index.xml
 https://stackoverflow.blog/feed/
 https://textslashplain.com/feed/
+https://tgrcode.com/rss
 https://veronneau.org/feeds/atom.xml
 https://weekly.nixos.org/feeds/all.rss.xml
 https://www.joelonsoftware.com/feed/
