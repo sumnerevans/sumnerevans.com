@@ -280,7 +280,7 @@ a tool for that: lifetime earnings.
 In this section, I claim that, after adjusting for all other factors, **the
 difference in lifetime earnings of those holding a master's degree in computer
 science versus those holding only a bachelor's degree in computer science is
-negligible**. I will also argue that there are other factors which have an
+negligible**. I will also argue that there are other factors which have
 significantly more influence on lifetime earnings (the primary one being luck).
 
 We have already discussed one reason for this: selection bias. The top students
