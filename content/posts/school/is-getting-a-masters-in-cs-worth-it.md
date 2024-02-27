@@ -715,8 +715,8 @@ decisions which will affect your life much more than whether you decide to get a
 master's degree.
 
 I hope that this article has given you some tools for helping make your decision
-about or not you want to do your master's degree. I wish you the best of luck
-regardless of whether you decide to get your master's degree, or go into
+about whether or not you want to do your master's degree. I wish you the best of
+luck regardless of whether you decide to get your master's degree, or go into
 industry right after earning your bachelor's. The fact that you've read all the
 way to the bottom gives me confidence that whatever you choose, it will be the
 right decision for you!
