@@ -472,9 +472,10 @@ out in order to complete the degree. Some students will also be fortunate enough
 to have funds from parents or grandparents to fund their master's degree.
 
 For individuals which are able to either cash-flow their living expenses or have
-them paid for by relatives, the calculus starts to lean a bit more in the favour
-of getting a master's degree, but the opportunity cost of loosing a year's worth
-of salary due to not entering the workforce earlier.
+them paid for by relatives or scholarships, the calculus starts to lean a bit
+more in the favour of getting a master's degree, but the opportunity cost of
+loosing a year's worth of salary due to not entering the workforce earlier still
+exists.
 
 I only took two years to get my bachelor's degree due to having completed the
 first two years worth of credits at [Red Rocks Community College]({{< ref
