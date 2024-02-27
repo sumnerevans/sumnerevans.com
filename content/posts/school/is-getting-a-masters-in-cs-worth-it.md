@@ -231,7 +231,7 @@ students into five broad categories, and discuss them in turn.
 
   These students are probably not being accepted into graduate programs anyway,
   but even if they are, they will have a similar or worse experience than those
-  in the 50th-70th percentile, and may not even graduate which will cause them
+  in the 40th-60th percentile, and may not even graduate which will cause them
   to waste a bunch of money on something they don't even complete.
 
 * **Students who major in a subject other than computer science**
