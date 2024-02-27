@@ -302,8 +302,8 @@ workforce immediately after undergrad.
 John will spend $30k on tuition and living expenses to get his master's degree
 in one year. Juan accepted an offer for $100k/yr cash compensation. Let's assume
 that John will accept a position after his master's degree paying $115k/yr cash
-compensation. Let's assume that all benefits are the same, and no bonuses or
-stock compensation is given. Let's assume that both John and Juan are good
+compensation. Let's assume that all benefits are the same, and no bonuses nor
+stock compensation are given. Let's assume that both John and Juan are good
 employees and will receive a 5% raise each year they work. The following table
 shows the lifetime earnings of each (for simplicity we are assuming that
 investing has not been invented yet).
