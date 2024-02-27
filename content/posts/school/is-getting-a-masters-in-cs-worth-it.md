@@ -328,84 +328,84 @@ investing has not been invented yet).
       <th class="border-right">1</th>
       <td class="align-right">-30.00k</td>
       <td class="border-right align-right">-30.00k</td>
-      <td class="align-right">+100.00k</td>
+      <td class="align-right">100.00k</td>
       <td class="align-right">100.00k</td>
     </tr>
     <tr>
       <th class="border-right" scope="row">2</th>
-      <td class="align-right">+$115.00k</td>
+      <td class="align-right">$115.00k</td>
       <td class="border-right align-right">$85.00k</td>
-      <td class="align-right">+$105.00k</td>
+      <td class="align-right">$105.00k</td>
       <td class="align-right">$205.00k</td>
     </tr>
     <tr>
       <th class="border-right" scope="row">3</th>
-      <td class="align-right">+$120.75k</td>
+      <td class="align-right">$120.75k</td>
       <td class="border-right align-right">$205.75k</td>
-      <td class="align-right">+$110.25k</td>
+      <td class="align-right">$110.25k</td>
       <td class="align-right">$315.25k</td>
     </tr>
     <tr>
       <th class="border-right" scope="row">4</th>
-      <td class="align-right">+$126.79k</td>
+      <td class="align-right">$126.79k</td>
       <td class="border-right align-right">$332.54k</td>
-      <td class="align-right">+$115.76k</td>
+      <td class="align-right">$115.76k</td>
       <td class="align-right">$431.01k</td>
     </tr>
     <tr>
       <th class="border-right" scope="row">5</th>
-      <td class="align-right">+$133.13k</td>
+      <td class="align-right">$133.13k</td>
       <td class="border-right align-right">$465.66k</td>
-      <td class="align-right">+$121.55k</td>
+      <td class="align-right">$121.55k</td>
       <td class="align-right">$552.56k</td>
     </tr>
     <tr>
       <th class="border-right" scope="row">6</th>
-      <td class="align-right">+$139.78k</td>
+      <td class="align-right">$139.78k</td>
       <td class="border-right align-right">$605.45k</td>
-      <td class="align-right">+$127.63k</td>
+      <td class="align-right">$127.63k</td>
       <td class="align-right">$680.19k</td>
     </tr>
     <tr>
       <th class="border-right" scope="row">7</th>
-      <td class="align-right">+$146.77k</td>
+      <td class="align-right">$146.77k</td>
       <td class="border-right align-right">$752.22k</td>
-      <td class="align-right">+$134.01k</td>
+      <td class="align-right">$134.01k</td>
       <td class="align-right">$814.20k</td>
     </tr>
     <tr>
       <th class="border-right" scope="row">8</th>
-      <td class="align-right">+$154.11k</td>
+      <td class="align-right">$154.11k</td>
       <td class="border-right align-right">$906.33k</td>
-      <td class="align-right">+$140.71k</td>
+      <td class="align-right">$140.71k</td>
       <td class="align-right">$954.91k</td>
     </tr>
     <tr>
       <th class="border-right" scope="row">9</th>
-      <td class="align-right">+$161.82k</td>
+      <td class="align-right">$161.82k</td>
       <td class="border-right align-right">$1,068.15k</td>
-      <td class="align-right">+$147.75k</td>
+      <td class="align-right">$147.75k</td>
       <td class="align-right">$1,102.66k</td>
     </tr>
     <tr>
       <th class="border-right" scope="row">10</th>
-      <td class="align-right">+$169.91k</td>
+      <td class="align-right">$169.91k</td>
       <td class="border-right align-right">$1,238.05k</td>
-      <td class="align-right">+$155.13k</td>
+      <td class="align-right">$155.13k</td>
       <td class="align-right">$1,257.79k</td>
     </tr>
     <tr>
       <th class="border-right" scope="row">11</th>
-      <td class="align-right">+$178.40k</td>
+      <td class="align-right">$178.40k</td>
       <td class="border-right align-right">$1,416.46k</td>
-      <td class="align-right">+$162.89k</td>
+      <td class="align-right">$162.89k</td>
       <td class="align-right">$1,420.68k</td>
     </tr>
     <tr>
       <th class="border-right" scope="row">12</th>
-      <td class="align-right">+$187.32k</td>
+      <td class="align-right">$187.32k</td>
       <td class="border-right align-right"><b>$1,603.78k</b></td>
-      <td class="align-right">+$171.03k</td>
+      <td class="align-right">$171.03k</td>
       <td class="align-right"><b>$1,591.71k</b></td>
     </tr>
   </tbody>
