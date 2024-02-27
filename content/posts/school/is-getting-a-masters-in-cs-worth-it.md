@@ -1,9 +1,8 @@
 ---
 title: "Is Getting A Master's Degree in Computer Science Worth It?"
-date: 2021-05-18T00:37:50-0600
+date: 2024-02-26T06:37:50-0600
 categories: [School]
 tags: [Computer Science, Masters Degree]
-draft: true
 ---
 
 "Master of Science in Computer Science", it sounds so grand, doesn't it? But is
@@ -89,6 +88,12 @@ computer science for the same reason. In this section, I'm going to answer this
 question: _does getting a master's degree improve my job offer potential enough
 to warrant the cost?_ or stated more simply _is getting a master's degree worth
 the money?_.
+
+Individuals with a master's degree generally receive
+[higher starting salaries](#11-higher-salaries) and sometimes have
+[increased employability](#12-increased-employability), but this comes with
+[opportunity costs](#13-opportunity-cost) and potentially additional
+[debt](#14-debt).
 
 ## 1.1. Higher Salaries
 
@@ -503,13 +508,13 @@ this, but I want to present this argument, as many of my younger peers
 
 ## 1.6. Conclusion
 
-Let's revisit the questions I posed at the beginning of this section: *Is
-getting a master's degree worth the money?*
+Let's revisit the questions I posed at the beginning of this section: _Is
+getting a master's degree worth the money?_
 
-Unfortunately, as with most sufficiently complex things, the answer is that *it
-depends*.
+Unfortunately, as with most sufficiently complex things, the answer is that _it
+depends_.
 
-In broad strokes, getting a master's degree is probably not an actively *bad*
+In broad strokes, getting a master's degree is probably not an actively _bad_
 decision for reasonably good students, but it's also not the huge booster that
 colleges claim it to be.
 
@@ -522,93 +527,191 @@ workforce right after your bachelor's degree.
 
 # 2. Academic
 
-- Many people want to go to grad school so that they increase their breadth or
-  depth of knowledge in CS. If that's you, then great!
+Many people want to go to grad school so that they increase their depth of
+knowledge in CS or prepare them for even higher studies such as a PhD. If that's
+you, then a master's degree might be a great choice! But first, let's
+investigate the motivations for _why_ you are considering increasing your depth
+of knowledge in CS.
 
-- Generally, you will touch most of the broad areas of CS in your undergraduate
-  program, but maybe you want to go deeper on one of those topics. A Masters
-  degree program is the perfect way to do this.
+I think that most people are motivated to get a higher degree by one or more of
+the following three reasons:
 
-  - For example, maybe you like the mathematical part of computer science, you
-    can research algorithms or graph theory, or a variety of other theoretical
-    CS topics. If you go this route, you will likely have to go the masters
-    thesis route.
+1. **The joy of learning**: you just like learning, and don't feel like your
+   undergraduate studies sufficiently quenched your desire to learn.
+2. **To become an educator**: you want to teach others computer science (either
+   at a middle/high school level or college level).
+3. **Becoming an expert in a specific topic**: you want to be a cutting-edge
+   researcher in a topic that you find interesting in computer science.
 
-  - Or maybe you really liked learning a bit about how the computer actually
-    works, then you can go and research or do a project in computer
-    architecture.
+We will discuss each in the next three sections. I'll also provide some thoughts
+on whether it's worth it academically for software engineers to pursue a
+master's in computer science.
 
-  - The possibilities are really endless here.
+## 2.1. The Joy of Learning
 
-- If increasing your knowledge in a given part of the field is one of your
-  goals, then graduate school may be a great opportunity for you.
+Most undergraduate programs are designed to be _breadth-first_ in the sense that
+you will learn the basics of most of the broad areas of computer science. This
+often means that undergraduates don't have a very deep understanding of many (if
+any) topics. If you feel like you didn't get enough depth, and you are not going
+to be academically complete without such depth, a master's program is a great
+way to satisfy your learning goals.
 
-- In the end, if you are going into Software Engineering, you will likely not
-  use a ton of the specific knowledge that you gain in a graduate program. But
-  you will have the satisfaction that you are able to better understand the
-  foundation on which you are building the products at your job.
+This is especially the case if you find that there are one or two broad areas
+that you want to dive deeper on. Here are a few examples of what this might look
+like:
 
-- If you want to become an educator, maybe at a middle or high school level,
-  then you may want to find a school that has a CS education masters degree
-  program.
+- If you enjoy algorithms, you can study topics such as graph theory, complexity
+  theory, or whatever other aspect of algorithms you are interested in.
+- If you enjoy programming language design and implementation, you can study
+  topics such as symbolic computation, program synthesis, or parsing.
+- If you enjoy software engineering, you can study topics such as software
+  architecture, distributed systems, or consensus algorithms.
+- If you enjoy computer architecture, you can study topics such as processor
+  design and cache optimization.
 
-- If you want to end up in academia or become a distinguished researcher at a
-  company, you are going to need to get a PhD, so I wouldn't even bother with
-  getting a Masters. Go straight to a PhD program. This is an option that most
-  people don't know is possible, but it's entirely a thing.
+In general, the best way to figure out what a university offers as far as
+research opportunities is to talk to professors who research in those areas.
+Mention what you are interested in learning more, and see if they have any good
+opportunities for you to dive deeper into a topic.
 
-- If you aren't sure if you want to dedicate 5+ years to a PhD right after your
-  undergrad, I recommend just getting a job and working in industry for a few
-  years and then going to get a PhD. I have a friend who has done that (realized
-  after a few years in industry that he wanted to get a PhD and is going to be
-  starting in Fall 2021)
+Depending on your program, the master's degree will consist of just classes,
+classes and a project, or classes and a thesis. Most master's programs give you
+a fairly large degree of freedom in your project or thesis, which will allow you
+to tailor your experience to your goals. Again, talking to an advisor is the
+best way to figure out how to achieve your goals. If you are considering getting
+a master's at the same school as your undergraduate degree, find a professor
+that you enjoyed taking a class from and talk to them. (Hopefully you
+established some rapport with them and they know who you are and are willing to
+help.)
 
-- As you can see, there are many academic reasons for getting a masters degree.
-  If any of those rang a bell, then you should seriously consider going for a CS
-  Masters degree.
+This is the boat that I found myself in. I was unsatisfied with the depth of the
+undergraduate program, and wanted to learn more. The courses I took during my
+master's degree deepened my understanding to the point where I was no longer
+yearning to learn more about any particular subject.
+
+## 2.2. Becoming an Educator
+
+Computer science education is becoming more and more widespread and is being
+integrated earlier and earlier into curriculums. There are many opportunities
+for computer science educators at a middle and high school level. If you are
+interested in becoming such an educator then you finding a school with a CS
+education masters degree program is likely a good option.
+
+If you want to become a professor at a university or college, then you will need
+a PhD (you don't want to be an adjunct, they don't pay enough). Many people
+don't know this, but you can just go straight into a PhD program instead of
+getting a master's degree. It may take slightly longer to do your PhD because
+you have to take more courses in your first couple years, and if you decide to
+drop out of the program, you'll basically have enough credits for a master's
+degree.
+
+I would recommend spending a couple years in industry before going for a PhD. It
+will give you a chance to decide whether you want to dedicate 5+ years to a PhD,
+and you will also gain experience that will help you be a better educator. You
+will be able to better prepare students who are planning on entering software
+engineering careers. Obviously, this is not required, and there are many
+professors who have stayed in academia their entire careers.
+
+## 2.3. Becoming an Expert in a Specific Topic
+
+If you want to become a researcher at a company, the path is very similar to
+becoming a professor. You'll need a PhD. Again, the advice still holds: go
+straight to a PhD, skipping the master's degree. The same advice applies for
+spending a couple years in industry, as that will probably help you tune your
+research focus to something that is industry-applicable which will increase your
+desirability for industry research positions.
+
+## 2.4. What About Software Engineers?
+
+If your goal after school is to become a software engineer (not a researcher or
+educator), you will likely not use much (if any) of the knowledge that you gain
+in a graduate program in your software engineering role. You certainly will have
+a better understanding of some of the foundations on which the products you are
+building are laid, but the primary benefit is the satisfaction that you
+understand the building blocks. It is rare that such knowledge actually proves
+useful in the day-to-day.
+
+In conclusion, if you just love learning or want to become an educator at a
+middle/high school level, a master's degree is a great option. If you want to
+become a professor or industry researcher, then I would just go straight to a
+PhD (possibly with a stint in industry beforehand).
 
 # 3. Social
 
-- A lot of people don't talk about the social aspect of school as a primary
-  reason for getting a masters degree, but it's a real, valid reason.
+My college experience was one of the best times of my life so far. I made many
+lifelong friends and made many memories that I will always look back fondly
+upon. For me, I really felt like I grew as a person during the year I was
+getting my master's degree, and I am very happy that I did it even just for the
+social aspect. I also already discussed all of the clubs I participated in, and
+the football games I attended in the introduction to this article. I let loose a
+bit and did some crazy things that I had not participated in during undergrad.
+Nothing too crazy, but just a little bit out there. I also turned 21 in the
+middle of that school year.
 
-- I don't just mean continue going to all the parties, either. One extra year of
-  connections with like-minded people can be extremely valuable. You will
-  probably run into alumni of your alma mater many times throughout your career
-  in the weirdest places.
+Social interactions in the form of networking are equally important to the
+friendships. Spending an extra year connecting with like-minded people can be
+extremely valuable. You will probably run into alumni of your alma mater many
+times throughout your career in the weirdest places.
 
-- Friends/clubs/etc
+If you are ahead in school (I was 2 years ahead), having an extra year of
+college experience is often worth it. Even if you are just a semester ahead, you
+will end up going to school for only more semester compared to your peers who
+are just getting a bachelor's degree. (And some of them will take 4.5 or 5 years
+anyway due to various circumstances.) I have one friend who got only an
+undergraduate degree who told me that he regrets graduating in 3.5 years as he
+felt like it wasn't worth it to miss out socially on one more semester of
+school. For me, I was not even 21 yet when I graduated with my bachelor's, and I
+felt too young to enter the professional workforce. The extra year for me really
+helped make me feel prepared for the "real world".
 
-  - I was involved with Navigators (Christian ministry), ACM (as the Chair), and
-    LUG, Tau Beta Pi (honor society) and wanted to continue being a part of
-    those organizations.
-  - I wanted to go to all of the football games (somethnig that I didn't do
-    during undergrad very often) and generally participate in all of the crazy
-    things that I neglected during undergrad.
-  - I had just turned 21. Need I say more?
+Your social enjoyment factor is going to be highly dependent on you actually
+liking school, though. If you can't stand school, and are just going to be
+miserable with all of the assignments and tests, the added social benefits will
+not outweigh the misery. But if you somewhat like school, there are real social
+benefits to staying in school for one extra year.
 
-- If you are ahead in school (I was 2 years ahead), having an extra year of
-  college experience is often worth it.
+# 4. Conclusion
 
-- If you are even just a semester ahead, you will end up going to school for
-  only more semester compared to your peers who are just getting a BS degree.
-  This requires that you actually like school, though.
+So, should you get a master's degree? The answer is very complex. Financially, I
+think that it's probably a wash, but your academic goals and/or social life may
+benefit from doing a master's degree.
 
-# Conclusion
+I have no regrets about my decision to get my master's degree. As I have
+mentioned already, it was one of the best years of my life so far, and I
+wouldn't trade a second of it.
 
-- From this, you may think that I have regrets about my decision to do grad
-  school, this is entirely false. I loved it (it was hard at times, but overall
-  one of the best years of my life so far).
+However, I am not not naive enough to claim that it was the source of the
+success I've had so far in my career. I do not think that it greatly improved my
+career prospects or lifetime earnings. However, it gave me an opportunity to
+dive deeper into a few computer science topics that I found interesting, and
+gave me a chance to deepen lifelong friendship and have a lot of fun.
 
-- But I want to give you an accurate picture of both the benefits and
-  opportunities as well as the costs associated with getting a masters so that
-  you can actually make an educated decision: not just a decision based off of
-  marketing from <insert school here>.
+If you ask any university whether it's worth it or not, they will unequivocally
+say of course it's worth it, but I wanted to provide a more accurate picture of
+the benefits and opportunities, as well as the costs associated with getting a
+master's degree in computer science. Spending a year of your life, and tens of
+thousands of dollars is not a decision that should be trivialized, and you
+should not make such a decision by vibes alone.
 
-The bottom line:
+Everyone's situation is different. You have to do some real introspection as to
+your motivations and goals and consider all factors to determine if a master's
+degree is worth it for you. I hope that this article has provided a good
+framework for starting to think through these questions for yourself.
 
-- If you think you'll be miserable during grad school (either financially,
-  academically, or socially), don't do it.
+The decision might feel daunting. I suggest that you first think if there are
+any red flags that might short-circuit your decision making process and cause
+your decision to be "no" immediately. For example, if you hate school, then
+don't do a master's degree, or if you are just doing it for the increased
+starting salary, don't do a master's degree. But if you don't have a reason
+_not_ to do a master's degree, then luckily, in the vast majority of cases,
+there is not a _wrong_ answer. Regardless of what you choose, you'll probably
+end up in about the same place in a few years, and there are many other
+decisions which will affect your life much more than whether you decide to get a
+master's degree.
 
-- If you are going to be fine financially, are interested in the academic side
-  of CS, and/or just want to be in school for another year, then go for it!
+I hope that this article has given you some tools for helping make your decision
+about or not you want to do your master's degree. I wish you the best of luck
+regardless of whether you decide to get your master's degree, or go into
+industry right after earning your bachelor's. The fact that you've read all the
+way to the bottom gives me confidence that whatever you choose, it will be the
+right decision for you!
