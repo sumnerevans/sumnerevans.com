@@ -67,7 +67,7 @@ science:
    of the field, these people are motivated primarily because they enjoy
    learning.
 3. **Social:** you are not ready for the "real world" yet and want another year
-   in school before having to be areal adult.
+   in school before having to be a real adult.
 
    Many of the people who pursue master's degrees have a social motivation as
    well. Maybe they just want more of the "college experience". Maybe they were
