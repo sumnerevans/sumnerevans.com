@@ -430,10 +430,10 @@ individual software engineer's control. Another major factor is benefits. In the
 model above, we were assuming that both John and Juan have the same benefits,
 however, this is almost certainly not going to be the case. Different healthcare
 plans have widely varying deductibles and benefits. Companies also provide a
-wide variety of different additional benefits from catered food to fertility
-assistance and from educational credits to travel to company retreats, all of
-which may be valued differently by different people in different life
-situations.
+wide variety of different additional benefits from 401(k) match to free food in
+the office, from fertility assistance to continued education credits, and from
+employee stock purchase plans (ESPP) to travel to company retreats, all of which
+may be valued differently by different people in different life situations.
 
 The above analysis is ignoring the additional payments that would be required
 for the $30k more of student debt, and also assumes the same cost-of-living.
