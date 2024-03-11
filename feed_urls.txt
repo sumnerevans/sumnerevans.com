@@ -1,3 +1,4 @@
+https://b-sharman.dev/blog.xml
 https://blog.beeper.com/feed
 https://blog.danslimmon.com/feed
 https://chrpaul.de/feed.xml
