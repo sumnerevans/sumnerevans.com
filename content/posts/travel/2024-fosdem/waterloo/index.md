@@ -12,3 +12,9 @@ description: TODO
 draft: true
 ---
 
+* woke up late
+* train to waterloo
+* wellington museum
+* back to hotel
+* dinner
+* bed

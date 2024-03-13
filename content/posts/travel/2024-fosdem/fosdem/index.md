@@ -51,7 +51,7 @@ CDN in front of Matrix media. I also enjoyed reconnecting with many people who
 I'd interacted with at previous events including
 [Ben](https://www.linkedin.com/in/benparsons/),
 [Marcel](https://github.com/mtrnord), [Nico](https://neko.dev/),
-[Christian](https://chrpaul.de/) Jan, and many others.
+[Christian](https://chrpaul.de/), Jan, and many others.
 
 A bunch of people trickled in to the event throughout the afternoon and evening,
 including my coworker [Tulir](https://mau.fi/). Eventually, pizza came,
