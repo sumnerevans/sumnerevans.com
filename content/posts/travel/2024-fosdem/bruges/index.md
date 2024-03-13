@@ -11,13 +11,13 @@ tags:
   - Belgium
 description: |
   Today I took the train to Bruges, a beautiful city near the Belgian coast.
-draft: true
+image: ./images/bruges-8.jpg
 ---
 
-Today I went to Bruges, a beautiful city near the Belgian coast. I woke up a bit
-late (I still haven't really adjusted to the CEST timezone), but I managed to
-get to Bruges by around 11 in the morning. I enjoy trains, and I got to take the
-train from Bruxeles-Midi through Ghent and on to Bruges.
+Today I went to Bruges, a beautiful city near the Belgian Atlantic coast. I woke
+up a bit late (I still haven't really adjusted to the CEST timezone), but I
+managed to get to Bruges by around 11 in the morning. I enjoy trains, and I got
+to take the train from Bruxeles-Midi through Ghent and on to Bruges.
 
 I'd skipped breakfast, so by the time I arrived in the city centre, I was hungry
 and went to a restaurant called
@@ -32,15 +32,106 @@ Additionally, since the US Dollar is so strong against the Euro right now, the
 prices are also very reasonable. I think it was 1.08 USD to 1 EUR while I was
 there.
 
+## Belfort
+
 After lunch, I went across the square to Belfort (the Belfry), which is a large
-bell tower.
+bell tower. It's at the centre and it has a great view of the town and the
+square below.
 
-After the bell tower, I continued walking around the town.
+<table class="gallery">
+  <tr>
+    <td>
+      <a href="./images/bell-tower-1.jpg" target="_blank">
+        <img src="./images/bell-tower-1.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="./images/bell-tower-2.jpg" target="_blank">
+        <img src="./images/bell-tower-2.jpg" />
+      </a>
+    </td>
+  </tr>
+</table>
 
-- Took train to Bruges
-- Went to restaurant
-- Went to bell tower
-- walked around other places
-- went back and went to youwok
-- poker
-- algorithms meeting
+However, the most interesting part was the way that the bells were operated.
+There is a huge intricate "music box" type contraption which plays the bells.
+There is a large drum with pegs in it, and when it is rotated, it plays a
+sequence of 47 bells.
+
+To get to the bells, you have to climb some very narrow and steep stairs all the
+way to the top, but it is well worth it for the views and being able to watch
+the bells in action.
+
+{{<
+  figure src="./images/belfort.jpg"
+  target="_blank"
+  title="The drum which holds the music that the bells play"
+>}}
+
+## Wandering
+
+After the bell tower, I continued walking around the town. It is a very
+beautiful town and I really enjoyed just walking around the streets. I'm not
+sure if I'd like living there considering how touristy it is, but it was very
+beautiful.
+
+<table class="gallery">
+  <tr>
+    <td>
+      <a href="./images/bruges-1.jpg" target="_blank">
+        <img src="./images/bruges-1.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="./images/bruges-2.jpg" target="_blank">
+        <img src="./images/bruges-2.jpg" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="./images/bruges-3.jpg" target="_blank">
+        <img src="./images/bruges-3.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="./images/bruges-4.jpg" target="_blank">
+        <img src="./images/bruges-4.jpg" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="./images/bruges-5.jpg" target="_blank">
+        <img src="./images/bruges-5.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="./images/bruges-6.jpg" target="_blank">
+        <img src="./images/bruges-6.jpg" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="./images/bruges-7.jpg" target="_blank">
+        <img src="./images/bruges-7.jpg" />
+      </a>
+    </td>
+    <td>
+      <a href="./images/bruges-8.jpg" target="_blank">
+        <img src="./images/bruges-8.jpg" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+After wandering around for a while I headed back to the train and returned to my
+hotel in Brussels.
+
+I got some dinner at [YouWok](https://maps.app.goo.gl/D8t9wgdX43BUrB9z7) and
+then I went over to Grand Casino Brussels for a 60€ poker tournament. It was my
+first time ever doing a poker tournament, and it was quite fun. I did not do
+well, but I gained some valuable experience and I think that I will try a
+tournament again at some point! I re-bought into the tournament a couple times,
+but after the third bullet I decided to call it a night.
