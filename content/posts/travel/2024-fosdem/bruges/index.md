@@ -9,6 +9,7 @@ tags:
   - Brussels
   - Bruges
   - Belgium
+  - Belfort
 description: |
   Today I took the train to Bruges, a beautiful city near the Belgian coast.
 image: ./images/bruges-8.jpg
@@ -63,7 +64,9 @@ way to the top, but it is well worth it for the views and being able to watch
 the bells in action.
 
 {{<
-  figure src="./images/belfort.jpg"
+  figure
+  src="./images/belfort.jpg"
+  link="./images/belfort.jpg"
   target="_blank"
   title="The drum which holds the music that the bells play"
 >}}
