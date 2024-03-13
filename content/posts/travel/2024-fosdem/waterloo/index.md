@@ -25,7 +25,7 @@ but it didn't stop. So, I had to go with plan B which was to go over to Brussels
 Midi and take the regional train to Waterloo.
 
 The Waterloo train station is a bit of a walk from the city centre, but it was a
-nice town to walk through. My destination was the Wellington Museum. Located in
+nice town to walk through. My destination was the Wellington Museum, located in
 the house which served as the headquarters of the Duke of Wellington during the
 battle. Across the street from the museum is a church. Inside there are many
 plaques commemorating various people who died during the battle.
