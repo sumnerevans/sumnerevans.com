@@ -16,13 +16,13 @@ image: ./images/wellington.jpg
 ---
 
 Today I went to Waterloo, the town which gave its name to the battle that saw
-Napoleon 's final defeat at the hands of the Seventh Coalition. Getting there
-was quite an adventure. To start, I woke up late again. After managing to get
-out of bed, I tried to take the tram over to a bus that went directly to the
-Waterloo city centre. I found the bus stop, and waited for a few minutes before
-the bus came, but then it just rolled right on past! I tried flagging it down,
-but it didn't stop. So, I had to go with plan B which was to go over to Brussels
-Midi and take the regional train to Waterloo.
+Napoleon's final defeat at the hands of the Seventh Coalition. Getting there was
+quite an adventure. To start, I woke up late again. After managing to get out of
+bed, I tried to take the tram over to a bus that went directly to the Waterloo
+city centre. I found the bus stop, and waited for a few minutes before the bus
+came, but then it just rolled right on past! I tried flagging it down, but it
+didn't stop. So, I had to go with plan B which was to go over to Brussels Midi
+and take the regional train to Waterloo.
 
 The Waterloo train station is a bit of a walk from the city centre, but it was a
 nice town to walk through. My destination was the Wellington Museum, located in
