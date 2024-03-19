@@ -27,6 +27,10 @@ jobs:
 
       - uses: DeterminateSystems/magic-nix-cache-action@v4
 
+      - uses: DeterminateSystems/flake-checker-action@v5
+        with:
+          fail-mode: true
+
       - name: Cache nix shell environment
         run: |
           nix develop '.#ci' \
