@@ -65,7 +65,7 @@ were out exercising and relaxing. By this time it was getting to mid-afternoon
 and I was getting hungry. I walked over to a pizza restaurant and had a really
 nice pizza. By this time, it was late enough in the afternoon to check in to the
 hotel that I'll be in for upcoming
-[work retreat]({{< ref "../retreat" >}})
+[work retreat]({{< ref "../retreat/index.md" >}})
 so I took the tram over and checked in and took a few minutes to relax.
 
 Most of my coworkers had arrived or were arriving at about the same time as me.

@@ -18,12 +18,13 @@ opportunity to meet coworkers in-person and are great times to build
 relationships. I find that meeting people in person is extremely helpful for
 making the online interactions feel personal.
 
-I'd met most of the people who attended this retreat at either the [Montreal
-retreat](../../2021-dc-montreal/2021-09-13-17-montreal) or the [Mexico
-retreat](../../2022-playa-del-carmen-mexico), but there were four teammates who
-I hadn't met before: Brandon, an iOS developer (and my roommate for the week);
-Samer, a support agent; Toni, an infrastructure developer; and Ivan, our product
-designer.
+I'd met most of the people who attended this retreat at either the
+[Montreal retreat]({{< ref "../../2021-dc-montreal/2021-09-13-17-montreal/index.rst" >}})
+or the
+[Mexico retreat]({{< ref "../../2022-playa-del-carmen-mexico/index.md" >}}),
+but there were four teammates who I hadn't met before: Brandon, an iOS developer
+(and my roommate for the week); Samer, a support agent; Toni, an infrastructure
+developer; and Ivan, our product designer.
 
 At one point during the retreat someone commented that the group was so cohesive
 and friendly that they had a hard time remembering who they had not met in
@@ -226,9 +227,8 @@ Alma do Paço has a large fire pit within the ruins area and every evening we
 started a fire and sat around talking and drinking until late into the evening.
 Adam was always the one who started the fire in the evening and so we promoted
 him to the C-suite as our CFO (Chief Fire Officer). Luckily, Scott who was
-[dubbed as our Chief Safety Officer after leading us safely back to the Airbnb
-during the last retreat]({{<ref
-"../../2022-playa-del-carmen-mexico/index.md#getting-to-know-my-coworkers" >}})
+dubbed as our Chief Safety Officer after leading us safely back to the Airbnb
+[during the last retreat]({{<ref "../../2022-playa-del-carmen-mexico/index.md#getting-to-know-my-coworkers" >}})
 was there to oversee and approve the fire.
 
 The nightly bonfires were great team bonding times and I think a couple of good
@@ -288,12 +288,13 @@ definitely got our exercise!
 
 ### Beach Time
 
-I made a few trips down to the beach: [on Sunday when I arrived]({{<ref
-"../denver-to-lisbon" >}}), on Wednesday with Scott, Finn, and Nick, and on
-Friday with a lot more of the team. I got into the water on Sunday and on
-Friday. It was much warmer on Sunday and while cold, it was refreshing. The tide
-was also high, so the rocks which protect much of the beach from the large waves
-were effective, but still submerged enough that you could swim over them.
+I made a few trips down to the beach:
+[on Sunday when I arrived]({{<ref "../denver-to-lisbon/index.md" >}}),
+on Wednesday with Scott, Finn, and Nick, and on Friday with a lot more of the
+team. I got into the water on Sunday and on Friday. It was much warmer on Sunday
+and while cold, it was refreshing. The tide was also high, so the rocks which
+protect much of the beach from the large waves were effective, but still
+submerged enough that you could swim over them.
 
 On Friday, it was a different story entirely: it was very cold, and the tide was
 low so the rocks were exposed making walking out to open water difficult in that

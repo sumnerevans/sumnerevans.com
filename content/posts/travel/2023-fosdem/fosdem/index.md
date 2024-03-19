@@ -25,9 +25,9 @@ one of the largest gatherings of open source enthusiasts in the world every
 year. My employer, [Beeper](https://beeper.com), funded my flight, and I decided
 to attend. It was a great experience! I learned a lot and have a long to-do list
 of projects to try out. I also really enjoyed interacting with the Matrix
-community and reconnect with many of the people who I'd met at the [Matrix
-Community Summit in Berlin last year]({{< ref "../../2022-berlin-matrix-summit/summit" >}}) and meet a bunch new people as
-well.
+community and reconnect with many of the people who I'd met at the
+[Matrix Community Summit in Berlin last year]({{< ref "../../2022-berlin-matrix-summit/summit/index.md" >}})
+and meet a bunch new people as well.
 
 ## The Matrix Community Meetup
 
@@ -103,7 +103,7 @@ you even go?) and then I headed over to the Go dev room.
 >}}
 
 I've been using Go fairly extensively at work, and even
-[did last year's Advent of Code in Go]({{< ref "../../../programming/2022-advent-of-code" >}}).
+[did last year's Advent of Code in Go]({{< ref "../../../programming/2022-advent-of-code/index.md" >}}).
 The first talk was what's changed in Go since the last in-person FOSDEM. I only
 really started programming in Go seriously last year, and I wrote my first Go
 program only about two years ago, so it was interesting to hear from someone who

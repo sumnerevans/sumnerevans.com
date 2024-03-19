@@ -30,9 +30,9 @@ Nothing went to plan, however. Due to navigational difficulties, lack of
 accurate naval and aerial bombardment, and other complicating factors, the
 Americans who landed on Omaha met the fiercest resistance of any beachhead.
 
-A few years ago, I [had the pleasure of hearing from D-Day veterans]({{< ref
-"../../2019-dc-transatlantic-cruise/2019-05-24-2019-05-31-queen-mary-2-crossing#wwii-veteran-presentations"
->}}) while on the Queen Mary II. Many of their stories came to mind as I stood
+A few years ago, I
+[had the pleasure of hearing from D-Day veterans]({{< ref "../../2019-dc-transatlantic-cruise/2019-05-24-2019-05-31-queen-mary-2-crossing/index.rst#wwii-veteran-presentations" >}})
+while on the Queen Mary II. Many of their stories came to mind as I stood
 on the sea wall looking out towards the ocean.
 
 I imagined the hundreds of yards of virtually barren beach littered with

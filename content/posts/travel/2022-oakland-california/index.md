@@ -35,8 +35,9 @@ the tower and he headed to the Salesforce floors for the rest of the day.
 
 At lunch, we met up to go to a Vietnamese place. Another Mines student, Brooks,
 who just started at Salesforce, joined us. Both Brooks and Jack were students in
-the [Architecture class I taught]({{< ref "/portfolio#experience-adjunct-mines"
->}}) a couple semesters ago, so it was a fun reunion.
+the
+[Architecture class I taught]({{< ref "/portfolio#experience-adjunct-mines" >}})
+a couple semesters ago, so it was a fun reunion.
 
 ## Golden Gate Park
 
@@ -216,12 +217,12 @@ then he took me to the airport for my mid-afternoon flight.
 
 I enjoyed spending time in California. It was the first time I'd been able to
 visit the state for an extended period of time. The only other time that I'd
-spent time in California was for the [Facebook Global Hackathon Finals]({{< ref
-"../../hackathons/2018-11-16-facebook-hackathon-the-competition" >}}), but we
-were at Facebook headquarters and the hotel for almost the entire time. Funnily
-enough, Jack was on my team for that hackathon, and I'd consider our win at that
-hackathon to be the crowning achievement of my college career, and I think it
-will remain one of the peaks of my entire career.
+spent time in California was for the
+[Facebook Global Hackathon Finals]({{< ref "../../hackathons/2018-11-16-facebook-hackathon-the-competition/index.rst" >}}),
+but we were at Facebook headquarters and the hotel for almost the entire time.
+Funnily enough, Jack was on my team for that hackathon, and I'd consider our win
+at that hackathon to be the crowning achievement of my college career, and I
+think it will remain one of the peaks of my entire career.
 
 It was great getting to spend time with Jack. We'd spent tons of time together
 during school since we were in the same clubs and activities. I was glad to get

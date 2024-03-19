@@ -96,5 +96,6 @@ It was quite a whirlwind of a day (or days, I don't know at this point), but I
 got back home safe and sound.
 
 I always like travelling, but I always like returning back to the comfort of
-home. After the [retreat]({{< ref "../ericeira-portugal" >}}) and a week off,
-I'm rejuvenated and ready to get back to work tomorrow!
+home. After the
+[retreat]({{< ref "../ericeira-portugal/index.md" >}})
+and a week off, I'm rejuvenated and ready to get back to work tomorrow!

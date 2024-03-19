@@ -18,10 +18,11 @@ image: ./images/matrix.jpg
 ---
 
 The primary purpose of my trip was to attend FOSDEM, a Free and Open Source
-Software conference. I [attended last year as well]({{< ref
-"../../2023-fosdem/fosdem/" >}}>) and enjoyed it, so I decided to make the trip
-to attend again. FOSDEM is the biggest meeting of people in the Matrix community
-every year, and there is also a sizeable Go presence at the conference as well.
+Software conference. I
+[attended last year as well]({{< ref "../../2023-fosdem/fosdem/index.md" >}})
+and enjoyed it, so I decided to make the trip to attend again. FOSDEM is the
+biggest meeting of people in the Matrix community every year, and there is also
+a sizeable Go presence at the conference as well.
 
 At Beeper, I primarily write Go, and I work extensively on Matrix bridges as
 well as other Matrix-related projects such as bots and homeservers. I am fortune

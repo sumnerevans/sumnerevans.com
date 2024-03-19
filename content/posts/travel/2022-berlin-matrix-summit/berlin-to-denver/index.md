@@ -25,9 +25,9 @@ configuration was a 3-3-3 in economy, and I was in D (outside of the middle
 row). In a stroke of luck, the middle seat in the row was unoccupied, so I was
 able to put my backpack under the middle seat and have more legroom.
 
-Despite having done this exact same flight a couple weeks ago when [coming back
-from Lisbon]({{< ref "../../2022-lisbon-and-paris/london-back-home" >}}), this
-flight felt much longer. It felt every bit like a ten hour flight.
+Despite having done this exact same flight a couple weeks ago when
+[coming back from Lisbon]({{< ref "../../2022-lisbon-and-paris/london-back-home/index.md" >}}),
+this flight felt much longer. It felt every bit like a ten hour flight.
 
 Getting through customs was a breeze because I have Global Entry. It is so
 convenient to be able to skip all of the customs and immigration queues. And, it

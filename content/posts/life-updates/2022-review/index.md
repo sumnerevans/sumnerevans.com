@@ -21,12 +21,12 @@ I'm thankful for...
 * Getting to work on many interesting projects with great people at my job,
   including a really fun greenfield project to write a custom homeserver.
 * Getting to travel to
-  [many]({{< ref "../../travel/2022-playa-del-carmen-mexico" >}})
-  [exotic]({{< ref "../../travel/2022-lisbon-and-paris/ericeira-portugal" >}})
-  [locations]({{< ref "../../travel/2022-mexico-city-retreat" >}})
+  [many]({{< ref "../../travel/2022-playa-del-carmen-mexico/index.md" >}})
+  [exotic]({{< ref "../../travel/2022-lisbon-and-paris/ericeira-portugal/index.md" >}})
+  [locations]({{< ref "../../travel/2022-mexico-city-retreat/index.md" >}})
   for [work retreats](/categories/work-retreats).
 * Getting to go to Berlin for the
-  [Matrix Community Summit]({{< ref "../../travel/2022-berlin-matrix-summit/summit" >}})
+  [Matrix Community Summit]({{< ref "../../travel/2022-berlin-matrix-summit/summit/index.md" >}})
   and got to meet some awesome people and make new friends.
 * The opportunity to give my
   [first]({{< ref "../../../portfolio#presentation-hungryserv" >}})
@@ -34,8 +34,8 @@ I'm thankful for...
   [presentations]({{< ref "../../../portfolio#presentation-matrix-bot-workshop" >}})
   at a conference.
 * Getting to travel to see
-  [multiple]({{< ref "../../travel/2022-oakland-california" >}})
-  [friends]({{< ref "../../travel/2022-starbase-texas" >}}).
+  [multiple]({{< ref "../../travel/2022-oakland-california/index.md" >}})
+  [friends]({{< ref "../../travel/2022-starbase-texas/index.md" >}}).
 * My vacation in
   [Lisbon and Paris](/categories/trip-to-portugal-and-france), and all of the
   amazing people I met on the way.
@@ -43,7 +43,7 @@ I'm thankful for...
   [teach]({{< ref "../../../portfolio#experience-adjunct-mines" >}})
   *CSCI 406 Algorithms* and *CSCI 400 Principles of Programming Languages*.
 * Getting all 50 stars on
-  [this year's Advent of Code]({{< ref "../../programming/2022-advent-of-code" >}})
+  [this year's Advent of Code]({{< ref "../../programming/2022-advent-of-code/index.md" >}})
 * Passing my first midterm towards my 5th degree black belt while I was at ATA
   Worlds.
 * Being able to participate in training seminars and compete at ATA Worlds.

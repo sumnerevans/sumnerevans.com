@@ -12,7 +12,8 @@ for each of the 25 days of Advent. He publishes a new problem every day at
 22:00 the day before for me in MST. The last two years, I decided to do the
 problems as soon as they came out and streamed my problem solving sessions on my
 [Twitch channel][2] and uploaded them to [my Youtube channel][3]. Last year, I
-also updated a [blog post after each day]({{< ref "../2021-advent-of-code" >}})
+also updated a
+[blog post after each day]({{< ref "../2021-advent-of-code/index.md" >}})
 which I intend to do again this year.
 
 This year, I'm going to be streaming my solves eventually, but for the first few
