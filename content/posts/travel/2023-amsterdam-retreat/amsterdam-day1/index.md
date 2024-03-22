@@ -1,5 +1,5 @@
 ---
-title: "Amsterdam - Day 1"
+title: Amsterdam - The Van Gogh Museum
 date: 2023-03-24T09:25:00-06:00
 categories:
   - Travel

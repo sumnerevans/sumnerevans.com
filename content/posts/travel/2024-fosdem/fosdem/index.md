@@ -4,6 +4,7 @@ date: 2024-02-05T06:25:00-06:00
 categories:
   - Travel
   - Trip to FOSDEM 2024
+  - Conferences
 tags:
   - Travel
   - FOSDEM

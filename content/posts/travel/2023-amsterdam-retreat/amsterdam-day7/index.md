@@ -1,5 +1,5 @@
 ---
-title: "Amsterdam - Day 7"
+title: Amsterdam - Exploration Day
 date: 2023-04-01T09:25:00-06:00
 categories:
   - Travel

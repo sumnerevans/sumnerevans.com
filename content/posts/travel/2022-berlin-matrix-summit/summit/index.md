@@ -1,7 +1,9 @@
 ---
 title: "Berlin Matrix Community Summit"
 date: 2022-08-28T12:00:00-06:00
-categories: [Berlin Matrix Community Summit 2022]
+categories:
+  - Berlin Matrix Community Summit 2022
+  - Conferences
 tags:
   - Travel
   - Berlin
