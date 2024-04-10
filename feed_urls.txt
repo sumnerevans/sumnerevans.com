@@ -1,4 +1,5 @@
 https://b-sharman.dev/blog.xml
+https://alex.kirk.at/feed
 https://blog.beeper.com/feed
 https://blog.danslimmon.com/feed
 https://chrpaul.de/feed.xml
