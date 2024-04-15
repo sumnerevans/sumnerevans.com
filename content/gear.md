@@ -6,20 +6,21 @@ date: 2021-04-18 09:04:00
 ## Daily Drivers
 
 I have two primary computers: a laptop and a desktop. I also have multiple VPS's
-on Linode and Hetzner which host my [personal
-infrastructure](https://github.com/sumnerevans/nixos-configuration).
+on Linode and Hetzner which host my
+[personal infrastructure](https://github.com/sumnerevans/nixos-configuration).
 
-I run [NixOS](https://nixos.org/) on all my computers, and use [Nix Home
-Manager](https://nix-community.github.io/home-manager/) to manage my
+I run [NixOS](https://nixos.org/) on all my computers, and use
+[Nix Home Manager](https://nix-community.github.io/home-manager/) to manage my
 configuration. I use the i3 window manager or Sway, i3status-rust, ZSH, NeoVim,
-and mutt among other things. You can find all of my [NixOS
-configuration](https://github.com/sumnerevans/nixos-configuration) and [home-manager configuration](https://github.com/sumnerevans/home-manager-configuration).
+and mutt among other things. You can find all of my
+[NixOS configuration](https://github.com/sumnerevans/nixos-configuration) and
+[home-manager configuration](https://github.com/sumnerevans/home-manager-configuration).
 
 Here's a list of my machines. I name them after planets in the Star Wars
 universe.
 
-- **Desktop:** (hostname: `coruscant`) A custom-built desktop. See the [part
-  list on PCPartPicker][partlist]. Highlights are:
+- **Desktop:** (hostname: `coruscant`) A custom-built desktop. See the
+  [part list on PCPartPicker][partlist]. Highlights are:
 
   - AMD Ryzen 7 2700X
   - AMD Radeon RX 6600
@@ -31,6 +32,18 @@ universe.
 
 - **Server:** (hostname: `morak`) A Hetzner VPS (CPX11) running websites and
   cloud storage infrastructure.
+
+## Bags
+
+- **EDC Backpack:** [Aer Fit Pack 3](https://aersf.com/products/fit-pack-3) ---
+  I use this for every-day carry, and for when I two-bag a trip with my duffel
+  bag.
+- **Travel Backpack:**
+  [Aer Travel Pack 3](https://aersf.com/products/travel-pack-3) --- I use this
+  for one-bagging trips.
+- **Gym/Travel Duffel:**
+  [Aer Gym Duffel 3](https://aersf.com/products/gym-duffel-3) -- I use this when
+  I two-bag a trip.
 
 ## Accessories
 
@@ -53,8 +66,8 @@ universe.
 
 - **VR:** [Oculus Rift with Touch][oculus]
 
-- **Headphones:** [Audio Technica ATH-M50X][ath-m50x] and [Audio-Technica
-  ATH-MSR7BK][ath-msr7bk]
+- **Headphones:** [Audio Technica ATH-M50X][ath-m50x] and
+  [Audio-Technica ATH-MSR7BK][ath-msr7bk]
 
 - **Speakers:** [Audioengine A2+][audioengine-a2plus]
 
@@ -79,14 +92,10 @@ universe.
 ## Other Devices
 
 - **Raspberry Pi 1**
-- **Laptop:** MacBook Pro: 15", Retina display, Mid 2014. I primarily use this
-  as a test machine for macOS and various Linux distributions that I try.
 
-  - 16 GB RAM
-  - 512 GB SSD
-
-- **Laptop:** (hostname: `mustafar`) A [Samsung Galaxy
-  Chromebook][samsung-galaxy-chromebook] that I have hacked to run Linux.
+- **Laptop:** (hostname: `mustafar`) A
+  [Samsung Galaxy Chromebook][samsung-galaxy-chromebook] that I have hacked to
+  run Linux.
 
 - **Laptop:** (hostname: `jedha`) A ThinkPad T580
 
