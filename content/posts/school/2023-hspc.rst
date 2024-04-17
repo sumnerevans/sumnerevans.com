@@ -10,7 +10,7 @@ tags: [High School Programming Competition, Competitive Programming, Mines, HSPC
 For the last six years, Mines ACM has hosted a High School Programming
 Competition (HSPC) modelled after the `International Collegiate Programming
 Contest (ICPC) <icpc_>`_. I wrote about the `2019 <hspc2019_>`_, `2020
-<hspc2020_>`_, `2021 <hspc2021_>`_, `2022 <hspc2022_>`_ competitions on this
+<hspc2020_>`_, `2021 <hspc2021_>`_, and `2022 <hspc2022_>`_ competitions on this
 blog. The problems from every year are new and written by Mines students and
 some Mines alum specifically for the competition. This year, I wrote four of the
 problems and helped Ethan Richards with organizing the competition.
