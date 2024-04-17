@@ -452,11 +452,14 @@ than some of my peers who only got an undergraduate degree. This is because I've
 chosen to take a risk by working at a startup instead of a well established
 large tech company. I think that I've taken a slight pay cut, but I have a
 decent amount of equity and there is potential for a large windfall in the case
-of a favourable exit. On the other hand, during my two years at The Trade Desk,
-the stock tripled, and I had both ESPP (a program which allows employees to
-defer salary to buy the stock at a discount) and stock grants. Both of these did
-very well during that period. This stock boom happened during the COVID
-lockdowns, which is obviously something that I had no control over.
+of a favourable exit. (Update: [the exit was
+favourable](https://techcrunch.com/2024/04/09/wordpress-com-owner-automattic-acquires-multi-service-messaging-app-beeper-for-125m/).
+I got a decent equity payout and a sizeable raise.) However, during the first
+two years of my career that I spent at The Trade Desk, the stock tripled, and I
+had both ESPP (a program which allows employees to defer salary to buy the stock
+at a discount) and stock grants. Both of these did very well during that period.
+This stock boom happened during the COVID lockdowns, which is obviously
+something that I had no control over.
 
 **If the only reason you are considering grad school is to make more money,
 don't go to grad school.** Get into the workforce now, and start climbing the
