@@ -3,6 +3,10 @@ title: "Is Getting A Master's Degree in Computer Science Worth It?"
 date: 2024-02-26T06:37:50-0600
 categories: [School]
 tags: [Computer Science, Masters Degree]
+description: |
+  Should you get a master's degree in computer science? In this article, I give
+  my perspective on whether or not getting a master's degree is worth the effort
+  and money.
 ---
 
 "Master of Science in Computer Science", it sounds so grand, doesn't it? But is
@@ -36,9 +40,9 @@ And on the social side, I did all of this while getting to hang out with some of
 my best friends, attend a bunch of Mines Football games, participate in the
 annual E-Days cardboard boat race, and do a lot of skiing.
 
-However, I think that from an objective, pure-monetary perspective, I'm at best
-no worse off for having done my master's degree than if I had stopped after
-undergrad. When accounting for the intangibles of the enjoyment factor and
+However, I think that **from an objective, pure-monetary perspective, I'm at
+best no worse off for having done my master's degree than if I had stopped after
+undergrad**. When accounting for the intangibles of the enjoyment factor and
 connections I made, I probably came out ahead, but I attribute very little of my
 career success to this point to having received additional education.
 
