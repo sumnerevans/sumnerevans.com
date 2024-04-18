@@ -108,7 +108,7 @@ respective competition:
 - **D: Sarah's Sandwich Shop** -- Lots of ``if`` statements (or a dictionary).
 - **E: Mines Football** -- Minimization/maximization on a list.
 - **F: Cookie Monster Concussion** -- A ``for`` loop (or notice that modular
-  aritemetic would solve the problem).
+  arithmetic would solve the problem).
 - **G: Compass Rose** -- Binary search.
 - **H: Computer Imaging** -- Simple simulation or computing a summation.
 - **I: Fixing Figures** -- Write out numbers as words.
@@ -124,7 +124,7 @@ respective competition:
 - **B: Basketball Modelling** -- Dynamic programming to compute a statistical
   result.
 - **C: Cookie Monster Concussion** -- A ``for`` loop (or notice that modular
-  aritemetic would solve the problem).
+  arithmetic would solve the problem).
 - **D: Paper Pile Pandemonium** -- Keep track of piles of paper using a list.
 - **E: Pegs** -- BFS on an annoying graph.
 - **F: Compass Rose** -- Binary search.
