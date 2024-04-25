@@ -49,6 +49,13 @@ jobs:
           nix develop '.#ci' \
             --command bash -c "hugo --verbose --gc --minify"
 
+      - name: Teaching raw HTML
+        run: |
+          rm -rf public/teaching/csci400-s19
+          rm -rf public/teaching/csci564-s21
+          cp -r content/teaching/csci400-s19 public/teaching
+          cp -r content/teaching/csci564-s21 public/teaching
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
