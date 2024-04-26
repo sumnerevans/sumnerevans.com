@@ -1,6 +1,6 @@
 ---
-title: "Porto, Portugal - Work Retreat"
-date: 2024-03-26T06:25:00-06:00
+title: Porto, Portugal - Work Retreat
+date: 2024-04-26T06:25:00-06:00
 categories:
   - Travel
   - Work Retreats
@@ -49,16 +49,3 @@ Carmen]({{< ref "/posts/travel/2022-playa-del-carmen-mexico" >}}), [Mexico
 City]({{< ref "/posts/travel/2022-mexico-city-retreat" >}}), [Amsterdam]({{< ref
 "/posts/travel/2023-amsterdam-retreat/retreat" >}}), and most recently in
 [Toronto]({{< ref "/posts/travel/2023-toronto-retreat" >}}) last fall.
-
-I was running the [2024 Mines High School Programming Competition]({{< ref
-"/posts/school/2024-hspc" >}}) on Saturday, so I had to leave on an evening
-flight in order to arrive in Porto by Monday.
-
-Unfortunately, the best flight I was able to get that left late enough on
-Saturday went through Munich with a 7 hour layover before the flight to Porto.
-(My returning flight goes through Frankfurt, so it's not much better either.
-Automattic paid for an upgrade to Economy Plus with some extra leg room. On top
-of that, the middle seat next to me was unoccupied! I slept for the majority of
-the flight and got to Munich airport in a reasonable condition. Immigration was
-easy, and then I found a bench to lay down on and took another nap. Then I
-grabbed some dinner and then went to the
