@@ -1,0 +1,173 @@
+---
+title: Mines High School Programming Competition 2024
+date: 2024-04-14T17:48:00-06:00
+categories: [School]
+tags: [High School Programming Competition, Competitive Programming, Mines, HSPC]
+draft: true
+---
+
+.. default-role:: math
+
+For the last six years, Mines ACM has hosted a High School Programming
+Competition (HSPC) modelled after the `International Collegiate Programming
+Contest (ICPC) <icpc_>`_. I wrote about the `2019 <hspc2019_>`_, `2020
+<hspc2020_>`_, `2021 <hspc2021_>`_, `2022 <hspc2022_>`_, and `2023 <hspc2023_>`_
+competitions on this blog. The problems from every year are new and written by
+Mines students and some Mines alum specifically for the competition. This year,
+I wrote two of the problems, reviewed all of them, and helped Ethan Richards
+with organizing the competition.
+
+.. _icpc: https://icpc.global/
+.. _hspc2019: {{< ref "./2019-hspc" >}}
+.. _hspc2020: {{< ref "./2020-hspc" >}}
+.. _hspc2021: {{< ref "./2021-hspc" >}}
+.. _hspc2022: {{< ref "./2022-hspc" >}}
+.. _hspc2023: {{< ref "./2023-hspc" >}}
+
+This year, we returned to an in-person only competition, however we opened up an
+open division to remote competitors. We also continued our open-internet policy
+which allowed students to access internet resources.
+
+New this year, we decided to give special awards for teams consisting of
+exclusively first-time competitors.
+
+We had sixteen different problems written by eleven authors (the highest number
+of authors ever).
+
+The in-person competition featured 37 teams making it the largest in-person
+competition to-date.
+
+In this post, I'm going to explain the problems in the competition (with
+relatively detailed solution sketches).
+
+.. Competition Highlights
+.. ======================
+
+**You can view full standings for each competition at the following websites:**
+
+* In-Person: https://mines-hspc.kattis.com/contests/mines-hspc24
+* Open: https://mines-hspc.kattis.com/contests/mines-hspc24-open
+
+.. As with all of the HSPC competitions so far, this year's competition was very
+.. exciting.
+
+.. Highlights from the advanced in-person competition include:
+
+.. TOTO
+
+.. Highlights from the beginner in-person competition include:
+
+.. TODO
+
+.. Highlights from the advanced remote competition include:
+
+.. * River Hill High School, the winners of the 2021 competition who placed third
+..   last year, regained the title winning first place. They solved all twelve
+..   problems to beat Cherry Creek High School's remote team.
+.. * Cherry Creek High School (last year's third-place winners) solved all twelve
+..   problems, but lost on the time tiebreaker to River Hill.
+.. * New participants Bergen County Academics with their team *JMS* took third
+..   place solving eleven problems.
+.. * River Hill was first to solve seven of the problems, while Cherry Creek were
+..   first to solve on two problems. Bergen County's team was first to solve on two
+..   problems. Team *Triangle* (5th) out of Voice of Calling NPO in of Northridge,
+..   California were first to solve on a problem as well.
+
+.. Highlights from the beginner remote competition include:
+
+.. TODO
+
+The Problems
+============
+
+.. warning::
+
+   The rest of this post should be treated like a solutions manual. I hope that
+   this is an extremely helpful resource when you get stuck, but you should
+   *try* to solve each of the problems before reading the solutions. There's no
+   magic amount of time that you should try to solve the problem before looking
+   at the solution sketch, but I think a good rule of thumb is after you've
+   tried at least three ideas on your own, then you can read at the solution
+   sketch.
+
+   **Remember: You will not learn anything if you just read the explanations!**
+
+There were sixteen problems in the competition written by eleven different
+authors (the most ever). The problems can be viewed at
+https://mines-hspc.kattis.com/contests/mines-hspc24/problems. The following
+lists the problems featured in the competition and a short description of the
+algorithm required to solve the problem, listed in the order in which they
+appeared in competition:
+
+**Beginner Competition:**
+
+- **A: Parking Pandemonium** -- Basic arithmetic.
+- **B: Closing Early** -- Modular arithmetic in a ``for`` loop.
+- **C: Clock Catchup** -- Modular arithmetic related to time.
+- **D: New Professor** -- Priority-queue or repeatedly sorted list processing.
+- **E: Exact Change** -- Modular arithmetic.
+- **F: Win Streak** -- List processing.
+- **G: Winning Wagers** -- Expected value.
+- **H: Warehouse Stocking** -- Dictionary and reverse-lookup dictionary.
+- **I: Trolley Troubles** -- 0-1 BFS or Dijkstra's.
+- **J: M-Climb Road** -- Basic arithmetic.
+- **K: Purchasing Perishables** -- Finding optimal sequential-window size in a
+  list.
+- **L: Abby's Absolutes** -- Inequality check in a ``for`` loop.
+- **M: Mines Motor Company** -- Manhattan distances in a ``for`` loop.
+- **N: No Stragglers** -- Keep track of single variable state in a ``for`` loop.
+- **O: QWERTY** -- Cipher based
+- **P: Procrastination** -- 
+
+The following subsections are going to describe the problems and provide fairly
+detailed solution sketches for each one, sorted by their intended relative
+difficulty with the easiest ones first.
+
+I do not try and build up from first principles in each of these explanations.
+Rather, I try and make the explanations accessible to anyone who feels like
+solving the problem is within their grasp, but they can't figure out one or two
+of the key ideas to crack the problem. For the easiest problems, I start much
+closer to first principles, but as the problems get harder, I start assuming
+more and more base understanding of programming.
+
+Additionally, I'm only presenting a single solution for each problem here. There
+are likely many alternative ways to solve each of these problems.
+
+Parking Pandemonium
+-------------------
+
+:Description: https://mines-hspc.kattis.com/contests/mines-hspc24/problems/parkingpandemonium
+:Author: Sumner Evans
+:In Competition: Problem A, XX/YY (ZZ%) solved/tries, AAA% solve rate
+:Concept: basic operations on variables
+
+.. admonition:: Problem Summary
+
+   Calculate the amount of times it takes for Hannah to find a parking spot
+   given that she circles the lot `C` times at `M` minutes per circle.
+
+The solution is to read the first and third lines of input and multiply them.
+The only difficult thing here is ignoring the second line of input which is the
+temperature of the parking lot in Kelvin.
+
+M-Climb Road
+------------
+
+:Description: https://mines-hspc.kattis.com/contests/mines-hspc24/problems/mclimbroad
+:Author: Ethan Richards
+:In Competition: Problem A, XX/YY (ZZ%) solved/tries, AAA% solve rate
+:Concept: basic operations on variables
+
+.. admonition:: Problem Summary
+
+   **Will Rishi make it to the end of the intersection before the light turns
+   red given he is going at $S$ miles per hour?** He is `D` feet from the end of
+   the intersection and he has `T` seconds to get through the intersection.
+
+For this problem, you need to determine if Rishi will travel at least `D` feet
+in `T` seconds going at `S` miles per hour.
+
+You need to do some unit conversions in order to make this comparison. It is
+recommended to convert the speed to feet per second.
+
+Then if `T \times S \geq D` Rishi "MADE IT" otherwise output "FAILED TEST".
