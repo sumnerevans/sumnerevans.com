@@ -1,9 +1,8 @@
 ---
 title: Mines High School Programming Competition 2024
-date: 2024-04-14T17:48:00-06:00
+date: 2024-04-20T17:48:00-06:00
 categories: [School]
 tags: [High School Programming Competition, Competitive Programming, Mines, HSPC]
-draft: true
 ---
 
 .. default-role:: math
@@ -179,7 +178,6 @@ Abby's Absolutes
    to buy `A_i` apples, but she will buy either 1 or `N` apples on each trip,
    whichever  is closer to your request (or 1 in the case of ties).
 
-
 Loop over each of the trips. During the `i^{\text{th}}` trip, if `A_i-1 \leq
 N-A_i`, then Abby will buy 1 apple, so print 1. Otherwise, she will buy `N`
 apples, so print `N`.
@@ -277,15 +275,322 @@ The minute hand crosses `H_e-H_s` times.
 
 The second hand crosses `60 \times (H_e - H_s) + (M_e - M_s)` times.
 
+No Stragglers
+-------------
 
+:Description: https://mines-hspc.kattis.com/contests/mines-hspc24/problems/nostragglers
+:Author: Keenan Schott
+:In Competition: Problem N, 22/25 (88%) solved/tries, 81% solve rate
+:Concept: track a single variable in a loop
 
+.. admonition:: Problem Summary
 
-nostragglers
-purchasingperishables
-closingearly
-winningwagers
-warehousestocking
-procrastination
-minesmotorcompany
-trolleytroubles
-newprofessor
+   Given security logs for number of students, faculty, and visitors entering or
+   exiting Mines Market, determine if there are still people inside, and if so,
+   how many?
+
+Notice that the distinction between students, faculty, and visitors is
+irrelevant to the problem and can be ignored.
+
+Initialize some variable to 0 that will be used to track how many people are
+currently in Mines Market. Now process the logs sequentially, for ``IN`` events,
+add to the total, and for ``OUT`` events, subtract from the total.
+
+If at the end the total is 0, output ``NO STRAGGLERS`` otherwise output the
+total.
+
+Purchasing Perishables
+----------------------
+
+:Description: https://mines-hspc.kattis.com/contests/mines-hspc24/problems/purchasingperishables
+:Author: Nathan George
+:In Competition: Problem K, 6/53 (11%) solved/tries, 22% solve rate
+:Concept: determining the optimal step-length within an array
+
+.. admonition:: Problem Summary
+
+   Given a list of meal prices for `N` days, find an optimal interval for Katie
+   to purchase `N` meals such that the total cost is minimized, and output this
+   minimum cost.
+
+The solution is to try each potential purchasing interval from 1 to `N` days and
+compute the cost of meals for that interval. If the interval is `k` days, then
+the cost can be expressed as:
+
+.. math::
+
+   \sum_{i = 0}^{\left\lceil \frac{N}{k} \right\rceil - 1} p_{i \cdot k + 1} \cdot \min(k, N-i \cdot k)
+
+But `N` can be as large as `10^5`. Is this fast enough?
+
+Yes, for each interval length `k`, we can compute its cost in
+`\mathcal{O}\left(\frac{N}{k}\right)` time. Then, the total time to compute the
+cost over all intervals is
+
+.. math::
+
+   \sum_{k = 1}^{N} \frac{N}{k}
+
+We can show that this runs in `\mathcal{O}\left(N \log (N)\right)` with the
+following comparison
+
+.. math::
+
+   \sum_{k = 1}^{N} \frac{N}{k} \approx \int_{1}^{N} \frac{N}{x} dx = N \ln(N)
+
+Closing Early
+-------------
+
+:Description: https://mines-hspc.kattis.com/contests/mines-hspc24/problems/closingearly
+:Author: Kelly Dance
+:In Competition: Problem B, 11/84 (13%) solved/tries, 41% solve rate
+:Concept: modular arithmetic in a loop
+
+.. admonition:: Problem Summary
+
+   Each pizza has `S` slices. There are `R` slices ready. `N` customers will
+   arrive sequentially and the `i^{\text{th}}` customer will order `A_i` slices.
+   When is the earliest time we can stop serving customers and have 0 slices
+   left over?
+
+We want to find the first `k \geq 0` where `A_1 + A_2 + ... + A_k = R + fS` for
+some other integer `f` representing the number of full pizzas cooked. To do this
+we consider both sides of this equation modulo `S`.
+
+.. math::
+
+   (A_1 + A_2 + \dots + A_k) \% S = R
+
+To find `k` we can maintain a running total `T`. Now, we can loop over the
+customers until `T = R`. With each customer we update `T \leftarrow (T + A_i) \%
+S`.
+
+Be careful about the `k=0` case, or the case when there is no such `k`.
+
+This solution runs in `\mathcal{O}(n)` time. `\mathcal{O}\left(n^2\right)`
+solutions are too slow.
+
+Winning Wagers
+--------------
+
+:Description: https://mines-hspc.kattis.com/contests/mines-hspc24/problems/winningwagers
+:Author: Umberto Gherardi
+:In Competition: Problem G, 14/45 (31%) solved/tries, 51% solve rate
+:Concept: expected value
+
+.. admonition:: Problem Summary
+
+   Given a set of `N` *probability items* (coin, die, cards) and the amount of
+   money you would lose if you incorrectly predict their outcomes, calculate the
+   break-even point for the wager.
+
+Let `T_i` be the number of possible outcomes for the `i^{\text{th}}` event. The
+probability of correctly predicting all `N` events is:
+
+.. math::
+
+   \frac{1}{D} = \prod_{i=1}^{N} \frac{1}{T_i}.
+
+Note that since all `T_i` are integers, `D` is also an integer. Then set the
+*expected value* of the wager to `0`:
+
+.. math::
+
+   \frac{1}{D} \times W - \left(1 - \frac{1}{D}\right) \times L = 0.
+
+Solving for $W$, we get:
+
+.. math::
+
+   \frac{1}{D} \times W - \left(1 - \frac{1}{D}\right) \times L & = 0                                              \\
+   \frac{1}{D} \times W                                         & = \left(1 - \frac{1}{D}\right) \times L          \\
+   W                                                            & = D \times \left(1 - \frac{1}{D}\right) \times L \\
+   W                                                            & = (D - 1) \times L.
+
+Importantly, this calculation *does not require any division*. No floating point
+math necessary.
+
+If you attempted to use an equation that included division, you would likely
+have run into precision issues with your calculations.
+
+Warehouse Stocking
+------------------
+
+:Description: https://mines-hspc.kattis.com/contests/mines-hspc24/problems/warehousestocking
+:Author: Ethan Richards
+:In Competition: Problem H, 7/61 (11%) solved/tries, 26% solve rate
+:Concept: multiple dictionaries
+
+.. admonition:: Problem Summary
+
+   You are given a set of ``PUT``, ``TAKE``, and ``FIND`` operations on a
+   warehouse. For all ``FIND`` operations, output all of the locations of the
+   item being searched for in the warehouse.
+
+The key here is to have *two* dictionaries: one to store a mapping of locations
+to the item they contain (`L`), and another to store a mapping of items to a
+list of the locations in which that item can be found (`T`).
+
+Then, it's a matter of accounting for the state updates caused by each
+operation.
+
+* For each of the ``PUT`` operations, update
+  `L[\texttt{loc}] \leftarrow \texttt{item}` and
+  `T[\texttt{item}] \leftarrow \text{append } \texttt{loc} \text{ to } T[\texttt{item}]`.
+
+* For each of the ``TAKE`` operations, update
+  `T[L[\texttt{loc}]] \leftarrow \text{remove } \texttt{loc} \text{ from } T[L[\texttt{loc}]]`
+  and set
+  `L[\texttt{loc}] \leftarrow \text{nil}`.
+
+* For each of the ``FIND`` operations, if `T[\texttt{item}]` exists, sort and
+  output it. If it does not exist, output ``NOT FOUND``.
+
+Procrastination
+---------------
+
+:Description: https://mines-hspc.kattis.com/contests/mines-hspc24/problems/procrastination
+:Author: Ethan Richards
+:In Competition: Problem P, 13/39 (33%) solved/tries, 48% solve rate
+:Concept: greedy simulation
+
+.. admonition:: Problem Summary
+
+   Kelly has `M` hours to complete some tasks. Task `i` takes `T_i` hours and
+   will increase his grade by `G_i`. Kelly opts to complete the shortest tasks
+   first. He will break ties by picking the task with the greater grade points.
+   What will be the total benefit to his grade?
+
+Sort the tasks by increasing `T_i` and break ties with decreasing `G_i`. This
+can be done using a built in sorting algorithm on pairs/tuples if `G_i` is
+placed second in the tuple and negated.
+
+Initialize `F=0` to track his total grade. Now loop over the tasks with this new
+order as long as `M \geq T_i`. For each task update `M \leftarrow M - T_i` and
+`F \leftarrow F + G_i`.
+	
+Output the final grade `F`.
+
+**Note:** the reason we did not ask for the *optimal* set of tasks to preform to
+optimize the grade is because that is an
+`NP-complete problem <https://en.wikipedia.org/wiki/NP-completeness_>`_ which
+means that it's provably a hard problem.
+
+Mines Motor Company
+-------------------
+
+:Description: https://mines-hspc.kattis.com/contests/mines-hspc24/problems/minesmotorcompany
+:Author: Mete Saka
+:In Competition: Problem M, 19/19 (100%) solved/tries, 70% solve rate
+:Concept: Manhattan distance in a loop
+
+.. admonition:: Problem Summary
+   
+   Given a sequeunce of locations to visit on a 2D grid of workstations,
+   calculate the total distance you must travel.
+
+   Locations are given in order as 2-character strings. Examples: ``AA``
+   represents `(1,1)`, ``ZA`` represents `(26,1)`, ``GX`` represents `(7,24)`.
+
+Loop over locations starting from the second location (since the first is the
+starting location). 
+
+Now we want to add up the distance between successive pairs of locations.
+Convert the characters for the X direction of each location to a number 1-26 (or
+ASCII), then take the absolute value of their difference and add this to the
+total distance. Repeat for the Y direction.
+
+Trolley Troubles
+----------------
+
+:Description: https://mines-hspc.kattis.com/contests/mines-hspc24/problems/trolleytroubles
+:Author: Jonathon Robel
+:In Competition: Problem I, 0/14 (0%) solved/tries, 0% solve rate
+:Concept: 0-1 BFS or Dijkstra's on a non-trivial graph
+
+.. admonition:: Problem Summary
+
+   Given a map of `N` parallel `L`-length tracks with cracks, find a path that
+   minimizes the number of cracks crossed.
+
+This is a graph modelling problem. We want to construct a graph such that
+finding the shortest path provides us with a path through the tracks that
+minimizes the number of cracks crossed.
+
+* **Nodes** are track segments (`N \times L` total) labeled `(t,s)` where `t` is
+  the track number and `s` is the segment number.
+* **Edges** are decisions we can make at each track segment (move forward or
+  switch tracks)
+* **Edge Weights** are the number of cracks crossed to go to the next track
+  segment (0 if no crack or 1 if there is)
+
+For each node `(t, s)`, create the following edges depending on the segment type
+of `(t, s)`:
+
+* ``=`` pieces - create an edge to `(t, s+1)` with weight 0.
+* ``H`` pieces - create an edge to `(t, s+1)` with weight 1.
+* ``^`` pieces - create an edge to `(t, s+1)` and an edge to `(t-1, s)` both
+  with weight 0.
+* ``v`` pieces - create an edge to `(t, s+1)` and an edge to `(t+1, s)` both
+  with weight 0.
+
+It may be helpful to create a singular *finish* node that all `(t, L)` nodes
+have a zero-cost edge to. This allows you to find the shortest path to a single
+node.
+
+Now, we need to actually find a path through the graph from `(k,0)` to the
+finish node. There are a couple ways to do this:
+
+* **Dijkstra's Algorithm** [2]_ - This algorithm uses a priority queue to visit
+  nodes in a uniform manner radiating from the start node.
+* **0-1 BFS** - This algorithm performs a normal BFS with the following
+  modifications:
+
+  * Use a deque (double-ended queue) instead of a queue.
+  * If the edge has weight 1 enqueue to the *back* of the deque, if the edge has
+    weight 0 enqueue to the *front* of the deque.
+  * When updating the distance matrix, use the edge weight rather than
+    hard-coding 1.
+
+In both algorithms, you need to track the node from which each node is
+discovered, then perform a **traceback** from the finish node to construct the
+path.
+
+If the parent of a node `(t, s)` is `(t-1, s)`, then the path will include
+`s\texttt{d}` indicating a downward switch at column `s`. The parent has a lower
+track number than its child, meaning that it is *above* the child node.
+
+Conversely, if the parent of a node `(t, s)` is `(t+1, s)`, then the path will
+include `s\texttt{u}` indicating an upward switch at column `s`.
+
+You will have to perform the traceback starting from the finish node, and output
+in the *reversed* order.
+
+.. [2] https://en.wikipedia.org/wiki/Dijkstra's_algorithm
+
+New Professor
+-------------
+
+:Description: https://mines-hspc.kattis.com/contests/mines-hspc24/problems/newprofessor
+:Author: Mete Saka
+:In Competition: Problem D, 9/38 (24%) solved/tries, 33% solve rate
+:Concept: priority queue or repeated sorting of an array
+
+Blake has `S_i` shirts of the `i^{\text{th}}`. He wants to avoid wearing the
+same color shirt multiple times within the same work week (5-day weeks). How
+many days can he go before he must wear a shirt color he has already worn that
+week, or he runs out of shirts?
+
+We will simulate choosing which color shirts to wear each week. When choosing
+the colors for a week, we will pick the 5 colors that have the most shirts
+remaining. Remember to update the number of remaining shirts of these colors.
+
+When there are `k < 5` distinct shirt color remaining, we can go exactly `k`
+more days before finally repeating our self or running out of shirts.
+
+This approach can be made to run in `\mathcal{O}(CM\log(C))` where `M` is the
+maximum number of any shirt color and `C` is the number of shirt colors by
+utilizing a priority queue, but we set the bounds low enough that repeatedly
+sorting the shirt color frequency list would still be fast enough
+(`\mathcal{O}(C^2M\log(C))`) assuming an `\mathcal{O}(n \log n)` sorting
+algorithm is used.
