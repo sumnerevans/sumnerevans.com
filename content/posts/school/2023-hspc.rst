@@ -193,7 +193,7 @@ Driving Dilemma
 .. admonition:: Problem Summary
 
    **Will Rishi make it to the end of the intersection before the light turns
-   red given he is going at $S$ miles per hour?** He is `D` feet from the end of
+   red given he is going at `S` miles per hour?** He is `D` feet from the end of
    the intersection and he has `T` seconds to get through the intersection.
 
 For this problem, you need to determine if Rishi will travel at least `D` feet
