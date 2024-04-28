@@ -14,7 +14,12 @@ description: |
 ---
 
 I'm making my way across the pond once again, this time for a work retreat. I'm
+attending a team meetup in Porto, Portugal.
+
+<!--
+I'm making my way across the pond once again, this time for a work retreat. I'm
 attending a [team meetup]({{< ref "../retreat/index.md" >}}) in Porto, Portugal.
+-->
 
 I ran the [2024 Mines High School Programming Competition]({{< ref
 "/posts/school/2024-hspc" >}}) on Saturday, and I had to be in Porto by Monday
