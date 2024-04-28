@@ -34,8 +34,10 @@ exclusively first-time competitors.
 We had sixteen different problems written by eleven authors (the highest number
 of authors ever).
 
-The in-person competition featured 37 teams making it the largest in-person
-competition to-date.
+The in-person competition featured 27 teams which is lower than some previous
+years, but still a great turnout. We expected more, but it turned out some had
+signed up for the in-person competition when they wished to compete in the open
+division.
 
 In this post, I'm going to explain the problems in the competition (with
 relatively detailed solution sketches).
@@ -51,15 +53,7 @@ relatively detailed solution sketches).
 .. As with all of the HSPC competitions so far, this year's competition was very
 .. exciting.
 
-.. Highlights from the advanced in-person competition include:
-
-.. TOTO
-
-.. Highlights from the beginner in-person competition include:
-
-.. TODO
-
-.. Highlights from the advanced remote competition include:
+.. Highlights from the in-person competition include:
 
 .. * River Hill High School, the winners of the 2021 competition who placed third
 ..   last year, regained the title winning first place. They solved all twelve
@@ -72,10 +66,6 @@ relatively detailed solution sketches).
 ..   first to solve on two problems. Bergen County's team was first to solve on two
 ..   problems. Team *Triangle* (5th) out of Voice of Calling NPO in of Northridge,
 ..   California were first to solve on a problem as well.
-
-.. Highlights from the beginner remote competition include:
-
-.. TODO
 
 The Problems
 ============
@@ -131,14 +121,19 @@ closer to first principles, but as the problems get harder, I start assuming
 more and more base understanding of programming.
 
 Additionally, I'm only presenting a single solution for each problem here. There
-are likely many alternative ways to solve each of these problems.
+are likely many alternative ways to solve many of these problems.
+
+.. note::
+
+   Many of these problem solutions were written and edited by other people
+   including Kelly Dance, Shashank Bhatt, and Nathan George.
 
 Parking Pandemonium
 -------------------
 
 :Description: https://mines-hspc.kattis.com/contests/mines-hspc24/problems/parkingpandemonium
 :Author: Sumner Evans
-:In Competition: Problem A, XX/YY (ZZ%) solved/tries, AAA% solve rate
+:In Competition: Problem A, 27/49 (55%) solved/tries, 100% solve rate
 :Concept: basic operations on variables
 
 .. admonition:: Problem Summary
@@ -155,19 +150,142 @@ M-Climb Road
 
 :Description: https://mines-hspc.kattis.com/contests/mines-hspc24/problems/mclimbroad
 :Author: Ethan Richards
-:In Competition: Problem A, XX/YY (ZZ%) solved/tries, AAA% solve rate
-:Concept: basic operations on variables
+:In Competition: Problem J, 26/26 (100%) solved/tries, 96% solve rate
+:Concept: unit conversion + basic math
 
 .. admonition:: Problem Summary
 
-   **Will Rishi make it to the end of the intersection before the light turns
-   red given he is going at $S$ miles per hour?** He is `D` feet from the end of
-   the intersection and he has `T` seconds to get through the intersection.
+   You walk along a road that is `5280 \times W` feet long. You get sprayed with
+   water every `N` feet. You do not get sprayed at the start, but it possible
+   you could get sprayed exactly at the end.
 
-For this problem, you need to determine if Rishi will travel at least `D` feet
-in `T` seconds going at `S` miles per hour.
+Output `\left\lfloor\frac{5280 W}{N}\right\rfloor`.
 
-You need to do some unit conversions in order to make this comparison. It is
-recommended to convert the speed to feet per second.
+The notation `\left\lfloor x\right\rfloor` means round down. This can be
+accomplished by doing *integer division* in most languages.
 
-Then if `T \times S \geq D` Rishi "MADE IT" otherwise output "FAILED TEST".
+Abby's Absolutes
+----------------
+
+:Description: https://mines-hspc.kattis.com/contests/mines-hspc24/problems/abbysabsolutes
+:Author: Levi Sprung
+:In Competition: Problem L, 21/40 (52%) solved/tries, 78% solve rate
+:Concept: conditional within a loop
+
+.. admonition:: Problem Summary
+
+   Calculate the number of apples that Abby will buy in each of the `K` trips to
+   the store that she makes. Given that on the `i^{\text{th}}` trip you want her
+   to buy `A_i` apples, but she will buy either 1 or `N` apples on each trip,
+   whichever  is closer to your request (or 1 in the case of ties).
+
+
+Loop over each of the trips. During the `i^{\text{th}}` trip, if `A_i-1 \leq
+N-A_i`, then Abby will buy 1 apple, so print 1. Otherwise, she will buy `N`
+apples, so print `N`.
+
+QWERTY
+------
+
+:Description: https://mines-hspc.kattis.com/contests/mines-hspc24/problems/qwerty
+:Author: Byron Sharman
+:In Competition: Problem O, 23/29 (79%) solved/tries, 85% solve rate
+:Concept: string transformation
+
+.. admonition:: Problem Summary
+
+   Riley typed some text with the keyboard "ABCDEFGHIJKLMNOPQRSTUVWXYZ".
+   Translate this message to what it would be if she had typed using a
+   "QWERTYUIOPASDFGHJKLZXCVBNM" keyboard. 
+
+Create a map/dictionary to translate from each character typed using the ABCDEF
+keyboard, to what it would be on a QWERTY keyboard. Build a new string by
+passing each character through this map.
+	
+An alternative way to solve the problem is to create a string with the QWERTY
+keyboard sequence. Then, for every character in the input, determine its index
+in the normal alphabet (this can be accomplished by subtracting the ASCII value
+for ``'a'`` from the ASCII value of the letter). Use that index to index into
+the QWERTY sequence string and print that character.
+
+Exact Change
+------------
+
+:Description: https://mines-hspc.kattis.com/contests/mines-hspc24/problems/exactchange
+:Author: Jayden Pahukula
+:In Competition: Problem E, 25/31 (81%) solved/tries, 93% solve rate
+:Concept: modulo math (or repeated subtraction)
+
+.. admonition:: Problem Summary
+
+   Umbertoland has bill denominations 1, 5, 15, 30, 150. Express `N` dollars
+   using as few bills as possible.
+
+Greedily [1]_ use the largest bills possible.
+
+The number of 150 dollar bills is `\left\lfloor\frac{N}{150}\right\rfloor`,
+and update `N \leftarrow N - 150 \times \left\lfloor\frac{N}{150}\right\rfloor`.
+
+Repeat until you get down to the 1 dollar bills, and output your answer.
+
+.. [1] A *greedy* approach means that you should make the locally optimal
+   decision without considering whether it's globaly optimal.
+
+Win Streak
+----------
+
+:Description: https://mines-hspc.kattis.com/contests/mines-hspc24/problems/winstreak
+:Author: Sumner Evans
+:In Competition: Problem F, 20/53 (38%) solved/tries, 74% solve rate
+:Concept: track longest contiguous sequence within a list
+
+.. admonition:: Problem Summary
+
+   Calculate the longest win streak over `N` games given the scores of your team
+   and the opposing teams.
+
+You need variables to keep track of the *current win streak length* and the
+*maximum win streak length*. Then, for each game:
+
+* If your team wins, increment the current win streak by 1.
+* If your team ties or loses, check if the current win streak is longer than the
+  maximum win streak. If it is, set the maximum win streak to the current win
+  streak.
+
+  Then, reset the current win streak to 0.
+
+Clock Catchup
+-------------
+
+:Description: https://mines-hspc.kattis.com/contests/mines-hspc24/problems/winstreak
+:Author: Ethan Richards
+:In Competition: Problem C, 20/53 (38%) solved/tries, 74% solve rate
+:Concept: clock math
+
+.. admonition:: Problem Summary
+
+   Given a start time and end time of the same day, calculate how many times
+   each of the second, minute, and hour hands move onto the the 12.
+
+Let `H_s, M_s, S_s` and `H_e, M_e, S_e` be the hour, minute, and second of the
+start time and end time, respectively.
+
+The hour hand cross once if `H_s < 12 \leq H_e`, otherwise it does not cross at
+all.
+
+The minute hand crosses `H_e-H_s` times.
+
+The second hand crosses `60 \times (H_e - H_s) + (M_e - M_s)` times.
+
+
+
+
+nostragglers
+purchasingperishables
+closingearly
+winningwagers
+warehousestocking
+procrastination
+minesmotorcompany
+trolleytroubles
+newprofessor
