@@ -146,4 +146,21 @@ target="_blank" title="Tony, Nic, Addison and myself ice skating" >}}
 
 On Saturday, Addison and I once again stopped at Taco Bell on our way over to
 the conference. The first talk of the day was a keynote from one of the creators
-of the Julia programming language.
+of the Julia programming language. Then, I headed over to the room for
+_Reproducible and Immutable Software_. There was a lot of overlap with the
+topics from NixCon, but it wasn't itself part of NixCon.
+
+The first talk was about what actually is "immutability". Immutability is a word
+that we throw around a lot in the software world, but it actually has deep roots
+in philosophy. The speaker told a story about him discussing immutable software
+with a philosophy friend, and how she was confused by his usage of the word
+"immutable" in the context of software. This philosopher friend explained that
+in her world, immutable means TODO:DEFINITION_HERE. The only things which
+qualify as "immutable" to a philosopher are entities such as deities. Even
+things which we think of immovable like a rock do not qualify as "immutable" to
+the philosopher.
+
+When we software engineers discuss immutability, we use a much looser
+definition. The speaker discussed some of the aspects of the philosophical
+definition which line up with the way that we use the word in the software
+world.
