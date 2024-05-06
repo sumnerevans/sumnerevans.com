@@ -107,11 +107,20 @@ in other areas of the industry with React Server Components and other
 server-side rendering optimizations for traditionally client-side rendered
 frameworks.
 
-On Tuesday, I was at a table with 
-Lucas Lima
+On Wednesday, after the walking tour (see below) we went to a winery for dinner
+and I sat with Rida, Skip, Meaghan among others.
 
 ## Flash Talks
 
+## Walking Tour
+
 ## Transitioning
 
+* P2
+* AMA
+
 ## Planning a Glorious Beeper Future
+
+* multitennant hungry
+* HA databases
+* megabridge
