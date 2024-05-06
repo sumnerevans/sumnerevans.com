@@ -1,47 +1,53 @@
-commit bd7c7c64d0cc10e3fb6c81668455b485e64bfa46
-Author: Sumner Evans <me@sumnerevans.com>
-Date:   Fri Oct 2 10:42:14 2020 -0600
+From 0e479c485f4b32a69c76fa5eb29e962417002073 Mon Sep 17 00:00:00 2001
+From: Sumner Evans <me@sumnerevans.com>
+Date: Fri, 2 Oct 2020 10:42:14 -0600
+Subject: [PATCH] markup/rst: use MathJax for rst math output and use short
+ pygments highlighting
 
-    markup/rst: use MathJax for rst math output and use short pygments highlighting
-    
-    * As noted in #7759, rst2html exports math using the "HTML math.css"
-      formatter by default. This means that any math typeset in
-      reStructuredText is not formatted using MathJax which is not ideal.
-      This commit adds a --math-output parameter configure rst2html to
-      output math ready for MathJax to process. Note that I had to pick a
-      URL for MathJax, but it doesn't end up in the resulting output because
-      the <script> tag is in the header which gets cut out by code further
-      down.
-    
-    * As noted in #5349, rst2html can generate HTML with short or long form
-      class names for syntax highlighting. Pygments (via the pygmentize
-      command) seems to generate short form by default without any way to
-      switch this. This means most/any stylesheets for code provided with
-      various themes won't work when using rST output. This can easily be
-      fixed by providing the --syntax-highlight=short flag to rst2html.
-    
-    Fixes: #5349
-    Fixes: #7759
+* As noted in #7759, rst2html exports math using the "HTML math.css"
+  formatter by default. This means that any math typeset in
+  reStructuredText is not formatted using MathJax which is not ideal.
+  This commit adds a --math-output parameter configure rst2html to
+  output math ready for MathJax to process. Note that I had to pick a
+  URL for MathJax, but it doesn't end up in the resulting output because
+  the <script> tag is in the header which gets cut out by code further
+  down.
+
+* As noted in #5349, rst2html can generate HTML with short or long form
+  class names for syntax highlighting. Pygments (via the pygmentize
+  command) seems to generate short form by default without any way to
+  switch this. This means most/any stylesheets for code provided with
+  various themes won't work when using rST output. This can easily be
+  fixed by providing the --syntax-highlight=short flag to rst2html.
+
+Fixes: #5349
+Fixes: #7759
+---
+ .github/workflows/test.yml                    |  3 ++
+ docs/content/en/content-management/formats.md |  2 +-
+ markup/rst/convert.go                         |  8 +++--
+ markup/rst/convert_test.go                    | 30 +++++++++++++++++++
+ 4 files changed, 40 insertions(+), 3 deletions(-)
 
 diff --git a/.github/workflows/test.yml b/.github/workflows/test.yml
-index ca1f5d95..7d190623 100644
+index 734411b35..252de9277 100644
 --- a/.github/workflows/test.yml
 +++ b/.github/workflows/test.yml
-@@ -52,6 +52,9 @@ jobs:
-       run: |
-         pip install docutils
-         rst2html.py --version
-+    - name: Install pygments
-+      run: |
-+        pip install pygments
-     - if: matrix.os == 'ubuntu-latest'
-       name: Install pandoc on Linux
-       run: |
+@@ -61,6 +61,9 @@ jobs:
+         run: |
+           pip install docutils
+           rst2html --version
++      - name: Install pygments
++        run: |
++          pip install pygments
+       - if: matrix.os == 'ubuntu-latest'
+         name: Install pandoc on Linux
+         run: |
 diff --git a/docs/content/en/content-management/formats.md b/docs/content/en/content-management/formats.md
-index a9889882..87f818d1 100644
+index 76c8102b5..216e270ee 100644
 --- a/docs/content/en/content-management/formats.md
 +++ b/docs/content/en/content-management/formats.md
-@@ -43,7 +43,7 @@ tool on your machine to be able to use these formats.
+@@ -42,7 +42,7 @@ tool on your machine to be able to use these formats.
  Hugo passes reasonable default arguments to these external helpers by default:
  
  - `asciidoctor`: `--no-header-footer -`
@@ -49,12 +55,12 @@ index a9889882..87f818d1 100644
 +- `rst2html`: `--leave-comments --initial-header-level=2 --syntax-highlight=short --math-output "MathJax https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js"`
  - `pandoc`: `--mathjax`
  
- {{% warning "Performance of External Helpers" %}}
+ {{% note %}}
 diff --git a/markup/rst/convert.go b/markup/rst/convert.go
-index b86b35f1..eeebaf38 100644
+index 398f5eb0c..466d9dee8 100644
 --- a/markup/rst/convert.go
 +++ b/markup/rst/convert.go
-@@ -82,10 +82,14 @@ func (c *rstConverter) getRstContent(src []byte, ctx converter.DocumentContext)
+@@ -81,10 +81,14 @@ func (c *rstConverter) getRstContent(src []byte, ctx converter.DocumentContext)
  	// handle Windows manually because it doesn't do shebangs
  	if runtime.GOOS == "windows" {
  		pythonBinary, _ := internal.GetPythonBinaryAndExecPath()
@@ -72,7 +78,7 @@ index b86b35f1..eeebaf38 100644
  	}
  
 diff --git a/markup/rst/convert_test.go b/markup/rst/convert_test.go
-index 5d2882de..9063bb4c 100644
+index 1897e650f..83ddd5219 100644
 --- a/markup/rst/convert_test.go
 +++ b/markup/rst/convert_test.go
 @@ -45,3 +45,33 @@ func TestConvert(t *testing.T) {
@@ -109,3 +115,6 @@ index 5d2882de..9063bb4c 100644
 +	c.Assert(string(b.Bytes()), qt.Equals,
 +		"<div class=\"document\">\n\n\n<pre class=\"code c literal-block\">\n<span class=\"kt\">int</span> <span class=\"n\">i</span> <span class=\"o\">=</span> <span class=\"mi\">0</span><span class=\"p\">;</span>\n</pre>\n</div>")
 +}
+-- 
+2.44.0
+
