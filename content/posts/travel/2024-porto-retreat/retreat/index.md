@@ -77,4 +77,41 @@ In addition to the Beeper and Texts teams, there were quite a few Automatticians
 in attendance who helped facilitate team-building and integration into
 Automattic. My goal for the week was to have at least one memorable conversation
 with everyone from the Texts.com team and get to know some fun fact about them
-other than just where they're from and what they work on.
+other than just where they're from and what they work on. I did have a
+conversation with everyone, but meeting ten new people is difficult and I feel
+like I need another retreat in a couple weeks just to get to know everyone
+better.
+
+We did a couple activities which encouraged everyone to mingle and talk to new
+people including a variety of ice breakers on Monday, assigned random tables for
+some of the meals, and flash talks (which I'll discuss later). The ice breakers
+included an activity that was a set of puzzles that each table had to solve, a
+speed networking session, and an activity where we had to create something which
+represented "Messaging at Automattic". Many of the teams for that activity used
+generative AI to create images and even music about messaging at Automattic.
+
+I also really like the assigned seating for some meals (I think it would have
+been annoying if it was assigned for every meal) because it forced us to sit
+with different people. I did an OK job of sitting with different people on my
+own, but having the forcing function for some meals was nice.
+
+On Monday, I ate breakfast with [Kishan](https://kishan.org/) (CEO of Texts),
+Javier (reverse engineer specialist at Texts) and a few people from Beeper.
+Then, at lunch I sat with Rafa, Matt, and Dylan. Rafa and Dylan came from
+Texts.com, and Matt transferred to the Texts.com team from another team at
+Automattic (I think Tumblr). ~~We discussed~~ I raved about
+[HTMX](https://htmx.org/) and about how I believe that more web apps should be
+rendered server-side and we should generally rely less on client-side rendering.
+We discussed that this trend towards server-side rendering seems to be happening
+in other areas of the industry with React Server Components and other
+server-side rendering optimizations for traditionally client-side rendered
+frameworks.
+
+On Tuesday, I was at a table with 
+Lucas Lima
+
+## Flash Talks
+
+## Transitioning
+
+## Planning a Glorious Beeper Future
