@@ -16,7 +16,6 @@ description: |
   four-day 2024 Q2 work retreat in Porto, Portugal. These are my thoughts and
   reflections on the trip.
 image: ./images/porto-sign.jpg
-draft: true
 ---
 
 The past few weeks have been exciting for Beeper. We
@@ -65,7 +64,7 @@ all of the logistics, which is a lot of work and his bandwidth was not primarily
 dedicated to event planning.
 
 {{< figure src="./images/venue.jpg" link="./images/venue.jpg" target="_blank"
-title="The coworking space setup for us." >}}
+title="The coworking space setup for us" >}}
 
 The hotel itself was very nice as well. The room was large and luxurious and the
 hotel's restaurant was high quality. We had breakfast every day at the
@@ -222,7 +221,8 @@ history and remember the reasons I do this: I want to document the good times in
 life so that I always remember that I have so much to be grateful for.
 
 {{< figure src="./images/flash-talk.jpg" link="./images/flash-talk.jpg"
-target="_blank" title="Me giving my flash talk." >}}
+target="_blank" title="Me giving my flash talk"
+caption="So I Hear We Got Acquired by a Blogging Company" >}}
 
 ## Walking Tour
 
@@ -232,6 +232,24 @@ I'm going to defer my discussion of the things that he talked about to my next
 post about my extra day in Portugal sightseeing, as I want to keep this post
 focused on the meetup itself, but I'll post a few photos of our group right
 before and right after the tour.
+
+{{<
+  figure
+  src="./images/porto-sign.jpg"
+  link="./images/porto-sign.jpg"
+  target="_blank"
+  title="The walking tour crowd"
+  caption="I thought more people would join me and Annie with the sorority squat. PC: Megan Marcel."
+>}}
+
+{{<
+  figure
+  src="./images/porto-360.jpg"
+  link="./images/porto-360.jpg"
+  target="_blank"
+  title="The team at a great overlook with views of a lot of Porto"
+  caption="Josh has a really cool 360° camera."
+>}}
 
 ## Planning a Glorious Beeper Future
 
