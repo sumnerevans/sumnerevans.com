@@ -110,7 +110,7 @@ Element. The core of Matrix is the federated chat network that we all rely on
 every day. That is what must be protected at all costs. **The Foundation must be
 clear about which projects are Foundation initiatives, and which projects are
 community initiatives.** I think that Element-led experiments should still be
-highlighted, but they should not be branded with Element's branding, not the
+highlighted, but they should be branded with Element's branding, not the
 Foundation's.
 
 Perception is reality, and right now the perception of the Foundation is that
