@@ -32,9 +32,10 @@ Matrix Community Meetups at FOSDEM. He is a great community builder and is
 consistently welcoming to newcomers at the events. His Matrix pedigree is also
 deep and includes running a homeserver for multiple people, contributing to the
 [simplematrixbotlib](https://github.com/imbev/simplematrixbotlib), and
-contributions to many other projects. He also works on widgets is his role at
-Nordeck. Kim would provide a valuable perspective on the Matrix ecosystem as he
-has been involved so many aspects of our community.
+contributions to many other projects. He also is a public figure from Nordeck
+and presents their work on widgets regularly. Kim would provide a valuable
+perspective on the Matrix ecosystem as he has been involved so many aspects of
+our community.
 
 ## Nico
 
