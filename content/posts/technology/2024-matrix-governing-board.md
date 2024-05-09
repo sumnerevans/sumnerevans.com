@@ -22,6 +22,10 @@ multiple spec clarifications[^6] and been involved in many MSCs both personally
 and through my position at Beeper[^7]. I also have contributed to Synapse[^8]
 and the Matrix React SDK[^9].
 
+See also my
+[endorsements of Ecosystem Member]({{<ref"./2024-matrix-governing-board-endorsements.md">}})
+candidates.
+
 <div class="admonition note">
 <p class="first admonition-title">Conflict of Interest Disclosure</p>
 <p class="last">
