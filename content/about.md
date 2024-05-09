@@ -6,9 +6,10 @@ date: 2021-08-01 09:04:00
 Hello, welcome to my website! I am so glad you stopped by to check it out!
 
 Let me introduce myself. My name is Sumner, and I live in Denver, Colorado. I am
-a Software Engineer at [Beeper](https://beeper.com/) and a 4th Degree Black Belt
-and certified instructor in ATA Taekwondo. I am a Colorado School of Mines alum
-(bachelor's in CS, 2018; masters in CS, 2019). Previously, I have worked at
+a Software Engineer at [Automattic](https://automattic.com/) working on
+[Beeper](https://beeper.com/) and a 4th Degree Black Belt and certified
+instructor in ATA Taekwondo. I am a Colorado School of Mines alum (bachelor's in
+CS, 2018; masters in CS, 2019). Previously, I have worked at
 [The Trade Desk](https://thetradedesk.com) and
 [Can/Am Technologies](https://canamtechnologies.com/).
 

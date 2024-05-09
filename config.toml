@@ -36,9 +36,9 @@ pygmentsUseClasses = true
 
 [params]
   author = "Sumner Evans"
-  description = "I'm a Software Engineer at Beeper and an Adjunct Professor at Colorado School of Mines. This is my personal website, portfolio, and blog."
+  description = "I'm a Software Engineer at Automattic working on Beeper. This is my personal website, portfolio, and blog."
   title = "Sumner Evans"
-  subtitle = "Software Engineer at Beeper"
+  subtitle = "Software Engineer at Automattic working on Beeper"
   dateFmt = "2006-01-02"
   logo = "profile.jpg"
 
