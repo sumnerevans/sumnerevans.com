@@ -13,11 +13,13 @@ description: |
 
 I'm running for the Matrix Governing Board as an Individual Member (see my
 [Platform]({{<ref"./2024-matrix-governing-board.md">}})) and I am only eligible
-to vote as an individual member, but I would like to endorse a few ecosystem
-member candidates who are well qualified to represent the ecosystem.
+to vote as an individual member, but I would like to endorse a few Ecosystem
+Member candidates who are well qualified to represent the ecosystem.
 
-For the Ecosystem Members, I endorse **Kim Brose** representing Matrix Community
-Events and **Nico** representing Nheko.
+## Kim Brose
+
+I endorse **Kim Brose (HarHarLinks)** representing Matrix Community Events as an
+Ecosystem Member candidate.
 
 I met Kim in Berlin at the
 [first Community Matrix Summit]({{<ref"../travel/2022-berlin-matrix-summit/summit/index.md">}})
@@ -34,7 +36,12 @@ contributions to many other projects. He also works on widgets is his role at
 Nordeck. Kim would provide a valuable perspective on the Matrix ecosystem as he
 has been involved so many aspects of our community.
 
-I also met Nico in Berlin at the
+## Nico
+
+I endorse **Nico (Nicolas Werner)** representing Nheko as an Ecosystem Member
+candidate.
+
+I met Nico in Berlin at the
 [first Community Matrix Summit]({{<ref"../travel/2022-berlin-matrix-summit/summit/index.md">}})
 although I'd know of him much before that through his work on Nheko. Nheko is
 one of the most fully-featured non-Element clients in the ecosystem. The Nheko
