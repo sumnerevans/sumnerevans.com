@@ -32,15 +32,15 @@ candidates.
 
 I would like to make it clear that I'm running for this position of my own
 volition. **The opinions in this post are my own and do not represent the views
-of my employer (Beeper).**
+of my employer Automattic nor that of Beeper.**
 
-Beeper did not request that I run, although I did request permission to do so
-from Brad (who is running as the Beeper representative).
+Neither Automattic nor Beeper requested that I run, although I did request
+permission to do so from Brad (who is running as the Beeper representative).
 
-I am a member of the Matrix community first and an employee of Beeper second. I
-got my job through TWIM, and I want to see the Matrix ecosystem thrive. I'm
-concerned with the current direction of the ecosystem, and I want to do my part
-in turning the tide.
+I am a member of the Matrix community first and an employee of Automattic
+(Beeper) second. I got my job through TWIM, and I want to see the Matrix
+ecosystem thrive. I'm concerned with the current direction of the ecosystem, and
+I want to do my part in turning the tide.
 
 I promise to always act in the interest of the community, and when I am unable
 to do so without a conflicting with my employer's interests I will abstain.
