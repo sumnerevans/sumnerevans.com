@@ -528,6 +528,119 @@ wording, and so I have updated it (new text below):
 > the same vetting process as project donations from any other third-party
 > organization.
 
+### Matthew's Reply to Clarifications
+
+After I made the above edits to this post, Matthew responded in the TWIM room
+with
+[this message](https://matrix.to/#/!QQpfJfZvqxbCfeDgCj:matrix.org/$UbnrX9btMs3N4Vyq7RHBKFjSuy5tYJTUIQRviL85wf8?via=matrix.org&via=envs.net&via=element.io):
+
+> having read it through again, i think the key confusion stems from the fact
+> that Element is nowadays viewed through the same lens as any other forprofit
+> building on Matrix (like Beeper, say).
+>
+> Whereas Matrix predated Element by 3 years, and the Matrix core team (ie those
+> looking after the contents of github.com/matrix-org) simply kept building
+> projects which we thought would strategically advance Matrix the most. First
+> we did synapse, then matrix console, then js-sdk, then ios-sdk, then
+> android-sdk, then react-sdk (but very deliberately kept the app later of
+> vector/riot/element for Element IP), and then later put out similar new
+> “matrix core team continuing to try to advance matrix” stuff, be that sliding
+> sync or MAS or dendrite or LB or thirdroom or whatever.
+>
+> It’s not so much that “Element chose to donate these to the Fdn and forced the
+> Fdn to accept them” as much as “The Fdn didn’t exist yet; the Matrix core team
+> just kept doing what they had been doing since day 1; the fact their dayjob is
+> at Element is unrelated” (other than Element funding n% of their time to keep
+> going wild on core Matrix stuff). So characterising these as unilateral
+> donations from Element misses the point that there is a team of people with
+> commit access to matrix-org trying (for better or worse) to advance the
+> project, irrespective of who they work for. Critically: If Element hadn’t
+> existed, the core team would have probably found a way to continue on similar
+> things in github.com/matrix-org (working on it in their spare time or by other
+> employers letting them work on it).
+>
+> Now, the GB is a great opportunity to steer what happens in
+> github.com/matrix-org and who and why, and hopefully fix confusion like this
+> in future. But please do not paint over the existence of the folks who created
+> Matrix (independently of whatever employer they have) and the last 10 years
+> we’ve spent trying to bring this thing successfully to life. While it’s
+> certainly not been perfect, we’re still literally core to the project, and the
+> opportunity of the GB is to figure out how to steer that better in future.
+
+and outlined his view on what the Core Team is in
+[this Google Doc](https://docs.google.com/document/d/1zMMSjUD2JUFl4jlc6QJfgNMkz-iyBwKvITLmVpJ2zyw/edit).
+
+First of all, I want to make it clear that I respect and recognize the
+contributions of every community member (individuals, businesses, etc.) to the
+Matrix ecosystem, even those projects which I believe were ill-conceived ideas!
+Everyone is experimenting, and sometimes the outcome of an experiment is
+understanding that the hypothesis is false, and those contributions are just as
+important as experiments that succeed.
+
+I know that this community is a passionate one. I believe that even if Element
+were not paying the salaries of the vast majority of the Core Team members,
+there would still be a set of people donating their time to the Matrix project.
+However, in such a world, would every experiment by every Core Team member be
+added directly to the organization? I think not. I know in the NixOS community,
+there is both the [NixOS organization](https://github.com/NixOS/) and the
+[Nix Community organization](https://github.com/nix-community/). I think that
+Matrix might have looked similar. I think that the idea proposed in the Google
+Document of a Matrix Labs organization (or similar) would be a reasonable way
+forward.
+
+I would like to call out this specific bullet-point from the document:
+
+> Development costs of projects in github.com/matrix-org do NOT have to be
+> funded by the Matrix.org Foundation; they can be contributed by whoever is
+> developing them. However, the Foundation must agree for the project to exist
+> there.
+
+This brings up three major questions. I do not know the current answer to these
+questions, but I will propose what I believe the answers _should_ be:
+
+1. **What is the mandate of the Core Team?**
+
+   I believe that the Core Team's mandate should not be one of experimentation
+   and pushing the boundaries. It should be a mandate to maintain and protect
+   the proven projects that are essential to the success of Matrix as a whole.
+
+1. **If the Foundation were in a position to fund the entire Core Team, would
+   it?**
+
+   I think that if the Foundation were able to, it should fund Core Team members
+   in areas where companies/individuals are not donating sufficient time to
+   maintain the essential projects.
+
+1. **Who gets to be on the Core Team?**
+
+   Regardless of the answer to this question, I think the most important factors
+   must be that membership requirements are neutral and stringent (for security
+   reasons).
+
+Assuming that my answers are correct, and the `matrix-org` GitHub organization
+is meant to hold the set of projects maintained by the Core Team, then I believe
+my policy of GitHub organization cleanup is well justified.
+
+By trimming down the GitHub organization to the set of projects which the
+Foundation can reasonably expect to be able to maintain funding for (whether
+directly or indirectly), it will clarify the Foundation's priorities. I hope
+that in a disaster situation where every company working on Matrix goes bankrupt
+overnight, the Foundation would step up to ensure the continuity of a few core
+projects (I outlined four of them in my original post).
+
+As I highlight in my second specific policy of
+[normalizing experimentation](#normalize-experimentation), the Foundation has a
+vested interest in encouraging experimentation and innovation. I think that it
+could even be an IP repository for a variety of experiments. However, these
+should not go into the Core Team's organization. Matthew's suggestion of a
+`matrix-labs` organization seems like a good solution here.
+
+I'm happy to see that my discussion of these issues is prompting consideration
+from leadership. I commend Matthew once again for his willingness to listen to
+feedback, clarify misconceptions, and propose changes to materially improve the
+situation. I hope to be elected to the Governing Board to continue this already
+very fruitful conversation.
+
 [^1]: Notable bridges I've worked on include
 [LinkedIn](https://github.com/beeper/linkedin),
 [iMessage](https://github.com/mautrix/imessage), and
