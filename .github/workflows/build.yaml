@@ -23,7 +23,7 @@ jobs:
         with:
           submodules: "recursive"
 
-      - uses: DeterminateSystems/nix-installer-action@v10
+      - uses: DeterminateSystems/nix-installer-action@v11
 
       - uses: DeterminateSystems/magic-nix-cache-action@v4
 
