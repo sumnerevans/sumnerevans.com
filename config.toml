@@ -151,3 +151,19 @@ pygmentsUseClasses = true
     name = "Liberapay"
     url = "https://liberapay.com/sumner"
     weight = 9
+
+[related]
+  includeNewer = true
+  toLower = true
+  [[related.indices]]
+    name = 'keywords'
+    type = 'basic'
+    weight = 100
+  [[related.indices]]
+    name = 'date'
+    type = 'basic'
+    weight = 10
+  [[related.indices]]
+    name = 'tags'
+    type = 'basic'
+    weight = 80
