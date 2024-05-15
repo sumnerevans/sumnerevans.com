@@ -155,12 +155,14 @@ that we throw around a lot in the software world, but it actually has deep roots
 in philosophy. The speaker told a story about him discussing immutable software
 with a philosophy friend, and how she was confused by his usage of the word
 "immutable" in the context of software. This philosopher friend explained that
-in her world, immutable means TODO:DEFINITION_HERE. The only things which
-qualify as "immutable" to a philosopher are entities such as deities. Even
-things which we think of immovable like a rock do not qualify as "immutable" to
-the philosopher.
+in her world, immutable means "lacking the ability to change" but it is deeper
+than that in that immutable things "cannot _endure_ change". The only things
+which really qualify as "immutable" to a philosopher are natural laws and
+entities such as deities. Even things which we think of immovable like a rock do
+not qualify as "immutable" to the philosopher.
 
 When we software engineers discuss immutability, we use a much looser
 definition. The speaker discussed some of the aspects of the philosophical
 definition which line up with the way that we use the word in the software
-world.
+world. He discussed immutability in the context of programming languages,
+databases, operating systems, and infrastructure.

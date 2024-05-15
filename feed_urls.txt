@@ -11,6 +11,7 @@ https://jsomers.net/blog/feed
 https://jvns.ca/atom.xml
 https://lukaswerner.com/feed.xml
 https://lukeplant.me.uk/blog/atom/index.xml
+https://ma.tt/feed
 https://matrix.org/blog/feed
 https://medium.com/feed/@ericmigi
 https://mgs.blog/feed
