@@ -15,6 +15,7 @@ https://ma.tt/feed
 https://matrix.org/blog/feed
 https://medium.com/feed/@ericmigi
 https://mgs.blog/feed
+https://pointlessramblings.com/index.xml
 https://skip.house/rss.xml
 https://sourcehut.org/blog/index.xml
 https://textslashplain.com/feed/
