@@ -75,17 +75,15 @@ relaxed for a few minutes while we waited for Jo to get off of work and come to
 meet us. I decided to get a photo of myself doing a side kick in front of the
 Washington Monument to show the people back at my taekwondo school.
 
-.. raw:: html
-
-    <video
-      src="./images/side-kick-washington.mp4"
-      width="50%"
-      class="align-center"
-      autoplay="true"
-      controls="true"
-      muted="true"
-      loop="true">
-    </video>
+<video
+  src="./images/side-kick-washington.mp4"
+  width="50%"
+  class="align-center"
+  autoplay="true"
+  controls="true"
+  muted="true"
+  loop="true">
+</video>
 
 Sam and I walked around the WWII Memorial, and then headed back to Union Station
 where we met up with Jo. She recommend that we try a nearby pizza place so we
@@ -99,10 +97,13 @@ the experience. It has RGB lights everywhere, and you can control them with a
 little screen thing. None of us quite knew what to think about it. But hey, I
 got it for $80/night.
 
-.. image:: ./images/yotel-room.png
-   :alt: A photo of my hotel room
-   :align: center
-   :target: ./images/yotel-room.png
+{{<
+  figure
+  src="./images/yotel-room.png"
+  link="./images/yotel-room.png"
+  target="_blank"
+  title="A photo of my hotel room"
+>}}
 
 After a while, Sam and Jo left for her apartment so that they could let Robby
 (who was flying in from Denver) in when he arrived.

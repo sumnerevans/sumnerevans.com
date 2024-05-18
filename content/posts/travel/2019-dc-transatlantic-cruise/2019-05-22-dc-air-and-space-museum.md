@@ -37,8 +37,7 @@ where we went today. I'd been there before on our last trip to D.C., but that
 wasn't stopping me from going again. They have tons of rockets and planes on
 display, including the Wright Brother's original flyer. I actually wrote a paper
 for a history class about the first flight. You can see more information about
-it `on my portfolio`_.) I don't really want to describe much about the actual
-museum exhibits since I don't think I can really do them justice. Regardless, I
-quite enjoyed the day at the museum.
-
-.. _on my portfolio: /portfolio/#publication-dreams-of-flight
+it [on my portfolio]({{<ref"/portfolio#publication-dreams-of-flight">}}).) I
+don't really want to describe much about the actual museum exhibits since I
+don't think I can really do them justice. Regardless, I quite enjoyed the day at
+the museum.

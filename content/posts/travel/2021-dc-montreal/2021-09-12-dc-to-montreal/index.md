@@ -31,11 +31,12 @@ side were a variety of common household items from various time periods which
 defined the domestic sphere. In the middle of the exhibit were a number of
 models of famous homes and housing structures like apartments. There were models
 of Monticello, Mount Vernon, and Oak Alley; all of which I have visited. I wrote
-about `my visit to Oak Alley
-<../../2016-17-caribbean-cruise/2016-12-27-new-orleans-la/>`_ a few years ago on
-this blog. There were also models of other famous homes like Fallingwater.
+about
+[my visit to Oak Alley]({{<ref"../../2016-17-caribbean-cruise/2016-12-27-new-orleans-la/index.md#oak-alley-plantation">}})
+a few years ago on this blog. There were also models of other famous homes like
+Fallingwater.
 
--------------------------------------------------------------------------------
+---
 
 At about 13:00, I left to hop on the train to DCA for my flight to Montreal.
 Using the Metro to get to DCA is very easy since it's just a normal stop on one
@@ -54,11 +55,13 @@ Beeper coworkers in-person, so that was quite cool. We got an Uber to the hotel:
 Hotel Monville. A bunch of the rest of team was at a bar and grill a few blocks
 away, so we dropped our bags and headed over to meet them.
 
-.. image:: ./images/bar-and-grill.jpg
-   :alt: A selfie of the team at the restaurant
-   :align: center
-   :width: 70%
-   :target: ./images/bar-and-grill.jpg
+{{<
+  figure
+  src="./images/bar-and-grill.jpg"
+  link="./images/bar-and-grill.jpg"
+  target="_blank"
+  title="A selfie of the team at the restaurant"
+>}}
 
 There are still a few team members who will be arriving later tonight or
 tomorrow. We have a big week ahead with a lot of team meetings. While I enjoy

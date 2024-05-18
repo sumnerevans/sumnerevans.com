@@ -40,14 +40,13 @@ The concept of America--a land of the free, a home of the brave--has become
 somewhat of a religion. Its saints are the founding fathers, presidents, civil
 rights leaders, and other "doers"; its sacraments: the pursuit of happiness, the
 right to be autonomous, and personal freedom; and its saviour: individual hard
-work.  But, like all false religions, the American Religion is misguided. Its
+work. But, like all false religions, the American Religion is misguided. Its
 saviour is imperfect, because its us; its saints are often elevated for
 accomplishment, not character; and its sacraments lead to vanity.
 
 Despite of all this, the American flag has become a worldwide symbol of freedom,
 prosperity, and stability. So much so that an entire exhibit is dedicated to the
-display of the most famous flag: the one that the *Star Spangled Banner* was
+display of the most famous flag: the one that the _Star Spangled Banner_ was
 written about. I enjoyed seeing that flag, it was very large, and it would have
 been cool to see it being raised over the Fort McHenry after the all-night naval
 bombardment by the British forces during the War of 1812.
-

@@ -29,22 +29,22 @@ We all got to the gate and it was still a couple hours before our flight. We
 kinda regretted not sleeping more, but I took the opportunity to get some
 writing done and chat.
 
-.. figure:: ./images/montreal-airport.png
-   :align: center
-   :target: ./images/montreal-airport.png
-   :width: 80%
-   :alt: Caroline, Ian, and myself waiting for our flights in Montreal
+{{<
+  figure
+  src="./images/montreal-airport.png"
+  link="./images/montreal-airport.png"
+  target="_blank"
+  title="Caroline, Ian, and myself waiting for our flights in Montreal"
+>}}
 
-   Caroline, Ian, and myself waiting for our flights in Montreal.
-
--------------
+---
 
 I slept for an hour or so on the plane, and then got some more writing done. We
 flew right over the Great Lakes, and so I got to see Lake Michigan from the air
 which was kinda cool. Once I got home, I headed over to Mines for a meeting
-about next years high school programming competition (I've writen extensively
-about the `last <../../../school/2019-hspc>`_ `three
-<../../../school/2020-hspc>`_ `competitions <../../../school/2021-hspc>`_ on
-this blog). Then I went over to my taekwondo instructor's house for the annual
-school BBQ. Tomorrow I'm hoping that I can relax a bit before diving into next
-week.
+about next years high school programming competition (I've written extensively
+about the [last]({{<ref"../../../school/2019-hspc.rst">}})
+[three]({{<ref"../../../school/2020-hspc.rst">}})
+[competitions]({{<ref"../../../school/2021-hspc.rst">}}) on this blog). Then I
+went over to my taekwondo instructor's house for the annual school BBQ. Tomorrow
+I'm hoping that I can relax a bit before diving into next week.

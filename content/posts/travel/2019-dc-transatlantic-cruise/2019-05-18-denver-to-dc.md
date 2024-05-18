@@ -20,7 +20,7 @@ I'm on the plane right now, and we should arrive at Ronald Regan Airport (DCA)
 around 00:10 (EST) tomorrow morning, and then we have to find the hotel.
 Hopefully we don't have any more travel hiccups.
 
--------------------------------------------------------------------------------
+---
 
 Well, it turned out that there were some hiccups. Mainly the fact that it was
 pouring rain, and lightning when we arrived at DCA. That caused our bags to be
@@ -28,4 +28,4 @@ delayed due to regulations about airline workers working in lightning
 conditions.
 
 Anyway, it's now 01:41 on the 19th, and we are finally in our hotel, and I am
-going to bed. It's been a *very* long day.
+going to bed. It's been a _very_ long day.
