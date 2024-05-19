@@ -139,7 +139,7 @@ Skating Center for the open skate. It was a nice way to exercise and do
 something fun after the conference!
 
 {{< figure src="./images/skating.jpg" link="./images/skating.jpg"
-target="_blank" title="Tony, Nic, Addison and myself ice skating" >}}
+target="_blank" title="Nathan, Nic, Addison and myself ice skating" >}}
 
 ---
 
@@ -212,7 +212,7 @@ sure if I would have understood anything anyway to be honest).
   link="./images/scale.jpg"
   target="_blank"
   title="Some of the SCaLE crowd we hung out with"
-  caption="Left to right: (random guy Addison ran into), Nathan, Josh, Addison, Nathan, myself."
+  caption="Left to right: (random guy Addison ran into), Nathan, Josh, Addison, Nicolas, myself."
 >}}
 
 In the evening, a friend of mine,
