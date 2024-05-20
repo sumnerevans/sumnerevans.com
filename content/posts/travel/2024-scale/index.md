@@ -234,7 +234,7 @@ Derivations in Nix. His point was that this would allow for better sandboxing
 and I thought it was an neat idea. The most interesting part about it was that
 [Eelco Dolstra](https://github.com/edolstra) (whose PhD dissertation is the
 foundation for Nix, and who continues as a major contributor to the Nix project)
-was there and asked many questions of the speaker. It's cool to see that Elcco
+was there and asked many questions of the speaker. It's cool to see that Eelco
 is still engaged with the community that his work created.
 
 After that talk, Addison and I ended up going to lunch at an Italian restaurant
