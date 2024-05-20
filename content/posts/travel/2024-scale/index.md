@@ -279,7 +279,7 @@ Denver.
 
 ---
 
-I toughly enjoyed the conference, and it was a nice time to be able to interact
+I thoroughly enjoyed the conference, and it was a nice time to be able to interact
 with people who are interested in the same sorts of technology as myself. It was
 fun travelling with Addison, and it was fun to run into Josh and catch up. It
 was nice to meet up with old friends like Ethan and Jon as well as make new
