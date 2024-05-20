@@ -5,7 +5,6 @@ categories:
   - Travel
   - Work Retreats
 tags:
-  - Travel
   - Toronto
   - Canada
   - Beeper

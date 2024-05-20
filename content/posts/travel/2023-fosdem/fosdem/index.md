@@ -3,17 +3,16 @@ title: "FOSDEM 2023"
 date: 2023-02-05T06:25:00-06:00
 categories:
   - Travel
-  - Trip to FOSDEM 2023
   - Conferences
 tags:
-  - Travel
-  - FOSDEM
-  - Matrix
+  - FOSDEM 2023
   - Matrix Community Meetup
   - HSBXL
+  - Matrix
   - Go
   - NixOS
   - Brussels
+  - Belgium
 description: |
   I attended FOSDEM for the first time this year and I had a blast!
   I enjoyed attending many talks, but the best part was getting to meet so many

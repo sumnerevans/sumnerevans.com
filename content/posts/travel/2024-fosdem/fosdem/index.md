@@ -3,15 +3,16 @@ title: FOSDEM 2024
 date: 2024-02-05T06:25:00-06:00
 categories:
   - Travel
-  - Trip to FOSDEM 2024
   - Conferences
 tags:
-  - Travel
-  - FOSDEM
+  - FOSDEM 2024
   - Matrix
   - HSBXL
   - Go
+  - Nix
+  - NixOS
   - Brussels
+  - Belgium
 description: |
   For the second year in a row, I attended FOSDEM. I attended the Matrix
   community meetup as well as many talks at the main conference.

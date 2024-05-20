@@ -1,8 +1,13 @@
 ---
 title: "Facebook Global Hackathon Finals - Day 1"
 date: 2018-11-14T23:30:00-0600
-categories: [Hackathons]
-tags: [Facebook, Travel, Denver, San Francisco]
+categories:
+  - Hackathons
+tags:
+  - Facebook
+  - Travel
+  - San Francisco
+  - California
 ---
 
 This morning I left for a hackathon at Facebook Headquarters. I had to wake up

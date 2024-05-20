@@ -6,6 +6,7 @@ categories:
 tags:
   - Matrix
   - Matrix Governing Board
+  - Endorsements
 description: |
   I would like to endorse a Kim Brose and Nicolas Werner (Nico) as ecosystem
   member candidates for the Matrix Governing Board.

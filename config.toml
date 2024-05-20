@@ -160,10 +160,14 @@ pygmentsUseClasses = true
     type = 'basic'
     weight = 100
   [[related.indices]]
+    name = 'tags'
+    type = 'basic'
+    weight = 60
+  [[related.indices]]
+    name = 'categories'
+    type = 'basic'
+    weight = 30
+  [[related.indices]]
     name = 'date'
     type = 'basic'
     weight = 10
-  [[related.indices]]
-    name = 'tags'
-    type = 'basic'
-    weight = 80

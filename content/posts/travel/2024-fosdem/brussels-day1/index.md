@@ -3,9 +3,11 @@ title: Brussels - Day 1
 date: 2024-02-01T06:25:00-06:00
 categories:
   - Travel
-  - Trip to FOSDEM 2024
 tags:
-  - Travel
+  - Museum
+  - Eurozone
+  - Military Museum
+  - Napoleon
   - Brussels
   - Belgium
 description: |
@@ -14,14 +16,14 @@ description: |
 image: ./images/planes.jpg
 ---
 
-This year, I once again travelled to Brussels for FOSDEM (see my [post from last
-year]({{< ref "../../2023-fosdem/fosdem/index.md" >}})). I took the Wednesday
-13:30 flight out of Denver through Chicago O'Hare to Brussels, and arrived on
-Thursday morning. The connection through O'Hare was a bit tight. As scheduled, I
-only had 50 minutes, and then due to our incoming flight being vectored to the
-wrong runway on the first approach, we had to circle around to land at the
-correct runway. I was at the back of the plane, but luckily my gate was not very
-far away and I made it just fine.
+This year, I once again travelled to Brussels for FOSDEM (see my
+[post from last year]({{<ref"../../2023-fosdem/fosdem/index.md">}})). I took the
+Wednesday 13:30 flight out of Denver through Chicago O'Hare to Brussels, and
+arrived on Thursday morning. The connection through O'Hare was a bit tight. As
+scheduled, I only had 50 minutes, and then due to our incoming flight being
+vectored to the wrong runway on the first approach, we had to circle around to
+land at the correct runway. I was at the back of the plane, but luckily my gate
+was not very far away and I made it just fine.
 
 I'm doing this trip with only a personal item (my Aer Travel Pack 3 Small) so I
 was able to go straight from the airport to sightsee. Since I've been to

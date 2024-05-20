@@ -4,25 +4,27 @@ date: 2024-04-21T06:25:00-06:00
 categories:
   - Travel
 tags:
-  - Travel
   - Denver
   - Porto
   - Portugal
+  - Automattic
+  - Beeper
 description: |
   I once again made a trip across the pond, this time for work. I'm attending a
   team meetup in Porto, Portugal.
 ---
 
 I'm making my way across the pond once again, this time for a work retreat. I'm
-attending a [team meetup]({{< ref "../retreat/index.md" >}}) in Porto, Portugal.
+attending a [team meetup]({{<ref"../retreat/index.md">}}) in Porto, Portugal.
 
-I ran the [2024 Mines High School Programming Competition]({{< ref
-"/posts/school/2024-hspc" >}}) on Saturday, and I had to be in Porto by Monday
-morning. Thus, I had to leave on an evening flight on Saturday in order to
-arrive in time. Unfortunately, the best flight I was able to get that left late
-enough on Saturday went through Munich with a 7 hour layover before the flight
-to Porto. My return flight goes through Frankfurt (it's kinda annoying having to
-go out of the way to Germany to get to and from Portugal, but it is what it is).
+I ran the
+[2024 Mines High School Programming Competition]({{<ref"/posts/school/2024-hspc">}})
+on Saturday, and I had to be in Porto by Monday morning. Thus, I had to leave on
+an evening flight on Saturday in order to arrive in time. Unfortunately, the
+best flight I was able to get that left late enough on Saturday went through
+Munich with a 7 hour layover before the flight to Porto. My return flight goes
+through Frankfurt (it's kinda annoying having to go out of the way to Germany to
+get to and from Portugal, but it is what it is).
 
 Automattic paid for an upgrade to Economy Plus with some extra leg room. On top
 of that, the middle seat next to me was unoccupied! I slept for the majority of

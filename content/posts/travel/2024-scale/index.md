@@ -5,11 +5,14 @@ categories:
   - Travel
   - Conferences
 tags:
-  - Travel
   - NixCon
   - SCaLE
   - Pasadena
   - California
+  - Nix
+  - NixOS
+  - Home Manager
+  - Immutability
 description: |
   I attended SCaLE for the first time this year and participated in the
   co-located NixCon.
@@ -279,13 +282,13 @@ Denver.
 
 ---
 
-I thoroughly enjoyed the conference, and it was a nice time to be able to interact
-with people who are interested in the same sorts of technology as myself. It was
-fun travelling with Addison, and it was fun to run into Josh and catch up. It
-was nice to meet up with old friends like Ethan and Jon as well as make new
-friends like Nicolas and Nathan, and I hope that NixCon is once again collocated
-with SCaLE so that I make a trip to LA to can attend both conferences again and
-hang out with my friends out there.
+I thoroughly enjoyed the conference, and it was a nice time to be able to
+interact with people who are interested in the same sorts of technology as
+myself. It was fun travelling with Addison, and it was fun to run into Josh and
+catch up. It was nice to meet up with old friends like Ethan and Jon as well as
+make new friends like Nicolas and Nathan, and I hope that NixCon is once again
+collocated with SCaLE so that I make a trip to LA to can attend both conferences
+again and hang out with my friends out there.
 
 I enjoyed all of the talks and learning from people who are doing such a variety
 of interesting things spanning so many disciplines. This was my first time at a

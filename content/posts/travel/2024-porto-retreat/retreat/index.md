@@ -5,7 +5,6 @@ categories:
   - Travel
   - Work Retreats
 tags:
-  - Travel
   - Porto
   - Portugal
   - Beeper
@@ -40,14 +39,14 @@ with among the team. This retreat felt especially necessary because we are
 combining two teams together and we wanted to build personal relationships
 across the previously separate teams.
 
-Our destination for this retreat was Porto, Portugal. We've had a [retreat in
-Portugal before]({{< ref "/posts/travel/2022-lisbon-and-paris/ericeira-portugal"
->}}), but not in Porto. We also have had retreats in [Montreal]({{< ref
-"/posts/travel/2021-dc-montreal/2021-09-13-17-montreal" >}}), [Playa del
-Carmen]({{< ref "/posts/travel/2022-playa-del-carmen-mexico" >}}), [Mexico
-City]({{< ref "/posts/travel/2022-mexico-city-retreat" >}}), [Amsterdam]({{< ref
-"/posts/travel/2023-amsterdam-retreat/retreat" >}}), and most recently in
-[Toronto]({{< ref "/posts/travel/2023-toronto-retreat" >}}) last fall.
+Our destination for this retreat was Porto, Portugal. We've had a
+[retreat in Portugal before]({{<ref"/posts/travel/2022-lisbon-and-paris/ericeira-portugal">}}),
+but not in Porto. We also have had retreats in
+[Montreal]({{<ref"/posts/travel/2021-dc-montreal/2021-09-13-17-montreal">}}),
+[Playa del Carmen]({{<ref"/posts/travel/2022-playa-del-carmen-mexico">}}),
+[Mexico City]({{<ref"/posts/travel/2022-mexico-city-retreat">}}),
+[Amsterdam]({{<ref"/posts/travel/2023-amsterdam-retreat/retreat">}}), and most
+recently in [Toronto]({{<ref"/posts/travel/2023-toronto-retreat">}}) last fall.
 
 ## The Venue
 
@@ -136,15 +135,15 @@ After dinner every night, there was an open tab at the hotel bar. I went to bed
 on the first three nights since I was still trying to fight the jet lag, but on
 Thursday I was feeling energized enough to go over to the bar. I had a really
 nice conversation with Ellie who works on
-[Pocket Casts](https://pocketcasts.com/). I have used Pocket Casts for a long time, and
-love the product, so it's cool to now work at the company behind the product. I
-also spoke extensively with Kevin about what he looks for on resumes for junior
-engineers. We don't hire any junior devs at Automattic, but he's hired junior
-engineers at previous roles. (I think a big reason for not hiring juniors is
-because it's very difficult for juniors to come into a remote-only entirely
-asynchronous company. I learned that even the daily standup meetings that Beeper
-has is rather abnormal at Automattic.) Kevin gave me some really good tips to
-bring back to the
+[Pocket Casts](https://pocketcasts.com/). I have used Pocket Casts for a long
+time, and love the product, so it's cool to now work at the company behind the
+product. I also spoke extensively with Kevin about what he looks for on resumes
+for junior engineers. We don't hire any junior devs at Automattic, but he's
+hired junior engineers at previous roles. (I think a big reason for not hiring
+juniors is because it's very difficult for juniors to come into a remote-only
+entirely asynchronous company. I learned that even the daily standup meetings
+that Beeper has is rather abnormal at Automattic.) Kevin gave me some really
+good tips to bring back to the
 [students that I interact with at Mines]({{<ref"/portfolio#experience-adjunct-mines">}})
 to improve their resumes and help explain which extracurricular activities
 benefit career growth.
@@ -223,9 +222,13 @@ recent large change being in 2020. It was fun for me to look back on my blogging
 history and remember the reasons I do this: I want to document the good times in
 life so that I always remember that I have so much to be grateful for.
 
-{{< figure src="./images/flash-talk.jpg" link="./images/flash-talk.jpg"
-target="_blank" title="Me giving my flash talk"
-caption="So I Hear We Got Acquired by a Blogging Company" >}}
+{{<figure
+  src="./images/flash-talk.jpg"
+  link="./images/flash-talk.jpg"
+  target="_blank"
+  title="Me giving my flash talk"
+  caption="So I Hear We Got Acquired by a Blogging Company"
+>}}
 
 ## Walking Tour
 
@@ -236,8 +239,7 @@ post about my extra day in Portugal sightseeing, as I want to keep this post
 focused on the meetup itself, but I'll post a few photos of our group right
 before and right after the tour.
 
-{{<
-  figure
+{{<figure
   src="./images/porto-sign.jpg"
   link="./images/porto-sign.jpg"
   target="_blank"
@@ -245,8 +247,7 @@ before and right after the tour.
   caption="I thought more people would join me and Annie with the sorority squat. PC: Megan Marcel."
 >}}
 
-{{<
-  figure
+{{<figure
   src="./images/porto-360.jpg"
   link="./images/porto-360.jpg"
   target="_blank"

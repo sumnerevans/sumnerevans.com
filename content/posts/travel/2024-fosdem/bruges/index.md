@@ -3,13 +3,12 @@ title: Bruges
 date: 2024-02-05T06:25:00-06:00
 categories:
   - Travel
-  - Trip to FOSDEM 2024
 tags:
-  - Travel
-  - Brussels
-  - Bruges
+  - FOSDEM 2024
+  - Brugges
   - Belgium
   - Belfort
+  - Wandering
 description: |
   Today I took the train to Bruges, a beautiful city near the Belgian coast.
 image: ./images/bruges-8.jpg

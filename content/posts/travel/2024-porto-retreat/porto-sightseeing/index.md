@@ -4,9 +4,13 @@ date: 2024-04-27T06:25:00-06:00
 categories:
   - Travel
 tags:
-  - Travel
   - Porto
   - Portugal
+  - Train Station
+  - Cleric's Tower
+  - Wandering
+  - Boardwalk
+  - Bridge
 description: |
   After the work retreat, I stayed in Porto an extra day to sightsee.
 image: ./images/houses.jpg

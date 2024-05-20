@@ -3,12 +3,13 @@ title: Waterloo
 date: 2024-02-06T06:25:00-06:00
 categories:
   - Travel
-  - Trip to FOSDEM 2024
 tags:
-  - Travel
   - Waterloo
   - Belgium
-  - Wellington Museum
+  - Museum
+  - Wellington
+  - Napoleon
+  - Battlefield
 description: |
   Today I went to Waterloo, the town where Napoleon was defeated by the Seventh
   Coalition.
@@ -30,8 +31,7 @@ the house which served as the headquarters of the Duke of Wellington during the
 battle. Across the street from the museum is a church. Inside there are many
 plaques commemorating various people who died during the battle.
 
-{{< 
-  figure
+{{<figure
     src="./images/church.jpg"
     link="./images/church.jpg"
     target="_blank"
@@ -44,8 +44,7 @@ Wellington who commanded the troops of the United Kingdom. He, along with
 General Blücher in command of the Prussian army, defeated Napoleon during the
 fateful battle.
 
-{{< 
-  figure
+{{<figure
     src="./images/wellington.jpg"
     link="./images/wellington.jpg"
     target="_blank"
