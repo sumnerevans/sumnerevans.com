@@ -207,8 +207,7 @@ I stayed around for a couple more talks in that devroom, but my brain was so
 fried by this point in the week that I didn't really understand anything (not
 sure if I would have understood anything anyway to be honest).
 
-{{<
-  figure src="./images/scale.jpg"
+{{<figure src="./images/scale.jpg"
   link="./images/scale.jpg"
   target="_blank"
   title="Some of the SCaLE crowd we hung out with"
@@ -242,11 +241,11 @@ After that talk, Addison and I ended up going to lunch at an Italian restaurant
 with a group of people who were there primarily for NixCon, including two
 Nixpkgs committers ([Nick Cao](https://nichi.co/) and
 [Ben Siraphob](https://siraben.dev/)) and some students who came up by train
-from San Diego (I think). Ben is getting his PhD at Yale and actually works in
-an adjacent research group to
+from San Diego. Ben is getting his PhD at Yale and actually works in an adjacent
+research group to
 [Jordan Schmerge](https://www.linkedin.com/in/jordan-schmerge/) who I know from
 Mines! Jordan graduated a couple years ahead of me and started his PhD at Mines
-and our paths crossed a couple times. The tech industry is simultaneously huge
+so our paths crossed a couple times. The tech industry is simultaneously huge
 and small. Knowing people is very important not only for career prospects, but
 also for having people in your life who are similarly passionate about
 technology. Most of the lunch group headed back to the conference centre and
