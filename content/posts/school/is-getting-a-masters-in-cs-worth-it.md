@@ -2,7 +2,13 @@
 title: "Is Getting A Master's Degree in Computer Science Worth It?"
 date: 2024-02-26T06:37:50-0600
 categories: [School]
-tags: [Computer Science, Masters Degree]
+tags:
+  - Computer Science
+  - Masters Degree
+keywords:
+  - Opportunity Cost
+  - Starting Salary
+  - Employability
 description: |
   Should you get a master's degree in computer science? In this article, I give
   my perspective on whether or not getting a master's degree is worth the effort
@@ -19,26 +25,28 @@ want to be very clear, this post is my opinion only.**
 I will start by saying that I am very happy with my decision to get my master's
 in computer science after getting my bachelor's. Mines offers a 4+1 program
 which allows you to earn a master's degree by attending for one extra year. For
-me, it was one of the best years of my life. I was able to [attend]({{< ref
-"../hackathons/hackcu-v/" >}}) and [win]({{< ref
-"../hackathons/2018-11-16-facebook-hackathon-the-competition/" >}}) multiple
-hackathons, [compete in ICPC]({{< ref "../school/2018-11-03-icpc" >}}), organize
-and run the second annual [CS@Mines High School Programming Competition]({{< ref
-"../school/2019-hspc.rst" >}}), act as Chair of Mines ACM and Linux Help Guru
-for the Mines Linux Users Group, [teach middle and high school students about
-computer science]({{< ref "../../portfolio#experience-on-tour" >}}), and
-volunteer at Golden High School through the Tau Beta Pi Honor Society (where I
-was also the Service Chair for a year), among other things. I did all of this
+me, it was one of the best years of my life. I was able to
+[attend]({{<ref"../hackathons/hackcu-v/">}}) and
+[win]({{<ref"../hackathons/2018-11-16-facebook-hackathon-the-competition/">}})
+multiple hackathons, [compete in ICPC]({{<ref"../school/2018-11-03-icpc">}}),
+organize and run the second annual
+[CS@Mines High School Programming
+Competition]({{<ref"../school/2019-hspc.rst">}}), act as Chair of Mines ACM and
+Linux Help Guru for the Mines Linux Users Group,
+[teach middle and high school
+students about computer science]({{<ref"../../portfolio#experience-on-tour">}}),
+and volunteer at Golden High School through the Tau Beta Pi Honor Society (where
+I was also the Service Chair for a year), among other things. I did all of this
 while being involved in many other activities and clubs including Mines Navs and
 intramural soccer. I also had a lot of fun learning about the topics in many of
 my courses. I especially benefited from taking Advanced Computer Architecture
 which gave me a greater appreciation for how computers work at a hardware level.
 Many of the courses deepened my understanding of core computer science concepts,
 and this has helped me to be able to provide context to students in my role as
-an [adjunct at Mines]({{< ref "../../portfolio#experience-adjunct-mines" >}}).
-And on the social side, I did all of this while getting to hang out with some of
-my best friends, attend a bunch of Mines Football games, participate in the
-annual E-Days cardboard boat race, and do a lot of skiing.
+an [adjunct at Mines]({{<ref"../../portfolio#experience-adjunct-mines">}}). And
+on the social side, I did all of this while getting to hang out with some of my
+best friends, attend a bunch of Mines Football games, participate in the annual
+E-Days cardboard boat race, and do a lot of skiing.
 
 However, I think that **from an objective, pure-monetary perspective, I'm at
 best no worse off for having done my master's degree than if I had stopped after
@@ -456,8 +464,8 @@ than some of my peers who only got an undergraduate degree. This is because I've
 chosen to take a risk by working at a startup instead of a well established
 large tech company. I think that I've taken a slight pay cut, but I have a
 decent amount of equity and there is potential for a large windfall in the case
-of a favourable exit. (Update: [the exit was
-favourable](https://techcrunch.com/2024/04/09/wordpress-com-owner-automattic-acquires-multi-service-messaging-app-beeper-for-125m/).
+of a favourable exit. (Update:
+[the exit was favourable](https://techcrunch.com/2024/04/09/wordpress-com-owner-automattic-acquires-multi-service-messaging-app-beeper-for-125m/).
 I got a decent equity payout and a sizeable raise.) However, during the first
 two years of my career that I spent at The Trade Desk, the stock tripled, and I
 had both ESPP (a program which allows employees to defer salary to buy the stock
@@ -485,10 +493,10 @@ loosing a year's worth of salary due to not entering the workforce earlier still
 exists.
 
 I only took two years to get my bachelor's degree due to having completed the
-first two years worth of credits at [Red Rocks Community College]({{< ref
-"../../portfolio#education-rrcc" >}}) while I was still in high school. I was
-also fortunate to have enough funds from my grandparents and parents to fund
-another year of college.
+first two years worth of credits at
+[Red Rocks Community College]({{<ref"../../portfolio#education-rrcc">}}) while I
+was still in high school. I was also fortunate to have enough funds from my
+grandparents and parents to fund another year of college.
 
 I don't know your exact situation, but I would be very cautious about assuming
 that taking out additional debt is definitely going to be worth it. It may be,
