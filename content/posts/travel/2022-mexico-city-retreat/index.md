@@ -12,7 +12,7 @@ tags:
   - Work
 description: |
   My thoughts and reflections on the Beeper Fall 2022 retreat in Mexico City.
-image: ./images/retro.jpg
+image: images/retro.jpg
 ---
 
 This week, my company (Beeper) had our Fall retreat in in Mexico City, Mexico.

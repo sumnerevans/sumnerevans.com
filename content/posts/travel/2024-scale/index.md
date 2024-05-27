@@ -16,7 +16,7 @@ tags:
 description: |
   I attended SCaLE for the first time this year and participated in the
   co-located NixCon.
-image: ./images/scale.jpg
+image: images/scale.jpg
 ---
 
 I attended NixCon and SCaLE in Pasadena, California for the first time this

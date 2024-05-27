@@ -3,7 +3,7 @@ title: "I Joined Beeper to Help Build the Future of Chat"
 date: 2021-07-12T08:00:00-06:00
 categories: [Life Updates]
 tags: [Beeper, Job, Work]
-image: ./images/beeper.png
+image: images/beeper.png
 ---
 
 <center>

@@ -10,7 +10,7 @@ tags:
 description: |
   I spent a few days in Berlin sightseeing before the Matrix Community Summit
   started.
-image: ./images/brandenburg-gate.jpg
+image: images/brandenburg-gate.jpg
 ---
 
 I'm in Berlin for the Matrix Community Summit 2022, but I arrived a few days

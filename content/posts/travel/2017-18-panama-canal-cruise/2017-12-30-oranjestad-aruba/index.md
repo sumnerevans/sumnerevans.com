@@ -3,7 +3,7 @@ Title: "Oranjestad, Aruba"
 Date: 2017-12-30T18:03:00-0600
 Categories: [Panama Canal Cruise]
 Tags: [Oranjestad, Aruba, Snorkelling, ATVs]
-image: ./images/aruba2.jpg
+image: images/aruba2.jpg
 ---
 
 Today we were in Aruba, but we didn't arrive until late morning. I woke up late,

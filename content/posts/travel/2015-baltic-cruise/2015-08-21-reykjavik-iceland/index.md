@@ -3,7 +3,7 @@ Title: Reykjavík, Iceland
 Date: 2015-08-21T11:37:00-0600
 Categories: [Baltic Cruise and Northern Europe]
 Tags: [Iceland, Reykjavík]
-image: ./images/iceland6.jpg
+image: images/iceland6.jpg
 ---
 
 Today we did a tour of the Golden Circle, the main sites in the southwest of

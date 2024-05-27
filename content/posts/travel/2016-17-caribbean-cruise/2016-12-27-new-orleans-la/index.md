@@ -3,7 +3,7 @@ Title: New Orleans, LA -- Day 1
 Date: 2016-12-27T20:30:00-0600
 Categories: [Caribbean Cruise 2016-17]
 Tags: [Laura Plantation, Louisiana, New Orleans, Oak Alley Plantation, Plantation, Red Fish Grill]
-image: ./images/oak-alley-from-house.jpg
+image: images/oak-alley-from-house.jpg
 ---
 
 This morning we woke up to very dense fog. (See below.) I don't think I've ever

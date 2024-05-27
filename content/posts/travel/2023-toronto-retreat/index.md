@@ -12,7 +12,7 @@ tags:
 description: |
   This week, my company had our week-long 2023 Q3 work retreat in Toronto,
   Canada. These are my thoughts and reflections on the trip.
-image: ./images/team.jpg
+image: images/team.jpg
 ---
 
 This week, my company (Beeper) had our fall work retreat in Toronto, Canada. It

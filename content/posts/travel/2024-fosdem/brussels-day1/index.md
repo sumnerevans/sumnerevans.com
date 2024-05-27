@@ -13,7 +13,7 @@ tags:
 description: |
   I arrived in Brussels on Thursday before FOSDEM and I went to a few museums
   before heading over to my hotel.
-image: ./images/planes.jpg
+image: images/planes.jpg
 ---
 
 This year, I once again travelled to Brussels for FOSDEM (see my

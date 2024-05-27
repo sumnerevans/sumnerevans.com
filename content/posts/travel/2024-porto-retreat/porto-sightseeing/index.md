@@ -13,7 +13,7 @@ tags:
   - Bridge
 description: |
   After the work retreat, I stayed in Porto an extra day to sightsee.
-image: ./images/houses.jpg
+image: images/houses.jpg
 ---
 
 On the Saturday after the [retreat]({{< ref "../retreat/index.md" >}}) I did my

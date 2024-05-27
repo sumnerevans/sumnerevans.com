@@ -4,7 +4,7 @@ date: 2022-06-05T12:00:00-06:00
 categories: [Trip to Portugal and France]
 tags: [Travel, Denver, Lisbon, Portugal]
 description: "Today I ventured across the Atlantic for the first time since 2019 for a work retreat near Lisbon, Portugal"
-image: ./images/beach.jpg
+image: images/beach.jpg
 ---
 
 Today I ventured across the Atlantic for the first time since 2019. The reason:

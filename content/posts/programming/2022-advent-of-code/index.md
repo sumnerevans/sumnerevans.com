@@ -3,7 +3,7 @@ title: "Advent of Code 2022"
 date: 2022-12-01T09:00:00-06:00
 categories: [Programming]
 tags: [Advent of Code, Go, Competition]
-image: ./map.png
+image: map.png
 ---
 
 Every year since 2015, [Eric Wastl][1] creates a two-part programming problem

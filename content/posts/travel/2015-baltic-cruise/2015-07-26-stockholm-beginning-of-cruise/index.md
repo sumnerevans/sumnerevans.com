@@ -3,7 +3,7 @@ Title: Stockholm, Sweden -- Day 5 and Beginning of Cruise
 Date: 2015-07-26T08:28:00-0600
 Categories: [Baltic Cruise and Northern Europe]
 Tags: [Stockholm, Sweden, Cruise]
-image: ./images/gamla-stan1.jpg
+image: images/gamla-stan1.jpg
 ---
 
 Today we embarked on our cruise. We woke up and had breakfast at the hotel and

@@ -3,7 +3,7 @@ Title: Quebec City, Quebec, Canada
 Date: 2016-06-03T19:00:00-0600
 Categories: [New England Trip]
 Tags: [Canada, Chateau de Frontenac, Citadelle, Cruise, Quebec, Quebec City, Travel]
-image: ./images/quebec2.jpg
+image: images/quebec2.jpg
 ---
 
 Today we went on a walking tour of Quebec City.

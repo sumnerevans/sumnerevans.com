@@ -3,7 +3,7 @@ Title: Copenhagen, Denmark
 Date: 2015-08-07T10:08:00-0600
 Categories: [Baltic Cruise and Northern Europe]
 Tags: [Copenhagen, Denmark]
-image: ./images/copenhagen1.jpg
+image: images/copenhagen1.jpg
 ---
 
 Today we were in Copenhagen, Denmark. This is our last port on the cruise. We

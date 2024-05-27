@@ -14,7 +14,7 @@ description: |
   Today I went to visit the Van Gogh Museum in the morning, and the Anne Frank
   House late in the evening. In between, I walked around the city, and met up
   with my coworkers for dinner.
-image: ./images/boats.jpg
+image: images/boats.jpg
 ---
 
 Today I went to visit the Van Gogh Museum in the morning, and the Anne Frank

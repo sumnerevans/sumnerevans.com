@@ -14,7 +14,7 @@ description: |
   This week, Beeper (which is now the Messaging division of Automattic) had our
   four-day 2024 Q2 work retreat in Porto, Portugal. These are my thoughts and
   reflections on the trip.
-image: ./images/porto-sign.jpg
+image: images/porto-sign.jpg
 ---
 
 The past few weeks have been exciting for Beeper. We

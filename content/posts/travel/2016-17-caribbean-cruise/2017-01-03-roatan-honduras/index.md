@@ -3,7 +3,7 @@ Title: Roatan, Honduras
 Date: 2017-01-03T21:05:00-0600
 Categories: [Caribbean Cruise 2016-17]
 Tags: [Honduras, Horseback Riding, Monkey, Petting Zoo, Roatan, Sloth, Snorkeling]
-image: ./images/roatan7.jpg
+image: images/roatan7.jpg
 ---
 
 Today we were in Roatan, Honduras - an island about 58 kilometers (36 miles) off

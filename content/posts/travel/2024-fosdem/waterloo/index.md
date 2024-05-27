@@ -13,7 +13,7 @@ tags:
 description: |
   Today I went to Waterloo, the town where Napoleon was defeated by the Seventh
   Coalition.
-image: ./images/wellington.jpg
+image: images/wellington.jpg
 ---
 
 Today I went to Waterloo, the town which gave its name to the battle that saw

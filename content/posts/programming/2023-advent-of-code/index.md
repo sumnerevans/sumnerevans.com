@@ -3,7 +3,7 @@ title: "Advent of Code 2023"
 date: 2023-11-30T09:00:00-06:00
 categories: [Programming]
 tags: [Advent of Code, Wheel Spinner, Competition]
-image: ./wheel.png
+image: wheel.png
 ---
 
 Every year since 2015, [Eric Wastl][1] creates a two-part programming problem

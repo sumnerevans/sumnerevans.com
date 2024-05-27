@@ -17,7 +17,7 @@ description: |
   I attended FOSDEM for the first time this year and I had a blast!
   I enjoyed attending many talks, but the best part was getting to meet so many
   cool people.
-image: ./images/burgers.jpg
+image: images/burgers.jpg
 ---
 
 For the first time since 2020, FOSDEM was held in-person in Brussels. FOSDEM is

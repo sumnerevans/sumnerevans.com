@@ -9,7 +9,7 @@ tags:
   - Beach
   - Cascais
   - Paddle Boarding
-image: ./images/dinner.jpg
+image: images/dinner.jpg
 description: "Today I went to the beach at Cascais with some people I met at the hostel."
 ---
 

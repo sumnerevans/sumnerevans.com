@@ -16,7 +16,7 @@ tags:
 description: |
   For the second year in a row, I attended FOSDEM. I attended the Matrix
   community meetup as well as many talks at the main conference.
-image: ./images/matrix.jpg
+image: images/matrix.jpg
 ---
 
 The primary purpose of my trip was to attend FOSDEM, a Free and Open Source
