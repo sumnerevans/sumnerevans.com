@@ -31,6 +31,13 @@ jobs:
         with:
           fail-mode: true
 
+      - name: Cache Generated Images
+        id: cache-images
+        uses: actions/cache@v4
+        with:
+          path: resources
+          key: ${{ runner.os }}-${{ hashFiles('config.toml') }}
+
       - name: Cache nix shell environment
         run: |
           nix develop '.#ci' \

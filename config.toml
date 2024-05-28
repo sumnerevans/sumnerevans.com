@@ -7,7 +7,7 @@ pygmentsCodefences = true
 pygmentsStyle = "github"
 pygmentsUseClasses = true
 
-timeout = "120s"
+timeout = "360s"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
@@ -22,6 +22,9 @@ timeout = "120s"
     style = "github"
   [markup.goldmark.renderer]
     unsafe = true
+
+[imaging]
+  quality = 90
 
 [security]
   enableInlineShortcodes = false
