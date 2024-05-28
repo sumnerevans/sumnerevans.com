@@ -56,8 +56,7 @@ statue. Lady Liberty shone as a beacon of hope for many people (we heard that
 over three quarters of immigrants passed through Ellis Island when it was
 operating as an immigration processing centre).
 
-[![Arriving at Liberty Island.](./images/lady-liberty.jpg)](./images/lady-liberty.jpg)
-*Arriving at Liberty Island.*
+![Arriving at Liberty Island.](images/lady-liberty.jpg)
 
 #### On Liberty Island {#onlibertyisland}
 
@@ -98,14 +97,9 @@ opportunity to go up the stairs to the statue balcony where there were great
 views of Manhattan and of the Statue itself. After taking a few pictures, we
 went back down to the ferry and went to Ellis Island.
 
-[![Mom and me in front of the Statue of Liberty.](./images/nyc2.jpg)](./images/nyc2.jpg)
-<br>
-*Mom and me in front of the Statue of Liberty. (Originally posted on
-Instagram.)*
+![Mom and me in front of the Statue of Liberty. (Originally posted on Instagram.)](images/nyc2.jpg)
 
-[![Manhattan from Liberty Island](./images/nyc3.jpg)](./images/nyc3.jpg)
-<br>
-*Manhattan from Liberty Island*
+![Manhattan from Liberty Island](images/nyc3.jpg)
 
 ### Ellis Island: Gateway to America {#ellisisland:gatewaytoamerica}
 

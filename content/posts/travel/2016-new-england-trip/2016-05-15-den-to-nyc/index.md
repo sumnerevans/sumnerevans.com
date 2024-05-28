@@ -47,7 +47,7 @@ have decided that every single building here is tall. Even unimpressive
 buildings are tall. I wonder if being around tall buildings makes
 people's egos tall... That would explain a lot.
 
-[![](./images/nyc1.jpg)](./images/nyc1.jpg)
+![](images/nyc1.jpg)
 
 We ended up at a pizza restaurant because that seemed like an
 appropriate thing to do considering New York is famous for its pizza. It

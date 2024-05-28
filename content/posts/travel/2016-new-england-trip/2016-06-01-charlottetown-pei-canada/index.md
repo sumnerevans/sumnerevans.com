@@ -22,23 +22,23 @@ Charlottetown.
 The countryside was very pretty. Here are a few photos.
 
 <table class="gallery">
-  <tr>
-    <td>
-      <a href="./images/pei1.jpg" target="_blank">
-        <img src="./images/pei1.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/pei2.jpg" target="_blank">
-        <img src="./images/pei2.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/pei3.jpg" target="_blank">
-        <img src="./images/pei3.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td>
+
+![](images/pei1.jpg)
+
+</td>
+<td>
+
+![](images/pei2.jpg)
+
+</td>
+<td>
+
+![](images/pei3.jpg)
+
+</td>
+</tr>
 </table>
 
 #### North Shore
@@ -53,37 +53,37 @@ leads everyone out of the harbor in a procession before dispersing to set their
 traps.
 
 <table class="gallery">
-  <tr>
-    <td colspan="4" rowspan="2" width="65%">
-      <a href="./images/pei4.jpg" target="_blank">
-        <img src="./images/pei4.jpg" />
-      </a>
-    </td>
-    <td colspan="2">
-      <a href="./images/pei5.jpg" target="_blank">
-        <img src="./images/pei5.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2">
-      <a href="./images/pei6.jpg" target="_blank">
-        <img src="./images/pei6.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="3">
-      <a href="./images/pei8.jpg" target="_blank">
-        <img src="./images/pei8.jpg" />
-      </a>
-    </td>
-    <td colspan="3">
-      <a href="./images/pei7.jpg" target="_blank">
-        <img src="./images/pei7.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td colspan="4" rowspan="2" width="65%">
+
+![](images/pei4.jpg)
+
+</td>
+<td colspan="2">
+
+![](images/pei5.jpg)
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+![](images/pei6.jpg)
+
+</td>
+</tr>
+<tr>
+<td colspan="3">
+
+![](images/pei8.jpg)
+
+</td>
+<td colspan="3">
+
+![](images/pei7.jpg)
+
+</td>
+</tr>
 </table>
 
 #### Beaches
@@ -97,7 +97,7 @@ to the car.
 Here’s a picture I took at a different beach where we were not getting
 sandblasted.
 
-[![](./images/pei9.jpg)](./images/pei9.jpg)
+![](images/pei9.jpg)
 
 #### Anne of Green Gables
 
@@ -105,7 +105,7 @@ On our way back to Charlottetown we stopped at Lucy Maud Montgomery's house, the
 house where Anne of Green Gables was based. I'm no fan of the series, so I won't
 dwell on the subject.
 
-[![](./images/pei10.jpg)](./images/pei10.jpg)
+![](images/pei10.jpg)
 
 ### Walking City
 
@@ -118,37 +118,37 @@ The first stop on our tour was a beautiful church. Across the street was a nice
 row of what I presume are homes.
 
 <table class="gallery">
-  <tr>
-    <td>
-      <a href="./images/pei11.jpg" target="_blank">
-        <img src="./images/pei11.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/pei12.jpg" target="_blank">
-        <img src="./images/pei12.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/pei13.jpg" target="_blank">
-        <img src="./images/pei13.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="3">
-      <a href="./images/pei14.jpg" target="_blank">
-        <img src="./images/pei14.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td>
+
+![](images/pei11.jpg)
+
+</td>
+<td>
+
+![](images/pei12.jpg)
+
+</td>
+<td>
+
+![](images/pei13.jpg)
+
+</td>
+</tr>
+<tr>
+<td colspan="3">
+
+![](images/pei14.jpg)
+
+</td>
+</tr>
 </table>
 
 At the end of that street is Confederation Hall, the birthplace of Canada. It
 was in that building that the founders of Canada met to discuss becoming a
 nation in 1864.
 
-[![](./images/pei15.jpg)](./images/pei15.jpg)
+![](images/pei15.jpg)
 
 We turned left in front of Confederation Hall and walked down Victoria Row, a
 pedestrian street somewhat like 16th Street Mall in Denver but much shorter
@@ -162,7 +162,7 @@ didn't give us one :(. We made up for it by getting some of their ice cream.
 After that, it was time to head back to the ship, but before we got back, we
 walked along some of the boardwalk and got this nice picture of the ship.
 
-[![](./images/pei16.jpg)](./images/pei16.jpg)
+![](images/pei16.jpg)
 
 ### Evening
 
@@ -193,9 +193,9 @@ captain's father and I went up to the top deck and watched us sail under the
 bridge. While we were up there, I got some great pictures of the sunset and of
 Confederation Bridge.
 
-[![](./images/bridge.webp)](./images/bridge.webp)
+![](./images/bridge.webp)
 
-[![](./images/pei17.jpg)](./images/pei17.jpg)
+![](images/pei17.jpg)
 
 #### Meeting the Captain
 
@@ -207,11 +207,11 @@ that's not that much clearance. In fact, they had to lower one of the ship’s
 antennas to be able to pass under safely. I was able to get a picture with the
 Captain and his father.
 
-[![](./images/captain.jpg)](./images/captain.jpg)
+![](images/captain.jpg)
 
 #### Beautiful Sunset
 
 At the tail end of dinner there was a beautiful sunset. These pictures really
 don't do it justice.
 
-[![](./images/sunset-boat.jpg)](./images/sunset-boat.jpg)
+![](images/sunset-boat.jpg)

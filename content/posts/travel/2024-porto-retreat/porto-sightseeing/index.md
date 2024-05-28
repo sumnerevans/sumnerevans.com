@@ -50,8 +50,7 @@ other historical events such as the arrival of the English king to form an
 alliance with the Portuguese. Above the main murals are murals depicting the
 evolution of transportation from horse and carriage to the train.
 
-{{< figure src="./images/mural.jpg" link="./images/mural.jpg" target="_blank"
-title="One of the train station murals" >}}
+![One of the train station murals](images/mural.jpg)
 
 We then walked up a hill to the highest point in the city. There is a famous
 church with a belltower (I went up it on Saturday) and a large square. Around
@@ -68,14 +67,12 @@ unbalanced scale of justice in her hand. I'm not sure if Salazar requested this,
 or if the sculptor was trying to send a subliminal message, but it serves as a
 reminder of what perverted justice can cause.
 
-{{< figure src="./images/justice.jpg" link="./images/justice.jpg"
-target="_blank" title="Lady Justice with some authoritarian modifications" >}}
+![Lady Justice with some authoritarian modifications](images/justice.jpg)
 
 Along the walking tour, we walked along many pretty streets. This one in
 particular caught my eye for its vibrant colours:
 
-{{< figure src="./images/houses.jpg" link="./images/houses.jpg" target="_blank"
-title="Very colourful houses" >}}
+![Very colourful houses](images/houses.jpg)
 
 ## Cleric's Tower
 
@@ -94,15 +91,13 @@ ask me why this organization needed their own church and tower, but in the
 1700's they did. I'm not going to complain too much, because the church now has
 the best views of all of Porto.
 
-{{< figure src="./images/view.jpg" link="./images/view.jpg" target="_blank"
-title="The view of Porto from the Cleric's tower" >}}
+![The view of Porto from the Cleric's tower](images/view.jpg)
 
 After enjoying the fantastic views from the tower, I went back down and walked
 around the area near the tower. There was a really cool view with the tower an
 iconic old tram line.
 
-{{< figure src="./images/tower.jpg" link="./images/tower.jpg" target="_blank"
-title="The Cleric's Tower with the tram out front" >}}
+![The Cleric's Tower with the tram out front](images/tower.jpg)
 
 After lunch, I continued meandering around the city with the general goal of
 going towards the waterfront because there are is a really cool bridge that I
@@ -113,33 +108,33 @@ church and went inside to look around and I wandered through a square where lots
 of people were lounging out on the grass enjoying the nice weather.
 
 <figure>
-  <table class="gallery">
-    <tr>
-      <td>
-        <a href="./images/narrow-street.jpg" target="_blank">
-          <img src="./images/narrow-street.jpg"
-            alt="A view down a narrow street in Porto" />
-        </a><br><br>
-        <b>A view down a narrow street in Porto</b>
-      </td>
-      <td>
-        <a href="./images/colourful-street.jpg" target="_blank">
-          <img src="./images/colourful-street.jpg"
-            alt="A colourful, vibrant street" />
-        </a><br><br>
-        <b>A colourful, vibrant street</b>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2">
-        <a href="./images/square.jpg" target="_blank">
-          <img src="./images/square.jpg"
-            alt="A nice square where people were lounging and enjoying the nice weather" />
-        </a><br>
-        <b>A nice square where people were lounging and enjoying the nice weather</b>
-      </td>
-    </tr>
-  </table>
+<table class="gallery">
+<tr>
+<td>
+
+![](images/narrow-street.jpg "A view down a narrow street in Porto")
+
+**A view down a narrow street in Porto**
+
+</td>
+<td style="width:60%">
+
+![](images/colourful-street.jpg "A colourful, vibrant street")
+
+**A colourful, vibrant street**
+
+</td>
+</tr>
+<tr>
+<td colspan="3">
+
+![](images/square.jpg "A nice square where people were lounging and enjoying the nice weather")
+
+**A nice square where people were lounging and enjoying the nice weather**
+
+</td>
+</tr>
+</table>
 </figure>
 
 Eventually I made it down to the waterfront. There is a really nice boardwalk
