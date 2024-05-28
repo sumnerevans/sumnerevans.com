@@ -49,12 +49,11 @@ Saintes-Maries-de-la-Mer*. I don't know exactly why I like it; maybe it is the
 bright colours. What I know is that when I saw the painting, it caught my
 attention in a way that the other paintings did not.
 
-{{< figure
-      src="./images/boats.jpg"
-      link="https://www.vangoghmuseum.nl/en/collection/s0028V1962"
-      target="_blank"
-      title="Fishing Boats on the Beach at Les Saintes-Maries-de-la-Mer"
-      caption="Vincent van Gogh (1853 - 1890), Arles, June 1888"
+{{<figure
+  src="images/boats.jpg"
+  link="https://www.vangoghmuseum.nl/en/collection/s0028V1962"
+  title="Fishing Boats on the Beach at Les Saintes-Maries-de-la-Mer"
+  caption="Vincent van Gogh (1853 - 1890), Arles, June 1888"
 >}}
 
 ------
@@ -75,12 +74,10 @@ establishment, so we decided to try something else. We ended up at a fish
 restaurant where we got a fantastic platter full of fish of all kinds. The most
 unique fish was the fillets of swordfish. I enjoyed it very much.
 
-{{< figure
-      src="../retreat/images/fish.jpg"
-      link="../retreat/images/fish.jpg"
-      target="_blank"
-      title="A fantastic platter of all kinds of fish"
-      caption="We couldn't really read the menu, so we just ordered the thing that looked like it said *platter for four*. We were not disappointed."
+{{<figure
+  src="images/fish.jpg"
+  title="A fantastic platter of all kinds of fish"
+  caption="We couldn't really read the menu, so we just ordered the thing that looked like it said *platter for four*. We were not disappointed."
 >}}
 
 ---------

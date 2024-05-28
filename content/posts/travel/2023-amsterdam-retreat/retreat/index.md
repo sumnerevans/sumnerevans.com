@@ -45,19 +45,9 @@ student housing, and because of that, there were lots of nice spaces to sit and
 work. There was also a co-working room which we rented and used for our team
 meetings.
 
-{{< figure
-      src="./images/team-room.jpg"
-      link="./images/team-room.jpg"
-      target="_blank"
-      title="Everyone in the coworking space listening to Eric discuss our plans"
->}}
+![Everyone in the coworking space listening to Eric discuss our plans](images/team-room.jpg)
 
-{{< figure
-      src="./images/team.jpg"
-      link="./images/team.jpg"
-      target="_blank"
-      title="A group picture with everyone who made it to the retreat"
->}}
+![A group picture with everyone who made it to the retreat](images/team.jpg)
 
 ## Retro
 
@@ -88,12 +78,7 @@ The next few months are going to be very exciting for Beeper. Since we've
 stabilized our app architectures, we are going to be able to focus on building
 new functionality.
 
-{{< figure
-      src="./images/retro.jpg"
-      link="./images/retro.jpg"
-      target="_blank"
-      title="Tiago (standing right) discussing his retro sticky notes"
->}}
+![Tiago (standing right) discussing his retro sticky notes](images/retro.jpg)
 
 ## Working
 
@@ -159,12 +144,10 @@ As with all our retreats, we spent time together exploring the city. On Sunday,
 Brad, Scott, Bradley, and myself went to a fish restaurant and we had a
 fantastic platter of fish.
 
-{{< figure
-      src="./images/fish.jpg"
-      link="./images/fish.jpg"
-      target="_blank"
-      title="A fantastic platter of all kinds of fish"
-      caption="We couldn't really read the menu, so we just ordered the thing that looked like it said *platter for four*. We were not disappointed."
+{{<figure
+  src="images/fish.jpg"
+  title="A fantastic platter of all kinds of fish"
+  caption="We couldn't really read the menu, so we just ordered the thing that looked like it said *platter for four*. We were not disappointed."
 >}}
 
 ### Boat Tour
@@ -172,12 +155,7 @@ fantastic platter of fish.
 On Monday, we took a boat tour through the canals of Amsterdam. Amsterdam is
 called the Venice of the North because of all of the canals.
 
-{{< figure
-      src="./images/boat.jpg"
-      link="./images/boat.jpg"
-      target="_blank"
-      title="The team on our boat tour"
->}}
+![The team on our boat tour](images/boat.jpg)
 
 After the boat tour, a few of us went to get fries, which Amsterdam is famous
 for. The large size fries that I ordered were way too much. The fries were
@@ -218,12 +196,10 @@ than all the other team's balls (similar to curling scoring).
 I played with Max against Ivan and Jess. Ivan and Jess made a great comeback and
 won by one point!
 
-{{< figure
-      src="./images/boules.jpg"
-      link="./images/boules.jpg"
-      target="_blank"
-      title="Playing Boules"
-      caption="Matt is about to throw as Toni, Tulir, and G look on."
+{{<figure
+  src="./images/boules.jpg"
+  title="Playing Boules"
+  caption="Matt is about to throw as Toni, Tulir, and G look on."
 >}}
 
 ### Tulips

@@ -26,25 +26,16 @@ I opted against it; walking in the rain was enough for me.
 
 Here are a few photos of the streets and canals as I walked.
 
-{{< figure
-      src="./images/canal.jpg"
-      link="./images/canal.jpg"
-      target="_blank"
-      title="One of the many beautiful canals in Amsterdam."
-      caption="Amsterdam is known as the \"Venice of the North\" for good reason. The infrastructure in Amsterdam is significantly better, however."
+{{<figure
+  src="images/canal.jpg"
+  title="One of the many beautiful canals in Amsterdam."
+  caption=`Amsterdam is known as the "Venice of the North" for good reason. The infrastructure in Amsterdam is significantly better, however.`
 >}}
 
-{{< figure
-      src="./images/square.jpg"
-      link="./images/square.jpg"
-      target="_blank"
-      title="The Royal Palace"
->}}
+![The Royal Palace](images/square.jpg)
 
-{{< figure
-      src="./images/plaza.jpg"
-      link="./images/plaza.jpg"
-      target="_blank"
-      title="A small plaza outside of the Oude Kerk"
-      caption="Most European cities are so pretty due to their haphazard architecture and mixed-use urban design."
+{{<figure
+  src="images/plaza.jpg"
+  title="A small plaza outside of the Oude Kerk"
+  caption="Most European cities are so pretty due to their haphazard architecture and mixed-use urban design."
 >}}

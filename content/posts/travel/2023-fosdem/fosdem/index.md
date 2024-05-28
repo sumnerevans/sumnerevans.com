@@ -77,12 +77,10 @@ After the event was over, a group of us headed out for burgers. It was a great
 opportunity to get to get to know some more cool people and hear about their
 connection to the Matrix ecosystem.
 
-{{< figure
-      src="./images/burgers.jpg"
-      link="./images/burgers.jpg"
-      target="_blank"
-      title="Getting burgers with a bunch of Matrix developers and enthusiasts"
-      caption="The Matrix community is full of interesting and talented people from around the globe."
+{{<figure
+  src="images/burgers.jpg"
+  title="Getting burgers with a bunch of Matrix developers and enthusiasts"
+  caption="The Matrix community is full of interesting and talented people from around the globe."
 >}}
 
 ## It's Go Time!
@@ -94,12 +92,10 @@ FOSDEM that the tram was totally full and I had to squeeze in! After finally
 arriving there, I went to get my FOSDEM t-shirt (if you don't get the shirt, did
 you even go?) and then I headed over to the Go dev room.
 
-{{< figure
-      src="./images/godevroom.jpg"
-      link="./images/godevroom.jpg"
-      target="_blank"
-      title="Waiting for the talks in the Go dev room to commence"
-      caption="The organizers of the dev room did a terrific job and all of the talks that I attended were very interesting."
+{{<figure
+  src="images/godevroom.jpg"
+  title="Waiting for the talks in the Go dev room to commence"
+  caption="The organizers of the dev room did a terrific job and all of the talks that I attended were very interesting."
 >}}
 
 I've been using Go fairly extensively at work, and even
@@ -215,12 +211,7 @@ At the beginning of the Matrix devroom, Matthew and Amandine presented a short
 talk about the overall Matrix ecosystem including this quite exciting graph of
 Matrix' growth.
 
-{{< figure
-      src="./images/matrixdevroom.jpg"
-      link="./images/matrixdevroom.jpg"
-      target="_blank"
-      title="Matthew and Amandine talking about Matrix adoption"
->}}
+![Matthew and Amandine talking about Matrix adoption](images/matrixdevroom.jpg)
 
 I'm fairly connected with the happenings within the Matrix ecosystem, but it was
 great to hear about the cool things that people are working on. For example,
@@ -266,12 +257,10 @@ to OIDC for authentication, using Matrix as a signalling layer for group video
 calls, and using Matrix as a signalling layer and system for a metaverse-like
 environment.
 
-{{< figure
-      src="./images/matrix20.jpg"
-      link="./images/matrix20.jpg"
-      target="_blank"
-      title="Matthew presenting some of the recent developments in Matrix"
-      caption="The Matrix Foundation has high aspirations for Matrix including using it for applications other than chat."
+{{<figure
+  src="images/matrix20.jpg"
+  title="Matthew presenting some of the recent developments in Matrix"
+  caption="The Matrix Foundation has high aspirations for Matrix including using it for applications other than chat."
 >}}
 
 After the Matrix 2.0 presentation finished, I met up with some Matrix folks and
