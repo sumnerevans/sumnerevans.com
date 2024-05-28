@@ -30,8 +30,7 @@ Pasadena was quite a journey. I had to take the Metro Connector from LAX over to
 the Metro and then I took two metro lines up to Pasadena. It probably took an
 hour and a half just on the metro to get there.
 
-{{< figure src="./images/nix-banner.jpg" link="./images/nix-banner.jpg"
-target="_blank" title="The Nix standard" >}}
+![The Nix standard](images/nix-banner.jpg)
 
 I arrived at the convention centre about an hour after the planned start time of
 the first NixCon talk, however due to technical difficulties with the projector,
@@ -141,8 +140,7 @@ After dinner, Nic, Nathan and I met back up with Addison at the Pasadena Ice
 Skating Center for the open skate. It was a nice way to exercise and do
 something fun after the conference!
 
-{{< figure src="./images/skating.jpg" link="./images/skating.jpg"
-target="_blank" title="Nathan, Nic, Addison and myself ice skating" >}}
+![Nathan, Nic, Addison and myself ice skating](images/skating.jpg)
 
 ---
 
@@ -210,9 +208,8 @@ I stayed around for a couple more talks in that devroom, but my brain was so
 fried by this point in the week that I didn't really understand anything (not
 sure if I would have understood anything anyway to be honest).
 
-{{<figure src="./images/scale.jpg"
-  link="./images/scale.jpg"
-  target="_blank"
+{{<figure
+  src="images/scale.jpg"
   title="Some of the SCaLE crowd we hung out with"
   caption="Left to right: (random guy Addison ran into), Nathan, Josh, Addison, Nicolas, myself."
 >}}
