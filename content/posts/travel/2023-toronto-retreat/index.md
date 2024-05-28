@@ -56,43 +56,34 @@ since it is a residential building so there's not hotel staff to do the
 check-in, but my room was spacious and had amazing views.
 
 <figure>
-  <table class="gallery">
-    <tr>
-      <td>
-        <a href="./images/avalon-view1.jpg" target="_blank">
-          <img src="./images/avalon-view1.jpg"
-            alt="The view out the window of the bedroom of my suite." />
-        </a><br><br>
-        The view from the bedroom of my suite.
-      </td>
-      <td>
-        <a href="./images/avalon-view2.jpg" target="_blank">
-          <img src="./images/avalon-view2.jpg"
-            alt="The view out the window of the living room of my suite." />
-        </a><br>
-        The view out the window of the living room of my suite.
-      </td>
-    </tr>
-  </table>
+<table class="gallery">
+<tr>
+<td>
+
+![](images/avalon-view1.jpg "The view out the window of the bedroom of my suite.")
+
+**The view from the bedroom of my suite.**
+
+<br/>
+</td>
+<td>
+
+![](images/avalon-view2.jpg "The view out the window of the living room of my suite.")
+
+**The view out the window of the living room of my suite.**
+
+</td>
+</tr>
+</table>
 </figure>
 
 Our workspace consisted of a large conference room and a couple smaller ones in
 the very nice office of [Top Hat](https://tophat.com/) an education software
 startup that was a block away from the hotel.
 
-{{< figure
-      src="./images/workspace.jpg"
-      link="./images/workspace.jpg"
-      target="_blank"
-      title="The team listening to Eric lay out our plan for the next few months."
->}}
+![The team listening to Eric lay out our plan for the next few months.](images/workspace.jpg)
 
-{{< figure
-      src="./images/team.jpg"
-      link="./images/team-fullres.jpg"
-      target="_blank"
-      title="Our team at the Top Hat office."
->}}
+![Our team at the Top Hat office.](images/team-fullres.jpg)
 
 ## The iMessage Corner of Happiness!
 
@@ -136,11 +127,11 @@ Toronto islands.
 Ten of us took a ferry across to Ward's island. The views of Toronto across the
 bay were fantastic!
 
-{{< figure
-      src="./images/skyline.jpg"
-      link="./images/skyline.jpg"
-      target="_blank"
-      title="The view of Toronto across the bay was fantastic! PC: Josh Johnson"
+{{<figure
+  src="images/skyline.jpg"
+  title="The view of Toronto across the bay was fantastic!"
+  attr="Josh Johnson"
+  attrlink="http://joshjohnson.io/"
 >}}
 
 Adam had gotten some used discs from a local disc golf club in the area for us
@@ -155,11 +146,9 @@ Most of the time, Adam's and Josh's first throw would get really close to the
 pin, then the rest of us would spend a couple of throws getting to where their
 first throws landed.
 
-{{< figure
-      src="./images/disc-golf.jpg"
-      link="./images/disc-golf.jpg"
-      target="_blank"
-      title="Adam (center) getting ready to throw while Tulir (left) and Josh (right) look on."
+{{<figure
+  src="images/disc-golf.jpg"
+  title="Adam (center) getting ready to throw while Tulir (left) and Josh (right) look on."
 >}}
 
 It was an absolutely beautiful day, and it was a great way to get away from my
@@ -174,12 +163,7 @@ get various clues. They also helped us out when we got stuck.
 The venue was a really cool castle (actually, the room was across the street,
 but there was a secret tunnel leading from the castle to the house).
 
-{{< figure
-      src="./images/castle.jpg"
-      link="./images/castle.jpg"
-      target="_blank"
-      title="The escape room castle."
->}}
+{{<figure src="images/castle.jpg" title="The escape room castle." >}}
 
 The story of the escape room was that we were recruited to help take over a
 bootlegging operation, but unfortunately, we were discovered and we had to
@@ -202,21 +186,14 @@ some dishes that I don't think I would have if it weren't for the set menu.
 On another evening, a group of us went to a really good ramen restaurant. I'm a
 sucker for ramen, and this place was very good.
 
-{{< figure
-      src="./images/ramen.jpg"
-      link="./images/ramen.jpg"
-      target="_blank"
-      title="My bowl of ramen"
->}}
+{{<figure src="images/ramen.jpg" title="My bowl of ramen" >}}
 
 On Thursday, before the escape room, a group of us went to an all you can eat
 Japanese BBQ. We had so much quality meat, and it was fantastic!
 
-{{< figure
-      src="./images/bbq.jpg"
-      link="./images/bbq.jpg"
-      target="_blank"
-      title="I'm not sure what Michelle enjoyed more: playing with the fire or eating the food"
+{{<figure
+  src="images/bbq.jpg"
+  title="I'm not sure what Michelle enjoyed more: playing with the fire or eating the food"
 >}}
 
 ## An Early Departure

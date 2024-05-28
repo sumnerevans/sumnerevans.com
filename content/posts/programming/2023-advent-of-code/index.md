@@ -20,11 +20,11 @@ year as well.
 This year, I'm leaving my fate up to chance by spinning a wheel every night
 which will dictate what language I use for that night.
 
-{{< figure
-    src="./wheel.png"
-    target="_blank"
-    title="Spinner wheel which will decide my fate every night"
-    caption="The random spinner wheel which will decide my fate every night" >}}
+{{<figure
+  src="wheel.png"
+  title="Spinner wheel which will decide my fate every night"
+  caption="The random spinner wheel which will decide my fate every night"
+>}}
 
 I'm going to be streaming some of my solves and I will try and keep this blog
 post up-to-date every day with my thoughts on each problem.
