@@ -40,7 +40,7 @@ On the way in, we passed right over Lisbon and I got a very nice view of the
 city out the window.
 
 {{<figure
-  src="./images/flight-view.jpg"
+  src="images/flight-view.jpg"
   title="The view from my seat on the approach into Lisbon"
   caption="This is the West coast of Iberia."
 >}}
@@ -59,7 +59,7 @@ few minutes). After we finished at the beach, we went to the beach bar for a
 drink and then walked back up to the venue.
 
 {{<figure
-  src="./images/beach.jpg"
+  src="images/beach.jpg"
   title="The beach near the retreat venue"
   caption="It was a bit cold getting into the Atlantic, but once we got in, it was refreshing."
 >}}
@@ -70,7 +70,7 @@ was served shortly thereafter. After a while, we started a fire and enjoyed some
 time chatting around the fire, trying to fight off jet lag.
 
 {{<figure
-  src="./images/fire.jpg"
+  src="images/fire.jpg"
   title="The Beeper team enjoying some quality time around the fire"
   caption="Adam did a good job starting the fire, and didn't even have to use gasoline! This fire is Chief Safety Officer approved."
 >}}

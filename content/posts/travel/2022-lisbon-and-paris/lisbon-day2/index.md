@@ -21,32 +21,33 @@ festival in Lisbon.
 After a small breakfast at the hostel, I started walking over towards the
 Castelo de São Jorge in the Alfama district which is the old quarter of Lisbon.
 My goal was to eventually get to the castle, but I wanted to enjoy walking
-through the old quarter on my way, so I went at a very leisurely pace.
-The streets were beautiful, and in some areas, people were already setting up
+through the old quarter on my way, so I went at a very leisurely pace. The
+streets were beautiful, and in some areas, people were already setting up
 decorations for the celebration that night.
 
 <figure>
-  <table class="gallery">
-    <tr>
-      <td>
-        <a href="./images/decorations.jpg" target="_blank">
-          <img src="./images/decorations.jpg"
-               alt="Colorful decorations attached to a tree in the Alfama district." />
-        </a><br>
-        <b>Colorful decorations attached to a tree in Alfama</b><br>
-        The streets were decorated throughout the day.
-      </td>
-      <td>
-        <a href="./images/narrow-alfama-street.jpg" target="_blank">
-          <img src="./images/narrow-alfama-street.jpg"
-               alt="A narrow street in the Alfama district." />
-        </a><br>
-        <b>A narrow street in the Alfama district</b><br>
-        The streets were very picturesque and I took my time enjoying the
-        beauty.
-      </td>
-    </tr>
-  </table>
+<table class="gallery">
+<tr>
+<td>
+
+![](images/decorations.jpg "Colorful decorations attached to a tree in the Alfama district")
+
+**Colorful decorations attached to a tree in Alfama**
+
+The streets were decorated throughout the day.
+
+</td>
+<td>
+
+![](images/narrow-alfama-street.jpg "A narrow street in the Alfama district")
+
+**A narrow street in the Alfama district.**
+
+The streets were very picturesque and I took my time enjoying the beauty.
+
+</td>
+</tr>
+</table>
 </figure>
 
 ---
@@ -63,57 +64,60 @@ The castle grounds are home to a museum which contains many artefacts from the
 various periods of settlement in the area.
 
 <figure>
-  <table class="gallery">
-    <tr>
-      <td colspan="2">
-        <a href="./images/castle-panorama.jpg" target="_blank">
-          <img src="./images/castle-panorama.jpg"
-               alt="A panorama of the castle's main entrance" />
-        </a><br>
-        <b>A panorama of the castle's main entrance</b><br>
-        There was a substantial moat around the walls protecting the castle.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="./images/castle-walls.jpg" target="_blank">
-          <img src="./images/castle-walls.jpg"
-               alt="A view from atop the castle walls" />
-        </a><br>
-        <b>Atop the castle walls</b><br>
-        The castle's defensive perimeter was quite impressive.
-        <br>
-        <br>
-      </td>
-      <td>
-        <a href="./images/castle-flags.jpg" target="_blank">
-          <img src="./images/castle-flags.jpg"
-               alt="A view of the castle walls with the Portuguese flag flying
-               atop. The city can be seen in the background." />
-        </a><br>
-        <b>The castle walls on the opposite side</b><br>
-        The Portuguese flag is flying in the foreground and the city can be seen
-        in the background.
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2">
-        <a href="./images/city.jpg" target="_blank">
-          <img src="./images/city.jpg"
-               alt="The views of Lisbon from the castle heights" />
-        </a><br>
-        <b>The views of Lisbon from the castle heights</b><br>
-        The views of the city from within the castle were stunning. I can see
-        why it was chosen as a defensive outpost.
-      </td>
-    </tr>
-  </table>
+<table class="gallery">
+<tr>
+<td colspan="2">
+
+![](images/castle-panorama.jpg "A panorama of the castle's main entrance")
+
+**A panorama of the castle's main entrance**
+
+There was a substantial moat around the walls protecting the castle.
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/castle-walls.jpg "A view from atop the castle walls")
+
+**A view from atop the castle walls**
+
+The castle's defensive perimeter was quite impressive.
+
+<br>
+
+</td>
+<td>
+
+![](images/castle-flags.jpg "A view of the castle walls with the Portuguese flag flying atop. The city can be seen in the background")
+
+**The castle walls on the opposite side**
+
+The Portuguese flag is flying in the foreground and the city can be seen in the
+background.
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+![](images/city.jpg "The views of Lisbon from the castle heights")
+
+**The views of Lisbon from the castle heights**
+
+The views of the city from within the castle were stunning. I can see why it was
+chosen as a defensive outpost.
+
+</td>
+</tr>
+</table>
 </figure>
 
 After spending a couple hours at museum and the castle, I wandered back through
 Alfama towards the Se de Lisboa (Lisbon Cathedral). When I arrived, there was a
-televised wedding going on. I looked it up, and apparently it is the *Wedding of
-Saint Anthony* a collective wedding for a set of 16 couples that happens every
+televised wedding going on. I looked it up, and apparently it is the _Wedding of
+Saint Anthony_ a collective wedding for a set of 16 couples that happens every
 June 12th. In the past, poor couples were chosen for the wedding. Although,
 today I am not sure if being low-income is one of the qualifying factors.
 
@@ -131,12 +135,12 @@ people set up make-shift stands for selling beer, shots, and bar foods.
 I went back to the hostel for dinner. After dinner is when all of the Feast of
 Saint Anthony festivities were supposed to begin. The first thing was a parade
 that we heard was going to happen that came right down the street in front of
-the hostel. The parade was quite lame. Even more lame than the [one that mom and
-I watched in Bermuda]({{< ref
-"../../2016-new-england-trip/2016-05-24-bermuda-2.md#parade" >}})! In the almost
-hour we watched from the balconies of the hostel, maybe four or five "floats"
-came by. Most of them looked like childrens' bands from local schools. We kept
-thinking there'd be something more interesting, but nothing came.
+the hostel. The parade was quite lame. Even more lame than the
+[one that mom and I watched in Bermuda]({{<ref"../../2016-new-england-trip/2016-05-24-bermuda-2.md#parade">}})!
+In the almost hour we watched from the balconies of the hostel, maybe four or
+five "floats" came by. Most of them looked like childrens' bands from local
+schools. We kept thinking there'd be something more interesting, but nothing
+came.
 
 At that point, a large group of around twenty people from the hostel headed out
 to the actual celebrations on the streets. There was one guy who anointed

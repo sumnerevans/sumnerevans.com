@@ -4,6 +4,8 @@ Date: 2017-01-05T16:47:00-0600
 Categories: [Caribbean Cruise 2016-17]
 Tags: [Cayman Islands, Grand Cayman, Snorkeling, Stingray]
 image: images/cayman16.jpg
+build:
+  publishResources: false
 ---
 
 Today we were in Grand Cayman, Cayman Islands. English is the first language in
@@ -17,7 +19,7 @@ From the tour company office, we rode a bus to the boat dock, and on the way our
 driver told us some things about the Cayman Island. For one, the island is tax
 free but a lot of rich people live there (huh, funny, when you don't have any
 taxes, money comes to you. What a surprise. JK, not actually a surprise, more
-like common sense.). Our driver made it *very* clear that the Cayman Islands are
+like common sense.). Our driver made it _very_ clear that the Cayman Islands are
 **tax free** (say it really slowly and emphatically in a deep Caribbean accent).
 
 We got to the boat and boarded and then rode out to Stingray Sandbar.
@@ -27,30 +29,30 @@ We got to the boat and boarded and then rode out to Stingray Sandbar.
 Out at the sandbar, we were able to hold and "kiss" the stingrays.
 
 <table class="gallery">
-  <tr>
-    <td>
-      <a href="./images/cayman1.jpg" target="_blank">
-        <img src="./images/cayman1.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/cayman2.jpg" target="_blank">
-        <img src="./images/cayman2.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/cayman3.jpg" target="_blank">
-        <img src="./images/cayman3.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/cayman4.jpg" target="_blank">
-        <img src="./images/cayman4.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td>
+
+![](images/cayman1.jpg)
+
+</td>
+<td>
+
+![](images/cayman2.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/cayman3.jpg)
+
+</td>
+<td>
+
+![](images/cayman4.jpg)
+
+</td>
+</tr>
 </table>
 
 It took a while for all of the people to have an opportunity to be able to hold
@@ -64,30 +66,30 @@ of my eyes pretty well when I snorkeled last time. I was extremely happy about
 that decision. The coral was amazing and there was a great variety of fish.
 
 <table class="gallery">
-  <tr>
-    <td>
-      <a href="./images/cayman5.jpg" target="_blank">
-        <img src="./images/cayman5.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/cayman6.jpg" target="_blank">
-        <img src="./images/cayman6.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/cayman7.jpg" target="_blank">
-        <img src="./images/cayman7.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/cayman8.jpg" target="_blank">
-        <img src="./images/cayman8.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td>
+
+![](images/cayman5.jpg)
+
+</td>
+<td>
+
+![](images/cayman6.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/cayman7.jpg)
+
+</td>
+<td>
+
+![](images/cayman8.jpg)
+
+</td>
+</tr>
 </table>
 
 We went to one other site where there was a huge variety of fish, but not as
@@ -95,54 +97,54 @@ much coral. The guides had fish-food, which they threw out, which attracted a
 ton of fish.
 
 <table class="gallery">
-  <tr>
-    <td rowspan="2" colspan="2">
-      <a href="./images/cayman9.jpg" target="_blank">
-        <img src="./images/cayman9.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/cayman10.jpg" target="_blank">
-        <img src="./images/cayman10.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/cayman11.jpg" target="_blank">
-        <img src="./images/cayman11.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/cayman12.jpg" target="_blank">
-        <img src="./images/cayman12.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/cayman13.jpg" target="_blank">
-        <img src="./images/cayman13.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/cayman14.jpg" target="_blank">
-        <img src="./images/cayman14.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/cayman15.jpg" target="_blank">
-        <img src="./images/cayman15.jpg" />
-      </a>
-    </td>
-    <td colspan="2">
-      <a href="./images/cayman16.jpg" target="_blank">
-        <img src="./images/cayman16.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td rowspan="2" colspan="2">
+
+![](images/cayman9.jpg)
+
+</td>
+<td>
+
+![](images/cayman10.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/cayman11.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/cayman12.jpg)
+
+</td>
+<td>
+
+![](images/cayman13.jpg)
+
+</td>
+<td>
+
+![](images/cayman14.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/cayman16.jpg)
+
+</td>
+<td colspan="2">
+
+![](images/cayman16.jpg)
+
+</td>
+</tr>
 </table>
 
 That was about it, we rode back to the shore and then drove back to town and

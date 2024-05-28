@@ -4,6 +4,8 @@ Date: 2016-05-29T19:00:00
 Categories: [New England Trip]
 Tags: [Bar Harbor, Bike Tour, Maine, Travel]
 image: images/bar-harbor10.jpg
+build:
+  publishResources: false
 ---
 
 Today we were in Bar Harbor, Maine (pronounced Baahh Haahhhbahh). Bar Harbor is
@@ -23,67 +25,64 @@ deal with cars. Our tour went on these carriage roads. I think it is best to
 just post a bunch of pictures and let them speak for themselves.
 
 <table class="gallery">
-  <tr>
-    <td>
-      <a href="./images/bar-harbor1.jpg" target="_blank">
-        <img src="./images/bar-harbor1.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/bar-harbor2.jpg" target="_blank">
-        <img src="./images/bar-harbor2.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/bar-harbor3.jpg" target="_blank">
-        <img src="./images/bar-harbor3.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td>
 
-  <tr>
-    <td>
-      <a href="./images/bar-harbor4.jpg" target="_blank">
-        <img src="./images/bar-harbor4.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/bar-harbor5.jpg" target="_blank">
-        <img src="./images/bar-harbor5.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/bar-harbor6.jpg" target="_blank">
-        <img src="./images/bar-harbor6.jpg" />
-      </a>
-    </td>
-  </tr>
+![](images/bar-harbor1.jpg)
 
-  <tr>
-    <td>
-      <a href="./images/bar-harbor7.jpg" target="_blank">
-        <img src="./images/bar-harbor7.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/bar-harbor8.jpg" target="_blank">
-        <img src="./images/bar-harbor8.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/bar-harbor9.jpg" target="_blank">
-        <img src="./images/bar-harbor9.jpg" />
-      </a>
-    </td>
-  </tr>
+</td>
+<td>
 
-  <tr>
-    <td colspan="3">
-      <a href="./images/bar-harbor10.jpg" target="_blank">
-        <img src="./images/bar-harbor10.jpg" />
-      </a>
-    </td>
-  </tr>
+![](images/bar-harbor2.jpg)
+
+</td>
+<td>
+
+![](images/bar-harbor3.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/bar-harbor4.jpg)
+
+</td>
+<td>
+
+![](images/bar-harbor5.jpg)
+
+</td>
+<td>
+
+![](images/bar-harbor6.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/bar-harbor7.jpg)
+
+</td>
+<td>
+
+![](images/bar-harbor8.jpg)
+
+</td>
+<td>
+
+![](images/bar-harbor9.jpg)
+
+</td>
+</tr>
+<tr>
+<td colspan="3">
+
+![](images/bar-harbor10.jpg)
+
+</td>
+</tr>
 </table>
 
 ### Walking in Town {#walkingintown}
@@ -91,5 +90,5 @@ just post a bunch of pictures and let them speak for themselves.
 After our bike tour, we walked around the town of Bar Harbor. We ate lunch at a
 local restaurant that served lobster rolls (basically lobster sandwiches). I had
 one and it was very good. We walked around the town for a little while looking
-in the various stores and enjoying the town.  Then we headed back to the boat
-and the evening proceeded much like the previous ones.
+in the various stores and enjoying the town. Then we headed back to the boat and
+the evening proceeded much like the previous ones.

@@ -30,10 +30,10 @@ Nothing went to plan, however. Due to navigational difficulties, lack of
 accurate naval and aerial bombardment, and other complicating factors, the
 Americans who landed on Omaha met the fiercest resistance of any beachhead.
 
-A few years ago, I [had the pleasure of hearing from D-Day veterans]({{< ref
-"../../2019-dc-transatlantic-cruise/2019-05-24-2019-05-31-queen-mary-2-crossing/index.rst#wwii-veteran-presentations"
->}}) while on the Queen Mary II. Many of their stories came to mind as I stood
-on the sea wall looking out towards the ocean.
+A few years ago, I
+[had the pleasure of hearing from D-Day veterans]({{<ref"../../2019-dc-transatlantic-cruise/2019-05-24-2019-05-31-queen-mary-2-crossing/index.rst#wwii-veteran-presentations">}})
+while on the Queen Mary II. Many of their stories came to mind as I stood on the
+sea wall looking out towards the ocean.
 
 I imagined the hundreds of yards of virtually barren beach littered with
 anti-personnel and anti-watercraft mines. I imagined the blanket of deadly
@@ -128,22 +128,20 @@ the sculpture was crafted, from one angle you could see the man being
 represented, but from another angle, the figure could almost be mistaken for a
 pile of debris.
 
-<center>
 <table class="gallery">
-  <tr>
-    <td>
-      <a href="./images/veteran1.jpg" target="_blank">
-        <img src="./images/veteran1.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/veteran2.jpg" target="_blank">
-        <img src="./images/veteran2.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td>
+
+![](images/veteran1.jpg)
+
+</td>
+<td>
+
+![](images/veteran2.jpg)
+
+</td>
+</tr>
 </table>
-</center>
 
 ---
 
