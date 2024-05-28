@@ -13,6 +13,8 @@ description: |
   This week, my company had our week-long 2023 Q3 work retreat in Toronto,
   Canada. These are my thoughts and reflections on the trip.
 image: images/team.jpg
+build:
+  publishResources: false
 ---
 
 This week, my company (Beeper) had our fall work retreat in Toronto, Canada. It
@@ -186,7 +188,7 @@ some dishes that I don't think I would have if it weren't for the set menu.
 On another evening, a group of us went to a really good ramen restaurant. I'm a
 sucker for ramen, and this place was very good.
 
-{{<figure src="images/ramen.jpg" title="My bowl of ramen" >}}
+![My bowl of ramen](images/ramen.jpg)
 
 On Thursday, before the escape room, a group of us went to an all you can eat
 Japanese BBQ. We had so much quality meat, and it was fantastic!

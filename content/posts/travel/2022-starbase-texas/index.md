@@ -11,6 +11,8 @@ description: |
   I went to visit my friend, Nic, who is a photojournalist reporting on SpaceX's
   Starbase facility in Texas.
 image: images/full-stack.jpg
+build:
+  publishResources: false
 ---
 
 On my way back from my

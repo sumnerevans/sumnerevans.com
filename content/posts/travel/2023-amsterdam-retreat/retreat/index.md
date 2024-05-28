@@ -164,24 +164,24 @@ no idea why I ordered so much. I don't like potatoes that much, and I don't like
 mayo, either. Oh well, when in ~~Rome~~ Amsterdam...
 
 <figure>
-  <table class="gallery">
-    <tr>
-      <td>
-        <a href="./images/fries1.jpg" target="_blank">
-          <img src="./images/fries1.jpg"
-               alt="The huge helping of fries I got" />
-        </a><br>
-        <b>The huge helping of fries I got.</b> I didn't finish it.
-      </td>
-      <td>
-        <a href="./images/fries2.jpg" target="_blank">
-          <img src="./images/fries2.jpg"
-               alt="Me holding the fries wondering why I hate myself" />
-        </a><br>
-        <b>Me holding the fries wondering why I hate myself.</b>
-      </td>
-    </tr>
-  </table>
+<table class="gallery">
+<tr>
+<td>
+
+![](images/fries1.jpg "The huge funnel of fries that I got")
+
+**The huge helping of fries I got.** I didn't finish it.
+
+</td>
+<td>
+
+![](images/fries2.jpg "Me holding the fries wondering why I hate myself")
+
+**Me holding the fries wondering why I hate myself.**
+
+</td>
+</tr>
+</table>
 </figure>
 
 ### Boules
@@ -197,7 +197,7 @@ I played with Max against Ivan and Jess. Ivan and Jess made a great comeback and
 won by one point!
 
 {{<figure
-  src="./images/boules.jpg"
+  src="images/boules.jpg"
   title="Playing Boules"
   caption="Matt is about to throw as Toni, Tulir, and G look on."
 >}}
@@ -210,36 +210,32 @@ to Keukenhof to see the tulips. Most of the tulips were not quite in bloom yet,
 but there was a greenhouse that had many tulips in bloom.
 
 <figure>
-  <table class="gallery">
-    <tr>
-      <td>
-        <a href="./images/tulips1.jpg" target="_blank">
-          <img src="./images/tulips1.jpg"
-               alt="Tulips at Keukenhof" />
-        </a>
-      </td>
-      <td>
-        <a href="./images/tulips2.jpg" target="_blank">
-          <img src="./images/tulips2.jpg"
-               alt="Tulips at Keukenhof" />
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="./images/tulips3.jpg" target="_blank">
-          <img src="./images/tulips3.jpg"
-               alt="Tulips at Keukenhof" />
-        </a>
-      </td>
-      <td>
-        <a href="./images/tulips4.jpg" target="_blank">
-          <img src="./images/tulips4.jpg"
-               alt="Tulips at Keukenhof" />
-        </a>
-      </td>
-    </tr>
-  </table>
+<table class="gallery">
+<tr>
+<td>
+
+![](images/tulips1.jpg)
+
+</td>
+<td>
+
+![](images/tulips2.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/tulips3.jpg)
+
+</td>
+<td>
+
+![](images/tulips4.jpg)
+
+</td>
+</tr>
+</table>
 </figure>
 
 ### I Can Play the Nine Ball!

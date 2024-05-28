@@ -8,6 +8,8 @@ tags:
   - Travel
   - San Francisco
   - California
+build:
+  publishResources: false
 ---
 
 This morning I left for a hackathon at Facebook Headquarters. I had to wake up
@@ -45,11 +47,10 @@ us find him.
 
 At the hotel, we got checked in. Each of us got a room all to ourselves!
 
-.. image:: ./images/2018-11-14-facebook-hackathon-room.jpg
-   :target: ./images/2018-11-14-facebook-hackathon-room.jpg
-   :alt: My huge room
-   :align: center
-   :width: 60%
+{{<figure
+  src="images/2018-11-14-facebook-hackathon-room.jpg"
+  title="My huge room"
+>}}
 
 After we settled in, we went to go eat some lunch at a nearby Pho restaurant. As
 we were walking, we saw some mid-sized houses and decided to play a "guess the
@@ -59,12 +60,10 @@ After lunch, we went back to the room and Sam and I worked on our High
 Performance Computing project milestone report until dinner which was provided
 at the hotel by Facebook. At the dinner, we met a team from Canada.
 
-.. figure:: ./images/2018-11-14-dinner.jpg
-   :alt: Dinner buffet served on the first day of the hackathon
-   :align: center
-   :width: 60%
-
-   Dinner buffet served on the first day of the hackathon.
+{{<figure
+  src="images/2018-11-14-dinner.jpg"
+  title="Dinner buffet served on the first day of the hackathon"
+>}}
 
 After we finished dinner, Sam and I went back up to my room and finished up the
 report. Now I'm getting ready for bed... We have to leave the hotel at 8:45

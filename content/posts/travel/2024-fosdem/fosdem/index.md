@@ -168,7 +168,7 @@ FOSDEM main stage. He provided an update on the Matrix Foundation and the
 progress that the ecosystem has made over the past year.
 
 {{<figure
-  src="./images/matrix.jpg"
+  src="images/matrix.jpg"
   title="Matthew giving the Matrix keynote on the FOSDEM main stage"
 >}}
 

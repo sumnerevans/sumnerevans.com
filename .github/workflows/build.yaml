@@ -54,7 +54,7 @@ jobs:
       - name: Hugo
         run: |
           nix develop '.#ci' \
-            --command bash -c "hugo --verbose --gc --minify"
+            --command bash -c "hugo --logLevel debug --gc --minify"
 
       - name: Teaching raw HTML
         run: |

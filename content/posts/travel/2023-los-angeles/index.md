@@ -12,6 +12,8 @@ tags:
 description: |
   I went to Los Angeles for the weekend to see my friend Ethan.
 image: images/griffith-la.jpg
+build:
+  publishResources: false
 ---
 
 This weekend I flew out to Los Angeles to see my friend
