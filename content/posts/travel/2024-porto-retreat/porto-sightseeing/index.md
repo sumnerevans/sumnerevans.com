@@ -144,24 +144,24 @@ bridge is for foot and car traffic, while the upper level is for tram and foot
 traffic.
 
 <figure>
-  <table class="gallery">
-    <tr>
-      <td>
-        <a href="./images/boardwalk.jpg" target="_blank">
-          <img src="./images/boardwalk.jpg"
-            alt="The boardwalk area around the double-decker bridge" />
-        </a><br><br>
-        <b>The boardwalk area around the double-decker bridge</b>
-      </td>
-      <td>
-        <a href="./images/market.jpg" target="_blank">
-          <img src="./images/market.jpg"
-            alt="A restaurant/market area just off of the boardwalk" />
-        </a><br><br>
-        <b>A restaurant/market area just off of the boardwalk</b>
-      </td>
-    </tr>
-  </table>
+<table class="gallery">
+<tr>
+<td>
+
+![](images/boardwalk.jpg "The boardwalk area around the double-decker bridge")
+
+**The boardwalk area around the double-decker bridge**
+
+</td>
+<td>
+
+![](images/market.jpg "A restaurant/market area just off of the boardwalk")
+
+**A restaurant/market area just off of the boardwalk**
+
+</td>
+</tr>
+</table>
 </figure>
 
 I leisurely walked down towards the bridge and crossed on the lower deck. There
@@ -171,32 +171,30 @@ work :)). I went to a waterfront restaurant called _Tempêro D'Maria_ and had
 steak with some port wine that Porto is famous for (it's wine fortified with
 brandy). The view was fantastic from the restaurant!
 
-{{<figure src="./images/restaurant-view.jpg"
-link="./images/restaurant-view.jpg" target="_blank"
-title="The view from the restaurant I went to for dinner" >}}
+![The view from the restaurant I went to for dinner](images/restaurant-view.jpg)
 
 I then hiked up the other side of the river bank towards a square with great
 views of the city.
 
 <figure>
-  <table class="gallery">
-    <tr>
-      <td>
-        <a href="./images/bridge.jpg" target="_blank">
-          <img src="./images/bridge.jpg"
-            alt="The bridge from the other side of the riverbank" />
-        </a><br><br>
-        <b>The bridge from the other side of the riverbank</b>
-      </td>
-      <td>
-        <a href="./images/garden.jpg" target="_blank">
-          <img src="./images/garden.jpg"
-            alt="The view from the garden over towards bridge" />
-        </a><br><br>
-        <b>The view from the garden over towards bridge</b>
-      </td>
-    </tr>
-  </table>
+<table class="gallery">
+<tr>
+<td>
+
+![](images/bridge.jpg "The bridge from the other side of the riverbank")
+
+**The bridge from the other side of the riverbank**
+
+</td>
+<td>
+
+![](images/garden.jpg "The view from the garden over towards bridge")
+
+**The view from the garden over towards bridge**
+
+</td>
+</tr>
+</table>
 </figure>
 
 At this point, I decided to go play some poker at a casino a few miles south of
