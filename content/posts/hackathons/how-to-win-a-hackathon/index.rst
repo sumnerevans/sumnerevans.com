@@ -3,7 +3,7 @@ title: "How to Win a Hackathon"
 date: 2018-12-18T22:58:00-0600
 categories: [Hackathons]
 tags: [Facebook Hackathon, Win, Hackathon, Prize, Hackathon Demo]
-image: ./images/fb-award.jpg
+image: images/fb-award.jpg
 ---
 
 Objectively, I'm pretty good at winning prizes at hackathons. I'm not entirely

@@ -3,7 +3,7 @@ title: "Queen Mary 2 Crossing"
 date: 2019-05-31T23:50:00-06:00
 categories: [Trip to D.C. and Transatlantic Cruise]
 tags: [Cruise, Queen Mary 2, WWII, Veterans]
-image: ./images/veteran-sax.jpg
+image: images/veteran-sax.jpg
 ---
 
 .. role:: strike

@@ -78,7 +78,7 @@ shape around the tower.
 
 We went inside the hotel to see the interior of the lobby. It is very grand.
 
-[![](./images/quebec4.jpg)](./images/quebec4.jpg)
+![](images/quebec4.jpg)
 
 ------------------------------------------------------------------------
 
@@ -180,7 +180,7 @@ in the compound. The first stop was the parade grounds where they perform a
 changing of the guard ceremony during the summer. We were a bit early to see it
 (they don't start for another few weeks) but we got to see them practising.
 
-[![](./images/quebec10.jpg)](./images/quebec10.jpg)
+![](images/quebec10.jpg)
 
 We then walked to the powder house where there was a small museum about life in
 the citadel during the time when it was a more active military base. The powder
@@ -200,7 +200,7 @@ At the end of the tour we stopped at a very large cannon. This cannon had a
 range of about 5km (3mi) and protected the Quebec harbor. From this vantage
 point, we were able to get great pictures of the city.
 
-[![](./images/quebec11.jpg)](./images/quebec11.jpg)
+![](images/quebec11.jpg)
 
 ### Evening
 

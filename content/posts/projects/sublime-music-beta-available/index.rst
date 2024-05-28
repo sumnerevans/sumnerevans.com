@@ -3,7 +3,7 @@ title: "Sublime Music, a Linux Subsonic Client, Beta Released"
 date: 2020-07-11T13:00:00-06:00
 categories: [Projects]
 tags: [GTK, Music, Subsonic, Airsonic, Gonic, Navidrome, Offline, Chromecast, MPRIS, Linux, macOS]
-image: ./images/logo.png
+image: images/logo.png
 ---
 
 .. image:: ./images/logo.png

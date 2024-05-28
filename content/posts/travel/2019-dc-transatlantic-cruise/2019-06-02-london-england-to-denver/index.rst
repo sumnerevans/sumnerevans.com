@@ -4,7 +4,7 @@ date: 2019-06-01T22:08:00-06:00
 categories: [Trip to D.C. and Transatlantic Cruise]
 tags: [London, England, Denver, Colorado, Flight, British Museum, The Tube,
       Buckingham Palace]
-image: ./images/buckingham-palace2.jpg
+image: images/buckingham-palace2.jpg
 ---
 
 Today was my last day of vacation. I flew back to Denver in the afternoon, and I

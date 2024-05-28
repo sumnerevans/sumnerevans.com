@@ -7,7 +7,9 @@ tags:
   - Facebook
   - Menlo Park
   - California
-image: ./images/2018-11-15-fb-team.jpg
+image: images/2018-11-15-fb-team.jpg
+build:
+  publishResources: false
 ---
 
 I woke up at 8:00 on Thursday morning. After a quick shower, I went down to eat
@@ -15,47 +17,28 @@ some breakfast (provided again by Facebook). Then, we got on a bus and went over
 to Facebook HQ. This is a picture of building 18, one of the smaller buildings
 on the campus.
 
-.. image:: ./images/2018-11-15-fb-hq.jpg
-   :target: ./images/2018-11-15-fb-hq.jpg
-   :alt: image of the outside of the Facebook HQ building 18
+![](images/2018-11-15-fb-hq.jpg "image of the outside of the Facebook HQ building 18")
 
 Once inside, we got to go see the area that we would be working in. It was a
 very nice space, and was set up for all 21 teams. They even had signs above our
 tables telling us which table was ours!
 
-.. image:: ./images/2018-11-15-fb-table.jpg
-   :target: ./images/2018-11-15-fb-table.jpg
-   :alt: our table at the hackathon
-   :width: 75%
-   :align: center
+![](images/2018-11-15-fb-table.jpg "our table at the hackathon")
 
 Then, after the obligatory team picture...
 
-.. image:: ./images/2018-11-15-fb-team.jpg
-   :target: ./images/2018-11-15-fb-team.jpg
-   :alt: picture of the team on the front stage in front of the Facebook Global
-         Hackathon Finals logo
-   :width: 75%
-   :align: center
+![](images/2018-11-15-fb-team.jpg "picture of the team on the front stage in front of the Facebook Global Hackathon Finals logo")
 
 we got our workspace set up using the awesome monitors provided by Facebook.
 
-.. image:: ./images/2018-11-15-fb-workstations.jpg
-   :target: ./images/2018-11-15-fb-workstations.jpg
-   :alt: our workspace, decked out with nice monitors
-   :width: 75%
-   :align: center
+![](images/2018-11-15-fb-workstations.jpg "our workspace, decked out with nice monitors")
 
 After we had everything set up, we got to take a tour of the Facebook
-Headquarters. It is a pretty awesome campus!  On our tour, we saw these cool
-maps on the ground which showed a correctly oriented map of the campus with a
-red dot indicating your location.
+Headquarters. It is a pretty awesome campus! On our tour, we saw these cool maps
+on the ground which showed a correctly oriented map of the campus with a red dot
+indicating your location.
 
-.. image:: ./images/2018-11-15-fb-map.jpg
-   :target: ./images/2018-11-15-fb-map.jpg
-   :alt: a map of the Facebook campus on the ground
-   :width: 75%
-   :align: center
+![](images/2018-11-15-fb-map.jpg "a map of the Facebook campus on the ground")
 
 After the tour, we had a couple of minutes to continue getting set up and think
 of ideas. Fisher suggested that we digitize the maps like we saw outside. I
@@ -81,23 +64,20 @@ ideas with Dan and he thought they were great ideas.
 Once we got back, it was time to start coding! After a final debate about what
 we wanted to do, we decided to go with the interactive map.
 
-Writing All the Code
---------------------
+## Writing All the Code
 
 At this point, we faced our first challenge: what platform should we use? The
 most obvious choice for us was to use ARCore on Android since we all had Android
 phones. Unfortunately, between us we had approximately zero experience in
 Android development. Sam had literally zero experience in Android development,
-and I only had a slight idea of how to do it from my `Wireless Debugging`_
-project during field session a couple summers ago (Reece did all of the UI
-stuff, so I only ever delt with a bit of systems-level stuff with ``adb``).
-Fisher had done one super simple Android app in the past, and Jack was the most
-experienced of us all having actually created an app 6 years ago when he was in
-8th grade. We also decided we would use Kotlin (which none of us had any
-experience with), and since it's so new, none of us had any experience with
-ARCore either.
-
-.. _Wireless Debugging: {{< ref "/portfolio#project-wireless-debugging" >}}
+and I only had a slight idea of how to do it from my
+[Wireless Debugging]({{<ref"/portfolio#project-wireless-debugging">}}) project
+during field session a couple summers ago (Reece did all of the UI stuff, so I
+only ever delt with a bit of systems-level stuff with `adb`). Fisher had done
+one super simple Android app in the past, and Jack was the most experienced of
+us all having actually created an app 6 years ago when he was in 8th grade. We
+also decided we would use Kotlin (which none of us had any experience with), and
+since it's so new, none of us had any experience with ARCore either.
 
 Let's just say, with those credentials, our chances of success seemed fairly
 slim with that option. So, we looked into other platforms such as WebAR.
@@ -109,11 +89,7 @@ We spent the next couple of hours installing Android Studio, getting our
 development environments set up, learning Kotlin, and mocking up some designs
 for our app.
 
-.. image:: ./images/fb-flowchart.jpg
-   :target: ./images/fb-flowchart.jpg
-   :alt: a flowchart of the user interaction
-   :width: 50%
-   :align: center
+![](images/fb-flowchart.jpg "a flowchart of the user interaction")
 
 Eventually, we got everything set up, and we all worked separately on small bits
 of the puzzle. Jack made a major breakthrough when he found a sample ARCore app
@@ -154,7 +130,7 @@ prioritize an alternate method for computing the orientation of the map. To do
 this, Jack, worked on a method of using the compass APIs to get the orientation
 of the phone and update the map's rotation in the AR overlay space accordingly.
 
-I continued working on creating a UI for selecting maps and adding new maps.  I
+I continued working on creating a UI for selecting maps and adding new maps. I
 was feeling fairly incompetent the entire evening, and I had lots of trouble
 just getting a list to show up properly with Material design patterns. My major
 contribution ended up being that I learned how to pass state between Android
@@ -182,14 +158,14 @@ data to Sam's AR activity so that all of the math could use real data.
 
 By this time, it was about 08:30, and we had to submit a survey describing our
 project to the judges by 09:30. Luckily, we had an extra hour until coding ended
-at 10:30.  We realized that we didn't even have a name for our project yet, and
+at 10:30. We realized that we didn't even have a name for our project yet, and
 Sam suggested Hyper Map. Then, Fisher or Jack said, what about "**HypAR** Map"?
 There was immediate consensus around that name (consensus that you can only get
 when you are on 60 minutes of sleep for the last 24 hours), and thus HypAR Map
 was born.
 
 I worked with Jack to fill out the survey to submit our project to the judges
-while Sam continued working on his linear equation solver.  Sam, with an eye for
+while Sam continued working on his linear equation solver. Sam, with an eye for
 potential failure, created an escape hatch in the application. If you pointed
 the phone at the ceiling, it would reset to use the hard-coded wall data. This
 gave us peace of mind in case everything started to fail.
@@ -202,19 +178,14 @@ time, too. The event organizer, Bambi, was literally in the middle yelling "10,
 
 In the meantime, I started working on a logo for our project:
 
-.. image:: ./images/hypar-map-logo.png
-   :target: ./images/hypar-map-logo.png
-   :alt: the HypAR Map logo
-   :width: 50%
-   :align: center
+![](images/hypar-map-logo.png "the HypAR Map logo")
 
 Luckily, that didn't count as "coding" so we were able to finish that up after
 the code freeze at 10:30. Then came a frantic hour of preparation for
 preliminary demos. First, however, we had to cleanup the massive mess that we'd
 created on our table. We needed it to look presentable for the demo!
 
-Demo Time
----------
+## Demo Time
 
 The way that judging worked is that every team had two minutes to pitch in front
 of all of the hackathon mentors. Then, the mentors would choose the top six
@@ -225,14 +196,14 @@ present.
 Preparations included figuring out how to allocate the time to various parts of
 the demo, who would talk about each aspect of the project, what keywords to
 include (gotta have all the buzzwords if you want to win), how we were going to
-stand...  basically everything. We only ran through the full demo a few times
+stand... basically everything. We only ran through the full demo a few times
 before we had to do our demo.
 
 The actual demos were amazing. It was a really neat environment because we got
 to watch all of the other demos as well! Everyone's projects were great, and I
 fully expected not to make it to the top six.
 
---------------------------------------------------------------------------------
+---
 
 We had lunch at this point, and just waited for the judges to announce the top
 six. While we waited, I went around and talked to some of the other teams. It
@@ -259,28 +230,24 @@ We were first to demo, which was kinda scary, but it ended up working out. The
 demo that we did on stage was the first time we had a done full-run of our demo;
 so as I was doing it, it did not feel good.
 
-You can watch our demo (and the other five finalists) here_ (our demo starts at
-~3:30). I've included a video of just our demo below:
+You can watch our demo (and the other five finalists)
+[here](https://www.facebook.com/hackathon/videos/2306855209387580/) (our demo
+starts at ~3:30). I've included a video of just our demo below:
 
-.. _here: https://www.facebook.com/hackathon/videos/2306855209387580/
-
-.. raw:: html
-
-    <details class="youtube-expander" open>
-      <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines Demo at Facebook Global Hackathon Finals</summary>
-      {{< youtube id="qYet1ka1J3I" title="CS@Mines Demo at Facebook Global Hackathon Finals" >}}
-    </details>
+<details class="youtube-expander" open>
+  <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines Demo at Facebook Global Hackathon Finals</summary>
+  {{< youtube id="qYet1ka1J3I" title="CS@Mines Demo at Facebook Global Hackathon Finals" >}}
+</details>
 
 After the demos were over, we definitely didn't think that we would win. All of
 the other finalists had amazing demos, and I would have been happy to loose to
 any of them.
 
-And the Winner Is...
---------------------
+## And the Winner Is...
 
 After an agonizing wait, the judges came out and announced the winners. They
 started by announcing the runners up. We weren't in that group. Then they
-announced third place. *Guardian Angels*, the team from Tel Aviv, won third. I
+announced third place. _Guardian Angels_, the team from Tel Aviv, won third. I
 was very happy for them, all of them were so nice. Then, second place was
 announced. As the judge was announcing it, he said "I think second place is
 pretty important because it gives away first place." Good observation... He
@@ -295,34 +262,29 @@ Melbourn, Australia. Their application was very impressive.
 Then they called us up for the first-place prize! The prize was $10,000 for the
 team and an Oculus Rift with Touch for each of us!
 
-You can watch a video of the `award ceremony here`_ (we get first at ~8:20).
+You can watch a video of the
+[award ceremony here](https://www.facebook.com/hackathon/videos/2195929524067524/)
+(we get first at ~8:20).
 
-.. _award ceremony here: https://www.facebook.com/hackathon/videos/2195929524067524/
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden">
+   <iframe
+      src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fhackathon%2Fvideos%2F2195929524067524%2F&show_text=0"
+      style="position:absolute;top:0;left:0;width:100%;height:100%;border:0"
+      scrolling="no"
+      frameborder="0"
+      allowTransparency="true"
+      allowFullScreen="true">
+  </iframe>
+</div>
 
-.. raw:: html
-
-   <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden">
-     <iframe
-        src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fhackathon%2Fvideos%2F2195929524067524%2F&show_text=0"
-        style="position:absolute;top:0;left:0;width:100%;height:100%;border:0"
-        scrolling="no"
-        frameborder="0"
-        allowTransparency="true"
-        allowFullScreen="true"></iframe>
-   </div>
-
-.. image:: ./images/fb-award.jpg
-   :target: ./images/fb-award.jpg
-   :alt: the team with our massive check
-   :width: 75%
-   :align: center
+![](images/fb-award.jpg "the team with our massive check")
 
 Wow! What a great hackathon! I was so proud of how well our team worked
 together, and I was super happy with the result as well. I continue to be amazed
 by the quality of the competition, everyone at the hackathon made amazing
 projects.
 
---------------------------------------------------------------------------------
+---
 
 At this point, we headed back to the hotel. Once back in my room I promptly took
 a nap. In fact, I napped too much. There was a celebratory event at 8:00 that
@@ -337,24 +299,24 @@ After getting back, I went straight to bed. Hackathons are a test of endurance
 of both the brain and the body. If programming competitions are a sprint, then
 hackathons are marathons.
 
-**Edit (11-29-2018 13:40)** *Sam pointed out an error in the timeline of
-events. I have copied his words below.*
+**Edit (11-29-2018 13:40)** _Sam pointed out an error in the timeline of events.
+I have copied his words below._
 
-    I do want to metion *[sic]* one correction to the timeline. I was working on
-    the linear algebra solver all through the night on a separate branch and it
-    was calculating position correctly in the hard-coded room before I went to
-    bed.
-
-    In the morning me and Jack were having tons of trouble with the compass
-    data. We had a discussion and decided that we should focus on adding
-    orientation to the wall-solving branch instead. We merged the branch into
-    master and then spent an hour hacking out an orientation calculation.
-
-    So although the master branch went from GPS to walls in an hour, it took a
-    lot lot longer than that to actually write the code. Don't give us too much
-    credit.
-
-    Its a great piece of storytelling, you don't have to change it. I'm just
-    setting the record straight that I can not, in fact, pull a fully
-    interactive multivariate solver out of my ass in an hour. Much less when I'm
-    operating on an hour of sleep.
+> I do want to metion *[sic]* one correction to the timeline. I was working on
+> the linear algebra solver all through the night on a separate branch and it
+> was calculating position correctly in the hard-coded room before I went to
+> bed.
+>
+> In the morning me and Jack were having tons of trouble with the compass data.
+> We had a discussion and decided that we should focus on adding orientation to
+> the wall-solving branch instead. We merged the branch into master and then
+> spent an hour hacking out an orientation calculation.
+>
+> So although the master branch went from GPS to walls in an hour, it took a lot
+> lot longer than that to actually write the code. Don't give us too much
+> credit.
+>
+> Its a great piece of storytelling, you don't have to change it. I'm just
+> setting the record straight that I can not, in fact, pull a fully interactive
+> multivariate solver out of my ass in an hour. Much less when I'm operating on
+> an hour of sleep.

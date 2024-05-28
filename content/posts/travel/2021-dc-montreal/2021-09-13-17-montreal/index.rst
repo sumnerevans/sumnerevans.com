@@ -3,7 +3,7 @@ title: "Montreal - Work Trip!"
 date: 2021-09-17T09:25:00-06:00
 categories: [Trip to D.C. and Montreal, Work Retreats]
 tags: [Travel, Montreal, Beeper, Work]
-image: ./images/team.jpg
+image: images/team.jpg
 description: "My company, Beeper, had our first retreat in Montreal, Canada. These are my thoughts and reflections on the trip."
 ---
 
