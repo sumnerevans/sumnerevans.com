@@ -41,7 +41,7 @@ jobs:
           nix develop '.#ci' \
             --command bash -c "openring -S feed_urls.txt \
                 -n 6 -l 100 \
-                < resources/other-feeds.html.tmpl \
+                < other-feeds.html.tmpl \
                 > themes/smol/layouts/partials/webring.html"
 
       - name: Hugo
