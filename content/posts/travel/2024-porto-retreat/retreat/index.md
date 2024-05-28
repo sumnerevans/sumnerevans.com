@@ -62,8 +62,7 @@ larger company: we have actual teams that organize larger retreats. In the past,
 it's mainly been Eric handling all of the logistics, which is a lot of work and
 his bandwidth was not primarily dedicated to event planning.
 
-{{< figure src="./images/venue.jpg" link="./images/venue.jpg" target="_blank"
-title="The coworking space setup for us" >}}
+![The coworking space set up for us](images/venue.jpg)
 
 The hotel itself was very nice as well. The room was large and luxurious and the
 hotel's restaurant felt high quality for a hotel. We had breakfast every day at
@@ -223,9 +222,7 @@ history and remember the reasons I do this: I want to document the good times in
 life so that I always remember that I have so much to be grateful for.
 
 {{<figure
-  src="./images/flash-talk.jpg"
-  link="./images/flash-talk.jpg"
-  target="_blank"
+  src="images/flash-talk.jpg"
   title="Me giving my flash talk"
   caption="So I Hear We Got Acquired by a Blogging Company"
 >}}
@@ -240,19 +237,18 @@ focused on the meetup itself, but I'll post a few photos of our group right
 before and right after the tour.
 
 {{<figure
-  src="./images/porto-sign.jpg"
-  link="./images/porto-sign.jpg"
-  target="_blank"
+  src="images/porto-sign.jpg"
   title="The walking tour crowd"
-  caption="I thought more people would join me and Annie with the sorority squat. PC: Megan Marcel."
+  caption="I thought more people would join me and Annie with the sorority squat."
+  attr="Megan Marcel"
 >}}
 
 {{<figure
-  src="./images/porto-360.jpg"
-  link="./images/porto-360.jpg"
-  target="_blank"
+  src="images/porto-360.jpg"
   title="The team at a great overlook with views of a lot of Porto"
-  caption="Josh has a really cool 360° camera. PC: [Josh Johnson](http://joshjohnson.io/)."
+  caption="Josh has a really cool 360° camera."
+  attr="Josh Johnson"
+  attrlink="http://joshjohnson.io/"
 >}}
 
 ## Planning a Glorious Beeper Future
