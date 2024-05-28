@@ -29,35 +29,25 @@ themes that were prevalent in the callouts: the Jewish influence in various
 areas of the city (a very potent topic for obvious reasons), and the East/West
 divide imposed by the Soviet occupation.
 
-{{< figure
-      src="./images/tv-tower.jpg"
-      link="./images/tv-tower.jpg"
-      target="_blank"
-      title="A view from the TV Tower"
-      caption=""
->}}
+![A view from the TV Tower](images/tv-tower.jpg)
 
 After walking around the entire observation deck, I walked around in the area a
 bit longer. There's a cool clock in Alexanderplatz that shows the time in
 different places in the world.
 
-{{< figure
-      src="./images/clock.jpg"
-      link="./images/clock.jpg"
-      target="_blank"
-      title="A world clock in Alexanderplatz"
-      caption="One thing I always find fascinating is how the [exonyms](https://www.dictionary.com/browse/exonym) that non-English languages give to places differ from those that English gives the same places."
+{{<figure
+  src="./images/clock.jpg"
+  title="A world clock in Alexanderplatz"
+  caption="One thing I always find fascinating is how the [exonyms](https://www.dictionary.com/browse/exonym) that non-English languages give to places differ from those that English gives the same places."
 >}}
 
 On my way back to the hotel, I stopped at the ALEXA, a large mall and went to
 the food court for a currywurst.
 
-{{< figure
-      src="./images/currywurst.jpg"
-      link="./images/currywurst.jpg"
-      target="_blank"
-      title="My currywurst"
-      caption="Apparently, it's a somewhat unique cuisine to Berlin"
+{{<figure
+  src="images/currywurst.jpg"
+  title="My currywurst"
+  caption="Apparently, it's a somewhat unique cuisine to Berlin"
 >}}
 
 --------
@@ -71,24 +61,20 @@ passageway, and the gate itself is just a part of the larger gate structure. I
 can't imagine how a subsistence farmer in antiquity would have felt as he
 approached the gates.
 
-{{< figure
-      src="./images/passageway.jpg"
-      link="./images/passageway.jpg"
-      target="_blank"
-      title="A reconstruction of the passageway leading up to the Ishtar Gates"
-      caption="Imagine being a peasant walking past these lions lining the path. That must have been terrifying!"
+{{<figure
+  src="images/passageway.jpg"
+  title="A reconstruction of the passageway leading up to the Ishtar Gates"
+  caption="Imagine being a peasant walking past these lions lining the path. That must have been terrifying!"
 >}}
 
 The other major construction was of a Roman market gate. It is an immense
 two-story stone structure. It's amazing how much care was put into building the
 entrance to something as basic as a market!
 
-{{< figure
-      src="./images/market.jpg"
-      link="./images/market.jpg"
-      target="_blank"
-      title="Market Gate of Miletus"
-      caption="The size of the structure goes to show the immense wealth of the Roman Empire at its height."
+{{<figure
+  src="images/market.jpg"
+  title="Market Gate of Miletus"
+  caption="The size of the structure goes to show the immense wealth of the Roman Empire at its height."
 >}}
 
 I had an audio tour for the museum and walked through many other exhibits in
@@ -106,12 +92,10 @@ inscriptions from the Psalms as well as Arab proverbs. Most people believe the
 room was meant to make people of all faiths comfortable in the home of the
 merchant.
 
-{{< figure
-      src="./images/aleppo.jpg"
-      link="./images/aleppo.jpg"
-      target="_blank"
-      title="Wood panelling in the Aleppo room"
-      caption="The intricate details on the wood panels were beautiful, and demonstrated the wealth of the merchant who commissioned their creation."
+{{<figure
+  src="images/aleppo.jpg"
+  title="Wood panelling in the Aleppo room"
+  caption="The intricate details on the wood panels were beautiful, and demonstrated the wealth of the merchant who commissioned their creation."
 >}}
 
 After visiting the museum, I headed over towards Charlottenburg. The reason for
@@ -184,12 +168,10 @@ different if the Soviets were not the liberators of Berlin? I am not sure. But
 one thing I know for sure is this: the Red Army fought valiantly to defeat the
 Nazis and liberate Berlin. We should honour their great sacrifice.
 
-{{< figure
-      src="./images/soviet.jpg"
-      link="./images/soviet.jpg"
-      target="_blank"
-      title="The Soviet War Memorial"
-      caption="The Red Army sustained massive losses in liberating Berlin."
+{{<figure
+  src="images/soviet.jpg"
+  title="The Soviet War Memorial"
+  caption="The Red Army sustained massive losses in liberating Berlin."
 >}}
 
 I then walked towards the Brandenburg Gate. Along the way, I encountered a
@@ -235,12 +217,10 @@ on the West. In fact, the plaza on the eastern side of the gate seems to be the
 more popular tourist destination. (It is a pedestrian-only zone unlike the
 Western side, so maybe that is the driving factor there.)
 
-{{< figure
-      src="./images/brandenburg-gate.jpg"
-      link="./images/brandenburg-gate.jpg"
-      target="_blank"
-      title="The Brandenburg Gate from the plaza on the Eastern side"
-      caption="Besides its recent historical significance, the gate itself is really quite cool."
+{{<figure
+  src="images/brandenburg-gate.jpg"
+  title="The Brandenburg Gate from the plaza on the Eastern side"
+  caption="Besides its recent historical significance, the gate itself is really quite cool."
 >}}
 
 By this time, it was about lunchtime and I got a currywurst from a food stand

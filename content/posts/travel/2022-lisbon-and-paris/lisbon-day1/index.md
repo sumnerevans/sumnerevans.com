@@ -27,12 +27,10 @@ at home (ATA). When I arrived, I was able to meet Mr. Pererra, the head
 instructor at the location, but unfortunately, they were in the middle of
 renovations, so classes were cancelled for the day.
 
-{{< figure
-      src="./images/pererra.jpg"
-      link="./images/pererra.jpg"
-      target="_blank"
-      title="Mr. Pererra and a few of his students at STAT Campo de Ourique"
-      caption="The plaque in the background is from when the then Grand Master Candidate M.K. Lee visited for the grand opening of the school."
+{{<figure
+  src="images/pererra.jpg"
+  title="Mr. Pererra and a few of his students at STAT Campo de Ourique"
+  caption="The plaque in the background is from when the then Grand Master Candidate M.K. Lee visited for the grand opening of the school."
 >}}
 
 Luckily, STAT has multiple locations, and another location (Restelo) was open,
@@ -48,12 +46,10 @@ English so that I could know what to do. Because they are part of the same
 martial arts organization, all of the techniques are the same, so that was not
 an issue for me.
 
-{{< figure
-      src="./images/restelo.jpg"
-      link="./images/restelo.jpg"
-      target="_blank"
-      title="The teen/adult class at STAT Restelo"
-      caption="I thoroughly enjoyed the workout, and everyone was very welcoming and gracious to me despite not knowing any Portuguese."
+{{<figure
+  src="images/restelo.jpg"
+  title="The teen/adult class at STAT Restelo"
+  caption="I thoroughly enjoyed the workout, and everyone was very welcoming and gracious to me despite not knowing any Portuguese."
 >}}
 
 I thoroughly enjoyed training in another country with members of the same
@@ -70,12 +66,10 @@ At the point where Lisbon is built, the Tagus is very wide, it's effectively a
 large harbour. Right at the water, a grand square which was built during the
 height of Portugal's imperial age.
 
-{{< figure
-      src="./images/praca.jpg"
-      link="./images/praca.jpg"
-      target="_blank"
-      title="The Praça do Comércio with a statue of King José I"
-      caption="The square was quite large and was surrounded by former palaces and government offices."
+{{<figure
+  src="images/praca.jpg"
+  title="The Praça do Comércio with a statue of King José I"
+  caption="The square was quite large and was surrounded by former palaces and government offices."
 >}}
 
 I was quite tired after the taekwondo workout and walking around the city, so I
@@ -91,12 +85,10 @@ enjoyed getting to meet and talk with so many people. The crowd was mainly
 students and young professionals. There were a few people who were also in
 engineering or engineering-adjacent fields and many other fields.
 
-{{< figure
-      src="./images/hostel.jpg"
-      link="./images/hostel.jpg"
-      target="_blank"
-      title="The 'family room' area of the hostel"
-      caption="Everyone was very friendly and came from such diverse backgrounds. It had a real international feel."
+{{<figure
+  src="images/hostel.jpg"
+  title="The 'family room' area of the hostel"
+  caption="Everyone was very friendly and came from such diverse backgrounds. It had a real international feel."
 >}}
 
 I went to bed around 10:00 since I was quite tired, and apparently there is a

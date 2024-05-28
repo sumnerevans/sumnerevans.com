@@ -42,12 +42,10 @@ in town. We stopped first at the main construction facility. They have a few of
 their earlier prototypes displayed outside the facility, including the first
 Starship that landed and didn't explode.
 
-{{< figure
-      src="./images/rocket-garden.jpg"
-      link="./images/rocket-garden.jpg"
-      target="_blank"
-      title="Prototype Starships displayed outside of the construction facility"
-      caption="The Starship rocket alone is quite large. It's amazing they are able to land them at all."
+{{<figure
+  src="images/rocket-garden.jpg"
+  title="Prototype Starships displayed outside of the construction facility"
+  caption="The Starship rocket alone is quite large. It's amazing they are able to land them at all."
 >}}
 
 Then we drove over to the launch facility. There was a Starship on the
@@ -56,12 +54,10 @@ pad. The orbital rocket is massive. We walked around the perimeter of the
 facility to a vantage point where we were able to get a great view of the
 vehicle on the pad.
 
-{{< figure
-      src="./images/full-stack.jpg"
-      link="./images/full-stack.jpg"
-      target="_blank"
-      title="A fully-stacked Starship"
-      caption="\"Full stack\" means something very different in the software industry ;)"
+{{<figure
+  src="images/full-stack.jpg"
+  title="A fully-stacked Starship"
+  caption=`"Full stack" means something very different in the software industry ;)`
 >}}
 
 After that, we drove down the beach to the Rio Grande. It is only 50 yards wide

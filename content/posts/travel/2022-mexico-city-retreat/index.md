@@ -77,12 +77,10 @@ The week kicked off with a retro meeting led by Brad. We of course had to get
 our sticky note peeling lesson from Annie so that our retro post-it notes
 wouldn't bend at the sticky part and subsequently fall off of the windows.
 
-{{< figure
-      src="./images/retro.jpg"
-      link="./images/retro.jpg"
-      target="_blank"
-      title="Obed (standing right) discussing his retro sticky notes"
-      caption="We had a beautiful view of Mexico City in the background as the team participated in what has become the unofficial starting point of each retreat."
+{{<figure
+  src="images/retro.jpg"
+  title="Obed (standing right) discussing his retro sticky notes"
+  caption="We had a beautiful view of Mexico City in the background as the team participated in what has become the unofficial starting point of each retreat."
 >}}
 
 There were a few themes which I felt were especially prevalent throughout the
@@ -195,12 +193,10 @@ In the evenings we went to various restaurants for team dinners. For example, on
 Wednesday, we went to a fantastic Tapas restaurant. There was so much rich and
 delicious food!
 
-{{< figure
-      src="./images/tapas.jpg"
-      link="./images/tapas.jpg"
-      target="_blank"
-      title="The team enjoying a huge selection of tapas"
-      caption="Every dish was great, and they kept coming!"
+{{<figure
+  src="images/tapas.jpg"
+  title="The team enjoying a huge selection of tapas"
+  caption="Every dish was great, and they kept coming!"
 >}}
 
 On Tuesday, we went to a salsa cooking class. The class was hosted in a historic

@@ -38,20 +38,17 @@ town of Santo Isidoro and is often used for weddings. It is built within the
 ruins of a fourteenth century royal summer home. The views were great, and the
 beach was a 30 minutes walk away.
 
-{{< figure
-      src="./images/view-1.jpg"
-      link="./images/view-1.jpg"
-      target="_blank"
-      title="The view over the countryside from our retreat venue"
-      caption="We were out in the country, and the views were spectacular."
+{{<figure
+  src="images/view-1.jpg"
+  title="The view over the countryside from our retreat venue"
+  caption="We were out in the country, and the views were spectacular."
 >}}
 
-{{< figure
-      src="../denver-to-lisbon/images/beach.jpg"
-      link="../denver-to-lisbon/images/beach.jpg"
-      target="_blank"
-      title="The beach near our retreat venue"
-      caption="A few of us went [on Sunday](../denver-to-lisbon) and at other points during the week. I went again on Wednesday and on Friday."
+{{<figure
+  src="../denver-to-lisbon/images/beach.jpg"
+  link="../denver-to-lisbon/images/beach.jpg"
+  title="The beach near our retreat venue"
+  caption="A few of us went [on Sunday](../denver-to-lisbon) and at other points during the week. I went again on Wednesday and on Friday."
 >}}
 
 Our workspace for the week was almost entirely outdoors. We spent a lot of time
@@ -60,12 +57,10 @@ also nice when there was some shade. The small chapel area was covered, but
 there was only a small (fairly ineffective) mobile air conditioning unit which
 made the space difficult to use during the hottest parts of the day.
 
-{{< figure 
-      src="./images/tent.jpg"
-      link="./images/tent.jpg"
-      target="_blank"
-      title="The team listening to Eric lay out the company vision"
-      caption="We used the tent for all of our main team meetings."
+{{<figure 
+  src="images/tent.jpg"
+  title="The team listening to Eric lay out the company vision"
+  caption="We used the tent for all of our main team meetings."
 >}}
 
 ### Our Hosts
@@ -101,12 +96,10 @@ product and also help smooth over any service disruptions or bugs that users run
 into. They also work to inform the engineering team about what issues users are
 facing.
 
-{{< figure 
-      src="./images/retro.jpg"
-      link="./images/retro.jpg"
-      target="_blank"
-      title="The team participating in the retrospective meeting"
-      caption="Caroline (standing left) is discussing her retro sticky notes as Brad (standing right) looks on."
+{{<figure 
+  src="images/retro.jpg"
+  title="The team participating in the retrospective meeting"
+  caption="Caroline (standing left) is discussing her retro sticky notes as Brad (standing right) looks on."
 >}}
 
 ### On Mission
@@ -177,12 +170,10 @@ bridges have had this for a while, but iMessage had some specific challenges
 that made it more difficult, and was best done when we could each quickly ask
 questions of one another while staring at each other's code.
 
-{{< figure 
-      src="./images/code-by-the-fire.jpg"
-      link="./images/code-by-the-fire.jpg"
-      target="_blank"
-      title="Sumner, Eric Rabil, and Tulir coding while sitting near the fire"
-      caption="I'm pretty sure we were putting the finishing touches on iMessage link previews here."
+{{<figure 
+  src="images/code-by-the-fire.jpg"
+  title="Sumner, Eric Rabil, and Tulir coding while sitting near the fire"
+  caption="I'm pretty sure we were putting the finishing touches on iMessage link previews here."
 >}}
 
 
@@ -246,12 +237,10 @@ s'mores, though: they were chocolate covered marshmallows so you had to be very
 careful to not melt the chocolate off the marshmallow. We also had very tiny
 sticks and which made roasting the marshmallows a quite warming experience.
 
-{{< figure 
-      src="./images/fire.jpg"
-      link="./images/fire.jpg"
-      target="_blank"
-      title="Getting ready to play a game around the fire one evening"
-      caption="We got to learn a lot about each other around the fire pit and it was a really fun time each evening."
+{{<figure 
+  src="images/fire.jpg"
+  title="Getting ready to play a game around the fire one evening"
+  caption="We got to learn a lot about each other around the fire pit and it was a really fun time each evening."
 >}}
 
 ## Activities 
@@ -267,23 +256,19 @@ hills in the area, but I'm not a mountain biker so it was novel and a bit
 challenging for me. The views were spectacular. We stopped at many overlooks,
 including this one where we took a team picture:
 
-{{< figure 
-      src="./images/biking-team.jpg"
-      link="./images/biking-team.jpg"
-      target="_blank"
-      title="The team in front of a scenic cliff overlook during our biking tour"
-      caption="The views were spectacular during the entire ride, but the company was even better!"
+{{<figure 
+  src="images/biking-team.jpg"
+  title="The team in front of a scenic cliff overlook during our biking tour"
+  caption="The views were spectacular during the entire ride, but the company was even better!"
 >}}
 
 The weather was fantastic for the ride, which made it very enjoyable, but we
 definitely got our exercise!
 
-{{< figure 
-      src="./images/biking-road.jpg"
-      link="./images/biking-road.jpg"
-      target="_blank"
-      title="Biking along the road back towards our retreat location"
-      caption="We spent time on both trails and roads during our ride. It was all very scenic."
+{{<figure 
+  src="images/biking-road.jpg"
+  title="Biking along the road back towards our retreat location"
+  caption="We spent time on both trails and roads during our ride. It was all very scenic."
 >}}
 
 ### Beach Time
@@ -313,38 +298,27 @@ three children), and Nazaré, a town known for its surfing and is massive waves.
 Our guide didn't give as much commentary as I would have hoped, but I'll show
 you some pictures of each location.
 
-{{< figure 
-      src="./images/obidos.jpg"
-      link="./images/obidos.jpg"
-      target="_blank"
-      title="A panoramic shot taken from the top of the wall around Óbidos"
+![A panoramic shot taken from the top of the wall around Óbidos](images/obidos.jpg)
+
+{{<figure 
+  src="images/fatima.jpg"
+  title="The main square at the church at Fátima"
+  caption="On the left is a shrine where Catholics make pilgrimages to light candles and such. The square is modeled very similar to the square in the Vatican and has been visited by the Pope multiple times."
 >}}
 
-{{< figure 
-      src="./images/fatima.jpg"
-      link="./images/fatima.jpg"
-      target="_blank"
-      title="The main square at the church at Fátima"
-      caption="On the left is a shrine where Catholics make pilgrimages to light candles and such. The square is modeled very similar to the square in the Vatican and has been visited by the Pope multiple times."
->}}
-
-{{< figure 
-      src="./images/nazare.jpg"
-      link="./images/nazare.jpg"
-      target="_blank"
-      title="The coast of Nazaré"
-      caption="There were no big waves the day that we was there, but apparently, the waves get very big. A surfer recently surfed a wave that was 26.21 metres (86 feet) high!"
+{{<figure 
+  src="images/nazare.jpg"
+  title="The coast of Nazaré"
+  caption="There were no big waves the day that we was there, but apparently, the waves get very big. A surfer recently surfed a wave that was 26.21 metres (86 feet) high!"
 >}}
 
 During the tour, we stopped at a seafood restaurant and Caroline, Rabil, and
 myself shared a dish with freshly baked fish, potatoes, and vegetables.
 
-{{< figure 
-      src="./images/fish-lunch.jpg"
-      link="./images/fish-lunch.jpg"
-      target="_blank"
-      title="The waiter presenting the freshly caught fish"
-      caption="The fish was very fresh, caught that morning I assume."
+{{<figure 
+  src="images/fish-lunch.jpg"
+  title="The waiter presenting the freshly caught fish"
+  caption="The fish was very fresh, caught that morning I assume."
 >}}
 
 ### Dinner by the Seaside
@@ -354,12 +328,10 @@ a dinner at a seaside restaurant.
 
 The food was quite good, but the view was amazing.
 
-{{< figure 
-      src="./images/dinner-thursday.jpg"
-      link="./images/dinner-thursday.jpg"
-      target="_blank"
-      title="The team eating dinner on Thursday"
-      caption="The sunset was a beautiful to our meal."
+{{<figure 
+  src="images/dinner-thursday.jpg"
+  title="The team eating dinner on Thursday"
+  caption="The sunset was a beautiful to our meal."
 >}}
 
 ## Conclusion

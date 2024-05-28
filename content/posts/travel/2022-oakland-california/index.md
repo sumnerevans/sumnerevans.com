@@ -58,7 +58,6 @@ and other plans found in arid regions. There's even sections with more tropical
 foliage. I'm no botanist, but I really liked looking at all the big, bright
 flowers.
 
-<center>
 <table class="gallery">
   <tr>
     <td>
@@ -73,7 +72,6 @@ flowers.
     </td>
   </tr>
 </table>
-</center>
 
 By the time we were done wandering at the gardens, it was well into the
 afternoon and getting food was the most pressing concern. We found a burrito
@@ -91,12 +89,7 @@ bison herd that is kept within the park. Apparently, the Bison were brought
 during the 19th century and a small herd has lived there ever since. It was
 quite surreal seeing Bison in the middle of a coastal Californian city.
 
-{{< figure
-      src="./images/bison.jpg"
-      link="./images/bison.jpg"
-      target="_blank"
-      title="Bison in San Francisco? Yep!"
->}}
+![Bison in San Francisco? Yep!](images/bison.jpg)
 
 By that time, we were quite tired from walking around so we headed back for the
 day.
@@ -113,12 +106,10 @@ the forest. Some of the trees are over a thousand years old! I also learned that
 redwood trees capture water from the low cloud-cover that often hovers near
 coastal areas.
 
-{{< figure
-      src="./images/muir-woods.jpg"
-      link="./images/muir-woods.jpg"
-      target="_blank"
-      title="Muir Woods National Monument"
-      caption="The trees were beautiful, tall, and slender; reaching up high into the oft foggy sky."
+{{<figure
+  src="images/muir-woods.jpg"
+  title="Muir Woods National Monument"
+  caption="The trees were beautiful, tall, and slender; reaching up high into the oft foggy sky."
 >}}
 
 On the hike, we had a bit of excitement because I got stung by a wasp right on
@@ -138,12 +129,10 @@ I wanted to go see the Golden Gate Bridge from the North side (where many of the
 most famous pictures of the bridge are taken), so we drove over. Unfortunately,
 all we saw was fog.
 
-{{< figure
-      src="./images/golden-gate-fog.jpg"
-      link="./images/golden-gate-fog.jpg"
-      target="_blank"
-      title="The Golden Gate Bridge (I think)"
-      caption="I know that there was water somewhere in that direction, because we could hear fog horns below us. But I have no idea if my shot would have even had the bridge in view if it wasn't covered in fog 😂"
+{{<figure
+  src="images/golden-gate-fog.jpg"
+  title="The Golden Gate Bridge (I think)"
+  caption="I know that there was water somewhere in that direction, because we could hear fog horns below us. But I have no idea if my shot would have even had the bridge in view if it wasn't covered in fog 😂"
 >}}
 
 We are going into San Francisco tomorrow, so hopefully it clears up enough that
@@ -164,12 +153,7 @@ full of shops and it kinda felt like Disney World. At the end of the pier, there
 was a great view of Alcatraz. The fog was lifting right about that time, so we
 got a good view.
 
-{{< figure
-      src="./images/alcatraz.jpg"
-      link="./images/alcatraz.jpg"
-      target="_blank"
-      title="Alcatraz Island"
->}}
+![Alcatraz Island](images/alcatraz.jpg)
 
 We stopped for lunch at Fog Harbor Fish House. I had the Seafood Penne and it
 was delicious. The seafood really is so much better on the coasts...
@@ -177,12 +161,10 @@ was delicious. The seafood really is so much better on the coasts...
 By the time we were done with lunch, the fog had lifted even more, so we took
 a bus over to the Golden Gate Bridge.
 
-{{< figure
-      src="./images/golden-gate-bridge.jpg"
-      link="./images/golden-gate-bridge.jpg"
-      target="_blank"
-      title="Jack and me at the Golden Gate Bridge"
-      caption="Unlike yesterday, we know that the bridge was in frame for this photo."
+{{<figure
+  src="images/golden-gate-bridge.jpg"
+  title="Jack and me at the Golden Gate Bridge"
+  caption="Unlike yesterday, we know that the bridge was in frame for this photo."
 >}}
 
 We walked a little way along the bridge and then made our way over towards
@@ -194,12 +176,10 @@ much better time. I also can't imagine living along the street. Thousands of
 tourists giving by your house every day must get old; and the only real benefit
 is saying that you live on Lombard Street.
 
-{{< figure
-      src="./images/lombard-st.jpg"
-      link="./images/lombard-st.jpg"
-      target="_blank"
-      title="Lombard Street"
-      caption="I can confirm, the road is windy"
+{{<figure
+  src="images/lombard-st.jpg"
+  title="Lombard Street"
+  caption="I can confirm, the road is windy"
 >}}
 
 It was fairly late in the afternoon at this point so we headed back to Jack's

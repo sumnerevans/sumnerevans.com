@@ -27,12 +27,10 @@ The food service on the second leg was quite nice. The dinner was a vegetable
 stir fry with a salad, bread and butter, and a snickerdoodle cookie. For
 breakfast a few hours later, we were served some Chobani yoghurt.
 
-{{< figure
-      src="./images/flight-food.jpg"
-      link="./images/flight-food.jpg"
-      target="_blank"
-      title="The dinner service on my flight from IAD to LIS"
-      caption="The meal exceeded my expectations, and even included a complimentary beverage."
+{{<figure
+  src="images/flight-food.jpg"
+  title="The dinner service on my flight from IAD to LIS"
+  caption="The meal exceeded my expectations, and even included a complimentary beverage."
 >}}
 
 The approach into Lisbon was very nice as well. We came in from the West into
@@ -41,12 +39,10 @@ Delgado Airport from the south, so we circled south and approached the runway.
 On the way in, we passed right over Lisbon and I got a very nice view of the
 city out the window.
 
-{{< figure
-      src="./images/flight-view.jpg"
-      link="./images/flight-view.jpg"
-      target="_blank"
-      title="The view from my seat on the approach into Lisbon"
-      caption="This is the West coast of Iberia."
+{{<figure
+  src="./images/flight-view.jpg"
+  title="The view from my seat on the approach into Lisbon"
+  caption="This is the West coast of Iberia."
 >}}
 
 <!-- TODO: embed the video arriving in LIS --> 
@@ -62,12 +58,10 @@ and I were the only ones who went into the ocean (though we only stayed in for a
 few minutes). After we finished at the beach, we went to the beach bar for a
 drink and then walked back up to the venue.
 
-{{< figure
-      src="./images/beach.jpg"
-      link="./images/beach.jpg"
-      target="_blank"
-      title="The beach near the retreat venue"
-      caption="It was a bit cold getting into the Atlantic, but once we got in, it was refreshing."
+{{<figure
+  src="./images/beach.jpg"
+  title="The beach near the retreat venue"
+  caption="It was a bit cold getting into the Atlantic, but once we got in, it was refreshing."
 >}}
 
 While we were at the beach, more team members had arrived, including Brandon,
@@ -75,12 +69,10 @@ one of the new team members that I haven't met. He works on the iOS team. Dinner
 was served shortly thereafter. After a while, we started a fire and enjoyed some
 time chatting around the fire, trying to fight off jet lag.
 
-{{< figure
-      src="./images/fire.jpg"
-      link="./images/fire.jpg"
-      target="_blank"
-      title="The Beeper team enjoying some quality time around the fire"
-      caption="Adam did a good job starting the fire, and didn't even have to use gasoline! This fire is Chief Safety Officer approved."
+{{<figure
+  src="./images/fire.jpg"
+  title="The Beeper team enjoying some quality time around the fire"
+  caption="Adam did a good job starting the fire, and didn't even have to use gasoline! This fire is Chief Safety Officer approved."
 >}}
 
 The Finns (Tulir and Toni) as well as Samer and Ivan are arriving in a few

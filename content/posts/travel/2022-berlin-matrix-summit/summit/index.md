@@ -32,12 +32,10 @@ internal chat needs. Still others are enthusiasts building projects with Matrix
 or wanting to learn more about the ecosystem. In total, at least fifty-seven
 people were in attendance!
 
-{{< figure
-      src="./images/first-day.jpg"
-      link="./images/first-day.jpg"
-      target="_blank"
-      title="Some of the participants from the first day"
-      caption="We are about to watch Christian present some of the advancements that have happened in the Matrix ecosystem over the past year."
+{{<figure
+  src="images/first-day.jpg"
+  title="Some of the participants from the first day"
+  caption="We are about to watch Christian present some of the advancements that have happened in the Matrix ecosystem over the past year."
 >}}
 
 The summit was held at c-base, an open-source-focused hackerspace in the heart
@@ -87,12 +85,10 @@ highlights of talks and workshops that I enjoyed.
   we had chosen that particular setting. It was cool to get to meet some other
   homeserver admins and see what they were doing for their setups.
 
-  {{< figure
-      src="./images/homeserver-workshop.jpg"
-      link="./images/homeserver-workshop.jpg"
-      target="_blank"
-      title="Having fun nerding out about homeserver setups"
-      caption="Valentin was a great facilitator and got us up and moving and talking to each other about our setups."
+  {{<figure
+    src="./images/homeserver-workshop.jpg"
+    title="Having fun nerding out about homeserver setups"
+    caption="Valentin was a great facilitator and got us up and moving and talking to each other about our setups."
   >}}
 
 * **Alex's Kubernetes talk**
@@ -112,12 +108,7 @@ highlights of talks and workshops that I enjoyed.
   features and benefits of the latest SDK, and he gave a preview of some of the
   things that they are planning on implementing next.
 
-  {{< figure
-      src="./images/rust-sdk.jpg"
-      link="./images/rust-sdk.jpg"
-      target="_blank"
-      title="Ben presenting the new Matrix Rust SDK"
-  >}}
+  ![Ben presenting the new Matrix Rust SDK](images/rust-sdk.jpg)
 
 * **Yan's Conclusion Talk**
 
@@ -144,12 +135,10 @@ Friday, I gave a [presentation about Hungryserv]({{< ref
 Beeper to help us scale to more users. I was happy that so many people were
 interested in the project, and the attendees had many great questions.
 
-{{< figure
-      src="./images/hungryserv.jpg"
-      link="./images/hungryserv.jpg"
-      target="_blank"
-      title="Presenting our new sharded architecture"
-      caption="Hungryserv is the center of our new sharded architecture for scaling our infrastructure to support more users."
+{{<figure
+  src="images/hungryserv.jpg"
+  title="Presenting our new sharded architecture"
+  caption="Hungryserv is the center of our new sharded architecture for scaling our infrastructure to support more users."
 >}}
 
 On Saturday, I gave a presentation about [what Beeper is working on]({{< ref
@@ -157,12 +146,10 @@ On Saturday, I gave a presentation about [what Beeper is working on]({{< ref
 vision, talked about Beeper, discussed what we've built and what current
 challenges we have, and described what it's like working at Beeper.
 
-{{< figure
-      src="./images/what-is-beeper-working-on.jpg"
-      link="./images/what-is-beeper-working-on.jpg"
-      target="_blank"
-      title="Presenting what Beeper is working on"
-      caption="Here I'm presenting our simple business model: users pay us money for a service!"
+{{<figure
+  src="images/what-is-beeper-working-on.jpg"
+  title="Presenting what Beeper is working on"
+  caption="Here I'm presenting our simple business model: users pay us money for a service!"
 >}}
 
 I also teamed up with Kim to give a workshop on how to write Matrix bots in
@@ -189,12 +176,10 @@ attendance, I did my best to help. They had thought of pretty much everything,
 though, so my role was mainly to take credit for securing funding for the food
 :)
 
-{{< figure
-      src="./images/bbq.jpg"
-      link="./images/bbq.jpg"
-      target="_blank"
-      title="Yan and Nadine fixing food for the barbecue"
-      caption="We ate outside overlooking a beautiful view of the Spree."
+{{<figure
+  src="images/bbq.jpg"
+  title="Yan and Nadine fixing food for the barbecue"
+  caption="We ate outside overlooking a beautiful view of the Spree."
 >}}
 
 Food is always such a great unifier, and it was cool to interact with people

@@ -39,24 +39,20 @@ thought had gone well since the last retreat, things that we thought had gone
 poorly since the last retreat, suggested ideas about what we wanted change about
 the company, and a listed questions we wanted to discuss.
 
-{{< figure
-      src="./images/retro.jpg"
-      link="./images/retro.jpg"
-      target="_blank"
-      title="Brad leading our retrospective meeting"
-      caption="The views were stunning during our retrospective meeting and, occasionally, we had a good insight 😂"
+{{<figure
+  src="images/retro.jpg"
+  title="Brad leading our retrospective meeting"
+  caption="The views were stunning during our retrospective meeting and, occasionally, we had a good insight 😂"
 >}}
 
 On Tuesday, we had a team vision meeting outside on the patio. Eric laid out our
 vision (which at a macro level hasn't changed since Montreal), and discussed
 some specifics about what that will look like over the next few months.
 
-{{< figure
-      src="./images/vision-meeting.jpg"
-      link="./images/vision-meeting.jpg"
-      target="_blank"
-      title="Eric laying out the vision for Beeper"
-      caption="It was a good thing the patio was covered, because it rained some during the meeting"
+{{<figure
+  src="images/vision-meeting.jpg"
+  title="Eric laying out the vision for Beeper"
+  caption="It was a good thing the patio was covered, because it rained some during the meeting"
 >}}
 
 Throughout the week, we had a combination of normal work tasks and ad hoc

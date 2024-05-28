@@ -1577,7 +1577,7 @@ wall or not (literally the entire point of the problem).
 I did make a good decision to actually cut out a physical cube to figure out the
 necessary transformations.
 
-![cube](./cube.png "My paper cut-out cube for helping to determine the necessary edge transformations.")
+![My paper cut-out cube for helping to determine the necessary edge transformations.](cube.png)
 
 </details>
 

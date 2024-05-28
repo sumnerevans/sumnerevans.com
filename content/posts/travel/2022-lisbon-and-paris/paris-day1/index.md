@@ -37,12 +37,10 @@ good, it was worth it to just eat the cost.
 My first destination was the Place de la Concorde. I got my first daytime
 glimpse of the Eiffel Tower!
 
-{{< figure
-      src="./images/concorde.jpg"
-      link="./images/concorde.jpg"
-      target="_blank"
-      title="My first glimpse of the Eiffel Tower"
-      caption="Everything that I saw was so historic and beautiful."
+{{<figure
+  src="images/concorde.jpg"
+  title="My first glimpse of the Eiffel Tower"
+  caption="Everything that I saw was so historic and beautiful."
 >}}
 
 I decided to walk around one of the fountains in the Jardin des Tuileries. It's
@@ -81,12 +79,10 @@ The views all around are magnificent, and it was amazing seeing the city
 sprawling beautifully away in all directions. It has a great view across the
 River Seine to the Tour Eiffel.
 
-{{< figure
-      src="./images/arc-view.jpg"
-      link="./images/arc-view.jpg"
-      target="_blank"
-      title="A view of the Eiffel Tower from the top of the Arc de Triomphe"
-      caption="Due to heavy-handed city planning, the city is quite uniform making it so visually appealing."
+{{<figure
+  src="images/arc-view.jpg"
+  title="A view of the Eiffel Tower from the top of the Arc de Triomphe"
+  caption="Due to heavy-handed city planning, the city is quite uniform making it so visually appealing."
 >}}
 
 ## Eiffel Tower
@@ -107,12 +103,7 @@ commemorates something about American volunteers during WWII who joined the
 resistance in Vichy France. I did a bunch of searching online and found nothing
 about why the additional plaque was added.
 
-{{< figure
-      src="./images/memorial-volunteers.jpg"
-      link="./images/memorial-volunteers.jpg"
-      target="_blank"
-      title="Monument aux Volontaires américains"
->}}
+![Monument aux Volontaires américains](images/memorial-volunteers.jpg)
 
 In general, I was surprised by the amount of monuments and statues which
 commemorated Americans. Given that France is our oldest ally, I guess it makes
@@ -125,12 +116,10 @@ he has a pretty nice view.
 I took my time walking down to the Eiffel Tower, enjoying the fountains that
 lead down to it.
 
-{{< figure
-      src="./images/eiffel-tower-1.jpg"
-      link="./images/eiffel-tower-1.jpg"
-      target="_blank"
-      title="The Eiffel Tower!"
-      caption="I've seen it in so many pictures, it was cool to see it in person!"
+{{<figure
+  src="images/eiffel-tower-1.jpg"
+  title="The Eiffel Tower!"
+  caption="I've seen it in so many pictures, it was cool to see it in person!"
 >}}
 
 I wandered around the grounds of the tower, it's base is larger than I expected.
@@ -148,12 +137,10 @@ I then had to take the elevator to the top. The views were absolutely
 spectacular. The sky were clear and there was a beautiful view in all
 directions.
 
-{{< figure
-      src="./images/eiffel-tower-2.jpg"
-      link="./images/eiffel-tower-2.jpg"
-      target="_blank"
-      title="The view from the Eiffel Tower"
-      caption="I now understand why people fall in love with Paris. The city is so beautiful!"
+{{<figure
+  src="images/eiffel-tower-2.jpg"
+  title="The view from the Eiffel Tower"
+  caption="I now understand why people fall in love with Paris. The city is so beautiful!"
 >}}
 
 At this point, it was fairly late in the evening, and I headed back to the
@@ -166,12 +153,7 @@ also seem to pay more attention to detail. The plates had the name of the
 restaurant on one side, and I noticed the server placed the plate down so that
 the name was the right way up.
 
-{{< figure
-      src="./images/steak.jpg"
-      link="./images/steak.jpg"
-      target="_blank"
-      title="My steak and frites meal"
->}}
+![My steak and frites meal](images/steak.jpg)
 
 The meal was a reasonable price as well. The exchange rate from USD to EUR is so
 favourable right now, which makes all of the prices a lot more palatable. It's

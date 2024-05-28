@@ -28,12 +28,10 @@ Chewy (who is from Singapore), Sadie (from LA, I think), and Jaimes (who is from
 the states somewhere I think) to a great seafood restaurant called [_Taberna
 Clandestina Cascais_](https://g.page/tabernaclandestinacascais).
 
-{{< figure
-      src="./images/lunch.jpg"
-      link="./images/lunch.jpg"
-      target="_blank"
-      title="Eating at Taberna Clandestina Cascais"
-      caption="Left to right: me, Sadie, Chewy, Jaimes. I had a delicious seafood pasta."
+{{<figure
+  src="images/lunch.jpg"
+  title="Eating at Taberna Clandestina Cascais"
+  caption="Left to right: me, Sadie, Chewy, Jaimes. I had a delicious seafood pasta."
 >}}
 
 At that point, we headed over to the beach where the other three were lounging.
@@ -41,12 +39,10 @@ I got in the water for a few minutes, but it was pretty cold, so I ended up
 napping most of the afternoon on the beach. Late in the afternoon, a few of us
 decided to rent paddle boards to go around the harbour.
 
-{{< figure
-      src="./images/paddle-boarding.jpg"
-      link="./images/paddle-boarding.jpg"
-      target="_blank"
-      title="Paddle boarding off the coast of Cascais"
-      caption="Photo Credit: Kiara."
+{{<figure
+  src="images/paddle-boarding.jpg"
+  title="Paddle boarding off the coast of Cascais"
+  attr="Kiara"
 >}}
 
 By the time we were done paddle boarding, it was mid-evening and so we decided
@@ -59,12 +55,10 @@ salmon and tuna tartare and an order of steak and frites. And of course, we had
 to have some gin as well to round out the meal. It was delicious, and it was
 definitely the most mussels I'd ever eaten in one sitting.
 
-{{< figure
-      src="./images/dinner.jpg"
-      link="./images/dinner.jpg"
-      target="_blank"
-      title="Eating lots of mussels at Moules & Gin"
-      caption="The mussels were served in nice flavorful broths/sauces."
+{{<figure
+  src="images/dinner.jpg"
+  title="Eating lots of mussels at Moules & Gin"
+  caption="The mussels were served in nice flavourful broths/sauces."
 >}}
 
 After dinner, we took the train from Cascais back to Lisbon and I went to bed

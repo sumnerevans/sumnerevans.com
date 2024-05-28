@@ -120,12 +120,10 @@ today I am not sure if being low-income is one of the qualifying factors.
 As I continued walking through Alfama, the streets were a bustle of activity as
 people set up make-shift stands for selling beer, shots, and bar foods.
 
-{{< figure
-      src="./images/street-decorations.jpg"
-      link="./images/street-decorations.jpg"
-      target="_blank"
-      title="The streets in Alfama being decorated for the festival tonight"
-      caption="In a few hours, the streets would be full of people partying."
+{{<figure
+  src="images/street-decorations.jpg"
+  title="The streets in Alfama being decorated for the festival tonight"
+  caption="In a few hours, the streets would be full of people partying."
 >}}
 
 ---
@@ -156,12 +154,10 @@ streets. We wandered about letting the crowds dictate the direction we went. The
 atmosphere was amazing and it was super fun to be in the middle of the biggest
 festival of the year in Lisbon.
 
-{{< figure
-      src="./images/party-in-alfama.jpg"
-      link="./images/party-in-alfama.jpg"
-      target="_blank"
-      title="The streets in Alfama packed with people celebrating the festival"
-      caption="Nearly every street in Alfama was just as packed and festive."
+{{<figure
+  src="images/party-in-alfama.jpg"
+  title="The streets in Alfama packed with people celebrating the festival"
+  caption="Nearly every street in Alfama was just as packed and festive."
 >}}
 
 Each street had a few stands set up selling food or beer (or both). There are
