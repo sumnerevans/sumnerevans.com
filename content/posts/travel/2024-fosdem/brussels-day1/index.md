@@ -68,25 +68,25 @@ an entire hangar full of warplanes! Everything from biplanes used during WWI to
 more modern postwar craft were on display in the hangar.
 
 <table class="gallery">
-  <tr>
-    <td colspan="2">
-      <a href="./images/planes.jpg" target="_blank">
-        <img src="./images/planes.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/napoleonic.jpg" target="_blank">
-        <img src="./images/napoleonic.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/armour.jpg" target="_blank">
-        <img src="./images/armour.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td colspan="2">
+
+![](images/planes.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/napoleonic.jpg)
+
+</td>
+<td>
+
+![](images/armour.jpg)
+
+</td>
+</tr>
 </table>
 
 ---

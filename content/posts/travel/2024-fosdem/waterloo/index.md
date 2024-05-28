@@ -31,12 +31,7 @@ the house which served as the headquarters of the Duke of Wellington during the
 battle. Across the street from the museum is a church. Inside there are many
 plaques commemorating various people who died during the battle.
 
-{{<figure
-    src="./images/church.jpg"
-    link="./images/church.jpg"
-    target="_blank"
-    title="Some of the plaques commemorating the soldiers who died during the Battle of Waterloo"
->}}
+![Some of the plaques commemorating the soldiers who died during the Battle of Waterloo](images/church.jpg)
 
 After visiting the church, I went across the street to the Wellington Museum. As
 the name suggests, the museum focused on Arthur Wellesley, the 1st Duke of
@@ -44,12 +39,7 @@ Wellington who commanded the troops of the United Kingdom. He, along with
 General Blücher in command of the Prussian army, defeated Napoleon during the
 fateful battle.
 
-{{<figure
-    src="./images/wellington.jpg"
-    link="./images/wellington.jpg"
-    target="_blank"
-    title="The Wellington Museum"
->}}
+![The Wellington Museum](images/wellington.jpg)
 
 The displays had any artefacts of the Napoleonic wars, and many paintings and
 drawings of the Battle of Waterloo which happened on 15 June 1815. There was an

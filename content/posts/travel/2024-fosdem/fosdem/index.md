@@ -20,11 +20,11 @@ image: images/matrix.jpg
 ---
 
 The primary purpose of my trip was to attend FOSDEM, a Free and Open Source
-Software conference. I
-[attended last year as well]({{< ref "../../2023-fosdem/fosdem/index.md" >}})
-and enjoyed it, so I decided to make the trip to attend again. FOSDEM is the
-biggest meeting of people in the Matrix community every year, and there is also
-a sizeable Go presence at the conference as well.
+Software conference. I [attended last year as well]({{< ref
+"../../2023-fosdem/fosdem/index.md" >}}) and enjoyed it, so I decided to make
+the trip to attend again. FOSDEM is the biggest meeting of people in the Matrix
+community every year, and there is also a sizeable Go presence at the conference
+as well.
 
 At Beeper, I primarily write Go, and I work extensively on Matrix bridges as
 well as other Matrix-related projects such as bots and homeservers. I am fortune
@@ -77,12 +77,10 @@ allocates tasks across all of the OS threads and processors on the CPU. It was a
 really fantastic talk and had some fun illustrations for explaining the
 goroutine lifecycle.
 
-{{< figure
-      src="./images/go-devroom.jpg"
-      link="./images/go-devroom.jpg"
-      target="_blank"
-      title="Jesús Espino being introduced for his talk in the Go devroom"
-      caption="As you can see from just the first slide, it was a very visually appealing presentation."
+{{<figure
+  src="images/go-devroom.jpg"
+  title="Jesús Espino being introduced for his talk in the Go devroom"
+  caption="As you can see from just the first slide, it was a very visually appealing presentation."
 >}}
 
 Another talk that I enjoyed was by Jonathan Hall who discussed the process of
@@ -169,11 +167,9 @@ On Sunday morning, Matthew gave a keynote about the state of Matrix on the
 FOSDEM main stage. He provided an update on the Matrix Foundation and the
 progress that the ecosystem has made over the past year.
 
-{{< figure
-      src="./images/matrix.jpg"
-      link="./images/matrix.jpg"
-      target="_blank"
-      title="Matthew giving the Matrix keynote on the FOSDEM main stage"
+{{<figure
+  src="./images/matrix.jpg"
+  title="Matthew giving the Matrix keynote on the FOSDEM main stage"
 >}}
 
 He talked about the progress that the Matrix Foundation has made in helping

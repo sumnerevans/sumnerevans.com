@@ -39,18 +39,18 @@ bell tower. It's at the centre and it has a great view of the town and the
 square below.
 
 <table class="gallery">
-  <tr>
-    <td>
-      <a href="./images/bell-tower-1.jpg" target="_blank">
-        <img src="./images/bell-tower-1.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/bell-tower-2.jpg" target="_blank">
-        <img src="./images/bell-tower-2.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td>
+
+![](images/bell-tower-1.jpg "First view from the bell tower")
+
+</td>
+<td>
+
+![](images/bell-tower-2.jpg "Second view from the bell tower")
+
+</td>
+</tr>
 </table>
 
 However, the most interesting part was the way that the bells were operated.
@@ -62,13 +62,7 @@ To get to the bells, you have to climb some very narrow and steep stairs all the
 way to the top, but it is well worth it for the views and being able to watch
 the bells in action.
 
-{{<
-  figure
-  src="./images/belfort.jpg"
-  link="./images/belfort.jpg"
-  target="_blank"
-  title="The drum which holds the music that the bells play"
->}}
+![The drum which holds the music that the bells play](images/belfort.jpg)
 
 ## Wandering
 
@@ -78,54 +72,54 @@ sure if I'd like living there considering how touristy it is, but it was very
 beautiful.
 
 <table class="gallery">
-  <tr>
-    <td>
-      <a href="./images/bruges-1.jpg" target="_blank">
-        <img src="./images/bruges-1.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/bruges-2.jpg" target="_blank">
-        <img src="./images/bruges-2.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/bruges-3.jpg" target="_blank">
-        <img src="./images/bruges-3.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/bruges-4.jpg" target="_blank">
-        <img src="./images/bruges-4.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/bruges-5.jpg" target="_blank">
-        <img src="./images/bruges-5.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/bruges-6.jpg" target="_blank">
-        <img src="./images/bruges-6.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/bruges-7.jpg" target="_blank">
-        <img src="./images/bruges-7.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/bruges-8.jpg" target="_blank">
-        <img src="./images/bruges-8.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td>
+
+![](images/bruges-1.jpg)
+
+</td>
+<td>
+
+![](images/bruges-2.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/bruges-3.jpg)
+
+</td>
+<td>
+
+![](images/bruges-4.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/bruges-5.jpg)
+
+</td>
+<td>
+
+![](images/bruges-6.jpg)
+
+</td>
+<tr>
+<td>
+
+![](images/bruges-7.jpg)
+
+</td>
+<td>
+
+![](images/bruges-8.jpg)
+
+</td>
+</tr>
+</tr>
 </table>
 
 After wandering around for a while I headed back to the train and returned to my
