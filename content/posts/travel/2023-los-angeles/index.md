@@ -21,31 +21,31 @@ consistent in-person attendees during the hybrid COVID semesters. He now works
 at SpaceX and since I have a ton of Southwest points, I decided to visit him
 somewhat on a whim.
 
-I left Friday afternoon, and the outbound flight out of DIA was really pretty.
-I had a great view of Berthoud Pass out my window. Then, on the descent into
-LAX, I had a great view of downtown LA and the sprawling suburbs.
+I left Friday afternoon, and the outbound flight out of DIA was really pretty. I
+had a great view of Berthoud Pass out my window. Then, on the descent into LAX,
+I had a great view of downtown LA and the sprawling suburbs.
 
 <figure>
-  <table class="gallery">
-    <tr>
-      <td>
-        <a href="./images/berthoud.jpg" target="_blank">
-          <img src="./images/berthoud.jpg"
-            alt="A view of Berthoud Pass out my window." />
-        </a><br>
-        A view of Berthoud Pass out my window. I know the pass very well since
-        I love to ski at Winter Park.
-      </td>
-      <td>
-        <a href="./images/la.jpg" target="_blank">
-          <img src="./images/la.jpg"
-            alt="Downtown LA in the distance with sprawling suburbs all around." />
-        </a><br>
-        During the descent into LA, all I could think about was <i>Party in the
-        USA</i> by Miley Cyrus. There's something surreal about the view.
-      </td>
-    </tr>
-  </table>
+<table class="gallery">
+<tr>
+<td>
+
+![](images/berthoud.jpg "A view of Berthoud Pass out my window.")
+
+**A view of Berthoud Pass out my window. I know the pass very well since I love
+to ski at Winter Park.**
+
+</td>
+<td>
+
+![](images/la.jpg "Downtown LA in the distance with sprawling suburbs all around.")
+
+**During the descent into LA, all I could think about was *Party in the USA* by
+Miley Cyrus. There's something surreal about the view.**
+
+</td>
+</tr>
+</table>
 </figure>
 
 Ethan lives close to the airport, and he kindly picked me up, and then we went
@@ -72,7 +72,8 @@ on reverse engineering iMessage. I'd met him online through Beeper, and by
 coincidence, I found out he lived in LA, pretty close to where Ethan lives. It
 was cool to meet him in person because I've interacted with him in a technical
 capacity a fair bit recently since I've been
-[working on improving Beeper's iMessage bridge]({{< ref "/posts/travel/2023-toronto-retreat#the-imessage-corner-of-happiness" >}}).
+[working on improving Beeper's
+iMessage bridge]({{<ref"/posts/travel/2023-toronto-retreat#the-imessage-corner-of-happiness">}}).
 
 ## Exploring LA
 
@@ -84,41 +85,26 @@ After our nap, we went over to the SpaceX HQ and walked around the outside. They
 have a Falcon 9 booster on display outside of the building. It is very
 impressive in person, and it's so neat that they are able to land them upright!
 
-{{< figure
-      src="./images/rocket.jpg"
-      link="./images/rocket.jpg"
-      target="_blank"
-      title="Me and Ethan at the Falcon 9 rocket outside of the SpaceX HQ."
->}}
+![Me and Ethan at the Falcon 9 rocket outside of the SpaceX HQ.](images/rocket.jpg)
 
 We then went to Watts Towers, which is a sculpture built by an eccentric artist
 during the early decades of the 20th century. Its main structure is steel but is
 covered in concrete which is laced with embedded fragments of glass, porcelain,
 seashells, and other random items. Watts Towers is on a bunch of "top
-attractions in LA" lists, on the [TimeOut
-list](https://www.timeout.com/los-angeles/things-to-do/los-angeles-attractions)
+attractions in LA" lists, on the
+[TimeOut list](https://www.timeout.com/los-angeles/things-to-do/los-angeles-attractions)
 it's number 27. As we walked around the sculpture, we kept joking about it being
 the 27th coolest thing in LA. In my opinion, there's a reason it's 27th. It was
 kinda cool to see, but not something that I'm dying to revisit.
 
-{{< figure
-      src="./images/watts.jpg"
-      link="./images/watts.jpg"
-      target="_blank"
-      title="The Watts Towers: the 27th coolest thing to see in LA."
->}}
+![The Watts Towers: the 27th coolest thing to see in LA.](images/watts.jpg)
 
 After stopping back at Ethan's apartment for a few minutes, we took an Uber down
-to Hermosa Beach. There's a really long pier that we walked out on and we
-walked a bit on the beach. It wasn't quite nice enough to get in, but I figured
-I had to at least get my feet wet if I went all the way out to LA.
+to Hermosa Beach. There's a really long pier that we walked out on and we walked
+a bit on the beach. It wasn't quite nice enough to get in, but I figured I had
+to at least get my feet wet if I went all the way out to LA.
 
-{{< figure
-      src="./images/hermosa.jpg"
-      link="./images/hermosa.jpg"
-      target="_blank"
-      title="The Hermosa Beach pier."
->}}
+![The Hermosa Beach pier.](images/hermosa.jpg)
 
 For dinner, we went to a sushi restaurant which was delicious. Then we made our
 way over to Monkish Brewing Co. for a few beers. Our Uber driver on the way was
@@ -135,7 +121,7 @@ a great hanging out and really getting to know each other on a deeper level.
 
 Ethan is Catholic, and so on Sunday, we went together to Mass. I had never been
 to a Catholic Mass in English before. The only other time I had been to Mass was
-[a French Mass in Montreal]({{< ref "/posts/travel/2016-new-england-trip/2016-06-04-montreal-1#mass-at-notre-dame" >}})
+[a French Mass in Montreal]({{<ref"/posts/travel/2016-new-england-trip/2016-06-04-montreal-1#mass-at-notre-dame">}})
 where I understood nothing about what was going on. I still didn't know what was
 going on at the English Catholic Mass, but that was a function of not being
 Catholic rather than a function of not knowing the language.
@@ -203,28 +189,18 @@ Our next destination was Griffith Observatory, an observatory on a hill north of
 LA. Notably, there's a great view of the Hollywood sign. We parked and hiked up
 to the observatory. The views over the sprawling city of LA were spectacular.
 
-{{< figure
-      src="./images/griffith-la.jpg"
-      link="./images/griffith-la.jpg"
-      target="_blank"
-      title="The view over LA from Griffith Observatory."
->}}
+![The view over LA from Griffith Observatory](images/griffith-la.jpg)
 
 Ethan also helped get a picture of me doing a side kick over the Hollywood sign.
 
-{{< figure
-      src="./images/kick.jpg"
-      link="./images/kick.jpg"
-      target="_blank"
-      title="Side kick at the top of Griffith Observatory"
->}}
+![Side kick at the top of Griffith Observatory](images/kick.jpg)
 
 The inside of the observatory is a space museum with a bunch of cool exhibits.
 One area focused on an "empty" part of the sky that when observed with a
 powerful telescope revealed thousands of galaxies containing millions of stars.
 
 Additionally, there were a scale models of all the planets in the solar system.
-They were not spaced out correctly as that would take *way* too much space, but
+They were not spaced out correctly as that would take _way_ too much space, but
 they were volumetrically accurate. Next to each model was a scale where you
 could stand and see how much you would weight on that planet. I think that I'm
 going to start a weight-loss program which just sends people to Mars.
@@ -234,7 +210,7 @@ system. It's centred around a point near the front of the observatory and goes
 out across the lawn. It was amazing to see how much further away Jupiter is from
 Mars. In many textbooks, for the sake of space, the distance between the orbits
 of the planets is shown as relatively constant, yet that is definitely not the
-case. The outer planets are *so* much further away.
+case. The outer planets are _so_ much further away.
 
 ## K-Town
 
@@ -249,7 +225,7 @@ for the cow tongue, we did not enjoy that.
 By this time, it was time to head back to Ethan's place so I could make my 20:50
 flight.
 
------
+---
 
 I thoroughly enjoyed my time in LA. I'm grateful to Ethan for acting as my tour
 guide and letting me stay at his place for the weekend. LA is a beautiful city,
