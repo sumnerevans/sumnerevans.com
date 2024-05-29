@@ -71,11 +71,10 @@ I got a picture from a better vantage point. I doctored that one up to make it
 look as sketchy as possible without totally obscuring the image too much. Here
 it is
 
-.. image:: ./images/st-petersburg1.jpg
-   :alt: Artillery at the fortress of St. Petersburg
-   :align: center
-   :target: ./images/st-petersburg1.jpg
-   :width: 75%
+{{<figure
+  src="images/st-petersburg1.jpg"
+  title="Artillery at the fortress of St. Petersburg"
+>}}
 
 We walked along the top of the fortress walls which overlook a bit of the bay.
 (It doesn't seem like there is a bay because there are so many islands, but it

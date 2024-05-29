@@ -25,7 +25,7 @@ governed. The streets, however, were neutral and thus all commerce was done in
 the middle of the street out of reach of either jurisdiction. So to this day,
 medians in New Orleans are called "neutral grounds".
 
-[![](./images/segway.jpg)](./images/segway.jpg)
+![](images/segway.jpg)
 
 Our guide also explained some of the History of New Orleans. I've compiled what
 I've learned from our various guides below. (If there are any inaccuracies,

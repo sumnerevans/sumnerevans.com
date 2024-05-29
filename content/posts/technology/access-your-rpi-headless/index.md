@@ -38,7 +38,7 @@ doesn't make sense at all, just follow the instructions. It should work.
 
 1.  Run this command: `sudo ifconfig`
 
-    [![Output of `ifconfig`](./images/putty-to-rpi-1.png)](./images/putty-to-rpi-1.png)
+    ![Output of `ifconfig`](./images/putty-to-rpi-1.png)
 
 2.  Find the IP address of the RPi. For me, I am using a wireless adapter so I
     have to look at "wlan0" for the information I need. If you are using a wired
@@ -83,13 +83,11 @@ Install PuTTY on Windows
     textbox (I used RPi) and click on "Save"
 6.  Click Open
 
-    [![PuTTY Configuration Window](./images/putty-config-1.png)](./images/putty-config-1.png)<br>
-    *PuTTY Configuration Window*
+    ![PuTTY Configuration Window](./images/putty-config-1.png)
 
 7.  Hopefully you should see something like this:
 
-    [![PuTTY asking for login information](./images/login-as-putty-1.png)](./images/login-as-putty-1.png)<br>
-    PuTTY asking for login information
+    ![PuTTY asking for login information](./images/login-as-putty-1.png)
 
     If that doesn't work, try to restart your RPi. If that doesn't help, Google
     will probably be of great assistance.
@@ -115,8 +113,8 @@ Install XRDP
 5.  In the "Computer" field type the IP address of you RPi and click "Connect"
 6.  You should see a window thing like this
 
-    [![Login to XRDP Window](./images/login-to-xrdp-1.png)](./images/login-to-xrdp-1.png)<br>
-    Login to XRDP Window
+    ![Login to XRDP Window](./images/login-to-xrdp-1.png)
+
 7.  Enter your username and password into the fields and click on "OK"
 8.  Wait a few moments and you will see your desktop
 

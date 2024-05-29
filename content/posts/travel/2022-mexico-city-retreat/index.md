@@ -13,6 +13,8 @@ tags:
 description: |
   My thoughts and reflections on the Beeper Fall 2022 retreat in Mexico City.
 image: images/retro.jpg
+build:
+  publishResources: false
 ---
 
 This week, my company (Beeper) had our Fall retreat in in Mexico City, Mexico.
@@ -26,16 +28,15 @@ last retreat and reconnect with many coworkers that I'd met during previous
 retreats.
 
 We had fifteen members of the team at this retreat. We stayed at a hotel called
-[*Camino Real
-Polanco*](https://www.caminoreal.com/en/caminoreal/camino-real-polanco-mexico),
+[_Camino Real Polanco_](https://www.caminoreal.com/en/caminoreal/camino-real-polanco-mexico),
 and we were able to utilize some office space from another Y-Combinator startup.
 Having the office was a nice change from the remote locale of the Portugal
 retreat. The office had a great view of the city.
 
 I shared a room with Bradley who works on our desktop app. The hotel room was
 quite nice and there were quite a few restaurants close by. The retreat was less
-communal in feeling than the previous two in [Playa del
-Carmen](../2022-playa-del-carmen-mexico) and
+communal in feeling than the previous two in
+[Playa del Carmen](../2022-playa-del-carmen-mexico) and
 [Portugal](../2022-lisbon-and-paris/ericeira-portugal), but (as I'll describe
 later) this retreat was more work-intense than the previous ones and having the
 ability to go back to our rooms to decompress was quite nice.
@@ -55,7 +56,7 @@ have demos every week on Monday where anyone in the team can demo what they are
 working on, but not everyone demos something every week, making the retreats a
 nice time to hear about what people have been working on for the past few
 months. Since the last retreat, I have mainly been heads-down on a project
-called *Hungryserv* with Toni and Tulir so I haven't been as attuned to what
+called _Hungryserv_ with Toni and Tulir so I haven't been as attuned to what
 everyone else working on.
 
 ## Working and Learning
@@ -92,9 +93,10 @@ of discussions that myself and Toni had just before the Portugal retreat. During
 the last retreat, it was still vaporware, but over the last few months, with
 Tulir, Toni, and myself full-time on the project, we are now poised to ship to
 production. In fact, even in August, we were close enough to having it working
-that I was able to [give a
-presentation](../../../portfolio#presentation-hungryserv) about the project at
-the [2022 Berlin Matrix Community Summit](../2022-berlin-matrix-summit/summit).
+that I was able to
+[give a presentation](../../../portfolio#presentation-hungryserv) about the
+project at the
+[2022 Berlin Matrix Community Summit](../2022-berlin-matrix-summit/summit).
 
 Another highlight was the reorganization of the teams a couple months ago which
 put more people on the iOS project. Since then, we've made great progress on the
@@ -208,29 +210,34 @@ to be spicier than the other type of salsa which is a "cooking salsa". Such
 salsas are used in the dishes themselves while being cooked.
 
 <figure>
-  <table class="gallery">
-    <tr>
-      <td>
-        <a href="./images/salsa1.jpg" target="_blank">
-          <img src="./images/salsa1.jpg"
-               alt="Natalia explaining one of the salsas we were making" />
-        </a><br>
-        <b>Natalia explaining one of the salsas we were cooking</b><br>
-        We even got to wear fun colourful aprons while we made the salsas!
-        It was amazing how delicious they were with such simple ingredients.
-      </td>
-      <td>
-        <a href="./images/salsa2.jpg" target="_blank">
-          <img src="./images/salsa2.jpg"
-               alt="Fixing quesadillas to eat with the salsas" />
-        </a><br>
-        <b>Fixing quesadillas to to eat with the salsas</b><br><br>
-        The best part of the evening was that we got got to eat the fruit of our
-        labours :)<br>
-        I especially enjoyed the chilli oil and creamy tomato salsas.
-      </td>
-    </tr>
-  </table>
+<table class="gallery">
+<tr>
+<td width="50%">
+
+![](images/salsa1.jpg "Natalia explaining one of the salsas we were making")
+
+**Natalia explaining one of the salsas we were cooking**
+
+We even got to wear fun colourful aprons while we made the salsas! It was
+amazing how delicious they were with such simple ingredients.
+
+</td>
+<td width="50%">
+
+![](images/salsa2.jpg "Fixing quesadillas to eat with the salsas")
+
+**Fixing quesadillas to to eat with the salsas**
+
+<br>
+
+The best part of the evening was that we got got to eat the fruit of our labours
+:)
+
+I especially enjoyed the chilli oil and creamy tomato salsas.
+
+</td>
+</tr>
+</table>
 </figure>
 
 ## Are We One Team?

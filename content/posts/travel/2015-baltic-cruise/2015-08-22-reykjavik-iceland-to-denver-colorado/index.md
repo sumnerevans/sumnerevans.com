@@ -23,16 +23,13 @@ basically one huge glacier. It was very impressive, all I could see out of the
 window was white up to the horizon in all directions (some of the white was
 clouds, but not much of it). I'll post some pictures of the terrain here.
 
-[![](./images/plane-icebergs.jpg)](./images/plane-icebergs.jpg)
-*Icebergs in the North Atlantic*
+![Icebergs in the North Atlantic](images/plane-icebergs.jpg)
 
-[![](./images/plane-greenland1.jpg)](./images/plane-greenland1.jpg)
-*East End of Greenland*
+![East End of Greenland](images/plane-greenland1.jpg)
 
-[![](./images/plane-greenland2.jpg)](./images/plane-greenland2.jpg)
-*Greenland isn't soo green...*
+![Greenland isn't soo green...](images/plane-greenland2.jpg)
 
-[![](./images/plane-greenland3.jpg)](./images/plane-greenland3.jpg)
+![](images/plane-greenland3.jpg)
 
 ------------------------------------------------------------------------
 

@@ -11,6 +11,8 @@ description: |
   I spent a few days in Berlin sightseeing before the Matrix Community Summit
   started.
 image: images/brandenburg-gate.jpg
+build:
+  publishResources: false
 ---
 
 I'm in Berlin for the Matrix Community Summit 2022, but I arrived a few days
@@ -36,7 +38,7 @@ bit longer. There's a cool clock in Alexanderplatz that shows the time in
 different places in the world.
 
 {{<figure
-  src="./images/clock.jpg"
+  src="images/clock.jpg"
   title="A world clock in Alexanderplatz"
   caption="One thing I always find fascinating is how the [exonyms](https://www.dictionary.com/browse/exonym) that non-English languages give to places differ from those that English gives the same places."
 >}}
@@ -50,7 +52,7 @@ the food court for a currywurst.
   caption="Apparently, it's a somewhat unique cuisine to Berlin"
 >}}
 
---------
+---
 
 On Tuesday, I went to the Pergemonmuseum. The museum is on Museumsinsel and
 houses reconstructions of multiple significant historical sites. Most famously,
@@ -107,36 +109,36 @@ old church. On the outside, it has a very Brutalist appearance, but inside, the
 blue stained glass windows create a very reverent space.
 
 <figure>
-  <table class="gallery">
-    <tr>
-      <td>
-        <a href="./images/church-ruins.jpg" target="_blank">
-          <img src="./images/church-ruins.jpg"
-               alt="The ruins of the Kaiser Wilhelm Church" />
-        </a><br>
-        <b>The ruins of the Kaiser Wilhelm Church</b>
-      </td>
-      <td>
-        <a href="./images/church-mosaic.jpg" target="_blank">
-          <img src="./images/church-mosaic.jpg"
-               alt="The mosaic on the ceiling inside of the ruins of the church structure" />
-        </a><br>
-        <b>The mosaic on the ceiling inside of the ruins of the church structure</b>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2">
-        <a href="./images/church-modern.jpg" target="_blank">
-          <img src="./images/church-modern.jpg"
-               alt="The inside of the modern church structure" />
-        </a><br>
-        <b>The inside of the modern church structure</b><br/>
-        The blue light gave an unexpected, but quite nice ambiance to the space.
-      </td>
-    </tr>
-  </table>
-</figure>
+<table class="gallery">
+<tr>
+<td>
 
+![](images/church-ruins.jpg "The ruins of the Kaiser Wilhelm Church")
+
+**The ruins of the Kaiser Wilhelm Church**
+
+</td>
+<td>
+
+![](images/church-mosaic.jpg "The mosaic on the ceiling inside of the ruins of the church structure")
+
+**The mosaic on the ceiling inside of the ruins of the church structure**
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+![](images/church-modern.jpg "The inside of the modern church structure")
+
+**The inside of the modern church structure**
+
+The blue light gave an unexpected, but quite nice, ambiance to the space.
+
+</td>
+</tr>
+</table>
+</figure>
 
 I then went over to the Technische Universität Berlin campus and worked there
 for a few hours, and then met up with Kim, the guy who was attending the summit,
@@ -151,7 +153,7 @@ PRs and such.) One of the attendees of the meetup actually was someone I'd
 interacted with on GitHub, so that was cool to see actual people that I'd been
 talking to online.
 
---------
+---
 
 On Wednesday, I went over to the Reichstag building. I had done absolutely zero
 preparation for the trip, so I didn't have a ticket to go inside. It's quite
@@ -175,8 +177,8 @@ Nazis and liberate Berlin. We should honour their great sacrifice.
 >}}
 
 I then walked towards the Brandenburg Gate. Along the way, I encountered a
-plaque commemorating the place where President Reagan gave his *Tear Down This
-Wall* speech. That gave me the idea of listening to the two most famous
+plaque commemorating the place where President Reagan gave his _Tear Down This
+Wall_ speech. That gave me the idea of listening to the two most famous
 Presidential speeches given in West Berlin: Kennedy's and Reagan's. I listened
 to them as I sat under the shade of some trees near the gate.
 
@@ -226,7 +228,7 @@ Western side, so maybe that is the driving factor there.)
 By this time, it was about lunchtime and I got a currywurst from a food stand
 before heading back to the hotel to work for the afternoon and evening.
 
--------
+---
 
 Berlin is a beautiful city. That it was divided for so long is a tragedy. The
 scars of communist rule can still be seen across the city. But the unity of the

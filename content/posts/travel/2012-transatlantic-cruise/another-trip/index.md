@@ -21,7 +21,7 @@ If you want a list of all the places that we will be going please click
 
 Here is a map of where we are going:
 
-[![Itinerary](./images/cruiseIteneraryMap.jpg)](./images/cruiseIteneraryMap.jpg)
+![Itinerary](./images/cruiseIteneraryMap.jpg)
 
 I will be making posts on this blog every day. We will have sporadic
 internet access and so you might go a few days without a post from us.

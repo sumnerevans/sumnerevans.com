@@ -27,31 +27,31 @@ the Maya also worshipped and performed ceremonies in the temples.  Here are some
 pictures with captions describing what each one is showing.
 
 <table class="gallery">
-  <tr>
-    <td>
-      <a href="./images/cozumel1.jpg" target="_blank">
-        <img src="./images/cozumel1.jpg" />
-      </a>
-    </td>
-    <td rowspan="2" width="50%">
-      <a href="./images/cozumel2.jpg" target="_blank">
-        <img src="./images/cozumel2.jpg" />
-      </a>
-    </td>
-    <td rowspan="2" width="30%">
-      <a href="./images/cozumel4.jpg" target="_blank">
-        <img src="./images/cozumel4.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td>
 
-  <tr>
-    <td>
-      <a href="./images/cozumel3.jpg" target="_blank">
-        <img src="./images/cozumel3.jpg" />
-      </a>
-    </td>
-  </tr>
+![](images/cozumel1.jpg)
+
+</td>
+<td rowspan="2" width="50%">
+
+![](images/cozumel2.jpg)
+
+</td>
+<td rowspan="2" width="30%">
+
+![](images/cozumel4.jpg)
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+![](images/cozumel3.jpg)
+
+</td>
+</tr>
 </table>
 
 # Cenota

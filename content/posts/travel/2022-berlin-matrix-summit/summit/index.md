@@ -14,6 +14,8 @@ image: images/first-day.jpg
 description: |
   The Berlin Matrix Community Summit was the first Matrix-only event. Hosted in
   Berlin, it was an action-packed meeting of many of the greatest Matrix-minds.
+build:
+  publishResources: false
 ---
 
 The main purpose of my trip this week was for the Berlin Matrix Community
@@ -22,8 +24,8 @@ is the chat protocol that Beeper (the company I work for) is building our chat
 app on top of. The protocol is developed openly, and has a large community of
 open source developers, projects, and businesses all building on top of Matrix.
 This summit was the first Matrix-only event. There have been other events at
-which Matrix had a large presence such as FOSDEM, but this was the first
-ever Matrix-only event.
+which Matrix had a large presence such as FOSDEM, but this was the first ever
+Matrix-only event.
 
 The people attending the event had quite diverse reasons for attending. Some,
 like myself, work full time at companies building on top of Matrix. Others are
@@ -75,7 +77,7 @@ conference, there were three tracks going at once. There were so many that I was
 not able to attend all of the ones I wanted to attend! I'll give a few
 highlights of talks and workshops that I enjoyed.
 
-* **Valentin's *Show us Your Homeserver* workshop**
+- **Valentin's _Show us Your Homeserver_ workshop**
 
   As one of the first workshops of the summit, Valentin facilitated a time for
   people to discuss their homeserver configurations.
@@ -86,12 +88,12 @@ highlights of talks and workshops that I enjoyed.
   homeserver admins and see what they were doing for their setups.
 
   {{<figure
-    src="./images/homeserver-workshop.jpg"
-    title="Having fun nerding out about homeserver setups"
-    caption="Valentin was a great facilitator and got us up and moving and talking to each other about our setups."
-  >}}
+src="images/homeserver-workshop.jpg"
+title="Having fun nerding out about homeserver setups"
+caption="Valentin was a great facilitator and got us up and moving and talking to each other about our setups."
+>}}
 
-* **Alex's Kubernetes talk**
+- **Alex's Kubernetes talk**
 
   In a presentation about his homeserver setup, Alex Babel discussed how he uses
   GitHub, ArgoCD, and Kubernetes to manage his Synapse instance. The talk was
@@ -101,7 +103,7 @@ highlights of talks and workshops that I enjoyed.
   grasp of what's going on, but it was easy to understand Alex's setup since it
   was at a smaller scale.
 
-* **Ben's Rust SDK talk**
+- **Ben's Rust SDK talk**
 
   The lead developer on the Rust SDK from Element presented their work on the
   Rust SDK. The talk discussed why the new SDK was being developed, examined the
@@ -110,7 +112,7 @@ highlights of talks and workshops that I enjoyed.
 
   ![Ben presenting the new Matrix Rust SDK](images/rust-sdk.jpg)
 
-* **Yan's Conclusion Talk**
+- **Yan's Conclusion Talk**
 
   Yan, one of the main summit organizers gave the keynote presentation to
   conclude the summit. His talk was about the future of Matrix, and he
@@ -193,8 +195,8 @@ nice, relaxing way to end the conference.
 
 ## Lange Nacht der Museen
 
-On Saturday night, a few of us headed out after dinner to *Lange Nacht der
-Museen*, an event in Berlin where the museums are open late into the night and
+On Saturday night, a few of us headed out after dinner to _Lange Nacht der
+Museen_, an event in Berlin where the museums are open late into the night and
 you can visit all of them for a discounted fee. Christian, networkException,
 Jan, and myself went, and we started at the Deutsches Technikmuseum which is a
 technology museum inside of an old train station. The museum had displays about
@@ -202,37 +204,40 @@ the history of many different technologies including automobiles, motorcycles,
 audio-visual equipment, networks, and computers.
 
 <figure>
-  <table class="gallery">
-    <tr>
-      <td>
-        <a href="./images/cray.jpg" target="_blank">
-          <img src="./images/cray.jpg"
-               alt="A CRAY-2 computer" />
-        </a>
-        <b>A CRAY-2 computer</b><br>
-        There are so many wires! Imagine having to debug which one was faulty!
-      </td>
-      <td>
-        <a href="./images/motorcycle.jpg" target="_blank">
-          <img src="./images/motorcycle.jpg"
-               alt="An early motorcycle" />
-        </a><br>
-        <b>An early motorcycle</b><br>
-        I don't think this would pass any modern safety inspections...
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2">
-        <a href="./images/benz.jpg" target="_blank">
-          <img src="./images/benz.jpg"
-               alt="An early Benz automobile" />
-        </a><br>
-        <b>An early Benz automobile</b><br>
-        This car came out a few years after the Ford Model T, and it's obvious
-        that even then, it was meant as a luxury alternative.
-      </td>
-    </tr>
-  </table>
+<table class="gallery">
+<tr>
+<td width="35%">
+
+![](images/cray.jpg "A CRAY-2 computer")
+
+**A CRAY-2 computer**
+
+There are so many wires! Imagine having to debug which one was faulty!
+
+</td>
+<td>
+
+![](images/motorcycle.jpg "An early motorcycle")
+
+**An early motorcycle**
+
+I don't think this would pass any modern safety inspections...
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+![](images/benz.jpg "An early Benz automobile")
+
+**An early Benz automobile**
+
+This car came out a few years after the Ford Model T, and it's obvious that even
+then, it was meant as a luxury alternative.
+
+</td>
+</tr>
+</table>
 </figure>
 
 After the Technikmuseum, we went over to the planetarium. It was about to close,

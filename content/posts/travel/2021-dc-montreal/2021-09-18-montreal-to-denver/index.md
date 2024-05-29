@@ -4,6 +4,8 @@ date: 2021-09-18T09:25:00-06:00
 categories: [Trip to D.C. and Montreal]
 tags: [Travel, Montreal, Denver]
 image: images/montreal-airport.png
+build:
+  publishResources: false
 ---
 
 This morning, I woke up at around 04:30 in order to head to the airport. Ian is
@@ -29,11 +31,8 @@ We all got to the gate and it was still a couple hours before our flight. We
 kinda regretted not sleeping more, but I took the opportunity to get some
 writing done and chat.
 
-{{<
-  figure
-  src="./images/montreal-airport.png"
-  link="./images/montreal-airport.png"
-  target="_blank"
+{{<figure
+  src="images/montreal-airport.png"
   title="Caroline, Ian, and myself waiting for our flights in Montreal"
 >}}
 

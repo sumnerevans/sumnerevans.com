@@ -4,6 +4,8 @@ Date: 2021-03-05T02:00:00-0600
 Categories: [Technology]
 tags: [Source Control, CI/CD, sourcehut, Open Source]
 draft: true
+build:
+  publishResources: false
 ---
 
 Over the past few years, mainstream git hosting services such as GitHub, GitLab,
@@ -134,12 +136,7 @@ actually very similar to the pull/merge request workflow of GitHub/GitLab, but
 it has one huge advantage: the external collaborator does not need to sign up
 for any service! They also do not need to use a web UI to submit the patches.
 
-{{< figure 
-      src="./images/mailing-list.png"
-      link="./images/mailing-list.png"
-      target="_blank"
-      title="sourcehut's mailing list interface" 
->}}
+![sourcehut's mailing list interface](images/mailing-list.png)
 
 ## It's Simple and Lightweight
 
@@ -179,12 +176,10 @@ JavaScript to perform DOM manipulation.
 For these reasons (and many more), sourcehut's interface is (and feels) much
 more performant than those of GitHub and GitLab.
 
-{{< figure 
-      src="./images/repo-summary.png"
-      link="./images/repo-summary.png"
-      target="_blank"
-      title="sourcehut's repository summary interface" 
-      caption="The sourcehut interface focuses on the content, rather than the UX chrome"
+{{<figure 
+  src="images/repo-summary.png"
+  title="sourcehut's repository summary interface" 
+  caption="The sourcehut interface focuses on the content, rather than the UX chrome"
 >}}
 
 ## Sourcehut's CI/CD Service is Fast, Powerful, and Flexible
@@ -204,11 +199,9 @@ sourcehut builds because all the build steps are performed on the same image
 that short build steps are reasonable because you do not incur any of the Docker
 warmup overhead between build steps.
 
-{{< figure 
-      src="./images/build-results.png"
-      link="./images/build-results.png"
-      target="_blank"
-      title="sourcehut's build results interface" 
+{{<figure 
+  src="images/build-results.png"
+  title="sourcehut's build results interface" 
 >}}
 
 The way that you manage secrets in sourcehut builds is also great. Unlike

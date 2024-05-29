@@ -103,9 +103,7 @@ you some of the highlights here.
     Europe. When I was inside the memorial, the scale of the monument made the
     extent of the horror that was the Holocaust.
 
-    [![Memorial to the Murdered Jews of Europe](./images/berlin1.jpg)](./images/berlin1.jpg)
-
-    *Memorial to the Murdered Jews of Europe*
+    ![Memorial to the Murdered Jews of Europe](images/berlin1.jpg)
 
 8.  We rode past the various embassies, the German Parliament, and the German
     President's house (the German President doesn't have any political power,

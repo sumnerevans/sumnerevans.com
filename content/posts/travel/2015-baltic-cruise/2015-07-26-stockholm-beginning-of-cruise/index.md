@@ -42,39 +42,38 @@ speak louder than words on this, so here they are.
 
 <center>
 <table class="gallery" width="60%">
-  <tr>
-    <td colspan="2">
-      <a href="./images/gamla-stan1.jpg" target="_blank">
-        <img src="./images/gamla-stan1.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td colspan="2">
 
-  <tr>
-    <td>
-      <a href="./images/gamla-stan2.jpg" target="_blank">
-        <img src="./images/gamla-stan2.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/gamla-stan3.jpg" target="_blank">
-        <img src="./images/gamla-stan3.jpg" />
-      </a>
-    </td>
-  </tr>
+![](images/gamla-stan1.jpg)
 
-  <tr>
-    <td>
-      <a href="./images/gamla-stan4.jpg" target="_blank">
-        <img src="./images/gamla-stan4.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/gamla-stan5.jpg" target="_blank">
-        <img src="./images/gamla-stan5.jpg" />
-      </a>
-    </td>
-  </tr>
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/gamla-stan2.jpg)
+
+</td>
+<td>
+
+![](images/gamla-stan3.jpg)
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+![](images/gamla-stan4.jpg)
+
+</td>
+<td>
+
+![](images/gamla-stan5.jpg)
+
+</td>
+</tr>
 </table>
 </center>
 

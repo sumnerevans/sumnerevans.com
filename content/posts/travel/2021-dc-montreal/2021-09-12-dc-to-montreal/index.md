@@ -3,6 +3,8 @@ title: "Washington D.C. to Montreal"
 date: 2021-09-12T09:25:00-06:00
 categories: [Trip to D.C. and Montreal]
 tags: [Travel, Washington D.C., National Building Museum, Montreal]
+build:
+  publishResources: false
 ---
 
 This morning, I met up with Sam, Jo, and Robby and we went to breakfast together
@@ -55,13 +57,7 @@ Beeper coworkers in-person, so that was quite cool. We got an Uber to the hotel:
 Hotel Monville. A bunch of the rest of team was at a bar and grill a few blocks
 away, so we dropped our bags and headed over to meet them.
 
-{{<
-  figure
-  src="./images/bar-and-grill.jpg"
-  link="./images/bar-and-grill.jpg"
-  target="_blank"
-  title="A selfie of the team at the restaurant"
->}}
+![A selfie of the team at the restaurant](images/bar-and-grill.jpg)
 
 There are still a few team members who will be arriving later tonight or
 tomorrow. We have a big week ahead with a lot of team meetings. While I enjoy

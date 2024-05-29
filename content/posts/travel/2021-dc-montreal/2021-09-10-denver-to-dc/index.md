@@ -97,11 +97,8 @@ the experience. It has RGB lights everywhere, and you can control them with a
 little screen thing. None of us quite knew what to think about it. But hey, I
 got it for $80/night.
 
-{{<
-  figure
-  src="./images/yotel-room.png"
-  link="./images/yotel-room.png"
-  target="_blank"
+{{<figure
+  src="images/yotel-room.png"
   title="A photo of my hotel room"
 >}}
 

@@ -45,10 +45,9 @@ included. The cost is sorta offset by the fact that they give you 2 free checked
 bags. I got a baguette which is surprisingly good for airplane food. I also got
 7-up. This time they gave me a cup and a full bottle of 7-up.
 
-[![](./images/airplane-meal.jpg)](./images/airplane-meal.jpg)
-*My Airplane Meal*
+![My Airplane Meal](images/airplane-meal.jpg)
 
-[![](./images/airplane-wing.jpg)](./images/airplane-wing.jpg)
+![](images/airplane-wing.jpg)
 
 I am literally typing just to stay awake so I apologize if this is too lengthy.
 I am determined to stay awake until 19:00 Stockholm time which is a full 9 hours

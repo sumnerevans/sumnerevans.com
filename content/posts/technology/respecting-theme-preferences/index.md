@@ -3,6 +3,8 @@ title: "Respecting Theme Preferences on Your Website"
 date: 2020-04-07T15:00:00-06:00
 categories: [Technology]
 tags: [JavaScript, Dark Theme, Dark Mode, CSS, HTML]
+build:
+  publishResources: false
 ---
 
 You may have noticed that dark themes are becoming more and more common across
@@ -105,7 +107,7 @@ theme for this website.
    following image:
 
    {{< figure
-      src="./images/2019-02-24-second-place.jpg"
+      src="images/2019-02-24-second-place.jpg"
       caption="My team winning Second Place at [HackCU V](../../hackathons/hackcu-v)."
     >}}
 

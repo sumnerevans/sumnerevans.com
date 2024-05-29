@@ -9,31 +9,35 @@ image: images/oak-alley-from-house.jpg
 This morning we woke up to very dense fog. (See below.) I don't think I've ever
 been in such dense fog for such a long time.
 
+<figure>
 <table class="gallery">
-  <tr>
-    <td colspan="2">
-      <a href="./images/fog-street.jpg" target="_blank">
-        <img src="./images/fog-street.jpg" alt="Fog on the street" />
-      </a>
-      Fog on the street
-    </td>
-  </tr>
+<tr>
+<td colspan="2">
 
-  <tr>
-    <td width="65%">
-      <a href="./images/fog-dock.jpg" target="_blank">
-        <img src="./images/fog-dock.jpg" alt="Fog at the dock" />
-      </a>
-      Fog at the dock
-    </td>
-    <td width="35%">
-      <a href="./images/fog-building.jpg" target="_blank">
-        <img src="./images/fog-building.jpg" alt="Fog obscuring the top of a building" />
-      </a>
-      Fog obscuring the top of a building
-    </td>
-  </tr>
+![](images/fog-street.jpg "Fog on the street")
+
+**Fog on the street**
+
+</td>
+</tr>
+<tr>
+<td width="65%">
+
+![](images/fog-dock.jpg "Fog at the dock")
+
+**Fog at the dock**
+
+</td>
+<td width="35%">
+
+![](images/fog-building.jpg)
+
+**Fog obscuring the top of a building**
+
+</td>
+</tr>
 </table>
+</figure>
 
 We ate breakfast downstairs and then headed out down Decatur St. (duh-kay-ter)
 to Toulouse St. (toe-loose) where we met a guide (BilliJo) for a plantation
@@ -73,73 +77,66 @@ overload. It was a good tour though, and I learned quite a bit.
 
 Below are some pictures from the Laura Plantation.
 
+<figure>
 <table class="gallery">
-  <tr class="picture-row">
-    <td colspan="4">
-      <a href="./images/laura-house.jpg" target="_blank">
-        <img src="./images/laura-house.jpg" alt="The Laura
-          Plantation House" />
-      </a>
-      The Laura Plantation House
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/laura-room.jpg" target="_blank">
-        <img src="./images/laura-room.jpg" alt="Room at Laura
-          Plantation" />
-      </a>
-      Room at Laura Plantation
-    </td>
-    <td>
-      <a href="./images/laura-crib.jpg" target="_blank">
-        <img src="./images/laura-crib.jpg" alt="Room at Laura
-          Plantation" />
-      </a>
-      Room at Laura Plantation
-    </td>
-    <td width="50%" colspan="2" rowspan="2">
-      <a href="./images/laura-tree.jpg" target="_blank">
-        <img src="./images/laura-tree.jpg" alt="Large tree at the
-          Laura Plantation" />
-      </a>
-      Large tree at the Laura Plantation
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/laura-portraits.jpg" target="_blank">
-        <img src="./images/laura-portraits.jpg" alt="Portraits" />
-      </a>
-      Portraits
-    </td>
-    <td>
-      <a href="./images/laura-yard.jpg" target="_blank">
-        <img src="./images/laura-yard.jpg" alt="The front yard of
-          Laura Plantation" />
-      </a>
-      The front yard of Laura Plantation
-    </td>
-  </tr>
+<tr class="picture-row">
+<td colspan="4">
+
+![](images/laura-house.jpg "The Laura Plantation House")
+
+**The Laura Plantation House**
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/laura-room.jpg "Room at Laura Plantation")
+
+**Room at Laura Plantation**
+
+</td>
+<td>
+
+![](images/laura-crib.jpg "Room at Laura Plantation")
+
+**Room at Laura Plantation**
+
+</td>
+<td width="50%" colspan="2" rowspan="2">
+
+![](images/laura-tree.jpg "Large tree at the Laura Plantation")
+
+**Large tree at the Laura Plantation**
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/laura-portraits.jpg "Portraits")
+
+**Portraits**
+
+</td>
+<td>
+
+![](images/laura-yard.jpg "The front yard of Laura Plantation")
+
+**The front yard of Laura Plantation**
+
+</td>
+</tr>
 </table>
+</figure>
 
 # Oak Alley Plantation
 
-After touring Laura Plantation, we went on to Oak Alley Plantation.
-Named after the avenue of Oak trees which create a beautiful canopy from
-the road to the plantation home.
+After touring Laura Plantation, we went on to Oak Alley Plantation. Named after
+the avenue of Oak trees which create a beautiful canopy from the road to the
+plantation home.
 
-<table class="gallery">
-  <tr>
-    <td>
-      <a href="./images/oak-alley-from-house.jpg" target="_blank">
-        <img src="./images/oak-alley-from-house.jpg" alt="View of
-          Oak Alley from the plantation house" />
-      </a>
-      View of Oak Alley from the plantation house
-    </td>
-  <tr>
-</table>
+![View of Oak Alley from the plantation house](images/oak-alley-from-house.jpg)
 
 We ate the lunch that we had gotten last night at Jimmy Johns and then walked
 around the reconstructed slave buildings. Then it was time for us to go on a
@@ -147,55 +144,63 @@ tour of the house. We went through about 10 rooms of the house which had been
 restored back to the state it was in during the residency of the Roman family in
 the 1800s. The Roman family did not have the same amount of drama as the DuParks
 (or at least it wasn't emphasised), but they, too owned many slaves who worked
-the plantation.  I’ll take this moment to say that the primary crop was sugar
+the plantation. I’ll take this moment to say that the primary crop was sugar
 cane.
 
 Here are some pictures of the Oak Alley Plantation.
 
+<figure>
 <table class="gallery">
-  <tr class="picture-row">
-    <td colspan="3">
-      <a href="./images/oak-alley.jpg" target="_blank">
-        <img src="./images/oak-alley.jpg" alt="Oak Alley" />
-      </a>
-      Oak Alley
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/oak-alley-mantle.jpg" target="_blank">
-        <img src="./images/oak-alley-mantle.jpg" alt="Mantle at
-          Oak Alley" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/oak-alley-table.jpg" target="_blank">
-        <img src="./images/oak-alley-table.jpg" alt="Dining table
-          at Oak Alley" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/oak-alley-bedroom.jpg" target="_blank">
-        <img src="./images/oak-alley-bedroom.jpg" alt="Bedroom at
-          Oak Alley" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/oak-alley-bedroom2.jpg" target="_blank">
-        <img src="./images/oak-alley-bedroom2.jpg" alt="Bedroom at
-          Oak Alley" />
-      </a>
-    </td>
-    <td colspan="2">
-      <a href="./images/oak-alley-garden.jpg" target="_blank">
-        <img src="./images/oak-alley-garden.jpg" alt="Garden at
-          Oak Alley" />
-      </a>
-    </td>
-  </tr>
+<tr class="picture-row">
+<td colspan="3">
+
+![](images/oak-alley.jpg "Oak Alley")
+
+**Oak Alley**
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/oak-alley-mantle.jpg "Mantle at Oak Alley")
+
+**Mantle at Oak Alley**
+
+</td>
+<td>
+
+![](images/oak-alley-table.jpg "Dining table at Oak Alley")
+
+**Dining table at Oak Alley**
+
+</td>
+<td>
+
+![](images/oak-alley-bedroom.jpg "Bedroom at Oak Alley")
+
+**Bedroom at Oak Alley**
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/oak-alley-bedroom2.jpg "Bedroom at Oak Alley")
+
+**Bedroom at Oak Alley**
+
+</td>
+<td colspan="2">
+
+![](images/oak-alley-garden.jpg "Garden at Oak Alley")
+
+**Garden at Oak Alley**
+
+</td>
+</tr>
 </table>
+</figure>
 
 # Back in New Orleans
 
@@ -205,5 +210,5 @@ Rouge (bat-on r-oo-j). In New Orleans we wandered our way through the French
 Quarter to the Red Fish Grill. We had BBQ Oysters for an appetizer, they were
 basically like BBQ chicken wings. For my main course I had a really good Gumbo.
 
-After that we came back to the hotel and I worked on writing this.  Tomorrow we
+After that we came back to the hotel and I worked on writing this. Tomorrow we
 are doing a Segway tour of the French Quarter, so that should be fun.

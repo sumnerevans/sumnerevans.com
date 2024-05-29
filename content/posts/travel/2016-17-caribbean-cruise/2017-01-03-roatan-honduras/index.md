@@ -33,25 +33,25 @@ hair. They don't have claws, so they couldn't dig in, they were just grabbing at
 my hair and pulling it. It was a definitely unique experience though.
 
 <table class="gallery">
-  <tr>
-    <td rowspan="2" width="70%">
-      <a href="./images/roatan1.jpg" target="_blank">
-        <img src="./images/roatan1.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/roatan2.jpg" target="_blank">
-        <img src="./images/roatan2.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/roatan3.jpg" target="_blank">
-        <img src="./images/roatan3.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td rowspan="2" width="70%">
+
+![](images/roatan1.jpg)
+
+</td>
+<td>
+
+![](images/roatan2.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/roatan3.jpg)
+
+</td>
+</tr>
 </table>
 
 Next we went by the cage of some spider monkeys. Isaac warned us not to stand
@@ -66,18 +66,18 @@ had a different bird (I don't remember what it was called) and held and fed it
 too.
 
 <table class="gallery">
-  <tr>
-    <td>
-      <a href="./images/roatan4.jpg" target="_blank">
-        <img src="./images/roatan4.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/roatan5.jpg" target="_blank">
-        <img src="./images/roatan5.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td>
+
+![](images/roatan4.jpg)
+
+</td>
+<td>
+
+![](images/roatan5.jpg)
+
+</td>
+</tr>
 </table>
 
 The last animal that we held was a sloth. Hannah was really excited about
@@ -102,18 +102,18 @@ through the jungle and then down to the beach and into the water. It was really
 fun riding them in the water.
 
 <table class="gallery">
-  <tr>
-    <td>
-      <a href="./images/roatan6.jpg" target="_blank">
-        <img src="./images/roatan6.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/roatan7.jpg" target="_blank">
-        <img src="./images/roatan7.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td>
+
+![](images/roatan6.jpg)
+
+</td>
+<td>
+
+![](images/roatan7.jpg)
+
+</td>
+</tr>
 </table>
 
 # Snorkeling
@@ -138,47 +138,47 @@ Barrier reef. He said that there was a good variety of fish, but the coral was
 not doing so good. I thought it was pretty cool and I had a lot of fun.
 
 <table class="gallery">
-  <tr>
-    <td colspan="3">
-      <a href="./images/roatan14.jpg" target="_blank">
-        <img src="./images/roatan14.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/roatan8.jpg" target="_blank">
-        <img src="./images/roatan8.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/roatan9.jpg" target="_blank">
-        <img src="./images/roatan9.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/roatan10.jpg" target="_blank">
-        <img src="./images/roatan10.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/roatan11.jpg" target="_blank">
-        <img src="./images/roatan11.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/roatan12.jpg" target="_blank">
-        <img src="./images/roatan12.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/roatan13.jpg" target="_blank">
-        <img src="./images/roatan13.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td colspan="3">
+
+![](images/roatan14.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/roatan8.jpg)
+
+</td>
+<td>
+
+![](images/roatan9.jpg)
+
+</td>
+<td>
+
+![](images/roatan10.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/roatan11.jpg)
+
+</td>
+<td>
+
+![](images/roatan12.jpg)
+
+</td>
+<td>
+
+![](images/roatan13.jpg)
+
+</td>
+</tr>
 </table>
 
 

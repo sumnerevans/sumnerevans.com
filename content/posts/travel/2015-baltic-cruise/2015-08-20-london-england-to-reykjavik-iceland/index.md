@@ -40,11 +40,11 @@ rooms, a family room and then a bedroom with panoramic views of the lake. I
 think that our suite is the best in the hotel. I'll post some pictures of the
 room here.
 
-[![](./images/iceland1.jpg)](./images/iceland1.jpg)
+![](images/iceland1.jpg)
 
-[![](./images/iceland2.jpg)](./images/iceland2.jpg)
+![](images/iceland2.jpg)
 
-[![](./images/iceland3.jpg)](./images/iceland3.jpg)
+![](images/iceland3.jpg)
 
 ------------------------------------------------------------------------
 

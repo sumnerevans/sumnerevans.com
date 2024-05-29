@@ -17,7 +17,7 @@ to the advancement of aviation. They had everything from Spitfires to Lockheed
 Martin multi-purpose, supersonic war planes, dirigible cockpits to vertical and
 horizontal takeoff airplanes.
 
-[![](./images/london-planes1.jpg)](./images/london-planes1.jpg)
+![](images/london-planes1.jpg)
 
 On one of the walls, there was a large display outlining aeronautical
 advancements each year from the start of the 1900s to 2001. It was very

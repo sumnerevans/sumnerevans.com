@@ -113,27 +113,28 @@ where the human sacrifices occurred, so if the celebrations moved to that
 temple, it was almost guaranteed that there would be some human sacrifices.
 
 <table class="gallery">
-  <tr>
-    <td colspan="2">
-      <a href="./images/costa-maya1.jpg" target="_blank">
-        <img src="./images/costa-maya1.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td colspan="2">
 
-  <tr>
-    <td>
-      <a href="./images/costa-maya2.jpg" target="_blank">
-        <img src="./images/costa-maya2.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/costa-maya3.jpg" target="_blank">
-        <img src="./images/costa-maya3.jpg" alt="The main temple" />
-      </a>
-      The main temple
-    </td>
-  </tr>
+![](images/costa-maya1.jpg)
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+![](images/costa-maya2.jpg)
+
+</td>
+<td>
+
+![](images/costa-maya3.jpg)
+
+**The main temple**
+
+</td>
+</tr>
 </table>
 
 # How we Know This Stuff
@@ -188,30 +189,29 @@ For the meal we were served empanadas, rice, chicken, beans and a few other
 items. It was a very good meal.
 
 <table class="gallery">
-  <tr>
-    <td colspan="3">
-      <a href="./images/costa-maya4.jpg" target="_blank">
-        <img src="./images/costa-maya4.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td colspan="3">
 
-  <tr>
-    <td>
-      <a href="./images/costa-maya5.jpg" target="_blank">
-        <img src="./images/costa-maya5.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/costa-maya6.jpg" target="_blank">
-        <img src="./images/costa-maya6.jpg" alt="The main temple" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/costa-maya7.jpg" target="_blank">
-        <img src="./images/costa-maya7.jpg" alt="The main temple" />
-      </a>
-    </td>
-  </tr>
+![](images/costa-maya4.jpg)
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+![](images/costa-maya5.jpg)
+
+</td>
+<td>
+
+![](images/costa-maya6.jpg)
+
+</td>
+<td>
+
+![](images/costa-maya7.jpg)
+
+</td>
+</tr>
 </table>
-

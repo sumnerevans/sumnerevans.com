@@ -10,6 +10,8 @@ tags:
   - California
 description: "This week, I went to see my friend, Jack, in Oakland."
 image: images/golden-gate-bridge.jpg
+build:
+  publishResources: false
 ---
 
 This week, I went to Oakland to visit a friend Jack Garner, a friend from school
@@ -19,9 +21,9 @@ two days and then we both took Friday and Monday off for a long weekend.
 
 ## Working from California
 
-On Wednesday, we both worked from his apartment. That is the nice thing
-about having a remote job in software engineering: you can work anywhere that
-has Wi-Fi. In the evening, we went to a trendy food court. I had a nice bowl of
+On Wednesday, we both worked from his apartment. That is the nice thing about
+having a remote job in software engineering: you can work anywhere that has
+Wi-Fi. In the evening, we went to a trendy food court. I had a nice bowl of
 ramen.
 
 On Thursday, I took my standup meeting from his apartment, and then we took the
@@ -36,8 +38,8 @@ the tower and he headed to the Salesforce floors for the rest of the day.
 At lunch, we met up to go to a Vietnamese place. Another Mines student, Brooks,
 who just started at Salesforce, joined us. Both Brooks and Jack were students in
 the
-[Architecture class I taught]({{< ref "/portfolio#experience-adjunct-mines" >}})
-a couple semesters ago, so it was a fun reunion.
+[Architecture class I taught]({{<ref"/portfolio#experience-adjunct-mines">}}) a
+couple semesters ago, so it was a fun reunion.
 
 ## Golden Gate Park
 
@@ -59,18 +61,18 @@ foliage. I'm no botanist, but I really liked looking at all the big, bright
 flowers.
 
 <table class="gallery">
-  <tr>
-    <td>
-      <a href="./images/flowers1.jpg" target="_blank">
-        <img src="./images/flowers1.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/flowers2.jpg" target="_blank">
-        <img src="./images/flowers2.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td>
+
+![](images/flowers1.jpg)
+
+</td>
+<td>
+
+![](images/flowers2.jpg)
+
+</td>
+</tr>
 </table>
 
 By the time we were done wandering at the gardens, it was well into the
@@ -158,8 +160,8 @@ got a good view.
 We stopped for lunch at Fog Harbor Fish House. I had the Seafood Penne and it
 was delicious. The seafood really is so much better on the coasts...
 
-By the time we were done with lunch, the fog had lifted even more, so we took
-a bus over to the Golden Gate Bridge.
+By the time we were done with lunch, the fog had lifted even more, so we took a
+bus over to the Golden Gate Bridge.
 
 {{<figure
   src="images/golden-gate-bridge.jpg"
@@ -193,12 +195,12 @@ regularly. Neither of us had really played since then (especially because the
 pandemic closed things down). We played for a couple hours in the morning, and
 then he took me to the airport for my mid-afternoon flight.
 
------------------
+---
 
 I enjoyed spending time in California. It was the first time I'd been able to
 visit the state for an extended period of time. The only other time that I'd
 spent time in California was for the
-[Facebook Global Hackathon Finals]({{< ref "../../hackathons/2018-11-16-facebook-hackathon-the-competition/index.rst" >}}),
+[Facebook Global Hackathon Finals]({{<ref"../../hackathons/2018-11-16-facebook-hackathon-the-competition/index.rst">}}),
 but we were at Facebook headquarters and the hotel for almost the entire time.
 Funnily enough, Jack was on my team for that hackathon, and I'd consider our win
 at that hackathon to be the crowning achievement of my college career, and I

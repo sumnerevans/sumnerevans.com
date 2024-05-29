@@ -4,16 +4,19 @@ date: 2018-11-03T21:04:00-0600
 categories: [School]
 tags: [ICPC, Competitive Programming, Mines]
 image: images/2018-icpc.jpg
+build:
+  publishResources: false
 ---
 
 Today I competed in the International Collegiate Programming Contest (ICPC)
 Rocky Mountain Regionals at Colorado State University (CSU).
 
-.. figure:: ./images/2018-icpc.jpg
-   :align: center
-   :alt: CS@Mines at ICPC
-
-   Photo Credit: CPW
+{{<figure
+  src="images/2018-icpc.jpg"
+  alt="CS@Mines at ICPC"
+  title="CS@Mines at ICPC"
+  attr="CPW"
+>}}
 
 ICPC is the International Collegiate Programming Contest. It's an algorithmic
 competition for college students. I've competed in ICPC three times now, but

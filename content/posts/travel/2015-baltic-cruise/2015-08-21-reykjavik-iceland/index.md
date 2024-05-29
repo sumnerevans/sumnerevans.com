@@ -4,6 +4,8 @@ Date: 2015-08-21T11:37:00-0600
 Categories: [Baltic Cruise and Northern Europe]
 Tags: [Iceland, Reykjavík]
 image: images/iceland6.jpg
+build:
+  publishResources: true
 ---
 
 Today we did a tour of the Golden Circle, the main sites in the southwest of
@@ -23,7 +25,7 @@ it was formed millions of years ago, I postulate that it was formed during the
 Flood. I mean, the Bible does say that the “fountains of the great deep burst
 forth” (Gen. 7:11 ESV).  Anyway, back to what we did.
 
-[![Geothermal Vents](./images/iceland4.jpg "Geothermal Vents")](./images/iceland4.jpg)
+![Geothermal Vents](images/iceland4.jpg)
 
 We continued driving through beautiful scenery and after about an hours ride, we
 stopped at a place near a large lake. This location was the seat of government
@@ -35,13 +37,13 @@ was filmed close by. (I'm not saying this because I watch/endorse *Game of
 Thrones*, I just had already thought that it was a great place for film and she
 confirmed that when she mentioned *Game of Thrones*.)
 
-[![Beautiful scenery](./images/iceland5.jpg "Beautiful scenery")](./images/iceland5.jpg)
+![Beautiful scenery](images/iceland5.jpg)
 
 We then rode to a beautiful waterfall, the biggest in Iceland (I think).  At
 this stop we also ate lunch. Mom and I both tried the traditional Icelandic lamb
 soup. I thought it was pretty good.
 
-[![Waterfall](./images/iceland6.jpg "Waterfall")](./images/iceland6.jpg)
+![Waterfall](images/iceland6.jpg)
 
 Then we rode to the Geyser area. The first recorded discovery of a geyser was
 the main geyser in the area. It was named Geyser and all other geysers are named
@@ -55,10 +57,10 @@ We watched it spout a few other times as well. I was able to get a burst photo
 of the water.
 
 <center>
-<a href="./images/iceland-geyser.jpg">
-  <img alt="Geyser" src="./images/iceland-geyser.jpg" /><br />
-  Geyser
+<a href="./images/iceland-geyser.gif">
+  <img alt="Geyser" src="./images/iceland-geyser.gif" /><br />
 </a>
+Geyser
 </center>
 
 There was also a small pool that was so clear that you could see down into the

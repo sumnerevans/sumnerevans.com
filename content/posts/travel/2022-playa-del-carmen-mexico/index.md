@@ -11,14 +11,16 @@ tags:
   - Work
 image: images/catamaran-team.jpg
 description: "A couple weeks ago, my company had our week-long 2022 Q1 work retreat in Playa del Carmen, Mexico. These are my thoughts and reflections on the trip."
+build:
+  publishResources: false
 ---
 
 A couple weeks ago, my company had our week-long 2022 Q1 work retreat in Playa
-del Carmen, Mexico (about an hour south of Cancun). As with the [previous work
-trip](../2021-dc-montreal/2021-09-13-17-montreal), the purpose of the retreat
-was for us to get to work together in person and to bond as a team. I got to see
-many of the people who were in Montreal again, and got to meet some of the new
-team members who have joined the company since September.
+del Carmen, Mexico (about an hour south of Cancun). As with the
+[previous work trip](../2021-dc-montreal/2021-09-13-17-montreal), the purpose of
+the retreat was for us to get to work together in person and to bond as a team.
+I got to see many of the people who were in Montreal again, and got to meet some
+of the new team members who have joined the company since September.
 
 Seventeen team-members were able to attend this retreat. We rented two Airbnb's
 for the team and we spent our days at the larger of the two. Because we were all
@@ -31,8 +33,7 @@ spacious and worked well for us. The house had a really nice family room with a
 couch that became a popular location to get some work done. It also had a nice
 outdoor patio, a pool and hot tub, and hammocks.
 
-Doing Some Work
-===============
+# Doing Some Work
 
 On Monday, we had a retrospective meeting where we discussed things that we
 thought had gone well since the last retreat, things that we thought had gone
@@ -57,9 +58,9 @@ some specifics about what that will look like over the next few months.
 
 Throughout the week, we had a combination of normal work tasks and ad hoc
 meetings. My primary goal this week was to pair with
-[Finn](https://gitlab.com/thefinn93) on some tasks related to the [Signal
-bridge](https://github.com/mautrix/signal). Finn is a new member of the team who
-joined a couple months ago. He is the author of
+[Finn](https://gitlab.com/thefinn93) on some tasks related to the
+[Signal bridge](https://github.com/mautrix/signal). Finn is a new member of the
+team who joined a couple months ago. He is the author of
 [signald](https://gitlab.com/signald/signald) and we hired him partially so that
 we could have in-house expertise on signald (which runs alongside
 mautrix-signal) and Signal itself. Our goal was to migrate signald to use
@@ -90,29 +91,23 @@ was waking up about the same time and the first thing he heard from me was "good
 morning, have you checked the infra chat?". I'm not sure if that's a better or
 worse way of hearing about production issues than getting paged via PagerDuty.
 
-Squashing Some Bugs
-===================
+# Squashing Some Bugs
 
 A few minutes walk away from the Airbnb was a Gelato shop that we visited on
 multiple occasions. One evening, a group of us were enjoying our frozen treats,
 and Finn got into a conversation with Wellington (one of our iOS developers). It
 went something like this:
 
-**Finn:** Oh, I found a bug in the iOS app.<br>
-**Wellington:** Oh, tell me about it<br>
-**Finn:** Ok, so this is a very important part of the user story for this
-ticket. I was eating some ice cream...<br>
-**Wellington:** What flavor?<br>
-**Everyone:** <<Laughing>><br>
-**Finn:** Chocolate, that's very important to reproducing the bug. Well, anyway,
-when I share images, it doesn't work.<br>
-**Wellington:** What version are you on?<br>
-**Finn:** The latest, I think?<br>
-**Wellington:** Let me see...<br>
-**Finn:** <<opens app>><br>
-**Wellington:** Oh, that's an old version. We fixed it already.<br>
-**Finn:** Wait, what do you mean, I updated Beeper yesterday.<br>
-**Wellington:** We fixed that today.
+**Finn:** Oh, I found a bug in the iOS app.<br> **Wellington:** Oh, tell me
+about it<br> **Finn:** Ok, so this is a very important part of the user story
+for this ticket. I was eating some ice cream...<br> **Wellington:** What
+flavor?<br> **Everyone:** <<Laughing>><br> **Finn:** Chocolate, that's very
+important to reproducing the bug. Well, anyway, when I share images, it doesn't
+work.<br> **Wellington:** What version are you on?<br> **Finn:** The latest, I
+think?<br> **Wellington:** Let me see...<br> **Finn:**<<opens app>><br>
+**Wellington:** Oh, that's an old version. We fixed it already.<br> **Finn:**
+Wait, what do you mean, I updated Beeper yesterday.<br> **Wellington:** We fixed
+that today.
 
 And sure enough, a whole new interface for uploading photos was implemented in
 the latest version and worked much better. I guess that just shows how quickly
@@ -120,8 +115,7 @@ we are iterating and improving the product! Oh, and we decided we would need to
 visit the gelato shop again just to be sure that we were unable to reproduce the
 bug.
 
-Getting to Know My Coworkers
-============================
+# Getting to Know My Coworkers
 
 One of the main goals of the retreat was to help the team members bond with one
 another. We had plenty of time to do that during the week of the retreat. The
@@ -138,11 +132,9 @@ up with Eric and me coming into the room at 3 in the morning). Let's just say we
 weren't up very early the next morning. We had a few more hot tub evenings, but
 none of them went that late again.
 
-{{< figure
-      src="./images/hot-tub.jpg"
-      link="./images/hot-tub.jpg"
-      target="_blank"
-      title="Hanging out in the hot tub with Eric (left) and Finn (right)"
+{{<figure
+  src="images/hot-tub.jpg"
+  title="Hanging out in the hot tub with Eric (left) and Finn (right)"
 >}}
 
 On the two nights that we had meals in downtown Playa del Carmen (more details
@@ -166,8 +158,7 @@ especially the case for the iOS and Android developers since I don't interact
 with them very often at all. Now, I know people on every team and feel like I
 have people I can reach out to when I encounter issues or have questions.
 
-Eating Well
-===========
+# Eating Well
 
 Every meal (except two dinners and one lunch) was prepared by private chefs who
 came to the Airbnb and fixed food for us. Every meal was amazing. All of the
@@ -175,37 +166,39 @@ meals featured Mexican cuisine, and were delicious. They laid out the meals
 family style on the large dining table, and we enjoyed the food immensely.
 
 <figure>
-  <table class="gallery">
-    <tr>
-      <td colspan="2">
-        <a href="./images/private-chef-food.jpg" target="_blank">
-          <img src="./images/private-chef-food.jpg"
-               alt="Our first dinner prepared by our private chefs, laid out on
-                    the dining room table." />
-        </a>
-        <b>The first dinner that the chefs made for us</b><br>
-        We were very hungry since we'd all been travelling all day.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="./images/private-chef-food-breakfast.jpg" target="_blank">
-          <img src="./images/private-chef-food-breakfast.jpg"
-               alt="One of the great breakfasts that we were served." />
-        </a><br>
-        <b>One of the fantastic breakfasts that we were served</b><br><br>
-      </td>
-      <td>
-        <a href="./images/private-chef-food-lunch.jpg" target="_blank">
-          <img src="./images/private-chef-food-lunch.jpg"
-               alt="One of the lunches that we were served." />
-        </a><br>
-        <b>One of the lunches that we were served</b><br>
-        The chefs used seafood in many of the dishes, and they were quite
-        delicious.
-      </td>
-    </tr>
-  </table>
+<table class="gallery">
+<tr>
+<td colspan="2">
+
+![](images/private-chef-food.jpg "Our first dinner prepared by our private chefs, laid out on the dining room table.")
+
+**The first dinner that the chefs made for us**
+
+We were very hungry since we'd all been travelling all day.
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/private-chef-food-breakfast.jpg "One of the great breakfasts that we were served.")
+
+**One of the great breakfasts that we were served.**
+
+<br>
+
+</td>
+<td>
+
+![](images/private-chef-food-lunch.jpg "One of the lunches that we were served.")
+
+**One of the lunches that we were served**
+
+The chefs used seafood in many of the dishes, and they were quite delicious.
+
+</td>
+</tr>
+</table>
 </figure>
 
 On Tuesday evening, we went to Porfirio's in downtown Playa del Carmen. I ended
@@ -217,51 +210,48 @@ myself agreed, and the food was finished table-side in a very cool show by the
 waiter.
 
 <figure>
-  <table class="gallery">
-    <tr>
-      <td>
-        <a href="./images/porfirios-table.jpg" target="_blank">
-          <img src="./images/porfirios-table.jpg"
-               alt="My tablemates at Porfirio's" />
-        </a><br>
-        <b>My tablemates at Porfirio's</b><br>
-        Left to right: Josh, me, Bradley, Brad, Finn, Sarah, Ian and Kilian
-      </td>
-      <td>
-        <a href="./images/porfirios-drinks.jpg" target="_blank">
-          <img src="./images/porfirios-drinks.jpg"
-               alt="Enjoying a cocktail with the team" />
-        </a><br>
-        <b>Enjoying a cocktail with the team</b><br>
-        Don't know what it was, but it went down way too smoothly.
-      </td>
-      <td>
-        <a href="./images/porfirios-surf-and-turf.jpg" target="_blank">
-          <img src="./images/porfirios-surf-and-turf.jpg"
-               alt="Our Surf & Turf meal" />
-        </a><br>
-        <b>Our Surf & Turf meal</b><br>
-        When the CTO asks you if you want Surf & Turf, the answer is "yes".
-      </td>
-    </tr>
-    <tr>
-      <td colspan="3">
-        <a href="./images/porfirios-surf-and-turf-finish.webm" target="_blank">
-          <video
-            src="./images/porfirios-surf-and-turf-finish.webm"
-            class="align-center"
-            width="100%"
-            muted="true"
-            autoplay="true"
-            controls="true"
-            loop="true">
-          </video>
-        </a>
-        <b>Our surf & turf being finished at the table</b><br>
-        The whole experience was super over-the-top, but I loved it.
-      </td>
-    </tr>
-  </table>
+<table class="gallery">
+<tr>
+<td>
+
+![](images/porfirios-table.jpg "My tablemates at Porfirio's")
+
+**My tablemates at Porfirio's**
+
+Left to right: Josh, me, Bradley, Brad, Finn, Sarah, Ian and Kilian
+
+</td>
+<td>
+
+![](images/porfirios-drinks.jpg "Enjoying a cocktail with the team")
+
+**Enjoying a cocktail with the team**
+
+Don't know what it was, but it went down way too smoothly.
+
+</td>
+<td>
+
+![](images/porfirios-surf-and-turf.jpg "Our Surf & Turf meal")
+
+**Our Surf & Turf meal**
+
+When the CTO asks you if you want Surf & Turf, the answer is "yes".
+
+</td>
+</tr>
+<tr>
+<td colspan="3">
+
+{{< youtube "-v9NdVszsWk" >}}
+
+**Our surf & turf being finished at the table**
+
+The whole experience was super over-the-top, but I loved it.
+
+</td>
+</tr>
+</table>
 </figure>
 
 On Friday, we went to a rooftop restaurant called Catch. We had a great long
@@ -274,19 +264,13 @@ Languages at Colorado School of Mines]({{< ref
 class), I am always interested in talking about industry applications of
 academic concepts such as functional programming.
 
-{{< figure
-      src="./images/catch-table.jpg"
-      link="./images/catch-table.jpg"
-      target="_blank"
-      title="Our table at Catch had a fantastic view"
->}}
+![Our table at Catch had a fantastic view](images/catch-table.jpg)
 
 The food throughout the entire week was fantastic. At one point, someone asked
 everyone if I had any food allergies. I said that "I'm allergic to bad food" and
 luckily for me, the food was amazing the entire week.
 
-We're Going to Need a Bigger Boat
-=================================
+# We're Going to Need a Bigger Boat
 
 This retreat we had a full-day private catamaran excursion to Isla Mujeres. We
 had a bus take us from the Airbnb to the dock in Cancun where we were to embark
@@ -299,68 +283,73 @@ Once on the island, we had lunch at a beach-side buffet restaurant and then we
 did a golf cart tour around the island.
 
 <figure>
-  <table class="gallery">
-    <tr>
-      <td colspan="2">
-        <a href="./images/catamaran-team.jpg" target="_blank">
-          <img src="./images/catamaran-team.jpg"
-               alt="Enjoying the beautiful water off the coast of Isla Mujeres
-               with the best team I could dream of" />
-        </a>
-        <b>Enjoying the beautiful water off the coast of Isla Mujeres with the
-        best team in tech</b><br>
-        Left to right: foreground: Gerardo, Eric R., Scott, Annie, Eric M., Ian,
-        Tiago; background: Josh, Brad, Bradley, me, Kilian, Finn, Michelle,
-        Sarah, Wellington.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="./images/catamaran-beach.jpg" target="_blank">
-          <img src="./images/catamaran-beach.jpg"
-               alt="My tablemates at Porfirio's" />
-        </a><br>
-        <b>Enjoying the beach before our golf cart tour</b><br>
-        Left to right: foreground: Kilian, Ian, Wellington; background: Tiago,
-        Scott, Michelle, Annie, Finn, Josh.
-      </td>
-      <td>
-        <a href="./images/catamaran-golf-carts.jpg" target="_blank">
-          <img src="./images/catamaran-golf-carts.jpg"
-               alt="Our golf cart caravan going around the island" />
-        </a><br>
-        <b>Our golf cart caravan on our tour around the island</b><br>
-        The views were beautiful all around the island, and our guide made the
-        tour very enjoyable.
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="./images/catamaran-island-views.jpg" target="_blank">
-          <img src="./images/catamaran-island-views.jpg"
-               alt="Great views of the Gulf of Mexico from the far side of Isla
-               Mujeres" />
-        </a><br>
-        <b>Great views of the Gulf of Mexico from the eastern of Isla Mujeres</b><br>
-      </td>
-      <td>
-        <a href="./images/catamaran-nap.jpg" target="_blank">
-          <img src="./images/catamaran-nap.jpg"
-               alt="The team relaxing on our way back to Cancun" />
-        </a><br>
-        <b>The team relaxing after a hard day of work</b><br>
-        The ride back to Cancun was beautiful and very relaxing. Maybe a bit
-        <i>too</i> relaxing :)
-      </td>
-    </tr>
-  </table>
+<table class="gallery">
+<tr>
+<td colspan="2">
+
+![](images/catamaran-team.jpg "Enjoying the beautiful water off the coast of Isla Mujeres with the best team I could dream of")
+
+**Enjoying the beautiful water off the coast of Isla Mujeres with the best team
+in tech**
+
+Left to right: foreground: Gerardo, Eric R., Scott, Annie, Eric M., Ian, Tiago;
+background: Josh, Brad, Bradley, me, Kilian, Finn, Michelle, Sarah, Wellington.
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/catamaran-beach.jpg "Enjoying the beach before our golf cart tour")
+
+**Enjoying the beach before our golf cart tour**
+
+Left to right: foreground: Kilian, Ian, Wellington; background: Tiago, Scott,
+Michelle, Annie, Finn, Josh.
+
+<br>
+
+</td>
+<td>
+
+![](images/catamaran-golf-carts.jpg "Our golf cart caravan going around the island")
+
+**Our golf cart caravan on our tour around the island**
+
+The views were beautiful all around the island, and our guide made the tour very
+enjoyable.
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/catamaran-island-views.jpg "Great views of the Gulf of Mexico from the far side of Isla Mujeres")
+
+**Great views of the Gulf of Mexico from the eastern of Isla Mujeres**
+
+<br>
+
+</td>
+<td>
+
+![](images/catamaran-nap.jpg "The team relaxing on our way back to Cancun")
+
+**The team relaxing after a hard day of work**
+
+The ride back to Cancun was beautiful and very relaxing. Maybe a bit
+<i>too</i> relaxing :)
+
+</td>
+</tr>
+</table>
 </figure>
 
 The boat tour was one of the most exotic things that I've ever done. It's
 definitely the most exotic thing I've ever done on a work trip. It's very unique
 being at a company at this size. If we had even a few more people, we'd need a
 bigger boat. Not that that would be a bad thing, it would just be different. I
-hope that Beeper *does* eventually need a bigger boat, because that would mean
+hope that Beeper _does_ eventually need a bigger boat, because that would mean
 we are growing and achieving our goals. But right now, I'm grateful that I get
 to be a part of the company while we are at this size.
 

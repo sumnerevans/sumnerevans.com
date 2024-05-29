@@ -26,36 +26,36 @@ took pictures of us as we took off and sent them to us. (We returned the favor
 of course.)
 
 <table class="gallery">
-  <tr>
-    <td colspan="2">
-      <a href="./images/harvest-caye1.jpg" target="_blank">
-        <img src="./images/harvest-caye1.jpg" />
-      </a>
-    </td>
-    <td colspan="2">
-      <a href="./images/harvest-caye2.jpg" target="_blank">
-        <img src="./images/harvest-caye2.jpg" />
-      </a>
-    </td>
-    <td colspan="2">
-      <a href="./images/harvest-caye3.jpg" target="_blank">
-        <img src="./images/harvest-caye3.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td colspan="2">
 
-  <tr>
-    <td colspan="3">
-      <a href="./images/harvest-caye4.jpg" target="_blank">
-        <img src="./images/harvest-caye4.jpg" />
-      </a>
-    </td>
-    <td colspan="3">
-      <a href="./images/harvest-caye5.jpg" target="_blank">
-        <img src="./images/harvest-caye5.jpg" />
-      </a>
-    </td>
-  </tr>
+![](images/harvest-caye1.jpg)
+
+</td>
+<td colspan="2">
+
+![](images/harvest-caye2.jpg)
+
+</td>
+<td colspan="2">
+
+![](images/harvest-caye3.jpg)
+
+</td>
+</tr>
+
+<tr>
+<td colspan="3">
+
+![](images/harvest-caye4.jpg)
+
+</td>
+<td colspan="3">
+
+![](images/harvest-caye5.jpg)
+
+</td>
+</tr>
 </table>
 
 After parasailing, I swam in the pool for a few minutes and then headed back to

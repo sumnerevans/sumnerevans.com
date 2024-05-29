@@ -8,7 +8,7 @@ image: images/wwii-museum.jpg
 
 Today we spent the entire day at the National World War II Museum.
 
-[![](./images/wwii-museum.jpg)](./images/wwii-museum.jpg)
+![](images/wwii-museum.jpg)
 
 There were three main exhibits: an exhibit about the European Theatre of the war
 and an exhibition about the Pacific Theatre of the war and an exhibit with some
