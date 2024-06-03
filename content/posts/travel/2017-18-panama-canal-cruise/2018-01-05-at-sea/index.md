@@ -12,7 +12,7 @@ and chess. The waters were a bit rough, but not too bad throughout the day.
 
 This evening was formal night. I dressed up all nice in my suit and tie.
 
-[![Hannah and I during formal night](./images/formal-night.jpg)](./images/formal-night.jpg)
+![Hannah and I during formal night](images/formal-night.jpg)
 
 After dinner, we went to play trivia. Mom and I have been going the past few
 nights and we've kinda formed a team with two other couples. One of the couples

@@ -21,31 +21,31 @@ the Atlantic side. Then, traversing the locks up to Gatun Lake took almost
 another hour.
 
 <table class="gallery">
-  <tr>
-    <td>
-      <a href="./images/panama1.jpg" target="_blank">
-        <img src="./images/panama1.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/panama2.jpg" target="_blank">
-        <img src="./images/panama2.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td>
 
-  <tr>
-    <td>
-      <a href="./images/panama3.jpg" target="_blank">
-        <img src="./images/panama3.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/panama4.jpg" target="_blank">
-        <img src="./images/panama4.jpg" />
-      </a>
-    </td>
-  </tr>
+![](images/panama1.jpg)
+
+</td>
+<td>
+
+![](images/panama2.jpg)
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+![](images/panama3.jpg)
+
+</td>
+<td>
+
+![](images/panama4.jpg)
+
+</td>
+</tr>
 </table>
 
 
@@ -61,18 +61,18 @@ technological wonder of the lock systems. We were also inside of the locks,
 we could see the sides of the locks and even reach out and touch the walls.
 
 <table class="gallery">
-  <tr>
-    <td>
-      <a href="./images/panama5.jpg" target="_blank">
-        <img src="./images/panama5.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/panama6.jpg" target="_blank">
-        <img src="./images/panama6.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td>
+
+![](images/panama5.jpg)
+
+</td>
+<td>
+
+![](images/panama6.jpg)
+
+</td>
+</tr>
 </table>
 
 After transiting the locks and reaching the Pacific, we went under the Bridge of
@@ -83,7 +83,7 @@ it is not yet complete.)
 We then disembarked the ferry and got on to the bus which took us back around
 the Gatun Lake to our boat. On our way, we got some nice views of Panama City.
 
-[![Panama City](./images/panama-city.jpg)](./images/panama-city.jpg)
+![Panama City](images/panama-city.jpg)
 
 By the time we got back to the boat, it was very late and we went to the LIDO
 (the buffet) for a quick dinner.

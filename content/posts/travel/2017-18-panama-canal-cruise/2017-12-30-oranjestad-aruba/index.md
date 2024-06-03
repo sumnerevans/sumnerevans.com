@@ -40,26 +40,22 @@ of gold, but they mined it all away. While there, we tried to duplicate a
 picture that we took 16 years ago.
 
 <table width="100%">
-  <tr>
-    <td width="50%">
-      <a href="./images/aruba1.jpg" target="_blank">
-        <img src="./images/aruba1.jpg" />
-      </a>
-    </td>
-    <td width="50%">
-      <a href="./images/aruba2.jpg" target="_blank">
-        <img src="./images/aruba2.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      2001
-    </td>
-    <td align="center">
-      2017
-    </td>
-  </tr>
+<tr>
+<td width="50%">
+
+![](images/aruba1.jpg)
+
+**2001**
+
+</td>
+<td width="50%">
+
+![](images/aruba2.jpg)
+
+**2017**
+
+</td>
+</tr>
 </table>
 
 Next we travelled further along the north part of the island. The northern coast

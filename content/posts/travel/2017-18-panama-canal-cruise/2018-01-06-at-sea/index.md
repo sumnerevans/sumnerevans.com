@@ -14,7 +14,7 @@ compared to me) rated ~1500. I'm doing well to stay above 1100.
 I also tried to help Alex and Eric become better at chess. Hopefully I taught
 them OK.
 
-[![Picture of Alex and Eric playing chess](./images/chess.jpg)](./images/chess.jpg)
+![Picture of Alex and Eric playing chess](images/chess.jpg)
 
 Tonight the show was the magician and the comedian. They each did half of the
 show. The magician did a very extended, and very impressive card trick series.
