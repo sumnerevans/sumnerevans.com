@@ -1,7 +1,7 @@
 ---
 title: "Respecting Theme Preferences on Your Website"
 date: 2020-04-07T15:00:00-06:00
-categories: [Technology]
+categories: [Programming]
 tags: [JavaScript, Dark Theme, Dark Mode, CSS, HTML]
 build:
   publishResources: false
