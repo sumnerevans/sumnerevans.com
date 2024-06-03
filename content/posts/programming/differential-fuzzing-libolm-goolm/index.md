@@ -123,7 +123,7 @@ are deterministic (there is no random element that is embedded), so I should
 have received the same signatures, but **the signatures from goolm and libolm
 were different!**
 
-### Is Pickling Broken?
+## Is Pickling Broken?
 
 This is obviously wrong, so the first thing that I looked into was whether our
 pickling logic was incorrect. I did many experiments involving round-tripping
@@ -133,7 +133,7 @@ and all of those tests passed. I tried reversing the generation (generating with
 goolm instead) and many other round-trip combinations, but none of them failed.
 Thus, my hypothesis that the pickling was the problem turned out false.
 
-### Internally Inconsistent!?
+## Internally Inconsistent!?
 
 However, during this round-tripping exploration, I decided to add in a test for
 internal consistency within the goolm side after importing from libolm: I added
@@ -151,7 +151,7 @@ each other!*
 
 *or so I thought
 
-### C Struct Snooping
+## C Struct Snooping
 
 Both the public and private keys of the Ed25519 keys are both included in the
 pickle value, so as far as I could tell, the public and private keys that libolm
@@ -180,7 +180,7 @@ result? The bytes are equal!
 So, at this point I know that the private key bytes being used by libolm and
 goolm are identical, but the signatures are still turning out different!
 
-### Different Ed25519 Binary Format?
+## Different Ed25519 Binary Format?
 
 Tulir then said something in our chat which led me down a (long) path to solving
 the mystery. He said:
@@ -227,7 +227,7 @@ the implementation that it uses is based on SUPERCOP, so I expected that it
 would use the same private key representation, but if it did, it would match
 what Go expects and I wouldn't be writing this article.
 
-### Epiphany
+## Epiphany
 
 I asked what format libolm uses in the
 [End-to-end encryption in Matrix](https://matrix.to/#/#e2e:matrix.org) room on
@@ -249,7 +249,7 @@ It turns out that the private and public key exported by libolm do in fact match
 each other, the private key is just in a different format than the Go
 `crypto/ed25519` package expects.
 
-### Our Very Own ed25519 Implementation
+## Our Very Own ed25519 Implementation
 
 It is impossible to reverse a cryptographic hash (of which SHA512 is one). Thus,
 there is no way to get from the libolm format back to the format required by the
