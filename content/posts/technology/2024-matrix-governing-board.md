@@ -15,6 +15,19 @@ description: |
   platform is to encourage a focus on chat by increasing ecosystem diversity.
 ---
 
+<div class="admonition info">
+<p class="first admonition-title">Election Results</p>
+<p class="last">
+
+**2024-06-03**: The results of the first Governing Board Election have been
+[posted on the Matrix.org Blog](https://matrix.org/blog/2024/06/election-results/).
+
+I am grateful that I was elected as an individual member. Thank you to those who
+vote for me!
+
+</p>
+</div>
+
 I'm
 [running for the Matrix Governing Board](https://matrix.org/blog/2023/12/electing-our-first-governing-board/#election-timeline)
 as an Individual Member. I work on bridges[^1] and backend infrastructure[^2] as
@@ -30,7 +43,7 @@ See also my
 [endorsements of Ecosystem Member]({{<ref"./2024-matrix-governing-board-endorsements.md">}})
 candidates.
 
-<div class="admonition note">
+<div class="admonition important">
 <p class="first admonition-title">Conflict of Interest Disclosure</p>
 <p class="last">
 
@@ -276,42 +289,42 @@ to my blog post. This is the text of his message verbatim:
 > fwiw, there are quite a few alarmingly incorrect assertions there:
 >
 > - Element as a company has no direct interest in thirdroom, p2p matrix, iot,
-  > and other nextgen projects. We did that work as the Foundation, not as
-  > Element (albeit majority funded by Element, like all our other core Matrix
-  > work donated to the Foundation), hence putting it in the matrix.org github
-  > repository to spell that out. The reason for doing it was to try to inspire
-  > folks to build more than chat on Matrix, and seed Matrix (just as the core
-  > team seeded synapse etc in the first place). Now, I completely agree that it
-  > stretched the core team too thin and we should have focused on the core
-  > platform, but all the posturing about this being “element experiments” is
-  > completely wrong. moreover, Element stopped funding those projects almost a
-  > year ago, so it feels particularly unfair to be railing against dead
-  > projects. Fwiw, pure Element employees (ie those who don’t donate any of
-  > their time to the fdn) generally considered them a distraction coming from
-  > the Matrix project/fdn, rather than in any way directly beneficial to
-  > Element (hence killing them :|)
+>   and other nextgen projects. We did that work as the Foundation, not as
+>   Element (albeit majority funded by Element, like all our other core Matrix
+>   work donated to the Foundation), hence putting it in the matrix.org github
+>   repository to spell that out. The reason for doing it was to try to inspire
+>   folks to build more than chat on Matrix, and seed Matrix (just as the core
+>   team seeded synapse etc in the first place). Now, I completely agree that it
+>   stretched the core team too thin and we should have focused on the core
+>   platform, but all the posturing about this being “element experiments” is
+>   completely wrong. moreover, Element stopped funding those projects almost a
+>   year ago, so it feels particularly unfair to be railing against dead
+>   projects. Fwiw, pure Element employees (ie those who don’t donate any of
+>   their time to the fdn) generally considered them a distraction coming from
+>   the Matrix project/fdn, rather than in any way directly beneficial to
+>   Element (hence killing them :|)
 > - There seems to be an assumption that the foundation funds or will fund core
-  > protocol and chat work. Right now this is totally wrong. The Foundation
-  > funds the stuff nobody else is funding (eg trust & safety, and publishing
-  > the spec, and the costs of running matrix.org). It doesn’t pay for the SCT,
-  > or crypto work, or security work, or matrix-{js,rust}-sdk work, or voip
-  > work, or OIDC work, etc. And the majority of that is still picked up by the
-  > core Matrix team at Element who donate their work to the Foundation. So
-  > while the “foundation should spend all its money on chat!!” is laudable,
-  > it’s not like the foundation spent a cent of its own $ on (say) thirdroom,
-  > and it’s not like the foundation has the $ or technical org to build loads
-  > of core protocol work (unless someone has $4M/y or so to donate!). So
-  > instead the problem is for the GB to ensure that the foundation safeguards
-  > the protocol and encourages it to be focused, regardless of who donates that
-  > work, rather than trying to turn the foundation into a dev shop.
+>   protocol and chat work. Right now this is totally wrong. The Foundation
+>   funds the stuff nobody else is funding (eg trust & safety, and publishing
+>   the spec, and the costs of running matrix.org). It doesn’t pay for the SCT,
+>   or crypto work, or security work, or matrix-{js,rust}-sdk work, or voip
+>   work, or OIDC work, etc. And the majority of that is still picked up by the
+>   core Matrix team at Element who donate their work to the Foundation. So
+>   while the “foundation should spend all its money on chat!!” is laudable,
+>   it’s not like the foundation spent a cent of its own $ on (say) thirdroom,
+>   and it’s not like the foundation has the $ or technical org to build loads
+>   of core protocol work (unless someone has $4M/y or so to donate!). So
+>   instead the problem is for the GB to ensure that the foundation safeguards
+>   the protocol and encourages it to be focused, regardless of who donates that
+>   work, rather than trying to turn the foundation into a dev shop.
 > - Finally, it’s super unclear to me what criteria should be used for donating
-  > projects to github.com/matrix-org, given the expectation is then for the
-  > core team to maintain them and vouch for them etc, which for a
-  > security-focused project is critical. I’m not sure that we should become
-  > freeform project hosting, or accept implementations from Jia Tan or whoever.
-  > I’d rather than we reduce implementations managed by the Foundation, just as
-  > W3C has. I’ll try to get a proposal together on paper for this before the GB
-  > forms so we have a starting point for discussion.
+>   projects to github.com/matrix-org, given the expectation is then for the
+>   core team to maintain them and vouch for them etc, which for a
+>   security-focused project is critical. I’m not sure that we should become
+>   freeform project hosting, or accept implementations from Jia Tan or whoever.
+>   I’d rather than we reduce implementations managed by the Foundation, just as
+>   W3C has. I’ll try to get a proposal together on paper for this before the GB
+>   forms so we have a starting point for discussion.
 
 To the first point, I have the following comments:
 
