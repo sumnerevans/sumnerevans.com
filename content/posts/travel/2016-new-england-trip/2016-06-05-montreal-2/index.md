@@ -14,7 +14,7 @@ underground city.
 For breakfast we decided to go to Tim Hortons. It’s the thing to do in Canada. I
 got a coffee. Because that’s what you do at Tim’s.
 
-[![Cup of Tim Hortons coffee](./images/tim-hortons.jpg)](./images/tim-hortons.jpg)
+![Cup of Tim Hortons coffee](images/tim-hortons.jpg)
 
 ### Hop on Hop Off Bus
 

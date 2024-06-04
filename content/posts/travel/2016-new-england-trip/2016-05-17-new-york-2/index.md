@@ -68,8 +68,7 @@ steered. The captain didn't actually steer the ship, he only told the person
 which way and how fast to go. In fact, the navigator was the one who actually
 determined what course needed to be taken.
 
-[![The Bridge of the Intrepid](./images/intrepid.jpg)](./images/intrepid.jpg)
-*The Bridge of the Intrepid*
+![The Bridge of the Intrepid](images/intrepid.jpg)
 
 ### Failing Remedial Bus 057 {#failingremedialbus057}
 
@@ -138,9 +137,7 @@ time was to get a view of New York in the daytime. One neat thing about the
 Rockefeller Center's observation deck is that you can see the Empire State
 Building from the observation deck.
 
-[![Views from the Top of the Rockefeller Building.](./images/nyc4.jpg)](./images/nyc4.jpg)
-*Views from the Top of the Rockefeller Building. Originally posted on
-Instagram.*
+![Views from the Top of the Rockefeller Building. Originally posted on Instagram.](images/nyc4.jpg)
 
 ### Business, Dinner and Bed {#businessdinnerandbed}
 

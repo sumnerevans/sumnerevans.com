@@ -1,9 +1,9 @@
 ---
-Title: New York, New York
-Date: 2016-05-16T19:00:00-0600
-Categories: [New England Trip]
-Tags: [9/11, 9/11 Memorial, 9/11 Museum, Ellis Island, Empire State Building, Immigration, New York, Statue of Liberty, Subway, Travel]
-Image: ./images/lady-liberty.jpg
+title: New York, New York
+date: 2016-05-16T19:00:00-0600
+categories: [New England Trip]
+tags: [9/11, 9/11 Memorial, 9/11 Museum, Ellis Island, Empire State Building, Immigration, New York, Statue of Liberty, Subway, Travel]
+image: images/lady-liberty.jpg
 ---
 
 Today seemed like a really long day because it was. We started out at

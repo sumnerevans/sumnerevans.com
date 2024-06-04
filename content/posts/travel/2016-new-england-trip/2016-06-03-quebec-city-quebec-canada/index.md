@@ -54,25 +54,25 @@ shape around the tower.
 
 <center>
 <table class="gallery" width="60%">
-  <tr>
-    <td colspan="2">
-      <a href="./images/quebec1.jpg" target="_blank">
-        <img src="./images/quebec1.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/quebec2.jpg" target="_blank">
-        <img src="./images/quebec2.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/quebec3.jpg" target="_blank">
-        <img src="./images/quebec3.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td colspan="2">
+
+![](images/quebec1.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/quebec2.jpg)
+
+</td>
+<td>
+
+![](images/quebec3.jpg)
+
+</td>
+</tr>
 </table>
 </center>
 
@@ -103,37 +103,37 @@ it and the views from it. Here are some of the best photographs.
 
 <center>
 <table class="gallery" width="80%">
-  <tr>
-    <td colspan="2">
-      <a href="./images/quebec5.jpg" target="_blank">
-        <img src="./images/quebec5.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/quebec6.jpg" target="_blank">
-        <img src="./images/quebec2.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/quebec7.jpg" target="_blank">
-        <img src="./images/quebec3.jpg" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/quebec8.jpg" target="_blank">
-        <img src="./images/quebec8.jpg" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/quebec9.jpg" target="_blank">
-        <img src="./images/quebec9.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td colspan="2">
+
+![](images/quebec5.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/quebec6.jpg)
+
+</td>
+<td>
+
+![](images/quebec7.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/quebec8.jpg)
+
+</td>
+<td>
+
+![](images/quebec9.jpg)
+
+</td>
+</tr>
 </table>
 </center>
 

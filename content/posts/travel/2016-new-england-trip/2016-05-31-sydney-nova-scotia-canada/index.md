@@ -33,7 +33,7 @@ On the way we stopped at a *look out* spot (overlook in American English). It is
 said that this lookout spot was the reason that Alexander Graham Bell decided to
 settle in Nova Scotia after his success with the telephone.
 
-[![](./images/nova-scotia1.jpg)](./images/nova-scotia1.jpg)
+![](images/nova-scotia1.jpg)
 
 #### The Museum
 
@@ -60,8 +60,9 @@ contributions.
     others were very unsuccessful, but Alexander kept busy with all of his
     projects.
 
-[![](./images/nova-scotia2.jpg)](./images/nova-scotia2.jpg)
-[![](./images/nova-scotia3.jpg)](./images/nova-scotia3.jpg)
+![](images/nova-scotia2.jpg)
+
+![](images/nova-scotia3.jpg)
 
 Alexander is best know for his work on the telephone. It was neat learning about
 how he created the telephone after taking Physics II which focuses a lot on
@@ -77,7 +78,7 @@ Physics is actually used in real life.
 
 Outside the museum, there was a great view of a lighthouse.
 
-[![](./images/nova-scotia4.jpg)](./images/nova-scotia4.jpg)
+![](images/nova-scotia4.jpg)
 
 ### Evening
 

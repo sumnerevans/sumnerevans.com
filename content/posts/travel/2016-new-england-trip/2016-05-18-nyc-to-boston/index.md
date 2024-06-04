@@ -72,7 +72,7 @@ about the State House:
     Boston from a balcony on the building.
 -   Other stuff that I can’t remember and is therefore not important.
 
-[![](./images/boston1.jpg)](./images/boston1.jpg)
+![](images/boston1.jpg)
 
 We then walked around in the market area near the Old State House and ate some
 dinner. Then we came back to the hotel and I caught up on my blog for yesterday

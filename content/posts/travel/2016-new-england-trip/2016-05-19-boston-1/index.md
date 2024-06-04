@@ -130,8 +130,7 @@ On the other side of the park is a museum, the Museum of Concord. We stopped
 here as well. The coolest thing in the museum was one of the lanterns hung in
 the Old North Church.
 
-[![One of the lanterns hung in the Old North Church](./images/lantern.jpg)](./images/lantern.jpg)
-*One of the lanterns hung in the Old North Church.*
+![One of the lanterns hung in the Old North Church](images/lantern.jpg)
 
 After the museum we proceeded to the North Bridge. There is a monument to the
 British Regulars who died at the bridge as well as a monument to the Minutemen
@@ -143,22 +142,22 @@ who died that day. On the monument to the British, something to the effect of
 or something like that. The Minutemen statue is much nicer.
 
 <table class="gallery">
-  <tr>
-    <td>
-      <a href="./images/british-memorial.jpg" target="_blank">
-        <img src="./images/british-memorial.jpg"
-             alt="Memorial to the British who Died at the North Bridge." />
-      </a>
-      Memorial to the British who Died at the North Bridge.
-    </td>
-    <td>
-      <a href="./images/minutemen.jpg" target="_blank">
-        <img src="./images/minutemen.jpg"
-             alt="The Minutemen Statue on the other side of the North Bridge" />
-      </a>
-      The Minutemen Statue on the other side of the North Bridge.
-    </td>
-  </tr>
+<tr>
+<td>
+
+![](images/british-memorial.jpg "Memorial to the British who Died at the North Bridge")
+
+**Memorial to the British who Died at the North Bridge**
+
+</td>
+<td>
+
+![](images/minutemen.jpg "The Minutemen Statue on the other side of the North Bridge")
+
+**The Minutemen Statue on the other side of the North Bridge**
+
+</td>
+</tr>
 </table>
 
 At this point, we headed back to Charlestown and returned the car.

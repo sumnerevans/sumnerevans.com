@@ -47,18 +47,18 @@ churches that were destroyed by bombs in WWII. It was very beautiful. Our guide
 said that it is often used for weddings.
 
 <table class="gallery">
-  <tr>
-    <td width="60%">
-      <a href="./images/bermuda-1.jpg" target="_blank">
-        <img src="./images/bermuda-1.jpg" />
-      </a>
-    </td>
-    <td width="40%">
-      <a href="./images/bermuda-2.jpg" target="_blank">
-        <img src="./images/bermuda-2.jpg" />
-      </a>
-    </td>
-  </tr>
+<tr>
+<td width="60%">
+
+![](images/bermuda-1.jpg)
+
+</td>
+<td width="40%">
+
+![](images/bermuda-2.jpg)
+
+</td>
+</tr>
 </table>
 
 We also walked past the house that the first emancipated slave in Bermuda built.

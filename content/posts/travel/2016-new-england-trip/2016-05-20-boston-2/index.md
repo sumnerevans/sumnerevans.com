@@ -62,10 +62,8 @@ and a myriad of other sites.  It was neat to get a bird’s eye (literally) view
 of the city.
 
 {{< figure
-  src="./images/boston-skyline.jpg"
-  link="./images/boston-skyline.jpg"
-  target="_blank"
-  caption="Views of the Boston Skyline from the Whale Watching Boat (top) and the Prudential Center (bottom)"
+  src="images/boston-skyline.jpg"
+  title="Views of the Boston Skyline from the Whale Watching Boat (top) and the Prudential Center (bottom)"
 >}}
 
 ### Boston Cream Pie {#bostoncreampie}

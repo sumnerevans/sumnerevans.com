@@ -41,42 +41,42 @@ Behind the main building is a chapel whose interior is very modern looking
 compared to the main building. It is a combination of the old architecture and
 new minimalistic architecture (the last picture).
 
-<center>
-<table class="gallery" width="80%">
-  <tr>
-    <td colspan="3">
-      <a href="./images/notre-dame1.jpg" target="_blank">
-        <img
-          src="./images/notre-dame1.jpg"
-          alt="Notre Dame facade lit up by the sun" />
-      </a>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <a href="./images/notre-dame2.jpg" target="_blank">
-        <img
-          src="./images/notre-dame2.jpg"
-          alt="Notre Dame altar" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/notre-dame3.jpg" target="_blank">
-        <img
-          src="./images/notre-dame3.jpg"
-          alt="Notre Dame pipe organ" />
-      </a>
-    </td>
-    <td>
-      <a href="./images/notre-dame4.jpg" target="_blank">
-        <img
-          src="./images/notre-dame4.jpg"
-          alt="Another view of the Notre Dame pipe organ" />
-      </a>
-    </td>
-  </tr>
+<figure>
+<table class="gallery">
+<tr>
+<td colspan="3">
+
+![](images/notre-dame1.jpg "Notre Dame facade lit up by the sun")
+
+**Notre Dame facade lit up by the sun**
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/notre-dame2.jpg "Notre Dame altar")
+
+**Notre Dame altar**
+
+</td>
+<td>
+
+![](images/notre-dame3.jpg "Notre Dame pipe organ")
+
+**Notre Dame pipe organ**
+
+</td>
+<td>
+
+![](images/notre-dame4.jpg "Another view of the Notre Dame pipe organ")
+
+**Another view of the Notre Dame pipe organ**
+
+</td>
+</tr>
 </table>
-</center>
+</figure>
 
 ### Walking through Montreal
 
@@ -94,7 +94,7 @@ There are 99 stairs going up to the entrance and many pilgrims stop at each
 stair to pray. We did not go inside, but we got a picture of it from the
 outside.
 
-![St. Joseph's Oratory](./images/st-josephs-oratory.jpg)
+![St. Joseph's Oratory](images/st-josephs-oratory.jpg)
 
 ### Mount Royal
 
@@ -103,7 +103,7 @@ the Central Park of Montreal. We saw all sorts of people hanging out in the park
 doing a variety of activities. We continued to an overlook spot where we got a
 good view of Montreal.
 
-![View of Montreal from Mt. Royal](./images/mt-royal.jpg)
+![View of Montreal from Mt. Royal](images/mt-royal.jpg)
 
 ### Mass at Notre Dame
 
@@ -126,7 +126,7 @@ area. Lots of people were just walking around but there were also street vendors
 set up all along the Old Dock. I ate poutine from one of the food trucks. We
 continued along the Old Dock.
 
-![Old Montreal Dock](./images/old-dock.jpg)
+![Old Montreal Dock](images/old-dock.jpg)
 
 #### Zip Line
 
@@ -135,13 +135,13 @@ and went up to the top and I got some nice pictures of the Old Dock. Then we did
 the zip line. It was awesome. Mom was nervous to do it but both of us had a ton
 of fun. I took a few pictures of other people doing the zip line.
 
-![View from the zipline tower](./images/zipline1.jpg)
+![View from the zipline tower](images/zipline1.jpg)
 
-![View of the zipline tower with the sunset in the background](./images/zipline2.jpg)
+![View of the zipline tower with the sunset in the background](images/zipline2.jpg)
 
 After the zip line, we walked back through the Old Dock and Old Town to our
 hotel. There was one pedestrian street that we went up that seemed like the
 place for buskers. It was like 16th Street Mall in Denver. Once back at the
 hotel, I worked a little bit on my blog and then headed to bed.
 
-![Montreal street](./images/montreal1.jpg)
+![Montreal street](images/montreal1.jpg)
