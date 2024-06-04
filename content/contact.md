@@ -6,19 +6,19 @@ date: 2021-03-05 09:04:00
 <center>
   <p style="font-size: 1.5em">Quick Links</p>
   <p style="font-size: 4em; margin: 0.4em;">
-    <a href="https://matrix.to/#/@sumner:nevarro.space" target="_blank">
+    <a href="https://matrix.to/#/@sumner:nevarro.space" target="_blank" style="text-decoration: none">
       <i class="fa fa-matrix-org"></i>
     </a>
-    <a href="https://www.linkedin.com/in/sumnerevans" target="_blank">
+    <a href="https://www.linkedin.com/in/sumnerevans" target="_blank" style="text-decoration: none">
       <i class="fa fa-linkedin"></i>
     </a>
-    <a href="https://github.com/sumnerevans" target="_blank">
+    <a href="https://github.com/sumnerevans" target="_blank" style="text-decoration: none">
       <i class="fa fa-github"></i>
     </a>
-    <a href="https://www.youtube.com/@sumnerevans" target="_blank">
+    <a href="https://www.youtube.com/@sumnerevans" target="_blank" style="text-decoration: none">
       <i class="fa fa-youtube-play"></i>
     </a>
-    <a href="https://liberapay.com/sumner" target="_blank">
+    <a href="https://liberapay.com/sumner" target="_blank" style="text-decoration: none">
       <i class="fa fa-liberapay"></i>
     </a>
   </p>
