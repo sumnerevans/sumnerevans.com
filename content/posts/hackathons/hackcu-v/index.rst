@@ -4,6 +4,8 @@ date: 2019-03-25T23:58:00-06:00
 categories: [Hackathons]
 tags: [HackCU, Prize, WiFi]
 image: images/2019-02-24-second-place.jpg
+build:
+  publishResources: false
 ---
 
 A couple of weekends ago (Feb. 23-24), nearly 30 Mines students (myself
@@ -157,22 +159,20 @@ sponsor prizes. Easton, Kristin, and Zach won Second Place in the Dish Network
 Challenge (the same challenge that Robby, Jack Garner, David, and I had won the
 year before).
 
-.. image:: ./images/2019-02-24-dish-network-prize.jpg
-   :alt: Easton, Kristin, and Zach winning the Dish Network Prize
-   :target: ./images/2019-02-24-dish-network-prize.jpg
-   :width: 70%
-   :align: center
+{{<figure
+  src="images/2019-02-24-dish-network-prize.jpg"
+  title="Easton, Kristin, and Zach winning the Dish Network Prize"
+>}}
 
 Fisher and Jake won best random hack for their *Cookie Injection with Real
 Cookies* game. (Their random prize was a cheese grater.) Jake wrote a
 reflections post about the hackathon on his blog which you can find `here
 <jakeblog_>`_.
 
-.. image:: ./images/2019-02-24-random-hack.jpg
-   :alt: Jake and Fisher winning the Best Random Hack Prize
-   :target: ./images/2019-02-24-random-hack.jpg
-   :width: 70%
-   :align: center
+{{<figure
+  src="images/2019-02-24-random-hack.jpg"
+  title="Jake and Fisher winning the Best Random Hack Prize"
+>}}
 
 .. _jakeblog: https://jake.vossen.dev/blogs/hack-cu-v-reflections.html
 
@@ -182,11 +182,10 @@ basically a marketplace for plug-and-play Machine Learning algorithms. Then they
 announced second place. My team won second place! We were extremely happy about
 that, especially considering the quality of the competition.
 
-.. image:: ./images/2019-02-24-second-place.jpg
-   :alt: My team winning Second Place
-   :target: ./images/2019-02-24-second-place.jpg
-   :width: 70%
-   :align: center
+{{<figure
+  src="images/2019-02-24-second-place.jpg"
+  title="My team winning Second Place"
+>}}
 
 An app called *Mentor* which was a companion iPad application and Atom plugin
 which converted abstract syntax trees from one language to another as an

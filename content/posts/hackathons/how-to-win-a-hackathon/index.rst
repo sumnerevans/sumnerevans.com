@@ -4,6 +4,8 @@ date: 2018-12-18T22:58:00-0600
 categories: [Hackathons]
 tags: [Facebook Hackathon, Win, Hackathon, Prize, Hackathon Demo]
 image: images/fb-award.jpg
+build:
+  publishResources: false
 ---
 
 Objectively, I'm pretty good at winning prizes at hackathons. I'm not entirely
@@ -43,14 +45,11 @@ Facebook <facebook_>`_, we won First Place.
     team won second place. You can read about it in my `HackCU V blog post
     <HackCU V_>`_.
 
-.. figure:: ./images/fb-award.jpg
-   :align: center
-   :target: ./images/fb-award.jpg
-   :width: 100%
-   :alt: picture of my Facebook Hackathon team after we won First Place.
-
-   A picture of my team after winning First Place at the Global Hackathon Finals
-   at Facebook.
+{{<figure
+  src="images/fb-award.jpg"
+  alt="picture of my Facebook Hackathon team after we won First Place"
+  title="A picture of my team after winning First Place at the Global Hackathon Finals at Facebook."
+>}}
 
 As you can tell, I have some experience with hackathons, and a good track record
 of success at them as well. However, hackathons are a team effort. Three of the
