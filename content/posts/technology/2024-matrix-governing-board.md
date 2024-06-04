@@ -15,7 +15,7 @@ description: |
   platform is to encourage a focus on chat by increasing ecosystem diversity.
 ---
 
-<div class="admonition info">
+<div class="admonition note">
 <p class="first admonition-title">Election Results</p>
 <p class="last">
 
@@ -23,7 +23,7 @@ description: |
 [posted on the Matrix.org Blog](https://matrix.org/blog/2024/06/election-results/).
 
 I am grateful that I was elected as an individual member. Thank you to those who
-vote for me!
+voted for me!
 
 </p>
 </div>

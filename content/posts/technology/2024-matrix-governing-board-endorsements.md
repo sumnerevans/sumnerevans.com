@@ -22,7 +22,7 @@ description: |
 I am happy that both Kim and Nico were elected as ecosystem members, and I am
 grateful that I was elected as an individual member.
 
-Thank you to those who vote for me!
+Thank you to those who voted for me!
 
 </p>
 </div>
