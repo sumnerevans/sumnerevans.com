@@ -248,7 +248,7 @@ before and right after the tour.
   title="The team at a great overlook with views of a lot of Porto"
   caption="Josh has a really cool 360° camera."
   attr="Josh Johnson"
-  attrlink="http://joshjohnson.io/"
+  attrlink="https://imjosh.in"
 >}}
 
 ## Planning a Glorious Beeper Future
