@@ -245,6 +245,18 @@ So, what it appears is that libolm actually stores Ed25519 private keys in
 neither the NaCl format, nor the SUPERCOP format but instead stores the SHA512
 result (left and right half).
 
+<div class="admonition note">
+<p class="first admonition-title">Correction</p>
+<p class="last">
+
+The format used by libolm is in fact the same as the NaCl format. When I was
+doing my analysis, I tried to use functions which did not do the bit set/unset
+logic (also called clamping I believe), and they didn't seem to work, but this
+is probably user error rather than the private key not being clamped.
+
+</p>
+</div>
+
 It turns out that the private and public key exported by libolm do in fact match
 each other, the private key is just in a different format than the Go
 `crypto/ed25519` package expects.
