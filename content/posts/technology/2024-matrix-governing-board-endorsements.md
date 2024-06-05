@@ -60,7 +60,7 @@ candidate.
 
 I met Nico in Berlin at the
 [first Community Matrix Summit]({{<ref"../travel/2022-berlin-matrix-summit/summit/index.md">}})
-although I'd know of him much before that through his work on Nheko. Nheko is
+although I'd known of him much before that through his work on Nheko. Nheko is
 one of the most fully-featured non-Element clients in the ecosystem. The Nheko
 project has led to many Spec clarifications and improvements and continues to
 stress-test the viability of new proposals. The Client-Server API often feels
