@@ -14,6 +14,8 @@ description: |
   Today I went to the Place de la Concorde, the Arc de Triomphe, and
   the Eiffel Tower.
 image: images/arc-view.jpg
+build:
+  publishResources: false
 ---
 
 Today was my first day in Paris! I decided to move to a hotel because I didn't

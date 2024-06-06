@@ -4,6 +4,8 @@ Date: 2018-01-03T23:00:00-0600
 Categories: [Panama Canal Cruise]
 Tags: [Panama Canal, Panama]
 image: images/panama-city.jpg
+build:
+  publishResources: false
 ---
 
 Today we transited the Panama Canal. I'm going to first describe what we did and

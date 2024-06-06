@@ -14,6 +14,8 @@ tags:
 description: |
   Today I travelled via the Chunnel to London and visited an exhibit at the
   British Museum. Then I travelled home via Lisbon and Munich.
+build:
+  publishResources: false
 ---
 
 Today, I was in a total of five countries. Why? Well, one of the things on my

@@ -4,6 +4,8 @@ Date: 2015-08-18T14:05:00-0600
 Categories: [Baltic Cruise and Northern Europe]
 Tags: [England, London, York]
 image: images/york1.jpg
+build:
+  publishResources: false
 ---
 
 Today we went to York, our furthest day trip so far. It took two hours by

@@ -12,6 +12,8 @@ tags:
 description: |
   I once again made a trip across the pond, this time for work. I'm attending a
   team meetup in Porto, Portugal.
+build:
+  publishResources: false
 ---
 
 I'm making my way across the pond once again, this time for a work retreat. I'm

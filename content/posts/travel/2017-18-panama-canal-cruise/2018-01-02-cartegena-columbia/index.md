@@ -4,6 +4,8 @@ Date: 2018-01-02T23:00:00-0600
 Categories: [Panama Canal Cruise]
 Tags: [Cartegena, Columbia]
 image: images/cartegena-3.jpg
+build:
+  publishResources: false
 ---
 
 Today we were in Cartegena, Columbia. We only had a couple of hours in the city

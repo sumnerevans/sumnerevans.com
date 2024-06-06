@@ -4,6 +4,8 @@ Date: 2016-05-15T20:52:00-0600
 Categories: [New England Trip]
 Tags: [Colorado, Denver, Manhattan, New York, New York City, Plane, Time Square, Travel]
 image: images/nyc1.jpg
+build:
+  publishResources: false
 ---
 
 Today my mom and I arrived in New York, New York. We made it through the

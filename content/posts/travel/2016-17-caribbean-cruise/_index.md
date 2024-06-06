@@ -1,5 +1,0 @@
----
-cascade:
-- build:
-    publishResources: false
----

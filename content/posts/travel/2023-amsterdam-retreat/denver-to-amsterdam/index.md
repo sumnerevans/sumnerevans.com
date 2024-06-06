@@ -50,13 +50,13 @@ in the middle seat on my row. I managed to get got a couple good hours of sleep
 on the plane.
 
 After arriving at the airport, I bought a SIM card for data and then got a bus
-to my hotel. I'm staying at [De Bedstee Capsule
-Hotel](https://goo.gl/maps/ENFhRYhpvPdXu8nE7). It was one of the cheaper options
-close to the city. It's literally right across the street from the Van Gogh
-museum. I dropped my bags off and then walked to lunch. I went to a restaurant
-called [Small Talk](https://goo.gl/maps/Fk24v8Ek3XQuFwfXA)
-and had a really fantastic steak. Then I headed back to the hotel to wait for
-when I could check in. I tried to work on my blog a bit, but ended up having an
+to my hotel. I'm staying at
+[De Bedstee Capsule Hotel](https://goo.gl/maps/ENFhRYhpvPdXu8nE7). It was one of
+the cheaper options close to the city. It's literally right across the street
+from the Van Gogh museum. I dropped my bags off and then walked to lunch. I went
+to a restaurant called [Small Talk](https://goo.gl/maps/Fk24v8Ek3XQuFwfXA) and
+had a really fantastic steak. Then I headed back to the hotel to wait for when I
+could check in. I tried to work on my blog a bit, but ended up having an
 accidental nap in the lobby.
 
 Once I got checked in to the hotel, I tried to stay awake for a few hours before

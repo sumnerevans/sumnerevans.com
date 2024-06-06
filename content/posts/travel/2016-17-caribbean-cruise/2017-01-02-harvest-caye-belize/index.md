@@ -4,6 +4,8 @@ Date: 2017-01-02T10:32:00-0600
 Categories: [Caribbean Cruise 2016-17]
 Tags: [Belize, Cruise, Harvest Caye, Paddle Board, Parasailing]
 image: images/harvest-caye3.jpg
+build:
+  publishResources: false
 ---
 
 Today we were in Harvest Caye, Belize - a private island owned by Norwegian

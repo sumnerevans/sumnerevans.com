@@ -4,6 +4,8 @@ Date: 2017-01-04T21:17:00-0600
 Categories: [Caribbean Cruise 2016-17]
 Tags: [Cenota, Cozumel, Mexico, Tulum]
 image: images/cozumel2.jpg
+build:
+  publishResources: false
 ---
 
 Today we were in Cozumel, Mexico. We had to take a ferry to the mainland where

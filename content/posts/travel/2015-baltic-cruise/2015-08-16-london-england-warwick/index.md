@@ -4,6 +4,8 @@ Date: 2015-08-16T01:12:00-0600
 Categories: [Baltic Cruise and Northern Europe]
 Tags: [England, London, Warwick]
 image: images/warwick2.jpg
+build:
+  publishResources: false
 ---
 
 Today we went to Warwick (pronounced war-ick). Warwick is the site of a very old

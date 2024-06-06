@@ -3,6 +3,8 @@ Title: London, England to Reykjavík, Iceland
 Date: 2015-08-20T10:32:00-0600
 Categories: [Baltic Cruise and Northern Europe]
 Tags: [England, Flight, Iceland, London, Reykjavík]
+build:
+  publishResources: false
 ---
 
 I'm going to make this short because I'm behind on writing. Today was a travel

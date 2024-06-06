@@ -11,6 +11,8 @@ tags:
   - Paddle Boarding
 image: images/dinner.jpg
 description: "Today I went to the beach at Cascais with some people I met at the hostel."
+build:
+  publishResources: false
 ---
 
 Due to staying up way too late last night in Alfama, today was a day for

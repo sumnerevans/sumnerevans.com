@@ -4,6 +4,8 @@ Date: 2016-05-31T19:00:00-0600
 Categories: [New England Trip]
 Tags: [Alexander Graham Bell, Canada, Nova Scotia, Sydney, Travel]
 image: images/nova-scotia1.jpg
+build:
+  publishResources: false
 ---
 
 Today we went on a bus tour which took us to the Alexander Graham Bell Museum.

@@ -11,6 +11,8 @@ tags:
   - Feast of Saint Anthony
 image: images/city.jpg
 description: "Today, I went to the Alfama district and toured the Castelo de São Jorge. Then, in the evening, I went out with some people from the hostel to the streets where there were celebrations for the Feast of Saint Anthony"
+build:
+  publishResources: false
 ---
 
 Today, I went to the Alfama district and toured the Castelo de São Jorge. Then,

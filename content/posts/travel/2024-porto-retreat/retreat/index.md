@@ -15,6 +15,8 @@ description: |
   four-day 2024 Q2 work retreat in Porto, Portugal. These are my thoughts and
   reflections on the trip.
 image: images/porto-sign.jpg
+build:
+  publishResources: false
 ---
 
 The past few weeks have been exciting for Beeper. We

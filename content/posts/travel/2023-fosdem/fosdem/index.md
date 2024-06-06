@@ -18,6 +18,8 @@ description: |
   I enjoyed attending many talks, but the best part was getting to meet so many
   cool people.
 image: images/burgers.jpg
+build:
+  publishResources: false
 ---
 
 For the first time since 2020, FOSDEM was held in-person in Brussels. FOSDEM is

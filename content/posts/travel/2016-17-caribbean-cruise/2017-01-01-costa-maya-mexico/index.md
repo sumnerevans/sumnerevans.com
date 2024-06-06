@@ -4,6 +4,8 @@ Date: 2017-01-01T10:21:00-0600
 Categories: [Caribbean Cruise 2016-17]
 Tags: [Cruise, Mayan Ruins, Travel]
 image: images/costa-maya1.jpg
+build:
+  publishResources: false
 ---
 
 Today we were in Costa Maya, Mexico. (Yay! Another country on my list of "been

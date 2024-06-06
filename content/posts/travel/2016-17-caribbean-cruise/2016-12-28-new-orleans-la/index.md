@@ -4,6 +4,8 @@ Date: 2016-12-28T18:50:00-0600
 Categories: [Caribbean Cruise 2016-17]
 Tags: [Battle of New Orleans, Louisiana, New Orleans]
 image: images/segway.jpg
+build:
+  publishResources: false
 ---
 
 Today we went on a Segway tour of the city and then went straight to a river

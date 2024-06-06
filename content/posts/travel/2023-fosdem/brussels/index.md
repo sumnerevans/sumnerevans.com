@@ -11,6 +11,8 @@ description: |
   During my time in Brussels for FOSDEM, I took the chance to do a bit of
   sightseeing. Here are some pictures of what I saw.
 image: images/square.jpg
+build:
+  publishResources: false
 ---
 
 During my time in Brussels for [FOSDEM]({{<ref"../fosdem/index.md">}}), I took

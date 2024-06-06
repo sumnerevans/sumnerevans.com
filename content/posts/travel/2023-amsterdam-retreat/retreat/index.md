@@ -15,6 +15,8 @@ description: |
   This week, my company had our week-long 2023 Q1 work retreat in Amsterdam,
   Netherlands. These are my thoughts and reflections on the trip.
 image: images/team.jpg
+build:
+  publishResources: false
 ---
 
 This week, my company (Beeper) had our first retreat of the new year in

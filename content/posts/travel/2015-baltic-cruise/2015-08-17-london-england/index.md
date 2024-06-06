@@ -4,6 +4,8 @@ Date: 2015-08-17T12:30:00-0600
 Categories: [Baltic Cruise and Northern Europe]
 Tags: [England, London]
 image: images/london-planes1.jpg
+build:
+  publishResources: false
 ---
 
 We started the day by going to the Royal Air Force Museum. It took a while to

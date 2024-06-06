@@ -4,6 +4,8 @@ Date: 2016-05-19T19:00:00-0600
 Categories: [New England Trip]
 Tags: [Boston, Chinatown, Concord, Lexington, Massachusetts, Midinight Ride, Minutemen, MIT, Paul Revere, Trail, Travel]
 image: images/minutemen.jpg
+build:
+  publishResources: false
 ---
 
 **TL;DR** We went to Lexington and Concord.

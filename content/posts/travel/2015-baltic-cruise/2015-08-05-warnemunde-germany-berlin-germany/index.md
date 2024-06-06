@@ -4,6 +4,8 @@ Date: 2015-08-05T12:57:00-0600
 Categories: [Baltic Cruise and Northern Europe]
 Tags: [Berlin, Germany]
 image: images/berlin1.jpg
+build:
+  publishResources: false
 ---
 
 Today we docked at the port in Warnemunde, Germany. We had to go out earlier

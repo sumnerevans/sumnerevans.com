@@ -11,6 +11,8 @@ tags:
   - Paris
   - France
 description: "Today I went on a walking tour in the morning, and then flew to Paris!"
+build:
+  publishResources: false
 ---
 
 Today was my last day in Lisbon. I spent the morning on a walking tour of the

@@ -4,6 +4,8 @@ Date: 2016-12-29T18:50:00-0600
 Categories: [Caribbean Cruise 2016-17]
 Tags: [Cruise, Louisiana, New Orleans, WWII Museum]
 image: images/wwii-museum.jpg
+build:
+  publishResources: false
 ---
 
 Today we spent the entire day at the National World War II Museum.

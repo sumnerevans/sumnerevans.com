@@ -4,6 +4,8 @@ Date: 2016-06-05T09:44:00-0600
 Categories: [New England Trip]
 Tags: [Canada, Montreal, Quebec, Travel, Underground City]
 image: images/tim-hortons.jpg
+build:
+  publishResources: false
 ---
 
 Today we rode the entire hop on hop off circuit and walked around the Montreal

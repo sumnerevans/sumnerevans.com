@@ -4,6 +4,8 @@ Date: 2016-05-18T19:00:00-0600
 Categories: [New England Trip]
 Tags: [Boston, Freedom Trail, Massetusetts, New York, Omni Parker Hotel, Travel]
 image: images/boston1.jpg
+build:
+  publishResources: false
 ---
 
 Today was primarily spent travelling by train from New York to Boston. We woke

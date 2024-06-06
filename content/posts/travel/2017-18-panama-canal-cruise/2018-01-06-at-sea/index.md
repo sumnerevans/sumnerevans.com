@@ -4,6 +4,8 @@ Date: 2018-01-06T23:00:00-0600
 Categories: [Panama Canal Cruise]
 Tags: [At Sea]
 image: images/chess.jpg
+build:
+  publishResources: false
 ---
 
 Today was another day at sea. The seas had calmed down, so the ship wasn't

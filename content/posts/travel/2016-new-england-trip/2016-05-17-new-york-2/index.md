@@ -4,6 +4,8 @@ Date: 2016-05-17T19:00:00-0600
 Categories: [New England Trip]
 Tags: [Bike, Bus Tour, Central Park, Intrepid Museum, New York, Rockefeller Center, Top of the Rock, Travel]
 image: images/nyc4.jpg
+build:
+  publishResources: false
 ---
 
 Although it's the 18th, I'll be writing this as if it were yesterday.
