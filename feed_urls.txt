@@ -19,7 +19,6 @@ https://mgs.blog/feed
 https://neilalexander.dev/feed.xml
 https://pointlessramblings.com/index.xml
 https://skip.house/rss.xml
-https://sourcehut.org/blog/index.xml
 https://textslashplain.com/feed/
 https://tgrcode.com/rss
 https://weekly.nixos.org/feeds/all.rss.xml
