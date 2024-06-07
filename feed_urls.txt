@@ -16,6 +16,7 @@ https://ma.tt/feed
 https://matrix.org/blog/feed
 https://medium.com/feed/@ericmigi
 https://mgs.blog/feed
+https://neilalexander.dev/feed.xml
 https://pointlessramblings.com/index.xml
 https://skip.house/rss.xml
 https://sourcehut.org/blog/index.xml
@@ -24,3 +25,4 @@ https://tgrcode.com/rss
 https://weekly.nixos.org/feeds/all.rss.xml
 https://www.joelonsoftware.com/feed/
 https://www.thedroneely.com/posts/rss.xml
+https://www.wheresyoured.at/rss/
