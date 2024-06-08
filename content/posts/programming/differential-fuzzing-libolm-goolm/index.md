@@ -43,7 +43,7 @@ However, libolm is annoying for multiple reasons.
    and probably even more difficult to use from Go than libolm.
 
 I wanted to figure out why we were having these issues by finding the
-discrepancies between the two implementations, but I wasn't quite quite sure how
+discrepancies between the two implementations, but I wasn't quite sure how
 to actually accomplish this goal until [Tulir](https://mau.fi/) and I were at a
 [talk at FOSDEM
 about _differential fuzzing_]({{<ref"../../travel/2024-fosdem/fosdem/index.md#go-devroom">}}).
