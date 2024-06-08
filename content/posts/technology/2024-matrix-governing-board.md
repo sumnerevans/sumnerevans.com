@@ -120,7 +120,7 @@ community. A healthy Element is essential to building a healthy Matrix
 community.
 
 Element's willingness to create and boostrap the Foundation attests to their
-commitment to the community. However, if Element is serious serious about
+commitment to the community. However, if Element is serious about
 spinning off the Foundation as an independent organization, they must also
 accept that they are now one of many community members.
 
