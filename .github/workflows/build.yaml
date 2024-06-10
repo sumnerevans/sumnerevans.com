@@ -27,7 +27,7 @@ jobs:
 
       - uses: DeterminateSystems/magic-nix-cache-action@v7
 
-      - uses: DeterminateSystems/flake-checker-action@v7
+      - uses: DeterminateSystems/flake-checker-action@v8
         with:
           fail-mode: true
 
