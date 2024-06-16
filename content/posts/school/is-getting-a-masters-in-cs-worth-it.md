@@ -150,9 +150,9 @@ In effect, the natural selection that occurs getting into the graduate program
 weeds out the below-average students (the ones who get mediocre offers and pull
 down class-averages) from the equation.
 
-Anecdotally, I know plenty of top undergraduate student students that have
-received offers that are equal to or better than offers accepted by some of the
-more average graduate students. I have also seen graduate students get very high
+Anecdotally, I know plenty of top undergraduate students that have received
+offers that are equal to or better than offers accepted by some of the more
+average graduate students. I have also seen graduate students get very high
 offers after getting their master's degree, but I am fairly confident they would
 have received a commensurate offer if they entered the job market right after
 receiving their bachelor's.
@@ -220,7 +220,7 @@ students into five broad categories, and discuss them in turn.
 
   For these students, getting a master's degree as a way to become more
   employable will be a very stressful and expensive endeavour. And while they
-  will probably succeed, but there are easier ways to get good offers.
+  will probably succeed, there are easier ways to get good offers.
 
   These students will likely find that the additional line on their resume and
   extra piece of paper in a frame does not cause their job search to become more
@@ -462,16 +462,16 @@ within a decade.
 I will speak from personal experience right now that I've probably made less
 than some of my peers who only got an undergraduate degree. This is because I've
 chosen to take a risk by working at a startup instead of a well established
-large tech company. I think that I've taken a slight pay cut, but I have a
-decent amount of equity and there is potential for a large windfall in the case
-of a favourable exit. (Update:
+large tech company. I think that I've taken a slight pay cut from what I could
+be earning at a larger company, but I have a decent amount of equity and there
+is potential for a large windfall in the case of a favourable exit. (Update:
 [the exit was favourable](https://techcrunch.com/2024/04/09/wordpress-com-owner-automattic-acquires-multi-service-messaging-app-beeper-for-125m/).
-I got a decent equity payout and a sizeable raise.) However, during the first
-two years of my career that I spent at The Trade Desk, the stock tripled, and I
-had both ESPP (a program which allows employees to defer salary to buy the stock
-at a discount) and stock grants. Both of these did very well during that period.
-This stock boom happened during the COVID lockdowns, which is obviously
-something that I had no control over.
+I got a decent equity payout and a sizeable raise.) On the other hand, during
+the first two years of my career that I spent at The Trade Desk, the stock
+tripled, and I had both ESPP (a program which allows employees to defer salary
+to buy the stock at a discount) and stock grants. Both of these did very well
+during that period. This stock boom happened during the COVID lockdowns, which
+is obviously something that I had no control over.
 
 **If the only reason you are considering grad school is to make more money,
 don't go to grad school.** Get into the workforce now, and start climbing the
@@ -704,7 +704,7 @@ However, I am not not naive enough to claim that it was the source of the
 success I've had so far in my career. I do not think that it greatly improved my
 career prospects or lifetime earnings. However, it gave me an opportunity to
 dive deeper into a few computer science topics that I found interesting, and
-gave me a chance to deepen lifelong friendship and have a lot of fun.
+gave me a chance to deepen lifelong friendships and have a lot of fun.
 
 If you ask any university whether it's worth it or not, they will unequivocally
 say of course it's worth it, but I wanted to provide a more accurate picture of
