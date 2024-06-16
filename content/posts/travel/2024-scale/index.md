@@ -264,15 +264,15 @@ night.
 
 ---
 
-Addision left Monday morning, but I stayed around until the evening. After
-taking my daily standup meeting from the hotel, I headed over to a WeWork for
-the day. I understand why WeWork went bankrupt: they really do not have enough
-people coming in to their locations to break even it seems. There were maybe a
-dozen people there, and it just does not seem like the prices are high enough
-for them to be profitable. I'm guessing that the only reason they didn't go
-bankrupt even faster is because of companies subletting private office space
-within the WeWork. I won't complain, though: I'll enjoy the VC-subsidised,
-trendy workspace all day long.
+Addison left Monday morning, but I stayed around until the evening. After taking
+my daily standup meeting from the hotel, I headed over to a WeWork for the day.
+I understand why WeWork went bankrupt: they really do not have enough people
+coming in to their locations to break even it seems. There were maybe a dozen
+people there, and it just does not seem like the prices are high enough for them
+to be profitable. I'm guessing that the only reason they didn't go bankrupt even
+faster is because of companies subletting private office space within the
+WeWork. I won't complain, though: I'll enjoy the VC-subsidised, trendy workspace
+all day long.
 
 After work, I took the metro down to El Segundo where Ethan lives. It was much
 less sketchy during rush hour. We went to an Italian restaurant with one of his
