@@ -95,9 +95,9 @@ for determining if a rewritten function matches the functionality of the
 previous function. The speaker, Maciej Mionskowski, was clearly very
 knowledgable and provided really great examples of how it can be used in
 practice. Fuzzing is a testing tool in which you produce a bunch of random
-inputs to try find edge cases which you haven't explicitly tested for. The issue
-with fuzzing is that often you do not know what the correct answer should be
-given some random input. There are a few ways to deal with this. If the
+inputs to try and find edge cases which you haven't explicitly tested for. The
+issue with fuzzing is that often you do not know what the correct answer should
+be given some random input. There are a few ways to deal with this. If the
 operation has an inverse (marshal and unmarshal for example), performing the
 full round-trip and ensuring that the random fuzzing input is preserved is a
 good way to test the functionality. However, sometimes you don't have such a
