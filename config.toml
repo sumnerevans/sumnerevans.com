@@ -147,16 +147,6 @@ timeout = "360s"
     url = "https://stackoverflow.com/users/2319844/sumner-evans"
     weight = 6
 
-  [[menu.footer]]
-    name = "X (Twitter)"
-    url = "https://twitter.com/sumner_evans"
-    weight = 7
-
-  [[menu.footer]]
-    name = "Liberapay"
-    url = "https://liberapay.com/sumner"
-    weight = 9
-
 [related]
   includeNewer = true
   toLower = true
