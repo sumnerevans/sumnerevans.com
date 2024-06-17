@@ -3,6 +3,8 @@ name: "Build and Deploy"
 on:
   pull_request:
   push:
+  schedule:
+    - cron: '0 0 * * *'
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
