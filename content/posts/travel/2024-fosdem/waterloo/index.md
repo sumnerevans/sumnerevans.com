@@ -73,7 +73,7 @@ the day. Despite multiple attempts to take the house, it remained in British
 hands through the entire battle.
 
 In the centre and right, the French saw their greatest success. After heavy
-bomboardment, the infantry advanced but were stopped by decisive cavalry charge.
+bombardment, the infantry advanced but were stopped by decisive cavalry charge.
 After a costly failed cavalry counter charge by Marshal Ney towards the British
 centre, a coordinated French attack broke through the first line of defences and
 an artillery battery was brought forward. The artillery cut huge holes through
