@@ -16,6 +16,7 @@ https://lukaswerner.com/feed.xml
 https://lukeplant.me.uk/blog/atom/index.xml
 https://ma.tt/feed
 https://matrix.org/blog/feed
+https://mau.fi/blog/index.rss
 https://medium.com/feed/@ericmigi
 https://mgs.blog/feed
 https://neilalexander.dev/feed.xml
