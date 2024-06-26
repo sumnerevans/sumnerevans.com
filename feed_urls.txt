@@ -11,6 +11,7 @@ https://jjtech.dev/feed.xml
 https://jsomers.net/blog/feed
 https://jvns.ca/atom.xml
 https://keenanschott.com/index.xml
+https://ludic.mataroa.blog/rss/
 https://lukaswerner.com/feed.xml
 https://lukeplant.me.uk/blog/atom/index.xml
 https://ma.tt/feed
