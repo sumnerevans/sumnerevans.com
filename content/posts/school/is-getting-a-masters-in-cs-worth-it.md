@@ -428,8 +428,10 @@ earnings.
 
 However, this model ignores factors such as job changes, bonuses, stock
 compensation, differences in benefits, etc. that might affect actual earnings.
-In fact, such factors introduce such variance into this model that it becomes
-effectively useless after a couple years.
+It also assumes that John pays off the student loan as soon as possible, and
+ignores interest payments on the debt. In fact, such factors introduce such
+variance into this model that it becomes effectively useless after a couple
+years.
 
 In an industry where job changes are common every few years, ones ability to
 negotiate raises via changing jobs will be a much larger driver of lifetime
