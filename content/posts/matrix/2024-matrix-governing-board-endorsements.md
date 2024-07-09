@@ -2,14 +2,15 @@
 title: 2024 Matrix Governing Board Endorsements
 date: 2024-05-08T06:25:00-06:00
 categories:
-  - Technology
-tags:
   - Matrix
+tags:
   - Matrix Governing Board
   - Endorsements
 description: |
   I would like to endorse a Kim Brose and Nicolas Werner (Nico) as ecosystem
   member candidates for the Matrix Governing Board.
+aliases:
+  - ../technology/2024-matrix-governing-board-endorsements
 ---
 
 <div class="admonition info">

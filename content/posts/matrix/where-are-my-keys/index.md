@@ -2,49 +2,72 @@
 title: Where are my keys?
 date: 2024-06-17T15:00:00-06:00
 categories:
-  - Technology
-tags:
   - Matrix
+tags:
   - Cryptography
   - E2EE
 description: |
-  If you've used Matrix for any period of time, you will know that Matrix has a
-  lot of keys. There are keys for devices, keys for users, keys for messages,
-  keys for the keys for messages, keys for backups, keys for the keys to the
-  backups. In this talk, I'm going to try to provide a framework for thinking
-  about keys in Matrix. I also will discuss some of the pitfalls both baked into
-  the spec and those which are a function of the nature of a networked protocol.
+  Matrix has a lot of keys. There are keys for devices, keys for users, keys for
+  messages, keys for backups, keys for the keys to the backups, etc. All of
+  these keys provide different functionality. There are a lot of resources
+  explaining message keys (with the olm/megolm protocol), but not as many
+  explaining the rest of the keys in the Matrix protocol. This talk intends to
+  be an overview of those keys which provide infrastructure for key backups, key
+  sharing, device verification, and cross-signing.
+
+  This talk is designed for people with a basic understanding of the various
+  Matrix features. You do not need to know anything about cryptography to gain
+  value from this talk. I will cover some basics of cryptosystems, but at a very
+  high level cursory level in order to motivate the selection of key algorithms.
 draft: true
 ---
 
 TODO: clean this up for being more of a blog post than a talk.
 
 Hello, my name is Sumner, I'm a software engineer at Automattic working on
-Beeper and today I'm going to be talking about cryptography in Matrix.
+Beeper and today I'm going to be talking about cryptographic key infrastructure
+in Matrix.
 
 End-to-end encryption is one of the things which brought me to Matrix, and I'm
 sure that it's one of the factors that brought many of you to Matrix as well.
 
-However, Matrix's user experience with cryptography is often confusing. Part of
-this is due to the incompetence of other chat networks. Many don't even provide
-any cryptographically-guaranteed security, and others do so in a way that does
-not truly leave the user in control of their keys.
+However, Matrix's user experience with cryptography is often confusing. I mainly
+blame the other chat networks for their incompetence. Most other chat networks
+don't even provide any cryptographically-guaranteed security and privacy. Some
+networks provide encryption in a way that does not truly leave the user in
+control of their keys. Only a few networks (Signal) truly leave the user in
+control, and their UX is arguably worse than Matrix.
 
-Only a few networks (Signal) truly leave the user in control, and their UX is
-arguably worse than Matrix.
+In this talk, my goal is to discuss the cryptographic key _infrastructure_ in
+Matrix. What do I mean by "infrastructure"? I mean all of the features which
+support key sharing and identity verification, but don't actually themselves
+provide security.
+
+TODO show diagram(s?) of what I'm going to explain.
+
+- megolm
+- key exchange
+- key backup
+- master key
+- verification
+- cross-signing
+
+---
 
 In this talk, I want to demystify cryptography in Matrix and provide you with a
 framework for understanding what all of the keys are for.
 
 Beeper is an app that allows users to connect all of their chat networks to a
-single app. You can have FB, WA... TODO all in the same app.
+single app. You can have all of your chats from Meta (Facebook and Instagram),
+WhatsApp, Signal, and many other networks all in the same app.
 
 Beeper is built on top of the Matrix protocol, and all Beeper accounts are
 Matrix accounts on the beeper.com homeserver. We are building towards a world in
 which everyone just talks over the Matrix network to one another, rather than
 having to use bridges, but until that day comes, we use bridges as a way to
 allow people to come into the ecosystem without having to sacrifice talking to
-specific friends just because they haven't yet come over to Beeper.
+specific friends just because they haven't yet come over to Beeper or another
+Matrix homeserver.
 
 I work on the Platform team at Beeper. Our team does three main things:
 
@@ -55,21 +78,26 @@ I work on the Platform team at Beeper. Our team does three main things:
 
    We also maintain all of the kubernetes infrastructure, user management
    services, a Synapse instance, and many other backend services.
-2. **We maintain all of the mautrix bridges** including WA, Signal, Meta, ...
-   LinkedIn.
+2. **We maintain all of the mautrix bridges.** I have worked extensively on the
+   LinkedIn, iMessage, Signal, WhatsApp, and most recently the new Telegram
+   bridge written in Go.
 3. **We maintain a Go client SDK** that our next-generation clients like the new
    Android app use.
 
-I've done some of all of these things, but lately, building the Go SDK has taken
-up a significant portion of my time. I implemented key backup (and corrupted
-multiple key backups in the process). I built the interactive QR code
-verification framework (and generated many a bad QR code in the process). And
-most recently, I've been experimenting with a pure-Go implementation of the
-Olm/Megolm protocols originally written by @DerLukas as a way to replace libolm
-in our clients.
+I've had the opportunity to work on all of these things. However, in Q2 of this
+year after we got acquired by Automattic, building the Go SDK has taken up a
+significant portion of our bandwidth. I ended up implementing a ton of
+cryptography-related features.
 
-As you can see, a lot of the things that I have been working on revolve around
-cryptography in Matrix which leads me to the topic of this talk: **keys in
+- I implemented key backup (and corrupted multiple key backups in the process).
+- I built the interactive QR code verification framework (and generated many a
+  bad QR code in the process).
+- And most recently, I've been experimenting with a pure-Go implementation of
+  the Olm/Megolm protocols originally written by @DerLukas as a way to replace
+  libolm in our clients.
+
+As I implemented these features, I learned a lot about cryptography in Matrix,
+which leads me to the topic of this talk: **cryptographic key infrastructure in
 Matrix.**
 
 If you've used Matrix for any period of time, you will know that Matrix has a

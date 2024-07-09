@@ -2,6 +2,7 @@
 title: Differential Fuzzing Libolm and Goolm
 date: 2024-06-01T06:25:00-06:00
 categories:
+  - Matrix
   - Programming
 tags:
   - Differential Fuzzing
@@ -18,6 +19,8 @@ description: |
 image: images/scale.jpg
 build:
   publishResources: false
+aliases:
+  - ../programming/differential-fuzzing-libolm-goolm
 ---
 
 ## Background

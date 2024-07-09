@@ -2,9 +2,8 @@
 title: My Matrix Governing Board Platform
 date: 2024-04-24T03:25:00-06:00
 categories:
-  - Technology
-tags:
   - Matrix
+tags:
   - Matrix Governing Board
   - Element
   - Matrix
@@ -13,6 +12,8 @@ tags:
 description: |
   I'm running for the Matrix Governing Board as an Individual Member. My
   platform is to encourage a focus on chat by increasing ecosystem diversity.
+aliases:
+  - ../technology/2024-matrix-governing-board
 ---
 
 <div class="admonition note">
