@@ -16,21 +16,9 @@ I stored my bags at the hotel, and went to the supermarket to get some
 breakfast. Then, I took the Tube up to Buckingham Palace and walked around there
 a little bit.
 
-.. image:: ./images/buckingham-palace.jpg
-   :alt: Me in front of Buckingham Palace
-   :align: center
-   :target: ./images/buckingham-palace.jpg
-   :width: 75%
+![Me in front of Buckingham Palace](images/buckingham-palace.jpg)
 
-.. raw:: html
-
-   <div style="margin: 10px;"></div>
-
-.. image:: ./images/buckingham-palace2.jpg
-   :alt: A panorama of Buckingham Palace
-   :align: center
-   :target: ./images/buckingham-palace2.jpg
-   :width: 75%
+![A panorama of Buckingham Palace](images/buckingham-palace2.jpg)
 
 I really like Buckingham Palace. I think the architecture of the main palace is
 very pretty and the grounds are so well kept. I also really like the gold statue
@@ -58,22 +46,20 @@ Then, I spent a while over in the clocks exhibit which had a bunch of different
 old timepieces. I really liked one that kept time using a ball which went back
 and forth to keep the time.
 
-.. raw:: html
-
-    <video
-      src="./images/clock.mp4"
-      width="35%"
-      class="align-center"
-      autoplay="true"
-      controls="true"
-      muted="true"
-      loop="true">
-    </video>
+<video
+  src="./images/clock.mp4"
+  width="35%"
+  class="align-center"
+  autoplay="true"
+  controls="true"
+  muted="true"
+  loop="true">
+</video>
 
 After that, I walked down and looked at the exhibits about the Pacific islands
 and saw the big Easter Island statue.
 
--------------------------------------------------------------------------------
+---
 
 By this time, it was late morning into the early afternoon, so I took the tube
 back to Victoria Station and went back to the hotel to get my bags. Then, I went
@@ -86,8 +72,4 @@ the right train. It was, thankfully.
 Getting through the airport and the entire flight were uneventful. I did get
 some good views of Greenland and Northern Canada out the window though.
 
-.. image:: ./images/greenland.jpg
-   :alt: A view over the plane wing of Greenland
-   :align: center
-   :target: ./images/greenland.jpg
-   :width: 50%
+![A view over the plane wing of Greenland](images/greenland.jpg)

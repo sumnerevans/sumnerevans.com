@@ -16,13 +16,12 @@ This morning I left for a hackathon at Facebook Headquarters. I had to wake up
 at 3:30 since the flight was at 7:50 and I had to pick up Sam and Jack on my
 way.
 
-We qualified for the Facebook hackathon at MHacks with our `Datanium project`_.
-Unfortunately, Robby was unable to make it to the finals since he had too many
-assignments and projects due this week. So we ended up replacing him with Jack
-Garner who I had on my HackCU team and on my `ICPC team`_.
-
-.. _Datanium project: {{< ref "/portfolio#project-datanium" >}}
-.. _ICPC team: {{< ref "../../school/2018-11-03-icpc/index.rst" >}}
+We qualified for the Facebook hackathon at MHacks with our
+[Datanium project]({{<ref"/portfolio#project-datanium">}}). Unfortunately, Robby
+was unable to make it to the finals since he had too many assignments and
+projects due this week. So we ended up replacing him with Jack Garner who I had
+on my HackCU team and on my
+[ICPC team]({{<ref"../../school/2018-11-03-icpc/index.rst">}}).
 
 Facebook is paying for the entirety our trip, plane tickets, hotel rooms,
 transportation to and from the hotel, transportation from the hotel to and from
@@ -32,10 +31,10 @@ Security was literally empty. I got through without a problem, but Jack got
 stopped because of a tablet in his bag that he forgot about, and Sam got stopped
 because of all the snacks in his bag.
 
-    "Today I learned that a big bag of nuts next to a box of electronics looks
-    like a bomb."
-
-    -- Sam Sartor
+> "Today I learned that a big bag of nuts next to a box of electronics looks
+> like a bomb."
+>
+> -- Sam Sartor
 
 We had plenty of time for breakfast on the other side of security, and then we
 headed over to our gate.
@@ -47,10 +46,7 @@ us find him.
 
 At the hotel, we got checked in. Each of us got a room all to ourselves!
 
-{{<figure
-  src="images/2018-11-14-facebook-hackathon-room.jpg"
-  title="My huge room"
->}}
+![My huge room](images/2018-11-14-facebook-hackathon-room.jpg)
 
 After we settled in, we went to go eat some lunch at a nearby Pho restaurant. As
 we were walking, we saw some mid-sized houses and decided to play a "guess the
@@ -60,10 +56,7 @@ After lunch, we went back to the room and Sam and I worked on our High
 Performance Computing project milestone report until dinner which was provided
 at the hotel by Facebook. At the dinner, we met a team from Canada.
 
-{{<figure
-  src="images/2018-11-14-dinner.jpg"
-  title="Dinner buffet served on the first day of the hackathon"
->}}
+![Dinner buffet served on the first day of the hackathon](images/2018-11-14-dinner.jpg)
 
 After we finished dinner, Sam and I went back up to my room and finished up the
 report. Now I'm getting ready for bed... We have to leave the hotel at 8:45

@@ -53,26 +53,25 @@ At the hotel, some of us hung out in Kieran and Jake's room. After a little
 while, we decided it was a good idea to go to bed because we had an entire
 programming competition the next day.
 
--------------------------------------------------------------------------------
+---
 
 That brings us to today. After waking up at 7:30 and taking a quick shower, I
 went to grab some food at the hotel. Then we drove the 3 minutes over to the CSU
 campus.
 
 My team (Sam Sartor and Jack Garner) and I had brought the house. We had two
-whiteboards, 8 whiteboard markers, volumes 1-4A of Donald Knuth's *Art of
-Computer Programming*, my mechanical keyboard, and (most importantly) a rubber
+whiteboards, 8 whiteboard markers, volumes 1-4A of Donald Knuth's _Art of
+Computer Programming_, my mechanical keyboard, and (most importantly) a rubber
 duck.
 
 There was some sort of "opening ceremonies/info session" and then the
 competition started.
 
-The Competition
-===============
+## The Competition
 
 The competition itself went very well. To start out, Sam and Jack found and
 implemented the easiest problem (Problem A) in 3 minutes. We were just seconds
-behind *Three Slythery Bois* (Jack Rosenthal, Adam Frick, Billy Brickner) who
+behind _Three Slythery Bois_ (Jack Rosenthal, Adam Frick, Billy Brickner) who
 were the first to solve a problem in the entire competition.
 
 By this time, I'd identified the next easiest problem (Problem D) for them to
@@ -82,39 +81,39 @@ As they were solving that problem, I went through all the problems in the
 competition (there were 12) and determined what types of problems they were. My
 initial pass got me the following:
 
-- **A**: `Quality-Adjusted Life-Year <a_>`_ - trivial
-- **B**: `Gwen's Gift <b_>`_ - some sort of combinatorics math
-- **C**: `Forest for the Trees <c_>`_ - a geometry/ray-tracing question
-- **D**: `H-Index <d_>`_ - trivial (list processing)
-- **E**: `Driving Lanes <e_>`_ - DP-esque (I learned at the end that it could be
-  solved with a simple Dijkstra's shortest path graph traversal through a DAG)
-- **F**: `Treasure Spotting <f_>`_ - another geometry/ray-tracing problem
-- **G**: `Neighborhood Watch <g_>`_ - DP path counting (it ended up being some
-  very simple math)
-- **H**: `Small Schedule <h_>`_ - DP scheduling (it ended up being one just
-  being a fairly simple math problem)
-- **I**: `Mr. Plow King <i_>`_ - Maximal MST (I thought it might be DP, but it
-  didn't end up being DP which was nice)
-- **J**: `Rainbow Road Race <j_>`_ - Graph craziness
+- **A**: [Quality-Adjusted Life-Year](https://rmc18.kattis.com/problems/qaly) -
+  trivial
+- **B**: [Gwen's Gift](https://rmc18.kattis.com/problems/gwensgift) - some sort
+  of combinatorics math
+- **C**:
+  [Forest for the Trees](https://rmc18.kattis.com/problems/forestforthetrees) -
+  a geometry/ray-tracing question
+- **D**: [H-Index](https://rmc18.kattis.com/problems/hindex) - trivial (list
+  processing)
+- **E**: [Driving Lanes](https://rmc18.kattis.com/problems/drivinglanes) -
+  DP-esque (I learned at the end that it could be solved with a simple
+  Dijkstra's shortest path graph traversal through a DAG)
+- **F**:
+  [Treasure Spotting](https://rmc18.kattis.com/problems/treasurespotting) -
+  another geometry/ray-tracing problem
+- **G**:
+  [Neighborhood Watch](https://rmc18.kattis.com/problems/neighborhoodwatch) - DP
+  path counting (it ended up being some very simple math)
+- **H**: [Small Schedule](https://rmc18.kattis.com/problems/smallschedule) - DP
+  scheduling (it ended up being one just being a fairly simple math problem)
+- **I**: [Mr. Plow King](https://rmc18.kattis.com/problems/plowking) - Maximal
+  MST (I thought it might be DP, but it didn't end up being DP which was nice)
+- **J**:
+  [Rainbow Road Race](https://rmc18.kattis.com/problems/rainbowroadrace) - Graph
+  craziness
 
 I was kinda off the mark on some of them (many turned out to be much easier than
 I thought they would be).
 
-.. _a: https://rmc18.kattis.com/problems/qaly
-.. _b: https://rmc18.kattis.com/problems/gwensgift
-.. _c: https://rmc18.kattis.com/problems/forestforthetrees
-.. _d: https://rmc18.kattis.com/problems/hindex
-.. _e: https://rmc18.kattis.com/problems/drivinglanes
-.. _f: https://rmc18.kattis.com/problems/treasurespotting
-.. _g: https://rmc18.kattis.com/problems/neighborhoodwatch
-.. _h: https://rmc18.kattis.com/problems/smallschedule
-.. _i: https://rmc18.kattis.com/problems/plowking
-.. _j: https://rmc18.kattis.com/problems/rainbowroadrace
-
 I'd started thinking about problem **C**, and then when Sam finished **D**, we
 paired up and coded **C** while Jack worked on **G** (we saw a few teams
 completing it on the standings, so we figured it must be a fairly easy one). Our
-first solution to **C** failed on a *Time Limit Exceeded* error. but we were
+first solution to **C** failed on a _Time Limit Exceeded_ error. but we were
 able to fix that and submit a correct solution on 54 minutes. That brought us to
 2nd place of the teams competing at CSU with 3 problems completed.
 
@@ -151,10 +150,10 @@ some edge case and his solution failed with a wrong answer.
 
 At this point, Jack and I went to actually implement **E**, and we left one-half
 of the monitor for Sam to look at his code (we were using i3 which made this
-super easy). We wrote it in Python 3 initially, but it gave us a *Time Limit
-Exceeded*! We should have just converted it to Python 2 right then and there,
+super easy). We wrote it in Python 3 initially, but it gave us a _Time Limit
+Exceeded_! We should have just converted it to Python 2 right then and there,
 but we decided that it may be our algorithm that was actually too slow (wrong
-assumption, :math:`\mathcal{O}(nm^2)` was perfectly fine). We spent over an hour
+assumption, \(\mathcal{O}(nm^2)\) was perfectly fine). We spent over an hour
 trying to optimize, and then in a last ditch effort, we converted it to Python 2
 and our original algorithm worked. We probably could have solved another problem
 and beaten the team ahead of us in the region on time if we hadn't wasted ~2
@@ -175,15 +174,14 @@ competition ended) so the suspense was real! After time expired, we went around
 to talk to other teams so that we could see if anyone had solved any problems in
 the last hour of the competition.
 
-Competition Results
-===================
+## Competition Results
 
 **Full standings can be found here:** https://rmc18.kattis.com/standings
 
 Then (finally) the announcement of the winners came. He first announced the
-finalists for the region. Two CSU teams placed 5th and 4th, then *Three Slythery
-Bois* placed **third**, *Dream Team 2.0* (Sam Sartor, Jack Garner, me) placed
-**second**, and *((+)(((+)s)m)j)* (Sam Reinehr, Matt Baldin, Joseph McKinsey)
+finalists for the region. Two CSU teams placed 5th and 4th, then _Three Slythery
+Bois_ placed **third**, _Dream Team 2.0_ (Sam Sartor, Jack Garner, me) placed
+**second**, and _((+)(((+)s)m)j)_ (Sam Reinehr, Matt Baldin, Joseph McKinsey)
 placed **first**! The Mines teams had managed to hold off the other schools to
 take all three podium spots on-location at CSU!
 
@@ -193,7 +191,7 @@ than that, we finished **fourth-place regionally**! Sam Reinehr's team took
 **first-place regionally**.
 
 Sam Reinehr's team went into the last hour with one problem left and managed to
-finish it. They were able to do that to beat out *Utah Arches* (University of
+finish it. They were able to do that to beat out _Utah Arches_ (University of
 Utah). That secured them a first place finish regionally, and earned them a
 repeat trip to ICPC World Finals which will be hosted in Porto, Portugal this
 spring.
@@ -203,13 +201,13 @@ Canyonlands and Alberta Gold on time to get 4th place regionally.
 
 A couple of other cool things that happened:
 
-- *NP = No Problem* (Easton Bornemeier, Kristin Farris, and Matt Iverson) did
+- _NP = No Problem_ (Easton Bornemeier, Kristin Farris, and Matt Iverson) did
   well with 5 problems solved.
 - Mines teams were first to solve all problems except for **D** (Alberta White
-  was first). Seven firsts were due to *((+)(((+)s)m)j)*. But on location, Mines
+  was first). Seven firsts were due to _((+)(((+)s)m)j)_. But on location, Mines
   teams were first to solve all problems.
 - All Mines teams solved at least one problem.
-- *The Open Sourcerers*, a team of all freshmen (Jake Vossen, Kieran Lewis, and
+- _The Open Sourcerers_, a team of all freshmen (Jake Vossen, Kieran Lewis, and
   Nick Redhorse) completed 4 problems for a 28th-place finish regionally and a
   10th-place finish on-location.
 - Six of the top 25 teams in the region were from Mines.

@@ -30,14 +30,14 @@ We met our guide outside the cruise terminal. Her name was Maria. Then we headed
 to the van and met the driver, Mitri. We drove towards the city and she
 explained some of the sites as we went.
 
-.. note::
+{{% note %}}
+I am going to try and write semi-chronologically about are time in St.
+Petersburg, but I am going try and group information together more than on my
+other posts.
 
-   I am going to try and write semi-chronologically about are time in St.
-   Petersburg, but I am going try and group information together more than on my
-   other posts.
-
-   These facts may not be entirely accurate. They have come through a guide and
-   then through my brain so that is two points of failure.
+These facts may not be entirely accurate. They have come through a guide and
+then through my brain so that is two points of failure.
+{{% /note %}}
 
 St. Petersburg is built on ~40 islands and was founded by Peter the Great, Czar
 of Russia in the 1700s. It is the second largest city in Russia next to Moscow
@@ -73,10 +73,7 @@ I got a picture from a better vantage point. I doctored that one up to make it
 look as sketchy as possible without totally obscuring the image too much. Here
 it is
 
-{{<figure
-  src="images/st-petersburg1.jpg"
-  title="Artillery at the fortress of St. Petersburg"
->}}
+![Artillery at the fortress of St. Petersburg](images/st-petersburg1.jpg)
 
 We walked along the top of the fortress walls which overlook a bit of the bay.
 (It doesn't seem like there is a bay because there are so many islands, but it

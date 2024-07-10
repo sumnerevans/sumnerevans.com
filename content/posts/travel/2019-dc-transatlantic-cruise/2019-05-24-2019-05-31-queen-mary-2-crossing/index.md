@@ -4,22 +4,20 @@ date: 2019-05-31T23:50:00-06:00
 categories: [Trip to D.C. and Transatlantic Cruise]
 tags: [Cruise, Queen Mary 2, WWII, Veterans]
 image: images/veteran-sax.jpg
+build:
+  publishResources: false
 ---
 
-.. role:: strike
-    :class: strike
-
 Instead of giving you a day-by-day on what we did on the crossing (I was told
-that it is *not* a cruise because only lowly peasants would go on a cruise), I'm
+that it is _not_ a cruise because only lowly peasants would go on a cruise), I'm
 going to just talk about some of the highlights and make some observations about
 my time on board the Queen Mary 2. We didn't stop in any ports, so it was just
 what we did on board.
 
-WWII Veteran Presentations
-==========================
+## WWII Veteran Presentations
 
-One of the main reasons we went on this cruise was because the *Greatest
-Generations Foundation*, a group which helps tell the stories of WWII veterans,
+One of the main reasons we went on this cruise was because the _Greatest
+Generations Foundation_, a group which helps tell the stories of WWII veterans,
 was on board with 21 WWII veterans. The Cunard Cruise Line and the Greatest
 Generations foundation had coordinated events every morning where one or two of
 the veterans were interviewed by a host and were able to tell their stories
@@ -28,30 +26,25 @@ was funny seeing him in person. In addition to the host, there were a few
 Vietnam War veteran "escorts" who helped the WWII veterans throughout the
 cruise.
 
-.. raw:: html
+<table class="gallery">
+<tr>
+<td>
 
-    <table class="gallery">
-      <tr>
-        <td>
-          <a href="./images/veterans-0.jpg" target="_blank">
-            <img src="./images/veterans-0.jpg"
-              alt="Picture of two veterans giving their presentation." />
-          </a>
-        </td>
-        <td>
-          <a href="./images/veterans-1.jpg" target="_blank">
-            <img src="./images/veterans-1.jpg"
-              alt="Picture of two veterans giving their presentation." />
-          </a>
-        </td>
-        <td>
-          <a href="./images/veterans-2.jpg" target="_blank">
-            <img src="./images/veterans-2.jpg"
-              alt="Picture of two veterans giving their presentation." />
-          </a>
-        </td>
-      </tr>
-    </table>
+![](images/veterans-0.jpg)
+
+</td>
+<td>
+
+![](images/veterans-1.jpg)
+
+</td>
+<td>
+
+![](images/veterans-2.jpg)
+
+</td>
+</tr>
+</table>
 
 The veterans' experiences spanned the entire war. One of the veterans was a
 sailor on board one of the ships in Pearl Harbor on the December 7, 1941 while
@@ -63,8 +56,8 @@ torpedo (maybe multiple torpedos, I don't remember exactly) and was rapidly
 listing to that side. It was saved from capsizing due to the heroic work of some
 sailors on another boat who tore holes on the other side of the boat so that it
 sank straight down, rather than sideways. Stu escaped his ship by swimming to
-shore through water that was covered in burning oil from ruptured fuel tanks.
-He came up for breath once, in the middle of the inferno, and I remember him
+shore through water that was covered in burning oil from ruptured fuel tanks. He
+came up for breath once, in the middle of the inferno, and I remember him
 clearly saying "that was the hottest breath of air I've ever taken".
 
 A few of the veterans were captured and were held as prisoners of war, and one
@@ -80,10 +73,7 @@ On the last day of the crossing, one of the veterans played his saxophone. I was
 very impressed that he was able to do that, considering his age! They also had
 all of the veterans up on stage at that time, and I got a picture.
 
-.. image:: ./images/veteran-sax.jpg
-   :align: center
-   :target: ./images/veteran-sax.jpg
-   :width: 75%
+![](images/veteran-sax.jpg)
 
 Many of the veterans on board participated in the D-Day landings. In fact, many
 of them are continuing on to the 75th Anniversary of D-Day commemorations that
@@ -92,9 +82,9 @@ parachuted into Normandy behind enemy lines on the night of June 5th, 1944.
 Another two or three were part of the Navy and Marine corps that bombarded
 Normandy, and took men onto the shores. I don't remember if any of them landed
 on the shores or not. The unifying theme for all of them was that no Hollywood
-movie does the horrors of war justice. *Saving Private Ryan* was mentioned many
+movie does the horrors of war justice. _Saving Private Ryan_ was mentioned many
 times as being the closest approximation to the carnage. One of the veterans
-said that the real thing was like "tak[ing] *Saving Private Ryan*, and mak[ing]
+said that the real thing was like "tak[ing] _Saving Private Ryan_, and mak[ing]
 it ten times worse". Another one said that "the main omission was the body parts
 strewn across the beach and in the water". Hearing their accounts gave me a much
 greater appreciation for the slaughter that happened on the beaches of Normandy.
@@ -122,8 +112,7 @@ his 90s, who looked like your typical New York City tough-guy, nearly breaking
 down as he described what had happened to him three-quarters of a century ago
 was very impactful. I will never forget his story.
 
-Making Some New Friends
-=======================
+## Making Some New Friends
 
 On a lighter note, I met a bunch of people and made some new friends. Mom and I
 were at a table with two couples. One was from England, and one was from Sweden
@@ -146,13 +135,12 @@ The next day, I met three teenage guys at the ping-pong tournament. They were
 cousins and were onboard with their grandma. Two of them, Graham and Griffin,
 are heading in to their senior year of high school while the other, Blake, is
 heading into his freshman year (I think) of high school. We ended up hanging out
-quite a bit during the :strike:`cruise` crossing. That evening, there was a
-Young Adults get-together. I met quite a few more young people at that event.
-One of them was Ryan, who just graduated with a degree in computer science and
-is going to start at Raytheon. Also there were two sisters, Gretchen and Meghan,
-and Trueman, and two young businessmen, Richard and Jakub, with their manager
-who had somehow convinced their company to pay for the cruise instead of
-airfare.
+quite a bit during the ~~cruise~~ crossing. That evening, there was a Young
+Adults get-together. I met quite a few more young people at that event. One of
+them was Ryan, who just graduated with a degree in computer science and is going
+to start at Raytheon. Also there were two sisters, Gretchen and Meghan, and
+Trueman, and two young businessmen, Richard and Jakub, with their manager who
+had somehow convinced their company to pay for the cruise instead of airfare.
 
 I ran into another teenager, Aaron, on the third or forth day after going to a
 movie showing. He was very glad to find somebody younger, and he ended up
@@ -190,8 +178,7 @@ went to the gym once. I played a couple of games of chess, too. When I don't
 blunder, I can hold my own against most people who haven't studied chess
 extensively.
 
-Learning Something New
-======================
+## Learning Something New
 
 In addition to the veterans' presentations, there were a few guest lecturers on
 board who gave talks about their topic of expertise. One man, Nigel West, was an
@@ -221,9 +208,9 @@ for himself.)
 
 GARBO's biggest achievement was his crucial role in Operation Fortitude which
 successfully deceived the German High Command, all the way up to Hitler himself,
-into believing that the Normandy Invasion was a diversion, and that the *real*
+into believing that the Normandy Invasion was a diversion, and that the _real_
 landing would occur in the Pas-de-Calais. GARBO became so trusted by the Germans
-that even after they had lost the war, GARBO (known by the Germans as *Alaric*)
+that even after they had lost the war, GARBO (known by the Germans as _Alaric_)
 was awarded the Iron Cross for his service to the Third Reich. GARBO also was
 awarded a Most Excellent Order of the British Empire (MBE) by Great Britain for
 his contribution to the war effort on the allied side. He is likely the only
@@ -252,7 +239,7 @@ Submarine Fleet. British nuclear submarines are autonomously commanded so that
 in the event of a catastrophic destruction of the British Government, each
 submarine can still operate and, if necessary, retaliate with nuclear weapons.
 In such an apocalyptic event, the way each submarine commander must act is
-dictated by the Prime Minister in the *letters of last resort*. Although
+dictated by the Prime Minister in the _letters of last resort_. Although
 confidential, and never known to anyone besides the Prime Minister until the
 letters must be opened, the letters say for the submarine commander to do one of
 four things: retaliate with nuclear weapons, do not retaliate, use his or her
@@ -262,19 +249,18 @@ of the White House.
 Both of the talks that I went to were extremely interesting, and I feel like I
 understand a little more about how intelligence agencies operate.
 
-It's Showtime!
-==============
+## It's Showtime!
 
 One of the cool things about the ship is that there is a ton of entertainment
 options. There were movie showings almost every day, and every night there was a
 live show. Some of the movies were lame, and some of the shows were not
 interesting to me, but there were quite a few good performances and movies.
 
-I watched three films while on-board the ship. *First Man*, *Darkest Hour*, and
+I watched three films while on-board the ship. _First Man_, _Darkest Hour_, and
 a Planetarium show. I will not belabour my reviews of these, as the first two
 are available for you to watch yourself, and the planetarium show was mediocre.
 
-*First Man* is a film about the moon landing, from the perspective of Neil
+_First Man_ is a film about the moon landing, from the perspective of Neil
 Armstrong. I thought it was a good film, and the cinematography was great. I
 have heard that people complained about it not showing the planting of the
 American flag on the surface of the moon, and I thought that was a clear
@@ -282,7 +268,7 @@ omission. I don't find it offensive though, the plot of the movie centred around
 the death of Neil's daughter which occurred prior to his moon landing and his
 struggles to cope with that.
 
-*Darkest Hour* was amazing. Gary Oldman who played Churchill was brilliant, and
+_Darkest Hour_ was amazing. Gary Oldman who played Churchill was brilliant, and
 Ben Mendelsohn, who seems to be playing King George VI in films a lot these
 days, played the King. The film doesn't really make much sense if you don't know
 at least some of the history of Dunkirk and Neville Chamberlain. It also doesn't
@@ -312,8 +298,8 @@ The best one, in my opinion, was a pianist. He was extremely enthusiastic, and
 you can really tell he was exerting himself as he played. He played a very large
 variety of pieces ranging from classical music to scores from Broadway musicals.
 At the very end of his second show, he took requests from the audience for songs
-to put together into a medley. The requests varied from *Yellow Submarine* to
-*Flight of the Bumblebee*. He took maybe 15 different songs, and wove pieces
+to put together into a medley. The requests varied from _Yellow Submarine_ to
+_Flight of the Bumblebee_. He took maybe 15 different songs, and wove pieces
 them all together with amazing transitions between songs.
 
 The next best was the stand-up comedian. His humor was funny, clean, and totally
@@ -325,7 +311,7 @@ been enough. During the second show, I was with Graham, Griffin, and Blake and
 we decided to go somewhere for me and Graham to have a rematch game of chess
 outside of the theatre where we could still hear her as background music.
 
---------------
+---
 
 Overall, the crossing was a very enjoyable experience. I made some new friends,
 had the privilege of hearing from heroes of WWII, learned some things about

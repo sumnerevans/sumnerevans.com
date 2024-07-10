@@ -12,7 +12,7 @@ A couple of weekends ago (Feb. 23-24), nearly 30 Mines students (myself
 included), attended the HackCU hackathon at CU Boulder.
 
 Since the hackathon was so close and since I was driving up to the hackathon, I
-decided to bring *all* of my electronics. I brought my desktop, a monitor, my
+decided to bring _all_ of my electronics. I brought my desktop, a monitor, my
 mechanical keyboard, my ThinkPad, my MacBook Pro, my iPad, a Raspberry Pi, and a
 variety of other assorted cables and electronics. It was a good thing I did,
 too, since we ended up using all of them during the hackathon.
@@ -54,15 +54,10 @@ We started by doing some academic research into work done by Stanford and others
 in using WiFi to track users' movements throughout a space. Things we researched
 included:
 
-* `ArrayTrack: Fine-Grained Indoor Location System <arraytrack_>`_
-* `Waitz <waitz_>`_
-* `SpotFi: Decimeter Level Localization Using WiFi <spotfi_>`_
-* `Accurate, Low-Energy Trajectory Mapping for Mobile Devices <ctrack_>`_
-
-.. _arraytrack: https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final51.pdf
-.. _waitz: https://www.waitz.io/
-.. _spotfi: https://web.stanford.edu/~skatti/pubs/sigcomm15-spotfi.pdf
-.. _ctrack:  https://www.usenix.org/legacy/events/nsdi11/tech/full_papers/Thiagarajan.pdf
+- [ArrayTrack: Fine-Grained Indoor Location System](https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final51.pdf)
+- [Waitz](https://www.waitz.io/)
+- [SpotFi: Decimeter Level Localization Using WiFi](https://web.stanford.edu/~skatti/pubs/sigcomm15-spotfi.pdf)
+- [Accurate, Low-Energy Trajectory Mapping for Mobile Devices](https://www.usenix.org/legacy/events/nsdi11/tech/full_papers/Thiagarajan.pdf)
 
 Having done this research, we were not only confident that our idea was viable,
 but also that we would be able to point to the research in case our system was
@@ -74,29 +69,29 @@ accuracy. (It's always good to have a scapegoat...)
 We determined that we would have to build the following main components for a
 minimal proof-of-concept.
 
-* **WiFi Ping Capture:** We needed some way of capturing WiFi pings made by
+- **WiFi Ping Capture:** We needed some way of capturing WiFi pings made by
   devices. This system also needed to give us a way to determine the signal
   strength of each of the pings.
 
-* **Signal Analysis:** We needed a way to use the signal strength to create
+- **Signal Analysis:** We needed a way to use the signal strength to create
   estimate the distance from the detection node to the device.
 
-* **Trilateration:** We needed a way to determine the position of each device
+- **Trilateration:** We needed a way to determine the position of each device
   given distances from at least three capture nodes. (Trilateration is where you
   use distances, rather than angles to calculate positions. Triangulation, which
   is what is often used incorrectly to refer to trilateration, uses angles to
   calculate distances.)
 
-* **Visualization:** We needed a user interface to show the locations of devices
+- **Visualization:** We needed a user interface to show the locations of devices
   relative to the three detection nodes.
 
 If we had time, we wanted to extend it further by adding a few more components:
 
-* **Device Clustering:** Often, people have many devices. In these cases, we
+- **Device Clustering:** Often, people have many devices. In these cases, we
   wanted to be able to cluster devices together using data analytics so that we
-  could track numbers of *people* rather than numbers of devices.
+  could track numbers of _people_ rather than numbers of devices.
 
-* **User Tracking:** We wanted to be able to track a given person's motions
+- **User Tracking:** We wanted to be able to track a given person's motions
   through the space with a high degree of accuracy.
 
 At this point, we split off and started working on various components of the
@@ -109,7 +104,7 @@ device, and trilaterate based on three of those distance measurements.
 By about 18:00, I started working on the trilateration logic. By 22:00, that was
 basically completed. In the meantime, Ben and Jesus kept working like a champ
 and determined that the Raspberry Pi was not going to cut it since the WiFi
-adapters did not have the ability to be set it up in *monitor mode* which is
+adapters did not have the ability to be set it up in _monitor mode_ which is
 what we needed for it to receive pings. They began working on using laptops to
 act as our detection nodes instead. Nick worked on getting a server set up to
 accept data from the ping collection nodes.
@@ -133,7 +128,7 @@ demos.
 Nick had to go back to school because of a band concert (I think), so he headed
 out before demos. Jesus, Ben, and I held down the fort.
 
---------------------------------------------------------------------------------
+---
 
 We demoed to about 8 judges (many of whom were sponsor judges, since we entered
 into a lot of sponsor prizes). It was a lot more than some of the teams around
@@ -159,42 +154,31 @@ sponsor prizes. Easton, Kristin, and Zach won Second Place in the Dish Network
 Challenge (the same challenge that Robby, Jack Garner, David, and I had won the
 year before).
 
-{{<figure
-  src="images/2019-02-24-dish-network-prize.jpg"
-  title="Easton, Kristin, and Zach winning the Dish Network Prize"
->}}
+![Easton, Kristin, and Zach winning the Dish Network Prize](images/2019-02-24-dish-network-prize.jpg)
 
-Fisher and Jake won best random hack for their *Cookie Injection with Real
-Cookies* game. (Their random prize was a cheese grater.) Jake wrote a
-reflections post about the hackathon on his blog which you can find `here
-<jakeblog_>`_.
+Fisher and Jake won best random hack for their _Cookie Injection with Real
+Cookies_ game. (Their random prize was a cheese grater.) Jake wrote a
+reflections post about the hackathon on his blog which you can find
+[here](https://jake.vossen.dev/blogs/hack-cu-v-reflections.html).
 
-{{<figure
-  src="images/2019-02-24-random-hack.jpg"
-  title="Jake and Fisher winning the Best Random Hack Prize"
->}}
-
-.. _jakeblog: https://jake.vossen.dev/blogs/hack-cu-v-reflections.html
+![Jake and Fisher winning the Best Random Hack Prize](images/2019-02-24-random-hack.jpg)
 
 Then they finally came out to announce the winners of the overall competition.
-They announced third place. It went to a hack called *MLarketplace* which was
+They announced third place. It went to a hack called _MLarketplace_ which was
 basically a marketplace for plug-and-play Machine Learning algorithms. Then they
 announced second place. My team won second place! We were extremely happy about
 that, especially considering the quality of the competition.
 
-{{<figure
-  src="images/2019-02-24-second-place.jpg"
-  title="My team winning Second Place"
->}}
+![My team winning Second Place](images/2019-02-24-second-place.jpg)
 
-An app called *Mentor* which was a companion iPad application and Atom plugin
+An app called _Mentor_ which was a companion iPad application and Atom plugin
 which converted abstract syntax trees from one language to another as an
 educational tool won first place. They demoed with converting Python to Go.
 
 After the demos were over, I had to pack up all of my stuff (that was a
 non-trivial task, considering I had three computers, one of which I had to take
 the GPU out of to pack up). We then headed back to Mines and went to Thai Gold
-for dinner. Then I headed home and slept for a *very* long time.
+for dinner. Then I headed home and slept for a _very_ long time.
 
 Anyway, overall, I was extremely happy with how my team did. All of them were
 freshmen, it was the first time going to a hackathon for Nick and Jesus. Ben

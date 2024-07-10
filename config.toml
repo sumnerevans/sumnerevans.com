@@ -21,8 +21,15 @@ timeout = "360s"
 [markup]
   [markup.highlight]
     style = "github"
-  [markup.goldmark.renderer]
-    unsafe = true
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
 
 [imaging]
   quality = 90

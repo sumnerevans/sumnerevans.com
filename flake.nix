@@ -9,19 +9,7 @@
   outputs = { self, nixpkgs, flake-utils }:
     (flake-utils.lib.eachDefaultSystem (system:
       let
-        pkgs = import nixpkgs {
-          system = system;
-
-          # Use this overlay until https://github.com/gohugoio/hugo/pull/7763 is
-          # merged.
-          overlays = [
-            (self: super: {
-              hugo = super.hugo.overrideAttrs (old: {
-                patches = (old.patches or [ ]) ++ [ ./hugo-rst-patches.patch ];
-              });
-            })
-          ];
-        };
+        pkgs = import nixpkgs { inherit system; };
         ciPackages = with pkgs; [
           bashInteractive
           docutils

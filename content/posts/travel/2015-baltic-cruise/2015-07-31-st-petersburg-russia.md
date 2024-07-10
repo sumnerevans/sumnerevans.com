@@ -14,21 +14,17 @@ think that that was so that the parents would stay and spend money.) I got a
 cool knife with a CCCP (USSR in Russian) symbol on it. It doesn't seem very high
 quality, but it is cool.
 
-------------------------------------------------------------------------
+---
 
-We then drove to the Hermitage museum, the famous art museum in St.  Petersburg.
+We then drove to the Hermitage museum, the famous art museum in St. Petersburg.
 The museum is huge. It has over 3 million items. The guide said if you spent 20
 seconds looking at each exhibit, 8 hours a day, 5 days per week, year round it
 would take 7 years. That's wrong. It would take 8. Here's the math:
 
-.. math::
-
-   3,000,000\text{ items}
-   \times \frac{20\text{s}}{\text{item}}
-   \times \frac{1\text{min}}{60\text{s}}
-   \times \frac{1\text{hr}}{60\text{min}}
-   \times \frac{1\text{wk}}{40\text{hr}}
-   \times \frac{1\text{yr}}{52\text{wk}} = 8.01\text{ yr}
+\[ 3,000,000\text{ items} \times \frac{20\text{s}}{\text{item}} \times
+\frac{1\text{min}}{60\text{s}} \times \frac{1\text{hr}}{60\text{min}} \times
+\frac{1\text{wk}}{40\text{hr}} \times \frac{1\text{yr}}{52\text{wk}} =
+8.01\text{ yr} \]
 
 We obviously didn't see all of the exhibits, but she took us to the main
 masterpieces and some of the more interesting exhibits. I won't try and describe
@@ -50,22 +46,22 @@ the perspective of the main building changes. Looking at it from one side, the
 building takes up half of the painting. From the other side, it only takes up
 about a third.
 
-------------------------------------------------------------------------
+---
 
 After the Hermitage (and I haven't described a fraction of what we saw there) we
 went to the main shopping district, Nevsky Prospect. It was really boring. The
 shops were the same as at home. It was funny though, we went into a department
-store that was really big. Mom, Tom (Mr.  Coco), and Bob (another man who was
+store that was really big. Mom, Tom (Mr. Coco), and Bob (another man who was
 with us on this tour) all went to go find the bathroom. They got lost. We
 realized that they were the only three in the group who couldn't find their way
 around anywhere so it was funny that they were the ones that got lost.
 
-------------------------------------------------------------------------
+---
 
 After seeing Nevsky Prospect, we went to lunch. They served crepes with a
 variety of fillings. I got meat and vegetables in my crepe. It was pretty good.
 
-------------------------------------------------------------------------
+---
 
 After lunch, we drove to a submarine museum. We were able to tour a Soviet
 submarine used during WWII. It was about 70 metres long and the crew consisted
@@ -78,7 +74,7 @@ capacity. I think that air was also an issue, but it was rather unclear coming
 through translation. The modern Russian nuclear subs can stay under for 40+
 days. The US subs can stay underwater for ~30 days.
 
-------------------------------------------------------------------------
+---
 
 We sailed away from St. Petersburg at about 18:00. Going out wasn't that
 interesting until we passed a former Soviet military base (we began to pass it
@@ -87,7 +83,7 @@ equipment and structures on the various islands. I went out to the balcony after
 dinner to watch everything pass by, but it was too windy and I went inside after
 taking some pictures.
 
-------------------------------------------------------------------------
+---
 
 After dinner, I ran into the family that I played soccer with the other day. I
 got into a long conversation with their mom about St. Petersburg which then
@@ -97,7 +93,7 @@ know where I stand on political issues, ask me when I get home, I don't want to
 discuss it online. Discussing politics online isn't constructive because, in the
 end, politics is about people and discussions about it are best had in person.
 
-------------------------------------------------------------------------
+---
 
 Tomorrow we are in Tallinn, Estonia, a former USSR state. It will be interesting
 to see their opinion of the Russians.

@@ -41,10 +41,7 @@ in the morning.
 First stop was the Tower of London, which isn't much of a tower... I didn't go
 in, but I walked around it and then went across Tower Bridge.
 
-.. image:: ./images/tower-bridge.jpg
-   :align: center
-   :target: ./images/tower-bridge.jpg
-   :width: 75%
+![](images/tower-bridge.jpg)
 
 I continued walking along the Thames River enjoying the experience of being in
 London. I find it very interesting being in England because while the language
@@ -59,7 +56,7 @@ main street that leads to London Bridge and found a bunch of street vendors. I
 saw a vendor serving fish and chips, but they only accepted cash, so I had to go
 find an ATM and withdraw some British Pound notes. The fish and chips were kinda
 crappy, to be honest, but it was filling enough, and I had fun people watching
-as I ate. The area I was in is a *very* touristy area (basically everything
+as I ate. The area I was in is a _very_ touristy area (basically everything
 along the Thames between Tower Bridge and the Palace of Westminster is touristy)
 so there were people from all over the world walking by.
 
@@ -77,21 +74,19 @@ burning fires all around. The billows of smoke behind the cathedral serve as an
 eerie backdrop of the scene; and the light reflecting off of the smoke provides
 that iconic silhouette of the cathedral's dome.
 
-.. figure:: https://upload.wikimedia.org/wikipedia/en/b/b2/Stpaulsblitz.jpg
-   :align: center
-   :target: https://en.wikipedia.org/wiki/St_Paul%27s_Survives
-   :figwidth: 50%
-   :width: 100%
-   :alt: a picture of St. Paul's rising above the smoke of fires in London
-         during the Blitz
-
-   Herbert Mason (`St. Paul's Survives
-   <https://en.wikipedia.org/wiki/St_Paul%27s_Survives>`_)
+{{<figure
+  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Air_Raid_Damage_in_Britain_during_the_Second_World_War_HU36220.jpg/992px-Air_Raid_Damage_in_Britain_during_the_Second_World_War_HU36220.jpg"
+  link="https://en.wikipedia.org/wiki/St_Paul%27s_Survives"
+  title="*St. Paul's Survives*"
+  attr="Herbert Mason"
+  attrlink="https://en.wikipedia.org/wiki/St_Paul%27s_Survives"
+  alt="a picture of St. Paul's rising above the smoke of fires in London during the Blitz"
+>}}
 
 I continued walking around near St. Paul's and then hopped back on the Tube and
 headed back to the hotel to get ready to go to Evensong at Westminster Abbey.
 
--------------------------------------------------------------------------------
+---
 
 Despite the fact that its main funding sources seem to be tourists buying
 tickets for tours, the gift shop, and the Government, Westminster Abbey is also
@@ -110,7 +105,7 @@ about vacation pictures: taking pictures of static things like monuments and
 buildings is fairly pointless (not saying that I'm not guilty of this). I think
 it's especially true in places that don't change with the time of the day
 (inside) or places where taking pictures is not exactly respectful (a cathedral,
-for example). I mean, if you think about it, iconic locales have had *many*
+for example). I mean, if you think about it, iconic locales have had _many_
 professional photographers take photos of the exact same thing that you are
 trying to take a picture of. The difference is that they are actually good at
 taking photos and are using a camera that isn't total garbage like whatever you
@@ -131,10 +126,7 @@ light of the evening sun illuminating its façade beautifully. (See, there I go
 being a hypocrite and taking pictures that other people have probably taken more
 competently than myself.)
 
-.. image:: ./images/westminster-abbey.jpg
-   :align: center
-   :target: ./images/westminster-abbey.jpg
-   :width: 50%
+![](images/westminster-abbey.jpg)
 
 The weather was so nice, so I decided to walk back to my hotel instead of taking
 the Tube. I also wanted to find something to eat, and I found an English pub and

@@ -10,40 +10,46 @@ build:
 
 Objectively, I'm pretty good at winning prizes at hackathons. I'm not entirely
 sure how/why, but I am. In this article I intend to try and describe some of the
-things which have helped me and my teams at hackathons.  Please note that these
+things which have helped me and my teams at hackathons. Please note that these
 are merely my experiences. Your mileage may vary.
 
-.. note::
+{{% note %}}
 
-    This article was partially inspired by Yaron Malin's post: `Hackathon
-    Winning Secrets <yaron_>`_. Yaron was on the team which won third place at
-    the Facebook Global Hackathon Finals.
+This article was partially inspired by Yaron Malin's post:
+[Hackathon Winning Secrets](https://medium.com/@yaron1m/hackathon-winning-secrets-3d2a41cacf9).
+Yaron was on the team which won third place at the Facebook Global Hackathon
+Finals.
 
-.. _yaron: https://medium.com/@yaron1m/hackathon-winning-secrets-3d2a41cacf9
+{{% /note %}}
 
 Before I can talk about how to win a hackathon, we need to be clear about the
 definition of a hackathon. A hackathon is **not** a competition where you try
-and crack into computer systems [1]_. Rather, it is a competition where you are
+and crack into computer systems[^1]. Rather, it is a competition where you are
 given a period of time (normally between 24 and 36 hours) to create a project.
-We call the projects *hacks* because they are very *hacky*, that is, they are
+We call the projects _hacks_ because they are very _hacky_, that is, they are
 not pretty when you look "under the hood", so to speak.
 
-Why You Should Listen to Me
----------------------------
+## Why You Should Listen to Me
 
 I have been to five hackathons and successfully created and demoed a project at
-each of them. At the `Xilinx`_ hackathon, my team won the Grand Prize. At
-`MinneHack 2018`_, we did not win anything, but gained valuable experience. At
-`HackCU IV`_, we won Judges Favorite, Best Use of AWS, and the Dish Network
-sponsor challenge. At `MHacks`_, we won Best Use of GCP and the Facebook Best
-Social Good Hack award. Most recently at the `Global Hackathon Finals at
-Facebook <facebook_>`_, we won First Place.
+each of them. At the [Xilinx]({{<ref"/portfolio#project-parqyng">}}) hackathon,
+my team won the Grand Prize. At
+[MinneHack 2018]({{<ref"/portfolio#project-blockmrs">}}), we did not win
+anything, but gained valuable experience. At
+[HackCU IV]({{<ref"/portfolio#project-wii-track">}}), we won Judges Favorite,
+Best Use of AWS, and the Dish Network sponsor challenge. At
+[MHacks]({{<ref"/portfolio#project-datanium">}}), we won Best Use of GCP and the
+Facebook Best Social Good Hack award. Most recently at the
+[Global Hackathon Finals at Facebook]({{<ref"/portfolio#project-hypar-map">}}),
+we won First Place.
 
-.. note::
+{{% note %}}
 
-    Since writing this post, I attended another hackathon, HackCU V, where my
-    team won second place. You can read about it in my `HackCU V blog post
-    <HackCU V_>`_.
+Since writing this post, I attended another hackathon, HackCU V, where my team
+won second place. You can read about it in my
+[HackCU V blog post]({{<ref"/posts/hackathons/hackcu-v">}}).
+
+{{% /note %}}
 
 {{<figure
   src="images/fb-award.jpg"
@@ -53,37 +59,25 @@ Facebook <facebook_>`_, we won First Place.
 
 As you can tell, I have some experience with hackathons, and a good track record
 of success at them as well. However, hackathons are a team effort. Three of the
-hackathons (Xilinx, MHacks, Facebook) I was on a team with `Sam Sartor`_. Three
-of the hackathons (MinneHack, HackCU, MHacks) I was on a team with `Robby
-Zampino`_.  Two of the hackathons (MinneHack, HackCU), I was on a team with
-`David Florness`_.  Two of the hackathons (HackCU, Facebook), I was on a team
-with `Jack Garner`_.  Two of the hackathons (Xilinx, MinneHack), I was on a team
-with `Jack Rosenthal`_.  Two of the hackathons (MHacks, Facebook), I was on a
-team with `Fisher Darling`_.  One hackathon (Xilinx), I was on a team with
-`Daichi Jameson`_.  Each of them were amazing teammates at the various
-hackathons, and I definitely would not be writing this article if it were not
-for each of them.
+hackathons (Xilinx, MHacks, Facebook) I was on a team with
+[Sam Sartor](https://samsartor.com). Three of the hackathons (MinneHack, HackCU,
+MHacks) I was on a team with [Robby Zampino](https://gitlab.com/robozman/). Two
+of the hackathons (MinneHack, HackCU), I was on a team with
+[David Florness](https://david.florness.com/). Two of the hackathons (HackCU,
+Facebook), I was on a team with [Jack Garner](https://gitlab.com/jhgarner). Two
+of the hackathons (Xilinx, MinneHack), I was on a team with
+[Jack Rosenthal](https://jack.rosenth.al). Two of the hackathons (MHacks,
+Facebook), I was on a team with
+[Fisher Darling](https://gitlab.com/fisherdarling). One hackathon (Xilinx), I
+was on a team with [Daichi Jameson](https://github.com/daichij/). Each of them
+were amazing teammates at the various hackathons, and I definitely would not be
+writing this article if it were not for each of them.
 
 To answer the actual question though, why should you listen to me? No real
 reason, actually. I'm just someone who has some experience and some degree of
 success and I hope that you can learn from both my mistakes and my successes.
 
-.. _Xilinx: {{< ref "/portfolio#project-parqyng" >}}
-.. _MinneHack 2018: {{< ref "/portfolio#project-blockmrs" >}}
-.. _HackCU IV: {{< ref "/portfolio#project-wii-track" >}}
-.. _HackCU V: {{< ref "/posts/hackathons/hackcu-v" >}}
-.. _MHacks: {{< ref "/portfolio#project-datanium" >}}
-.. _facebook: {{< ref "/portfolio#project-hypar-map" >}}
-
-.. _Sam Sartor: https://samsartor.com
-.. _Robby Zampino: https://gitlab.com/robozman/
-.. _David Florness: https://david.florness.com/
-.. _Jack Garner: https://gitlab.com/jhgarner
-.. _Jack Rosenthal: https://jack.rosenth.al
-.. _Fisher Darling: https://gitlab.com/fisherdarling
-.. _Daichi Jameson: https://github.com/daichij/
-
--------------------------------------------------------------------------------
+---
 
 The rest of this article is split into a five sections, each dealing with a
 separate part of hackathons.
@@ -94,8 +88,7 @@ separate part of hackathons.
 4. Things to do during hackathon demos.
 5. General tips.
 
-1. How to Form a Team for a Hackathon
--------------------------------------
+## 1. How to Form a Team for a Hackathon
 
 If you want to win a hackathon, you need a good team. If you are the type of
 person who is inclined towards leadership, then you should be actively looking
@@ -109,11 +102,11 @@ qualities of hackathon teammates are a passion for engineering (hackathons are
 mini tests of engineering prowess) and the ability to compete and work hard,
 while still having a ton of fun.
 
-You may notice that I do *not* consider "technical competence" to be one of the
+You may notice that I do _not_ consider "technical competence" to be one of the
 top three most important qualities in a hackathon teammate. That's because I
 believe that people who are diligent and passionate can overcome technical
 incompetency fairly easily. This is not to say that technical competence is
-*not* a factor to consider, however. In fact, I generally try to ensure that I
+_not_ a factor to consider, however. In fact, I generally try to ensure that I
 cover my own weaknesses with my teammates. For example, Robby is an Electrical
 Engineer and has a lot more hardware experience that I do (my knowledge is
 approximately zero in that department). Sam is great with mathematics and
@@ -129,8 +122,7 @@ success at that hackathon. For MHacks, I asked Fisher (freshman) to be on my
 team. He likewise was a integral part of the team's success at both MHacks and
 the subsequent Facebook hackathon.
 
-2. How to Prepare for a Hackathon
----------------------------------
+## 2. How to Prepare for a Hackathon
 
 Besides putting together a team, there are a few things which you should
 probably do before the hackathon even starts. Some teams do a lot of
@@ -138,16 +130,15 @@ preparation, and even come to the hackathon with an idea. I'm not that organized
 or proactive, but I do try and prepare myself for the hackathon. Here are a few
 tips:
 
-**Do your homework.**
-  Your literal homework. It's not very fun if you have to worry about doing
-  homework during a hackathon. Make sure that you get ahead on your work so that
-  you don't have to stress about it or feel like you need to be getting other
-  stuff done the whole time.
+- **Do your homework.** Your literal homework. It's not very fun if you have to
+  worry about doing homework during a hackathon. Make sure that you get ahead on
+  your work so that you don't have to stress about it or feel like you need to
+  be getting other stuff done the whole time.
 
   If you aren't in school, make sure that you clear your other responsibilities
   (whatever they may be) out of the way.
 
-**Start thinking about what problems you may want to solve at the hackathon.**
+- **Start thinking about what problems you may want to solve at the hackathon.**
   Keep track of all the times you think to yourself, "hey, it'd be cool if..."
   and "man, this is terrible". Just keeping track of this will get your creative
   juices flowing. It is a lot easier to steer a moving ship than one which is
@@ -160,19 +151,17 @@ tips:
   interests you. Often, I've shown up to a hackathon with a hammer (technology)
   looking for a nail (problem).
 
-**Think big.**
-  Think of lots of ideas that are super big. Sometimes it's useful to start with
-  huge problems like "world hunger" and then think about different problems in
-  that space and see if some cool idea arises from that.
+- **Think big.** Think of lots of ideas that are super big. Sometimes it's
+  useful to start with huge problems like "world hunger" and then think about
+  different problems in that space and see if some cool idea arises from that.
 
   One example of this was the Facebook hackathon. I'd been wanting to do indoor
   mapping using just the fire escape floor-plans of buildings for a while, and
   the hackathon was a great opportunity to take a stab at it.
 
-**Bring all the electronics.**
-  Does your computer have ethernet? If not, get an adapter. At good hackathons,
-  they will have wired connections for you. Are you driving to the hackathon?
-  Bring external monitors as well!
+- **Bring all the electronics.** Does your computer have ethernet? If not, get
+  an adapter. At good hackathons, they will have wired connections for you. Are
+  you driving to the hackathon? Bring external monitors as well!
 
   Do you have some cool electronics lying around (servos, Raspberry Pi's,
   arduinos, Wii-Fit Boards, etc.)? Bring them if you can! If you are driving to
@@ -180,8 +169,7 @@ tips:
   HackCU, we had a Wii-Fit board and some other electronics, and we built our
   project around those components.
 
-3. What to Do at a Hackathon
-----------------------------
+## 3. What to Do at a Hackathon
 
 Now, for the hackathon itself. It's a ton of fun being at a hackathon, there are
 always so many people there who are passionate about technology. Make sure you
@@ -192,7 +180,7 @@ Besides getting all of the goodies, the most important thing to do is figure out
 what you are going to do for your project. At a 24 hour hackathon, you need to
 decide within 15 minutes of when coding begins. As you figure out what you are
 going to do, stretch the boundaries of your idea. Normally the best idea is the
-one which you are most excited about the *extensions* that could potentially be
+one which you are most excited about the _extensions_ that could potentially be
 made to it after you have a base product developed or that has broad
 applications in areas you care about. For example, when we were at Facebook, we
 thought the concept of indoor navigation using AR was great, and we thought of a
@@ -205,12 +193,12 @@ picture though! (The big picture helps a lot with demos.) Determining what the
 minimal proof-of-concept entails is a nontrivial problem. Here are just a couple
 of tips which might get you going in the correct direction:
 
-- Think about the *primary* user flow. What will the user have to do to
+- Think about the _primary_ user flow. What will the user have to do to
   accomplish the purpose of your application? For example, at MHacks, the main
   user flow did not include login, so we didn't spend any time on it. (In fact,
   login would have just hindered our demo.)
 
-- Think about *gimmicks*, that is, things which will make your hack memorable.
+- Think about _gimmicks_, that is, things which will make your hack memorable.
   Sometimes this is something physical. For example, at MHacks we had a box with
   a little Arduino-controlled flag which popped up when an upload finished (like
   a mailbox).
@@ -219,19 +207,24 @@ of tips which might get you going in the correct direction:
   does? Make sure your project actually does that (or something approximating
   that).
 
-- Think about how you can split up the work. It's best if you have :math:`n`
-  fairly disjoint pieces of the project, where :math:`n` is the number of people
-  on your team. This will allow you to diverge and work separately, maximizing
-  the man-hours available, and minimizing the amount of time which you are
-  blocked by each other.
+- Think about how you can split up the work. It's best if you have \(n\) fairly
+  disjoint pieces of the project, where \(n\) is the number of people on your
+  team. This will allow you to diverge and work separately, maximizing the
+  man-hours available, and minimizing the amount of time which you are blocked
+  by each other.
 
-  .. warning::
+  <div class="admonition warning">
+  <p class="first admonition-title">Warning</p>
+  <p class="last">
 
-    Don't go overboard with this, you want to have the pieces of your
-    app working together as soon as possible, so don't diverge too much that you
-    don't communicate with one another. We made this mistake at MHacks, and we
-    didn't connect everything up until the last hour of the hackathon (and that
-    was a 36-hour hackathon, so that was fairly impressive).
+  Don't go overboard with this, you want to have the pieces of your app working
+  together as soon as possible, so don't diverge too much that you don't
+  communicate with one another. We made this mistake at MHacks, and we didn't
+  connect everything up until the last hour of the hackathon (and that was a
+  36-hour hackathon, so that was fairly impressive).
+
+  </p>
+  </div>
 
 - I always strive to learn something new at each hackathon. We took this to the
   extreme at Facebook by learning Kotlin and Android development at the
@@ -242,12 +235,12 @@ So now you know what you are all working on, it's time to get coding! You've
 prioritized a set of components to implement, but what about the micro-decisions
 about how to implement those features? Rule number one at a hackathon is to
 **optimize write-time over run-time**. Who cares if your algorithm is
-:math:`\mathcal{O}(n!)`? Most likely, you will have :math:`n < 5` anyway, and
-even factorial algorithms are fast enough. Who cares if you have to cast
-everything 100 times? If doing something nasty prevents even a quarter-hour of
-refactoring, then it's worth it. It's a hackathon after all.
+\(\mathcal{O}(n!)\)? Most likely, you will have \(n < 5\) anyway, and even
+factorial algorithms are fast enough. Who cares if you have to cast everything
+100 times? If doing something nasty prevents even a quarter-hour of refactoring,
+then it's worth it. It's a hackathon after all.
 
-Rule number two, **test early, test often**. Try to have *something* working at
+Rule number two, **test early, test often**. Try to have _something_ working at
 all times. That way if everything goes south, you can at least save face and
 have something to show. In order to do this, you need to ensure that you are
 communicating constantly. That way, you can integrate and test your components
@@ -268,7 +261,7 @@ their entire project midway through the hackathon yet ended up coming back to
 win second place!
 
 Even if your idea changes significantly during the hackathon, it is important to
-keep this next rule in mind: **constantly think about what to demo**.  Make sure
+keep this next rule in mind: **constantly think about what to demo**. Make sure
 that you have an idea of what you want to show to the judges at all times. Any
 time coding anything that will not be shown to the judges is a waste of time
 (unless it's for a contingency plan, such as using GPS instead of ARCore to
@@ -287,8 +280,7 @@ fun**! Yes, it's a competition, but this is also what you enjoy doing. You are
 there to write a bunch of code, eat some junk food, and hang out with friends.
 Winning is just an added benefit.
 
-4. Things to do During Hackathon Demos
---------------------------------------
+## 4. Things to do During Hackathon Demos
 
 In the last section, I kept mentioning demos. Why? Because they are important!
 Even if you have the best project in the world, if you can't demo it
@@ -309,8 +301,8 @@ effectively, you don't win. Here are a few tips to make your demos amazing.
   we used in our demo, but we had them if we were further probed.
 
 - Demos should follow a story arc like the classic "hero's journey". Who is the
-  hero? Your app! Make sure to quickly present the problem, then *pow* your app
-  solves all your problems. Then show them *how* it does so. This *how* part of
+  hero? Your app! Make sure to quickly present the problem, then _pow_ your app
+  solves all your problems. Then show them _how_ it does so. This _how_ part of
   the demo should take up the majority of the time. At the end, try and save
   time for a couple of sentences about the future of your app.
 
@@ -318,20 +310,20 @@ effectively, you don't win. Here are a few tips to make your demos amazing.
   don't script it too much that it feels fake. Be natural, be excited, be human.
 
   Since you probably don't have every single word scripted, make sure that you
-  at least have a list of all the words and phrases that you *really* want to
+  at least have a list of all the words and phrases that you _really_ want to
   make sure you say. You may not hit all of them, and that's ok, but try and say
   as many of them as you can. For example, at HackCU, we made sure to always
   describe our app as "distributed inventory tracking" that uses "IoT" and
   "cloud computing". At Facebook, we made sure to always mention that it used
   "AR", "structure from motion", and "simultaneous location and mapping".
 
-- Be sure to show the *features* of your app, not the technology or code behind
+- Be sure to show the _features_ of your app, not the technology or code behind
   it. In the real world, features (not code) are what make companies money. At a
   hackathon, features (not code) are what make you win.
 
 - Of course, it's smart to talk a little bit about the technology you used
-  (especially if you are targeting a technical sponsor prize, or you are using
-  a cutting-edge technology), but that should not be the *primary* focus of your
+  (especially if you are targeting a technical sponsor prize, or you are using a
+  cutting-edge technology), but that should not be the _primary_ focus of your
   demo.
 
   This balancing act is important, especially with non-technical judges. When
@@ -349,8 +341,7 @@ effectively, you don't win. Here are a few tips to make your demos amazing.
   can do. If the judge asks if it can make breakfast, think of some way that it
   can help them make breakfast (even if that's an entirely ridiculous idea).
 
-5. General Tips
----------------
+## 5. General Tips
 
 Everything I've mentioned above is important, but there are a couple of things
 which just don't fit into any of the categories because they are much more
@@ -358,8 +349,8 @@ general. Here are my general suggestions:
 
 - Back each other up, especially during demos. If somebody is totally bombing
   the demo, do something to rescue the situation. The classic "as you can tell,
-  it's very complicated... so now we want to <do something else that is not
-  whatever train wreck you were on before>" is a good go-to.
+  it's very complicated... so now we want to {do something else that is not
+  whatever train wreck you were on before}" is a good go-to.
 
   However, this applies to more than just demos. This also applies to coding and
   general wellbeing. Having unhappy teammates is not good for many reasons: they
@@ -389,13 +380,11 @@ any additional tips? Comment your thoughts below!
 
 Happy hacking!
 
--------------------------------------------------------------------------------
-
-.. [1] Many people have a misconception of the word *hack*. In the common
-   vernacular, *hacking* is used to refer to an act which is more correctly
-   decribed as *cracking*. *Crackers* are people who try and break in to systems
-   (either maliciously or as white-hats). *Hack* on the other hand is an
-   word describing the quality of a technical idea/project. Hacks are things
-   which *work*, but are very messy. Think of it like using duct-tape to hang
-   something up on a wall instead of doing the "right" thing which would be to
-   hang it up using a nail.
+[^1]: Many people have a misconception of the word _hack_. In the common
+vernacular, _hacking_ is used to refer to an act which is more correctly
+described as _cracking_. _Crackers_ are people who try and break in to systems
+(either maliciously or as white-hats). _Hack_ on the other hand is an word
+describing the quality of a technical idea/project. Hacks are things which
+_work_, but are very messy. Think of it like using duct-tape to hang something
+up on a wall instead of doing the "right" thing which would be to hang it up
+using a nail.
