@@ -8,23 +8,18 @@
 
   outputs = { self, nixpkgs, flake-utils }:
     (flake-utils.lib.eachDefaultSystem (system:
-      let
-        pkgs = import nixpkgs { inherit system; };
-        ciPackages = with pkgs; [
-          bashInteractive
-          docutils
-          hugo
-          openring
-          python3Packages.pygments
-        ];
+      let pkgs = import nixpkgs { inherit system; };
       in {
         devShells = {
           default = pkgs.mkShell {
-            packages = with pkgs;
-              ciPackages
-              ++ [ libheif linkchecker nodePackages.htmlhint openssh rsync ];
+            packages = with pkgs; [
+              hugo
+              openring
+              libheif
+              linkchecker
+              nodePackages.htmlhint
+            ];
           };
-          ci = pkgs.mkShell { packages = ciPackages; };
         };
       }));
 }

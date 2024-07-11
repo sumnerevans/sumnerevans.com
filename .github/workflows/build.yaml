@@ -25,14 +25,6 @@ jobs:
         with:
           submodules: "recursive"
 
-      - uses: DeterminateSystems/nix-installer-action@v12
-
-      - uses: DeterminateSystems/magic-nix-cache-action@v7
-
-      - uses: DeterminateSystems/flake-checker-action@v8
-        with:
-          fail-mode: true
-
       - name: Cache Generated Images
         id: cache-images
         uses: actions/cache@v4
@@ -43,23 +35,15 @@ jobs:
             ${{ runner.os }}-${{ hashFiles('config.toml') }}-
             ${{ runner.os }}-
 
-      - name: Cache nix shell environment
+      - name: Openring
         run: |
-          nix develop '.#ci' \
-            --command bash -c 'echo nix build environment cached'
-
-      - name: Webring
-        run: |
-          nix develop '.#ci' \
-            --command bash -c "openring -S feed_urls.txt \
-                -n 6 -l 100 \
-                < other-feeds.html.tmpl \
-                > themes/smol/layouts/partials/webring.html"
+          go run git.sr.ht/~sircmpwn/openring@latest -S feed_urls.txt \
+            -n 6 -l 100 \
+            < other-feeds.html.tmpl \
+            > themes/smol/layouts/partials/webring.html
 
       - name: Hugo
-        run: |
-          nix develop '.#ci' \
-            --command bash -c "hugo --logLevel debug --gc --minify"
+        run: go run github.com/gohugoio/hugo@latest --logLevel debug --gc --minify
 
       - name: Teaching raw HTML
         run: |
