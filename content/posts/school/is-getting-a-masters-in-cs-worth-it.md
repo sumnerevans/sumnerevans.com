@@ -205,10 +205,10 @@ students into five broad categories, and discuss them in turn.
   worthwhile investment, and companies will be more likely to take a risk and
   hire them.
 
-  However, as we will explore in Section
-  [**1.3. Opportunity Cost**](#13-opportunity-cost), there are still likely more
-  cost effective ways to increase lifetime earnings than getting a master's
-  degree.
+  However, as we will explore in
+  [**Section 1.3. Opportunity Cost**](#13-opportunity-cost), there are still
+  likely more cost effective ways to increase lifetime earnings than getting a
+  master's degree.
 
 * **The 40th-60th percentile of their undergraduate class**
 
