@@ -16,9 +16,6 @@ description: |
   implementations of the Olm protocol using a technique called "Differential
   Fuzzing". I was able to find a difference in the way that libolm and megolm
   store Ed25519 private keys using this technique.
-image: images/scale.jpg
-build:
-  publishResources: false
 aliases:
   - ../programming/differential-fuzzing-libolm-goolm
 ---
@@ -178,7 +175,7 @@ are a lot less heavy than accounts, so I made a reproduction of the issue with
 megolm sessions and did a memory dump of the libolm megolm session struct. The
 result? The bytes are equal!
 
-![The Public key is encoded before the private key in the memory layout](images/memorydump.png)
+![The Public key is encoded before the private key in the memory layout](./images/memorydump.png)
 
 So, at this point I know that the private key bytes being used by libolm and
 goolm are identical, but the signatures are still turning out different!
