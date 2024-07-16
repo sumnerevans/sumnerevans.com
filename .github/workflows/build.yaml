@@ -43,7 +43,7 @@ jobs:
             > themes/smol/layouts/partials/webring.html
 
       - name: Hugo
-        run: go run github.com/gohugoio/hugo@latest --logLevel debug --gc --minify
+        run: CGO_ENABLED=1 go run -tags extended github.com/gohugoio/hugo@latest --logLevel debug --gc --minify
 
       - name: Teaching raw HTML
         run: |
