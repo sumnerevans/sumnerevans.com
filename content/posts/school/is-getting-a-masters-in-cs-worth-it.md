@@ -16,11 +16,11 @@ description: |
 ---
 
 "Master of Science in Computer Science", it sounds so grand, doesn't it? But is
-it worth it? I'm writing this post to give my perspective on whether or not
-getting a master's degree is worth the effort and money. I'm assuming that you
-are _currently in a computer science undergraduate program_ and are considering
-whether or not to continue on to get a computer science master's degree. **I
-want to be very clear, this post is my opinion only.**
+it worth it? I'm writing this post to give my perspective on whether getting a
+master's degree is worth the effort and money. I'm assuming that you are
+_currently in a computer science undergraduate program_ and are considering
+whether to continue on to get a computer science master's degree. **I want to be
+very clear, this post is my opinion only.**
 
 I will start by saying that I am very happy with my decision to get my master's
 in computer science after getting my bachelor's. Mines offers a 4+1 program
@@ -29,7 +29,7 @@ me, it was one of the best years of my life. I was able to
 [attend]({{<ref"../hackathons/hackcu-v/">}}) and
 [win]({{<ref"../hackathons/2018-11-16-facebook-hackathon-the-competition/">}})
 multiple hackathons, [compete in ICPC]({{<ref"../school/2018-11-03-icpc">}}),
-organize and run the second annual
+organise and run the second annual
 [CS@Mines High School Programming
 Competition]({{<ref"../school/2019-hspc.rst">}}), act as Chair of Mines ACM and
 Linux Help Guru for the Mines Linux Users Group,
@@ -174,7 +174,7 @@ So, if a master's degree doesn't increase the _set_ of positions that you are
 qualified for, _does it increase the quality of attainable jobs?_ and _does the
 increased quality of jobs compensate for the cost of a master's degree?_
 
-I think that this is highly dependent on your situation, but I will categorize
+I think that this is highly dependent on your situation, but I will categorise
 students into five broad categories, and discuss them in turn.
 
 - **The 90th percentile of their undergraduate class**
@@ -212,11 +212,11 @@ students into five broad categories, and discuss them in turn.
 
 * **The 40th-60th percentile of their undergraduate class**
 
-  These students are are average undergraduate students, and will be closer to
-  the lower-bound threshold for being accepted into graduate programs. Depending
-  on other factors, these students may be struggling to get offers with just
-  their undergraduate degrees. These students will likely struggle with the
-  increased rigour of a graduate program.
+  These students are average undergraduate students, and will be closer to the
+  lower-bound threshold for being accepted into graduate programs. Depending on
+  other factors, these students may be struggling to get offers with just their
+  undergraduate degrees. These students will likely struggle with the increased
+  rigour of a graduate program.
 
   For these students, getting a master's degree as a way to become more
   employable will be a very stressful and expensive endeavour. And while they
@@ -264,7 +264,7 @@ students into five broad categories, and discuss them in turn.
 In conclusion, **getting a master's degree is not a silver bullet that will make
 you a better computer scientist or software engineer.** If you are struggling to
 get offers with just your undergraduate degree, you will likely continue to
-struggle to get offers once you have an extra line on your resume, and an extra
+struggle to get offers once you have an extra line on your résumé, and an extra
 piece of paper in a frame. If you are getting competitive offers with a
 bachelor's, you'll get competitive offers with a master's as well.
 
@@ -298,7 +298,7 @@ significantly more influence on lifetime earnings (the primary one being luck).
 We have already discussed one reason for this: selection bias. The top students
 are always going to get top jobs, regardless of how many degrees they've earned.
 
-The second reason is _opportunity costs_. One must realize that the cost of
+The second reason is _opportunity costs_. One must realise that the cost of
 getting a graduate degree is not just the cost of tuition and all other living
 costs associated with attending school (both of which are growing every year),
 it also includes the lost income that would have been gained by entering the
@@ -446,7 +446,7 @@ however, this is almost certainly not going to be the case. Different healthcare
 plans have widely varying deductibles and benefits. Companies also provide a
 wide variety of different additional benefits from 401(k) match to free food in
 the office, from fertility assistance to continued education credits, and from
-employee stock purchase plans (ESPP) to travel to company retreats, all of which
+Employee Stock Purchase Plans (ESPP) to travel to company retreats, all of which
 may be valued differently by different people in different life situations.
 
 The above analysis is ignoring the additional payments that would be required
@@ -702,11 +702,11 @@ I have no regrets about my decision to get my master's degree. As I have
 mentioned already, it was one of the best years of my life so far, and I
 wouldn't trade a second of it.
 
-However, I am not not naive enough to claim that it was the source of the
-success I've had so far in my career. I do not think that it greatly improved my
-career prospects or lifetime earnings. However, it gave me an opportunity to
-dive deeper into a few computer science topics that I found interesting, and
-gave me a chance to deepen lifelong friendships and have a lot of fun.
+However, I am not naive enough to claim that it was the source of the success
+I've had so far in my career. I do not think that it greatly improved my career
+prospects or lifetime earnings. However, it gave me an opportunity to dive
+deeper into a few computer science topics that I found interesting, and gave me
+a chance to deepen lifelong friendships and have a lot of fun.
 
 If you ask any university whether it's worth it or not, they will unequivocally
 say of course it's worth it, but I wanted to provide a more accurate picture of

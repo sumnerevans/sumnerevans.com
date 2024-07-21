@@ -42,7 +42,7 @@ I was able to find both in Lisbon
 [when I was there a few years ago]({{<ref"../../2022-lisbon-and-paris/lisbon-day2/index.md">}})).
 
 One of the first stops that we made was at a McDonald's that is inside of a very
-famous historic cafe. McDonalds restored the old cafe, but they had to leave the
+famous historic café. McDonalds restored the old café, but they had to leave the
 exterior untouched, and keep most of the interior the same as well. It was a
 very beautiful building, just wish that it wasn't a McDonald's :).
 

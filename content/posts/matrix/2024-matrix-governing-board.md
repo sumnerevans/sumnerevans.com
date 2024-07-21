@@ -74,7 +74,7 @@ not win at chat, we cannot win at anything, and if we do not have a diverse
 ecosystem of implementations of the Matrix Spec, the benefits of openness cannot
 be realized.
 
-### 1. Focus On Chat
+### 1. Focus on Chat
 
 If Matrix doesn't become the backbone for interoperable chat, the damage that
 siloed chat platforms do to personal privacy and data sovereignty will continue
@@ -121,9 +121,9 @@ community. A healthy Element is essential to building a healthy Matrix
 community.
 
 Element's willingness to create and boostrap the Foundation attests to their
-commitment to the community. However, if Element is serious about
-spinning off the Foundation as an independent organization, they must also
-accept that they are now one of many community members.
+commitment to the community. However, if Element is serious about spinning off
+the Foundation as an independent organization, they must also accept that they
+are now one of many community members.
 
 Foundation representatives have in the past emphasized Element-led experiments
 such as Third Room, P2P Matrix, and low-bandwidth Matrix as core pillars of the

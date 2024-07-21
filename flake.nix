@@ -18,6 +18,7 @@
               libheif
               linkchecker
               nodePackages.htmlhint
+              vale
             ];
           };
         };

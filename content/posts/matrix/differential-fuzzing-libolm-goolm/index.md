@@ -136,7 +136,7 @@ Thus, my hypothesis that the pickling was the problem turned out false.
 ## Internally Inconsistent!?
 
 However, during this round-tripping exploration, I decided to add in a test for
-internal consistency within the goolm side after importing from libolm: I added
+internal consistency within the goolm side after importing from libolm. I added
 a test to ensure that the public key derived from the private key was the same
 as the public key that libolm reported. It turns out, they were different!
 
@@ -168,7 +168,7 @@ keys, but libolm does not expose functions for getting the private key (it only
 exposes a way to get the pickled value of the entire account). However, libolm
 does not allocate any memory itself (you have to pass it a byte buffer to put
 all of its data into), so I could inspect the byte buffer and cross-reference it
-with the byte layout to see if it mached.
+with the byte layout to see if it matched.
 
 At this point, I figured out that megolm sessions also have Ed25519 keys, and
 are a lot less heavy than accounts, so I made a reproduction of the issue with

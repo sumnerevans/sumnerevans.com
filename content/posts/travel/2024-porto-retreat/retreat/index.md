@@ -60,7 +60,7 @@ event team had been there setting things up for a few days before our meetup.
 They had nametags and swag ready for us when we arrived and there was a whole AV
 setup with TVs and livestreaming equipment. They had tables set up for everyone
 and a small stage in the front. This is definitely a benefit of being at a
-larger company: we have actual teams that organize larger retreats. In the past,
+larger company: we have actual teams that organise larger retreats. In the past,
 it's mainly been Eric handling all of the logistics, which is a lot of work and
 his bandwidth was not primarily dedicated to event planning.
 
@@ -277,7 +277,7 @@ on the team is highly competent and motivated towards the goal of de-siloing the
 chat landscape. But in order to de-silo the chat landscape, we must de-silo
 ourselves. This retreat was a big step towards that goal.
 
-It's cliche to say, but I truly believe that our combined Beeper/Texts team is
+It's cliché to say, but I truly believe that our combined Beeper/Texts team is
 greater than the sum of its parts. The teams have been working on similar
 products for a long time, but now we are joining forces. Combining the knowledge
 of the two teams will take time, but I think that we will emerge from this

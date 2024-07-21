@@ -1,19 +1,18 @@
----
-# Error: sumner.British
-# Checks that British spelling is used instead of British spelling. For the
-# given words.
 extends: substitution
-message: 'Use the British spelling "%s" instead of the American "%s".'
-level: warning
+message: 'Use "%s" instead of "%s"'
 ignorecase: true
+level: warning
 swap:
+  orientated: oriented
+  programme: program
+  aluminium: aluminum
   eon: aeon
-  airplane: aeroplane
-  aging: ageing
-  anemia: anaemia
-  anesthesia: anaesthesia
+  aeroplane: airplane
+  ageing: aging
+  anaemia: anemia
+  anaesthesia: anesthesia
   analyze: analyse
-  annex: annexe
+  annexe: annex
   apologize: apologise
   behavior: behaviour
   buses: busses
@@ -27,53 +26,52 @@ swap:
   civilize: civilise
   color: colour
   cozy: cosy
-  cipher: cypher
-  dependent: dependant
-  defense: defence
-  distill: distil
-  draft: draught
-  encyclopedia: encyclopaedia
-  inquiry: enquiry
-  enroll: enrol
-  enrollment: enrolment
-  enthrall: enthral
+  cypher: cipher
+  dependant: dependent
+  defence: defense
+  distil: distill
+  draught: draft
+  encyclopaedia: encyclopedia
+  enquiry: inquiry
+  enrol: enroll
+  enrolment: enrollment
+  enthral: enthrall
   favorite: favourite
   fiber: fibre
   filet: fillet
   flavor: flavour
-  furor: furore
-  fulfill: fulfil
-  jail: gaol
+  furore: furor
+  fulfil: fulfill
+  gaol: jail
   gray: grey
   humor: humour
   honor: honour
-  initialed: initialled
-  initialing: initialling
-  instill: instil
-  jewelry: jewellery
-  labeling: labelling
-  labeled: labelled
+  initialled: initialed
+  initialling: initialing
+  instil: instill
+  jewellery: jewelry
+  labelling: labeling
+  labelled: labeled
   labor: labour
-  libelous: libellous
+  libellous: libelous
   license: licence
   likable: likeable
   livable: liveable
   luster: lustre
   maneuver: manoeuvre
   marvelous: marvellous
-  matte: matt
-  meager: meagre
+  meagre: meager
   meter: metre
   modeling: modelling
   mustache: moustache
   neighbor: neighbour
   normalize: normalise
-  offense: offence
+  offence: offense
   organize: organise
   paralyze: paralyse
-  plow: plough
-  pretense: pretence
-  pajamas: pyjamas
+  plough: plow
+  pretence: pretense
+  pyjamas: pajamas
   ratable: rateable
   realize: realise
   recognize: recognise
@@ -84,12 +82,12 @@ swap:
   saltpeter: saltpetre
   skeptic: sceptic
   sepulcher: sepulchre
-  signaling: signalling
+  signalling: signaling
   sizable: sizeable
-  skillful: skilful
+  skilful: skillful
   somber: sombre
   smolder: smoulder
-  specialty: speciality
+  speciality: specialty
   specter: spectre
   splendor: splendour
   standardize: standardise
@@ -100,5 +98,5 @@ swap:
   traveler: traveller
   traveling: travelling
   unshakable: unshakeable
-  willful: wilful
+  wilful: willful
   yogurt: yoghurt

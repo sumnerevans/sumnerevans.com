@@ -280,7 +280,7 @@ fun**! Yes, it's a competition, but this is also what you enjoy doing. You are
 there to write a bunch of code, eat some junk food, and hang out with friends.
 Winning is just an added benefit.
 
-## 4. Things to do During Hackathon Demos
+## 4. Things to Do During Hackathon Demos
 
 In the last section, I kept mentioning demos. Why? Because they are important!
 Even if you have the best project in the world, if you can't demo it

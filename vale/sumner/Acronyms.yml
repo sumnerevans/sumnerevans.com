@@ -3,15 +3,18 @@
 # Checks for unexpanded acronyms.
 # Adapted from: gitlab.Acronyms and Microsoft.Acronyms
 extends: conditional
-message: '"%s" has no definition.'
+message: "'%s' has no definition."
 level: warning
+scope: text
 ignorecase: false
 # Ensures that the existence of 'first' implies the existence of 'second'.
 first: '\b([A-Z]{3,5})\b'
-second: '(?:\b[A-Za-z]+[ -])+\(([A-Z]{3,5})\)'
+second: '(?:\b[A-Z][a-z]+ )+\(([A-Z]{3,5})\)'
 # ... with the exception of these:
 exceptions:
+  - ACM
   - AJAX
+  - AMA
   - AMD
   - ANSI
   - API
@@ -20,21 +23,27 @@ exceptions:
   - ASCII
   - ASP
   - AUR
+  - CDN
+  - DMA
   - AWS
   - BASH
+  - BBQ
   - BSD
   - CAS
+  - CEO
   - CLI
   - CNA
   - CNAME
   - CORE
+  - COVID
   - CPU
   - CPW
   - CRIME
+  - CSCI
   - CSRF
   - CSS
-  - CSCI
   - CSV
+  - CUDA
   - CVE
   - CVS
   - DAG
@@ -77,15 +86,18 @@ exceptions:
   - HIPAA
   - HSPC
   - HTML
+  - HTMX
   - HTTP
   - HTTPS
   - IAM
   - IANA
   - IBM
+  - ICPC
   - IDE
   - IID
   - IMAP
   - IOPS
+  - IOT
   - IRC
   - ISO
   - JAR
@@ -96,6 +108,7 @@ exceptions:
   - JWT
   - KDE
   - LAN
+  - LAX
   - LDAP
   - LDAPS
   - LESS
@@ -189,6 +202,7 @@ exceptions:
   - VCS
   - VPC
   - VPS
+  - WASM
   - WIP
   - WSL
   - WWI

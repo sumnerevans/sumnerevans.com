@@ -122,7 +122,7 @@ some site like Patreon, he sends actual invoices to companies.
 Later in the day Dylan Reimerick gave a talk about dependency injection, which
 is a technique that I hear a lot about, but didn't really ever understand what
 it meant until the talk. He mentioned that Go's interfaces allow for fairly
-flexible dependency injection, as the dependant package can define an interface
+flexible dependency injection, as the dependent package can define an interface
 that it expects and can then callers can have different implementations as long
 as they implement the interface. He also provided some tips about defining
 dependency injection boundaries (he recommended package-level for most cases)

@@ -66,7 +66,7 @@ one of the most fully-featured non-Element clients in the ecosystem. The Nheko
 project has led to many Spec clarifications and improvements and continues to
 stress-test the viability of new proposals. The Client-Server API often feels
 like it was designed by backend developers who are guessing at how clients will
-be implemented. However, there are many things that can be done to the CSAPI
-that will improve client developers experience. Having strong client
-representation on the Governing board will ensure that clients have a seat at
-the table in discussions about the priorities of Matrix.
+be implemented. However, there are many things that can be done to the
+Client-Server API that will improve client developers experience. Having strong
+client representation on the Governing board will ensure that clients have a
+seat at the table in discussions about the priorities of Matrix.

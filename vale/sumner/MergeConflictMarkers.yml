@@ -1,4 +1,3 @@
----
 # Error: gitlab.MergeConflictMarkers
 #
 # Checks for the presence of merge conflict markers.
