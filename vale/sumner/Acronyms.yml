@@ -13,6 +13,7 @@ second: '(?:\b[A-Z][a-z]+ )+\(([A-Z]{3,5})\)'
 # ... with the exception of these:
 exceptions:
   - ACM
+  - AES
   - AJAX
   - AMA
   - AMD
@@ -23,13 +24,12 @@ exceptions:
   - ASCII
   - ASP
   - AUR
-  - CDN
-  - DMA
   - AWS
   - BASH
   - BBQ
   - BSD
   - CAS
+  - CDN
   - CEO
   - CLI
   - CNA
@@ -50,6 +50,7 @@ exceptions:
   - DAST
   - DEBUG
   - DHCP
+  - DMA
   - DMCA
   - DNS
   - DOM

@@ -41,9 +41,19 @@ control, and their UX is arguably worse than Matrix.
 In this talk, my goal is to discuss the cryptographic key _infrastructure_ in
 Matrix. What do I mean by "infrastructure"? I mean all of the features which
 support key sharing and identity verification, but don't actually themselves
-provide security.
+provide security. You can think of this talk as discussing the "UX layer of
+cryptography in Matrix". None of the things that I'm going to discuss are
+strictly necessary for ensuring secure E2EE communication, but without them,
+Matrix' UX would be horrible.
+
+This is a diagram of the things we are going to talk about today. This diagram
+represents all of the infrastructure in Matrix for sharing, backing up, and
+verifying keys.
 
 TODO show diagram(s?) of what I'm going to explain.
+
+Don't worry, we are going to go step-by-step through this, at the end of the
+talk you should have an understanding of what this diagram means.
 
 - megolm
 - key exchange
@@ -51,6 +61,44 @@ TODO show diagram(s?) of what I'm going to explain.
 - master key
 - verification
 - cross-signing
+
+Let's start by discussing the goals of using cryptography for messaging.
+
+There are two main features people want from encryption:
+
+1. **Message Privacy:** only the people who are part of the conversation should
+   be allowed to view the messages of the conversation. As a corollary to this,
+   we want to ensure that messages cannot be tampered with by a
+   man-in-the-middle actor without the receiving party knowing.
+1. **Identity Verification:** verifying that sender of a message is actually who
+   they say they are. We want cryptographically guarantee that a bad actor is
+   not impersonating the sender. Note that one of the most important parts of
+   identity this is verifying that our own devices are under our own control and
+   we should allow our own clients to share keys to it.
+
+Let's look back at the diagram to see which pieces of the diagram are necessary
+for each of these aspects.
+
+TODO diagrams
+
+We will look at each in turn, but first, we need to take a short detour into
+cryptosystems. We aren't going to go too deep, just enough to understand the
+cryptographic primitives we have at our disposal.
+
+## Cryptosystems
+
+## Message Privacy
+
+- megolm
+- key requests
+- key backup
+- SSSS
+- m.secret.request
+
+## Identity Verification
+
+- cross-signing
+- SSSS (again)
 
 ---
 
@@ -232,6 +280,8 @@ an AES-256 symmetric encryption).
 For this, we have HKDF which is a key derivation function (KDF)
 
 - HKDF
+
+- HMAC
 
 ## Privacy
 
