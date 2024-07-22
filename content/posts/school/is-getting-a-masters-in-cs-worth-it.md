@@ -59,7 +59,7 @@ career success to this point to having received additional education.
 I think there are three main reasons for getting a master's degree in computer
 science:
 
-1. **Financial: you want to make more money.**
+1. **[Financial](#1-financial): you want to make more money.**
 
    This is probably the most common reason people want to get an advanced
    computer science degree. Computer science is one of the fastest growing
@@ -70,16 +70,16 @@ science:
    themselves from all the other graduates to get the higher-paying jobs. One
    way that people do this is by getting a master's degree on addition to their
    undergraduate computer science or other engineering degree.
-2. **Academic: you want to learn more to prepare yourself better for industry or
-   further education.**
+2. **[Academic](#2-academic): you want to learn more to prepare yourself better
+   for industry or further education.**
 
    Others see the master's degree as a way to grow academically. Whether their
    goal is to become an educator, continue on to a PhD program, become a
    researcher in industry or academia, or just generally expand their knowledge
    of the field, these people are motivated primarily because they enjoy
    learning.
-3. **Social:** you are not ready for the "real world" yet and want another year
-   in school before having to be a real adult.
+3. **[Social](#3-social): you are not ready for the "real world" yet and want
+   another year in school before having to be a real adult.**
 
    Many of the people who pursue master's degrees have a social motivation as
    well. Maybe they just want more of the "college experience". Maybe they were
@@ -558,12 +558,16 @@ of knowledge in CS.
 I think that most people are motivated to get a higher degree by one or more of
 the following three reasons:
 
-1. **The joy of learning**: you just like learning, and don't feel like your
-   undergraduate studies sufficiently quenched your desire to learn.
-2. **To become an educator**: you want to teach others computer science (either
-   at a middle/high school level or college level).
-3. **Becoming an expert in a specific topic**: you want to be a cutting-edge
-   researcher in a topic that you find interesting in computer science.
+1. [**The joy of learning**](#21-the-joy-of-learning): you just like learning,
+   and don't feel like your undergraduate studies sufficiently quenched your
+   desire to learn.
+2. [**To become an educator**](#22-becoming-an-educator): you want to teach
+   others computer science (either at a middle/high school level or college
+   level).
+3. [**Becoming an expert in a specific
+   topic**](#23-becoming-an-expert-in-a-specific-topic): you want to be a
+   cutting-edge researcher in a topic that you find interesting in computer
+   science.
 
 We will discuss each in the next three sections. I'll also provide some thoughts
 on whether it's worth it academically for software engineers to pursue a
