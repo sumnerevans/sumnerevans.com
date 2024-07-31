@@ -58,6 +58,7 @@ exceptions:
   - DRY
   - DSA
   - DVCS
+  - ECDH
   - ECDSA
   - EKS
   - EOL
@@ -85,6 +86,7 @@ exceptions:
   - HAML
   - HEAD
   - HIPAA
+  - HMAC
   - HSPC
   - HTML
   - HTMX
@@ -119,6 +121,7 @@ exceptions:
   - LLDB
   - LRU
   - LTS
+  - MAC
   - MIME
   - MIT
   - MVC

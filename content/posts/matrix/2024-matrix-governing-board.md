@@ -7,6 +7,7 @@ tags:
   - Matrix Governing Board
   - Element
   - Matrix
+  - Matrix Foundation
   - Chat
   - Cryptography
 description: |
