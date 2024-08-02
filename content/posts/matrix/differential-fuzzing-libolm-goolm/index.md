@@ -175,7 +175,7 @@ are a lot less heavy than accounts, so I made a reproduction of the issue with
 megolm sessions and did a memory dump of the libolm megolm session struct. The
 result? The bytes are equal!
 
-![The Public key is encoded before the private key in the memory layout](./images/memorydump.png)
+![The public key is encoded before the private key in the memory layout](./images/memorydump.png)
 
 So, at this point I know that the private key bytes being used by libolm and
 goolm are identical, but the signatures are still turning out different!
@@ -213,7 +213,11 @@ used one of the other formats. I found many different resources, but
 [Brian Warner's blog post](https://blog.mozilla.org/warner/2011/11/29/ed25519-keys/)
 caught my eye because of this diagram:
 
-![The Go standard library uses the same format as SUPERCOP](https://blog.mozilla.org/warner/files/2011/11/key-formats.png)
+{{<figure
+  src="https://blog.mozilla.org/warner/files/2011/11/key-formats.png"
+  title="The Go standard library uses the same format as SUPERCOP"
+  width=600
+>}}
 
 According to the table at the bottom, there are two main ways to store the
 private key: storing the seed and the public key, or storing the private scalar
