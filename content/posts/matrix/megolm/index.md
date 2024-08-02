@@ -275,10 +275,8 @@ differences in how the people-counter ratchet and the Megolm ratchet behave:
      would reset the first part using the increment method described above, and
      increment the second part by one. This means that to get to the
      \(n^{\text{th}}\) ratchet value, you at most have to do 1020 HKDF
-     computations[^2].
-
-[^2]: I don't understand why it's 1020 instead of 1024, but that's what the
-Megolm documentation says it is.
+     computations (each of the four parts of the ratchet can be incremented 255
+     times).
 
 So what does this get us? The 1024 bits of entropy that the ratchet is
 initialized with provides enough randomness for all of our AES key/IV and MAC
