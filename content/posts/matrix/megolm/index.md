@@ -84,9 +84,9 @@ Let us start by making a few observations about the overall dataflow in
 Figure 1.
 
 Notice that the unencrypted message is on both Alice's and Bob's side, but the
-unencrypted message itself never leaves the Alice's device. Instead, the
-plaintext message undergoes a series of transformations to end up in an
-encrypted message and then back from that encrypted message to the plaintext.
+unencrypted message itself never leaves Alice's device. Instead, the plaintext
+message undergoes a series of transformations to end up in an encrypted message
+and then back from that encrypted message to the plaintext.
 
 In the overlapping section between Alice and Bob, there are two pieces of data:
 the encrypted message and the _Megolm Session_. Alice's and Bob's devices share
@@ -142,7 +142,7 @@ also use HKDF (which is also deterministic) to generate the same AES key and IV.
 ## 3. Message Integrity
 
 Now, let's consider the situation where an attacker is able to modify the
-contents of the message in transit? How can we detect if this happens? This is
+contents of the message in transit. How can we detect if this happens? This is
 where the concept of message integrity comes into play.
 
 Ensuring message integrity requires guaranteeing that the contents of the
@@ -303,7 +303,7 @@ article:
 {{<figure src="./images/overview.png" title="Figure 6: Megolm Overview">}}
 
 When Alice wants to encrypt a message, she first determines the next ratchet
-index. The Alice uses the Megolm ratchet to generate bits and passes those bits
+index. Alice uses the Megolm ratchet to generate bits and passes those bits
 through HKDF to produce an AES key and IV and a MAC key. She then takes her
 message, encrypts it with AES, and creates a MAC of the ciphertext using the MAC
 key. Then she signs the payload with her Megolm session private key and sends it
