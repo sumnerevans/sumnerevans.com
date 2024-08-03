@@ -1,6 +1,6 @@
 ---
 title: Message Security in Matrix
-date: 2024-07-21T06:00:00-06:00
+date: 2024-08-02T06:00:00-06:00
 categories:
   - Matrix
 tags:
@@ -265,9 +265,10 @@ differences in how the people-counter ratchet and the Megolm ratchet behave:
    - The Megolm ratchet increments each position by using HMAC. The details are
      not important, but recall that HMAC is irreversible.
 1. **Rollover**
-   - When a position reaches 9, it resets back to 0.
-   - When a position has been incremented \(2^8=256\) times, it is reset by
-     using the next higher position's value as the HMAC key.
+   - When a position reaches 9, on the next increment it resets back to 0.
+   - When a position has been incremented \(2^8-1=255\) times, on the next
+     increment it is reset by using the next higher position's value as the HMAC
+     key.
 1. **Skipping Values**
    - You cannot skip values.
    - You can skip by increments of \(2^0=1\), \(2^8\), \(2^{16}\), or \(2^{24}\)
