@@ -91,7 +91,7 @@ and then back from that encrypted message to the plaintext.
 In the overlapping section between Alice and Bob, there are two pieces of data:
 the encrypted message and the _Megolm Session_. Alice's and Bob's devices share
 the encrypted message via an `m.room.encrypted` Matrix event within a Matrix
-room. The Megolm Session must also be shared as it contains information about
+room. The Megolm session must also be shared as it contains information about
 how to encrypt and decrypt messages. I will discuss the mechanisms by which the
 sessions are shared in section
 [5. Sharing the Megolm Session](#5-sharing-the-megolm-session).
@@ -273,7 +273,7 @@ differences in how the people-counter ratchet and the Megolm ratchet behave:
    - You cannot skip values.
    - You can skip by increments of \(2^0=1\), \(2^8\), \(2^{16}\), or \(2^{24}\)
      or any combination thereof. If you want to skip by \(2^8\) for example, you
-     would reset the first part using the increment method described above, and
+     would reset the first part using the rollover method described above, and
      increment the second part by one. This means that to get to the
      \(n^{\text{th}}\) ratchet value, you at most have to do 1020 HKDF
      computations (each of the four parts of the ratchet can be incremented 255
