@@ -620,8 +620,8 @@ yearning to learn more about any particular subject.
 Computer science education is becoming more and more widespread and is being
 integrated earlier and earlier into curriculums. There are many opportunities
 for computer science educators at a middle and high school level. If you are
-interested in becoming such an educator then you finding a school with a CS
-education masters degree program is likely a good option.
+interested in becoming such an educator then finding a school with a Computer
+Science Education masters degree program is likely a good option.
 
 If you want to become a professor at a university or college, then you will need
 a PhD (you don't want to be an adjunct, they don't pay enough). Many people
