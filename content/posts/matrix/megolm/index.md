@@ -139,6 +139,13 @@ ratchet index is included in the encrypted message payload, so both sides of the
 conversation are able to use the ratchet to produce the same value. Both sides
 also use HKDF (which is also deterministic) to generate the same AES key and IV.
 
+{{% note %}}
+
+Multiple messages can be sent using the same Megolm session. The ratchet index
+should be incremented for each new message.
+
+{{% /note %}}
+
 ## 3. Message Integrity
 
 Now, let's consider the situation where an attacker is able to modify the
@@ -219,6 +226,9 @@ There are three main ways that Megolm sessions are shared:
 1. **Key Backup.** This is a mechanism where the keys are encrypted with a
    backup key and then stored on the homeserver. Clients can restore keys from
    the backup using the backup key.
+
+I'll note here that in Matrix, Megolm sessions are sometimes referred to as
+"room keys", hence the name of the to-device events.
 
 {{% tip title="Shameless Plug" %}}
 
