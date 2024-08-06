@@ -1,6 +1,6 @@
 ---
 title: Matrix Cryptography Prerequisites
-date: 2024-08-02T05:00:00-06:00
+date: 2024-08-06T05:00:00-06:00
 categories:
   - Matrix
 tags:
