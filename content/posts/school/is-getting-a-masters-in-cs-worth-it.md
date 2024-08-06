@@ -1,7 +1,9 @@
 ---
 title: "Is Getting A Master's Degree in Computer Science Worth It?"
 date: 2024-02-26T06:37:50-0600
-categories: [School]
+categories:
+  - School
+  - Programming
 tags:
   - Computer Science
   - Masters Degree
