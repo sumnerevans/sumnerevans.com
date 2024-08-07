@@ -232,7 +232,7 @@ I'll note here that in Matrix, Megolm sessions are sometimes referred to as
 
 {{% tip title="Shameless Plug" %}}
 
-The details of each of these methods will be discussed in my
+The details of Key Backup will be discussed in my
 [upcoming talk at the Matrix Conference](https://cfp.matrix.org/matrixconf2024/talk/TD3KDQ/)
 which will have an accompanying blog post.
 
