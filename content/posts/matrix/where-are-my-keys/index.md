@@ -1,5 +1,5 @@
 ---
-title: Where are my keys?
+title: Where Are My Keys?
 date: 2024-06-17T15:00:00-06:00
 categories:
   - Matrix
@@ -206,82 +206,7 @@ As we look at each side, we will build up from the primitives. But first, we
 have to talk about the primitives that we have at our disposal by taking a short
 journey into the depths of cryptosystems.
 
-## Cryptosystems
-
-There are a few core concepts that you need to be aware of.
-
-### Encryption: Symmetric vs Asymmetric
-
-There are two main categories of encryption schemes: symmetric and asymmetric.
-
-In a symmetric encryption scheme, both the encryptor and the decryptor share the
-same key, and that key is used in both the encryption and decryption of the
-message.
-
-In an asymmetric encryption scheme, the encryptor needs the public key, and the
-decryptor needs the private key. The encryptor encrypts the message with the
-public key, and the private key is required to decrypt the message.
-
-|              | Symmetric | Asymmetric  |
-| ------------ | --------- | ----------- |
-| Encrypt With | Key       | Public Key  |
-| Decrypt With | Key       | Private Key |
-
-You can spread around the public key to lots of parties, and then they can send
-encrypted messages to you, but you are the only one who can decrypt any messages
-encrypted to you. Critically, an attacker having your public key does not allow
-them to decrypt your messages.
-
-Asymmetric encryption already seems better, but there's a couple catches:
-
-1. **It's slow!** Many systems end up using asymmetric encryption to exchange
-   and agree upon a symmetric key, and then use the symmetric key for
-   communication.
-2. **Current well-established asymmetric cryptosystems are not
-   quantum-resistant.** Many symmetric encryption schemes (AES-256 for example)
-   are considered to be quantum-resistant.
-
-### RSA vs Elliptic Curves
-
-In order for public-key cryptography, you need a function which takes data and
-mangles it in such a way that retrieving the initial data is (a) very very
-difficult to do by brute-force-searching the range of possible values and (b)
-easy to do if you know which of the values within the range was used.
-
-There are two types of classical public key cryptosystems which each derive
-their difficulty from different problems:
-
-- **RSA (Rivest–Shamir–Adleman)** systems base their complexity on the
-  difficulty of factoring prime numbers.
-- **Elliptic Curve** systems are based on the assumption that "finding the
-  discrete logarithm of a random elliptic curve element with respect to a
-  publicly known base point is infeasible" [^2].
-
-  Understanding elliptic-curve cryptography requires deep knowledge of abstract
-  algebra which I am totally unqualified to discuss. Practically, all you need
-  to know is that there's some squiggly curves which have special properties
-  which make things difficult to compute backwards without knowing an additional
-  reference point.
-
-[^2]: https://en.wikipedia.org/wiki/Elliptic-curve_cryptography#Application_to_cryptography
-
-### Diffie-Hellman key exchanges
-
-TODO
-
-### Hashes
-
-### Expanding a small key into a large one
-
-Sometimes, we need to turn a small secret (say one agreed upon via a
-Diffie-Hellman exchange) into a larger amount of bytes (for example, to perform
-an AES-256 symmetric encryption).
-
-For this, we have HKDF which is a key derivation function (KDF)
-
-- HKDF
-
-- HMAC
+## Cryptosystem
 
 ## Privacy
 

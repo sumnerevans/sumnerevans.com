@@ -37,10 +37,12 @@ There are two main categories of encryption schemes:
 
 In a _symmetric_ encryption scheme, both **the encryptor and the decryptor share
 the same key** and that key is used in both the encryption and decryption of the
-message. The symmetric encryption scheme that Matrix uses is **AES-256**. AES
-stands for Advanced Encryption Standard, and the 256 part indicates the number
-of bits required for each key. AES-256 takes two inputs: the 32-byte (256-bit)
-key and a 16-byte (128-bit) initialization vector (IV).
+message. The symmetric encryption scheme that Matrix uses is **AES-256-CBC**.
+AES stands for Advanced Encryption Standard, and the 256 part indicates the
+number of bits required for each key. CBC is the encryption mode (the details
+are not relevant, but included here for completeness). AES-256-CBC takes two
+inputs: the 32-byte (256-bit) key and a 16-byte (128-bit) initialization vector
+(IV).
 
 In an _asymmetric_ encryption scheme, **the encryptor needs the public key, and
 the decryptor needs the private key**. The encryptor encrypts the message with
@@ -57,8 +59,8 @@ Asymmetric encryption already seems better, but there's a couple catches:
    and agree upon a symmetric key, and then use the symmetric key for
    communication.
 2. **Current well-established asymmetric cryptosystems are not
-   quantum-resistant.** AES-256, on the other hand, is considered to be
-   quantum-resistant.
+   quantum-resistant.** all modes of AES-256, on the other hand, are considered
+   to be quantum-resistant.
 
 At its core, a public-key cryptosystem needs a one-way function which takes data
 and mutates it in such a way that retrieving the initial data is (a) extremely
