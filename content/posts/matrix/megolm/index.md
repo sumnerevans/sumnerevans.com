@@ -269,12 +269,23 @@ incremented. The same applies to the 10s -> 100s and 100s -> 1000s place, etc.
 The Megolm ratchet also has four parts, but there are a few fundamental
 differences in how the people-counter ratchet and the Megolm ratchet behave:
 
-|                     | **People Counter**                                                   | **Megolm**                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| ------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Starting Point**  | starts at `0000`                                                     | starts with four random 256-bit values in each of the four positions for a total of 1024 bits                                                                                                                                                                                                                                                                                                                                                              |
-| **Incrementing**    | each position is incremented by adding 1                             | each position is incremented using HMAC (the details are not important, but recall that HMAC is irreversible)                                                                                                                                                                                                                                                                                                                                              |
-| **Rollover**        | when a position reaches 9, on the next increment it resets back to 0 | when a position has been incremented \(2^8-1=255\) times, on the next increment it is reset by using the next higher position's value as the HMAC key                                                                                                                                                                                                                                                                                                      |
-| **Skipping Values** | impossible (must always increment by 1)                              | possible to skip by increments of \(2^0=1\), \(2^8\), \(2^{16}\), or \(2^{24}\) or any combination thereof. If you want to skip by \(2^8\) for example, you would reset the first part using the rollover method described above, and increment the second part by one. This means that to get to the \(n^{\text{th}}\) ratchet value, you at most have to do 1020 HKDF computations (each of the four parts of the ratchet can be incremented 255 times). |
+|                         | **People Counter**                                                   | **Megolm**                                                                                                                                            |
+| ----------------------- | -------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Starting Point**      | starts at `0000`                                                     | starts with four random 256-bit values in each of the four positions for a total of 1024 bits                                                         |
+| **Incrementing**        | each position is incremented by adding 1                             | each position is incremented using HMAC (the details are not important, but recall that HMAC is irreversible)                                         |
+| **Rollover**            | when a position reaches 9, on the next increment it resets back to 0 | when a position has been incremented \(2^8-1=255\) times, on the next increment it is reset by using the next higher position's value as the HMAC key |
+| **Skipping Values**[^3] | impossible (must always increment by 1)                              | possible to skip by increments of \(2^0=1\), \(2^8\), \(2^{16}\), or \(2^{24}\) or any combination thereof[^4]                                        |
+
+[^3]: The Matrix Spec recommends that Megolm sessions are only used for 100
+messages, so this ability to skip values is unnecessary for most cases. Even for
+the cases that it is useful (Beeper has a very high rotation threshold), it's
+probably quite over-engineered.
+
+[^4]: If you want to skip by \(2^8\) for example, you would reset the first part
+using the rollover method described above, and increment the second part by one.
+This means that to get to the \(n^{\text{th}}\) ratchet value, you at most have
+to do 1020 HKDF computations (each of the four parts of the ratchet can be
+incremented 255 times).
 
 So what does this get us? The 1024 bits of entropy that the ratchet is
 initialized with provides enough randomness for all of our AES key/IV and MAC
