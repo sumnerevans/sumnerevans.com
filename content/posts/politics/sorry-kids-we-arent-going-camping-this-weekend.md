@@ -2,6 +2,7 @@
 Title: Sorry Kids, We Aren't Going Camping this Weekend
 Date: 2013-10-01T05:26:00-0600
 Categories: [Politics]
+draft: true
 ---
 
 Since the Democrats in the Senate kept on tabling the House Republicans'

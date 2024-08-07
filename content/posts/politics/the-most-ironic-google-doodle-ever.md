@@ -2,6 +2,7 @@
 Title: The Most Ironic Google Doodle EVER
 Date: 2013-10-01T05:51:00-0600
 Categories: [Politics]
+draft: true
 ---
 
 This morning I woke up to a Google Doodle commemorating the 123rd Anniversary of
