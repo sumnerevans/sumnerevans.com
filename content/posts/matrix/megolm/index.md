@@ -183,13 +183,13 @@ anyone can use the ratchet to decrypt messages. However, all of the encryption
 operations in the previous two sections can be performed with only the ratchet
 as well.
 
-This means that an attacker could impersonate Alice and create a message that
-could be decrypted using Alice's Megolm session. To remedy this, Megolm uses an
-asymmetric signature to verify that Alice, and only Alice, created the message.
-It is critical that Bob also verifies the signature to ensure that Alice
-actually sent the message. The highlighted parts of the diagram below represent
-the components of Megolm which allow Bob to verify that Alice generated the
-message.
+This means that an attacker could create a message that could be decrypted using
+the Megolm session. To remedy this, Megolm uses an asymmetric signature to
+verify that the creator of the message is the same as the creator of the Megolm
+session. It is critical that the receiver (Bob) also verifies the signature to
+ensure that the message is from the creator of the Megolm session. The
+highlighted parts of the diagram below represent the components of Megolm which
+allow Bob to verify that Alice generated the message.
 
 {{<figure src="./images/verification.png" title="Figure 4: Origin Verification"
 caption=`Origin verification is provided by an Ed25519 signature of the encrypted payload.`
