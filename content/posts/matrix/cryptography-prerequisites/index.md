@@ -1,6 +1,6 @@
 ---
 title: Matrix Cryptography Prerequisites
-date: 2024-08-06T05:00:00-06:00
+date: 2024-08-09T05:00:00-06:00
 categories:
   - Matrix
 tags:
@@ -19,7 +19,6 @@ description: |
   Understanding Matrix cryptography necessitates understanding of some basic
   cryptography primitives. This article intends to explain those prerequisites
   in simple terms.
-unlisted: true
 ---
 
 Understanding Matrix cryptography requires understanding some basic cryptography
