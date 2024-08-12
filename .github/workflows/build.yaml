@@ -25,6 +25,12 @@ jobs:
         with:
           submodules: "recursive"
 
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: latest
+          extended: true
+
       - name: Cache Generated Images
         id: cache-images
         uses: actions/cache@v4
@@ -43,7 +49,7 @@ jobs:
             > themes/smol/layouts/partials/webring.html
 
       - name: Hugo
-        run: CGO_ENABLED=1 go run -tags extended github.com/gohugoio/hugo@latest --logLevel debug --gc --minify
+        run: hugo --logLevel debug --gc --minify
 
       - name: Teaching raw HTML
         run: |
