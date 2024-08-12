@@ -240,6 +240,10 @@ which will have an accompanying blog post.
 
 {{% /tip %}}
 
+Note that the Megolm session is shared separately from the encrypted message
+payload which is shared via an `m.room.encrypted` event. This can cause Unable
+to Decrypt (UTD) errors if the Megolm session share fails but the event is sent.
+
 ## 6. What is a Megolm Ratchet Anyway?
 
 So far I have discussed how Megolm provides message encryption, message
