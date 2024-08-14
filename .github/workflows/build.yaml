@@ -44,7 +44,7 @@ jobs:
       - name: Openring
         run: |
           go run git.sr.ht/~sircmpwn/openring@latest -S feed_urls.txt \
-            -n 6 -l 100 \
+            -n 3 -l 100 \
             < other-feeds.html.tmpl \
             > themes/smol/layouts/partials/webring.html
 
