@@ -33,7 +33,7 @@ I'm especially excited about the following devrooms:
 
 If you'll be at FOSDEM and want to meet up, come to the Matrix Community Meetup
 on Friday or find me hanging out around one of the dev rooms. You can also
-[contact me]({{<ref"../../../../contact.md">}}) if you want to meet.
+[contact me]({{<ref"../../../../about.md">}}) if you want to meet.
 
 I'm going to be doing some sightseeing on Wednesday and Thursday, and I'll write
 about that here, too.

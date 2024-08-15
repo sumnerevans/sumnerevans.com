@@ -1,47 +1,56 @@
 ---
 title: "About"
 date: 2021-08-01 09:04:00
+aliases:
+  - /contact
 ---
 
-Hello, welcome to my website! I am so glad you stopped by to check it out!
+My name is Sumner, and I live in Denver, Colorado. I am a Software Engineer at
+[Automattic](https://automattic.com/) working on [Beeper](https://beeper.com/)
+and I run a business called [Nevarro](https://nevarro.space) which is dedicated
+to building and self-hosting open source software and providing educational
+services such as computer science and mathematics tutoring. I'm also a 4th
+Degree Black Belt and certified instructor in ATA Taekwondo and a Colorado
+School of Mines alum (bachelor's in CS, 2018; masters in CS, 2019).
 
-Let me introduce myself. My name is Sumner, and I live in Denver, Colorado. I am
-a Software Engineer at [Automattic](https://automattic.com/) working on
-[Beeper](https://beeper.com/) and a 4th Degree Black Belt and certified
-instructor in ATA Taekwondo. I am a Colorado School of Mines alum (bachelor's in
-CS, 2018; masters in CS, 2019). Previously, I have worked at
-[The Trade Desk](https://thetradedesk.com) and
-[Can/Am Technologies](https://canamtechnologies.com/).
+I'm passionate about data ownership and sovereignty, and I think that
+distributed and federated systems are essential to guaranteeing free speech in
+the digital age. Right now, the best federated chat system is Matrix, and so
+most of my effort is currently going towards [Matrix](https://matrix.org/) in
+various forms.
 
-Things I'm passionate about:
+In my job at Beeper (acquired by Automattic), I am a member of the Platform Team
+which is responsible for building Matrix bridges and developing our Go client
+SDK. I'm particularly proud of the work that I've done to bring support for
+[key backup](https://github.com/mautrix/go/tree/main/crypto/backup) and
+[interactive verification](https://github.com/mautrix/go/tree/main/crypto/verificationhelper)
+to [maturix-go](https://github.com/mautrix/go). I also have helped build and
+maintain the wide set of
+[bridges that Beeper maintains](https://github.com/beeper), and I started and
+was a core member of the
+[Hungryserv]({{<ref"/portfolio#presentation-hungryserv">}}) project which
+enabled us to scale from hundreds to tens of thousands of users.
 
-- Programming
-- Computer Science
-- Software Architecture and Software Engineering
-- Self hosting and data ownership
-- Free and Open Source Software
-- Distributed systems
-- CS Education
-- Taekwondo
+Outside of my job, I run my own Matrix homeserver and bridges. I also write and
+host a few Matrix bots. I have written about the technical and community aspects
+of [Matrix on my blog](/categories/matrix), and I've given a
+[few]({{<ref"/portfolio#presentation-hungryserv">}})
+[talks]({{<ref"/portfolio#presentation-what-is-beeper-working-on">}}) related to
+Matrix at conferences. I was recently
+[elected to the Matrix Governing Board](https://matrix.org/foundation/governing-board-elections/#elected-representatives)
+as an individual member. My goal is to represent the interests of the community
+to the Foundation. You can read
+[my platform]({{<ref"./posts/matrix/2024-matrix-governing-board.md">}}) which
+lays out the most important issues that the Foundation has to address moving
+forward. My DMs are open if you are a member of the Matrix community and have
+questions or concerns about the Foundation or what we as the Governing Board are
+doing.
 
-I'm grateful to have a great job where I am able to exercise my passions. On the
-side, I also work on a variety of open source projects, which you can find on my
-[portfolio][1].
-
-When I'm not working, I enjoy training in ATA Taekwondo under Chief Master
-Corina Black where I am a 4th Degree Black Belt and certified level 3 legacy
-instructor. I also enjoy playing soccer, volleyball, and racquetball when I have
-the chance. During high school, I won the FRCCA State Championship with Denver
-Eagles my senior year. I have also won multiple state titles in Taekwondo.
-
-This site is the place to get updates on my life. I maintain a [blog](/) here
-where I post occasionally. I post about my travels, technology, education,
-projects updates, politics, and many other random topics. On my portfolio page,
-I have an up-to-date overview of [my professional achievements][1]. I also have
-an always-up-to-date link to my [resume](/portfolio/resume.pdf) there. You can
-also find links to all of the social media accounts that I actually use in the
-footer of this site.
-
-Happy reading!
+When I'm not programming, I enjoy training in ATA Taekwondo under Chief Master
+Corina Black where I am a 4th Degree Black Belt and certified Level 3 Certified
+Legacy Instructor. I also enjoy playing soccer, volleyball, and racquetball when
+I have the chance. During high school, I won the FRCCA Soccer State Championship
+with Denver Eagles my senior year. I have also won multiple state titles in
+Taekwondo.
 
 [1]: {{< ref "/portfolio" >}}
