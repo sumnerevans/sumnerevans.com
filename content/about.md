@@ -13,11 +13,15 @@ services such as computer science and mathematics tutoring. I'm also a 4th
 Degree Black Belt and certified instructor in ATA Taekwondo and a Colorado
 School of Mines alum (bachelor's in CS, 2018; masters in CS, 2019).
 
-I'm passionate about data ownership and sovereignty, and I think that
-distributed and federated systems are essential to guaranteeing free speech in
-the digital age. Right now, the best federated chat system is Matrix, and so
-most of my effort is currently going towards [Matrix](https://matrix.org/) in
-various forms.
+I believe that free speech is essential to a functioning democratic system. I
+believe that guaranteeing free speech in the digital space is essential. I
+believe that the best way to guarantee free speech is to ensure that every
+individual controls their own data, rather than having it be owned by Big Tech.
+Thus, I'm passionate about making data ownership accessible to the masses. I
+believe that decentralized and federated systems are essential to providing this
+accessibility. Right now, the best federated chat system is Matrix, and so most
+of my effort is currently going towards furthering [Matrix](https://matrix.org/)
+in various forms.
 
 In my job at Beeper (acquired by Automattic), I am a member of the Platform Team
 which is responsible for building Matrix bridges and developing our Go client
