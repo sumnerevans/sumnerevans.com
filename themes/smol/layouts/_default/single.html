@@ -1,0 +1,96 @@
+{{ define "main" }}
+{{ $reg := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+<main>
+  <article>
+    <div class="article-title">
+      <h1>{{ .Title }}</h1>
+      {{- if and (or ($reg.Prev .) ($reg.Next .)) (not .Params.isbyai) -}}
+        <a href="https://notbyai.fyi" target="_blank">
+          <img src="https://notbyai.fyi/img/written-by-human-not-by-ai-black.svg"
+            loading="lazy" alt="Written by Human, Not by AI">
+        </a>
+      {{- end -}}
+    </div>
+    {{ if and (or ($reg.Prev .) ($reg.Next .)) (or .Date .Params.tags .Params.categories) }}
+      {{ if .Params.unlisted }}
+        <div class="admonition danger">
+          <p class="first admonition-title">Unlisted Pre-Print</p>
+          <p class="last">
+            This post is not published on the homepage or in the RSS feed.
+          </p>
+        </div>
+      {{ end }}
+      <p class="article-info">
+        <b>
+          Posted
+          {{ if .Date }}
+            on <time>{{ .Date.Format (default "2006-01-02 15:04:05" .Site.Params.dateFmt) }}</time>
+          {{ end }}
+          {{ with .Params.categories }}
+            in
+            {{ range first 1 . }}
+              <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{- end -}}
+            {{- range after 1 . -}}
+              , <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{- end -}}
+          {{ end }}
+        </b>
+        {{ with .WordCount }}
+          • {{ . }} words
+        {{ end }}
+        {{ with .ReadingTime }}
+          • {{ . }} minute read
+        {{ end }}
+        {{ with .Params.tags }}
+          <br>
+          Tags:
+          {{ range first 1 . }}
+            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+          {{- end -}}
+          {{- range after 1 . -}}
+            , <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+          {{- end -}}
+        {{ end }}
+      </p>
+    {{ end }}
+    <div>
+      {{ .Content }}
+    </div>
+  </article>
+</main>
+<div class="next-prev">
+  {{ with $reg.Prev . }}
+    {{ if not .Params.unlisted }}
+      <a class="prev" href="{{ .Permalink }}" title="{{ .Title }}">« {{ .Title | truncate 50 "..." }}</a>
+    {{ end }}
+  {{ end }}
+  {{ with $reg.Next . }}
+    {{ if not .Params.unlisted }}
+      <a class="next" href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title | truncate 50 "..." }} »</a>
+    {{ end }}
+  {{ end }}
+</div>
+{{ if and (or ($reg.Prev .) ($reg.Next .)) (.Site.Params.issoUrl) }}
+  {{ partial "sidebar.html" . }}
+  {{ partial "webring.html" . }}
+  <aside>
+    <h3>COMMENTS</h3>
+    <!-- Isso -->
+    <section id="isso-thread" data-title="{{ .Title }}"></section>
+    {{ $issoScript := resources.Get "js/isso.min.js" }}
+    <script
+      type="text/javascript"
+      src="{{ $issoScript.Permalink }}"
+      data-isso="{{ .Site.Params.issoUrl }}"
+      {{ range $k, $v := .Site.Params.issoOptions }}
+        data-isso-{{ $k }}="{{ $v }}"
+      {{ end }}
+    ></script>
+    <noscript>
+      Please enable JavaScript to view comments.
+    </noscript>
+    <!-- End Isso -->
+  </aside>
+{{ end }}
+{{ end }}

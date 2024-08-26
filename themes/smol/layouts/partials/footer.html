@@ -1,0 +1,46 @@
+<footer>
+  <p class="links">
+    <a href="https://matrix.to/#/@sumner:nevarro.space" target="_blank" title="Matrix">
+      <i class="fa fa-matrix-org"></i>
+    </a>
+    <a id="footer-email-link" href="mailto:junk@sumnerevans.com" target="_blank" style="text-decoration: none">
+      <i class="fa fa-envelope"></i>
+    </a>
+    <a href="https://github.com/sumnerevans" target="_blank" title="GitHub">
+      <i class="fa fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/sumnerevans" target="_blank" title="LinkedIn">
+      <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="https://www.youtube.com/@sumnerevans" target="_blank" title="YouTube">
+      <i class="fa fa-youtube-play"></i>
+    </a>
+    <a href="https://liberapay.com/sumner" target="_blank" title="LiberaPay">
+      <i class="fa fa-liberapay"></i>
+    </a>
+  </p>
+  <p>
+    Built with <a href="https://gohugo.io/">Hugo</a> using
+    <a href="https://github.com/sumnerevans/smol">my fork of the smol theme</a>.
+    Switch to the
+    <a href="javascript:void(0)" onclick="theme.switch('dark')">dark</a> |
+    <a href="javascript:void(0)" onclick="theme.switch('light')">light</a> |
+    <a href="javascript:void(0)" onclick="theme.switch('browser')">browser</a>
+    theme.
+  </p>
+  <p>
+    &copy; {{ now.Year }} {{ .Site.Title }}. All Rights Reserved.
+  </p>
+</footer>
+
+{{ $dark_theme_script := resources.Get "js/dark-theme.js" | js.Build (dict "targetPath" "dark-theme.min.js" "minify" true) }}
+<script id="dark-theme-script"
+        src="{{ $dark_theme_script.Permalink }}"
+        data-enable-auto-detect-theme="{{ .Site.Params.themeColorAutoDetectBrowserPreference }}"
+        data-default-theme="{{ .Site.Params.themeColor }}"
+        type="text/javascript">
+</script>
+<script type="text/javascript" defer src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript">
+  document.getElementById('footer-email-link').href = 'mailto' + ':' + 'me' + '@' + 'sumnerevans.com';
+</script>

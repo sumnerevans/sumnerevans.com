@@ -1,0 +1,608 @@
+@import 'admonitions';
+@import 'dark-mode';
+@import 'fork-awesome/fork-awesome';
+
+// Iosevka
+$iosevka-font-path: '/fonts/iosevka';
+$iosevka-version: '3.6.3';
+@font-face {
+  font-family: 'Iosevka';
+  src:
+    url('#{$iosevka-font-path}/woff2/iosevka-regular.woff2?v=#{$iosevka-version}') format('woff2'),
+    url('#{$iosevka-font-path}/woff/iosevka-regular.woff?v=#{$iosevka-version}') format('woff'),
+    url('#{$iosevka-font-path}/ttf/iosevka-regular.ttf?v=#{$iosevka-version}') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Iosevka';
+  src:
+    url('#{$iosevka-font-path}/woff2/iosevka-bold.woff2?v=#{$iosevka-version}') format('woff2'),
+    url('#{$iosevka-font-path}/woff/iosevka-bold.woff?v=#{$iosevka-version}') format('woff'),
+    url('#{$iosevka-font-path}/ttf/iosevka-bold.ttf?v=#{$iosevka-version}') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Iosevka';
+  src:
+    url('#{$iosevka-font-path}/woff2/iosevka-oblique.woff2?v=#{$iosevka-version}') format('woff2'),
+    url('#{$iosevka-font-path}/woff/iosevka-oblique.woff?v=#{$iosevka-version}') format('woff'),
+    url('#{$iosevka-font-path}/ttf/iosevka-oblique.ttf?v=#{$iosevka-version}') format('truetype');
+  font-weight: italic;
+  font-style: italic;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: Iosevka, monospace;
+  color: #333;
+}
+
+a {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  color: #0c61e8;
+  text-decoration: dotted underline;
+
+  &:hover, &:active, &:focus {
+    color: darken(#0c61e8, 20%);
+    text-decoration: underline;
+  }
+
+  &.disabled {
+    text-decoration: none;
+    color: gray;
+  }
+
+  i.fa-external-link {
+    text-decoration: none;
+    margin-left: 0.3em;
+    font-size: 0.75em;
+  }
+}
+
+a.btn {
+  background-color: #111;
+  color: $foreground-dark-mode;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+
+  &:hover, &:active, &:focus {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+.admonition  a {
+  color: darken(#0c61e8, 25%);
+
+  &:hover, &:active, &:focus {
+    color: darken(#0c61e8, 35%);
+  }
+}
+
+h1, h2, h3 {
+  line-height:1.2;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+div.article-title {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  h1 {
+    flex-grow: 1;
+    margin: 15px 0;
+  }
+
+  img {
+    display: block;
+    margin-left: 8px;
+    min-height: 42px;
+    min-width: 131px;
+
+    @media screen and (max-width: 600px) {
+      margin-left: 0;
+    }
+  }
+}
+
+article .unlisted {
+  background-color: yellow;
+  padding: 10px;
+}
+
+p.article-info {
+  margin-top: 0;
+
+  @media screen and (max-width: 600px) {
+    margin-top: 15px;
+  }
+}
+
+main *:not(pre) > code,
+tt,
+kbd {
+  background-color: #0002;
+  border-radius: 4px;
+  font-family: Iosevka, monospace;
+  padding: 1px 0.5em;
+}
+
+pre {
+  border: 1px solid black;
+  font-family: Iosevka, monospace;
+  overflow-x: auto;
+  padding: 24px;
+}
+
+article {
+  padding: 24px 0;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+blockquote {
+  border-left: 0.7em solid black;
+  padding: 0.5em 0 0.5em 1em;
+
+  *:first-child {
+    margin-top: 0;
+  }
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+figure {
+  background-color: #0002;
+  padding: 5px;
+  margin: 0 auto;
+
+  * {
+    margin: 0;
+  }
+}
+
+picture {
+  margin: 0 auto;
+  display: block;
+}
+
+img {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  max-width: 100%;
+  opacity: 0.9;
+
+  &:hover, &:active, &:focus {
+    opacity: 1;
+    transform: scale(1.02);
+  }
+}
+
+.align-center {
+  display: block;
+  margin: 0 auto;
+
+  &.figure {
+    margin: 1em auto;
+    text-align: center;
+  }
+}
+
+// TODO: START move this stuff out to custom css
+.strike {
+  text-decoration: line-through;
+}
+/* Image Galleries */
+.gallery {
+  tr {
+    max-width: 60%;
+
+    td {
+      vertical-align: middle;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+details.youtube-expander {
+  margin: 1em 0;
+
+  > summary {
+    background-color: #eee;
+    padding: 1em;
+
+    i {
+      color: #e52d27;
+      font-size: 1.1em;
+    }
+  }
+}
+details.advent-of-code-part-expander {
+  border: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 1em;
+
+  > summary {
+
+    h3 {
+      display: inline;
+    }
+  }
+}
+h2 .permalink {
+  opacity: 0;
+}
+h2:hover .permalink {
+  opacity: 1;
+}
+details.portfolio-item {
+  margin-bottom: 1em;
+
+  > summary {
+    background-color: #eee;
+    padding: 0.5em 1em;
+
+    h3 {
+      display: inline;
+      margin: 0;
+
+      .permalink {
+        opacity: 0;
+      }
+    }
+
+    span {
+      float: right;
+    }
+
+    img {
+      max-height: 1em;
+      max-width: 1em;
+    }
+
+    p {
+      margin: 0 1em;
+    }
+
+    &:hover {
+      h3 .permalink {
+        opacity: 1;
+      }
+    }
+  }
+
+  > div {
+    margin-left: 2em;
+  }
+}
+// TODO: END move this stuff out to custom css
+
+header {
+  border-bottom: 2px solid #333;
+
+  .name-and-subtitle {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+
+    @media screen and (max-width: 600px) {
+      align-items: center;
+      flex-direction: column;
+
+      text-align: center;
+    }
+
+    .site-image {
+      margin-right: 15px;
+      width: 150px;
+
+      picture, img {
+        opacity: 1;
+      }
+    }
+
+    .site-title {
+      font-size: 3.5em;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .subtitle {
+      font-size: 1.4em;
+    }
+  }
+
+  nav {
+    font-size: 1.1em;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  #search-container {
+    margin: 20px 0;
+
+    input[type=search] {
+      border-radius: 0;
+      padding: 8px;
+      border: 1px solid black;
+      width: 100%;
+    }
+
+    &.hidden {
+      display: none;
+    }
+
+    .search-results {
+      #search-results-loading, .no-results {
+        text-align: center;
+      }
+
+      li {
+        border-left: 4px solid transparent;
+        margin-left: -8px;
+        padding-left: 4px;
+      }
+
+      li:hover, li:active {
+        border-left: 4px solid #0c61e8;
+      }
+
+      a {
+        color: #333;
+        text-decoration: none;
+
+        &:hover, &:active {
+          color: #333;
+          text-decoration: none;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      h1 {
+        font-size: 1.5em;
+      }
+
+      p {
+        margin: 8px 0;
+      }
+
+      mark {
+        padding: 1px 5px;
+      }
+    }
+  }
+}
+
+dt {
+  font-size: 1.15em;
+}
+
+dd {
+  margin-block-end: 1em;
+
+  p.first {
+    margin-top: 0;
+  }
+}
+
+.docutils.field-list {
+  th.field-name {
+    text-align: left;
+    padding-right: 1em;
+  }
+}
+
+.next-prev {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  a {
+    margin: 1em 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.webring, .related-posts {
+  .articles {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+
+    .article {
+      flex: 1 1 0;
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem;
+      margin: 0.5rem;
+      background: #eee;
+      min-width: 12rem;
+
+      .title {
+        margin: 0;
+      }
+
+      .summary {
+        font-size: 0.8rem;
+        flex: 1 1 0;
+      }
+    }
+  }
+
+  .attribution {
+    margin: 0.5em 0;
+    text-align: right;
+    font-size: 0.8rem;
+    color: #555;
+  }
+}
+
+// Isso
+// Add a bit of padding between each of the entry boxes in the Isso auth
+// section. By default, they are squished together, which looks terrible.
+section#isso-thread {
+  .auth-section .input-wrapper {
+    margin-right: 5px;
+  }
+
+  .isso-comment > div.text-wrapper {
+    a.author:hover {
+      text-decoration: underline;
+    }
+  }
+
+  input {
+    font-family: Iosevka, monospace;
+    color: #333;
+  }
+
+  .post-action input {
+    border: none;
+    color: #333;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+
+footer {
+  border-top: 2px solid #333;
+  margin-top: 2em;
+  padding-top: 2em;
+  text-align: center;
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p.links {
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8em;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (prefers-color-scheme: no-preference), (prefers-color-scheme: dark) {
+  body:not(.light-theme) {
+    @import 'chroma/onedark';
+    @include dark-mode-styles;
+  }
+  body.light-theme {
+    @import 'chroma/pygments';
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body:not(.dark-theme) {
+    @import 'chroma/pygments';
+  }
+  body.dark-theme {
+    @import 'chroma/onedark';
+    @include dark-mode-styles;
+  }
+}
+
+table:not(.gallery) {
+  table-layout: fixed;
+  border-collapse: collapse;
+
+  thead {
+    tr {
+      border-bottom: 1px solid black;
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(odd) {
+        background-color: #ccc;
+      }
+    }
+  }
+
+  th, td {
+    padding: 4px 8px;
+
+    &.align-right {
+      text-align: right;
+    }
+
+    &.border-right {
+      border-right: 1px solid black;
+    }
+  }
+}
+
+.post-summary {
+  display: flex;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  .summary-image {
+    width: 250px;
+    margin: 4px 16px 0 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+
+  .summary-text {
+    margin: 0;
+  }
+}

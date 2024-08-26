@@ -1,0 +1,25 @@
+{{ define "main" }}
+<main>
+  {{ $listtitle := .Title }}
+  {{- if or .Title .Content -}}
+  <div>
+    {{- with .Title -}}<h1>{{ . }}</h1>{{- end -}}
+    {{- with .Content -}}<div>{{ . }}</div>{{- end -}}
+  </div>
+  {{ end }}
+
+  <ul>
+    {{- range partial "func/FilterPages" .Paginator.Pages -}}
+    <li>
+      <div class="post-title">
+        {{- if and (ne $listtitle "Categories") (ne $listtitle "Tags") -}}
+          {{ .Date.Format "2006-01-02" }}
+        {{ end }}
+          <a href="{{ .RelPermalink }}">{{.Title }}</a>
+        </div>
+    </li>
+    {{- end -}}
+  </ul>
+  {{ partial "pagination.html" . }}
+</main>
+{{ end }}

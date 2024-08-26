@@ -1,0 +1,46 @@
+<header>
+  <div class="name-and-subtitle">
+    {{ if .Site.Params.logo }}
+      <a href="{{ .Site.Home.Permalink }}" class="site-image">
+        {{ $logo := resources.Get .Site.Params.logo }}
+        {{ $logowebplarge := $logo.Resize "300x webp" }}
+        {{ $logowebpsmall := $logo.Resize "150x webp" }}
+        {{ $logojpg := $logo.Resize "150x" }}
+        <picture>
+          <source type="image/webp" srcset="{{ $logowebplarge.Permalink }} 300w" />
+          <source type="image/webp" srcset="{{ $logowebpsmall.Permalink }} 150w" />
+          <img src="{{ $logojpg.Permalink }}" width="150" height="150" alt="Jonathan Sumner Evans" />
+        </picture>
+      </a>
+    {{ end }}
+    <div>
+      <a class="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+      {{ with .Site.Params.Subtitle }}
+        <br>
+        <span class="subtitle">{{ . }}</span>
+      {{- end }}
+    </div>
+  </div>
+  <p>
+    <nav>
+      <a href="{{ .Site.Home.Permalink }}"><b>Home</b></a>
+      {{ with .Site.Menus.main }}
+        {{ range . }}
+          | <a href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a>
+        {{ end }}
+      {{ end }}
+      | <a id="toggle_search" href="javascript:void()"><b>Search</b></a>
+    </nav>
+  </p>
+  <div class="hidden" id="search-container">
+    <form class="search" method="get">
+      <input id="search-query" type="search" placeholder="Search..." disabled="disabled" />
+    </form>
+    <div id="search-results" class="search-results">
+      <p id="search-results-loading">Loading search index...</p>
+    </div>
+  </div>
+  <script src="https://unpkg.com/lunr/lunr.min.js"></script>
+  {{ $search_script := resources.Get "js/search.js" | js.Build (dict "targetPath" "search.min.js" "minify" true) }}
+  <script defer src="{{ $search_script.Permalink }}" type="text/javascript"></script>
+</header>
