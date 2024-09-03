@@ -75,7 +75,7 @@ how Megolm sessions are shared between devices in section
 [5. Sharing the Megolm Session](#5-sharing-the-megolm-session) and then in
 section
 [6. What is a Megolm Ratchet Anyway?](#6-what-is-a-megolm-ratchet-anyway) I
-describe the ratchet mechanism at a high level. I made a few concluding remarks
+describe the ratchet mechanism at a high level. I make a few concluding remarks
 in section [7. Conclusion](#7-conclusion).
 
 ## 1. Overview
