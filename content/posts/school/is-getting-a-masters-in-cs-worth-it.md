@@ -683,7 +683,7 @@ times throughout your career in the weirdest places.
 
 If you are ahead in school (I was 2 years ahead), having an extra year of
 college experience is often worth it. Even if you are just a semester ahead, you
-will end up going to school for only more semester compared to your peers who
+will end up going to school for only one more semester compared to your peers who
 are just getting a bachelor's degree. (And some of them will take 4.5 or 5 years
 anyway due to various circumstances.) I have one friend who got only an
 undergraduate degree who told me that he regrets graduating in 3.5 years as he
