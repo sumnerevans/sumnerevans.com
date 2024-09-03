@@ -604,5 +604,9 @@ table:not(.gallery) {
 
   .summary-text {
     margin: 0;
+
+    .summary >p:first-child {
+      margin-top: 0;
+    }
   }
 }

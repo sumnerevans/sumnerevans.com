@@ -39,22 +39,26 @@
       {{ $smallimage := $image.Resize "400x webp" }}
       {{ $bigimage := $image.Resize "800x webp" }}
       <div class="summary-image">
-        <img
-          width="{{ $bigimage.Width }}" 
-          src="{{ $bigimage.RelPermalink }}"
-          srcset="{{ $smallimage.RelPermalink }} 400w, {{ $bigimage.RelPermalink }} 800w"
-        />
+        <a href="{{ .Permalink }}">
+          <img
+            width="{{ $bigimage.Width }}"
+            src="{{ $bigimage.RelPermalink }}"
+            srcset="{{ $smallimage.RelPermalink }} 400w, {{ $bigimage.RelPermalink }} 800w"
+          />
+        </a>
       </div>
     {{- else if .Params.image -}}
       <div class="summary-image">
       <img width="400" src="{{ .Permalink }}/{{ .Params.image }}" />
       </div>
     {{- end -}}
-    <p class="summary-text">
-      {{ .Summary }}
-      {{ if .Truncated }}
+    <div class="summary-text">
+      <div class="summary">
+        {{ .Summary }}
+      </div>
+      <div>
         <a href="{{ .Permalink }}">Read more...</a>
-      {{- end -}}
-    </p>
+      </div>
+    </div>
   </div>
 </article>

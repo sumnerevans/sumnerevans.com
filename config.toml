@@ -2,7 +2,7 @@ baseURL = "https://sumnerevans.com"
 languageCode = "en-us"
 title = "Sumner Evans"
 theme = "smol"
-summaryLength = 100
+summaryLength = 60
 
 pygmentsCodefences = true
 pygmentsStyle = "github"

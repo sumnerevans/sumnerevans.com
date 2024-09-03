@@ -10,6 +10,8 @@ in no particular order.
 
 I'm thankful for...
 
+<!--more-->
+
 * God's goodness.
 * My family.
 * My friends.

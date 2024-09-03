@@ -13,6 +13,8 @@ sure how/why, but I am. In this article I intend to try and describe some of the
 things which have helped me and my teams at hackathons. Please note that these
 are merely my experiences. Your mileage may vary.
 
+<!--more-->
+
 {{% note %}}
 
 This article was partially inspired by Yaron Malin's post:
