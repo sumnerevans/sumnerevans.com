@@ -20,17 +20,17 @@ build:
 ---
 
 The past few weeks have been exciting for Beeper. We
-[made Beeper available to everyone without a
-waitlist](https://blog.beeper.com/2024/04/09/beeper-is-now-available/),
+[made Beeper available to everyone](https://blog.beeper.com/2024/04/09/beeper-is-now-available/)
+without a waitlist,
 [launched a new Android app based on our own internally-built Matrix SDK written
 in Go](https://blog.beeper.com/2024/04/09/how-beeper-android-works/), and
 [were acquired by Automattic](https://blog.beeper.com/2024/04/09/beeper-is-joining-automattic/)
 for
 [$125M](https://techcrunch.com/2024/04/09/wordpress-com-owner-automattic-acquires-multi-service-messaging-app-beeper-for-125m/).
 As part of the acquisition, the Beeper team is merging with the
-[Texts.com](http://texts.com/) team that was acquired by Automattic last year. We are
-going to unify the products under the Beeper brand. All of this is only a few
-months on the heels of our
+[Texts.com](http://texts.com/) team that was acquired by Automattic last year.
+We are going to unify the products under the Beeper brand. All of this is only a
+few months on the heels of our
 [Beeper Mini launch](https://blog.beeper.com/2023/12/05/introducing-beeper-mini-get-blue-bubbles-on-android-%f0%9f%92%99/)
 which brought fully end-to-end encrypted iMessage to Android devices.
 
