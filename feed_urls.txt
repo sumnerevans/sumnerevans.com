@@ -1,4 +1,3 @@
-https://alex.kirk.at/feed
 https://b-sharman.dev/blog.xml
 https://blog.babel.sh/rss
 https://blog.beeper.com/feed
@@ -15,7 +14,6 @@ https://keenanschott.com/index.xml
 https://ludic.mataroa.blog/rss/
 https://lukaswerner.com/feed.xml
 https://lukeplant.me.uk/blog/atom/index.xml
-https://ma.tt/feed
 https://machinefossil.net/feed.xml
 https://matrix.org/blog/feed
 https://mau.fi/blog/index.rss
