@@ -1,6 +1,6 @@
 ---
 title: Matrix Cryptographic Key Infrastructure
-date: 2024-09-17T13:00:00+02:00
+date: 2024-09-21T10:00:00+02:00
 categories:
   - Matrix
   - Programming
@@ -30,10 +30,7 @@ summary: |
   the user in control of their keys. Only a few networks (Signal) truly leave
   the user in control, and their UX is arguably worse than Matrix.
 image: ./images/overview.png
-unlisted: true
 ---
-
-<!-- TODO: 21 September 2024 -->
 
 {{% note title="Slides" %}}
 
