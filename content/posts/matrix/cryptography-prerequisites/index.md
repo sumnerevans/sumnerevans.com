@@ -124,7 +124,7 @@ implementation detail that is not relevant to your understanding of what
 functionality HMAC provides.
 
 [^2]: Technically, if you choose a bad hash function like MD5 it is possible to
-create multiple inputs that produce the same hash.
+    create multiple inputs that produce the same hash.
 
 ## Key-Derivation Functions (HKDF)
 
@@ -165,5 +165,13 @@ of ECDH is that:
 \[ \textbf{ECDH}(A_{private}, B_{public}) = \textbf{ECDH}(B_{private},
 A_{public}) = K_{shared}. \]
 
-If \(A_{public}\) and \(B_{private}\) are both available, then \(K_{shared}\)
-can be recovered. This is true even if \(A_{private}\) has been discarded.
+In this equation, we have two public/private keypairs: \(A\) and \(B\). If we
+have either one of the _private_ keys and the other _public_ key, we can
+generate the same shared secret.
+
+For example, if we have \(A_{private}\) we need \(B_{public}\) and if we have
+\(B_{private}\) we need \(A_{public}\).
+
+We will get the same value out of ECDH _regardless of which private key you
+have_. You only need the other public key, and public keys that can be spread
+around like butter.
