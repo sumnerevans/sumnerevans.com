@@ -362,7 +362,7 @@ _self-signing public key_, we can verify the signature and trust their
 _self-signing key_. Since their _self-signing private key_ signed their _device
 public keys_, we can verify the signatures and trust their device keys.
 
-## Server Side Secret Storage (SSSS)
+## Secure Secret Storage and Sharing (SSSS)
 
 Wow, that's a lot of keys! Where are they stored? The _public_ keys can be
 stored on the server. However, the _private_ keys need to remain in the user's
@@ -372,7 +372,7 @@ devices and can be shared with your other verified devices using those
 Olm-encrypted to-device events. But what if you sign out of all of your devices
 or lose access to them?
 
-That's where **Server-Side Secret Storage** (also known as **SSSS** or
+That's where **Secure Secret Storage and Sharing** (also known as **SSSS** or
 **quadruple S**) comes in. SSSS allows you to store your keys encrypted within
 account data on the server. The following diagram shows SSSS.
 
