@@ -37,12 +37,13 @@ There are two main categories of encryption schemes:
 
 In a _symmetric_ encryption scheme, both **the encryptor and the decryptor share
 the same key** and that key is used in both the encryption and decryption of the
-message. The symmetric encryption scheme that Matrix uses is **AES-256-CBC**.
-AES stands for Advanced Encryption Standard, and the 256 part indicates the
-number of bits required for each key. CBC is the encryption mode (the details
-are not relevant, but included here for completeness). AES-256-CBC takes two
-inputs: the 32-byte (256-bit) key and a 16-byte (128-bit) initialization vector
-(IV).
+message.
+
+The main symmetric encryption scheme that Matrix uses is **AES-256-CBC**. AES
+stands for Advanced Encryption Standard, and the 256 part indicates the number
+of bits required for each key. CBC is the encryption mode (the details are not
+relevant, but included here for completeness). AES-256-CBC takes two inputs: the
+32-byte (256-bit) key and a 16-byte (128-bit) initialization vector (IV).
 
 In an _asymmetric_ encryption scheme, **the encryptor needs the public key, and
 the decryptor needs the private key**. The encryptor encrypts the message with
@@ -58,9 +59,11 @@ Asymmetric encryption already seems better, but there's a couple catches:
 1. **It's slow!** Many systems end up using asymmetric encryption to exchange
    and agree upon a symmetric key, and then use the symmetric key for
    communication.
-2. **Current well-established asymmetric cryptosystems are not
-   quantum-resistant.** all modes of AES-256, on the other hand, are considered
-   to be quantum-resistant.
+2. **Classical asymmetric cryptosystems are not quantum-resistant.** All modes
+   of AES-256, on the other hand, are considered to be quantum-resistant. There
+   are some new NIST-standardised quantum-resistant asymmetric cryptosystems,
+   but support for such systems is not as widespread as the classical
+   non-quantum-resistant asymmetric cryptosystems.
 
 At its core, a public-key cryptosystem needs a one-way function which takes data
 and mutates it in such a way that retrieving the initial data is (a) extremely
@@ -115,13 +118,12 @@ This allows us to verify that the data did not change in transit (for example,
 by a malicious actor).
 
 This property means that hash functions are _deterministic_. However,
-determinism has a downside: if you hash the same message multiple times, you
-will receive the same value, and an attacker could use this information to
-deduce the frequency of certain messages being sent. To remedy this attack, a
-random shared key can be added to the process. One way of adding a key to a hash
-is [HMAC](https://en.wikipedia.org/wiki/HMAC) (how the key is added is an
-implementation detail that is not relevant to your understanding of what
-functionality HMAC provides.
+determinism has a downside: anyone with the data can create its hash. We also
+want to ensure that the hash was created by a party that was in possession of
+some secret key so that we know that it was not tampered with in transit. To
+accomplish this, we use [HMAC](https://en.wikipedia.org/wiki/HMAC) (how the key
+is added is an implementation detail that is not relevant to your understanding
+of what functionality HMAC provides).
 
 [^2]: Technically, if you choose a bad hash function like MD5 it is possible to
     create multiple inputs that produce the same hash.
