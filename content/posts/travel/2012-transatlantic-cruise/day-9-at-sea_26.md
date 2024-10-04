@@ -2,7 +2,7 @@
 Title: "Day 9: At sea"
 Date: 2012-05-26T19:11:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 Today I had set an alarm for 8:15. We got up and dressed, and went to

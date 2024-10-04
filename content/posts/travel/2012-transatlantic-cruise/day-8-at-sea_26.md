@@ -2,7 +2,7 @@
 Title: "Day 8: At sea"
 Date: 2012-05-07T19:10:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 Today we woke up at 9:30 AGAIN!!! I am getting SO annoyed with all this

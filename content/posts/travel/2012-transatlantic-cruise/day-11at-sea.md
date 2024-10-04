@@ -2,7 +2,7 @@
 Title: "Day 11:At sea"
 Date: 2012-05-26T19:12:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 We set an alarm for 8:00AM. But we woke up at 9:00!!! We had quick

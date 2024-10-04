@@ -2,7 +2,7 @@
 Title: New Adventure
 Date: 2015-07-21T01:02:00-0600
 Categories: [Baltic Cruise and Northern Europe]
-published: false
+draft: true
 ---
 
 We are going on a vacation! We will start with a cruise on the Baltic

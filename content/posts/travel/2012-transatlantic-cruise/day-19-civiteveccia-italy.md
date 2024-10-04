@@ -2,7 +2,7 @@
 Title: "Day 19: Civiteveccia, Italy"
 Date: 2017-04-07T16:00:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 Today I woke up REALLY early to try and catch Colton, Sebastian and

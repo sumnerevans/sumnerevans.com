@@ -2,7 +2,7 @@
 Title: "Day 13:Lisbon, Portugal"
 Date: 2012-05-26T19:14:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 Woke up at a reasonable time. Got ready for our second day in

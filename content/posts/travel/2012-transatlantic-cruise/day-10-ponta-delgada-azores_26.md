@@ -2,7 +2,7 @@
 Title: "Day 10: Ponta Delgada, Azores"
 Date: 2012-05-26T19:12:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 Today we had to get up early to get breakfast quickly so we could get

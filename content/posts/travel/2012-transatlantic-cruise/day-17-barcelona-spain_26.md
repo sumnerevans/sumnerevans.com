@@ -2,7 +2,7 @@
 Title: "Day 17: Barcelona, Spain"
 Date: 2012-05-16T19:17:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 Today we weoke up REALLY late on my time. (Even though it was only 9:00)

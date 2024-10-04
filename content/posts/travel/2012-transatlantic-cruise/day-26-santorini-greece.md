@@ -2,7 +2,7 @@
 Title: "Day 26: Santorini, Greece"
 Date: 2012-06-02T20:33:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 Today started out pretty early because we sailed into the caldera of the

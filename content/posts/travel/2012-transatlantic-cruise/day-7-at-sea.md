@@ -2,7 +2,7 @@
 Title: "Day 7: at sea"
 Date: 2012-05-26T19:08:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 GOOD NEWS  

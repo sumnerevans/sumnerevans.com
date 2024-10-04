@@ -2,7 +2,7 @@
 Title: "Day 30: Rome, Italy"
 Date: 2012-12-20T20:20:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 Today we went to the Roman Forum. This was the center for Ancient Roman

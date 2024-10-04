@@ -2,7 +2,7 @@
 Title: "Day 4"
 Date: 2012-05-05T23:22:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 So today we got to tour the ship. It is VERY interesting. The first

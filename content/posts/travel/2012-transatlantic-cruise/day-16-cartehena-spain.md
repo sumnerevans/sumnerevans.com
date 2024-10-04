@@ -2,7 +2,7 @@
 Title: "day 16: Cartehena, Spain"
 Date: 2012-05-26T19:16:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 Tday I got up rather early. I got ready and then everyone except oma

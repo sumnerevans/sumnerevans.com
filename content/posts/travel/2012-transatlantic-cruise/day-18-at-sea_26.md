@@ -2,7 +2,7 @@
 Title: "Day 18: At sea"
 Date: 2012-05-17T19:18:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 Today we woke up at a resonable-ish time. (Around 9:00) We got up and

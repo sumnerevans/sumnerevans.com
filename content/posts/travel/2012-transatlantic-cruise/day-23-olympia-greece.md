@@ -2,7 +2,7 @@
 Title: "Day 23: Olympia, Greece"
 Date: 2012-06-02T20:30:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 Today was an early day because we had to get up early because we were to

@@ -2,7 +2,7 @@
 Title: "Days 30-35: Rome"
 Date: 2012-08-11T23:25:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 Since I have been bad about doing my blog (I am writing this almost

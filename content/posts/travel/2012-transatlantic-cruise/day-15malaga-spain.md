@@ -2,7 +2,7 @@
 Title: "Day 15:Malaga, Spain"
 Date: 2012-05-26T19:16:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 we got up early this morning and had a small breakfast. We also had to

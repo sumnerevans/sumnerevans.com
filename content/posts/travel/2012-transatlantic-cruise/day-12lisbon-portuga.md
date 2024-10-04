@@ -2,7 +2,7 @@
 Title: "Day 12:Lisbon, Portugal"
 Date: 2012-05-26T19:13:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 Got up at 9:30. BUT went to bed this morning. (at 1:00AM)All of us did

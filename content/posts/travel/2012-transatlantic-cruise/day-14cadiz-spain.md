@@ -2,7 +2,7 @@
 Title: "Day 14: Cadiz, Spain"
 Date: 2012-05-26T19:15:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 We Woke up at 7:30 and had an early breakfast this morning.We are now in

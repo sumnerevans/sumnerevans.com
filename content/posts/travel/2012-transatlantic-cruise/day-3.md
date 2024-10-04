@@ -2,7 +2,7 @@
 Title: "Day 3"
 Date: 2012-05-05T23:21:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 <div align="JUSTIFY">

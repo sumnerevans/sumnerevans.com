@@ -2,7 +2,7 @@
 Title: "Day 1: Flight to Ft. Lauderdale FL"
 Date: 2012-05-01T12:57:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 We started out the day very early at about 3:15. We finished the last

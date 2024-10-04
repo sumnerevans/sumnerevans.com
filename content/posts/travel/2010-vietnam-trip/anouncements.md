@@ -2,7 +2,7 @@
 Title: "Anouncements"
 Date: 2010-12-16T07:13:00-0600
 Categories: [Trip to Vietnam]
-published: false
+draft: true
 ---
 
 I AM ALL THE WAY CAUGHT UP SO READ EVERYTHING THAT YOU HAVEN'T READ.  

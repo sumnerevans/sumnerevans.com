@@ -2,7 +2,7 @@
 Title: "Day 6"
 Date: 2012-05-05T23:23:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 This morning we woke up REALLY late. AGAIN. and I had to get to the

@@ -2,7 +2,7 @@
 Title: "Day 5"
 Date: 2012-05-05T23:22:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 Today we woke up at 7:00 am. It was a little more reasonable today. We

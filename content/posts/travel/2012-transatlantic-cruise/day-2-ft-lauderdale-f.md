@@ -2,7 +2,7 @@
 Title: "Day 2: Ft. Lauderdale FL"
 Date: 2012-05-02T02:05:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 Today Oma (our grandma) came to Ft. Lauderdale. She arrived at around

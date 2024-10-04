@@ -2,7 +2,7 @@
 Title: "Pictures From Vietnam"
 Date: 2010-12-16T03:26:00-0600
 Categories: [Trip to Vietnam]
-published: false
+draft: true
 ---
 
 WE'VE MOVED THIS ARTICLE TO OUR

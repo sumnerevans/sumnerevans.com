@@ -2,7 +2,7 @@
 Title: "Day 20: At Sea"
 Date: 2012-05-21T18:14:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 Today was my first sea day that I didn't have Colton to hang out with.

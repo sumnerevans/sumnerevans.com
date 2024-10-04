@@ -2,7 +2,7 @@
 Title: "Day 25: Ephesus, Turkey"
 Date: 2012-06-02T20:32:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 Today's port of call was kusadasi (koo suh dah see), which is the port

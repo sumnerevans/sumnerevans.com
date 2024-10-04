@@ -2,7 +2,7 @@
 Title: "Day 20: At sea"
 Date: 2012-05-26T19:20:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 Today we woke up relitivly early. (Which was good) Mom, Sumner and me

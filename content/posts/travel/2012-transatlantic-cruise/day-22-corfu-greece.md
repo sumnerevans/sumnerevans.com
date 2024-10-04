@@ -2,7 +2,7 @@
 Title: "Day 22: Corfu, Greece"
 Date: 2012-06-02T20:30:00-0600
 Categories: [Transatlantic Cruise and Europe]
-published: false
+draft: true
 ---
 
 Today we stopped at a Grecian island called Corfu. It is in the middle
