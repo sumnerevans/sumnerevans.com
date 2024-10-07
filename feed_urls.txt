@@ -5,6 +5,7 @@ https://blog.danslimmon.com/feed
 https://chrpaul.de/feed.xml
 https://dominickm.com/feed
 https://elijahpotter.dev/rss.xml
+https://ezrichards.github.io/index.xml
 https://go.dev/blog/feed.atom
 https://intuitiveexplanations.com/feed.xml
 https://jjtech.dev/feed.xml
