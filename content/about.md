@@ -37,10 +37,12 @@ enabled us to scale from hundreds to tens of thousands of users.
 
 Outside of my job, I run my own Matrix homeserver and bridges. I also write and
 host a few Matrix bots. I have written about the technical and community aspects
-of [Matrix on my blog](/categories/matrix), and I've given a
-[few]({{<ref"/portfolio#presentation-hungryserv">}})
-[talks]({{<ref"/portfolio#presentation-what-is-beeper-working-on">}}) related to
-Matrix at conferences. I was recently
+of [Matrix on my blog](/categories/matrix), and I've given a few talks related
+to Matrix at conferences
+([Matrix Cryptographic Key Infrastructure]({{<ref"/portfolio#presentation-matrix-crypto-key-infra">}}),
+[Hungryserv: A Homeserver Optimized for Unfederated Use-Cases]({{<ref"/portfolio#presentation-hungryserv">}}),
+[What is Beeper Working on?]({{<ref"/portfolio#presentation-what-is-beeper-working-on">}})).
+I was recently
 [elected to the Matrix Governing Board](https://matrix.org/foundation/governing-board-elections/#elected-representatives)
 as an individual member. My goal is to represent the interests of the community
 to the Foundation. You can read
