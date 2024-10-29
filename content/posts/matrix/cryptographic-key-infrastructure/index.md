@@ -32,16 +32,21 @@ summary: |
 image: ./images/overview.png
 ---
 
-{{% note title="Slides" %}}
+{{% note title="Slides and Recording" %}}
 
 This is a companion article to the
-[talk by the same name](https://cfp.matrix.org/matrixconf2024/talk/TD3KDQ/) that
-I gave at the 2024 Matrix Conference.
+[talk I gave at the 2024 Matrix Conference]({{<ref"/portfolio#presentation-matrix-crypto-key-infra">}})
+by the same name.
 
 <a href="slides.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Slides</a>
 |
 <a href="slides-with-notes.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i>
 Slides + Notes</a>
+
+<details class="youtube-expander" open>
+<summary><i class="fa fa-youtube-play"></i>&nbsp;Matrix Cryptographic Key Infrastructure - Sumner Evans</summary>
+{{< youtube id="4uC-S0Bb5-g" >}}
+</details>
 
 {{% /note %}}
 
