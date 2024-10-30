@@ -5,26 +5,25 @@
       <h3>RELATED POSTS</h3>
     </div>
     <section class="articles">
-      {{- range (.Site.RegularPages.Related . | partial "func/FilterPages" | first 3) -}}
-        <div class="article">
-          <h4 class="title">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          </h4>
-          <p class="summary">{{ .Summary | plainify | truncate 140 "..." }}</p>
+      <ul>
+        {{- range (.Site.RegularPages.Related . | partial "func/FilterPages" | first 5) -}}
+        <li>
+          <b><a href="{{ .RelPermalink }}">{{ .Title }}</a></b>
           <small class="source">
-            on {{ .Date.Format "2006-01-02" }}
             {{ with .Params.categories }}
-              in
-              {{ range first 1 . }}
-                <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-              {{- end -}}
-              {{- range after 1 . -}}
-                , <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-              {{- end -}}
+            in
+            {{ range first 1 . }}
+            <a href="{{ " /categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{- end -}}
+            {{- range after 1 . -}}
+            , <a href="{{ " /categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{- end -}}
             {{ end }}
+            on {{ .Date.Format "2006-01-02" }}
           </small>
-        </div>
-      {{- end -}}
+        </li>
+        {{- end -}}
+      </ul>
     </section>
   </div>
 </aside>

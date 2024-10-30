@@ -7,10 +7,9 @@ $iosevka-font-path: '/fonts/iosevka';
 $iosevka-version: '3.6.3';
 @font-face {
   font-family: 'Iosevka';
-  src:
-    url('#{$iosevka-font-path}/woff2/iosevka-regular.woff2?v=#{$iosevka-version}') format('woff2'),
-    url('#{$iosevka-font-path}/woff/iosevka-regular.woff?v=#{$iosevka-version}') format('woff'),
-    url('#{$iosevka-font-path}/ttf/iosevka-regular.ttf?v=#{$iosevka-version}') format('truetype');
+  src: url('#{$iosevka-font-path}/woff2/iosevka-regular.woff2?v=#{$iosevka-version}') format('woff2'),
+  url('#{$iosevka-font-path}/woff/iosevka-regular.woff?v=#{$iosevka-version}') format('woff'),
+  url('#{$iosevka-font-path}/ttf/iosevka-regular.ttf?v=#{$iosevka-version}') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -56,7 +55,9 @@ a {
   color: #0c61e8;
   text-decoration: dotted underline;
 
-  &:hover, &:active, &:focus {
+  &:hover,
+  &:active,
+  &:focus {
     color: darken(#0c61e8, 20%);
     text-decoration: underline;
   }
@@ -80,22 +81,28 @@ a.btn {
   border-radius: 5px;
   text-decoration: none;
 
-  &:hover, &:active, &:focus {
+  &:hover,
+  &:active,
+  &:focus {
     color: #fff;
     background-color: #000;
   }
 }
 
-.admonition  a {
+.admonition a {
   color: darken(#0c61e8, 25%);
 
-  &:hover, &:active, &:focus {
+  &:hover,
+  &:active,
+  &:focus {
     color: darken(#0c61e8, 35%);
   }
 }
 
-h1, h2, h3 {
-  line-height:1.2;
+h1,
+h2,
+h3 {
+  line-height: 1.2;
 }
 
 h1 {
@@ -141,7 +148,7 @@ p.article-info {
   }
 }
 
-main *:not(pre) > code,
+main *:not(pre)>code,
 tt,
 kbd {
   background-color: #0002;
@@ -203,7 +210,9 @@ img {
   max-width: 100%;
   opacity: 0.9;
 
-  &:hover, &:active, &:focus {
+  &:hover,
+  &:active,
+  &:focus {
     opacity: 1;
     transform: scale(1.02);
   }
@@ -223,6 +232,7 @@ img {
 .strike {
   text-decoration: line-through;
 }
+
 /* Image Galleries */
 .gallery {
   tr {
@@ -237,10 +247,11 @@ img {
     }
   }
 }
+
 details.youtube-expander {
   margin: 1em 0;
 
-  > summary {
+  >summary {
     background-color: #eee;
     padding: 1em;
 
@@ -250,28 +261,32 @@ details.youtube-expander {
     }
   }
 }
+
 details.advent-of-code-part-expander {
   border: 1px solid #ccc;
   margin: 1em 0;
   padding: 1em;
 
-  > summary {
+  >summary {
 
     h3 {
       display: inline;
     }
   }
 }
+
 h2 .permalink {
   opacity: 0;
 }
+
 h2:hover .permalink {
   opacity: 1;
 }
+
 details.portfolio-item {
   margin-bottom: 1em;
 
-  > summary {
+  >summary {
     background-color: #eee;
     padding: 0.5em 1em;
 
@@ -304,10 +319,11 @@ details.portfolio-item {
     }
   }
 
-  > div {
+  >div {
     margin-left: 2em;
   }
 }
+
 // TODO: END move this stuff out to custom css
 
 header {
@@ -329,7 +345,8 @@ header {
       margin-right: 15px;
       width: 150px;
 
-      picture, img {
+      picture,
+      img {
         opacity: 1;
       }
     }
@@ -369,7 +386,9 @@ header {
     }
 
     .search-results {
-      #search-results-loading, .no-results {
+
+      #search-results-loading,
+      .no-results {
         text-align: center;
       }
 
@@ -379,7 +398,8 @@ header {
         padding-left: 4px;
       }
 
-      li:hover, li:active {
+      li:hover,
+      li:active {
         border-left: 4px solid #0c61e8;
       }
 
@@ -387,7 +407,8 @@ header {
         color: #333;
         text-decoration: none;
 
-        &:hover, &:active {
+        &:hover,
+        &:active {
           color: #333;
           text-decoration: none;
         }
@@ -448,7 +469,8 @@ dd {
   }
 }
 
-.webring, .related-posts {
+.webring,
+.related-posts {
   .articles {
     display: flex;
     flex-wrap: wrap;
@@ -482,6 +504,21 @@ dd {
   }
 }
 
+.webring,
+.related-posts {
+  .header {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  ul {
+    margin-top: 0;
+  }
+}
+
 // Isso
 // Add a bit of padding between each of the entry boxes in the Isso auth
 // section. By default, they are squished together, which looks terrible.
@@ -490,7 +527,7 @@ section#isso-thread {
     margin-right: 5px;
   }
 
-  .isso-comment > div.text-wrapper {
+  .isso-comment>div.text-wrapper {
     a.author:hover {
       text-decoration: underline;
     }
@@ -537,6 +574,7 @@ footer {
     @import 'chroma/onedark';
     @include dark-mode-styles;
   }
+
   body.light-theme {
     @import 'chroma/pygments';
   }
@@ -546,6 +584,7 @@ footer {
   body:not(.dark-theme) {
     @import 'chroma/pygments';
   }
+
   body.dark-theme {
     @import 'chroma/onedark';
     @include dark-mode-styles;
@@ -570,7 +609,8 @@ table:not(.gallery) {
     }
   }
 
-  th, td {
+  th,
+  td {
     padding: 4px 8px;
 
     &.align-right {
@@ -605,7 +645,7 @@ table:not(.gallery) {
   .summary-text {
     margin: 0;
 
-    .summary >p:first-child {
+    .summary>p:first-child {
       margin-top: 0;
     }
   }
