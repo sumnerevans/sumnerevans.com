@@ -37,9 +37,9 @@ which brought fully end-to-end encrypted iMessage to Android devices.
 Like Beeper, Automattic is a [remote-only company](https://automattic.com/about)
 and so is the Texts.com team, so work retreats are the only time that we can
 connect with our co-workers in-person and build stronger personal relationships
-with among the team. This retreat felt especially necessary because we are
-combining two teams together and we wanted to build personal relationships
-across the previously separate teams.
+among the team. This retreat felt especially necessary because we are combining
+two teams together and we wanted to build personal relationships across the
+previously separate teams.
 
 Our destination for this retreat was Porto, Portugal. We've had a
 [retreat in Portugal before]({{<ref"/posts/travel/2022-lisbon-and-paris/ericeira-portugal">}}),
