@@ -29,8 +29,8 @@ team and was focused on work and planning less than team-building.
 
 Automattic is a [remote-only company](https://automattic.com/about), so work
 retreats are the only time that we can connect with our co-workers in-person and
-build stronger personal relationships with among the team. The best part is that
-we get to go to cool locations for these meetups. You can read about all the
+build stronger personal relationships among the team. The best part is that we
+get to go to cool locations for these meetups. You can read about all the
 previous [work retreats on this blog]({{<ref"/categories/work-retreats">}}).
 
 For this retreat, we returned to
