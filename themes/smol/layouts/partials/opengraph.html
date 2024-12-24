@@ -35,12 +35,6 @@
   <meta property="og:type" content="website">
 {{- end }}
 
-{{- with partial "_funcs/get-page-images" . }}
-  {{- range . | first 6 }}
-    <meta property="og:image" content="{{ .Permalink }}">
-  {{- end }}
-{{- end }}
-
 {{- with .Params.audio }}
   {{- range . | first 6  }}
     <meta property="og:audio" content="{{ . | absURL }}">
