@@ -55,6 +55,7 @@ universe.
 - **Keyboards:**
 
   - [Ergedox EZ with Cherry MX Blues][ergodox-ez]
+  - [ZSA Voyager](https://www.zsa.io/voyager)
   - [CODE V3 87-Key with Cherry MX Clears][code]
   - [Pok3r 3 60% Keyboard with Cherry MX Clears][pok3r3]
 
@@ -79,7 +80,8 @@ universe.
 
 \* indicates daily driver
 
-- **Smartphone\*:** ASUS Zenfone 9
+- **Smartphone\*:** Samsung Galaxy S24
+- **Smartphone:** ASUS Zenfone 9
 - **Smartphone:** iPhone 12 Mini (64 GB, Blue)
 - **Smartphone:** Google Pixel 3a (64 GB, Just Black)
 - **Smartphone:** Google Pixel 1 (32 GB, Quite Black)
