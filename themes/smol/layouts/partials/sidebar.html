@@ -11,13 +11,13 @@
           <b><a href="{{ .RelPermalink }}">{{ .Title }}</a></b>
           <small class="source">
             {{ with .Params.categories }}
-            in
-            {{ range first 1 . }}
-            <a href="{{ " /categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-            {{- end -}}
-            {{- range after 1 . -}}
-            , <a href="{{ " /categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-            {{- end -}}
+              in
+              {{ range first 1 . }}
+                <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+              {{- end -}}
+              {{- range after 1 . -}}
+                , <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+              {{- end -}}
             {{ end }}
             on {{ .Date.Format "2006-01-02" }}
           </small>

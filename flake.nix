@@ -14,9 +14,10 @@
           default = pkgs.mkShell {
             packages = with pkgs; [
               hugo
-              openring
               libheif
+              linkchecker
               nodePackages.htmlhint
+              openring
               vale
             ];
           };
