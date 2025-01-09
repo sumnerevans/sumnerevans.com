@@ -5,8 +5,23 @@ categories: [Projects]
 tags:
   - Sublime Music
 image: images/logo.png
+description: |
+  Today I'm announcing that Sublime Music has reached end-of-maintenance. This
+  announcement is greatly overdue, as I have not been actively maintaining the
+  project for over a year, and have not been actively developing new features
+  for even longer.
 summary: |
-  Today I'm announcing that Sublime Music has reached end-of-maintenance.
+  Today I'm announcing that Sublime Music has reached end-of-maintenance. This
+  announcement is greatly overdue, as I have not been actively maintaining the
+  project for over a year, and have not been actively developing new features
+  for even longer.
+
+  ## Thank You!
+
+  I would like to start off by thanking everyone who used Sublime Music,
+  reported bugs, interacted in the Matrix room, and wrote code for the project.
+  This project is the most successful open source project I've started, and I am
+  grateful for the community that formed around it.
 ---
 
 ![](images/logo.png)
