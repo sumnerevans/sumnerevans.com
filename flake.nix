@@ -18,6 +18,7 @@
               linkchecker
               nodePackages.htmlhint
               openring
+              pre-commit
               vale
             ];
           };
