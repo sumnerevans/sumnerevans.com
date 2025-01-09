@@ -93,7 +93,7 @@ sorts about it.
 
 (OK, I don't think I'm winning any Pulitzer for that.)
 
-{{<figure 
+{{<figure
   src="images/cemetery.jpg"
   title="The American Cemetery at Omaha Beach"
   caption="In my mind, the cemetery represents the many who died so that the West might live on."
@@ -111,7 +111,7 @@ beach you can still see to this day the remnants of the temporary port that the
 engineers built to allow the allies to offload materiel from larger vessels
 before the capture of already-established deep water ports.
 
-{{<figure 
+{{<figure
   src="images/arromanches.jpg"
   title="Overlooking the beach at Arromanches"
   caption="Even at high tide, the remnants of the temporary port can be seen."

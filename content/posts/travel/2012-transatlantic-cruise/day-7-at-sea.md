@@ -11,16 +11,16 @@ X-Rays, and the doctor got the results back and all is wellish! Also, I
 got crutches. I kind of feel a little silly. It is fun, but I feel a
 little obvious. I have to do the RICE thing.
 
-  
+
 **R-**rest
 
-  
+
 **I**-ice
 
-  
+
 **C**-compression
 
-  
+
 **E**-elavation
 
 I learned you do that if you have a sprain. Interesting huh? Anyway, the
@@ -28,7 +28,7 @@ crutches are fun yet obvious and standing out. Well. Right now we are
 going to go to the pool. wish us **LUCK** and good **FORTUNE**. (You
 know, I have NO clue why I just put that in.)
 
-  
+
 <b><i>
 
 <div align="CENTER">
@@ -65,7 +65,7 @@ yr old room. (They have a separate room) We presented our camps to them.
 Shortly there after, we all had to go to our state rooms (AKA cabins)
 Got to head to bed now!
 
-  
+
 <b><i>
 
 <div align="CENTER">

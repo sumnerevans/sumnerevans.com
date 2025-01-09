@@ -118,12 +118,12 @@ late for dinner by at least 5-7 minutes, went and found tableAfter
 dinner went to Club HALIt was Sports under the starsWe just had free
 time with the fun bouncy ballsI hurt my ankle agian, (I only hurt it a
 little bit. No big deal) so I kind of sat outAfter Club HAL went to bed  
-  
-  
+
+
 Bao- Noite (bah-oh-noy-t) good night  
-  
-  
+
+
 -Hannah-  
-  
-  
+
+
 Is this the rough draft? Oops! Sorry! Hope it still is good!

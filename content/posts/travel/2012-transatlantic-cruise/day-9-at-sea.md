@@ -48,7 +48,7 @@ Caleb, hurt his foot. So I did not see him for the whole afternoon.
 After oragami, we got to start a scrapbook. I did mine on the cruise.
 Anyhoo, after scrapbooking we played gaga ball. It was REALLY fun and
 tiring.  
-  
+
 
 <div align="CENTER">
 
@@ -82,7 +82,7 @@ got 2 Holland America Line rubiks cubes. I also got a Club HAL "The
 Loft" keychain. I am SO excited because we are going to our 1st port
 tomaorrow! We are landing in Ponta Delgada in the Azores. (A set of
 islands owned by Portugal.) Got to go to bed now! Good night people!  
-  
+
 
 <div align="CENTER">
 

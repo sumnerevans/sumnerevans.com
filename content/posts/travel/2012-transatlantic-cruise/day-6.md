@@ -14,7 +14,7 @@ look at the differences. there are actually A LOT. I was at the pearl
 demonstration for the ENTIRE morning. I got pulled away for
 lunch.(luckily :D) Lunch was in the buffet. As usual. Then I went up to
 Club HAL. Oh! I found out what HAL means in Club HAL! HAL means  
-  
+
 
 <div align="JUSTIFY">
 
@@ -35,7 +35,7 @@ Club HAL. Oh! I found out what HAL means in Club HAL! HAL means
 
 </div>
 
-  
+
 
 <div align="JUSTIFY">
 
@@ -56,7 +56,7 @@ Club HAL. Oh! I found out what HAL means in Club HAL! HAL means
 
 </div>
 
-  
+
 
 <div align="JUSTIFY">
 

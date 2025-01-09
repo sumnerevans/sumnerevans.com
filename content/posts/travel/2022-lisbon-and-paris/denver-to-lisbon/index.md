@@ -47,7 +47,7 @@ city out the window.
   caption="This is the West coast of Iberia."
 >}}
 
-<!-- TODO: embed the video arriving in LIS --> 
+<!-- TODO: embed the video arriving in LIS -->
 
 ---
 

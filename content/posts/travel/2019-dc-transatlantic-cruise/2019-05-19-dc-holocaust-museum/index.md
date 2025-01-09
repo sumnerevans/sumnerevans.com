@@ -109,4 +109,3 @@ the WWII Memorial, one of the more recent monuments in DC.
 After visiting the Lincoln Memorial, we walked past the Vietnam War Memorial and
 to the White House. At that point, we were quite tired, and we headed back to
 the apartment.
-

@@ -53,5 +53,3 @@ Here are some CrashPlan features that I really like...
     have backed up to CrashPlan Central (that's CrashPlan's cloud backup
     location) from your mobile device. One catch though, you have to subscribe
     to CrashPlan+.
-
-

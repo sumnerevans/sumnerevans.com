@@ -79,7 +79,7 @@ embarrassed) When we had to leave, LOTS people said **GOOD JOB!** A lady
 came up to me and asked if I wanted to model for her at her pearl
 demonstration. I hope it will be fun! After that we all stumbled to bed.
 (Not excactly stumbled) Well thats all for this time folks!  
-  
+
 
 <div align="CENTER">
 

@@ -67,8 +67,8 @@ should go to bed.
 ## Hannah
 So today we got to tour the ship. It is VERY interesting. The first
 thing that happened today was sleeping until 10:00 am. It wasn't my
-fault! The ship had a time change. SO 
-we kind of slept in. By the time we got up, it was already 1 hour till 
+fault! The ship had a time change. SO
+we kind of slept in. By the time we got up, it was already 1 hour till
 lunch. We missed breakfast that day. (Sumner wasn't too happy about
 that.) Anyway, the lunch was buffet. AGAIN.
 Oh well. after lunch, Sumner and I both went to Club HAL. It was fun.

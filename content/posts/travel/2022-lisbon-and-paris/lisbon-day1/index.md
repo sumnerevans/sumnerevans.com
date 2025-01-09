@@ -37,7 +37,7 @@ renovations, so classes were cancelled for the day.
 
 Luckily, STAT has multiple locations, and another location (Restelo) was open,
 and Mr. Pererra suggested I Uber over there. I arrived at the end of a beginner
-class, and right before their Saturday teen/adult class began. Mr. Folgado, a 
+class, and right before their Saturday teen/adult class began. Mr. Folgado, a
 4th degree and head instructor at the location taught the class.
 
 The workout was great. We focused on round kicks, and we did lots of fun and

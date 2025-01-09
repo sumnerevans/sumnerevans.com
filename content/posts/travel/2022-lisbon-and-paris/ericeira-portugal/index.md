@@ -59,7 +59,7 @@ also nice when there was some shade. The small chapel area was covered, but
 there was only a small (fairly ineffective) mobile air conditioning unit which
 made the space difficult to use during the hottest parts of the day.
 
-{{<figure 
+{{<figure
   src="images/tent.jpg"
   title="The team listening to Eric lay out the company vision"
   caption="We used the tent for all of our main team meetings."
@@ -98,7 +98,7 @@ product and also help smooth over any service disruptions or bugs that users run
 into. They also work to inform the engineering team about what issues users are
 facing.
 
-{{<figure 
+{{<figure
   src="images/retro.jpg"
   title="The team participating in the retrospective meeting"
   caption="Caroline (standing left) is discussing her retro sticky notes as Brad (standing right) looks on."
@@ -172,7 +172,7 @@ bridges have had this for a while, but iMessage had some specific challenges
 that made it more difficult, and was best done when we could each quickly ask
 questions of one another while staring at each other's code.
 
-{{<figure 
+{{<figure
   src="images/code-by-the-fire.jpg"
   title="Sumner, Eric Rabil, and Tulir coding while sitting near the fire"
   caption="I'm pretty sure we were putting the finishing touches on iMessage link previews here."
@@ -239,13 +239,13 @@ s'mores, though: they were chocolate covered marshmallows so you had to be very
 careful to not melt the chocolate off the marshmallow. We also had very tiny
 sticks and which made roasting the marshmallows a quite warming experience.
 
-{{<figure 
+{{<figure
   src="images/fire.jpg"
   title="Getting ready to play a game around the fire one evening"
   caption="We got to learn a lot about each other around the fire pit and it was a really fun time each evening."
 >}}
 
-## Activities 
+## Activities
 
 We clearly managed to make up our own fun, but there were also some planned
 team activities throughout the week as well.
@@ -258,7 +258,7 @@ hills in the area, but I'm not a mountain biker so it was novel and a bit
 challenging for me. The views were spectacular. We stopped at many overlooks,
 including this one where we took a team picture:
 
-{{<figure 
+{{<figure
   src="images/biking-team.jpg"
   title="The team in front of a scenic cliff overlook during our biking tour"
   caption="The views were spectacular during the entire ride, but the company was even better!"
@@ -267,7 +267,7 @@ including this one where we took a team picture:
 The weather was fantastic for the ride, which made it very enjoyable, but we
 definitely got our exercise!
 
-{{<figure 
+{{<figure
   src="images/biking-road.jpg"
   title="Biking along the road back towards our retreat location"
   caption="We spent time on both trails and roads during our ride. It was all very scenic."
@@ -302,13 +302,13 @@ you some pictures of each location.
 
 ![A panoramic shot taken from the top of the wall around Óbidos](images/obidos.jpg)
 
-{{<figure 
+{{<figure
   src="images/fatima.jpg"
   title="The main square at the church at Fátima"
   caption="On the left is a shrine where Catholics make pilgrimages to light candles and such. The square is modeled very similar to the square in the Vatican and has been visited by the Pope multiple times."
 >}}
 
-{{<figure 
+{{<figure
   src="images/nazare.jpg"
   title="The coast of Nazaré"
   caption="There were no big waves the day that we was there, but apparently, the waves get very big. A surfer recently surfed a wave that was 26.21 metres (86 feet) high!"
@@ -317,7 +317,7 @@ you some pictures of each location.
 During the tour, we stopped at a seafood restaurant and Caroline, Rabil, and
 myself shared a dish with freshly baked fish, potatoes, and vegetables.
 
-{{<figure 
+{{<figure
   src="images/fish-lunch.jpg"
   title="The waiter presenting the freshly caught fish"
   caption="The fish was very fresh, caught that morning I assume."
@@ -330,7 +330,7 @@ a dinner at a seaside restaurant.
 
 The food was quite good, but the view was amazing.
 
-{{<figure 
+{{<figure
   src="images/dinner-thursday.jpg"
   title="The team eating dinner on Thursday"
   caption="The sunset was a beautiful to our meal."

@@ -178,5 +178,5 @@ boss which meant that the kids got to chose what to do.
 Adeus!! (a-de-oosh!!) That is goodbye in Portugese.
 
 Soory it is a little choppy. I was in a rush.  
-  
+
 ***-Hannah- :D***

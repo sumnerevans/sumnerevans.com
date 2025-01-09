@@ -44,13 +44,13 @@ Lastly, add the following lines to your `config.toml` to set site parameters and
         identifier = "posts"
         name = "Posts"
         url = "/posts/"
-        weight = 1 
+        weight = 1
 
   [[menu.main]]
         identifier = "categories"
         name = "Categories"
         url = "/categories/"
-        weight = 2 
+        weight = 2
 
   [[menu.main]]
         identifier = "tags"
@@ -62,17 +62,17 @@ Lastly, add the following lines to your `config.toml` to set site parameters and
   [[menu.footer]]
         name = "Github"
         url = "https://github.com/example"
-        weight = 1 
+        weight = 1
 
     [[menu.footer]]
         name = "Mastodon"
         url = "https://example.com/@user"
-        weight = 2 
+        weight = 2
 
     [[menu.footer]]
         name = "Imprint"
         url = "/imprint"
-        weight = 3 
+        weight = 3
 
 ```
 

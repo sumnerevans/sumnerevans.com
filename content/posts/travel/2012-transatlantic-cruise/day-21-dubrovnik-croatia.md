@@ -162,7 +162,7 @@ the carmel thing. They also had LOTS of cherries. After dessert, we had
 to leave. It was REALLY fun getting to meet that family. We went to the
 boat afterwards. Had a quick snacky lunch, and went to play ping pong.
 Wejust did the normal stuff the rest of the evening.  
-  
+
 
 <div align="CENTER">
 

@@ -117,7 +117,7 @@ dinner, I went to Club HAL. All we did tonight was watch a movie called
 **SHARK BOY AND LAVA GIRL**. I know, sounds wierd, but it is actually a
 REALLY good movie. Check it out !!!
 
-  
+
 
 <div align="CENTER">
 

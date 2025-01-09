@@ -176,9 +176,9 @@ JavaScript to perform DOM manipulation.
 For these reasons (and many more), sourcehut's interface is (and feels) much
 more performant than those of GitHub and GitLab.
 
-{{<figure 
+{{<figure
   src="images/repo-summary.png"
-  title="sourcehut's repository summary interface" 
+  title="sourcehut's repository summary interface"
   caption="The sourcehut interface focuses on the content, rather than the UX chrome"
 >}}
 
@@ -199,9 +199,9 @@ sourcehut builds because all the build steps are performed on the same image
 that short build steps are reasonable because you do not incur any of the Docker
 warmup overhead between build steps.
 
-{{<figure 
+{{<figure
   src="images/build-results.png"
-  title="sourcehut's build results interface" 
+  title="sourcehut's build results interface"
 >}}
 
 The way that you manage secrets in sourcehut builds is also great. Unlike

@@ -58,7 +58,7 @@ won 700 to -100 (negative one-hundred)AFter jeopardy, we did hyptograms.
 am sitting in bed while OMa is sleeping, mom is reading, and Sumner is
 doing his blog. Adios Amigos!
 
-  
+
 
 <div align="CENTER">
 

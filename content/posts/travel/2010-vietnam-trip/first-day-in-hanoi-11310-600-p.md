@@ -94,5 +94,3 @@ motorcycle just whizzes past you, a few inches away from you!
   [![Create your own slideshow - Powered by Smilebox](http://www.the-evans.family/sumner/blog/wp-content/uploads/2010/11/blogLogoSmileboxSmall.gif){width="386" height="46"}](http://www.smilebox.com/?partner=commissionjunction&campaign=blog_snapshot)
   Digital slideshow generated with Smilebox
   ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-

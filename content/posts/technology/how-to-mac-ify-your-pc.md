@@ -206,5 +206,3 @@ of the tools that we will be using.
             3.  
 
         5.  
-
-

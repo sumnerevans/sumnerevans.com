@@ -1,0 +1,19 @@
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-json
+        exclude: ^themes/smol/layouts/_default/index.json$
+      - id: check-merge-conflict
+      - id: check-toml
+      - id: check-xml
+        exclude: ^themes/smol/layouts/_default/rss.xml$
+      - id: check-yaml
+      - id: end-of-file-fixer
+        exclude: ^(content/teaching/|themes/smol/assets/|themes/smol/static/fonts/fork-awesome/).*$
+      - id: mixed-line-ending
+      - id: pretty-format-json
+        exclude: ^(vale/.*|themes/smol/layouts/_default/index.json)$
+      - id: trailing-whitespace
+        args: [ --markdown-linebreak-ext=md ]
+        exclude: ^(content/teaching/|themes/smol/assets/|themes/smol/static/fonts/fork-awesome/).*$

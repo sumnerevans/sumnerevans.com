@@ -24,9 +24,9 @@ found table. After dinner went to Club HALIt was Sports under the stars.
 We just had free time with the fun bouncy balls! hurt my ankle again  (I
 only hurt it a little bit. No big deal) so I kind of sat outAfter Club
 HAL went to bed  
-  
+
 Bao- Noite (bah-oh-noy-t) good night  
-  
+
 -Hannah-  
-  
+
 Is this the rough draft? Oops! Sorry! Hope it still is good!

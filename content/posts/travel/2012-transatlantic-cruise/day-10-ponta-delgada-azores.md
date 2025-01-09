@@ -155,7 +155,7 @@ SCALDING hot water. I felt it and it was VERY hot. After the burning
 water, we were led to a Slfur (the gas) hole. It was REALLY cool. Yes.
 It DID smell like old boiled eggs. I was notTOO stinky. (Although, you
 DID get tired of it)  
-  
+
 ***Fun fact: Did you know that if you have asthma, you can breathe in
 the Sulfur gas and it will help your breathing?***  
 
@@ -213,7 +213,7 @@ sec.) After club HAL we played ping-pong until 10:30PM. We were trying
 to stay up till 11:00 ot watch the Filipino Crew Show. It was REALLY
 good. We then went to bed, but stayed up until 1:45AM writing this
 blog.  
-  
+
 
 <div align="CENTER">
 

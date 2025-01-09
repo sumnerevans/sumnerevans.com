@@ -158,7 +158,7 @@ one-hundred)AFter jeopardy, we did hyptograms. (Look up what those are.
 Maybe you can do some your self!)As I type, I am sitting in bed while
 OMa is sleeping, mom is reading, and Sumner is doing his blog. Adios
 Amigos!  
-  
+
 
 <div align="CENTER">
 

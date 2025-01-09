@@ -21,7 +21,7 @@ build:
 
 This week, my company (Beeper) had our first retreat of the new year in
 Amsterdam, Netherlands. We aim for about three retreats a year, though due to
-holidays and a recent push towards our 
+holidays and a recent push towards our
 [beta exit](https://blog.beeper.com/p/beeper-update-4-out-of-beta)
 milestone, it has been a little while since we have all gotten together. The
 [last retreat]({{< ref "/posts/travel/2022-mexico-city-retreat" >}})
@@ -58,7 +58,7 @@ retreat's retro was no different. If I were to sum up the vibe of the retro in
 one phrase it would be: progress and optimism.
 
 We have made a lot of progress as a team in the past five months. Most of the
-work we have done lately has been building towards our 
+work we have done lately has been building towards our
 [beta exit](https://blog.beeper.com/p/beeper-update-4-out-of-beta)
 milestone. We launched
 [hungryserv](https://github.com/sumnerevans/hungryserv-presentation)

@@ -66,7 +66,7 @@ Day       Time   Rank  Score       Time   Rank  Score
 
 I got global leaderboard on two days 1 (part 1 and 2) and 15 (part 1) for a
 total of 115 points on the global leaderboard. This year was the first time I'd
-ever made global leaderboard, so that was really cool. My 115 points puts me at 
+ever made global leaderboard, so that was really cool. My 115 points puts me at
 396th globally according to [this scraped leaderboard on
 GitHub](https://github.com/SourishS17/AoC-2021-Full-Leaderboard/blob/main/leaderboard.csv).
 

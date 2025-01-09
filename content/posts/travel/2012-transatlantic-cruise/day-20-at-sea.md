@@ -86,7 +86,7 @@ string wasn't long enough. And the butterfly, I was the first person in
 Club HAL, even the leaders. I have to tell them how to make the
 butterfly. They don't even know how! But I did. (it actually was not
 that hard at all.) Ithen went STRAIGHT to bed.  
-  
+
 
 <div align="CENTER">
 

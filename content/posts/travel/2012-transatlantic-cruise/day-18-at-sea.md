@@ -104,7 +104,7 @@ funny. After that, we got to tell jokes. I will tell those to you guys
 as well. After the "Opening" we watched Mickey and the Beanstalk. (And
 other Mickey shows.) I then got EVERYONES contacts and said goodbye. :(
 :( :( :( :( :( :( :( I then had to go STRAIGHT to bed.  
-  
+
 
 <div align="CENTER">
 

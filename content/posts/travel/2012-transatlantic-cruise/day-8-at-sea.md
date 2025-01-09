@@ -138,7 +138,7 @@ There names were Roman and Svitlana. After the show, I got to meet Lance
 Ringnald! (You know, the gold medal gymnist.) I got his autograph.
 Proseding shortly after, we went to the paino lounge. I got to play the
 piano again. I played some hyms. It was fun. We then went to bed.  
-  
+
 
 <div align="CENTER">
 

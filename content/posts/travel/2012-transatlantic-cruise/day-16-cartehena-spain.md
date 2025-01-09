@@ -53,7 +53,7 @@ late to dinner. We made it just in time. I decided to be adventurous (I
 can be as adventurous as I want to be because anything you want is
 already paid for) Anyway, I was REALLY daring to try
 
-  
+
 
 <div align="CENTER">
 
@@ -104,7 +104,7 @@ from either China or Japan, won the blackout. It was fun. After that, I
 went to go get Sumner. When we got back to the room, we HAD to go
 STRAIGHT to bed. NO passing GO and NO collecting 200 dollars.
 
-  
+
 
 <div align="CENTER">
 

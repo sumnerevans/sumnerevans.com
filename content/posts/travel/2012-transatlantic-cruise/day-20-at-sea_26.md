@@ -49,7 +49,7 @@ Club HAL, even the leaders. I have to tell them how to make the
 butterfly. They don't even know how! But I did. (it actually was not
 that hard at all.) Ithen went STRAIGHT to bed.
 
-  
+
 
 <div align="CENTER">
 

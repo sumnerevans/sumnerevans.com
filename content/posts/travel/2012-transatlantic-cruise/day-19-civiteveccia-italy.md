@@ -64,7 +64,7 @@ today, maybe it will rowdier as the time goes on. After Club HAL, I came
 back to the room and went to bed. And here I still am typing into my old
 age. JUST KIDDING!
 
-  
+
 
 <div align="CENTER">
 

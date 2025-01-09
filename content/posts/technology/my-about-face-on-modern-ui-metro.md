@@ -16,5 +16,3 @@ I have changed my mind. Here are my complaints about Windows 8:
     doesn't have nearly enough useful apps on it. It's gotten much
     better but not enough to stop my rejection of Modern UI. In a little
     experiment I performed to see how bad it actually was
-
-

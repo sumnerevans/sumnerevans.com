@@ -31,7 +31,7 @@ the other 3 contestants step back. She got asked a quote, and she said
 John F Kennedy. The host said "great job! John F Kennedy is correct! But
 he also goes by Jimmy Carter!" It was SO funny. See ya'll later!
 
-  
+
 
 <div align="CENTER">
 
