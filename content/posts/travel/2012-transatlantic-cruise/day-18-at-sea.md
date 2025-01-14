@@ -30,7 +30,7 @@ more days and then go on to Florence, Venice, and I think another city
 that slips my mind at this time (I have a lot of times that that has
 been happening as I have been writing this blog, maybe it is because I
 am writing this at **:**pm. hey last night I was up 'till \*:\*\*pm
-\[dad don't read the part that you just read\]). Anyway eventually we we
+[dad don't read the part that you just read]). Anyway eventually we we
 will reach Germany and dad will fly home, the rest of us will go and
 visit the town that mom and dad lived in for four years in Germany back
 before Hannah and I were born. Then we too will fly home to all y'all.

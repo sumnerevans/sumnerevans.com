@@ -40,7 +40,7 @@ English to her. We did have one word in common, salad. Anyway we went in
 our way and as we drove a few time Oma got out and made some pictures of
 the olive trees. She made at least forty probably. Anyway we came
 eventually back down the mountains after going through some other
-villages and made our way way to the \[PALACE NAME\]. This palace was
+villages and made our way way to the [PALACE NAME]. This palace was
 made for the Austrian queen or princess or something in the late
 eighteen hundreds and it was made in the neoclassical style. This style
 is a more modern version of the classical style. One thing that is

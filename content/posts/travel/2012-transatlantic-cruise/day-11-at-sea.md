@@ -5,7 +5,7 @@ Categories: [Transatlantic Cruise and Europe]
 ---
 
 ## Sumner
-*\[Continued from Day 9\]*
+*[Continued from Day 9]*
 
 So as you can see I didn't do very much of a post on Day 9 but I will do
 as a promised and write about the plan of the ship. I will take you from

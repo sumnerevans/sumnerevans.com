@@ -11,7 +11,7 @@ before the trip is completed be able to add a link to the website with
 the plans of the ship and of the rooms. And as a picture tells a
 thousand words... My posts will only be a helper as you look through the
 pictures. Maybe I will post that in Lisbon, or... Maybe not. We'll see.
-\[The rest of this posts will be posted under the title Day 11: At Sea\]
+[The rest of this posts will be posted under the title Day 11: At Sea]
 I admit, I have been staying up watching shows etc. way too late and
 once I get to the blog it is often eleven o'clock at night. Right now I
 am writing this while waiting for a show to start. Now you can go to Day

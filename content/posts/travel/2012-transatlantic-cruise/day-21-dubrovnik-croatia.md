@@ -95,8 +95,8 @@ area of the fire but not on the actual fire. Then they used this bell
 shaped thing to cover it and they put coals on top of the bell as well
 as round it to cook the food. After two or more hours it was ready to
 eat. It was really good expert it was just too much. For desert we had
-this thing that was like crém burle and another desert that was \[FIGURE
-OUT\]. Then we talked about their lives, what they did for a living
+this thing that was like crém burle and another desert that was [FIGURE
+OUT]. Then we talked about their lives, what they did for a living
 besides rent parts of their house and do what they were doing for us
 today, where they went to school. We told them about ourselves. There
 was an instrument on the wall and we inquired about it they turned on a

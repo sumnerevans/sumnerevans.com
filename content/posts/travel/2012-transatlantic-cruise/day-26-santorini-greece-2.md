@@ -48,8 +48,8 @@ is considered the best preserved prehistoric city in the world. It dates
 back to two thousand BC and some parts are believed to be from three
 thousand BC. That's four to five thousand years old!!! It was kinda
 funny because some of the people from our boat, Mrs. Irene and Mr.
-\[NAME\], and another couple who they had met who were also from Denver
-(Mrs. Irene and Mr. \[NAME\] are from Denver) joined our tour for
+NAME, and another couple who they had met who were also from Denver
+(Mrs. Irene and Mr. NAME are from Denver) joined our tour for
 Akrotiri. Of course they tipped nicely and it wasn't much trouble for
 Georgia (that was the name of our guide) so we let them come along.
 Throughout the whole tour we at times had people try to tag along with
@@ -95,8 +95,6 @@ basically the day so I will leave you to wonder what the answer to the
 puzzle is.  
     \~Sumner
 
-**  
-**  
 ## Hannah
 
 We had to up early this morning. It was around 6:45am. Why??? Because
@@ -122,7 +120,7 @@ on the islands of Santorini. Apparently, the poor lived in caves on the
 side of the mountian in ia. And the rich made a wall apart from the poor
 for their avenue." Now, those houses that the poor people had built are
 now some of the finest and most expensive hotels, apartments and houses.
-(I mean ranking from \$500 to \$1,500 PER NIGHT!!!) I mean seriously!!!
+(I mean ranking from $500 to $1,500 PER NIGHT!!!) I mean seriously!!!
 we traveled around the area of ia for quite a while until we finally
 decided to go to another town called Fira. It was yet another town with
 "cliff dwellings". We also went to this ruined village from the 1700's

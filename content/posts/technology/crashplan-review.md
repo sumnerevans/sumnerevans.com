@@ -8,7 +8,7 @@ Tags: [Backup, CrashPlan, Review]
 I went out and signed up for the CrashPlan 30-day Trial a little over a month
 ago. I started by backing up about 350GB. (It didn't finish during the trial,
 but we - my family - have the lowest connection speed that you can get and still
-pay money for it. We get a max of 850 Kbps \[+/-50 Kbps\] up and an average of
+pay money for it. We get a max of 850 Kbps [+/-50 Kbps] up and an average of
 1.1 Mbps down.) After the trial, my family decided (on my recommendation) buy
 the 4 year family plan. The family plan made much more sense than anything else
 because we have 5 computers in the house that need to be backed up.
