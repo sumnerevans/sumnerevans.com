@@ -6,6 +6,16 @@ Tags: [Laura Plantation, Louisiana, New Orleans, Oak Alley Plantation, Plantatio
 image: images/oak-alley-from-house.jpg
 build:
   publishResources: false
+summary: |
+  This morning we woke up to very dense fog. (See below.) I don't think I've
+  ever been in such dense fog for such a long time.
+
+  We ate breakfast downstairs and then headed out down Decatur St. (duh-kay-ter)
+  to Toulouse St. (toe-loose) where we met a guide (BilliJo) for a plantation
+  tour. We boarded one bus, but then we had to move to another bus since the
+  first one had some sort of problem. Not a very auspicious beginning to today's
+  excursion. Eventually we got on a bus and there weren't any more vehicle
+  troubles.
 ---
 
 This morning we woke up to very dense fog. (See below.) I don't think I've ever
