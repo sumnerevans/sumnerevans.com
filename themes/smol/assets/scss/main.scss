@@ -523,12 +523,16 @@ dd {
 // Add a bit of padding between each of the entry boxes in the Isso auth
 // section. By default, they are squished together, which looks terrible.
 section#isso-thread {
-  .auth-section .input-wrapper {
+  .isso-auth-section .isso-input-wrapper {
     margin-right: 5px;
   }
 
-  .isso-comment>div.text-wrapper {
-    a.author:hover {
+  .isso-textarea {
+    font-size: 15px;
+  }
+
+  .isso-comment>div.isso-text-wrapper {
+    a.isso-author:hover {
       text-decoration: underline;
     }
   }
@@ -538,7 +542,7 @@ section#isso-thread {
     color: #333;
   }
 
-  .post-action input {
+  .isso-post-action input {
     border: none;
     color: #333;
     padding-left: 0.5em;

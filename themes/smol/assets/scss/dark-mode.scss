@@ -94,22 +94,23 @@
   }
 
   section#isso-thread {
-    .auth-section p.input-wrapper input,
-    .notification-section input {
+    .isso-auth-section p.isso-input-wrapper input,
+    .isso-notification-section input {
       background: #111;
       color: #eee;
     }
 
-    >h4 {
+    >h4.isso-thread-heading {
       color: #eee;
     }
 
-    .isso-postbox > .form-wrapper {
-      div.textarea {
+    .isso-postbox > .isso-form-wrapper {
+      .isso-textarea {
         background: #111;
+        color: #eee;
       }
 
-      .preview {
+      .isso-preview {
         background: repeating-linear-gradient(
           -45deg,
           #0a0a0a, #0a0a0a 10px,
@@ -118,13 +119,13 @@
       }
     }
 
-    .isso-comment > div.text-wrapper {
+    .isso-comment > div.isso-text-wrapper {
       > .isso-comment-header {
-        .author {
+        .isso-author {
           color: #eee;
         }
 
-        .spacer, a.permalink, .note, a.parent {
+        .isso-spacer, .isso-note {
           color: #aaa;
 
           &:hover {
@@ -140,7 +141,7 @@
       }
     }
 
-    .post-action input {
+    .isso-post-action input {
       background-color: #111;
       color: #eee;
     }
