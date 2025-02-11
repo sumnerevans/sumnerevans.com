@@ -87,6 +87,7 @@ exceptions:
   - HEAD
   - HIPAA
   - HMAC
+  - HSBXL
   - HSPC
   - HTML
   - HTMX

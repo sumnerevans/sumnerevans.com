@@ -725,4 +725,4 @@ focused](https://github.com/matrix-org/matrix-react-sdk/pull/8590).
 
 [^10]: DerLukas has started [goolm](https://codeberg.org/DerLukas/goolm) which
 we integrated into [mautrix-go](https://github.com/mautrix/go) as an
-experimental option. I want to see more of this n the future.
+experimental option. I want to see more of this in the future.
