@@ -21,7 +21,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
 <details id="experience-automattic" class="portfolio-item" open>
   <summary>
     <h3>
-      Software Engineer (<a href="https://beeper.com" target="_blank">Beeper<i class="fa fa-external-link"></i></a>)
+      Software Engineer, <a href="https://beeper.com" target="_blank">Beeper<i class="fa fa-external-link"></i></a>
       <a class="permalink" href="#experience-automattic">&para;</a>
     </h3>
     <span>April 2024 - Present</span>
@@ -47,22 +47,22 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
       <summary>Notable projects include...</summary>
       <ul>
         <li>
-          Building the next-generation
-          <a href="https://github.com/mautrix/telegramgo" target="_blank">Telegram bridge<i class="fa fa-external-link"></i></a>
-          in <b>Go</b>.
+          Saved ~2TB of RAM by rewriting the
+          <a href="https://github.com/mautrix/telegramgo" target="_blank">Telegram<i class="fa fa-external-link"></i></a>
+          to <b>Matrix</b> bridge from Python to <b>Go</b>.
         </li>
         <li>
-          Implementing many features such as media upload and download in the Beeper Go SDK which
-          is being used in the next generation Beeper clients such as the
-          <a href="https://blog.beeper.com/2024/04/09/how-beeper-android-works/" target="_blank">new Beeper Android app<i class="fa fa-external-link"></i></a>.
-        </li>
-        <li>
-          Implemented
-          <a href="https://github.com/mautrix/go/tree/main/crypto/backup" target="_blank">key backup<i class="fa fa-external-link"></i></a>
+          Implemented the cryptographic key infrastructure necessary for message
+          <a href="https://github.com/mautrix/go/tree/main/crypto/backup" target="_blank">key backups<i class="fa fa-external-link"></i></a>
           and
-          <a href="https://github.com/mautrix/go/tree/main/crypto/verificationhelper" target="_blank">interactive verification<i class="fa fa-external-link"></i></a>
+          <a href="https://github.com/mautrix/go/tree/main/crypto/verificationhelper" target="_blank">interactive device verification<i class="fa fa-external-link"></i></a>
           in
           <a href="https://github.com/mautrix/go" target="_blank">mautrix-go<i class="fa fa-external-link"></i></a>.
+          by utilizing the standard Go <b>cryptography libraries</b>.
+        </li>
+        <li>
+          Implemented media upload/download and interactive device verification in the Beeper
+          client SDK written in <b>Go</b> which is being used in the next generation Beeper clients.
         </li>
       </ul>
     </details>
@@ -92,20 +92,22 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
       <summary>Notable projects include...</summary>
       <ul>
         <li>
-          Reverse engineered and implemented many core features for
-          <a href="https://blog.beeper.com/p/introducing-beeper-mini-get-blue" target="_blank">Beeper Mini<i class="fa fa-external-link"></i></a>
-          including sending media, tapbacks, typing indicators, read receipts,
-          edits, unsends, link previews, adding and removing group members, and
-          changing group names and avatars.
+          Scaled our backend infrastructure from handling &lt;1,000 users to &gt;100,000 users by
+          <b>sharding</b> traffic from high-volume bridges to a separate <b>Go</b> service called
+          <a href="#presentation-hungryserv">Hungryserv</a> in a backwards-compatible, transparent
+          manner. I created the initial proof of concept and then continued as a core member of
+          the 3-member team that productionized the project over a four-month period.
         </li>
         <li>
-          Started a project called
-          <a href="#presentation-hungryserv">Hungryserv</a>
-          (<b>Matrix</b>-compatible homeserver written in <b>Go</b>)
-          which enabled us to scale from hundreds to tens of thousands of users.
-          I created the initial proof of concept and then was a core member of the
-          team that productionized the project, implementing many core features
-          along the way.
+          <b>Reverse-engineered</b> and implemented features for
+          <a href="https://blog.beeper.com/p/introducing-beeper-mini-get-blue" target="_blank">Beeper Mini<i class="fa fa-external-link"></i></a>
+          (iMessage on Android) including media, tapbacks, typing indicators, read receipts,
+          edits, unsends, link previews, and chat metadata changes.
+        </li>
+        <li>
+          Measured message send <b>latency and reliability</b> by instrumenting bridge
+          <b>metrics</b>. Built a Dockerized <b>Go</b> service to process those metrics and send
+          them to BigQuery.
         </li>
         <li>
           Streamlined our support team's ability to chat directly with users by
@@ -114,20 +116,16 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
           in <b>Go</b>.
         </li>
         <li>
-          Reverse-engineered the LinkedIn messaging API and implemented a
-          <a href="https://github.com/beeper/linkedin" target="_blank">LinkedIn bridge<i class="fa fa-external-link"></i></a>
-          in <b>Python</b>.
-        </li>
-        <li>
-          Measured message send <b>latency and reliability</b> by
-          instrumenting bridge <b>metrics</b>. Built a service to process those
-          metrics and send them to BigQuery.
+          <b>Reverse-engineered</b> the LinkedIn Messaging API and implemented a
+          <a href="https://github.com/beeper/linkedin" target="_blank">LinkedIn<i class="fa fa-external-link"></i></a>
+          to Matrix bridge in <b>Python</b>.
         </li>
         <li>
           Defined a framework for importing users' chat history, and implemented it in the
           <a href="https://github.com/mautrix/whatsapp" target="_blank">WhatsApp<i class="fa fa-external-link"></i></a>,
-          <a href="https://github.com/mautrix/facebook" target="_blank">Facebook<i class="fa fa-external-link"></i></a>, and
-          <a href="https://github.com/mautrix/instagram" target="_blank">Instagram<i class="fa fa-external-link"></i></a>
+          <a href="https://github.com/mautrix/facebook" target="_blank">Facebook<i class="fa fa-external-link"></i></a>,
+          <a href="https://github.com/mautrix/instagram" target="_blank">Instagram<i class="fa fa-external-link"></i></a>, and
+          <a href="https://github.com/mautrix/teleramgo" target="_blank">Telegram<i class="fa fa-external-link"></i></a>,
           bridges.
         </li>
       </ul>
@@ -146,7 +144,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </summary>
   <div>
     <p>
-      I have had the opportunity to teach courses in mulitple areas of computer science at my alma
+      I have had the opportunity to teach courses in multiple areas of computer science at my alma
       mater, Colorado School of Mines.
     </p>
     <p>
@@ -154,13 +152,13 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
     </p>
     <details>
       <summary>
-        <b>Algorithms (CSCI 406)</b> in Fall 2018, Spring 2022, and Fall 2023.
+        <b>Algorithms (CSCI 406)</b> in Fall 2018, Spring 2022, Fall 2023, and Fall 2024.
       </summary>
       <p>
         I taught Algorithms once while I was a graduate student in 2018 under
         <a href="http://inside.mines.edu/~dmehta/" target="_blank">Dr. Dinesh Mehta<i class="fa fa-external-link"></i></a>.
         I also taught two sections in Spring 2022 using Dr. Mehta's materials. I co-taught the
-        class with Dr. Mehta in Fall 2023.
+        class with Dr. Mehta in Fall 2023 and Fall 2024.
       </p>
       <p>
         Topics that the class covers include: analysis of algorithms, evaluation of data
@@ -173,7 +171,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
         <b>Computer Organization (CSCI 341)</b> in Spring 2023.
       </summary>
       <p>
-        I taught Copmuter Organization with Dr. Qi Han in 2023. Topics that the class covers
+        I taught Computer Organization with Dr. Qi Han in 2023. Topics that the class covers
         include: RISC-V assembly, pipelining, and memory hierarchy.
       </p>
     </details>
@@ -242,7 +240,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
         </li>
         <li>
           Building many of the features for the Connected TV incremental reach planning tool.
-          (React, NodeJS, C#)
+          (React, Node.js, C#)
         </li>
         <li>
           Designing and implementing major portions of an AI-powered ad campaign strategy
