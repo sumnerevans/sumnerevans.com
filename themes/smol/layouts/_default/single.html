@@ -79,6 +79,7 @@
     <!-- Isso -->
     <script
         data-isso="//{{ .Site.Params.issoUrl }}"
+        data-isso-css="false"
         {{ range $k, $v := .Site.Params.issoOptions }}
           data-isso-{{ $k }}="{{ $v }}"
         {{ end }}

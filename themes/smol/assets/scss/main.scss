@@ -1,6 +1,7 @@
 @import 'admonitions';
 @import 'dark-mode';
 @import 'fork-awesome/fork-awesome';
+@import 'isso';
 
 // Iosevka
 $iosevka-font-path: '/fonts/iosevka';
@@ -516,39 +517,6 @@ dd {
 
   ul {
     margin-top: 0;
-  }
-}
-
-// Isso
-// Add a bit of padding between each of the entry boxes in the Isso auth
-// section. By default, they are squished together, which looks terrible.
-section#isso-thread {
-  .isso-auth-section .isso-input-wrapper {
-    margin-right: 5px;
-  }
-
-  .isso-textarea {
-    font-size: 15px;
-  }
-
-  .isso-comment>div.isso-text-wrapper {
-    a.isso-author:hover {
-      text-decoration: underline;
-    }
-  }
-
-  input {
-    font-family: Iosevka, monospace;
-    color: #333;
-    font-size: 15px;
-  }
-
-  .isso-post-action input {
-    border: none;
-    color: #333;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    height: 2.5em;
   }
 }
 
