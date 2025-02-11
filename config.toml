@@ -63,13 +63,7 @@ timeout = "360s"
   mainSections = ["posts"]
 
   # Isso
-  issoUrl = "//comments.sumnerevans.com"
-
-  [params.issoOptions]
-    avatar = false
-    gravatar = true
-    reply-notifications = true
-    reply-to-self = true
+  issoUrl = "comments.sumnerevans.com"
 
   [params.goatcounter]
     domain = "https://sws.goatcounter.com/count"
