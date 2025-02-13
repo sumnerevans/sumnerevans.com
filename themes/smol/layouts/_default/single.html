@@ -74,8 +74,14 @@
 {{ if and (or ($reg.Prev .) ($reg.Next .)) (.Site.Params.issoUrl) }}
   {{ partial "sidebar.html" . }}
   {{ partial "webring.html" . }}
-  <aside>
-    <h3>COMMENTS</h3>
+  <aside class="comments">
+    <div class="header">
+      <h3>COMMENTS</h3>
+      <span class="attribution">
+        Powered by
+        <a href="https://isso-comments.de/" target="_blank" rel="external">Isso<i class="fa fa-external-link"></i></a>
+      </span>
+    </div>
     <!-- Isso -->
     <script
         data-isso="//{{ .Site.Params.issoUrl }}"

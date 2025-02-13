@@ -1,30 +1,28 @@
 {{- if partial "func/FilterPages" (.Site.RegularPages.Related .) -}}
 <aside class="related-posts">
-  <div>
-    <div>
-      <h3>RELATED POSTS</h3>
-    </div>
-    <section class="articles">
-      <ul>
-        {{- range (.Site.RegularPages.Related . | partial "func/FilterPages" | first 5) -}}
-        <li>
-          <b><a href="{{ .RelPermalink }}">{{ .Title }}</a></b>
-          <small class="source">
-            {{ with .Params.categories }}
-              in
-              {{ range first 1 . }}
-                <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-              {{- end -}}
-              {{- range after 1 . -}}
-                , <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-              {{- end -}}
-            {{ end }}
-            on {{ .Date.Format "2006-01-02" }}
-          </small>
-        </li>
-        {{- end -}}
-      </ul>
-    </section>
+  <div class="header">
+    <h3>RELATED POSTS</h3>
   </div>
+  <section class="articles">
+    <ul>
+      {{- range (.Site.RegularPages.Related . | partial "func/FilterPages" | first 5) -}}
+      <li>
+        <b><a href="{{ .RelPermalink }}">{{ .Title }}</a></b>
+        <small class="source">
+          {{ with .Params.categories }}
+            in
+            {{ range first 1 . }}
+              <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{- end -}}
+            {{- range after 1 . -}}
+              , <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+            {{- end -}}
+          {{ end }}
+          on {{ .Date.Format "2006-01-02" }}
+        </small>
+      </li>
+      {{- end -}}
+    </ul>
+  </section>
 </aside>
 {{- end -}}

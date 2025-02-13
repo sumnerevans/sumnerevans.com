@@ -470,53 +470,27 @@ dd {
   }
 }
 
+.related-posts,
 .webring,
-.related-posts {
-  .articles {
+.comments {
+  .header {
     display: flex;
-    flex-wrap: wrap;
-    margin: -0.5rem;
+    align-items: center;
+    justify-content: space-between;
 
-    .article {
-      flex: 1 1 0;
-      display: flex;
-      flex-direction: column;
-      padding: 0.5rem;
-      margin: 0.5rem;
-      background: #eee;
-      min-width: 12rem;
+    h3 {
+      margin-bottom: 0.5rem;
+    }
 
-      .title {
-        margin: 0;
-      }
-
-      .summary {
-        font-size: 0.8rem;
-        flex: 1 1 0;
-      }
+    .attribution {
+      font-size: 0.8rem;
+      color: #555;
     }
   }
 
-  .attribution {
-    margin: 0.5em 0;
-    text-align: right;
-    font-size: 0.8rem;
-    color: #555;
-  }
-}
-
-.webring,
-.related-posts {
-  .header {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  ul {
-    margin-top: 0;
+  .articles ul {
+    margin: 0;
+    padding-left: 1.5rem;
   }
 }
 
