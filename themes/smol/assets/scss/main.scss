@@ -3,41 +3,6 @@
 @import 'fork-awesome/fork-awesome';
 @import 'isso';
 
-// Iosevka
-$iosevka-font-path: '/fonts/iosevka';
-$iosevka-version: '3.6.3';
-@font-face {
-  font-family: 'Iosevka';
-  src: url('#{$iosevka-font-path}/woff2/iosevka-regular.woff2?v=#{$iosevka-version}') format('woff2'),
-  url('#{$iosevka-font-path}/woff/iosevka-regular.woff?v=#{$iosevka-version}') format('woff'),
-  url('#{$iosevka-font-path}/ttf/iosevka-regular.ttf?v=#{$iosevka-version}') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Iosevka';
-  src:
-    url('#{$iosevka-font-path}/woff2/iosevka-bold.woff2?v=#{$iosevka-version}') format('woff2'),
-    url('#{$iosevka-font-path}/woff/iosevka-bold.woff?v=#{$iosevka-version}') format('woff'),
-    url('#{$iosevka-font-path}/ttf/iosevka-bold.ttf?v=#{$iosevka-version}') format('truetype');
-  font-weight: bold;
-  font-style: bold;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Iosevka';
-  src:
-    url('#{$iosevka-font-path}/woff2/iosevka-oblique.woff2?v=#{$iosevka-version}') format('woff2'),
-    url('#{$iosevka-font-path}/woff/iosevka-oblique.woff?v=#{$iosevka-version}') format('woff'),
-    url('#{$iosevka-font-path}/ttf/iosevka-oblique.ttf?v=#{$iosevka-version}') format('truetype');
-  font-weight: italic;
-  font-style: italic;
-  font-display: swap;
-}
-
 html {
   overflow-y: scroll;
 }
