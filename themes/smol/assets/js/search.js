@@ -1,56 +1,6 @@
-(function() {
+(async () => {
   const searchInput = document.getElementById("search-query");
-
-  let searchIndex;
-  let fetching = false;
-
-  // Request the search index. I'm just using raw a XMLHttpRequest because it's
-  // not that hard and I don't want to import another library.
-  const fetchSearchIndex = () => {
-    if (searchIndex || fetching) {
-      return
-    }
-    fetching = true;
-    fetch("/index.json", { method: "GET" })
-      .then(response => response.json())
-      .then(json => {
-        articlesJson = json;
-
-        // Initialize the search index.
-        searchIndex = lunr(function() {
-          ["permalink", "title", "contents", "tags", "categories"].forEach(f => this.field(f));
-          // This is so that we can highlight stuff.
-          this.metadataWhitelist = ["position"];
-
-          // Add all of the articles.
-          articlesJson.forEach((article, i) => {
-            this.add({
-              id: i,
-              permalink: article.permalink,
-              title: article.title,
-              contents: article.contents,
-              tags: (article.tags ?? []).join(" | "),
-              categories: (article.categories ?? []).join(" | "),
-            });
-          });
-        });
-
-        searchInput.removeAttribute('disabled');
-        searchInput.placeholder = "Search...";
-        fetching = false;
-      });
-  }
-
-  // Load the search index when the search is first opened.
-  document.getElementById("toggle_search").addEventListener("click", () => {
-    const searchDivClasses = document.getElementById("search-container").classList;
-    if (searchDivClasses.contains("hidden")) {
-      searchDivClasses.remove("hidden");
-      fetchSearchIndex()
-    } else {
-      searchDivClasses.add("hidden");
-    }
-  });
+  let rawIndex, lunrSearchIndex;
 
   const makeNode = (tagName, content) => `<${tagName}>${content}</${tagName}>`;
 
@@ -95,7 +45,7 @@
     highlightSearchTerm(listItems.join(' | '), matchKey, metadata).split(' | ').join(', ');
 
   const summarize = searchResult => {
-    const article = articlesJson[Number(searchResult.ref)];
+    const article = rawIndex[Number(searchResult.ref)];
     const metadata = searchResult.matchData.metadata;
 
     let summaryLines = [makeNode('h1', highlightSearchTerm(article.title, 'title', metadata))];
@@ -119,7 +69,7 @@
     let searchResults = [];
     if (searchString && searchString.length > 2) {
       try {
-        searchResults = searchIndex.search(searchString);
+        searchResults = lunrSearchIndex.search(searchString);
       } catch (err) {
         searchResultsDiv.innerHTML = `Error: ${err.message}`;
         return
@@ -135,4 +85,50 @@
       `<li>${summarize(searchResult)}</li>`
     ).join('')}</ul>`;
   });
+
+  const hash = await (await fetch("/index.sha256", { method: "GET" })).text();
+  console.log("Got content hash", hash)
+  const indexUrl = `/index.json?cb=${hash}`;
+  const searchIndexUrl = `/search-index.json?cb=${hash}`;
+
+  const searchCache = await caches.open("search-cache");
+
+  let loading = false;
+  const loadSearchIndex = async () => {
+    if (loading || lunrSearchIndex) return;
+    loading = true;
+    console.log("Fetching raw and search indexes");
+    const indexReq = await searchCache.match(indexUrl) ?? await fetch(indexUrl, { method: "GET" });
+    const searchIndexReq = await searchCache.match(searchIndexUrl) ?? await fetch(searchIndexUrl, { method: "GET" });
+    console.log("Fetched raw and search indexes");
+    rawIndex = await indexReq.json();
+    console.log("Initializing the search index");
+    lunrSearchIndex = lunr.Index.load(await searchIndexReq.json());
+    console.log("Initialized the search index");
+
+    console.log("Enabling search box");
+    searchInput.removeAttribute('disabled');
+    searchInput.placeholder = "Search...";
+  };
+
+  document.getElementById("toggle_search").addEventListener("click", () => {
+    const searchDivClasses = document.getElementById("search-container").classList;
+    if (searchDivClasses.contains("hidden")) {
+      searchDivClasses.remove("hidden");
+      loadSearchIndex();
+    } else {
+      searchDivClasses.add("hidden");
+    }
+  });
+
+  setTimeout(async () => {
+    if (!await searchCache.match(indexUrl)) {
+      console.log(`Prefetching ${indexUrl}`);
+      searchCache.put(indexUrl, await fetch(indexUrl, { method: "GET" }));
+    }
+    if (!await searchCache.match(searchIndexUrl)) {
+      console.log(`Prefetching ${searchIndexUrl}`);
+      searchCache.put(searchIndexUrl, await fetch(searchIndexUrl, { method: "GET" }));
+    }
+  }, 500);
 })()

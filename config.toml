@@ -11,7 +11,17 @@ pygmentsUseClasses = true
 timeout = "360s"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "HASH"]
+
+[outputFormats]
+  [outputFormats.hash]
+    isPlainText = true
+    mediaType = 'text/plain+sha256'
+    notAlternative = true
+
+[mediaTypes]
+  [mediaTypes.'text/plain+sha256']
+    suffixes = ['sha256']
 
 # paginate = 15
 
@@ -36,9 +46,6 @@ timeout = "360s"
 
 [security]
   enableInlineShortcodes = false
-  [security.exec]
-    allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', '^rst2html$']
-    osEnv = ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$']
 
   [security.funcs]
     getenv = ['^HUGO_']

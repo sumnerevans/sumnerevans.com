@@ -34,8 +34,7 @@
     <form class="search" method="get">
       <input id="search-query" type="search" placeholder="Loading..." disabled="disabled" />
     </form>
-    <div id="search-results">
-    </div>
+    <div id="search-results"></div>
   </div>
   <script defer src="https://unpkg.com/lunr/lunr.min.js"></script>
   {{ with resources.Get "js/search.js" | js.Build (dict "minify" true) }}

@@ -51,6 +51,11 @@ jobs:
       - name: Hugo
         run: hugo --logLevel debug --gc --minify
 
+      - name: Search Index
+        run: |
+          npm install
+          node generate_index.js <public/index.json >public/search-index.json
+
       - name: Teaching raw HTML
         run: |
           rm -rf public/teaching/csci400-s19

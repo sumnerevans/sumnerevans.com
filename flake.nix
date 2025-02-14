@@ -16,7 +16,7 @@
               hugo
               libheif
               linkchecker
-              nodePackages.htmlhint
+              nodejs
               openring
               pre-commit
               vale
