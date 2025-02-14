@@ -13,6 +13,7 @@ $iosevka-version: '3.6.3';
   url('#{$iosevka-font-path}/ttf/iosevka-regular.ttf?v=#{$iosevka-version}') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -23,6 +24,7 @@ $iosevka-version: '3.6.3';
     url('#{$iosevka-font-path}/ttf/iosevka-bold.ttf?v=#{$iosevka-version}') format('truetype');
   font-weight: bold;
   font-style: bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -33,6 +35,7 @@ $iosevka-version: '3.6.3';
     url('#{$iosevka-font-path}/ttf/iosevka-oblique.ttf?v=#{$iosevka-version}') format('truetype');
   font-weight: italic;
   font-style: italic;
+  font-display: swap;
 }
 
 html {
