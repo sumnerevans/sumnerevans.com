@@ -21,17 +21,15 @@
       {{- end }}
     </div>
   </div>
-  <p>
-    <nav>
-      <a href="{{ .Site.Home.Permalink }}"><b>Home</b></a>
-      {{ with .Site.Menus.main }}
-        {{ range . }}
-          | <a href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a>
-        {{ end }}
+  <nav>
+    <a href="{{ .Site.Home.Permalink }}"><b>Home</b></a>
+    {{ with .Site.Menus.main }}
+      {{ range . }}
+        | <a href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a>
       {{ end }}
-      | <a id="toggle_search" href="javascript:void()"><b>Search</b></a>
-    </nav>
-  </p>
+    {{ end }}
+    | <a id="toggle_search" href="javascript:void()"><b>Search</b></a>
+  </nav>
   <div class="hidden" id="search-container">
     <form class="search" method="get">
       <input id="search-query" type="search" placeholder="Search..." disabled="disabled" />
