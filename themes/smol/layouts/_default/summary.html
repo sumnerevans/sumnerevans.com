@@ -40,6 +40,7 @@
       {{ $bigimage := $image.Resize "800x webp" }}
       <div class="summary-image">
         <img
+          alt=""
           width="{{ $bigimage.Width }}"
           height="{{ $bigimage.Height }}"
           src="{{ $bigimage.RelPermalink }}"
@@ -48,7 +49,7 @@
       </div>
     {{- else if .Params.image -}}
       <div class="summary-image">
-        <img width="400" src="{{ .Permalink }}/{{ .Params.image }}" />
+        <img alt="" width="400" src="{{ .Permalink }}/{{ .Params.image }}" />
       </div>
     {{- end -}}
     <div class="summary-text">
