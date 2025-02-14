@@ -1,6 +1,7 @@
 (async () => {
   const searchInput = document.getElementById("search-query");
-  let rawIndex, lunrSearchIndex;
+  let rawIndex = {};
+  let lunrSearchIndex;
 
   const makeNode = (tagName, content) => `<${tagName}>${content}</${tagName}>`;
 
@@ -45,7 +46,7 @@
     highlightSearchTerm(listItems.join(' | '), matchKey, metadata).split(' | ').join(', ');
 
   const summarize = searchResult => {
-    const article = rawIndex[Number(searchResult.ref)];
+    const article = rawIndex[searchResult.ref];
     const metadata = searchResult.matchData.metadata;
 
     let summaryLines = [makeNode('h1', highlightSearchTerm(article.title, 'title', metadata))];
@@ -101,8 +102,11 @@
     const indexReq = await searchCache.match(indexUrl) ?? await fetch(indexUrl, { method: "GET" });
     const searchIndexReq = await searchCache.match(searchIndexUrl) ?? await fetch(searchIndexUrl, { method: "GET" });
     console.log("Fetched raw and search indexes");
-    rawIndex = await indexReq.json();
+
     console.log("Initializing the search index");
+    for (const result of (await indexReq.json())) {
+      rawIndex[result.permalink] = result;
+    }
     lunrSearchIndex = lunr.Index.load(await searchIndexReq.json());
     console.log("Initialized the search index");
 
@@ -121,14 +125,12 @@
     }
   });
 
-  setTimeout(async () => {
-    if (!await searchCache.match(indexUrl)) {
-      console.log(`Prefetching ${indexUrl}`);
-      searchCache.put(indexUrl, await fetch(indexUrl, { method: "GET" }));
-    }
-    if (!await searchCache.match(searchIndexUrl)) {
-      console.log(`Prefetching ${searchIndexUrl}`);
-      searchCache.put(searchIndexUrl, await fetch(searchIndexUrl, { method: "GET" }));
-    }
-  }, 500);
+  if (!await searchCache.match(indexUrl)) {
+    console.log(`Prefetching ${indexUrl}`);
+    searchCache.put(indexUrl, await fetch(indexUrl, { method: "GET" }));
+  }
+  if (!await searchCache.match(searchIndexUrl)) {
+    console.log(`Prefetching ${searchIndexUrl}`);
+    searchCache.put(searchIndexUrl, await fetch(searchIndexUrl, { method: "GET" }));
+  }
 })()

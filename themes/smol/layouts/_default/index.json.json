@@ -1,5 +1,5 @@
-{{- $.Scratch.Add "index" slice -}}
+{{- $.Scratch.Add "customIdx" slice -}}
 {{- range partial "func/FilterPages" .Site.RegularPages -}}
-    {{- $.Scratch.Add "index" (dict "title" .Title "tags" .Params.tags "categories" .Params.categories "contents" .Plain "permalink" .Permalink) -}}
+    {{- $.Scratch.Add "customIdx" (dict "title" .Title "tags" .Params.tags "categories" .Params.categories "contents" .Plain "permalink" .RelPermalink) -}}
 {{- end -}}
-{{- $.Scratch.Get "index" | jsonify -}}
+{{- $.Scratch.Get "customIdx" | jsonify -}}
