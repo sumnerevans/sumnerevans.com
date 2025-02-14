@@ -56,11 +56,17 @@
         {{ end }}
       </p>
     {{ end }}
-    <div>
+    <div class="content">
       {{ .Content }}
     </div>
   </article>
 </main>
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function() {
+    var marker = new Mark(document.querySelector("main"));
+    new URL(document.location.toString()).searchParams.getAll("hl").forEach(hl => marker.mark(hl));
+  })
+</script>
 <div class="next-prev">
   {{ with $reg.Prev . }}
     {{ if not .Params.unlisted }}

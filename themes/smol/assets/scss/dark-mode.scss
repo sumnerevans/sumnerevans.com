@@ -17,15 +17,13 @@
       }
 
       #search-results {
-        a {
-          color: #eee;
+        background-color: #191919;
 
-          &:hover, &:active {
-            color: #eee;
-          }
+        hr {
+          border-color: black;
         }
 
-        li:hover, li:active {
+        .search-result:hover, .search-result:active {
           border-color: #84b4ff;
         }
       }

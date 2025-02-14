@@ -1,71 +1,31 @@
-(async () => {
-  const searchInput = document.getElementById("search-query");
+document.addEventListener("DOMContentLoaded", async () => {
+  const version = "v1";
   let rawIndex = {};
   let lunrSearchIndex;
+  const searchInput = document.getElementById("search-query");
+  const searchResultsDiv = document.getElementById("search-results");
 
-  const makeNode = (tagName, content) => `<${tagName}>${content}</${tagName}>`;
 
-  const highlightSearchTerm = (string, matchKey, metadata) => {
-    let highlightRanges = [[0, 0]];
-    Object.keys(metadata).forEach(key => {
-      const position = (metadata[key][matchKey] || {}).position;
-      highlightRanges = highlightRanges.concat(position || []);
-    });
-
-    const padChars = 70;
-
-    let nextStart = string.length;
-    // Sort backwards so that we don't mutate the part of the string that we
-    // need to access. Also, limit to the first 10 occurrences of the term
-    // (which are the last 10 ranges in the reverse-sorted list).
-    const filteredHighlightRanges = highlightRanges
-      .sort((x, y) => x[0] < y[0])
-      .slice(Math.max(0, highlightRanges.length - 10));
-    for (const [start, end] of filteredHighlightRanges) {
-      const diff = nextStart - (start + end);
-      let toEnd = string.substring(start + end);
-      if (diff > padChars * 2) {
-        // More than padChars*2 characters between the end of this range and
-        // the next one, add dots.
-        toEnd = `${toEnd.substring(0, padChars)}... `;
-        if (nextStart < string.length) {
-          toEnd += string.substring(nextStart - padChars);
-        }
-      }
-      const highlighted = string.substring(start, start + end);
-      string = string.substring(0, start) +
-        (start > 0 || end > 0 ? makeNode('mark', highlighted) : highlighted) +
-        toEnd;
-      nextStart = start;
-    }
-
-    return string;
-  };
-
-  const highlightSearchTermInList = (listItems, matchKey, metadata) =>
-    highlightSearchTerm(listItems.join(' | '), matchKey, metadata).split(' | ').join(', ');
-
-  const summarize = searchResult => {
+  const summarize = (searchResult, i) => {
     const article = rawIndex[searchResult.ref];
-    const metadata = searchResult.matchData.metadata;
-
-    let summaryLines = [makeNode('h1', highlightSearchTerm(article.title, 'title', metadata))];
-    if (article.tags && article.tags.length > 0) {
-      summaryLines.push(makeNode('p', `Tags: ${highlightSearchTermInList(article.tags, 'tags', metadata)}`));
-    }
-    if (article.categories && article.categories.length > 0) {
-      summaryLines.push(makeNode('p', `Categories: ${highlightSearchTermInList(article.categories, 'categories', metadata)}`));
-    }
-    summaryLines = summaryLines.concat(
-      highlightSearchTerm(article.contents, 'contents', metadata)
-        .split('\n')
-        .map(p => makeNode('p', p)));
-
-    return `<a href="${article.permalink}">${summaryLines.join('')}</a>`;
+    const hls = Object.keys(searchResult.matchData.metadata);
+    const hlQuery = hls.map(h => `hl=${encodeURIComponent(h)}`).join('&');
+    const categoriesList = article.categories?.map(c => `<a href="/categories/${c.toLowerCase()}">${c}</a>`);
+    const tagsList = article.tags?.map(t => `<a href="/tags/${t.toLowerCase()}">${t}</a>`);
+    return [`<div class="search-result" id="search-result-${i}">
+      <h4><a href="${searchResult.ref}?${hlQuery}">${article.title}</a></h4>
+      ${categoriesList?.length ? `<p class="categories"><b>Posted in ${categoriesList.join(", ")}</b></p>` : ""}
+      ${tagsList?.length ? `<p class="tags">Tags: ${tagsList.join(", ")}</p>` : ""}
+      <div class="content-summary">
+        ${article.contents?.replace('\n', '<br>')}
+      </div>
+    </div>`, () => {
+      var marker = new Mark(document.querySelector(`#search-result-${i}`));
+      marker.mark(hls);
+    }];
   };
 
   searchInput.addEventListener('keyup', e => {
-    const searchResultsDiv = document.getElementById("search-results");
     const searchString = e.target.value;
     let searchResults = [];
     if (searchString && searchString.length > 2) {
@@ -78,25 +38,30 @@
     }
 
     if (searchResults.length === 0) {
-      searchResultsDiv.innerHTML = '<p class="no-results">No results</p>';
+      searchResultsDiv.innerHTML = '<p class="no-results">Enter a search term above</p>';
       return;
     }
 
-    searchResultsDiv.innerHTML = `<ul>${searchResults.map(searchResult =>
-      `<li>${summarize(searchResult)}</li>`
-    ).join('')}</ul>`;
+    console.log(searchResults.map(summarize))
+    console.log(searchResults.map(summarize).join(''))
+    const summaries = searchResults.map(summarize);
+    searchResultsDiv.innerHTML = summaries.map(([html, _]) => html).join('<hr>');
+    summaries.forEach(([_, highlight]) => highlight());
   });
 
   const hash = await (await fetch("/index.sha256", { method: "GET" })).text();
   console.log("Got content hash", hash)
-  const indexUrl = `/index.json?cb=${hash}`;
-  const searchIndexUrl = `/search-index.json?cb=${hash}`;
+  const indexUrl = `/index.json?v=${version}&cb=${hash}`;
+  const searchIndexUrl = `/search-index.json?v=${version}cb=${hash}`;
 
-  const searchCache = await caches.open("search-cache");
+  const searchCache = await caches.open(`search-cache-${version}`);
 
   let loading = false;
   const loadSearchIndex = async () => {
-    if (loading || lunrSearchIndex) return;
+    if (loading || lunrSearchIndex) {
+      searchInput.focus();
+      return;
+    }
     loading = true;
     console.log("Fetching raw and search indexes");
     const indexReq = await searchCache.match(indexUrl) ?? await fetch(indexUrl, { method: "GET" });
@@ -113,6 +78,7 @@
     console.log("Enabling search box");
     searchInput.removeAttribute('disabled');
     searchInput.placeholder = "Search...";
+    searchInput.focus();
   };
 
   document.getElementById("toggle_search").addEventListener("click", () => {
@@ -133,4 +99,4 @@
     console.log(`Prefetching ${searchIndexUrl}`);
     searchCache.put(searchIndexUrl, await fetch(searchIndexUrl, { method: "GET" }));
   }
-})()
+})
