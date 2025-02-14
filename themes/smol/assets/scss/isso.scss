@@ -19,6 +19,7 @@
 h4.isso-thread-heading {
   color: #555;
   font-weight: bold;
+  margin: 0.5rem 0;
 }
 
 .isso-feedlink {
@@ -269,7 +270,7 @@ h4.isso-thread-heading {
 .isso-post-action {
   display: block;
   float: right;
-  margin: 1.4em 0 0 5px;
+  margin: 1.4em 5px 0 5px;
 }
 
 .isso-post-action>input {
