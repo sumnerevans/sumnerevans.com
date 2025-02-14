@@ -41,6 +41,7 @@
     </div>
   </div>
   <script src="https://unpkg.com/lunr/lunr.min.js"></script>
-  {{ $search_script := resources.Get "js/search.js" | js.Build (dict "targetPath" "search.min.js" "minify" true) }}
-  <script defer src="{{ $search_script.Permalink }}" type="text/javascript"></script>
+  {{ with resources.Get "js/search.js" | js.Build (dict "minify" true) }}
+    <script type="text/javascript">{{ .Content | safeJS }}</script>
+  {{ end }}
 </header>
