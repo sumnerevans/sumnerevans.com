@@ -33,13 +33,16 @@
   </p>
 </footer>
 
-{{ $dark_theme_script := resources.Get "js/dark-theme.js" | js.Build (dict "targetPath" "dark-theme.min.js" "minify" true) }}
-<script id="dark-theme-script"
-        src="{{ $dark_theme_script.Permalink }}"
-        data-enable-auto-detect-theme="{{ .Site.Params.themeColorAutoDetectBrowserPreference }}"
-        data-default-theme="{{ .Site.Params.themeColor }}"
-        type="text/javascript">
-</script>
+{{ with resources.Get "js/dark-theme.js" | js.Build (dict "minify" true) }}
+  <script
+    type="text/javascript"
+    id="dark-theme-script"
+    data-enable-auto-detect-theme="{{ $.Site.Params.themeColorAutoDetectBrowserPreference }}"
+    data-default-theme="{{ $.Site.Params.themeColor }}"
+  >
+    {{ .Content | safeJS }}
+  </script>
+{{ end }}
 <script type="text/javascript" defer src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <script type="text/javascript">
   document.getElementById('footer-email-link').href = atob('bWVAc3VtbmVyZXZhbnMuY29t')
