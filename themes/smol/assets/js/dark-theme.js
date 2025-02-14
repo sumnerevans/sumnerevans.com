@@ -51,6 +51,13 @@ function ThemeManager(options) {
 
   // If theme auto-detection is enabled, then add a listenr on the matchMedia.
   darkThemeMatch.addEventListener("change", detectThemeAndSwitchStyle);
+
+  document.getElementById("theme-switcher").innerHTML = `Switch to the
+    <a href="javascript:void(0)" onclick="theme.switch('dark')">dark</a> |
+    <a href="javascript:void(0)" onclick="theme.switch('light')">light</a> |
+    <a href="javascript:void(0)" onclick="theme.switch('browser')">browser</a>
+    theme.
+  `
 }
 
 window.theme = new ThemeManager(document.getElementById('dark-theme-script').dataset);
