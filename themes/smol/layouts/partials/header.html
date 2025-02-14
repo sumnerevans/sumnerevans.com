@@ -30,16 +30,15 @@
     {{ end }}
     | <a id="toggle_search" href="javascript:void()"><b>Search</b></a>
   </nav>
-  <div class="hidden" id="search-container">
+  <div id="search-container" class="hidden">
     <form class="search" method="get">
-      <input id="search-query" type="search" placeholder="Search..." disabled="disabled" />
+      <input id="search-query" type="search" placeholder="Loading..." disabled="disabled" />
     </form>
-    <div id="search-results" class="search-results">
-      <p id="search-results-loading">Loading search index...</p>
+    <div id="search-results">
     </div>
   </div>
   <script src="https://unpkg.com/lunr/lunr.min.js"></script>
   {{ with resources.Get "js/search.js" | js.Build (dict "minify" true) }}
-    <script type="text/javascript">{{ .Content | safeJS }}</script>
+    <script defer type="text/javascript">{{ .Content | safeJS }}</script>
   {{ end }}
 </header>

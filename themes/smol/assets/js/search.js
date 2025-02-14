@@ -1,33 +1,29 @@
+document.getElementById("toggle_search").addEventListener("click", () => {
+  const searchDivClasses = document.getElementById("search-container").classList;
+  if (searchDivClasses.contains("hidden")) {
+    searchDivClasses.remove("hidden");
+  } else {
+    searchDivClasses.add("hidden");
+  }
+});
+
 (function() {
-  const searchDivClasses = document.getElementById('search-container').classList;
-  const searchResultsDiv = document.getElementById('search-results');
-  const loading = document.getElementById('search-results-loading');
-  const searchInput = document.getElementById('search-query');
+  const searchInput = document.getElementById("search-query");
 
-  // Allow toggling the search container.
-  document.getElementById('toggle_search').addEventListener('click', () => {
-    if (searchDivClasses.contains('hidden')) {
-      searchDivClasses.remove('hidden');
-    } else {
-      searchDivClasses.add('hidden');
-    }
-  });
-
-  let articlesJson = [];
-  let searchIndex = null;
+  let searchIndex;
 
   // Request the search index. I'm just using raw a XMLHttpRequest because it's
   // not that hard and I don't want to import another library.
-  fetch('/index.json', { method: 'GET' })
+  const fetchSearchIndex = () => fetch("/index.json", { method: "GET" })
     .then(response => response.json())
     .then(json => {
       articlesJson = json;
 
       // Initialize the search index.
-      searchIndex = lunr(function () {
-        ['permalink', 'title', 'contents', 'tags', 'categories'].forEach(f => this.field(f));
+      searchIndex = lunr(function() {
+        ["permalink", "title", "contents", "tags", "categories"].forEach(f => this.field(f));
         // This is so that we can highlight stuff.
-        this.metadataWhitelist = ['position'];
+        this.metadataWhitelist = ["position"];
 
         // Add all of the articles.
         articlesJson.forEach((article, i) => {
@@ -36,16 +32,18 @@
             permalink: article.permalink,
             title: article.title,
             contents: article.contents,
-            tags: article.tags ? article.tags.join(' | ') : '',
-            categories: article.categories ? article.categories.join(' | ') : '',
+            tags: (article.tags ?? []).join(" | "),
+            categories: (article.categories ?? []).join(" | "),
           });
         });
       });
 
-      // Remove the loading indicator.
-      loading.parentNode.removeChild(loading);
       searchInput.removeAttribute('disabled');
+      searchInput.placeholder = "Search...";
     });
+
+  // Load the search index after a second
+  setTimeout(fetchSearchIndex, 1000);
 
   const makeNode = (tagName, content) => `<${tagName}>${content}</${tagName}>`;
 
@@ -109,13 +107,15 @@
   };
 
   searchInput.addEventListener('keyup', e => {
+    const searchResultsDiv = document.getElementById("search-results");
     const searchString = e.target.value;
     let searchResults = [];
     if (searchString && searchString.length > 2) {
       try {
         searchResults = searchIndex.search(searchString);
       } catch (err) {
-        searchResults.innerHTML = `Error: ${err.message}`;
+        searchResultsDiv.innerHTML = `Error: ${err.message}`;
+        return
       }
     }
 
@@ -128,4 +128,4 @@
       `<li>${summarize(searchResult)}</li>`
     ).join('')}</ul>`;
   });
-})();
+})()
