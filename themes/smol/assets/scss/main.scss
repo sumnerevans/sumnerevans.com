@@ -52,18 +52,22 @@ body {
   color: #333;
 }
 
-a {
+a,
+span.link {
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: ease;
   color: #0c61e8;
   text-decoration: dotted underline;
 
-  &:hover,
-  &:active,
-  &:focus {
-    color: darken(#0c61e8, 20%);
-    text-decoration: underline;
+  &:not(.disabled) {
+    &:hover,
+    &:active,
+    &:focus {
+      color: darken(#0c61e8, 20%);
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 
   &.disabled {

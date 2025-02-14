@@ -36,7 +36,8 @@
     border-color: $foreground-dark-mode;
   }
 
-  a {
+  a,
+  span.link {
     color: #84b4ff;
 
     &:hover, &:active, &:focus {

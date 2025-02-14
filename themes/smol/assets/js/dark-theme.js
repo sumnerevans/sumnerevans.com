@@ -53,9 +53,9 @@ function ThemeManager(options) {
   darkThemeMatch.addEventListener("change", detectThemeAndSwitchStyle);
 
   document.getElementById("theme-switcher").innerHTML = `Switch to the
-    <a href="javascript:void(0)" onclick="theme.switch('dark')">dark</a> |
-    <a href="javascript:void(0)" onclick="theme.switch('light')">light</a> |
-    <a href="javascript:void(0)" onclick="theme.switch('browser')">browser</a>
+    <span class="link" onclick="theme.switch('dark')">dark</span> |
+    <span class="link" onclick="theme.switch('light')">light</span> |
+    <span class="link" onclick="theme.switch('browser')">browser</span>
     theme.
   `
 }
