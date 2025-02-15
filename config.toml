@@ -44,16 +44,6 @@ timeout = "360s"
 [imaging]
   quality = 90
 
-[security]
-  enableInlineShortcodes = false
-
-  [security.funcs]
-    getenv = ['^HUGO_']
-
-  [security.http]
-    methods = ['(?i)GET|POST']
-    urls = ['.*']
-
 [params]
   author = "Sumner Evans"
   description = "I'm a Software Engineer at Automattic working on Beeper. This is my personal website, portfolio, and blog."
