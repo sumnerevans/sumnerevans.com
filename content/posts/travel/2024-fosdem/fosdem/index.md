@@ -8,7 +8,7 @@ tags:
   - FOSDEM 2024
   - Matrix
   - HSBXL
-  - Go
+  - Go (Programming Language)
   - Nix
   - NixOS
   - Brussels

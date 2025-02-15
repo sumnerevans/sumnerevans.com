@@ -7,7 +7,7 @@ categories:
 tags:
   - Differential Fuzzing
   - Fuzzing
-  - Go
+  - Go (Programming Language)
   - Olm
   - Cryptography
   - Beeper
