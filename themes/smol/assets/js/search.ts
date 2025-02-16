@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const categoriesList = article.categories?.map(c => `<a href="/categories/${c.toLowerCase()}">${c}</a>`);
     const tagsList = article.tags?.map(t => `<a href="/tags/${t.toLowerCase()}">${t}</a>`);
     return [`<div class="search-result" id="search-result-${i}">
-      <h4><a href="${searchResult.ref}?${hlQuery}">${article.title}</a></h4>
+      <h4><b><a href="${searchResult.ref}?${hlQuery}">${article.title}</a></b></h4>
       ${categoriesList?.length ? `<p class="categories"><b>Posted in ${categoriesList.join(", ")}</b></p>` : ""}
       ${tagsList?.length ? `<p class="tags">Tags: ${tagsList.join(", ")}</p>` : ""}
       <div class="content-summary">
@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     }];
   };
 
-  searchInput.addEventListener('keyup', e => {
-    const searchString = e.target.value;
+  const runSearch = (searchString: string) => {
+    console.log("Searching for", searchString);
     let searchResults = [];
     if (searchString && searchString.length > 2) {
       try {
@@ -42,11 +42,15 @@ document.addEventListener("DOMContentLoaded", async () => {
       return;
     }
 
-    console.log(searchResults.map(summarize))
-    console.log(searchResults.map(summarize).join(''))
     const summaries = searchResults.map(summarize);
     searchResultsDiv.innerHTML = summaries.map(([html, _]) => html).join('<hr>');
     summaries.forEach(([_, highlight]) => highlight());
+  };
+
+  let searchDebounce = null;
+  searchInput.addEventListener("input", e => {
+    window.clearTimeout(searchDebounce);
+    searchDebounce = window.setTimeout(() => runSearch(e.target.value), 200);
   });
 
   const hash = await (await fetch("/index.sha256", { method: "GET" })).text();
