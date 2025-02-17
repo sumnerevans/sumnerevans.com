@@ -18,7 +18,15 @@
               {{- if $i }}, {{ end -}}{{- ( $imgRsc.Resize (print . "x webp photo") ).RelPermalink }} {{ . }}w
             {{- end -}}
           {{- end -}}" />
-        <img loading="lazy" src="{{ ( .Resize "800x webp" ).RelPermalink }}" alt="{{ $alt }}" />
+        {{ with .Resize "800x webp" }}
+          <img
+              loading="lazy"
+              src="{{ .RelPermalink }}"
+              width="{{ .Width }}"
+              height="{{ .Height }}"
+              alt="{{ $alt }}"
+          />
+        {{ end }}
       </picture>
     </a>
   {{- else -}}
