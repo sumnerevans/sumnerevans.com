@@ -29,7 +29,7 @@
   </p>
 </footer>
 
-{{ with resources.Get "js/dark-theme.js" | js.Build (dict "minify" true) }}
+{{ with resources.Get "js/dark-theme.ts" | js.Build (dict "minify" true) }}
   <script
     type="text/javascript"
     id="dark-theme-script"

@@ -7,6 +7,7 @@
       {{- if and (or ($reg.Prev .) ($reg.Next .)) (not .Params.isbyai) -}}
         <a href="https://notbyai.fyi" target="_blank">
           <img
+            id="not-by-ai-logo"
             width="131" height="42"
             src="https://notbyai.fyi/img/written-by-human-not-by-ai-black.svg"
             loading="lazy" alt="Written by Human, Not by AI">
@@ -61,12 +62,6 @@
     </div>
   </article>
 </main>
-<script type="text/javascript">
-  document.addEventListener("DOMContentLoaded", function() {
-    var marker = new Mark(document.querySelector("main"));
-    new URL(document.location.toString()).searchParams.getAll("hl").forEach(hl => marker.mark(hl));
-  })
-</script>
 <div class="next-prev">
   {{ with $reg.Prev . }}
     {{ if not .Params.unlisted }}

@@ -1,5 +1,8 @@
 {
-  "dependencies": {
-    "lunr": "^2.3.9"
+  "devDependencies": {
+    "@types/lunr": "^2.3.7",
+    "@types/mark.js": "^8.11.12",
+    "lunr": "^2.3.9",
+    "mark.js": "^8.11.1"
   }
 }
