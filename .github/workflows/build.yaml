@@ -31,6 +31,8 @@ jobs:
           hugo-version: latest
           extended: true
 
+      - run: npm install
+
       - name: Cache Generated Images
         id: cache-images
         uses: actions/cache@v4
@@ -52,9 +54,7 @@ jobs:
         run: hugo --logLevel debug --gc --minify
 
       - name: Search Index
-        run: |
-          npm install
-          node generate_index.js <public/index.json >public/search-index.json
+        run: node generate_index.js <public/index.json >public/search-index.json
 
       - name: Teaching raw HTML
         run: |
