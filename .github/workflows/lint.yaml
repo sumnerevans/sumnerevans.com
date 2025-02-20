@@ -25,6 +25,6 @@ jobs:
         with:
           submodules: "recursive"
 
-      - uses: DeterminateSystems/flake-checker-action@v8
+      - uses: DeterminateSystems/flake-checker-action@v9
         with:
           fail-mode: true
