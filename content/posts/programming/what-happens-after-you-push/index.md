@@ -15,32 +15,35 @@ description: |
 image: images/so-cicd.png
 build:
   publishResources: false
-draft: true
+unlisted: true
 ---
 
 In this article we are going to be investigating how the code you write gets to
-your users. This will be focused specifically on SaaS offerings rather than more
-traditional software delivery methods such as those seen in embedded systems.
-Not every SaaS software has the same deployment process, and I'm not going to
+your users. This article is intended for consumption by computer science and
+software engineering students to provide insights into technologies and
+processes you might encounter in industry. This will be focused specifically on
+web-based SaaS offerings rather than more traditional software delivery methods
+such as those seen in embedded systems. Every piece of software has different
+process for building, testing, and deploying to users and I'm not going to
 discuss every possible technology which might be used for each of these steps.
 Rather, I'm going to be describing what _kinds_ of software (with examples)
-might be used. My focus will be on how that applies to software engineers, and
-I'll also provide some thoughts on how you might integrate some of these ideas
-into your own personal projects.
+might be used. I'll describe how the existence of these systems apply to the
+day-to-day actions of software engineers, and I'll also provide some thoughts on
+how you might integrate some of these ideas into your own personal projects.
 
 I'm a big believer in personal projects as a way to differentiate yourself from
 other candidates. However, merely building another to-do app based on a React
 tutorial is not going to set you apart from your competition. But if you make
-the same to-do app, automatically build a Docker container on every push,
-automatically deploy it to a Kubernetes cluster on AWS, set up an alerting flow
-into PagerDuty for when it goes down, and have logs queryable from Loki, then
-that becomes an interesting side project that could differentiate you from other
-candidates.
+the same to-do app, automatically build a Docker container for it on every
+commit, automatically deploy it with GitHub Actions to a Kubernetes in AWS ECS,
+set up an alerting flow into PagerDuty for when it goes down, and have logs
+queryable from Loki, then that becomes an interesting side project that could
+differentiate you from other candidates.
 
 I'm going to be focusing on three main facets of deploying code to production:
 [Continuous Integration and Continuous Delivery (CI/CD)](#cicd),
 [Containerization and Orchestration](#containerization-and-orchestration), and
-[Monitoring and Debugging](#monitoring-and-debugging).
+[Monitoring and Logging](#monitoring-and-logging).
 
 ## Continuous Integration and Continuous Delivery (CI/CD) {#cicd}
 
@@ -375,25 +378,179 @@ dependencies of one Docker container do not affect the dependencies of another,
 and (unless configured to do so) they cannot access resources of another
 container.
 
-### Using Containerization in Your Project
+Containers gave rise to new software architectures such as microservices whereby
+an application's code is split across multiple individual programs that can be
+updated separately from one another.
 
-- build a Docker container that can run the web server for your project
-- this will force you to think about the dependencies of your project
+#### Using Docker in Your Project
 
-## Monitoring and Debugging
+If your application is a web-based service, building a Docker container for it
+is a great exercise. Building a Docker container for your application will force
+you to enumerate the dependencies of your application and force you to describe
+the steps required to build your application. It will also force you to
+enumerate what external resources your program needs to access. Does it expose a
+TCP port? Does it require filesystem access?
+
+From there, you can create a `Dockerfile` which enumerates the dependencies of
+your program and describes the steps required to build your software.
+
+### Kubernetes
+
+Often, you will end up with multiple containers communicating with one another.
+For example, you might have multiple microservice containers which need to all
+communicate with a shared a database container and a shared Redis or RabbitMQ
+message bus. Maybe you even want to have multiple versions of each microservice.
+
+Imagine you are deploying a new version of a login service which supports Google
+Login. You're using A/B testing (like we discussed earlier) and you have to
+deploy this new service to datacenters across the world. This process can be
+highly error prone if done by hand!
+
+That is where container orchestration software such as
+[Kubernetes](https://kubernetes.io/) comes in. Other solutions to container
+orchestration such as [Docker Swarm](https://docs.docker.com/engine/swarm/)
+exist, but Kubernetes is still the most dominant player in the space. In fact,
+many cloud providers provide hosted Kubernetes solutions such as
+[Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html)
+and [Azure AKS](https://learn.microsoft.com/en-us/azure/aks/what-is-aks).
+
+There are about as many ways to use Kubernetes as there are projects using it.
+Every project has its own unique way of utilizing Kubernetes. I'm not going to
+go into much detail here, as (a) I'm not very well versed in Kubernetes and (b)
+whatever I say will likely not be applicable at whatever company you end up at.
+
+## Monitoring and Logging
 
 So, now your software is containerized, and you have your CI/CD pipeline so that
 it gets automatically built and deployed every time you push to `master`, you
-need to know if it's working! That's where monitoring and debugging come into
+need to know if it's working! That's where monitoring and logging come into
 play.
 
-monitoring
+As with the previous sections, monitoring and logging is highly
+project-dependent, but I'm going to highlight some common themes.
 
-- uptime pings
-- healthchecks (k8s)
-- PagerDuty for when things explode
+### Monitoring
 
-debugging
+As we have seen from the previous sections, modern software is very complex. It
+often involves multiple services talking to one another across and within
+multiple datacenters. Every bit of complexity adds risk of failure and we need
+to know if a failure occurs. We might deploy a bug, or the physical servers your
+code is running on could die, or AWS could have a network outage, etc.
 
-- logging, logging, logging
-  - log levels
+Additionally, we might need to collect statistics about application performance
+across multiple versions of our software (remember A/B testing from earlier?).
+
+Collecting all of these data points and metrics falls under the "monitoring"
+umbrella. Some common techniques for monitoring include:
+
+- **Healthchecks and Heartbeats**: these involve an external service checking on
+  the status of our service. These checks are very course and detect major
+  problems with the application.
+
+  One basic check could be to just make sure that a service is available at all
+  to external users. This might be as simple as "can I access the home page
+  successfully"? I use [UptimeRobot](https://uptimerobot.com/) to monitor a few
+  personal projects. It's way too expensive, but it's worth it for the peace of
+  mind.
+
+  Kubernetes has this functionality baked in. You can configure an endpoint and
+  interval, and Kubernetes will try to access (ping) that endpoint on the
+  container at the provided interval. If it returns a success code, then the
+  service is assumed to be running properly. If it returns a failure code,
+  Kubernetes can be configured to kill the container and restart it.
+
+  A related monitoring technique is to invert the direction of the pings. The
+  service itself sends a request at a regular interval to an external service.
+  The external system ensures the pings keep coming at the appropriate interval,
+  and as long as they do, the service is assumed to be operational.
+  [Healthchecks.io](https://healthchecks.io/) is an example of a service which
+  takes this approach.
+
+- **Metrics**: often, the course-grained healthchecks or heartbeats are
+  insufficient to determine if a service is operating smoothly. For example, the
+  home page may be available, but are users able to log in?
+
+  All non-trivial projects will generate some interesting data points (metrics)
+  that can be monitored. Examples of metrics you might want to collect include:
+
+  - HTTP status code per endpoint
+  - Resource consumption (RAM, disk, CPU, etc.) per container/server
+  - A distribution of how long it takes for your service to respond to a given
+    request
+  - Conversion rate on a sign-up page
+  - Percentage of users who add something to their cart per visit
+
+  Every business and project will have different metrics which matter, and they
+  might change over time. Collecting metrics is a critical component to creating
+  data-driven businesses, which is all the rage right now.
+
+  One example of a software for collecting metrics is
+  [Prometheus](https://prometheus.io/docs/introduction/overview/).
+
+So, we are collecting metrics, and doing healthchecks, but how do we let
+developers know when things are broken? That is where _alerting_ comes in.
+Alerting software monitors the metrics and healthchecks for abnormalities. For
+example, you may configure the alert software to create an alert if RAM usage
+goes above 90% or if error rate on login rises above 1%.
+
+If the problem is not too severe, the alerting software might send an automated
+message to a Slack channel. If it's more severe, it might send an alert to an
+on-call developer's phone via something like
+[PagerDuty](https://www.pagerduty.com/). Companies often require developers to
+configure their PagerDuty to break through do-not-disturb on their phones.
+Depending on the on-call policies, you may even be paged in the middle of the
+night if the application experiences issues!
+
+### Logging
+
+So you've been woken up in the middle of the night due to some alert saying that
+the login endpoint is experiencing an elevated level of
+`500 Internal Server Error`s. How do you figure out what's going wrong? You
+can't just restart your entire application in "debug mode" like you can with
+school projects.
+
+That is where _logging_ comes in. Logging refers to the program outputting a
+_log_ indicating what it's doing. The log goes somewhere where it can be queried
+by the developer. Systems such as [Loki](https://grafana.com/docs/loki/latest/)
+and [Datadog](https://www.datadoghq.com/) are commonly used in industry to
+collect and query logs.
+
+Ideally, the logs are such that a developer could read them and find out what is
+causing the problem. Debugging via logs is somewhat like print-line debugging:
+you have to just read the logs and correlate it to the code that is being run to
+identify where things went awry.
+
+In order to make the logs more meaningful, many logging systems include a log
+_level_ with every message. Common levels and their general meanings include:
+
+- `error` - issues that have no mitigation, but are not fatal to the program
+  continuing
+- `warn` - minor issues that are unexpected but have mitigations
+- `info` - information about what the program is doing
+- `debug` - more granular information about what the program is doing
+
+Every project will use the levels differently, but everyone agrees that you
+should use `error` logs more sparingly than `debug` logs. I find
+[this StackOverflow answer](https://stackoverflow.com/a/2031209/2319844) to be a
+very good convention for when to use each log level.
+
+You can probably imagine that a very busy application would generate _lots_ of
+logs. Let's go back to our example: you are trying to debug the failing logins,
+but there are _many_ logins happening at the same time, only some of which are
+failing. You probably only want to look at the logs related to a failing
+request.
+
+This is where techniques such as _structured logging_ come in and add metadata
+to your logs so that you can group logs together. Structured logs are often
+JSON, and can include other data points in addition to the actual log message.
+In the example above, you might add give each request a _request ID_ and add
+that request ID to all logs related to that request. Most logging frameworks
+have convenient tools for including such metadata to all logs generated through
+an entire call stack. In our example, you could filter by request ID to see logs
+related to a failing login.
+
+I recommend that you get into a practice of debugging all your programs without
+a debugger, relying on print-line debugging. This will tune your spidey-sense
+for what pieces of information are useful to log, and what is not useful. I also
+recommend that you set up structured logging early in your project, as it is
+very unlikely that you will never want _less_ information to debug your program.
