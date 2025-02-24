@@ -22,23 +22,31 @@ In this article we are going to be investigating how the code you write gets to
 your users. This article is intended for consumption by computer science and
 software engineering students to provide insights into technologies and
 processes you might encounter in industry. This will be focused specifically on
-web-based SaaS offerings rather than more traditional software delivery methods
-such as those seen in embedded systems. Every piece of software has different
-process for building, testing, and deploying to users and I'm not going to
-discuss every possible technology which might be used for each of these steps.
-Rather, I'm going to be describing what _kinds_ of software (with examples)
-might be used. I'll describe how the existence of these systems apply to the
-day-to-day actions of software engineers, and I'll also provide some thoughts on
-how you might integrate some of these ideas into your own personal projects.
+software delivery in web-based SaaS offerings rather than more traditional
+software delivery methods such as those seen in embedded systems. Every software
+project has different process for building, testing, and deploying to users and
+I'm not going to discuss every possible technology which might be used for each
+of these steps. Rather, I'm going to be describing what _kinds_ of software
+might be used. I'll describe how these systems affect the day-to-day work of
+software engineers, and I'll also provide some thoughts on how you might
+integrate some of these ideas into your own personal projects.
 
 I'm a big believer in personal projects as a way to differentiate yourself from
 other candidates. However, merely building another to-do app based on a React
 tutorial is not going to set you apart from your competition. But if you make
-the same to-do app, automatically build a Docker container for it on every
-commit, automatically deploy it with GitHub Actions to a Kubernetes in AWS ECS,
-set up an alerting flow into PagerDuty for when it goes down, and have logs
-queryable from Loki, then that becomes an interesting side project that could
-differentiate you from other candidates.
+the same to-do app, use CI to build a Docker container for it on every commit,
+automatically deploy it with GitHub Actions to a Kubernetes in AWS ECS, set up
+an alerting flow into PagerDuty for when it goes down, and have structured
+logging queryable from Loki, then that becomes an interesting side project that
+could differentiate you from other candidates. Another benefit of building a way
+to deploy your code is that you can actually show it to recruiters! You don't
+want this to be what the recruiter thinks when they look at your GitHub:
+
+{{<figure
+  src="images/code.webp"
+  link="https://www.reddit.com/r/github/comments/1at9br4/i_am_new_to_github_and_i_have_lots_to_say"
+  attr="Reddit r/github"
+  attrlink="https://www.reddit.com/r/github/comments/1at9br4/i_am_new_to_github_and_i_have_lots_to_say">}}
 
 I'm going to be focusing on three main facets of deploying code to production:
 [Continuous Integration and Continuous Delivery (CI/CD)](#cicd),
@@ -48,14 +56,13 @@ I'm going to be focusing on three main facets of deploying code to production:
 ## Continuous Integration and Continuous Delivery (CI/CD) {#cicd}
 
 According to the 2024 StackOverflow Survey, CI/CD is used by nearly 70% of all
-developers.[^1] The likelihood that you will encounter CI/CD in your job is very
-high.
+developers.[^1]
 
 [^1]: https://survey.stackoverflow.co/2024/professional-developers#developer-experience-professional-tech
 
 {{<figure
   src="images/so-cicd.png"
-  title="Some form of CI/CD is the most commonly available technology within professional software development organizations."
+  title="CI/CD is the most commonly available technology within professional software development organizations."
   attr="2024 StackOverflow Developer Survey"
   attrlink="https://survey.stackoverflow.co/2024/professional-developers#developer-experience-professional-tech">}}
 
@@ -63,10 +70,11 @@ high.
 
 Let's first discuss _Continuous Delivery_. To do so, we have to go back to the
 dark ages before web apps were the norm. Before the web app boom in the 2000's,
-most software was deployed to user via CD-ROMs and floppy disks. Users would buy
-a physical copy of the software, and install it on their computer. New versions
-were only released every year or sometimes even more infrequently than that.
-There was nothing "continuous" about the delivery of software in those days.
+most software was deployed to users via CD-ROMs and floppy disks. Users would
+buy a physical copy of the software and install it on their computer. New
+versions were only released every few years or sometimes even more infrequently
+than that. There was nothing "continuous" about the delivery of software in
+those days.
 
 As web apps became more prevalent, users were no longer installing software on
 their computers, they just visited the web app. On the deployment side, shipping
@@ -87,7 +95,7 @@ deploying to users quickly and regularly.
 
 The term _continuous delivery_ describes a software engineering philosophy where
 new versions of the software are deployed regularly, often as soon as a change
-is made or shortly thereafter. The degree of continuous-ness varies greatly
+is made or shortly thereafter. The degree of continuousness varies greatly
 between companies, teams, and projects.
 
 #### Continuous Delivery Methods
@@ -96,8 +104,10 @@ There's about as many ways to do CD as there are projects using CD. There is a
 sliding scale of deployment automation based on the needs of the project:
 
 - **Degree to which manual intervention is required**: industries such as
-  healthcare will likely have more requirements for verifying before deploying
-  software updates than industries such as chat.
+  healthcare likely have more compliance requirements and will likely have more
+  manual approvals required before deploying software updates. Industries such
+  as the one I am in: chat, have fewer requirements and might require only
+  minimal manual intervention.
 
 - **Scope of deployment**: it is common for teams to only deploy immediately to
   a small subset of users (often just company employees or even a subset
@@ -123,7 +133,7 @@ sliding scale of deployment automation based on the needs of the project:
   `master`/`main`, while others have a weekly, monthly, quarterly, or even
   bi-annual or annual cadence. At which point you decide it's no longer
   "continuous" is pretty subjective, especially if there is a different level of
-  continuous-ness for different portions of the userbase (internal users, alpha
+  continuousness for different portions of the userbase (internal users, alpha
   testers, beta testers, general release).
 
 #### Continuous Delivery Tools
@@ -192,7 +202,7 @@ come in: source control and automation.
 The first way to reduce the chaos is to use a source control system such as
 [Git](https://git-scm.com/). I've discussed Git in
 [a past presentation for ACM]({{<ref"../../../portfolio/index.html#presentation-acm-git-good">}}).
-The most important thing you need to understand is that Git allow multiple
+The most important thing you need to understand is that Git allows multiple
 people to work on the same codebase asynchronously. It provides tools for
 keeping changes separate until you _merge_ (integrate) them into the wider
 codebase.
@@ -475,8 +485,8 @@ umbrella. Some common techniques for monitoring include:
 
   - HTTP status code per endpoint
   - Resource consumption (RAM, disk, CPU, etc.) per container/server
-  - A distribution of how long it takes for your service to respond to a given
-    request
+  - A distribution of how long it takes for your service to respond to a
+    specific type of request
   - Conversion rate on a sign-up page
   - Percentage of users who add something to their cart per visit
 
