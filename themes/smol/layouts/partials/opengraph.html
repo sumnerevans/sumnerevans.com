@@ -29,7 +29,7 @@
     <meta property="article:modified_time" {{ .Format $ISO8601 | printf "content=%q" | safeHTMLAttr }}>
   {{- end }}
   {{- range .Keywords }}
-    <meta property="article:tag" content="{{ .Page.Title | plainify }}">
+    <meta property="article:tag" content="{{ . | plainify }}">
   {{- end }}
   {{- range .GetTerms "tags" }}
     <meta property="article:tag" content="{{ .Page.Title | plainify }}">
