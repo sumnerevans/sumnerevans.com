@@ -11,12 +11,10 @@
   <ul>
     {{- range partial "func/FilterPages" .Paginator.Pages -}}
     <li>
-      <div class="post-title">
-        {{- if and (ne $listtitle "Categories") (ne $listtitle "Tags") -}}
-          {{ .Date.Format "2006-01-02" }}
-        {{ end }}
-          <a href="{{ .RelPermalink }}">{{.Title }}</a>
-        </div>
+      {{- if and (ne $listtitle "Categories") (ne $listtitle "Tags") -}}
+        {{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}
+      {{ end }}
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
     </li>
     {{- end -}}
   </ul>
