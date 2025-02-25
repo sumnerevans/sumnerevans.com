@@ -15,7 +15,6 @@ description: |
 image: images/so-cicd.png
 build:
   publishResources: false
-unlisted: true
 ---
 
 In this article we are going to be investigating how the code you write gets to
