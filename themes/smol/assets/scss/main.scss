@@ -85,6 +85,16 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
+
+  @media (hover: hover) {
+    .permalink {
+      opacity: 0;
+    }
+
+    &:hover .permalink {
+      opacity: 1;
+    }
+  }
 }
 
 h1 {
@@ -256,14 +266,6 @@ details.advent-of-code-part-expander {
       display: inline;
     }
   }
-}
-
-h2 .permalink {
-  opacity: 0;
-}
-
-h2:hover .permalink {
-  opacity: 1;
 }
 
 details.portfolio-item {
