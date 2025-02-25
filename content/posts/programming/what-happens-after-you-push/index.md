@@ -564,3 +564,15 @@ a debugger, relying on print-line debugging. This will tune your spidey-sense
 for what pieces of information are useful to log, and what is not useful. I also
 recommend that you set up structured logging early in your project, as it is
 very unlikely that you will never want _less_ information to debug your program.
+
+## Conclusion
+
+This article is by no means comprehensive. The main goal of this article was to
+provide some insights into things you might encounter in industry. I think that
+the most important thing to take away from this is that (at any good engineering
+firm) there are safeguards in place to detect issues and address them quickly.
+If you find yourself at such an organization, you should feel empowered to
+commit early and often in a branch. Use CI to your advantage to spot issues
+before even merging. Allow the CD process to deploy with safeguards and allow
+the monitoring stack to alert you when things go awry. And when things
+inevitably break, rely on the logging in your application to debug the problem.
