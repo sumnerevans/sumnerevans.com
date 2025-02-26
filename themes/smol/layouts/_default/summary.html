@@ -34,22 +34,47 @@
     {{ end }}
   </p>
   <div class="post-summary">
-    {{ $image := .Resources.Get .Params.image }}
-    {{- if $image -}}
-      {{ $smallimage := $image.Resize "400x webp" }}
-      {{ $bigimage := $image.Resize "800x webp" }}
+    {{- with .Resources.Get .Params.image -}}
       <div class="summary-image">
-        <img
-          alt=""
-          width="{{ $bigimage.Width }}"
-          height="{{ $bigimage.Height }}"
-          src="{{ $bigimage.RelPermalink }}"
-          srcset="{{ $smallimage.RelPermalink }} 400w, {{ $bigimage.RelPermalink }} 800w"
-        />
+        <picture>
+          {{ with .Resize "250x webp" }}
+            <!-- This is the small summary image when displayed to the left of the article. -->
+            <source
+              type="image/webp"
+              media="(min-width: 600px)"
+              srcset="{{ .RelPermalink }}"
+            />
+          {{ end }}
+
+          <!-- These are the responsive sizes for when the image is displayed above the article. -->
+          {{- $respSizes := slice "200" "400" -}}
+          {{ $imgRsc := . }}
+          {{- range $respSizes -}}
+            {{- if ge $imgRsc.Width . -}}
+              <source
+                type="image/webp"
+                media="(max-width: {{ . }}px)"
+                srcset="{{- ($imgRsc.Resize (print . "x webp photo") ).RelPermalink -}}"
+              />
+            {{- end -}}
+          {{- end -}}
+
+          <!-- This is the fallback size. -->
+          {{ with .Resize "600x webp" }}
+            <img
+              loading="lazy"
+              src="{{ .RelPermalink }}"
+              width="{{ .Width }}"
+              height="{{ .Height }}"
+              alt=""
+              aria-hidden="true"
+            />
+          {{ end }}
+        </picture>
       </div>
-    {{- else if .Params.image -}}
+    {{- else with .Params.image -}}
       <div class="summary-image">
-        <img alt="" width="400" src="{{ .Permalink }}/{{ .Params.image }}" />
+        <img alt="" width="400" src="{{ $.Permalink }}/{{ . }}" />
       </div>
     {{- end -}}
     <div class="summary-text">

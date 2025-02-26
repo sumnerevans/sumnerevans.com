@@ -1,4 +1,4 @@
-{{- $respSizes := slice "200" "400" "600" "800" -}}
+{{- $respSizes := slice "800" "600" "400" "200" -}}
 {{- $alt := .Get "alt" -}}
 {{- $image := . -}}
 {{- $width := .Get "width" -}}
@@ -10,18 +10,21 @@
     <a href="{{ . }}" target="_blank"{{ with $image.Get "rel" }} rel="{{ . }}"{{ end }}>
   {{- else -}}
     {{- if gt .Width 4000 -}}
-      <a href="{{ ( .Resize "4000x webp" ).RelPermalink }}" target="_blank" />
+      <a href="{{ ( .Resize "4000x webp" ).RelPermalink }}" target="_blank">
     {{- else -}}
-      <a href="{{ ( .Process "webp" ).RelPermalink }}" target="_blank" />
+      <a href="{{ ( .Process "webp" ).RelPermalink }}" target="_blank">
     {{- end -}}
   {{- end -}}
-  <picture {{ with $width }}style="max-width:{{ .}}px"{{ end }}>
-      <source type="image/webp" srcset="
-        {{- range $i, $e := $respSizes -}}
-          {{- if ge $imgRsc.Width . -}}
-            {{- if $i }}, {{ end -}}{{- ($imgRsc.Resize (print . "x webp photo") ).RelPermalink }} {{ . }}w
-          {{- end -}}
-        {{- end -}}" />
+    <picture {{ with $width }}style="max-width:{{ .}}px"{{ end }}>
+      {{- range $respSizes -}}
+        {{- if ge $imgRsc.Width . -}}
+          <source
+            type="image/webp"
+            media="(min-width: {{ . }}px)"
+            srcset="{{- ($imgRsc.Resize (print . "x webp photo") ).RelPermalink -}}"
+          />
+        {{- end -}}
+      {{- end -}}
       <img src="{{ ($imgRsc.Resize "800x webp").RelPermalink }}"
         {{- with $alt }}
           alt="{{ . }}"

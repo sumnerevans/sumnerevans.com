@@ -1,14 +1,13 @@
-{{- $respSizes := slice "200" "400" "600" "800" -}}
+{{- $respSizes := slice "800" "600" "400" "200" -}}
 {{ $alt := or (.Get "alt") (.Get "caption" | markdownify | plainify) }}
-{{ $figure := . }}
 
 <figure{{ with .Get "class" }} class="{{ . }}"{{ end }} {{ with .Get "width" }} style="max-width:{{ . }}px"{{ end }}>
   {{- $u := urls.Parse (.Get "src") -}}
 
   {{- with or (.Page.Resources.Get $u.Path) (resources.Get $u.Path) -}}
     {{- $imgRsc := . -}}
-    {{- with $figure.Get "link" -}}
-      <a href="{{ . }}" target="_blank"{{ with $figure.Get "rel" }} rel="{{ . }}"{{ end }}>
+    {{- with $.Get "link" -}}
+      <a href="{{ . }}" target="_blank"{{ with $.Get "rel" }} rel="{{ . }}"{{ end }}>
     {{- else -}}
       {{- if gt .Width 4000 -}}
         <a href="{{ ( .Resize "4000x webp" ).RelPermalink }}" target="_blank" />
@@ -17,12 +16,16 @@
       {{- end -}}
     {{- end -}}
       <picture>
-        <source type="image/webp" srcset="
-          {{- range $i, $e := $respSizes -}}
-            {{- if ge $imgRsc.Width . -}}
-              {{- if $i }}, {{ end -}}{{- ($imgRsc.Resize (print . "x webp photo") ).RelPermalink }} {{ . }}w
-            {{- end -}}
-          {{- end -}}" />
+        {{- $imgRsc := . -}}
+        {{- range $respSizes -}}
+          {{- if ge $imgRsc.Width . -}}
+            <source
+              type="image/webp"
+              media="(min-width: {{ . }}px)"
+              srcset="{{- ($imgRsc.Resize (print . "x webp photo") ).RelPermalink -}}"
+            />
+          {{- end -}}
+        {{- end -}}
         {{ with .Resize "800x webp" }}
           <img
             src="{{ .RelPermalink }}"
