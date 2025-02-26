@@ -40,7 +40,6 @@
   {{ partial "twitter_cards.html" . }}
 
   <!-- CSS -->
-  <link href="https://iosevka-webfonts.github.io/iosevka/Iosevka.css" rel="stylesheet" />
   {{ with resources.Get "scss/main.scss" | css.Sass (dict "outputStyle" "compact") }}
     <style>{{ .Content | safeCSS }}</style>
   {{ end }}
