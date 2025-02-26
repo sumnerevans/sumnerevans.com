@@ -2,9 +2,18 @@
   <div class="name-and-subtitle">
     {{ with .Site.Params.logo }}
       <a href="{{ $.Site.Home.Permalink }}" class="site-image">
-        {{ with (resources.Get .).Resize "150x webp" }}
-          <img src="{{ .Permalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Site.Title }}" />
-        {{ end }}
+        <picture>
+          {{ with (resources.Get .).Resize "300x webp" }}
+            <source
+              type="image/webp"
+              media="(-moz-min-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2)"
+              srcset="{{- .Permalink }} 300w"
+            />
+          {{ end }}
+          {{ with (resources.Get .).Resize "150x webp" }}
+            <img src="{{ .Permalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Site.Title }}" />
+          {{ end }}
+        </picture>
       </a>
     {{ end }}
     <div>
