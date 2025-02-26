@@ -1,4 +1,8 @@
 <h{{ .Level }} id="{{ .Anchor }}" {{- with .Attributes.class }} class="{{ . }}" {{- end }}>
   {{ .Text }}
-  <a class="permalink" href="#{{ .Anchor }}"><i class="fa fa-link"></i></a>
+  <a
+    class="permalink"
+    href="#{{ .Anchor }}"
+    aria-label="Permalink to {{ .Text }}"
+  ><i class="fa fa-link"></i></a>
 </h{{ .Level }}>
