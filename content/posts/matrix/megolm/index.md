@@ -17,6 +17,7 @@ description: |
   describe Megolm, and explain what security guarantees it provides and how it
   provides them.
 image: ./images/overview.png
+math: true
 ---
 
 In Matrix, message security is provided by Megolm. The goal of message security

@@ -14,6 +14,7 @@ summary: |
   competition for college students. I've competed in ICPC three times now, but
   today was the best my team has ever done. But I'm getting ahead of myself.
   Some background on what we did.
+math: true
 ---
 
 Today I competed in the International Collegiate Programming Contest (ICPC)

@@ -4,6 +4,7 @@ date: 2021-12-01T09:00:00-06:00
 categories: [Programming]
 tags: [Advent of Code, Python, Competition]
 image: map.png
+math: true
 ---
 
 Every year since 2015, [Eric Wastl][1] creates a two-part programming problem

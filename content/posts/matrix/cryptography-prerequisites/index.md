@@ -20,6 +20,7 @@ description: |
   Understanding Matrix cryptography necessitates understanding of some basic
   cryptography primitives. This article intends to explain those prerequisites
   in simple terms.
+math: true
 ---
 
 Understanding Matrix cryptography requires understanding some basic cryptography

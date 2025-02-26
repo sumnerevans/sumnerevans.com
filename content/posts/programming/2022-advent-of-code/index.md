@@ -7,6 +7,7 @@ tags:
   - Go (Programming Language)
   - Competition
 image: map.png
+math: true
 ---
 
 Every year since 2015, [Eric Wastl][1] creates a two-part programming problem

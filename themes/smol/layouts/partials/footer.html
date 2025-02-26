@@ -36,7 +36,6 @@
     {{ .Content | safeJS }}
   </script>
 {{ end }}
-<script id="MathJax-script" async src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 {{ with "mailto:me@sumnerevans.com" | base64Encode }}
 <script type="text/javascript">
   document.getElementById('footer-email-link').href = atob("{{ . }}");

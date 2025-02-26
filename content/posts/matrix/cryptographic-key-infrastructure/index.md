@@ -30,6 +30,7 @@ summary: |
   the user in control of their keys. Only a few networks (Signal) truly leave
   the user in control, and their UX is arguably worse than Matrix.
 image: ./images/overview.png
+math: true
 ---
 
 {{% note title="Slides and Recording" %}}

@@ -6,6 +6,7 @@ tags: [Facebook Hackathon, Win, Hackathon, Prize, Hackathon Demo]
 image: images/fb-award.jpg
 build:
   publishResources: false
+math: true
 ---
 
 Objectively, I'm pretty good at winning prizes at hackathons. I'm not entirely

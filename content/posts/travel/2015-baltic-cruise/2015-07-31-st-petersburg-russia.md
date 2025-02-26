@@ -3,6 +3,7 @@ title: St. Petersburg, Russia -- Day 3
 date: 2015-07-31T12:47:00-0600
 categories: [Baltic Cruise and Northern Europe]
 tags: [Russia, St. Petersburg]
+math: true
 ---
 
 Today we were again in St. Petersburg. I will start describing today from when
