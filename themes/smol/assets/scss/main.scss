@@ -316,20 +316,29 @@ header {
   border-bottom: 2px solid #333;
 
   .name-and-subtitle {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row;
+    display: grid;
+    grid-template:
+      "site-image ." auto
+      "site-image site-title" auto
+      "site-image site-subtitle" auto
+      / 150px auto;
+    gap: 0 1em;
+    margin-bottom: 1em;
 
     @media screen and (max-width: 600px) {
-      align-items: center;
-      flex-direction: column;
-
+      grid-template:
+        "site-image" auto
+        "site-title" auto
+        "site-subtitle" auto
+        / 1fr;
       text-align: center;
     }
 
     .site-image {
-      margin-right: 15px;
+      grid-area: site-image;
+      margin: 0 auto;
       width: 150px;
+      height: 150px;
 
       picture,
       img {
@@ -338,14 +347,20 @@ header {
     }
 
     .site-title {
-      font-size: 3.5em;
-      font-weight: bold;
-      text-decoration: none;
-      color: #333;
+      grid-area: site-title;
+
+      a {
+        font-size: 3.5em;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+      }
     }
 
-    .subtitle {
-      font-size: 1.4em;
+    .site-subtitle {
+      grid-area: site-subtitle;
+      font-size: 1.3rem;
+      margin-bottom: -0.5rem;
     }
   }
 
@@ -355,6 +370,10 @@ header {
 
     a {
       text-decoration: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      text-align: center;
     }
   }
 

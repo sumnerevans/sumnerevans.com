@@ -2,27 +2,28 @@
   <div class="name-and-subtitle">
     {{ with .Site.Params.logo }}
       <a href="{{ $.Site.Home.Permalink }}" class="site-image">
-        <picture>
-          {{ with (resources.Get .).Resize "300x webp" }}
-            <source
-              type="image/webp"
-              media="(-moz-min-device-pixel-ratio: 2),(-o-min-device-pixel-ratio: 2/1),(-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2)"
-              srcset="{{- .Permalink }} 300w"
-            />
+        {{ $siteImage := resources.Get . }}
+        <img
+          {{ with $siteImage.Resize "300x webp" }}
+            src="{{ .Permalink }}"
           {{ end }}
-          {{ with (resources.Get .).Resize "150x webp" }}
-            <img src="{{ .Permalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $.Site.Title }}" />
-          {{ end }}
-        </picture>
+          width="150"
+          height="150"
+          alt="{{ $.Site.Title }}"
+          srcset="
+            {{ with $siteImage.Resize "150x webp" }}{{ .Permalink }}{{ end }},
+            {{ with $siteImage.Resize "225x webp" }}{{ .Permalink }}{{ end }} 1.5x,
+            {{ with $siteImage.Resize "300x webp" }}{{ .Permalink }}{{ end }} 2x
+          "
+        />
       </a>
     {{ end }}
-    <div>
-      <a class="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-      {{ with .Site.Params.Subtitle }}
-        <br>
-        <span class="subtitle">{{ . }}</span>
-      {{- end }}
+    <div class="site-title">
+      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
     </div>
+    {{ with .Site.Params.Subtitle }}
+      <div class="site-subtitle">{{ . }}</div>
+    {{- end }}
   </div>
   <nav>
     <a href="{{ .Site.Home.Permalink }}"><b>Home</b></a>
