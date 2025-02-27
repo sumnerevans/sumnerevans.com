@@ -93,36 +93,17 @@ document.addEventListener("DOMContentLoaded", async () => {
   const hash = await (await fetch("/index.sha256", { method: "GET" })).text();
   console.log("Got content hash", hash);
 
-  const searchCache = await caches.open(`search-cache-${version}`);
-  const loadAndCache = async (url: string): Promise<Response> => {
-    const resp = await searchCache.match(url);
-    if (resp) {
-      return resp;
-    }
-
-    // Delete the old keys from the cache
-    const oldCacheKeys = await searchCache.keys(url, { ignoreSearch: true });
-    console.log(
-      "Deleting old cache keys",
-      oldCacheKeys.map((r) => r.url)
-    );
-    await Promise.all(oldCacheKeys.map((r) => searchCache.delete(r)));
-
-    // Add the new index in
-    await searchCache.put(url, await fetch(url, { method: "GET" }));
-    return (await searchCache.match(url))!;
-  };
-
   const loadSearchIndex = async () => {
     if (lunrSearchIndex) {
       searchInput.focus();
       return;
     }
     console.time("fetch indexes");
-    const [indexResp, searchIndexResp] = await Promise.all([
-      await loadAndCache(`/index.json?v=${version}&cb=${hash}`),
-      await loadAndCache(`/search-index.json?v=${version}cb=${hash}`),
-    ]);
+    const [indexResp, searchIndexResp] = await Promise.all(
+      ["index.json", "search-index.json"].map((name) =>
+        fetch(`/${name}?v=${version}&cb=${hash}`, { method: "GET" })
+      )
+    );
     console.timeEnd("fetch indexes");
 
     console.time("initialize the search index");
