@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     let searchResults: lunr.Index.Result[] = [];
     if (searchString && searchString.length > 2) {
       try {
-        searchResults = lunrSearchIndex!.search(searchString);
+        searchResults = lunrSearchIndex!.search(searchString).slice(0, 10);
       } catch (err) {
         searchResultsDiv.innerHTML = `Error: ${err.message}`;
         return;
@@ -100,8 +100,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
     console.time("fetch indexes");
     const [indexResp, searchIndexResp] = await Promise.all(
-      ["index.json", "search-index.json"].map((name) =>
-        fetch(`/${name}?v=${version}&cb=${hash}`, { method: "GET" })
+      ["", "search-"].map((name) =>
+        fetch(`/${name}index.json?v=${version}&cb=${hash}`, { method: "GET" })
       )
     );
     console.timeEnd("fetch indexes");
