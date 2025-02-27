@@ -18,7 +18,7 @@
               type="image/webp"
               media="(min-width: {{ . }}px)"
               srcset="{{- ($imgRsc.Resize (print . "x webp photo") ).RelPermalink -}}"
-            />
+            >
           {{- end -}}
         {{- end -}}
         {{ with .Resize "800x webp" }}
@@ -30,13 +30,13 @@
             {{- with $alt }}
               alt="{{ . }}"
             {{- end -}}
-          />
+          >
         {{ end }}
       </picture>
     </a>
   {{- else -}}
     <a href="{{ .Destination | safeURL }}" target="_blank">
-      <img loading="lazy" src="{{ .Destination | safeURL }}" alt="{{ $alt }}" />
+      <img loading="lazy" src="{{ .Destination | safeURL }}" alt="{{ $alt }}">
     </a>
   {{- end -}}
 {{ if .Text }}

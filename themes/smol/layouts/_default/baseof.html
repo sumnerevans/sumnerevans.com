@@ -2,10 +2,10 @@
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="UTF-8">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <!-- Page Metadata -->
   {{ if (eq .Title .Site.Title) }}
@@ -16,20 +16,20 @@
     {{ end }}
   {{ end }}
   {{- with or .Description .Summary site.Params.description | plainify | htmlUnescape | chomp }}
-    <meta name="description" content="{{ replace . "\n" " " }}" />
+    <meta name="description" content="{{ replace . "\n" " " }}">
   {{- end }}
   {{ if (or .Keywords .Params.tags .Params.categories) }}
-    <meta name="keywords" content="{{ delimit (union .Keywords (union .Params.tags .Params.categories)) "," }}" />
+    <meta name="keywords" content="{{ delimit (union .Keywords (union .Params.tags .Params.categories)) "," }}">
   {{ end }}
   {{ with .Site.Params.author }}
-    <meta name="author" content="{{ . }}" />
+    <meta name="author" content="{{ . }}">
   {{ end }}
   {{- if .Params.image -}}
     {{- $featureImage := .Resources.Get .Params.image -}}
     {{- with $featureImage -}}
-      <meta property="og:image" content="{{ ( .Resize "800x webp" ).Permalink }}" />
+      <meta property="og:image" content="{{ ( .Resize "800x webp" ).Permalink }}">
     {{- else -}}
-      <meta property="og:image" content="{{ .Site.BaseURL }}{{ path.Join .File.Dir .Params.image }}" />
+      <meta property="og:image" content="{{ .Site.BaseURL }}{{ path.Join .File.Dir .Params.image }}">
     {{- end -}}
   {{ else if .Site.Params.logo }}
     {{ $logo := resources.Get .Site.Params.logo }}
@@ -46,7 +46,7 @@
 
   <!-- RSS -->
   {{ with .OutputFormats.Get "RSS" -}}
-    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
   {{- end }}
 
   {{- with .Site.Params.goatcounter -}}

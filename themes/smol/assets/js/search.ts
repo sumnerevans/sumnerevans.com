@@ -32,23 +32,19 @@ document.addEventListener("DOMContentLoaded", async () => {
     const article = rawIndex[searchResult.ref];
     const hls = Object.keys(searchResult.matchData.metadata);
     const hlQuery = hls.map((h) => `hl=${encodeURIComponent(h)}`).join("&");
-    const categoriesList = article.categories?.map(
-      (c) => `<a href="/categories/${c.toLowerCase()}">${c}</a>`
-    );
-    const tagsList = article.tags?.map(
-      (t) => `<a href="/tags/${t.toLowerCase()}">${t}</a>`
+    const [categoriesList, tagsList] = ["categories", "tags"].map((t) =>
+      article[t]?.map((c) => `<a href="/${t}/${c.toLowerCase()}">${c}</a>`)
     );
     const searchResultDiv = document.createElement("div");
     searchResultDiv.classList.add("search-result");
     searchResultDiv.id = `search-result-${i}`;
-    searchResultDiv.innerHTML = `
-      <h4><b><a href="${searchResult.ref}?${hlQuery}">${article.title}</a></b></h4>
-      ${categoriesList?.length ? `<p class="categories"><b>Posted in ${categoriesList.join(", ")}</b></p>` : ""}
-      ${tagsList?.length ? `<p class="tags">Tags: ${tagsList.join(", ")}</p>` : ""}
-      <div class="content-summary">
-        ${article.contents?.replace("\n", "<br>")}
-      </div>
-    `;
+    searchResultDiv.innerHTML =
+      `<h4><b><a href="${searchResult.ref}?${hlQuery}">${article.title}</a></b></h4>` +
+      `${categoriesList?.length ? `<p class="categories"><b>Posted in ${categoriesList.join(", ")}</b></p>` : ""}` +
+      `${tagsList?.length ? `<p class="tags">Tags: ${tagsList.join(", ")}</p>` : ""}` +
+      `<div class="content-summary">` +
+      `${article.contents?.replace("\n", "<br>")}` +
+      `</div>`;
     return [searchResultDiv, hls];
   };
 

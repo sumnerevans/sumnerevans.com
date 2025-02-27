@@ -6,6 +6,8 @@ categories:
 tags:
   - London
   - England
+  - Tate Modern
+  - St. Paul's Cathedral
 description: |
   On my way to FOSDEM, I flew into London for a few days before taking the
   Eurostar to Brussels for the conference.
@@ -43,3 +45,37 @@ After lunch, I headed over to the
 fan of modern art, but I figured I should go to up my elite street cred. I
 stayed for a little over an hour before I got bored and decided to do something
 else.
+
+Here were a couple of things in the museum that I thought were kinda cool.
+
+<table class="gallery">
+<tr>
+<td width="70%">
+
+![](images/tate1.jpg)
+
+</td>
+<td width="30%">
+
+![](images/tate2.jpg)
+
+</td>
+</tr>
+</table>
+
+## St. Paul's Cathedral
+
+The Tate Modern is right across the river from St. Paul's Cathedral, so I looked
+to see if there was a church service going on. There was a Sunday evening
+service happening, so I went and attended it. You can't take pictures during the
+service, but it was a nice service right under the dome.
+
+I was still quite tired after my travel for the day, so I took the Tube back to
+Lambeth North, found some food and then turned in for the night.
+
+{{<figure src="images/stpauls.jpg" title="St. Paul's Cathedral all lit up after the service">}}
+
+## The British Museum
+
+On Monday, I slept in and then I went to the British Museum, arriving around
+11:30.

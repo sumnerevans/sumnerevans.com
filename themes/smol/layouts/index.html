@@ -47,7 +47,7 @@
                   type="image/webp"
                   media="(min-width: 600px)"
                   srcset="{{ .RelPermalink }}"
-                />
+                >
               {{ end }}
 
               <!-- These are the responsive sizes for when the image is displayed above the article. -->
@@ -59,7 +59,7 @@
                     type="image/webp"
                     media="(max-width: {{ . }}px)"
                     srcset="{{- ($imgRsc.Resize (print . "x webp photo") ).RelPermalink -}}"
-                  />
+                  >
                 {{- end -}}
               {{- end -}}
 
@@ -74,7 +74,7 @@
                   height="{{ .Height }}"
                   alt=""
                   aria-hidden="true"
-                />
+                >
               {{ end }}
             </picture>
           </div>
@@ -88,7 +88,7 @@
               width="400"
               src="{{ $.Permalink }}{{ . }}"
               aria-hidden="true"
-            />
+            >
           </div>
         {{- end -}}
         <div class="summary-text">
