@@ -44,6 +44,10 @@ timeout = "360s"
 [imaging]
   quality = 90
 
+[privacy]
+  [privacy.youTube]
+    privacyEnhanced = true
+
 [params]
   author = "Sumner Evans"
   description = "I'm a Software Engineer at Automattic working on Beeper. This is my personal website, portfolio, and blog."

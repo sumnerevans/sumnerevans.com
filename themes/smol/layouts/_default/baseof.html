@@ -49,12 +49,22 @@
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
   {{- end }}
 
+  {{ with resources.Get "js/search.ts" | js.Build (dict "minify" hugo.IsProduction) }}
+    <script type="text/javascript">{{ .Content | safeJS }}</script>
+  {{ end }}
+
   {{- with .Site.Params.goatcounter -}}
     {{ printf `<script data-goatcounter="%s" async src="//gc.zgo.at/count.js"></script>` .domain | safeHTML }}
   {{- end -}}
 
   {{ if .Params.math }}
     <script id="MathJax-script" async src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  {{ end }}
+
+  {{ if .HasShortcode "youtube" }}
+    {{ with resources.Get "js/lite-youtube.ts" | js.Build }}
+      <script type="text/javascript">{{ .Content | safeJS }}</script>
+    {{ end }}
   {{ end }}
 </head>
 

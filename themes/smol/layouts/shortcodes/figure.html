@@ -1,5 +1,5 @@
 {{- $respSizes := slice "800" "600" "400" "200" -}}
-{{ $alt := or (.Get "alt") (.Get "caption" | markdownify | plainify) }}
+{{ $alt := or (.Get "alt") (.Get "caption" | markdownify | plainify) (.Get "title" | markdownify | plainify) }}
 
 <figure{{ with .Get "class" }} class="{{ . }}"{{ end }} {{ with .Get "width" }} style="max-width:{{ . }}px"{{ end }}>
   {{- $u := urls.Parse (.Get "src") -}}

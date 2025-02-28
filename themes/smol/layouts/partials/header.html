@@ -42,7 +42,4 @@
       <p class="no-results">Enter a search term above</p>
     </div>
   </div>
-  {{ with resources.Get "js/search.ts" | js.Build (dict "minify" hugo.IsProduction) }}
-    <script type="text/javascript">{{ .Content | safeJS }}</script>
-  {{ end }}
 </header>
