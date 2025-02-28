@@ -41,11 +41,11 @@ could differentiate you from other candidates. Another benefit of building a way
 to deploy your code is that you can actually show it to recruiters! You don't
 want this to be what the recruiter thinks when they look at your GitHub:
 
-{{<figure
-  src="images/code.webp"
-  link="https://www.reddit.com/r/github/comments/1at9br4/i_am_new_to_github_and_i_have_lots_to_say"
-  attr="Reddit r/github"
-  attrlink="https://www.reddit.com/r/github/comments/1at9br4/i_am_new_to_github_and_i_have_lots_to_say">}}
+{{<figure src="images/code.webp"
+alt=`Image of "I am new to GitHub and I have lots to say from r/github`
+link="https://www.reddit.com/r/github/comments/1at9br4/i_am_new_to_github_and_i_have_lots_to_say"
+attr="Reddit r/github"
+attrlink="https://www.reddit.com/r/github/comments/1at9br4/i_am_new_to_github_and_i_have_lots_to_say">}}
 
 I'm going to be focusing on three main facets of deploying code to production:
 [Continuous Integration and Continuous Delivery (CI/CD)](#cicd),
@@ -61,6 +61,7 @@ developers.[^1]
 
 {{<figure
   src="images/so-cicd.png"
+  alt="Image of the most commonly used processes, tools, and programs according to the 2024 StackOverflow developer survey"
   title="CI/CD is the most commonly available technology within professional software development organizations."
   attr="2024 StackOverflow Developer Survey"
   attrlink="https://survey.stackoverflow.co/2024/professional-developers#developer-experience-professional-tech">}}
@@ -352,6 +353,7 @@ Kubernetes is used by 20% of developers.[^2]
 
 {{<figure
   src="images/so-docker.png"
+  alt="Image of the most popular other tools according to the 2024 StackOverflow developer survey"
   width="600"
   title="Docker and Kubernetes are among the most popular technologies used by professional developers"
   attr="2024 StackOverflow Developer Survey"
