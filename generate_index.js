@@ -1,23 +1,18 @@
-var lunr = require('lunr'),
-  stdin = process.stdin,
-  stdout = process.stdout,
-  buffer = []
+const lunr = require('lunr');
 
-stdin.resume()
-stdin.setEncoding('utf8')
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
 
-stdin.on('data', function(data) {
-  buffer.push(data)
-})
+const buffer = [];
+process.stdin.on('data', (d) => buffer.push(d));
 
-stdin.on('end', function() {
-  var idx = lunr(function() {
+process.stdin.on('end', () => {
+  const data = JSON.parse(buffer.join(''));
+  var lunrIndex = lunr(function() {
     this.ref("permalink");
     ["title", "contents", "tags", "categories"].forEach(f => this.field(f));
-    // This is so that we can highlight stuff.
-    this.metadataWhitelist = ["position"];
 
-    JSON.parse(buffer.join('')).forEach(article => {
+    data.forEach(article => {
       this.add({
         permalink: article.permalink,
         title: article.title,
@@ -28,5 +23,9 @@ stdin.on('end', function() {
     });
   });
 
-  stdout.write(JSON.stringify(idx))
+  const index = {};
+  for (const article of data) {
+    index[article.permalink] = article;
+  }
+  process.stdout.write(JSON.stringify({ index, lunrIndex }));
 })

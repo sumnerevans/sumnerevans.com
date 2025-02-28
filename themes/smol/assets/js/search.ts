@@ -17,7 +17,6 @@ interface RawRecord {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const version = "v2";
   let rawIndex: Record<string, RawRecord> = {};
   let lunrSearchIndex: lunr.Index | undefined;
   const searchInput = document.getElementById(
@@ -33,7 +32,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     const hls = Object.keys(searchResult.matchData.metadata);
     const hlQuery = hls.map((h) => `hl=${encodeURIComponent(h)}`).join("&");
     const [categoriesList, tagsList] = ["categories", "tags"].map((t) =>
-      article[t]?.map((c) => `<a href="/${t}/${c.toLowerCase()}">${c}</a>`)
+      article[t]?.map(
+        (c) => `<a href="/${t}/${c.toLowerCase().replace(" ", "-")}">${c}</a>`
+      )
     );
     const searchResultDiv = document.createElement("div");
     searchResultDiv.classList.add("search-result");
@@ -90,23 +91,21 @@ document.addEventListener("DOMContentLoaded", async () => {
   console.log("Got content hash", hash);
 
   const loadSearchIndex = async () => {
+    const version = "v3";
     if (lunrSearchIndex) {
       searchInput.focus();
       return;
     }
-    console.time("fetch indexes");
-    const [indexResp, searchIndexResp] = await Promise.all(
-      ["", "search-"].map((name) =>
-        fetch(`/${name}index.json?v=${version}&cb=${hash}`, { method: "GET" })
-      )
-    );
-    console.timeEnd("fetch indexes");
+    console.time("fetch index");
+    const searchIndexUrl = `/search-index.json?v=${version}&ch=${hash}`;
+    const searchIndex = await (
+      await fetch(searchIndexUrl, { method: "GET" })
+    ).json();
+    console.timeEnd("fetch index");
 
     console.time("initialize the search index");
-    for (const result of await indexResp.json()) {
-      rawIndex[result.permalink] = result;
-    }
-    lunrSearchIndex = lunr.Index.load(await searchIndexResp.json());
+    rawIndex = searchIndex.index;
+    lunrSearchIndex = lunr.Index.load(searchIndex.lunrIndex);
     console.timeEnd("initialize the search index");
 
     searchInput.removeAttribute("disabled");
