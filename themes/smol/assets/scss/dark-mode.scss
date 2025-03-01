@@ -87,9 +87,10 @@
     background-color: #ffffff18;
   }
 
-  .webring .articles .article,
-  .related-posts .articles .article {
-    background-color: #202020;
+  .webring, .comments {
+    .header .attribution {
+      color: #888;
+    }
   }
 
   section#isso-thread {
