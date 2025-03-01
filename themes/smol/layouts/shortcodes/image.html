@@ -1,4 +1,4 @@
-{{- $respSizes := slice "800" "600" "400" "200" -}}
+{{- $respSizes := slice "200" "400" "600" -}}
 {{- $alt := .Get "alt" -}}
 {{- $image := . -}}
 {{- $width := .Get "width" -}}
@@ -20,12 +20,12 @@
         {{- if ge $imgRsc.Width . -}}
           <source
             type="image/webp"
-            media="(min-width: {{ . }}px)"
+            media="(max-width: {{ . }}px)"
             srcset="{{- ($imgRsc.Resize (print . "x webp photo") ).RelPermalink -}}"
           >
         {{- end -}}
       {{- end -}}
-      <img src="{{ ($imgRsc.Resize "800x webp").RelPermalink }}"
+      <img src="{{ ($imgRsc.Resize "800x webp photo").RelPermalink }}"
         {{- with $alt }}
           alt="{{ . }}"
         {{- end -}}
