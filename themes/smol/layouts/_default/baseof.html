@@ -27,13 +27,13 @@
   {{- if .Params.image -}}
     {{- $featureImage := .Resources.Get .Params.image -}}
     {{- with $featureImage -}}
-      <meta property="og:image" content="{{ ( .Resize "800x webp" ).Permalink }}">
+      <meta property="og:image" content="{{ ( .Resize "800x webp photo" ).Permalink }}">
     {{- else -}}
       <meta property="og:image" content="{{ .Site.BaseURL }}{{ path.Join .File.Dir .Params.image }}">
     {{- end -}}
   {{ else if .Site.Params.logo }}
     {{ $logo := resources.Get .Site.Params.logo }}
-    {{ $logowebplarge := $logo.Resize "300x webp" }}
+    {{ $logowebplarge := $logo.Resize "300x webp photo" }}
     <meta property="og:image" content="{{ $logowebplarge.Permalink }}">
   {{ end }}
   {{ partial "opengraph.html" . }}

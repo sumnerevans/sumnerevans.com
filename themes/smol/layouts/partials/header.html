@@ -4,16 +4,16 @@
       <a href="{{ $.Site.Home.Permalink }}" class="site-image">
         {{ $siteImage := resources.Get . }}
         <img
-          {{ with $siteImage.Resize "300x webp" }}
+          {{ with $siteImage.Resize "300x webp photo" }}
             src="{{ .Permalink }}"
           {{ end }}
           width="150"
           height="150"
           alt="{{ $.Site.Title }}"
           srcset="
-            {{ with $siteImage.Resize "150x webp" }}{{ .Permalink }}{{ end }},
-            {{ with $siteImage.Resize "225x webp" }}{{ .Permalink }}{{ end }} 1.5x,
-            {{ with $siteImage.Resize "300x webp" }}{{ .Permalink }}{{ end }} 2x
+            {{ with $siteImage.Resize "150x webp photo" }}{{ .Permalink }}{{ end }},
+            {{ with $siteImage.Resize "225x webp photo" }}{{ .Permalink }}{{ end }} 1.5x,
+            {{ with $siteImage.Resize "300x webp photo" }}{{ .Permalink }}{{ end }} 2x
           "
         >
       </a>

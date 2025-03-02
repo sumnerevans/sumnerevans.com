@@ -41,7 +41,7 @@
         {{- with .Resources.Get .Params.image -}}
           <div class="summary-image">
             <picture>
-              {{ with .Resize "250x webp" }}
+              {{ with .Resize "250x webp photo" }}
                 <!-- This is the small summary image when displayed to the left of the article. -->
                 <source
                   type="image/webp"
@@ -64,7 +64,7 @@
               {{- end -}}
 
               <!-- This is the fallback size. -->
-              {{ with .Resize "600x webp" }}
+              {{ with .Resize "600x webp photo" }}
                 <img
                   {{ if gt $i 0 }}
                     loading="lazy"

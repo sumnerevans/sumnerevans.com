@@ -10,9 +10,9 @@
     <a href="{{ . }}" target="_blank"{{ with $image.Get "rel" }} rel="{{ . }}"{{ end }}>
   {{- else -}}
     {{- if gt .Width 4000 -}}
-      <a href="{{ ( .Resize "4000x webp" ).RelPermalink }}" target="_blank">
+      <a href="{{ ( .Resize "4000x webp photo" ).RelPermalink }}" target="_blank">
     {{- else -}}
-      <a href="{{ ( .Process "webp" ).RelPermalink }}" target="_blank">
+      <a href="{{ ( .Process "webp photo" ).RelPermalink }}" target="_blank">
     {{- end -}}
   {{- end -}}
     <picture {{ with $width }}style="max-width:{{ .}}px"{{ end }}>
