@@ -38,7 +38,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: resources/_gen/images
-          key: ${{ runner.os }}-${{ hashFiles('config.toml') }}-${{ hashFiles('content/**/*') }}
+          key: ${{ runner.os }}-${{ hashFiles('config.toml') }}-${{ hashFiles('content/**/*') }}-${{ hashFiles('themes/**/*') }}
           restore-keys: |
             ${{ runner.os }}-${{ hashFiles('config.toml') }}-
             ${{ runner.os }}-
