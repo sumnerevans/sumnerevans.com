@@ -53,8 +53,10 @@
     <script type="text/javascript">{{ .Content | safeJS }}</script>
   {{ end }}
 
-  {{- with .Site.Params.goatcounter -}}
-    {{ printf `<script data-goatcounter="%s" async src="//gc.zgo.at/count.js"></script>` .domain | safeHTML }}
+  {{- if .Site.Params.goatcounter -}}
+    {{ with resources.Get "js/goatcounter.js" | js.Build (dict "minify" hugo.IsProduction) }}
+      <script type="text/javascript" data-goatcounter="{{ $.Site.Params.goatcounter.domain }}">{{ .Content | safeJS }}</script>
+    {{ end }}
   {{- end -}}
 
   {{ if .Params.math }}
