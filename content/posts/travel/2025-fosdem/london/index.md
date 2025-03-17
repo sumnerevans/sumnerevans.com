@@ -11,7 +11,7 @@ tags:
 description: |
   On my way to FOSDEM, I flew into London for a few days before taking the
   Eurostar to Brussels for the conference.
-image: images/matrix.jpg
+image: images/stpauls.jpg
 build:
   publishResources: false
 draft: true
@@ -78,4 +78,17 @@ Lambeth North, found some food and then turned in for the night.
 ## The British Museum
 
 On Monday, I slept in and then I went to the British Museum, arriving around
-11:30.
+11:30. I've been to the British Museum four times I think, and every time I find
+something new that I hadn't seen before. This time, the coolest thing was the
+Enlightenment Gallery which had a bunch of artefacts from the Enlightenment
+period. There were many old books on the shelves. Due to the number of tourists,
+they have plexiglass in front of them, but I thought it was cool to think about
+how much knowledge is stored in those manuscripts!
+
+{{<figure src="images/library.jpg" title="The Enlightenment Gallery">}}
+
+## The Transport Museum
+
+After visiting the British Museum, I went to
+[Menya Ramen House](https://maps.app.goo.gl/LGZpeN4Y7drLG5zZA) for lunch and
+then walked to the [London Transport Museum](https://www.ltmuseum.co.uk/).
