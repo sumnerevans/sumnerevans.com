@@ -92,3 +92,12 @@ how much knowledge is stored in those manuscripts!
 After visiting the British Museum, I went to
 [Menya Ramen House](https://maps.app.goo.gl/LGZpeN4Y7drLG5zZA) for lunch and
 then walked to the [London Transport Museum](https://www.ltmuseum.co.uk/).
+London is famous for two iconic public transit infrastructures: the London
+Underground and the red double-decker buses. The museum had exhibits about the
+history of the buses and undergrounds and how transit has expanded throughout
+the decades. But I think the most interesting exhibit was a comparison of photos
+from the Blitz of WWII and photos from Kyiv during the ongoing war with Russia.
+
+{{<figure src="images/underground1.jpg" title="Echoes of the Blitz" caption="During the Russian air raids in Kyiv, people are using their metro system to hide just like Londoners did during the Blitz.">}}
+{{<figure src="images/underground2.jpg" title="People playing cards in the underground systems during WWII and the Ukraine war.">}}
+{{<figure src="images/underground3.jpg" title="Youth playing games in the underground during an air raid.">}}
