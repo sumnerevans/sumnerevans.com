@@ -14,7 +14,6 @@ description: |
 image: images/stpauls.jpg
 build:
   publishResources: false
-draft: true
 ---
 
 I once again am making a trip across the pond for FOSDEM. This time, instead of
@@ -101,3 +100,131 @@ from the Blitz of WWII and photos from Kyiv during the ongoing war with Russia.
 {{<figure src="images/underground1.jpg" title="Echoes of the Blitz" caption="During the Russian air raids in Kyiv, people are using their metro system to hide just like Londoners did during the Blitz.">}}
 {{<figure src="images/underground2.jpg" title="People playing cards in the underground systems during WWII and the Ukraine war.">}}
 {{<figure src="images/underground3.jpg" title="Youth playing games in the underground during an air raid.">}}
+
+## The National Gallery
+
+On Tuesday morning, I went to the National Gallery. I'm not much of an art
+museum person, but just like with the Tate Modern, I figured it would boost my
+elite street cred. My favourite kinds of paintings are landscapes.
+
+<table class="gallery">
+<tr>
+<td>
+
+![](images/ng1.jpg)
+
+</td>
+<td>
+
+![](images/ng2.jpg)
+
+</td>
+<td>
+
+![](images/ng3.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/ng4.jpg)
+
+</td>
+<td>
+
+![](images/ng5.jpg)
+
+</td>
+<td>
+
+![](images/ng6.jpg)
+
+</td>
+</tr>
+</table>
+
+I ate an overpriced, but pretty good, lunch at the museum cafe before heading
+back to my hotel.
+
+## Imperial War Museum
+
+The Imperial War Museum was close to my hotel, so after a few minutes relaxing,
+I walked through the drizzle over to the museum. I only had time to go through
+the floor dedicated to WWI. It was sobering to think about how many casualties
+were suffered by both sides. The casualty figures in the massive pitched battles
+like the Somme, Verdun, and Ypres are horrifying. As I walked around the
+exhibit, I thought about the soldiers in Ukraine who are fighting a very similar
+static trench war right now. I'm so glad that we have a president who believes
+that peace is better than war and is working to stop the fighting.
+
+## The Shard
+
+On Wednesday, I visited the Shard. The tallest building in Western Europe. There
+is an enclosed viewing area and a terrace around floor 70 with views of all of
+London. You have to take two elevators to get to the enclosed viewing area, and
+then you have to go up more stairs or an elevator to get to the terrace which is
+the highest publicly accessible floor.
+
+There were two guides of sorts walking around and answering questions, and one
+of them did a short presentation on the terrace about the history of the Shard
+and interesting facts about it. A few things that I thought were especially
+interesting were:
+
+- There was a British architect that wanted the contract to build a building
+  where the Shard now stands. He didn't get the contract. Just recently, he
+  built a skyscraper in Warsaw that is exactly 1 foot taller than the Shard just
+  to spite them.
+- The Shard is designed to look incomplete, like it's trying to reach its full
+  height. They can't go taller because of airspace requirements around Heathrow.
+- The Shard was designed to be transit-first: it's located on top of a train
+  station, its closer to London Bridge Station than London Bridge itself, and
+  there's a bus stop at the base as well.
+
+<table class="gallery">
+<tr>
+<td>
+
+![](images/shard1.jpg)
+
+</td>
+<td>
+
+![](images/shard2.jpg)
+
+</td>
+</tr>
+<tr>
+<td>
+
+![](images/shard3.jpg)
+
+</td>
+<td>
+
+![](images/shard4.jpg)
+
+</td>
+</tr>
+</table>
+
+## Eurostar
+
+After visiting the Shard, I headed up to London St. Pancras International
+Station to take the Eurostar to Brussels. I took the Eurostar From Paris to
+London
+[in 2022]({{<ref"../../2022-lisbon-and-paris/london-back-home/index.md">}}), but
+this was my first time leaving out of London.
+
+Getting on the train was very easy. Passport control in Europe is very
+streamlined for most passports. All you have to do is scan your passport and
+they do biometric verification with a picture. I wish that the US Border Control
+implemented something like this. We already have most of the technology
+available for Global Entry, so there is no reason for us to not allow a much
+more streamlined border control process for citizens and nationals from
+countries that don't require a visa. But I digress.
+
+I arrived in Brussels Midi and took transit to my hotel. Brussels is fairly well
+connected, and my hotel was a hundred metres away from a tram stop making it
+very easy for me to get to the hotel. By this time, I was very tired from
+travelling and after dinner, I headed to bed.
