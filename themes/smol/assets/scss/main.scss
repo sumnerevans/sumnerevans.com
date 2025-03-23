@@ -340,7 +340,12 @@ header {
       grid-template:
         "site-image site-title" auto
         "site-subtitle site-subtitle" auto
-        / 100px 1fr;
+        / 50px 1fr;
+
+      .site-image {
+        width: 50px;
+        height: 50px;
+      }
     }
 
     .site-image {
