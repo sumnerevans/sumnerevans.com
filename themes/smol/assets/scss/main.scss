@@ -338,11 +338,9 @@ header {
 
     @media screen and (max-width: 600px) {
       grid-template:
-        "site-image" auto
-        "site-title" auto
-        "site-subtitle" auto
-        / 1fr;
-      text-align: center;
+        "site-image site-title" auto
+        "site-subtitle site-subtitle" auto
+        / 100px 1fr;
     }
 
     .site-image {
