@@ -8,22 +8,14 @@
   --fg-color: #333;
 }
 
-html {
-  overflow-y: scroll;
-}
-
 body {
   max-width: 800px;
-  margin: 40px auto;
-  padding: 0 8px;
+  margin: 2rem auto;
+  padding: 0 0.5rem;
   font-size: 15px;
   line-height: 1.5;
   font-family: Iosevka, monospace;
   color: var(--fg-color);
-
-  @media screen and (max-width: 600px) {
-    margin: 20px auto;
-  }
 }
 
 mark {
@@ -39,11 +31,10 @@ span.link {
   color: #0b58d3;
   text-decoration: dotted underline;
 
-  &:not(.disabled) {
-
-    &:hover,
-    &:active,
-    &:focus {
+  &:hover,
+  &:active,
+  &:focus {
+    &:not(.disabled) {
       color: darken(#0c61e8, 20%);
       text-decoration: underline;
       cursor: pointer;
@@ -57,8 +48,8 @@ span.link {
 
   i.fa-external-link {
     text-decoration: none;
-    margin-left: 0.3em;
-    font-size: 0.75em;
+    margin-left: 0.25rem;
+    font-size: 0.75rem;
   }
 }
 
