@@ -1,237 +1,58 @@
-@import 'variables';
+@import 'dark-mode-legacy';
 
 @mixin dark-mode-styles {
-  color: $foreground-dark-mode;
-  background: $background-dark-mode;
+  --fg-color: #dadada;
+  --bg-color: #282828;
+  --subtitle-color: #999;
 
-  header {
-    .name-and-subtitle {
-      .site-title a {
-        color: $foreground-dark-mode;
-      }
+  --link-color: #84b4ff;
+  --link-active-color: #a5c8ff;
+  --link-disabled-color: #909090;
 
-      .site-subtitle {
-        color: #999;
-      }
-    }
+  --button-bg-color: #dadada;
+  --button-fg-color: #282828;
+  --button-active-bg-color: #fff;
+  --button-active-fg-color: #000;
 
-    #search-container {
-      .search input {
-        background-color: #1a1a1a;
-        border: 1px solid #000;
-        color: #eee;
-      }
+  --figure-bg-color: #ffffff18;
+  --preformatted-bg-color: #ffffff18;
 
-      #search-results {
-        background-color: #191919;
+  --search-container-bg-color: #1a1a1a;
+  --search-container-fg-color: #eee;
+  --search-container-sep-color: #000;
+  --search-container-active-indicator-color: #84b4ff;
 
-        hr {
-          border-color: black;
-        }
+  --expander-summary-color: #202020;
 
-        .search-result:hover, .search-result:active {
-          border-color: #84b4ff;
-        }
-      }
-    }
+  --table-border-color: #fff;
+  --table-nth-child-bg-color: #444;
+
+  --isso-thread-heading-color: #eee;
+
+  --image-opacity: 0.7;
+}
+
+@media (prefers-color-scheme: no-preference),
+(prefers-color-scheme: dark) {
+  body:not(.light-theme) {
+    @include dark-mode-styles;
+    @include dark-mode-styles-legacy;
+    @import 'chroma/onedark';
   }
 
-  header, nav, footer {
-    border-color: $foreground-dark-mode;
+  body.light-theme {
+    @import 'chroma/pygments';
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body:not(.dark-theme) {
+    @import 'chroma/pygments';
   }
 
-  a,
-  span.link {
-    color: #84b4ff;
-
-    &:hover, &:active, &:focus {
-      color: lighten(#84b4ff, 10%);
-    }
-
-    &.disabled {
-      text-decoration: none;
-      color: #909090;
-    }
+  body.dark-theme {
+    @include dark-mode-styles;
+    @include dark-mode-styles-legacy;
+    @import 'chroma/onedark';
   }
-
-  a.btn {
-    background-color: $foreground-dark-mode;
-    color: $background-dark-mode;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-
-    &:hover, &:active, &:focus {
-      background-color: #fff;
-      color: #000;
-    }
-  }
-
-  .admonition  a {
-    color: lighten(#84b4ff, 10%);
-
-    &:hover, &:active, &:focus {
-      color: lighten(#84b4ff, 20%);
-    }
-  }
-
-  img {
-    opacity: 0.7;
-
-    &:hover, &:active, &:focus {
-      opacity: 1;
-    }
-  }
-
-  main *:not(pre) > code,
-  kbd,
-  tt {
-    background-color: #ffffff18;
-  }
-
-  figure {
-    background-color: #ffffff18;
-  }
-
-  .webring, .comments {
-    .header .attribution {
-      color: #888;
-    }
-  }
-
-  section#isso-thread {
-    .isso-auth-section p.isso-input-wrapper input,
-    .isso-notification-section input {
-      background: #111;
-      color: #eee;
-    }
-
-    >h4.isso-thread-heading {
-      color: #eee;
-    }
-
-    .isso-postbox > .isso-form-wrapper {
-      .isso-textarea {
-        background: #111;
-        color: #eee;
-      }
-
-      .isso-preview {
-        background: repeating-linear-gradient(
-          -45deg,
-          #0a0a0a, #0a0a0a 10px,
-          #111 10px, #111 20px
-        );
-      }
-    }
-
-    .isso-comment > div.isso-text-wrapper {
-      > .isso-comment-header {
-        .isso-author {
-          color: #eee;
-        }
-
-        .isso-spacer, .isso-note {
-          color: #aaa;
-        }
-      }
-    }
-
-    .isso-post-action input {
-      background-color: #111;
-      color: #eee;
-    }
-  }
-
-  // Dark mode admonitions
-  .admonition {
-    // Default to note look.
-    border: 1px solid $admonition-note-color-dark-theme;
-    color: $admonition-note-color-dark-theme;
-    background-color: $admonition-note-bg-color-dark-theme;
-
-    // Specifics for each type of admonition
-    &.attention {
-      border: 1px solid $admonition-attention-color-dark-theme;
-      color: $admonition-attention-color-dark-theme;
-      background-color: $admonition-attention-bg-color-dark-theme;
-    }
-
-    &.caution {
-      border: 1px solid $admonition-caution-color-dark-theme;
-      color: $admonition-caution-color-dark-theme;
-      background-color: $admonition-caution-bg-color-dark-theme;
-    }
-
-    &.danger {
-      border: 1px solid $admonition-danger-color-dark-theme;
-      color: $admonition-danger-color-dark-theme;
-      background-color: $admonition-danger-bg-color-dark-theme;
-    }
-
-    &.error {
-      border: 1px solid $admonition-error-color-dark-theme;
-      color: $admonition-error-color-dark-theme;
-      background-color: $admonition-error-bg-color-dark-theme;
-    }
-
-    &.hint {
-      border: 1px solid $admonition-hint-color-dark-theme;
-      color: $admonition-hint-color-dark-theme;
-      background-color: $admonition-hint-bg-color-dark-theme;
-    }
-
-    &.important {
-      border: 1px solid $admonition-important-color-dark-theme;
-      color: $admonition-important-color-dark-theme;
-      background-color: $admonition-important-bg-color-dark-theme;
-    }
-
-    &.tip {
-      border: 1px solid $admonition-tip-color-dark-theme;
-      color: $admonition-tip-color-dark-theme;
-      background-color: $admonition-tip-bg-color-dark-theme;
-    }
-
-    &.warning {
-      border: 1px solid $admonition-warning-color-dark-theme;
-      color: $admonition-warning-color-dark-theme;
-      background-color: $admonition-warning-bg-color-dark-theme;
-    }
-
-    &.definition {
-      border: 1px solid $admonition-definition-color-dark-theme;
-      color: $admonition-definition-color-dark-theme;
-      background-color: $admonition-definition-bg-color-dark-theme;
-    }
-  }
-
-  table:not(.gallery) {
-    thead {
-      tr {
-        border-bottom: 1px solid white;
-      }
-    }
-
-    tbody {
-      tr {
-        &:nth-child(odd) {
-          background-color: #444;
-        }
-      }
-    }
-
-    th, td {
-      &.border-right {
-        border-right: 1px solid white;
-      }
-    }
-  }
-
-  // TODO START move to custom
-  details.youtube-expander > summary,
-  details.portfolio-item > summary {
-    background-color: #202020;
-  }
-  // TODO END move to custom
 }
