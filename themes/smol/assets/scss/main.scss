@@ -357,7 +357,7 @@ header {
       "site-image site-subtitle" auto
       / 150px auto;
     gap: 0 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 
     .site-image {
       grid-area: site-image;
@@ -380,7 +380,9 @@ header {
         text-decoration: none;
         color: var(--fg-color);
 
-        &:active, &:hover, &:focus {
+        &:active,
+        &:hover,
+        &:focus {
           color: var(--fg-color);
         }
       }

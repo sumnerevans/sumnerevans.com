@@ -38,9 +38,11 @@ const detectThemeAndSwitchStyle = () => {
 
 detectThemeAndSwitchStyle();
 
-const switchTheme = (themeOverride: string) => {
-  localStorage.setItem("themeOverride", themeOverride);
-  detectThemeAndSwitchStyle();
+window.theme = {
+  switch: (themeOverride: string) => {
+    localStorage.setItem("themeOverride", themeOverride);
+    detectThemeAndSwitchStyle();
+  },
 };
 
 // If theme auto-detection is enabled, then add a listenr on the matchMedia.
@@ -54,7 +56,7 @@ if (themeSwitcher) {
     const link = document.createElement("span");
     link.classList.add("link");
     link.appendChild(document.createTextNode(theme));
-    link.addEventListener("click", () => switchTheme(theme));
+    link.addEventListener("click", () => window.theme.switch(theme));
     return link;
   };
   themeSwitcher.appendChild(document.createTextNode("Switch to the "));
