@@ -314,12 +314,8 @@ h4.isso-thread-heading {
 }
 
 .isso-preview {
-  background-color: #f8f8f8;
-  background: repeating-linear-gradient(-45deg,
-      #f8f8f8,
-      #f8f8f8 10px,
-      #fff 10px,
-      #fff 20px);
+  background-color: var(--isso-preview-background-color);
+  background: var(--isso-preview-background);
 }
 
 /* ========================================================================== */
