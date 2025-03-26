@@ -1,7 +1,7 @@
 @import 'iosevka';
+@import 'fork-awesome/fork-awesome';
 @import 'admonitions';
 @import 'dark-mode';
-@import 'fork-awesome/fork-awesome';
 @import 'isso';
 
 body {
@@ -38,6 +38,27 @@ body {
   --isso-thread-heading-color: #555;
 
   --image-opacity: 0.9;
+
+  --admonition-default-color: #004085;
+  --admonition-default-bg-color: #cce5ff;
+  --admonition-attention-color: #856404;
+  --admonition-attention-bg-color: #fff3cd;
+  --admonition-caution-color: var(--admonition-attention-color);
+  --admonition-caution-bg-color: var(--admonition-attention-bg-color);
+  --admonition-danger-color: #721c24;
+  --admonition-danger-bg-color: #f8d7da;
+  --admonition-error-color: var(--admonition-danger-color);
+  --admonition-error-bg-color: var(--admonition-danger-bg-color);
+  --admonition-hint-color: var(--admonition-default-color);
+  --admonition-hint-bg-color: var(--admonition-default-bg-color);
+  --admonition-important-color: #155724;
+  --admonition-important-bg-color: #d4edda;
+  --admonition-tip-color: var(--admonition-default-color);
+  --admonition-tip-bg-color: var(--admonition-default-bg-color);
+  --admonition-warning-color: var(--admonition-attention-color);
+  --admonition-warning-bg-color: var(--admonition-attention-bg-color);
+  --admonition-definition-color: #333;
+  --admonition-definition-bg-color: #f0f0f0;
 
   color: var(--fg-color);
   background-color: var(--bg-color);
@@ -97,16 +118,6 @@ a.btn {
   &:focus {
     color: var(--button-active-fg-color);
     background-color: var(--button-active-bg-color);
-  }
-}
-
-.admonition a {
-  color: darken(#0c61e8, 25%);
-
-  &:hover,
-  &:active,
-  &:focus {
-    color: darken(#0c61e8, 35%);
   }
 }
 

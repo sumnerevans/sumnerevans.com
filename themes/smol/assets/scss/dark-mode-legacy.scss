@@ -1,43 +1,33 @@
-@import 'variables';
-
 @mixin dark-mode-styles-legacy {
-  .admonition  a {
-    color: lighten(#84b4ff, 10%);
-
-    &:hover, &:active, &:focus {
-      color: lighten(#84b4ff, 20%);
-    }
-  }
-
   section#isso-thread {
+
     .isso-auth-section p.isso-input-wrapper input,
     .isso-notification-section input {
       background: #111;
       color: #eee;
     }
 
-    .isso-postbox > .isso-form-wrapper {
+    .isso-postbox>.isso-form-wrapper {
       .isso-textarea {
         background: #111;
         color: #eee;
       }
 
       .isso-preview {
-        background: repeating-linear-gradient(
-          -45deg,
-          #0a0a0a, #0a0a0a 10px,
-          #111 10px, #111 20px
-        );
+        background: repeating-linear-gradient(-45deg,
+            #0a0a0a, #0a0a0a 10px,
+            #111 10px, #111 20px);
       }
     }
 
-    .isso-comment > div.isso-text-wrapper {
-      > .isso-comment-header {
+    .isso-comment>div.isso-text-wrapper {
+      >.isso-comment-header {
         .isso-author {
           color: #eee;
         }
 
-        .isso-spacer, .isso-note {
+        .isso-spacer,
+        .isso-note {
           color: #aaa;
         }
       }
@@ -46,69 +36,6 @@
     .isso-post-action input {
       background-color: #111;
       color: #eee;
-    }
-  }
-
-  // Dark mode admonitions
-  .admonition {
-    // Default to note look.
-    border: 1px solid $admonition-note-color-dark-theme;
-    color: $admonition-note-color-dark-theme;
-    background-color: $admonition-note-bg-color-dark-theme;
-
-    // Specifics for each type of admonition
-    &.attention {
-      border: 1px solid $admonition-attention-color-dark-theme;
-      color: $admonition-attention-color-dark-theme;
-      background-color: $admonition-attention-bg-color-dark-theme;
-    }
-
-    &.caution {
-      border: 1px solid $admonition-caution-color-dark-theme;
-      color: $admonition-caution-color-dark-theme;
-      background-color: $admonition-caution-bg-color-dark-theme;
-    }
-
-    &.danger {
-      border: 1px solid $admonition-danger-color-dark-theme;
-      color: $admonition-danger-color-dark-theme;
-      background-color: $admonition-danger-bg-color-dark-theme;
-    }
-
-    &.error {
-      border: 1px solid $admonition-error-color-dark-theme;
-      color: $admonition-error-color-dark-theme;
-      background-color: $admonition-error-bg-color-dark-theme;
-    }
-
-    &.hint {
-      border: 1px solid $admonition-hint-color-dark-theme;
-      color: $admonition-hint-color-dark-theme;
-      background-color: $admonition-hint-bg-color-dark-theme;
-    }
-
-    &.important {
-      border: 1px solid $admonition-important-color-dark-theme;
-      color: $admonition-important-color-dark-theme;
-      background-color: $admonition-important-bg-color-dark-theme;
-    }
-
-    &.tip {
-      border: 1px solid $admonition-tip-color-dark-theme;
-      color: $admonition-tip-color-dark-theme;
-      background-color: $admonition-tip-bg-color-dark-theme;
-    }
-
-    &.warning {
-      border: 1px solid $admonition-warning-color-dark-theme;
-      color: $admonition-warning-color-dark-theme;
-      background-color: $admonition-warning-bg-color-dark-theme;
-    }
-
-    &.definition {
-      border: 1px solid $admonition-definition-color-dark-theme;
-      color: $admonition-definition-color-dark-theme;
-      background-color: $admonition-definition-bg-color-dark-theme;
     }
   }
 }

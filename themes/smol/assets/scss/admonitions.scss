@@ -1,6 +1,14 @@
-@import 'variables';
-
 .admonition {
+  a {
+    filter: brightness(0.6);
+
+    &:hover,
+    &:active,
+    &:focus {
+      filter: brightness(0.2);
+    }
+  }
+
   margin: 1em 0;
   border-radius: 0.5em;
 
@@ -17,102 +25,142 @@
   padding: 0 1em;
 
   // By default, make it look like a note.
-  border: 1px solid $admonition-note-color;
-  color: $admonition-note-color;
-  background-color: $admonition-note-bg-color;
+  border: 1px solid var(--admonition-default-color);
+  color: var(--admonition-default-color);
+  background-color: var(--admonition-default-bg-color);
 
   .admonition-title::before {
-    content: $admonition-note-icon;
+    content: fa-content($fa-var-info-circle);
+  }
+
+  a {
+    color: var(--admonition-default-color);
   }
 
   // Specifics for each type of admonition
   &.attention {
-    border: 1px solid $admonition-attention-color;
-    color: $admonition-attention-color;
-    background-color: $admonition-attention-bg-color;
+    border: 1px solid var(--admonition-attention-color);
+    color: var(--admonition-attention-color);
+    background-color: var(--admonition-attention-bg-color);
 
     .admonition-title::before {
-      content: $admonition-attention-icon;
+      content: fa-content($fa-var-exclamation);
+    }
+
+    a {
+      color: var(--admonition-attention-color);
     }
   }
 
   &.caution {
-    border: 1px solid $admonition-caution-color;
-    color: $admonition-caution-color;
-    background-color: $admonition-caution-bg-color;
+    border: 1px solid var(--admonition-caution-color);
+    color: var(--admonition-caution-color);
+    background-color: var(--admonition-caution-bg-color);
 
     .admonition-title::before {
-      content: $admonition-caution-icon;
+      content: fa-content($fa-var-exclamation-circle);
+    }
+
+    a {
+      color: var(--admonition-caution-color);
     }
   }
 
   &.danger {
-    border: 1px solid $admonition-danger-color;
-    color: $admonition-danger-color;
-    background-color: $admonition-danger-bg-color;
+    border: 1px solid var(--admonition-danger-color);
+    color: var(--admonition-danger-color);
+    background-color: var(--admonition-danger-bg-color);
 
     .admonition-title::before {
-      content: $admonition-danger-icon;
+      content: fa-content($fa-var-hand-stop-o);
+    }
+
+    a {
+      color: var(--admonition-danger-color);
     }
   }
 
   &.error {
-    border: 1px solid $admonition-error-color;
-    color: $admonition-error-color;
-    background-color: $admonition-error-bg-color;
+    border: 1px solid var(--admonition-error-color);
+    color: var(--admonition-error-color);
+    background-color: var(--admonition-error-bg-color);
 
     .admonition-title::before {
-      content: $admonition-error-icon;
+      content: fa-content($fa-var-exclamation-triangle);
+    }
+
+    a {
+      color: var(--admonition-error-color);
     }
   }
 
   &.hint {
-    border: 1px solid $admonition-hint-color;
-    color: $admonition-hint-color;
-    background-color: $admonition-hint-bg-color;
+    border: 1px solid var(--admonition-hint-color);
+    color: var(--admonition-hint-color);
+    background-color: var(--admonition-hint-bg-color);
 
     .admonition-title::before {
-      content: $admonition-hint-icon;
+      content: fa-content($fa-var-lightbulb-o);
+    }
+
+    a {
+      color: var(--admonition-hint-color);
     }
   }
 
   &.important {
-    border: 1px solid $admonition-important-color;
-    color: $admonition-important-color;
-    background-color: $admonition-important-bg-color;
+    border: 1px solid var(--admonition-important-color);
+    color: var(--admonition-important-color);
+    background-color: var(--admonition-important-bg-color);
 
     .admonition-title::before {
-      content: $admonition-important-icon;
+      content: fa-content($fa-var-exclamation-circle);
+    }
+
+    a {
+      color: var(--admonition-important-color);
     }
   }
 
   &.tip {
-    border: 1px solid $admonition-tip-color;
-    color: $admonition-tip-color;
-    background-color: $admonition-tip-bg-color;
+    border: 1px solid var(--admonition-tip-color);
+    color: var(--admonition-tip-color);
+    background-color: var(--admonition-tip-bg-color);
 
     .admonition-title::before {
-      content: $admonition-tip-icon;
+      content: fa-content($fa-var-lightbulb-o);
+    }
+
+    a {
+      color: var(--admonition-tip-color);
     }
   }
 
   &.warning {
-    border: 1px solid $admonition-warning-color;
-    color: $admonition-warning-color;
-    background-color: $admonition-warning-bg-color;
+    border: 1px solid var(--admonition-warning-color);
+    color: var(--admonition-warning-color);
+    background-color: var(--admonition-warning-bg-color);
 
     .admonition-title::before {
-      content: $admonition-warning-icon;
+      content: fa-content($fa-var-exclamation-triangle);
+    }
+
+    a {
+      color: var(--admonition-warning-color);
     }
   }
 
   &.definition {
-    border: 1px solid $admonition-definition-color;
-    color: $admonition-definition-color;
-    background-color: $admonition-definition-bg-color;
+    border: 1px solid var(--admonition-definition-color);
+    color: var(--admonition-definition-color);
+    background-color: var(--admonition-definition-bg-color);
 
     .admonition-title::before {
-      content: $admonition-definition-icon;
+      content: fa-content($fa-var-book);
+    }
+
+    a {
+      color: var(--admonition-definition-color);
     }
   }
 }
