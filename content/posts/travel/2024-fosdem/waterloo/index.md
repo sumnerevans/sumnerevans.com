@@ -1,5 +1,5 @@
 ---
-title: Waterloo
+title: Waterloo - The Wellington Museum
 date: 2024-02-06T06:25:00-06:00
 categories:
   - Travel
