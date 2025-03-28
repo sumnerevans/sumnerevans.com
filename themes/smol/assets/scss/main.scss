@@ -443,65 +443,66 @@ header {
     a {
       text-decoration: none;
     }
-  }
 
-  #search-container {
-    margin: 20px 0;
+    #search-container {
+      margin: 20px 0;
+      text-align: left;
 
-    input[type=search] {
-      padding: 8px;
-      border: 1px solid var(--search-container-border-color);
-      background-color: var(--search-container-bg-color);
-      color: var(--search-container-fg-color);
-      width: 100%;
-    }
-
-    &.hidden {
-      display: none;
-    }
-
-    #search-results {
-      .no-results {
-        text-align: center;
+      input[type=search] {
+        padding: 8px;
+        border: 1px solid var(--search-container-border-color);
+        background-color: var(--search-container-bg-color);
+        color: var(--search-container-fg-color);
+        width: 100%;
       }
 
-      background-color: var(--search-container-bg-color);
-      padding: .5rem 0;
-
-      hr {
-        border: 1px solid var(--search-container-sep-color);
+      &.hidden {
+        display: none;
       }
 
-      .search-result {
-        padding: 0 .5rem;
-        margin: .5rem 0;
-
-        h4 {
-          margin: 0;
-          font-size: 1.1rem;
+      #search-results {
+        .no-results {
+          text-align: center;
         }
 
-        .categories {
-          margin: 0;
+        background-color: var(--search-container-bg-color);
+        padding: .5rem 0;
+
+        hr {
+          border: 1px solid var(--search-container-sep-color);
         }
 
-        .tags {
-          margin-top: 0;
-        }
+        .search-result {
+          padding: 0 .5rem;
+          margin: .5rem 0;
 
-        .content-summary {
-          margin-top: 0.5rem;
-          display: -webkit-box;
-          overflow: hidden;
-          -webkit-line-clamp: 3;
-          -webkit-box-orient: vertical;
-          line-clamp: 3;
-        }
+          h4 {
+            margin: 0;
+            font-size: 1.1rem;
+          }
 
-        &:hover,
-        &:active {
-          padding-left: .25rem;
-          border-left: .25rem solid var(--search-container-active-indicator-color);
+          .categories {
+            margin: 0;
+          }
+
+          .tags {
+            margin-top: 0;
+          }
+
+          .content-summary {
+            margin-top: 0.5rem;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            line-clamp: 3;
+          }
+
+          &:hover,
+          &:active {
+            padding-left: .25rem;
+            border-left: .25rem solid var(--search-container-active-indicator-color);
+          }
         }
       }
     }
