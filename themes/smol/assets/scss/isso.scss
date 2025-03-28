@@ -93,7 +93,7 @@ h4.isso-thread-heading {
 .isso-spacer,
 .isso-note,
 .isso-parent {
-  color: gray;
+  color: var(--isso-comment-meta-color);
   font-weight: normal;
   text-shadow: none;
 }
@@ -104,21 +104,12 @@ h4.isso-thread-heading {
 
 .isso-author {
   font-weight: bold;
-  color: #555;
+  color: var(--isso-author-color);
 }
 
 .isso-page-author-suffix {
   font-weight: bold;
   color: #2c2c2c;
-}
-
-.isso-textarea,
-.isso-preview {
-  margin-top: 0.2em;
-  width: 100%;
-  border: 1px solid #f0f0f0;
-  border-radius: 2px;
-  box-shadow: 0 0 2px #888;
 }
 
 .isso-text p {
@@ -199,12 +190,13 @@ h4.isso-thread-heading {
 
 .isso-textarea,
 .isso-preview {
-  margin: 0 0 .3em;
+  margin: 0.2em 0 0.3em;
   padding: .4em .8em;
   border-radius: 3px;
-  background-color: #fff;
+  background-color: var(--isso-input-bg-color);
   border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .isso-textarea {
@@ -236,6 +228,11 @@ h4.isso-thread-heading {
   }
 }
 
+.isso-textarea {
+  background-color: var(--isso-input-bg-color);
+  color: var(--isso-input-color);
+}
+
 .isso-textarea:focus,
 .isso-auth-section input:focus {
   border-color: rgba(0, 0, 0, 0.8);
@@ -252,12 +249,12 @@ h4.isso-thread-heading {
   padding: .3em 10px;
   max-width: 100%;
   border-radius: 3px;
-  background-color: #fff;
+  background-color: var(--isso-input-bg-color);
   line-height: 1.4em;
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   font-family: Iosevka, monospace;
-  color: #333;
+  color: var(--isso-input-color);
   font-size: 15px;
 }
 
@@ -275,11 +272,11 @@ h4.isso-thread-heading {
 
 .isso-post-action>input {
   font-family: Iosevka, monospace;
-  color: #333;
+  color: var(--isso-post-action-color);
   padding: .5em .75rem;
   border: none;
   border-radius: 3px;
-  background-color: #ddd;
+  background-color: var(--isso-post-action-bg-color);
   cursor: pointer;
   outline: 0;
   line-height: 1.4em;
@@ -288,11 +285,11 @@ h4.isso-thread-heading {
 }
 
 .isso-post-action>input:hover {
-  background-color: #ccc;
+  background-color: var(--isso-post-action-bg-hover-color);
 }
 
 .isso-post-action>input:active {
-  background-color: #bbb;
+  background-color: var(--isso-post-action-bg-active-color);
 }
 
 /* ========================================================================== */
@@ -331,12 +328,8 @@ h4.isso-thread-heading {
 
 @keyframes isso-target-fade {
   0% {
-    background-color: #eee5a1;
+    background-color: var(--isso-target-fade-color);
   }
-
-  /* This color should be changed when used on a dark background,
-     * maybe #3f3c1c for example
-     */
 }
 
 /* ========================================================================== */

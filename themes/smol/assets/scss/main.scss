@@ -35,10 +35,6 @@ body {
   --table-border-color: #000;
   --table-nth-child-bg-color: #ccc;
 
-  --isso-thread-heading-color: #555;
-  --isso-preview-background-color: #f8f8f8;
-  --isso-preview-background: repeating-linear-gradient(-45deg, #f8f8f8, #f8f8f8 10px, #fff 10px, #fff 20px);
-
   --image-opacity: 0.9;
 
   --admonition-default-color: #004085;
@@ -61,6 +57,19 @@ body {
   --admonition-warning-bg-color: var(--admonition-attention-bg-color);
   --admonition-definition-color: #333;
   --admonition-definition-bg-color: #f0f0f0;
+
+  --isso-thread-heading-color: #555;
+  --isso-preview-background-color: #f8f8f8;
+  --isso-preview-background: repeating-linear-gradient(-45deg, #f8f8f8, #f8f8f8 10px, #fff 10px, #fff 20px);
+  --isso-comment-meta-color: gray;
+  --isso-author-color: #555;
+  --isso-input-bg-color: #fff;
+  --isso-input-color: #333;
+  --isso-post-action-color: #333;
+  --isso-post-action-bg-color: #ddd;
+  --isso-post-action-bg-hover-color: #ccc;
+  --isso-post-action-bg-active-color: #bbb;
+  --isso-target-fade-color: #eee5a1;
 
   color: var(--fg-color);
   background-color: var(--bg-color);

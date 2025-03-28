@@ -1,5 +1,3 @@
-@import 'dark-mode-legacy';
-
 @mixin dark-mode-styles {
   .admonition a {
     filter: brightness(1.15);
@@ -37,9 +35,6 @@
   --table-border-color: #fff;
   --table-nth-child-bg-color: #444;
 
-  --isso-thread-heading-color: #eee;
-  --isso-preview-background: repeating-linear-gradient(-45deg, #0a0a0a, #0a0a0a 10px, #111 10px, #111 20px);
-
   --image-opacity: 0.7;
 
   --admonition-default-color: #7abaff;
@@ -52,13 +47,24 @@
   --admonition-important-bg-color: #122b18;
   --admonition-definition-color: #dadada;
   --admonition-definition-bg-color: #202020;
+
+  --isso-thread-heading-color: #eee;
+  --isso-preview-background: repeating-linear-gradient(-45deg, #0a0a0a, #0a0a0a 10px, #111 10px, #111 20px);
+  --isso-comment-meta-color: #aaa;
+  --isso-author-color: #eee;
+  --isso-input-bg-color: #111;
+  --isso-input-color: #eee;
+  --isso-post-action-color: #eee;
+  --isso-post-action-bg-color: #111;
+  --isso-post-action-bg-hover-color: #080808;
+  --isso-post-action-bg-active-color: #000;
+  --isso-target-fade-color: #3f3c1c;
 }
 
 @media (prefers-color-scheme: no-preference),
 (prefers-color-scheme: dark) {
   body:not(.light-theme) {
     @include dark-mode-styles;
-    @include dark-mode-styles-legacy;
     @import 'chroma/onedark';
   }
 
@@ -74,7 +80,6 @@
 
   body.dark-theme {
     @include dark-mode-styles;
-    @include dark-mode-styles-legacy;
     @import 'chroma/onedark';
   }
 }
