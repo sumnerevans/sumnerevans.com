@@ -40,3 +40,8 @@ During the 2012 election between Barack Obama and Mitt Romney, Biden was still
 the vice president, so only Mitt Romney had to choose a running mate. He chose
 Paul Ryan, another inexperienced pick. I remember watching in horror as Biden
 destroyed Ryan during the vice presidential debate.
+
+Then, Trump came on the scene in 2016. He demolished his Republican competition
+with a boisterous debate style, and won the nomination in one of the most
+unlikely political stories of the century. However, the Republican base was
+heavily fractured.

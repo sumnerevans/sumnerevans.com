@@ -22,8 +22,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          submodules: "recursive"
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -45,8 +43,9 @@ jobs:
 
       - name: Openring
         run: |
-          go run git.sr.ht/~sircmpwn/openring@latest -S feed_urls.txt \
-            -n 5 -l 100 \
+          go run git.sr.ht/~sircmpwn/openring@latest \
+              -S feed_urls.txt \
+              -n 5 -l 100 \
             < other-feeds.html.tmpl \
             > themes/smol/layouts/partials/webring.html
 
@@ -54,7 +53,9 @@ jobs:
         run: hugo --logLevel debug --gc --minify
 
       - name: Search Index
-        run: node generate_index.js <public/index.json >public/search-index.json
+        run: node generate_index.js \
+            < public/index.json \
+            > public/search-index.json
 
       - name: Teaching raw HTML
         run: |
@@ -66,7 +67,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
           path: public
 
       - name: Deploy to GitHub Pages
