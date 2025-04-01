@@ -3,19 +3,30 @@
     {{ with .Site.Params.logo }}
       <a href="{{ $.Site.Home.Permalink }}" class="site-image">
         {{ $siteImage := resources.Get . }}
-        <img
+        <picture>
+          <source type="image/webp" media="(max-width: 600px)"
+            srcset="
+              {{ with $siteImage.Resize "80x webp photo" }}{{ .Permalink }}{{ end }},
+              {{ with $siteImage.Resize "120x webp photo" }}{{ .Permalink }}{{ end }} 1.5x,
+              {{ with $siteImage.Resize "160x webp photo" }}{{ .Permalink }}{{ end }} 2x
+            "
+          >
+          <source type="image/webp"
+            srcset="
+              {{ with $siteImage.Resize "150x webp photo" }}{{ .Permalink }}{{ end }},
+              {{ with $siteImage.Resize "225x webp photo" }}{{ .Permalink }}{{ end }} 1.5x,
+              {{ with $siteImage.Resize "300x webp photo" }}{{ .Permalink }}{{ end }} 2x
+            "
+          >
           {{ with $siteImage.Resize "300x webp photo" }}
-            src="{{ .Permalink }}"
+            <img
+              src="{{ .Permalink }}"
+              width="150"
+              height="150"
+              alt="{{ $.Site.Title }}"
+            >
           {{ end }}
-          width="150"
-          height="150"
-          alt="{{ $.Site.Title }}"
-          srcset="
-            {{ with $siteImage.Resize "150x webp photo" }}{{ .Permalink }}{{ end }},
-            {{ with $siteImage.Resize "225x webp photo" }}{{ .Permalink }}{{ end }} 1.5x,
-            {{ with $siteImage.Resize "300x webp photo" }}{{ .Permalink }}{{ end }} 2x
-          "
-        >
+        </picture>
       </a>
     {{ end }}
     <div class="site-title">
