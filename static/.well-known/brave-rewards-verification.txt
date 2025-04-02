@@ -1,4 +1,0 @@
-This is a Brave Creators publisher verification file.
-
-Domain: sumnerevans.com
-Token: b52c85d7a08932a696bb9658cec038631fefa3dbbd7a92da828e4bcb6b8c74ff
