@@ -6,6 +6,15 @@ Tags: [Cruise, Louisiana, New Orleans, WWII Museum]
 image: images/wwii-museum.jpg
 build:
   publishResources: false
+summary: |
+  Today we spent the entire day at the National World War II Museum.
+
+  There were three main exhibits: an exhibit about the European Theatre of the
+  war and an exhibition about the Pacific Theatre of the war and an exhibit with
+  some WWII planes. Overall, it was a good comprehensive overview of the war. My
+  writing skills can do it no justice so I won’t try. I also didn’t take many
+  pictures, so there won’t be much to this post besides a recommendation to go
+  to this museum.
 ---
 
 Today we spent the entire day at the National World War II Museum.

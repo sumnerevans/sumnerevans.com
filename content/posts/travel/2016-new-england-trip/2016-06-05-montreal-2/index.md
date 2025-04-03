@@ -6,6 +6,22 @@ Tags: [Canada, Montreal, Quebec, Travel, Underground City]
 image: images/tim-hortons.jpg
 build:
   publishResources: false
+summary: |
+  Today we rode the entire hop on hop off circuit and walked around the Montreal
+  underground city.
+
+  ### Tim Hortons
+
+  For breakfast we decided to go to Tim Hortons. It’s the thing to do in Canada. I
+  got a coffee. Because that’s what you do at Tim’s.
+
+  ### Hop on Hop Off Bus
+
+  It was raining very hard as the weather report predicted so we didn’t want to do
+  anything outside. (We were extremely glad that we’d done all of the outside
+  stuff yesterday.) The hop on hop off bus was a double decker bus with an open
+  top, but the bottom was covered. We had to walk to the bus stop though, and we
+  got pretty wet doing so.
 ---
 
 Today we rode the entire hop on hop off circuit and walked around the Montreal

@@ -4,7 +4,12 @@ date: 2019-12-07T13:00:00-06:00
 categories: [Projects]
 tags: [offline, msmtp, email, mutt]
 image: images/offlinemsmtp-no-pad.png
+hide_image_in_index: true
 ---
+
+<center>
+{{<image src="images/offlinemsmtp-no-pad.png" link="https://github.com/sumnerevans/offlinemsmtp" width="50%">}}
+</center>
 
 I use a program called [`mutt`](http://www.mutt.org/) for managing my email. A
 lot of the time, I want to download all of my messages and use `mutt` offline
@@ -33,11 +38,15 @@ handle this:
 Once you have configured both of these components, `offlinemsmtp` is a drop-in
 replacement for `msmtp` in `mutt`. So, if your `sendmail` configuration was:
 
-    set sendmail = "msmtp -a personal"
+```vim
+set sendmail = "msmtp -a personal"
+```
 
 with `offlinemsmtp` it would become:
 
-    set sendmail = "offlinemsmtp -a personal"
+```vim
+set sendmail = "offlinemsmtp -a personal"
+```
 
 You can find more information about `offlinemsmtp` and its configuration options
 at the [project's GitHub page](https://github.com/sumnerevans/offlinemsmtp).

@@ -4,6 +4,17 @@ Date: 2018-01-07T15:42:00-0600
 Categories: [Panama Canal Cruise]
 Tags: [Ft. Lauderdale, Florida, Denver, Colorado]
 image: images/alex-eric.jpg
+summary: |
+  Today was the end of our cruise :(
+
+  I woke up rather early to go say goodbye to Alex and Eric.
+
+  Then we went to eat breakfast. Then we finished packing our bags and then
+  played some ping pong while we waited to disembark. Eventually we just decided
+  to play stupid and just get off because we started to be concerned with
+  getting to the airport on time.  It worked, and it was a good thing because
+  once we got off the ship we had to wait in a massive queue at immigration.
+  Still, we made it to the airport with plenty of time.
 build:
   publishResources: false
 ---

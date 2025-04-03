@@ -133,7 +133,7 @@ line up conceptually with adding and removing diffs from the stage.
 If you ever want to know what is staged to be included in your next commit, you
 can run `git status` to show the list of files staged for commit:
 
-```
+```text
 > git status
 On branch master
 Your branch is ahead of 'origin/master' by 1 commit.
@@ -257,7 +257,7 @@ point to the new branch.**
 If you want to create a branch and also change the `HEAD` pointer to the newly
 created branch, you can use:
 
-```
+```bash
 $ git checkout -b <branch name>
 ```
 
@@ -295,7 +295,7 @@ You can move the `HEAD` pointer to a different commit using
 You can use `-` to refer to the previously checked out object. For example,
 assuming you start on the `master` branch, then:
 
-```
+```bash
 $ git checkout -b new_branch      # moves HEAD to new_branch
 $ git checkout -                  # moves HEAD to master
 $ git checkout -                  # moves HEAD to new_branch

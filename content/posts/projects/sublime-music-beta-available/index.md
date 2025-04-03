@@ -15,7 +15,9 @@ summary: |
   [PyPi](https://pypi.org/project/sublime-music/).
 ---
 
-![](images/logo.png)
+<center>
+{{<image src="images/logo.png" link="https://sublimemusic.app" width="50%">}}
+</center>
 
 Today I'm happy to announce Sublime Music to the world! Sublime Music is a
 feature-packed native GTK client for Subsonic-compatible servers such as
