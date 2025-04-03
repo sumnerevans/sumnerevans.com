@@ -392,7 +392,7 @@ details.portfolio-item {
       }
 
       div.company-logo img {
-          transform: scale(1.2);
+        transform: scale(1.2);
       }
     }
   }
@@ -416,31 +416,38 @@ details.portfolio-item {
 }
 
 header {
-  .name-and-subtitle {
-    display: grid;
-    grid-template:
-      "site-image ." auto
-      "site-image site-title" auto
-      "site-image site-subtitle" auto
-      / 150px auto;
-    gap: 0 1em;
-    margin-bottom: 2em;
+  --image-width: 150px;
+  --col-gap: 1rem;
 
-    .site-image {
-      grid-area: site-image;
-      margin: 0 auto;
-      width: 150px;
-      height: 150px;
+  display: grid;
+  gap: 1rem var(--col-gap);
+  grid-template:
+    "site-image name-and-subtitle" auto
+    "nav nav" auto
+    / var(--image-width) auto;
 
-      picture,
-      img {
-        opacity: 1;
-      }
+  a.site-image {
+    grid-area: site-image;
+
+    picture {
+      width: var(--image-width);
+      height: var(--image-width);
     }
 
-    .site-title {
-      grid-area: site-title;
+    picture,
+    img {
+      opacity: 1;
+    }
+  }
 
+  .name-and-subtitle {
+    grid-area: name-and-subtitle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    .site-title {
       a {
         font-size: 3.5em;
         font-weight: bold;
@@ -456,43 +463,22 @@ header {
     }
 
     .site-subtitle {
-      grid-area: site-subtitle;
       font-size: 1.3rem;
-      margin-bottom: -0.5rem;
       color: var(--subtitle-color);
-    }
-
-    @media screen and (max-width: 600px) {
-      grid-template:
-        "site-image ." auto
-        "site-image site-title" auto
-        "site-image site-subtitle" auto
-        / 80px auto;
-
-      .site-image {
-        width: 80px;
-        height: 80px;
-      }
-
-      .site-title {
-        a {
-          font-size: 2.5em;
-        }
-      }
-
-      .site-subtitle {
-        font-size: 1rem;
-      }
     }
   }
 
   nav {
+    grid-area: nav;
     font-size: 1.1em;
-    margin: 8px 0;
     border-top: 2px solid var(--section-sep-color);
     border-bottom: 2px solid var(--section-sep-color);
-    padding: 0.3rem 0 0.25rem 0;
     text-align: center;
+
+    p {
+      line-height: 2;
+      margin: 0;
+    }
 
     a {
       text-decoration: none;
@@ -558,6 +544,21 @@ header {
             border-left: .25rem solid var(--search-container-active-indicator-color);
           }
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    --image-width: 80px;
+    --col-gap: 0.5rem;
+
+    .name-and-subtitle {
+      .site-title a {
+        font-size: 2rem;
+      }
+
+      .site-subtitle {
+        font-size: 1rem;
       }
     }
   }
