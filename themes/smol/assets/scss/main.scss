@@ -334,9 +334,39 @@ details.portfolio-item {
 
   >summary {
     background-color: var(--expander-summary-color);
-    padding: 0.5em 1em;
+    display: grid;
+    padding: 0.5rem 1rem 0.5rem 0.75rem;
+    gap: 0 0.5rem;
+    grid-template:
+      "expander icon title       dates      " auto
+      "expander icon description description" auto
+      / 1rem 2.5rem auto auto;
+
+    &::before {
+      content: '▶';
+      grid-area: expander;
+      display: flex;
+      align-items: center;
+    }
+
+    div.company-logo {
+      grid-area: icon;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        opacity: 1;
+
+        &.with-bg {
+          border-radius: 0.5rem;
+          background-color: white;
+        }
+      }
+    }
 
     h3 {
+      grid-area: title;
       display: inline;
       margin: 0;
 
@@ -346,23 +376,38 @@ details.portfolio-item {
     }
 
     span {
+      text-align: right;
+      grid-area: dates;
       float: right;
     }
 
-    img {
-      max-height: 1em;
-      max-width: 1em;
-    }
-
     p {
-      margin: 0 1em;
+      grid-area: description;
+      margin: 0;
     }
 
     &:hover {
       h3 .permalink {
         opacity: 1;
       }
+
+      div.company-logo img {
+          transform: scale(1.2);
+      }
     }
+  }
+
+  &.no-logo {
+    >summary {
+      grid-template:
+        "expander title       dates      " auto
+        "expander description description" auto
+        / 1rem auto auto;
+    }
+  }
+
+  &:open>summary::before {
+    content: '▼';
   }
 
   >div {

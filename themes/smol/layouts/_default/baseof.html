@@ -27,7 +27,11 @@
   {{- if .Params.image -}}
     {{- $featureImage := .Resources.Get .Params.image -}}
     {{- with $featureImage -}}
-      <meta property="og:image" content="{{ ( .Resize "800x webp photo" ).Permalink }}">
+      {{ if eq .MediaType.SubType "svg" }}
+        <meta property="og:image" content="{{ .Permalink }}">
+      {{ else }}
+        <meta property="og:image" content="{{ ( .Resize "800x webp photo" ).Permalink }}">
+      {{ end }}
     {{- else -}}
       <meta property="og:image" content="{{ .Site.BaseURL }}{{ path.Join .File.Dir .Params.image }}">
     {{- end -}}

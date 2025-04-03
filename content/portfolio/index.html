@@ -1,5 +1,9 @@
 ---
 title: "Portfolio"
+description: |
+  I'm a software engineer and educator. I have six years of industry experience
+  as a software engineer, and I have taught classes at a university level
+  including one graduate level course.
 ---
 
 {{% note %}}
@@ -9,8 +13,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
 
 <p>
   I'm a software engineer and educator. I have six years of industry experience as a software
-  engineer, and I have taught classes at a university level for eight semesters including one
-  graduate level course and six senior level courses.
+  engineer, and I have taught classes at a university level including one graduate level course.
 </p>
 
 <h2 id="experience">
@@ -18,71 +21,22 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   <a class="permalink" href="#experience">&para;</a>
 </h2>
 
-<details id="experience-automattic" class="portfolio-item" open>
-  <summary>
-    <h3>
-      Software Engineer, <a href="https://beeper.com" target="_blank">Beeper<i class="fa fa-external-link"></i></a>
-      <a class="permalink" href="#experience-automattic">&para;</a>
-    </h3>
-    <span>April 2024 - Present</span>
-    <p>
-      <a href="https://automattic.com" target="_blank">Automattic<i class="fa fa-external-link"></i></a>
-    </p>
-  </summary>
-  <div>
-    <p><i>Key Technologies:</i> Matrix, Go, Python</p>
-    <p>
-      I joined
-      <a href="https://automattic.com" target="_blank">Automattic<i class="fa fa-external-link"></i></a>
-      via the
-      <a href="https://blog.beeper.com/2024/04/09/beeper-is-joining-automattic/" target="_blank">
-        Beeper<i class="fa fa-external-link"></i></a>
-      <a href="https://automattic.com/2024/04/09/automattic-acquires-beeper/" target="_blank">
-        acquisition<i class="fa fa-external-link"></i></a>.
-      I work on building the infrastructure necessary to connect people on every chat network through
-      <b>Matrix</b>. I work mainly on bridges and other backend projects to enable Beeper to grow
-      and add new users.
-    </p>
-    <details open>
-      <summary>Notable projects include...</summary>
-      <ul>
-        <li>
-          Saved ~2TB of RAM by rewriting the
-          <a href="https://github.com/mautrix/telegramgo" target="_blank">Telegram<i class="fa fa-external-link"></i></a>
-          to <b>Matrix</b> bridge from Python to <b>Go</b>.
-        </li>
-        <li>
-          Implemented the cryptographic key infrastructure necessary for message
-          <a href="https://github.com/mautrix/go/tree/main/crypto/backup" target="_blank">key backups<i class="fa fa-external-link"></i></a>
-          and
-          <a href="https://github.com/mautrix/go/tree/main/crypto/verificationhelper" target="_blank">interactive device verification<i class="fa fa-external-link"></i></a>
-          in
-          <a href="https://github.com/mautrix/go" target="_blank">mautrix-go<i class="fa fa-external-link"></i></a>.
-          by utilizing the standard Go <b>cryptography libraries</b>.
-        </li>
-        <li>
-          Implemented media upload/download and interactive device verification in the Beeper
-          client SDK written in <b>Go</b> which is being used in the next generation Beeper clients.
-        </li>
-      </ul>
-    </details>
-  </div>
-</details>
-
 <details id="experience-beeper" class="portfolio-item" open>
   <summary>
+    <div class="company-logo">
+      <img src="./images/beeper-logo.png" alt="Beeper Logo">
+    </div>
     <h3>
       Software Engineer
       <a class="permalink" href="#experience-beeper">&para;</a>
     </h3>
-    <span>July 2021 - April 2024</span>
+    <span>July 2021 - Present</span>
     <p>
-      <a href="https://beeper.com" target="_blank">Beeper<i class="fa fa-external-link"></i></a> (acquired by
-      <a href="https://automattic.com" target="_blank">Automattic<i class="fa fa-external-link"></i></a>)
+      <a href="https://beeper.com" target="_blank">Beeper<i class="fa fa-external-link"></i></a>
     </p>
   </summary>
   <div>
-    <p><i>Key Technologies:</i> Matrix, Python, Go</p>
+    <p><i>Key Technologies:</i> Matrix, Go, Python</p>
     <p>
       I worked on building the infrastructure necessary to connect people on every chat network through
       <b>Matrix</b>. I worked mainly on bridges and other backend projects to enable Beeper to grow
@@ -99,10 +53,28 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
           the 3-member team that productionized the project over a four-month period.
         </li>
         <li>
+          Saved ~2TB of RAM by rewriting the
+          <a href="https://github.com/mautrix/telegramgo" target="_blank">Telegram<i class="fa fa-external-link"></i></a>
+          to <b>Matrix</b> bridge from Python to <b>Go</b>.
+        </li>
+        <li>
           <b>Reverse-engineered</b> and implemented features for
           <a href="https://blog.beeper.com/p/introducing-beeper-mini-get-blue" target="_blank">Beeper Mini<i class="fa fa-external-link"></i></a>
           (iMessage on Android) including media, tapbacks, typing indicators, read receipts,
           edits, unsends, link previews, and chat metadata changes.
+        </li>
+        <li>
+          Implemented the cryptographic key infrastructure necessary for message
+          <a href="https://github.com/mautrix/go/tree/main/crypto/backup" target="_blank">key backups<i class="fa fa-external-link"></i></a>
+          and
+          <a href="https://github.com/mautrix/go/tree/main/crypto/verificationhelper" target="_blank">interactive device verification<i class="fa fa-external-link"></i></a>
+          in
+          <a href="https://github.com/mautrix/go" target="_blank">mautrix-go<i class="fa fa-external-link"></i></a>.
+          by utilizing the standard Go <b>cryptography libraries</b>.
+        </li>
+        <li>
+          Implemented media upload/download and interactive device verification in the Beeper
+          client SDK written in <b>Go</b> which is being used in the next generation Beeper clients.
         </li>
         <li>
           Measured message send <b>latency and reliability</b> by instrumenting bridge
@@ -118,7 +90,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
         <li>
           <b>Reverse-engineered</b> the LinkedIn Messaging API and implemented a
           <a href="https://github.com/beeper/linkedin" target="_blank">LinkedIn<i class="fa fa-external-link"></i></a>
-          to Matrix bridge in <b>Python</b>.
+          to Matrix bridge in <b>Python</b> and later in <b>Go</b>.
         </li>
         <li>
           Defined a framework for importing users' chat history, and implemented it in the
@@ -135,11 +107,14 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
 
 <details id="experience-adjunct-mines" class="portfolio-item" open>
   <summary>
+    <div class="company-logo">
+      <img src="./images/mines-logo.jpg" alt="Colorado School of Mines Logo" class="with-bg">
+    </div>
     <h3>
       Adjunct Professor
       <a class="permalink" href="#experience-adjunct-mines">&para;</a>
     </h3>
-    <span>August 2018 - December 2023</span>
+    <span>August 2018 - December 2024</span>
     <p><a href="https://mines.edu" target="_blank">Colorado School of Mines<i class="fa fa-external-link"></i></a></p>
   </summary>
   <div>
@@ -219,6 +194,9 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
 
 <details id="experience-ttd" class="portfolio-item">
   <summary>
+    <div class="company-logo">
+      <img src="./images/ttd-logo.webp" alt="The Trade Desk Logo">
+    </div>
     <h3>
       Software Engineer
       <a class="permalink" href="#experience-ttd">&para;</a>
@@ -255,6 +233,9 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
 
 <details id="experience-pivotal" class="portfolio-item">
   <summary>
+    <div class="company-logo">
+      <img src="./images/pivotal-logo.png" alt="Pivotal Logo" class="with-bg">
+    </div>
     <h3>
       Software Engineering Intern
       <a class="permalink" href="#experience-pivotal">&para;</a>
@@ -274,6 +255,9 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
 
 <details id="experience-on-tour" class="portfolio-item">
   <summary>
+    <div class="company-logo">
+      <img src="./images/mines-logo.jpg" alt="Colorado School of Mines Logo" class="with-bg">
+    </div>
     <h3>
       CS@Mines on Tour Presenter
       <a class="permalink" href="#experience-on-tour">&para;</a>
@@ -291,6 +275,9 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
 
 <details id="experience-ta-data-structures" class="portfolio-item">
   <summary>
+    <div class="company-logo">
+      <img src="./images/mines-logo.jpg" alt="Colorado School of Mines Logo" class="with-bg">
+    </div>
     <h3>
       Teachers Assistant (Data Structures)
       <a class="permalink" href="#experience-ta-data-structures">&para;</a>
@@ -309,6 +296,9 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
 
 <details id="experience-kenzan" class="portfolio-item">
   <summary>
+    <div class="company-logo">
+      <img src="./images/kenzan-logo.png" alt="Kenzan Logo" class="with-bg">
+    </div>
     <h3>
       Software Development Intern
       <a class="permalink" href="#experience-kenzan">&para;</a>
@@ -327,6 +317,9 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
 
 <details id="experience-canam-software-developer" class="portfolio-item">
   <summary>
+    <div class="company-logo">
+      <img src="./images/canam-logo.svg" alt="Can/Am Technologies Logo">
+    </div>
     <h3>
       Software Developer
       <a class="permalink" href="#experience-canam-software-developer">&para;</a>
@@ -357,6 +350,9 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
 
 <details id="education-mines-masters" class="portfolio-item" open>
   <summary>
+    <div class="company-logo">
+      <img src="./images/mines-logo.jpg" alt="Colorado School of Mines Logo" class="with-bg">
+    </div>
     <h3>
       MS Computer Science
       <a class="permalink" href="#education-mines-masters">&para;</a>
@@ -393,6 +389,9 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
 
 <details id="education-mines-bachelors" class="portfolio-item">
   <summary>
+    <div class="company-logo">
+      <img src="./images/mines-logo.jpg" alt="Colorado School of Mines Logo" class="with-bg">
+    </div>
     <h3>
       BS Computer Science
       <a class="permalink" href="#education-mines-bachelors">&para;</a>
@@ -434,6 +433,9 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
 
 <details id="education-rrcc" class="portfolio-item">
   <summary>
+    <div class="company-logo">
+      <img src="./images/rrcc-logo.png" alt="Red Rocks Community College Logo" class="with-bg">
+    </div>
     <h3>
       Mines Transfer Program
       <a class="permalink" href="#education-rrcc">&para;</a>
@@ -472,8 +474,11 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   <a class="permalink" href="#projects">&para;</a>
 </h2>
 
-<details id="project-mineshspc.com" class="portfolio-item" open>
+<details id="project-mineshspc.com" class="portfolio-item">
   <summary>
+    <div class="company-logo">
+      <img src="./images/hspc-logo.png" alt="Mines HSPC Logo" class="with-bg">
+    </div>
     <h3>
       Mines HSPC Website
       <a class="permalink" href="#project-mineshspc.com">&para;</a>
@@ -506,7 +511,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="project-nix-home-manager" class="portfolio-item">
+<details id="project-nix-home-manager" class="portfolio-item no-logo">
   <summary>
     <h3>
       Nix Home Manager
@@ -532,7 +537,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="project-tracktime" class="portfolio-item">
+<details id="project-tracktime" class="portfolio-item no-logo">
   <summary>
     <h3>
       Tracktime
@@ -567,6 +572,9 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
 
 <details id="project-offlinemsmtp" class="portfolio-item">
   <summary>
+    <div class="company-logo">
+      <img src="./images/offlinemsmtp-logo.png" alt="offlinemsmtp Logo" class="with-bg">
+    </div>
     <h3>
       offlinemsmtp
       <a class="permalink" href="#project-offlinemsmtp">&para;</a>
@@ -598,8 +606,11 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="project-sublime-music" class="portfolio-item" open>
+<details id="project-sublime-music" class="portfolio-item">
   <summary>
+    <div class="company-logo">
+      <img src="./images/sublime-music-logo.png" alt="Sublime Music Logo">
+    </div>
     <h3>
       Sublime Music
       <a class="permalink" href="#project-sublime-music">&para;</a>
@@ -651,6 +662,9 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
 
 <details id="project-visplay" class="portfolio-item">
   <summary>
+    <div class="company-logo">
+      <img src="./images/visplay-logo.png" alt="Visplay Logo">
+    </div>
     <h3>
       Visplay
       <a class="permalink" href="#project-visplay">&para;</a>
@@ -682,6 +696,9 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
 
 <details id="project-mlocate" class="portfolio-item">
   <summary>
+    <div class="company-logo">
+      <img src="./images/mlocate-logo.png" alt="MLocate Logo" class="with-bg">
+    </div>
     <h3>
       MLocate
       <a class="permalink" href="#project-mlocate">&para;</a>
@@ -729,6 +746,9 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
 
 <details id="project-hypar-map" class="portfolio-item" open>
   <summary>
+    <div class="company-logo">
+      <img src="./images/hypar-map-logo.png" alt="HypAR Map Logo">
+    </div>
     <h3>
       HypAR Map
       <a class="permalink" href="#project-hypar-map">&para;</a>
@@ -778,7 +798,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="project-datanium" class="portfolio-item">
+<details id="project-datanium" class="portfolio-item no-logo">
   <summary>
     <h3>
       Datanium
@@ -819,7 +839,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="project-wii-track" class="portfolio-item">
+<details id="project-wii-track" class="portfolio-item no-logo">
   <summary>
     <h3>
       Wii-Track
@@ -863,6 +883,9 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
 
 <details id="project-blockmrs" class="portfolio-item">
   <summary>
+    <div class="company-logo">
+      <img src="./images/blockmrs-logo.png" alt="BlockMRS Logo" class="with-bg">
+    </div>
     <h3>
       BlockMRS
       <a class="permalink" href="#project-blockmrs">&para;</a>
@@ -895,7 +918,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="project-vr-final" class="portfolio-item">
+<details id="project-vr-final" class="portfolio-item no-logo">
   <summary>
     <h3>
       Virtual Reality Final Project
@@ -929,6 +952,9 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
 
 <details id="project-parqyng" class="portfolio-item">
   <summary>
+    <div class="company-logo">
+      <img src="./images/parqyng-lots-logo.png" alt="Parqyng Lots Logo" class="with-bg">
+    </div>
     <h3>
       Parqyng
       <a class="permalink" href="#project-parqyng">&para;</a>
@@ -972,7 +998,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="project-wireless-debugging" class="portfolio-item">
+<details id="project-wireless-debugging" class="portfolio-item no-logo">
   <summary>
     <h3>
       Wireless Debugging
@@ -1000,7 +1026,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="project-snowflakes" class="portfolio-item">
+<details id="project-snowflakes" class="portfolio-item no-logo">
   <summary>
     <h3>
       Snowflakes
@@ -1029,7 +1055,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="project-chesspp" class="portfolio-item">
+<details id="project-chesspp" class="portfolio-item no-logo">
   <summary>
     <h3>
       Chess++
@@ -1053,7 +1079,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="project-quadratic-solver" class="portfolio-item">
+<details id="project-quadratic-solver" class="portfolio-item no-logo">
   <summary>
     <h3>
       Quadratic Solver
@@ -1087,7 +1113,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   <a class="permalink" href="#publications">&para;</a>
 </h2>
 
-<details id="publication-dreams-of-flight" class="portfolio-item">
+<details id="publication-dreams-of-flight" class="portfolio-item no-logo">
   <summary>
     <h3>
       Dreams of Flight
@@ -1120,7 +1146,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   <a class="permalink" href="#presentations">&para;</a>
 </h2>
 
-<details id="presentation-matrix-crypto-key-infra" class="portfolio-item" open>
+<details id="presentation-matrix-crypto-key-infra" class="portfolio-item no-logo" open>
   <summary>
     <h3>
       Matrix Cryptographic Key Infrastructure
@@ -1152,7 +1178,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="presentation-acm-git-good" class="portfolio-item">
+<details id="presentation-acm-git-good" class="portfolio-item no-logo">
   <summary>
     <h3>
       Git Good
@@ -1175,7 +1201,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="presentation-acm-architecting-for-scale" class="portfolio-item">
+<details id="presentation-acm-architecting-for-scale" class="portfolio-item no-logo">
   <summary>
     <h3>
       Architecting for Scale
@@ -1199,7 +1225,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="presentation-matrix-bot-workshop" class="portfolio-item">
+<details id="presentation-matrix-bot-workshop" class="portfolio-item no-logo">
   <summary>
     <h3>
       Creating a Matrix Bot in 30 minutes using simplematrixbotlib or maubot
@@ -1223,7 +1249,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="presentation-what-is-beeper-working-on" class="portfolio-item">
+<details id="presentation-what-is-beeper-working-on" class="portfolio-item no-logo">
   <summary>
     <h3>
       What is Beeper Working on?
@@ -1246,7 +1272,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="presentation-hungryserv" class="portfolio-item" open>
+<details id="presentation-hungryserv" class="portfolio-item no-logo" open>
   <summary>
     <h3>
       Hungryserv: A Homeserver Optimized for Unfederated Use-Cases
@@ -1269,7 +1295,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="presentation-lug-gui-toolkits" class="portfolio-item">
+<details id="presentation-lug-gui-toolkits" class="portfolio-item no-logo">
   <summary>
     <h3>
       GUI Toolkits
@@ -1294,7 +1320,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="presentation-lug-open-standards" class="portfolio-item">
+<details id="presentation-lug-open-standards" class="portfolio-item no-logo">
   <summary>
     <h3>
       Open Standards
@@ -1318,7 +1344,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="presentation-lug-makefiles" class="portfolio-item">
+<details id="presentation-lug-makefiles" class="portfolio-item no-logo">
   <summary>
     <h3>
       Makefiles
@@ -1340,7 +1366,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="presentation-lug-mutt" class="portfolio-item">
+<details id="presentation-lug-mutt" class="portfolio-item no-logo">
   <summary>
     <h3>
       Mutt
@@ -1363,7 +1389,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="presentation-oresec-pgp" class="portfolio-item">
+<details id="presentation-oresec-pgp" class="portfolio-item no-logo">
   <summary>
     <h3>
       PGP
@@ -1387,7 +1413,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="presentation-lug-zsh" class="portfolio-item">
+<details id="presentation-lug-zsh" class="portfolio-item no-logo">
   <summary>
     <h3>
       ZSH
@@ -1411,7 +1437,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="presentation-lug-latex" class="portfolio-item">
+<details id="presentation-lug-latex" class="portfolio-item no-logo">
   <summary>
     <h3>
       LaTeX
@@ -1436,7 +1462,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="presentation-lug-i3wm" class="portfolio-item">
+<details id="presentation-lug-i3wm" class="portfolio-item no-logo">
   <summary>
     <h3>
       i3wm
@@ -1460,7 +1486,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="presentation-lug-idris" class="portfolio-item">
+<details id="presentation-lug-idris" class="portfolio-item no-logo">
   <summary>
     <h3>
       Idris
@@ -1484,7 +1510,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="presentation-lug-universal-package-formats" class="portfolio-item">
+<details id="presentation-lug-universal-package-formats" class="portfolio-item no-logo">
   <summary>
     <h3>
       Universal Package Formats
@@ -1508,7 +1534,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="presentation-lug-filesystems" class="portfolio-item">
+<details id="presentation-lug-filesystems" class="portfolio-item no-logo">
   <summary>
     <h3>
       Filesystems
@@ -1534,7 +1560,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="presentation-lug-ssh" class="portfolio-item">
+<details id="presentation-lug-ssh" class="portfolio-item no-logo">
   <summary>
     <h3>
       SSH
@@ -1557,7 +1583,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="presentation-lug-javascript" class="portfolio-item">
+<details id="presentation-lug-javascript" class="portfolio-item no-logo">
   <summary>
     <h3>
       JavaScript Crash Course
@@ -1582,7 +1608,7 @@ more concise overview, please view my <a href="./resume.pdf">resume</a>.
   </div>
 </details>
 
-<details id="presentation-dreams-of-flight" class="portfolio-item">
+<details id="presentation-dreams-of-flight" class="portfolio-item no-logo">
   <summary>
     <h3>
       Dreams of Flight

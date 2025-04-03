@@ -4,12 +4,11 @@ date: 2021-07-12T08:00:00-06:00
 categories: [Life Updates]
 tags: [Beeper, Job, Work]
 image: images/beeper.png
+hide_image_in_index: true
 ---
 
 <center>
-  <a href="https://beeper.com" target="_blank">
-    <img src="./images/beeper.png" alt="Beeper logo" width="50%" />
-  </a>
+{{<image src="images/beeper.png" link="https://beeper.com" width="50%">}}
 </center>
 
 Today I am happy to announce that I have joined [Beeper](https://beeper.com), a

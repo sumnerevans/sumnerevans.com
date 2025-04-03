@@ -9,30 +9,45 @@
   {{- with $image.Get "link" -}}
     <a href="{{ . }}" target="_blank"{{ with $image.Get "rel" }} rel="{{ . }}"{{ end }}>
   {{- else -}}
-    {{- if gt .Width 4000 -}}
-      <a href="{{ ( .Resize "4000x webp photo" ).RelPermalink }}" target="_blank">
-    {{- else -}}
-      <a href="{{ ( .Process "webp photo" ).RelPermalink }}" target="_blank">
-    {{- end -}}
-  {{- end -}}
-    <picture {{ with $width }}style="max-width:{{ .}}px"{{ end }}>
-      {{- range $respSizes -}}
-        {{- if ge $imgRsc.Width . -}}
-          <source
-            type="image/webp"
-            media="(max-width: {{ . }}px)"
-            srcset="{{- ($imgRsc.Resize (print . "x webp photo") ).RelPermalink -}}"
-          >
-        {{- end -}}
+    {{ if eq .MediaType.SubType "svg" }}
+      <a href="{{ .RelPermalink }}" target="_blank">
+    {{ else }}
+      {{- if gt .Width 4000 -}}
+        <a href="{{ ( .Resize "4000x webp photo" ).RelPermalink }}" target="_blank">
+      {{- else -}}
+        <a href="{{ ( .Process "webp photo" ).RelPermalink }}" target="_blank">
       {{- end -}}
-      <img src="{{ ($imgRsc.Resize "800x webp photo").RelPermalink }}"
-        {{- with $alt }}
-          alt="{{ . }}"
+    {{ end }}
+  {{- end -}}
+    <picture {{ with $width }}style="max-width:{{ . }}"{{ end }}>
+      {{ if eq .MediaType.SubType "svg" }}
+        <img src="{{ $imgRsc.RelPermalink }}"
+          {{- with $alt }}
+            alt="{{ . }}"
+          {{- end -}}
+          loading="lazy"
+        >
+      {{ else }}
+        {{- range $respSizes -}}
+          {{- if ge $imgRsc.Width . -}}
+            <source
+              type="image/webp"
+              media="(max-width: {{ . }}px)"
+              srcset="{{- ($imgRsc.Resize (print . "x webp photo") ).RelPermalink -}}"
+            >
+          {{- end -}}
         {{- end -}}
-        {{- with $image.Get "width" }} width="{{ . }}"{{ end -}}
-        {{- with $image.Get "height" }} height="{{ . }}"{{ end -}}
-        loading="lazy"
-      >
+        {{ with $imgRsc.Resize "800x webp photo" }}
+          <img src="{{ .RelPermalink }}"
+            {{- with $alt }}
+              alt="{{ . }}"
+            {{- end -}}
+            width="{{ . }}"
+            height="{{ . }}"
+            loading="lazy"
+          >
+        {{ end }}
+      {{ end }}
     </picture>
   </a>
 {{- else -}}
