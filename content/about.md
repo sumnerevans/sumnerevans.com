@@ -6,12 +6,12 @@ aliases:
 ---
 
 My name is Sumner, and I live in Denver, Colorado. I am a Software Engineer at
-[Automattic](https://automattic.com/) working on [Beeper](https://beeper.com/)
-and I run a business called [Nevarro](https://nevarro.space) which is dedicated
-to building and self-hosting open source software and providing educational
-services such as computer science and mathematics tutoring. I'm also a 4th
-Degree Black Belt and certified instructor in ATA Taekwondo and a Colorado
-School of Mines alum (bachelor's in CS, 2018; masters in CS, 2019).
+[Beeper](https://beeper.com/) and I run a business called
+[Nevarro](https://nevarro.space) which is dedicated to building and self-hosting
+open source software and providing educational services such as computer science
+and mathematics tutoring. I'm also a 4th Degree Black Belt and certified
+instructor in ATA Taekwondo and a Colorado School of Mines alum (bachelor's in
+CS, 2018; masters in CS, 2019).
 
 I believe that free speech is essential to a functioning democratic system. I
 believe that guaranteeing free speech in the digital space is essential. I
@@ -23,9 +23,9 @@ accessibility. Right now, the best federated chat system is Matrix, and so most
 of my effort is currently going towards furthering [Matrix](https://matrix.org/)
 in various forms.
 
-In my job at Beeper (acquired by Automattic), I am a member of the Platform Team
-which is responsible for building Matrix bridges and developing our Go client
-SDK. I'm particularly proud of the work that I've done to bring support for
+In my job at Beeper, I am a member of the Platform Team which is responsible for
+building Matrix bridges and developing our Go client SDK. I'm particularly proud
+of the work that I've done to bring support for
 [key backup](https://github.com/mautrix/go/tree/main/crypto/backup) and
 [interactive verification](https://github.com/mautrix/go/tree/main/crypto/verificationhelper)
 to [maturix-go](https://github.com/mautrix/go). I also have helped build and
