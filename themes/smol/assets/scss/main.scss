@@ -428,6 +428,8 @@ header {
 
   a.site-image {
     grid-area: site-image;
+    display: flex;
+    align-items: center;
 
     picture {
       width: var(--image-width);
