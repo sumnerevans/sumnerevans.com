@@ -140,14 +140,14 @@ h5,
 h6 {
   line-height: 1.2;
 
-  @media (hover: hover) {
-    .permalink {
-      opacity: 0;
-    }
+  &:hover .permalink {
+    opacity: 1;
+  }
+}
 
-    &:hover .permalink {
-      opacity: 1;
-    }
+@media (hover: hover) and (pointer: fine) {
+  .permalink {
+    opacity: 0;
   }
 }
 
@@ -369,16 +369,13 @@ details.portfolio-item {
       grid-area: title;
       display: inline;
       margin: 0;
-
-      .permalink {
-        opacity: 0;
-      }
     }
 
     span {
       text-align: right;
       grid-area: dates;
-      float: right;
+      font-size: 0.9em;
+      color: var(--subtitle-color);
     }
 
     p {
@@ -391,12 +388,12 @@ details.portfolio-item {
     }
 
     &:hover {
-      h3 .permalink {
-        opacity: 1;
-      }
-
       div.company-logo img {
         transform: scale(1.2);
+      }
+
+      .permalink {
+        opacity: 1;
       }
     }
   }
@@ -416,6 +413,30 @@ details.portfolio-item {
 
   >div {
     margin-left: 2em;
+  }
+
+  @media screen and (max-width: 540px) {
+    >summary {
+      grid-template:
+        "expander icon title      " auto
+        "expander icon dates      " auto
+        "expander icon description" auto
+        / 1rem 2.5rem auto;
+
+      span {
+        text-align: left;
+      }
+    }
+
+    &.no-logo {
+      >summary {
+        grid-template:
+          "expander title      " auto
+          "expander dates      " auto
+          "expander description" auto
+          / 1rem auto;
+      }
+    }
   }
 }
 
