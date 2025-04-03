@@ -384,6 +384,10 @@ details.portfolio-item {
     p {
       grid-area: description;
       margin: 0;
+
+      i.description-icon {
+        margin-right: 0.35rem;
+      }
     }
 
     &:hover {
