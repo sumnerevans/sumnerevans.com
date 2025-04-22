@@ -194,23 +194,23 @@ p.article-info {
   }
 }
 
-
-main *:not(pre)>code,
+code,
 tt,
 kbd,
 pre {
-  border-radius: 5px;
   font-family: Iosevka, monospace;
 }
 
 main *:not(pre)>code,
 tt,
 kbd {
+  border-radius: 5px;
   background-color: var(--preformatted-bg-color);
   padding: 1px 0.5rem;
 }
 
 pre {
+  border-radius: 5px;
   border: 1px solid var(--preformatted-border-color);
   padding: 1rem;
   overflow-x: auto;
