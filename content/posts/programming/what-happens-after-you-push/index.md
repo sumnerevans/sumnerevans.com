@@ -57,7 +57,7 @@ I'm going to be focusing on three main facets of deploying code to production:
 According to the 2024 StackOverflow Survey, CI/CD is used by nearly 70% of all
 developers.[^1]
 
-[^1]: https://survey.stackoverflow.co/2024/professional-developers#developer-experience-professional-tech
+[^1]: [2024 StackOverflow Developer Survey: Processes, tools, and programs within an organization](https://survey.stackoverflow.co/2024/professional-developers#developer-experience-professional-tech)
 
 {{<figure
   src="images/so-cicd.png"
@@ -349,7 +349,7 @@ Kubernetes.
 According to the StackOverflow survey, Docker is used by 53% of developers and
 Kubernetes is used by 20% of developers.[^2]
 
-[^2]: https://survey.stackoverflow.co/2024/technology#most-popular-technologies-tools-tech
+[^2]: [2024 StackOverflow Survey: Other tools](https://survey.stackoverflow.co/2024/technology#most-popular-technologies-tools-tech)
 
 {{<figure
   src="images/so-docker.png"
