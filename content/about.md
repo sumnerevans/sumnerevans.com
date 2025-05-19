@@ -21,27 +21,19 @@ level]({{<ref"./portfolio/index.html#experience-adjunct-mines">}}).
 
 In my [job at Can/Am]({{<ref"/portfolio#experience-canam-tech-lead">}}) I lead
 the engineering team responsible for building integrations with third-party
-vendors.
+vendors. I've been working to improve team processes and define expectations for
+engineers.
 
 Previously, I [worked at Beeper]({{<ref"/portfolio#experience-beeper">}})
 building lots of things related to the Matrix protocol including cryptography
 libraries[^1] and the [mautrix bridges](https://github.com/mautrix). I also
 started and was a core member of the
 [Hungryserv]({{<ref"/portfolio#presentation-hungryserv">}}) project which
-enabled us to scale from hundreds to tens of thousands of users.
-
-Outside of my job, on the technical side, I spend a lot of my free time working
-on [Matrix](https://matrix.org/)-related projects. I have written about the
-technical and community aspects of [Matrix on my blog](/categories/matrix), and
-I've given a few talks related to Matrix at conferences[^2]. I was
+enabled us to scale from hundreds to tens of thousands of users. I wrote about
+the technical and community aspects of [Matrix on my blog](/categories/matrix),
+and I've given a few talks related to Matrix at conferences[^2]. I was
 [elected to the Matrix Governing Board](https://matrix.org/foundation/governing-board-elections/#elected-representatives)
-as an individual member in 2024. My goal is to represent the interests of the
-community to the Matrix Foundation. You can read
-[my platform]({{<ref"./posts/matrix/2024-matrix-governing-board.md">}}) which
-lays out the most important issues that the Foundation has to address moving
-forward. My DMs are open if you are a member of the Matrix community and have
-questions or concerns about the Foundation or what we as the Governing Board are
-doing.
+as an individual member in 2024.
 
 When I'm not programming, I enjoy training in ATA taekwondo under Chief Master
 Corina Black where I am a 4th Degree Black Belt and certified Level 3 Certified

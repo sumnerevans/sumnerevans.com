@@ -77,6 +77,12 @@ timeout = "360s"
     weight = 1
 
   [[menu.main]]
+    identifier = "now"
+    name = "Now"
+    url = "/now/"
+    weight = 2
+
+  [[menu.main]]
     identifier = "portfolio"
     name = "Portfolio"
     url = "/portfolio/"
