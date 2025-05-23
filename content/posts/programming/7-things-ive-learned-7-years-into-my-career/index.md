@@ -47,7 +47,23 @@ your career more broadly.
 
 Every software project has a customer. It might just be you. It might be
 millions of end-users who download your app. It might be a niche set of small
-business owners.
+business owners. It might be local governments (as is the case at my
+[current job]({{<ref"../../portfolio/index.html#experience-canam-tech-lead>}})).
+It might be another team within your organization.
+
+Whoever your customer is, let them guide you. Whenever you aren't sure how to
+proceed, figure out what the customer wants. Ideally, you would do this by
+directly talking to the customer, but sometimes this is not possible and you
+just have to put yourself into their shoes. In the hackathon context, it is very
+unlikely that you will be able to talk with your customer, but you need to have
+a good idea of their needs in order to build something for them.
+
+
+
+Explain who your customer is
+Talk about how your project solves the customer’s problem
+
+
 
 ## 2. Solve Problems That Actually Exist
 ## 3. Build Core Features First
@@ -55,3 +71,8 @@ business owners.
 ## 5. Learn Something New
 ## 6. Support Your Teammates
 ## 7. Have Fun
+
+Things I've learned as a tech lead:
+
+* you have two bosses, your manager, and your direct reports
+* administrative and managerial tasks are actually your job now, not just distractions from your job
