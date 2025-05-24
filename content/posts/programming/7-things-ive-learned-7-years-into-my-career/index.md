@@ -48,7 +48,7 @@ your career more broadly.
 Every software project has a customer. It might just be you. It might be
 millions of end-users who download your app. It might be a niche set of small
 business owners. It might be local governments (as is the case at my
-[current job]({{<ref"../../portfolio/index.html#experience-canam-tech-lead>}})).
+[current job]({{<ref"../../portfolio/index.html#experience-canam-tech-lead">}})).
 It might be another team within your organization.
 
 Whoever your customer is, let them guide you. Whenever you aren't sure how to
