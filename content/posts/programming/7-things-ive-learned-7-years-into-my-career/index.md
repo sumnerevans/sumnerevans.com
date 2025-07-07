@@ -18,11 +18,11 @@ math: true
 A few months ago, I was asked to give the keynote address at the BlasterHacks
 hackathon hosted at Mines by their [ACM](https://acm.mines.edu/) chapter. I
 wasn't quite sure what would be interesting to talk about for the keynote, so I
-asked some friends. [Byron](https://b-sharman.dev/) suggested that I either talk
-about hackathon advice or career advice. Since I was giving a hackathon keynote,
-I decided to focus my presentation on hackathon advice. I went to six hackathons
-while I was a student at Mines, and won prizes at all but one of them so I felt
-I had something interesting to say about the topic.
+asked some friends. [Byron](https://byronsharman.com/) suggested that I either
+talk about hackathon advice or career advice. Since I was giving a hackathon
+keynote, I decided to focus my presentation on hackathon advice. I went to six
+hackathons while I was a student at Mines, and won prizes at all but one of them
+so I felt I had something interesting to say about the topic.
 
 I came up with the following seven things that I thought would make the
 students' time at the hackathon worthwhile:

@@ -1,7 +1,7 @@
-https://b-sharman.dev/blog.xml
 https://blog.babel.sh/rss
 https://blog.beeper.com/feed
 https://blog.danslimmon.com/feed
+https://byronsharman.com/blog.xml
 https://chriskiehl.com/rss.xml
 https://chrismcdonough.substack.com/feed
 https://chrpaul.de/feed.xml
