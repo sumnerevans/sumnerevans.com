@@ -15,7 +15,6 @@
             packages = with pkgs; [
               hugo
               libheif
-              linkchecker
               nodejs
               openring
               pre-commit
