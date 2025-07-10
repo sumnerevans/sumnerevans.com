@@ -49,7 +49,7 @@ your career more broadly.
 Every software project has a customer. It might just be you. It might be
 millions of end-users who download your app. It might be a niche set of small
 business owners. It might be local governments (as is the case at my
-[current job]({{<ref"../../../portfolio/index.html#experience-canam-tech-lead">}})).
+[current job]({{<ref"../../../portfolio/index.html#experience-canam-tech-lead">}}).
 It might be another team within your organization.
 
 Whoever your customer is, let them guide you. Whenever you aren't sure how to
@@ -252,14 +252,14 @@ have found creates fulfilment in my life. There are two main things:
 
 1. **Customer impact.** I love being able to see the software that I write
    impact customer's lives positively. When I was
-   [at Beeper]({{<ref"../../../portfolio/index.html#experience-beeper">}})),
+   [at Beeper]({{<ref"../../../portfolio/index.html#experience-beeper">}}),
    there were a few times where I met users in the wild at conferences, and I
    interacted via public Matrix rooms with many other users. I also interacted
    directly with users via our support rotation and even built out tools to
    support that effort.
 
    In my current position
-   [at Can/Am]({{<ref"../../../portfolio/index.html#experience-canam-tech-lead">}}))
+   [at Can/Am]({{<ref"../../../portfolio/index.html#experience-canam-tech-lead">}})
    I've had the opportunity to go on-site to one of our clients and get to see
    them utilize our software. It is really awesome to see the software I've
    helped write allow them to accomplish their goals.
