@@ -165,10 +165,11 @@ be constantly upskilling yourself in nontechnical areas such as communication.
 It is easier to keep up with change now than at any other time: there is a
 plethora of YouTube channels, podcasts, and newsletters which can help you build
 your technical knowledge. I'm a fan of the [Changelog](https://changelog.com/)
-and [Coder Radio](https://coder.show/) in particular. I do not, however believe
-it's necessary to learn every single new framework or technology. A lot of
-knowledge in a specific domain will be transferable to another domain (it's all
-bits and CPU instructions at some point).
+and [Coder Radio](https://coder.show/) podcasts in particular, and obviously
+[The Primeagen](https://www.youtube.com/@ThePrimeTimeagen). I do not, however
+believe it's necessary to learn every single new framework or technology. A lot
+of knowledge in a specific domain will be transferable to another domain (it's
+all bits and CPU instructions at some point).
 
 Additionally, it's important to learn from your coworkers. Read lots of code
 from more other engineers to learn their approaches. Even as a senior engineer,
