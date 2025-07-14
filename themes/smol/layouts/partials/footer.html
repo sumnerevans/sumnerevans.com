@@ -3,7 +3,7 @@
     <a href="https://matrix.to/#/@sumner:nevarro.space" target="_blank" title="Matrix">
       <i class="fa fa-matrix-org"></i>
     </a>
-    <a id="footer-email-link" href="mailto:junk@sumnerevans.com" target="_blank" title="Email">
+    <a class="replace-email-link" href="mailto:junk@sumnerevans.com" target="_blank" title="Email">
       <i class="fa fa-envelope"></i>
     </a>
     <a href="https://github.com/sumnerevans" target="_blank" title="GitHub">
@@ -38,6 +38,6 @@
 {{ end }}
 {{ with "mailto:me@sumnerevans.com" | base64Encode }}
 <script type="text/javascript">
-  document.getElementById('footer-email-link').href = atob("{{ . }}");
+  document.querySelectorAll('a.replace-email-link').forEach(a => a.href = atob("{{ . }}"));
 </script>
 {{ end }}
