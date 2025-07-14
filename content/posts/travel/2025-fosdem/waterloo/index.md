@@ -44,11 +44,11 @@ political ranks during those wars: none other than Napoleon Bonaparte. Over the
 next decade and a half, Napoleonic France would upend the European balance of
 power with stunning victories across the continent.
 
-He started humiliated the Austrians in a masterpiece at Austerlitz during the
-War of the Third Coalition of 1805. Then, during the War of the Fourth Coalition
-the next year, his forces decimated the Prussian army in under a month with an
-18th century blitzkrieg including the decisive twin victories at Jena and
-Auerstädt. He followed those victories by defeating the Russians and turning
+He started by humiliating the Austrians in a masterpiece at Austerlitz during
+the War of the Third Coalition of 1805. Then, during the War of the Fourth
+Coalition the next year, his forces decimated the Prussian army in under a month
+with an 18th century blitzkrieg including the decisive twin victories at Jena
+and Auerstädt. He followed those victories by defeating the Russians and turning
 Poland into a French client state. However, cracks began to show in the French
 Grande Armée during that war. Russia managed to fight to a bloody draw at Eylau
 before being decisively defeated. Austria, which had sat out the previous war,
@@ -81,9 +81,9 @@ However, Napoleon did not stay in exile long. He returned the continent in early
 1815 and all of the French forces sent by King Louis XVIII to stop him turned to
 his side. This Napoleon with renewed continental aspirations was an anathema to
 the continental powers who had spent the better part of the last two decades
-combatting the rise of republican and imperial France. The entirety of allied
-themselves once more in a Seventh Coalition and effectively declared war on
-Napoleon himself.
+combatting the rise of republican and imperial France. The entirety of Europe
+allied themselves once more in a Seventh Coalition, declared Napoleon an outlaw,
+and declared war on the Emperor himself.
 
 Napoleon quickly mobilized a new army and invaded Belgium hoping to engage and
 defeat the British allied army and Prussian army in detail. After sharp
