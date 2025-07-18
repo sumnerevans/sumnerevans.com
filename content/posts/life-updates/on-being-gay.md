@@ -52,7 +52,7 @@ homeschoolers and I was friends with a guy who was a year older than me. I
 remember him saying that he had a crush on this girl in the class. I didn't
 think any of the girls were cute, but I just wrote it off as him just being
 older than me and that I'd eventually have a crush on one of them. Looking back,
-I think I did a crush: it was a crush on him.
+I think I did have a crush: it was a crush on him.
 
 At that same program, I remember one of the teachers making a joke along the
 lines of "you can tell the boys are growing up when they stop thinking girls are
@@ -184,7 +184,7 @@ I came out to my sister and a few other close friends and then, during the start
 of the COVID lockdowns I came out to my parents. I highly disrecommend coming
 out during a lockdown. My relationship with my parents was already strained
 because of the lockdown (a lot of it was my fault) and coming out didn't help.
-We have a good relationship new, but that was a hard time.
+We have a good relationship now, but that was a hard time.
 
 As I mentioned at the start of this post, the college and career group at
 Littleton Bible Chapel was instrumental in getting me through the COVID
@@ -310,8 +310,8 @@ kids, and have zero doubt about Christianity's truth claims. I would have seen
 them in action: those who follow God's law and Jesus' example are rewarded with
 full lives.
 
-However, the more I introspect myself and the less I feel like I belong in the
-Christian community as a single person, the more I lean towards it just being
+However, the more I introspect myself, the less I feel like I belong in the
+Christian community as a single person, and the more I lean towards it just being
 that I enjoy the community. It's terrifying to say, but I don't really know if
 I'm a Christian at this point.
 
