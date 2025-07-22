@@ -67,7 +67,7 @@ timeout = "360s"
   issoUrl = "comments.sumnerevans.com"
 
   [params.goatcounter]
-    domain = "https://sws.goatcounter.com/count"
+    domain = "https://stats.sumnerevans.com/count"
 
 [menu]
   [[menu.main]]
