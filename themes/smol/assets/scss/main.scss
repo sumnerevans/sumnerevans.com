@@ -475,9 +475,9 @@ header {
   display: grid;
   gap: 1rem var(--col-gap);
   grid-template:
-    "site-image name-and-subtitle" auto
+    "name-and-subtitle site-image" auto
     "nav nav" auto
-    / var(--image-width) auto;
+    / auto var(--image-width);
 
   a.site-image {
     grid-area: site-image;
@@ -492,6 +492,7 @@ header {
     picture,
     img {
       opacity: 1;
+      border-radius: 50%;
     }
   }
 

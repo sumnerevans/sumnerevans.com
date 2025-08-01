@@ -1,4 +1,12 @@
 <header>
+  <div class="name-and-subtitle">
+    <div class="site-title">
+      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    </div>
+    {{ with .Site.Params.Subtitle }}
+    <div class="site-subtitle">{{ . }}</div>
+    {{- end }}
+  </div>
   {{ with .Site.Params.logo }}
   <a href="{{ $.Site.Home.Permalink }}" class="site-image">
     {{ $siteImage := resources.Get . }}
@@ -19,14 +27,6 @@
     </picture>
   </a>
   {{ end }}
-  <div class="name-and-subtitle">
-    <div class="site-title">
-      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-    </div>
-    {{ with .Site.Params.Subtitle }}
-    <div class="site-subtitle">{{ . }}</div>
-    {{- end }}
-  </div>
   <nav>
     <p>
       <a href="{{ .Site.Home.Permalink }}"><b>Home</b></a>
