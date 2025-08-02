@@ -75,7 +75,7 @@ body {
   background-color: var(--bg-color);
 
   max-width: 800px;
-  margin: 2rem auto;
+  margin: 1rem auto 2rem auto;
   padding: 0 0.5rem;
   font-size: 15px;
   line-height: 1.5;
@@ -473,9 +473,10 @@ header {
   --col-gap: 1rem;
 
   display: grid;
-  gap: 1rem var(--col-gap);
+  gap: 0.5rem var(--col-gap);
   grid-template:
     "name-and-subtitle site-image" auto
+    "links site-image" auto
     "nav nav" auto
     / auto var(--image-width);
 
@@ -522,23 +523,102 @@ header {
     }
   }
 
+  div.links {
+    grid-area: links;
+    font-size: 1.5em;
+    display: flex;
+    gap: 0.8em;
+    flex-wrap: wrap;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
   nav {
     grid-area: nav;
     font-size: 1.1em;
-    border-top: 2px solid var(--section-sep-color);
+    padding: 0.5rem 0;
     border-bottom: 2px solid var(--section-sep-color);
-    text-align: center;
+
+    display: grid;
+    grid-template:
+      "nav-links . search-link" auto
+      "search-container search-container search-container" auto
+      / auto 1fr;
 
     p {
-      line-height: 2;
-      margin: 0;
+      margin: 0.5rem 0;
     }
 
     a {
       text-decoration: none;
     }
 
+    .nav-links {
+      grid-area: nav-links;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem 1.5rem;
+      flex-wrap: wrap;
+
+      &:active,
+      &:hover,
+      &:focus {
+        color: var(--link-active-color);
+      }
+
+      .categories-tags-collapsed {
+        display: none;
+      }
+
+      .posts {
+        display: flex;
+        gap: 0.3rem;
+      }
+    }
+
+    @media screen and (max-width: 650px) {
+      .nav-links {
+
+        .categories-link,
+        .tags-link {
+          display: none;
+        }
+
+        .categories-tags-collapsed {
+          display: block;
+        }
+      }
+    }
+
+    @media screen and (max-width: 550px) {
+      .nav-links {
+        gap: 0.5rem 1rem;
+      }
+    }
+
+    @media screen and (max-width: 475px) {
+      .nav-links>a>i.fa,
+      .nav-links>.posts>a>i.fa {
+        display: none;
+      }
+    }
+
+    #toggle-search {
+      grid-area: search-link;
+      text-align: right;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.hidden {
+        display: none;
+      }
+    }
+
     #search-container {
+      grid-area: search-container;
       margin: 20px 0;
       text-align: left;
 
@@ -685,18 +765,6 @@ footer {
 
   p:first-child {
     margin-top: 0;
-  }
-
-  p.links {
-    font-size: 1.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8em;
-
-    a {
-      text-decoration: none;
-    }
   }
 }
 

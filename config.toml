@@ -71,12 +71,6 @@ timeout = "360s"
 
 [menu]
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 1
-
-  [[menu.main]]
     identifier = "now"
     name = "Now"
     url = "/now/"
@@ -105,12 +99,6 @@ timeout = "360s"
     name = "Tags"
     url = "/tags/"
     weight = 8
-
-  [[menu.main]]
-    identifier = "rss"
-    name = "RSS"
-    url = "/index.xml"
-    weight = 9
 
 # Footer
   [[menu.footer]]

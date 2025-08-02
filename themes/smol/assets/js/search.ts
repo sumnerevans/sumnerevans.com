@@ -17,6 +17,8 @@ interface RawRecord {
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
+  document.getElementById("toggle-search")?.classList.remove("hidden");
+
   let rawIndex: Record<string, RawRecord> = {};
   let lunrSearchIndex: lunr.Index | undefined;
   const searchInput = document.getElementById(
@@ -113,15 +115,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     searchInput.focus();
   };
 
-  document.getElementById("toggle_search")?.addEventListener("click", () => {
+  document.getElementById("toggle-search")?.addEventListener("click", () => {
     const searchDivClasses =
       document.getElementById("search-container")!.classList;
     if (searchDivClasses.contains("hidden")) {
+      document.getElementById("toggle-search")?.classList.add("active");
       searchDivClasses.remove("hidden");
       loadSearchIndex().catch((e) => {
         searchResultsDiv.innerHTML = `<p class="no-results">Failed to load search index: ${e}</p>`;
       });
     } else {
+      document.getElementById("toggle-search")?.classList.remove("active");
       searchDivClasses.add("hidden");
     }
   });

@@ -27,16 +27,44 @@
     </picture>
   </a>
   {{ end }}
+  <div class="links">
+    <a href="https://matrix.to/#/@sumner:nevarro.space" target="_blank" title="Matrix">
+      <i class="fa fa-matrix-org"></i>
+    </a>
+    <a class="replace-email-link" href="mailto:junk@sumnerevans.com" target="_blank" title="Email">
+      <i class="fa fa-envelope"></i>
+    </a>
+    <a href="https://github.com/sumnerevans" target="_blank" title="GitHub">
+      <i class="fa fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/sumnerevans" target="_blank" title="LinkedIn">
+      <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="https://www.youtube.com/@sumnerevans" target="_blank" title="YouTube">
+      <i class="fa fa-youtube-play"></i>
+    </a>
+    <a href="/index.xml" target="_blank" title="RSS Feed">
+      <i class="fa fa-rss"></i>
+    </a>
+  </div>
   <nav>
-    <p>
-      <a href="{{ .Site.Home.Permalink }}"><b>Home</b></a>
-      {{ with .Site.Menus.main }}
-      {{ range . }}
-      | <a href="{{ .URL | relURL }}"><b>{{ .Name }}</b></a>
-      {{ end }}
-      {{ end }}
-      | <a id="toggle_search" href="javascript:void()"><b>Search</b></a>
-    </p>
+    <div class="nav-links">
+      <a href="{{ .Site.Home.Permalink }}/about" title="About"><i class="fa fa-user-circle-o"></i> About</a>
+      <a href="{{ .Site.Home.Permalink }}/now" title="Now"><i class="fa fa-clock-o"></i> Now</a>
+      <a href="{{ .Site.Home.Permalink }}/portfolio" title="Now"><i class="fa fa-briefcase"></i> Portfolio</a>
+      <div class="posts">
+        <a href="{{ .Site.Home.Permalink }}/posts" title="Posts"><i class="fa fa-comments"></i> Posts</a>
+        <div class="categories-tags-collapsed">
+          (<a href="{{ .Site.Home.Permalink }}/categories" title="Categories"><i class="fa fa-hashtag"></i></a>
+          <a href="{{ .Site.Home.Permalink }}/tags" title="Tags"><i class="fa fa-tags"></i></a>)
+        </div>
+      </div>
+      <a href="{{ .Site.Home.Permalink }}/categories" title="Categories" class="categories-link"><i class="fa fa-hashtag"></i> Categories</a>
+      <a href="{{ .Site.Home.Permalink }}/tags" title="Tags" class="tags-link"><i class="fa fa-tags"></i> Tags</a>
+    </div>
+    <div id="toggle-search" class="hidden">
+      <i class="fa fa-search"></i>
+    </div>
     <div id="search-container" class="hidden">
       <form class="search" method="get">
         <input id="search-query" type="search" placeholder="Loading..." disabled="disabled">
