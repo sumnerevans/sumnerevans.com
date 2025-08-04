@@ -172,7 +172,7 @@ of knowledge in a specific domain will be transferable to another domain (it's
 all bits and CPU instructions at some point).
 
 Additionally, it's important to learn from your coworkers. Read lots of code
-from more other engineers to learn their approaches. Even as a senior engineer,
+from other engineers to learn their approaches. Even as a senior engineer,
 junior engineers might surprise you with a novel approach to a problem.
 
 Recently, with the LLM revolution, finding ways to integrate AI into your
