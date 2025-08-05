@@ -633,8 +633,8 @@ header {
 
     @media screen and (max-width: 475px) {
 
-      .nav-links>a>i.fa,
-      .nav-links>.posts>a>i.fa {
+      .nav-links>a>svg,
+      .nav-links>.posts>a>svg {
         display: none;
       }
     }
