@@ -235,8 +235,8 @@ You can watch our demo (and the other five finalists)
 starts at ~3:30). I've included a video of just our demo below:
 
 <details class="youtube-expander" open>
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;CS@Mines Demo at Facebook Global Hackathon Finals</summary>
-  {{< youtube id="qYet1ka1J3I" title="CS@Mines Demo at Facebook Global Hackathon Finals" >}}
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} CS@Mines Demo at Facebook Global Hackathon Finals</summary>
+{{< youtube id="qYet1ka1J3I" title="CS@Mines Demo at Facebook Global Hackathon Finals" >}}
 </details>
 
 After the demos were over, we definitely didn't think that we would win. All of

@@ -16,9 +16,12 @@
     font-weight: bold;
     font-size: 1.1em;
 
-    &::before {
-      font-family: $fa-font-family;
-      margin-right: 0.5em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+    p {
+      margin-top: 1rem;
     }
   }
 
@@ -28,10 +31,6 @@
   border: 1px solid var(--admonition-default-color);
   color: var(--admonition-default-color);
   background-color: var(--admonition-default-bg-color);
-
-  .admonition-title::before {
-    content: fa-content($fa-var-info-circle);
-  }
 
   a {
     color: var(--admonition-default-color);
@@ -43,10 +42,6 @@
     color: var(--admonition-attention-color);
     background-color: var(--admonition-attention-bg-color);
 
-    .admonition-title::before {
-      content: fa-content($fa-var-exclamation);
-    }
-
     a {
       color: var(--admonition-attention-color);
     }
@@ -56,10 +51,6 @@
     border: 1px solid var(--admonition-caution-color);
     color: var(--admonition-caution-color);
     background-color: var(--admonition-caution-bg-color);
-
-    .admonition-title::before {
-      content: fa-content($fa-var-exclamation-circle);
-    }
 
     a {
       color: var(--admonition-caution-color);
@@ -71,10 +62,6 @@
     color: var(--admonition-danger-color);
     background-color: var(--admonition-danger-bg-color);
 
-    .admonition-title::before {
-      content: fa-content($fa-var-hand-stop-o);
-    }
-
     a {
       color: var(--admonition-danger-color);
     }
@@ -84,10 +71,6 @@
     border: 1px solid var(--admonition-error-color);
     color: var(--admonition-error-color);
     background-color: var(--admonition-error-bg-color);
-
-    .admonition-title::before {
-      content: fa-content($fa-var-exclamation-triangle);
-    }
 
     a {
       color: var(--admonition-error-color);
@@ -99,10 +82,6 @@
     color: var(--admonition-hint-color);
     background-color: var(--admonition-hint-bg-color);
 
-    .admonition-title::before {
-      content: fa-content($fa-var-lightbulb-o);
-    }
-
     a {
       color: var(--admonition-hint-color);
     }
@@ -112,10 +91,6 @@
     border: 1px solid var(--admonition-important-color);
     color: var(--admonition-important-color);
     background-color: var(--admonition-important-bg-color);
-
-    .admonition-title::before {
-      content: fa-content($fa-var-exclamation-circle);
-    }
 
     a {
       color: var(--admonition-important-color);
@@ -127,10 +102,6 @@
     color: var(--admonition-tip-color);
     background-color: var(--admonition-tip-bg-color);
 
-    .admonition-title::before {
-      content: fa-content($fa-var-lightbulb-o);
-    }
-
     a {
       color: var(--admonition-tip-color);
     }
@@ -141,10 +112,6 @@
     color: var(--admonition-warning-color);
     background-color: var(--admonition-warning-bg-color);
 
-    .admonition-title::before {
-      content: fa-content($fa-var-exclamation-triangle);
-    }
-
     a {
       color: var(--admonition-warning-color);
     }
@@ -154,10 +121,6 @@
     border: 1px solid var(--admonition-definition-color);
     color: var(--admonition-definition-color);
     background-color: var(--admonition-definition-bg-color);
-
-    .admonition-title::before {
-      content: fa-content($fa-var-book);
-    }
 
     a {
       color: var(--admonition-definition-color);

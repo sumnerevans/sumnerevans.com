@@ -1,6 +1,11 @@
 <div class="admonition note">
-  <p class="first admonition-title">{{ or (.Get "title") "Note" }}</p>
-  <p class="last">
-    {{ .Inner }}
-  </p>
+<div class="admonition-title">
+{{- with or (.Get "icon") "filled/info-circle" -}}
+{{- partial "icons/icon" (dict "vendor" "tabler" "name" .) -}}
+{{- end -}}
+<p>{{- or (.Get "title") "Note" -}}</p>
+</div>
+<p>
+{{- .Inner -}}
+</p>
 </div>

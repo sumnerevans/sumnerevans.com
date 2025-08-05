@@ -4,5 +4,5 @@
     class="permalink"
     href="#{{ .Anchor }}"
     aria-label="Permalink to {{ .Text }}"
-  ><i class="fa fa-link"></i></a>
+  >{{- partial "icons/icon" (dict "vendor" "tabler" "name" "outline/link") -}}</a>
 </h{{ .Level }}>

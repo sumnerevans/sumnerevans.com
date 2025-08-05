@@ -356,7 +356,7 @@ class I taught last spring), so my chances are not great.
 | **Part 2:**    | 00:13:17, 3984th                                                                |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 4 | Go (669*, 3984**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2022 - Day 4 | Go (669*, 3984**)</summary>
   {{< youtube id="UqS6PInmj9o" title="Advent of Code 2022 - Day 4 | Go (669*, 3984**)" >}}
 </details>
 
@@ -453,7 +453,7 @@ in fourth with 407 points.
 | **Part 2:**    | 00:26:01, 3205th                                                                |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 5 | Go (2321*, 3205**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2022 - Day 5 | Go (2321*, 3205**)</summary>
   {{< youtube id="rh2U3Tz5KI4" title="Advent of Code 2022 - Day 5 | Go (2321*, 3205**)" >}}
 </details>
 
@@ -521,7 +521,7 @@ Keshav, but with how slowly I've been solving, that's still a pretty tall order.
 | **Part 2:**    | 00:06:23, 2071th                                                                |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 6 | Go (1891*, 2071**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2022 - Day 6 | Go (1891*, 2071**)</summary>
   {{< youtube id="9y2Y20w4MCw" title="Advent of Code 2022 - Day 6 | Go (1891*, 2071**)" >}}
 </details>
 
@@ -576,7 +576,7 @@ currently.
 | **Part 2:**    | 00:45:19, 2879th                                                                |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 7 | Go (3323*, 2879**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2022 - Day 7 | Go (3323*, 2879**)</summary>
   {{< youtube id="3h8l9lqczbY" title="Advent of Code 2022 - Day 7 | Go (3323*, 2879**)" >}}
 </details>
 
@@ -652,7 +652,7 @@ starting to pull away from Colin (787) and Ryan (783) who both had bad nights
 | **Part 2:**    | 00:33:16, 2632nd                                                                |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 8 | Go (556*, 2632**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2022 - Day 8 | Go (556*, 2632**)</summary>
   {{< youtube id="cz8FD6jUW1A" title="Advent of Code 2022 - Day 8 | Go (556*, 2632**)" >}}
 </details>
 
@@ -719,7 +719,7 @@ for 3rd.
 | **Part 2:**    | 00:36:51, 2009th                                                                |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 9 | Go (3536*, 2009**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2022 - Day 9 | Go (3536*, 2009**)</summary>
   {{< youtube id="_tIfYJZ3Vjk" title="Advent of Code 2022 - Day 9 | Go (3536*, 2009**)" >}}
 </details>
 
@@ -793,7 +793,7 @@ couple days that he didn't solve as soon as the problem came out.)
 | **Part 2:**    | 00:45:18, 4534th                                                                |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 10 | Go (4404*, 4534**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2022 - Day 10 | Go (4404*, 4534**)</summary>
   {{< youtube id="zJx5O6Mkca8" title="Advent of Code 2022 - Day 10 | Go (4404*, 4534**)" >}}
 </details>
 
@@ -878,7 +878,7 @@ while Kelly is 11 points clear at 1151.
 | **Part 2:**    | 01:25:59, 4261th                                                                |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 11 | Go (910*, 4261**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2022 - Day 11 | Go (910*, 4261**)</summary>
   {{< youtube id="fIsPQWdyooM" title="Advent of Code 2022 - Day 11 | Go (910*, 4261**)" >}}
 </details>
 
@@ -985,7 +985,7 @@ but out of contention for the top 3 places.
 | **Part 2:**    | 01:28:11, 5221st                                                                |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 12 | Go (5663*, 5221**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2022 - Day 12 | Go (5663*, 5221**)</summary>
   {{< youtube id="5efwUmVPtzA" title="Advent of Code 2022 - Day 12 | Go (5663*, 5221**)" >}}
 </details>
 
@@ -1069,7 +1069,7 @@ who had a 8\*, 8\*\* showing tonight.
 | **Part 2:**    | 00:30:52, 1238th                                                                |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 13 | Go (880*, 1238**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2022 - Day 13 | Go (880*, 1238**)</summary>
   {{< youtube id="5efwUmVPtzA" title="Advent of Code 2022 - Day 13 | Go (880*, 1238**)" >}}
 </details>
 
@@ -1147,7 +1147,7 @@ are all in the 30 point span from 1322 to 1352 after tonight.
 | **Part 2:**    | 00:30:12, 1123rd                                                                |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 14 | Go (420*, 1123**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2022 - Day 14 | Go (420*, 1123**)</summary>
   {{< youtube id="l9TXHuwisdc" title="Advent of Code 2022 - Day 14 | Go (420*, 1123**)" >}}
 </details>
 
@@ -1219,7 +1219,7 @@ Sam (1543, 4\*, 3\*\*) continue to occupy the top four positions.
 | **Part 2:**    | 01:27:58, 2171st                                                                |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2022 - Day 15 | Go (1097*, 2171**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2022 - Day 15 | Go (1097*, 2171**)</summary>
   {{< youtube id="bS4JgC753yw" title="Advent of Code 2022 - Day 15 | Go (1097*, 2171**)" >}}
 </details>
 

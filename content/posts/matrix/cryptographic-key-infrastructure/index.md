@@ -33,23 +33,23 @@ image: ./images/overview.png
 math: true
 ---
 
-{{% note title="Slides and Recording" %}}
+<div class="admonition note">
+<div class="admonition-title">{{< ico "tabler" "filled/info-circle" >}}<p>Slides and Recording</p></div>
 
 This is a companion article to the
 [talk I gave at the 2024 Matrix Conference]({{<ref"/portfolio#presentation-matrix-crypto-key-infra">}})
 by the same name.
 
-<a href="slides.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i> Slides</a>
+<a href="slides.pdf" target="_blank">{{< ico "tabler" "outline/file-type-pdf" >}} Slides</a>
 |
-<a href="slides-with-notes.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i>
-Slides + Notes</a>
+<a href="slides-with-notes.pdf" target="_blank">{{< ico "tabler" "outline/file-type-pdf" >}} Slides + Notes</a>
 
 <details class="youtube-expander" open>
-<summary><i class="fa fa-youtube-play"></i>&nbsp;Matrix Cryptographic Key Infrastructure - Sumner Evans</summary>
-{{< youtube id="4uC-S0Bb5-g" >}}
+<summary>{{< ico "tabler" "filled/brand-youtube" >}} Matrix Cryptographic Key Infrastructure - Sumner Evans</summary>
+{{< youtube id="4uC-S0Bb5-g" title="Matrix Cryptographic Key Infrastructure - Sumner Evans" >}}
 </details>
 
-{{% /note %}}
+</div>
 
 End-to-end encryption is one of the things which brought me to Matrix, and I'm
 sure that it's one of the factors that brought many of you to Matrix as well.

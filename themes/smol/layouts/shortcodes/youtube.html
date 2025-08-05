@@ -61,8 +61,8 @@ Renders an embedded YouTube video using the https://github.com/justinribeiro/lit
   {{- with $pc.PrivacyEnhanced }}nocookie=""{{ end -}}
   params="controls={{ $controls }}&fs={{ $fs }}&loop={{ $loop }}&mute={{ $mute }}{{ with .Get "end" }}&end={{ . }}{{ end }}"
 >
-  <div class="lite-youtube-fallback">
-    <a href="https://{{ $host }}/watch?v={{ $id }}"><i class="fa fa-youtube-play"></i> Watch on YouTube</a>
-  </div>
+<div class="lite-youtube-fallback">
+<a href="https://{{ $host }}/watch?v={{ $id }}">{{- partial "icons/icon" (dict "vendor" "tabler" "name" "outline/brand-youtube") -}} Watch on YouTube</a>
+</div>
 </lite-youtube>
 {{- end -}}

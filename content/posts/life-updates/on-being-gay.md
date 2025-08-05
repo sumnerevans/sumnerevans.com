@@ -2,10 +2,16 @@
 title: On Being Gay
 date: 2025-07-13T00:00:00-06:00
 categories: [Life Updates]
+summary: |
+  It's always awkward to come out, but the lead-up is always the worst part.
+  Once it's done, it's done and I move on with my life. I have been out to my
+  family and most of my friends for a few years now, but as one of my friends
+  described it, I'm about as out as the sun on a cloudy day. Well, I guess it's
+  time for the sun to shine a bit more.
 ---
 
 <div class="admonition warning">
-<p class="first admonition-title">Warning</p>
+<p class="first admonition-title">{{< ico "tabler" "filled/info-triangle" >}} Warning</p>
 <p class="last">
 
 This post is personal. If you normally read my blog for my travel updates or my

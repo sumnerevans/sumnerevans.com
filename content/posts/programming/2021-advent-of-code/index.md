@@ -111,7 +111,7 @@ Six people leaderboarded globally:
 | **Part 2:**    | 00:02:22, 66th                                                                                                                                                |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 1 | Python (38*, 66**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 1 | Python (38*, 66**)</summary>
   {{< youtube id="ieMpcBqqbqg" title="Advent of Code 2021 - Day 1 | Python (38*, 66**)" >}}
 </details>
 
@@ -172,7 +172,7 @@ After calculating this list, the same algorithm as Part 1 works.
 | **Part 2:**    | 00:04:57, 856th                                                                                                                                               |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 2 | Python (1045*, 856**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 2 | Python (1045*, 856**)</summary>
   {{< youtube id="ZFZiaNXGq1Y" title="Advent of Code 2021 - Day 2 | Python (1045*, 856**)" >}}
 </details>
 
@@ -212,7 +212,7 @@ your lateral direction.
 | **Part 2:**    | 00:38:16, 3718th                                                               |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 3 | Python (1338*, 3718**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 3 | Python (1338*, 3718**)</summary>
   {{< youtube id="xVgcF0uBOWM" title="Advent of Code 2021 - Day 3 | Python (1338*, 3718**)" >}}
 </details>
 
@@ -299,7 +299,7 @@ things that I am going to keep in mind in the future:
 | **Part 2:**    | 00:37:47, 2325th                                                               |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 4 | Python (845*, 2325**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 4 | Python (845*, 2325**)</summary>
   {{< youtube id="Lahkxd4INSo" title="Advent of Code 2021 - Day 4 | Python (845*, 2325**)" >}}
 </details>
 
@@ -361,7 +361,7 @@ I spent about 17 minutes fixing that bug.
 | **Part 2:**    | 00:36:27, 2733rd                                                               |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 5 | Python (1238*, 2733**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 5 | Python (1238*, 2733**)</summary>
   {{< youtube id="cZ13TeADxKM" title="Advent of Code 2021 - Day 5 | Python (1238*, 2733**)" >}}
 </details>
 
@@ -450,7 +450,7 @@ from the start to the end of the range.
 | **Part 2:**    | 00:06:50, 175th                                                                                                                                               |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 6 | Python (122*, 175**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 6 | Python (122*, 175**)</summary>
   {{< youtube id="N7cWDWK-2oU" title="Advent of Code 2021 - Day 6 | Python (122*, 175**)" >}}
 </details>
 
@@ -528,7 +528,7 @@ worrying about whether the key existed or not in the dictionary.
 | **Part 2:**    | 00:10:14, 1865th                                                                                                                                              |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 7 | Python (252*, 1865**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 7 | Python (252*, 1865**)</summary>
   {{< youtube id="VceuLfVAu90" title="Advent of Code 2021 - Day 7 | Python (252*, 1865**)" >}}
 </details>
 
@@ -596,7 +596,7 @@ print("Part 2:", calc_best_alignment(seq, lambda a, b: sum(irange(1, abs(a - b))
 | **Part 2:**    | 00:44:03, 1066th                                                               |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 8 | Python (890*, 1066**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 8 | Python (890*, 1066**)</summary>
   {{< youtube id="fG_qObFZntI" title="Advent of Code 2021 - Day 8 | Python (890*, 1066**)" >}}
 </details>
 
@@ -675,7 +675,7 @@ the stretch!
 | **Part 2:**    | 00:39:34, 2937th                                                               |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 9 | Python (5314*, 2937**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 9 | Python (5314*, 2937**)</summary>
   {{< youtube id="bMjGUiAsD3U" title="Advent of Code 2021 - Day 9 | Python (5314*, 2937**)" >}}
 </details>
 
@@ -763,7 +763,7 @@ But, at least when you sort by Global Score, I'm still first.
 | **Part 2:**    | 00:19:18, 1640th                                                               |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 10 | Python (1902*, 1640**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 10 | Python (1902*, 1640**)</summary>
   {{< youtube id="uDvh1F43KGE" title="Advent of Code 2021 - Day 10 | Python (1902*, 1640**)" >}}
 </details>
 
@@ -817,7 +817,7 @@ lot harder to get points because there aren't as many people solving each night.
 | **Part 2:**    | 00:54:24, 4535th                                                               |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 11 | Python (4855*, 4535**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 11 | Python (4855*, 4535**)</summary>
   {{< youtube id="Z01y9SO8m-c" title="Advent of Code 2021 - Day 11 | Python (4855*, 4535**)" >}}
 </details>
 
@@ -874,7 +874,7 @@ to the answer and it was fine.
 | **Part 2:**    | 00:43:27, 2240th                                                               |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 12 | Python (422*, 2240**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 12 | Python (422*, 2240**)</summary>
   {{< youtube id="TCGlSYrciXw" title="Advent of Code 2021 - Day 12 | Python (422*, 2240**)" >}}
 </details>
 
@@ -971,7 +971,7 @@ have all been outperforming me the past few days.
 | **Part 2:**    | 00:36:37, 2836th                                                               |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 13 | Python (3962*, 2836**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 13 | Python (3962*, 2836**)</summary>
   {{< youtube id="60kkZZFaPcw" title="Advent of Code 2021 - Day 13 | Python (3962*, 2836**)" >}}
 </details>
 
@@ -1035,7 +1035,7 @@ Adam who all outperformed me again tonight.
 | **Part 2:**    | 01:08:40, 3371th                                                               |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 14 | Python (391*, 3371**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 14 | Python (391*, 3371**)</summary>
   {{< youtube id="6FEL2eyOi5Q" title="Advent of Code 2021 - Day 14 | Python (391*, 3371**)" >}}
 </details>
 
@@ -1170,7 +1170,7 @@ out of reach (Ryan has 1195 points, which is virtually insurmountable).
 | **Part 2:**    | 01:51:23, 3682nd                                                               |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 15 | Python (84*, 3682**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 15 | Python (84*, 3682**)</summary>
   {{< youtube id="0OdB9y2b8nY" title="Advent of Code 2021 - Day 15 | Python (84*, 3682**)" >}}
 </details>
 
@@ -1263,7 +1263,7 @@ people who've gotten to the top 100 from Mines!
 | **Part 2:**    | 01:55:56, 3005th                                                               |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 16 | Python (3439*, 3005**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 16 | Python (3439*, 3005**)</summary>
   {{< youtube id="iFRbRXXtZMw" title="Advent of Code 2021 - Day 16 | Python (3439*, 3005**)" >}}
 </details>
 
@@ -1365,7 +1365,7 @@ I'm doing as I'm doing it.
 | **Part 2:**    | 00:16:56, 271th                                                                |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 17 | Python (240*, 271**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 17 | Python (240*, 271**)</summary>
   {{< youtube id="tXm7Dsv3EM8" title="Advent of Code 2021 - Day 17 | Python (240*, 271**)" >}}
 </details>
 
@@ -1572,7 +1572,7 @@ results for all 24 rotations: that was a lifesaver.
 | **Part 2:**    | 01:07:34, 2108th                                                               |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 20 | Python (1489*, 2108**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 20 | Python (1489*, 2108**)</summary>
   {{< youtube id="cCwYTA7pr_M" title="Advent of Code 2021 - Day 20 | Python (1489*, 2108**)" >}}
 </details>
 
@@ -1660,7 +1660,7 @@ take it.
 | **Part 2:**    | 00:22:56, 144th                                                                |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 21 | Python (352*, 144**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 21 | Python (352*, 144**)</summary>
   {{< youtube id="tyAlJNO5Pbc" title="Advent of Code 2021 - Day 21 | Python (352*, 144**)" >}}
 </details>
 
@@ -1982,7 +1982,7 @@ horribly, but I eventually figured out how to use Z3 to give me the answer.
 | **Part 2:**    | 00:16:51, 503rd                                                                |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2021 - Day 25 | Python (605*, 503**)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2021 - Day 25 | Python (605*, 503**)</summary>
   {{< youtube id="kF-lhTOACPM" title="Advent of Code 2021 - Day 25 | Python (605*, 503**)" >}}
 </details>
 

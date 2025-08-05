@@ -75,7 +75,7 @@ $ tokei -e '*.txt' -e '*.json'
 | **Part 2:**    | 00:21:47, 2021st                                                                        |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2023 - Day 1 | Random Wheel Spin (*5636, **2021)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2023 - Day 1 | Random Wheel Spin (*5636, **2021)</summary>
   {{< youtube id="iXxL_JxLh1A" title="Advent of Code 2023 - Day 1 | Random Wheel Spin (*5636, **2021)" >}}
 </details>
 
@@ -125,7 +125,7 @@ return parseInt("" + ints[0] + ints[ints.length - 1]);
 | **Part 2:**    | >24h, 94541st                                                                        |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2023 - Day 2 | Random Wheel Spin (*9493, **94541)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2023 - Day 2 | Random Wheel Spin (*9493, **94541)</summary>
   {{< youtube id="30a0xIioxMs" title="Advent of Code 2023 - Day 2 | Random Wheel Spin (*9493, **94541)" >}}
 </details>
 
@@ -151,7 +151,7 @@ comments about either of the parts.
 | **Part 2:**    | 02:06:29, 8720th                                                                    |
 
 <details class="youtube-expander">
-  <summary><i class="fa fa-youtube-play"></i>&nbsp;Advent of Code 2023 - Day 7 | Random Wheel Spin (*8044, **8720)</summary>
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Advent of Code 2023 - Day 7 | Random Wheel Spin (*8044, **8720)</summary>
   {{< youtube id="f8iZByyR1Cc" title="Advent of Code 2023 - Day 7 | Random Wheel Spin (*8044, **8720)" >}}
 </details>
 

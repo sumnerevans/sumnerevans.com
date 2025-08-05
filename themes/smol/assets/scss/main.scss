@@ -1,5 +1,4 @@
 @import 'iosevka';
-@import 'fork-awesome/fork-awesome';
 @import 'admonitions';
 @import 'dark-mode';
 @import 'isso';
@@ -115,12 +114,6 @@ span.link {
     text-decoration: none;
     color: var(--link-disabled-color);
   }
-
-  i.fa-external-link {
-    text-decoration: none;
-    margin-left: 0.25rem;
-    font-size: 0.75rem;
-  }
 }
 
 a.btn {
@@ -145,6 +138,10 @@ h4,
 h5,
 h6 {
   line-height: 1.2;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
 
   &:hover .permalink {
     opacity: 1;
@@ -295,14 +292,38 @@ img {
   }
 }
 
+details:not(.normal-expander) {
+  >summary {
+    &::marker {
+      display: none;
+    }
+
+    &::details-marker {
+      display: none;
+    }
+
+    &:before {
+      content: '▶';
+    }
+  }
+
+  &:open>summary:before {
+    content: '▼';
+  }
+}
+
 details.youtube-expander {
   margin: 1em 0;
 
   >summary {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
     background-color: var(--expander-summary-color);
     padding: 1em;
 
-    i.fa-youtube-play {
+    svg {
       color: #e52d27;
       font-size: 1.1em;
     }
@@ -340,14 +361,13 @@ details.portfolio-item {
     background-color: var(--expander-summary-color);
     display: grid;
     padding: 0.5rem 1rem 0.5rem 0.75rem;
-    gap: 0 0.5rem;
+    gap: 0.2rem 0.5rem;
     grid-template:
       "expander icon title       dates      " auto
       "expander icon description description" auto
       / 1rem 2.5rem auto auto;
 
-    &::before {
-      content: '▶';
+    &:before {
       grid-area: expander;
       display: flex;
       align-items: center;
@@ -375,7 +395,7 @@ details.portfolio-item {
       margin: 0;
     }
 
-    span {
+    >span {
       text-align: right;
       grid-area: dates;
       font-size: 0.9em;
@@ -409,10 +429,6 @@ details.portfolio-item {
         "expander description description" auto
         / 1rem auto auto;
     }
-  }
-
-  &:open>summary::before {
-    content: '▼';
   }
 
   >div {
@@ -459,6 +475,10 @@ details.portfolio-more-items {
       font-weight: bold;
       font-size: 1.1rem;
     }
+
+    &:before {
+      content: none;
+    }
   }
 
   &:open>summary {
@@ -471,7 +491,7 @@ header {
   --col-gap: 1rem;
 
   display: grid;
-  gap: 0.5rem var(--col-gap);
+  gap: 0.6rem var(--col-gap);
   grid-template:
     "name-and-subtitle site-image" auto
     "links site-image" auto
@@ -521,19 +541,20 @@ header {
 
   div.links {
     grid-area: links;
-    font-size: 1.5em;
+    font-size: 1.7em;
     display: flex;
     gap: 0.8em;
     flex-wrap: wrap;
 
     a {
       text-decoration: none;
+      display: flex;
+      align-items: center;
     }
   }
 
   nav {
     grid-area: nav;
-    font-size: 1.1em;
     padding: 0.5rem 0;
     border-bottom: 2px solid var(--section-sep-color);
 
@@ -557,11 +578,23 @@ header {
       align-items: center;
       gap: 0.5rem 1.5rem;
       flex-wrap: wrap;
+      font-size: 1.2em;
 
-      &:active,
-      &:hover,
-      &:focus {
-        color: var(--link-active-color);
+      a {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+
+        span {
+          line-height: 1.4;
+        }
+
+
+        &:active,
+        &:hover,
+        &:focus {
+          color: var(--link-active-color);
+        }
       }
 
       .categories-tags-collapsed {
@@ -583,7 +616,11 @@ header {
         }
 
         .categories-tags-collapsed {
-          display: block;
+          display: flex;
+
+          a:not(:first-child) {
+            margin-left: 0.3rem;
+          }
         }
       }
     }
@@ -595,6 +632,7 @@ header {
     }
 
     @media screen and (max-width: 475px) {
+
       .nav-links>a>i.fa,
       .nav-links>.posts>a>i.fa {
         display: none;
