@@ -143,6 +143,10 @@ h6 {
   align-items: center;
   flex-wrap: wrap;
 
+  .permalink {
+    display: flex;
+  }
+
   &:hover .permalink {
     opacity: 1;
   }
