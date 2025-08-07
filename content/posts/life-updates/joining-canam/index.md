@@ -3,12 +3,10 @@ title: "I'm Joining Can/Am Technologies"
 date: 2025-04-07
 categories: [Life Updates]
 tags: [Can/Am Technologies, Job, Work]
-image: images/CanAmLogo.svg
-hide_image_in_index: true
 ---
 
 <center>
-{{<image src="images/CanAmLogo.svg" link="https://canamtechnologies.com" width="50%">}}
+{{<image src="images/CanAmLogo.svg" alt="Can/Am Technologies" link="https://canamtechnologies.com" width="50%">}}
 </center>
 
 Today I am happy to announce that I have joined
