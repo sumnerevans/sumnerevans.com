@@ -4,17 +4,15 @@ date: 2024-12-24T03:00:00-06:00
 categories: [Projects]
 tags:
   - Sublime Music
-image: images/logo.png
 description: |
   Today I'm announcing that Sublime Music has reached end-of-maintenance. This
   announcement is greatly overdue, as I have not been actively maintaining the
   project for over a year, and have not been actively developing new features
   for even longer.
-hide_image_in_index: true
 ---
 
 <center>
-{{<image src="images/logo.png" link="https://sublimemusic.app" width="50%">}}
+{{<image src="images/logo.png" alt="Sublime Music" link="https://sublimemusic.app" width="50%">}}
 </center>
 
 Today I'm announcing that Sublime Music has reached end-of-maintenance. This
