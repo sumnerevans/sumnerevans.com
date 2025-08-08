@@ -6,17 +6,17 @@ description: |
   including one graduate level course.
 ---
 
-<p><b>Note</b> This page is my extended Curriculum Vitae containing all my professional achievements. For a more concise overview, please view my <a href="./resume.pdf">resume</a>.</p>
+> [!NOTE]
+>
+> This page is my extended Curriculum Vitae containing all my professional
+> achievements. For a more concise overview, please view my
+> [resume](./resume.pdf).
 
-<p>
-  I'm a software engineer and educator. I have six years of industry experience as a software
-  engineer, and I have taught classes at a university level including one graduate level course.
-</p>
+I'm a software engineer and educator. I have six years of industry experience as
+a software engineer, and I have taught classes at a university level including
+one graduate level course.
 
-<h2 id="experience">
-  Experience
-  <a class="permalink" href="#experience" aria-label="Permalink to Experience" label="Permalink to Experience">{{< ico "tabler" "outline/link" >}}</a>
-</h2>
+## Experience
 
 <details id="experience-canam-tech-lead" class="portfolio-item" open>
   <summary>
@@ -390,10 +390,7 @@ description: |
   </details>
 </details>
 
-<h2 id="education">
-  Education
-  <a class="permalink" href="#education" aria-label="Permalink to Education">{{< ico "tabler" "outline/link" >}}</a>
-</h2>
+## Education
 
 <details id="education-mines-masters" class="portfolio-item">
   <summary>
@@ -519,11 +516,7 @@ description: |
   </div>
 </details>
 
-<h2 id="presentations">
-  Presentations
-  <a class="permalink" href="#presentations"
-    aria-label="Permalink to Presentations">{{< ico "tabler" "outline/link" >}}</a>
-</h2>
+## Presentations
 
 <details id="presentation-matrix-crypto-key-infra" class="portfolio-item no-logo" open>
   <summary>
@@ -1040,11 +1033,7 @@ description: |
   </details>
 </details>
 
-<h2 id="projects">
-  Projects
-  <a class="permalink" href="#projects"
-    aria-label="Permalink to Projects">{{< ico "tabler" "outline/link" >}}</a>
-</h2>
+## Projects
 
 <details id="project-mineshspc.com" class="portfolio-item">
   <summary>
@@ -1700,11 +1689,7 @@ description: |
   </details>
 </details>
 
-<h2 id="publications">
-  Publications
-  <a class="permalink" href="#publications"
-    aria-label="Permalink to Publications">{{< ico "tabler" "outline/link" >}}</a>
-</h2>
+## Publications
 
 <details id="publication-dreams-of-flight" class="portfolio-item no-logo">
   <summary>
