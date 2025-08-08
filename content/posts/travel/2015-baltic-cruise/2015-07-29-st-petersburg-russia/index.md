@@ -30,14 +30,14 @@ We met our guide outside the cruise terminal. Her name was Maria. Then we headed
 to the van and met the driver, Mitri. We drove towards the city and she
 explained some of the sites as we went.
 
-{{% note %}}
-I am going to try and write semi-chronologically about are time in St.
-Petersburg, but I am going try and group information together more than on my
-other posts.
-
-These facts may not be entirely accurate. They have come through a guide and
-then through my brain so that is two points of failure.
-{{% /note %}}
+> [!NOTE]
+>
+> I am going to try and write semi-chronologically about are time in St.
+> Petersburg, but I am going try and group information together more than on my
+> other posts.
+>
+> These facts may not be entirely accurate. They have come through a guide and
+> then through my brain so that is two points of failure.
 
 St. Petersburg is built on ~40 islands and was founded by Peter the Great, Czar
 of Russia in the 1700s. It is the second largest city in Russia next to Moscow

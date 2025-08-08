@@ -57,17 +57,13 @@ Client-Server API that will improve client developers experience. Having strong
 client representation on the Governing board will ensure that clients have a
 seat at the table in discussions about the priorities of Matrix.
 
-<div class="admonition info">
-<p class="first admonition-title">Election Results</p>
-<p class="last">
 
-**2024-06-03**: The results of the first Governing Board Election have been
-[posted on the Matrix.org Blog](https://matrix.org/blog/2024/06/election-results/).
-
-I am happy that both Kim and Nico were elected as ecosystem members, and I am
-grateful that I was elected as an individual member.
-
-Thank you to those who voted for me!
-
-</p>
-</div>
+> [!TASK] Election Results
+>
+> **2024-06-03**: The results of the first Governing Board Election have been
+> [posted on the Matrix.org Blog](https://matrix.org/blog/2024/06/election-results/).
+>
+> I am happy that both Kim and Nico were elected as ecosystem members, and I am
+> grateful that I was elected as an individual member.
+>
+> Thank you to those who voted for me!

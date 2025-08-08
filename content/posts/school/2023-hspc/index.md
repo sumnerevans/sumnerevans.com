@@ -42,18 +42,16 @@ relatively detailed solution sketches).
 
 ## The Problems
 
-{{% warning %}}
-
-The rest of this post should be treated like a solutions manual. I hope that
-this is an extremely helpful resource when you get stuck, but you should _try_
-to solve each of the problems before reading the solutions. There's no magic
-amount of time that you should try to solve the problem before looking at the
-solution sketch, but I think a good rule of thumb is after you've tried at least
-three ideas on your own, then you can read at the solution sketch.
-
-**Remember: You will not learn anything if you just read the explanations!**
-
-{{% /warning %}}
+> [!WARNING]
+>
+> The rest of this post should be treated like a solutions manual. I hope that
+> this is an extremely helpful resource when you get stuck, but you should _try_
+> to solve each of the problems before reading the solutions. There's no magic
+> amount of time that you should try to solve the problem before looking at the
+> solution sketch, but I think a good rule of thumb is after you've tried at
+> least three ideas on your own, then you can read at the solution sketch.
+>
+> **Remember: You will not learn anything if you just read the explanations!**
 
 There were eighteen problems in the competition written by eight different
 authors. The problems can be viewed at
@@ -135,12 +133,10 @@ are likely many alternative ways to solve each of these problems.
 | **Beginner**    | Problem A, 34/52 (65%) solved/tries, 100% solve rate                                       |
 | **Concept**     | basic operations on variables                                                              |
 
-{{% note title="Problem Summary" %}}
-
-Calculate the modified elevation of a particular point after the sea level rises
-by 30 centimeters.
-
-{{% /note %}}
+> [!NOTE] Problem Summary
+>
+> Calculate the modified elevation of a particular point after the sea level
+> rises by 30 centimeters.
 
 The solution is to read the input (which is given in meters) as a floating point
 number, subtract 0.3, and output it.
@@ -157,13 +153,11 @@ objects on land decreases.
 | **Beginner**    | Problem B, 32/66 (48%) solved/tries, 94% solve rate                                         |
 | **Concept**     | basic operations on variables                                                               |
 
-{{% note title="Problem Summary" %}}
-
-**Will Rishi make it to the end of the intersection before the light turns red
-given he is going at \(S\) miles per hour?** He is \(D\) feet from the end of
-the intersection and he has \(T\) seconds to get through the intersection.
-
-{{% /note %}}
+> [!NOTE] Problem Summary
+>
+> **Will Rishi make it to the end of the intersection before the light turns red
+> given he is going at \(S\) miles per hour?** He is \(D\) feet from the end of
+> the intersection and he has \(T\) seconds to get through the intersection.
 
 For this problem, you need to determine if Rishi will travel at least \(D\) feet
 in \(T\) seconds going at \(S\) miles per hour.
@@ -182,12 +176,10 @@ Then if \(T \times S \geq D\) Rishi "MADE IT" otherwise output "FAILED TEST".
 | **Beginner**    | Problem C, 22/133 (17%) solved/tries, 64% solve rate                                   |
 | **Concept**     | modular arithmetic in a `for` loop.                                                    |
 
-{{% note title="Problem Summary" %}}
-
-Given a message, decode it by applying a Caesar cipher to each character with
-shift amount that doubles every character.
-
-{{% /note %}}
+> [!NOTE] Problem Summary
+>
+> Given a message, decode it by applying a Caesar cipher to each character with
+> shift amount that doubles every character.
 
 For each character, shift it by the shift amount, print it, then double the
 shift amount. Main gotchas:
@@ -209,12 +201,10 @@ modular arithmetic work naturally.
 | **Beginner**    | Problem D, 27/55 (49%) solved/tries, 79% solve rate                                             |
 | **Concept**     | lots of `if` statements (or a dictionary)                                                       |
 
-{{% note title="Problem Summary" %}}
-
-Given a word, determine what numbers on a standard keypad would be used to
-represent that word.
-
-{{% /note %}}
+> [!NOTE] Problem Summary
+>
+> Given a word, determine what numbers on a standard keypad would be used to
+> represent that word.
 
 You need to convert everything to lower case (or upper case), then loop over all
 of the characters in the string and determine the number corresponding to the
@@ -235,12 +225,10 @@ Alternatively, you can just write 26 `switch` cases or `if` statements.
 | **Advanced**    | Problem A, 29/52 (56%) solved/tries, 94% solve rate                                        |
 | **Concept**     | minimization/maximization on a list                                                        |
 
-{{% note title="Problem Summary" %}}
-
-Calculate the maximum and minimum number of points scored across all games, and
-the maximum and minimum total number of points scored in a month.
-
-{{% /note %}}
+> [!NOTE] Problem Summary
+>
+> Calculate the maximum and minimum number of points scored across all games,
+> and the maximum and minimum total number of points scored in a month.
 
 Store the current maximum score, current minimum score, current maximum total
 month, and current minimum total month (minimum values should be initialized to
@@ -263,12 +251,10 @@ scores.
 | **Advanced**    | Problem C, 30/63 (48%) solved/tries, 97% solve rate                                                  |
 | **Concept**     | a `for` loop (or notice that modular aritemetic would solve the problem)                             |
 
-{{% note title="Problem Summary" %}}
-
-Compute the output of an algorithm that determines if an integer is divisible by
-nine.
-
-{{% /note %}}
+> [!NOTE] Problem Summary
+>
+> Compute the output of an algorithm that determines if an integer is divisible
+> by nine.
 
 The problem can be solved by implementing the algorithm provided in the problem
 statement. It may have been useful to interpret the input as a string of digits
@@ -287,12 +273,10 @@ computing \(C \mod 9\), except that the algorithm outputs 9 if \(C \mod 9 = 0\).
 | **Advanced**    | Problem F, 16/45 (36%) solved/tries, 52% solve rate                                      |
 | **Concept**     | binary search                                                                            |
 
-{{% note title="Problem Summary" %}}
-
-Given a list of headings in a generalized extended version of the compass rose
-cardinal directions, determine the corresponding degree values.
-
-{{% /note %}}
+> [!NOTE] Problem Summary
+>
+> Given a list of headings in a generalized extended version of the compass rose
+> cardinal directions, determine the corresponding degree values.
 
 First, handle the special cases of due north/east/south/west. Then, the easiest
 way to solve this is by dividing the problem up per-quadrant. You can determine
@@ -327,13 +311,11 @@ case is the northwest quadrant where you have to use \(360^{\circ}\) as your
 | **Beginner**    | Problem H, 7/36 (19%) solved/tries, 21% solve rate                                           |
 | **Concept**     | simulation or computing a summation                                                          |
 
-{{% note title="Problem Summary" %}}
-
-Given many different flashdrives that can image computers at different speeds,
-and the number of computers to image, determine the minimum time to image all
-computers
-
-{{% /note %}}
+> [!NOTE] Problem Summary
+>
+> Given many different flashdrives that can image computers at different speeds,
+> and the number of computers to image, determine the minimum time to image all
+> computers
 
 It's useful to think about this problem as a scheduling problem, where computers
 are scheduled onto flash drives. The input size for this problem is small enough
@@ -387,11 +369,9 @@ Note that there are more efficient solutions, which are required for the
 | **Beginner**    | Problem H, 9/46 (20%) solved/tries, 26% solve rate                                         |
 | **Concept**     | string and number representation                                                           |
 
-{{% note title="Problem Summary" %}}
-
-Convert a number to its textual representation.
-
-{{% /note %}}
+> [!NOTE] Problem Summary
+>
+> Convert a number to its textual representation.
 
 The cleanest approach is to notice that the textual representation of each set
 of 3-digits is the same, with an added postfix for thousands/millions.
@@ -412,13 +392,11 @@ double-digit numbers with hyphens.
 | **Advanced**    | Problem D, 22/31 (71%) solved/tries, 71% solve rate                                               |
 | **Concept**     | array manipulation                                                                                |
 
-{{% note title="Problem Summary" %}}
-
-Given the initial state of a series of stacks of paper, and a record of how
-sheets of paper were moved between stacks, determine the final state of the
-stacks.
-
-{{% /note %}}
+> [!NOTE] Problem Summary
+>
+> Given the initial state of a series of stacks of paper, and a record of how
+> sheets of paper were moved between stacks, determine the final state of the
+> stacks.
 
 To solve this problem, simulate the provided sequence of operations on the
 initial state of the stacks, and then output the final state.
@@ -439,13 +417,11 @@ required: dynamic arrays to represent each stack is sufficient.
 | **Advanced**    | Problem L, 10/59 (17%) solved/tries, 32% solve rate                                         |
 | **Concept**     | array processing with windowing                                                             |
 
-{{% note title="Problem Summary" %}}
-
-Given a list of \(N\) temperature readings, find a group size such that the
-difference of averages between sequential groups is below a certain threshold,
-\(T\).
-
-{{% /note %}}
+> [!NOTE] Problem Summary
+>
+> Given a list of \(N\) temperature readings, find a group size such that the
+> difference of averages between sequential groups is below a certain threshold,
+> \(T\).
 
 The bounds of this problem are such that you can just try every group size up to
 \(N/2 + 1\) and see if the group size works.
@@ -467,12 +443,10 @@ Keep track of the previous group's average, and if the difference is above
 | **Advanced**    | Problem J, 9/13 (69%) solved/tries, 29% solve rate                                              |
 | **Concept**     | 2-D array processing                                                                            |
 
-{{% note title="Problem Summary" %}}
-
-Given a \(W \times H\) reference image and an \(N \times M\) sky, determine the
-**rotation** at which the reference image would be centered in the sky.
-
-{{% /note %}}
+> [!NOTE] Problem Summary
+>
+> Given a \(W \times H\) reference image and an \(N \times M\) sky, determine
+> the **rotation** at which the reference image would be centered in the sky.
 
 To find where the reference image appears in the current view, create 4 nested
 for loops:
@@ -494,12 +468,10 @@ the given offset, then the correct offset has been found.
 | **Advanced**    | Problem H, 6/76 (8%) solved/tries, 19% solve rate                                               |
 | **Concept**     | BFS                                                                                             |
 
-{{% note title="Problem Summary" %}}
-
-Given a list of links between Wikipedia pages, determine the smallest number of
-clicks it would take to get back to the page you started on.
-
-{{% /note %}}
+> [!NOTE] Problem Summary
+>
+> Given a list of links between Wikipedia pages, determine the smallest number
+> of clicks it would take to get back to the page you started on.
 
 Model the problem as a **directed graph** with links being the _edges_ and pages
 being the _nodes_.
@@ -519,12 +491,10 @@ page, then there is "NO BLACK HOLE".
 | **Advanced**    | Problem K, 5/49 (10%) solved/tries, 16% solve rate                                      |
 | **Concept**     | BFS/DFS                                                                                 |
 
-{{% note title="Problem Summary" %}}
-
-Given a set of conversion factors between units, convert from one unit to
-another unit. (There may not be a direct conversion given.)
-
-{{% /note %}}
+> [!NOTE] Problem Summary
+>
+> Given a set of conversion factors between units, convert from one unit to
+> another unit. (There may not be a direct conversion given.)
 
 Model the problem as a **directed graph** with the _nodes_ being units and the
 _edges_ being a known conversion from the two units. Note that you will always
@@ -543,13 +513,11 @@ converted value (similar to a distance table used in Dijkstra's algorithm).
 | **Advanced**    | Problem I, 6/43 (14%) solved/tries, 19% solve rate                                                    |
 | **Concept**     | binary search for the answer                                                                          |
 
-{{% note title="Problem Summary" %}}
-
-Given many different flash drives that image computers at different speeds, and
-a very large number of computers to image, determine the minimum time to image
-all computers.
-
-{{% /note %}}
+> [!NOTE] Problem Summary
+>
+> Given many different flash drives that image computers at different speeds,
+> and a very large number of computers to image, determine the minimum time to
+> image all computers.
 
 This is a harder version of the [Computer Imaging](#computer-imaging) problem
 given to the beginner competition. In this version of the problem, the number of
@@ -581,12 +549,10 @@ possibly image fewer computers.
 | **Advanced**    | Problem B, 2/25 (8%) solved/tries, 6% solve rate                                                 |
 | **Concept**     | dynamic programming                                                                              |
 
-{{% note title="Problem Summary" %}}
-
-Given a probabilistic model for how a basketball team scores points, determine
-the expected value for the number of points they will score.
-
-{{% /note %}}
+> [!NOTE] Problem Summary
+>
+> Given a probabilistic model for how a basketball team scores points, determine
+> the expected value for the number of points they will score.
 
 This problem requires a solution technique called **Dynamic Programming**, which
 allows us to efficiently solve problems involving recursion.
@@ -599,31 +565,29 @@ function recursively.
 The first step is to define a recursive definition for the expected value
 function.
 
-{{% note title="Recursive Definition" %}}
-
-For the base case, \(f(0, m_2, m_3) = 0\) for all \(m_2\) and \(m_3\), because
-there are no more possessions to score points.
-
-For the recursive case, let \(C_2\) and \(C_3\) be the confidence adjustments.
-There are five cases to consider.
-
-If the team attempts and makes a 2-pointer, the expected number of points scored
-is \(2 + f(n - 1, \min(m_2 + C_2, 100), m_3)\). The team has scored 2 points,
-and we add the expected number of points they score over the remaining
-possessions.
-
-If the team attempts but misses a 2-pointer, the expected number of points
-scored is \(0 + f(n - 1, \max(m_2 - C_2, 0), m_3)\). The team did not score any
-points, but we add the expected value of the rest of the possessions.
-
-The 3-pointers and no shot attempt cases follow a similar pattern.
-
-To complete the recursive definition, we multiply the expected value of each
-case by the probability of that case occurring, and sum those values up. The
-probability of attempting a 2-pointer and making it is \(\frac {A_2}{100} \cdot
-\frac{m_2} {100}\), for example.
-
-{{% /note %}}
+> [!NOTE] Recursive Definition
+>
+> For the base case, \(f(0, m_2, m_3) = 0\) for all \(m_2\) and \(m_3\), because
+> there are no more possessions to score points.
+>
+> For the recursive case, let \(C_2\) and \(C_3\) be the confidence adjustments.
+> There are five cases to consider.
+>
+> If the team attempts and makes a 2-pointer, the expected number of points
+> scored is \(2 + f(n - 1, \min(m_2 + C_2, 100), m_3)\). The team has scored 2
+> points, and we add the expected number of points they score over the remaining
+> possessions.
+>
+> If the team attempts but misses a 2-pointer, the expected number of points
+> scored is \(0 + f(n - 1, \max(m_2 - C_2, 0), m_3)\). The team did not score
+> any points, but we add the expected value of the rest of the possessions.
+>
+> The 3-pointers and no shot attempt cases follow a similar pattern.
+>
+> To complete the recursive definition, we multiply the expected value of each
+> case by the probability of that case occurring, and sum those values up. The
+> probability of attempting a 2-pointer and making it is \(\frac {A_2}{100}
+> \cdot \frac{m_2} {100}\), for example.
 
 Computing this function with the recursive definition directly is not fast
 enough. Because all of the inputs to \(f\) are integers, we would repeat a lot
@@ -641,14 +605,12 @@ recursion to "Dynamic Programming".
 | **Advanced**    | Problem E, 4/8 (50%) solved/tries, 13% solve rate                                 |
 | **Concept**     | BFS on an implicit graph with annoying indexing                                   |
 
-{{% note title="Problem Summary" %}}
-
-Given the state of a Peg Game, determine the number of pegs that you would end
-up with after optimal play.
-
-![The valid moves of the peg game](./images/2023-pegs-move.png)
-
-{{% /note %}}
+> [!NOTE] Problem Summary
+>
+> Given the state of a Peg Game, determine the number of pegs that you would end
+> up with after optimal play.
+>
+> ![The valid moves of the peg game](./images/2023-pegs-move.png)
 
 There are three main challenges to solve this problem:
 
@@ -697,13 +659,11 @@ There are three main challenges to solve this problem:
 | **Advanced**    | Problem G, 5/46 (11%) solved/tries, 16% solve rate                                                  |
 | **Concept**     | union find or creative use of dictionaries                                                          |
 
-{{% note title="Problem Summary" %}}
-
-Given a starting set of \(n\) colonies, and a set of proposed warp gates,
-determine which gates will be built, which are unnecessary, and which are
-impossible to build due to lack of funds.
-
-{{% /note %}}
+> [!NOTE] Problem Summary
+>
+> Given a starting set of \(n\) colonies, and a set of proposed warp gates,
+> determine which gates will be built, which are unnecessary, and which are
+> impossible to build due to lack of funds.
 
 This problem requires that we efficiently keep track of _disjoint subsets_ of
 the colonies.

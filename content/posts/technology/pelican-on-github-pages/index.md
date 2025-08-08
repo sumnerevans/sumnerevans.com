@@ -1,24 +1,19 @@
 ---
-title: "Setting up Pelican to Automatically Deploy to GitHub Pages"
+title: Setting up Pelican to Automatically Deploy to GitHub Pages
 date: 2017-09-11T09:02:00-06:00
 categories: [Programming]
 tags: [Pelican, Travis CI, GitHub, GitHub Pages]
 ---
 
-<div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p>This article is out of date, and may contain outdated information.</p>
-
-<p class="last">
-
-Since writing this article, I have made a few major shifts in my personal
-website infrastructure. I migrated from GitHub to GitLab and subsequently from
-GitLab to sourcehut. Then I migrated from Pelican to [Hugo](https://gohugo.io)
-and hosted my website on a Linode VPS for a while before migrating back to
-GitHub and GitHub Pages.
-
-</p>
-</div>
+> [!WARNING]
+>
+> This article is out of date, and may contain outdated information.
+>
+> Since writing this article, I have made a few major shifts in my personal
+> website infrastructure. I migrated from GitHub to GitLab and subsequently from
+> GitLab to sourcehut. Then I migrated from Pelican to [Hugo](https://gohugo.io)
+> and hosted my website on a Linode VPS for a while before migrating back to
+> GitHub and GitHub Pages.
 
 I recently converted my site from WordPress to a statically generated
 [Pelican](https://blog.getpelican.com/) site hosted on GitHub Pages. One of the
@@ -108,13 +103,13 @@ the root of your repository and add the following to it:
 ```yaml
 language: python
 python:
-- 3.6
+  - 3.6
 cache: pip
 install:
-- pip install --upgrade pip
-- pip install -r requirements.txt
+  - pip install --upgrade pip
+  - pip install -r requirements.txt
 script:
-- make publish
+  - make publish
 deploy:
   provider: pages
   skip_cleanup: true

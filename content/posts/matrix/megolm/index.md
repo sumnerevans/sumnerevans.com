@@ -37,22 +37,20 @@ Its usage within Matrix is described in
 [Section 10.12.4.3 `m.megolm.v1.aes-sha2`](https://spec.matrix.org/v1.11/client-server-api/#mmegolmv1aes-sha2)
 of the Matrix Spec.
 
-{{% note title="Cryptography Prerequisites" %}}
-
-This article requires some basic understanding of the following cryptography
-concepts:
-
-- Encryption (symmetric and asymmetric)
-- Asymmetric signatures
-- Hashes and HMAC
-- Key-Derivation Functions (HKDF)
-
-If you are unfamiliar with any of these topics, check out the
-[Matrix Cryptography Prerequisites]({{<relref"../cryptography-prerequisites/index.md">}})
-companion article which describes the prerequisites in enough detail to
-understand the rest of this article.
-
-{{% /note %}}
+> [!NOTE] Cryptography Prerequisites
+>
+> This article requires some basic understanding of the following cryptography
+> concepts:
+>
+> - Encryption (symmetric and asymmetric)
+> - Asymmetric signatures
+> - Hashes and HMAC
+> - Key-Derivation Functions (HKDF)
+>
+> If you are unfamiliar with any of these topics, check out the
+> [Matrix Cryptography Prerequisites]({{<relref"../cryptography-prerequisites/index.md">}})
+> companion article which describes the prerequisites in enough detail to
+> understand the rest of this article.
 
 The following figure describes the mechanism by which Megolm provides message
 security. There's a lot here so don't worry, I will go through each piece
@@ -143,12 +141,9 @@ ratchet index is included in the encrypted message payload, so both sides of the
 conversation are able to use the ratchet to produce the same value. Both sides
 also use HKDF (which is also deterministic) to generate the same AES key and IV.
 
-{{% note %}}
-
-Multiple messages can be sent using the same Megolm session. The ratchet index
-should be incremented for each new message.
-
-{{% /note %}}
+> [!NOTE]
+> Multiple messages can be sent using the same Megolm session. The ratchet index
+> should be incremented for each new message.
 
 ## 3. Message Integrity
 
@@ -234,13 +229,10 @@ There are three main ways that Megolm sessions are shared:
 I'll note here that in Matrix, Megolm sessions are sometimes referred to as
 "room keys", hence the name of the to-device events.
 
-{{% tip title="Shameless Plug" %}}
-
-The details of Key Backup will be discussed in my
-[upcoming talk at the Matrix Conference](https://cfp.matrix.org/matrixconf2024/talk/TD3KDQ/)
-which will have an accompanying blog post.
-
-{{% /tip %}}
+> [!TIP] Shameless Plug
+> The details of Key Backup will be discussed in my
+> [upcoming talk at the Matrix Conference](https://cfp.matrix.org/matrixconf2024/talk/TD3KDQ/)
+> which will have an accompanying blog post.
 
 Note that the Megolm session is shared separately from the encrypted message
 payload which is shared via an `m.room.encrypted` event. This can cause Unable

@@ -36,17 +36,12 @@ represented internally in Git, this is not the article for you. Think of this as
 the [Bohr Model](https://en.wikipedia.org/wiki/Bohr_model) equivalent for Git.
 There are more complete models, but for most purposes, it's sufficient.
 
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">
-
-Much of this article is adapted from my
-[_Git Good_ presentation for Mines ACM]({{<ref"../../../portfolio/index.html#presentation-acm-git-good">}})
-and much of the content is originally from the
-[Git Book](https://git-scm.com/book/en/v2}{git-scm.com/book/en/v2).
-
-</p>
-</div>
+> [!NOTE]
+>
+> Much of this article is adapted from my
+> [_Git Good_ presentation for Mines ACM]({{<ref"../../../portfolio/index.html#presentation-acm-git-good">}})
+> and much of the content is originally from the
+> [Git Book](https://git-scm.com/book/en/v2}{git-scm.com/book/en/v2).
 
 I'll start this article by describing a mental model for commits and a mental
 model for branches. Then, I'll discuss merging and rebasing. Lastly, I'll
@@ -112,14 +107,9 @@ that you have "staged".
 
 - You can stage changes by running `git add` and passing a list of files.
 
-  <div class="admonition tip">
-  <p class="first admonition-title">Pro Tip</p>
-  <p class="last">
-
-  If you want to add specific parts of files, use `git add -p`.
-
-  </p>
-  </div>
+  > [!TIP] Pro Tip
+  >
+  > If you want to add specific parts of files, use `git add -p`.
 
 - You can stage all changes by running `git add -A`.
 
@@ -273,36 +263,27 @@ You can move the `HEAD` pointer to a different commit using
   attrlink="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell#_create_new_branch"
 >}}
 
-<div class="admonition warning">
-<p class="first admonition-title"><code>git checkout</code> Gotchas</p>
-<p class="last">
+> [!WARNING] `git checkout` Gotchas
+>
+> - If you checkout a commit hash, you will be in a `detached HEAD` state
+>   because your `HEAD` pointer is not pointing to a branch.
+> - If you have uncommitted changes, switching branches _might_ fail. You can
+>   use `git stash` to save the changes in your working directory, then `git
+>   checkout` the other branch, and then `git stash pop` to restore the changes.
+>
+>   Alternatively, you can just create a WIP commit and then switch to the other
+>   branch.
 
-- If you checkout a commit hash, you will be in a `detached HEAD` state because
-  your `HEAD` pointer is not pointing to a branch.
-- If you have uncommitted changes, switching branches _might_ fail. You can use
-  `git stash` to save the changes in your working directory, then `git checkout`
-  the other branch, and then `git stash pop` to restore the changes.
-
-  Alternatively, you can just create a WIP commit and then switch to the other
-  branch.
-
-</p>
-</div>
-<div class="admonition tip">
-<p class="first admonition-title"><code>git checkout</code> Pro Tip</p>
-<p class="last">
-
-You can use `-` to refer to the previously checked out object. For example,
-assuming you start on the `master` branch, then:
-
-```bash
-$ git checkout -b new_branch      # moves HEAD to new_branch
-$ git checkout -                  # moves HEAD to master
-$ git checkout -                  # moves HEAD to new_branch
-```
-
-</p>
-</div>
+> [!TIP] `git checkout` Pro Tip
+>
+> You can use `-` to refer to the previously checked out object. For example,
+> assuming you start on the `master` branch, then:
+>
+> ```bash
+> $ git checkout -b new_branch      # moves HEAD to new_branch
+> $ git checkout -                  # moves HEAD to master
+> $ git checkout -                  # moves HEAD to new_branch
+> ```
 
 ### Moving Branches Around
 

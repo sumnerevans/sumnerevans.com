@@ -176,29 +176,23 @@ window
 Obviously, you can pass any function you want to the `addListener` function,
 I'm just passing a lambda here for brevity.
 
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">
-
-When you add a media query listener, it will not be called on page load, it
-will only be called when the theme actually changes. You will likely want
-your code to run both when the page loads and when the user changes their
-theme, so I recommend extracting the theme-dependant logic out to its own
-function like so:
-
-```javascript
-const mql = window.matchMedia('(prefers-color-scheme: dark)');
-function handleTheme() {
-  // do your theme-dependent logic here, for example:
-  alert(`You are using the ${mql.matches ? 'dark' : 'light'} theme.`);
-}
-
-handleTheme();
-mql.addListener(handleTheme);
-```
-
-</p>
-</div>
+> [!NOTE]
+> When you add a media query listener, it will not be called on page load, it
+> will only be called when the theme actually changes. You will likely want
+> your code to run both when the page loads and when the user changes their
+> theme, so I recommend extracting the theme-dependant logic out to its own
+> function like so:
+>
+> ```javascript
+> const mql = window.matchMedia('(prefers-color-scheme: dark)');
+> function handleTheme() {
+>   // do your theme-dependent logic here, for example:
+>   alert(`You are using the ${mql.matches ? 'dark' : 'light'} theme.`);
+> }
+>
+> handleTheme();
+> mql.addListener(handleTheme);
+> ```
 
 # Allowing Users to Override the Detected Theme on Your Site
 
@@ -240,40 +234,35 @@ if there is a `light-theme` class on the `<body>`, the dark theme styles
 will not be applied, even if the browser or OS color scheme preference is set to
 the dark theme.
 
-<div class="admonition tip">
-<p class="first admonition-title">Tip</p>
-<p class="last">
-
-To avoid manual duplication of your CSS styles (and thus adhering to the DRY
-principle), you can use a CSS compiler such as SASS, SCSS, or LESS. For example,
-if you use SCSS you can declare a mixin that includes all your dark-theme
-styles. Then, you can `@include` your mixin as the styles for both the
-media-query-based and class-based dark theme detection strategies. The example
-above would become:
-
-```scss
-@mixin dark-mode-rules {
-  background-color: black;
-  color: white;
-}
-
-@media (prefers-color-scheme: dark) {
-  body:not(.light-theme) {
-    @include dark-mode-rules;
-  }
-}
-
-body.dark-theme {
-  @include dark-mode-rules;
-}
-```
-
-In this simple example, using the mixin actually adds code, but when you have
-many style overrides for your dark theme, it can greatly inprove your code
-maintainability.
-
-</p>
-</div>
+> [!TIP]
+>
+> To avoid manual duplication of your CSS styles (and thus adhering to the DRY
+> principle), you can use a CSS compiler such as SASS, SCSS, or LESS. For
+> example, if you use SCSS you can declare a mixin that includes all your
+> dark-theme styles. Then, you can `@include` your mixin as the styles for both
+> the media-query-based and class-based dark theme detection strategies. The
+> example above would become:
+>
+> ```scss
+> @mixin dark-mode-rules {
+>   background-color: black;
+>   color: white;
+> }
+>
+> @media (prefers-color-scheme: dark) {
+>   body:not(.light-theme) {
+>     @include dark-mode-rules;
+>   }
+> }
+>
+> body.dark-theme {
+>   @include dark-mode-rules;
+> }
+> ```
+>
+> In this simple example, using the mixin actually adds code, but when you have
+> many style overrides for your dark theme, it can greatly inprove your code
+> maintainability.
 
 The second thing you need to do is provide a mechanism for overriding the theme,
 and persisting that preference. There are many ways of doing this, but I
@@ -330,19 +319,14 @@ theme
 </script>
 ```
 
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">
-
-You may have noticed that with this JavaScript, we no longer technically _need_
-to have the dark theme CSS styles underneath `@media (prefers-color-scheme:
-dark)` selector in the CSS. However, I still recommend leaving it there as it
-will allow people who don't have JavaScript enabled to still benefit from your
-dark and light theme support via the browser or OS theme preference
-functionality.
-
-</p>
-</div>
+> [!NOTE]
+>
+> You may have noticed that with this JavaScript, we no longer technically
+> _need_ to have the dark theme CSS styles underneath `@media
+> (prefers-color-scheme: dark)` selector in the CSS. However, I still recommend
+> leaving it there as it will allow people who don't have JavaScript enabled to
+> still benefit from your dark and light theme support via the browser or OS
+> theme preference functionality.
 
 # Other Resources
 

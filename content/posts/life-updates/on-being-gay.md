@@ -2,25 +2,14 @@
 title: On Being Gay
 date: 2025-07-13T00:00:00-06:00
 categories: [Life Updates]
-summary: |
-  It's always awkward to come out, but the lead-up is always the worst part.
-  Once it's done, it's done and I move on with my life. I have been out to my
-  family and most of my friends for a few years now, but as one of my friends
-  described it, I'm about as out as the sun on a cloudy day. Well, I guess it's
-  time for the sun to shine a bit more.
 ---
 
-<div class="admonition warning">
-<p class="first admonition-title">{{< ico "tabler" "filled/info-triangle" >}} Warning</p>
-<p class="last">
-
-This post is personal. If you normally read my blog for my travel updates or my
-software engineering takes, this is a very different kind of post.
-
-If you don't want to read about my personal life, this is a good post to skip.
-
-</p>
-</div>
+> [!WARNING]
+>
+> This post is personal. If you normally read my blog for my travel updates or
+> my software engineering takes, this is a very different kind of post.
+>
+> If you don't want to read about my personal life, this is a good post to skip.
 
 It's always awkward to come out, but the lead-up is always the worst part. Once
 it's done, it's done and I move on with my life. I have been out to my family
@@ -317,9 +306,9 @@ them in action: those who follow God's law and Jesus' example are rewarded with
 full lives.
 
 However, the more I introspect myself, the less I feel like I belong in the
-Christian community as a single person, and the more I lean towards it just being
-that I enjoy the community. It's terrifying to say, but I don't really know if
-I'm a Christian at this point.
+Christian community as a single person, and the more I lean towards it just
+being that I enjoy the community. It's terrifying to say, but I don't really
+know if I'm a Christian at this point.
 
 A few months ago, I found myself in a hotel bar with the mom of one the
 taekwondo students from our school while at a national tournament. She is a

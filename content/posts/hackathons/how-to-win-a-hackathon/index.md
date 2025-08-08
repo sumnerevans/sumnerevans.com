@@ -16,14 +16,12 @@ are merely my experiences. Your mileage may vary.
 
 <!--more-->
 
-{{% note %}}
-
-This article was partially inspired by Yaron Malin's post:
-[Hackathon Winning Secrets](https://medium.com/@yaron1m/hackathon-winning-secrets-3d2a41cacf9).
-Yaron was on the team which won third place at the Facebook Global Hackathon
-Finals.
-
-{{% /note %}}
+> [!NOTE]
+>
+> This article was partially inspired by Yaron Malin's post:
+> [Hackathon Winning Secrets](https://medium.com/@yaron1m/hackathon-winning-secrets-3d2a41cacf9).
+> Yaron was on the team which won third place at the Facebook Global Hackathon
+> Finals.
 
 Before I can talk about how to win a hackathon, we need to be clear about the
 definition of a hackathon. A hackathon is **not** a competition where you try
@@ -46,13 +44,10 @@ Facebook Best Social Good Hack award. Most recently at the
 [Global Hackathon Finals at Facebook]({{<ref"/portfolio#project-hypar-map">}}),
 we won First Place.
 
-{{% note %}}
-
-Since writing this post, I attended another hackathon, HackCU V, where my team
-won second place. You can read about it in my
-[HackCU V blog post]({{<ref"/posts/hackathons/hackcu-v">}}).
-
-{{% /note %}}
+> [!NOTE]
+> Since writing this post, I attended another hackathon, HackCU V, where my team
+> won second place. You can read about it in my
+> [HackCU V blog post]({{<ref"/posts/hackathons/hackcu-v">}}).
 
 {{<figure
   src="images/fb-award.jpg"
@@ -216,18 +211,13 @@ of tips which might get you going in the correct direction:
   man-hours available, and minimizing the amount of time which you are blocked
   by each other.
 
-  <div class="admonition warning">
-  <p class="first admonition-title">Warning</p>
-  <p class="last">
-
-  Don't go overboard with this, you want to have the pieces of your app working
-  together as soon as possible, so don't diverge too much that you don't
-  communicate with one another. We made this mistake at MHacks, and we didn't
-  connect everything up until the last hour of the hackathon (and that was a
-  36-hour hackathon, so that was fairly impressive).
-
-  </p>
-  </div>
+  > [!WARNING]
+  >
+  > Don't go overboard with this, you want to have the pieces of your app
+  > working together as soon as possible, so don't diverge too much that you
+  > don't communicate with one another. We made this mistake at MHacks, and we
+  > didn't connect everything up until the last hour of the hackathon (and that
+  > was a 36-hour hackathon, so that was fairly impressive).
 
 - I always strive to learn something new at each hackathon. We took this to the
   extreme at Facebook by learning Kotlin and Android development at the
@@ -384,10 +374,10 @@ any additional tips? Comment your thoughts below!
 Happy hacking!
 
 [^1]: Many people have a misconception of the word _hack_. In the common
-vernacular, _hacking_ is used to refer to an act which is more correctly
-described as _cracking_. _Crackers_ are people who try and break in to systems
-(either maliciously or as white-hats). _Hack_ on the other hand is an word
-describing the quality of a technical idea/project. Hacks are things which
-_work_, but are very messy. Think of it like using duct-tape to hang something
-up on a wall instead of doing the "right" thing which would be to hang it up
-using a nail.
+    vernacular, _hacking_ is used to refer to an act which is more correctly
+    described as _cracking_. _Crackers_ are people who try and break in to
+    systems (either maliciously or as white-hats). _Hack_ on the other hand is
+    an word describing the quality of a technical idea/project. Hacks are things
+    which _work_, but are very messy. Think of it like using duct-tape to hang
+    something up on a wall instead of doing the "right" thing which would be to
+    hang it up using a nail.

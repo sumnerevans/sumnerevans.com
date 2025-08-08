@@ -33,23 +33,20 @@ image: ./images/overview.png
 math: true
 ---
 
-<div class="admonition note">
-<div class="admonition-title">{{< ico "tabler" "filled/info-circle" >}}<p>Slides and Recording</p></div>
-
-This is a companion article to the
-[talk I gave at the 2024 Matrix Conference]({{<ref"/portfolio#presentation-matrix-crypto-key-infra">}})
-by the same name.
-
-<a href="slides.pdf" target="_blank">{{< ico "tabler" "outline/file-type-pdf" >}} Slides</a>
-|
-<a href="slides-with-notes.pdf" target="_blank">{{< ico "tabler" "outline/file-type-pdf" >}} Slides + Notes</a>
-
-<details class="youtube-expander" open>
-<summary>{{< ico "tabler" "filled/brand-youtube" >}} Matrix Cryptographic Key Infrastructure - Sumner Evans</summary>
-{{< youtube id="4uC-S0Bb5-g" title="Matrix Cryptographic Key Infrastructure - Sumner Evans" >}}
-</details>
-
-</div>
+> [!NOTE] Slides and Recording
+>
+> This is a companion article to the
+> [talk I gave at the 2024 Matrix Conference]({{<ref"/portfolio#presentation-matrix-crypto-key-infra">}})
+> by the same name.
+>
+> <a href="slides.pdf" target="_blank">{{< ico "tabler" "outline/file-type-pdf" >}} Slides</a>
+> |
+> <a href="slides-with-notes.pdf" target="_blank">{{< ico "tabler" "outline/file-type-pdf" >}} Slides + Notes</a>
+>
+> <details class="youtube-expander" open>
+> <summary>{{< ico "tabler" "filled/brand-youtube" >}} Matrix Cryptographic Key Infrastructure - Sumner Evans</summary>
+> {{< youtube id="4uC-S0Bb5-g" title="Matrix Cryptographic Key Infrastructure - Sumner Evans" >}}
+> </details>
 
 End-to-end encryption is one of the things which brought me to Matrix, and I'm
 sure that it's one of the factors that brought many of you to Matrix as well.
@@ -158,23 +155,21 @@ encrypted by a recovery code.
 At this point, we are ready to embark on our journey of understanding each piece
 of the diagram.
 
-{{% note title="Cryptography Prerequisites" %}}
-
-This article requires some basic understanding of the following cryptography
-concepts:
-
-- Encryption (symmetric and asymmetric)
-- Asymmetric signatures
-- Hashes and HMAC
-- Key-Derivation Functions (HKDF)
-- Diffie-Hellman Key Exchanges
-
-If you are unfamiliar with any of these topics, check out the
-[Matrix Cryptography Prerequisites]({{<relref"../cryptography-prerequisites/index.md">}})
-companion article which describes the prerequisites in enough detail to
-understand the rest of this article.
-
-{{% /note %}}
+> [!NOTE] Cryptography Prerequisites
+>
+> This article requires some basic understanding of the following cryptography
+> concepts:
+>
+> - Encryption (symmetric and asymmetric)
+> - Asymmetric signatures
+> - Hashes and HMAC
+> - Key-Derivation Functions (HKDF)
+> - Diffie-Hellman Key Exchanges
+>
+> If you are unfamiliar with any of these topics, check out the
+> [Matrix Cryptography Prerequisites]({{<relref"../cryptography-prerequisites/index.md">}})
+> companion article which describes the prerequisites in enough detail to
+> understand the rest of this article.
 
 ## Sharing Keys
 

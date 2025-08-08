@@ -17,18 +17,13 @@ aliases:
   - ../technology/2024-matrix-governing-board
 ---
 
-<div class="admonition note">
-<p class="first admonition-title">Election Results</p>
-<p class="last">
-
-**2024-06-03**: The results of the first Governing Board Election have been
-[posted on the Matrix.org Blog](https://matrix.org/blog/2024/06/election-results/).
-
-I am grateful that I was elected as an individual member. Thank you to those who
-voted for me!
-
-</p>
-</div>
+> [!TASK] Election Results
+>
+> **2024-06-03**: The results of the first Governing Board Election have been
+> [posted on the Matrix.org Blog](https://matrix.org/blog/2024/06/election-results/).
+>
+> I am grateful that I was elected as an individual member. Thank you to those
+> who voted for me!
 
 I'm
 [running for the Matrix Governing Board](https://matrix.org/blog/2023/12/electing-our-first-governing-board/#election-timeline)
@@ -45,27 +40,22 @@ See also my
 [endorsements of Ecosystem Member]({{<ref"./2024-matrix-governing-board-endorsements.md">}})
 candidates.
 
-<div class="admonition important">
-<p class="first admonition-title">Conflict of Interest Disclosure</p>
-<p class="last">
-
-I would like to make it clear that I'm running for this position of my own
-volition. **The opinions in this post are my own and do not represent the views
-of my employer Automattic nor that of Beeper.**
-
-Neither Automattic nor Beeper requested that I run, although I did request
-permission to do so from Brad (who is running as the Beeper representative).
-
-I am a member of the Matrix community first and an employee of Automattic
-(Beeper) second. I got my job through TWIM, and I want to see the Matrix
-ecosystem thrive. I'm concerned with the current direction of the ecosystem, and
-I want to do my part in turning the tide.
-
-I promise to always act in the interest of the community, and when I am unable
-to do so without a conflicting with my employer's interests I will abstain.
-
-</p>
-</div>
+> [!IMPORTANT] Conflict of Interest Disclosure
+>
+> I would like to make it clear that I'm running for this position of my own
+> volition. **The opinions in this post are my own and do not represent the
+> views of my employer Automattic nor that of Beeper.**
+>
+> Neither Automattic nor Beeper requested that I run, although I did request
+> permission to do so from Brad (who is running as the Beeper representative).
+>
+> I am a member of the Matrix community first and an employee of Automattic
+> (Beeper) second. I got my job through TWIM, and I want to see the Matrix
+> ecosystem thrive. I'm concerned with the current direction of the ecosystem,
+> and I want to do my part in turning the tide.
+>
+> I promise to always act in the interest of the community, and when I am unable
+> to do so without a conflicting with my employer's interests I will abstain.
 
 ## My Platform
 

@@ -12,17 +12,12 @@ description: |
   Board elections.
 ---
 
-<div class="admonition important">
-<p class="first admonition-title">Disclaimer</p>
-<p class="last">
-
-I would like to make it clear that **these endorsements are my opinions only**.
-They do not reflect the opinion of the Matrix Governing Board which I am
-currently a member of, nor do they reflect the opinions of my current or past
-employers.
-
-</p>
-</div>
+> [!IMPORTANT] Disclaimer
+>
+> I would like to make it clear that **these endorsements are my opinions
+> only**. They do not reflect the opinion of the Matrix Governing Board which I
+> am currently a member of, nor do they reflect the opinions of my current or
+> past employers.
 
 I have decided that I will not stand again in this year's [Matrix Governing
 Board elections](https://matrix.org/foundation/governing-board-elections/2025/).
