@@ -31,7 +31,8 @@ jobs:
           hugo-version: latest
           extended: true
 
-      - uses: actions/cache@v4
+      - name: Cache HugoMod
+        uses: actions/cache@v4
         with:
           path: ${{ env.HUGO_CACHEDIR }}
           key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
