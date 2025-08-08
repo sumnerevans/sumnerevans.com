@@ -27,6 +27,8 @@ and I do not feel like I can dedicate a sufficient amount of time to be a good
 board member. Thus, I have decided to step aside and let others have a chance to
 take on the challenge of governance.
 
+<!--more-->
+
 I would like to make a few endorsements for the upcoming elections.
 
 ## Greg Sutcliffe

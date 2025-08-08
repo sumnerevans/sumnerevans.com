@@ -20,6 +20,8 @@ I recently converted my site from WordPress to a statically generated
 most difficult parts of the transition was setting it up to automatically deploy
 to GitHub Pages. In this article, I will describe how I set this up.
 
+<!--more-->
+
 # Overview
 
 I am hosting the source code for my website publicly on GitHub at

@@ -17,6 +17,8 @@ and most of my friends for a few years now, but as one of my friends described
 it, I'm about as out as the sun on a cloudy day. Well, I guess it's time for the
 sun to shine a bit more.
 
+<!--more-->
+
 **I'm gay.**
 
 Two words, but they are still difficult to utter or write. But, I feel the need

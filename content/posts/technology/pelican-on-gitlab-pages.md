@@ -24,6 +24,8 @@ GitLab CI/CD to do the same thing. Now that GitLab Pages has support for
 automatically handling the Let's Encrypt SSL Certificate on custom domains, I've
 moved to GitLab Pages for hosting as well.
 
+<!--more-->
+
 In summary, I am hosting my site publicly on GitLab Pages here:
 https://sumnerevans.com. Unlike my previous setup, the `master` branch is the
 branch from which everything is deployed. When a new commit is added to

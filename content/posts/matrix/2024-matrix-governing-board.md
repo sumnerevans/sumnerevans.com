@@ -36,6 +36,8 @@ multiple spec clarifications[^6] and been involved in many MSCs both personally
 and through my position at Beeper[^7]. I also have contributed to Synapse[^8]
 and the Matrix React SDK[^9].
 
+<!--more-->
+
 See also my
 [endorsements of Ecosystem Member]({{<ref"./2024-matrix-governing-board-endorsements.md">}})
 candidates.
