@@ -1,14 +1,4 @@
 @mixin dark-mode-styles {
-  .admonition a {
-    filter: brightness(1.15);
-
-    &:hover,
-    &:active,
-    &:focus {
-      filter: brightness(1.4);
-    }
-  }
-
   --fg-color: #dadada;
   --bg-color: #282828;
   --subtitle-color: #999;
@@ -36,17 +26,6 @@
   --table-nth-child-bg-color: #444;
 
   --image-opacity: 0.7;
-
-  --admonition-default-color: #7abaff;
-  --admonition-default-bg-color: #001933;
-  --admonition-attention-color: #fbda7a;
-  --admonition-attention-bg-color: #4a3900;
-  --admonition-danger-color: #ebadb3;
-  --admonition-danger-bg-color: #28070a;
-  --admonition-important-color: #a8eab7;
-  --admonition-important-bg-color: #122b18;
-  --admonition-definition-color: #dadada;
-  --admonition-definition-bg-color: #202020;
 
   --isso-thread-heading-color: #eee;
   --isso-preview-background: repeating-linear-gradient(-45deg, #0a0a0a, #0a0a0a 10px, #111 10px, #111 20px);
