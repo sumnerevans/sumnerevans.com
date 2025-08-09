@@ -1,4 +1,4 @@
-module github.com/sumnerevans/sumnereaans.com
+module github.com/sumnerevans/sumnerevans.com
 
 go 1.24.5
 
