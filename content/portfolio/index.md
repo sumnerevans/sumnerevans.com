@@ -82,7 +82,7 @@ one graduate level course.
       <b>Matrix</b>. I worked mainly on bridges and other backend projects to enable Beeper to grow
       and add new users.
     </p>
-    <details open>
+    <details open class="normal-expander">
       <summary>Notable projects include...</summary>
       <ul>
         <li>
@@ -418,7 +418,7 @@ one graduate level course.
       the Linux Help Guru of the Linux Users Group, and the Service Chair of the Mines chapter of
       the Tau Beta Pi Honor Society.
     </p>
-    <details>
+    <details class="normal-expander">
       <summary>Notable classes I took include...</summary>
       <ul>
         <li>Advanced High Performance Computing</li>
@@ -458,7 +458,7 @@ one graduate level course.
       and a half years as Secretary of the Mines Linux Users Group (LUG). I made Dean's List every
       semester of my undergraduate studies.
     </p>
-    <details>
+    <details class="normal-expander">
       <summary>Notable classes I took include...</summary>
       <ul>
         <li>Operating Systems</li>
@@ -504,7 +504,7 @@ one graduate level course.
       journal. I then <a href="https://youtu.be/yRGqNewEeoQ">presented my work</a> at the CLARO
       academic conference.
     </p>
-    <details>
+    <details class="normal-expander">
       <summary>Notable classes I took include...</summary>
       <ul>
         <li>Spanish Language I and II</li>
