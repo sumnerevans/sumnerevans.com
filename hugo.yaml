@@ -30,6 +30,8 @@ mediaTypes:
 minify:
   minifyOutput: true
 
+enableGitInfo: true
+
 markup:
   highlight:
     style: github

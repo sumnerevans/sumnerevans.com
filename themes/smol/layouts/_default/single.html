@@ -21,9 +21,13 @@
             <span class="unlisted-notice" title="This post is not published on the homepage or in the RSS feed.">
               Unlisted Pre-Print</span>
           {{ end }}
-          Posted
-          {{ if .Date }}
-            on <time>{{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
+          {{ if .Params.uselastmod }}
+            Last modified on <time>{{ .Lastmod.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
+          {{ else }}
+            Posted
+            {{ if .Date }}
+              on <time>{{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
+            {{ end }}
           {{ end }}
           {{ with .Params.categories }}
             in
@@ -51,6 +55,12 @@
             , <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
           {{- end -}}
         {{ end }}
+      </p>
+    {{ else if .Params.uselastmod }}
+      <p class="article-info">
+        <b>
+          Last modified on <time>{{ .Lastmod.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
+        </b>
       </p>
     {{ end }}
     <div class="content">
