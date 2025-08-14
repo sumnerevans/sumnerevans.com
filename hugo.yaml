@@ -57,9 +57,9 @@ privacy:
 
 params:
   author: Sumner Evans
-  description: I'm a Senior Implementation Tech Lead at Can/Am Technologies. This is my personal website, portfolio, and blog.
+  description: I'm a Tech Lead at Can/Am Technologies. This is my personal website, portfolio, and blog.
   title: Sumner Evans
-  subtitle: Senior Implementation Tech Lead at Can/Am Technologies
+  subtitle: Tech Lead at Can/Am Technologies
   dateFmt: 2006-01-02
   logo: profile.jpg
 
