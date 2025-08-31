@@ -2,7 +2,7 @@
 title: What Happens After You Push?
 date: 2025-02-25T06:25:00-06:00
 categories:
-  - Programming
+  - Software Engineering
 tags:
   - CI/CD
   - Linting
@@ -15,6 +15,8 @@ description: |
 image: images/so-cicd.png
 build:
   publishResources: false
+aliases:
+  - /posts/programming/what-happens-after-you-push
 ---
 
 In this article we are going to be investigating how the code you write gets to

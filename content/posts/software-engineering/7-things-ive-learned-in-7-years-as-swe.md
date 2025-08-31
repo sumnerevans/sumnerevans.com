@@ -2,8 +2,8 @@
 title: 7 Things I've Learned After 7 Years as a Software Engineer
 date: 2025-07-06T06:25:00-06:00
 categories:
+  - Software Engineering
   - Hackathons
-  - Programming
 tags:
   - Hackathon
   - Career
@@ -13,6 +13,8 @@ description: |
 build:
   publishResources: false
 math: true
+aliases:
+  - /posts/programming/7-things-ive-learned-7-years-into-my-career
 ---
 
 A few months ago, I was asked to give the keynote address at the BlasterHacks
@@ -49,7 +51,7 @@ your career more broadly.
 Every software project has a customer. It might just be you. It might be
 millions of end-users who download your app. It might be a niche set of small
 business owners. It might be local governments (as is the case at my
-[current job]({{<ref"../../../portfolio/index.html#experience-canam-tech-lead">}})).
+[current job]({{<ref"../../portfolio/index.html#experience-canam-tech-lead">}})).
 It might be another team within your organization.
 
 Whoever your customer is, let them guide you. Whenever you aren't sure how to
@@ -189,7 +191,7 @@ and it makes senior engineers faster at being senior.
 ## 6. Support Your Teammates
 
 When I gave the BlasterHacks keynote three months ago, I had yet to start my
-[new job at Can/Am Technologies]({{<ref"../../life-updates/joining-canam/index.md">}})
+[new job at Can/Am Technologies]({{<ref"../life-updates/joining-canam/index.md">}})
 where I'm a tech lead. My only experience with supporting teammates was in the
 context of hackathons and helping coworkers at my previous jobs. However, many
 of the things that I'm doing as a tech lead were things that I expected to be
