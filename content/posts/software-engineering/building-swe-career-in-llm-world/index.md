@@ -7,7 +7,6 @@ tags:
   - Staff Engineer
   - Career
   - Tech Lead
-unlisted: true
 ---
 
 > [!ABSTRACT] TL;DR
@@ -295,17 +294,16 @@ staff-plus level.
 ## How LLMs Affect Career Tracks
 
 I'm an LLM skeptic. Specifically, I'm skeptical of the business models of the
-LLM companies, and I think that the claims that LLMs alone (or generative AI
-[GenAI] more broadly) will get us to AGI are highly dubious. I don't think we
-are
+LLM companies, and I think that the claims that LLMs alone (or GenAI more
+broadly) will get us to AGI are highly dubious. I don't think we are
 [a few thousand days from AGI](https://arstechnica.com/information-technology/2024/09/ai-superintelligence-looms-in-sam-altmans-new-essay-on-the-intelligence-age/),
 and I think the efficiency gains that organisations are experiencing by using
-LLMs and other generative AIs are being exaggerated. Companies have an incentive
-to say that they are getting efficiency gains from AI because it looks good on
-Wall Street and gives them an excuse for workforce reductions that they wanted
-to do anyway.
+LLMs and other GenAIs are being exaggerated. Companies have an incentive to say
+that they are getting efficiency gains from AI because it looks good on Wall
+Street and gives them an excuse for workforce reductions that they wanted to do
+anyway.
 
-We have yet to see any company make a profit from generative AI itself, or even
+We have yet to see any company make a profit from GenAI itself, or even
 demonstrate a viable path to profitability. For example, despite charging
 $200/mo for ChatGPT Pro, OpenAI is losing money on the product due to the high
 inference cost of serving each request. Inference and training are both
@@ -347,14 +345,40 @@ stood out:
 
 - **Computers automated mine planning, modelling, etc.** --- this eliminated a
   whole category of tasks that junior engineers were previously utilized for.
+
+  The parallel to software is that junior engineers are currently utilised as
+  code monkeys, and can immediately produce value in doing so. Junior engineers
+  will have to demonstrate their value to an organisation in other ways than
+  just being able to write code.
+
 - **Less people understand the basics, and rely more on the computer systems.**
   --- this placed significantly more value on an engineers ability to discern
   and understand the output from the computer system.
+
+  The parallel to software is that junior engineers will have to be able to read
+  code and understand the software's architecture to decide if the output from
+  an LLM is good or not. Currently, the best way to get good at discerning
+  whether code is good or not is to write code. I think that there are going to
+  be more people in the future who are able to quickly reading and comprehend
+  code, but not especially fast at writing it.
+
 - **Junior engineers spend more time on the computer and less time in the
   field.** --- this means that junior engineers have less opportunity to learn
   the ropes doing in-the-trenches operations at mine sites.
+
+  The parallel to software is that junior engineers will spend less time
+  actually programming, and more time doing other tasks. Junior engineers will
+  have to learn what constitutes good code without as much hands-on-keyboard
+  on-the-job experience.
+
 - **Entry-level engineers are expected to quickly learn the tools to do the
   job.** --- those who couldn't learn and adapt quickly didn't make it.
+
+  The parallel to software is that junior engineers will have to learn to
+  discern the output of LLMs very quickly. Until the education system catches up
+  to this, you'll just have to learn discernment on your own. Right now, the
+  best way to do this is to get your hands on a keyboard and write a ton of
+  code.
 
 Computing changed the nature of entry-level jobs in mining. The value that
 junior engineers were expected to provide changed from rote computational work
@@ -383,14 +407,14 @@ they have been the first cuts made during the recent workforce reductions.
 ## Conclusion
 
 I'm not going to sugar coat it: entering the software industry is harder now
-than any time in the last decade. Nothing is guaranteed. Merely graduating high
-school doesn't guarantee that you'll get into college. Merely getting into a
-college doesn't guarantee you'll find a job. Merely getting a job doesn't
-guarantee you'll be able to build a career in your desired field.
+than any time in the last decade. Nothing is guaranteed. But you knew this
+already, because nothing in life is guaranteed. That's why you've worked so hard
+to get to where you are. Merely graduating high school doesn't guarantee that
+you'll get into college. Merely getting into a college doesn't guarantee you'll
+find a job. Merely getting a job doesn't guarantee you'll be able to build a
+career in your desired field.
 
-But you knew this already, because nothing in life is guaranteed. That's why
-you've worked so hard to get to where you are. Continue to pursue your dreams.
-Always look for opportunities for growth. Life is going to be hard anyway, you
-might as well do something that you can be proud of. Don't just let your career
-happen to you, take ownership of it and see where it takes you. Building a
-career is hard, but the journey is more than worth it.
+Continue to pursue your dreams. Always look for opportunities for growth. Life
+is going to be hard anyway, you might as well do something that you can be proud
+of. Don't just let your career happen to you, take ownership of it and see where
+it takes you. Building a career is hard, but the journey is more than worth it.
