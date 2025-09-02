@@ -26,9 +26,7 @@ industry. We will explore [career tracks](#career-tracks), and discuss the
 become a senior software engineer](#making-senior-software-engineer-and-beyond).
 Then I will provide my view of
 [how LLMs will affect the software engineering
-industry and job market](#how-llms-affect-career-tracks). Lastly, I describe the
-steps that I believe will allow you to adapt to the changes that LLMs (or any
-new technology) bring.
+industry and job market](#how-llms-affect-career-tracks).
 
 <!--more-->
 
@@ -138,31 +136,118 @@ differentiates a senior engineer from a junior one? In my opinion, there is a
 single word that summarises the attributes that differentiate senior engineers
 from junior engineers: **ownership**.
 
-Most established engineering organizations have criteria for every software
-engineering level.
+Most established engineering organisations have criteria for every software
+engineering level. Such organisations create _engineering competency matrices_
+which describe the expectations of engineers at every level across a variety of
+metrics. The Circle CI team
+[made their engineering competency matrix public](https://circleci.com/blog/why-we-re-designed-our-engineering-career-paths-at-circleci/)
+and so we will use that as a guide.
 
-A few resources that I think are helpful in your journey are:
+The
+[Circle CI Engineering Competency Matrix](https://docs.google.com/spreadsheets/d/131XZCEb8LoXqy79WWrhCX4sBnGhCM1nAIz4feFZJsEo)
+has an
+[associated FAQ](https://drive.google.com/file/d/1F3xzmbdsMvfDZwZesvxcEIIBn2TmI4sg/view)
+which describes how competency scales through the engineering levels:
 
-- [Ryan Peterman](https://www.youtube.com/@RyanLPeterman)
+- **Competencies scale through areas of influence / impact**: own work on task
+  -> epic -> project / milestone / team -> across teams -> engineering
+  organisation -> company
+- **Competencies scale through increased frequency**: sometimes -> usually ->
+  always demonstrating a competency
 
-* technical ability
-* scope
-* vision
-* evaluation criteria
-* business connection
+The higher you go in an engineering organisation, the more impact your work is
+expected to have, and the greater amount of ownership mentality is required to
+perform at that level.
 
-* you should have a track in mind, even as you are working towards senior
-* stats on age of engineers
-* circle ci engineering competency matrix
-* Additionally, there are tech-adjacent roles that engineers are often well
-  equipped to fill. Examples include product management, UI/UX designer,
-* as a junior
+Let's look at a few examples:
 
-  - speed matters: https://jsomers.net/blog/speed-matters
+- **Technical Skills -> Security.**
 
-> Senior developers without opinions tend to not be very good
+  - Junior: Understands the importance of security.
+  - Mid-Level: Understands the importance of security. Utilizes this knowledge
+    to ask more senior engineers for help on making decisions that may have
+    security implications.
+  - Senior: Approaches all engineering work with a security lens. Actively looks
+    for security vulnerabilities both in the code and when providing peer
+    reviews.
+  - Staff: Actively works with the security team, as well as their own team, to
+    refine their team's approach to security based on the organisation's
+    security strategy. Fosters a security first mindset within their own team,
+    and leads by example.
+  - Senior Staff: Actively works with the security team, as well as across
+    several teams, to apply the organisation's security strategy. Fosters a
+    security first mindset across those teams, leading by example.
+  - Principal: Actively works with the security team to set and refine
+    organisation wide security strategy. Fosters a security first mindset across
+    the organisation. Can recognize obscure security threats that go unnoticed
+    to others.
+
+  The higher up in the engineering organisation you get, the greater the
+  expected level of _ownership_ over the security of the products being produced
+  by the organisation. To move past junior engineer, you need to **take
+  responsibility for the security of the code you write**. The faster you start
+  proactively asking the correct questions about security, the better.
+
+- **Leadership -> Process Thinking**
+
+  - Junior: Understands their team's practices and processes.
+  - Mid-Level: Sometimes thinks about team practices and processes and discusses
+    improvements with team.
+  - Senior: Regularly thinks about team practices and processes and discusses
+    improvements with team.
+  - Staff: Thinks about team practices and processes and regularly discusses
+    improvements with their team. Sometimes collaborates with others to improve
+    organisational practices and processes.
+  - Senior Staff: Thinks about practices and processes that affect several
+    teams, discusses improvements with appropriate parties, and drives
+    implementation. Usually collaborates with others to improve organisational
+    practices and processes.
+  - Principal: Takes ownership and responsibility for organisational practices
+    and processes and their continuous improvement.
+
+  Once again, the higher up in the engineering organisation you get, the greater
+  the expected level of _ownership_ over the processes utilised across the
+  organisation. To move past junior engineer, you need to **take responsibility
+  for utilising the existing processes, understand why they are the way they
+  are, and discussing what improvements could be made**. As with security, the
+  faster you start proactively asking the correct questions about process, the
+  better.
+
+As we can see from both of these examples, the best thing that you can do as a
+junior engineer is ask questions. Ask why certain coding practices are
+considered better than others by your organisation. Ask why certain strategic
+initiatives are prioritised by the organisation. Ask why certain processes are
+utilised within the organisation.
+
+> [!IMPORTANT] It's OK to not know. That's why you're junior, not senior!
+
+Asking questions as a junior engineer demonstrates that you care about the work
+you are doing. _Caring about the work you have been tasked with_ is the most
+important attribute that you can demonstrate as a junior engineer. You should
+care about how your task aligns with your team's goals. You should care about
+how your team's goals align with the organisation's and company's goals. You
+should care about how your organisation/company goals impact the customer of
+your product. By caring early in your career and asking the right questions,
+when you are required to care about a team- or organisation-level objective as a
+senior engineer, you will have already practised the necessary skills to direct
+your work.
+
+> [!IDEA] Key Idea
 >
-> -- Lane (boot.dev, You're Not Qualified to Have an Opinion on TDD)
+> Software produced by people who care about the software they write will always
+> be better than software produced by people who don't care, regardless of how
+> the code is written.
+
+There is a lot more to explore here. I highly encourage you to spend some time
+reading engineering competency matrices, reading or listening to staff-plus
+engineers, and learning from more senior people how they got to where they are.
+
+If you're a fan of long-form interviews,
+[Ryan Peterman](https://www.youtube.com/@RyanLPeterman) is a good resource. He
+is a staff engineer and interviews other staff-plus engineers about their
+careers. If you like blogs and books, [staffeng.com](https://staffeng.com/) by
+[Will Larson](https://lethain.com/) is the seminal resource on engineering at a
+staff-plus level.
 
 ## How LLMs Affect Career Tracks
 
@@ -171,7 +256,7 @@ LLM companies, and I think that the claims that LLMs alone (or generative AI
 [GenAI] more broadly) will get us to AGI are highly dubious. I don't think we
 are
 [a few thousand days from AGI](https://arstechnica.com/information-technology/2024/09/ai-superintelligence-looms-in-sam-altmans-new-essay-on-the-intelligence-age/),
-and I think the efficiency gains that organizations are experiencing by using
+and I think the efficiency gains that organisations are experiencing by using
 LLMs and other generative AIs are being exaggerated. Companies have an incentive
 to say that they are getting efficiency gains from AI because it looks good on
 Wall Street and gives them an excuse for workforce reductions that they wanted
@@ -244,7 +329,7 @@ engineers.
 As the expectations of entry-level engineers increase, so too will the
 requirements for more seasoned engineers. My prediction is that the standard
 "career level" in the industry will look more like a staff engineer than a
-senior engineer.
+senior engineer (at least for the technical competencies of the job).
 
 What that means for junior engineers is that you will have to "grow up" and
 develop faster than before. During the COVID hiring spree, junior engineers
