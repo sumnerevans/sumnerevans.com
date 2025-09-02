@@ -17,6 +17,8 @@ unlisted: true
 >
 > Building a _career_ in software is (and always has been) hard, but highly
 > rewarding if you succeed.
+>
+> The key is to take **ownership** of both your work and your career trajectory.
 
 In this article, I am going to discuss how to build a career in the software
 industry. We will explore [career tracks](#career-tracks), and discuss the
@@ -132,20 +134,35 @@ competence for promotions, offer negotiations, and other opportunities.
 ## Making Senior Software Engineer and Beyond
 
 So, you know you need to become a senior software engineer, but what
-differentiates a senior engineer from a junior one?
+differentiates a senior engineer from a junior one? In my opinion, there is a
+single word that summarises the attributes that differentiate senior engineers
+from junior engineers: **ownership**.
 
-- technical ability
-- scope
-- vision
-- evaluation criteria
-- business connection
+Most established engineering organizations have criteria for every software
+engineering level.
 
-- you should have a track in mind, even as you are working towards senior
-- stats on age of engineers
-- circle ci engineering competency matrix
-- Additionally, there are tech-adjacent roles that engineers are often well
+A few resources that I think are helpful in your journey are:
+
+- [Ryan Peterman](https://www.youtube.com/@RyanLPeterman)
+
+* technical ability
+* scope
+* vision
+* evaluation criteria
+* business connection
+
+* you should have a track in mind, even as you are working towards senior
+* stats on age of engineers
+* circle ci engineering competency matrix
+* Additionally, there are tech-adjacent roles that engineers are often well
   equipped to fill. Examples include product management, UI/UX designer,
-- Ryan Peterman
+* as a junior
+
+  - speed matters: https://jsomers.net/blog/speed-matters
+
+> Senior developers without opinions tend to not be very good
+>
+> -- Lane (boot.dev, You're Not Qualified to Have an Opinion on TDD)
 
 ## How LLMs Affect Career Tracks
 
@@ -177,9 +194,9 @@ here.
 
 However, despite their flaws, LLMs _do_ increase the speed at which text (and
 therefore code) can be generated. Even if all the current GenAI companies go
-bankrupt, the technology is here to stay. The longest-lasting effect of LLMs on
-the economy is that the value of text generation is deflating rapidly. Since
-writing code is text generation, an engineer's ability to write code will
+bankrupt, the technology is here to stay. The longest-lasting effect LLMs will
+have on the economy is to make the value of text generation deflate rapidly.
+Since writing code is text generation, an engineer's ability to write code will
 depreciate in value.
 
 > [!QUOTE] Despite their major flaws, LLMs are here to stay
@@ -215,7 +232,7 @@ Computing changed the nature of entry-level jobs in mining. The value that
 junior engineers were expected to provide changed from rote computational work
 to understanding and evaluating the output of the computer systems.
 
-### LLMs Affects on Software Engineer Expectations
+### LLMs Effects on Software Engineer Expectations
 
 I think that LLMs are going to cause a step-change in the performance
 expectations of roles across the economy, and software is no different. Junior
@@ -229,18 +246,13 @@ requirements for more seasoned engineers. My prediction is that the standard
 "career level" in the industry will look more like a staff engineer than a
 senior engineer.
 
-- However, as the requirements for entry-level engineers increase, so too will
-  the requirements of more seasoned engineers.
-- I think that LLMs might bump the career level role up towards Staff Engineer
-  or Manager.
-- junior engineers have to "grow up" faster: you have to think about your career
-  trajectory sooner
+What that means for junior engineers is that you will have to "grow up" and
+develop faster than before. During the COVID hiring spree, junior engineers
+didn't have to grow in order to get and keep their jobs. However, those who
+didn't work on building their careers are now experiencing the repercussions as
+they have been the first cuts made during the recent workforce reductions.
 
 ## Conclusion
-
-- as a junior
-
-  - speed matters: https://jsomers.net/blog/speed-matters
 
 I'm not going to sugar coat it: entering the software industry is harder now
 than any time in the last decade. Nothing is guaranteed. Merely graduating high
@@ -248,7 +260,9 @@ school doesn't guarantee that you'll get into college. Merely getting into a
 college doesn't guarantee you'll find a job. Merely getting a job doesn't
 guarantee you'll be able to build a career in your desired field.
 
-But, be encouraged: the journey truly is the
-
-If you just want to get a job, it's going to be tough, but if you want to build
-a career, the journey is worth it.
+But you knew this already, because nothing in life is guaranteed. That's why
+you've worked so hard to get to where you are. Continue to pursue your dreams.
+Always look for opportunities for growth. Life is going to be hard anyway, you
+might as well do something that you can be proud of. Don't just let your career
+happen to you, take ownership of it and see where it takes you. Building a
+career is hard, but the journey is more than worth it.
