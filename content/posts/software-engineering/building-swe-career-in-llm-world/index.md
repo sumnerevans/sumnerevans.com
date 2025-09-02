@@ -136,6 +136,8 @@ differentiates a senior engineer from a junior one? In my opinion, there is a
 single word that summarises the attributes that differentiate senior engineers
 from junior engineers: **ownership**.
 
+### Case Study: Circle CI
+
 Most established engineering organisations have criteria for every software
 engineering level. Such organisations create _engineering competency matrices_
 which describe the expectations of engineers at every level across a variety of
@@ -161,57 +163,57 @@ perform at that level.
 
 Let's look at a few examples:
 
-- **Technical Skills -> Security.**
+#### Technical Skills -> Security
 
-  - Junior: Understands the importance of security.
-  - Mid-Level: Understands the importance of security. Utilizes this knowledge
-    to ask more senior engineers for help on making decisions that may have
-    security implications.
-  - Senior: Approaches all engineering work with a security lens. Actively looks
-    for security vulnerabilities both in the code and when providing peer
-    reviews.
-  - Staff: Actively works with the security team, as well as their own team, to
-    refine their team's approach to security based on the organisation's
-    security strategy. Fosters a security first mindset within their own team,
-    and leads by example.
-  - Senior Staff: Actively works with the security team, as well as across
-    several teams, to apply the organisation's security strategy. Fosters a
-    security first mindset across those teams, leading by example.
-  - Principal: Actively works with the security team to set and refine
-    organisation wide security strategy. Fosters a security first mindset across
-    the organisation. Can recognize obscure security threats that go unnoticed
-    to others.
+- Junior: Understands the importance of security.
+- Mid-Level: Understands the importance of security. Utilizes this knowledge to
+  ask more senior engineers for help on making decisions that may have security
+  implications.
+- Senior: Approaches all engineering work with a security lens. Actively looks
+  for security vulnerabilities both in the code and when providing peer reviews.
+- Staff: Actively works with the security team, as well as their own team, to
+  refine their team's approach to security based on the organisation's security
+  strategy. Fosters a security first mindset within their own team, and leads by
+  example.
+- Senior Staff: Actively works with the security team, as well as across several
+  teams, to apply the organisation's security strategy. Fosters a security first
+  mindset across those teams, leading by example.
+- Principal: Actively works with the security team to set and refine
+  organisation wide security strategy. Fosters a security first mindset across
+  the organisation. Can recognize obscure security threats that go unnoticed to
+  others.
 
-  The higher up in the engineering organisation you get, the greater the
-  expected level of _ownership_ over the security of the products being produced
-  by the organisation. To move past junior engineer, you need to **take
-  responsibility for the security of the code you write**. The faster you start
-  proactively asking the correct questions about security, the better.
+The higher up in the engineering organisation you get, the greater the expected
+level of _ownership_ over the security of the products being produced by the
+organisation. To move past junior engineer, you need to **take responsibility
+for the security of the code you write**. The faster you start proactively
+asking the correct questions about security, the better.
 
-- **Leadership -> Process Thinking**
+#### Leadership -> Process Thinking
 
-  - Junior: Understands their team's practices and processes.
-  - Mid-Level: Sometimes thinks about team practices and processes and discusses
-    improvements with team.
-  - Senior: Regularly thinks about team practices and processes and discusses
-    improvements with team.
-  - Staff: Thinks about team practices and processes and regularly discusses
-    improvements with their team. Sometimes collaborates with others to improve
-    organisational practices and processes.
-  - Senior Staff: Thinks about practices and processes that affect several
-    teams, discusses improvements with appropriate parties, and drives
-    implementation. Usually collaborates with others to improve organisational
-    practices and processes.
-  - Principal: Takes ownership and responsibility for organisational practices
-    and processes and their continuous improvement.
+- Junior: Understands their team's practices and processes.
+- Mid-Level: Sometimes thinks about team practices and processes and discusses
+  improvements with team.
+- Senior: Regularly thinks about team practices and processes and discusses
+  improvements with team.
+- Staff: Thinks about team practices and processes and regularly discusses
+  improvements with their team. Sometimes collaborates with others to improve
+  organisational practices and processes.
+- Senior Staff: Thinks about practices and processes that affect several teams,
+  discusses improvements with appropriate parties, and drives implementation.
+  Usually collaborates with others to improve organisational practices and
+  processes.
+- Principal: Takes ownership and responsibility for organisational practices and
+  processes and their continuous improvement.
 
-  Once again, the higher up in the engineering organisation you get, the greater
-  the expected level of _ownership_ over the processes utilised across the
-  organisation. To move past junior engineer, you need to **take responsibility
-  for utilising the existing processes, understand why they are the way they
-  are, and discussing what improvements could be made**. As with security, the
-  faster you start proactively asking the correct questions about process, the
-  better.
+Once again, the higher up in the engineering organisation you get, the greater
+the expected level of _ownership_ over the processes utilised across the
+organisation. To move past junior engineer, you need to **take responsibility
+for utilising the existing processes, understand why they are the way they are,
+and discussing what improvements could be made**. As with security, the faster
+you start proactively asking the correct questions about process, the better.
+
+### Caring is Key
 
 As we can see from both of these examples, the best thing that you can do as a
 junior engineer is ask questions. Ask why certain coding practices are
@@ -237,6 +239,47 @@ your work.
 > Software produced by people who care about the software they write will always
 > be better than software produced by people who don't care, regardless of how
 > the code is written.
+
+### Performance Metrics
+
+As you go up through the levels, a common thread across all competencies is an
+increase in the scope of the expected impact. Along with this, the metrics that
+define how well you are performing in your role increase in scope.
+
+As a junior engineer your scope is mostly limited to yourself. Can you write
+code that follows the patterns and expectations of your team? Do you understand
+the team's goals and processes? Are you able to perform the work assigned to
+you, with help from others as necessary?
+
+As a senior-plus engineer, your scope is your entire team, the organisation as a
+whole, or even the entire company. Are you fostering an environment of
+documentation? Are you establishing processes to help increase efficiency across
+the organisation? Are you helping others deliver their work more effectively?
+
+When I was a junior engineer, I was evaluated by how well I was able to write
+the code for the specific tasks I was assigned. I was able to deliver my work
+with good quality in a timely manner.
+
+As I approached senior engineer, I was evaluated by how well I was able to build
+large, ambiguous features. This involved everything from planning out the work
+to executing it to testing and deploying it.
+
+Now, the main way that I am evaluated as a tech lead is by how well my team is
+performing. The main metric is hours spent per integration, which is directly
+related to the team's profitability. To accomplish this, there are a lot of
+things that I am working on:
+
+- I'm improving the architecture of integrations so that they are easier to
+  build
+- I'm establishing standards for communication with business analysts and QA
+  personnel
+- I'm establishing processes for designs and communication with vendors and
+  clients
+
+As you can see, the metrics I'm evaluated on are no longer directly correlated
+with the actual work I'm doing.
+
+### More Resources
 
 There is a lot more to explore here. I highly encourage you to spend some time
 reading engineering competency matrices, reading or listening to staff-plus
