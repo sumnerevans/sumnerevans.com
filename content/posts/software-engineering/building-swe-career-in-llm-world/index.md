@@ -7,6 +7,7 @@ tags:
   - Staff Engineer
   - Career
   - Tech Lead
+  - LLM
 ---
 
 > [!ABSTRACT] TL;DR
