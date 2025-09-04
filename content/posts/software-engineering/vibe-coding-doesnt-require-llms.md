@@ -6,6 +6,7 @@ categories:
   - Programming
 tags:
   - Vibe Coding
+  - LLM
 aliases:
   - /posts/programming/vibe-coding-doesnt-require-llms
 ---
