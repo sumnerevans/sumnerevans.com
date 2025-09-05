@@ -518,6 +518,56 @@ one graduate level course.
 
 ## Presentations
 
+<details id="presentation-acm-swe-career-llm-world" class="portfolio-item no-logo">
+  <summary>
+    <h3>
+      Building a Software Career in an LLM World
+      <a class="permalink" href="#presentation-acm-swe-career-llm-world"
+        aria-label="Permalink to Building a Software Career in an LLM World">{{< ico "tabler" "outline/link" >}}</a>
+    </h3>
+    <span>September 2025</span>
+    <p>
+      <a href="https://docs.google.com/presentation/d/1lPv_V89iGboSSujkocsBUs2OPDbz6pL6pLU3dEipbqs/edit?usp=sharing" target="_blank">
+        {{< ico "tabler" "outline/presentation" >}} Slides</a>
+      | <a href="{{<ref"../posts/software-engineering/building-swe-career-in-llm-world/index.md">}}">
+        {{< ico "tabler" "outline/license" >}} Blog Post</a>
+    </p>
+  </summary>
+  <div>
+    <p>
+      I gave this talk at Mines ACM. I discussed how to build a career in the software industry by
+      looking first at the possible career tracks and talked about the attributes required to become
+      a senior developer. Then I described how I believe that LLMs will affect the software
+      engineering industry and those career tracks.
+    </p>
+  </div>
+</details>
+
+<details id="presentation-blasterhacks-keynote" class="portfolio-item no-logo">
+  <summary>
+    <h3>
+      BlasterHacks Keynote
+      <a class="permalink" href="#presentation-blasterhacks-keynote"
+        aria-label="Permalink to BlasterHacks Keynote">{{< ico "tabler" "outline/link" >}}</a>
+    </h3>
+    <span>March 2025</span>
+    <p>
+      <a href="https://docs.google.com/presentation/d/1Y1akzxses_sKwKSe2KKeP_VkcClesh_IlJGNMUT9_qg/edit" target="_blank">
+        {{< ico "tabler" "outline/presentation" >}} Slides</a>
+      | <a href="{{<ref"../posts/software-engineering/7-things-ive-learned-in-7-years-as-swe.md">}}">
+        {{< ico "tabler" "outline/license" >}} Blog Post</a>
+    </p>
+  </summary>
+  <div>
+    <p>
+      I gave the keynote address at BlasterHacks, a hackathon hosted by the Mines ACM. I discussed
+      seven things that the hackers should do to make their hackathon project successful. Then I
+      pointed out that those same seven things are things that they continue to practice througout
+      their careers.
+    </p>
+  </div>
+</details>
+
 <details id="presentation-matrix-crypto-key-infra" class="portfolio-item no-logo" open>
   <summary>
     <h3>
