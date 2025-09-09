@@ -1,6 +1,6 @@
 ---
 title: Building a Software Career in an LLM World
-date: 2025-08-16T06:25:00-06:00
+date: 2025-09-02T06:25:00-06:00
 categories:
   - Software Engineering
 tags:
