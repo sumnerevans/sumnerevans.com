@@ -6,7 +6,9 @@ description: |
   including one graduate level course.
 ---
 
-> [!MEMO] This is my CV. You may want to view my [resume](./resume.pdf).
+> [!NOTE]
+>
+> This is my CV. You may want to view my [resume](./resume.pdf) instead.
 
 ## Experience
 
