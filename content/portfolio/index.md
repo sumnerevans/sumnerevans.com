@@ -1117,33 +1117,6 @@ description: |
   </div>
 </details>
 
-<details id="project-nix-home-manager" class="portfolio-item no-logo">
-  <summary>
-    <h3>
-      Nix Home Manager
-      <a class="permalink" href="#project-nix-home-manager"
-        aria-label="Permalink to Nix Home Manager">{{< ico "tabler" "outline/link" >}}</a>
-    </h3>
-    <span>April 2021 - Present</span>
-    <p>
-      <a href="https://github.com/nix-community/home-manager" target="_blank">
-        {{< ico "tabler" "outline/brand-github" >}} GitHub</a>
-      | MIT | Maintainer
-    </p>
-  </summary>
-  <div>
-    <p>
-      Nix Home Manager is a project that provides a system for declaratively managing a user
-      environment using the functional <a href="https://nixos.org/nix/" target="_blank">Nix</a> package manager
-      together with the Nix libraries found in <a href="https://nixos.org/nixpkgs/" target="_blank">Nixpkgs</a>.
-    </p>
-    <p>
-      I am a maintainer of the Nix Home Manager project with write access to the repository. I
-      review and merge contributions to the Home Manager project.
-    </p>
-  </div>
-</details>
-
 <details id="project-tracktime" class="portfolio-item no-logo">
   <summary>
     <h3>
@@ -1211,6 +1184,33 @@ description: |
       <a target="_blank" href="https://pypi.org/project/offlinemsmtp/">PyPi</a>
       and on the
       <a target="_blank" href="https://aur.archlinux.org/packages/offlinemsmtp/">AUR</a>.
+    </p>
+  </div>
+</details>
+
+<details id="project-nix-home-manager" class="portfolio-item no-logo">
+  <summary>
+    <h3>
+      Nix Home Manager
+      <a class="permalink" href="#project-nix-home-manager"
+        aria-label="Permalink to Nix Home Manager">{{< ico "tabler" "outline/link" >}}</a>
+    </h3>
+    <span>April 2021 - May 2025</span>
+    <p>
+      <a href="https://github.com/nix-community/home-manager" target="_blank">
+        {{< ico "tabler" "outline/brand-github" >}} GitHub</a>
+      | MIT | Maintainer
+    </p>
+  </summary>
+  <div>
+    <p>
+      Nix Home Manager is a project that provides a system for declaratively managing a user
+      environment using the functional <a href="https://nixos.org/nix/" target="_blank">Nix</a> package manager
+      together with the Nix libraries found in <a href="https://nixos.org/nixpkgs/" target="_blank">Nixpkgs</a>.
+    </p>
+    <p>
+      I was a maintainer of the Nix Home Manager project with write access to the repository. I
+      reviewed and merged contributions to the Home Manager project.
     </p>
   </div>
 </details>
