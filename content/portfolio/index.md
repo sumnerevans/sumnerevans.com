@@ -6,15 +6,7 @@ description: |
   including one graduate level course.
 ---
 
-> [!NOTE]
->
-> This page is my extended Curriculum Vitae containing all my professional
-> achievements. For a more concise overview, please view my
-> [resume](./resume.pdf).
-
-I'm a software engineer and educator. I have six years of industry experience as
-a software engineer, and I have taught classes at a university level including
-one graduate level course.
+> [!MEMO] This is my CV. You may want to view my [resume](./resume.pdf).
 
 ## Experience
 
