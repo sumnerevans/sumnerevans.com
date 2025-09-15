@@ -21,19 +21,20 @@ level]({{<ref"./portfolio/index.html#experience-adjunct-mines">}}).
 
 In my [job at Can/Am]({{<ref"/portfolio#experience-canam-tech-lead">}}) I lead
 the engineering team responsible for building integrations with third-party
-vendors. I've been working to improve team processes and define expectations for
-engineers.
+vendors. I've been working to improve team processes, define expectations for
+engineers, improve system architecture, and implemented a variety of
+integrations myself.
 
 Previously, I [worked at Beeper]({{<ref"/portfolio#experience-beeper">}})
 building lots of things related to the Matrix protocol including cryptography
 libraries[^1] and the [mautrix bridges](https://github.com/mautrix). I also
-started and was a core member of the
+created the initial prototype for (and then was a core member of) the
 [Hungryserv]({{<ref"/portfolio#presentation-hungryserv">}}) project which
 enabled us to scale from hundreds to tens of thousands of users. I wrote about
 the technical and community aspects of [Matrix on my blog](/categories/matrix),
 and I've given a few talks related to Matrix at conferences[^2]. I was
 [elected to the Matrix Governing Board](https://matrix.org/foundation/governing-board-elections/#elected-representatives)
-as an individual member in 2024.
+and served as an individual member from 2024-2025.
 
 When I'm not programming, I enjoy training in ATA taekwondo under Chief Master
 Corina Black where I am a 4th Degree Black Belt and certified Level 3 Certified
