@@ -31,5 +31,6 @@ https://tgrcode.com/rss
 https://weekly.nixos.org/feeds/all.rss.xml
 https://www.arp242.net/feed.xml
 https://www.joelonsoftware.com/feed/
+https://www.seangoedecke.com/rss.xml
 https://www.thedroneely.com/posts/rss.xml
 https://www.wheresyoured.at/rss/
