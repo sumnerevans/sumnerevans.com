@@ -22,7 +22,7 @@ It took the better part of a few evenings for me to figure out how to translate
 my resume to Typst, but I'm happy with the result. I was able to reproduce the
 style of my \(\LaTeX\) resume almost exactly, and the code felt significantly
 more readable. (It's pretty easy to be more readable than \(\LaTeX\) to be
-honest. My resume is now written in Typst and compiled with Nix using
+honest.) My resume is now written in Typst and compiled with Nix using
 [Typix](https://loqusion.github.io/typix/). It is automatically compiled by
 GitHub Actions, and a PR is automatically created against my website to update
 the resume linked from [my portfolio]({{<ref"../../portfolio/index.md">}}).
@@ -98,8 +98,8 @@ obvious "hack" to reduce the activation energy required to try a new tool:
 **start with something small**. So, I'm going to try and resurrect the latest
 "workflow optimisation nerd" within me on some small projects that would benefit
 greatly from LLM assistance. I may or may not write about it, but if I do, you
-might even see some articles without the "Not by AI" badge because it's
-possible I decide to try writing some articles with heavy use of LLMs.
+might even see some articles without the "Not by AI" badge because it's possible
+I decide to try writing some articles with heavy use of LLMs.
 
 [^1]: I am by no means an expert, but I am more or less passable for most
     basics.
