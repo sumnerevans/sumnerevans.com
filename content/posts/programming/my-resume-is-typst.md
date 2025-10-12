@@ -36,7 +36,7 @@ the entire process were:
 - **Typst is small.** Unlike \(\LaTeX\) which is a famously enormous package
   (most distributions are gigabytes in size), Typst is under 40MB. This means
   that it is reasonable to download the executable during every single CI
-  pipeline.
+  pipeline run.
 - **The function syntax is reasonable.** It's not the best syntax, but it exists
   and is actually readable (unlike most \(\LaTeX\) macros). I'm still not sure
   how to utilise all of their functionality, but at least I have hope that I
@@ -104,6 +104,7 @@ I decide to try writing some articles with heavy use of LLMs.
 [^1]: I am by no means an expert, but I am more or less passable for most
     basics.
 
-[^2]: The most recent workflow improvement that I can think of was my adoption
-    of the [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) framework
-    for managing LSPs instead of CoC.
+[^2]: For example, the most recent large workflow improvement that I can think
+    of was my adoption of the
+    [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) framework for
+    managing LSPs instead of CoC, and I did that in late 2023.
