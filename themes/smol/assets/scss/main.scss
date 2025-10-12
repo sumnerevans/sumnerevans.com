@@ -76,7 +76,7 @@ span.link {
   transition-duration: 0.2s;
   transition-timing-function: ease;
   color: var(--link-color);
-  text-decoration: dotted underline;
+  text-decoration: none;
 
   &:hover,
   &:active,
