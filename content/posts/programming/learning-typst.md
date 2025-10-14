@@ -7,11 +7,13 @@ tags:
   - Typst
   - Resume
 math: true
+aliases:
+  - ../my-resume-is-typst
 ---
 
 A few weeks ago, [Typst](https://typst.app/) came back on my radar because of
 [Sylvan Franklin](https://www.youtube.com/@sylvanfranklin)'s videos on the topic
-came into my YouTube feed. In particular, the
+came into my YouTube feed. In particular,
 [_Rewriting my resume in Typst_](https://www.youtube.com/watch?v=Bwo1oX4wapE) in
 which he rewrites his resume from \(\LaTeX\) to Typst piqued my interest. I have
 maintained [my resume](https://github.com/sumnerevans/resume) in \(\LaTeX\)
