@@ -60,7 +60,7 @@ params:
   description: I'm a Tech Lead at Can/Am Technologies. This is my personal website, portfolio, and blog.
   title: Sumner Evans
   subtitle: Tech Lead at Can/Am Technologies
-  dateFmt: 2006-01-02
+  dateFmt: 2 January 2006
   logo: profile.jpg
 
   # Theme
