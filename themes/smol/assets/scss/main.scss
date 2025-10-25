@@ -190,6 +190,10 @@ pre {
   font-family: Iosevka, monospace;
 }
 
+main {
+  view-transition-name: main-content;
+}
+
 main *:not(pre)>code,
 tt,
 kbd {
@@ -493,10 +497,10 @@ header {
     / auto var(--image-width);
 
   a.site-image {
-    view-transition-name: header-image;
     grid-area: site-image;
 
     picture {
+      view-transition-name: header-image;
       width: var(--image-width);
       height: var(--image-width);
     }
@@ -718,15 +722,29 @@ header {
 
   &.home-header {
     --image-width: 300px;
+    grid-template:
+      "site-image" auto
+      "name-and-subtitle" auto
+      "links" auto
+      "nav" auto
+      / auto;
 
     .name-and-subtitle {
+      align-items: center;
+
       .site-title a {
         font-size: 5rem;
       }
 
       .site-subtitle {
-          font-size: 1.8rem;
+        font-size: 1.8rem;
       }
+    }
+
+    div.links {
+      font-size: 2.3em;
+      margin-top: 0.5rem;
+      justify-content: center;
     }
   }
 
