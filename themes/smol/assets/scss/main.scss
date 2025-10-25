@@ -2,6 +2,10 @@
 @import 'dark-mode';
 @import 'isso';
 
+@view-transition {
+  navigation: auto;
+}
+
 body {
   --fg-color: #333;
   --bg-color: #fff;
@@ -475,6 +479,8 @@ details.portfolio-more-items {
 }
 
 header {
+  view-transition-name: header;
+
   --image-width: 150px;
   --col-gap: 1rem;
 
@@ -487,6 +493,7 @@ header {
     / auto var(--image-width);
 
   a.site-image {
+    view-transition-name: header-image;
     grid-area: site-image;
 
     picture {
@@ -509,6 +516,8 @@ header {
     align-items: start;
 
     .site-title a {
+      view-transition-name: header-title;
+
       font-size: 3.5em;
       font-weight: bold;
       text-decoration: none;
@@ -522,12 +531,14 @@ header {
     }
 
     .site-subtitle {
+      view-transition-name: header-subtitle;
       font-size: 1.3rem;
       color: var(--subtitle-color);
     }
   }
 
   div.links {
+    view-transition-name: header-links;
     grid-area: links;
     font-size: 1.7em;
     display: flex;
@@ -542,6 +553,7 @@ header {
   }
 
   nav {
+    view-transition-name: header-nav;
     grid-area: nav;
     padding: 0.5rem 0;
     border-bottom: 2px solid var(--section-sep-color);
@@ -704,6 +716,20 @@ header {
     }
   }
 
+  &.home-header {
+    --image-width: 300px;
+
+    .name-and-subtitle {
+      .site-title a {
+        font-size: 5rem;
+      }
+
+      .site-subtitle {
+          font-size: 1.8rem;
+      }
+    }
+  }
+
   @media screen and (max-width: 600px) {
     --image-width: 80px;
     --col-gap: 0.5rem;
@@ -780,6 +806,7 @@ dd {
 }
 
 footer {
+  view-transition-name: footer;
   border-top: 2px solid var(--section-sep-color);
   margin-top: 2em;
   padding-top: 2em;

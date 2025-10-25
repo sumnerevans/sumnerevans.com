@@ -1,120 +1,16 @@
 {{ define "main" }}
 <main>
-  {{ $paginator := .Paginate (partial "func/FilterPages" (where .Site.RegularPages "Type" "in" .Site.Params.mainSections)) }}
-  {{- range $i, $p := .Paginator.Pages -}}
-    <article>
-      <div class="article-title">
-        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-      </div>
-      <p class="article-info">
-        <b>
-          Posted on
-          <time>{{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
-          {{ with .Params.categories }}
-            in
-            {{ range first 1 . }}
-              <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-            {{- end -}}
-            {{- range after 1 . -}}
-              , <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-            {{- end -}}
-          {{ end }}
-        </b>
-        {{ with .WordCount }}
-          • {{ . }} words
-        {{ end }}
-        {{ with .ReadingTime }}
-          • {{ . }} minute read
-        {{ end }}
-        {{ with .Params.tags }}
-          <br>
-          Tags:
-          {{ range first 1 . }}
-            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-          {{- end -}}
-          {{- range after 1 . -}}
-            , <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-          {{- end -}}
-        {{ end }}
-      </p>
-      <div class="post-summary">
-        {{ if not .Params.hide_image_in_index }}
-          {{- with .Resources.Get .Params.image -}}
-            <div class="summary-image">
-              <picture>
-                {{ if ne .MediaType.SubType "svg" }}
-                  {{ with .Resize "250x webp photo" }}
-                    <!-- This is the small summary image when displayed to the left of the article. -->
-                    <source
-                      type="image/webp"
-                      media="(min-width: 600px)"
-                      srcset="{{ .RelPermalink }}"
-                    >
-                  {{ end }}
-
-                  <!-- These are the responsive sizes for when the image is displayed above the article. -->
-                  {{- $respSizes := slice "200" "400" -}}
-                  {{ $imgRsc := . }}
-                  {{- range $respSizes -}}
-                    {{- if ge $imgRsc.Width . -}}
-                      <source
-                        type="image/webp"
-                        media="(max-width: {{ . }}px)"
-                        srcset="{{- ($imgRsc.Resize (print . "x webp photo") ).RelPermalink -}}"
-                      >
-                    {{- end -}}
-                  {{- end -}}
-
-                  <!-- This is the fallback size. -->
-                  {{ with .Resize "600x webp photo" }}
-                    <img
-                      {{ if gt $i 0 }}
-                        loading="lazy"
-                      {{ end }}
-                      src="{{ .RelPermalink }}"
-                      width="{{ .Width }}"
-                      height="{{ .Height }}"
-                      alt=""
-                      aria-hidden="true"
-                    >
-                  {{ end }}
-                {{ else }}
-                  <img
-                    {{ if gt $i 0 }}
-                      loading="lazy"
-                    {{ end }}
-                    src="{{ .RelPermalink }}"
-                    alt=""
-                    aria-hidden="true"
-                  >
-                {{ end }}
-              </picture>
-            </div>
-          {{- else with .Params.image -}}
-            <div class="summary-image">
-              <img
-                {{ if gt $i 0 }}
-                  loading="lazy"
-                {{ end }}
-                alt=""
-                width="400"
-                src="{{ $.Permalink }}{{ . }}"
-                aria-hidden="true"
-              >
-            </div>
-          {{- end -}}
-        {{- end -}}
-        <div class="summary-text">
-          <div class="summary">
-            {{ .Summary }}
+  <section id="recent-blog-posts">
+    <h2>Recent Blog Posts</h2>
+    <div class="cards">
+      {{- range $i, $p := (partial "func/FilterPages" (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) | first 5) }}
+        <article>
+          <div class="article-title">
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
           </div>
-          <div>
-            <a href="{{ .Permalink }}">Read more »</a>
-          </div>
-        </div>
-      </div>
-    </article>
-  {{ end }}
-  {{ partial "pagination.html" . }}
+        </article>
+      {{- end -}}
+    </div>
+  </section>
 </main>
 {{ end }}
