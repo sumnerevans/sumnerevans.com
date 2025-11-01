@@ -6,6 +6,8 @@ categories:
 tags:
   - Typst
   - Resume
+  - LaTeX
+  - LLM
 math: true
 aliases:
   - ../my-resume-is-typst
