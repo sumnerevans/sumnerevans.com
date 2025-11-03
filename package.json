@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@justinribeiro/lite-youtube": "^1.8.2",
+    "@justinribeiro/lite-youtube": "^1.9.0",
     "@types/lunr": "^2.3.7",
     "@types/mark.js": "^8.11.12",
     "lunr": "^2.3.9",
