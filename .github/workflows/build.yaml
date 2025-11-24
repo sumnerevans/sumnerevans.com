@@ -23,7 +23,7 @@ jobs:
     env:
       HUGO_CACHEDIR: /tmp/hugo_cache
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
