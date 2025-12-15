@@ -17,13 +17,13 @@ programming ecosystem is the
 [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro)
 landscape. In theory, MCP is a way to provide the LLM with data from an external
 system through a structured protocol. However,
-[it sucks](https://youtu.be/1piFEKA9XL0). It turns out that it is more efficient
-to have the AI just write code to analyse and manipulate the data from the
-external system directly. Rather than piping the data from the external system
-into the LLM's context window and letting the LLM muddle through it, the
-LLM-written code can just do the necessary data processing. Computers have been
-good at running instructions on large datasets for a very long time and AI is
-not going to be a substitute for that.
+[it](https://youtu.be/1piFEKA9XL0) [sucks](https://youtu.be/hPPTrsUzLA8).
+It turns out that it is more efficient to have the AI just write code to analyse
+and manipulate the data from the external system directly. Rather than piping the
+data from the external system into the LLM's context window and letting the LLM
+muddle through it, the LLM-written code can just do the necessary data processing.
+Computers have been good at running instructions on large datasets for a very long
+time and AI is not going to be a substitute for that.
 
 [^1]: We have chosen Claude as the AI of choice at
     [my job]({{<ref"../../portfolio/index.md#experience-canam-tech-lead">}}) and
