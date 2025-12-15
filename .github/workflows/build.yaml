@@ -32,7 +32,7 @@ jobs:
           extended: true
 
       - name: Cache HugoMod
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ${{ env.HUGO_CACHEDIR }}
           key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
@@ -43,7 +43,7 @@ jobs:
 
       - name: Cache Generated Images
         id: cache-images
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: resources/_gen/images
           key: ${{ runner.os }}-${{ hashFiles('config.toml') }}-${{ hashFiles('content/**/*') }}-${{ hashFiles('themes/**/*') }}
