@@ -23,6 +23,7 @@ https://matrix.org/blog/feed
 https://mau.fi/blog/index.rss
 https://medium.com/feed/@ericmigi
 https://www.micahbird.com/index.xml
+https://nathanieljwright.com/feed/
 https://neilalexander.dev/feed.xml
 https://pointlessramblings.com/index.xml
 https://skip.house/rss.xml
