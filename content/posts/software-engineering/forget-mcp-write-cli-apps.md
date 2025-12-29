@@ -53,7 +53,7 @@ situations:
 [^2]: .NET has gotten a lot better since the .NET Framework days (which was the
     last time I was seriously using .NET). They got off of reliance on
     horrifying combinations of `msbuild` commands and now have a `dotnet`
-    command which is competent. Some reasons I think this is the case:
+    command which is competent.
 
 I think it's fairly clear that the main reason that CLIs are so LLM-friendly is
 that CLIs are text-based, and thus there are no wasted tokens from mode
