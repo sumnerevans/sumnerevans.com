@@ -67,16 +67,17 @@ be a pointless endeavour. So here I am sitting with my laptop, writing with a
 still wet thigh, and a very strong smell of coffee all around me.
 
 We are supposed to land in Brussels at around 07:30 CEST, and my flight to
-Vienna is not until 15:45, so I'm going to try and visit the Automium today and
-then head back to the airport. I should arrive in Vienna around 17:30. My first
-order of business after checking into my hostel is going to be to try and find a
-bar that is showing the NFL Championship games so that I can watch the Broncos
-AFC championship game. I might have planned my trip differently if I knew the
-Broncos would be playing this late into the postseason, but after a decade of
-disappointment it didn't even cross my mind that I might care about any January
-games. We will see how the game goes, losing Nix was a huge blow last week, but
-if the defense makes life difficult for Maye, Stidham has a chance to
-game-manage the team to victory.
+Vienna is not until 15:45, so I'm going to try and visit the
+<a name="automium"></a>Automium today and then head back to the airport. I
+should arrive in Vienna around 17:30. My first order of business after checking
+into my hostel is going to be to try and find a bar that is showing the NFL
+Championship games so that I can watch the Broncos AFC championship game. I
+might have planned my trip differently if I knew the Broncos would be playing
+this late into the postseason, but after a decade of disappointment it didn't
+even cross my mind that I might care about any January games. We will see how
+the game goes, losing Nix was a huge blow last week, but if the defense makes
+life difficult for Maye, Stidham has a chance to game-manage the team to
+victory.
 
 Well, I've now managed to waste enough time that they are starting the landing
 meal service. I expect we will be entering the landing sequence in about an
