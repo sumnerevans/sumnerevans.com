@@ -267,7 +267,7 @@ img {
 }
 
 /* Image Galleries */
-.gallery {
+table.gallery {
   tr {
     max-width: 60%;
 
@@ -278,6 +278,16 @@ img {
         margin: 0;
       }
     }
+  }
+}
+
+div.gallery {
+  display: flex;
+  flex-direction: horizontal;
+  gap: 4px;
+
+  p {
+    margin: 0;
   }
 }
 
