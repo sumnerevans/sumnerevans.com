@@ -9,6 +9,7 @@ tags:
   - Austria
 description: |
   In which I take a walking tour of Vienna.
+image: images/secession.jpg
 ---
 
 This morning, I woke up in time for the walking tour. There were about ten of us
