@@ -84,6 +84,18 @@ After that, we went off in different directions. I walked through the city
 towards the Danube. It became more of a modern city that direction, so after I
 crossed the spur that Vienna is situated on, I headed back to the hostel.
 
+<div class="gallery">
+
+![](images/vienna-1.jpg)
+
+![](images/vienna-2.jpg)
+
+![](images/vienna-3.jpg)
+
+![](images/vienna-4.jpg)
+
+</div>
+
 It was mid-afternoon by then, and so I decided to go back to the hostel and took
 a nap. I intended for it to be an hour nap, but three hours later I woke up. I
 went to the hostel bar and met some of the people from the walking tour. We had
