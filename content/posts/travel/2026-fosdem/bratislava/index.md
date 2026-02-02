@@ -9,7 +9,7 @@ tags:
   - Slovakia
 description: |
   I go with Bodie and Georgia to a very foggy Bratislava.
-draft: true
+image: images/castle-2.jpg
 ---
 
 This morning, I met Bodie and Georgia at around 08:30 to head to Bratislava.
