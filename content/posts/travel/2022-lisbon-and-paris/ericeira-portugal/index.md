@@ -47,8 +47,7 @@ beach was a 30 minutes walk away.
 >}}
 
 {{<figure
-  src="../denver-to-lisbon/images/beach.jpg"
-  link="../denver-to-lisbon/images/beach.jpg"
+  src="images/beach.jpg"
   title="The beach near our retreat venue"
   caption="A few of us went [on Sunday](../denver-to-lisbon) and at other points during the week. I went again on Wednesday and on Friday."
 >}}
