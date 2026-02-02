@@ -8,8 +8,8 @@ tags:
   - Brno
   - Czechia
 description: |
-  I attempt to go to Brno en route to Prague.
-draft: true
+  I attempt to go to Brno en route to Prague. I visit the Austerlitz Battlefield
+  and the Brno old town. I have some train adventures along the way.
 ---
 
 This morning, I left Vienna for Prague, and on the way I went to Brno. Brno is
@@ -29,6 +29,8 @@ had to pay for the Regiojet train segment. It was luckily not that expensive.
 The Regiojet was also a pretty good train and it was direct from Breclav to
 Brno. When I arrived in Brno, it was already nearly 13h and the public transit
 to the Austerlitz battlefield museum was off-phase, so I took a Bolt.
+
+{{<figure src="images/monument.jpg" title="The Cairn of Peace Memorial">}}
 
 There is a large monument to the dead from both sides of the battle. It's
 located on the Pratzen Heights which played a critical role in the battle.
@@ -81,13 +83,58 @@ modern scholarship agrees that relatively few soldiers died escaping across the
 ice of the lakes.
 
 If you are interested in military history, I recommend this YouTube video from
-TODO
-TODO YOUTUBE VIDEO HERE
-which explains the battle in a much more thorough way than I did here.
+[Epic History](https://www.youtube.com/@EpichistoryTv) which explains the battle
+in a much more thorough way than I did here.
 
-- Bus back to Brno
-- Walked around city, found cathedral with big tower
-- Went up to see view
-- Walked to find dinner
-- Had soup and a traditional meal
-- Got on the Regiojet to Praha
+<details class="youtube-expander">
+  <summary>{{< ico "tabler" "filled/brand-youtube" >}} Napoleonic Wars: Battle of Austerlitz 1805</summary>
+  {{< youtube id="bhQe2cjr5XQ" title="Napoleonic Wars: Battle of Austerlitz 1805" >}}
+</details>
+
+After visiting the monument, I took the bus back to Brno and walked towards the
+most prominent feature on the skyline: the Cathedral of St. Peter and Paul (they
+were really covering all their bases there).
+
+<div class="gallery">
+
+![](images/brno-1.jpg)
+
+![](images/brno-2.jpg)
+
+![](images/brno-3.jpg)
+
+![](images/brno-4.jpg)
+
+![](images/brno-5.jpg)
+
+![](images/brno-6.jpg)
+
+</div>
+
+<div class="gallery">
+
+![](images/cathedral-1.jpg)
+
+![](images/cathedral-2.jpg)
+
+![](images/cathedral-3.jpg)
+
+</div>
+
+I was happy to learn that you can visit the tower in the cathedral for great
+views of the city.
+
+![](images/pano-1.jpg)
+
+![](images/pano-2.jpg)
+
+By that point, I was pretty hungry so I wandered around trying to find a good
+place to eat. I found a restaurant that had some Czech fare. I don't really know
+what I got, but it was good.
+
+I went back to the train station and got a ticket to the Regiojet to Prague. I
+managed to get on the correct train this time, but about an hour and a half into
+the ride, we stopped on the tracks. The conductor came on the intercom and
+informed us that there was an accident on the tracks and we would be delayed an
+hour to Prague. Once we finally got to the Prague train station, getting to my
+hostel was pretty easy, but it was quite late and I went straight to bed.
