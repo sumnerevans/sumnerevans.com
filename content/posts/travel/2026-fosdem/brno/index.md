@@ -10,6 +10,7 @@ tags:
 description: |
   I attempt to go to Brno en route to Prague. I visit the Austerlitz Battlefield
   and the Brno old town. I have some train adventures along the way.
+image: images/monument.jpg
 ---
 
 This morning, I left Vienna for Prague, and on the way I went to Brno. Brno is
