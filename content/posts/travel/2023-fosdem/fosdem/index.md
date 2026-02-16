@@ -5,7 +5,7 @@ categories:
   - Travel
   - Conferences
 tags:
-  - FOSDEM 2023
+  - FOSDEM
   - Matrix Community Meetup
   - HSBXL
   - Matrix

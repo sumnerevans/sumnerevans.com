@@ -5,7 +5,7 @@ categories:
   - Travel
   - Conferences
 tags:
-  - FOSDEM 2025
+  - FOSDEM
   - Matrix
   - HSBXL
   - Go (Programming Language)

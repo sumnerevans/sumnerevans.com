@@ -4,7 +4,7 @@ date: 2023-01-06T06:25:00-06:00
 categories:
   - Travel
 tags:
-  - FOSDEM 2023
+  - FOSDEM
   - Brussels
   - Belgium
 description: |
