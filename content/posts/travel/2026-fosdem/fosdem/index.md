@@ -97,7 +97,7 @@ linear history. I'm a big fan of AtomicFlow, and I have used a lot of the
 principles of that flow in my projects. I wonder if there is anything that I can
 learn and apply to the Git processes that we use at Can/Am.
 
-After that talk, it was stack time so I went to get a Belgian waffle from the
+After that talk, it was snack time so I went to get a Belgian waffle from the
 food truck and then went over to the Matrix stand to catch up with people. I had
 a nice conversation with
 [Neil](https://www.linkedin.com/in/neil-johnson-717baa6/) and caught up with
