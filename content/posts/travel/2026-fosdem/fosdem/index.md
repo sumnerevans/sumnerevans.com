@@ -1,6 +1,6 @@
 ---
 title: FOSDEM 2026
-date: 2026-01-31T06:25:00-06:00
+date: 2026-02-01T06:25:00-06:00
 categories:
   - Travel
   - Conferences
