@@ -13,7 +13,7 @@ aliases:
   - ../my-resume-is-typst
 ---
 
-A few weeks ago, [Typst](https://typst.app/) came back on my radar because of
+A few weeks ago, [Typst](https://typst.app/) came back on my radar because
 [Sylvan Franklin](https://www.youtube.com/@sylvanfranklin)'s videos on the topic
 came into my YouTube feed. In particular,
 [_Rewriting my resume in Typst_](https://www.youtube.com/watch?v=Bwo1oX4wapE) in
