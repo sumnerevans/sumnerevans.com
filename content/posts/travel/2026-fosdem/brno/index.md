@@ -13,8 +13,8 @@ image: images/monument.jpg
 ---
 
 This morning, I left Vienna for Prague, and on the way I went to Brno. Brno is
-very near the Austerlitz, Napoleon's best battlefield masterpiece. After
-visiting Waterloo (the site of Napoleon's ultimate defeat) the last
+very near the Austerlitz battlefield, Napoleon's best military masterpiece.
+After visiting Waterloo (the site of Napoleon's ultimate defeat) the last
 [two]({{<ref"../../2025-fosdem/waterloo/index.md">}})
 [years]({{<ref"../../2024-fosdem/waterloo/index.md">}}) I figured that it was
 only fair to go see the site of his greatest victory.
