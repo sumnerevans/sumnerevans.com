@@ -29,7 +29,7 @@ uneventful and I slept through most of it. I've flown into Brussels Airport
 Zaventem many times at this point. It's probably the European airport that I
 have the most experience with at this point. I'm at the point where I have
 navigated it enough that it feels familiar. (It's crazy when you start to know
-where things are at foreign airports.) Overall, I think the airport is pretty
+where things are at in foreign airports.) Overall, I think the airport is pretty
 good, but the best part is how well connected it is to the train system.
 
 Once I arrived in Brussels, I headed straight for [HSBXL](https://hsbxl.be/) (an
