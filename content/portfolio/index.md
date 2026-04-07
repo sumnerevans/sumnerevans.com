@@ -31,20 +31,43 @@ description: |
     <p>
       I
       <a href="{{<ref"../posts/life-updates/joining-canam/index.md">}}">joined Can/Am Technologies</a>
-      as a Senior Implementation Tech Lead. I am leading a team of developers building integrations with third-party
-      vendors for Teller, a point of sale product for municipal governments.
+      as a Senior Implementation Tech Lead. I lead a team of forward-deployed engineers responsible for
+      building integrations with third-party systems.
     </p>
     <p>
       So far, I have...
     </p>
     <ul>
       <li>
-        Improved requirements gathering and technical feasibility assessment processes across the
-        Implementations team.
+        Formalised a per-project Integrations Lead role definition for the person responsible for
+        overseeing technical delivery of the business solution to the client.
       </li>
       <li>
-        Spearheaded efforts to improve the plugin architecture to allow for more declarative and
-        config-driven integrations.
+        Encouraged adoption of AI efficiencies across the Implementations engineering team.
+      </li>
+      <li>
+        Collaborated with cross-functional stakeholders to improve processes and standards across
+        the client services organisation.
+        <ul>
+          <li>
+            Improved requirements gathering and technical feasibility assessment processes across the
+            Implementations team.
+          </li>
+          <li>
+            Enforced design reviews for all integrations with key stakeholders including business analysts
+            and QA.
+          </li>
+          <li>
+            Introduced standards for handoff from engineers to QA.
+          </li>
+        </ul>
+      </li>
+      <li>
+        Driving multiple efforts to make integration architecture more declarative and configuration-driven
+        increasing our ability to leverage AI assistants for programming and configuration tasks.
+      </li>
+      <li>
+        Implementing improved developer tooling such as automated linting for integration development.
       </li>
       <li>
         Implemented integrations with
@@ -166,7 +189,7 @@ description: |
       </summary>
       <p>
         I taught <i>CSCI 406 Algorithms</i> once while I was a graduate student in 2018 under
-        <a href="http://inside.mines.edu/~dmehta/" target="_blank">Dr. Dinesh Mehta</a>.
+        <a href="https://cs.mines.edu/project/mehta-dinesh/" target="_blank">Dr. Dinesh Mehta</a>.
         I also taught two sections in Spring 2022 using Dr. Mehta's materials. I co-taught the
         class with Dr. Mehta in Fall 2023 and Fall 2024.
       </p>
@@ -190,7 +213,7 @@ description: |
         I then taught the course twice under
         <a href="https://jrmcclurg.com/" target="_blank">Dr. Jedidiah McClurg</a>
         in 2020 and 2021, and once under
-        <a href="https://cs.mines.edu/project/read-amelia/" target="_blank">Amelia Read</a>
+        <a href="https://www.linkedin.com/in/ameliaread" target="_blank">Amelia Read</a>
         in Fall 2022. Topics that the course covered in those iterations included:
         functional programming concepts, type inference, OCaml, programming language
         implementation, and formal semantics.
@@ -202,7 +225,8 @@ description: |
         RISC-V assembly, pipelining, processor design, memory hierarchy
       </summary>
       <p>
-        I taught <i>CSCI 341 Computer Organization</i> with Dr. Qi Han in 2023.
+        I taught <i>CSCI 341 Computer Organization</i> with
+        <a href="https://people.mines.edu/qhan/">Dr. Qi Han</a> in 2023.
       </p>
     </details>
     <details class="normal-expander">
