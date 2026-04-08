@@ -34,7 +34,6 @@ description: |
       as a Senior Implementation Tech Lead. I lead a team of forward-deployed engineers responsible for
       building integrations with third-party systems.
     </p>
-    
     <details open class="normal-expander">
       <summary>So far, I have...</summary>
       <ul>
