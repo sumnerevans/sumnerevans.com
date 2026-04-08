@@ -34,47 +34,48 @@ description: |
       as a Senior Implementation Tech Lead. I lead a team of forward-deployed engineers responsible for
       building integrations with third-party systems.
     </p>
-    <p>
-      So far, I have...
-    </p>
-    <ul>
-      <li>
-        Formalised a per-project Integrations Lead role definition for the person responsible for
-        overseeing technical delivery of the business solution to the client.
-      </li>
-      <li>
-        Encouraged adoption of AI efficiencies across the Implementations engineering team.
-      </li>
-      <li>
-        Collaborated with cross-functional stakeholders to improve processes and standards across
-        the client services organisation.
-        <ul>
-          <li>
-            Improved requirements gathering and technical feasibility assessment processes across the
-            Implementations team.
-          </li>
-          <li>
-            Enforced design reviews for all integrations with key stakeholders including business analysts
-            and QA.
-          </li>
-          <li>
-            Introduced standards for handoff from engineers to QA.
-          </li>
-        </ul>
-      </li>
-      <li>
-        Driving multiple efforts to make integration architecture more declarative and configuration-driven
-        increasing our ability to leverage AI assistants for programming and configuration tasks.
-      </li>
-      <li>
-        Implementing improved developer tooling such as automated linting for integration development.
-      </li>
-      <li>
-        Implemented integrations with
-        <a href="https://www.themortgageoffice.com/" target="_blank">The Mortgage Office</a>,
-        WorldPay, and EnQuesta and built enhancements for many other integrations.
-      </li>
-    </ul>
+    
+    <details open class="normal-expander">
+      <summary>So far, I have...</summary>
+      <ul>
+        <li>
+          Formalised a per-project Integrations Lead role definition for the person responsible for
+          overseeing technical delivery of the business solution to the client.
+        </li>
+        <li>
+          Encouraged adoption of AI efficiencies across the Implementations engineering team.
+        </li>
+        <li>
+          Collaborated with cross-functional stakeholders to improve processes and standards across
+          the client services organisation.
+          <ul>
+            <li>
+              Improved requirements gathering and technical feasibility assessment processes across the
+              Implementations team.
+            </li>
+            <li>
+              Enforced design reviews for all integrations with key stakeholders including business analysts
+              and QA.
+            </li>
+            <li>
+              Introduced standards for handoff from engineers to QA.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Driving multiple efforts to make integration architecture more declarative and configuration-driven
+          increasing our ability to leverage AI assistants for programming and configuration tasks.
+        </li>
+        <li>
+          Implementing improved developer tooling such as automated linting for integration development.
+        </li>
+        <li>
+          Implemented integrations with
+          <a href="https://www.themortgageoffice.com/" target="_blank">The Mortgage Office</a>,
+          WorldPay, and EnQuesta and built enhancements for many other integrations.
+        </li>
+      </ul>
+    </details>
   </div>
 </details>
 
