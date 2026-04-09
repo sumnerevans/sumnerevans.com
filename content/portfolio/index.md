@@ -35,14 +35,14 @@ description: |
       building integrations with third-party systems.
     </p>
     <details open class="normal-expander">
-      <summary>So far, I have...</summary>
+      <summary>Notable initiatives and projects include...</summary>
       <ul>
         <li>
           Formalised a per-project Integrations Lead role definition for the person responsible for
           overseeing technical delivery of the business solution to the client.
         </li>
         <li>
-          Encouraged adoption of AI efficiencies across the Implementations engineering team.
+          Encouraging adoption of AI efficiencies across the Implementations engineering team.
         </li>
         <li>
           Collaborated with cross-functional stakeholders to improve processes and standards across
