@@ -72,6 +72,8 @@ params:
 
   # Isso
   issoUrl: comments.sumnerevans.com
+  issoOptions:
+    sorting: newest
 
   goatcounter:
     domain: https://stats.sumnerevans.com/count
