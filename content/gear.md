@@ -12,7 +12,7 @@ I use a
 ### Accessories
 
 - **Monitor:** [Dell S2417DG Monitor][dells2417dg] (2560×1440, 165Hz)
-- **Keyboards: [Ergedox EZ with Cherry MX Blues][ergodox-ez] (at work) and
+- **Keyboards:** [Ergedox EZ with Cherry MX Blues][ergodox-ez] (at work) and
   [ZSA Voyager](https://www.zsa.io/voyager) (at home)
 - **Mouse:** [Logitech G300s][g300s]
 - **Microphone:** [TONOR Professional Studio Condenser Microphone Kit][tonormic]
