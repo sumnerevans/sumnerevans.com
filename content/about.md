@@ -5,52 +5,17 @@ aliases:
   - /contact
 ---
 
-My name is Sumner, and I live in Denver, Colorado. I am a Senior Implementation
-Tech Lead at [Can/Am Technologies](https://canamtechnologies.com/) and I run a
-business called [Nevarro](https://nevarro.space) which provides education
-services such as computer science and mathematics tutoring. I'm also a 4th
-Degree Black Belt and certified instructor in ATA Taekwondo and a Colorado
-School of Mines alum (bachelor's in CS, 2018; masters in CS, 2019).
+My name is Sumner, and I live in Denver, Colorado. I am a
+[tech lead]({{<ref"/portfolio#experience-canam-tech-lead">}}) at
+[Can/Am Technologies](https://canamtechnologies.com/), a 4th Degree Black Belt
+and certified instructor in ATA Taekwondo under Chief Master Corina Black, and
+a Colorado School of Mines alum.
 
 I like building software which solves difficult and real problems, and I enjoy
-helping others develop their careers in software. I have had the opportunity to
-solve many interesting and difficult problems throughout my career. I have also
-had the opportunity to
-[teach multiple computer science courses at a university
-level]({{<ref"./portfolio/index.html#experience-adjunct-mines">}}).
+helping others develop their careers in software. You can find my professional
+achievements on my [portfolio]({{< ref "/portfolio" >}}).
 
-In my [job at Can/Am]({{<ref"/portfolio#experience-canam-tech-lead">}}) I lead
-the engineering team responsible for building integrations with third-party
-vendors. I've been working to improve team processes, define expectations for
-engineers, improve system architecture, and implemented a variety of
-integrations myself.
-
-Previously, I [worked at Beeper]({{<ref"/portfolio#experience-beeper">}})
-building lots of things related to the Matrix protocol including cryptography
-libraries[^1] and the [mautrix bridges](https://github.com/mautrix). I also
-created the initial prototype for (and then was a core member of) the
-[Hungryserv]({{<ref"/portfolio#presentation-hungryserv">}}) project which
-enabled us to scale from hundreds to tens of thousands of users. I wrote about
-the technical and community aspects of [Matrix on my blog](/categories/matrix),
-and I've given a few talks related to Matrix at conferences[^2]. I was
-[elected to the Matrix Governing Board](https://matrix.org/foundation/governing-board-elections/#elected-representatives)
-and served as an individual member from 2024-2025.
-
-When I'm not programming, I enjoy training in ATA taekwondo under Chief Master
-Corina Black where I am a 4th Degree Black Belt and certified Level 3 Certified
-Legacy Instructor. I also enjoy playing soccer, volleyball, and racquetball when
-I have the chance. During high school, I won the FRCCA Soccer State Championship
-with Denver Eagles my senior year. I have also won multiple state titles in ATA
-taekwondo.
-
-[1]: {{< ref "/portfolio" >}}
-
-[^1]: I'm particularly proud of the work that I've done to bring support for
-    [key backup](https://github.com/mautrix/go/tree/main/crypto/backup) and
-    [interactive verification](https://github.com/mautrix/go/tree/main/crypto/verificationhelper)
-    to [maturix-go](https://github.com/mautrix/go).
-
-[^2]: [Matrix Cryptographic Key Infrastructure]({{<ref"/portfolio#presentation-matrix-crypto-key-infra">}}),
-    [Hungryserv: A Homeserver Optimized for Unfederated Use-Cases]({{<ref"/portfolio#presentation-hungryserv">}}),
-    and
-    [What is Beeper Working on?]({{<ref"/portfolio#presentation-what-is-beeper-working-on">}})
+When I'm not programming or training at taekwondo, I'm probably doing something
+else very active. In the winter, I love to ski, and during the warmer months I
+enjoy playing various sports such as soccer, volleyball, raquetball, ultimate
+frisbee, and basically anything else you convince me to try.
