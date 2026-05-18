@@ -68,3 +68,13 @@ program" and that "programs should be written to handle text streams, because
 that is a universal interface". It turns out that CLI applications which
 followed the UNIX philosophy ended up being the most immune replacement in the
 AI revolution.
+
+---
+
+**Note 18 May 2026:** I'm collecting a list of other blog posts that have the same
+sentiment as this post below.
+
+* [MCP is dead. Long live the CLI](https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html)
+  by [Eric Holmes](https://ejholmes.github.io/)
+* [What if you don't need MCP at all?](https://mariozechner.at/posts/2025-11-02-what-if-you-dont-need-mcp/)
+  by [Mario Zechner](https://mariozechner.at/)
