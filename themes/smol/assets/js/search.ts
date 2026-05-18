@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const hlQuery = hls.map((h) => `hl=${encodeURIComponent(h)}`).join("&");
     const [categoriesList, tagsList] = ["categories", "tags"].map((t) =>
       article[t]?.map(
-        (c) => `<a href="/${t}/${c.toLowerCase().replace(" ", "-")}">${c}</a>`
+        (c) => `<a href="/${t}/${c.toLowerCase().replaceAll(" ", "-")}">${c}</a>`
       )
     );
     const searchResultDiv = document.createElement("div");
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       `${categoriesList?.length ? `<p class="categories"><b>Posted in ${categoriesList.join(", ")}</b></p>` : ""}` +
       `${tagsList?.length ? `<p class="tags">Tags: ${tagsList.join(", ")}</p>` : ""}` +
       `<div class="content-summary">` +
-      `${article.contents?.replace("\n", "<br>")}` +
+      `${article.contents?.replaceAll("\n", "<br>")}` +
       `</div>`;
     return [searchResultDiv, hls];
   };
