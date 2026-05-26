@@ -1,5 +1,5 @@
 ---
-title: "Respecting Theme Preferences on Your Website"
+title: Respecting Theme Preferences on Your Website
 date: 2020-04-07T15:00:00-06:00
 categories: [Programming]
 tags: [JavaScript, Dark Theme, Dark Mode, CSS, HTML]
@@ -42,7 +42,7 @@ In this post, I'm going to share what I learned while implementing this for my
 website. Hopefully this helps you implement light/dark theme adaptation for your
 website.
 
-## Three Tips for Creating a Dark Theme for your Website
+## Three Tips for Creating a Dark Theme
 
 The first thing you want to do is to actually create a dark theme for your
 website. Obviously, each site will have unique challenges in designing a dark
@@ -114,7 +114,7 @@ theme for this website.
    I use this dimming effect in light mode as well (but with only 90% opacity
    when not hovered) and it creates a nice effect there as well.
 
-# Detecting Theme Preference in CSS
+## Detecting Theme Preference in CSS
 
 Now that you have determined the styles that you want to use in dark mode, you
 need to actually detect which theme the user prefers. It turns out to be
@@ -147,7 +147,7 @@ The media query also supports `preferred-color-scheme: light` or
 `preferred-color-scheme: no-preference` if for example, you have a
 dark-by-default site and you want to override the styles for light themes.
 
-# Detecting Theme Preference in JavaScript
+## Detecting Theme Preference in JavaScript
 
 Sometimes, however, you may need to determine programatically what theme
 preference the user has set. For example, you may want to give them some
@@ -194,7 +194,7 @@ I'm just passing a lambda here for brevity.
 > mql.addListener(handleTheme);
 > ```
 
-# Allowing Users to Override the Detected Theme on Your Site
+## Allowing Users to Override the Detected Theme
 
 Since you've gone to all this work already to make a dark and light theme for
 your website, you may as well expose the functionality to the user even if their
@@ -328,7 +328,7 @@ theme
 > still benefit from your dark and light theme support via the browser or OS
 > theme preference functionality.
 
-# Other Resources
+## Other Resources
 
 Here are a few other resources that helped me as I was implementing dark mode
 for this website and as I was writing this article.
