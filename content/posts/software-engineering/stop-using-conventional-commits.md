@@ -139,9 +139,9 @@ section to see if any of the reasons make any sense.
   This is the biggest promise of Conventional Commits: you can run a tool like
   [git-cliff](https://git-cliff.org/) or
   [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)
-  to generate a changelog from the commits since your last release. Is this
-  even a good idea? No! The audience of a changelog is entirely different than
-  the audience for a commit log!
+  to generate a changelog from the commits since your last release. Is this even
+  a good idea? No! The audience of a changelog is entirely different than the
+  audience for a commit log!
 
   A changelog is user-facing, and the user cares about understanding the
   functional differences between versions. They care about what changed from a
@@ -218,11 +218,16 @@ section to see if any of the reasons make any sense.
 Not a single one of the "selling points" for Conventional Commits actually holds
 water.
 
-Conventional Commits is also extremely difficult to apply to a project.[^2] You
-are supposed to define your own set of "types", but pretty much everyone just
-takes the defaults from
+Conventional Commits is also extremely difficult to apply to a project. You are
+supposed to define your own set of "types", but pretty much everyone just takes
+the defaults from
 [commitlint](https://github.com/conventional-changelog/commitlint) which often
-don't fit well with the particulars of individual projects.
+don't fit well with the particulars of individual projects. This problem is
+especially acute in corporate environments where change management and audit
+requirements often mandate a ticket number in every commit message. The
+`<scope>` field is the obvious place to put it, but this ends up replacing the
+only useful metadata in a Conventional Commit with a completely useless ticket
+number.
 
 ## A Better Way
 
@@ -233,6 +238,8 @@ be relevant to the actual project). Usually, the scope to use on a given project
 is self-evident. For the Linux kernel, the subsystem is the natural scope. For
 Go projects, the package path is the natural scope. For a project using a
 microservice architecture, the microservice name is the natural scope.
+
+Here are some examples of projects and their commit format guidelines.
 
 | Project                                                                                         | Format                   | Example                                                                                                                  |
 | :---------------------------------------------------------------------------------------------- | :----------------------- | :----------------------------------------------------------------------------------------------------------------------- |
@@ -268,9 +275,3 @@ to the flame war in the comment section.
     however most projects just end up using the types
     [defined by commitlint](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional#type-enum),
     so I have included some of them in this list.
-
-[^2]: This is especially the case in corporate environments where change
-    management and audit requirements likely require a ticket number to be a
-    part of the commit message. The Conventional Commit `<scope>` is an
-    appealing place to put it, but this ends up replacing the only useful
-    metadata in a Conventional Commit with a completely useless ticket number.
