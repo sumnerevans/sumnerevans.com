@@ -98,8 +98,8 @@ Conventional Commits gets the priority of scope and type entirely wrong.
 ### Type is Redundant and Restrictive
 
 You might be thinking "so it may be backwards, but commit type is at least still
-important, right?" and to that I say "no". A commit's description should always
-tell you the type of the change! Consider
+important, right?" and to that I say "no". A commit's description should almost
+always tell you the type of the change! Consider
 [this commit message](https://github.com/angular/angular/commit/ec138c3645f6e28829e69b6da2a839c248bb3bf0)
 as an example:
 
@@ -124,12 +124,6 @@ bugfix, refactor, or new feature? I would argue it's all of them! But again, the
 only thing that really matters is that it was a change to the `core/webmcp`
 component.
 
-### Misplaced Focus
-
-Does Conventional Commits accomplish its goal of add semantic meaning to commit
-messages to aid developers and end-users in understanding the changes made in a
-commit? It adds some structure, but as we have seen, it's useless structure and
-it does _not_ aid anyone in understanding the changes made in a commit.
 **Conventional Commits fundamentally focuses on the wrong thing (the commit
 type) and devalues the scope (which is what people actually care about).**
 
@@ -145,9 +139,9 @@ section to see if any of the reasons make any sense.
   This is the biggest promise of Conventional Commits: you can run a tool like
   [git-cliff](https://git-cliff.org/) or
   [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog)
-  to generate a changelog from the commits since your last release. Is even a
-  good idea? No! The audience of a changelog is entirely different than the
-  audience for a commit log!
+  to generate a changelog from the commits since your last release. Is this
+  even a good idea? No! The audience of a changelog is entirely different than
+  the audience for a commit log!
 
   A changelog is user-facing, and the user cares about understanding the
   functional differences between versions. They care about what changed from a
@@ -235,7 +229,10 @@ don't fit well with the particulars of individual projects.
 So what should you do instead? Follow the lead of truly successful software
 projects like Linux, FreeBSD, Git, Go, and NixOS! What do these projects have in
 common? They all use scope-prefixed commit messages (where "scope" is defined to
-be relevant to the actual project).
+be relevant to the actual project). Usually, the scope to use on a given project
+is self-evident. For the Linux kernel, the subsystem is the natural scope. For
+Go projects, the package path is the natural scope. For a project using a
+microservice architecture, the microservice name is the natural scope.
 
 | Project                                                                                         | Format                   | Example                                                                                                                  |
 | :---------------------------------------------------------------------------------------------- | :----------------------- | :----------------------------------------------------------------------------------------------------------------------- |
