@@ -1156,22 +1156,25 @@ description: |
     </p>
   </summary>
   <div>
-    <p>
-      Tracktime is a filesystem-backed time tracking solution with a command line interface. It uses
-      a sane directory structure to organize CSV files that store time tracking data for each day.
-    </p>
-    <p>
-      Tracktime allows you to start, stop, resume, and list time entries for a given day. You can
-      also generate reports for a given month in the reStructuredText, PDF, or HTML formats
-      (optionally restricted to a particular customer).  Tracktime also allows you to synchronise
-      the time spent on each issue/merge request to GitLab using the GitLab Time Tracking API.
-    </p>
-    <p>
-      Tracktime is written in Python, and is available via
-      <a target="_blank" href="https://pypi.org/project/tracktime/">PyPi</a>
-      and on the
-      <a target="_blank" href="https://aur.archlinux.org/packages/tracktime/">AUR</a>.
-    </p>
+
+Tracktime is a filesystem-backed time tracking solution with a command line
+interface. It uses a sane directory structure to organise CSV files that store
+time tracking data for each day.
+
+Tracktime allows you to start, stop, resume, and list time entries for any day.
+You can also generate reports for arbitrary date ranges in terminal table,
+Markdown, HTML, Typst, or PDF formats (optionally filtered by customer or
+project). Tracktime syncs task metadata (titles and links) from GitHub, GitLab,
+Linear, and Sourcehut and displays clickable hyperlinks in the terminal.
+
+Tracktime is written in **Go**, and can be installed via
+
+```
+go install github.com/sumnerevans/tracktime/cmd/tt@latest
+```
+
+or as a [Nix Flake](https://github.com/sumnerevans/tracktime).
+
   </div>
 </details>
 
