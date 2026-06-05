@@ -241,13 +241,14 @@ microservice architecture, the microservice name is the natural scope.
 
 Here are some examples of projects and their commit format guidelines.
 
-| Project                                                                                         | Format                   | Example                                                                                                                  |
-| :---------------------------------------------------------------------------------------------- | :----------------------- | :----------------------------------------------------------------------------------------------------------------------- |
-| [Linux](https://www.kernel.org/doc/html/v4.14/process/submitting-patches.html)                  | `subsystem: description` | [`i2c: virtio: mark device ready before registering the adapter`](https://github.com/torvalds/linux/commit/1d774589f924) |
-| [FreeBSD](https://freebsdfoundation.org/wp-content/uploads/2020/11/Writing-Commit-Messages.pdf) | `prefix: Description`    | [`linuxulator: Return EINVAL for invalid inotify flags`](https://github.com/freebsd/freebsd-src/commit/f77d37cffdf3)     |
-| [Git](https://git-scm.com/docs/SubmittingPatches)                                               | `area: description`      | [`gitlab-ci: update macOS image`](https://github.com/git/git/commit/62319b49bbe7)                                        |
-| [Go](https://go.dev/wiki/CommitMessage)                                                         | `package: description`   | [`net/http/cookiejar: add godoc links`](https://github.com/golang/go/commit/517d4d3c7976)                                |
-| [nixpkgs](https://github.com/NixOS/nixpkgs/blob/master/CONTRIBUTING.md)                         | `pkg-name: description`  | [`xwayland: 24.1.11 -> 24.1.12`](https://github.com/NixOS/nixpkgs/commit/7bf858875a54)                                   |
+| Project                                                                                                         | Format                   | Example                                                                                                                                 |
+| :-------------------------------------------------------------------------------------------------------------- | :----------------------- | :-------------------------------------------------------------------------------------------------------------------------------------- |
+| [Linux](https://www.kernel.org/doc/html/v4.14/process/submitting-patches.html)                                  | `subsystem: description` | [`i2c: virtio: mark device ready before registering the adapter`](https://github.com/torvalds/linux/commit/1d774589f924)                |
+| [FreeBSD](https://freebsdfoundation.org/wp-content/uploads/2020/11/Writing-Commit-Messages.pdf)                 | `prefix: Description`    | [`linuxulator: Return EINVAL for invalid inotify flags`](https://github.com/freebsd/freebsd-src/commit/f77d37cffdf3)                    |
+| [Git](https://git-scm.com/docs/SubmittingPatches)                                                               | `area: description`      | [`gitlab-ci: update macOS image`](https://github.com/git/git/commit/62319b49bbe7)                                                       |
+| [Go](https://go.dev/wiki/CommitMessage)                                                                         | `package: description`   | [`net/http/cookiejar: add godoc links`](https://github.com/golang/go/commit/517d4d3c7976)                                               |
+| [nixpkgs](https://github.com/NixOS/nixpkgs/blob/master/CONTRIBUTING.md)                                         | `pkg-name: description`  | [`xwayland: 24.1.11 -> 24.1.12`](https://github.com/NixOS/nixpkgs/commit/7bf858875a54)                                                  |
+| [Node.js](https://github.com/nodejs/node/blob/main/doc/contributing/pull-requests.md#commit-message-guidelines) | `subsystem: description` | [`stream: fast-path stateless transform flush results`](https://github.com/nodejs/node/commit/5f727fdc89c06782652bfbf6a4d05ade1db3d2c8) |
 
 Unfortunately, despite being used by some of the most successful open source
 projects ever created, this commit style seems to have lost the branding war. I
