@@ -1196,7 +1196,7 @@ or as a [Nix Flake](https://github.com/sumnerevans/tracktime/blob/master/flake.n
     </p>
   </summary>
   <div>
-    
+
 Read my blog post announcing `offlinemsmtp` v0.3.5:
 [Introducing offlinemsmtp]({{< ref "/posts/projects/introducing-offlinemsmtp" >}}).
 
