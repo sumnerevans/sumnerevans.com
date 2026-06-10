@@ -1694,7 +1694,6 @@ or as a [Nix Flake](https://github.com/sumnerevans/tracktime).
       <p>
         An interactive "screensaver" built for the Mines ACM JavaScript Hackathon.
       </p>
-
       <p>
         I built Snowflakes with <strong>bungle.js</strong>, a team consisting of
         <a href="https://samsartor.com" target="_blank">Sam Sartor</a>,
