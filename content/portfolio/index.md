@@ -1173,7 +1173,7 @@ Tracktime is written in **Go**, and can be installed via
 go install github.com/sumnerevans/tracktime/cmd/tt@latest
 ```
 
-or as a [Nix Flake](https://github.com/sumnerevans/tracktime).
+or as a [Nix Flake](https://github.com/sumnerevans/tracktime/blob/master/flake.nix).
 
   </div>
 </details>
@@ -1192,26 +1192,26 @@ or as a [Nix Flake](https://github.com/sumnerevans/tracktime).
     <p>
       <a href="https://github.com/sumnerevans/offlinemsmtp" target="_blank">
         {{< ico "tabler" "outline/brand-github" >}} GitHub</a>
-      | GPLv3+
+      | MIT
     </p>
   </summary>
   <div>
-    <p>
-      Read my blog post announcing <tt>offlinemsmtp</tt> v0.3.5:
-      <a href="{{< ref "/posts/projects/introducing-offlinemsmtp" >}}">
-        Introducing offlinemsmtp</a>.
-    </p>
-    <p>
-      <tt>offlinemsmtp</tt> allows you to use the <tt>msmtp</tt> SMTP email sending program offline.
-      While offline, it enqueues emails to be sent once an internet connection is established. While
-      online, it sends the emails immediately.
-    </p>
-    <p>
-      <tt>offlinemsmtp</tt> is written in Python, and is available via
-      <a target="_blank" href="https://pypi.org/project/offlinemsmtp/">PyPi</a>
-      and on the
-      <a target="_blank" href="https://aur.archlinux.org/packages/offlinemsmtp/">AUR</a>.
-    </p>
+    
+Read my blog post announcing `offlinemsmtp` v0.3.5:
+[Introducing offlinemsmtp]({{< ref "/posts/projects/introducing-offlinemsmtp" >}}).
+
+`offlinemsmtp` allows you to use the `msmtp` SMTP email sending program offline. While
+offline, it enqueues emails to be sent once an internet connection is established. While
+online, it sends the emails immediately.
+
+`offlinemsmtp` is written in **Go**, and can be installed via:
+
+```
+go install github.com/sumnerevans/offlinemsmtp/cmd/offlinemsmtp@latest
+```
+
+or as a [Nix Flake](https://github.com/sumnerevans/offlinemsmtp/blob/master/flake.nix).
+
   </div>
 </details>
 
