@@ -40,6 +40,7 @@
     {{ $logowebplarge := $logo.Resize "300x webp photo" }}
     <meta property="og:image" content="{{ $logowebplarge.Permalink }}">
   {{ end }}
+  <link rel="canonical" href="{{ .Permalink }}" />
   {{ partial "opengraph.html" . }}
   {{ partial "twitter_cards.html" . }}
 
