@@ -16,7 +16,7 @@ summary: |
 ---
 
 <center>
-{{<image src="images/logo.png" link="https://sublimemusic.app" width="50%">}}
+{{<image src="images/logo.png" link="https://sublimemusic.app" width="50%" nozoom="true" nodim="true">}}
 </center>
 
 Today I'm happy to announce Sublime Music to the world! Sublime Music is a

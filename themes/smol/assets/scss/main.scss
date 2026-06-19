@@ -242,10 +242,24 @@ figure {
 picture {
   margin: 0 auto;
   display: block;
+  overflow: hidden;
+
+  &.no-zoom img {
+    &:hover,
+    &:active,
+    &:focus {
+      transform: none;
+    }
+  }
+
+  &.no-dim img {
+    opacity: 1;
+  }
 }
 
 img {
-  transition-property: all;
+  display: block;
+  transition-property: opacity, transform;
   transition-duration: 0.2s;
   transition-timing-function: ease;
   max-width: 100%;

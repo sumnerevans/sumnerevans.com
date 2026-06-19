@@ -19,7 +19,7 @@
       {{- end -}}
     {{ end }}
   {{- end -}}
-    <picture {{ with $width }}style="max-width:{{ . }}"{{ end }}>
+    <picture {{ with $width }}style="max-width:{{ . }}"{{ end }} class="{{ if $image.Get "nozoom" }}no-zoom{{ end }} {{ if $image.Get "nodim" }}no-dim{{ end }}">
       {{ if eq .MediaType.SubType "svg" }}
         <img src="{{ $imgRsc.RelPermalink }}"
           {{- with $alt }}

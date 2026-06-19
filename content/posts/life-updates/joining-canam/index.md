@@ -6,7 +6,7 @@ tags: [Can/Am Technologies, Job, Work]
 ---
 
 <center>
-{{<image src="images/CanAmLogo.svg" alt="Can/Am Technologies" link="https://canamtechnologies.com" width="50%">}}
+{{<image src="images/CanAmLogo.svg" alt="Can/Am Technologies" link="https://canamtechnologies.com" width="50%" nozoom="true" nodim="true">}}
 </center>
 
 Today I am happy to announce that I have joined

@@ -8,7 +8,7 @@ hide_image_in_index: true
 ---
 
 <center>
-{{<image src="images/offlinemsmtp-no-pad.png" link="https://github.com/sumnerevans/offlinemsmtp" width="50%">}}
+{{<image src="images/offlinemsmtp-no-pad.png" link="https://github.com/sumnerevans/offlinemsmtp" width="50%" nozoom="true" nodim="true">}}
 </center>
 
 I use a program called [`mutt`](http://www.mutt.org/) for managing my email. A

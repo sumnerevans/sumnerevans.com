@@ -15,7 +15,7 @@
         <a href="{{ ( .Process "webp photo" ).RelPermalink }}" target="_blank">
       {{- end -}}
     {{- end -}}
-      <picture>
+      <picture class="{{ if $.Get "nozoom" }}no-zoom{{ end }} {{ if $.Get "nodim" }}no-dim{{ end }}">
         {{- $imgRsc := . -}}
         {{- range $respSizes -}}
           {{- if ge $imgRsc.Width . -}}
