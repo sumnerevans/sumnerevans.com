@@ -229,13 +229,22 @@ blockquote {
   }
 }
 
+figure + figure {
+  margin-top: 1rem;
+}
+
 figure {
   background-color: var(--figure-bg-color);
   padding: 5px;
   margin: 0 auto;
+  border-radius: 8px;
 
   * {
     margin: 0;
+  }
+
+  figcaption {
+    padding: 0.4rem 0.5rem 0.2rem 0;
   }
 }
 
@@ -243,6 +252,7 @@ picture {
   margin: 0 auto;
   display: block;
   overflow: hidden;
+  border-radius: 8px;
 
   &.no-zoom img {
     &:hover,
