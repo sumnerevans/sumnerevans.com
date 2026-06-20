@@ -1,6 +1,8 @@
-.direnv
-resources/_gen
-public
-.hugo_build.lock
-node_modules/
+*.pdf
 .claude/
+.direnv
+.hugo_build.lock
+.twyla-cache
+node_modules/
+public
+resources/_gen
