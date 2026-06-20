@@ -1,4 +1,4 @@
-{{- $respSizes := slice "200" "400" "600" -}}
+{{- $respSizes := slice "400" "600" -}}
 {{ $alt := or (.Get "alt") (.Get "caption" | markdownify | plainify) (.Get "title" | markdownify | plainify) }}
 
 <figure{{ with .Get "class" }} class="{{ . }}"{{ end }} {{ with .Get "width" }} style="max-width:{{ . }}px"{{ end }}>
@@ -11,10 +11,8 @@
     {{- else -}}
       {{- if or (eq .MediaType.SubType "svg") (eq .MediaType.SubType "gif") -}}
         <a href="{{ .RelPermalink }}" target="_blank">
-      {{- else if gt .Width 4000 -}}
-        <a href="{{ ( .Resize "4000x webp photo" ).RelPermalink }}" target="_blank">
       {{- else -}}
-        <a href="{{ ( .Process "webp photo" ).RelPermalink }}" target="_blank">
+        <a href="{{ ( .Resize "2000x webp photo" ).RelPermalink }}" target="_blank">
       {{- end -}}
     {{- end -}}
       <picture class="{{ if $.Get "nozoom" }}no-zoom{{ end }} {{ if $.Get "nodim" }}no-dim{{ end }}">

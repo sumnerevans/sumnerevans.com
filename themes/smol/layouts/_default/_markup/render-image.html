@@ -1,4 +1,4 @@
-{{- $respSizes := slice "200" "400" "600" -}}
+{{- $respSizes := slice "400" "600" -}}
 {{- $alt := or .Title .Text -}}
 
 {{ if .Text }}
@@ -8,11 +8,7 @@
     {{ if or (eq .MediaType.SubType "svg") (eq .MediaType.SubType "gif") }}
       <a href="{{ .RelPermalink }}" target="_blank">
     {{ else }}
-      {{ if gt .Width 4000 }}
-        <a href="{{ ( .Resize "4000x webp photo" ).RelPermalink }}" target="_blank">
-      {{ else }}
-        <a href="{{ ( .Process "webp photo" ).RelPermalink }}" target="_blank">
-      {{ end }}
+      <a href="{{ ( .Resize "2000x webp photo" ).RelPermalink }}" target="_blank">
     {{ end }}
       <picture>
         {{ if or (eq .MediaType.SubType "svg") (eq .MediaType.SubType "gif") }}

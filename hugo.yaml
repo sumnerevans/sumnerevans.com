@@ -49,7 +49,7 @@ markup:
           - ['\(', '\)']
 
 imaging:
-  quality: 90
+  quality: 80
 
 cascade:
   - build:
