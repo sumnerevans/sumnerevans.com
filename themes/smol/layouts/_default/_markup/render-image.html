@@ -5,7 +5,7 @@
   <figure>
 {{ end }}
   {{- with or (.Page.Resources.Get .Destination) (resources.Get .Destination) -}}
-    {{ if eq .MediaType.SubType "svg" }}
+    {{ if or (eq .MediaType.SubType "svg") (eq .MediaType.SubType "gif") }}
       <a href="{{ .RelPermalink }}" target="_blank">
     {{ else }}
       {{ if gt .Width 4000 }}
@@ -15,7 +15,15 @@
       {{ end }}
     {{ end }}
       <picture>
-        {{ if ne .MediaType.SubType "svg" }}
+        {{ if or (eq .MediaType.SubType "svg") (eq .MediaType.SubType "gif") }}
+          <img
+            loading="lazy"
+            src="{{ .RelPermalink }}"
+            {{- with $alt }}
+              alt="{{ . }}"
+            {{- end -}}
+          >
+        {{ else }}
           {{- $imgRsc := . -}}
           {{- range $respSizes -}}
             {{- if ge $imgRsc.Width . -}}
@@ -37,14 +45,6 @@
               {{- end -}}
             >
           {{ end }}
-        {{ else }}
-          <img
-            loading="lazy"
-            src="{{ .RelPermalink }}"
-            {{- with $alt }}
-              alt="{{ . }}"
-            {{- end -}}
-          >
         {{ end }}
       </picture>
     </a>

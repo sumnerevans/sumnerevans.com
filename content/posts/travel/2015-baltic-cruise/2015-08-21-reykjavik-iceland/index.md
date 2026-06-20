@@ -4,8 +4,6 @@ Date: 2015-08-21T11:37:00-0600
 Categories: [Baltic Cruise and Northern Europe]
 Tags: [Iceland, Reykjavík]
 image: images/iceland6.jpg
-build:
-  publishResources: true
 ---
 
 Today we did a tour of the Golden Circle, the main sites in the southwest of
@@ -56,12 +54,7 @@ though because it spouted three times in a row. Our guide said that's very rare.
 We watched it spout a few other times as well. I was able to get a burst photo
 of the water.
 
-<center>
-<a href="./images/iceland-geyser.gif">
-  <img alt="Geyser" src="./images/iceland-geyser.gif" /><br />
-</a>
-Geyser
-</center>
+{{< figure src="images/iceland-geyser.gif" alt="Geyser" title="Geyser" width="306" >}}
 
 There was also a small pool that was so clear that you could see down into the
 underground tunnels. One right beside it was a very pretty deep blue color.

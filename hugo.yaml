@@ -51,6 +51,10 @@ markup:
 imaging:
   quality: 90
 
+cascade:
+  - build:
+      publishResources: false
+
 ignoreFiles:
   - content/teaching/csci400-s19
   - content/teaching/csci564-s21

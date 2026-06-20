@@ -1,0 +1,15 @@
+{{- $u := urls.Parse (.Get "src") -}}
+{{- $width := .Get "width" -}}
+{{- $muted := ne (.Get "muted") "false" -}}
+
+{{- with .Page.Resources.Get $u.Path -}}
+<div class="video-container"{{ with $width }} style="max-width:{{ . }}"{{ end }}>
+  <video
+    src="{{ .RelPermalink }}"
+    autoplay
+    controls
+    loop
+    {{- if $muted }} muted{{ end }}>
+  </video>
+</div>
+{{- end -}}

@@ -46,15 +46,7 @@ Then, I spent a while over in the clocks exhibit which had a bunch of different
 old timepieces. I really liked one that kept time using a ball which went back
 and forth to keep the time.
 
-<video
-  src="./images/clock.mp4"
-  width="35%"
-  class="align-center"
-  autoplay="true"
-  controls="true"
-  muted="true"
-  loop="true">
-</video>
+{{< video src="images/clock.mp4" width="35%" >}}
 
 After that, I walked down and looked at the exhibits about the Pacific islands
 and saw the big Easter Island statue.

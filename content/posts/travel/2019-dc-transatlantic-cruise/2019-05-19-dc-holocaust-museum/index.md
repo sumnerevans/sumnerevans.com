@@ -97,14 +97,7 @@ shade of the Washington Monument as we ate.
 After that, we walked over to the Lincoln Memorial, and on the way we stopped at
 the WWII Memorial, one of the more recent monuments in DC.
 
-<video
-  src="./images/wwii-fountain.mp4"
-  width="75%"
-  class="align-center"
-  autoplay="true"
-  controls="true"
-  loop="true">
-</video>
+{{< video src="images/wwii-fountain.mp4" width="75%" >}}
 
 After visiting the Lincoln Memorial, we walked past the Vietnam War Memorial and
 to the White House. At that point, we were quite tired, and we headed back to

@@ -9,7 +9,9 @@
     {{- with $.Get "link" -}}
       <a href="{{ . }}" target="_blank"{{ with $.Get "rel" }} rel="{{ . }}"{{ end }}>
     {{- else -}}
-      {{- if gt .Width 4000 -}}
+      {{- if or (eq .MediaType.SubType "svg") (eq .MediaType.SubType "gif") -}}
+        <a href="{{ .RelPermalink }}" target="_blank">
+      {{- else if gt .Width 4000 -}}
         <a href="{{ ( .Resize "4000x webp photo" ).RelPermalink }}" target="_blank">
       {{- else -}}
         <a href="{{ ( .Process "webp photo" ).RelPermalink }}" target="_blank">
@@ -17,26 +19,36 @@
     {{- end -}}
       <picture class="{{ if $.Get "nozoom" }}no-zoom{{ end }} {{ if $.Get "nodim" }}no-dim{{ end }}">
         {{- $imgRsc := . -}}
-        {{- range $respSizes -}}
-          {{- if ge $imgRsc.Width . -}}
-            <source
-              type="image/webp"
-              media="(max-width: {{ . }}px)"
-              srcset="{{- ($imgRsc.Resize (print . "x webp photo") ).RelPermalink -}}"
-            >
-          {{- end -}}
-        {{- end -}}
-        {{ with .Resize "800x webp photo" }}
+        {{- if or (eq $imgRsc.MediaType.SubType "svg") (eq $imgRsc.MediaType.SubType "gif") -}}
           <img
-            src="{{ .RelPermalink }}"
+            src="{{ $imgRsc.RelPermalink }}"
             {{- with $alt }}
               alt="{{ . }}"
             {{- end -}}
             loading="lazy"
-            width="{{ .Width }}"
-            height="{{ .Height }}"
           >
-        {{ end }}
+        {{- else -}}
+          {{- range $respSizes -}}
+            {{- if ge $imgRsc.Width . -}}
+              <source
+                type="image/webp"
+                media="(max-width: {{ . }}px)"
+                srcset="{{- ($imgRsc.Resize (print . "x webp photo") ).RelPermalink -}}"
+              >
+            {{- end -}}
+          {{- end -}}
+          {{ with .Resize "800x webp photo" }}
+            <img
+              src="{{ .RelPermalink }}"
+              {{- with $alt }}
+                alt="{{ . }}"
+              {{- end -}}
+              loading="lazy"
+              width="{{ .Width }}"
+              height="{{ .Height }}"
+            >
+          {{ end }}
+        {{- end -}}
       </picture>
     </a>
   {{- else -}}

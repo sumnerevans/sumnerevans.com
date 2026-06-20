@@ -9,7 +9,7 @@
   {{- with $image.Get "link" -}}
     <a href="{{ . }}" target="_blank"{{ with $image.Get "rel" }} rel="{{ . }}"{{ end }}>
   {{- else -}}
-    {{ if eq .MediaType.SubType "svg" }}
+    {{ if or (eq .MediaType.SubType "svg") (eq .MediaType.SubType "gif") }}
       <a href="{{ .RelPermalink }}" target="_blank">
     {{ else }}
       {{- if gt .Width 4000 -}}
@@ -20,7 +20,7 @@
     {{ end }}
   {{- end -}}
     <picture {{ with $width }}style="max-width:{{ . }}"{{ end }} class="{{ if $image.Get "nozoom" }}no-zoom{{ end }} {{ if $image.Get "nodim" }}no-dim{{ end }}">
-      {{ if eq .MediaType.SubType "svg" }}
+      {{ if or (eq .MediaType.SubType "svg") (eq .MediaType.SubType "gif") }}
         <img src="{{ $imgRsc.RelPermalink }}"
           {{- with $alt }}
             alt="{{ . }}"

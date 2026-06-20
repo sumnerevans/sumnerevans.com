@@ -75,15 +75,7 @@ relaxed for a few minutes while we waited for Jo to get off of work and come to
 meet us. I decided to get a photo of myself doing a side kick in front of the
 Washington Monument to show the people back at my taekwondo school.
 
-<video
-  src="./images/side-kick-washington.mp4"
-  width="50%"
-  class="align-center"
-  autoplay="true"
-  controls="true"
-  muted="true"
-  loop="true">
-</video>
+{{< video src="images/side-kick-washington.mp4" width="50%" >}}
 
 Sam and I walked around the WWII Memorial, and then headed back to Union Station
 where we met up with Jo. She recommend that we try a nearby pizza place so we

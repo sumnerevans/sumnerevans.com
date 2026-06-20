@@ -248,7 +248,8 @@ figure {
   }
 }
 
-picture {
+picture,
+.video-container {
   margin: 0 auto;
   display: block;
   overflow: hidden;
@@ -280,6 +281,21 @@ img {
   &:active,
   &:focus {
     opacity: 1;
+    transform: scale(1.02);
+  }
+}
+
+video {
+  display: block;
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  max-width: 100%;
+  height: auto;
+
+  &:hover,
+  &:active,
+  &:focus {
     transform: scale(1.02);
   }
 }
