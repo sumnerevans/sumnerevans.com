@@ -49,33 +49,33 @@
   </div>
   <nav>
     <div class="nav-links">
-      <a href="{{ .Site.Home.Permalink }}/about" title="About">
+      <a href="{{ .Site.Home.Permalink }}about" title="About">
         {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/user") }}
         <span>About</span>
       </a>
-      <a href="{{ .Site.Home.Permalink }}/portfolio" title="Portfolio">
+      <a href="{{ .Site.Home.Permalink }}portfolio" title="Portfolio">
         {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/briefcase") }}
         <span>Portfolio</span>
       </a>
       <div class="posts">
-        <a href="{{ .Site.Home.Permalink }}/posts" title="Posts">
+        <a href="{{ .Site.Home.Permalink }}posts" title="Posts">
           {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/license") }}
           <span>Posts</span>
         </a>
         <div class="categories-tags-collapsed">
-          (<a href="{{ .Site.Home.Permalink }}/categories" title="Categories">
+          (<a href="{{ .Site.Home.Permalink }}categories" title="Categories">
             {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/hash") }}
           </a>
-          <a href="{{ .Site.Home.Permalink }}/tags" title="Tags">
+          <a href="{{ .Site.Home.Permalink }}tags" title="Tags">
             {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/tags") }}
           </a>)
         </div>
       </div>
-      <a href="{{ .Site.Home.Permalink }}/categories" title="Categories" class="categories-link">
+      <a href="{{ .Site.Home.Permalink }}categories" title="Categories" class="categories-link">
         {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/hash") }}
         <span>Categories</span>
       </a>
-      <a href="{{ .Site.Home.Permalink }}/tags" title="Tags" class="tags-link">
+      <a href="{{ .Site.Home.Permalink }}tags" title="Tags" class="tags-link">
         {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/tags") }}
         <span>Tags</span>
       </a>
