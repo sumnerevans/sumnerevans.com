@@ -1,11 +1,11 @@
-https://blog.babel.sh/rss
-https://blog.beeper.com/feed
-https://blog.danslimmon.com/feed
+https://blog.babel.sh/rss/
+https://blog.beeper.com/feed/
+https://blog.danslimmon.com/feed/
 https://byronsharman.com/blog.xml
 https://chriskiehl.com/rss.xml
 https://chrismcdonough.substack.com/feed
-https://chrpaul.de/feed.xml
-https://dominickm.com/feed
+https://chrpaul.de/index.xml
+https://dominickm.com/feed/
 https://elijahpotter.dev/rss.xml
 https://ericmigi.com/rss.xml
 https://ezrichards.github.io/index.xml
@@ -19,7 +19,7 @@ https://ludic.mataroa.blog/rss/
 https://lukaswerner.com/feed.xml
 https://lukeplant.me.uk/blog/atom/index.xml
 https://machinefossil.net/feed.xml
-https://matrix.org/blog/feed
+https://matrix.org/atom.xml
 https://mau.fi/blog/index.rss
 https://medium.com/feed/@ericmigi
 https://www.micahbird.com/index.xml

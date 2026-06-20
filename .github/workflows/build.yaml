@@ -53,10 +53,12 @@ jobs:
 
       - name: Openring
         run: |
-          go run git.sr.ht/~sircmpwn/openring@latest \
+          curl -fsSL https://github.com/lukehsiao/openring-rs/releases/download/v0.5.17/openring-x86_64-unknown-linux-musl.tar.gz \
+            | tar -xz -C /usr/local/bin openring
+          openring \
               -S feed_urls.txt \
-              -n 5 -l 100 \
-            < other-feeds.html.tmpl \
+              -n 5 \
+              -t other-feeds.html.tmpl \
             > themes/smol/layouts/partials/webring.html
 
       - name: Hugo

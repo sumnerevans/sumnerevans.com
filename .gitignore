@@ -1,6 +1,7 @@
+.claude/
 .direnv
-resources/_gen
-public
 .hugo_build.lock
 node_modules/
-.claude/
+openring
+public
+resources/_gen

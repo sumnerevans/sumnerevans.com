@@ -16,7 +16,6 @@
               hugo
               libheif
               nodejs
-              openring
               pre-commit
               vale
             ];
