@@ -34,6 +34,11 @@ const detectThemeAndSwitchStyle = () => {
       (theme === "dark" ? "black" : "white") +
       ".svg";
   }
+
+  window.zoom.update({
+    background:
+      theme === "dark" ? "rgba(0, 0, 0, 0.85)" : "rgba(255, 255, 255, 0.9)",
+  });
 };
 
 detectThemeAndSwitchStyle();

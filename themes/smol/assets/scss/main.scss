@@ -283,6 +283,15 @@ img {
     opacity: 1;
     transform: scale(1.02);
   }
+
+  &.medium-zoom-image {
+    cursor: zoom-in;
+  }
+
+  &.medium-zoom-image--opened {
+    cursor: zoom-out;
+    opacity: 1;
+  }
 }
 
 video {

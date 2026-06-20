@@ -9,7 +9,13 @@
   </p>
 </footer>
 
-{{ with resources.Get "js/dark-theme.ts" | js.Build (dict "minify" true) }}
+{{ with resources.Get "js/search.ts" | js.Build (dict "minify" hugo.IsProduction) }}
+  <script type="text/javascript">{{ .Content | safeJS }}</script>
+{{ end }}
+{{ with resources.Get "js/medium-zoom.ts" | js.Build (dict "minify" hugo.IsProduction) }}
+  <script type="text/javascript">{{ .Content | safeJS }}</script>
+{{ end }}
+{{ with resources.Get "js/dark-theme.ts" | js.Build (dict "minify" hugo.IsProduction) }}
   <script
     type="text/javascript"
     id="dark-theme-script"

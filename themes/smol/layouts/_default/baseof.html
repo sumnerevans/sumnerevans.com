@@ -54,10 +54,6 @@
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
   {{- end }}
 
-  {{ with resources.Get "js/search.ts" | js.Build (dict "minify" hugo.IsProduction) }}
-    <script type="text/javascript">{{ .Content | safeJS }}</script>
-  {{ end }}
-
   {{- if .Site.Params.goatcounter -}}
     {{ with resources.Get "js/goatcounter.js" | js.Build (dict "minify" hugo.IsProduction) }}
       <script type="text/javascript" data-goatcounter="{{ $.Site.Params.goatcounter.domain }}">{{ .Content | safeJS }}</script>
