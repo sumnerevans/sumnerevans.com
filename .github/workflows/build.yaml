@@ -46,10 +46,10 @@ jobs:
         uses: actions/cache@v5
         with:
           path: resources
-          key: ${{ runner.os }}-${{ hashFiles('hugo.yaml') }}-${{ hashFiles('content/**/*') }}-${{ hashFiles('themes/**/*') }}
+          key: images-${{ hashFiles('hugo.yaml') }}-${{ hashFiles('themes/**/*') }}-${{ github.run_id }}
           restore-keys: |
-            ${{ runner.os }}-${{ hashFiles('hugo.yaml') }}-
-            ${{ runner.os }}-
+            images-${{ hashFiles('hugo.yaml') }}-${{ hashFiles('themes/**/*') }}-
+            images-${{ hashFiles('hugo.yaml') }}-
 
       - name: Openring
         run: |
