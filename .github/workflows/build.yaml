@@ -50,6 +50,7 @@ jobs:
           restore-keys: |
             images-${{ hashFiles('hugo.yaml') }}-${{ hashFiles('themes/**/*') }}-
             images-${{ hashFiles('hugo.yaml') }}-
+            images-
 
       - name: Openring
         run: |
