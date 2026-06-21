@@ -1,5 +1,5 @@
 baseURL: "https://sumnerevans.com"
-languageCode: "en-us"
+locale: en-us
 title: Sumner Evans
 theme: smol
 summaryLength: 60
