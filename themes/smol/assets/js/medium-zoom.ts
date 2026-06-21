@@ -12,7 +12,13 @@ document
     link.addEventListener("click", (e) => e.preventDefault());
   });
 
+const zoomMargin = () => (window.innerWidth <= 600 ? 0 : 24);
+
 window.zoom = mediumZoom("[data-zoom-src]", {
   background: "rgba(0, 0, 0, 0.85)",
-  margin: 24,
+  margin: zoomMargin(),
+});
+
+window.addEventListener("resize", () => {
+  window.zoom.update({ margin: zoomMargin() });
 });
