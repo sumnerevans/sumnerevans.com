@@ -93,7 +93,7 @@ at Waterloo. As I described in my
 [post from last year]({{<ref"../../2024-fosdem/waterloo/index.md">}}), the
 allied forces under Wellington valiantly held the critical Hougoumont château
 while being pressed hard in the centre during the afternoon. However, the
-coalition forces were highly coordinated and the Prussian army under Lord Blücher
+coalition forces were highly coordinated and the Prussian army under General Blücher
 arrived on the field in the late afternoon and evening threatening Napoleon's
 right flank and achieving numerical superiority for the coalition. Pressed on
 three sides, the French line collapsed and a rout ensued. Napoleon himself was
