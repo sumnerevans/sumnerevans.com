@@ -43,7 +43,7 @@ fateful battle.
 
 ![The Wellington Museum](images/wellington.jpg)
 
-The displays had any artefacts of the Napoleonic wars, and many paintings and
+The displays had many artefacts of the Napoleonic wars, and many paintings and
 drawings of the Battle of Waterloo which happened on 15 June 1815. There was an
 audio guide which followed Wellington's aide-de-camp who died during the battle.
 It talked about the return of Napoleon to the French throne, the subsequent
@@ -73,7 +73,7 @@ the day. Despite multiple attempts to take the house, it remained in British
 hands through the entire battle.
 
 In the centre and right, the French saw their greatest success. After heavy
-bombardment, the infantry advanced but were stopped by decisive cavalry charge.
+bombardment, the infantry advanced but were stopped by a decisive cavalry charge.
 After a costly failed cavalry counter charge by Marshal Ney towards the British
 centre, a coordinated French attack broke through the first line of defences and
 an artillery battery was brought forward. The artillery cut huge holes through
