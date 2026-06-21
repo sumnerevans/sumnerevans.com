@@ -87,24 +87,24 @@ and declared war on the Emperor himself.
 
 Napoleon quickly mobilized a new army and invaded Belgium hoping to engage and
 defeat the British allied army and Prussian army in detail. After sharp
-engagements of the British and Prussian advance forces on 16 June, Napoleon
+engagements with the British and Prussian advance forces on 16 June, Napoleon
 massed his troops on the 18th for battle against Lord Wellington's allied army
 at Waterloo. As I described in my
 [post from last year]({{<ref"../../2024-fosdem/waterloo/index.md">}}), the
 allied forces under Wellington valiantly held the critical Hougoumont château
 while being pressed hard in the centre during the afternoon. However, the
-coalition forces were highly coordinated and the Prussian army under Blücher
+coalition forces were highly coordinated and the Prussian army under Lord Blücher
 arrived on the field in the late afternoon and evening threatening Napoleon's
 right flank and achieving numerical superiority for the coalition. Pressed on
 three sides, the French line collapsed and a rout ensued. Napoleon himself was
 forced to flee to Paris and days later he abdicated for a second time and was
 sent in exile in the very remote island of St. Helena.
 
-The victory at Waterloo was a true coalition victory. If Blücher had not been
-able to Wellington's aid, the outcome of the battle would have likely been
+The victory at Waterloo was a true coalition victory. If Blücher had not marched
+to Wellington's aid, the outcome of the battle would have likely been
 different. Napoleon might have been able to win the day and turn his forces
-against the Prussians successfully doing what he had done so many times before:
-defeating the enemy in detail. Despite this, it seems unlikely that Napoleon
+against the Prussians, successfully doing what he had done so many times before:
+defeating his enemy in detail. Despite this, it seems unlikely that Napoleon
 would have been able to effectively prosecute a protracted conflict against the
 allied great powers of Europe. However, conflict would have no doubt extended
 many more months or even years.
@@ -127,8 +127,8 @@ on top of Wellington's centre. The strategically important Hougoumont can be
 seen to the right. To the left the Haye Sainte house where the French were
 finally able to bring their artillery to bear against the British centre can be
 seen. In the distance, the village of Plancenoit, which saw the heaviest
-fighting between Prussian and French forces, can be seen. Unlike many of the
-era's battles, the entire battlefield is visible from a single terrestrial
+fighting between Prussian and French forces, can be seen. Unlike many of Napoleonic
+era battles, the entire battlefield is visible from a single terrestrial
 (albeit artificial) vantage point. It was amazing to see a spot where one of the
 greatest political and military minds of history was finally defeated.
 
@@ -151,7 +151,7 @@ Napoleon transformed Europe through war. The states he defeated adopted many of
 his military and political innovations. The corps system which allowed sections
 of his army to move quickly and independently allowed unmatched manoeuvrability
 and allowed Napoleon to repeatedly defeat his enemies in detail. The corps
-system is used in nearly every modern military. Napoleon's use of artillery
+system is used in nearly every modern military. Napoleon's use of massed artillery
 batteries in coordinated attacks repeatedly broke even the staunchest of lines.
 However possibly more important this his tactical innovations was his emphasis
 on merit-based promotions. At its height, the Grande Armée had top-notch
