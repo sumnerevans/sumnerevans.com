@@ -7,6 +7,7 @@ categories:
 tags:
   - Vibe Coding
   - LLM
+  - AI
 aliases:
   - /posts/programming/vibe-coding-doesnt-require-llms
 ---
