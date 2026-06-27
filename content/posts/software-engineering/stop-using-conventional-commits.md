@@ -19,11 +19,11 @@ project you contributed to. A lot of people swear by it. I swear _at_ it.
 Even though it is used by
 [a](https://github.com/angular/angular/blob/main/contributing-docs/commit-message-guidelines.md)
 [large](https://electronjs.org/docs/development/pull-requests#commit-message-guidelines)
-[number](https://contribute.freecodecamp.org/how-to-contribute-to-the-codebase/)
-[of](https://jenkins-x.io/community/code/)
+[number](https://contribute.freecodecamp.org/how-to-open-a-pull-request/#prepare-a-good-pr-title)
+[of](https://jayex.io/community/code/#the-commit-message)
 [popular](https://github.com/conventional-changelog/commitlint/blob/master/.github/CONTRIBUTING.md)
-[open](https://github.com/semantic-release/semantic-release/blob/master/CONTRIBUTING.md)
-[source](https://github.com/nuxt/nuxt/blob/main/CONTRIBUTING.md)
+[open](https://github.com/semantic-release/semantic-release/blob/master/CONTRIBUTING.md#commit-message-format)
+[source](https://github.com/nuxt/nuxt/blob/main/CONTRIBUTING.md#commit-conventions)
 [projects](https://github.com/vitejs/vite/blob/main/.github/commit-convention.md),
 Conventional Commits is an actively bad standard which
 **[encourages focus on the wrong things](#focus-failure) and
@@ -160,7 +160,7 @@ section to see if any of the reasons make any sense.
     for the end-user. The end-user only cares about the new feature, not how it
     was built!
   - As
-    [Rich pointed out](https://richvdh.org/conventional-commits-considered-harmful.html#reverts-are-hard),
+    [`richvdh` pointed out](https://richvdh.org/conventional-commits-considered-harmful.html#reverts-are-hard),
     reverts are problematic for Conventional Commits. Revert commits are
     important from a commit log story perspective for developers, but to the end
     user, a change that is reverted is equivalent to a change not made.
