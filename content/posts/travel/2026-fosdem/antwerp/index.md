@@ -20,12 +20,12 @@ and when I was leaving, I had to provide a fingerprint scan. I really do not
 know what the purpose is, but hopefully it helps them track and prevent illegal
 immigration (although being Europe, I'm doubtful).
 
-After we landed, I looked at how to get to the Automium and
-[it turns out that it is closed]({{<ref"./denver-to-brussels.md#automium">}}) so
-I had to change plans. I went down to the train station under the airport (gotta
-love European public transit infrastructure) and looked at the departure board.
-I saw there was a train to Antwerp, and after a quick search on Google Maps, it
-turns out the train only takes ~30 minutes, so I booked a ticket and got on.
+After we landed, I looked at how to get to the Automium and it turns out that it
+is closed so I had to change plans. I went down to the train station under the
+airport (gotta love European public transit infrastructure) and looked at the
+departure board. I saw there was a train to Antwerp, and after a quick search on
+Google Maps, it turns out the train only takes ~30 minutes, so I booked a ticket
+and got on.
 
 The Antwerpen-Centraal station is a very ornate train station.
 
