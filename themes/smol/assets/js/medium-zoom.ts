@@ -19,6 +19,24 @@ window.zoom = mediumZoom("[data-zoom-src]", {
   margin: zoomMargin(),
 });
 
+// Fixed-pixel hover expansion: expand by this many px on each side.
+const HOVER_EXPAND_PX = 5;
+
+const updateAllHoverScales = () => {
+  document.querySelectorAll("img").forEach((img) => {
+    const w = img.offsetWidth;
+    if (w > 0) {
+      img.style.setProperty(
+        "--hover-scale",
+        ((w + HOVER_EXPAND_PX * 2) / w).toFixed(4)
+      );
+    }
+  });
+};
+
+updateAllHoverScales();
+
 window.addEventListener("resize", () => {
   window.zoom.update({ margin: zoomMargin() });
+  updateAllHoverScales();
 });

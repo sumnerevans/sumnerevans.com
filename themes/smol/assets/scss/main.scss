@@ -281,7 +281,7 @@ img {
   &:active,
   &:focus {
     opacity: 1;
-    transform: scale(1.02);
+    transform: scale(var(--hover-scale, 1.02));
   }
 
   &.medium-zoom-image {
@@ -561,6 +561,14 @@ header {
     img {
       opacity: 1;
       border-radius: 50%;
+    }
+
+    img {
+      &:hover,
+      &:active,
+      &:focus {
+        transform: none;
+      }
     }
   }
 
