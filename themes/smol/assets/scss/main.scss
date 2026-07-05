@@ -1,6 +1,5 @@
 @import 'iosevka';
 @import 'dark-mode';
-@import 'isso';
 
 body {
   --fg-color: #333;
@@ -34,19 +33,6 @@ body {
   --table-nth-child-bg-color: #ccc;
 
   --image-opacity: 0.9;
-
-  --isso-thread-heading-color: #555;
-  --isso-preview-background-color: #f8f8f8;
-  --isso-preview-background: repeating-linear-gradient(-45deg, #f8f8f8, #f8f8f8 10px, #fff 10px, #fff 20px);
-  --isso-comment-meta-color: gray;
-  --isso-author-color: #555;
-  --isso-input-bg-color: #fff;
-  --isso-input-color: #333;
-  --isso-post-action-color: #333;
-  --isso-post-action-bg-color: #ddd;
-  --isso-post-action-bg-hover-color: #ccc;
-  --isso-post-action-bg-active-color: #bbb;
-  --isso-target-fade-color: #eee5a1;
 
   color: var(--fg-color);
   background-color: var(--bg-color);
@@ -850,6 +836,10 @@ dd {
     margin: 0;
     padding-left: 1.5rem;
   }
+}
+
+.comments {
+  margin-top: 1rem;
 }
 
 footer {

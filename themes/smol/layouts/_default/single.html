@@ -80,30 +80,26 @@
     {{ end }}
   {{ end }}
 </div>
-{{ if and (or ($reg.Prev .) ($reg.Next .)) (.Site.Params.issoUrl) }}
+{{ if or ($reg.Prev .) ($reg.Next .) }}
   {{ partial "sidebar.html" . }}
   {{ partial "webring.html" . }}
   <aside class="comments">
-    <div class="header">
-      <h3>COMMENTS</h3>
-      <span class="attribution">
-        Powered by
-        <a href="https://isso-comments.de/" target="_blank" rel="external">Isso</a>
-      </span>
-    </div>
-    <!-- Isso -->
-    <script
-        data-isso="//{{ .Site.Params.issoUrl }}"
-        data-isso-css="false"
-        {{ range $k, $v := .Site.Params.issoOptions }}
-          data-isso-{{ $k }}="{{ $v }}"
-        {{ end }}
-        src="//{{ path.Join .Site.Params.issoUrl "/js/embed.min.js" }}"
-    ></script>
-    <section id="isso-thread" data-title="{{ .Title }}">
-      <noscript>Please enable JavaScript to view comments.</noscript>
-    </section>
-    <!-- End Isso -->
+    <script src="https://giscus.app/client.js"
+            data-repo="sumnerevans/sumnerevans.com"
+            data-repo-id="R_kgDOGejfWA"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOGejfWM4DAkOg"
+            data-mapping="pathname"
+            data-strict="1"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="en"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>Please enable JavaScript to view comments.</noscript>
   </aside>
 {{ end }}
 {{ end }}
