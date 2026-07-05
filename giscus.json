@@ -1,0 +1,9 @@
+{
+  "defaultCommentOrder": "newest",
+  "origins": [
+    "https://sumnerevans.com"
+  ],
+  "originsRegex": [
+    "http://localhost:[0-9]+"
+  ]
+}
