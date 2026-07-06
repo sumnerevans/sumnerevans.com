@@ -17,13 +17,13 @@ programming ecosystem is the
 [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro)
 landscape. In theory, MCP is a way to provide the LLM with data from an external
 system through a structured protocol. However,
-[it](https://youtu.be/1piFEKA9XL0) [sucks](https://youtu.be/hPPTrsUzLA8).
-It turns out that it is more efficient to have the AI just write code to analyse
-and manipulate the data from the external system directly. Rather than piping the
-data from the external system into the LLM's context window and letting the LLM
-muddle through it, the LLM-written code can just do the necessary data processing.
-Computers have been good at running instructions on large datasets for a very long
-time and AI is not going to be a substitute for that.
+[it](https://youtu.be/1piFEKA9XL0) [sucks](https://youtu.be/hPPTrsUzLA8). It
+turns out that it is more efficient to have the AI just write code to analyse
+and manipulate the data from the external system directly. Rather than piping
+the data from the external system into the LLM's context window and letting the
+LLM muddle through it, the LLM-written code can just do the necessary data
+processing. Computers have been good at running instructions on large datasets
+for a very long time and AI is not going to be a substitute for that.
 
 [^1]: We have chosen Claude as the AI of choice at
     [my job]({{<ref"../../portfolio/index.md#experience-canam-tech-lead">}}) and
@@ -71,10 +71,14 @@ AI revolution.
 
 ---
 
-**Note 18 May 2026:** I'm collecting a list of other blog posts that have the same
-sentiment as this post below.
+**Note:** I'm collecting a list of other blog posts that have the same sentiment
+as this post below. (Last updated 6 July 2026)
 
-* [MCP is dead. Long live the CLI](https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html)
-  by [Eric Holmes](https://ejholmes.github.io/)
-* [What if you don't need MCP at all?](https://mariozechner.at/posts/2025-11-02-what-if-you-dont-need-mcp/)
-  by [Mario Zechner](https://mariozechner.at/)
+- [Tools: Code Is All You Need](https://lucumr.pocoo.org/2025/7/3/tools/) by
+  [Armin Ronacher](https://lucumr.pocoo.org/about/) on 3 July 2025
+- [Your MCP Doesn’t Need 30 Tools: It Needs Code](https://lucumr.pocoo.org/2025/8/18/code-mcps/)
+  by [Armin Ronacher](https://lucumr.pocoo.org/about/) on 18 August 2025
+- [What if you don't need MCP at all?](https://mariozechner.at/posts/2025-11-02-what-if-you-dont-need-mcp/)
+  by [Mario Zechner](https://mariozechner.at/) on 2 November 2025
+- [MCP is dead. Long live the CLI](https://ejholmes.github.io/2026/02/28/mcp-is-dead-long-live-the-cli.html)
+  by [Eric Holmes](https://ejholmes.github.io/) on 28 February 2026
