@@ -81,8 +81,6 @@
   {{ end }}
 </div>
 {{ if or ($reg.Prev .) ($reg.Next .) }}
-  {{ partial "sidebar.html" . }}
-  {{ partial "webring.html" . }}
   <aside class="comments">
     <script src="https://giscus.app/client.js"
             data-repo="sumnerevans/sumnerevans.com"
