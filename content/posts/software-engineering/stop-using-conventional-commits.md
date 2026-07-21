@@ -132,7 +132,9 @@ type) and devalues the scope (which is what people actually care about).**
 So we have determined that the format of Conventional Commits sucks, but it must
 provide _some_ benefit. Let's read the
 [_Why Use Conventional Commits_](https://www.conventionalcommits.org/en/v1.0.0/#why-use-conventional-commits)
-section to see if any of the reasons make any sense.
+section on the
+[Conventional Commits website](https://www.conventionalcommits.org/en/v1.0.0/)
+to see if any of the reasons make any sense.
 
 - **Automatically generating CHANGELOGs.**
 
