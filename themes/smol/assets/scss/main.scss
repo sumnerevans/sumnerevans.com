@@ -4,7 +4,7 @@
 body {
   --fg-color: #333;
   --bg-color: #fff;
-  --subtitle-color: #555;
+  --secondary-color: #666;
   --section-sep-color: #aaa;
 
   --link-color: #b91c1c;
@@ -19,7 +19,6 @@ body {
   --figure-bg-color: #0002;
   --preformatted-bg-color: #0002;
   --preformatted-border-color: #000;
-  --sidebar-attribution-color: #777;
 
   --search-container-bg-color: #eee;
   --search-container-fg-color: #000;
@@ -436,7 +435,7 @@ details.portfolio-item {
       text-align: right;
       grid-area: dates;
       font-size: 0.9em;
-      color: var(--subtitle-color);
+      color: var(--secondary-color);
     }
 
     p {
@@ -580,7 +579,7 @@ header {
 
     .site-subtitle {
       font-size: 1.3rem;
-      color: var(--subtitle-color);
+      color: var(--secondary-color);
     }
   }
 
@@ -828,7 +827,7 @@ dd {
 
     .attribution {
       font-size: 0.8rem;
-      color: var(--sidebar-attribution-color);
+      color: var(--secondary-color);
     }
   }
 
@@ -847,6 +846,7 @@ footer {
   margin-top: 2em;
   padding-top: 2em;
   text-align: center;
+  color: var(--secondary-color);
 
   p:first-child {
     margin-top: 0;
