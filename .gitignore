@@ -2,5 +2,6 @@
 .direnv
 .hugo_build.lock
 node_modules/
+openring
 public
 resources/_gen

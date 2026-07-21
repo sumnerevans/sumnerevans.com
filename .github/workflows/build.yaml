@@ -52,6 +52,16 @@ jobs:
             images-${{ hashFiles('hugo.yaml') }}-
             images-
 
+      - name: Openring
+        run: |
+          curl -fsSL https://github.com/lukehsiao/openring-rs/releases/download/v0.5.17/openring-x86_64-unknown-linux-musl.tar.gz \
+            | tar -xz -C /usr/local/bin openring
+          openring \
+              -S feed_urls.txt \
+              -n 5 \
+              -t other-feeds.html.tmpl \
+            > themes/smol/layouts/partials/webring.html
+
       - name: Hugo
         run: hugo --logLevel debug --gc --minify
 

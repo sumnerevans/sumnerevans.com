@@ -117,11 +117,20 @@ tags:
 
 The full build process (as seen in `.github/workflows/build.yaml`) includes:
 
-1. **Hugo Build** - Compiles the site with minification
+1. **OpenRing** - Generates webring of other blogs:
+   ```bash
+   go run git.sr.ht/~sircmpwn/openring@latest \
+       -S feed_urls.txt \
+       -n 5 -l 100 \
+     < other-feeds.html.tmpl \
+     > themes/smol/layouts/partials/webring.html
+   ```
 
-2. **Search Index** - Generates Lunr.js search index from Hugo's JSON output
+2. **Hugo Build** - Compiles the site with minification
 
-3. **Teaching Materials** - Copies raw HTML teaching content to output directory
+3. **Search Index** - Generates Lunr.js search index from Hugo's JSON output
+
+4. **Teaching Materials** - Copies raw HTML teaching content to output directory
 
 ## Theme
 
