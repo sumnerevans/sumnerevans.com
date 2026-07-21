@@ -534,6 +534,9 @@ header {
     "nav nav" auto
     / auto var(--image-width);
 
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--section-sep-color);
+
   a.site-image {
     grid-area: site-image;
 
@@ -600,7 +603,6 @@ header {
   nav {
     grid-area: nav;
     padding: 0.5rem 0;
-    border-bottom: 2px solid var(--section-sep-color);
 
     display: grid;
     grid-template:
