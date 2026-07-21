@@ -1,11 +1,12 @@
 <footer>
-  <p>
-    Built with <a href="https://gohugo.io/">Hugo</a> using
-    <a href="https://github.com/sumnerevans/sumnerevans.com/tree/master/themes/smol">my fork of the smol theme</a>.
-    <span id="theme-switcher"></span>
+  <p class="copyright">
+    &copy; {{ now.Year }} {{ .Site.Title }}.
+    View the <a href="https://github.com/sumnerevans/sumnerevans.com" target="_blank">source code</a>.
   </p>
-  <p>
-    &copy; {{ now.Year }} {{ .Site.Title }}. All Rights Reserved.
+  <p id="theme-switcher">
+    <span class="link dark">{{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/moon") }}</span>
+    <span class="link light">{{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/sun") }}</span>
+    <span class="link browser">{{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/browser") }}</span>
   </p>
 </footer>
 
@@ -19,8 +20,6 @@
   <script
     type="text/javascript"
     id="dark-theme-script"
-    data-enable-auto-detect-theme="{{ $.Site.Params.themeColorAutoDetectBrowserPreference }}"
-    data-default-theme="{{ $.Site.Params.themeColor }}"
   >
     {{ .Content | safeJS }}
   </script>

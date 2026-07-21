@@ -72,7 +72,6 @@ params:
   logo: profile.jpg
 
   # Theme
-  themeColorAutoDetectBrowserPreference: true
   themeColor: dark
 
   # Posts shown in homepage

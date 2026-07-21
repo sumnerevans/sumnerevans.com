@@ -164,6 +164,10 @@ p.article-info {
   }
 }
 
+.hidden {
+  display: none;
+}
+
 code,
 tt,
 kbd,
@@ -691,10 +695,6 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
-
-      &.hidden {
-        display: none;
-      }
     }
 
     #search-container {
@@ -708,10 +708,6 @@ header {
         background-color: var(--search-container-bg-color);
         color: var(--search-container-fg-color);
         width: 100%;
-      }
-
-      &.hidden {
-        display: none;
       }
 
       #search-results {
@@ -841,15 +837,37 @@ dd {
 
 .comments {
   margin-top: 1rem;
+  min-height: 150px;
 }
 
 footer {
-  margin-top: 2em;
-  text-align: center;
   color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
 
-  p:first-child {
-    margin-top: 0;
+  .copyright {
+    font-size: 0.8rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  #theme-switcher .link {
+    margin: 0 0.25em;
+
+    &:active,
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
   }
 }
 
