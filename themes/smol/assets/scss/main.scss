@@ -150,6 +150,7 @@ div.article-title {
 }
 
 p.article-info {
+  color: var(--secondary-color);
   margin-top: 0;
 
   @media screen and (max-width: 600px) {
