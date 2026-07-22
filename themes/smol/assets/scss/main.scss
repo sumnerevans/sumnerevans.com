@@ -841,7 +841,6 @@ dd {
 }
 
 footer {
-  color: var(--secondary-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -849,6 +848,7 @@ footer {
   margin-top: 2rem;
 
   .copyright {
+    color: var(--secondary-color);
     font-size: 0.8rem;
   }
 
@@ -860,13 +860,36 @@ footer {
     margin: 0;
   }
 
-  #theme-switcher .link {
-    margin: 0 0.25em;
+  #theme-switcher span {
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s ease, color 0.2s ease;
+    width: 2rem;
+    height: 2rem;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 50%;
 
-    &:active,
-    &:hover,
-    &:focus {
-      text-decoration: none;
+    svg.selected {
+      display: none;
+    }
+
+    &:hover:not(.active) {
+      background: var(--link-active-color);
+      color: white;
+    }
+
+    &.active {
+      cursor: default;
+      background: var(--link-color);
+      color: white;
+
+      svg.selected {
+        display: inline;
+      }
+      svg.deselected {
+        display: none;
+      }
     }
   }
 }
