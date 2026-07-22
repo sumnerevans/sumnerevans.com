@@ -1323,13 +1323,10 @@ or as a [Nix Flake](https://github.com/sumnerevans/offlinemsmtp/blob/master/flak
       infrastructure configurations.
     </p>
     <p>
-      I worked on the initial design of the overall architecture of the project. I have also
-      contributed in a project management role. I worked on the Python components of the project
-      which consume the configuration files and generate playlists. I also led development of the
-      web configuration frontend.
-    </p>
-    <p>
-      Currently, I am working in an advisory role as an industry project mentor.
+      I worked on the initial design of the overall architecture of the project. I also contributed
+      in a project management role. I worked on the Python components of the project which consume
+      the configuration files and generate playlists. I also led development of the web
+      configuration frontend. Later, I acted in an advisory role as an industry project mentor.
     </p>
   </div>
 </details>
