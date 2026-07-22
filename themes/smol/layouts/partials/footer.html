@@ -3,10 +3,16 @@
     &copy; {{ now.Year }} {{ .Site.Title }}.
     View the <a href="https://github.com/sumnerevans/sumnerevans.com" target="_blank">source code</a>.
   </p>
-  <p id="theme-switcher">
-    <span class="link dark">{{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/moon") }}</span>
-    <span class="link light">{{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/sun") }}</span>
-    <span class="link browser">{{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/browser") }}</span>
+  <p id="theme-switcher" class="hidden">
+    <span class="dark">
+      {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/moon" "size" "1em" "className" "deselected") }}
+      {{ partial "icons/icon" (dict "vendor" "tabler" "name" "filled/moon" "size" "1em" "className" "selected") }}
+    </span>
+    <span class="light">
+      {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/sun" "size" "1em" "className" "deselected") }}
+      {{ partial "icons/icon" (dict "vendor" "tabler" "name" "filled/sun" "size" "1em" "className" "selected") }}
+    </span>
+    <span class="browser">{{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/sun-moon" "size" "1em") }}</span>
   </p>
 </footer>
 

@@ -47,9 +47,9 @@ const detectThemeAndSwitchStyle = () => {
     }, "https://giscus.app");
   }
 
-  document.querySelector("#theme-switcher .link.dark")?.classList.toggle("disabled", localStorage.getItem("themeOverride") === "dark");
-  document.querySelector("#theme-switcher .link.light")?.classList.toggle("disabled", localStorage.getItem("themeOverride") === "light");
-  document.querySelector("#theme-switcher .link.browser")?.classList.toggle("disabled", ["browser", null].includes(localStorage.getItem("themeOverride")));
+  document.querySelector("#theme-switcher .dark")?.classList.toggle("active", localStorage.getItem("themeOverride") === "dark");
+  document.querySelector("#theme-switcher .light")?.classList.toggle("active", localStorage.getItem("themeOverride") === "light");
+  document.querySelector("#theme-switcher .browser")?.classList.toggle("active", ["browser", null].includes(localStorage.getItem("themeOverride")));
 };
 
 detectThemeAndSwitchStyle();
@@ -69,7 +69,7 @@ if (themeSwitcher) {
     themeSwitcher
       .querySelector(`.${theme}`)
       ?.addEventListener("click", (e) =>
-        !(e.currentTarget as HTMLElement).classList.contains("disabled")
+        !(e.currentTarget as HTMLElement).classList.contains("active")
         && window.theme.switch(theme)
       );
   }
