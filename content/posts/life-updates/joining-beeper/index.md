@@ -8,7 +8,7 @@ hide_image_in_index: true
 ---
 
 <center>
-{{<image src="images/beeper.png" link="https://beeper.com" width="50%">}}
+{{<image src="images/beeper.png" link="https://beeper.com" width="50%" nozoom="true" nodim="true">}}
 </center>
 
 Today I am happy to announce that I have joined [Beeper](https://beeper.com), a
