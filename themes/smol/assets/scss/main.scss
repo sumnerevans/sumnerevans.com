@@ -847,14 +847,15 @@ footer {
   align-items: center;
   gap: 1rem;
   margin-top: 2rem;
+  color: var(--secondary-color);
 
   .copyright {
-    color: var(--secondary-color);
     font-size: 0.8rem;
   }
 
   @media screen and (max-width: 600px) {
     flex-direction: column;
+    text-align: center;
   }
 
   p {
