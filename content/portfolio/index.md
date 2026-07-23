@@ -1,11 +1,13 @@
 ---
-title: "Portfolio"
+title: Portfolio
+date: 2021-08-01 09:04:00
 description: |
   I'm a software engineer and educator. I have six years of industry experience
   as a software engineer, and I have taught classes at a university level
   including one graduate level course.
 build:
   publishResources: true
+uselastmod: true
 ---
 
 > [!NOTE]
