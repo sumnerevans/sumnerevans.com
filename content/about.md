@@ -3,6 +3,7 @@ title: "About"
 date: 2021-08-01 09:04:00
 aliases:
   - /contact
+uselastmod: true
 ---
 
 My name is Sumner, and I live in Denver, Colorado. I am a
