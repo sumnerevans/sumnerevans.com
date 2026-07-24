@@ -336,6 +336,7 @@ that a **greedy simulation** is fast enough.
   the total amount of time that flash drive images a computer accordingly.
 
   ![](./images/2023-computer-imaging-diagram.png)
+  {nowebp=true rawlink=true}
 
 - After we complete this procedure for each computer, the maximum amount of time
   that any flash drive is imaging a computer is the minimum amount of time it
@@ -611,6 +612,7 @@ recursion to "Dynamic Programming".
 > up with after optimal play.
 >
 > ![The valid moves of the peg game](./images/2023-pegs-move.png)
+> {nowebp=true rawlink=true}
 
 There are three main challenges to solve this problem:
 

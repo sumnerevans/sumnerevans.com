@@ -12,7 +12,7 @@ description: |
 ---
 
 <center>
-{{<image src="images/logo.png" alt="Sublime Music" link="https://sublimemusic.app" width="50%" nozoom="true" nodim="true">}}
+{{<image src="images/logo.png" alt="Sublime Music" link="https://sublimemusic.app" width="50%" nozoom="true" nodim="true" nowebp="true" rawlink="true">}}
 </center>
 
 Today I'm announcing that Sublime Music has reached end-of-maintenance. This

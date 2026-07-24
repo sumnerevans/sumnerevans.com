@@ -16,7 +16,7 @@ summary: |
 ---
 
 <center>
-{{<image src="images/logo.png" link="https://sublimemusic.app" width="50%" nozoom="true" nodim="true">}}
+{{<image src="images/logo.png" link="https://sublimemusic.app" width="50%" nozoom="true" nodim="true" nowebp="true" rawlink="true">}}
 </center>
 
 Today I'm happy to announce Sublime Music to the world! Sublime Music is a
@@ -34,7 +34,7 @@ feature-packed native GTK client for Subsonic-compatible servers such as
   </a>
 </h2>
 
-{{<figure src="images/albums.png" title=`**The Albums tab of Sublime Music.**
+{{<figure src="images/albums.png" nowebp="true" rawlink="true" title=`**The Albums tab of Sublime Music.**
 Clicking on an album cover shows the details for that album.
 
 See the [Sublime Music website](https://sublimemusic.app) for more screenshots.`

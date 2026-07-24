@@ -179,6 +179,7 @@ time, too. The event organizer, Bambi, was literally in the middle yelling "10,
 In the meantime, I started working on a logo for our project:
 
 ![](images/hypar-map-logo.png "the HypAR Map logo")
+{nowebp=true rawlink=true}
 
 Luckily, that didn't count as "coding" so we were able to finish that up after
 the code freeze at 10:30. Then came a frantic hour of preparation for

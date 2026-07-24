@@ -22,6 +22,8 @@ which will dictate what language I use for that night.
 
 {{<figure
   src="wheel.png"
+  nowebp="true"
+  rawlink="true"
   title="Spinner wheel which will decide my fate every night"
   caption="The random spinner wheel which will decide my fate every night"
 >}}

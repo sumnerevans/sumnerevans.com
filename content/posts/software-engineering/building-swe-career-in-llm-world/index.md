@@ -98,6 +98,8 @@ two main tracks available to software engineers past the senior engineer level.
 
 {{<figure
   src="images/levels.png"
+  nowebp="true"
+  rawlink="true"
   alt="The two post-senior career paths are staff-plus and engineering management."
   title="There are two main tracks available to software engineers post-senior level"
   attr="Staff Engineer: Leadership beyond the management track"

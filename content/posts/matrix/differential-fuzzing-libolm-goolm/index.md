@@ -176,6 +176,7 @@ megolm sessions and did a memory dump of the libolm megolm session struct. The
 result? The bytes are equal!
 
 ![The public key is encoded before the private key in the memory layout](./images/memorydump.png)
+{nowebp=true rawlink=true}
 
 So, at this point I know that the private key bytes being used by libolm and
 goolm are identical, but the signatures are still turning out different!

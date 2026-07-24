@@ -90,6 +90,7 @@ In this article, we will be exploring the following diagram. It shows how those
 core features are implemented as well as the infrastructure that supports them.
 
 ![](./images/overview.png)
+{rawlink=true}
 
 I know, it's pretty overwhelming. But don't worry, we are going to go
 step-by-step through this, at the end of the article you should have an
@@ -118,6 +119,7 @@ infrastructure. Highlighted in orange within each of the devices, we have the
 core of Matrix security: the Megolm session.
 
 ![](./images/message-security.png)
+{rawlink=true}
 
 We aren't going to discuss this in detail today. I wrote a full
 [article about Megolm]({{<ref"../megolm/index.md">}}) if you want to learn more.
@@ -137,6 +139,7 @@ Next let's discuss identity. The highlighted parts of the diagram provide a
 cryptographic way to verify that a device belongs to a particular user.
 
 ![](./images/identity-overview.png)
+{rawlink=true}
 
 There are actually two pieces here: determining trust for our own user and
 determining trust for other users. We will look at each of these in more depth
@@ -188,6 +191,7 @@ to-device messages which allow you to send messages to specific devices (rather
 than to rooms).
 
 ![](./images/to-device-zoomed.png)
+{rawlink=true}
 
 You can see that we can send keys to other users' devices via `m.room_key`
 events. We actually we use `m.room_key` events to send keys to our own devices
@@ -224,6 +228,7 @@ devices are offline or inaccessible.
 In the following diagram, I got rid of everything not related to key backup.
 
 ![](./images/key-backup-zoomed.png)
+{rawlink=true}
 
 In the middle we have the key backup in green. Key backup is stored on the
 server. In this diagram, we're trying to get the Megolm key from Alice's Device
@@ -301,6 +306,7 @@ the signature. In the following diagram, I've highlighted all of the signatures
 required for verifying your own devices.
 
 ![](./images/identity-device-verification-zoomed.png)
+{rawlink=true}
 
 In Matrix, each device has a _device keypair_. The public key is an identifier
 for the device. To verify a device, we _sign_ the device public key. Often, we
@@ -344,6 +350,7 @@ devices. In the following diagram, I've highlighted all of the signatures
 required for verifying another user's devices.
 
 ![](./images/identity-user-verification-zoomed.png)
+{rawlink=true}
 
 We introduce a new key called the **user-signing key** which signs other users'
 master keys} and is itself signed by our own master key.
@@ -375,6 +382,7 @@ That's where **Secure Secret Storage and Sharing** (also known as **SSSS** or
 account data on the server. The following diagram shows SSSS.
 
 ![](./images/ssss-zoomed.png)
+{rawlink=true}
 
 The key that SSSS uses to encrypt the account data is effectively the recovery
 key. There is a base58-decode and an HKDF transformation which produces the
@@ -407,6 +415,7 @@ will the MACs match.
 Let's go back to the big picture once more and see what we have learned.
 
 ![](./images/overview.png)
+{rawlink=true}
 
 We've now discussed each piece of this diagram. We discussed the **Megolm
 session** which gets shared via **Olm-encrypted to-device events** and to our

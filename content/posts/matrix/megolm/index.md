@@ -57,7 +57,7 @@ security. There's a lot here so don't worry, I will go through each piece
 individually and by the end of this article, you will understand all of the
 pieces of this figure.
 
-{{<figure src="./images/overview.png" title="Figure 1: Megolm Overview"
+{{<figure src="./images/overview.png" rawlink="true" title="Figure 1: Megolm Overview"
 caption=`The <span style="color:#F24822;"><b>red</b></span> nodes represent data that does not leave the corresponding user's device, <span style="color:#14AE5C;"><b>green</b></span> nodes represent data that can be published anywhere, and <span style="color:#FFA629;"><b>orange</b></span> nodes represent data that can be shared, but only with users Alice wants to be able to read the messages. The <span style="color:#0D99FF"><b>blue</b></span> nodes represent cryptographic operations that are required for encryption and decryption while the <span style="color:#9747FF"><b>purple</b></span> nodes represent cryptographic operations that are used to verify data integrity, but are not necessary for the decryption flow. The <b>grey</b> nodes represent intermediate values.`
 >}}
 
@@ -111,7 +111,7 @@ Message encryption prevents attackers from reading the contents of the message
 without having the proper key. The highlighted parts of the diagram below
 represent the components of Megolm which provide message encryption.
 
-{{<figure src="./images/encryption.png" title="Figure 2: Message Encryption"
+{{<figure src="./images/encryption.png" rawlink="true" title="Figure 2: Message Encryption"
 caption=`Encryption is provided by AES with a key and IV derived using HKDF from the Megolm ratchet.`
 >}}
 
@@ -156,7 +156,7 @@ message have not been tampered with. We want to know if an attacker has edited
 the encrypted message. The highlighted parts of the diagram below represent the
 components of Megolm which guarantee message integrity.
 
-{{<figure src="./images/integrity.png" title="Figure 3: Message Integrity"
+{{<figure src="./images/integrity.png" rawlink="true" title="Figure 3: Message Integrity"
 caption=`Message integrity is provided by HMAC with a key from the same HKDF output as the AES key and IV.`
 >}}
 
@@ -187,7 +187,7 @@ ensure that the message is from the creator of the Megolm session. The
 highlighted parts of the diagram below represent the components of Megolm which
 allow Bob to verify that Alice generated the message.
 
-{{<figure src="./images/verification.png" title="Figure 4: Origin Verification"
+{{<figure src="./images/verification.png" rawlink="true" title="Figure 4: Origin Verification"
 caption=`Origin verification is provided by an Ed25519 signature of the encrypted payload.`
 >}}
 
@@ -306,7 +306,7 @@ process of sending and receiving a single message (assuming that Alice has
 already shared the session with Bob). Here's the diagram from the start of the
 article:
 
-{{<figure src="./images/overview.png" title="Figure 6: Megolm Overview">}}
+{{<figure src="./images/overview.png" rawlink="true" title="Figure 6: Megolm Overview">}}
 
 When Alice wants to encrypt a message, she first determines the next ratchet
 index. Alice uses the Megolm ratchet to generate bits and passes those bits

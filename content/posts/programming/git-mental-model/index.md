@@ -74,6 +74,8 @@ model, or a snapshot history in the second model).
 
 {{<figure
   src="./images/branching5.png"
+  nowebp="true"
+  rawlink="true"
   title="All of the white nodes are commits"
   caption="Notice how they reference their parent (represented in the diagram by arrows)."
   attr="Git Book Chapter 3.1 Figure 17"
@@ -226,6 +228,8 @@ that commit's parent pointers to reconstruct the change history.
 
 {{<figure
   src="./images/branching-moving-1.png"
+  nowebp="true"
+  rawlink="true"
   title="The orange nodes are branches and they are pointers to the same commit"
   attr="Git Book Chapter 3.1 Figure 13"
   attrlink="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell#_create_new_branch"
@@ -258,6 +262,8 @@ You can move the `HEAD` pointer to a different commit using
 
 {{<figure
   src="./images/branching2.png"
+  nowebp="true"
+  rawlink="true"
   title="After running `git checkout testing`, the `HEAD` now points to `testing`"
   attr="Git Book Chapter 3.1 Figure 14"
   attrlink="https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell#_create_new_branch"

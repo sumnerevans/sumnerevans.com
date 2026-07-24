@@ -12,6 +12,7 @@ to post some of my thoughts on it.
 1.  ### Files First
 
     ![When you open Word, you immediately see your files.](./images/word2013preview.png "The first thing you see when you open Word 2013")
+    {nowebp=true rawlink=true}
 
     The first thing that I noticed about Office 2013 is that it puts your files
     first. On run, Word, PowerPoint, Publisher, and Access all open to a page

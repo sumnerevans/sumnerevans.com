@@ -137,6 +137,7 @@ it has one huge advantage: the external collaborator does not need to sign up
 for any service! They also do not need to use a web UI to submit the patches.
 
 ![sourcehut's mailing list interface](images/mailing-list.png)
+{nowebp=true rawlink=true}
 
 ## It's Simple and Lightweight
 
@@ -178,6 +179,8 @@ more performant than those of GitHub and GitLab.
 
 {{<figure
   src="images/repo-summary.png"
+  nowebp="true"
+  rawlink="true"
   title="sourcehut's repository summary interface"
   caption="The sourcehut interface focuses on the content, rather than the UX chrome"
 >}}
@@ -201,6 +204,8 @@ warmup overhead between build steps.
 
 {{<figure
   src="images/build-results.png"
+  nowebp="true"
+  rawlink="true"
   title="sourcehut's build results interface"
 >}}
 

@@ -39,6 +39,7 @@ Next, go to the Settings page for your GitHub Pages repository and click on
 "Branches". From the Default Branch dropdown, select "source".
 
 ![select the branch from the dropdown](./pelican-on-github-pages/images/gh-pages-default-branch.png)
+{nowebp=true rawlink=true}
 
 Later on, we will be setting up Travis CI to use [GitHub Pages
 Deployment](https://docs.travis-ci.com/user/deployment/pages/). You will need to
@@ -73,6 +74,7 @@ been synchronised, go to your Travis CI profile page and enable your GitHub
 Pages repository.
 
 ![enable Travis on site](./pelican-on-github-pages/images/travis-site-enable.png)
+{nowebp=true rawlink=true}
 
 Now, go to the Travis CI settings for your repository and enable "Build only
 if .travis.yml is present" and "Build on branch updates".
@@ -82,6 +84,7 @@ Down in the Environment Variables, add an environment variable with name
 earlier. Make sure that you have "Display value in build log" disabled.
 
 ![change environment variables](./pelican-on-github-pages/images/travis-env-var.png)
+{nowebp=true rawlink=true}
 
 Now you need to configure Travis CI. To do this, create a `.travis.yml` file in
 the root of your repository and add the following to it:

@@ -32,6 +32,7 @@ is the second year in a row that I've completed all of the problems. Here's what
 the map looks like:
 
 ![Advent of Code map](./map.png "I like how the map always relates to the story.")
+{nowebp=true rawlink=true}
 
 The following is my results across all of the days.
 
@@ -96,10 +97,12 @@ At the end of the competition (2021-12-24 23:32 MST), this is the state of the
 Mines leaderboard:
 
 ![Leaderboard end state](./leaderboard-end-state.png "State of the top 10 of the Mines leaderboard after day 25")
+{nowebp=true rawlink=true}
 
 Six people leaderboarded globally:
 
 ![Leaderboard end state using global sort](./leaderboard-global-sort.png "The six people who got points on the global leaderboard of the people from Mines")
+{nowebp=true rawlink=true}
 
 # Day 1: Sonar Sweep
 

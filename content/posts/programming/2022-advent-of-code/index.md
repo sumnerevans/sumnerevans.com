@@ -49,6 +49,7 @@ I accomplished my main goal of solving all of the problems and getting all 50
 stars for the third year in a row.
 
 ![All the stars](./map.png "All the stars!")
+{nowebp=true rawlink=true}
 
 The following are my results across all of the days.
 
@@ -97,8 +98,10 @@ At the end of the competition (2022-12-25 00:51 MST), this is the state of the
 Mines leaderboard:
 
 ![Leaderboard end state](./leaderboard-end-state.png "State of the top 10 of the Mines leaderboard after day 25")
+{nowebp=true rawlink=true}
 
 ![Leaderboard medalists](./leaderboard-medalists.png "The participants who gained a podium spot on any part throughout the competition on the Mines leaderboard")
+{nowebp=true rawlink=true}
 
 Three of us (Kelly, Colin, and myself) solved everything by Christmas. I managed
 to get 3rd place on the Mines leaderboard by default this year because nobody

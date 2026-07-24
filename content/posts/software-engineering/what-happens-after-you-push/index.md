@@ -63,6 +63,8 @@ developers.[^1]
 
 {{<figure
   src="images/so-cicd.png"
+  nowebp="true"
+  rawlink="true"
   alt="Image of the most commonly used processes, tools, and programs according to the 2024 StackOverflow developer survey"
   title="CI/CD is the most commonly available technology within professional software development organizations."
   attr="2024 StackOverflow Developer Survey"
@@ -355,6 +357,8 @@ Kubernetes is used by 20% of developers.[^2]
 
 {{<figure
   src="images/so-docker.png"
+  nowebp="true"
+  rawlink="true"
   alt="Image of the most popular other tools according to the 2024 StackOverflow developer survey"
   width="600"
   title="Docker and Kubernetes are among the most popular technologies used by professional developers"
