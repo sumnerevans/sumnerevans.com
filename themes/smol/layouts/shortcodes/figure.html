@@ -9,7 +9,7 @@
     {{- with $.Get "link" -}}
       <a href="{{ . }}" target="_blank"{{ with $.Get "rel" }} rel="{{ . }}"{{ end }}>
     {{- else -}}
-      {{- if or (eq .MediaType.SubType "svg") (eq .MediaType.SubType "gif") -}}
+      {{- if or (eq .MediaType.SubType "svg") (eq .MediaType.SubType "gif") ($.Get "rawlink") -}}
         <a href="{{ .RelPermalink }}" target="_blank">
       {{- else -}}
         <a href="{{ ( .Resize "2000x webp photo" ).RelPermalink }}" target="_blank">
@@ -17,7 +17,7 @@
     {{- end -}}
       <picture class="{{ if $.Get "nozoom" }}no-zoom{{ end }} {{ if $.Get "nodim" }}no-dim{{ end }}">
         {{- $imgRsc := . -}}
-        {{- if or (eq $imgRsc.MediaType.SubType "svg") (eq $imgRsc.MediaType.SubType "gif") -}}
+        {{- if or (eq $imgRsc.MediaType.SubType "svg") (eq $imgRsc.MediaType.SubType "gif") ($.Get "nowebp") -}}
           <img
             src="{{ $imgRsc.RelPermalink }}"
             {{- with $alt }}

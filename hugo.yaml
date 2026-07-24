@@ -36,6 +36,10 @@ markup:
   highlight:
     style: github
   goldmark:
+    parser:
+      attribute:
+        block: true
+      wrapStandAloneImageWithinParagraph: false
     renderer:
       unsafe: true
     extensions:

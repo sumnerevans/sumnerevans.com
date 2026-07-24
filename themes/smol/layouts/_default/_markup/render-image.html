@@ -1,17 +1,21 @@
 {{- $respSizes := slice "400" "600" -}}
 {{- $alt := or .Title .Text -}}
+{{- $nowebp := index .Attributes "nowebp" -}}
+{{- $rawlink := index .Attributes "rawlink" -}}
 
 {{ if .Text }}
   <figure>
+{{ else if .IsBlock }}
+  <p>
 {{ end }}
   {{- with or (.Page.Resources.Get .Destination) (resources.Get .Destination) -}}
-    {{ if or (eq .MediaType.SubType "svg") (eq .MediaType.SubType "gif") }}
+    {{ if or (eq .MediaType.SubType "svg") (eq .MediaType.SubType "gif") $rawlink }}
       <a href="{{ .RelPermalink }}" target="_blank">
     {{ else }}
       <a href="{{ ( .Resize "2000x webp photo" ).RelPermalink }}" target="_blank">
     {{ end }}
       <picture>
-        {{ if or (eq .MediaType.SubType "svg") (eq .MediaType.SubType "gif") }}
+        {{ if or (eq .MediaType.SubType "svg") (eq .MediaType.SubType "gif") $nowebp }}
           <img
             loading="lazy"
             src="{{ .RelPermalink }}"
@@ -52,4 +56,6 @@
 {{ if .Text }}
     <figcaption><b>{{ .Text | safeHTML }}</b></figcaption>
   </figure>
+{{ else if .IsBlock }}
+  </p>
 {{ end }}
