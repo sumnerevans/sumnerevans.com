@@ -219,7 +219,7 @@ blockquote {
   }
 }
 
-figure + figure {
+:not(.gallery) > figure + figure {
   margin-top: 1rem;
 }
 
