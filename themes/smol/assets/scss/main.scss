@@ -973,3 +973,15 @@ table:not(.gallery) {
     }
   }
 }
+
+.secondary {
+  color: var(--secondary-color);
+}
+
+div.footnotes {
+  font-size: 0.9em;
+
+  li p {
+    color: var(--secondary-color);
+  }
+}
