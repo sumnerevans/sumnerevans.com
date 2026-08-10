@@ -35,7 +35,7 @@ Conventional Commits promises to add semantic meaning to commit messages to aid
 developers and end-users in understanding the changes made in a commit. However,
 Conventional Commits fails to do this in spectacular fashion. To demonstrate
 this, let's look at the anatomy of a conventional commit. According to the
-[Conventional Commit website](https://www.conventionalcommits.org/en/v1.0.0/#summary)
+[Conventional Commits website](https://www.conventionalcommits.org/en/v1.0.0/#summary)
 commit messages should be formatted as follows:
 
 ```patch
@@ -108,7 +108,7 @@ fix(compiler): prevent namespaced SVG <style> elements from being stripped
 ```
 
 Even if you only had the description, it's obvious that it was a bugfix! Space
-on the subject line of a commit is already at a premium, wasting characters on
+on the subject line of a commit is already at a premium; wasting characters on
 the type is not helpful! But it's often even worse than useless; it's often
 restrictive. Take
 [this commit message](https://github.com/angular/angular/commit/683172b39a602ac9ec15db69d22853433a67a084)
@@ -175,22 +175,22 @@ to see if any of the reasons make any sense.
   Consider the following situations:
 
   - **Reverts:** imagine a situation where the breaking change you introduced
-    was actually so breaking that you have to revert it? Your tooling will pick
+    was actually so breaking that you have to revert it. Your tooling will pick
     up a breaking change and increment the major version even though the
     breakage was actually reverted and there is no breaking change.
   - **Accidental breakages:** maybe the breakage is subtle and you don't realise
     a change is a breaking change when you make the change. Only in retrospect
-    realise that it's breaking. You will incorrectly increment a minor/patch
-    version when a major version bump is necessary.
+    do you realise that it's breaking. You will incorrectly increment a
+    minor/patch version when a major version bump is necessary.
   - **Retroactive unbreakages:** say you later add a commit which, in
     composition with a previously breaking commit, results in a diff which is
     not breaking. Similar to the revert situation, tooling would incorrectly
     identify a breaking change.
 
   In such situations, you could rewrite history with a rebase, but that often
-  breaks or is prevented by workflows. It also presents a revisionist history to
-  the contributors trying to contribute to the project, reducing the reliability
-  of the story the commit log is telling.
+  breaks CI/CD workflows or is explicitly prevented. It also presents a
+  revisionist history to the contributors trying to contribute to the project,
+  reducing the reliability of the story the commit log is telling.
 
 - **Communicating the nature of changes to teammates, the public, and other
   stakeholders.**
@@ -204,7 +204,7 @@ to see if any of the reasons make any sense.
   This is just a bad idea. Say you only run automated security checks on commits
   that touch code and then someone creates a Trojan-horse commit titled
   `docs: fix typos` which actually introduces vulnerabilities into the
-  authentication subsystem? Obviously, that sort of malicious activity would
+  authentication subsystem. Obviously, that sort of malicious activity would
   hopefully be caught in code review, but the automated tooling is bypassed,
   putting the onus on a human to identify the problem.
 
@@ -269,12 +269,20 @@ using it for commit messages. This has caused propagation of anti-pattern-ridden
 commit messages across projects.
 
 My goal in this article is to fight against Conventional Commits' dominance, and
-demonstrate that there better ways to structure commit messages. But if this
+demonstrate that there are better ways to structure commit messages. But if this
 article has not convinced you to stop using Conventional Commits, I look forward
 to the flame war in the comment section.
 
+<span class="secondary">
+
+Join the conversation in the comments section below or on
+[lobste.rs](https://lobste.rs/s/oqlpna/stop_using_conventional_commits) or
+[Hacker News](https://news.ycombinator.com/item?id=48414027).
+
+</span>
+
 [^1]: Technically, the Conventional Commits specification only defines `fix` and
-    `feat` and leaves additional types up to individual projects to specify,
-    however most projects just end up using the types
+    `feat` and leaves additional types up to individual projects to specify.
+    However, most projects just end up using the types
     [defined by commitlint](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional#type-enum),
     so I have included some of them in this list.
