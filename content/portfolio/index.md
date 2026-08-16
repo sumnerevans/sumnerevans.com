@@ -1173,7 +1173,7 @@ Linear, and Sourcehut and displays clickable hyperlinks in the terminal.
 
 Tracktime is written in **Go**, and can be installed via
 
-```
+```bash
 go install github.com/sumnerevans/tracktime/cmd/tt@latest
 ```
 
@@ -1196,13 +1196,17 @@ or as a [Nix Flake](https://github.com/sumnerevans/tracktime/blob/master/flake.n
     <p>
       <a href="https://github.com/sumnerevans/offlinemsmtp" target="_blank">
         {{< ico "tabler" "outline/brand-github" >}} GitHub</a>
+      | <a href="{{<ref"/posts/projects/offlinemsmtp-v1/index.md">}}">
+        {{< ico "tabler" "outline/license" >}} Blog Post</a>
       | MIT
     </p>
   </summary>
   <div>
 
-Read my blog post announcing `offlinemsmtp` v0.3.5:
-[Introducing offlinemsmtp]({{< ref "/posts/projects/introducing-offlinemsmtp" >}}).
+Read my blog post announcing
+[offlinemsmtp v1]({{<ref"/posts/projects/offlinemsmtp-v1/index.md">}}) or my
+blog post
+[introducing offlinemsmtp for the first time]({{<ref"/posts/projects/introducing-offlinemsmtp">}}).
 
 `offlinemsmtp` allows you to use the `msmtp` SMTP email sending program offline. While
 offline, it enqueues emails to be sent once an internet connection is established. While
@@ -1210,7 +1214,7 @@ online, it sends the emails immediately.
 
 `offlinemsmtp` is written in **Go**, and can be installed via:
 
-```
+```bash
 go install github.com/sumnerevans/offlinemsmtp/cmd/offlinemsmtp@latest
 ```
 

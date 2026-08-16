@@ -303,7 +303,7 @@ If the balance that is calculated by hledger by replaying all of the
 transactions differs from the asserted balance, hledger surfaces that
 discrepancy:
 
-```
+```plain
 $ hledger check
 hledger: Error: /path/to/venmo.journal:10:40
    | 2026-07-06 * Chicken Tikka masala

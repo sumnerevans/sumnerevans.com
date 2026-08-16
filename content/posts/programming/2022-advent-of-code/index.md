@@ -53,7 +53,7 @@ stars for the third year in a row.
 
 The following are my results across all of the days.
 
-```
+```plain
       --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
  25   02:27:45   4003      0   02:27:45   3074      0
@@ -163,7 +163,7 @@ solve in Python or Go next year.
 
 Language statistics (my boilerplate is fairly extensive, though):
 
-```
+```plain
 $ tokei -e '*.txt' -e '*.json'
 ===============================================================================
  Language            Files        Lines         Code     Comments       Blanks
@@ -925,7 +925,7 @@ test numbers.
 
 So, for example, the worry level `54` could be represented as just:
 
-```
+```plain
 Mod 3: 54 % 3 = 0
 Mod 5: 54 % 5 = 4
 Mod 7: 54 % 7 = 5
@@ -938,7 +938,7 @@ operation on each of the numbers under their appropriate modulus.
 So, if the operation was `+ 3`, I could just perform the operations the
 representation for the worry level would become:
 
-```
+```plain
 Mod 3: (0 + 3) % 3 = 0
 Mod 5: (4 + 3) % 5 = 2
 Mod 7: (6 + 3) % 7 = 2
@@ -1323,7 +1323,7 @@ access to). Not sure how much memory it used, but it was a lot.
 I'll just leave you with this glorious output from executing my solution (the
 fail is just because it couldn't auto-submit the answer for me for reasons):
 
-```
+```plain
 --- FAIL: Test_Day16 (12879.97s)
     --- PASS: Test_Day16/Part_1 (0.00s)
     --- FAIL: Test_Day16/Part_2 (12879.97s)
@@ -1364,13 +1364,13 @@ random issues.
 
 Part 2 is a cycle-finding problem. To detect a cycle, I am storing a mapping of
 
-```
+```plain
 (current configuration of the last 200 lines, current direction index, current shape)
 ```
 
 to
 
-```
+```plain
 (iteration that the configuration was last seen, height of the stack at that point)
 ```
 
@@ -1689,7 +1689,7 @@ return trip to the goal, I started at the time of the end of the first traversal
 rather than the second. The basic problem was that I was doing something like
 this:
 
-```
+```plain
 timeToGoal = traverse(time=0, start=start, end=end)
 timeBackToStart = traverse(time=timeToGoal, start=end, end=start)
 timeBackToGoal = traverse(time=timeBackToStart, start=start, end=end)
@@ -1699,7 +1699,7 @@ but critically the value returned by `traverse` only included the time of the
 actual traversal, not the time already passed, so the last call really needed to
 be:
 
-```
+```plain
 timeBackToGoal = traverse(time=timetoGoal+timeBackToStart, start=start, end=end)
 ```
 

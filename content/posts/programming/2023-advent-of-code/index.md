@@ -39,7 +39,7 @@ post up-to-date every day with my thoughts on each problem.
 
 The following are my results across all of the days.
 
-```
+```plain
       -------Part 1--------   --------Part 2--------
 Day       Time  Rank  Score       Time   Rank  Score
   7   01:11:56  8044      0   02:06:29   8720      0
@@ -50,7 +50,7 @@ Day       Time  Rank  Score       Time   Rank  Score
 
 Language statistics:
 
-```
+```plain
 $ tokei -e '*.txt' -e '*.json'
 ===============================================================================
  Language            Files        Lines         Code     Comments       Blanks

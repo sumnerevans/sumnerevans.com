@@ -67,7 +67,7 @@ directory so that GitLab Pages can find the site files.
 3. If you have not already created a `requirements.txt` file, do so now in the
    root of your repository. It needs at least the following content:
 
-   ```
+   ```plain
    pelican
    Markdown
    beautifulsoup4

@@ -36,7 +36,7 @@ the map looks like:
 
 The following is my results across all of the days.
 
-```
+```plain
       --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
  25   00:16:45    605      0   00:16:51    503      0
@@ -79,7 +79,7 @@ solved within 24 hours on every day except for day 19.
 Language statistics (note that some of this is boilerplate that I copy to every
 Python file):
 
-```
+```plain
 $ tokei -e inputs
 ===============================================================================
  Language            Files        Lines         Code     Comments       Blanks
@@ -495,7 +495,7 @@ As mentioned above, for part 2 you have to make an optimization. The
 optimization is to use a dictionary to aggregate of all of the lanternfish at
 the same stage in life. For example, for the sample input:
 
-```
+```plain
 3,4,3,1,2
 ```
 
@@ -1195,7 +1195,7 @@ on the top-left corner of each of the squares, and then edges each have a cost
 which is the cost of going "through" a square. Thus, if you have the following
 grid:
 
-```
+```plain
 123
 321
 342
@@ -1603,7 +1603,7 @@ in the correct order for creating the bitmap, which was nice.
 The way that I implemented the CGL image was using a set to store the presence
 of a given square being alive in the image. For example, if the image was:
 
-```
+```plain
 ###
 .#.
 #..
@@ -1611,7 +1611,7 @@ of a given square being alive in the image. For example, if the image was:
 
 I would store it as:
 
-```
+```plain
 {(0, 0), (0, 1), (0, 2), (1, 1), (2, 0)}
 ```
 
@@ -1850,7 +1850,7 @@ computing the neighbors set for a given node is very nontrivial.
 The most complicated problem of the first part was figuring out adjacent elements to a given
 map state. For example, given the following map state:
 
-```
+```plain
 #############
 #...........#
 ###B#C#B#D###
@@ -1861,7 +1861,7 @@ map state. For example, given the following map state:
 <details>
 <summary>Expand to see the valid next states when moving just the leftmost `B`...</summary>
 
-```
+```plain
 #############
 #B..........#
 ###.#C#B#D###
@@ -1869,7 +1869,7 @@ map state. For example, given the following map state:
   #########
 ```
 
-```
+```plain
 #############
 #.B.........#
 ###.#C#B#D###
@@ -1877,7 +1877,7 @@ map state. For example, given the following map state:
   #########
 ```
 
-```
+```plain
 #############
 #...B.......#
 ###.#C#B#D###
@@ -1885,7 +1885,7 @@ map state. For example, given the following map state:
   #########
 ```
 
-```
+```plain
 #############
 #.....B.....#
 ###.#C#B#D###
@@ -1893,7 +1893,7 @@ map state. For example, given the following map state:
   #########
 ```
 
-```
+```plain
 #############
 #.......B...#
 ###.#C#B#D###
@@ -1901,7 +1901,7 @@ map state. For example, given the following map state:
   #########
 ```
 
-```
+```plain
 #############
 #.........B.#
 ###.#C#B#D###
@@ -1909,7 +1909,7 @@ map state. For example, given the following map state:
   #########
 ```
 
-```
+```plain
 #############
 #..........B#
 ###.#C#B#D###
