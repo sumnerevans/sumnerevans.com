@@ -51,7 +51,7 @@ few reasons:
 In addition, I wanted to convert my personal finances to use
 [double-entry bookkeeping](https://en.wikipedia.org/wiki/Double-entry_bookkeeping)
 for learning purposes. Double-entry bookkeeping is slightly unintuitive if you
-are unfamiliar with it as I was when I started this journey, but once you get
+are unfamiliar with it (as I was when I started this journey), but once you get
 used to it, it's pretty straightforward. I'm going to assume in the rest of this
 post that you have a basic understand of double-entry bookkeeping.
 
@@ -168,8 +168,8 @@ shares[^4].
 
 But 15 VOO is not very helpful unless you know its market value denominated in
 dollars. hledger solves this by providing the ability to augment the commodities
-with pricing information from exchange rates or market value. I can add `P`
-(price) directives to track the price of VOO in terms of dollars.
+with pricing information from currency exchange rates or market value. I can add
+`P` (price) directives to track the price of VOO in terms of dollars.
 
 ```ledger
 ; ...
@@ -356,12 +356,12 @@ anywhere else in the blog post:
 ## Conclusion
 
 I've been using this system for only a few weeks, and so far I am enjoying using
-it. I greatly value the benefits of plain text while benefiting from the quite
-nice reporting that hledger provides. I am also happy with the switch to
-double-entry accounting, which has solved many annoyances I had with previous
-systems. Of course, I'm back to manually entering every transaction into my
-ledger, but the amount of accounting rigour I'm able to apply to all my
-transactions makes it worth it for me.
+it. I greatly value the benefits of plain text aided by the reporting tooling
+that hledger provides. I am also happy with the switch to double-entry
+accounting, which has solved many annoyances I had with previous systems. Of
+course, I'm back to manually entering every transaction into my ledger, but the
+amount of accounting rigour I'm able to apply to all my transactions makes it
+worth it for me.
 
 I'm still learning how to most effectively use double-entry accounting and the
 hledger tool, but so far I've been able to get all of the financial reporting
