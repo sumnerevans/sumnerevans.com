@@ -1,0 +1,58 @@
+{{- /*
+Highlights a single line of an hledger journal fence, producing spans
+that reuse the site's existing Chroma CSS classes (no hledger lexer
+exists in Chroma, so this is a hand-rolled tokenizer). Recognizes:
+transaction headers (date/status/description), directives (P,
+commodity, include, ...), postings (account + amount), and comments.
+*/ -}}
+{{- $line := . -}}
+{{- $indentMatches := findRE `^[ \t]*` $line 1 -}}
+{{- $indent := index $indentMatches 0 -}}
+{{- $rest := substr $line (len $indent) -}}
+{{- $m := replaceRE `^([^;]*)(;.*)?$` "$1\x01$2" $rest -}}
+{{- $parts := split $m "\x01" -}}
+{{- $code := index $parts 0 -}}
+{{- $comment := "" -}}
+{{- if gt (len $parts) 1 -}}{{- $comment = index $parts 1 -}}{{- end -}}
+{{- $codeClean := trim $code " \t" -}}
+{{- $commentGap := index (findRE `[ \t]*$` $code 1) 0 -}}
+{{- $out := htmlEscape $indent -}}
+{{- if eq $codeClean "" -}}
+  {{- if ne $comment "" -}}
+    {{- $out = printf `%s<span class="c1">%s</span>` $out (htmlEscape $comment) -}}
+  {{- end -}}
+{{- else if eq $indent "" -}}
+  {{- if findRE `^\d{4}[-/]\d{2}[-/]\d{2}` $codeClean 1 -}}
+    {{- $hm := replaceRE `^(\d{4}[-/]\d{2}[-/]\d{2})[ \t]*([*!])?[ \t]*(\([^)]*\))?[ \t]*(.*)$` "$1\x01$2\x01$3\x01$4" $codeClean -}}
+    {{- $hp := split $hm "\x01" -}}
+    {{- $date := index $hp 0 -}}
+    {{- $status := index $hp 1 -}}
+    {{- $tcode := index $hp 2 -}}
+    {{- $desc := index $hp 3 -}}
+    {{- $out = printf `%s<span class="nb">%s</span>` $out (htmlEscape $date) -}}
+    {{- if ne $status "" -}}{{- $out = printf `%s <span class="k">%s</span>` $out (htmlEscape $status) -}}{{- end -}}
+    {{- if ne $tcode "" -}}{{- $out = printf `%s <span class="nv">%s</span>` $out (htmlEscape $tcode) -}}{{- end -}}
+    {{- if ne $desc "" -}}{{- $out = printf `%s <span class="nf">%s</span>` $out (htmlEscape $desc) -}}{{- end -}}
+  {{- else -}}
+    {{- $dm := replaceRE `^(\S+)[ \t]*(.*)$` "$1\x01$2" $codeClean -}}
+    {{- $dp := split $dm "\x01" -}}
+    {{- $kw := index $dp 0 -}}
+    {{- $drest := index $dp 1 -}}
+    {{- $out = printf `%s<span class="k">%s</span>` $out (htmlEscape $kw) -}}
+    {{- if ne $drest "" -}}{{- $out = printf "%s %s" $out (partial "ledger/tokenize-words.html" $drest) -}}{{- end -}}
+  {{- end -}}
+  {{- if ne $comment "" -}}{{- $out = printf `%s%s<span class="c1">%s</span>` $out $commentGap (htmlEscape $comment) -}}{{- end -}}
+{{- else -}}
+  {{- $pm := replaceRE `^(\S.*?)([ \t]{2,})(.*)$` "$1\x01$2\x01$3" $codeClean -}}
+  {{- $pp := split $pm "\x01" -}}
+  {{- if eq (len $pp) 3 -}}
+    {{- $acct := index $pp 0 -}}
+    {{- $gap := index $pp 1 -}}
+    {{- $amt := index $pp 2 -}}
+    {{- $out = printf `%s<span class="n">%s</span>%s%s` $out (htmlEscape $acct) $gap (partial "ledger/tokenize-words.html" $amt) -}}
+  {{- else -}}
+    {{- $out = printf `%s<span class="n">%s</span>` $out (htmlEscape $codeClean) -}}
+  {{- end -}}
+  {{- if ne $comment "" -}}{{- $out = printf `%s%s<span class="c1">%s</span>` $out $commentGap (htmlEscape $comment) -}}{{- end -}}
+{{- end -}}
+{{- $out | safeHTML -}}

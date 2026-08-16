@@ -1,0 +1,12 @@
+{{- /*
+Chroma has no lexer for hledger/ledger journals, so this render hook
+does the highlighting by hand for ```ledger fences, reusing the site's
+existing Chroma CSS classes (see layouts/partials/ledger/).
+*/ -}}
+{{- $out := "" -}}
+{{- $lines := split (strings.TrimSuffix "\n" .Inner) "\n" -}}
+{{- range $lines -}}
+  {{- $content := partial "ledger/highlight-line.html" . -}}
+  {{- $out = printf "%s<span class=\"line\"><span class=\"cl\">%s\n</span></span>" $out $content -}}
+{{- end -}}
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ledger" data-lang="ledger">{{ $out | safeHTML }}</code></pre></div>

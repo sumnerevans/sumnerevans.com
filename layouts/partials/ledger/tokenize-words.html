@@ -1,0 +1,28 @@
+{{- /*
+Tokenizes a whitespace-separated run of hledger amount/directive tokens
+(e.g. "15.000 VOO  @@  $10,450.65" or "2026-08-12 VOO $710.17") into
+spans using the site's existing Chroma CSS classes. Whitespace between
+tokens is preserved exactly so amount columns stay aligned.
+*/ -}}
+{{- $marked := replaceRE `(\s+)` "\x01$1\x01" . -}}
+{{- $parts := split $marked "\x01" -}}
+{{- $out := "" -}}
+{{- range $parts -}}
+  {{- if eq . "" -}}
+  {{- else if findRE `^\s+$` . 1 -}}
+    {{- $out = printf "%s%s" $out . -}}
+  {{- else -}}
+    {{- $cls := "s" -}}
+    {{- if findRE `^\d{4}[-/]\d{2}[-/]\d{2}$` . 1 -}}
+      {{- $cls = "nb" -}}
+    {{- else if or (eq . "@@") (or (eq . "@") (eq . "=")) -}}
+      {{- $cls = "o" -}}
+    {{- else if findRE `^[-+$0-9,.]*[0-9][-+$0-9,.]*$` . 1 -}}
+      {{- $cls = "m" -}}
+    {{- else if findRE `^\(.*\)$` . 1 -}}
+      {{- $cls = "nv" -}}
+    {{- end -}}
+    {{- $out = printf `%s<span class="%s">%s</span>` $out $cls (htmlEscape .) -}}
+  {{- end -}}
+{{- end -}}
+{{- $out | safeHTML -}}
