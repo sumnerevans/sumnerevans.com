@@ -36,13 +36,13 @@
   }
 
   body.light-theme {
-    @import 'chroma/pygments';
+    @import 'chroma/catppuccin-latte';
   }
 }
 
 @media (prefers-color-scheme: light) {
   body:not(.dark-theme) {
-    @import 'chroma/pygments';
+    @import 'chroma/catppuccin-latte';
   }
 
   body.dark-theme {
