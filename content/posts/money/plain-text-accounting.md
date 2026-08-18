@@ -325,13 +325,26 @@ money moving around. For example, if you get an end-of-month statement from your
 bank, you can record the balance assertions:
 
 ```ledger
-2026-07-31 * End-of Month Balances Based on Account Statements
-    assets:cash:checking  =$1,927.79
-    assets:cash:savings   =$10,000.00
+2026-07-31 * End-of-Month Balances Based on Account Statements
+    assets:cash:checking  0  =   $1,927.79
+    assets:cash:savings   0  =  $10,000.00
 ```
 
-Since there is no amount before the `=`, it's assumed that it's a $0.00
-transaction.
+Alternatively, if you ever get to a point where balances get out of sync with
+reality and you don't want to figure out where the mistake happened, you can use
+balance assertions to correct your amounts going forward:
+
+```ledger
+2026-07-31 * End-of-Month Balance Corrections
+    asets:cash:checking   =$1,930.00
+    asets:cash:savings   =$10,000.00
+    equity:unaccounted                ; any discrepancy will be attributed to this account
+```
+
+In this example, since the amount is omitted on the balance assertion lines, the
+amount is inferred as the difference between the computed amount and the
+asserted amount. Then, the `equity:unaccounted` line is used to absorb any
+discrepancy emerging from those assertions.
 
 ## Other Nice Features
 
