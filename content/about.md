@@ -8,7 +8,7 @@ uselastmod: true
 
 My name is Sumner, and I live in Denver, Colorado. I am a
 [tech lead]({{<ref"/portfolio#experience-canam-tech-lead">}}) at
-[Can/Am Technologies](https://canamtechnologies.com/), a 4th Degree Black Belt
+[Can/Am Technologies](https://canamtechnologies.com/), a 5th Degree Black Belt
 and certified instructor in ATA Taekwondo under Chief Master Corina Black, and
 a Colorado School of Mines alum.
 
