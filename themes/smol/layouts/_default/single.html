@@ -56,12 +56,6 @@
           {{- end -}}
         {{ end }}
       </p>
-    {{ else if .Params.uselastmod }}
-      <p class="article-info">
-        <b>
-          Last modified on <time>{{ .Lastmod.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
-        </b>
-      </p>
     {{ end }}
     <div class="content">
       {{ .Content }}
