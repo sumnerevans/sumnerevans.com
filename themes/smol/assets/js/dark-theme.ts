@@ -84,7 +84,7 @@ const giscusAttributes = {
   "data-category-id": "DIC_kwDOGejfWM4DAkOg",
   "data-mapping": "pathname",
   "data-strict": "1",
-  "data-reactions-enabled": "1",
+  "data-reactions-enabled": "0",
   "data-emit-metadata": "0",
   "data-input-position": "top",
   "data-theme": resolveTheme(),
