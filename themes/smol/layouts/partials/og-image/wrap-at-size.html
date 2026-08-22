@@ -1,0 +1,30 @@
+{{- /*
+  Greedily word-wraps a string to lines of at most N characters.
+
+  Context: dict "title" STRING "charsPerLine" INT
+  Returns: slice of line STRING
+*/ -}}
+{{- $charsPerLine := .charsPerLine -}}
+{{- if lt $charsPerLine 1 -}}{{- $charsPerLine = 1 -}}{{- end -}}
+{{- $words := split .title " " -}}
+{{- $lines := slice -}}
+{{- $current := "" -}}
+{{- range $words -}}
+  {{- $word := . -}}
+  {{- $candidate := $word -}}
+  {{- if ne $current "" -}}
+    {{- $candidate = printf "%s %s" $current $word -}}
+  {{- end -}}
+  {{- if le (len $candidate) $charsPerLine -}}
+    {{- $current = $candidate -}}
+  {{- else -}}
+    {{- if ne $current "" -}}
+      {{- $lines = $lines | append $current -}}
+    {{- end -}}
+    {{- $current = $word -}}
+  {{- end -}}
+{{- end -}}
+{{- if ne $current "" -}}
+  {{- $lines = $lines | append $current -}}
+{{- end -}}
+{{- return $lines -}}

@@ -1,0 +1,41 @@
+{{- /*
+  Picks the largest font size (from a fixed descending list) whose greedily
+  word-wrapped title fits within maxLines at maxWidth px, using an empirical
+  average glyph-advance ratio for Iosevka Heavy.
+
+  Context: dict "title" STRING "maxWidth" INT "maxLines" INT (default 4)
+  Returns: dict "size" INT "lines" (slice of STRING)
+*/ -}}
+{{- $title := .title -}}
+{{- $maxWidth := .maxWidth -}}
+{{- $maxLines := .maxLines | default 4 -}}
+{{- $advanceRatio := 0.5 -}} {{- /* Iosevka's measured advance width: exactly 0.5em/char at every weight. */ -}}
+{{- $sizes := slice 72 60 52 44 36 -}}
+
+{{- $chosenSize := 0 -}}
+{{- $chosenLines := slice -}}
+
+{{- range $sizes -}}
+  {{- $size := . -}}
+  {{- $charsPerLine := div $maxWidth (mul $size $advanceRatio) | int -}}
+  {{- $lines := partial "og-image/wrap-at-size.html" (dict "title" $title "charsPerLine" $charsPerLine) -}}
+  {{- if le (len $lines) $maxLines -}}
+    {{- $chosenSize = $size -}}
+    {{- $chosenLines = $lines -}}
+    {{- break -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if eq $chosenSize 0 -}}
+  {{- /* Even the smallest size overflows maxLines: wrap at the smallest
+         size, then truncate to maxLines and ellipsize the last line. */ -}}
+  {{- $smallest := index $sizes (sub (len $sizes) 1) -}}
+  {{- $charsPerLine := div $maxWidth (mul $smallest $advanceRatio) | int -}}
+  {{- $lines := partial "og-image/wrap-at-size.html" (dict "title" $title "charsPerLine" $charsPerLine) -}}
+  {{- $truncated := first (sub $maxLines 1) $lines -}}
+  {{- $lastLine := index $lines (sub $maxLines 1) -}}
+  {{- $chosenSize = $smallest -}}
+  {{- $chosenLines = $truncated | append (printf "%s…" $lastLine) -}}
+{{- end -}}
+
+{{- return dict "size" $chosenSize "lines" $chosenLines -}}

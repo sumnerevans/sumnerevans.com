@@ -24,7 +24,12 @@
   {{ with .Site.Params.author }}
     <meta name="author" content="{{ . }}">
   {{ end }}
-  {{- if .Params.image -}}
+  {{- $ogImage := partial "og-image.html" . -}}
+  {{- if $ogImage -}}
+    <meta property="og:image" content="{{ $ogImage.Permalink }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+  {{- else if .Params.image -}}
     {{- $featureImage := .Resources.Get .Params.image -}}
     {{- with $featureImage -}}
       {{ if eq .MediaType.SubType "svg" }}

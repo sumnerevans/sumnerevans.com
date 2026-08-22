@@ -1,11 +1,6 @@
-{{- $images := partial "_funcs/get-page-images" . }}
-{{- with index $images 0 }}
+{{- with partial "og-image.html" . }}
   <meta name="twitter:card" content="summary_large_image">
-  {{- if or (eq .MediaType.Type "image/svg+xml") (eq .MediaType.Type "image/gif") }}
-    <meta name="twitter:image" content="{{ .Permalink }}">
-  {{- else }}
-    <meta name="twitter:image" content="{{ ( .Resize "800x webp photo" ).Permalink }}">
-  {{- end }}
+  <meta name="twitter:image" content="{{ .Permalink }}">
 {{- else }}
   <meta name="twitter:card" content="summary">
 {{- end }}

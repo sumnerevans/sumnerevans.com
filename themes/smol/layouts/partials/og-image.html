@@ -1,0 +1,174 @@
+{{- /*
+  Builds a 1200x630 branded OG/social-preview image for an article page: the
+  feature photo (if any) darkened with a bottom scrim, or a branded fallback
+  background; the wrapped post title; a "Posted on ... in ..." / "Tags: ..."
+  line (shown under the same conditions as the article-info line in
+  single.html); a name + subtitle + avatar chip in the top-right corner; and
+  a left accent bar. Publishes the result as a page resource and returns it.
+
+  Context: page (`.`)
+  Returns: resource.Image, or 0 if the page is not an article (`.IsPage` false)
+*/ -}}
+{{- $result := 0 -}}
+
+{{- if .IsPage -}}
+  {{- $canvasWidth := 1200 -}}
+  {{- $canvasHeight := 630 -}}
+  {{- $leftInset := 64 -}}
+  {{- $rightInset := 64 -}}
+
+  {{- $font := resources.Get "fonts/Iosevka-Heavy.ttf" -}}
+  {{- $labelFont := resources.Get "fonts/Iosevka-Regular.ttf" -}}
+  {{- $accentBar := resources.Get "images/og/accent-bar.png" -}}
+  {{- $avatarMask := resources.Get "images/og/avatar-mask.png" -}}
+  {{- $brandBacking := resources.Get "images/og/brand-backing.png" -}}
+  {{- $scrim := resources.Get "images/og/scrim-bottom.png" -}}
+  {{- $fallbackBg := resources.Get "images/og/fallback-bg.png" -}}
+
+  {{- /* Background: feature photo (scrimmed for legibility) or the branded
+         fallback. The fallback/scrim/backing assets must be true-color RGBA
+         PNGs, not grayscale-typed ones — a grayscale base canvas forces
+         every later color overlay (e.g. the avatar photo) to render as
+         grayscale too. */ -}}
+  {{- $canvas := 0 -}}
+  {{- with .Params.image -}}
+    {{- $feature := $.Resources.Get . -}}
+    {{- with $feature -}}
+      {{- if ne .MediaType.SubType "svg" -}}
+        {{- /* "Center" not "Smart": Hugo's Smart-crop anchor has been
+               observed to fall back to a plain non-cropping stretch/resize
+               on at least one real source image here, distorting it.
+               Center is a plain zoom-to-cover + center-crop with no
+               heuristics to misfire, which is also just what we want. */ -}}
+        {{- $filled := .Fill (printf "%dx%d Center png" $canvasWidth $canvasHeight) -}}
+        {{- $canvas = $filled.Filter (images.Overlay $scrim 0 0) -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if not $canvas -}}
+    {{- $canvas = $fallbackBg -}}
+  {{- end -}}
+
+  {{- $canvas = $canvas.Filter (images.Overlay $accentBar 0 0) -}}
+
+  {{- /* Corner branding chip: avatar on the right, site name + subtitle
+         stacked to its left. Sized to be prominent even in small link
+         previews (Slack/iMessage/Twitter shrink OG images a lot). The
+         backing plate's on-disk size (assets/images/og/brand-backing.png,
+         570x170) was computed to exactly fit "Tech Lead at Can/Am
+         Technologies" at size 24 plus a 130px avatar with 20px padding on
+         every side — Iosevka's advance width is exactly 0.5em/char, so
+         this isn't a guess. If the name, subtitle, or their sizes change,
+         recompute the backing size instead of leaving slack around the
+         text. Lives in the top-right (not bottom-right) so it can never
+         collide with the bottom-anchored title on a long single-line
+         title. */ -}}
+  {{- $brandPadding := 20 -}}
+  {{- $avatarSize := 130 -}}
+  {{- $textGap := 16 -}}
+  {{- $backingHeight := add $avatarSize (mul $brandPadding 2) -}}
+  {{- $backingRight := sub $canvasWidth $rightInset -}}
+  {{- $backingTop := 24 -}}
+  {{- $backingCenterY := add $backingTop (div $backingHeight 2) -}}
+  {{- $avatarRight := sub $backingRight $brandPadding -}}
+  {{- $avatarLeft := sub $avatarRight $avatarSize -}}
+  {{- $avatarTop := add $backingTop $brandPadding -}}
+  {{- $labelX := sub $avatarLeft $textGap -}}
+  {{- $subtitleWidth := 384 -}} {{- /* measured: 32 chars * 24px * 0.5em/char */ -}}
+  {{- $backingLeft := sub (sub $labelX $subtitleWidth) $brandPadding -}}
+
+  {{- $canvas = $canvas.Filter (images.Overlay $brandBacking $backingLeft $backingTop) -}}
+  {{- with resources.Get "profile.jpg" -}}
+    {{- $avatar := (.Fill (printf "%dx%d png" $avatarSize $avatarSize)).Filter (images.Mask $avatarMask) -}}
+    {{- $canvas = $canvas.Filter (images.Overlay $avatar $avatarLeft $avatarTop) -}}
+  {{- end -}}
+  {{- $canvas = $canvas.Filter (images.Text .Site.Title (dict
+    "color" "#ffffff"
+    "size" 42
+    "x" $labelX
+    "y" (sub $backingCenterY 4)
+    "alignx" "right"
+    "aligny" "bottom"
+    "font" $labelFont
+  )) -}}
+  {{- with .Site.Params.subtitle -}}
+    {{- $canvas = $canvas.Filter (images.Text . (dict
+      "color" "#b8b8b8"
+      "size" 24
+      "x" $labelX
+      "y" (add $backingCenterY 6)
+      "alignx" "right"
+      "aligny" "top"
+      "font" $labelFont
+    )) -}}
+  {{- end -}}
+
+  {{- /* Title: bottom-anchored, leaving room below for the metadata block. */ -}}
+  {{- $maxWidth := sub (sub $canvasWidth $leftInset) $rightInset -}}
+  {{- $wrapped := partial "og-image/wrap-text.html" (dict "title" .Title "maxWidth" $maxWidth "maxLines" 4) -}}
+  {{- $titleText := delimit $wrapped.lines "\n" -}}
+
+  {{- $canvas = $canvas.Filter (images.Text $titleText (dict
+    "color" "#ffffff"
+    "size" $wrapped.size
+    "linespacing" 10
+    "x" $leftInset
+    "y" 480
+    "alignx" "left"
+    "aligny" "bottom"
+    "font" $font
+  )) -}}
+
+  {{- /* Metadata: "Posted on DATE in CATEGORY" then, on its own line,
+         "Tags: ..." — shown under the same condition single.html uses for
+         its article-info line (has prev/next in the main chronological
+         list, and has at least one of date/tags/categories), and mirrors
+         its wording. */ -}}
+  {{- $reg := where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
+  {{- $showMeta := and (or ($reg.Prev .) ($reg.Next .)) (or .Date .Params.tags .Params.categories) -}}
+  {{- if $showMeta -}}
+    {{- $postedLine := "Posted" -}}
+    {{- with .Date -}}
+      {{- $postedLine = printf "%s on %s" $postedLine (.Format (default "2 January 2006" $.Site.Params.dateFmt)) -}}
+    {{- end -}}
+    {{- with .Params.categories -}}
+      {{- $postedLine = printf "%s in %s" $postedLine (index . 0) -}}
+    {{- end -}}
+
+    {{- $tagsLine := "" -}}
+    {{- with .Params.tags -}}
+      {{- $tagsLine = printf "Tags: %s" (delimit . ", ") -}}
+      {{- $maxTagsChars := 100 -}}
+      {{- if gt (len $tagsLine) $maxTagsChars -}}
+        {{- $tagsLine = printf "%s…" (substr $tagsLine 0 $maxTagsChars) -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- if ne $tagsLine "" -}}
+      {{- $canvas = $canvas.Filter (images.Text (printf "%s\n%s" $postedLine $tagsLine) (dict
+        "color" "#a3a3a3"
+        "size" 22
+        "linespacing" 8
+        "x" $leftInset
+        "y" 588
+        "alignx" "left"
+        "aligny" "bottom"
+        "font" $labelFont
+      )) -}}
+    {{- else -}}
+      {{- $canvas = $canvas.Filter (images.Text $postedLine (dict
+        "color" "#a3a3a3"
+        "size" 22
+        "x" $leftInset
+        "y" 588
+        "alignx" "left"
+        "aligny" "bottom"
+        "font" $labelFont
+      )) -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- $result = resources.Copy (path.Join .RelPermalink "og-image.png") $canvas -}}
+{{- end -}}
+
+{{- return $result -}}
