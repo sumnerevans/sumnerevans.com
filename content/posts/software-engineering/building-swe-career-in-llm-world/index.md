@@ -8,6 +8,7 @@ tags:
   - Career
   - Tech Lead
   - LLM
+image: images/levels.png
 ---
 
 > [!ABSTRACT] TL;DR
