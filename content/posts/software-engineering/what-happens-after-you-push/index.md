@@ -13,8 +13,6 @@ tags:
 description: |
   A survey of how code gets deployed and monitored, and how that impacts SWEs
 image: images/so-cicd.png
-build:
-  publishResources: false
 aliases:
   - /posts/programming/what-happens-after-you-push
 ---
