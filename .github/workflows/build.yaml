@@ -41,13 +41,14 @@ jobs:
 
       - run: npm install
 
-      - name: Cache Generated Images
-        id: cache-images
-        uses: actions/cache@v6
+      - name: Restore Generated Images Cache
+        id: restore-cache-images
+        uses: actions/cache/restore@v6
         with:
           path: resources
-          key: images-${{ hashFiles('hugo.yaml') }}-${{ hashFiles('themes/**/*') }}-${{ github.run_id }}
+          key: images-${{ hashFiles('hugo.yaml') }}-${{ hashFiles('themes/**/*') }}-${{ hashFiles('assets/**/*') }}-${{ github.run_id }}
           restore-keys: |
+            images-${{ hashFiles('hugo.yaml') }}-${{ hashFiles('themes/**/*') }}-${{ hashFiles('assets/**/*') }}-
             images-${{ hashFiles('hugo.yaml') }}-${{ hashFiles('themes/**/*') }}-
             images-${{ hashFiles('hugo.yaml') }}-
             images-
@@ -67,6 +68,13 @@ jobs:
           rm -rf public/teaching/csci564-s21
           cp -r content/teaching/csci400-s19 public/teaching
           cp -r content/teaching/csci564-s21 public/teaching
+
+      - name: Save Generated Images Cache
+        if: success()
+        uses: actions/cache/save@v6
+        with:
+          path: resources
+          key: ${{ steps.restore-cache-images.outputs.cache-primary-key }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
