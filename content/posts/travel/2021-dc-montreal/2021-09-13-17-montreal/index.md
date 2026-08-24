@@ -5,8 +5,6 @@ categories: [Trip to D.C. and Montreal, Work Retreats]
 tags: [Travel, Montreal, Beeper, Work]
 image: images/team.jpg
 description: "My company, Beeper, had our first retreat in Montreal, Canada. These are my thoughts and reflections on the trip."
-build:
-  publishResources: false
 ---
 
 As I mentioned in my

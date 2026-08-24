@@ -4,8 +4,6 @@ Date: 2017-01-05T16:47:00-0600
 Categories: [Caribbean Cruise 2016-17]
 Tags: [Cayman Islands, Grand Cayman, Snorkeling, Stingray]
 image: images/cayman16.jpg
-build:
-  publishResources: false
 ---
 
 Today we were in Grand Cayman, Cayman Islands. English is the first language in

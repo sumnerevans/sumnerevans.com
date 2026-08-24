@@ -9,8 +9,6 @@ tags:
 description: |
   I went to Waterloo battlefield.
 image: images/mound.jpg
-build:
-  publishResources: false
 ---
 
 Today I visited the Waterloo battlefield. I'd visited the town of Waterloo and

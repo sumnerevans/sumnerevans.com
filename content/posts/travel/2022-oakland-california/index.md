@@ -10,8 +10,6 @@ tags:
   - California
 description: "This week, I went to see my friend, Jack, in Oakland."
 image: images/golden-gate-bridge.jpg
-build:
-  publishResources: false
 ---
 
 This week, I went to Oakland to visit a friend Jack Garner, a friend from school

@@ -10,8 +10,6 @@ tags:
 description: |
   In this article, I share seven things that I've learned to do seven years into
   my career as a software engineer.
-build:
-  publishResources: false
 math: true
 aliases:
   - /posts/programming/7-things-ive-learned-7-years-into-my-career

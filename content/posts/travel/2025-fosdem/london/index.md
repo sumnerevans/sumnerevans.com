@@ -12,8 +12,6 @@ description: |
   On my way to FOSDEM, I flew into London for a few days before taking the
   Eurostar to Brussels for the conference.
 image: images/stpauls.jpg
-build:
-  publishResources: false
 ---
 
 I once again am making a trip across the pond for FOSDEM. This time, instead of

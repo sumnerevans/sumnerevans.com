@@ -16,8 +16,6 @@ description: |
   This week, Beeper (now part of Automattic) had a week-long work retreat in
   Amsterdam, Netherlands. These are my thoughts and reflections on the trip.
 image: images/team.jpg
-build:
-  publishResources: false
 ---
 
 This week, Beeper had our second meetup after being

@@ -8,8 +8,6 @@ tags:
   - Travel
   - San Francisco
   - California
-build:
-  publishResources: false
 ---
 
 This morning I left for a hackathon at Facebook Headquarters. I had to wake up

@@ -4,8 +4,6 @@ Date: 2015-07-29T12:25:00-0600
 Categories: [Baltic Cruise and Northern Europe]
 Tags: [Russia, St. Petersburg]
 image: images/st-petersburg1.jpg
-build:
-  publishResources: false
 ---
 
 The stereotypes are true. Russia was pretty much as I expected.

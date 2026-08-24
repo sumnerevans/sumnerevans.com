@@ -4,8 +4,6 @@ date: 2018-11-03T21:04:00-0600
 categories: [School]
 tags: [ICPC, Competitive Programming, Mines]
 image: images/2018-icpc.jpg
-build:
-  publishResources: false
 summary: |
   Today I competed in the International Collegiate Programming Contest (ICPC)
   Rocky Mountain Regionals at Colorado State University (CSU).

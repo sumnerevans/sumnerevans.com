@@ -12,8 +12,6 @@ description: |
   experience, and it made me even more grateful for the sacrifices of the
   Greatest Generation during the war.
 image: images/cemetery.jpg
-build:
-  publishResources: false
 ---
 
 Today, I took a day trip to the Normandy beaches. The tour visited Omaha Beach,

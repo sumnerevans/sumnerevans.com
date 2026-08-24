@@ -12,8 +12,6 @@ description: |
   My last day in Amsterdam before I headed back home. I wandered around the
   beautiful streets of Amsterdam and had a nice lunch.
 image: images/canal.jpg
-build:
-  publishResources: false
 ---
 
 I woke up late on my last day in Amsterdam, and missed breakfast at the hotel.

@@ -8,8 +8,6 @@ tags:
   - France
 description: "TODO"
 draft: true
-build:
-  publishResources: false
 ---
 
 Today, I went to the Louvre and walked to Notre Dame.

@@ -8,8 +8,6 @@ tags:
  - National Air and Space Museum
  - National Postal Museum
 image: images/911-display.png
-build:
-  publishResources: false
 ---
 
 I woke up this morning around 08:30 with the plan to meet up with Sam, Jo, and

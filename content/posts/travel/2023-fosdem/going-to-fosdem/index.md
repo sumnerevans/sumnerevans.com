@@ -9,8 +9,6 @@ tags:
   - Belgium
 description: |
   I'm going to FOSDEM!
-build:
-  publishResources: false
 ---
 
 I'm excited to announce that I'll be travelling to Brussels at the end of the

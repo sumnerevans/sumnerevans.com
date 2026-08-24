@@ -3,8 +3,6 @@ title: Respecting Theme Preferences on Your Website
 date: 2020-04-07T15:00:00-06:00
 categories: [Programming]
 tags: [JavaScript, Dark Theme, Dark Mode, CSS, HTML]
-build:
-  publishResources: false
 ---
 
 You may have noticed that dark themes are becoming more and more common across

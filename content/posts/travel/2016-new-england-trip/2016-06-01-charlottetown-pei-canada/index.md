@@ -4,8 +4,6 @@ Date: 2016-06-01T19:00:00-0600
 Categories: [New England Trip]
 Tags: [Anne of Green Gables, Canada, Captain, Charlottetown, Confederation Bridge, Confederation Hall, Cow's, Fishing Village, North Shore PEI, PEI, Prince Edward Island, Travel, Victoria Row]
 image: images/pei14.jpg
-build:
-  publishResources: false
 ---
 
 Today we went on a car tour through Prince Edward Island and then we walked

@@ -4,8 +4,6 @@ Date: 2016-05-25T19:00:00
 Categories: [New England Trip]
 Tags: [Bermuda, Hamilton, Snorkeling, Tobacco Bay, Town of St. George]
 image: images/bermuda-1.jpg
-build:
-  publishResources: false
 ---
 
 Today we went to St. George’s Island.

@@ -11,8 +11,6 @@ tags:
 description: |
   Both times Donald Trump had to make a pick for Vice President he made the
   perfect decision.
-build:
-  publishResources: false
 ---
 
 Donald Trump has made two vice presidential picks. In 2016 he chose Mike Pence,

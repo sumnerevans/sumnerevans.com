@@ -15,8 +15,6 @@ summary: |
   getting to the airport on time.  It worked, and it was a good thing because
   once we got off the ship we had to wait in a massive queue at immigration.
   Still, we made it to the airport with plenty of time.
-build:
-  publishResources: false
 ---
 
 Today was the end of our cruise :(

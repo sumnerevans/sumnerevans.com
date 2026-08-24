@@ -8,8 +8,6 @@ tags:
   - Menlo Park
   - California
 image: images/2018-11-15-fb-team.jpg
-build:
-  publishResources: false
 ---
 
 I woke up at 8:00 on Thursday morning. After a quick shower, I went down to eat

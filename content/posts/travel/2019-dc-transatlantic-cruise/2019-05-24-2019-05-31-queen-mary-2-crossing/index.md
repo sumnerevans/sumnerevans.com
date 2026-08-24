@@ -4,8 +4,6 @@ date: 2019-05-31T23:50:00-06:00
 categories: [Trip to D.C. and Transatlantic Cruise]
 tags: [Cruise, Queen Mary 2, WWII, Veterans]
 image: images/veteran-sax.jpg
-build:
-  publishResources: false
 ---
 
 Instead of giving you a day-by-day on what we did on the crossing (I was told

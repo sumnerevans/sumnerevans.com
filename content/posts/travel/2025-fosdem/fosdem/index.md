@@ -15,8 +15,6 @@ description: |
   For the third year in a row, I attended FOSDEM. I attended the Matrix
   community meetup as well as many talks at the main conference.
 image: images/matrix.jpg
-build:
-  publishResources: false
 ---
 
 For the third year in a row, I attended [FOSDEM](https://fosdem.org/2025/), a

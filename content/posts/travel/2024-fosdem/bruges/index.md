@@ -12,8 +12,6 @@ tags:
 description: |
   Today I took the train to Bruges, a beautiful city near the Belgian coast.
 image: images/bruges-8.jpg
-build:
-  publishResources: false
 ---
 
 Today I went to Bruges, a beautiful city near the Belgian Atlantic coast. I woke
