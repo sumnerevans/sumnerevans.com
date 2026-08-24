@@ -2,7 +2,7 @@
   <p class="copyright">
     &copy; {{ now.Year }} {{ .Site.Title }}
   </p>
-  <p id="theme-switcher" class="hidden">
+  <div id="theme-switcher" class="hidden">
     <span class="dark">
       {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/moon" "size" "1.5em" "className" "deselected") }}
       {{ partial "icons/icon" (dict "vendor" "tabler" "name" "filled/moon" "size" "1.5em" "className" "selected") }}
@@ -12,7 +12,7 @@
       {{ partial "icons/icon" (dict "vendor" "tabler" "name" "filled/sun" "size" "1.5em" "className" "selected") }}
     </span>
     <span class="browser">{{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/sun-moon" "size" "1.5em") }}</span>
-  </p>
+  </div>
 </footer>
 
 {{ with resources.Get "js/search.ts" | js.Build (dict "minify" hugo.IsProduction) }}
