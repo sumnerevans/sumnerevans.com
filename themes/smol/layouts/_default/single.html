@@ -76,6 +76,7 @@
 </div>
 {{ if or ($reg.Prev .) ($reg.Next .) }}
   {{ partial "sidebar.html" . }}
+  {{ partial "discussion-links.html" . }}
   <aside class="comments">
     <noscript>Please enable JavaScript to view comments.</noscript>
   </aside>

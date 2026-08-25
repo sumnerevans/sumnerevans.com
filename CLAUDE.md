@@ -99,6 +99,7 @@ All posts require frontmatter with:
 - `categories` - List of categories
 - `tags` - List of tags (optional)
 - `math: true` - Enable if using LaTeX math (optional)
+- `discussion_links` - List of external discussion links (e.g. Lobsters, Reddit) to surface in the "Join the Conversation" footer section (optional). Each entry has a `name` and a `url`.
 
 Example:
 ```yaml
@@ -110,6 +111,11 @@ categories:
 tags:
   - Hugo
   - Nix
+discussion_links:
+  - name: Lobsters
+    url: https://lobste.rs/s/xxxxx
+  - name: Reddit
+    url: https://reddit.com/r/programming/comments/xxxx
 ---
 ```
 
