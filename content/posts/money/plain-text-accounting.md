@@ -10,6 +10,8 @@ tags:
   - Personal Finance
   - hledger
 discussion_links:
+  - name: Lobsters
+    url: https://lobste.rs/s/i4lxyt/plain_text_accounting_is_pretty_cool
   - name: r/plaintextaccounting
     url: https://www.reddit.com/r/plaintextaccounting/s/7NdiAtpyRF
 ---
