@@ -1,0 +1,15 @@
+{{- with .Params.discussion_links -}}
+<aside class="discussion-links">
+  <div class="header">
+    <h3>JOIN THE CONVERSATION</h3>
+  </div>
+  <p>
+    Join the conversation on
+    {{- range first 1 . }} <a href="{{ .url }}">{{ .name }}</a>{{ end -}}
+    {{- range after 1 . -}}
+      , <a href="{{ .url }}">{{ .name }}</a>
+    {{- end -}}
+    , or comment below.
+  </p>
+</aside>
+{{- end -}}
