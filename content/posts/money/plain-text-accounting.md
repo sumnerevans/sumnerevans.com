@@ -9,6 +9,9 @@ tags:
   - Double-Entry Bookkeeping
   - Personal Finance
   - hledger
+discussion_links:
+  - name: r/plaintextaccounting
+    url: https://www.reddit.com/r/plaintextaccounting/s/7NdiAtpyRF
 ---
 
 I like to keep track of my finances pretty religiously. I don't really budget, I
