@@ -11,10 +11,12 @@ tags:
 discussion_links:
   - name: Lobsters
     url: https://lobste.rs/s/oqlpna/stop_using_conventional_commits
-  - name: r/git
-    url: https://www.reddit.com/r/git/s/BAwmMLLxon
+  - name: Hacker News
+    url: https://news.ycombinator.com/item?id=48414027
   - name: r/programming
     url: https://www.reddit.com/r/programming/s/1DIhn6Jv7y
+  - name: r/git
+    url: https://www.reddit.com/r/git/s/BAwmMLLxon
   - name: r/SoftwareEngineering
     url: https://www.reddit.com/r/SoftwareEngineering/s/qUncoDGUNN
 ---
