@@ -75,10 +75,28 @@
   {{ end }}
 </div>
 {{ if or ($reg.Prev .) ($reg.Next .) }}
-  {{ partial "sidebar.html" . }}
-  {{ partial "discussion-links.html" . }}
-  <aside class="comments">
-    <noscript>Please enable JavaScript to view comments.</noscript>
+  {{ partial "related-posts.html" . }}
+  <aside class="discussion">
+    <div class="header">
+      <h3>DISCUSSION</h3>
+    </div>
+    {{- with .Params.discussion_links -}}
+      <p>
+        Join the conversation on
+        {{- range first 1 . }} <a href="{{ .url }}">{{ .name }}</a>{{ end -}}
+        {{- range after 1 . -}}
+          , <a href="{{ .url }}">{{ .name }}</a>
+        {{- end -}}
+        , or comment below.
+      </p>
+    {{- else -}}
+      <p>
+        Join the conversation by commenting below.
+      </p>
+    {{- end -}}
+    <div class="comments">
+      <noscript>Please enable JavaScript to view comments.</noscript>
+    </div>
   </aside>
 {{ end }}
 {{ end }}

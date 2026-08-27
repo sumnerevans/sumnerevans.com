@@ -95,4 +95,4 @@ const giscusAttributes = {
 
 const giscusScript = document.createElement("script");
 Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
-document.querySelector("aside.comments")?.appendChild(giscusScript);
+document.querySelector("div.comments")?.appendChild(giscusScript);
