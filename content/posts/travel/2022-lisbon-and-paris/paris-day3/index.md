@@ -6,12 +6,13 @@ tags:
   - Travel
   - Paris
   - France
-description: "TODO"
+description: I went to the Louvre and walked to the Notre Dame Cathedral.
 draft: true
 ---
 
-Today, I went to the Louvre and walked to Notre Dame.
+Today, I went to the Louvre and walked to the Notre Dame Cathedral.
 
+I booked a tour of the Louvre, and 
 
 
 * castle under the Louvre
