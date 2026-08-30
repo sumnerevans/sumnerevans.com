@@ -284,14 +284,6 @@ demonstrate that there are better ways to structure commit messages. But if this
 article has not convinced you to stop using Conventional Commits, I look forward
 to the flame war in the comment section.
 
-<span class="secondary">
-
-Join the conversation in the comments section below or on
-[lobste.rs](https://lobste.rs/s/oqlpna/stop_using_conventional_commits) or
-[Hacker News](https://news.ycombinator.com/item?id=48414027).
-
-</span>
-
 [^1]: Technically, the Conventional Commits specification only defines `fix` and
     `feat` and leaves additional types up to individual projects to specify.
     However, most projects just end up using the types
