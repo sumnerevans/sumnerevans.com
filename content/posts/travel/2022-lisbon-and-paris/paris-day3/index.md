@@ -12,7 +12,7 @@ draft: true
 
 Today, I went to the Louvre and walked to the Notre Dame Cathedral.
 
-I booked a tour of the Louvre, and 
+I booked a tour of the Louvre, and
 
 
 * castle under the Louvre
