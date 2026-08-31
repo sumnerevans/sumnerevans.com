@@ -60,7 +60,7 @@ On Saturday morning, Ethan and I went to his Brazilian Jiu-Jitsu gym for a
 class. Ethan trained as a kid in taekwondo in the same organization that I am a
 member of, and he's recently started training in jiu-jitsu.
 
-I've done a handfull of jiu-jitsu basics classes taught by my previous taekwondo
+I've done a handful of jiu-jitsu basics classes taught by my previous taekwondo
 instructor who cross trained in jiu-jitsu, but I don't really know any moves.
 The training was quite fun, and we did a bunch of different drills. Everyone was
 very welcoming and I enjoyed trying a different martial art!

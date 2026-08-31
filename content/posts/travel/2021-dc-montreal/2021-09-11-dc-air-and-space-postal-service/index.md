@@ -82,7 +82,7 @@ printed upside down!
 
 The exhibits downstairs was about the history of the postal service and the
 various methods that mail is moved. Pretty much all possible transportation
-methods have been used to tranport mail from dogsled to airplane, horseback to
+methods have been used to transport mail from dogsled to airplane, horseback to
 ocean liner, mule train to railway train. The exhibit that was most interesting
 to me was describing mail being transported by rail. They would sort the mail on
 the train and throw out bags of mail onto the platforms as the train went past

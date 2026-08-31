@@ -249,7 +249,7 @@ scores.
 | **Author**      | Scott Enriquez                                                                                       |
 | **Beginner**    | Problem F, 26/81 (32%) solved/tries, 76% solve rate                                                  |
 | **Advanced**    | Problem C, 30/63 (48%) solved/tries, 97% solve rate                                                  |
-| **Concept**     | a `for` loop (or notice that modular aritemetic would solve the problem)                             |
+| **Concept**     | a `for` loop (or notice that modular arithmetic would solve the problem)                             |
 
 > [!NOTE] Problem Summary
 >

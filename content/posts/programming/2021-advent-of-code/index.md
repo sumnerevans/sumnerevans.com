@@ -1824,7 +1824,7 @@ that's the most important part.
 
 I somehow managed to retake third place tonight. At 1808 I'm miles behind Colin
 (1950) and Kelly (1932), and only a point ahead of Sam Sartor (1807) now. Adam
-is at 1725, and Ryan is in 6th place with 1714, hewever he hasn't solved day 19
+is at 1725, and Ryan is in 6th place with 1714, however he hasn't solved day 19
 or day 22 part 2 yet, so if he does that, he'll jump back above me to third
 place. Dorian (1619), Jordan (1501), Jack (1418), and restitux (1396) round out
 the top ten going in to day 23.
