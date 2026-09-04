@@ -632,9 +632,9 @@ uselastmod: true
     </h3>
     <span>February, September 2023</span>
     <p>
-      <a href="https://raw.githubusercontent.com/sumnerevans/acm-git-good/master/git.pdf" target="_blank">
+      <a href="https://raw.githubusercontent.com/sumnerevans/presentations/master/acm-git-good/git.pdf" target="_blank">
         {{< ico "tabler" "outline/file-type-pdf" >}} Slides</a>
-      | <a href="https://github.com/sumnerevans/acm-git-good" target="_blank">
+      | <a href="https://github.com/sumnerevans/presentations/tree/master/acm-git-good" target="_blank">
         {{< ico "tabler" "outline/brand-github" >}} GitHub </a>
     </p>
   </summary>
@@ -697,7 +697,7 @@ uselastmod: true
 </details>
 
 <details class="portfolio-more-items">
-  <summary><div>+16 More</div></summary>
+  <summary><div>+17 More</div></summary>
 
   <details id="presentation-matrix-bot-workshop" class="portfolio-item no-logo">
     <summary>
@@ -770,6 +770,30 @@ uselastmod: true
         <a target="_blank" href="https://gitlab.com/doriangc">Dorian Cauwe</a>.
         We discussed the different types of GUI toolkits available and we presented the pros
         and cons of three specific GUI toolkits: Flutter, GTK, and Qt.
+      </p>
+    </div>
+  </details>
+
+  <details id="presentation-lug-backup-strategies" class="portfolio-item no-logo">
+    <summary>
+      <h3>
+        Backup Strategies
+        <a class="permalink" href="#presentation-lug-backup-strategies"
+          aria-label="Permalink to Backup Strategies">{{< ico "tabler" "outline/link" >}}</a>
+      </h3>
+      <span>October 2020</span>
+      <p>
+        <a href="https://github.com/sumnerevans/presentations/tree/master/lug-backup-strategies" target="_blank">
+          {{< ico "tabler" "outline/brand-githhub" >}} GitHub</a>
+        | <a href="https://raw.githubusercontent.com/sumnerevans/presentations/master/lug-backup-strategies/backup.pdf" target="_blank">
+          {{< ico "tabler" "outline/file-type-pdf" >}} PDF</a>
+      </p>
+    </summary>
+    <div>
+      <p>
+        I gave this presentation at the Mines Linux Users Group. I discussed
+        best practices and general rules for backups and described my backup
+        setup: Git + GitHub/GitLab/Sourcehut and Syncthing + Restic.
       </p>
     </div>
   </details>
