@@ -784,7 +784,7 @@ uselastmod: true
       <span>October 2020</span>
       <p>
         <a href="https://github.com/sumnerevans/presentations/tree/master/lug-backup-strategies" target="_blank">
-          {{< ico "tabler" "outline/brand-githhub" >}} GitHub</a>
+          {{< ico "tabler" "outline/brand-github" >}} GitHub</a>
         | <a href="https://raw.githubusercontent.com/sumnerevans/presentations/master/lug-backup-strategies/backup.pdf" target="_blank">
           {{< ico "tabler" "outline/file-type-pdf" >}} PDF</a>
       </p>
