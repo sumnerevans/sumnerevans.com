@@ -49,6 +49,12 @@
   {{ partial "opengraph.html" . }}
   {{ partial "twitter_cards.html" . }}
 
+  <!-- Fonts -->
+  <link rel="preload" href="/fonts/webfont/Iosevka-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/webfont/Iosevka-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/webfont/Iosevka-Italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/webfont/Iosevka-BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+
   <!-- CSS -->
   {{ with resources.Get "scss/main.scss" | css.Sass (dict "outputStyle" "compact") }}
     <style>{{ .Content | safeCSS }}</style>
