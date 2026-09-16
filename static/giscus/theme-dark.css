@@ -1,0 +1,166 @@
+/*!
+ * Custom giscus theme for sumnerevans.com (dark mode).
+ *
+ * Structurally based on giscus's built-in `dark.css` theme
+ * (https://github.com/giscus/giscus/blob/main/styles/themes/dark.css),
+ * licensed under the MIT License, Copyright (c) 2018 GitHub Inc.
+ * https://github.com/primer/primitives/blob/main/LICENSE
+ *
+ * Color/font values below are overridden to match this site's dark-mode
+ * palette (see themes/smol/assets/scss/dark-mode.scss).
+ */
+
+:host,
+html {
+  --font-family-sans: Iosevka, monospace;
+  --font-family-monospace: Iosevka, monospace;
+}
+
+html,
+body {
+  background-color: #282828;
+}
+
+body {
+  padding-right: 3px;
+}
+
+@font-face {
+  font-family: Iosevka;
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: url('https://sumnerevans.com/fonts/webfont/Iosevka-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Iosevka;
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+  src: url('https://sumnerevans.com/fonts/webfont/Iosevka-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Iosevka;
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+  src: url('https://sumnerevans.com/fonts/webfont/Iosevka-Italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: Iosevka;
+  font-display: swap;
+  font-weight: 700;
+  font-style: italic;
+  src: url('https://sumnerevans.com/fonts/webfont/Iosevka-BoldItalic.woff2') format('woff2');
+}
+
+main {
+  --color-prettylights-syntax-comment: #8b949e;
+  --color-prettylights-syntax-constant: #79c0ff;
+  --color-prettylights-syntax-entity: #d2a8ff;
+  --color-prettylights-syntax-storage-modifier-import: #c9d1d9;
+  --color-prettylights-syntax-entity-tag: #7ee787;
+  --color-prettylights-syntax-keyword: #ff7b72;
+  --color-prettylights-syntax-string: #a5d6ff;
+  --color-prettylights-syntax-variable: #ffa657;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #f85149;
+  --color-prettylights-syntax-invalid-illegal-text: #f0f6fc;
+  --color-prettylights-syntax-invalid-illegal-bg: #8e1519;
+  --color-prettylights-syntax-carriage-return-text: #f0f6fc;
+  --color-prettylights-syntax-carriage-return-bg: #b62324;
+  --color-prettylights-syntax-string-regexp: #7ee787;
+  --color-prettylights-syntax-markup-list: #f2cc60;
+  --color-prettylights-syntax-markup-heading: #1f6feb;
+  --color-prettylights-syntax-markup-italic: #c9d1d9;
+  --color-prettylights-syntax-markup-bold: #c9d1d9;
+  --color-prettylights-syntax-markup-deleted-text: #ffdcd7;
+  --color-prettylights-syntax-markup-deleted-bg: #67060c;
+  --color-prettylights-syntax-markup-inserted-text: #aff5b4;
+  --color-prettylights-syntax-markup-inserted-bg: #033a16;
+  --color-prettylights-syntax-markup-changed-text: #ffdfb6;
+  --color-prettylights-syntax-markup-changed-bg: #5a1e02;
+  --color-prettylights-syntax-markup-ignored-text: #c9d1d9;
+  --color-prettylights-syntax-markup-ignored-bg: #1158c7;
+  --color-prettylights-syntax-meta-diff-range: #d2a8ff;
+  --color-prettylights-syntax-brackethighlighter-angle: #8b949e;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #484f58;
+  --color-prettylights-syntax-constant-other-reference-link: #a5d6ff;
+
+  --color-btn-text: #dadada;
+  --color-btn-bg: #3a3a3a;
+  --color-btn-border: rgb(255 255 255 / 15%);
+  --color-btn-shadow: 0 0 transparent;
+  --color-btn-inset-shadow: 0 0 transparent;
+  --color-btn-hover-bg: #454545;
+  --color-btn-hover-border: rgb(255 255 255 / 15%);
+  --color-btn-active-bg: #202020;
+  --color-btn-active-border: rgb(255 255 255 / 15%);
+  --color-btn-selected-bg: #202020;
+
+  --color-btn-primary-text: #282828;
+  --color-btn-primary-bg: #dadada;
+  --color-btn-primary-border: rgb(255 255 255 / 15%);
+  --color-btn-primary-shadow: 0 0 transparent;
+  --color-btn-primary-inset-shadow: 0 0 transparent;
+  --color-btn-primary-hover-bg: #fff;
+  --color-btn-primary-hover-border: rgb(255 255 255 / 15%);
+  --color-btn-primary-selected-bg: #fff;
+  --color-btn-primary-selected-shadow: 0 0 transparent;
+  --color-btn-primary-disabled-text: #aaa;
+  --color-btn-primary-disabled-bg: #4a4a4a;
+  --color-btn-primary-disabled-border: rgb(255 255 255 / 15%);
+
+  --color-action-list-item-default-hover-bg: rgb(255 255 255 / 10%);
+  --color-segmented-control-bg: rgb(255 255 255 / 8%);
+  --color-segmented-control-button-bg: #202020;
+  --color-segmented-control-button-selected-border: #666;
+
+  --color-fg-default: #dadada;
+  --color-fg-muted: #999;
+  --color-fg-subtle: #909090;
+
+  --color-canvas-default: #282828;
+  --color-canvas-overlay: #2f2f2f;
+  --color-canvas-inset: #1c1c1c;
+  --color-canvas-subtle: #202020;
+
+  --color-border-default: #666;
+  --color-border-muted: #444;
+  --color-neutral-muted: rgb(255 255 255 / 10%);
+
+  --color-accent-fg: #ef4444;
+  --color-accent-emphasis: #ef4444;
+  --color-accent-muted: rgb(239 68 68 / 25%);
+  --color-accent-subtle: rgb(239 68 68 / 7%);
+
+  --color-success-fg: #3fb950;
+  --color-attention-fg: #d29922;
+  --color-attention-muted: rgb(187 128 9 / 40%);
+  --color-attention-subtle: rgb(187 128 9 / 15%);
+  --color-danger-fg: #f87171;
+  --color-danger-muted: rgb(239 68 68 / 40%);
+  --color-danger-subtle: rgb(239 68 68 / 12%);
+
+  --color-primer-shadow-inset: 0 0 transparent;
+  --color-scale-gray-7: #3a3a3a;
+  --color-scale-blue-8: rgb(239 68 68 / 15%);
+
+  /*! Extensions from @primer/css/alerts/flash.scss */
+  --color-social-reaction-bg-hover: var(--color-scale-gray-7);
+  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
+}
+
+main .pagination-loader-container {
+  background-image: url('https://github.com/images/modules/pulls/progressive-disclosure-line-dark.svg');
+}
+
+main .gsc-loading-image {
+  background-image: url('https://github.githubassets.com/images/mona-loading-dark.gif');
+}
+
+.btn-primary:disabled {
+  cursor: not-allowed;
+}

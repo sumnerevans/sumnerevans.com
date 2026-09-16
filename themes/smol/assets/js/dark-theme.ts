@@ -13,6 +13,9 @@ const resolveTheme = () => {
   return theme;
 }
 
+const giscusThemeUrl = (theme: string) =>
+  `${window.location.origin}/giscus/theme-${theme}.css`;
+
 const detectThemeAndSwitchStyle = () => {
   let theme = resolveTheme();
 
@@ -42,7 +45,7 @@ const detectThemeAndSwitchStyle = () => {
   if (giscuss) {
     giscuss.contentWindow?.postMessage({
       giscus: {
-        setConfig: { theme },
+        setConfig: { theme: giscusThemeUrl(theme) },
       },
     }, "https://giscus.app");
   }
@@ -87,7 +90,7 @@ const giscusAttributes = {
   "data-reactions-enabled": "0",
   "data-emit-metadata": "0",
   "data-input-position": "top",
-  "data-theme": resolveTheme(),
+  "data-theme": giscusThemeUrl(resolveTheme()),
   "data-lang": "en",
   "crossorigin": "anonymous",
   "async": "",
