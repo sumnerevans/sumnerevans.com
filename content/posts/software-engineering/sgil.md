@@ -66,8 +66,8 @@ bullshit[^1]) prose. For me, this creates text fatigue.
 
 Additionally, dealing with chat all day is especially difficult for introverts
 (of which there is no shortage in the software industry). Chat-based workflows
-push the software engineering process requires social-processing brainpower
-because chat (even with an AI) is fundamentally a social act.
+push the software engineering process through the social-processing part of our
+brains because chat (even with an AI) is fundamentally a social act.
 
 But worse than the text and social fatigue is the fact that reviewing the code
 is nearly impossible. The things that I care about in a code review are the
@@ -99,7 +99,8 @@ I came to this conclusion after reading
 [_Markdown in /src_](https://htmx.org/essays/Markdown-in-src/) in which Carson
 Gross (of HTMX fame) argues that human-written documents should be committed to
 source control to capture the intent and decisions behind the (largely
-AI-generated) code. Gross argues that Markdown is becoming source code. I agree.
+AI-generated) code. Carson argues that Markdown is becoming source code. I
+agree.
 
 I propose we call this paradigm of using human-written Markdown files as the
 source of truth for a programs functionality _Markdown as Source_ (or _MaS_ for
@@ -226,14 +227,16 @@ implement a SGIL workflow. These are very speculative.
 
 I think that treating Markdown as source can centralise our currently-disjointed
 sources of truth into a single place, and I think building tools that encourage
-a SGIL workflow will help direct human effort to where it is most valuable.
+a SGIL workflow will help direct human effort to where it is most valuable. You
+may not want this workflow and you may not like the paradigm I am proposing, but
+this is how I wish AI worked.
 
 My goal with this article is to put my thoughts together and see if anyone else
-has had similar ideas. I doubt that what I am proposing is not novel, and I'm
-pretty sure that something like what I want exists. However, I haven't found it.
-This paradigm and workflow are definitely not the obvious way to use the
-existing AI tools. If there are any tools which implement this workflow, I'd
-love to hear about them in the comments.
+has had similar ideas. I doubt that what I am proposing is novel, and I'm pretty
+sure that something like what I want exists. However, I haven't found it. This
+paradigm and workflow are definitely not the obvious way to use the existing AI
+tools. If there are any tools which implement this workflow, I'd love to hear
+about them in the comments so that I can stop using my current workflow.
 
 <!--
 Right now, it feels like we are in the wild west of AI usage across the
