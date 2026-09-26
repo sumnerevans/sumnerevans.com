@@ -3,7 +3,6 @@ message: "'%s' is corporate speak."
 ignorecase: true
 level: error
 tokens:
-  - at the end of the day
   - back to the drawing board
   - hit the ground running
   - get the ball rolling

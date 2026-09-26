@@ -53,6 +53,7 @@ exceptions:
   - DMA
   - DMCA
   - DNS
+  - DOI
   - DOM
   - DPI
   - DRY
