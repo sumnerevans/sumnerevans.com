@@ -6,7 +6,6 @@ categories:
 tags:
   - AI
   - LLMs
-unlisted: true
 math: true
 ---
 
@@ -18,6 +17,8 @@ math: true
 > To centralise the source of truth, we should use Markdown as Source (MaS). We
 > should adopt a Specify, Generate, Inspect, Loop (SGIL) workflow which puts
 > human-written Markdown files stored in source control front-and-centre.
+
+## My Current AI Workflow
 
 I _hate_ my AI workflow. I don't know how everyone else is using AI, but
 currently my workflow looks something like:
@@ -74,7 +75,7 @@ is nearly impossible. The things that I care about in a code review are the
 human decisions made when creating a change (hopefully driven by the business
 needs). However, with chat-based workflows, these decisions are not committed to
 source control. Instead, the human decisions that constitute the source of truth
-for what the code should look like is distributed across a myriad of chat
+for what the code should look like are distributed across a myriad of chat
 messages. Re-deriving the set of decisions which led to the code being the way
 it is would require auditing the entire chat log across every conversation.
 However, naively looking at just the human-written messages is not enough: you
@@ -117,7 +118,7 @@ that implements the MaS paradigm.
 | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | Compilers take code files as an input.                                                        | MaS systems should take Markdown files as input.                                                |
 | Compilers provide helpful errors when the code files are malformed.[^3]                       | MaS systems should explain why the Markdown files are unclear, contradictory, or incomplete.    |
-| Compilers don't ask you for additional input if the compilation fails.[^4]                    | MaS systems should not ask you to make decisions as it's generating code.                       |
+| Compilers don't ask you for additional input if the compilation fails.[^4]                    | MaS systems should not ask you to make decisions as it generates code.                          |
 | Compilers provide warnings for potential problems, even if the compilation suceeds.           | MaS systems should surface potential issues and assumptions it has made during code generation. |
 | We don't edit the output of a compiler, we edit the code files that generated the output.[^2] | We shouldn't edit the code the LLM generates, we should edit the Markdown files.                |
 | We don't do code-review of the compiler output, we review the code files.                     | We (maybe?) shouldn't review the output of a MaS system and instead review the Markdown files.  |
@@ -170,7 +171,7 @@ flow encouraged by the existing AI harnesses.
 ## How Do We Get There?
 
 I propose a few concepts which might be helpful for adopting a MaS paradigm and
-implement a SGIL workflow. These are very speculative.
+implementing a SGIL workflow. These are very speculative.
 
 - Adding structure to the _Specify_ step may be helpful. Carson
   [proposed a `/src/md` convention](https://htmx.org/essays/Markdown-in-src/#a-proposed-src-md-convention).
