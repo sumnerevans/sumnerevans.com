@@ -1,5 +1,5 @@
 ---
-title: "MaS-ive SGIL Issues: How I Want to Use AI"
+title: How I Want to Use AI
 date: 2026-09-25T06:25:00-06:00
 categories:
   - Software Engineering
