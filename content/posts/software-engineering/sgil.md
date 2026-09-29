@@ -143,7 +143,7 @@ next generation of AI tooling should be based around a SGIL workflow.
 
 [^3]: Unless you screw up your C++ templates, then you just have to give up.
 
-[^4]: Ignore the \(LaTeX\) compilers...
+[^4]: Ignore the \(\LaTeX\) compilers...
 
 ## Specify, Generate, Inspect, Loop
 
