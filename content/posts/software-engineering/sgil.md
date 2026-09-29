@@ -6,6 +6,9 @@ categories:
 tags:
   - AI
   - LLMs
+  - Markdown
+  - MaS
+  - SGIL
 math: true
 ---
 
