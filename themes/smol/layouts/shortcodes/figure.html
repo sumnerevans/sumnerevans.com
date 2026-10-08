@@ -69,8 +69,9 @@
             <a href="{{ . }}" target="_blank">
           {{- end -}}
           {{.Get "attr" | markdownify -}}
-          {{- if .Get "attrlink" }}</a>{{ end }}</i></p>
+          {{- if .Get "attrlink" }}</a>{{ end }}</i>
         {{- end }}
+      </p>
       {{- end }}
     </figcaption>
   {{- end }}
