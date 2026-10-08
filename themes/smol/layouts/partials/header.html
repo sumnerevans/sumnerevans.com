@@ -80,9 +80,9 @@
         <span>Tags</span>
       </a>
     </div>
-    <div id="toggle-search" class="hidden" role="button" tabindex="0" aria-label="Toggle search">
+    <button id="toggle-search" class="hidden" type="button" aria-label="Toggle search" aria-controls="search-container" aria-expanded="false">
       {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/search") }}
-    </div>
+    </button>
     <div id="search-container" class="hidden">
       <form class="search" method="get">
         <input id="search-query" type="search" placeholder="Loading..." disabled="disabled">

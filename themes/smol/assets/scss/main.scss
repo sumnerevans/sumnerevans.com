@@ -701,6 +701,16 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: var(--link-color);
+      cursor: pointer;
+
+      &:hover,
+      &:focus-visible {
+        color: var(--link-active-color);
+      }
     }
 
     #search-container {
@@ -866,10 +876,14 @@ footer {
     display: flex;
     gap: 0.25rem;
 
-    span {
+    button {
       cursor: pointer;
       user-select: none;
       transition: background 0.2s ease, color 0.2s ease;
+      padding: 0;
+      border: 0;
+      color: inherit;
+      background: transparent;
       width: 2rem;
       height: 2rem;
       display: inline-flex;

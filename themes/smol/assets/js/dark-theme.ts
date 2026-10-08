@@ -53,6 +53,9 @@ const detectThemeAndSwitchStyle = () => {
   document.querySelector("#theme-switcher .dark")?.classList.toggle("active", localStorage.getItem("themeOverride") === "dark");
   document.querySelector("#theme-switcher .light")?.classList.toggle("active", localStorage.getItem("themeOverride") === "light");
   document.querySelector("#theme-switcher .browser")?.classList.toggle("active", ["browser", null].includes(localStorage.getItem("themeOverride")));
+  for (const button of themeSwitcher?.querySelectorAll("button") ?? []) {
+    button.setAttribute("aria-pressed", String(button.classList.contains("active")));
+  }
 };
 
 detectThemeAndSwitchStyle();

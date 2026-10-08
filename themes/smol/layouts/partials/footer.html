@@ -3,15 +3,15 @@
     &copy; {{ now.Year }} {{ .Site.Title }}
   </p>
   <div id="theme-switcher" class="hidden">
-    <span class="dark" role="button" tabindex="0" aria-label="Use dark theme">
+    <button class="dark" type="button" aria-label="Use dark theme" aria-pressed="false">
       {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/moon" "size" "1.5em" "className" "deselected") }}
       {{ partial "icons/icon" (dict "vendor" "tabler" "name" "filled/moon" "size" "1.5em" "className" "selected") }}
-    </span>
-    <span class="light" role="button" tabindex="0" aria-label="Use light theme">
+    </button>
+    <button class="light" type="button" aria-label="Use light theme" aria-pressed="false">
       {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/sun" "size" "1.5em" "className" "deselected") }}
       {{ partial "icons/icon" (dict "vendor" "tabler" "name" "filled/sun" "size" "1.5em" "className" "selected") }}
-    </span>
-    <span class="browser" role="button" tabindex="0" aria-label="Use browser theme">{{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/sun-moon" "size" "1.5em") }}</span>
+    </button>
+    <button class="browser" type="button" aria-label="Use browser theme" aria-pressed="false">{{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/sun-moon" "size" "1.5em") }}</button>
   </div>
 </footer>
 
