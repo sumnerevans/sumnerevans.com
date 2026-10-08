@@ -611,6 +611,7 @@ header {
   }
 
   nav {
+    --search-gap: 20px;
     grid-area: nav;
     padding: 0.5rem 0;
 
@@ -696,31 +697,55 @@ header {
     }
 
     #toggle-search {
+      position: relative;
       grid-area: search-link;
       text-align: right;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 0;
+      padding: 0.25rem 0.5rem;
       border: 0;
       background: transparent;
       color: var(--link-color);
       cursor: pointer;
+      border-radius: 0.25rem;
+
+      &.active {
+        background: var(--link-color);
+        color: white;
+        border-radius: 0.25rem 0.25rem 0 0;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          right: 0;
+          width: 100%;
+          height: var(--search-gap);
+          background: var(--link-color);
+        }
+      }
 
       &:hover,
       &:focus-visible {
         color: var(--link-active-color);
       }
+
+      &.active:hover,
+      &.active:focus-visible {
+        color: white;
+      }
     }
 
     #search-container {
       grid-area: search-container;
-      margin: 20px 0;
+      margin: var(--search-gap) 0 20px;
       text-align: left;
 
       input[type=search] {
         padding: 8px;
         border: 1px solid var(--search-container-border-color);
+        border-top: 3px solid var(--link-color);
         background-color: var(--search-container-bg-color);
         color: var(--search-container-fg-color);
         width: 100%;
