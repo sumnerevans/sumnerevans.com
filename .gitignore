@@ -4,4 +4,5 @@
 node_modules/
 openring
 public
+static/search-index.json
 resources/_gen

@@ -83,12 +83,13 @@
     <button id="toggle-search" class="hidden" type="button" aria-label="Search posts" aria-controls="search-container" aria-expanded="false">
       {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/search") }}
     </button>
-    <div id="search-container" class="hidden">
-      <form class="search" method="get">
-        <input id="search-query" type="search" aria-label="Search posts" placeholder="Loading..." disabled="disabled">
+    <div id="search-container" class="hidden" role="search" aria-label="Search posts">
+      <form id="search-form" class="search" method="get" action="{{ .Site.Home.RelPermalink }}">
+        <input id="search-query" name="q" type="search" aria-label="Search posts" placeholder="Loading..." disabled="disabled">
       </form>
       <div id="search-results">
-        <p class="no-results">Enter a search term above</p>
+        <p id="search-status" role="status">Enter a search term above</p>
+        <div id="search-result-items"></div>
       </div>
     </div>
   </nav>

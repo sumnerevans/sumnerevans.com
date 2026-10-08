@@ -6,5 +6,8 @@
     "lunr": "^2.3.9",
     "mark.js": "^8.11.1",
     "medium-zoom": "^1.1.0"
+  },
+  "scripts": {
+    "dev:search-index": "node dev_search_index.js"
   }
 }

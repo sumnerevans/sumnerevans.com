@@ -16,7 +16,7 @@ interface RawRecord {
   title: string;
 }
 
-document.addEventListener("DOMContentLoaded", async () => {
+document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("toggle-search")?.classList.remove("hidden");
 
   let rawIndex: Record<string, RawRecord> = {};
@@ -24,7 +24,9 @@ document.addEventListener("DOMContentLoaded", async () => {
   const searchInput = document.getElementById(
     "search-query"
   )! as HTMLInputElement;
-  const searchResultsDiv = document.getElementById("search-results")!;
+  const searchForm = document.getElementById("search-form")! as HTMLFormElement;
+  const searchStatus = document.getElementById("search-status")!;
+  const searchResultsDiv = document.getElementById("search-result-items")!;
 
   const summarize = (
     searchResult: SearchResult,
@@ -53,24 +55,34 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const runSearch = (searchString: string) => {
     console.log("Searching for", searchString);
-    let searchResults: lunr.Index.Result[] = [];
-    if (searchString && searchString.length > 2) {
-      try {
-        searchResults = lunrSearchIndex!.search(searchString).slice(0, 10);
-      } catch (err) {
-        searchResultsDiv.innerHTML = `Error: ${err.message}`;
-        return;
-      }
-    }
+    const query = searchString.trim();
+    searchResultsDiv.replaceChildren();
 
-    if (searchResults.length === 0) {
-      searchResultsDiv.innerHTML =
-        '<p class="no-results">Enter a search term above</p>';
+    if (query.length < 3) {
+      searchStatus.textContent = query
+        ? "Type at least 3 characters to search."
+        : "Enter a search term above";
       return;
     }
 
-    const summaries = searchResults.map(summarize);
-    searchResultsDiv.innerHTML = ""; // Clear the previous search results
+    let searchResults: lunr.Index.Result[] = [];
+    try {
+      searchResults = lunrSearchIndex!.search(query);
+    } catch (err) {
+      searchStatus.textContent = "Search query could not be processed.";
+      return;
+    }
+
+    if (searchResults.length === 0) {
+      searchStatus.textContent = "No results found.";
+      return;
+    }
+
+    const displayedResults = searchResults.slice(0, 10);
+    searchStatus.textContent = searchResults.length > displayedResults.length
+      ? `Showing ${displayedResults.length} of ${searchResults.length} results.`
+      : `${searchResults.length} result${searchResults.length === 1 ? "" : "s"} found.`;
+    const summaries = displayedResults.map(summarize);
     summaries.forEach(([r, highlights], i) => {
       if (i > 0) {
         searchResultsDiv.appendChild(document.createElement("hr"));
@@ -89,30 +101,59 @@ document.addEventListener("DOMContentLoaded", async () => {
     );
   });
 
-  const hash = await (await fetch("/index.sha256", { method: "GET" })).text();
-  console.log("Got content hash", hash);
+  searchForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    window.clearTimeout(searchDebounce);
+    runSearch(searchInput.value);
+  });
 
-  const loadSearchIndex = async () => {
-    const version = "v3";
+  searchInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      searchForm.requestSubmit();
+    }
+  });
+
+  let searchIndexPromise: Promise<void> | undefined;
+  const loadSearchIndex = (): Promise<void> => {
     if (lunrSearchIndex) {
       searchInput.focus();
-      return;
+      return Promise.resolve();
     }
-    console.time("fetch index");
-    const searchIndexUrl = `/search-index.json?v=${version}&ch=${hash}`;
-    const searchIndex = await (
-      await fetch(searchIndexUrl, { method: "GET" })
-    ).json();
-    console.timeEnd("fetch index");
+    if (!searchIndexPromise) {
+      searchStatus.textContent = "Loading search...";
+      searchIndexPromise = (async () => {
+        const hashResponse = await fetch("/index.sha256");
+        const hash = hashResponse.ok ? await hashResponse.text() : "";
+        console.log("Got content hash", hash);
 
-    console.time("initialize the search index");
-    rawIndex = searchIndex.index;
-    lunrSearchIndex = lunr.Index.load(searchIndex.lunrIndex);
-    console.timeEnd("initialize the search index");
+        let searchIndex;
+        console.time("fetch index");
+        try {
+          const searchIndexResponse = await fetch(
+            `/search-index.json?v=v3&ch=${encodeURIComponent(hash.trim())}`
+          );
+          if (!searchIndexResponse.ok) throw new Error("Search index is unavailable");
+          searchIndex = await searchIndexResponse.json();
+        } finally {
+          console.timeEnd("fetch index");
+        }
 
-    searchInput.removeAttribute("disabled");
-    searchInput.placeholder = "Search...";
-    searchInput.focus();
+        console.time("initialize the search index");
+        rawIndex = searchIndex.index;
+        lunrSearchIndex = lunr.Index.load(searchIndex.lunrIndex);
+        console.timeEnd("initialize the search index");
+
+        searchInput.disabled = false;
+        searchInput.placeholder = "Search...";
+        searchStatus.textContent = "Enter a search term above";
+        searchInput.focus();
+      })().catch((error) => {
+        searchIndexPromise = undefined;
+        throw error;
+      });
+    }
+    return searchIndexPromise;
   };
 
   const searchToggle = document.getElementById("toggle-search");
@@ -124,7 +165,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       searchToggle.setAttribute("aria-expanded", "true");
       searchDivClasses.remove("hidden");
       loadSearchIndex().catch((e) => {
-        searchResultsDiv.innerHTML = `<p class="no-results">Failed to load search index: ${e}</p>`;
+        console.error("Failed to load search index", e);
+        searchStatus.textContent = "Search is unavailable right now.";
       });
     } else {
       searchToggle.classList.remove("active");
