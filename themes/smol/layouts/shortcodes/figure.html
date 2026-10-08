@@ -1,5 +1,5 @@
 {{- $respSizes := slice "400" "600" -}}
-{{ $alt := or (.Get "alt") (.Get "caption" | markdownify | plainify) (.Get "title" | markdownify | plainify) }}
+{{ $alt := or (.Get "alt") (.Get "caption" | markdownify | plainify) (.Get "title" | markdownify | plainify) "" }}
 
 <figure{{ with .Get "class" }} class="{{ . }}"{{ end }} {{ with .Get "width" }} style="max-width:{{ . }}px"{{ end }}>
   {{- $u := urls.Parse (.Get "src") -}}
@@ -7,12 +7,12 @@
   {{- with or (.Page.Resources.Get $u.Path) (resources.Get $u.Path) -}}
     {{- $imgRsc := . -}}
     {{- with $.Get "link" -}}
-      <a href="{{ . }}" target="_blank"{{ with $.Get "rel" }} rel="{{ . }}"{{ end }}>
+      <a href="{{ . }}" target="_blank"{{ with $.Get "rel" }} rel="{{ . }}"{{ end }}{{ if not $alt }} aria-label="Open image link"{{ end }}>
     {{- else -}}
       {{- if or (eq .MediaType.SubType "svg") (eq .MediaType.SubType "gif") ($.Get "rawlink") -}}
-        <a href="{{ .RelPermalink }}" target="_blank">
+        <a href="{{ .RelPermalink }}" target="_blank"{{ if not $alt }} aria-label="Open image"{{ end }}>
       {{- else -}}
-        <a href="{{ ( .Resize "2000x webp photo" ).RelPermalink }}" target="_blank">
+        <a href="{{ ( .Resize "2000x webp photo" ).RelPermalink }}" target="_blank"{{ if not $alt }} aria-label="Open image"{{ end }}>
       {{- end -}}
     {{- end -}}
       <picture class="{{ if $.Get "nozoom" }}no-zoom{{ end }} {{ if $.Get "nodim" }}no-dim{{ end }}">
@@ -20,9 +20,7 @@
         {{- if or (eq $imgRsc.MediaType.SubType "svg") (eq $imgRsc.MediaType.SubType "gif") ($.Get "nowebp") -}}
           <img
             src="{{ $imgRsc.RelPermalink }}"
-            {{- with $alt }}
-              alt="{{ . }}"
-            {{- end -}}
+            alt="{{ $alt }}"
             loading="lazy"
           >
         {{- else -}}
@@ -38,9 +36,7 @@
           {{ with .Resize "800x webp photo" }}
             <img
               src="{{ .RelPermalink }}"
-              {{- with $alt }}
-                alt="{{ . }}"
-              {{- end -}}
+              alt="{{ $alt }}"
               loading="lazy"
               width="{{ .Width }}"
               height="{{ .Height }}"
@@ -50,11 +46,9 @@
       </picture>
     </a>
   {{- else -}}
-    <a href="{{ with .Get "link" }}{{ . }}{{ else }}{{ $u }}{{ end }}" target="_blank"{{ with .Get "rel" }} rel="{{ . }}"{{ end }}>
+    <a href="{{ with .Get "link" }}{{ . }}{{ else }}{{ $u }}{{ end }}" target="_blank"{{ with .Get "rel" }} rel="{{ . }}"{{ end }}{{ if not $alt }} aria-label="Open image link"{{ end }}>
       <img src="{{ $u.String }}"
-        {{- with $alt }}
-          alt="{{ . }}"
-        {{- end -}}
+        alt="{{ $alt }}"
         {{- with .Get "width" }} width="{{ . }}"{{ end -}}
         {{- with .Get "height" }} height="{{ . }}"{{ end -}}
         loading="lazy"

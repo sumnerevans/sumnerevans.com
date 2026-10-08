@@ -1,5 +1,5 @@
 {{- $respSizes := slice "400" "600" -}}
-{{- $alt := or .Title .Text -}}
+{{- $alt := or .Text .Title "" -}}
 {{- $nowebp := index .Attributes "nowebp" -}}
 {{- $rawlink := index .Attributes "rawlink" -}}
 
@@ -10,18 +10,16 @@
 {{ end }}
   {{- with or (.Page.Resources.Get .Destination) (resources.Get .Destination) -}}
     {{ if or (eq .MediaType.SubType "svg") (eq .MediaType.SubType "gif") $rawlink }}
-      <a href="{{ .RelPermalink }}" target="_blank">
+      <a href="{{ .RelPermalink }}" target="_blank"{{ if not $alt }} aria-label="Open image"{{ end }}>
     {{ else }}
-      <a href="{{ ( .Resize "2000x webp photo" ).RelPermalink }}" target="_blank">
+      <a href="{{ ( .Resize "2000x webp photo" ).RelPermalink }}" target="_blank"{{ if not $alt }} aria-label="Open image"{{ end }}>
     {{ end }}
       <picture>
         {{ if or (eq .MediaType.SubType "svg") (eq .MediaType.SubType "gif") $nowebp }}
           <img
             loading="lazy"
             src="{{ .RelPermalink }}"
-            {{- with $alt }}
-              alt="{{ . }}"
-            {{- end -}}
+            alt="{{ $alt }}"
           >
         {{ else }}
           {{- $imgRsc := . -}}
@@ -40,16 +38,14 @@
               src="{{ .RelPermalink }}"
               width="{{ .Width }}"
               height="{{ .Height }}"
-              {{- with $alt }}
-                alt="{{ . }}"
-              {{- end -}}
+              alt="{{ $alt }}"
             >
           {{ end }}
         {{ end }}
       </picture>
     </a>
   {{- else -}}
-    <a href="{{ .Destination | safeURL }}" target="_blank">
+    <a href="{{ .Destination | safeURL }}" target="_blank"{{ if not $alt }} aria-label="Open image"{{ end }}>
       <img loading="lazy" src="{{ .Destination | safeURL }}" alt="{{ $alt }}">
     </a>
   {{- end -}}
