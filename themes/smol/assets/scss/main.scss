@@ -744,10 +744,6 @@ header {
       }
 
       #search-results {
-        #search-status {
-          text-align: center;
-        }
-
         background-color: var(--search-container-bg-color);
         padding: .5rem 0;
 
@@ -785,6 +781,40 @@ header {
           &:active {
             padding-left: .25rem;
             border-left: .25rem solid var(--search-container-active-indicator-color);
+          }
+        }
+
+        #search-pagination {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          margin: 1rem 0 0.5rem;
+          padding: 0 0.5rem;
+
+          #search-status {
+            flex: 1;
+            text-align: center;
+          }
+
+          button {
+            padding: 0.35rem 0.7rem;
+            border: 1px solid var(--link-color);
+            border-radius: 0.25rem;
+            background: transparent;
+            color: var(--link-color);
+            font: inherit;
+            cursor: pointer;
+
+            &:hover:not(:disabled),
+            &:focus-visible {
+              background: var(--link-color);
+              color: white;
+            }
+
+            &:disabled {
+              opacity: 0.5;
+              cursor: default;
+            }
           }
         }
       }

@@ -88,8 +88,12 @@
         <input id="search-query" name="q" type="search" aria-label="Search posts" placeholder="Loading..." disabled="disabled">
       </form>
       <div id="search-results">
-        <p id="search-status" role="status">Enter a search term above</p>
         <div id="search-result-items"></div>
+        <div id="search-pagination" role="group" aria-label="Search result pages">
+          <button id="search-previous" type="button" disabled>Previous</button>
+          <span id="search-status" role="status">Enter a search term above</span>
+          <button id="search-next" type="button" disabled>Next</button>
+        </div>
       </div>
     </div>
   </nav>

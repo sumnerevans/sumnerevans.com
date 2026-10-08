@@ -27,6 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchForm = document.getElementById("search-form")! as HTMLFormElement;
   const searchStatus = document.getElementById("search-status")!;
   const searchResultsDiv = document.getElementById("search-result-items")!;
+  const searchPrevious = document.getElementById("search-previous")! as HTMLButtonElement;
+  const searchNext = document.getElementById("search-next")! as HTMLButtonElement;
+  const pageSize = 10;
+  let searchResults: lunr.Index.Result[] = [];
+  let currentPage = 0;
 
   const summarize = (
     searchResult: SearchResult,
@@ -53,10 +58,39 @@ document.addEventListener("DOMContentLoaded", () => {
     return [searchResultDiv, hls];
   };
 
+  const renderResults = () => {
+    searchResultsDiv.replaceChildren();
+    const pageCount = Math.ceil(searchResults.length / pageSize);
+
+    if (searchResults.length === 0) {
+      searchPrevious.disabled = true;
+      searchNext.disabled = true;
+      return;
+    }
+
+    const start = currentPage * pageSize;
+    const end = Math.min(start + pageSize, searchResults.length);
+    const displayedResults = searchResults.slice(start, end);
+    searchStatus.textContent = `Showing ${start + 1}–${end} of ${searchResults.length} results (page ${currentPage + 1} of ${pageCount}).`;
+    searchPrevious.disabled = currentPage === 0;
+    searchNext.disabled = currentPage === pageCount - 1;
+
+    const summaries = displayedResults.map(summarize);
+    summaries.forEach(([r, highlights], i) => {
+      if (i > 0) {
+        searchResultsDiv.appendChild(document.createElement("hr"));
+      }
+      searchResultsDiv.appendChild(r);
+      new Mark(r).mark(highlights);
+    });
+  };
+
   const runSearch = (searchString: string) => {
     console.log("Searching for", searchString);
     const query = searchString.trim();
-    searchResultsDiv.replaceChildren();
+    currentPage = 0;
+    searchResults = [];
+    renderResults();
 
     if (query.length < 3) {
       searchStatus.textContent = query
@@ -65,7 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    let searchResults: lunr.Index.Result[] = [];
     try {
       searchResults = lunrSearchIndex!.search(query);
     } catch (err) {
@@ -78,19 +111,24 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    const displayedResults = searchResults.slice(0, 10);
-    searchStatus.textContent = searchResults.length > displayedResults.length
-      ? `Showing ${displayedResults.length} of ${searchResults.length} results.`
-      : `${searchResults.length} result${searchResults.length === 1 ? "" : "s"} found.`;
-    const summaries = displayedResults.map(summarize);
-    summaries.forEach(([r, highlights], i) => {
-      if (i > 0) {
-        searchResultsDiv.appendChild(document.createElement("hr"));
-      }
-      searchResultsDiv.appendChild(r);
-      new Mark(r).mark(highlights);
-    });
+    renderResults();
   };
+
+  searchPrevious.addEventListener("click", () => {
+    if (currentPage > 0) {
+      currentPage--;
+      renderResults();
+      searchResultsDiv.querySelector<HTMLAnchorElement>(".search-result h4 a")?.focus();
+    }
+  });
+
+  searchNext.addEventListener("click", () => {
+    if ((currentPage + 1) * pageSize < searchResults.length) {
+      currentPage++;
+      renderResults();
+      searchResultsDiv.querySelector<HTMLAnchorElement>(".search-result h4 a")?.focus();
+    }
+  });
 
   let searchDebounce: number | undefined;
   searchInput.addEventListener("input", (e) => {
