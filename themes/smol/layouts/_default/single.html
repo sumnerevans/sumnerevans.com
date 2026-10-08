@@ -22,11 +22,11 @@
               Unlisted Pre-Print</span>
           {{ end }}
           {{ if .Params.uselastmod }}
-            Last modified on <time>{{ .Lastmod.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
+            Last modified on <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
           {{ else }}
             Posted
             {{ if .Date }}
-              on <time>{{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
+              on <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
             {{ end }}
           {{ end }}
           {{ with .Params.categories }}

@@ -9,7 +9,7 @@
       <p class="article-info">
         <b>
           Posted on
-          <time>{{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
           {{ with .Params.categories }}
             in
             {{ range first 1 . }}
