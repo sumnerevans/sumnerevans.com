@@ -50,6 +50,7 @@
   {{ with .OutputFormats.Get "MARKDOWN" }}
     <link rel="alternate" type="text/markdown" href="{{ .Permalink }}">
   {{ end }}
+  <link rel="describedby" href="{{ site.BaseURL }}llms.txt">
   {{ partial "opengraph.html" . }}
   {{ partial "twitter_cards.html" . }}
 

@@ -1,0 +1,22 @@
+# Sumner Evans
+
+> Sumner Evans is a tech lead at [Can/Am Technologies](https://canamtechnologies.com) in Denver, Colorado. This is his personal website, portfolio, and blog.
+
+For current biographical information, start with the About page. The Portfolio is a detailed CV covering professional experience, education, projects, and presentations. The posts below are a small selection of the writing on this site; the full archive is available at https://sumnerevans.com/posts/.
+
+## About and professional background
+
+- [About Sumner](https://sumnerevans.com/about/index.md): Background, current work, and interests.
+- [Portfolio](https://sumnerevans.com/portfolio/index.md): Detailed experience, education, projects, and presentations.
+- [Resume](https://sumnerevans.com/portfolio/resume.pdf): Sumner's most up-to-date PDF resume.
+
+## Notable Articles
+
+- [Stop Using Conventional Commits](https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits/index.md): An argument against Conventional Commits due to its focus on the wrong things and failure to deliver on its promises.
+- [Is Getting A Master's Degree in Computer Science Worth It?](https://sumnerevans.com/posts/school/is-getting-a-masters-in-cs-worth-it/index.md): An analysis of whether persuing a master's in computer science is worth it from a financial, educational, and social perspective.
+- [Message Security in Matrix](https://sumnerevans.com/posts/matrix/megolm/index.md): A discussion of Megolm, the mechanism for end-to-end encryption in Matrix.
+
+## Notable Presentations
+
+- [Matrix Cryptographic Key Infrastructure](https://sumnerevans.com/posts/matrix/cryptographic-key-infrastructure/index.md): An overview of key sharing, key backup, device and user verification, and secret storage within Matrix.
+- [Hungryserv: A Homeserver Optimized for Unfederated Use-Cases](https://sumnerevans.com/portfolio/#presentation-hungryserv): A discussion about Hungryserv, a homeserver that Beeper built to optimize unfederated bridge traffic.

@@ -12,6 +12,7 @@ separate terminals. The latter generates `static/search-index.json` from Hugo's
 search data and updates it when the content changes. The production build
 generates the same index after Hugo finishes.
 
+Edit `static/llms.txt` to curate the site's introduction and selected links.
 Hugo generates a Markdown version of each published content page at its
 `index.md` URL. The HTML pages link to their Markdown versions with
-`rel="alternate"`.
+`rel="alternate"` and to `/llms.txt` with `rel="describedby"`.
