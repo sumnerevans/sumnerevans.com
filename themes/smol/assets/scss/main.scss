@@ -199,6 +199,48 @@ article {
   padding: 24px 0;
 }
 
+.taxonomy-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  padding: 0;
+
+  li {
+    max-width: 100%;
+  }
+}
+
+a.taxonomy-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0.1rem 0.35rem 0.05rem;
+  border: 1px solid var(--section-sep-color);
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+  line-height: 1.35;
+
+  .taxonomy-pill-icon {
+    display: inline-flex;
+    flex: none;
+  }
+
+  .taxonomy-pill-label {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  &:hover,
+  &:focus-visible {
+    border-color: var(--link-color);
+    background-color: var(--figure-bg-color);
+    text-decoration: none;
+  }
+}
+
 .center {
   display: block;
   margin-left: auto;

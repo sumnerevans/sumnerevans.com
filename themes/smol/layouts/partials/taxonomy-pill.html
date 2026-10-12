@@ -1,0 +1,10 @@
+<a class="taxonomy-pill" href="{{ .url }}">
+  <span class="taxonomy-pill-icon" aria-hidden="true">
+    {{- if eq .kind "tags" -}}
+      {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/tag") }}
+    {{- else -}}
+      {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/hash") }}
+    {{- end -}}
+  </span>
+  <span class="taxonomy-pill-label">{{ .name }}</span>
+</a>

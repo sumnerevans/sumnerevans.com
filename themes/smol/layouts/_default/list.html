@@ -1,6 +1,10 @@
 {{ define "main" }}
 <main>
-  {{ $listtitle := .Title }}
+  {{ $isTaxonomy := eq .Kind "taxonomy" }}
+  {{ $pages := partial "func/FilterPages" .Pages }}
+  {{ if and $isTaxonomy (eq .Data.Plural "tags") }}
+    {{ $pages = sort $pages "Date" "desc" }}
+  {{ end }}
   {{- if or .Title .Content -}}
   <div>
     {{- with .Title -}}<h1>{{ . }}</h1>{{- end -}}
@@ -8,13 +12,17 @@
   </div>
   {{ end }}
 
-  <ul>
-    {{- range partial "func/FilterPages" .Pages -}}
+  <ul{{ if $isTaxonomy }} class="taxonomy-pills"{{ end }}>
+    {{- range $pages -}}
     <li>
-      {{- if and (ne $listtitle "Categories") (ne $listtitle "Tags") -}}
+      {{- if not $isTaxonomy -}}
         {{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}
       {{ end }}
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{- if $isTaxonomy -}}
+        {{ partial "taxonomy-pill.html" (dict "kind" $.Data.Plural "name" .Title "url" .RelPermalink) }}
+      {{- else -}}
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{- end -}}
     </li>
     {{- end -}}
   </ul>
