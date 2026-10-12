@@ -6,37 +6,34 @@
       <div class="article-title">
         <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
       </div>
-      <p class="article-info">
-        <b>
-          Posted on
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
+      <div class="article-info">
+        <div class="post-info-line">
+          <b>
+            Posted on
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
+            {{ with .Params.categories }} in{{ end }}
+          </b>
           {{ with .Params.categories }}
-            in
-            {{ range first 1 . }}
-              <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-            {{- end -}}
-            {{- range after 1 . -}}
-              , <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-            {{- end -}}
+            {{ range . }}
+              {{ partial "taxonomy-pill.html" (dict "kind" "categories" "name" .) }}
+            {{ end }}
           {{ end }}
-        </b>
-        {{ with .WordCount }}
-          • {{ . }} words
-        {{ end }}
-        {{ with .ReadingTime }}
-          • {{ . }} minute read
-        {{ end }}
+          {{ with .WordCount }}
+            <span>• {{ . }} words</span>
+          {{ end }}
+          {{ with .ReadingTime }}
+            <span>• {{ . }} minute read</span>
+          {{ end }}
+        </div>
         {{ with .Params.tags }}
-          <br>
-          Tags:
-          {{ range first 1 . }}
-            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-          {{- end -}}
-          {{- range after 1 . -}}
-            , <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-          {{- end -}}
+          <div class="post-tags">
+            <span>Tags:</span>
+            {{ range . }}
+              {{ partial "taxonomy-pill.html" (dict "kind" "tags" "name" .) }}
+            {{ end }}
+          </div>
         {{ end }}
-      </p>
+      </div>
       <div class="post-summary">
         {{ if not .Params.hide_image_in_index }}
           {{- with .Resources.Get .Params.image -}}

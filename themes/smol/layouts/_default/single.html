@@ -15,47 +15,44 @@
       {{- end -}}
     </div>
     {{ if and (or ($reg.Prev .) ($reg.Next .)) (or .Date .Params.tags .Params.categories) }}
-      <p class="article-info">
-        <b>
-          {{ if .Params.unlisted }}
-            <span class="unlisted-notice" title="This post is not published on the homepage or in the RSS feed.">
-              Unlisted Pre-Print</span>
-          {{ end }}
-          {{ if .Params.uselastmod }}
-            Last modified on <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
-          {{ else }}
-            Posted
-            {{ if .Date }}
-              on <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
+      <div class="article-info">
+        <div class="post-info-line">
+          <b>
+            {{ if .Params.unlisted }}
+              <span class="unlisted-notice" title="This post is not published on the homepage or in the RSS feed.">
+                Unlisted Pre-Print</span>
+            {{ end }}
+            {{ if .Params.uselastmod }}
+              Last modified on <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
+            {{ else }}
+              Posted
+              {{ if .Date }}
+                on <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
+              {{ end }}
+            {{ end }}
+            {{ with .Params.categories }} in{{ end }}
+          </b>
+          {{ with .Params.categories }}
+            {{ range . }}
+              {{ partial "taxonomy-pill.html" (dict "kind" "categories" "name" .) }}
             {{ end }}
           {{ end }}
-          {{ with .Params.categories }}
-            in
-            {{ range first 1 . }}
-              <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-            {{- end -}}
-            {{- range after 1 . -}}
-              , <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-            {{- end -}}
+          {{ with .WordCount }}
+            <span>• {{ . }} words</span>
           {{ end }}
-        </b>
-        {{ with .WordCount }}
-          • {{ . }} words
-        {{ end }}
-        {{ with .ReadingTime }}
-          • {{ . }} minute read
-        {{ end }}
+          {{ with .ReadingTime }}
+            <span>• {{ . }} minute read</span>
+          {{ end }}
+        </div>
         {{ with .Params.tags }}
-          <br>
-          Tags:
-          {{ range first 1 . }}
-            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-          {{- end -}}
-          {{- range after 1 . -}}
-            , <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-          {{- end -}}
+          <div class="post-tags">
+            <span>Tags:</span>
+            {{ range . }}
+              {{ partial "taxonomy-pill.html" (dict "kind" "tags" "name" .) }}
+            {{ end }}
+          </div>
         {{ end }}
-      </p>
+      </div>
     {{ end }}
     <div class="content">
       {{ .Content }}

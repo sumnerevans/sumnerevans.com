@@ -1,4 +1,8 @@
-<a class="taxonomy-pill" href="{{ .url }}">
+{{- $url := .url -}}
+{{- if not $url -}}
+  {{- $url = printf "/%s/%s/" .kind (.name | urlize) | relLangURL -}}
+{{- end -}}
+<a class="taxonomy-pill" href="{{ $url }}">
   <span class="taxonomy-pill-icon" aria-hidden="true">
     {{- if eq .kind "tags" -}}
       {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/tag") }}

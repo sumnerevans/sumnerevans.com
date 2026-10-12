@@ -149,9 +149,26 @@ div.article-title {
   }
 }
 
-p.article-info {
+div.article-info {
   color: var(--secondary-color);
   margin-top: 0;
+  margin-bottom: 1em;
+
+  .post-info-line,
+  .post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+
+    > b,
+    > span {
+      transform: translateY(0.05em);
+    }
+  }
+
+  .post-tags {
+    margin-top: 0.25rem;
+  }
 
   @media screen and (max-width: 600px) {
     margin-top: 15px;
