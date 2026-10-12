@@ -69,7 +69,7 @@ mark {
 
 a,
 span.link {
-  transition-property: all;
+  transition-property: color, text-decoration-color;
   transition-duration: 0.2s;
   transition-timing-function: ease;
   color: var(--link-color);
@@ -92,6 +92,7 @@ span.link {
 }
 
 a.btn {
+  transition-property: color, background-color;
   background-color: var(--button-bg-color);
   color: var(--button-fg-color);
   padding: var(--space-2);
@@ -1113,5 +1114,22 @@ div.footnotes {
 
   li p {
     color: var(--secondary-color);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  img,
+  video {
+    transition: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      transform: none;
+    }
+  }
+
+  details.portfolio-item > summary:hover div.company-logo img {
+    transform: none;
   }
 }
