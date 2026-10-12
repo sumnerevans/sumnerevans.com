@@ -33,26 +33,34 @@ body {
 
   --image-opacity: 0.9;
 
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 4rem;
+
   color: var(--fg-color);
   background-color: var(--bg-color);
 
-  max-width: 800px;
-  margin: 1rem auto 2rem auto;
-  padding: 0 0.5rem;
-  font-size: 15px;
+  max-width: 50rem;
+  margin: var(--space-4) auto var(--space-6);
+  padding: 0 var(--space-2);
+  font-size: 1rem;
   line-height: 1.5;
   font-family: Iosevka, monospace;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 38rem) {
   body {
-    margin: 1rem auto;
+    margin: var(--space-4) auto;
   }
 }
 
 mark {
   border-radius: 0.25rem;
-  padding: 1px 0.25rem;
+  padding: 1px var(--space-1);
 }
 
 a,
@@ -82,7 +90,7 @@ span.link {
 a.btn {
   background-color: var(--button-bg-color);
   color: var(--button-fg-color);
-  padding: 10px;
+  padding: var(--space-2);
   border-radius: 5px;
   text-decoration: none;
 
@@ -102,7 +110,7 @@ h5,
 h6 {
   line-height: 1.2;
   display: flex;
-  gap: 0.5rem;
+  gap: var(--space-2);
   align-items: center;
   flex-wrap: wrap;
 
@@ -122,17 +130,17 @@ h6 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 div.article-title {
   display: flex;
   align-items: center;
-  gap: 0 1rem;
+  gap: 0 var(--space-4);
 
   h1 {
     flex-grow: 1;
-    margin: 10px 0;
+    margin: var(--space-2) 0;
   }
 
   a {
@@ -144,7 +152,7 @@ div.article-title {
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 38rem) {
     flex-wrap: wrap;
   }
 }
@@ -152,13 +160,13 @@ div.article-title {
 div.article-info {
   color: var(--secondary-color);
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-4);
 
   .post-info-line,
   .post-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.25rem;
+    gap: var(--space-1);
 
     > b,
     > span {
@@ -167,18 +175,18 @@ div.article-info {
   }
 
   .post-tags {
-    margin-top: 0.25rem;
+    margin-top: var(--space-1);
   }
 
-  @media screen and (max-width: 600px) {
-    margin-top: 15px;
+  @media screen and (max-width: 38rem) {
+    margin-top: var(--space-4);
   }
 
   .unlisted-notice {
     border-radius: 5px;
     background-color: #df8e1d;
     color: black;
-    padding: 5px 0.5rem;
+    padding: var(--space-1) var(--space-2);
   }
 }
 
@@ -198,13 +206,13 @@ tt,
 kbd {
   border-radius: 5px;
   background-color: var(--preformatted-bg-color);
-  padding: 1px 0.5rem;
+  padding: 1px var(--space-2);
 }
 
 pre {
   border-radius: 5px;
   border: 1px solid var(--preformatted-border-color);
-  padding: 1rem;
+  padding: var(--space-4);
   overflow-x: auto;
 
   code {
@@ -213,11 +221,11 @@ pre {
 }
 
 article {
-  margin: 2rem 0;
+  margin: var(--space-6) 0;
 }
 
 main.list-page {
-  padding-top: 24px;
+  padding-top: var(--space-5);
 }
 
 .taxonomy-pills {
@@ -235,7 +243,7 @@ main.list-page {
 a.taxonomy-pill {
   display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: var(--space-1);
   box-sizing: border-box;
   max-width: 100%;
   padding: 0.1rem 0.35rem 0.05rem;
@@ -270,8 +278,8 @@ a.taxonomy-pill {
 }
 
 blockquote {
-  border-left: 0.7em solid black;
-  padding: 0.5em 0 0.5em 1em;
+  border-left: 0.5rem solid black;
+  padding: var(--space-2) 0 var(--space-2) var(--space-4);
 
   *:first-child {
     margin-top: 0;
@@ -283,12 +291,12 @@ blockquote {
 }
 
 :not(.gallery) > figure + figure {
-  margin-top: 1rem;
+  margin-top: var(--space-4);
 }
 
 figure {
   background-color: var(--figure-bg-color);
-  padding: 5px;
+  padding: var(--space-1);
   margin: 0 auto;
   border-radius: 8px;
 
@@ -372,7 +380,7 @@ video {
   margin: 0 auto;
 
   &.figure {
-    margin: 1em auto;
+    margin: var(--space-4) auto;
     text-align: center;
   }
 }
@@ -394,8 +402,7 @@ table.gallery {
 
 div.gallery {
   display: flex;
-  flex-direction: horizontal;
-  gap: 4px;
+  gap: var(--space-1);
 
   p {
     margin: 0;
@@ -423,15 +430,15 @@ details:not(.normal-expander) {
 }
 
 details.youtube-expander {
-  margin: 1em 0;
+  margin: var(--space-4) 0;
 
   >summary {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: var(--space-2);
 
     background-color: var(--expander-summary-color);
-    padding: 1em;
+    padding: var(--space-4);
 
     svg {
       color: #e52d27;
@@ -441,7 +448,7 @@ details.youtube-expander {
 
   div.lite-youtube-fallback {
     background: black;
-    padding: 4rem;
+    padding: var(--space-7);
     text-align: center;
     font-size: 1.5rem;
 
@@ -453,8 +460,8 @@ details.youtube-expander {
 
 details.advent-of-code-part-expander {
   border: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 1em;
+  margin: var(--space-4) 0;
+  padding: var(--space-4);
 
   >summary {
 
@@ -465,13 +472,13 @@ details.advent-of-code-part-expander {
 }
 
 details.portfolio-item {
-  margin-bottom: 1em;
+  margin-bottom: var(--space-4);
 
   >summary {
     background-color: var(--expander-summary-color);
     display: grid;
-    padding: 0.5rem 1rem 0.5rem 0.75rem;
-    gap: 0.2rem 0.5rem;
+    padding: var(--space-2) var(--space-4) var(--space-2) var(--space-3);
+    gap: var(--space-1) var(--space-2);
     grid-template:
       "expander icon title       dates      " auto
       "expander icon description description" auto
@@ -541,10 +548,10 @@ details.portfolio-item {
   }
 
   >div {
-    margin-left: 2em;
+    margin-left: var(--space-6);
   }
 
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 35rem) {
     >summary {
       grid-template:
         "expander icon title      " auto
@@ -570,7 +577,7 @@ details.portfolio-item {
 }
 
 details.portfolio-more-items {
-  margin-bottom: 1em;
+  margin-bottom: var(--space-4);
 
   >summary {
     display: flex;
@@ -579,7 +586,7 @@ details.portfolio-more-items {
     >div {
       background-color: var(--expander-summary-color);
       border-radius: 0.5rem;
-      padding: 0.5rem 2rem;
+      padding: var(--space-2) var(--space-6);
       cursor: pointer;
       font-weight: bold;
       font-size: 1.1rem;
@@ -596,8 +603,8 @@ details.portfolio-more-items {
 }
 
 header {
-  --image-width: 150px;
-  --col-gap: 1rem;
+  --image-width: 9.375rem;
+  --col-gap: var(--space-4);
 
   display: grid;
   gap: 0.6rem var(--col-gap);
@@ -607,7 +614,7 @@ header {
     "nav nav" auto
     / auto var(--image-width);
 
-  padding-bottom: 0.5rem;
+  padding-bottom: var(--space-2);
   border-bottom: 2px solid var(--section-sep-color);
 
   a.site-image {
@@ -641,7 +648,7 @@ header {
     align-items: start;
 
     .site-title a {
-      font-size: 3.5em;
+      font-size: 3.5rem;
       font-weight: bold;
       text-decoration: none;
       color: var(--fg-color);
@@ -661,9 +668,9 @@ header {
 
   div.links {
     grid-area: links;
-    font-size: 1.7em;
+    font-size: 1.7rem;
     display: flex;
-    gap: 0.8em;
+    gap: var(--space-3);
     flex-wrap: wrap;
 
     a {
@@ -674,9 +681,8 @@ header {
   }
 
   nav {
-    --search-gap: 20px;
     grid-area: nav;
-    padding: 0.5rem 0;
+    padding: var(--space-2) 0;
 
     display: grid;
     grid-template:
@@ -685,7 +691,7 @@ header {
       / auto 1fr auto;
 
     p {
-      margin: 0.5rem 0;
+      margin: var(--space-2) 0;
     }
 
     a {
@@ -696,14 +702,14 @@ header {
       grid-area: nav-links;
       display: flex;
       align-items: center;
-      gap: 0.5rem 1.5rem;
+      gap: var(--space-2) var(--space-5);
       flex-wrap: wrap;
-      font-size: 1.2em;
+      font-size: 1.2rem;
 
       a {
         display: flex;
         align-items: center;
-        gap: 0.4rem;
+        gap: var(--space-2);
 
         span {
           line-height: 1.4;
@@ -723,11 +729,11 @@ header {
 
       .posts {
         display: flex;
-        gap: 0.3rem;
+        gap: var(--space-1);
       }
     }
 
-    @media screen and (max-width: 650px) {
+    @media screen and (max-width: 40rem) {
       .nav-links {
 
         .categories-link,
@@ -745,13 +751,13 @@ header {
       }
     }
 
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 35rem) {
       .nav-links {
-        gap: 0.5rem 1rem;
+        gap: var(--space-2) var(--space-4);
       }
     }
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 25rem) {
 
       .nav-links>a>svg,
       .nav-links>.posts>a>svg {
@@ -793,12 +799,12 @@ header {
 
     #search-container {
       grid-area: search-container;
-      margin: var(--search-gap) 0 20px;
+      margin: var(--space-5) 0;
       text-align: left;
 
       input[type=search] {
         box-sizing: border-box;
-        padding: 8px;
+        padding: var(--space-2);
         border: 1px solid var(--search-container-border-color);
         border-top: 3px solid var(--link-color);
         background-color: var(--search-container-bg-color);
@@ -808,15 +814,15 @@ header {
 
       #search-results {
         background-color: var(--search-container-bg-color);
-        padding: .5rem 0;
+        padding: var(--space-2) 0;
 
         hr {
           border: 1px solid var(--search-container-sep-color);
         }
 
         .search-result {
-          padding: 0 .5rem;
-          margin: .5rem 0;
+          padding: 0 var(--space-2);
+          margin: var(--space-2) 0;
 
           h4 {
             margin: 0;
@@ -832,7 +838,7 @@ header {
           }
 
           .content-summary {
-            margin-top: 0.5rem;
+            margin-top: var(--space-2);
             display: -webkit-box;
             overflow: hidden;
             -webkit-line-clamp: 3;
@@ -850,9 +856,9 @@ header {
         #search-pagination {
           display: flex;
           align-items: center;
-          gap: 0.75rem;
-          margin: 1rem 0 0.5rem;
-          padding: 0 0.5rem;
+          gap: var(--space-3);
+          margin: var(--space-4) 0 var(--space-2);
+          padding: 0 var(--space-2);
 
           #search-status {
             flex: 1;
@@ -884,9 +890,9 @@ header {
     }
   }
 
-  @media screen and (max-width: 600px) {
-    --image-width: 80px;
-    --col-gap: 0.5rem;
+  @media screen and (max-width: 38rem) {
+    --image-width: 5rem;
+    --col-gap: var(--space-2);
 
     .name-and-subtitle {
       .site-title a {
@@ -905,7 +911,7 @@ dt {
 }
 
 dd {
-  margin-block-end: 1em;
+  margin-block-end: var(--space-4);
 
   p.first {
     margin-top: 0;
@@ -915,20 +921,19 @@ dd {
 .docutils.field-list {
   th.field-name {
     text-align: left;
-    padding-right: 1em;
+    padding-right: var(--space-4);
   }
 }
 
 .next-prev {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 
   a {
-    margin: 1em 0;
+    margin: var(--space-4) 0;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 38rem) {
     align-items: center;
     flex-direction: column;
     text-align: center;
@@ -942,11 +947,11 @@ dd {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 0.5rem;
+    margin-top: var(--space-2);
 
     h3 {
-      margin-top: 0.5rem;
-      margin-bottom: 0.5rem;
+      margin-top: var(--space-2);
+      margin-bottom: var(--space-2);
     }
 
     .attribution {
@@ -957,21 +962,21 @@ dd {
 
   .articles ul {
     margin: 0;
-    padding-left: 1.5rem;
+    padding-left: var(--space-5);
   }
 }
 
 .comments {
-  margin-top: 1rem;
-  min-height: 375px;
+  margin-top: var(--space-4);
+  min-height: 23.4375rem;
 }
 
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-  margin-top: 2rem;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
   color: var(--secondary-color);
 
   .copyright {
@@ -984,7 +989,7 @@ footer {
 
   #theme-switcher {
     display: flex;
-    gap: 0.25rem;
+    gap: var(--space-1);
 
     button {
       cursor: pointer;
@@ -1048,7 +1053,7 @@ table:not(.gallery) {
 
   th,
   td {
-    padding: 4px 8px;
+    padding: var(--space-1) var(--space-2);
 
     &.align-right {
       text-align: right;
@@ -1064,8 +1069,8 @@ table:not(.gallery) {
   display: flex;
 
   .summary-image {
-    width: 250px;
-    margin: 4px 16px 0 0;
+    width: 15rem;
+    margin: var(--space-1) var(--space-4) 0 0;
     flex-grow: 0;
     flex-shrink: 0;
   }
@@ -1079,7 +1084,7 @@ table:not(.gallery) {
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 38rem) {
     flex-direction: column;
 
     .summary-image {
@@ -1088,7 +1093,7 @@ table:not(.gallery) {
     }
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 25rem) {
     .summary-image {
       width: 100%;
     }
