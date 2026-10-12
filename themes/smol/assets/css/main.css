@@ -624,6 +624,7 @@ header {
       &:hover,
       &:focus {
         color: var(--fg-color);
+        text-decoration: none;
       }
     }
 
