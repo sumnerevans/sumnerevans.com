@@ -47,6 +47,9 @@
     <meta property="og:image" content="{{ $logowebplarge.Permalink }}">
   {{ end }}
   <link rel="canonical" href="{{ .Permalink }}" />
+  {{ with .OutputFormats.Get "MARKDOWN" }}
+    <link rel="alternate" type="text/markdown" href="{{ .Permalink }}">
+  {{ end }}
   {{ partial "opengraph.html" . }}
   {{ partial "twitter_cards.html" . }}
 

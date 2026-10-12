@@ -16,12 +16,16 @@ pygmentsUseClasses: true
 
 outputs:
   home: [ "HTML", "RSS", "JSON", "HASH" ]
+  page: [ "HTML", "MARKDOWN" ]
 
 outputFormats:
   hash:
     isPlainText: true
     mediaType: "text/plain+sha256"
     notAlternative: true
+  markdown:
+    isPlainText: true
+    mediaType: text/markdown
 
 mediaTypes:
   "text/plain+sha256":
