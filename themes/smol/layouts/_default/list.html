@@ -9,7 +9,7 @@
   {{ end }}
 
   <ul>
-    {{- range partial "func/FilterPages" .Paginator.Pages -}}
+    {{- range partial "func/FilterPages" .Pages -}}
     <li>
       {{- if and (ne $listtitle "Categories") (ne $listtitle "Tags") -}}
         {{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}
@@ -18,6 +18,5 @@
     </li>
     {{- end -}}
   </ul>
-  {{ partial "pagination.html" . }}
 </main>
 {{ end }}
