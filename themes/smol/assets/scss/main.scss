@@ -152,7 +152,7 @@ div.article-title {
 div.article-info {
   color: var(--secondary-color);
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 
   .post-info-line,
   .post-tags {
@@ -162,7 +162,7 @@ div.article-info {
 
     > b,
     > span {
-      transform: translateY(0.05em);
+      transform: translateY(0.05rem);
     }
   }
 
@@ -213,7 +213,7 @@ pre {
 }
 
 article {
-  padding: 24px 0;
+  margin: 2rem 0;
 }
 
 main.list-page {
