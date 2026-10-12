@@ -60,11 +60,13 @@
   {{ $styles := slice
       (resources.Get "css/iosevka.css")
       (resources.Get "css/theme.css")
-      (resources.Get "css/chroma.css")
-      (resources.Get "css/main.css")
-      | resources.Concat "css/site.css"
-      | minify
   }}
+  {{ $stylePath := "css/site.css" }}
+  {{ if in .Content "chroma" }}
+    {{ $styles = append (resources.Get "css/chroma.css") $styles }}
+    {{ $stylePath = "css/site-chroma.css" }}
+  {{ end }}
+  {{ $styles = append (resources.Get "css/main.css") $styles | resources.Concat $stylePath | minify }}
   <style>{{ $styles.Content | safeCSS }}</style>
 
   <!-- RSS -->
