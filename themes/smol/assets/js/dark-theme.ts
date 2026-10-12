@@ -1,5 +1,7 @@
-const options = document.querySelector("#dark-theme-script")?.dataset;
 const themeSwitcher = document.querySelector("#theme-switcher");
+const giscusContainer = document.querySelector("div.comments");
+let giscusScript: HTMLScriptElement | null = null;
+let giscusFrame: HTMLIFrameElement | null = null;
 
 const darkThemeMatch = window.matchMedia(
   "(prefers-color-scheme: dark),(prefers-color-scheme: no-preference)"
@@ -14,11 +16,20 @@ const resolveTheme = () => {
 }
 
 const giscusThemeUrl = (theme: string) =>
-  `${window.location.origin}/giscus/theme-${theme}.css`;
+  `https://sumnerevans.com/giscus/theme-${theme}.css`;
+
+const sendGiscusTheme = () => {
+  const themeUrl = giscusThemeUrl(resolveTheme());
+  giscusScript?.setAttribute("data-theme", themeUrl);
+  giscusFrame?.contentWindow?.postMessage({
+    giscus: { setConfig: { theme: themeUrl } },
+  }, "https://giscus.app");
+};
 
 const detectThemeAndSwitchStyle = () => {
   let theme = resolveTheme();
 
+  document.documentElement.style.colorScheme = theme;
   const body = document.body;
   if (theme === "dark") {
     body.classList.add("dark-theme");
@@ -41,14 +52,7 @@ const detectThemeAndSwitchStyle = () => {
       theme === "dark" ? "rgba(0, 0, 0, 0.85)" : "rgba(255, 255, 255, 0.9)",
   });
 
-  const giscuss = document.querySelector("iframe.giscus-frame") as HTMLIFrameElement | null;
-  if (giscuss) {
-    giscuss.contentWindow?.postMessage({
-      giscus: {
-        setConfig: { theme: giscusThemeUrl(theme) },
-      },
-    }, "https://giscus.app");
-  }
+  sendGiscusTheme();
 
   document.querySelector("#theme-switcher .dark")?.classList.toggle("active", localStorage.getItem("themeOverride") === "dark");
   document.querySelector("#theme-switcher .light")?.classList.toggle("active", localStorage.getItem("themeOverride") === "light");
@@ -99,6 +103,18 @@ const giscusAttributes = {
   "async": "",
 };
 
-const giscusScript = document.createElement("script");
-Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript.setAttribute(key, value));
-document.querySelector("div.comments")?.appendChild(giscusScript);
+if (giscusContainer) {
+  const observer = new MutationObserver(() => {
+    const frame = giscusContainer.querySelector("iframe.giscus-frame") as HTMLIFrameElement | null;
+    if (!frame || frame === giscusFrame) return;
+
+    giscusFrame = frame;
+    frame.addEventListener("load", sendGiscusTheme);
+    sendGiscusTheme();
+  });
+  observer.observe(giscusContainer, { childList: true, subtree: true });
+
+  giscusScript = document.createElement("script");
+  Object.entries(giscusAttributes).forEach(([key, value]) => giscusScript?.setAttribute(key, value));
+  giscusContainer.appendChild(giscusScript);
+}

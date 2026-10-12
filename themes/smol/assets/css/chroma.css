@@ -1,0 +1,457 @@
+/* Combined from chroma/catppuccin-latte.css (light) and chroma/onedark.css
+   (dark). Those source palettes are retained for future updates; only this
+   merged file is bundled. Colors follow the effective color-scheme on body. */
+/* Background */
+.bg {
+  color: light-dark(#4c4f69, #abb2bf);
+  background-color: light-dark(#eff1f5, #282c34);
+}
+
+/* PreWrapper */
+.chroma {
+  color: light-dark(#4c4f69, #abb2bf);
+  background-color: light-dark(#eff1f5, #282c34);
+  -webkit-text-size-adjust: var(--chroma-light-text-size-adjust);
+}
+
+/* Other */
+.chroma .x {
+  color: light-dark(#4c4f69, currentColor);
+}
+
+/* Error */
+.chroma .err {
+  color: light-dark(#d20f39, currentColor);
+}
+
+/* CodeLine */
+.chroma .cl {
+  color: light-dark(#4c4f69, currentColor);
+}
+
+/* LineLink */
+.chroma .lnlinks {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* LineTableTD */
+.chroma .lntd {
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* LineTable */
+.chroma .lntable {
+  border-spacing: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* LineHighlight */
+.chroma .hl {
+  background-color: light-dark(#bcc0cc, #3d4148);
+}
+
+/* LineNumbersTable */
+.chroma .lnt {
+  white-space: pre;
+  -webkit-user-select: none;
+  user-select: none;
+  margin-right: 0.4em;
+  padding: 0 0.4em 0 0.4em;
+  color: light-dark(#8c8fa1, #55595f);
+}
+
+/* LineNumbers */
+.chroma .ln {
+  white-space: pre;
+  -webkit-user-select: none;
+  user-select: none;
+  margin-right: 0.4em;
+  padding: 0 0.4em 0 0.4em;
+  color: light-dark(#8c8fa1, #55595f);
+}
+
+/* Line */
+.chroma .line {
+  display: flex;
+}
+
+/* Keyword */
+.chroma .k {
+  color: light-dark(#8839ef, #c678dd);
+}
+
+/* KeywordConstant */
+.chroma .kc {
+  color: light-dark(#fe640b, #e5c07b);
+}
+
+/* KeywordDeclaration */
+.chroma .kd {
+  color: light-dark(#d20f39, #c678dd);
+}
+
+/* KeywordNamespace */
+.chroma .kn {
+  color: light-dark(#179299, #c678dd);
+}
+
+/* KeywordPseudo */
+.chroma .kp {
+  color: light-dark(#8839ef, #c678dd);
+}
+
+/* KeywordReserved */
+.chroma .kr {
+  color: light-dark(#8839ef, #c678dd);
+}
+
+/* KeywordType */
+.chroma .kt {
+  color: light-dark(#d20f39, #e5c07b);
+}
+
+/* NameAttribute */
+.chroma .na {
+  color: light-dark(#1e66f5, #e06c75);
+}
+
+/* NameClass */
+.chroma .nc {
+  color: light-dark(#df8e1d, #e5c07b);
+}
+
+/* NameConstant */
+.chroma .no {
+  color: light-dark(#df8e1d, #e06c75);
+}
+
+/* NameDecorator */
+.chroma .nd {
+  color: light-dark(#1e66f5, #61afef);
+  font-weight: var(--chroma-light-weight);
+}
+
+/* NameEntity */
+.chroma .ni {
+  color: light-dark(#179299, #e06c75);
+}
+
+/* NameException */
+.chroma .ne {
+  color: light-dark(#fe640b, #e06c75);
+}
+
+/* NameLabel */
+.chroma .nl {
+  color: light-dark(#04a5e5, #e06c75);
+}
+
+/* NameNamespace */
+.chroma .nn {
+  color: light-dark(#fe640b, #e06c75);
+}
+
+/* NameOther */
+.chroma .nx {
+  color: light-dark(#4c4f69, #e06c75);
+}
+
+/* NameProperty */
+.chroma .py {
+  color: light-dark(#fe640b, #e06c75);
+}
+
+/* NameTag */
+.chroma .nt {
+  color: light-dark(#8839ef, #e06c75);
+}
+
+/* NameBuiltin */
+.chroma .nb {
+  color: light-dark(#04a5e5, #e5c07b);
+}
+
+/* NameBuiltinPseudo */
+.chroma .bp {
+  color: light-dark(#04a5e5, #e06c75);
+}
+
+/* NameVariable */
+.chroma .nv {
+  color: light-dark(#dc8a78, #e06c75);
+}
+
+/* NameVariableClass */
+.chroma .vc {
+  color: light-dark(#dc8a78, #e06c75);
+}
+
+/* NameVariableGlobal */
+.chroma .vg {
+  color: light-dark(#dc8a78, #e06c75);
+}
+
+/* NameVariableInstance */
+.chroma .vi {
+  color: light-dark(#dc8a78, #e06c75);
+}
+
+/* NameVariableMagic */
+.chroma .vm {
+  color: light-dark(#dc8a78, #e06c75);
+}
+
+/* NameFunction */
+.chroma .nf {
+  color: light-dark(#1e66f5, #61afef);
+  font-weight: var(--chroma-dark-weight);
+}
+
+/* NameFunctionMagic */
+.chroma .fm {
+  color: light-dark(#1e66f5, #56b6c2);
+  font-weight: var(--chroma-dark-weight);
+}
+
+/* LiteralDate */
+.chroma .ld {
+  color: light-dark(#4c4f69, currentColor);
+}
+
+/* LiteralString */
+.chroma .s {
+  color: light-dark(#40a02b, #98c379);
+}
+
+/* LiteralStringAffix */
+.chroma .sa {
+  color: light-dark(#d20f39, #98c379);
+}
+
+/* LiteralStringBacktick */
+.chroma .sb {
+  color: light-dark(#40a02b, #98c379);
+}
+
+/* LiteralStringChar */
+.chroma .sc {
+  color: light-dark(#40a02b, #98c379);
+}
+
+/* LiteralStringDelimiter */
+.chroma .dl {
+  color: light-dark(#1e66f5, #98c379);
+}
+
+/* LiteralStringDoc */
+.chroma .sd {
+  color: light-dark(#9ca0b0, #98c379);
+}
+
+/* LiteralStringDouble */
+.chroma .s2 {
+  color: light-dark(#40a02b, #98c379);
+}
+
+/* LiteralStringEscape */
+.chroma .se {
+  color: light-dark(#1e66f5, #98c379);
+}
+
+/* LiteralStringHeredoc */
+.chroma .sh {
+  color: light-dark(#9ca0b0, #98c379);
+}
+
+/* LiteralStringInterpol */
+.chroma .si {
+  color: light-dark(#40a02b, #98c379);
+}
+
+/* LiteralStringOther */
+.chroma .sx {
+  color: light-dark(#40a02b, #98c379);
+}
+
+/* LiteralStringRegex */
+.chroma .sr {
+  color: light-dark(#179299, #98c379);
+}
+
+/* LiteralStringSingle */
+.chroma .s1 {
+  color: light-dark(#40a02b, #98c379);
+}
+
+/* LiteralStringSymbol */
+.chroma .ss {
+  color: light-dark(#40a02b, #98c379);
+}
+
+/* LiteralNumber */
+.chroma .m {
+  color: light-dark(#fe640b, #d19a66);
+}
+
+/* LiteralNumberBin */
+.chroma .mb {
+  color: light-dark(#fe640b, #d19a66);
+}
+
+/* LiteralNumberFloat */
+.chroma .mf {
+  color: light-dark(#fe640b, #d19a66);
+}
+
+/* LiteralNumberHex */
+.chroma .mh {
+  color: light-dark(#fe640b, #d19a66);
+}
+
+/* LiteralNumberInteger */
+.chroma .mi {
+  color: light-dark(#fe640b, #d19a66);
+}
+
+/* LiteralNumberIntegerLong */
+.chroma .il {
+  color: light-dark(#fe640b, #d19a66);
+}
+
+/* LiteralNumberOct */
+.chroma .mo {
+  color: light-dark(#fe640b, #d19a66);
+}
+
+/* Operator */
+.chroma .o {
+  color: light-dark(#04a5e5, #56b6c2);
+  font-weight: var(--chroma-light-weight);
+}
+
+/* OperatorWord */
+.chroma .ow {
+  color: light-dark(#04a5e5, #56b6c2);
+  font-weight: var(--chroma-light-weight);
+}
+
+/* OperatorReserved */
+.chroma .or {
+  color: light-dark(#04a5e5, currentColor);
+  font-weight: var(--chroma-light-weight);
+}
+
+/* Comment */
+.chroma .c {
+  color: light-dark(#9ca0b0, #7f848e);
+  font-style: var(--chroma-light-style);
+}
+
+/* CommentHashbang */
+.chroma .ch {
+  color: light-dark(#acb0be, #7f848e);
+  font-style: var(--chroma-light-style);
+}
+
+/* CommentMultiline */
+.chroma .cm {
+  color: light-dark(#9ca0b0, #7f848e);
+  font-style: var(--chroma-light-style);
+}
+
+/* CommentSingle */
+.chroma .c1 {
+  color: light-dark(#9ca0b0, #7f848e);
+  font-style: var(--chroma-light-style);
+}
+
+/* CommentSpecial */
+.chroma .cs {
+  color: light-dark(#9ca0b0, #7f848e);
+  font-style: var(--chroma-light-style);
+}
+
+/* CommentPreproc */
+.chroma .cp {
+  color: light-dark(#9ca0b0, #7f848e);
+  font-style: var(--chroma-light-style);
+}
+
+/* CommentPreprocFile */
+.chroma .cpf {
+  color: light-dark(#9ca0b0, #7f848e);
+  font-weight: var(--chroma-light-weight);
+  font-style: var(--chroma-light-style);
+}
+
+/* GenericDeleted */
+.chroma .gd {
+  color: light-dark(#d20f39, #e06c75);
+  background-color: light-dark(#ccd0da, transparent);
+}
+
+/* GenericEmph */
+.chroma .ge {
+  font-style: var(--chroma-light-style);
+}
+
+/* GenericError */
+.chroma .gr {
+  color: light-dark(#d20f39, currentColor);
+}
+
+/* GenericHeading */
+.chroma .gh {
+  color: light-dark(#fe640b, currentColor);
+  font-weight: var(--chroma-light-weight);
+}
+
+/* GenericInserted */
+.chroma .gi {
+  color: light-dark(#40a02b, #98c379);
+  background-color: light-dark(#ccd0da, transparent);
+  font-weight: var(--chroma-dark-weight);
+}
+
+/* GenericOutput */
+.chroma .go {
+  color: light-dark(#4c4f69, currentColor);
+}
+
+/* GenericPrompt */
+.chroma .gp {
+  color: light-dark(#4c4f69, currentColor);
+}
+
+/* GenericStrong */
+.chroma .gs {
+  font-weight: var(--chroma-light-weight);
+}
+
+/* GenericSubheading */
+.chroma .gu {
+  color: light-dark(#fe640b, currentColor);
+  font-weight: var(--chroma-light-weight);
+}
+
+/* GenericTraceback */
+.chroma .gt {
+  color: light-dark(#d20f39, currentColor);
+}
+
+/* GenericUnderline */
+.chroma .gl {
+  text-decoration: var(--chroma-light-decoration);
+}
+
+/* Name */
+.chroma .n {
+  color: light-dark(currentColor, #e06c75);
+}

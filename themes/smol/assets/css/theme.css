@@ -1,0 +1,73 @@
+:root {
+  color-scheme: dark;
+  background-color: light-dark(#fff, #282828);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+  }
+}
+
+body {
+  --fg-color: light-dark(#333, #dadada);
+  --bg-color: light-dark(#fff, #282828);
+  --secondary-color: light-dark(#666, #999);
+  --section-sep-color: #aaa;
+
+  --link-color: light-dark(#b91c1c, #ef4444);
+  --link-active-color: light-dark(#7f1d1d, #f87171);
+  --link-disabled-color: light-dark(#757575, #909090);
+
+  --button-bg-color: light-dark(#111, #dadada);
+  --button-fg-color: light-dark(#dadada, #282828);
+  --button-active-bg-color: light-dark(#000, #fff);
+  --button-active-fg-color: light-dark(#fff, #000);
+
+  --figure-bg-color: light-dark(#0002, #ffffff18);
+  --preformatted-bg-color: light-dark(#0002, #ffffff18);
+  --preformatted-border-color: light-dark(#000, #999);
+  --blockquote-border-color: light-dark(#333, #999);
+  --notice-bg-color: #df8e1d;
+  --notice-fg-color: #000;
+  --accent-contrast-color: light-dark(#fff, #1a1a1a);
+
+  --search-container-bg-color: light-dark(#eee, #1a1a1a);
+  --search-container-fg-color: light-dark(#000, #eee);
+  --search-container-border-color: #000;
+  --search-container-sep-color: light-dark(#c0c0c0, #000);
+  --search-container-active-indicator-color: light-dark(#b91c1c, #ef4444);
+
+  --expander-summary-color: light-dark(#eee, #202020);
+  --table-border-color: light-dark(#000, #fff);
+  --table-nth-child-bg-color: light-dark(#ccc, #444);
+
+  --image-opacity: 0.7;
+
+  /* Chroma's few weight/style differences cannot use light-dark(). */
+  --chroma-light-weight: unset;
+  --chroma-dark-weight: bold;
+  --chroma-light-style: unset;
+  --chroma-light-decoration: none;
+  --chroma-light-text-size-adjust: auto;
+}
+
+@media (prefers-color-scheme: light) {
+  body:not(.dark-theme) {
+    --image-opacity: 0.9;
+    --chroma-light-weight: bold;
+    --chroma-dark-weight: unset;
+    --chroma-light-style: italic;
+    --chroma-light-decoration: underline;
+    --chroma-light-text-size-adjust: none;
+  }
+}
+
+body.light-theme {
+  --image-opacity: 0.9;
+  --chroma-light-weight: bold;
+  --chroma-dark-weight: unset;
+  --chroma-light-style: italic;
+  --chroma-light-decoration: underline;
+  --chroma-light-text-size-adjust: none;
+}

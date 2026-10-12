@@ -57,9 +57,15 @@
   <link rel="preload" href="/fonts/webfont/Iosevka-BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
 
   <!-- CSS -->
-  {{ with resources.Get "scss/main.scss" | css.Sass (dict "outputStyle" "compact") }}
-    <style>{{ .Content | safeCSS }}</style>
-  {{ end }}
+  {{ $styles := slice
+      (resources.Get "css/iosevka.css")
+      (resources.Get "css/theme.css")
+      (resources.Get "css/chroma.css")
+      (resources.Get "css/main.css")
+      | resources.Concat "css/site.css"
+      | minify
+  }}
+  <style>{{ $styles.Content | safeCSS }}</style>
 
   <!-- RSS -->
   {{ with .OutputFormats.Get "RSS" -}}
