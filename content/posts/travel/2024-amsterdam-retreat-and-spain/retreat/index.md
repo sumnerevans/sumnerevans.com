@@ -3,7 +3,6 @@ title: "Amsterdam, Netherlands - Work Retreat"
 date: 2024-11-08T09:25:00-06:00
 categories:
   - Travel
-  - Trip to Amsterdam and Spain 2024
   - Work Retreats
 tags:
   - Travel
