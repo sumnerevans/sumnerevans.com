@@ -37,17 +37,24 @@ span.link {
   color: var(--link-color);
   text-decoration: none;
 
-  &:hover:not(.disabled),
-  &:active:not(.disabled),
-  &:focus:not(.disabled) {
+  &:hover,
+  &:active,
+  &:focus {
     color: var(--link-active-color);
     text-decoration: underline;
     cursor: pointer;
   }
 
   &.disabled {
-    text-decoration: none;
     color: var(--link-disabled-color);
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+      color: var(--link-disabled-color);
+      cursor: none;
+    }
   }
 }
 
