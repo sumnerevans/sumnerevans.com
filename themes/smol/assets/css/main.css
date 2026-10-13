@@ -37,14 +37,12 @@ span.link {
   color: var(--link-color);
   text-decoration: none;
 
-  &:hover,
-  &:active,
-  &:focus {
-    &:not(.disabled) {
-      color: var(--link-active-color);
-      text-decoration: underline;
-      cursor: pointer;
-    }
+  &:hover:not(.disabled),
+  &:active:not(.disabled),
+  &:focus:not(.disabled) {
+    color: var(--link-active-color);
+    text-decoration: underline;
+    cursor: pointer;
   }
 
   &.disabled {
@@ -214,10 +212,11 @@ a.taxonomy-pill {
   box-sizing: border-box;
   max-width: 100%;
   padding: 0.1rem 0.35rem 0.05rem;
-  border: 1px solid var(--section-sep-color);
+  border: 1px solid var(--link-color);
   border-radius: 0.25rem;
   font-size: 0.9em;
   line-height: 1.35;
+  text-decoration: none;
 
   .taxonomy-pill-icon {
     display: inline-flex;
@@ -230,10 +229,11 @@ a.taxonomy-pill {
   }
 
   &:hover,
+  &:active,
+  &:focus,
   &:focus-visible {
-    border-color: var(--link-color);
+    border-color: var(--link-active-color);
     background-color: var(--figure-bg-color);
-    text-decoration: none;
   }
 }
 
