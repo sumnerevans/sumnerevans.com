@@ -239,6 +239,7 @@ a.taxonomy-pill {
   &:active,
   &:focus,
   &:focus-visible {
+    text-decoration: none;
     border-color: var(--link-active-color);
     background-color: var(--figure-bg-color);
   }
