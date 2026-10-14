@@ -183,7 +183,7 @@ implementing a SGIL workflow. These are very speculative.
   [Claude Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview).
 - The files created in _Specify_ step should be largely human-written. This
   point is
-  [also argued by Carson](https://htmx.org/essays/Markdown-in-src/#what-src-md-Markdown-looks-like).
+  [also argued by Carson](https://htmx.org/essays/markdown-in-src/#what-src-md-markdown-looks-like).
   Maybe AIs will get good enough to do this step on their own at some point in
   the future, but in its current state, human curation is still necessary during
   specification.
