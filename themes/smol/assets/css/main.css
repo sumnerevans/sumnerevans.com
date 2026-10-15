@@ -192,12 +192,9 @@ pre {
   }
 }
 
+main,
 article {
   margin: var(--space-6) 0;
-}
-
-main.list-page {
-  padding-top: var(--space-5);
 }
 
 .taxonomy-pills {
@@ -916,8 +913,7 @@ dd {
 }
 
 .comments {
-  margin-top: var(--space-4);
-  min-height: 23.4375rem;
+  min-height: 300px;
 }
 
 footer {
@@ -1077,4 +1073,8 @@ div.footnotes {
   details.portfolio-item>summary:hover div.company-logo img {
     transform: none;
   }
+}
+
+div.pagination {
+  margin-top: var(--space-6);
 }

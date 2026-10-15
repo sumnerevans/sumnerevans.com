@@ -52,19 +52,19 @@
     </div>
   </article>
 </main>
-<div class="next-prev">
-  {{ with $reg.Prev . }}
-    {{ if not .Params.unlisted }}
-      <a class="prev" href="{{ .Permalink }}" title="{{ .Title }}">« {{ .Title | truncate 50 "..." }}</a>
-    {{ end }}
-  {{ end }}
-  {{ with $reg.Next . }}
-    {{ if not .Params.unlisted }}
-      <a class="next" href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title | truncate 50 "..." }} »</a>
-    {{ end }}
-  {{ end }}
-</div>
 {{ if or ($reg.Prev .) ($reg.Next .) }}
+  <div class="next-prev">
+    {{ with $reg.Prev . }}
+      {{ if not .Params.unlisted }}
+        <a class="prev" href="{{ .Permalink }}" title="{{ .Title }}">« {{ .Title | truncate 50 "..." }}</a>
+      {{ end }}
+    {{ end }}
+    {{ with $reg.Next . }}
+      {{ if not .Params.unlisted }}
+        <a class="next" href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title | truncate 50 "..." }} »</a>
+      {{ end }}
+    {{ end }}
+  </div>
   {{ partial "related-posts.html" . }}
   <aside class="discussion">
     <div class="header">
