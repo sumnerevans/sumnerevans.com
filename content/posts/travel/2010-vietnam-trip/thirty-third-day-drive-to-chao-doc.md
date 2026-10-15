@@ -2,6 +2,7 @@
 Title: "Thirty-third Day - Drive to Chao Doc 12/4/10"
 Date: 2010-12-04T21:45:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

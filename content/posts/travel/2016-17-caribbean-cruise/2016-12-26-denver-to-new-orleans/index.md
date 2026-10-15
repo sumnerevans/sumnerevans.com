@@ -2,6 +2,7 @@
 Title: Denver to New Orleans
 Date: 2016-12-26T19:49:00-0600
 Tags:
+  - Travel
   - Caribbean Cruise 2016-17
   - Colorado
   - Denver

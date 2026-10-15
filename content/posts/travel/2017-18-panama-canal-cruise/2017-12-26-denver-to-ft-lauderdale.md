@@ -2,6 +2,7 @@
 title: "Denver to Ft. Lauderdale"
 date: 2017-12-26T08:00:00-0600
 tags:
+  - Travel
   - Panama Canal Cruise
   - Denver
   - Colorado

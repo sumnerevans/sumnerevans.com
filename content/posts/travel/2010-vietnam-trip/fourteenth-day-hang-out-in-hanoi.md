@@ -2,6 +2,7 @@
 Title: "Fourteenth Day - Hang out in Hanoi 11/15/2010 6:30 PM"
 Date: 2010-11-15T12:58:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

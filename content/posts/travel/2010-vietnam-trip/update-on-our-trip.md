@@ -2,6 +2,7 @@
 Title: "Quick Update On Our Trip"
 Date: 2010-11-10T18:19:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

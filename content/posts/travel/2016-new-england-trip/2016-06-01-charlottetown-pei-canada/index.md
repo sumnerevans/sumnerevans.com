@@ -2,6 +2,7 @@
 Title: Charlottetown, Prince Edward Island, Canada
 Date: 2016-06-01T19:00:00-0600
 Tags:
+  - Travel
   - New England Trip
   - Anne of Green Gables
   - Canada
@@ -14,7 +15,6 @@ Tags:
   - North Shore PEI
   - PEI
   - Prince Edward Island
-  - Travel
   - Victoria Row
 image: images/pei14.jpg
 ---

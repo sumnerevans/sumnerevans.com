@@ -2,6 +2,7 @@
 Title: Riga, Latvia
 Date: 2015-08-02T12:50:00-0600
 Tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - Latvia
   - Riga

@@ -2,6 +2,7 @@
 Title: "Hue and Hoi An"
 Date: 2010-11-30T14:50:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

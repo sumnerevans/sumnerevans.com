@@ -2,6 +2,7 @@
 Title: Going on Another Trip!
 Date: 2016-05-14T15:24:00-0600
 tags:
+  - Travel
   - New England Trip
 ---
 

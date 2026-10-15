@@ -2,6 +2,7 @@
 Title: London, England -- Day 5
 Date: 2015-08-13T13:41:00-0600
 Tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - England
   - London

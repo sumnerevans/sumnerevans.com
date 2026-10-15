@@ -2,6 +2,7 @@
 Title: Baltic Cruise and England Vacation Announcement
 Date: 2015-06-30T22:31:00-0600
 tags:
+  - Travel
   - Baltic Cruise and Northern Europe
 ---
 

@@ -2,6 +2,7 @@
 Title: Harvest Caye, Belize
 Date: 2017-01-02T10:32:00-0600
 Tags:
+  - Travel
   - Caribbean Cruise 2016-17
   - Belize
   - Cruise

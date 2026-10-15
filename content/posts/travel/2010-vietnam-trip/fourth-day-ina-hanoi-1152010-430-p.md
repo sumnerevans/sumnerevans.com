@@ -2,6 +2,7 @@
 Title: "Fourth Day - Hanoi 11/5/2010 4:30 PM"
 Date: 2010-11-05T10:17:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

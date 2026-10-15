@@ -2,6 +2,7 @@
 Title: "Day 23: Olympia, Greece"
 Date: 2012-06-02T20:30:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 draft: true
 ---

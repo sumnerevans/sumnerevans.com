@@ -2,6 +2,7 @@
 Title: Klaipeda, Lithuania
 Date: 2015-08-03T12:55:00-0600
 Tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - Klaipeda
   - Lithuania

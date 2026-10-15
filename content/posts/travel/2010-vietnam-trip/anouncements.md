@@ -2,6 +2,7 @@
 Title: "Anouncements"
 Date: 2010-12-16T07:13:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 draft: true
 ---

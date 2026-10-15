@@ -2,6 +2,7 @@
 Title: "Fourtyith Day - Saigon 12/11/10"
 Date: 2010-12-11T21:46:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

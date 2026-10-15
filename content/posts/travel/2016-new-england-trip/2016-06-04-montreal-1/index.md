@@ -2,6 +2,7 @@
 Title: End of Cruise and Montreal, Quebec, Canada
 Date: 2016-06-04T19:00:00-0600
 Tags:
+  - Travel
   - New England Trip
   - Canada
   - Montreal

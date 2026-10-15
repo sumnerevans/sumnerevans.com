@@ -2,8 +2,8 @@
 title: "Denver to Lisbon, Portugal"
 date: 2022-06-05T12:00:00-06:00
 tags:
-  - Trip to Portugal and France
   - Travel
+  - Trip to Portugal and France
   - Denver
   - Lisbon
   - Portugal

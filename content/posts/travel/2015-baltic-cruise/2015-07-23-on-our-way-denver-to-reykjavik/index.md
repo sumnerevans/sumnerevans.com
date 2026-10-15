@@ -2,6 +2,7 @@
 Title: On Our Way - Denver, Colorado, USA to Reykjavík, Iceland
 Date: 2015-07-23T00:02:00-0600
 Tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - Flight
   - Iceland

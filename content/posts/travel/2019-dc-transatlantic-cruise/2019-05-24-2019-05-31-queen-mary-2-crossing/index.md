@@ -2,6 +2,7 @@
 title: "Queen Mary 2 Crossing"
 date: 2019-05-31T23:50:00-06:00
 tags:
+  - Travel
   - Trip to D.C. and Transatlantic Cruise
   - Cruise
   - Queen Mary 2

@@ -2,8 +2,8 @@
 title: "Denver to Washington D.C."
 date: 2021-09-10T09:25:00-06:00
 tags:
-  - Trip to D.C. and Montreal
   - Travel
+  - Trip to D.C. and Montreal
   - Washington D.C.
   - Denver
   - National Natural History Museum

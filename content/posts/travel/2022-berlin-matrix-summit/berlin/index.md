@@ -2,8 +2,8 @@
 title: "Berlin, Germany"
 date: 2022-08-24T12:00:00-06:00
 tags:
-  - Berlin Matrix Community Summit 2022
   - Travel
+  - Berlin Matrix Community Summit 2022
   - Berlin
   - Germany
   - Matrix Community Summit

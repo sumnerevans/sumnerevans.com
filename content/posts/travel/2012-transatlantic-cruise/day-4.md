@@ -2,6 +2,7 @@
 Title: "Day 4"
 Date: 2012-05-05T23:22:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 draft: true
 ---

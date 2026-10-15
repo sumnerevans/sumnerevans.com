@@ -2,6 +2,7 @@
 Title: "Day 20: Dvrovnik, Croatia"
 Date: 2012-05-26T19:20:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 draft: true
 ---

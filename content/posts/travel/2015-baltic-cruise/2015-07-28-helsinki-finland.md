@@ -2,6 +2,7 @@
 Title: Helsinki, Finland
 Date: 2015-07-28T12:22:00-0600
 Tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - Finland
   - Helsinki

@@ -2,6 +2,7 @@
 Title: Tallinn, Estonia
 Date: 2015-08-01T12:49:00-0600
 Tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - Estonia
   - Tallinn

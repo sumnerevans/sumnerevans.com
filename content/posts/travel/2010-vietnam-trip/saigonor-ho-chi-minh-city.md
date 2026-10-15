@@ -2,6 +2,7 @@
 Title: "Saigon,(or Ho Chi Minh City)"
 Date: 2010-12-12T02:18:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

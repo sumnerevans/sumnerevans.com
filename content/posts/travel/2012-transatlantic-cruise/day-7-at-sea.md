@@ -2,6 +2,7 @@
 Title: "Day 7: at sea"
 Date: 2012-05-26T19:08:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 draft: true
 ---

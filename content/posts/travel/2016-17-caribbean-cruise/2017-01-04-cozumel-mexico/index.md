@@ -2,6 +2,7 @@
 Title: Cozumel, Mexico
 Date: 2017-01-04T21:17:00-0600
 Tags:
+  - Travel
   - Caribbean Cruise 2016-17
   - Cenota
   - Cozumel

@@ -2,6 +2,7 @@
 Title: "Seattle International Airport 12:08 MTN Time"
 Date: 2010-10-31T12:08:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

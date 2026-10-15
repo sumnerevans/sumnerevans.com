@@ -2,6 +2,7 @@
 Title: Boston, Massachusetts -- Day 1 -- Lexington and Concord
 Date: 2016-05-19T19:00:00-0600
 Tags:
+  - Travel
   - New England Trip
   - Boston
   - Chinatown
@@ -13,7 +14,6 @@ Tags:
   - MIT
   - Paul Revere
   - Trail
-  - Travel
 image: images/minutemen.jpg
 ---
 

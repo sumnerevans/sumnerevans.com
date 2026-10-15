@@ -2,8 +2,8 @@
 title: "Washington D.C. -- The Holocaust Museum"
 date: 2019-05-19T18:59:00-06:00
 tags:
-  - Trip to D.C. and Transatlantic Cruise
   - Travel
+  - Trip to D.C. and Transatlantic Cruise
   - Washington D.C.
   - Holocaust Museum
   - Washington Monument

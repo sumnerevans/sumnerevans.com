@@ -2,6 +2,7 @@
 Title: London, England -- Day 8 -- Warwick
 Date: 2015-08-16T01:12:00-0600
 Tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - England
   - London

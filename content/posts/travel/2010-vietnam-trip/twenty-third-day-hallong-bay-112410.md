@@ -2,6 +2,7 @@
 Title: "Twenty-third Day - Hallong Bay 11/24/10"
 Date: 2010-11-24T14:03:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

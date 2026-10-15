@@ -2,6 +2,7 @@
 Title: "Day 26: Athens,Greece"
 Date: 2012-05-25T19:23:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 ---
 

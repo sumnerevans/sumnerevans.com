@@ -2,6 +2,7 @@
 title: London, England -- Day 2
 date: 2015-08-10T14:16:00-0600
 tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - England
   - London

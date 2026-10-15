@@ -2,6 +2,7 @@
 Title: "Twenty-ninth Day - Hoi An 11/30/10"
 Date: 2010-11-30T14:28:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

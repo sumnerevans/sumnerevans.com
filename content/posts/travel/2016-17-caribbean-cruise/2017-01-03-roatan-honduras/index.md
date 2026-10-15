@@ -2,6 +2,7 @@
 Title: Roatan, Honduras
 Date: 2017-01-03T21:05:00-0600
 Tags:
+  - Travel
   - Caribbean Cruise 2016-17
   - Honduras
   - Horseback Riding

@@ -2,6 +2,7 @@
 Title: New Orleans, LA -- Day 1
 Date: 2016-12-27T20:30:00-0600
 Tags:
+  - Travel
   - Caribbean Cruise 2016-17
   - Laura Plantation
   - Louisiana

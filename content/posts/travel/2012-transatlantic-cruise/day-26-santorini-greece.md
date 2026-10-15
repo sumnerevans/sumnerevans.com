@@ -2,6 +2,7 @@
 Title: "Day 26: Santorini, Greece"
 Date: 2012-06-02T20:33:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 draft: true
 ---

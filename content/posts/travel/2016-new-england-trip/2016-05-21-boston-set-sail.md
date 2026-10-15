@@ -2,6 +2,7 @@
 Title: Boston, Massachusetts and Set Sail
 Date: 2016-05-21T19:00:00-0600
 Tags:
+  - Travel
   - New England Trip
   - Boston
   - Cruise

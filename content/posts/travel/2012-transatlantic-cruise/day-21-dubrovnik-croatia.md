@@ -2,6 +2,7 @@
 Title: "Day 21: Dubrovnik, Croatia"
 Date: 2012-05-20T18:16:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 ---
 

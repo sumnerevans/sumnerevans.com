@@ -2,6 +2,7 @@
 Title: "Day 5: At Sea"
 Date: 2012-05-04T23:14:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 ---
 

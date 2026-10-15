@@ -2,6 +2,7 @@
 Title: Another Trip!
 Date: 2012-04-22T21:44:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 ---
 

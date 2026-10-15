@@ -2,6 +2,7 @@
 Title: "Twentieth Day - Sunday in Hanoi 11/21/10"
 Date: 2010-11-21T09:17:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

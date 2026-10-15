@@ -2,6 +2,7 @@
 Title: Reykjavík, Iceland
 Date: 2015-08-21T11:37:00-0600
 Tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - Iceland
   - Reykjavík

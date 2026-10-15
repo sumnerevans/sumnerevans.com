@@ -2,6 +2,7 @@
 Title: Copenhagen, Denmark to London, England
 Date: 2015-08-08T22:16:00-0600
 Tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - Copenhagen
   - Denmark

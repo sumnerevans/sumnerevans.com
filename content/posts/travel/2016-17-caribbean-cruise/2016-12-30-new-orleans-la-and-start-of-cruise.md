@@ -2,6 +2,7 @@
 Title: New Orleans, LA and Start of Cruise
 Date: 2016-12-30T10:00:00-0600
 Tags:
+  - Travel
   - Caribbean Cruise 2016-17
   - Cruise
   - Louisiana

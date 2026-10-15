@@ -2,6 +2,7 @@
 Title: "Day 23: Ephesus, Turkey"
 Date: 2012-05-24T19:24:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 ---
 

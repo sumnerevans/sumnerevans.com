@@ -2,6 +2,7 @@
 Title: "Halong Bay Trip"
 Date: 2010-11-26T03:38:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

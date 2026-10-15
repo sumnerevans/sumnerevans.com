@@ -2,6 +2,7 @@
 Title: "Sixth Day - Hanoi 11/7/10 8:09 PM"
 Date: 2010-11-07T14:31:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

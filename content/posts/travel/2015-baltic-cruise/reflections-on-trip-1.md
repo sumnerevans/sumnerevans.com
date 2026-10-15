@@ -2,6 +2,7 @@
 title: Reflections on Trip 1
 date: 2015-10-10T08:41:00-0060
 tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - Reflections
 ---

@@ -2,6 +2,7 @@
 Title: "Thirty-ninth Day - Phu Quoc and Trip to Saigon 12/10/10"
 Date: 2010-12-10T21:46:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

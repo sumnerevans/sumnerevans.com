@@ -2,6 +2,7 @@
 Title: "Day 13:Lisbon, Portugal"
 Date: 2012-05-26T19:14:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 draft: true
 ---

@@ -2,6 +2,7 @@
 Title: "Oranjestad, Aruba"
 Date: 2017-12-30T18:03:00-0600
 Tags:
+  - Travel
   - Panama Canal Cruise
   - Oranjestad
   - Aruba

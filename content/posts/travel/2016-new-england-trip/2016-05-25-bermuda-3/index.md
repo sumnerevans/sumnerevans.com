@@ -2,6 +2,7 @@
 Title: Hamilton, Bermuda -- Day 3
 Date: 2016-05-25T19:00:00
 Tags:
+  - Travel
   - New England Trip
   - Bermuda
   - Hamilton

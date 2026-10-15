@@ -2,6 +2,7 @@
 Title: London, England -- Day 4
 Date: 2015-08-12T12:30:00-0600
 Tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - England
   - London

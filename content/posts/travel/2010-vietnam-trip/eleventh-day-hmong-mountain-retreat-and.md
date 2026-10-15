@@ -2,6 +2,7 @@
 Title: "Eleventh Day - H'mong Mountain Retreat and Sapa 11-12-10"
 Date: 2010-11-12T10:06:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

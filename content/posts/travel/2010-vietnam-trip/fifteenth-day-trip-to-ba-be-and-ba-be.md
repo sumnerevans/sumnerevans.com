@@ -2,6 +2,7 @@
 Title: "Fifteenth Day - Trip to Ba Be and Homestay 11/16/10"
 Date: 2010-11-16T11:51:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

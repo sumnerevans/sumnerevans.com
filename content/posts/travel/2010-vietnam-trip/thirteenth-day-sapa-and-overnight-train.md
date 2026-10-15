@@ -2,6 +2,7 @@
 Title: "Thirteenth Day- Sapa and Overnight Train 11/14/10"
 Date: 2010-11-14T10:49:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

@@ -2,6 +2,7 @@
 Title: Grand Cayman, Cayman Islands
 Date: 2017-01-05T16:47:00-0600
 Tags:
+  - Travel
   - Caribbean Cruise 2016-17
   - Cayman Islands
   - Grand Cayman

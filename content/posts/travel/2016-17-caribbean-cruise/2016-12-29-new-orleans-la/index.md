@@ -2,6 +2,7 @@
 Title: New Orleans, LA -- Day 3
 Date: 2016-12-29T18:50:00-0600
 Tags:
+  - Travel
   - Caribbean Cruise 2016-17
   - Cruise
   - Louisiana

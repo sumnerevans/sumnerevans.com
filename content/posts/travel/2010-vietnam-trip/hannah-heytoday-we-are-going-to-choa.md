@@ -2,6 +2,7 @@
 Title: "Choa Doc Ride"
 Date: 2010-12-05T01:53:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

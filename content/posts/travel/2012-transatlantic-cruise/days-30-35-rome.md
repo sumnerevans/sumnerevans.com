@@ -2,6 +2,7 @@
 Title: "Days 30-35: Rome"
 Date: 2012-08-11T23:25:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 draft: true
 ---

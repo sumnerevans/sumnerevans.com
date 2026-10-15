@@ -2,6 +2,7 @@
 Title: Copenhagen, Denmark
 Date: 2015-08-07T10:08:00-0600
 Tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - Copenhagen
   - Denmark

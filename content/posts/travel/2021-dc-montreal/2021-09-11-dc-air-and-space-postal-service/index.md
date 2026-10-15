@@ -2,8 +2,8 @@
 title: Washington D.C. -- The Air and Space Museum and the Postal Museum
 date: 2021-09-11T09:25:00-06:00
 tags:
-  - Trip to D.C. and Montreal
   - Travel
+  - Trip to D.C. and Montreal
   - Washington D.C.
   - National Air and Space Museum
   - National Postal Museum

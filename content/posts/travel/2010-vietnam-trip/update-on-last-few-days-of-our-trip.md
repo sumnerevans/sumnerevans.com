@@ -2,6 +2,7 @@
 Title: "Ninth Day - Trek and Homestay 11/10/10"
 Date: 2010-11-11T02:04:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

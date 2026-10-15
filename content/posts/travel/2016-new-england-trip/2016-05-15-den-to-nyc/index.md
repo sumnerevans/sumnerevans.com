@@ -2,6 +2,7 @@
 Title: Denver, CO to New York, NY
 Date: 2016-05-15T20:52:00-0600
 Tags:
+  - Travel
   - New England Trip
   - Colorado
   - Denver
@@ -10,7 +11,6 @@ Tags:
   - New York City
   - Plane
   - Time Square
-  - Travel
 image: images/nyc1.jpg
 ---
 

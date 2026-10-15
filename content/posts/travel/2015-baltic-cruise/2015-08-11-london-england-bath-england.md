@@ -2,6 +2,7 @@
 Title: London, England -- Day 3 -- Bath, England
 Date: 2015-08-11T12:29:00-0600
 Tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - Bath
   - England

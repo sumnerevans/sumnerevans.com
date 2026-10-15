@@ -2,6 +2,7 @@
 title: St. Petersburg, Russia -- Day 3
 date: 2015-07-31T12:47:00-0600
 tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - Russia
   - St. Petersburg

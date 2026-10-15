@@ -2,6 +2,7 @@
 Title: End of Cruise
 Date: 2018-01-07T15:42:00-0600
 Tags:
+  - Travel
   - Panama Canal Cruise
   - Ft. Lauderdale
   - Florida

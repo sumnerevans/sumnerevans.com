@@ -2,6 +2,7 @@
 Title: "Day 10: Ponta Delgada, Azores"
 Date: 2012-05-26T19:12:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 draft: true
 ---

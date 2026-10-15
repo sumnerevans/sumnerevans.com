@@ -2,6 +2,7 @@
 Title: "Twenty-sixth Day - Hue 11/27/10"
 Date: 2010-11-27T09:56:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

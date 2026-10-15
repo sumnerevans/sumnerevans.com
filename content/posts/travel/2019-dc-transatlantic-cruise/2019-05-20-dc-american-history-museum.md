@@ -2,8 +2,8 @@
 title: "Washington D.C. -- The American History Museum"
 date: 2019-05-20T20:00:00-06:00
 tags:
-  - Trip to D.C. and Transatlantic Cruise
   - Travel
+  - Trip to D.C. and Transatlantic Cruise
   - Washington D.C.
   - American History Museum
 ---

@@ -2,12 +2,12 @@
 Title: Sydney, Nova Scotia, Canada
 Date: 2016-05-31T19:00:00-0600
 Tags:
+  - Travel
   - New England Trip
   - Alexander Graham Bell
   - Canada
   - Nova Scotia
   - Sydney
-  - Travel
 image: images/nova-scotia1.jpg
 ---
 

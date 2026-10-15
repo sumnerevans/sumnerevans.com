@@ -2,6 +2,7 @@
 Title: "Day 2: Ft. Lauderdale FL"
 Date: 2012-05-02T02:05:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 draft: true
 ---

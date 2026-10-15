@@ -2,6 +2,7 @@
 Title: "Eighteenth Day - Back to Hanoi 11/19/10"
 Date: 2010-11-19T10:34:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

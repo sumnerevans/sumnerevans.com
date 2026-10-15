@@ -2,6 +2,7 @@
 Title: Boston, Massachusetts -- Day 2
 Date: 2016-05-20T19:00:00-0600
 Tags:
+  - Travel
   - New England Trip
   - Aquarium
   - Boston
@@ -9,7 +10,6 @@ Tags:
   - Massachusetts
   - Prudential Center Observation Deck
   - Science Museum
-  - Travel
   - Whales
 image: images/boston-skyline.jpg
 ---

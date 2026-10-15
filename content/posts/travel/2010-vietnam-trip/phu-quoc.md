@@ -2,6 +2,7 @@
 Title: "Phu Quoc"
 Date: 2010-12-11T02:17:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

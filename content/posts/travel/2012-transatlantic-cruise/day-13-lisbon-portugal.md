@@ -2,6 +2,7 @@
 Title: "Day 13: Lisbon (Sintra), Portugal"
 Date: 2012-05-12T12:02:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 ---
 

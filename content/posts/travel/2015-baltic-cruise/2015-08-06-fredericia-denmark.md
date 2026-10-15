@@ -2,6 +2,7 @@
 Title: Fredericia, Denmark
 Date: 2015-08-06T13:21:00-0600
 Tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - Denmark
   - Fredericia

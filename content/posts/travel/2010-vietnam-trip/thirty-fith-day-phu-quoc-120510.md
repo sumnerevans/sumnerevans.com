@@ -2,6 +2,7 @@
 Title: "Thirty-fith Day - Phu Quoc 12/06/10"
 Date: 2010-12-05T21:54:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

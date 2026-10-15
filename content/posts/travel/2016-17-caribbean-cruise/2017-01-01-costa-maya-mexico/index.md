@@ -2,10 +2,10 @@
 Title: Costa Maya, Mexico
 Date: 2017-01-01T10:21:00-0600
 Tags:
+  - Travel
   - Caribbean Cruise 2016-17
   - Cruise
   - Mayan Ruins
-  - Travel
 image: images/costa-maya1.jpg
 ---
 

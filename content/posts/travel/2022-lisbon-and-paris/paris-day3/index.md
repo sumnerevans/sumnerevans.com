@@ -2,8 +2,8 @@
 title: "Paris, France - Day 3"
 date: 2022-06-17T12:00:00-06:00
 tags:
-  - Trip to Portugal and France
   - Travel
+  - Trip to Portugal and France
   - Paris
   - France
 description: I went to the Louvre and walked to the Notre Dame Cathedral.

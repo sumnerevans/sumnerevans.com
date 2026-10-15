@@ -2,6 +2,7 @@
 title: "London, England and Back Home"
 date: 2019-06-01T22:08:00-06:00
 tags:
+  - Travel
   - Trip to D.C. and Transatlantic Cruise
   - London
   - England

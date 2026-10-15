@@ -2,11 +2,11 @@
 Title: Montreal, Quebec, Canada -- Day 2
 Date: 2016-06-05T09:44:00-0600
 Tags:
+  - Travel
   - New England Trip
   - Canada
   - Montreal
   - Quebec
-  - Travel
   - Underground City
 image: images/tim-hortons.jpg
 summary: |

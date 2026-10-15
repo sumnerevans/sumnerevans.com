@@ -2,6 +2,7 @@
 title: New York, New York
 date: 2016-05-16T19:00:00-0600
 tags:
+  - Travel
   - New England Trip
   - 9/11
   - 9/11 Memorial
@@ -12,7 +13,6 @@ tags:
   - New York
   - Statue of Liberty
   - Subway
-  - Travel
 image: images/lady-liberty.jpg
 ---
 

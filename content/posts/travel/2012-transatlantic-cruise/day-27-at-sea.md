@@ -2,6 +2,7 @@
 Title: "Day 27: At Sea"
 Date: 2012-05-26T06:54:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 ---
 

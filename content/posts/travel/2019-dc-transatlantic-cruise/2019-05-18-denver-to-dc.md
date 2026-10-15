@@ -2,8 +2,8 @@
 title: "Denver to Washington D.C."
 date: 2019-05-18T19:39:00-06:00
 tags:
-  - Trip to D.C. and Transatlantic Cruise
   - Travel
+  - Trip to D.C. and Transatlantic Cruise
   - Washington D.C.
   - Denver
 ---

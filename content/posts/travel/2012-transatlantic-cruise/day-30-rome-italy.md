@@ -2,6 +2,7 @@
 Title: "Day 30: Rome, Italy"
 Date: 2012-12-20T20:20:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 draft: true
 ---

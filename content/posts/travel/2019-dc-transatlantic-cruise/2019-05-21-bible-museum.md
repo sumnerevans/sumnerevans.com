@@ -2,8 +2,8 @@
 title: "Washington D.C. -- The Museum of the Bible"
 date: 2019-05-21T21:00:00-06:00
 tags:
-  - Trip to D.C. and Transatlantic Cruise
   - Travel
+  - Trip to D.C. and Transatlantic Cruise
   - Washington D.C.
   - Museum of the Bible
 ---

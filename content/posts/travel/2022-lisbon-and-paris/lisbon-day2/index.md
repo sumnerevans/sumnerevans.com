@@ -2,8 +2,8 @@
 title: "Lisbon, Portugal - Day 2"
 date: 2022-06-12T12:00:00-06:00
 tags:
-  - Trip to Portugal and France
   - Travel
+  - Trip to Portugal and France
   - Lisbon
   - Portugal
   - Castelo de São Jorge

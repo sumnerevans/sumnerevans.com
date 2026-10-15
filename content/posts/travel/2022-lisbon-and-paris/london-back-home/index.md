@@ -2,8 +2,8 @@
 title: "London, England and Back Home"
 date: 2022-06-19T12:00:00-06:00
 tags:
-  - Trip to Portugal and France
   - Travel
+  - Trip to Portugal and France
   - London
   - United Kingdom
   - Paris

@@ -2,6 +2,7 @@
 Title: London, England -- Day 6 -- Stonehenge
 Date: 2015-08-14T11:35:00-0600
 Tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - England
   - London

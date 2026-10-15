@@ -2,6 +2,7 @@
 Title: "Day 29: Civitavecchia (Rome), Italy - End of Cruise"
 Date: 2012-05-28T12:39:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 ---
 

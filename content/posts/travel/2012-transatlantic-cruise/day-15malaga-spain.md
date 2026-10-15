@@ -2,6 +2,7 @@
 Title: "Day 15:Malaga, Spain"
 Date: 2012-05-26T19:16:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 draft: true
 ---

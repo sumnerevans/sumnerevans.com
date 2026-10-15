@@ -2,6 +2,7 @@
 Title: "Cartegena, Columbia"
 Date: 2018-01-02T23:00:00-0600
 Tags:
+  - Travel
   - Panama Canal Cruise
   - Cartegena
   - Columbia

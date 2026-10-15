@@ -2,6 +2,7 @@
 Title: Quebec City, Quebec, Canada
 Date: 2016-06-03T19:00:00-0600
 Tags:
+  - Travel
   - New England Trip
   - Canada
   - Chateau de Frontenac
@@ -9,7 +10,6 @@ Tags:
   - Cruise
   - Quebec
   - Quebec City
-  - Travel
 image: images/quebec2.jpg
 ---
 

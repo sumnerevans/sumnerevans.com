@@ -2,6 +2,7 @@
 Title: New York, New York -- Day 2
 Date: 2016-05-17T19:00:00-0600
 Tags:
+  - Travel
   - New England Trip
   - Bike
   - Bus Tour
@@ -10,7 +11,6 @@ Tags:
   - New York
   - Rockefeller Center
   - Top of the Rock
-  - Travel
 image: images/nyc4.jpg
 ---
 

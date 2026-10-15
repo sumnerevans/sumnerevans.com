@@ -2,6 +2,7 @@
 Title: "Day 12:Lisbon, Portugal"
 Date: 2012-05-26T19:13:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 draft: true
 ---

@@ -2,6 +2,7 @@
 title: "Ft. Lauderdale, Start of Cruise"
 date: 2017-12-27T08:00:00-0600
 tags:
+  - Travel
   - Panama Canal Cruise
   - Ft. Lauderdale
   - Florida

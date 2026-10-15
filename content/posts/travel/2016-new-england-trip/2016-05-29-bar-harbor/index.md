@@ -2,11 +2,11 @@
 Title: Bar Harbor, Maine
 Date: 2016-05-29T19:00:00
 Tags:
+  - Travel
   - New England Trip
   - Bar Harbor
   - Bike Tour
   - Maine
-  - Travel
 image: images/bar-harbor10.jpg
 ---
 

@@ -2,8 +2,8 @@
 title: "Washington D.C. -- The Air and Space Museum"
 date: 2019-05-22T21:00:00-06:00
 tags:
-  - Trip to D.C. and Transatlantic Cruise
   - Travel
+  - Trip to D.C. and Transatlantic Cruise
   - Washington D.C.
   - National Air and Space Museum
 ---

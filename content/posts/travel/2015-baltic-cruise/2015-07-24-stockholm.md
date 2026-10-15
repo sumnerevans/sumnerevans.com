@@ -2,6 +2,7 @@
 Title: Stockholm, Sweden -- Day 2
 Date: 2015-07-24T11:19:00-0600
 Tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - Stockholm
   - Sweden

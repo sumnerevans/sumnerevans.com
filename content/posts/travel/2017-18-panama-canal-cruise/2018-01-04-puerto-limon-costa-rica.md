@@ -2,6 +2,7 @@
 Title: "Puerto Limon, Costa Rica"
 Date: 2018-01-04T23:00:00-0600
 Tags:
+  - Travel
   - Panama Canal Cruise
   - Puerto Limon
   - Costa Rica

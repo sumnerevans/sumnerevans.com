@@ -2,6 +2,7 @@
 Title: "At Sea"
 Date: 2018-01-05T23:00:00-0600
 Tags:
+  - Travel
   - Panama Canal Cruise
   - At Sea
 image: images/formal-night.jpg

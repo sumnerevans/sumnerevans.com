@@ -2,6 +2,7 @@
 Title: London, England -- Day 11
 Date: 2015-08-19T15:37:00-0600
 Tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - England
   - London

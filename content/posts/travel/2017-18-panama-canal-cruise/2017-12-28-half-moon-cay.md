@@ -2,6 +2,7 @@
 Title: "Half Moon Cay"
 Date: 2017-12-28T13:47:00-0600
 Tags:
+  - Travel
   - Panama Canal Cruise
   - Half Moon Cay
   - Bahamas

@@ -2,6 +2,7 @@
 Title: "Willemstad, Curacao"
 Date: 2017-12-31T15:17:00-0600
 Tags:
+  - Travel
   - Panama Canal Cruise
   - Willemstad
   - Curacao

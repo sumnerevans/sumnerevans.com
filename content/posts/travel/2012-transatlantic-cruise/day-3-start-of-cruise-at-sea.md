@@ -2,6 +2,7 @@
 Title: "Day 3: Start of Cruise - At Sea"
 Date: 2012-05-02T23:11:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 ---
 

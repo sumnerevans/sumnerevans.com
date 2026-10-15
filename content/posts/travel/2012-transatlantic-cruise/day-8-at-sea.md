@@ -2,6 +2,7 @@
 Title: "Day 8: At Sea"
 Date: 2012-05-07T15:43:00-0600
 tags:
+  - Travel
   - Transatlantic Cruise and Europe
 ---
 

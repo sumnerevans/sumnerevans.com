@@ -2,6 +2,7 @@
 Title: "Twenty-fourth Day - Hallong Bay and Trip Back to Hanoi"
 Date: 2010-11-25T14:39:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

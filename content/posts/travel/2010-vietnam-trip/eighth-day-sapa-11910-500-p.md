@@ -2,6 +2,7 @@
 Title: "Eighth Day - Sapa 11/9/10 5:00 PM"
 Date: 2010-11-09T10:41:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

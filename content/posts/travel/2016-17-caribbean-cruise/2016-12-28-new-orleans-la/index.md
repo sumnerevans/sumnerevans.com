@@ -2,6 +2,7 @@
 Title: New Orleans, LA -- Day 2
 Date: 2016-12-28T18:50:00-0600
 Tags:
+  - Travel
   - Caribbean Cruise 2016-17
   - Battle of New Orleans
   - Louisiana

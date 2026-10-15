@@ -2,6 +2,7 @@
 Title: Stockholm, Sweden -- Day 5 and Beginning of Cruise
 Date: 2015-07-26T08:28:00-0600
 Tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - Stockholm
   - Sweden

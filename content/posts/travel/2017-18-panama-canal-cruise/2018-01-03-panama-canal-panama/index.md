@@ -2,6 +2,7 @@
 Title: "Panama Canal, Panama"
 Date: 2018-01-03T23:00:00-0600
 Tags:
+  - Travel
   - Panama Canal Cruise
   - Panama Canal
   - Panama

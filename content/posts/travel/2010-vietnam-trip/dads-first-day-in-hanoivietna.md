@@ -2,6 +2,7 @@
 Title: "Twenty-first Day - Dad's First Day in Hanoi/Vietnam 11/22/2010 3:00 PM"
 Date: 2010-11-22T07:54:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 

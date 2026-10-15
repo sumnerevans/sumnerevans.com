@@ -2,6 +2,7 @@
 Title: Reykjavík, Iceland to Denver, Colorado
 Date: 2015-08-22T11:41:00-0600
 Tags:
+  - Travel
   - Baltic Cruise and Northern Europe
   - Colorado
   - Denver

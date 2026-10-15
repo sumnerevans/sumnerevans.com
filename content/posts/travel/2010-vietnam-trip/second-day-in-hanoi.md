@@ -2,6 +2,7 @@
 Title: "Second Day - Hanoi 11/3/2010 6:00 PM"
 Date: 2010-11-03T12:27:00-0600
 tags:
+  - Travel
   - Trip to Vietnam
 ---
 
