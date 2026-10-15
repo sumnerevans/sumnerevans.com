@@ -34,9 +34,6 @@
   {{- range .GetTerms "tags" }}
     <meta property="article:tag" content="{{ .Page.Title | plainify }}">
   {{- end }}
-  {{- range .GetTerms "categories" }}
-    <meta property="article:tag" content="{{ .Page.Title | plainify }}">
-  {{- end }}
 {{- else }}
   <meta property="og:type" content="website">
 {{- end }}

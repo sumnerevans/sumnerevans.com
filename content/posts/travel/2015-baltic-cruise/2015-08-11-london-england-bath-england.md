@@ -1,8 +1,11 @@
 ---
 Title: London, England -- Day 3 -- Bath, England
 Date: 2015-08-11T12:29:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [Bath, England, London]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - Bath
+  - England
+  - London
 ---
 
 Today we went on an excursion to Bath, the town built around the only hot spring

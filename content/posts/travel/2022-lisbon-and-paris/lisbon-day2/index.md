@@ -1,8 +1,8 @@
 ---
 title: "Lisbon, Portugal - Day 2"
 date: 2022-06-12T12:00:00-06:00
-categories: [Trip to Portugal and France]
 tags:
+  - Trip to Portugal and France
   - Travel
   - Lisbon
   - Portugal

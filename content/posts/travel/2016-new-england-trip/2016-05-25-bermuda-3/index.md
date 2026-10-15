@@ -1,8 +1,13 @@
 ---
 Title: Hamilton, Bermuda -- Day 3
 Date: 2016-05-25T19:00:00
-Categories: [New England Trip]
-Tags: [Bermuda, Hamilton, Snorkeling, Tobacco Bay, Town of St. George]
+Tags:
+  - New England Trip
+  - Bermuda
+  - Hamilton
+  - Snorkeling
+  - Tobacco Bay
+  - Town of St. George
 image: images/bermuda-1.jpg
 ---
 

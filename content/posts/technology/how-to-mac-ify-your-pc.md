@@ -1,7 +1,8 @@
 ---
 Title: How to Mac-ify Your PC for Free
 Date: 2013-02-08T11:42:00-0600
-Categories: [Technology]
+tags:
+  - Technology
 draft: true
 ---
 

@@ -1,7 +1,8 @@
 ---
 Title: "First Day - Hanoi 11/2/10 6:00 PM"
 Date: 2010-11-02T23:52:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 ## Sumner

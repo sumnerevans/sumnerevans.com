@@ -1,8 +1,11 @@
 ---
 Title: London, England -- Day 6 -- Stonehenge
 Date: 2015-08-14T11:35:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [England, London, Stonehenge]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - England
+  - London
+  - Stonehenge
 ---
 
 Today we went to Stonehenge. The journey took over two hours. We went by

@@ -1,7 +1,8 @@
 ---
 Title: "Sixteenth Day - Homestay At Ba Be Lake 11/16/10"
 Date: 2010-11-18T03:58:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 Sixteenth Day - Homesay at Ba Be Lake 11/17/10  

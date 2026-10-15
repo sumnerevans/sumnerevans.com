@@ -1,7 +1,8 @@
 ---
 Title: "Halong Bay Trip"
 Date: 2010-11-26T03:38:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 ## Hannah

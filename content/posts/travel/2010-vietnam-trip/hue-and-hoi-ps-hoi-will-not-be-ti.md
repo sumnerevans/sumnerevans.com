@@ -1,7 +1,8 @@
 ---
 Title: "Hue and Hoi An"
 Date: 2010-11-30T14:50:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 <h2 style="font-family: Georgia, &quot;Times New Roman&quot;, serif;">

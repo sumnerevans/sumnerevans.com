@@ -1,9 +1,8 @@
 ---
 title: Bratislava, Slovakia
 date: 2026-01-27T06:25:00-06:00
-categories:
-  - Travel
 tags:
+  - Travel
   - Bratislava
   - Slovakia
 description: |

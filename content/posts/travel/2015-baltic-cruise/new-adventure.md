@@ -1,7 +1,8 @@
 ---
 Title: New Adventure
 Date: 2015-07-21T01:02:00-0600
-Categories: [Baltic Cruise and Northern Europe]
+tags:
+  - Baltic Cruise and Northern Europe
 draft: true
 ---
 

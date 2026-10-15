@@ -1,8 +1,9 @@
 ---
 title: "2022 In Review"
 date: 2022-12-31T00:00:00-06:00
-categories: [Life Updates]
-tags: [Year In Review]
+tags:
+  - Life Updates
+  - Year In Review
 ---
 
 This year was a good year. I'm going to list a few things that I'm thankful for,
@@ -26,7 +27,7 @@ I'm thankful for...
   [many]({{< ref "../../travel/2022-playa-del-carmen-mexico/index.md" >}})
   [exotic]({{< ref "../../travel/2022-lisbon-and-paris/ericeira-portugal/index.md" >}})
   [locations]({{< ref "../../travel/2022-mexico-city-retreat/index.md" >}})
-  for [work retreats](/categories/work-retreats).
+  for [work retreats](/tags/work-retreats).
 * Getting to go to Berlin for the
   [Matrix Community Summit]({{< ref "../../travel/2022-berlin-matrix-summit/summit/index.md" >}})
   and got to meet some awesome people and make new friends.
@@ -39,7 +40,7 @@ I'm thankful for...
   [multiple]({{< ref "../../travel/2022-oakland-california/index.md" >}})
   [friends]({{< ref "../../travel/2022-starbase-texas/index.md" >}}).
 * My vacation in
-  [Lisbon and Paris](/categories/trip-to-portugal-and-france), and all of the
+  [Lisbon and Paris](/tags/trip-to-portugal-and-france), and all of the
   amazing people I met on the way.
 * The opportunity to
   [teach]({{< ref "../../../portfolio#experience-adjunct-mines" >}})

@@ -1,9 +1,8 @@
 ---
 title: Vienna, Austria
 date: 2026-01-26T06:25:00-06:00
-categories:
-  - Travel
 tags:
+  - Travel
   - Vienna
   - Austria
 description: |

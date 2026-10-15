@@ -1,7 +1,8 @@
 ---
 Title: "Day 16: Cartagena, Spain"
 Date: 2012-05-15T18:10:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 ---
 
 ## Sumner

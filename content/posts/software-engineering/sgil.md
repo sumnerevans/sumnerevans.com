@@ -1,10 +1,9 @@
 ---
 title: How I Want to Use AI
 date: 2026-09-25T06:25:00-06:00
-categories:
+tags:
   - Software Engineering
   - Programming
-tags:
   - AI
   - LLMs
   - Markdown

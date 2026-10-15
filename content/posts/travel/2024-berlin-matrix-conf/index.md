@@ -1,10 +1,9 @@
 ---
 title: "Berlin Matrix Conference"
 date: 2024-09-23T06:25:00-06:00
-categories:
+tags:
   - Travel
   - Conferences
-tags:
   - Matrix Conference
   - Matrix
   - Berlin

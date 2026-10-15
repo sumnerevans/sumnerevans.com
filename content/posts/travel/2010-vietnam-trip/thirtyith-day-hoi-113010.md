@@ -1,7 +1,8 @@
 ---
 Title: "Twenty-ninth Day - Hoi An 11/30/10"
 Date: 2010-11-30T14:28:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 ## Sumner

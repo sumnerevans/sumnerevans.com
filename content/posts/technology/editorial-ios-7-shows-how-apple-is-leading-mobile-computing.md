@@ -1,8 +1,11 @@
 ---
 Title: "Editorial: iOS 7 shows how Apple is leading mobile computing"
 Date: 2013-06-24T06:24:00-0600
-Categories: [Technology]
-Tags: [Apple, Appleinsider, iOS 7]
+Tags:
+  - Technology
+  - Apple
+  - Appleinsider
+  - iOS 7
 ---
 
 [Editorial: iOS 7 shows how Apple is leading mobile

@@ -1,8 +1,11 @@
 ---
 title: "Advent of Code 2023"
 date: 2023-11-30T09:00:00-06:00
-categories: [Programming]
-tags: [Advent of Code, Wheel Spinner, Competition]
+tags:
+  - Programming
+  - Advent of Code
+  - Wheel Spinner
+  - Competition
 image: wheel.png
 ---
 

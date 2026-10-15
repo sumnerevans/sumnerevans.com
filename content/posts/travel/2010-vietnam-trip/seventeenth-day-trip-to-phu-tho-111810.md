@@ -1,7 +1,8 @@
 ---
 Title: "Seventeenth Day - Trip to Phu Tho 11/18/10"
 Date: 2010-11-18T12:56:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 Well today we woke up with another driver in our midst. The one who

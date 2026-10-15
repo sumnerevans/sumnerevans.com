@@ -1,8 +1,12 @@
 ---
 title: Setting up Pelican to Automatically Deploy to GitHub Pages
 date: 2017-09-11T09:02:00-06:00
-categories: [Programming]
-tags: [Pelican, Travis CI, GitHub, GitHub Pages]
+tags:
+  - Programming
+  - Pelican
+  - Travis CI
+  - GitHub
+  - GitHub Pages
 ---
 
 > [!WARNING]

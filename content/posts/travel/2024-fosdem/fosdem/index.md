@@ -1,10 +1,9 @@
 ---
 title: FOSDEM 2024
 date: 2024-02-05T06:25:00-06:00
-categories:
+tags:
   - Travel
   - Conferences
-tags:
   - FOSDEM
   - Matrix
   - HSBXL

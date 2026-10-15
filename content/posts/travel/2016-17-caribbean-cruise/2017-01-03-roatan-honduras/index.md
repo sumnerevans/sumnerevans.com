@@ -1,8 +1,15 @@
 ---
 Title: Roatan, Honduras
 Date: 2017-01-03T21:05:00-0600
-Categories: [Caribbean Cruise 2016-17]
-Tags: [Honduras, Horseback Riding, Monkey, Petting Zoo, Roatan, Sloth, Snorkeling]
+Tags:
+  - Caribbean Cruise 2016-17
+  - Honduras
+  - Horseback Riding
+  - Monkey
+  - Petting Zoo
+  - Roatan
+  - Sloth
+  - Snorkeling
 image: images/roatan7.jpg
 ---
 

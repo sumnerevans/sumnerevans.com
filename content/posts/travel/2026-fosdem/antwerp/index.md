@@ -1,9 +1,8 @@
 ---
 title: Antwerp, Belgium
 date: 2026-01-25T06:25:00-06:00
-categories:
-  - Travel
 tags:
+  - Travel
   - Antwerp
   - Belgium
   - Vienna

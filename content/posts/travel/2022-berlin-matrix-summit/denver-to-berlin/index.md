@@ -1,8 +1,8 @@
 ---
 title: "Denver to Berlin"
 date: 2022-08-21T12:00:00-06:00
-categories: [Berlin Matrix Community Summit 2022]
 tags:
+  - Berlin Matrix Community Summit 2022
   - Travel
   - Berlin
   - Germany

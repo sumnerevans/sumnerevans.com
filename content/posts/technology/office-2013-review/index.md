@@ -1,8 +1,10 @@
 ---
 Title: Office 2013 Review
 Date: 2013-01-27T15:12:00-0600
-Categories: [Technology]
-Tags: [Office 2013, Review]
+Tags:
+  - Technology
+  - Office 2013
+  - Review
 ---
 
 A little while ago I downloaded and installed Office 2013 Preview on my PC.

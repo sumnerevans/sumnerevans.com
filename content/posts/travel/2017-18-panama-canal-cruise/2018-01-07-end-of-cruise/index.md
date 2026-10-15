@@ -1,8 +1,12 @@
 ---
 Title: End of Cruise
 Date: 2018-01-07T15:42:00-0600
-Categories: [Panama Canal Cruise]
-Tags: [Ft. Lauderdale, Florida, Denver, Colorado]
+Tags:
+  - Panama Canal Cruise
+  - Ft. Lauderdale
+  - Florida
+  - Denver
+  - Colorado
 image: images/alex-eric.jpg
 summary: |
   Today was the end of our cruise :(

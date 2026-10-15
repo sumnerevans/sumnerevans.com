@@ -1,8 +1,10 @@
 ---
 Title: London, England -- Day 1
 Date: 2015-08-09T13:16:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [England, London]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - England
+  - London
 ---
 
 Today was our first full day in London, England. We decided to start with a

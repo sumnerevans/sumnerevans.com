@@ -1,8 +1,13 @@
 ---
 Title: Copenhagen, Denmark to London, England
 Date: 2015-08-08T22:16:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [Copenhagen, Denmark, England, Flight, London]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - Copenhagen
+  - Denmark
+  - England
+  - Flight
+  - London
 ---
 
 Today was entirely travel. We woke up early, ate breakfast, and headed out to

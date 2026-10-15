@@ -1,10 +1,9 @@
 ---
 title: FOSDEM 2026
 date: 2026-02-01T06:25:00-06:00
-categories:
+tags:
   - Travel
   - Conferences
-tags:
   - FOSDEM
   - Matrix
   - HSBXL

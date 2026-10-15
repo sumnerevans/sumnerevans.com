@@ -1,7 +1,8 @@
 ---
 Title: "Day 19: Civiteveccia, Italy"
 Date: 2017-04-07T16:00:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 draft: true
 ---
 

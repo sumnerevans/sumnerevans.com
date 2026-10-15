@@ -1,9 +1,8 @@
 ---
 title: "Facebook Global Hackathon Finals - The Competition"
 date: 2018-11-16T22:00:00-0600
-categories:
-  - Hackathons
 tags:
+  - Hackathons
   - Facebook
   - Menlo Park
   - California

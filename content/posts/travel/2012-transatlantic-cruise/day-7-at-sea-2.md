@@ -1,7 +1,8 @@
 ---
 Title: "Day 7: At Sea"
 Date: 2012-05-06T15:41:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 ---
 
 ## Sumner

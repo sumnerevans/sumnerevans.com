@@ -1,8 +1,10 @@
 ---
 Title: Riga, Latvia
 Date: 2015-08-02T12:50:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [Latvia, Riga]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - Latvia
+  - Riga
 ---
 
 Today we took it a little easier than the other days. We didn't do any tour of

@@ -1,9 +1,8 @@
 ---
 title: Stop Using Conventional Commits
 date: 2026-06-02T06:25:00-06:00
-categories:
-  - Software Engineering
 tags:
+  - Software Engineering
   - Git
   - Commits
   - Scoped Commits

@@ -1,7 +1,8 @@
 ---
 Title: "Thirty-second Day - Soc Tran 12/03/10"
 Date: 2010-12-03T18:53:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 ## Sumner

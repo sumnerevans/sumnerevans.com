@@ -1,8 +1,12 @@
 ---
 Title: Why I Migrated to Sourcehut and Why You Should, Too
 Date: 2021-03-05T02:00:00-0600
-Categories: [Technology]
-tags: [Source Control, CI/CD, sourcehut, Open Source]
+tags:
+  - Technology
+  - Source Control
+  - CI/CD
+  - sourcehut
+  - Open Source
 draft: true
 ---
 

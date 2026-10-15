@@ -1,8 +1,12 @@
 ---
 Title: "Half Moon Cay"
 Date: 2017-12-28T13:47:00-0600
-Categories: [Panama Canal Cruise]
-Tags: [Half Moon Cay, Bahamas, Snorkelling, Volleyball]
+Tags:
+  - Panama Canal Cruise
+  - Half Moon Cay
+  - Bahamas
+  - Snorkelling
+  - Volleyball
 ---
 
 This morning we arrived on a private island owned by Holland America Line (HAL)

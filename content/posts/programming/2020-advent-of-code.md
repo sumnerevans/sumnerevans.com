@@ -1,8 +1,11 @@
 ---
 title: "Advent of Code 2020: A Retrospective"
 date: 2020-12-17T13:00:00-06:00
-categories: [Programming]
-tags: [Advent of Code, Python, Competition]
+tags:
+  - Programming
+  - Advent of Code
+  - Python
+  - Competition
 draft: true
 ---
 

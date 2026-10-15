@@ -1,8 +1,9 @@
 ---
 title: Reflections on Trip 1
 date: 2015-10-10T08:41:00-0060
-categories: [Baltic Cruise and Northern Europe]
-tags: [Reflections]
+tags:
+  - Baltic Cruise and Northern Europe
+  - Reflections
 ---
 
 As I said at the end of my

@@ -1,7 +1,8 @@
 ---
 Title: "Twelfth Day - Sapa 11/13/10 8:03"
 Date: 2010-11-14T07:39:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 ## Sumner

@@ -1,7 +1,8 @@
 ---
 Title: "Looking Back"
 Date: 2010-12-15T21:23:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 ## Sumner

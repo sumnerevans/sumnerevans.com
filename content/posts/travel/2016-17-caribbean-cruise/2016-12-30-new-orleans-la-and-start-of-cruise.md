@@ -1,8 +1,11 @@
 ---
 Title: New Orleans, LA and Start of Cruise
 Date: 2016-12-30T10:00:00-0600
-Categories: [Caribbean Cruise 2016-17]
-Tags: [Cruise, Louisiana, New Orleans]
+Tags:
+  - Caribbean Cruise 2016-17
+  - Cruise
+  - Louisiana
+  - New Orleans
 ---
 
 Today was our last day in New Orleans. This morning we rode the St.  Charles

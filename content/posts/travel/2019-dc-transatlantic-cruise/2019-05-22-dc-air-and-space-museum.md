@@ -1,8 +1,11 @@
 ---
 title: "Washington D.C. -- The Air and Space Museum"
 date: 2019-05-22T21:00:00-06:00
-categories: [Trip to D.C. and Transatlantic Cruise]
-tags: [Travel, Washington D.C., National Air and Space Museum]
+tags:
+  - Trip to D.C. and Transatlantic Cruise
+  - Travel
+  - Washington D.C.
+  - National Air and Space Museum
 ---
 
 I love airplanes, I love spacecraft, I love mechanical things that fly.

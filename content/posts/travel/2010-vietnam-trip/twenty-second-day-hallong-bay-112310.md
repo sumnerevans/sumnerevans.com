@@ -1,7 +1,8 @@
 ---
 Title: "Twenty-second Day - Hallong Bay 11/23/10"
 Date: 2010-11-24T01:51:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 ## Sumner

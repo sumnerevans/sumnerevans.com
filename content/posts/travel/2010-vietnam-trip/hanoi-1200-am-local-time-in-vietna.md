@@ -1,7 +1,8 @@
 ---
 Title: "Hotel In Hanoi 11/1/2010"
 Date: 2010-11-02T08:09:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 ## Sumner

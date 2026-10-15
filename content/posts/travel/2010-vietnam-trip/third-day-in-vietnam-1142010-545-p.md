@@ -1,7 +1,8 @@
 ---
 Title: "Third Day - Hanoi 11/4/2010 5:45 PM"
 Date: 2010-11-04T10:59:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 ## Hannah

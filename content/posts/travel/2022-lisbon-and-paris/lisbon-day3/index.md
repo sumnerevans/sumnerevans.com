@@ -1,8 +1,8 @@
 ---
 title: "Lisbon, Portugal - Day 3"
 date: 2022-06-13T12:00:00-06:00
-categories: [Trip to Portugal and France]
 tags:
+  - Trip to Portugal and France
   - Travel
   - Lisbon
   - Portugal

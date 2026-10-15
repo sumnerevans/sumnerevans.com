@@ -1,11 +1,9 @@
 ---
 title: "Denver to Amsterdam"
 date: 2023-03-24T09:25:00-06:00
-categories:
-  - Travel
-  - Trip to Amsterdam
 tags:
   - Travel
+  - Trip to Amsterdam
   - Denver
   - Amsterdam
   - Netherlands

@@ -1,7 +1,8 @@
 ---
 Title: "Day 14: Sevilla, Spain"
 Date: 2012-05-13T12:03:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 ---
 
 ## Sumner

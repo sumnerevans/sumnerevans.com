@@ -1,8 +1,13 @@
 ---
 Title: Montreal, Quebec, Canada -- Day 2
 Date: 2016-06-05T09:44:00-0600
-Categories: [New England Trip]
-Tags: [Canada, Montreal, Quebec, Travel, Underground City]
+Tags:
+  - New England Trip
+  - Canada
+  - Montreal
+  - Quebec
+  - Travel
+  - Underground City
 image: images/tim-hortons.jpg
 summary: |
   Today we rode the entire hop on hop off circuit and walked around the Montreal

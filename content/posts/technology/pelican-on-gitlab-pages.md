@@ -1,8 +1,12 @@
 ---
 title: "Setting up Pelican to Automatically Deploy to GitLab Pages"
 date: 2019-08-27T23:58:00-06:00
-categories: [Programming]
-tags: [Pelican, GitLab, GitLab CI/CD, GitLab Pages]
+tags:
+  - Programming
+  - Pelican
+  - GitLab
+  - GitLab CI/CD
+  - GitLab Pages
 ---
 
 > [!WARNING]

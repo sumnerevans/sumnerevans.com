@@ -1,8 +1,17 @@
 ---
 Title: End of Cruise and Montreal, Quebec, Canada
 Date: 2016-06-04T19:00:00-0600
-Categories: [New England Trip]
-Tags: [Canada, Montreal, Mount Royal, Notre Dame Montreal, Old Dock, Old Town, Quebec, St. Joseph's Oratory, Zip Line]
+Tags:
+  - New England Trip
+  - Canada
+  - Montreal
+  - Mount Royal
+  - Notre Dame Montreal
+  - Old Dock
+  - Old Town
+  - Quebec
+  - St. Joseph's Oratory
+  - Zip Line
 image: images/notre-dame1.jpg
 ---
 

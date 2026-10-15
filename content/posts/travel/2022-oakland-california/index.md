@@ -1,8 +1,6 @@
 ---
 title: "Oakland, California"
 date: 2022-08-01T12:00:00-06:00
-categories:
-  - Travel
 tags:
   - Travel
   - Oakland

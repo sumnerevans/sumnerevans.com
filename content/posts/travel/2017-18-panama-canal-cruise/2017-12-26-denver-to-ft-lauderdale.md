@@ -1,8 +1,12 @@
 ---
 title: "Denver to Ft. Lauderdale"
 date: 2017-12-26T08:00:00-0600
-categories: [Panama Canal Cruise]
-tags: [Denver, Colorado, Ft. Lauderdale, Florida]
+tags:
+  - Panama Canal Cruise
+  - Denver
+  - Colorado
+  - Ft. Lauderdale
+  - Florida
 ---
 
 We are going on another trip! Today we left for Ft. Lauderdale, Florida where we

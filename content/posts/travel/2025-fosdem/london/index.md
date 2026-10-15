@@ -1,9 +1,8 @@
 ---
 title: London
 date: 2025-01-29T06:25:00-06:00
-categories:
-  - Travel
 tags:
+  - Travel
   - London
   - England
   - Tate Modern

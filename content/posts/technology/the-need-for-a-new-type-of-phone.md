@@ -1,8 +1,14 @@
 ---
 Title: The Need for a New Type of Phone
 Date: 2013-06-26T18:44:00-0600
-Categories: [Technology]
-Tags: [Feature phone, iPhone, Mobile phone, Smartphone, Walmart, Windows Phone]
+Tags:
+  - Technology
+  - Feature phone
+  - iPhone
+  - Mobile phone
+  - Smartphone
+  - Walmart
+  - Windows Phone
 ---
 
 Currently, there are only two kinds of phones. Smartphones and dumb phones. I

@@ -1,7 +1,8 @@
 ---
 Title: "Day 1: Flight to Ft. Lauderdale FL"
 Date: 2012-05-01T12:57:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 draft: true
 ---
 

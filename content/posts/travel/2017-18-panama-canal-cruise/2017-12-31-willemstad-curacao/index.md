@@ -1,8 +1,13 @@
 ---
 Title: "Willemstad, Curacao"
 Date: 2017-12-31T15:17:00-0600
-Categories: [Panama Canal Cruise]
-Tags: [Willemstad, Curacao, New Years, Snorkelling, Turtles]
+Tags:
+  - Panama Canal Cruise
+  - Willemstad
+  - Curacao
+  - New Years
+  - Snorkelling
+  - Turtles
 image: images/curacao.jpg
 ---
 

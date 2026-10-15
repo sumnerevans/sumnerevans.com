@@ -1,8 +1,6 @@
 ---
 title: 2025 Matrix Governing Board Endorsements
 date: 2025-05-20T06:25:00-06:00
-categories:
-  - Matrix
 tags:
   - Matrix
   - Matrix Governing Board

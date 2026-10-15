@@ -1,7 +1,8 @@
 ---
 Title: Baltic Cruise and England Vacation Announcement
 Date: 2015-06-30T22:31:00-0600
-Categories: [Baltic Cruise and Northern Europe]
+tags:
+  - Baltic Cruise and Northern Europe
 ---
 
 My family and I are going on a vacation! We will start with a cruise on the

@@ -14,7 +14,7 @@
         </a>
       {{- end -}}
     </div>
-    {{ if and (or ($reg.Prev .) ($reg.Next .)) (or .Date .Params.tags .Params.categories) }}
+    {{ if and (or ($reg.Prev .) ($reg.Next .)) (or .Date .Params.tags) }}
       <div class="article-info">
         <div class="post-info-line">
           <b>
@@ -30,13 +30,7 @@
                 on <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
               {{ end }}
             {{ end }}
-            {{ with .Params.categories }} in{{ end }}
           </b>
-          {{ with .Params.categories }}
-            {{ range . }}
-              {{ partial "taxonomy-pill.html" (dict "kind" "categories" "name" .) }}
-            {{ end }}
-          {{ end }}
           {{ with .WordCount }}
             <span>• {{ . }} words</span>
           {{ end }}
@@ -46,7 +40,6 @@
         </div>
         {{ with .Params.tags }}
           <div class="post-tags">
-            <span>Tags:</span>
             {{ range . }}
               {{ partial "taxonomy-pill.html" (dict "kind" "tags" "name" .) }}
             {{ end }}

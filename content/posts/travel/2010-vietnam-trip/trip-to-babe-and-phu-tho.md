@@ -1,7 +1,8 @@
 ---
 Title: "Trip to Ba be and Phu Tho"
 Date: 2010-11-19T13:56:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 ## \~Hannah\~  

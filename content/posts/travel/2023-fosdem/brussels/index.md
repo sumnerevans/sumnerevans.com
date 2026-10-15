@@ -1,9 +1,8 @@
 ---
 title: "Brussels Sightseeing"
 date: 2023-02-03T06:25:00-06:00
-categories:
-  - Travel
 tags:
+  - Travel
   - Brussels
   - Belgium
   - Atomium

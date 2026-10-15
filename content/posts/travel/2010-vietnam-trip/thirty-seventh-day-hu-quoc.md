@@ -1,7 +1,8 @@
 ---
 Title: "Thirty-seventh Day - Phu Quoc 12/8/10"
 Date: 2010-12-08T23:25:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 ## Sumner

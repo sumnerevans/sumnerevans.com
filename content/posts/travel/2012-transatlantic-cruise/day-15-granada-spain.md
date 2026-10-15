@@ -1,7 +1,8 @@
 ---
 Title: "Day 15: Granada (Malaga), Spain"
 Date: 2012-05-14T18:08:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 ---
 
 ## Sumner

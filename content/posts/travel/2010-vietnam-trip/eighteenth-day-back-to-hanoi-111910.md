@@ -1,7 +1,8 @@
 ---
 Title: "Eighteenth Day - Back to Hanoi 11/19/10"
 Date: 2010-11-19T10:34:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 Today we woke up and got ready to go back to Hanoi. Once packed we met

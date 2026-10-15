@@ -5,6 +5,9 @@ theme: smol
 summaryLength: 60
 timeout: 360s
 
+taxonomies:
+  tag: tags
+
 module:
   imports:
   - path: github.com/KKKZOZ/hugo-admonitions
@@ -103,9 +106,6 @@ related:
     -  name: tags
        type: basic
        weight: 60
-    -  name: categories
-       type: basic
-       weight: 30
     -  name: date
        type: basic
        weight: 10

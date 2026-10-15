@@ -1,8 +1,13 @@
 ---
 title: Why I Use Nix
 date: 2021-04-29T17:00:00-0600
-categories: [Technology]
-tags: [Nix, NixOS, Functional Programming, Declarative, Open Source]
+tags:
+  - Technology
+  - Nix
+  - NixOS
+  - Functional Programming
+  - Declarative
+  - Open Source
 draft: true
 ---
 

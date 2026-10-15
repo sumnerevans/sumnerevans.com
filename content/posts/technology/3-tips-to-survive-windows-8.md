@@ -1,8 +1,13 @@
 ---
 Title: 3 Tips to Survive Windows 8
 Date: 2013-01-22T23:36:00-0600
-Categories: [Technology]
-Tags: [Charm Bar, Modern Taskbar, Start Screen, Tip, Windows 8]
+Tags:
+  - Technology
+  - Charm Bar
+  - Modern Taskbar
+  - Start Screen
+  - Tip
+  - Windows 8
 ---
 
 If you got a computer within the past few months, you probably have a computer

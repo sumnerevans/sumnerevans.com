@@ -1,7 +1,8 @@
 ---
 Title: "Tenth Day - Trek and H'mong Mountain Retreat 11/10/10"
 Date: 2010-11-12T06:24:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 ## Sumner

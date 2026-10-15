@@ -1,9 +1,8 @@
 ---
 title: Three Resume Tips
 date: 2026-05-07T06:25:00-06:00
-categories:
-  - Software Engineering
 tags:
+  - Software Engineering
   - Resume
 ---
 

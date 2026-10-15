@@ -1,7 +1,8 @@
 ---
 Title: "Fifth Day - Hanoi 11/6/2010 6:00 PM"
 Date: 2010-11-06T10:57:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 ## Hannah:

@@ -1,7 +1,8 @@
 ---
 Title: "Day 12: Lisbon, Portugal"
 Date: 2012-05-11T15:05:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 ---
 
 ## Sumner

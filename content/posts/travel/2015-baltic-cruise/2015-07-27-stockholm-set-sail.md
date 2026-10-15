@@ -1,8 +1,10 @@
 ---
 Title: Stockholm, Sweden -- Day 4 and Set Sail
 Date: 2015-07-27T09:21:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [Stockholm, Sweden]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - Stockholm
+  - Sweden
 ---
 
 We started today earlier than any of the other days at around 8:00. We headed up

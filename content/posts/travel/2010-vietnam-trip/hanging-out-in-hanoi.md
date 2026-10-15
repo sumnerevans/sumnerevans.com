@@ -1,7 +1,8 @@
 ---
 Title: "Nineteenth Day - Hanging out in Hanoi 11/20/10"
 Date: 2010-11-20T08:22:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 ## Hannah

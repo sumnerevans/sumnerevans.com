@@ -1,8 +1,8 @@
 ---
 title: Adventures in Templ
 date: 2024-07-21T13:00:00-06:00
-categories: [Programming]
-tags: []
+tags:
+  - Programming
 draft: true
 ---
 

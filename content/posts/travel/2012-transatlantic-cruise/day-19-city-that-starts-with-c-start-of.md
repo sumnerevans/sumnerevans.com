@@ -1,7 +1,8 @@
 ---
 Title: "Day 19: City that Starts with a \"C\" (Civiteveccia); Start of Second Part of Cruise"
 Date: 2012-05-18T18:13:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 ---
 
 ## Sumner

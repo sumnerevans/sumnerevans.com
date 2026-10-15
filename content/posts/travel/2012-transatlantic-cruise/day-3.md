@@ -1,7 +1,8 @@
 ---
 Title: "Day 3"
 Date: 2012-05-05T23:21:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 draft: true
 ---
 

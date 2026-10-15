@@ -64,7 +64,7 @@ pre-commit run --all-files
 
 Content is organized in `content/` with the following structure:
 
-- `content/posts/` - Blog posts organized by category:
+- `content/posts/` - Blog posts organized by topic:
   - `programming/` - Technical programming articles
   - `software-engineering/` - Software engineering practices and reflections
   - `technology/` - Technology reviews and tutorials
@@ -96,8 +96,7 @@ Use page bundles when the post includes images or other media files.
 All posts require frontmatter with:
 - `title` - Post title
 - `date` - Publication date in RFC3339 format
-- `categories` - List of categories
-- `tags` - List of tags (optional)
+- `tags` - List of tags
 - `math: true` - Enable if using LaTeX math (optional)
 - `discussion_links` - List of external discussion links (e.g. Lobsters, Reddit) to surface in the "Join the Conversation" footer section (optional). Each entry has a `name` and a `url`.
 
@@ -106,9 +105,8 @@ Example:
 ---
 title: My Post Title
 date: 2025-10-11T12:00:00-06:00
-categories:
-  - Programming
 tags:
+  - Programming
   - Hugo
   - Nix
 discussion_links:

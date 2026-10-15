@@ -1,8 +1,11 @@
 ---
 Title: Why the Search Charm Shortcut is Win + Q
 Date: 2013-01-21T00:13:00-0600
-Categories: [Technology]
-Tags: [Charm Bar, Shortcuts, Windows 8]
+Tags:
+  - Technology
+  - Charm Bar
+  - Shortcuts
+  - Windows 8
 ---
 
 Ever wonder why the search charm shortcut key is Win + Q? I think I know why

@@ -1,9 +1,8 @@
 ---
 title: LLMs make you faster at what you already are
 date: 2025-08-11T06:25:00-06:00
-categories:
-  - Software Engineering
 tags:
+  - Software Engineering
   - Vibe Coding
 draft: true
 ---

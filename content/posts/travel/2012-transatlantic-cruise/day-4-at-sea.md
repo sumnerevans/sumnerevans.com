@@ -1,7 +1,8 @@
 ---
 Title: "Day 4: At Sea"
 Date: 2012-05-03T13:00:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 ---
 
 ## Sumner

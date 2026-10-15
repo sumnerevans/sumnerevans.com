@@ -1,8 +1,10 @@
 ---
 Title: Warnemunde, Germany (Berlin, Germany)
 Date: 2015-08-05T12:57:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [Berlin, Germany]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - Berlin
+  - Germany
 image: images/berlin1.jpg
 ---
 

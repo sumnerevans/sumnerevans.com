@@ -1,7 +1,8 @@
 ---
 Title: "Day 28: Messina, Italy"
 Date: 2012-05-27T06:55:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 ---
 
 ## Sumner

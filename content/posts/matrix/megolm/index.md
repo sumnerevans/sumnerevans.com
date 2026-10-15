@@ -1,10 +1,9 @@
 ---
 title: Message Security in Matrix
 date: 2024-08-09T06:00:00-06:00
-categories:
+tags:
   - Matrix
   - Programming
-tags:
   - Cryptography
   - E2EE
   - Megolm

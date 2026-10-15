@@ -1,8 +1,13 @@
 ---
 Title: Boston, Massachusetts and Set Sail
 Date: 2016-05-21T19:00:00-0600
-Categories: [New England Trip]
-Tags: [Boston, Cruise, Massachusets, Set Sail, Trolley Tour]
+Tags:
+  - New England Trip
+  - Boston
+  - Cruise
+  - Massachusets
+  - Set Sail
+  - Trolley Tour
 ---
 
 Today we did a trolley tour of Boston and then boarded the ship.

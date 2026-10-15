@@ -1,7 +1,8 @@
 ---
 Title: "Day 27: At Sea"
 Date: 2012-05-26T06:54:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 ---
 
 ## Sumner

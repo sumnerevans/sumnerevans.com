@@ -1,8 +1,8 @@
 ---
 title: "Sublime Music End-of-Maintenance"
 date: 2024-12-24T03:00:00-06:00
-categories: [Projects]
 tags:
+  - Projects
   - Sublime Music
 description: |
   Today I'm announcing that Sublime Music has reached end-of-maintenance. This

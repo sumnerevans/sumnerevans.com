@@ -1,8 +1,9 @@
 ---
 title: "2021 Music Roundup"
 date: 2022-01-10T08:00:00-06:00
-categories: [Music]
-tags: [Roundup]
+tags:
+  - Music
+  - Roundup
 draft: true
 ---
 

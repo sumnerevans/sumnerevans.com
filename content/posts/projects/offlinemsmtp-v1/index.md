@@ -1,9 +1,8 @@
 ---
 title: offlinemsmtp v1
 date: 2026-06-05T13:00:00-06:00
-categories:
-  - Projects
 tags:
+  - Projects
   - offline
   - msmtp
   - email

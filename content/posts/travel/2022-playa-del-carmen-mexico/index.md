@@ -1,11 +1,9 @@
 ---
 title: "Playa del Carmen, Mexico - Work Retreat"
 date: 2022-03-06T09:25:00-06:00
-categories:
-  - Travel
-  - Work Retreats
 tags:
   - Travel
+  - Work Retreats
   - Playa del Carmen
   - Beeper
   - Work

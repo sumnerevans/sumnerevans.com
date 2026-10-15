@@ -1,8 +1,11 @@
 ---
 title: "Montreal to Denver"
 date: 2021-09-18T09:25:00-06:00
-categories: [Trip to D.C. and Montreal]
-tags: [Travel, Montreal, Denver]
+tags:
+  - Trip to D.C. and Montreal
+  - Travel
+  - Montreal
+  - Denver
 image: images/montreal-airport.png
 ---
 

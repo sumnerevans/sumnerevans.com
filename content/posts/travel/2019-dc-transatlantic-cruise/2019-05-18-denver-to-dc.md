@@ -1,8 +1,11 @@
 ---
 title: "Denver to Washington D.C."
 date: 2019-05-18T19:39:00-06:00
-categories: [Trip to D.C. and Transatlantic Cruise]
-tags: [Travel, Washington D.C., Denver]
+tags:
+  - Trip to D.C. and Transatlantic Cruise
+  - Travel
+  - Washington D.C.
+  - Denver
 ---
 
 Today we left for Washington D.C. I drove mom and dad headed to the airport

@@ -1,7 +1,8 @@
 ---
 Title: "Twenty Fith Day - Flight to Hue 11/26/10"
 Date: 2010-11-27T02:40:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 ## Sumner

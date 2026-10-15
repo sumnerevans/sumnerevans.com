@@ -1,8 +1,10 @@
 ---
 Title: "Puerto Limon, Costa Rica"
 Date: 2018-01-04T23:00:00-0600
-Categories: [Panama Canal Cruise]
-Tags: [Puerto Limon, Costa Rica]
+Tags:
+  - Panama Canal Cruise
+  - Puerto Limon
+  - Costa Rica
 ---
 
 Today we were in Puerto Limon, Costa Rica. We disembarked and met our guide. He

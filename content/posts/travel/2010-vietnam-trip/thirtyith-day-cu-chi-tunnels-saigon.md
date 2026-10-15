@@ -1,7 +1,8 @@
 ---
 Title: "Thirtyith Day - Cu Chi Tunnels (Saigon) 12/01/10"
 Date: 2010-12-02T00:46:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 ## Sumner

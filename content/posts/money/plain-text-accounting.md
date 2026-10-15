@@ -1,9 +1,8 @@
 ---
 title: Plain Text Accounting is Pretty Cool
 date: 2026-08-15T06:25:00-06:00
-categories:
-  - Money
 tags:
+  - Money
   - Plain Text
   - Accounting
   - Double-Entry Bookkeeping

@@ -1,8 +1,10 @@
 ---
 Title: London, England -- Day 9
 Date: 2015-08-17T12:30:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [England, London]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - England
+  - London
 image: images/london-planes1.jpg
 ---
 

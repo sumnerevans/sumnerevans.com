@@ -1,8 +1,10 @@
 ---
 Title: Klaipeda, Lithuania
 Date: 2015-08-03T12:55:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [Klaipeda, Lithuania]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - Klaipeda
+  - Lithuania
 ---
 
 Today we were in Klaipeda, Lithuania. Unlike Tallinn and Riga, Klaipeda is not

@@ -1,8 +1,8 @@
 ---
 title: Normandy D-Day Beaches
 date: 2022-06-16T12:00:00-06:00
-categories: [Trip to Portugal and France]
 tags:
+  - Trip to Portugal and France
   - Travel
   - Paris
   - France

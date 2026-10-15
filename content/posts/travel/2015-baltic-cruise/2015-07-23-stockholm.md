@@ -1,8 +1,10 @@
 ---
 Title: Stockholm, Sweden -- Day 1
 Date: 2015-07-23T12:26:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [Stockholm, Sweden]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - Stockholm
+  - Sweden
 ---
 
 We arrived in Stockholm at around 12:30 local time. Unfortunately I did doze off

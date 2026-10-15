@@ -1,8 +1,11 @@
 ---
 title: "Ft. Lauderdale, Start of Cruise"
 date: 2017-12-27T08:00:00-0600
-categories: [Panama Canal Cruise]
-tags: [Ft. Lauderdale, Florida, Cruise]
+tags:
+  - Panama Canal Cruise
+  - Ft. Lauderdale
+  - Florida
+  - Cruise
 ---
 
 This morning we woke up and ate at the hotel. We took a shuttle from the hotel
@@ -12,7 +15,7 @@ Cruise check in was fairly painless, and we got onto the boat at around 12:15.
 Our ship is the Zuiderdam, a Holland America Line ship. It is the sister ship of
 the Noordam, the ship we went on on our first cruise in 2012. It was a
 transatlantic cruise to Europe (see [Transatlantic
-Cruise](/categories/transatlantic-cruise-and-europe)).
+Cruise](/tags/transatlantic-cruise-and-europe)).
 
 We got on the boat and dropped off our things in our rooms. Then we went to the
 dining room for lunch.

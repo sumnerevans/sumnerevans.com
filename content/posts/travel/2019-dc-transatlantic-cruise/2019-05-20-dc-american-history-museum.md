@@ -1,8 +1,11 @@
 ---
 title: "Washington D.C. -- The American History Museum"
 date: 2019-05-20T20:00:00-06:00
-categories: [Trip to D.C. and Transatlantic Cruise]
-tags: [Travel, Washington D.C., American History Museum]
+tags:
+  - Trip to D.C. and Transatlantic Cruise
+  - Travel
+  - Washington D.C.
+  - American History Museum
 ---
 
 Today we went to the American History Museum. I'm not going to really discuss

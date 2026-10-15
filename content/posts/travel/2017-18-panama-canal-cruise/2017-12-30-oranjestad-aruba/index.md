@@ -1,8 +1,12 @@
 ---
 Title: "Oranjestad, Aruba"
 Date: 2017-12-30T18:03:00-0600
-Categories: [Panama Canal Cruise]
-Tags: [Oranjestad, Aruba, Snorkelling, ATVs]
+Tags:
+  - Panama Canal Cruise
+  - Oranjestad
+  - Aruba
+  - Snorkelling
+  - ATVs
 image: images/aruba2.jpg
 ---
 

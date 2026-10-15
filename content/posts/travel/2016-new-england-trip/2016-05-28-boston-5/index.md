@@ -1,8 +1,15 @@
 ---
 Title: Boston, Massachusetts
 Date: 2016-05-28T19:00:00-0600
-Categories: [New England Trip]
-Tags: [Boston, Bunker Hill, Massachusetts, Old North Church, Paul Revere, Travel, USS Constitution]
+Tags:
+  - New England Trip
+  - Boston
+  - Bunker Hill
+  - Massachusetts
+  - Old North Church
+  - Paul Revere
+  - Travel
+  - USS Constitution
 image: images/old-north-church.jpg
 ---
 

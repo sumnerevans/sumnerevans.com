@@ -1,7 +1,8 @@
 ---
 title: On Being Gay
 date: 2025-07-13T00:00:00-06:00
-categories: [Life Updates]
+tags:
+  - Life Updates
 ---
 
 > [!WARNING]

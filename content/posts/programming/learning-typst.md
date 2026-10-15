@@ -1,9 +1,8 @@
 ---
 title: Learning Typst
 date: 2025-10-11T06:25:00-06:00
-categories:
-  - Programming
 tags:
+  - Programming
   - Typst
   - Resume
   - LaTeX

@@ -1,8 +1,14 @@
 ---
 Title: Denver to New Orleans
 Date: 2016-12-26T19:49:00-0600
-Categories: [Caribbean Cruise 2016-17]
-Tags: [Colorado, Denver, French Quarter, Lousiana, New Orleans, St. Louis Cathedral]
+Tags:
+  - Caribbean Cruise 2016-17
+  - Colorado
+  - Denver
+  - French Quarter
+  - Lousiana
+  - New Orleans
+  - St. Louis Cathedral
 image: images/cafe-beignet.jpg
 ---
 

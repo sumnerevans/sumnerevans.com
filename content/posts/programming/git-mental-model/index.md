@@ -1,9 +1,8 @@
 ---
 title: A Mental Model for Git
 date: 2024-06-05T06:25:00-06:00
-categories:
-  - Programming
 tags:
+  - Programming
   - Git
   - Source Control
 description: |

@@ -1,8 +1,12 @@
 ---
 title: Mines High School Programming Competition 2023
 date: 2023-04-29T17:48:00-06:00
-categories: [School]
-tags: [High School Programming Competition, Competitive Programming, Mines, HSPC]
+tags:
+  - School
+  - High School Programming Competition
+  - Competitive Programming
+  - Mines
+  - HSPC
 math: true
 ---
 

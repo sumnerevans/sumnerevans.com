@@ -1,7 +1,8 @@
 ---
 Title: "Day 17: Barcelona, Spain"
 Date: 2012-05-16T19:17:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 draft: true
 ---
 

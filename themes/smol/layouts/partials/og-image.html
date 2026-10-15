@@ -1,7 +1,7 @@
 {{- /*
   Builds a 1200x630 branded OG/social-preview image for an article page: the
   feature photo (if any) darkened with a bottom scrim, or a branded fallback
-  background; the wrapped post title; a "Posted on ... in ..." / "Tags: ..."
+  background; the wrapped post title; and the post date and tags.
   line (shown under the same conditions as the article-info line in
   single.html); a name + subtitle + avatar chip in the top-right corner; and
   a left accent bar. Publishes the result as a page resource and returns it.
@@ -119,25 +119,17 @@
     "font" $font
   )) -}}
 
-  {{- /* Metadata: "Posted on DATE in CATEGORY" then, on its own line,
-         "Tags: ..." — shown under the same condition single.html uses for
-         its article-info line (has prev/next in the main chronological
-         list, and has at least one of date/tags/categories), and mirrors
-         its wording. */ -}}
+  {{- /* Metadata mirrors the date and tags in single.html. */ -}}
   {{- $reg := where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
-  {{- $showMeta := and (or ($reg.Prev .) ($reg.Next .)) (or .Date .Params.tags .Params.categories) -}}
+  {{- $showMeta := and (or ($reg.Prev .) ($reg.Next .)) (or .Date .Params.tags) -}}
   {{- if $showMeta -}}
     {{- $postedLine := "Posted" -}}
     {{- with .Date -}}
       {{- $postedLine = printf "%s on %s" $postedLine (.Format (default "2 January 2006" $.Site.Params.dateFmt)) -}}
     {{- end -}}
-    {{- with .Params.categories -}}
-      {{- $postedLine = printf "%s in %s" $postedLine (index . 0) -}}
-    {{- end -}}
-
     {{- $tagsLine := "" -}}
     {{- with .Params.tags -}}
-      {{- $tagsLine = printf "Tags: %s" (delimit . ", ") -}}
+      {{- $tagsLine = delimit . ", " -}}
       {{- $maxTagsChars := 100 -}}
       {{- if gt (len $tagsLine) $maxTagsChars -}}
         {{- $tagsLine = printf "%s…" (substr $tagsLine 0 $maxTagsChars) -}}

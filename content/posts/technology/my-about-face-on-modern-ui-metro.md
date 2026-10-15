@@ -1,7 +1,8 @@
 ---
 Title: My About-Face on Modern UI/Metro
 Date: 2014-03-28T05:56:00-0600
-Categories: [Technology]
+tags:
+  - Technology
 draft: true
 ---
 

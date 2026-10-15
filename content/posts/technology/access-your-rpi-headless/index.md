@@ -1,8 +1,14 @@
 ---
 Title: Access Your RPi Headless
 Date: 2013-06-16T17:49:00-0600
-Categories: [Technology]
-Tags: [PuTTY, Raspberry Pi, RDP, Remote, SSH, XRDP]
+Tags:
+  - Technology
+  - PuTTY
+  - Raspberry Pi
+  - RDP
+  - Remote
+  - SSH
+  - XRDP
 ---
 
 This post is for people who have a Raspberry Pi (RPi for short) and want to

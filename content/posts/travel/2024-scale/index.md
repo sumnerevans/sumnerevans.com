@@ -1,10 +1,9 @@
 ---
 title: NixCon + SCaLE 2024
 date: 2024-03-17T06:25:00-06:00
-categories:
+tags:
   - Travel
   - Conferences
-tags:
   - NixCon
   - SCaLE
   - Pasadena

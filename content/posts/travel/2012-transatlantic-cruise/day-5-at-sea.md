@@ -1,7 +1,8 @@
 ---
 Title: "Day 5: At Sea"
 Date: 2012-05-04T23:14:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 ---
 
 ## Sumner

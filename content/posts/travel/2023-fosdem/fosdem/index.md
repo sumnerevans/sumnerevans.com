@@ -1,10 +1,9 @@
 ---
 title: "FOSDEM 2023"
 date: 2023-02-05T06:25:00-06:00
-categories:
+tags:
   - Travel
   - Conferences
-tags:
   - FOSDEM
   - Matrix Community Meetup
   - HSBXL

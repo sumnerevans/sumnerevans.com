@@ -1,12 +1,10 @@
 ---
 title: My Matrix Governing Board Platform
 date: 2024-04-24T03:25:00-06:00
-categories:
-  - Matrix
 tags:
+  - Matrix
   - Matrix Governing Board
   - Element
-  - Matrix
   - Matrix Foundation
   - Chat
   - Cryptography

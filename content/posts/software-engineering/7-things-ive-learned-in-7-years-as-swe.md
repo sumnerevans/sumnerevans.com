@@ -1,10 +1,9 @@
 ---
 title: 7 Things I've Learned After 7 Years as a Software Engineer
 date: 2025-07-06T06:25:00-06:00
-categories:
+tags:
   - Software Engineering
   - Hackathons
-tags:
   - Hackathon
   - Career
 description: |

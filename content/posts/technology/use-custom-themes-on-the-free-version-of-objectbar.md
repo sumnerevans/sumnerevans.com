@@ -1,8 +1,11 @@
 ---
 Title: Use Custom Themes on the Free Version of ObjectBar
 Date: 2013-02-08T11:56:00-0600
-Categories: [Technology]
-Tags: [Custom Themes, ObjectBar, ObjectBar Free]
+Tags:
+  - Technology
+  - Custom Themes
+  - ObjectBar
+  - ObjectBar Free
 ---
 
 One of the worst things about ObjectBar Free is that you can't use custom

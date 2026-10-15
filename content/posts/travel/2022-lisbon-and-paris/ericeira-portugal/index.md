@@ -1,8 +1,14 @@
 ---
 title: "Ericeira, Portugal - Work Retreat"
 date: 2022-06-10T12:00:00-06:00
-categories: [Trip to Portugal and France, Work Retreats]
-tags: [Travel, Ericeira, Portugal, Beeper, Work]
+tags:
+  - Trip to Portugal and France
+  - Work Retreats
+  - Travel
+  - Ericeira
+  - Portugal
+  - Beeper
+  - Work
 description: "My thoughts and reflections on the Beeper Summer 2022 retreat in Ericeira, Portugal."
 image: images/tent.jpg
 ---

@@ -1,7 +1,8 @@
 ---
 Title: "Eleventh Day - H'mong Mountain Retreat and Sapa 11-12-10"
 Date: 2010-11-12T10:06:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 **TODAY WAS HANNAH'S BIRTHDAY!**

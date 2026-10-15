@@ -1,7 +1,8 @@
 ---
 title: "The Image of God"
-categories: [Theology]
-tags: [The Image of God]
+tags:
+  - Theology
+  - The Image of God
 date: 2021-08-14T23:29:48-06:00
 draft: true
 ---

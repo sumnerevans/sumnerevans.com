@@ -62,19 +62,7 @@
           {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/license") }}
           <span>Posts</span>
         </a>
-        <div class="categories-tags-collapsed">
-          (<a href="{{ .Site.Home.Permalink }}categories" title="Categories">
-            {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/hash") }}
-          </a>
-          <a href="{{ .Site.Home.Permalink }}tags" title="Tags">
-            {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/tags") }}
-          </a>)
-        </div>
       </div>
-      <a href="{{ .Site.Home.Permalink }}categories" title="Categories" class="categories-link">
-        {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/hash") }}
-        <span>Categories</span>
-      </a>
       <a href="{{ .Site.Home.Permalink }}tags" title="Tags" class="tags-link">
         {{ partial "icons/icon" (dict "vendor" "tabler" "name" "outline/tags") }}
         <span>Tags</span>

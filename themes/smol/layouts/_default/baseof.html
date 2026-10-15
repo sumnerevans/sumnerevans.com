@@ -19,8 +19,8 @@
   {{- with or .Description .Summary site.Params.description | plainify | htmlUnescape | chomp }}
     <meta name="description" content="{{ replace . "\n" " " }}">
   {{- end }}
-  {{ if (or .Keywords .Params.tags .Params.categories) }}
-    <meta name="keywords" content="{{ delimit (union .Keywords (union .Params.tags .Params.categories)) "," }}">
+  {{ if (or .Keywords .Params.tags) }}
+    <meta name="keywords" content="{{ delimit (union .Keywords .Params.tags) "," }}">
   {{ end }}
   {{ with .Site.Params.author }}
     <meta name="author" content="{{ . }}">

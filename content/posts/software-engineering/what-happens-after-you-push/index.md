@@ -1,9 +1,8 @@
 ---
 title: What Happens After You Push?
 date: 2025-02-25T06:25:00-06:00
-categories:
-  - Software Engineering
 tags:
+  - Software Engineering
   - CI/CD
   - Linting
   - Containers

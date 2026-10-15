@@ -140,8 +140,8 @@ div.article-info {
     flex-wrap: wrap;
     gap: var(--space-1);
 
-    > b,
-    > span {
+    >b,
+    >span {
       transform: translateY(0.05rem);
     }
   }
@@ -265,7 +265,7 @@ blockquote {
   }
 }
 
-:not(.gallery) > figure + figure {
+:not(.gallery)>figure+figure {
   margin-top: var(--space-4);
 }
 
@@ -292,6 +292,7 @@ picture,
   border-radius: 8px;
 
   &.no-zoom img {
+
     &:hover,
     &:active,
     &:focus {
@@ -607,6 +608,7 @@ header {
     }
 
     img {
+
       &:hover,
       &:active,
       &:focus {
@@ -699,45 +701,20 @@ header {
         }
       }
 
-      .categories-tags-collapsed {
-        display: none;
-      }
-
       .posts {
         display: flex;
         gap: var(--space-1);
       }
     }
 
-    @media screen and (max-width: 40rem) {
-      .nav-links {
-
-        .categories-link,
-        .tags-link {
-          display: none;
-        }
-
-        .categories-tags-collapsed {
-          display: flex;
-
-          a:not(:first-child) {
-            margin-left: 0.3rem;
-          }
-        }
-      }
-    }
-
-    @media screen and (max-width: 35rem) {
+    @media screen and (max-width: 30rem) {
       .nav-links {
         gap: var(--space-2) var(--space-4);
-      }
-    }
 
-    @media screen and (max-width: 25rem) {
-
-      .nav-links>a>svg,
-      .nav-links>.posts>a>svg {
-        display: none;
+        >a>svg,
+        >.posts>a>svg {
+          display: none;
+        }
       }
     }
 
@@ -803,10 +780,6 @@ header {
           h4 {
             margin: 0;
             font-size: 1.1rem;
-          }
-
-          .categories {
-            margin: 0;
           }
 
           .tags {
@@ -1054,8 +1027,8 @@ table:not(.gallery) {
   .summary-text {
     margin: 0;
 
-    .summary > :first-child,
-    .summary > link:first-child + .admonition {
+    .summary> :first-child,
+    .summary>link:first-child+.admonition {
       margin-top: 0;
     }
   }
@@ -1089,6 +1062,7 @@ div.footnotes {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   img,
   video {
     transition: none;
@@ -1100,7 +1074,7 @@ div.footnotes {
     }
   }
 
-  details.portfolio-item > summary:hover div.company-logo img {
+  details.portfolio-item>summary:hover div.company-logo img {
     transform: none;
   }
 }

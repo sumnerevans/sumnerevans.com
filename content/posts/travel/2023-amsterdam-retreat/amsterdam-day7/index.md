@@ -1,11 +1,9 @@
 ---
 title: Amsterdam - Exploration Day
 date: 2023-04-01T09:25:00-06:00
-categories:
-  - Travel
-  - Trip to Amsterdam
 tags:
   - Travel
+  - Trip to Amsterdam
   - Amsterdam
   - Netherlands
 description: |

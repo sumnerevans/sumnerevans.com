@@ -1,10 +1,9 @@
 ---
 title: Porto, Portugal - Work Retreat
 date: 2024-04-26T06:25:00-06:00
-categories:
+tags:
   - Travel
   - Work Retreats
-tags:
   - Porto
   - Portugal
   - Beeper
@@ -214,7 +213,7 @@ flagship product is WordPress, so I thought it would be fitting for me to talk
 about the various blogs that I've had over the years. I started blogging when my
 mom had us write about our six-week trip to Vietnam in 2010. The original posts
 are on [an old Blogspot blog](http://basheracademy.blogspot.com/) and you can
-actually find them [on this site]({{< ref "/categories/trip-to-vietnam" >}}) as
+actually find them [on this site]({{< ref "/tags/trip-to-vietnam" >}}) as
 well. I had a [WordPress blog](https://sumnerevans.wordpress.com) for a few
 years, and I've had this blog in various forms since around 2017 with the most
 recent large change being in 2020. It was fun for me to look back on my blogging

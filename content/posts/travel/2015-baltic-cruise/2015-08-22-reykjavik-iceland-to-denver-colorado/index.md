@@ -1,8 +1,13 @@
 ---
 Title: Reykjavík, Iceland to Denver, Colorado
 Date: 2015-08-22T11:41:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [Colorado, Denver, Flight, Iceland, Reykjavík]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - Colorado
+  - Denver
+  - Flight
+  - Iceland
+  - Reykjavík
 image: images/plane-greenland2.jpg
 ---
 

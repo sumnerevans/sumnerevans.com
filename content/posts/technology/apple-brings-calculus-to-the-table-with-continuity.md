@@ -1,8 +1,10 @@
 ---
 Title: Apple Brings Calculus to the Table With Continuity
 Date: 2014-09-06T20:55:00-0600
-Categories: [Technology]
-Tags: [Apple, Continuity]
+Tags:
+  - Technology
+  - Apple
+  - Continuity
 ---
 
 There is a concept in calculus called Continuity. Basically, if you have a graph

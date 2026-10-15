@@ -1,9 +1,8 @@
 ---
 title: Bruges
 date: 2024-02-05T06:25:00-06:00
-categories:
-  - Travel
 tags:
+  - Travel
   - FOSDEM 2024
   - Brugges
   - Belgium

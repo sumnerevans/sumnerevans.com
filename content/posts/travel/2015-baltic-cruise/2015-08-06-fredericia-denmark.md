@@ -1,8 +1,10 @@
 ---
 Title: Fredericia, Denmark
 Date: 2015-08-06T13:21:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [Denmark, Fredericia]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - Denmark
+  - Fredericia
 ---
 
 Today we were in Fredericia (fred-er-esh-eeuh), Denmark. We got off the boat

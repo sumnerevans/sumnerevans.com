@@ -1,9 +1,8 @@
 ---
 title: Get Good at Explaining What You Do
 date: 2026-08-14T06:25:00-06:00
-categories:
-  - Software Engineering
 tags:
+  - Software Engineering
   - Management
   - AI
   - LLMs

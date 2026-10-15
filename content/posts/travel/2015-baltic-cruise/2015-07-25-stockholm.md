@@ -1,8 +1,10 @@
 ---
 Title: Stockholm, Sweden -- Day 3
 Date: 2015-07-25T12:42:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [Stockholm, Sweden]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - Stockholm
+  - Sweden
 ---
 
 Someone didn't get up until 9:15 today. I won't mention his name. (Oh wait, I'm

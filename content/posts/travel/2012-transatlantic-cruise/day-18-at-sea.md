@@ -1,7 +1,8 @@
 ---
 Title: "Day 18: At Sea"
 Date: 2012-05-17T18:12:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 ---
 
 ## Sumner

@@ -1,8 +1,8 @@
 ---
 title: "Paris, France - Day 3"
 date: 2022-06-17T12:00:00-06:00
-categories: [Trip to Portugal and France]
 tags:
+  - Trip to Portugal and France
   - Travel
   - Paris
   - France

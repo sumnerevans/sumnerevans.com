@@ -1,7 +1,8 @@
 ---
 Title: "Seventh Day - Hanoi 11/8/10 4:32 PM"
 Date: 2010-11-08T09:35:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 ## Sumner

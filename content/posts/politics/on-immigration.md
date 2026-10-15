@@ -1,8 +1,9 @@
 ---
 Title: On Immigration
 Date: 2017-09-07T11:01:00-0600
-Categories: [Politics]
-Tags: [Immigration]
+Tags:
+  - Politics
+  - Immigration
 draft: true
 ---
 

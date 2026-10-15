@@ -1,7 +1,8 @@
 ---
 Title: The Most Ironic Google Doodle EVER
 Date: 2013-10-01T05:51:00-0600
-Categories: [Politics]
+tags:
+  - Politics
 draft: true
 ---
 

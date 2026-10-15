@@ -1,9 +1,8 @@
 ---
 title: Porto, Portugal - Sightseeing
 date: 2024-04-27T06:25:00-06:00
-categories:
-  - Travel
 tags:
+  - Travel
   - Porto
   - Portugal
   - Train Station

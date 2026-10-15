@@ -1,7 +1,8 @@
 ---
 Title: "Day 24: Santorini, Greece"
 Date: 2012-05-23T19:25:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 ---
 
 ## Sumner

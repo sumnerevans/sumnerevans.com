@@ -1,8 +1,11 @@
 ---
 Title: My Thoughs on Rubio's Suspended Campaign
 Date: 2016-03-15T21:07:00-0600
-Categories: [Politics]
-Tags: [Election 2016, GOP, Marco Rubio]
+Tags:
+  - Politics
+  - Election 2016
+  - GOP
+  - Marco Rubio
 draft: true
 ---
 

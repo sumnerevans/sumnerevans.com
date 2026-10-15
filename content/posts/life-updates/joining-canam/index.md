@@ -1,8 +1,11 @@
 ---
 title: "I'm Joining Can/Am Technologies"
 date: 2025-04-07
-categories: [Life Updates]
-tags: [Can/Am Technologies, Job, Work]
+tags:
+  - Life Updates
+  - Can/Am Technologies
+  - Job
+  - Work
 ---
 
 <center>

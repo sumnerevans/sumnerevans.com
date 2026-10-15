@@ -1,7 +1,8 @@
 ---
 Title: "Soc Tran Trip"
 Date: 2010-12-03T23:40:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 ## \~Hannah\~  

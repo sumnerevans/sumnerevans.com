@@ -1,9 +1,8 @@
 ---
 title: Don't be a Fractional Dev
 date: 2024-06-27T06:25:00-06:00
-categories:
-  - Programming
 tags:
+  - Programming
   - Fractional Dev
 description: |
   Everyone wants to be a 10x developer, but we rarely talk about the opposite of

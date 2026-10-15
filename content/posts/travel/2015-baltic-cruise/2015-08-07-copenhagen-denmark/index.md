@@ -1,8 +1,10 @@
 ---
 Title: Copenhagen, Denmark
 Date: 2015-08-07T10:08:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [Copenhagen, Denmark]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - Copenhagen
+  - Denmark
 image: images/copenhagen1.jpg
 ---
 

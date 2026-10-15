@@ -1,7 +1,8 @@
 ---
 Title: "Day 14: Cadiz, Spain"
 Date: 2012-05-26T19:15:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 draft: true
 ---
 

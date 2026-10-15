@@ -1,7 +1,7 @@
 ---
 title: Software Engineers Mitigate Risk
 date: 2025-11-23T06:25:00-06:00
-categories:
+tags:
   - Software Engineering
 draft: true
 ---

@@ -1,7 +1,8 @@
 ---
 Title: "Day 11: At Sea"
 Date: 2012-05-10T15:04:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 ---
 
 ## Sumner

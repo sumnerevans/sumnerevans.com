@@ -1,8 +1,10 @@
 ---
 Title: London, England -- Day 4
 Date: 2015-08-12T12:30:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [England, London]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - England
+  - London
 ---
 
 Today we had a late start, about 9:00. We began by riding the underground to

@@ -1,8 +1,6 @@
 ---
 title: 2024 Matrix Governing Board Endorsements
 date: 2024-05-08T06:25:00-06:00
-categories:
-  - Matrix
 tags:
   - Matrix
   - Matrix Governing Board

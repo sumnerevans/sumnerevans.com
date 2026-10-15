@@ -1,8 +1,13 @@
 ---
 Title: On Our Way - Reykjavík, Iceland to Stockholm, Sweden
 Date: 2015-07-23T11:03:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [Flight, Iceland, Reykjavík, Stockholm, Sweden]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - Flight
+  - Iceland
+  - Reykjavík
+  - Stockholm
+  - Sweden
 image: images/airplane-wing.jpg
 ---
 

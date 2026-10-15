@@ -9,7 +9,6 @@ interface SearchResult {
 }
 
 interface RawRecord {
-  categories: string[];
   contents: string;
   permalink: string;
   tags: string[];
@@ -40,18 +39,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const article = rawIndex[searchResult.ref];
     const hls = Object.keys(searchResult.matchData.metadata);
     const hlQuery = hls.map((h) => `hl=${encodeURIComponent(h)}`).join("&");
-    const [categoriesList, tagsList] = ["categories", "tags"].map((t) =>
-      article[t]?.map(
-        (c) => `<a href="/${t}/${c.toLowerCase().replaceAll(" ", "-")}">${c}</a>`
-      )
+    const tagsList = article.tags?.map(
+      (tag) => `<a href="/tags/${encodeURIComponent(tag.toLowerCase().replaceAll(" ", "-"))}">${tag}</a>`
     );
     const searchResultDiv = document.createElement("div");
     searchResultDiv.classList.add("search-result");
     searchResultDiv.id = `search-result-${i}`;
     searchResultDiv.innerHTML =
       `<h4><b><a href="${searchResult.ref}?${hlQuery}">${article.title}</a></b></h4>` +
-      `${categoriesList?.length ? `<p class="categories"><b>Posted in ${categoriesList.join(", ")}</b></p>` : ""}` +
-      `${tagsList?.length ? `<p class="tags">Tags: ${tagsList.join(", ")}</p>` : ""}` +
+      `${tagsList?.length ? `<p class="tags">${tagsList.join(", ")}</p>` : ""}` +
       `<div class="content-summary">` +
       `${article.contents?.replaceAll("\n", "<br>")}` +
       `</div>`;

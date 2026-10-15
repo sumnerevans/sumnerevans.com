@@ -1,9 +1,8 @@
 ---
 title: Denver to Brussels
 date: 2026-01-24T06:25:00-06:00
-categories:
-  - Travel
 tags:
+  - Travel
   - FOSDEM 2026
   - Denver
   - Brussels

@@ -1,8 +1,8 @@
 ---
 title: London, England -- Day 2
 date: 2015-08-10T14:16:00-0600
-categories: [Baltic Cruise and Northern Europe]
 tags:
+  - Baltic Cruise and Northern Europe
   - England
   - London
   - St. Paul's Cathedral

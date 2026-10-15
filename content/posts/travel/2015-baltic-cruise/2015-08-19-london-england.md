@@ -1,8 +1,10 @@
 ---
 Title: London, England -- Day 11
 Date: 2015-08-19T15:37:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [England, London]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - England
+  - London
 ---
 
 Today we went to the reconstruction of the Globe Theatre and then to the science

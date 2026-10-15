@@ -1,11 +1,9 @@
 ---
 title: "Amsterdam, Netherlands - Work Retreat"
 date: 2024-11-08T09:25:00-06:00
-categories:
-  - Travel
-  - Work Retreats
 tags:
   - Travel
+  - Work Retreats
   - Amsterdam
   - Netherlands
   - Beeper
@@ -28,7 +26,7 @@ Automattic is a [remote-only company](https://automattic.com/about), so work
 retreats are the only time that we can connect with our co-workers in-person and
 build stronger personal relationships among the team. The best part is that we
 get to go to cool locations for these meetups. You can read about all the
-previous [work retreats on this blog]({{<ref"/categories/work-retreats">}}).
+previous [work retreats on this blog]({{<ref"/tags/work-retreats">}}).
 
 For this retreat, we returned to
 [The Social Hub Amsterdam City](https://goo.gl/maps/DeqBLLtmbuR9Ne8Y6) which was

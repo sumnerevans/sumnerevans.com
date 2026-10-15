@@ -1,10 +1,9 @@
 ---
 title: Vibe Coding Doesn't Require LLMs
 date: 2025-08-10T06:25:00-06:00
-categories:
+tags:
   - Software Engineering
   - Programming
-tags:
   - Vibe Coding
   - LLM
   - AI

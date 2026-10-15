@@ -1,10 +1,9 @@
 ---
 title: "Toronto, Canada - Work Retreat"
 date: 2023-09-22T06:25:00-06:00
-categories:
+tags:
   - Travel
   - Work Retreats
-tags:
   - Toronto
   - Canada
   - Beeper

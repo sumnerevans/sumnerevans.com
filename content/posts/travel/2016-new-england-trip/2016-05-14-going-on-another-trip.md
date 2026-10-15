@@ -1,7 +1,8 @@
 ---
 Title: Going on Another Trip!
 Date: 2016-05-14T15:24:00-0600
-Categories: [New England Trip]
+tags:
+  - New England Trip
 ---
 
 To celebrate the end of my senior year, I am going on trip with my mom to New

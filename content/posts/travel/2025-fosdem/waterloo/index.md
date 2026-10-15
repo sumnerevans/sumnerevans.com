@@ -1,9 +1,8 @@
 ---
 title: Waterloo Battlefield
 date: 2025-01-30T06:25:00-06:00
-categories:
-  - Travel
 tags:
+  - Travel
   - Waterloo
   - Belgium
 description: |

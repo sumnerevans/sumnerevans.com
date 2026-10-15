@@ -1,8 +1,9 @@
 ---
 title: Reflections on Trip 2
 date: 2016-02-10T22:35:00-0600
-categories: [Baltic Cruise and Northern Europe]
-tags: [Reflections]
+tags:
+  - Baltic Cruise and Northern Europe
+  - Reflections
 ---
 
 Finally, four months after my [last one]({{< ref "reflections-on-trip-1.md"

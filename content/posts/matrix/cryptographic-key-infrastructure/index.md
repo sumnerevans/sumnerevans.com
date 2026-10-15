@@ -1,10 +1,9 @@
 ---
 title: Matrix Cryptographic Key Infrastructure
 date: 2024-09-21T10:00:00+02:00
-categories:
+tags:
   - Matrix
   - Programming
-tags:
   - Cryptography
   - E2EE
   - Encryption

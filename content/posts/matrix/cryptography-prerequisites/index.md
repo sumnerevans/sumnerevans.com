@@ -1,10 +1,9 @@
 ---
 title: Matrix Cryptography Prerequisites
 date: 2024-08-09T05:00:00-06:00
-categories:
+tags:
   - Matrix
   - Programming
-tags:
   - Cryptography
   - E2EE
   - Encryption

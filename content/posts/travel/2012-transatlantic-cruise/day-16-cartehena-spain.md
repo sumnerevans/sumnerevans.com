@@ -1,7 +1,8 @@
 ---
 Title: "day 16: Cartehena, Spain"
 Date: 2012-05-26T19:16:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 draft: true
 ---
 

@@ -1,9 +1,8 @@
 ---
 title: Los Angeles
 date: 2023-09-10T06:25:00-06:00
-categories:
-  - Travel
 tags:
+  - Travel
   - Los Angeles
   - California
   - Hollywood

@@ -1,7 +1,8 @@
 ---
 Title: "Day 9: At Sea"
 Date: 2012-05-08T15:01:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 ---
 
 ## Sumner

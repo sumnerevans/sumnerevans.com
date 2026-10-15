@@ -1,8 +1,10 @@
 ---
 Title: London, England -- Day 5
 Date: 2015-08-13T13:41:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [England, London]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - England
+  - London
 ---
 
 Today we got up fairly early to go to the Tower of London, the castle around

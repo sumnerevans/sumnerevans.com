@@ -1,7 +1,8 @@
 ---
 Title: "Day 18: At sea"
 Date: 2012-05-17T19:18:00-0600
-Categories: [Transatlantic Cruise and Europe]
+tags:
+  - Transatlantic Cruise and Europe
 draft: true
 ---
 

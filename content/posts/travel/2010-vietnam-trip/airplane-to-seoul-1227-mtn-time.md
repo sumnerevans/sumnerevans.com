@@ -1,7 +1,8 @@
 ---
 Title: "Airplane to Seoul 12:27 MTN Time"
 Date: 2010-11-01T10:58:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 We are in the plane over Northern Japan. It has been a long ride but

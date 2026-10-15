@@ -1,8 +1,11 @@
 ---
 title: "Washington D.C. -- The Museum of the Bible"
 date: 2019-05-21T21:00:00-06:00
-categories: [Trip to D.C. and Transatlantic Cruise]
-tags: [Travel, Washington D.C., Museum of the Bible]
+tags:
+  - Trip to D.C. and Transatlantic Cruise
+  - Travel
+  - Washington D.C.
+  - Museum of the Bible
 ---
 
 Today we went to the Museum of the Bible. The museum houses many exhibits which

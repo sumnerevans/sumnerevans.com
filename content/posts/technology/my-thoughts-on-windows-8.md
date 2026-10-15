@@ -1,7 +1,8 @@
 ---
 Title: My Thoughts on Windows 8
 Date: 2013-01-17T16:02:00-0600
-Categories: [Technology]
+tags:
+  - Technology
 ---
 
 I first saw Windows 8 at my C\# class last year (2011-2012 school year) and fell

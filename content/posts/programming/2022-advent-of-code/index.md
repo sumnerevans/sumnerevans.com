@@ -1,8 +1,8 @@
 ---
 title: "Advent of Code 2022"
 date: 2022-12-01T09:00:00-06:00
-categories: [Programming]
 tags:
+  - Programming
   - Advent of Code
   - Go (Programming Language)
   - Competition

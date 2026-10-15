@@ -1,9 +1,8 @@
 ---
 title: Brno, Czechia
 date: 2026-01-28T06:25:00-06:00
-categories:
-  - Travel
 tags:
+  - Travel
   - Brno
   - Czechia
 description: |

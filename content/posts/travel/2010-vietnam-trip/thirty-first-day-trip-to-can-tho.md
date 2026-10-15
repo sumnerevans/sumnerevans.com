@@ -1,7 +1,8 @@
 ---
 Title: "Thirty-first Day - Trip to Can Tho 12/02/10"
 Date: 2010-12-02T10:05:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 ## Sumner

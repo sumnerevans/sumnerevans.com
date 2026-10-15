@@ -1,8 +1,10 @@
 ---
 Title: Tallinn, Estonia
 Date: 2015-08-01T12:49:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [Estonia, Tallinn]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - Estonia
+  - Tallinn
 ---
 
 Today we were in Tallinn, Estonia. We arrived in port at about 7:00 and, after

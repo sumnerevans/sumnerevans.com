@@ -1,10 +1,9 @@
 ---
 title: FOSDEM 2025
 date: 2025-02-02T06:25:00-06:00
-categories:
+tags:
   - Travel
   - Conferences
-tags:
   - FOSDEM
   - Matrix
   - HSBXL

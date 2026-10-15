@@ -2,8 +2,17 @@
 title: "Southampton, England to London, England"
 date: 2019-05-31T23:58:00-06:00
 category: [Trip to D.C. and Transatlantic Cruise]
-tags: [Southampton, England, London, The Tube, Tower of London, Tower Bridge,
-       St. Paul's Cathedral, Evensong, Westminster Abbey, British Pub]
+tags:
+  - Southampton
+  - England
+  - London
+  - The Tube
+  - Tower of London
+  - Tower Bridge
+  - St. Paul's Cathedral
+  - Evensong
+  - Westminster Abbey
+  - British Pub
 image: images/tower-bridge.jpg
 ---
 

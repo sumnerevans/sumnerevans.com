@@ -1,8 +1,10 @@
 ---
 Title: St. Petersburg, Russia -- Day 2
 Date: 2015-07-30T12:26:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [Russia, St. Petersburg]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - Russia
+  - St. Petersburg
 ---
 
 Today is our second day in St. Petersburg. After the normal morning activities,

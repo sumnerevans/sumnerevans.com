@@ -1,9 +1,8 @@
 ---
 title: Brussels - Day 1
 date: 2024-02-01T06:25:00-06:00
-categories:
-  - Travel
 tags:
+  - Travel
   - Museum
   - Eurozone
   - Military Museum

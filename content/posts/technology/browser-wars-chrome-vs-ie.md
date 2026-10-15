@@ -1,8 +1,11 @@
 ---
 Title: "Browser Wars: Chrome vs. IE"
 Date: 2013-03-03T19:10:00-0600
-Categories: [Technology]
-Tags: [Browser Wars, Chrome, IE]
+Tags:
+  - Technology
+  - Browser Wars
+  - Chrome
+  - IE
 ---
 
 Yes, you saw that right, I am going to actually put Chrome and IE (Internet

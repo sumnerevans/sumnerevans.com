@@ -1,8 +1,11 @@
 ---
 Title: CrashPlan Review
 Date: 2013-02-28T19:47:00-0600
-Categories: [Technology]
-Tags: [Backup, CrashPlan, Review]
+Tags:
+  - Technology
+  - Backup
+  - CrashPlan
+  - Review
 ---
 
 I went out and signed up for the CrashPlan 30-day Trial a little over a month

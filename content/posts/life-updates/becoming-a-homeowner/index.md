@@ -1,8 +1,9 @@
 ---
 title: "Becoming a Homeowner"
 date: 2023-06-06T09:00:00-06:00
-categories: [Life Updates]
-tags: [Homeownership]
+tags:
+  - Life Updates
+  - Homeownership
 ---
 
 I recently became a homeowner. Here are a couple of reflections that I've had

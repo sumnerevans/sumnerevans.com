@@ -3,7 +3,7 @@ const lunr = require("lunr");
 function generateIndex(data) {
   const lunrIndex = lunr(function () {
     this.ref("permalink");
-    ["title", "contents", "tags", "categories"].forEach((field) => this.field(field));
+    ["title", "contents", "tags"].forEach((field) => this.field(field));
 
     data.forEach((article) => {
       this.add({
@@ -11,7 +11,6 @@ function generateIndex(data) {
         title: article.title,
         contents: article.contents,
         tags: (article.tags ?? []).join(" | "),
-        categories: (article.categories ?? []).join(" | "),
       });
     });
   });

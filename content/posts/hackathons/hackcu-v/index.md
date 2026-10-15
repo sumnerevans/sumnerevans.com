@@ -1,8 +1,11 @@
 ---
 title: "HackCU V"
 date: 2019-03-25T23:58:00-06:00
-categories: [Hackathons]
-tags: [HackCU, Prize, WiFi]
+tags:
+  - Hackathons
+  - HackCU
+  - Prize
+  - WiFi
 image: images/2019-02-24-second-place.jpg
 ---
 

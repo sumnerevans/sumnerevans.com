@@ -1,8 +1,10 @@
 ---
 Title: Helsinki, Finland
 Date: 2015-07-28T12:22:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [Finland, Helsinki]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - Finland
+  - Helsinki
 ---
 
 We woke up at about 8:00 today, ate breakfast, and got ready to get off the

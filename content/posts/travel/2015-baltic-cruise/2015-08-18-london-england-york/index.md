@@ -1,8 +1,11 @@
 ---
 Title: London, England -- Day 10 -- York
 Date: 2015-08-18T14:05:00-0600
-Categories: [Baltic Cruise and Northern Europe]
-Tags: [England, London, York]
+Tags:
+  - Baltic Cruise and Northern Europe
+  - England
+  - London
+  - York
 image: images/york1.jpg
 ---
 

@@ -1,9 +1,8 @@
 ---
 title: Forget MCP, Write CLI Apps
 date: 2025-12-02T06:25:00-06:00
-categories:
-  - Programming
 tags:
+  - Programming
   - CLI
   - LLM
   - MCP

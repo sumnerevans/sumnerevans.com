@@ -1,8 +1,13 @@
 ---
 Title: Halifax, Nova Scotia, Canada
 Date: 2016-05-30T19:00:00-0600
-Categories: [New England Trip]
-Tags: [Canada, Halifax, Halifax Citadel, Immigration, Nova Scotia]
+Tags:
+  - New England Trip
+  - Canada
+  - Halifax
+  - Halifax Citadel
+  - Immigration
+  - Nova Scotia
 ---
 
 Today we went to the Canadian Immigration Museum and the Halifax Citadel.

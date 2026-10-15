@@ -1,7 +1,8 @@
 ---
 Title: "Thirty-third Day - Drive to Chao Doc 12/4/10"
 Date: 2010-12-04T21:45:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 Today we woke up and got readdy to drive to Chao Doc. We went through

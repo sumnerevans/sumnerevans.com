@@ -1,9 +1,16 @@
 ---
 title: "London, England and Back Home"
 date: 2019-06-01T22:08:00-06:00
-categories: [Trip to D.C. and Transatlantic Cruise]
-tags: [London, England, Denver, Colorado, Flight, British Museum, The Tube,
-      Buckingham Palace]
+tags:
+  - Trip to D.C. and Transatlantic Cruise
+  - London
+  - England
+  - Denver
+  - Colorado
+  - Flight
+  - British Museum
+  - The Tube
+  - Buckingham Palace
 image: images/buckingham-palace2.jpg
 ---
 

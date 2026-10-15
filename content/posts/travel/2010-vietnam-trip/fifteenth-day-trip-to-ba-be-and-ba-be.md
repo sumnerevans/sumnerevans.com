@@ -1,7 +1,8 @@
 ---
 Title: "Fifteenth Day - Trip to Ba Be and Homestay 11/16/10"
 Date: 2010-11-16T11:51:00-0600
-Categories: [Trip to Vietnam]
+tags:
+  - Trip to Vietnam
 ---
 
 So, today we checked out of our hotel early and had breakfast. Then our

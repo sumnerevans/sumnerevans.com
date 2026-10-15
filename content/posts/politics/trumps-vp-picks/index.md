@@ -1,9 +1,8 @@
 ---
 title: Trump Has Made Two Perfect VP Picks
 date: 2025-06-01T06:25:00-06:00
-categories:
-  - Politics
 tags:
+  - Politics
   - Donald Trump
   - Vice President
   - Mike Pence
