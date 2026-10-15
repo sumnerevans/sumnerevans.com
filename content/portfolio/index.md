@@ -1131,6 +1131,30 @@ uselastmod: true
 
 ## Projects
 
+<details id="project-webfortune" class="portfolio-item no-logo">
+  <summary>
+    <h3>
+      Web Fortune
+      <a class="permalink" href="#project-webfortune"
+        aria-label="Permalink to Web Fortune">{{< ico "tabler" "outline/link" >}}</a>
+    </h3>
+    <span>November 2023 - Present</span>
+    <p>
+      <a href="https://github.com/sumnerevans/webfortune" target="_blank">
+        {{< ico "tabler" "outline/brand-github" >}} GitHub</a>
+      | <a href="https://fortune.sumnerevans.com" target="_blank">
+        {{< ico "tabler" "outline/world-www" >}} Live Website</a>
+      | AGPLv3+
+    </p>
+  </summary>
+  <div>
+    <p>
+      A simple website that shows a random quote from a quotesfile. The site is
+      built with Go, Templ, and HTMX.
+    </p>
+  </div>
+</details>
+
 <details id="project-mineshspc.com" class="portfolio-item">
   <summary>
     <div class="company-logo">
