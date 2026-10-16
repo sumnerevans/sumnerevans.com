@@ -7,7 +7,6 @@ description: |
   including one graduate level course.
 build:
   publishResources: true
-uselastmod: true
 ---
 
 > [!NOTE]

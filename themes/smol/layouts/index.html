@@ -6,27 +6,7 @@
       <div class="article-title">
         <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
       </div>
-      <div class="article-info">
-        <div class="post-info-line">
-          <b>
-            Posted on
-            <time datetime="{{ .Date.Format "2006-01-02" }}">
-              {{- .Date.Format (default "2006-01-02" .Site.Params.dateFmt) -}}
-            </time>
-          </b>
-          &mdash;
-          {{- if and .WordCount .ReadingTime }}
-            {{ .ReadingTime }} minute read, {{ .WordCount }} words
-          {{ end }}
-        </div>
-        {{ with .Params.tags }}
-          <div class="post-tags">
-            {{ range . }}
-              {{ partial "taxonomy-pill.html" (dict "kind" "tags" "name" .) }}
-            {{ end }}
-          </div>
-        {{ end }}
-      </div>
+      {{ partial "article-info.html" . }}
       <div class="post-summary">
         {{ if not .Params.hide_image_in_index }}
           {{- with .Resources.Get .Params.image -}}

@@ -1,0 +1,24 @@
+<div class="article-info">
+  <div class="post-info-line">
+    <b>
+      {{ if .Params.unlisted }}
+        <span class="unlisted-notice" title="This post is not published on the homepage or in the RSS feed.">
+          Unlisted Pre-Print</span>
+      {{ end }}
+      {{ if .Date }}
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
+      {{ end }}
+    </b>
+    &mdash;
+    {{- if and .WordCount .ReadingTime }}
+      {{ .ReadingTime }} minute read, {{ .WordCount }} words
+    {{ end }}
+  </div>
+  {{ with .Params.tags }}
+    <div class="post-tags">
+      {{ range . }}
+        {{ partial "taxonomy-pill.html" (dict "kind" "tags" "name" .) }}
+      {{ end }}
+    </div>
+  {{ end }}
+</div>
