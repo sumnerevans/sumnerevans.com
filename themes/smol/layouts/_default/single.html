@@ -31,11 +31,9 @@
               {{ end }}
             {{ end }}
           </b>
-          {{ with .WordCount }}
-            <span>• {{ . }} words</span>
-          {{ end }}
-          {{ with .ReadingTime }}
-            <span>• {{ . }} minute read</span>
+          &mdash;
+          {{- if and .WordCount .ReadingTime }}
+            {{ .ReadingTime }} minute read, {{ .WordCount }} words
           {{ end }}
         </div>
         {{ with .Params.tags }}

@@ -10,13 +10,13 @@
         <div class="post-info-line">
           <b>
             Posted on
-            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}</time>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">
+              {{- .Date.Format (default "2006-01-02" .Site.Params.dateFmt) -}}
+            </time>
           </b>
-          {{ with .WordCount }}
-            <span>• {{ . }} words</span>
-          {{ end }}
-          {{ with .ReadingTime }}
-            <span>• {{ . }} minute read</span>
+          &mdash;
+          {{- if and .WordCount .ReadingTime }}
+            {{ .ReadingTime }} minute read, {{ .WordCount }} words
           {{ end }}
         </div>
         {{ with .Params.tags }}

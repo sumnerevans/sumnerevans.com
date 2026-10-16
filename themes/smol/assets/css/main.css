@@ -134,7 +134,6 @@ div.article-info {
   margin-top: 0;
   margin-bottom: var(--space-4);
 
-  .post-info-line,
   .post-tags {
     display: flex;
     flex-wrap: wrap;
@@ -147,7 +146,7 @@ div.article-info {
   }
 
   .post-tags {
-    margin-top: var(--space-1);
+    margin-top: var(--space-2);
   }
 
   @media screen and (max-width: 38rem) {
