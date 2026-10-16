@@ -1,8 +1,6 @@
 {{- if partial "func/FilterPages" (.Site.RegularPages.Related .) -}}
 <aside class="related-posts">
-  <div class="header">
-    <h3>RELATED POSTS</h3>
-  </div>
+  <h3>RELATED POSTS</h3>
   <section class="articles">
     <ul>
       {{- range (.Site.RegularPages.Related . | partial "func/FilterPages" | first 5) -}}
