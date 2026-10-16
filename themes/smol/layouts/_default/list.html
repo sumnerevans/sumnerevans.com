@@ -9,26 +9,31 @@
   <div>
     {{- with .Title -}}
       <div class="article-title">
-        <h1>{{ . }}</h1>
+        <h1>{{ len $pages }} {{ . }}</h1>
       </div>
       {{- end -}}
     {{- with .Content -}}<div>{{ . }}</div>{{- end -}}
   </div>
   {{ end }}
 
-  <ul{{ if $isTaxonomy }} class="taxonomy-pills"{{ end }}>
-    {{- range $pages -}}
-    <li>
-      {{- if not $isTaxonomy -}}
-        {{ .Date.Format (default "2006-01-02" .Site.Params.dateFmt) }}
-      {{ end }}
-      {{- if $isTaxonomy -}}
+  {{ if $isTaxonomy }}
+    <ul class="taxonomy-pills">
+      {{- range $pages -}}
+      <li>
         {{ partial "taxonomy-pill.html" (dict "kind" $.Data.Plural "name" .Title "url" .RelPermalink) }}
-      {{- else -}}
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
       {{- end -}}
-    </li>
-    {{- end -}}
-  </ul>
+    </ul>
+  {{ else }}
+    <ul>
+      {{- range $pages -}}
+        <li>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+          &mdash;
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+      {{- end -}}
+    </ul>
+  {{ end }}
 </main>
 {{ end }}

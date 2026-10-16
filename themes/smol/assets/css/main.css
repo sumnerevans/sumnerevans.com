@@ -1058,3 +1058,17 @@ div.footnotes {
 div.pagination {
   margin-top: var(--space-6);
 }
+
+main.list-page {
+  ul {
+    padding: 0;
+
+    li {
+      list-style: none;
+
+      .post-info {
+        color: var(--secondary-color);
+      }
+    }
+  }
+}
