@@ -676,7 +676,7 @@ header {
       grid-area: nav-links;
       display: flex;
       align-items: center;
-      gap: var(--space-2) var(--space-5);
+      gap: var(--space-5);
       flex-wrap: wrap;
       font-size: 1.2rem;
 
@@ -700,11 +700,13 @@ header {
 
     @media screen and (max-width: 30rem) {
       .nav-links {
-        gap: var(--space-2) var(--space-4);
+        gap: var(--space-3);
+      }
+    }
 
-        >a>svg {
-          display: none;
-        }
+    @media screen and (max-width: 26rem) {
+      .nav-links>a>svg {
+        display: none;
       }
     }
 
