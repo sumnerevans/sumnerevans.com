@@ -59,13 +59,13 @@ This was the order that got delivered:
     on my personal laptop that requires a lot of memory. I'll definitely be
     monitoring this to see if I made the right decision.
 
-I am going to pull the M.2 drive from my ThinkPad T14s[^2] so I didn't order an
-SSD. I also did not order a power adapter since I have enough random ones lying
-around the house.
+I pulled the M.2 drive from my ThinkPad T14s[^2] so I didn't order an SSD. I
+also did not order a power adapter since I have enough random ones lying around
+the house.
 
 I think that this is a pretty decent deal, considering the RAM apocalypse. I
 spot checked some alternative machines such as the 14" MacBook Pro and the
-latest ThinkPad T14s, but they were in the same range as a Framework 13 Pro with
+latest ThinkPad T14s, and they were in the same range as a Framework 13 Pro with
 all parts included. Since I was able to skip buying a few expensive components,
 the Framework was definitely worth it for me.
 
@@ -147,7 +147,8 @@ and how they compare to MacBooks and ThinkPads.
   None of the reviews I've seen talk about the flex of the screen, however. The
   screen does flex a bit, but not much. The Framework 13 Pro screen definitely
   has more flex than my work Dell XPS which has quite a thick screen backing and
-  virtually no flex, but if you have been concerned about it, don't be.
+  virtually no flex. It also has more flex than my ThinkPad T14s. Unless you are
+  manhandling your screen regularly, the screen is plenty sturdy.
 
   A lot of reviews talk about the hinge being wobbly, and I think that is
   overblown. Maybe if you use the touchscreen a lot more you'd notice, but in
@@ -167,10 +168,12 @@ and how they compare to MacBooks and ThinkPads.
   touchpad was getting worn out) and it seems close enough to MacBook quality
   that it works for my use cases.
 
-  I think the biggest area of improvement is the multi-finger detection. I often
-  attempt to do a three-finger click for middle click and it registers as a left
-  click (two fingers). I am not sure if this can be tuned or not, but this is my
-  current biggest annoyance with this laptop.
+  I think the biggest area for improvement is the multi-finger detection. So
+  far, I've had issues getting the three-finger click to be consistently
+  differentiated from two finger click. Often, when I attempt to do a
+  three-finger click (middle click) but it registers as a left click (two
+  fingers). I am not sure if this can be tuned or not, but this is my current
+  biggest annoyance with this laptop.
 
 - **Screen.** I'm too blind to really appreciate good screens, but this one is
   nice. I'm running Hyprland at 1.5x scaling, and it looks great.
