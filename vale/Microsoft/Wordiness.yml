@@ -7,7 +7,6 @@ action:
   name: replace
 swap:
   (?:extract|take away|eliminate): remove
-  (?:in order to|as a means to): to
   (?:previous|prior) to: before
   (?:utilize|make use of): use
   a (?:large)? majority of: most
