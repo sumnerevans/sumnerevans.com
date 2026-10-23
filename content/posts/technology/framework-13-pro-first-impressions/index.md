@@ -5,6 +5,19 @@ tags:
   - Technology
   - Framework 13 Pro
 image: images/fw13pro.png
+summary: |
+  At long last, my Framework 13 Pro arrived! I must say, I'm delighted with it
+  so far. I hope to make this the first post in a series about this laptop as I
+  put it through its paces, so let me know what you would like to know about the
+  laptop in the comments!
+
+  ## Configuration
+
+  Earlier this year, I preordered the Framework 13 Pro DIY Edition. The preorder
+  process for Framework uses a batch system where they send out the laptops in
+  batches based on when you ordered the device instead of all at once. I was in
+  Batch 12 which was supposed to ship in September. However, due to a glitch in
+  the touchpad drivers, they delayed shipping on all models by a month.
 ---
 
 At long last, my Framework 13 Pro arrived! I must say, I'm delighted with it so
