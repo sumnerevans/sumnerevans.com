@@ -4,12 +4,15 @@ date: 2026-10-23T06:25:00-06:00
 tags:
   - Technology
   - Framework 13 Pro
+image: images/fw13pro.png
 ---
 
 At long last, my Framework 13 Pro arrived! I must say, I'm delighted with it so
 far. I hope to make this the first post in a series about this laptop as I put
 it through its paces, so let me know what you would like to know about the
 laptop in the comments!
+
+![Framework 13 Pro](images/fw13pro.png)
 
 ## Configuration
 
@@ -90,9 +93,9 @@ Specifically, I was curious about the LPCAMM RAM installation process. What I
 discovered was that there are three small "pegs" that go through the interposer
 and LPCAAM chip, and two which go all the way up to the memory cover.
 
-![Pegs through the interposer](./images/pegs-through-interposer.png)
-![Pegs through the LPCAMM module](./images/pegs-through-lpcamm.png)
-![Pegs through the cover](./images/pegs-through-cover.png)
+![Pegs through the interposer](images/pegs-through-interposer.png)
+![Pegs through the LPCAMM module](images/pegs-through-lpcamm.png)
+![Pegs through the cover](images/pegs-through-cover.png)
 
 I've installed both desktop and laptop RAM before, but never in this form
 factor, so it was fun to learn how to do it. It was a lot more foolproof than I
