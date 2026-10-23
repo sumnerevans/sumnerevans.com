@@ -2,7 +2,6 @@
 title: Framework 13 Pro - First Impressions
 date: 2026-10-23T06:25:00-06:00
 tags:
-  - Technology
   - Framework 13 Pro
 image: images/fw13pro.png
 summary: |
