@@ -17,6 +17,9 @@ summary: |
   batches based on when you ordered the device instead of all at once. I was in
   Batch 12 which was supposed to ship in September. However, due to a glitch in
   the touchpad drivers, they delayed shipping on all models by a month.
+discussion_links:
+  - name: r/framework
+    url: https://www.reddit.com/r/framework/comments/1xdqfh6/framework_13_pro_first_impressions/
 ---
 
 At long last, my Framework 13 Pro arrived! I must say, I'm delighted with it so
