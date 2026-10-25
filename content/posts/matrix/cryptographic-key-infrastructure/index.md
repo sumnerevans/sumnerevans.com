@@ -5,7 +5,6 @@ tags:
   - Matrix
   - Programming
   - Cryptography
-  - E2EE
   - Encryption
   - Security
   - Identity

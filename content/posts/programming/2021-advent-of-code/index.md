@@ -1,5 +1,5 @@
 ---
-title: "Advent of Code 2021"
+title: Advent of Code 2021
 date: 2021-12-01T09:00:00-06:00
 tags:
   - Programming
@@ -14,8 +14,8 @@ Every year since 2015, [Eric Wastl][1] creates a two-part programming problem
 for each of the 25 days of Advent. He publishes a new problem every day at
 [adventofcode.com](https://adventofcode.com) at exactly midnight EST which is
 22:00 the day before for me in MST. Last year, I decided to do the problems as
-soon as they came out and streamed my problem solving sessions on my [Twitch
-channel][2] and uploaded them to [my Youtube channel][3].
+soon as they came out and streamed my problem solving sessions on my
+[Twitch channel][2] and uploaded them to [my Youtube channel][3].
 
 This year, I'm doing to do the same thing! This year, however, I'm also going to
 maintain this blog post. I will update this post every day with my thoughts on
@@ -72,8 +72,8 @@ Day       Time   Rank  Score       Time   Rank  Score
 I got global leaderboard on two days 1 (part 1 and 2) and 15 (part 1) for a
 total of 115 points on the global leaderboard. This year was the first time I'd
 ever made global leaderboard, so that was really cool. My 115 points puts me at
-396th globally according to [this scraped leaderboard on
-GitHub](https://github.com/SourishS17/AoC-2021-Full-Leaderboard/blob/main/leaderboard.csv).
+396th globally according to
+[this scraped leaderboard on GitHub](https://github.com/SourishS17/AoC-2021-Full-Leaderboard/blob/main/leaderboard.csv).
 
 I got top 200 on six occasions, and top 500 twelve times (I had two more at rank
 503). I made top 1000 eighteen times, and top 5000 on all but five parts. I also
@@ -566,12 +566,10 @@ I converted it to use much more functional code (more details below).
 
 For part 2, the only thing that changes is the cost function. Instead of being
 the distance between the alignment location and the submarine position, the cost
-of moving \\(n\\) places is
-\\[\sum_{k=1}^n k.\\]
-It is efficient enough to do a `for` loop to calculate this manually (which is
-what I did), but you can also use the formula
-\\[\sum_{k=1}^n k = \frac{n(n+1)}{2}\\]
-which makes the program run _much_ faster.
+of moving \\(n\\) places is \\[\sum_{k=1}^n k.\\] It is efficient enough to do a
+`for` loop to calculate this manually (which is what I did), but you can also
+use the formula \\[\sum_{k=1}^n k = \frac{n(n+1)}{2}\\] which makes the program
+run _much_ faster.
 
 The reason my part 2 code did not work first time was because I missed a key
 insight which was that the alignment point did not necessarily have to be at one
@@ -608,7 +606,7 @@ print("Part 2:", calc_best_alignment(seq, lambda a, b: sum(irange(1, abs(a - b))
 
 This problem was fun. It involved dealing with a seven-segment display, which
 automatically makes it interesting IMO. I have some experience with writing
-problems related to seven-segment displays (see [*Broken Clock* from HSPC
+problems related to seven-segment displays (see [_Broken Clock_ from HSPC
 2020]({{< ref "/posts/school/2020-hspc#b-broken-clock" >}})).
 
 One of the hardest parts of the problem was figuring out what it was asking and
@@ -800,8 +798,8 @@ it as I was solving.
 
 For the second part of the problem you have to consider lines that aren't
 immediately invalid (and are instead just incomplete). After processing the
-line, you have to use the stack to determine what characters need to be added
-to the back of the string.
+line, you have to use the stack to determine what characters need to be added to
+the back of the string.
 
 The biggest mistake I made was that I didn't reverse the list I was using as my
 stack, so I spent a while debugging before I realized that I just needed to
@@ -956,8 +954,8 @@ Unfortunately, it was quite difficult to debug (that is the downside of
 implementing it recursively).
 
 In the end, the function is actually very similar to part 1, except the
-condition is slightly different. [See source
-here](https://github.com/sumnerevans/advent-of-code/blob/master/2021/12.py#L161).
+condition is slightly different.
+[See source here](https://github.com/sumnerevans/advent-of-code/blob/master/2021/12.py#L161).
 
 After I solved, I did a bit of optimizing by adding memoization.
 
@@ -1099,15 +1097,11 @@ force. I chose to use a memoized recursive solution.
 The basic idea was to have a recursive function that gives you a count of the
 number of each character between two bounding characters for some depth,
 \\(d\\). Here's a math-ish formulation of the function (\\(I\\) is a mapping of
-start and end character to character to insert between the start and end):
-\\[
-c(a, b, d) = \begin{cases}
-[I[a, b] \rightarrow 1] & d = 1 \cr
-c(a, I[a, b], d - 1) + [I[a, b] \rightarrow 1] + c(I[a, b], b, d-1) & otherwise
-\end{cases}
-\\]
-where the \\(+\\) operator on mappings merges the maps with a sum if there are equal
-keys.
+start and end character to character to insert between the start and end): \\[
+c(a, b, d) = \begin{cases} [I[a, b] \rightarrow 1] & d = 1 \cr c(a, I[a, b],
+d - 1) + [I[a, b] \rightarrow 1] + c(I[a, b], b, d-1) & otherwise \end{cases}
+\\] where the \\(+\\) operator on mappings merges the maps with a sum if there
+are equal keys.
 
 The base case is relatively simple: if you have the `AB -> C` insertion rule,
 calling the recursive function with `A`, `B` and depth of `1` would give you
@@ -1120,12 +1114,12 @@ B]\\) to the count.
 
 I don't think this was the best approach for multiple reasons:
 
-1. After talking to friends and watching [Jonathan
-   Paulson](https://www.youtube.com/watch?v=7zvA-o47Uo0), the simpler solution
-   was to keep track of the number of each of the pairs in the sequence. For
-   example, if you have the `AB -> C` insertion rule, at any given iteration,
-   for every `AB`, you add 1 to the count of `AC`s and `CB`s for that iteration.
-   Another way of thinking about it:
+1. After talking to friends and watching
+   [Jonathan Paulson](https://www.youtube.com/watch?v=7zvA-o47Uo0), the simpler
+   solution was to keep track of the number of each of the pairs in the
+   sequence. For example, if you have the `AB -> C` insertion rule, at any given
+   iteration, for every `AB`, you add 1 to the count of `AC`s and `CB`s for that
+   iteration. Another way of thinking about it:
 
    ```python
    {"AB": 3}           # initial sequence
@@ -1237,8 +1231,8 @@ expansion more or less correctly (I did have a bug where I forgot to
 wrap-around, but I fixed that fairly early).
 
 The biggest bug that I had was (as I mentioned in my notes on part 1), was that
-I was counting the first square, and not counting the last square in the cost.
-I spent probably an hour and a half on that issue alone, causing my delta time
+I was counting the first square, and not counting the last square in the cost. I
+spent probably an hour and a half on that issue alone, causing my delta time
 (and thus my delta ranking) to be absolute garbage today.
 
 My Twitch chat bailed me out and mentioned that I should read the part of the
@@ -1468,8 +1462,8 @@ for my fourth degree black belt in ATA taekwondo in the morning [I passed, so at
 least one good thing happened to me today], and didn't get back to it until
 afternoon).
 
-I recorded some of my solve, but I am not going to upload it. There is no
-value in it, as I not only didn't solve, but I just went around in circles.
+I recorded some of my solve, but I am not going to upload it. There is no value
+in it, as I not only didn't solve, but I just went around in circles.
 
 <details class="advent-of-code-part-expander" open>
 <summary><h3>Part 1</h3></summary>
@@ -1644,9 +1638,9 @@ what the value of a border element (one that is beyond the image) is. (I
 actually didn't implement it as a flag, I just used mod to determine which value
 it should be).
 
-For the first iteration, it's `False` because all of the space outside the
-image is `.`s. For the next iteration, it's `True` because all of the space
-outside of the image is `#`, etc.
+For the first iteration, it's `False` because all of the space outside the image
+is `.`s. For the next iteration, it's `True` because all of the space outside of
+the image is `#`, etc.
 
 When computing the next generation, if I ever get a coordinate outside of the
 stored image, I just use whatever the flag has as the value.
@@ -1733,14 +1727,10 @@ roll frequencies \\(f\\), the \\(+\\) operator is the \\(+\\) operator under the
 circular set (it wraps around), and \\(p_i\\) is the position of player \\(i\\),
 and \\(s_i\\) is the score for player \\(i\\):
 
-\\[
-W(p_1, p_2, s_1, s_2, c) = \begin{cases}
-[1, 0] & s_1 > 0 \cr
-[0, 1] & s_2 > 0 \cr
-\sum_{r, f \in F} f \cdot W(p_1 + r, p_2, s_1 + (p_1 + r), s_2, 2) & c = 1 \cr
-\sum_{r, f \in F} f \cdot W(p_1, p_2 + r, s_1, s_2 + (p_1 + r), 1) & c = 2
-\end{cases}
-\\]
+\\[ W(p_1, p_2, s_1, s_2, c) = \begin{cases} [1, 0] & s_1 > 0 \cr [0, 1] & s_2 >
+0 \cr \sum_{r, f \in F} f \cdot W(p_1 + r, p_2, s_1 + (p_1 + r), s_2, 2) & c = 1
+\cr \sum_{r, f \in F} f \cdot W(p_1, p_2 + r, s_1, s_2 + (p_1 + r), 1) & c = 2
+\end{cases} \\]
 
 There are a finite set of possible values for the function because of the
 constraints of the problem. Precisely, it is \\(10 \times 10 \times 21 \times 21
@@ -1803,8 +1793,8 @@ significantly more difficult.
 
 My first attempt was to use set math to determine how much each addition and
 removal changed the total lit volume. I spent multiple hours trying to figure
-that out, but the set math exploded way too quickly, and I finally gave up for
-a much easier to-reason-about (albeit highly inefficient) method.
+that out, but the set math exploded way too quickly, and I finally gave up for a
+much easier to-reason-about (albeit highly inefficient) method.
 
 One of the core parts of the problem is that intersections are easy, but unions
 are hard, so, my algorithm only uses intersections.
@@ -1850,8 +1840,8 @@ computing the neighbors set for a given node is very nontrivial.
 <details class="advent-of-code-part-expander" open>
 <summary><h3>Part 1</h3></summary>
 
-The most complicated problem of the first part was figuring out adjacent elements to a given
-map state. For example, given the following map state:
+The most complicated problem of the first part was figuring out adjacent
+elements to a given map state. For example, given the following map state:
 
 ```plain
 #############

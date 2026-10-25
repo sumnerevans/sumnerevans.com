@@ -1,5 +1,5 @@
 ---
-title: "Advent of Code 2022"
+title: Advent of Code 2022
 date: 2022-12-01T09:00:00-06:00
 tags:
   - Programming

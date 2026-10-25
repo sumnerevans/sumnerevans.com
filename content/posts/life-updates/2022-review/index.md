@@ -1,5 +1,5 @@
 ---
-title: "2022 In Review"
+title: 2022 In Review
 date: 2022-12-31T00:00:00-06:00
 tags:
   - Life Updates

@@ -3,10 +3,8 @@ title: offlinemsmtp v1
 date: 2026-06-05T13:00:00-06:00
 tags:
   - Projects
-  - offline
-  - msmtp
-  - email
-  - mutt
+  - offlinemsmtp
+  - Email
 image: images/offlinemsmtp-no-pad.png
 hide_image_in_index: true
 ---

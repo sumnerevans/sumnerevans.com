@@ -1,5 +1,5 @@
 ---
-title: "Advent of Code 2023"
+title: Advent of Code 2023
 date: 2023-11-30T09:00:00-06:00
 tags:
   - Programming

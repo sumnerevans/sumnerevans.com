@@ -1,5 +1,5 @@
 ---
-title: "Becoming a Homeowner"
+title: Becoming a Homeowner
 date: 2023-06-06T09:00:00-06:00
 tags:
   - Life Updates

@@ -1,12 +1,10 @@
 ---
-title: "Introducing offlinemsmtp"
+title: Introducing offlinemsmtp
 date: 2019-12-07T13:00:00-06:00
 tags:
   - Projects
-  - offline
-  - msmtp
-  - email
-  - mutt
+  - offlinemsmtp
+  - Email
 image: images/offlinemsmtp-no-pad.png
 hide_image_in_index: true
 ---

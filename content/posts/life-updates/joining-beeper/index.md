@@ -1,11 +1,10 @@
 ---
-title: "I Joined Beeper to Help Build the Future of Chat"
+title: I Joined Beeper to Help Build the Future of Chat
 date: 2021-07-12T08:00:00-06:00
 tags:
   - Life Updates
-  - Beeper
   - Job
-  - Work
+  - Beeper
 image: images/beeper.png
 hide_image_in_index: true
 ---

@@ -1,13 +1,9 @@
 ---
-title: "How to Win a Hackathon"
+title: How to Win a Hackathon
 date: 2018-12-18T22:58:00-0600
 tags:
-  - Hackathons
-  - Facebook Hackathon
-  - Win
   - Hackathon
-  - Prize
-  - Hackathon Demo
+  - Facebook Hackathon
 image: images/fb-award.jpg
 math: true
 ---

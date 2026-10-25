@@ -1,8 +1,8 @@
 ---
-title: "Facebook Global Hackathon Finals - Day 1"
+title: Facebook Global Hackathon Finals - Day 1
 date: 2018-11-14T23:30:00-0600
 tags:
-  - Hackathons
+  - Hackathon
   - Facebook
   - Travel
   - San Francisco

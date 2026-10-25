@@ -7,7 +7,6 @@ tags:
   - Element
   - Matrix Foundation
   - Chat
-  - Cryptography
 description: |
   I'm running for the Matrix Governing Board as an Individual Member. My
   platform is to encourage a focus on chat by increasing ecosystem diversity.
