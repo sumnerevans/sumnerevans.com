@@ -11,7 +11,7 @@
     </b>
     &mdash;
     {{- if and .WordCount .ReadingTime }}
-      {{ .ReadingTime }} minute read, {{ .WordCount }} words
+      {{ .ReadingTime }} minute read, {{ lang.FormatNumberCustom 0 .WordCount }} words
     {{ end }}
   </div>
   {{ with .Params.tags }}
