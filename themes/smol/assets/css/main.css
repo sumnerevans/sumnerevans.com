@@ -881,17 +881,6 @@ dd {
   }
 }
 
-.related-posts {
-  h3 {
-    margin: var(--space-2) 0;
-  }
-
-  .articles ul {
-    margin: 0;
-    padding-left: var(--space-5);
-  }
-}
-
 .comments {
   min-height: 300px;
 }
