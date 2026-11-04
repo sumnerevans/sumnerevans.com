@@ -3,6 +3,7 @@ title: Framework 13 Pro - First Impressions
 date: 2026-10-23T06:25:00-06:00
 tags:
   - Framework 13 Pro
+  - Review
 image: images/fw13pro.png
 summary: |
   At long last, my Framework 13 Pro arrived! I must say, I'm delighted with it
